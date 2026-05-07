@@ -24,7 +24,15 @@ function Nav() {
           <span className="dot-pulse" style={{ width: 11, height: 11, borderRadius: '50%', backgroundColor: 'var(--green-700)', display: 'inline-block', marginTop: 7 }} />
           carelu
         </Link>
-        <span />{/* right side intentionally empty */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 36 }}>
+          {['Platform', 'How It Works', 'FAQ'].map((t) => (
+            <Link key={t} to={`/#${t.toLowerCase().replace(/\s+/g, '-')}`} className="hide-mobile nav-link" style={{ fontSize: '14px', fontWeight: 500, color: '#8C8674', textDecoration: 'none' }}>{t}</Link>
+          ))}
+          <Link to="/demo" className="btn-primary" style={{ fontSize: '14px', fontWeight: 600, color: '#fff', backgroundColor: '#2C3E2D', padding: '10px 24px', borderRadius: '12px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            Request a Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </Link>
+        </div>
       </div>
     </nav>
   );

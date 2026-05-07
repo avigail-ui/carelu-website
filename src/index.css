@@ -6,24 +6,40 @@
    ============================================================ */
 
 :root {
-  --green-900: #1B2E1E;
+  /* Brand Core */
+  --green-900: #1A2E1F;
   --green-800: #2C3E2D;
-  --green-700: #3A5A3C;
-  --green-600: #4A7A4E;
-  --sage-300: #B8CDB2;
+  --green-700: #4A7C3F;
+  --green-600: #4A7C3F;
+  --green-500: #5E9462;
+  --sage-300: #C8D0B8;
   --sage-200: #D4E4CF;
-  --sage-100: #E4EFE0;
+  --sage-100: #E8F0E4;
   --sage-50: #F0F5EE;
+  /* Warm Accent — terracotta */
+  --terra: #C4683D;
+  --terra-mid: #EBA57F;
+  --terra-light: #F8EEE7;
+  --clay: #5C2A14;
+  /* Warm Neutrals */
+  --bone: #FAF8F3;
+  --linen: #EDE8DC;
+  --stone: #8C8674;
+  /* Calm Secondary — teal */
+  --teal: #4686BA;
+  --teal-dark: #1F3B38;
+  --teal-light: #E5EDED;
+  /* Core neutrals */
   --white: #FFFFFF;
-  --gray-50: #F8F8F7;
-  --gray-100: #F0EFED;
+  --gray-50: #FAF8F3;
+  --gray-100: #EDE8DC;
   --gray-200: #E2E0DC;
   --gray-300: #CCC9C4;
-  --gray-400: #A8A5A0;
-  --gray-500: #7A7672;
+  --gray-400: #8C8674;
+  --gray-500: #8C8674;
   --gray-600: #55524E;
-  --gray-800: #2A2926;
-  --black: #1A1918;
+  --gray-800: #2B2A26;
+  --black: #2B2A26;
 
   --font-display: 'EB Garamond', Georgia, serif;
   --font-logo: 'Instrument Serif', Georgia, serif;
@@ -61,6 +77,7 @@ body {
   line-height: 1.6;
   color: var(--black);
   background: var(--white);
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -330,7 +347,7 @@ button { font-family: inherit; cursor: pointer; }
   position: fixed;
   top: 0; left: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--green-700), var(--sage-300));
+  background: linear-gradient(90deg, var(--green-600), var(--sage-300));
   transform-origin: 0 0;
   transform: scaleX(0);
   z-index: 1000;
@@ -339,6 +356,36 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ── Hero word-by-word reveal ─────────────────── */
+@keyframes flowDown {
+  0% { top: 0; opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.3; }
+  100% { top: 113px; opacity: 0; }
+}
+
+@keyframes floatProcess {
+  0% { top: 0; opacity: 0; }
+  15% { opacity: 0.5; }
+  50% { opacity: 0.3; }
+  100% { top: 140px; opacity: 0; }
+}
+
+/* Process pills — each lights up when dot passes */
+@keyframes processPulse {
+  0%, 8%, 100% { background: #fff; border-color: #D4E4CF; color: #1A2E1F; box-shadow: none; }
+  2%, 5% { background: #1A2E1F; border-color: #1A2E1F; color: #fff; box-shadow: 0 2px 12px rgba(26,46,31,0.2); }
+}
+.process-pill {
+  animation: processPulse 4.9s ease infinite;
+}
+
+
+@keyframes shimmer {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
 @keyframes wordIn {
   0% {
     opacity: 0;
@@ -440,6 +487,18 @@ button { font-family: inherit; cursor: pointer; }
   transform: translateY(-6px);
   box-shadow: 0 16px 48px rgba(27, 46, 30, 0.1);
 }
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.06);
+  border-radius: var(--radius);
+}
+.card-shadow-lg {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.08);
+  border-radius: var(--radius);
+}
+
+/* ── Section backgrounds ──────────────────────────── */
+.section-sage { background: var(--sage-50); }
+.section-cream { background: var(--gray-50); }
 
 /* ── Button ─────────────────────────────────────── */
 .btn-primary {
@@ -452,6 +511,7 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%);
   transform: translateX(-100%); transition: transform 0.6s var(--ease);
 }
+.btn-primary:hover { transform: translateY(-1px); }
 .btn-primary:hover::after { transform: translateX(100%); }
 .btn-primary:active { transform: scale(0.97); }
 
@@ -472,6 +532,14 @@ button { font-family: inherit; cursor: pointer; }
 .tour-step { transition: opacity 0.5s var(--ease-dramatic); }
 .tour-step.dimmed { opacity: 0.25; }
 
+/* ── Pipeline flow animation ─────────────────────── */
+@keyframes flowDash {
+  to { stroke-dashoffset: -14; }
+}
+.flow-line {
+  animation: flowDash 1.2s linear infinite;
+}
+
 /* ── Reduced motion ─────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -488,6 +556,8 @@ button { font-family: inherit; cursor: pointer; }
 /* ── Mobile Responsive ──────────────────────────── */
 @media (max-width: 900px) {
   .hide-mobile { display: none !important; }
+  .show-mobile-only { display: block !important; }
+  .nav-right { gap: 12px !important; }
 }
 
 @media (max-width: 768px) {
@@ -515,12 +585,13 @@ button { font-family: inherit; cursor: pointer; }
     gap: 32px !important;
   }
 
-  /* Hero content gets a sage card bg on mobile — tight like Ease */
+  /* Hero content on mobile — centered, sage card */
   .hero-content-mobile {
     background: var(--sage-50);
     border-radius: var(--radius);
     padding: 28px 22px !important;
     margin-bottom: 0;
+    text-align: center;
   }
   .hero-content-mobile h1 {
     margin-bottom: 16px !important;
@@ -528,15 +599,45 @@ button { font-family: inherit; cursor: pointer; }
   }
   .hero-content-mobile p {
     margin-bottom: 24px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content-mobile .hero-cta {
+    justify-content: center !important;
   }
 
-  /* Hero visual hidden on mobile */
-  .hero-visual { display: none !important; }
+  /* Hero visual: show on mobile, full width */
+  .hero-visual {
+    display: block !important;
+    max-width: 100% !important;
+    margin-top: 24px !important;
+  }
 
   /* All grids stack */
   .mobile-stack {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
+  }
+
+  /* Hub layout stacks on mobile */
+  .hub-layout {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Customer stories scroll on mobile */
+  .stories-row {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .stories-row > div {
+    flex: 0 0 280px !important;
+    scroll-snap-align: start;
   }
 
   /* CTA button: full-width block on mobile like Ease */
@@ -551,18 +652,18 @@ button { font-family: inherit; cursor: pointer; }
   /* Logo row on mobile: 5 slots, fixed width, no shifting */
   .hide-mobile-logo { display: none !important; }
   .logo-row {
-    gap: 8px !important;
+    gap: 20px !important;
     justify-content: center !important;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
   }
   .logo-row > div {
-    width: 60px !important;
-    min-width: 60px !important;
-    height: 28px !important;
+    width: 100px !important;
+    min-width: 100px !important;
+    height: 40px !important;
   }
   .logo-row img {
-    max-height: 24px !important;
-    max-width: 60px !important;
+    max-height: 36px !important;
+    max-width: 100px !important;
   }
 
   /* Sticky tour: hide sticky sidebar, show inline mockups */
