@@ -261,7 +261,7 @@ function Hero() {
             </div>
           </h1>
           <p className="hero-sub" style={{ fontSize: 18, color: 'var(--gray-600)', lineHeight: 1.75, maxWidth: 480, marginBottom: 44 }}>
-            Carelu runs your entire intake operation — calls, forms, texts, chats, faxes — from first contact to admitted patient. No family slips through the cracks.
+            Carelu runs your entire intake operation — calls, forms, texts, chats, faxes — from first contact to admitted patient. Built for ABA therapy and behavioral health.
           </p>
           <div className="hero-cta">
             <a href="/demo" className="btn-primary hero-cta-btn" style={{
@@ -401,7 +401,7 @@ function LogoBar() {
   return (
     <div style={{ padding: '56px 0', borderBottom: '1px solid var(--gray-200)' }}>
       <p style={{ fontSize: 'var(--text-sm)', fontWeight: 500, color: 'var(--gray-500)', textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>
-        Trusted by behavioral health providers nationwide
+        Trusted by ABA therapy providers nationwide
       </p>
       <div style={{ overflow: 'hidden' }}>
         <div className="marquee-track" style={{ animation: 'marqueeScroll 50s linear infinite' }}>
@@ -632,10 +632,10 @@ function HubDiagram() {
                 </text>
               ))}
 
-              {/* Ready for assessment pill — centered */}
-              <rect x="130" y="425" width="240" height="36" rx="18" fill="#1A2E1F" />
-              <text x="250" y="444" textAnchor="middle" dominantBaseline="middle"
-                fontFamily="DM Sans, sans-serif" fontSize="13" fontWeight="600" fill="#fff">
+              {/* Ready for assessment pill — centered, larger */}
+              <rect x="100" y="418" width="300" height="48" rx="24" fill="#1A2E1F" />
+              <text x="250" y="443" textAnchor="middle" dominantBaseline="middle"
+                fontFamily="DM Sans, sans-serif" fontSize="16" fontWeight="600" fill="#fff">
                 Ready for assessment  ✓
               </text>
             </svg>
