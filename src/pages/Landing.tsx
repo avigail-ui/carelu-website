@@ -525,138 +525,148 @@ function HubDiagram() {
               ))}
             </div>
 
-            {/* Single SVG: channels flow in → sphere → process labels → intake-ready */}
-            <svg viewBox="0 0 400 440" style={{ width: '100%', maxWidth: 420, height: 'auto' }}>
+            {/* Single SVG: channels flow in → sphere → process labels → ready */}
+            <svg viewBox="0 0 500 480" style={{ width: '100%', maxWidth: 520, height: 'auto' }}>
               <defs>
                 <radialGradient id="sphere" cx="36%" cy="33%" r="55%">
                   <stop offset="0%" stopColor="#6B8F6E" />
-                  <stop offset="35%" stopColor="#3A5A3C" />
-                  <stop offset="100%" stopColor="#1A2E1F" />
+                  <stop offset="30%" stopColor="#3A5A3C" />
+                  <stop offset="100%" stopColor="#0F1F11" />
                 </radialGradient>
                 <radialGradient id="sphereShadow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#1A2E1F" stopOpacity="0.08" />
-                  <stop offset="100%" stopColor="#1A2E1F" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#0F1F11" stopOpacity="0.12" />
+                  <stop offset="100%" stopColor="#0F1F11" stopOpacity="0" />
                 </radialGradient>
-                {/* Inbound: channel positions → sphere center */}
-                {[44, 112, 200, 288, 356].map((sx, i) => (
-                  <path key={`ip${i}`} id={`ip${i}`} d={`M${sx},0 C${sx},40 200,80 200,130`} fill="none" />
+                <radialGradient id="sphereGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#4A7C3F" stopOpacity="0.06" />
+                  <stop offset="100%" stopColor="#4A7C3F" stopOpacity="0" />
+                </radialGradient>
+                {/* Inbound: 5 channel positions → sphere */}
+                {[55, 140, 250, 360, 445].map((sx, i) => (
+                  <path key={`ip${i}`} id={`ip${i}`} d={`M${sx},0 C${sx},50 250,100 250,155`} fill="none" />
                 ))}
-                {/* Outbound: sphere → each process label */}
+                {/* Outbound: sphere → each label */}
                 {[
-                  'M200,195 Q130,230 75,260',
-                  'M200,195 Q180,230 175,260',
-                  'M200,195 Q250,230 300,260',
-                  'M200,195 Q120,270 90,300',
-                  'M200,195 Q200,275 195,300',
-                  'M200,195 Q270,270 305,300',
+                  'M250,230 Q170,265 95,290',
+                  'M250,230 Q230,265 220,290',
+                  'M250,230 Q310,265 380,290',
+                  'M250,230 Q160,310 115,340',
+                  'M250,230 Q250,310 245,340',
+                  'M250,230 Q330,310 385,340',
                 ].map((d, i) => (
                   <path key={`op${i}`} id={`op${i}`} d={d} fill="none" />
                 ))}
-                {/* Converge: each label → intake-ready */}
+                {/* Converge: labels → ready pill */}
                 {[
-                  'M75,270 Q130,360 200,400',
-                  'M175,270 Q185,350 200,400',
-                  'M300,270 Q260,360 200,400',
-                  'M90,310 Q140,370 200,400',
-                  'M195,310 Q198,370 200,400',
-                  'M305,310 Q260,370 200,400',
+                  'M95,300 Q160,400 250,440',
+                  'M220,300 Q235,390 250,440',
+                  'M380,300 Q320,400 250,440',
+                  'M115,350 Q175,410 250,440',
+                  'M245,350 Q248,410 250,440',
+                  'M385,350 Q320,410 250,440',
                 ].map((d, i) => (
                   <path key={`cp${i}`} id={`cp${i}`} d={d} fill="none" />
                 ))}
               </defs>
 
-              {/* Shadow */}
-              <ellipse cx="200" cy="200" rx="50" ry="6" fill="url(#sphereShadow)" />
+              {/* Ambient glow */}
+              <circle cx="250" cy="185" r="140" fill="url(#sphereGlow)" />
 
-              {/* Sphere */}
-              <circle cx="200" cy="145" r="50" fill="url(#sphere)" />
-              <ellipse cx="190" cy="132" rx="14" ry="9" fill="#fff" opacity="0.06" />
+              {/* Shadow */}
+              <ellipse cx="250" cy="240" rx="65" ry="8" fill="url(#sphereShadow)" />
+
+              {/* Sphere — larger */}
+              <circle cx="250" cy="175" r="65" fill="url(#sphere)" />
+              <ellipse cx="238" cy="158" rx="20" ry="12" fill="#fff" opacity="0.06" />
 
               {/* Pulse */}
-              <circle cx="200" cy="145" r="50" fill="none" stroke="#1A2E1F" strokeWidth="0.7">
-                <animate attributeName="r" values="50;60;50" dur="4s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.1;0;0.1" dur="4s" repeatCount="indefinite" />
+              <circle cx="250" cy="175" r="65" fill="none" stroke="#1A2E1F" strokeWidth="0.8">
+                <animate attributeName="r" values="65;78;65" dur="3.5s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.12;0;0.12" dur="3.5s" repeatCount="indefinite" />
               </circle>
 
               {/* Logo */}
-              <text x="200" y="148" textAnchor="middle" dominantBaseline="middle"
-                fill="#fff" fontFamily="EB Garamond, serif" fontSize="14" fontWeight="500">carelu</text>
+              <text x="250" y="178" textAnchor="middle" dominantBaseline="middle"
+                fill="#fff" fontFamily="EB Garamond, serif" fontSize="18" fontWeight="500">carelu</text>
 
-              {/* Inbound dots */}
-              {[44, 112, 200, 288, 356].map((_, i) => (
-                <circle key={`id${i}`} r="3.5" fill="#1A2E1F">
-                  <animateMotion dur={`${2.2 + i * 0.25}s`} repeatCount="indefinite" begin={`${i * 0.45}s`}>
+              {/* Inbound dots — bigger, more visible */}
+              {[55, 140, 250, 360, 445].map((_, i) => (
+                <circle key={`id${i}`} r="5" fill="#1A2E1F">
+                  <animateMotion dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`}>
                     <mpath href={`#ip${i}`} />
                   </animateMotion>
-                  <animate attributeName="opacity" values="0;0.5;0.35;0" dur={`${2.2 + i * 0.25}s`} repeatCount="indefinite" begin={`${i * 0.45}s`} />
+                  <animate attributeName="opacity" values="0;0.6;0.45;0" dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`} />
+                  <animate attributeName="r" values="5;2.5" dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`} />
                 </circle>
               ))}
 
-              {/* Outbound dots: sphere → labels */}
+              {/* Outbound dots */}
               {[0, 1, 2, 3, 4, 5].map(i => (
-                <circle key={`od${i}`} r="2.5" fill="#1A2E1F">
-                  <animateMotion dur={`${1.3 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.65}s`}>
+                <circle key={`od${i}`} r="3.5" fill="#1A2E1F">
+                  <animateMotion dur={`${1.2 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.6}s`}>
                     <mpath href={`#op${i}`} />
                   </animateMotion>
-                  <animate attributeName="opacity" values="0;0.4;0.25;0" dur={`${1.3 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.65}s`} />
+                  <animate attributeName="opacity" values="0;0.5;0.3;0" dur={`${1.2 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.6}s`} />
                 </circle>
               ))}
 
-              {/* Converge dots: labels → intake-ready */}
+              {/* Converge dots */}
               {[0, 1, 2, 3, 4, 5].map(i => (
-                <circle key={`cd${i}`} r="2" fill="#1A2E1F">
-                  <animateMotion dur={`${1.1 + (i % 3) * 0.12}s`} repeatCount="indefinite" begin={`${i * 0.65 + 0.9}s`}>
+                <circle key={`cd${i}`} r="3" fill="#1A2E1F">
+                  <animateMotion dur={`${1 + (i % 3) * 0.1}s`} repeatCount="indefinite" begin={`${i * 0.6 + 0.8}s`}>
                     <mpath href={`#cp${i}`} />
                   </animateMotion>
-                  <animate attributeName="opacity" values="0;0.3;0.15;0" dur={`${1.1 + (i % 3) * 0.12}s`} repeatCount="indefinite" begin={`${i * 0.65 + 0.9}s`} />
+                  <animate attributeName="opacity" values="0;0.35;0.2;0" dur={`${1 + (i % 3) * 0.1}s`} repeatCount="indefinite" begin={`${i * 0.6 + 0.8}s`} />
                 </circle>
               ))}
 
-              {/* Process labels — row 1, italic serif — turn green when dot hits */}
+              {/* Process labels — row 1, evenly spaced */}
               {[
-                { text: 'Insurance card', x: 75, y: 265 },
-                { text: 'Consent form', x: 175, y: 265 },
-                { text: 'Diagnosis', x: 300, y: 265 },
+                { text: 'Insurance card', x: 110, y: 296 },
+                { text: 'Consent form', x: 250, y: 296 },
+                { text: 'Diagnosis', x: 390, y: 296 },
               ].map((p, i) => (
                 <text key={`r1${i}`} x={p.x} y={p.y} textAnchor="middle" dominantBaseline="middle"
-                  fontFamily="EB Garamond, serif" fontSize="13" fontWeight="400" fontStyle="italic">
-                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.9s" begin={`${i * 0.65}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.9s" begin={`${i * 0.65}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
+                  fontFamily="EB Garamond, serif" fontSize="15" fontWeight="400" fontStyle="italic">
+                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.6s" begin={`${i * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
+                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.6s" begin={`${i * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
                   {p.text}
                 </text>
               ))}
-              {/* Process labels — row 2 */}
+              {/* Process labels — row 2, evenly spaced */}
               {[
-                { text: 'Follow-up', x: 90, y: 305 },
-                { text: 'Eligibility', x: 195, y: 305 },
-                { text: 'Scheduling', x: 305, y: 305 },
+                { text: 'Follow-up', x: 110, y: 346 },
+                { text: 'Eligibility', x: 250, y: 346 },
+                { text: 'Scheduling', x: 390, y: 346 },
               ].map((p, i) => (
                 <text key={`r2${i}`} x={p.x} y={p.y} textAnchor="middle" dominantBaseline="middle"
-                  fontFamily="EB Garamond, serif" fontSize="13" fontWeight="400" fontStyle="italic">
-                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.9s" begin={`${(i + 3) * 0.65}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.9s" begin={`${(i + 3) * 0.65}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
+                  fontFamily="EB Garamond, serif" fontSize="15" fontWeight="400" fontStyle="italic">
+                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.6s" begin={`${(i + 3) * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
+                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.6s" begin={`${(i + 3) * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
                   {p.text}
                 </text>
               ))}
 
-              {/* Ready for assessment */}
-              <rect x="110" y="388" width="180" height="30" rx="15" fill="#1A2E1F" />
-              <text x="192" y="404" textAnchor="middle" dominantBaseline="middle"
-                fontFamily="DM Sans, sans-serif" fontSize="11" fontWeight="600" fill="#fff">
-                Ready for assessment
+              {/* Ready for assessment pill — centered */}
+              <rect x="130" y="425" width="240" height="36" rx="18" fill="#1A2E1F" />
+              <text x="250" y="444" textAnchor="middle" dominantBaseline="middle"
+                fontFamily="DM Sans, sans-serif" fontSize="13" fontWeight="600" fill="#fff">
+                Ready for assessment  ✓
               </text>
-              <path d="M286 399 L290 403 L298 395" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
 
-          {/* Outcome line */}
-          <div className="rv d4" style={{ textAlign: 'center', marginTop: 28, marginBottom: 64 }}>
+          {/* Outcome — the "so what" */}
+          <div className="rv d4" style={{ textAlign: 'center', marginTop: 28, marginBottom: 64, width: '100%' }}>
             <p style={{
               fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)',
               fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.3,
-              margin: '0 auto',
+              margin: '0 auto 12px',
             }}>
               No family slips through the cracks.
+            </p>
+            <p style={{ fontSize: 15, color: 'var(--stone)', margin: '0 auto', maxWidth: 480, textAlign: 'center' }}>
+              Carelu is AI intake infrastructure that makes sure every family who can receive care does — so your team can spend their time on the work that actually matters.
             </p>
           </div>
 
