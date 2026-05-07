@@ -363,7 +363,6 @@ function Hero() {
 // ── MARQUEE ──────────────────────────────────────
 function Marquee() {
   const items = ['AI-Powered Intake', 'HIPAA Compliant', 'Insurance Verification', 'ABA Therapy', 'Behavioral Health', '24/7 Availability', 'Document Collection', 'Zero Drop-Off', 'Home Care', 'Addiction Treatment'];
-  const text = items.map((i) => `${i}  ·  `).join('');
   // Render 4 copies so even on very wide screens there's never a visible gap.
   // The CSS keyframe animates from 0 to -50% which equals exactly 2 copies shifting off-screen,
   // while the other 2 copies are always visible → seamless infinite loop.
@@ -478,20 +477,6 @@ function Problem() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
-
-// ── SOLUTION BRIDGE ─────────────────────────────
-function Promise() {
-  return (
-    <section style={{ background: 'linear-gradient(to bottom, var(--sage-200), var(--white))', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <Pill>The solution</Pill>
-        <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.12, color: 'var(--green-900)', maxWidth: 720 }}>
-          Carelu replaces your entire intake workflow with one AI-powered platform — from first contact to admitted patient.
-        </h2>
       </div>
     </section>
   );
@@ -751,7 +736,7 @@ const customerStories = [
 function CustomerStories() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const GAP = 16;
-  const COUNT = customerStories.length;
+
 
   // On mount, scroll to the middle copy so we can go both directions
   useEffect(() => {
@@ -1146,8 +1131,7 @@ function StickyTour() {
   );
 }
 
-// ── HOW IT WORKS — clean vertical list with drawing dividers ──
-// ── EVERY CHANNEL — tabbed flow panels ───────────
+/* REMOVED: EveryChannel + HowItWorks — consolidated into HubDiagram + StickyTour
 const channelData = [
   {
     id: 'chat',
@@ -1367,50 +1351,7 @@ function Impact() {
     </section>
   );
 }
-
-// ── TESTIMONIAL ─────────────────────────────────
-function Testimonial() {
-  return (
-    <section style={{ background: 'var(--sage-50)', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <Pill>What providers say</Pill>
-
-        <blockquote className="rv-left" style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'clamp(28px, 4vw, 48px)',
-          fontStyle: 'italic',
-          color: 'var(--green-900)',
-          lineHeight: 1.2,
-          maxWidth: 800,
-          marginBottom: 40,
-        }}>
-          "We were losing 60% of families before they ever completed intake. Carelu brought that number under 15% in the first month."
-        </blockquote>
-        <div className="rv-left d2" style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 80 }}>
-          <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--sage-200)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 15, color: 'var(--green-800)' }}>MC</div>
-          <div>
-            <div style={{ fontSize: 'var(--text-body)', fontWeight: 600, color: 'var(--green-900)' }}>Maria C., Clinical Director</div>
-            <div style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)' }}>Bright Horizons ABA — 6 locations, Southeast US</div>
-          </div>
-        </div>
-
-        {/* Supporting proof */}
-        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
-          {[
-            { stat: '60% → 15%', desc: 'Family drop-off rate, first month with Carelu' },
-            { stat: '0 missed', desc: 'Every lead followed up — no one falls through the cracks' },
-            { stat: '24 / 7', desc: 'Nights, weekends, holidays — never miss a family' },
-          ].map((s, i) => (
-            <div key={s.stat} className={`rv-scale d${i + 3} card-lift`} style={{ background: 'var(--sage-50)', borderRadius: 'var(--radius)', padding: '36px 28px' }}>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 28, color: 'var(--green-800)', marginBottom: 8 }}>{s.stat}</div>
-              <div style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.desc}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+END REMOVED */
 
 // ── COMPLIANCE — formal certificate style ─────
 function Compliance() {
