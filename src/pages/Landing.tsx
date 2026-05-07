@@ -456,7 +456,7 @@ function Problem() {
           </p>
 
           {/* Stats — horizontal row below, full width */}
-          <div className="mobile-stack rv d4" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 36 }}>
+          <div className="rv d4" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 36 }}>
             {[
               { val: '70%', desc: 'of families abandon intake before completion' },
               { val: '5+', desc: 'tools duct-taped together to manage one process' },
@@ -873,7 +873,7 @@ function CustomerStories() {
         </div>
 
         {/* Proof stats row */}
-        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 64, borderTop: '1px solid var(--gray-200)', paddingTop: 40 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 64, borderTop: '1px solid var(--gray-200)', paddingTop: 40 }}>
           {[
             { stat: '60% → 15%', desc: 'Family drop-off rate, first month with Carelu' },
             { stat: '0 missed', desc: 'Every lead followed up — no one falls through the cracks' },
