@@ -317,10 +317,10 @@ function Hero() {
             {/* Steps */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {[
-                { text: 'Family reached out', delay: '0.5s' },
-                { text: 'Insurance verified', delay: '0.9s' },
-                { text: 'Documents collected', delay: '1.3s' },
-                { text: 'Ready for assessment', delay: '2.2s', highlight: true },
+                { text: 'Family reached out', delay: '0.8s' },
+                { text: 'Insurance verified', delay: '1.6s' },
+                { text: 'Documents collected', delay: '2.4s' },
+                { text: 'Ready for assessment', delay: '3.8s', highlight: true },
               ].map((step) => (
                 <div key={step.text} className="hero-chat-msg" style={{ animationDelay: step.delay,
                   display: 'flex', alignItems: 'center', justifyContent: 'space-between',
