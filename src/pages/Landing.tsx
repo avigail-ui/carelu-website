@@ -641,43 +641,67 @@ function HubDiagram() {
             </svg>
           </div>
 
-          {/* Outcome — the "so what" */}
-          <div className="rv d4" style={{ textAlign: 'center', marginTop: 28, marginBottom: 64, width: '100%' }}>
-            <p style={{
-              fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)',
-              fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.3,
-              margin: '0 auto 12px',
-            }}>
-              No family slips through the cracks.
-            </p>
-            <p style={{ fontSize: 15, color: 'var(--stone)', margin: '0 auto', maxWidth: 480, textAlign: 'center' }}>
-              Carelu is AI intake infrastructure that makes sure every family who can receive care does — so your team can spend their time on the work that actually matters.
-            </p>
-          </div>
-
-          {/* Three-stat outcome row */}
-          <div className="mobile-stack rv d4" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid var(--sage-200)', paddingTop: 40 }}>
-            {[
-              { val: '24/7', desc: 'Every call answered, every form filled, every family followed up.' },
-              { val: '85%', desc: 'Intake completion rate — up from the industry average of 30%.' },
-              { val: 'Minutes', desc: 'To a fully qualified, documented, assessment-ready family.' },
-            ].map((s, i) => (
-              <div key={i} style={{
-                paddingRight: 32, paddingLeft: i > 0 ? 32 : 0,
-                borderRight: i < 2 ? '1px solid var(--sage-200)' : 'none',
-              }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 48px)', color: 'var(--green-900)', lineHeight: 1, marginBottom: 8 }}>
-                  {s.val}
-                </div>
-                <div style={{ fontSize: 13, color: 'var(--stone)', lineHeight: 1.5 }}>
-                  {s.desc}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
     </>
+  );
+}
+
+// ── SCALE SECTION — capability cards ────────────
+function ScaleSection() {
+  return (
+    <section style={{ background: 'var(--sage-50)', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
+      <div style={W}>
+        <div style={{ textAlign: 'center', marginBottom: 56 }}>
+          <Pill>The platform</Pill>
+          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12 }}>
+            Scale your practice on your terms.
+          </h2>
+          <p className="rv d1" style={{ fontSize: 15, color: 'var(--stone)', margin: '16px auto 0', maxWidth: 440 }}>
+            Immediately answer every call, text, and chat. Qualify families. Collect every document. Complete every intake.
+          </p>
+        </div>
+
+        <div className="mobile-stack rv d2" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+          {[
+            {
+              title: 'Capture',
+              desc: 'Answer every call, text, chat, form, and fax — 24/7, in English and Spanish. No family waits.',
+              stat: '24/7',
+              statLabel: 'Response coverage',
+            },
+            {
+              title: 'Qualify & Collect',
+              desc: 'Verify insurance, collect diagnosis reports, gather consent forms — all by conversation, automatically.',
+              stat: '85%',
+              statLabel: 'Intake completion rate',
+            },
+            {
+              title: 'Intake Complete',
+              desc: 'Every qualified family moves to assessment-ready. No manual handoff, no delays, no one forgotten.',
+              stat: 'Minutes',
+              statLabel: 'To assessment-ready',
+            },
+          ].map((card, i) => (
+            <div key={i} className={`rv d${i + 1}`} style={{
+              background: '#fff', borderRadius: 'var(--radius)', padding: '36px 28px',
+              border: '1px solid var(--sage-200)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.06)',
+            }}>
+              <div>
+                <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--green-900)', marginBottom: 12 }}>{card.title}</div>
+                <p style={{ fontSize: 14, color: 'var(--stone)', lineHeight: 1.6, margin: 0 }}>{card.desc}</p>
+              </div>
+              <div style={{ marginTop: 28, paddingTop: 20, borderTop: '1px solid var(--sage-200)' }}>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, color: 'var(--green-900)', lineHeight: 1, marginBottom: 4 }}>{card.stat}</div>
+                <div style={{ fontSize: 12, color: 'var(--stone)' }}>{card.statLabel}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -919,6 +943,30 @@ function useSequentialSwap(value: number, fadeOutMs: number = 280) {
     return () => clearTimeout(t);
   }, [value, displayed, fadeOutMs]);
   return { displayed, phase };
+}
+
+// ── VIDEO DEMO ──────────────────────────────────
+function VideoDemo() {
+  return (
+    <section style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', background: 'var(--green-900)' }}>
+      <div style={W}>
+        <div style={{ textAlign: 'center', marginBottom: 48 }}>
+          <Pill dark>See it happen</Pill>
+          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#fff', lineHeight: 1.12 }}>
+            Watch it work.
+          </h2>
+        </div>
+        <div className="rv-scale" style={{ maxWidth: 900, margin: '0 auto', borderRadius: 20, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}>
+          <video
+            autoPlay muted loop playsInline
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+          >
+            <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function StickyTour() {
@@ -1360,9 +1408,11 @@ export default function Landing() {
       <Marquee />
       <Problem />
       <HubDiagram />
+      <ScaleSection />
+      <CustomerStories />
+      <VideoDemo />
       <StickyTour />
       <Impact />
-      <CustomerStories />
       <Compliance />
       <Faq />
       <CtaFooter />
