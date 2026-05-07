@@ -947,6 +947,25 @@ function useSequentialSwap(value: number, fadeOutMs: number = 280) {
 
 // ── VIDEO DEMO ──────────────────────────────────
 function VideoDemo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', background: 'var(--green-900)' }}>
       <div style={W}>
@@ -958,7 +977,11 @@ function VideoDemo() {
         </div>
         <div className="rv-scale" style={{ maxWidth: 900, margin: '0 auto', borderRadius: 20, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}>
           <video
-            autoPlay muted loop playsInline
+            ref={videoRef}
+            controls
+            muted
+            loop
+            playsInline
             style={{ width: '100%', height: 'auto', display: 'block' }}
           >
             <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
