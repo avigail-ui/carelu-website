@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useReveal } from '../hooks/useReveal';
 import NavDropdown from '../components/NavDropdown';
 
-// ── LIVE FAMILY COUNTER — grows ~200/day from a fixed baseline ──
+// ── LIVE FAMILY COUNTER -- grows ~200/day from a fixed baseline ──
 // ── LIVE FAMILY COUNT ──
 const BASELINE_DATE = new Date('2026-04-16T00:00:00Z').getTime();
 const BASELINE_COUNT = 35000;
@@ -12,7 +12,7 @@ function getLiveCount() {
   return Math.floor(BASELINE_COUNT + Math.max(0, Date.now() - BASELINE_DATE) * GROWTH_PER_MS);
 }
 
-// ── LIVE COUNTER — ticks up in real time ──
+// ── LIVE COUNTER -- ticks up in real time ──
 function LiveCounter() {
   const [count, setCount] = useState(getLiveCount);
 
@@ -26,18 +26,18 @@ function LiveCounter() {
       <div style={{
         fontFamily: 'var(--font-display)',
         fontSize: 'clamp(64px, 10vw, 120px)',
-        color: 'var(--green-800)',
+        color: 'inherit',
         lineHeight: 1,
         letterSpacing: '-3px',
       }}>
         {count.toLocaleString()}+
       </div>
-      <div style={{ fontSize: 'var(--text-h3)', color: 'var(--gray-500)', marginTop: 8, marginBottom: 12 }}>
+      <div style={{ fontSize: 'var(--text-h3)', color: 'inherit', opacity: 0.5, marginTop: 8, marginBottom: 12 }}>
         families connected to care
       </div>
       <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-        <span className="dot-pulse" style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: 'var(--green-600)', display: 'inline-block' }} />
-        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--green-700)', fontWeight: 600 }}>Live</span>
+        <span className="dot-pulse" style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: 'var(--sage-300)', display: 'inline-block' }} />
+        <span style={{ fontSize: 'var(--text-xs)', color: 'inherit', opacity: 0.6, fontWeight: 600 }}>Live</span>
       </div>
     </div>
   );
@@ -66,27 +66,12 @@ function ScrollProgress() {
 
 
 
-// ── SPLIT WORDS — wraps words in staggered spans ──
-function SplitWords({ text, baseDelay = 0 }: { text: string; baseDelay?: number }) {
-  return (
-    <>
-      {text.split(' ').map((word, i) => (
-        <span
-          key={i}
-          className="hero-word"
-          style={{ animationDelay: `${baseDelay + i * 0.12}s`, marginRight: '0.25em' }}
-        >
-          {word}
-        </span>
-      ))}
-    </>
-  );
-}
+// ── SPLIT WORDS -- wraps words in staggered spans ──
 
 
 
 /* ============================================================
-   CARELU — ORIGINAL VERSION
+   CARELU -- ORIGINAL VERSION
    ============================================================
    Feature-based copy with the full design system:
    glassmorphism cards, gradient mesh hero, sticky product tour,
@@ -131,10 +116,6 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
   return <span ref={ref}>{prefix}{count}{suffix}</span>;
 }
 
-function TypingDots() {
-  return <div className="typing-indicator"><span /><span /><span /></div>;
-}
-
 // ── NAV ──────────────────────────────────────────
 function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -157,7 +138,7 @@ function Nav() {
             ))}
             <span className="hide-mobile"><NavDropdown /></span>
 
-            {/* CTA — always visible */}
+            {/* CTA -- always visible */}
             <a href="/demo" className="btn-primary" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: '#fff', backgroundColor: 'var(--green-800)', padding: '10px 24px', borderRadius: 'var(--radius-sm)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}
               onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--green-700)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'var(--green-800)'; }}
@@ -222,138 +203,75 @@ function Nav() {
 
 // ── HERO ────────────────────────────────────────
 function Hero() {
+
   return (
     <section className="hero-mobile" style={{
       minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center',
       paddingTop: 132, paddingBottom: 80, position: 'relative', overflow: 'hidden',
-      background: 'linear-gradient(180deg, var(--bone) 0%, var(--white) 100%)',
     }}>
-      {/* Soft ambient orbs */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-        <div className="orb-drift-1" style={{ position: 'absolute', width: 600, height: 600, top: -100, right: -100, borderRadius: '50%', background: 'radial-gradient(circle, var(--sage-100) 0%, transparent 70%)', filter: 'blur(80px)', opacity: 0.8 }} />
-        <div className="orb-drift-2" style={{ position: 'absolute', width: 400, height: 400, bottom: 50, left: -50, borderRadius: '50%', background: 'radial-gradient(circle, var(--linen) 0%, transparent 70%)', filter: 'blur(60px)', opacity: 0.6 }} />
-      </div>
+      {/* Living sky background */}
+      <div className="hero-sky" style={{
+        position: 'absolute', inset: 0, pointerEvents: 'none',
+        backgroundImage: 'url(/sky.jpg)',
+        backgroundSize: '200% auto',
+        backgroundPosition: '0% 30%',
+        animation: 'skyDrift 50s linear infinite',
+        opacity: 1,
+      }} />
+      {/* Slight darken for text contrast + fade to white at bottom */}
+      <div style={{
+        position: 'absolute', inset: 0, pointerEvents: 'none',
+        background: 'linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.15) 70%, var(--white) 95%)',
+      }} />
 
       {/* Decorative bottom curve */}
       <svg style={{ position: 'absolute', bottom: -1, left: 0, width: '100%', height: 60, zIndex: 2 }} preserveAspectRatio="none" viewBox="0 0 1440 60">
         <path d="M0 60 C480 0 960 0 1440 60 L1440 60 L0 60Z" fill="var(--white)" />
       </svg>
 
-      <div className="mobile-stack" style={{ ...W, display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 64, alignItems: 'center', position: 'relative', zIndex: 1 }}>
-        <div className="hero-content-mobile">
-          <span className="rv hero-line" style={{
-            display: 'inline-block', fontSize: 13, fontWeight: 500,
-            color: 'var(--green-800)', background: 'var(--sage-100)',
-            borderRadius: 'var(--radius-pill)', padding: '8px 20px',
-            border: '1px solid var(--sage-200)', marginBottom: 28,
-          }}>The World's First Care Enablement Platform</span>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-hero)', fontWeight: 400, lineHeight: 1.05, letterSpacing: '-2px', color: 'var(--green-900)', marginBottom: 28, perspective: 1000 }}>
-            <div style={{ display: 'block' }}>
-              <SplitWords text="Fewer families lost." baseDelay={0.1} />
-            </div>
-            <div style={{ display: 'block' }}>
-              <SplitWords text="More care" baseDelay={0.5} />
-              {' '}
-              <span
-                className="hero-word"
-                style={{ animationDelay: '0.9s', fontStyle: 'italic', display: 'inline-block', color: 'var(--green-600)' }}
-              >delivered.</span>
-            </div>
-          </h1>
-          <p className="hero-sub" style={{ fontSize: 18, color: 'var(--gray-600)', lineHeight: 1.75, maxWidth: 480, marginBottom: 44 }}>
-            Carelu runs your entire intake operation — calls, forms, texts, chats, faxes — from first contact to admitted patient. Built for ABA therapy and behavioral health.
-          </p>
-          <div className="hero-cta">
-            <a href="/demo" className="btn-primary hero-cta-btn" style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-              fontSize: 20, fontWeight: 600, color: '#fff',
-              backgroundColor: 'var(--green-900)', padding: '24px 32px',
-              borderRadius: 18, textDecoration: 'none', maxWidth: 380,
-              transition: 'background-color 0.3s, transform 0.2s',
-            }}
-              onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--green-700)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'var(--green-900)'; e.currentTarget.style.transform = 'translateY(0)'; }}
-            >
-              Request a Demo
-              <span style={{
-                width: 44, height: 44, borderRadius: '50%',
-                background: 'rgba(255,255,255,0.12)', display: 'flex',
-                alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-              }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </span>
-            </a>
-            <span className="hide-mobile" style={{ fontSize: 'var(--text-xs)', color: 'var(--stone)', marginTop: 14, display: 'block' }}>Setup in days, not months</span>
-          </div>
-        </div>
+      <div style={{ ...W, position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '65vh' }}>
+        {/* Pill */}
+        <span className="rv hero-line" style={{
+          display: 'inline-block', fontSize: 12, fontWeight: 600,
+          color: '#4a6a7a', background: 'rgba(220,240,250,0.85)',
+          borderRadius: 100, padding: '8px 22px',
+          border: 'none',
+          marginBottom: 28, letterSpacing: '0.06em', textTransform: 'uppercase' as const,
+        }}>
+          The World's First Care Enablement Platform
+        </span>
 
-        {/* Hero visual — dark product card */}
-        <div className="hero-visual" style={{ maxWidth: 400 }}>
-          <div className="card-lift" style={{
-            background: 'var(--green-900)', borderRadius: 28,
-            padding: '36px 32px', position: 'relative', overflow: 'hidden',
-            boxShadow: '0 20px 60px rgba(26,46,31,0.25), 0 4px 12px rgba(26,46,31,0.1)',
-          }}>
-            {/* Subtle glow in corner */}
-            <div style={{ position: 'absolute', top: -40, right: -40, width: 160, height: 160, borderRadius: '50%', background: 'radial-gradient(circle, rgba(74,124,63,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        <h1 className="rv-scale" style={{
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 6.5vw, 88px)',
+          fontWeight: 400, lineHeight: 1.08, letterSpacing: '-2px',
+          color: '#fff', marginBottom: 20,
+          textShadow: '0 2px 24px rgba(0,0,0,0.25)',
+        }}>
+          The future of intake is here.
+        </h1>
 
-            {/* Header */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28, position: 'relative' }}>
-              <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span className="dot-pulse" style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--sage-300)', display: 'block' }} />
-              </div>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>Carelu AI</div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)' }}>Processing intake...</div>
-              </div>
-              <div style={{ marginLeft: 'auto', width: 8, height: 8, borderRadius: '50%', background: '#5E9462' }} />
-            </div>
+        <p className="rv d1" style={{
+          fontSize: 'clamp(15px, 1.6vw, 18px)', color: 'rgba(255,255,255,0.6)',
+          lineHeight: 1.7, maxWidth: 460, marginBottom: 36,
+        }}>
+          Carelu runs your entire intake operation -- from first contact to admitted patient. Built for ABA therapy and behavioral health.
+        </p>
 
-            {/* Progress bar */}
-            <div style={{ height: 3, borderRadius: 2, background: 'rgba(255,255,255,0.08)', marginBottom: 24, overflow: 'hidden' }}>
-              <div style={{ width: '100%', height: '100%', borderRadius: 2, background: 'linear-gradient(90deg, var(--green-700), var(--sage-300))', animation: 'shimmer 2s ease infinite' }} />
-            </div>
-
-            {/* Steps */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {[
-                { text: 'Family reached out', delay: '0.8s' },
-                { text: 'Insurance verified', delay: '1.6s' },
-                { text: 'Documents collected', delay: '2.4s' },
-                { text: 'Ready for assessment', delay: '3.8s', highlight: true },
-              ].map((step) => (
-                <div key={step.text} className="hero-chat-msg" style={{ animationDelay: step.delay,
-                  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                  padding: '14px 16px', borderRadius: 14,
-                  background: step.highlight ? 'rgba(94,148,98,0.15)' : 'rgba(255,255,255,0.05)',
-                  border: step.highlight ? '1px solid rgba(94,148,98,0.3)' : '1px solid rgba(255,255,255,0.06)',
-                }}>
-                  <span style={{
-                    fontSize: 13, fontWeight: step.highlight ? 600 : 400,
-                    color: step.highlight ? '#fff' : 'rgba(255,255,255,0.7)',
-                  }}>{step.text}</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke={step.highlight ? 'var(--sage-300)' : 'rgba(255,255,255,0.3)'}
-                    strokeWidth="2.5" strokeLinecap="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                  </svg>
-                </div>
-              ))}
-            </div>
-
-            {/* Channel badges */}
-            <div style={{ display: 'flex', gap: 6, marginTop: 20, flexWrap: 'wrap' }}>
-              {['Chat', 'Phone', 'SMS', 'Forms', 'Fax'].map((ch) => (
-                <span key={ch} style={{
-                  fontSize: 10, fontWeight: 600, color: 'rgba(255,255,255,0.5)',
-                  background: 'rgba(255,255,255,0.06)', padding: '5px 12px',
-                  borderRadius: 999, letterSpacing: '0.3px',
-                  border: '1px solid rgba(255,255,255,0.06)',
-                }}>{ch}</span>
-              ))}
-            </div>
-          </div>
-        </div>
+        <a href="/demo" className="hero-cta-btn" style={{
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
+          fontSize: 14, fontWeight: 600, color: '#fff',
+          backgroundColor: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(16px)',
+          padding: '14px 32px', borderRadius: 100, textDecoration: 'none',
+          border: '1px solid rgba(255,255,255,0.25)',
+          transition: 'background-color 0.3s, transform 0.2s',
+          letterSpacing: '0.02em',
+        }}
+          onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.25)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+        >
+          Request a Demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
 
     </section>
@@ -363,16 +281,13 @@ function Hero() {
 // ── MARQUEE ──────────────────────────────────────
 function Marquee() {
   const items = ['AI-Powered Intake', 'HIPAA Compliant', 'Insurance Verification', 'ABA Therapy', 'Behavioral Health', '24/7 Availability', 'Document Collection', 'Zero Drop-Off', 'Home Care', 'Addiction Treatment'];
-  // Render 4 copies so even on very wide screens there's never a visible gap.
-  // The CSS keyframe animates from 0 to -50% which equals exactly 2 copies shifting off-screen,
-  // while the other 2 copies are always visible → seamless infinite loop.
   return (
-    <div style={{ borderTop: '1px solid var(--gray-200)', borderBottom: '1px solid var(--gray-200)', padding: '18px 0', overflow: 'hidden', userSelect: 'none' }}>
+    <div style={{ padding: '28px 0', overflow: 'hidden', userSelect: 'none' }}>
       <div className="marquee-track">
         {[0, 1, 2, 3].map((copyIdx) => (
           <span key={copyIdx} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-sm)', fontWeight: 500, letterSpacing: '0.5px', whiteSpace: 'nowrap', color: 'var(--stone)' }}>
             {items.map((item, i) => (
-              <span key={i}>{item}<span style={{ margin: '0 20px', opacity: 0.3 }}>·</span></span>
+              <span key={i}>{item}<span style={{ margin: '0 24px', opacity: 0.25 }}>/</span></span>
             ))}
           </span>
         ))}
@@ -381,7 +296,7 @@ function Marquee() {
   );
 }
 
-// ── LOGO BAR — cycling logos ────────────────────
+// ── LOGO BAR -- cycling logos ────────────────────
 const allLogos = [
   { src: '/logos/strive-aba.png', alt: 'Strive ABA Therapy' },
   { src: '/logos/golden-care.png', alt: 'Golden Care Therapy' },
@@ -399,20 +314,27 @@ const allLogos = [
 
 function LogoBar() {
   return (
-    <div style={{ padding: '56px 0', borderBottom: '1px solid var(--gray-200)' }}>
-      <p style={{ fontSize: 'var(--text-sm)', fontWeight: 500, color: 'var(--gray-500)', textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>
+    <div style={{ padding: '72px 0 80px' }}>
+      <p className="rv" style={{
+        fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 500,
+        letterSpacing: '0.1em', textTransform: 'uppercase' as const,
+        color: 'var(--stone)', textAlign: 'center', marginBottom: 48,
+      }}>
         Trusted by ABA therapy providers nationwide
       </p>
-      <div style={{ overflow: 'hidden' }}>
-        <div className="marquee-track" style={{ animation: 'marqueeScroll 50s linear infinite' }}>
+      <div style={{ overflow: 'hidden', position: 'relative' }}>
+        {/* Fade masks on edges */}
+        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 120, background: 'linear-gradient(to right, var(--white), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 120, background: 'linear-gradient(to left, var(--white), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div className="marquee-track" style={{ animation: 'marqueeScroll 45s linear infinite' }}>
           {[0, 1].map((set) => (
-            <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 80, paddingRight: 80 }}>
+            <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 100, paddingRight: 100 }}>
               {allLogos.map((logo) => (
                 <img
                   key={`${set}-${logo.alt}`}
                   src={logo.src}
                   alt={logo.alt}
-                  style={{ height: 48, width: 'auto', objectFit: 'contain', opacity: 0.75, flexShrink: 0 }}
+                  style={{ height: 72, width: 'auto', objectFit: 'contain', opacity: 0.75, flexShrink: 0 }}
                 />
               ))}
             </div>
@@ -423,285 +345,532 @@ function LogoBar() {
   );
 }
 
-// ── PROBLEM ─────────────────────────────────────
+// ── PROBLEM -- sticky scroll, yarn ball untangles to straight line ──
 function Problem() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [t, setT] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!trackRef.current) return;
+      const rect = trackRef.current.getBoundingClientRect();
+      const trackH = rect.height - window.innerHeight;
+      if (trackH <= 0) return;
+      const raw = -rect.top / trackH;
+      setT(Math.max(0, Math.min(1, raw)));
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+  // Browser tabs representing chaos — overwhelming amount
+  const tabs = [
+    'Monday.com', 'DocuSign', 'IntakeQ', 'Gmail', 'Google Voice',
+    'eFax', 'Outlook', 'Scheduling', 'Insurance...', 'Sheets',
+    'Slack', 'RingCentral', 'Jotform', 'HiMama', 'CentralReach',
+    'Calendly', 'Zoho CRM', 'Fax Queue', 'Voicemail', 'Forms',
+    'Typeform', 'WhatsApp', 'Teams', 'Notion', 'Airtable',
+  ];
+  // Phase 1: t=0→0.08 — just text (very brief)
+  // Phase 2: t=0.08→0.2 — browser + desktop chaos slides up covering text
+  // Phase 3: t=0.2→0.55 — chaos shown, cursor moves to X
+  // Phase 4: t=0.55 — click, close, green + solution
+
+  // Browser enters from bottom-right, slides up to center
+  const browserVisible = t > 0.05;
+  const enterProgress = t < 0.06 ? 0 : Math.min(1, (t - 0.06) / 0.08);
+  const enterEase = 1 - Math.pow(1 - enterProgress, 3);
+  const browserX = (1 - enterEase) * 50; // slides from right
+  const browserY = (1 - enterEase) * 60; // slides from bottom
+
+  // Cursor: appears at t=0.3, reaches X at t=0.5
+  const cursorProgress = t < 0.3 ? 0 : Math.min(1, (t - 0.3) / 0.2);
+  const ce = cursorProgress < 0.5 ? 2 * cursorProgress * cursorProgress : 1 - Math.pow(-2 * cursorProgress + 2, 2) / 2;
+  const cursorX = 55 - ce * 52.5;
+  const cursorY = 65 - ce * 62.5;
+
+  // Close at t=0.55
+  const closed = t > 0.62;
+  const closing = t > 0.55 && !closed;
+  const closeScale = closing ? Math.max(0, 1 - (t - 0.55) * 14) : 1;
+
+  // Background scattered windows — extra chaos around the main browser
+
   return (
-    <section style={{ backgroundColor: 'var(--green-900)', color: '#fff', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', position: 'relative', overflow: 'hidden' }}>
-      <div style={W}>
-        {/* Giant background number — Apple-style drama */}
+    <div ref={trackRef} style={{ height: '600vh', position: 'relative' }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100vh',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+        backgroundColor: t > 0.55 ? '#2C3E50' : '#fff',
+        transition: 'background-color 0.5s',
+        overflow: 'hidden',
+      }}>
+        {/* Earth image — grows as checkmarks light up */}
+        {t > 0.5 && (() => {
+          // Count how many checkmarks are lit
+          const thresholds = [0.58, 0.62, 0.66, 0.70, 0.74, 0.78];
+          const lit = thresholds.filter(th => t > th).length;
+          const earthProgress = lit / thresholds.length; // 0 to 1
 
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          {/* Headline + story — full width */}
-          <div className="rv-left"><Pill dark>What's actually happening</Pill></div>
-          <h2 className="rv-left d1" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.12, color: '#fff', maxWidth: 620, marginBottom: 36 }}>
-            Your intake reps are chasing.<br />It's never enough.
-          </h2>
+          return (
+            <div style={{
+              position: 'absolute', inset: 0, zIndex: 0,
+              overflow: 'hidden',
+            }}>
+              {/* Earth image — grows from center outward */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                backgroundImage: 'url(/earth.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                opacity: earthProgress * 0.5,
+                transform: `scale(${1 + (1 - earthProgress) * 0.3})`,
+                transition: 'all 0.6s ease-out',
+              }} />
+              {/* Green overlay — fades as earth reveals */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: '#2C3E50',
+                opacity: 1 - earthProgress * 0.5,
+                transition: 'opacity 0.6s ease-out',
+              }} />
+            </div>
+          );
+        })()}
 
-          <div className="rv-left d2" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 32 }}>
-            {['Voicemails pile up', 'Diagnoses aren\'t received', 'Forms sit half-finished', 'Consent forms aren\'t signed'].map((line, i) => (
-              <span key={i} style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8,
-                padding: '8px 16px', borderRadius: 100,
-                background: '#fff',
-                fontSize: 14, color: 'var(--green-900)', fontWeight: 500,
+        {/* Text -- centered above browser */}
+        <div style={{
+          textAlign: 'center', position: 'relative', zIndex: 2,
+          padding: '0 36px', marginBottom: 32, width: '100%',
+        }}>
+          {/* Problem text — always visible behind browser, fades when green bg appears */}
+          <div style={{ opacity: t > 0.55 ? 0 : 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
+              <span style={{
+                display: 'inline-block', fontSize: 11, fontWeight: 600,
+                textTransform: 'uppercase' as const, letterSpacing: '0.1em',
+                color: '#999', marginBottom: 20,
               }}>
-                <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--green-700)', flexShrink: 0 }} />
-                {line}
+                What's actually happening
               </span>
-            ))}
-          </div>
-
-          <p className="rv-left d3" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(18px, 2vw, 22px)', color: '#fff', lineHeight: 1.4, margin: '0 0 64px', maxWidth: 480 }}>
-            While you're trying to reach them, they've already called someone else.
-          </p>
-
-          {/* Stats — horizontal row below, full width */}
-          <div className="rv d4" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 36 }}>
-            {[
-              { val: '70%', desc: 'of families abandon intake before completion' },
-              { val: '5+', desc: 'tools duct-taped together to manage one process' },
-              { val: 'Days', desc: 'spent chasing documents and playing phone tag' },
-            ].map((s, i) => (
-              <div key={i} style={{
-                paddingRight: 32,
-                borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
-                paddingLeft: i > 0 ? 32 : 0,
+              <h2 style={{
+                fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)',
+                fontWeight: 400, lineHeight: 1.12, color: '#000', maxWidth: 640, margin: '0 auto 16px',
               }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 48px)', color: '#fff', lineHeight: 1, marginBottom: 8 }}>
-                  {s.val}
-                </div>
-                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', lineHeight: 1.5 }}>
-                  {s.desc}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ── APPLE-STYLE: Big 3D sphere, typography does the work ──
-function HubDiagram() {
-  return (
-    <>
-      <section style={{ background: 'var(--bone)', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-        <div style={W}>
-          {/* Header */}
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <Pill>How it works</Pill>
-            <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12 }}>
-              One platform. Every channel. Always on.
-            </h2>
-          </div>
-
-          {/* Channel pills + sphere + exit dots — single centered column */}
-          <div className="rv-scale" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 48 }}>
-            {/* Channel pills */}
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 20 }}>
-              {['Phone', 'Text', 'Chat', 'Forms', 'Fax'].map(ch => (
-                <span key={ch} style={{
-                  padding: '8px 20px', borderRadius: 100,
-                  border: '1px solid var(--sage-200)', background: '#fff',
-                  fontSize: 13, fontWeight: 600, color: 'var(--green-800)',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                }}>{ch}</span>
-              ))}
+                You're juggling multiple systems for inquiries, forms, insurance, and scheduling.
+              </h2>
+              <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
+                Creating a messy intake process that loses families before they ever get to care.
+              </p>
+            </div>
+          {/* Solution text — fades in after close */}
+          <div style={{ opacity: t > 0.6 ? 1 : 0, transition: 'opacity 0.4s', position: 'absolute', inset: 0 }}>
+              <span style={{
+                display: 'inline-block', fontSize: 11, fontWeight: 600,
+                textTransform: 'uppercase' as const, letterSpacing: '0.1em',
+                color: 'var(--sage-300)', marginBottom: 20,
+              }}>
+                Introducing Carelu
+              </span>
+              <h2 style={{
+                fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)',
+                fontWeight: 400, lineHeight: 1.12, color: '#fff', maxWidth: 640, margin: '0 auto 16px',
+              }}>
+                One platform. Every channel. Always on.
+              </h2>
+              <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
+                Carelu is AI intake infrastructure that makes sure every family who can receive care does.
+              </p>
             </div>
 
-            {/* Single SVG: channels flow in → sphere → process labels → ready */}
-            <svg viewBox="0 0 500 480" style={{ width: '100%', maxWidth: 520, height: 'auto' }}>
-              <defs>
-                <radialGradient id="sphere" cx="36%" cy="33%" r="55%">
-                  <stop offset="0%" stopColor="#6B8F6E" />
-                  <stop offset="30%" stopColor="#3A5A3C" />
-                  <stop offset="100%" stopColor="#0F1F11" />
-                </radialGradient>
-                <radialGradient id="sphereShadow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#0F1F11" stopOpacity="0.12" />
-                  <stop offset="100%" stopColor="#0F1F11" stopOpacity="0" />
-                </radialGradient>
-                <radialGradient id="sphereGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#4A7C3F" stopOpacity="0.06" />
-                  <stop offset="100%" stopColor="#4A7C3F" stopOpacity="0" />
-                </radialGradient>
-                {/* Inbound: 5 channel positions → sphere */}
-                {[55, 140, 250, 360, 445].map((sx, i) => (
-                  <path key={`ip${i}`} id={`ip${i}`} d={`M${sx},0 C${sx},50 250,100 250,155`} fill="none" />
-                ))}
-                {/* Outbound: sphere → each label */}
-                {[
-                  'M250,230 Q170,265 95,290',
-                  'M250,230 Q230,265 220,290',
-                  'M250,230 Q310,265 380,290',
-                  'M250,230 Q160,310 115,340',
-                  'M250,230 Q250,310 245,340',
-                  'M250,230 Q330,310 385,340',
-                ].map((d, i) => (
-                  <path key={`op${i}`} id={`op${i}`} d={d} fill="none" />
-                ))}
-                {/* Converge: labels → ready pill */}
-                {[
-                  'M95,300 Q160,400 250,440',
-                  'M220,300 Q235,390 250,440',
-                  'M380,300 Q320,400 250,440',
-                  'M115,350 Q175,410 250,440',
-                  'M245,350 Q248,410 250,440',
-                  'M385,350 Q320,410 250,440',
-                ].map((d, i) => (
-                  <path key={`cp${i}`} id={`cp${i}`} d={d} fill="none" />
-                ))}
-              </defs>
+          {/* Spacer for layout height */}
+          <div style={{ visibility: 'hidden' }}>
+            <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.12, maxWidth: 640, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
+            <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
+          </div>
+        </div>
 
-              {/* Ambient glow */}
-              <circle cx="250" cy="185" r="140" fill="url(#sphereGlow)" />
-
-              {/* Shadow */}
-              <ellipse cx="250" cy="240" rx="65" ry="8" fill="url(#sphereShadow)" />
-
-              {/* Sphere — larger */}
-              <circle cx="250" cy="175" r="65" fill="url(#sphere)" />
-              <ellipse cx="238" cy="158" rx="20" ry="12" fill="#fff" opacity="0.06" />
-
-              {/* Pulse */}
-              <circle cx="250" cy="175" r="65" fill="none" stroke="#1A2E1F" strokeWidth="0.8">
-                <animate attributeName="r" values="65;78;65" dur="3.5s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.12;0;0.12" dur="3.5s" repeatCount="indefinite" />
-              </circle>
-
-              {/* Logo */}
-              <text x="250" y="178" textAnchor="middle" dominantBaseline="middle"
-                fill="#fff" fontFamily="EB Garamond, serif" fontSize="18" fontWeight="500">carelu</text>
-
-              {/* Inbound dots — bigger, more visible */}
-              {[55, 140, 250, 360, 445].map((_, i) => (
-                <circle key={`id${i}`} r="5" fill="#1A2E1F">
-                  <animateMotion dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`}>
-                    <mpath href={`#ip${i}`} />
-                  </animateMotion>
-                  <animate attributeName="opacity" values="0;0.6;0.45;0" dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`} />
-                  <animate attributeName="r" values="5;2.5" dur={`${2 + i * 0.2}s`} repeatCount="indefinite" begin={`${i * 0.4}s`} />
-                </circle>
+        {/* Desktop chaos -- slides up, covers text, then closes */}
+        {browserVisible && !closed && (
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 5,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          transform: `translate(${browserX}%, ${browserY}%) scale(${closeScale})`,
+          opacity: closeScale,
+          transformOrigin: 'top left',
+          transition: closing ? 'transform 0.15s, opacity 0.15s' : 'transform 0.2s ease-out',
+          padding: '3vh 2%',
+        }}>
+        {/* Main browser -- centered */}
+        <div style={{ width: '100%', maxWidth: 950, position: 'relative', zIndex: 5, margin: '0 auto' }}>
+          <div style={{
+            background: '#f0f0f0', borderRadius: 12, overflow: 'hidden',
+            boxShadow: '0 16px 80px rgba(0,0,0,0.18)', border: '1px solid #ccc',
+          }}>
+            {/* Title bar */}
+            <div style={{ display: 'flex', alignItems: 'center', padding: '10px 16px', background: '#e4e4e4', gap: 10 }}>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <div style={{
+                  width: 14, height: 14, borderRadius: '50%',
+                  background: t > 0.48 ? '#ff3b30' : '#ff5f57',
+                  boxShadow: t > 0.48 ? '0 0 16px rgba(255,59,48,0.7)' : 'none',
+                  transform: t > 0.48 ? 'scale(1.5)' : 'scale(1)',
+                  transition: 'all 0.15s',
+                }} />
+                <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#ffbd2e' }} />
+                <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#28c840' }} />
+              </div>
+            </div>
+            {/* Tab bar -- overflowing */}
+            <div style={{ display: 'flex', background: '#d8d8d8', overflow: 'hidden', height: 34 }}>
+              {tabs.map((tab, i) => (
+                <div key={i} style={{
+                  flex: '0 0 auto', padding: '7px 12px', fontSize: 10, fontWeight: 500,
+                  color: '#555', background: i === 0 ? '#f5f5f5' : '#e0e0e0',
+                  borderRight: '1px solid #c8c8c8', whiteSpace: 'nowrap',
+                  display: 'flex', alignItems: 'center', gap: 5,
+                }}>
+                  {tab}
+                  <span style={{ fontSize: 8, color: '#aaa' }}>x</span>
+                </div>
               ))}
+            </div>
+            {/* Content -- more windows, more square */}
+            <div style={{ position: 'relative', height: 340, background: '#f5f5f5', overflow: 'hidden' }}>
+              {/* DocuSign -- signature UI */}
+              <div style={{ position: 'absolute', left: 5, top: 5, width: 220, height: 195, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#333' }}>DocuSign</div>
+                <div style={{ padding: 10 }}>
+                  <div style={{ height: 6, background: '#eee', borderRadius: 3, width: '80%', marginBottom: 8 }} />
+                  <div style={{ height: 6, background: '#eee', borderRadius: 3, width: '60%', marginBottom: 12 }} />
+                  <div style={{ border: '1.5px dashed #ccc', borderRadius: 4, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 9, color: '#bbb', marginBottom: 10 }}>Sign here</div>
+                  <div style={{ background: '#4898D1', borderRadius: 4, padding: '5px 0', textAlign: 'center', fontSize: 9, color: '#fff', fontWeight: 600 }}>SIGN</div>
+                </div>
+              </div>
 
-              {/* Outbound dots */}
-              {[0, 1, 2, 3, 4, 5].map(i => (
-                <circle key={`od${i}`} r="3.5" fill="#1A2E1F">
-                  <animateMotion dur={`${1.2 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.6}s`}>
-                    <mpath href={`#op${i}`} />
-                  </animateMotion>
-                  <animate attributeName="opacity" values="0;0.5;0.3;0" dur={`${1.2 + (i % 3) * 0.15}s`} repeatCount="indefinite" begin={`${i * 0.6}s`} />
-                </circle>
-              ))}
+              {/* Gmail -- email list */}
+              <div style={{ position: 'absolute', left: 190, top: 15, width: 240, height: 205, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#c5221f' }}>Gmail - 47 unread</div>
+                <div style={{ padding: 0 }}>
+                  {['Re: Insurance card needed', 'Fwd: Missing diagnosis report', 'URGENT: Parent callback', 'Intake form - Jake M.'].map((e, j) => (
+                    <div key={j} style={{ padding: '7px 10px', borderBottom: '1px solid #f5f5f5', fontSize: 9, color: j < 2 ? '#000' : '#666', fontWeight: j < 2 ? 600 : 400, display: 'flex', gap: 6 }}>
+                      <span style={{ width: 5, height: 5, borderRadius: '50%', background: j < 2 ? '#c5221f' : 'transparent', flexShrink: 0, marginTop: 2 }} />
+                      {e}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-              {/* Converge dots */}
-              {[0, 1, 2, 3, 4, 5].map(i => (
-                <circle key={`cd${i}`} r="3" fill="#1A2E1F">
-                  <animateMotion dur={`${1 + (i % 3) * 0.1}s`} repeatCount="indefinite" begin={`${i * 0.6 + 0.8}s`}>
-                    <mpath href={`#cp${i}`} />
-                  </animateMotion>
-                  <animate attributeName="opacity" values="0;0.35;0.2;0" dur={`${1 + (i % 3) * 0.1}s`} repeatCount="indefinite" begin={`${i * 0.6 + 0.8}s`} />
-                </circle>
-              ))}
+              {/* Monday.com -- kanban board */}
+              <div style={{ position: 'absolute', left: 380, top: 8, width: 230, height: 200, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#ff3d57' }}>Monday.com</div>
+                <div style={{ display: 'flex', gap: 4, padding: 6 }}>
+                  {[{ label: 'New', n: 12, c: '#579bfc' }, { label: 'Stuck', n: 14, c: '#e2445c' }, { label: 'Done', n: 3, c: '#00c875' }].map((col, j) => (
+                    <div key={j} style={{ flex: 1 }}>
+                      <div style={{ fontSize: 8, fontWeight: 600, color: col.c, marginBottom: 4 }}>{col.label} ({col.n})</div>
+                      {[0, 1, 2].map(k => (
+                        <div key={k} style={{ height: 14, background: '#f5f5f5', borderRadius: 3, marginBottom: 3, borderLeft: `3px solid ${col.c}` }} />
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-              {/* Process labels — row 1, evenly spaced */}
-              {[
-                { text: 'Insurance card', x: 110, y: 296 },
-                { text: 'Consent form', x: 250, y: 296 },
-                { text: 'Diagnosis', x: 390, y: 296 },
-              ].map((p, i) => (
-                <text key={`r1${i}`} x={p.x} y={p.y} textAnchor="middle" dominantBaseline="middle"
-                  fontFamily="EB Garamond, serif" fontSize="15" fontWeight="400" fontStyle="italic">
-                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.6s" begin={`${i * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.6s" begin={`${i * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  {p.text}
-                </text>
-              ))}
-              {/* Process labels — row 2, evenly spaced */}
-              {[
-                { text: 'Follow-up', x: 110, y: 346 },
-                { text: 'Eligibility', x: 250, y: 346 },
-                { text: 'Scheduling', x: 390, y: 346 },
-              ].map((p, i) => (
-                <text key={`r2${i}`} x={p.x} y={p.y} textAnchor="middle" dominantBaseline="middle"
-                  fontFamily="EB Garamond, serif" fontSize="15" fontWeight="400" fontStyle="italic">
-                  <animate attributeName="fill" values="#1A2E1F;#4A7C3F;#4A7C3F;#1A2E1F" dur="3.6s" begin={`${(i + 3) * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  <animate attributeName="opacity" values="0.5;1;1;0.5" dur="3.6s" begin={`${(i + 3) * 0.6}s`} repeatCount="indefinite" keyTimes="0;0.08;0.2;0.35" />
-                  {p.text}
-                </text>
-              ))}
+              {/* IntakeQ -- form */}
+              <div style={{ position: 'absolute', left: 70, top: 90, width: 200, height: 185, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#2d9cdb' }}>IntakeQ</div>
+                <div style={{ padding: 8 }}>
+                  {['Patient Name', 'Date of Birth', 'Insurance ID', 'Diagnosis'].map((f, j) => (
+                    <div key={j} style={{ marginBottom: 6 }}>
+                      <div style={{ fontSize: 7, color: '#999', marginBottom: 2 }}>{f}</div>
+                      <div style={{ height: 14, background: j === 3 ? '#fff3f3' : '#f8f8f8', borderRadius: 3, border: `1px solid ${j === 3 ? '#e88' : '#eee'}` }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-              {/* Ready for assessment pill — centered, larger */}
-              <rect x="100" y="418" width="300" height="48" rx="24" fill="#1A2E1F" />
-              <text x="250" y="443" textAnchor="middle" dominantBaseline="middle"
-                fontFamily="DM Sans, sans-serif" fontSize="16" fontWeight="600" fill="#fff">
-                Ready for assessment  ✓
-              </text>
-            </svg>
+              {/* eFax */}
+              <div style={{ position: 'absolute', left: 310, top: 110, width: 195, height: 175, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#666' }}>eFax - 3 incoming</div>
+                <div style={{ padding: 8 }}>
+                  {['Dr. Patel - 6 pages', 'Pediatrics referral', 'Insurance auth'].map((f, j) => (
+                    <div key={j} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '5px 0', borderBottom: '1px solid #f5f5f5', fontSize: 9, color: '#555' }}>
+                      <div style={{ width: 16, height: 20, background: '#f0f0f0', borderRadius: 2, border: '1px solid #ddd', flexShrink: 0 }} />
+                      {f}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Google Sheets -- spreadsheet */}
+              <div style={{ position: 'absolute', left: 25, top: 160, width: 210, height: 170, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#0f9d58' }}>Google Sheets</div>
+                <div style={{ padding: 4 }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 1 }}>
+                    {['Name', 'Status', 'Ins.', 'Jake M.', 'Pending', '---', 'Sarah T.', 'Missing', '---', 'Ryan K.', 'Called', 'Yes'].map((cell, j) => (
+                      <div key={j} style={{ fontSize: 7, padding: '3px 4px', background: j < 3 ? '#f0f0f0' : '#fff', border: '1px solid #eee', color: cell === '---' ? '#ddd' : cell === 'Missing' ? '#c00' : '#555', fontWeight: j < 3 ? 600 : 400 }}>{cell}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Calendly */}
+              <div style={{ position: 'absolute', left: 510, top: 40, width: 195, height: 185, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#006BFF' }}>Calendly</div>
+                <div style={{ padding: 8 }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 2, marginBottom: 8 }}>
+                    {Array.from({ length: 21 }, (_, j) => (
+                      <div key={j} style={{ height: 12, borderRadius: 2, background: j === 8 || j === 15 ? '#006BFF' : '#f5f5f5', fontSize: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: j === 8 || j === 15 ? '#fff' : '#bbb' }}>{j + 1}</div>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 8, color: '#999' }}>Next slot: 2 weeks out</div>
+                  <div style={{ fontSize: 8, color: '#c00', marginTop: 3 }}>Waitlist: 9 families</div>
+                </div>
+              </div>
+
+              {/* RingCentral */}
+              <div style={{ position: 'absolute', left: 460, top: 150, width: 210, height: 170, background: '#fff', borderRadius: 6, border: '1px solid #ddd', boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }}>
+                <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#f80' }}>RingCentral</div>
+                <div style={{ padding: 8 }}>
+                  {[{ label: 'Missed calls', val: '7', c: '#c00' }, { label: 'Voicemails', val: '4 new', c: '#f80' }, { label: 'Avg hold', val: '8 min', c: '#999' }].map((s, j) => (
+                    <div key={j} style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #f5f5f5', fontSize: 9 }}>
+                      <span style={{ color: '#666' }}>{s.label}</span>
+                      <span style={{ color: s.c, fontWeight: 600 }}>{s.val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
-      </section>
-    </>
-  );
-}
-
-// ── SCALE SECTION — capability cards ────────────
-function ScaleSection() {
-  return (
-    <section style={{ background: 'var(--sage-50)', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <Pill>The platform</Pill>
-          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12 }}>
-            Scale your practice on your terms.
-          </h2>
-          <p className="rv d1" style={{ fontSize: 15, color: 'var(--stone)', margin: '16px auto 0', maxWidth: 440 }}>
-            Immediately answer every call, text, and chat. Qualify families. Collect every document. Complete every intake.
-          </p>
-        </div>
-
-        <div className="mobile-stack rv d2" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+          {/* Stacked app windows ON TOP — layered over the browser */}
           {[
-            {
-              title: 'Capture',
-              desc: 'Answer every call, text, chat, form, and fax — 24/7, in English and Spanish. No family waits.',
-              stat: '24/7',
-              statLabel: 'Response coverage',
-            },
-            {
-              title: 'Qualify & Collect',
-              desc: 'Verify insurance, collect diagnosis reports, gather consent forms — all by conversation, automatically.',
-              stat: '85%',
-              statLabel: 'Intake completion rate',
-            },
-            {
-              title: 'Intake Complete',
-              desc: 'Every qualified family moves to assessment-ready. No manual handoff, no delays, no one forgotten.',
-              stat: 'Minutes',
-              statLabel: 'To assessment-ready',
-            },
-          ].map((card, i) => (
-            <div key={i} className={`rv d${i + 1}`} style={{
-              background: '#fff', borderRadius: 'var(--radius)', padding: '36px 28px',
-              border: '1px solid var(--sage-200)',
-              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.06)',
-            }}>
-              <div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--green-900)', marginBottom: 12 }}>{card.title}</div>
-                <p style={{ fontSize: 14, color: 'var(--stone)', lineHeight: 1.6, margin: 0 }}>{card.desc}</p>
+            { name: 'Slack - #intake-team', left: '-5%', top: '-52%', w: 230, h: 200, z: 4, content: (
+              <div style={{ padding: 8 }}>
+                {[{ u: 'Sarah', m: 'Did anyone call back the Thompson family?', t: '2:14 PM' }, { u: 'Mike', m: 'I thought Rachel was handling it', t: '2:16 PM' }, { u: 'Rachel', m: 'Which one? I have 6 pending', t: '2:18 PM' }].map((msg, j) => (
+                  <div key={j} style={{ marginBottom: 8 }}>
+                    <div style={{ fontSize: 8, color: '#999' }}><span style={{ fontWeight: 700, color: '#333' }}>{msg.u}</span> {msg.t}</div>
+                    <div style={{ fontSize: 9, color: '#555', marginTop: 1 }}>{msg.m}</div>
+                  </div>
+                ))}
               </div>
-              <div style={{ marginTop: 28, paddingTop: 20, borderTop: '1px solid var(--sage-200)' }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, color: 'var(--green-900)', lineHeight: 1, marginBottom: 4 }}>{card.stat}</div>
-                <div style={{ fontSize: 12, color: 'var(--stone)' }}>{card.statLabel}</div>
+            )},
+            { name: 'WhatsApp Web', left: '55%', top: '-60%', w: 220, h: 190, z: 4, content: (
+              <div style={{ padding: 8 }}>
+                {['Mom: Is my son on the waitlist?', 'Mom: Hello??', 'Mom: I called twice yesterday', 'Mom: Should I try another clinic?'].map((m, j) => (
+                  <div key={j} style={{ background: j < 3 ? '#dcf8c6' : '#fff', borderRadius: 6, padding: '4px 8px', fontSize: 9, color: '#333', marginBottom: 4, maxWidth: '85%', marginLeft: j < 3 ? 'auto' : 0 }}>{m}</div>
+                ))}
+              </div>
+            )},
+            { name: 'Microsoft Teams', left: '88%', top: '65%', w: 210, h: 180, z: 4, content: (
+              <div style={{ padding: 8 }}>
+                <div style={{ fontSize: 8, color: '#999', marginBottom: 6 }}>Intake Standup - 3 participants</div>
+                {['23 families in pipeline', '7 missing insurance cards', '4 awaiting diagnosis', '11 no follow-up in 5+ days'].map((l, j) => (
+                  <div key={j} style={{ fontSize: 9, color: j > 1 ? '#c00' : '#555', marginBottom: 4 }}>{l}</div>
+                ))}
+              </div>
+            )},
+            { name: 'Outlook - Calendar', left: '-15%', top: '88%', w: 225, h: 185, z: 4, content: (
+              <div style={{ padding: 6 }}>
+                {['9:00 - Parent callback (overdue)', '10:30 - Insurance follow-up x3', '1:00 - DocuSign reminders', '2:30 - Fax Dr. Patel AGAIN'].map((e, j) => (
+                  <div key={j} style={{ fontSize: 9, padding: '4px 6px', borderLeft: `3px solid ${j === 0 ? '#c00' : j === 3 ? '#f80' : '#4A7C3F'}`, marginBottom: 5, color: '#444' }}>{e}</div>
+                ))}
+              </div>
+            )},
+            { name: 'Notion - SOPs', left: '45%', top: '135%', w: 200, h: 150, z: 4, content: (
+              <div style={{ padding: 8 }}>
+                <div style={{ fontSize: 9, fontWeight: 600, color: '#333', marginBottom: 6 }}>Intake Process v4.2</div>
+                <div style={{ fontSize: 8, color: '#999' }}>Last updated: 3 months ago</div>
+                <div style={{ fontSize: 8, color: '#c00', marginTop: 4 }}>!! Nobody follows this !!</div>
+              </div>
+            )},
+          ].map((win, i) => (
+            <div key={`stack${i}`} style={{
+              position: 'absolute', left: win.left, top: win.top, width: win.w, height: win.h,
+              background: '#fff', borderRadius: 8, border: '1px solid #ddd',
+              boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
+              zIndex: win.z, overflow: 'hidden',
+            }}>
+              <div style={{ padding: '6px 10px', borderBottom: '1px solid #eee', fontSize: 10, fontWeight: 600, color: '#333', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8f8f8' }}>
+                {win.name}
+                <span style={{ color: '#ccc', fontSize: 9 }}>x</span>
+              </div>
+              {win.content}
+            </div>
+          ))}
+
+          {/* Extra scattered windows — some peeking over the main browser edges */}
+          {[
+            { name: 'Google Forms', left: '35%', top: '-65%', w: 200, h: 140 },
+            { name: 'Fax Machine', left: '60%', top: '-55%', w: 180, h: 130 },
+            { name: 'Phone Log', left: '60%', top: '135%', w: 180, h: 125 },
+          ].map((w, i) => (
+            <div key={`extra${i}`} style={{
+              position: 'absolute', left: w.left, top: w.top, width: w.w, height: w.h,
+              background: '#fff', borderRadius: 8, border: '1px solid #ddd',
+              boxShadow: '0 3px 16px rgba(0,0,0,0.08)', zIndex: 2,
+              overflow: 'hidden',
+            }}>
+              <div style={{ padding: '5px 8px', borderBottom: '1px solid #eee', fontSize: 9, fontWeight: 600, color: '#555', display: 'flex', justifyContent: 'space-between', background: '#f8f8f8' }}>
+                {w.name}
+                <span style={{ color: '#ccc', fontSize: 8 }}>x</span>
+              </div>
+              <div style={{ padding: 8 }}>
+                {[0, 1, 2, 3].map(j => (
+                  <div key={j} style={{ height: 6, background: j === 0 ? '#e8e8e8' : '#f3f3f3', borderRadius: 3, marginBottom: 5, width: `${45 + j * 14}%` }} />
+                ))}
               </div>
             </div>
           ))}
+
+          {/* Mouse cursor -- BIG */}
+          {t > 0.25 && (
+            <div style={{
+              position: 'absolute',
+              left: `${cursorX}%`, top: `${cursorY}%`,
+              transition: 'left 0.08s ease-out, top 0.08s ease-out',
+              zIndex: 10, pointerEvents: 'none',
+              filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.35))',
+            }}>
+              <svg width="40" height="48" viewBox="0 0 20 24" fill="none">
+                <path d="M1 1L1 18L6 13L11 22L14 20L9 12L16 12L1 1Z" fill="#000" stroke="#fff" strokeWidth="1" />
+              </svg>
+            </div>
+          )}
         </div>
+        </div>
+        )}
+
+        {/* Horizontal stage pipeline -- checkmarks light up one by one */}
+        {t > 0.52 && (
+          <div style={{
+            position: 'absolute', top: '72%', left: 0, right: 0, zIndex: 8,
+            display: 'flex', justifyContent: 'center',
+            opacity: t > 0.65 ? 1 : 0, transition: 'opacity 0.3s',
+            padding: '0 24px',
+          }}>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-start', maxWidth: 800, width: '100%', margin: '0 auto' }}>
+              {/* Background connecting line */}
+              <div style={{ position: 'absolute', top: 28, left: '8%', right: '8%', height: 2, background: 'rgba(255,255,255,0.06)', zIndex: 0 }} />
+              {[
+                { label: 'Insurance card', threshold: 0.58 },
+                { label: 'Consent forms', threshold: 0.62 },
+                { label: 'Diagnosis', threshold: 0.66 },
+                { label: 'Follow-up', threshold: 0.70 },
+                { label: 'Eligibility', threshold: 0.74 },
+                { label: 'Scheduling', threshold: 0.78 },
+              ].map((item, i, arr) => {
+                const visible = t > item.threshold;
+                return (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', flex: '1 1 0', minWidth: 0 }}>
+                    <div style={{
+                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10,
+                      width: '100%',
+                    }}>
+                      {/* Glowing checkmark — bigger glow */}
+                      <div style={{
+                        width: 56, height: 56, borderRadius: '50%',
+                        background: visible ? 'rgba(58, 138, 176, 0.9)' : 'rgba(255,255,255,0.06)',
+                        border: visible ? '2.5px solid rgba(58, 138, 176, 0.5)' : '2px solid rgba(255,255,255,0.1)',
+                        boxShadow: visible ? '0 0 30px rgba(58, 138, 176, 0.5), 0 0 60px rgba(58, 138, 176, 0.2), 0 0 100px rgba(58, 138, 176, 0.08)' : 'none',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        transition: 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+                        transform: visible ? 'scale(1)' : 'scale(0.7)',
+                      }}>
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                          stroke={visible ? '#fff' : 'rgba(255,255,255,0.12)'}
+                          strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                          style={{ transition: 'stroke 0.3s' }}>
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </div>
+                      <span style={{
+                        fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 600,
+                        color: visible ? '#fff' : 'rgba(255,255,255,0.12)',
+                        transition: 'color 0.3s',
+                        textAlign: 'center', whiteSpace: 'nowrap',
+                      }}>
+                        {item.label}
+                      </span>
+                    </div>
+                    {/* Connecting line -- hidden, using background line instead */}
+                    {i < arr.length - 1 && (
+                      <div style={{
+                        display: 'none',
+                      }} />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+        {/* Channel ring — removed, now in HowCarelu section */}
+        {false && t > 0.82 && (
+          <div style={{
+            position: 'absolute', inset: 0, zIndex: 9,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            opacity: t > 0.85 ? 1 : (t - 0.82) * 33,
+            transition: 'opacity 0.2s',
+          }}>
+            <div style={{ position: 'relative', width: 320, height: 320 }}>
+              {/* Ring line */}
+              <svg viewBox="0 0 320 320" style={{ position: 'absolute', inset: 0 }}>
+                <circle cx="160" cy="160" r="130" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
+              </svg>
+
+              {/* Center */}
+              <div style={{
+                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                width: 100, height: 100, borderRadius: '50%', background: 'rgba(255,255,255,0.08)',
+                border: '1.5px solid rgba(255,255,255,0.15)',
+                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+              }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: '#fff', letterSpacing: '0.05em' }}>ALL</div>
+                <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.08em' }}>CHANNELS</div>
+              </div>
+
+              {/* Channel nodes */}
+              {['Phone', 'Text', 'Chat', 'Forms', 'Fax', 'Email'].map((ch, i, arr) => {
+                const angle = (-90 + (i / arr.length) * 360) * (Math.PI / 180);
+                const x = 160 + Math.cos(angle) * 130;
+                const y = 160 + Math.sin(angle) * 130;
+                const threshold = 0.86 + i * 0.015;
+                const visible = t > threshold;
+
+                return (
+                  <div key={ch} style={{
+                    position: 'absolute',
+                    left: x - 28, top: y - 28,
+                    width: 56, height: 56, borderRadius: '50%',
+                    background: visible ? 'rgba(74,124,63,0.9)' : 'rgba(255,255,255,0.06)',
+                    border: visible ? '2px solid rgba(138,200,120,0.6)' : '2px solid rgba(255,255,255,0.1)',
+                    boxShadow: visible ? '0 0 24px rgba(74,124,63,0.5)' : 'none',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                    transform: visible ? 'scale(1)' : 'scale(0.7)',
+                  }}>
+                    <span style={{ fontSize: 11, fontWeight: 600, color: visible ? '#fff' : 'rgba(255,255,255,0.2)', transition: 'color 0.3s' }}>{ch}</span>
+                  </div>
+                );
+              })}
+
+              {/* Connecting lines */}
+              <svg viewBox="0 0 320 320" style={{ position: 'absolute', inset: 0 }}>
+                {['Phone', 'Text', 'Chat', 'Forms', 'Fax', 'Email'].map((_, i, arr) => {
+                  const angle = (-90 + (i / arr.length) * 360) * (Math.PI / 180);
+                  const x = 160 + Math.cos(angle) * 130;
+                  const y = 160 + Math.sin(angle) * 130;
+                  return <line key={i} x1="160" y1="160" x2={x} y2={y} stroke="rgba(255,255,255,0.08)" strokeWidth="1" strokeDasharray="4 4" />;
+                })}
+              </svg>
+            </div>
+          </div>
+        )}
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -750,7 +919,7 @@ const customerStories = [
   {
     logo: '/logos/blossom-aba.webp',
     photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=900&fit=crop&crop=faces',
-    quote: "The follow-up alone saved us 20 hours a week. Parents get nudged for missing documents automatically — our team just reviews completed cases.",
+    quote: "The follow-up alone saved us 20 hours a week. Parents get nudged for missing documents automatically -- our team just reviews completed cases.",
     name: 'Michael R.',
     role: 'Regional Director',
     company: 'Blossom ABA',
@@ -812,7 +981,7 @@ function CustomerStories() {
           </p>
         </div>
 
-        {/* Tall portrait cards — Brellium style with photos */}
+        {/* Tall portrait cards -- Brellium style with photos */}
         <div ref={scrollRef} className="stories-row" style={{ display: 'flex', gap: 16, overflow: 'hidden', paddingBottom: 8 }}>
           {tripled.map((story, i) => (
             <div key={`${story.name}-${i}`} style={{
@@ -828,7 +997,7 @@ function CustomerStories() {
               <img src={story.photo} alt={story.name}
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
               />
-              {/* Dark gradient overlay — heavier at bottom for text readability */}
+              {/* Dark gradient overlay -- heavier at bottom for text readability */}
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0) 10%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.7) 75%, rgba(0,0,0,0.85) 100%)', pointerEvents: 'none' }} />
 
               <div style={{ position: 'relative', zIndex: 1, padding: '32px 24px 28px' }}>
@@ -876,8 +1045,8 @@ function CustomerStories() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 64, borderTop: '1px solid var(--gray-200)', paddingTop: 40 }}>
           {[
             { stat: '60% → 15%', desc: 'Family drop-off rate, first month with Carelu' },
-            { stat: '0 missed', desc: 'Every lead followed up — no one falls through the cracks' },
-            { stat: '24 / 7', desc: 'Nights, weekends, holidays — never miss a family' },
+            { stat: '0 missed', desc: 'Every lead followed up -- no one falls through the cracks' },
+            { stat: '24 / 7', desc: 'Nights, weekends, holidays -- never miss a family' },
           ].map((s, i) => (
             <div key={s.stat} className={`rv d${i + 1}`} style={{ padding: '0 24px', borderLeft: i > 0 ? '1px solid var(--gray-200)' : 'none' }}>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)', color: 'var(--green-900)', marginBottom: 8 }}>{s.stat}</div>
@@ -890,98 +1059,39 @@ function CustomerStories() {
   );
 }
 
-// ── STICKY PRODUCT TOUR — feature-based ─────────
-const tourSteps = [
-  {
-    time: '11:14 PM',
-    scenario: 'A parent texts your intake number.',
-    title: 'Carelu answers. Instantly.',
-    desc: "No hold music. No voicemail. No \"we'll get back to you.\" Whether it's chat, phone, SMS, a web form, or even a fax — Carelu responds in under 3 seconds with a warm, intelligent conversation in English or Spanish.",
-    pills: ['Chat', 'Phone', 'SMS', 'Forms', 'Fax'],
-    mockup: 'chat',
-  },
-  {
-    time: '11:16 PM',
-    scenario: '"We have Blue Cross."',
-    title: 'Lead qualified. In 14 seconds.',
-    desc: "Carelu checks insurance, age, diagnosis status, location, and more — all during the conversation. Qualified leads move forward instantly. Unqualified ones get flagged before your team spends a minute on them.",
-    pills: ['Insurance', 'Age', 'Diagnosis', 'Location'],
-    mockup: 'eligibility',
-  },
-  {
-    time: 'Day 0 – Day 2',
-    scenario: 'Every document, collected automatically.',
-    title: 'Documentation handled for you.',
-    desc: "Insurance cards, diagnosis reports, consent forms, HIPAA authorization — collected via text. Progress tracked automatically. Case marked intake-ready when complete.",
-    pills: ['Auto-collect', 'Text uploads', 'Progress tracking'],
-    mockup: 'documentation',
-  },
-  {
-    time: 'Day 1, 9 AM',
-    scenario: 'One document is still missing.',
-    title: "Carelu follows up. Your team doesn't have to.",
-    desc: "Friendly text nudges, reminders, and follow-ups — all automatic. Your team only sees fully prepared, ready-for-assessment cases.",
-    pills: ['SMS nudges', 'Full timeline', 'Ready for assessment'],
-    mockup: 'followup',
-  },
-];
-
-/**
- * Sequential transition: fade out → swap content → fade in.
- * Container always wraps the displayed content exactly — no overlap, no empty space.
- */
-function useSequentialSwap(value: number, fadeOutMs: number = 280) {
-  const [displayed, setDisplayed] = useState(value);
-  const [phase, setPhase] = useState<'in' | 'out'>('in');
-  useEffect(() => {
-    if (value === displayed) return;
-    setPhase('out');
-    const t = setTimeout(() => {
-      setDisplayed(value);
-      setPhase('in');
-    }, fadeOutMs);
-    return () => clearTimeout(t);
-  }, [value, displayed, fadeOutMs]);
-  return { displayed, phase };
-}
-
-// ── VIDEO DEMO ──────────────────────────────────
-function VideoDemo() {
+// ── HOW CARELU WORKS ──
+function HowCarelu() {
   const videoRef = useRef<HTMLVideoElement>(null);
-
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.4 }
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) video.play().catch(() => {});
+      else video.pause();
+    }, { threshold: 0.4 });
     observer.observe(video);
     return () => observer.disconnect();
   }, []);
 
+
   return (
-    <section style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', background: 'var(--green-900)' }}>
+    <>
+    {/* Video section — visual first */}
+    <section style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', background: '#fff' }}>
       <div style={W}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <Pill dark>See it happen</Pill>
-          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#fff', lineHeight: 1.12 }}>
+          <Pill>See it in action</Pill>
+          <h2 className="rv-scale" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)',
+            fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12,
+          }}>
             Watch it work.
           </h2>
         </div>
-        <div className="rv-scale" style={{ maxWidth: 900, margin: '0 auto', borderRadius: 20, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}>
+        <div className="rv-scale" style={{ maxWidth: 900, margin: '0 auto', borderRadius: 20, overflow: 'hidden', boxShadow: '0 16px 60px rgba(0,0,0,0.1)' }}>
           <video
             ref={videoRef}
-            controls
-            muted
-            loop
-            playsInline
+            controls muted loop playsInline
             style={{ width: '100%', height: 'auto', display: 'block' }}
           >
             <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
@@ -989,244 +1099,212 @@ function VideoDemo() {
         </div>
       </div>
     </section>
-  );
-}
 
-function StickyTour() {
-  const [activeIdx, setActiveIdx] = useState(0);
-  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const { displayed: mockupIdx, phase } = useSequentialSwap(activeIdx, 280);
+    {/* Scale your practice — sky continuation, frosted glass cards */}
+    <section style={{ position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', overflow: 'hidden' }}>
+      {/* Faded sky background */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: 'url(/sky.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 60%',
+        opacity: 0.3,
+      }} />
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(180deg, var(--white) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 80%, var(--white) 100%)',
+      }} />
 
-  useEffect(() => {
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const idx = stepRefs.current.indexOf(entry.target as HTMLDivElement);
-          if (idx !== -1) setActiveIdx(idx);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '-35% 0px -35% 0px' });
-    stepRefs.current.forEach((el) => { if (el) obs.observe(el); });
-    return () => obs.disconnect();
-  }, []);
-
-  const mockups: Record<string, React.ReactNode> = {
-    chat: (
-      <div style={{ background: '#fff', borderRadius: 'var(--radius-sm)', padding: 20, boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-        {[
-          { from: 'user', text: "Hi, I'm looking for ABA therapy for my son." },
-          { from: 'bot', text: "I'd love to help! What insurance do you have?" },
-          { from: 'user', text: "We have Aetna through my employer." },
-          { from: 'bot', text: "Great — let me check your coverage right now. What's your member ID?" },
-        ].map((m, i) => (
-          <div key={i} style={{ display: 'flex', justifyContent: m.from === 'user' ? 'flex-end' : 'flex-start', marginBottom: 10 }}>
-            <div style={{ padding: '10px 16px', borderRadius: 14, fontSize: 13, lineHeight: 1.5, maxWidth: '82%', background: m.from === 'user' ? 'var(--green-800)' : 'var(--sage-50)', color: m.from === 'user' ? '#fff' : 'var(--gray-600)' }}>{m.text}</div>
-          </div>
-        ))}
-        <TypingDots />
-      </div>
-    ),
-    eligibility: (
-      <div style={{ background: '#fff', borderRadius: 'var(--radius-sm)', padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-        <div style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--green-800)', marginBottom: 16 }}>Lead qualified — 14 seconds</div>
-        {[
-          'Blue Cross Blue Shield — Active',
-          'ABA therapy — Covered',
-          'Age eligible (4 years old)',
-          'Diagnosis on file — ASD',
-          'Location — Tampa, FL (in service area)',
-          'In-network provider available',
-        ].map((t) => (
-          <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, padding: '10px 14px', background: 'var(--sage-50)', borderRadius: 'var(--radius-sm)' }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" strokeWidth="2.5" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
-            <span style={{ fontSize: 13, color: 'var(--gray-600)' }}>{t}</span>
-          </div>
-        ))}
-      </div>
-    ),
-    documentation: (
-      <div style={{ background: '#fff', borderRadius: 'var(--radius-sm)', padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-        {/* Progress bar */}
-        <div style={{ height: 6, borderRadius: 3, background: 'var(--sage-100)', marginBottom: 24 }}>
-          <div style={{ height: 6, borderRadius: 3, background: 'var(--green-600)', width: '100%' }} />
-        </div>
-        {[
-          { name: 'Insurance card — front', icon: '📷' },
-          { name: 'Insurance card — back', icon: '📷' },
-          { name: 'Autism diagnosis report', icon: '📄' },
-          { name: 'Consent for treatment', icon: '📄' },
-          { name: 'HIPAA authorization', icon: '📄' },
-        ].map((doc) => (
-          <div key={doc.name} style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '14px 18px', marginBottom: 8,
-            background: 'var(--gray-50)', borderRadius: 'var(--radius-sm)',
-            border: '1px solid var(--gray-200)',
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ textAlign: 'center', marginBottom: 80 }}>
+          <Pill>How it works</Pill>
+          <h2 className="rv-scale" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)',
+            fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12,
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              <div style={{ width: 32, height: 32, borderRadius: 8, background: 'var(--sage-100)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14 }}>{doc.icon}</div>
-              <span style={{ fontSize: 14, color: 'var(--gray-600)', fontWeight: 500 }}>{doc.name}</span>
-            </div>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" strokeWidth="2" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-        ))}
-        {/* Final status */}
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '14px 18px', marginTop: 4,
-          background: 'rgba(74, 122, 78, 0.08)', borderRadius: 'var(--radius-sm)',
-          border: '1px solid rgba(74, 122, 78, 0.2)',
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ width: 32, height: 32, borderRadius: 8, background: 'var(--green-600)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
-            </div>
-            <span style={{ fontSize: 14, color: 'var(--green-700)', fontWeight: 600 }}>Case marked intake-ready</span>
-          </div>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" strokeWidth="2" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Scale your practice on your terms.
+          </h2>
         </div>
-      </div>
-    ),
-    followup: (
-      <div style={{ background: '#fff', borderRadius: 'var(--radius-sm)', padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-        {/* Browser chrome */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 20, paddingBottom: 14, borderBottom: '1px solid var(--gray-200)' }}>
-          <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#ff5f56' }} />
-          <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#ffbd2e' }} />
-          <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#27c93f' }} />
-          <span style={{ fontSize: 11, color: 'var(--gray-400)', marginLeft: 8 }}>carelu.ai / bright-horizons / case-timeline</span>
-        </div>
-        {/* Timeline — 4 steps, no emojis */}
-        {[
-          { text: 'Family started intake via chat', time: 'Day 0, 3:12 PM', type: 'default' as const },
-          { text: 'SMS sent: "Hi Maria, we just need Lucas\'s diagnosis report to finish up."', time: 'Day 1, 9:00 AM', type: 'nudge' as const },
-          { text: 'Maria uploaded diagnosis report via text', time: 'Day 1, 11:42 AM', type: 'default' as const },
-          { text: 'Ready for assessment', time: 'Day 2, 10:16 AM', type: 'success' as const },
-        ].map((e, i, arr) => {
-          const isSuccess = e.type === 'success';
-          // Each row gets progressively more saturated green to show progress
-          const rowBg = ['var(--sage-50)', 'var(--sage-100)', 'var(--sage-200)', 'var(--sage-300)'][i];
-          const rowText = ['var(--gray-600)', 'var(--green-800)', 'var(--green-800)', 'var(--green-900)'][i];
-          return (
-            <div key={i} style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
-              {/* Left rail: only the final row has a checkmark; others are connected by a line */}
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 28, flexShrink: 0 }}>
-                {isSuccess ? (
+
+        {/* Alternating content blocks */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 80 }}>
+          {[
+            {
+              title: 'Every channel. One inbox.',
+              desc: 'Phone calls, texts, web forms, faxes, emails -- Carelu answers all of them instantly, 24/7, in English and Spanish. Families get a response in seconds, not days.',
+              mockup: (
+                <div style={{ position: 'relative', width: 340, height: 340, margin: '0 auto' }}>
+                  {/* Ring */}
+                  <svg viewBox="0 0 340 340" style={{ position: 'absolute', inset: 0 }}>
+                    <circle cx="170" cy="170" r="135" fill="none" stroke="var(--sage-200)" strokeWidth="1.5" />
+                    {/* Connecting lines */}
+                    {[0,1,2,3,4,5].map(i => {
+                      const a = (-90 + i * 60) * (Math.PI / 180);
+                      return <line key={i} x1="170" y1="170" x2={170 + Math.cos(a) * 135} y2={170 + Math.sin(a) * 135} stroke="var(--sage-200)" strokeWidth="1" strokeDasharray="4 4" />;
+                    })}
+                    {/* Animated dots */}
+                    {[0,1,2,3,4,5].map(i => {
+                      const a = (-90 + i * 60) * (Math.PI / 180);
+                      const sx = 170 + Math.cos(a) * 135;
+                      const sy = 170 + Math.sin(a) * 135;
+                      return (
+                        <circle key={`d${i}`} r="4" fill="#3a8ab0">
+                          <animate attributeName="cx" values={`${sx};170`} dur={`${2.2 + i * 0.3}s`} repeatCount="indefinite" begin={`${i * 0.35}s`} />
+                          <animate attributeName="cy" values={`${sy};170`} dur={`${2.2 + i * 0.3}s`} repeatCount="indefinite" begin={`${i * 0.35}s`} />
+                          <animate attributeName="opacity" values="0;0.6;0.3;0" dur={`${2.2 + i * 0.3}s`} repeatCount="indefinite" begin={`${i * 0.35}s`} />
+                        </circle>
+                      );
+                    })}
+                  </svg>
+                  {/* Center */}
                   <div style={{
-                    width: 28, height: 28, borderRadius: '50%',
-                    background: 'var(--green-800)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                    width: 90, height: 90, borderRadius: '50%', background: '#3a8ab0',
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 8px 32px rgba(26,46,31,0.15)',
                   }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    <span style={{ fontSize: 10, fontWeight: 700, color: '#fff', letterSpacing: '0.06em' }}>ALL</span>
+                    <span style={{ fontSize: 8, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.08em' }}>CHANNELS</span>
                   </div>
-                ) : (
-                  <div style={{ width: 28, height: 28 }} />
-                )}
-                {i < arr.length - 1 && <div style={{ width: 1, flex: 1, minHeight: 16, background: 'var(--sage-200)' }} />}
-              </div>
-              <div style={{
-                flex: 1, borderRadius: 'var(--radius-sm)', padding: '12px 16px',
-                background: rowBg,
-                border: isSuccess ? '1px solid rgba(27,46,30,0.18)' : 'none',
-              }}>
-                <div style={{ fontSize: 13, color: rowText, lineHeight: 1.45, fontWeight: isSuccess ? 600 : 400 }}>{e.text}</div>
-                <div style={{ fontSize: 11, color: 'var(--gray-400)', marginTop: 3 }}>{e.time}</div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    ),
-  };
-
-  return (
-    <section id="platform" style={{ paddingTop: 'var(--section-py)', paddingBottom: 40 }}>
-      <div style={W}>
-        <div className="rv-left"><Pill>See it happen</Pill></div>
-        <h2 className="rv-left d1" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12, maxWidth: 600, marginBottom: 80 }}>
-          One family. One night. Start to finish.
-        </h2>
-
-        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
-          <div className="tour-sticky" style={{ position: 'sticky', top: 120, alignSelf: 'start' }}>
-            <div style={{ background: 'var(--sage-50)', borderRadius: 20, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.08)' }}>
-              {/*
-                Sequential fade: current mockup fades out (280ms), content swaps,
-                new mockup fades in (380ms). The card wraps the one displayed
-                mockup at all times, so no empty sage-green ever shows.
-              */}
-              <div
-                style={{
-                  opacity: phase === 'out' ? 0 : 1,
-                  transform: phase === 'out' ? 'translateY(6px) scale(0.99)' : 'translateY(0) scale(1)',
-                  transition: phase === 'out'
-                    ? 'opacity 0.28s ease-out, transform 0.28s ease-out'
-                    : 'opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1), transform 0.38s cubic-bezier(0.16, 1, 0.3, 1)',
-                }}
-              >
-                {mockups[tourSteps[mockupIdx].mockup]}
-              </div>
-            </div>
-          </div>
-          <div className="tour-steps-col">
-            {tourSteps.map((step, i) => (
-              <div key={step.title} ref={(el) => { stepRefs.current[i] = el; }}
-                style={{
-                  minHeight: '80vh',
-                  display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                  paddingBottom: i < tourSteps.length - 1 ? 80 : 0,
-                  opacity: activeIdx === i ? 1 : 0.2,
-                  transform: activeIdx === i ? 'none' : 'translateY(8px)',
-                  transition: 'opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1)',
-                }}
-              >
-                <div style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-xs)', fontWeight: 700, color: 'var(--green-600)', letterSpacing: '1px', marginBottom: 6 }}>{step.time}</div>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontStyle: 'italic', color: 'var(--gray-500)', marginBottom: 20 }}>{step.scenario}</div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h3)', color: 'var(--green-900)', lineHeight: 1.2, marginBottom: 16 }}>{step.title}</h3>
-                <p style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.7, marginBottom: 24, maxWidth: 420 }}>{step.desc}</p>
-                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
-                  {step.pills.map((p) => (
-                    <span key={p} style={{ fontSize: 'var(--text-xs)', fontWeight: 500, color: activeIdx === i ? '#fff' : 'var(--green-800)', background: activeIdx === i ? 'var(--green-800)' : 'var(--sage-100)', padding: '5px 14px', borderRadius: 'var(--radius-pill)', transition: 'background 0.3s, color 0.3s' }}>{p}</span>
+                  {/* Channel nodes */}
+                  {['Phone', 'Text', 'Chat', 'Forms', 'Fax', 'Email'].map((ch, i) => {
+                    const a = (-90 + i * 60) * (Math.PI / 180);
+                    const x = 170 + Math.cos(a) * 135;
+                    const y = 170 + Math.sin(a) * 135;
+                    return (
+                      <div key={ch} style={{
+                        position: 'absolute', left: x - 30, top: y - 30,
+                        width: 60, height: 60, borderRadius: '50%',
+                        background: '#fff', border: '1.5px solid var(--sage-200)',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                        fontSize: 12, fontWeight: 600, color: '#3a8ab0',
+                      }}>
+                        {ch}
+                      </div>
+                    );
+                  })}
+                </div>
+              ),
+            },
+            {
+              title: 'Qualifies and collects. Automatically.',
+              desc: 'Carelu knows your insurance panels, service areas, and open capacity. It verifies eligibility, collects insurance cards, gathers consent forms -- all through natural conversation.',
+              reverse: true,
+              mockup: (
+                <div style={{ background: 'rgba(255,255,255,0.75)', backdropFilter: 'blur(16px)', borderRadius: 20, padding: '28px 24px', border: '1px solid rgba(255,255,255,0.5)', boxShadow: '0 8px 32px rgba(0,0,0,0.06)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
+                    <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#3a8ab0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--sage-300)' }} />
+                    </div>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>Jake M. -- Intake in progress</div>
+                  </div>
+                  {[
+                    { label: 'Insurance verified', status: 'Blue Cross PPO', done: true },
+                    { label: 'Insurance card', status: 'Uploaded via text', done: true },
+                    { label: 'Consent form', status: 'Signed', done: true },
+                    { label: 'Diagnosis report', status: 'Requested from Dr. Patel', done: false, pending: true },
+                    { label: 'HIPAA authorization', status: 'Sent -- awaiting signature', done: false, pending: true },
+                  ].map((item, j) => (
+                    <div key={j} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 0', borderBottom: j < 4 ? '1px solid var(--gray-200)' : 'none' }}>
+                      <div>
+                        <div style={{ fontSize: 13, fontWeight: 500, color: 'var(--green-900)' }}>{item.label}</div>
+                        <div style={{ fontSize: 11, color: '#999', marginTop: 1 }}>{item.status}</div>
+                      </div>
+                      {item.done ? (
+                        <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#3a8ab0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                      ) : (
+                        <div style={{ fontSize: 10, color: '#f80', fontWeight: 600, background: '#fff8f0', padding: '3px 8px', borderRadius: 100 }}>In progress</div>
+                      )}
+                    </div>
                   ))}
                 </div>
-                {/* Inline mockup for mobile */}
-                <div className="tour-mockup-inline" style={{ display: 'none', background: 'var(--sage-50)', borderRadius: 'var(--radius)', padding: 20 }}>
-                  {mockups[step.mockup]}
+              ),
+            },
+            {
+              title: 'Follows up and delivers. Zero handoff.',
+              desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. When everything is collected and signed, Carelu schedules the assessment. Your team opens a complete, ready case.',
+              mockup: (
+                <div style={{ background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(16px)', borderRadius: 20, padding: '28px 24px', border: '2px solid rgba(255,255,255,0.6)', position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.06)' }}>
+                  <div style={{ position: 'absolute', top: -12, left: 24, background: '#3a8ab0', color: '#fff', fontSize: 11, fontWeight: 600, padding: '4px 14px', borderRadius: 100 }}>Ready for assessment</div>
+                  <div style={{ marginTop: 16 }}>
+                    <div style={{ fontSize: 16, fontWeight: 600, color: 'var(--green-900)', marginBottom: 4 }}>Jake M., age 4</div>
+                    <div style={{ fontSize: 12, color: '#888', marginBottom: 16 }}>Blue Cross PPO -- ABA Therapy -- Miami, FL</div>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                      {['Insurance verified', 'Consent signed', 'Diagnosis on file', 'HIPAA authorized', 'Eligibility confirmed', 'Assessment scheduled'].map((item, j) => (
+                        <div key={j} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: '#3a8ab0' }}>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3a8ab0" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
+              ),
+            },
+          ].map((block, i) => (
+            <div key={i} className="mobile-stack rv" style={{
+              display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'center',
+              direction: (block as {reverse?: boolean}).reverse ? 'rtl' : 'ltr',
+            }}>
+              <div style={{ direction: 'ltr' }}>
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 32px)',
+                  fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.15, marginBottom: 16,
+                }}>
+                  {block.title}
+                </h3>
+                <p style={{ fontSize: 16, color: '#666', lineHeight: 1.7, margin: 0 }}>
+                  {block.desc}
+                </p>
               </div>
-            ))}
-          </div>
+              <div style={{ direction: 'ltr' }}>
+                {block.mockup}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
+
+    </>
   );
 }
 
-
-// ── IMPACT ──────────────────────────────────────
+// ── IMPACT — neighborhood background, no animation ──
 function Impact() {
   return (
-    <section style={{ background: 'var(--sage-50)', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <Pill>Proven Results</Pill>
-        <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: 'var(--green-900)', marginBottom: 64 }}>
+    <section style={{ position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/neighborhood.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(44,62,80,0.72)' }} />
+
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <Pill dark>Proven Results</Pill>
+        <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#fff', marginBottom: 48 }}>
           The results speak louder than we can.
         </h2>
-        <LiveCounter />
+        <div style={{ color: '#fff' }}>
+          <LiveCounter />
+        </div>
 
         <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
           {[
-            { v: 3, s: '×', t: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
-            { v: 10, s: ' min', t: 'First contact to intake-ready', p: '<', d: 'What used to take 3–5 days.' },
-            { v: 85, s: '%', t: 'Family completion rate', d: 'Industry average is under 30%.' },
-            { v: 0, s: '', t: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
+            { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
+            { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
+            { v: 85, s: '%', t2: 'Family completion rate', d: 'Industry average is under 30%.' },
+            { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
           ].map((s, i) => (
-            <div key={s.t} className={`rv-scale d${i + 1} card-lift`} style={{ background: '#fff', borderRadius: 'var(--radius)', padding: '44px 28px', boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.06)' }}>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)', color: 'var(--green-700)', lineHeight: 1, marginBottom: 12 }}>
+            <div key={s.t2} className={`rv-scale d${i + 1}`} style={{
+              background: 'rgba(255,255,255,0.08)', borderRadius: 'var(--radius)',
+              padding: '44px 28px', border: '1px solid rgba(255,255,255,0.1)',
+            }}>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)', color: '#fff', lineHeight: 1, marginBottom: 12 }}>
                 <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
               </div>
-              <div style={{ fontWeight: 600, color: 'var(--black)', fontSize: 14, marginBottom: 6 }}>{s.t}</div>
-              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-400)', lineHeight: 1.5 }}>{s.d}</div>
+              <div style={{ fontWeight: 600, color: '#fff', fontSize: 14, marginBottom: 6 }}>{s.t2}</div>
+              <div style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.4)', lineHeight: 1.5 }}>{s.d}</div>
             </div>
           ))}
         </div>
@@ -1235,7 +1313,7 @@ function Impact() {
   );
 }
 
-// ── COMPLIANCE — formal certificate style ─────
+// ── COMPLIANCE -- formal certificate style ─────
 function Compliance() {
   const items = [
     { label: 'HIPAA', detail: 'End-to-end encryption, signed BAAs, annual audits' },
@@ -1257,7 +1335,7 @@ function Compliance() {
           position: 'relative',
           overflow: 'hidden',
         }}>
-          {/* Corner flourishes — subtle document feel */}
+          {/* Corner flourishes -- subtle document feel */}
           {[{ top: 0, left: 0 }, { top: 0, right: 0, scaleX: -1 }, { bottom: 0, left: 0, scaleY: -1 }, { bottom: 0, right: 0, scaleX: -1, scaleY: -1 }].map((pos, i) => (
             <svg key={i} width="48" height="48" viewBox="0 0 48 48" fill="none" style={{
               position: 'absolute', ...pos,
@@ -1291,7 +1369,7 @@ function Compliance() {
             </p>
           </div>
 
-          {/* Certification grid — formal, structured */}
+          {/* Certification grid -- formal, structured */}
           <div className="mobile-stack" style={{
             display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
             gap: 0, borderTop: '1px solid var(--gray-200)',
@@ -1325,9 +1403,9 @@ function Faq() {
   const [open, setOpen] = useState<number | null>(null);
   const faqs = [
     { q: 'How does Carelu keep patient data safe?', a: 'We use end-to-end encryption, sign BAAs with every provider, undergo annual SOC 2 Type II audits, and store all data in HIPAA-eligible US data centers.' },
-    { q: 'Will this replace our intake team?', a: "No — and that's the point. Carelu handles the repetitive parts (eligibility checks, document collection, follow-ups) so your team can spend their time on clinical work and complex cases." },
-    { q: 'How long until we\'re live?', a: 'Most providers go live within 1–2 weeks. We handle setup, configure your insurance rules and conversation flows, and train your team.' },
-    { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context — everything collected so far, the family\'s preferences, and a summary of the conversation.' },
+    { q: 'Will this replace our intake team?', a: "No -- and that's the point. Carelu handles the repetitive parts (eligibility checks, document collection, follow-ups) so your team can spend their time on clinical work and complex cases." },
+    { q: 'How long until we\'re live?', a: 'Most providers go live within 1-2 weeks. We handle setup, configure your insurance rules and conversation flows, and train your team.' },
+    { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context -- everything collected so far, the family\'s preferences, and a summary of the conversation.' },
     { q: 'What does this actually cost?', a: 'We price based on volume and channels. Most providers see positive ROI within the first month. Book a demo and we\'ll walk through pricing for your setup.' },
   ];
 
@@ -1341,7 +1419,7 @@ function Faq() {
               Let's clear things up.
             </h2>
             <p style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.6 }}>
-              Still have questions? <a href="mailto:hello@carelu.ai" style={{ color: 'var(--green-700)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>We're real humans — just ask.</a>
+              Still have questions? <a href="mailto:hello@carelu.ai" style={{ color: 'var(--green-700)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>We're real humans -- just ask.</a>
             </p>
           </div>
           <div>
@@ -1375,7 +1453,7 @@ function CtaFooter() {
               Somewhere right now, a parent is searching for <span style={{ color: 'var(--green-700)', fontStyle: 'italic' }}>care</span> for their child.
             </h2>
             <p style={{ fontSize: 'var(--text-body)', color: 'var(--gray-500)', lineHeight: 1.7, maxWidth: 460 }}>
-              Let's make sure they find you — and that when they do, someone's there.
+              Let's make sure they find you -- and that when they do, someone's there.
             </p>
           </div>
           <a href="/demo" style={{
@@ -1430,11 +1508,8 @@ export default function Landing() {
       <LogoBar />
       <Marquee />
       <Problem />
-      <HubDiagram />
-      <ScaleSection />
       <CustomerStories />
-      <VideoDemo />
-      <StickyTour />
+      <HowCarelu />
       <Impact />
       <Compliance />
       <Faq />

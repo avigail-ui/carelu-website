@@ -8,6 +8,7 @@ import SignUp from './pages/SignUp'
 import Verify from './pages/Verify'
 import Demo from './pages/Demo'
 import SegmentPage from './pages/SegmentPage'
+import BrandProposal from './pages/BrandProposal'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/verify" element={<Verify />} />
         <Route path="/demo" element={<Demo />} />
         <Route path="/for/:slug" element={<SegmentPage />} />
+        <Route path="/brand" element={<BrandProposal />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
