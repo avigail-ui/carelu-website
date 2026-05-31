@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="48" fill="#fff"/>
+  <ellipse cx="128" cy="140" rx="88" ry="64" fill="#00a1e0"/>
+  <ellipse cx="88" cy="120" rx="52" ry="48" fill="#00a1e0"/>
+  <ellipse cx="168" cy="120" rx="52" ry="48" fill="#00a1e0"/>
+  <ellipse cx="128" cy="100" rx="40" ry="36" fill="#00a1e0"/>
+  <text x="128" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="44" fill="#fff">sales<tspan font-size="36">force</tspan></text>
+</svg>

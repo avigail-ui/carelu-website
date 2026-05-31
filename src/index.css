@@ -6,40 +6,36 @@
    ============================================================ */
 
 :root {
-  /* Brand Core */
-  --green-900: #1A2E1F;
-  --green-800: #2C3E2D;
-  --green-700: #4A7C3F;
-  --green-600: #4A7C3F;
-  --green-500: #5E9462;
-  --sage-300: #C8D0B8;
-  --sage-200: #D4E4CF;
-  --sage-100: #E8F0E4;
-  --sage-50: #F0F5EE;
-  /* Warm Accent — terracotta */
-  --terra: #C4683D;
-  --terra-mid: #EBA57F;
-  --terra-light: #F8EEE7;
-  --clay: #5C2A14;
-  /* Warm Neutrals */
-  --bone: #FAF8F3;
-  --linen: #EDE8DC;
-  --stone: #8C8674;
-  /* Calm Secondary — teal */
-  --teal: #4686BA;
-  --teal-dark: #1F3B38;
-  --teal-light: #E5EDED;
-  /* Core neutrals */
-  --white: #FFFFFF;
-  --gray-50: #FAF8F3;
-  --gray-100: #EDE8DC;
-  --gray-200: #E2E0DC;
-  --gray-300: #CCC9C4;
-  --gray-400: #8C8674;
-  --gray-500: #8C8674;
-  --gray-600: #55524E;
-  --gray-800: #2B2A26;
-  --black: #2B2A26;
+  /* LEADTRAP — DARK MODE. INEVITABLE. */
+  --green-900: #fafafa;
+  --green-800: #e4e4e7;
+  --green-700: #ffffff;
+  --green-600: #ffffff;
+  --green-500: #a1a1aa;
+  --sage-300: #3f3f46;
+  --sage-200: #27272a;
+  --sage-100: #1a1a1e;
+  --sage-50: #111113;
+  --terra: #f59e0b;
+  --terra-mid: #fbbf24;
+  --terra-light: #1a1a1e;
+  --clay: #92400e;
+  --bone: #0a0a0c;
+  --linen: #111113;
+  --stone: #71717a;
+  --teal: #fff;
+  --teal-dark: #18181b;
+  --teal-light: #1a1a1e;
+  --white: #09090b;
+  --gray-50: #0a0a0c;
+  --gray-100: #111113;
+  --gray-200: #1e1e22;
+  --gray-300: #27272a;
+  --gray-400: #52525b;
+  --gray-500: #71717a;
+  --gray-600: #a1a1aa;
+  --gray-800: #e4e4e7;
+  --black: #fafafa;
 
   --font-display: 'EB Garamond', Georgia, serif;
   --font-logo: 'Instrument Serif', Georgia, serif;
@@ -87,8 +83,8 @@ body {
 #root { min-height: 100vh; }
 a { color: inherit; }
 button { font-family: inherit; cursor: pointer; }
-::selection { background: var(--sage-200); color: var(--green-900); }
-:focus-visible { outline: 2px solid var(--green-700); outline-offset: 3px; border-radius: 4px; }
+::selection { background: #fff; color: #000; }
+:focus-visible { outline: 2px solid var(--green-600); outline-offset: 3px; border-radius: 4px; }
 
 /* ── Scroll Reveals ─────────────────────────────── */
 .rv {
@@ -134,6 +130,28 @@ button { font-family: inherit; cursor: pointer; }
   from { opacity: 0; transform: translateY(48px); filter: blur(6px); }
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
+/* Monaco-style mock swap: gentle rise + fade, used by the auto-cycling feature mocks */
+@keyframes mockSwap {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes fallDown {
+  0%   { transform: translateY(-24vh) rotate(-10deg); opacity: 0; }
+  10%  { opacity: 1; }
+  88%  { opacity: 1; }
+  100% { transform: translateY(116vh) rotate(10deg); opacity: 0; }
+}
+@keyframes riverFlow {
+  0%   { offset-distance: 0%; opacity: 0; }
+  10%  { opacity: 1; }
+  82%  { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}
+@keyframes riverDash { to { stroke-dashoffset: -22; } }
 .hero-line {
   display: block; opacity: 0;
   animation: heroIn 1s var(--ease-dramatic) forwards;
@@ -623,6 +641,21 @@ button { font-family: inherit; cursor: pointer; }
     grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
+
+  /* Capability grid: 3 -> 1 col on mobile */
+  .cap-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Testimonial feature: photo over text on mobile */
+  .testi-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* Company page: stats + values stack on mobile */
+  .cc-stats { grid-template-columns: 1fr !important; }
+  .cc-values { grid-template-columns: 1fr !important; }
 
   /* Hub layout stacks on mobile */
   .hub-layout {

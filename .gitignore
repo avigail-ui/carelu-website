@@ -4,3 +4,4 @@ dist
 *.bak
 .vercel
 public/product/*.mp4
+.vite

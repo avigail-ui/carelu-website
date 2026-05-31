@@ -1,0 +1,222 @@
+/* ============================================================
+   RETRO '96  —  a GeoCities/Web-1.0 skin for the /v2 sandbox.
+   EVERY selector is nested under .r96 (and all @keyframes are
+   r96-prefixed) so this stylesheet can NEVER touch the modern
+   originals, which share src/index.css. Safe to import anywhere.
+   ============================================================ */
+
+/* ---- the tiled "background GIF" body + centered white page ---- */
+.r96 {
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px 10px 48px;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #000;
+  text-align: center;
+  background-color: #000060;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.045) 0 8px, transparent 8px 18px),
+    linear-gradient(180deg, #20208c 0%, #000040 100%);
+  background-attachment: fixed;
+}
+
+.r96-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 22px 30px 40px;
+  background: #ffffff;
+  background-image: repeating-linear-gradient(0deg, rgba(0,0,96,0.018) 0 1px, transparent 1px 28px);
+  border: 4px ridge #c4c4c4;
+  box-shadow: 0 0 0 2px #000060, 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* ---- groove rules ---- */
+.r96 hr {
+  border: none;
+  height: 0;
+  border-top: 2px solid #9a9a9a;
+  border-bottom: 2px solid #ffffff;
+  margin: 22px 0;
+}
+.r96 hr.thin { margin: 14px 0; }
+
+/* ---- links: maroon, underlined, yellow-highlight hover ---- */
+.r96 a { color: #cc0000; text-decoration: underline; font-weight: bold; }
+.r96 a:visited { color: #800080; }
+.r96 a:hover { color: #ee0000; background: #ffff66; }
+
+/* ---- WordArt: chrome-bevel 3-D gradient text ---- */
+.r96 .wa {
+  display: block;
+  margin: 10px 0;
+  font-family: Impact, "Arial Black", Haettenschweiler, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(2px 2px 0 rgba(0,0,0,0.55))
+    drop-shadow(4px 4px 0 rgba(0,0,0,0.30))
+    drop-shadow(6px 6px 2px rgba(0,0,0,0.25));
+}
+.r96 .wa-xl { font-size: clamp(38px, 8.5vw, 84px); }
+.r96 .wa-lg { font-size: clamp(28px, 6vw, 54px); }
+.r96 .wa-md { font-size: clamp(22px, 4.4vw, 38px); }
+.r96 .wa-chrome { background-image: linear-gradient(#ffffff 0%, #c0cdee 34%, #2a4fb0 51%, #142c78 53%, #7388c9 76%, #ffffff 100%); }
+.r96 .wa-gold   { background-image: linear-gradient(#fff7d6 0%, #f1cb4d 36%, #a8771a 51%, #6e4a08 53%, #e2b840 78%, #fff7d6 100%); }
+.r96 .wa-purple { background-image: linear-gradient(#efe2ff 0%, #b6a0e8 34%, #5b3fae 51%, #371d7e 53%, #9c84d8 76%, #efe2ff 100%); }
+.r96 .wa-red    { background-image: linear-gradient(#ffe2e2 0%, #f06d6d 36%, #b21616 51%, #7a0808 53%, #e24c4c 78%, #ffe2e2 100%); }
+.r96 .wa-green  { background-image: linear-gradient(#e6ffe0 0%, #6cba4c 36%, #1a7a16 51%, #084a08 53%, #4ce24c 78%, #e6ffe0 100%); }
+
+/* ---- rainbow inline keyword emphasis (the Intercom look) ---- */
+.r96 .c-blue   { color: #1010cc; font-weight: bold; }
+.r96 .c-red    { color: #cc0000; font-weight: bold; }
+.r96 .c-green  { color: #067a06; font-weight: bold; }
+.r96 .c-orange { color: #e06000; font-weight: bold; }
+.r96 .c-purple { color: #7a1ea0; font-weight: bold; }
+.r96 .big   { font-size: 1.32em; }
+.r96 .ital  { font-style: italic; }
+
+.r96 .lead { font-size: 18px; max-width: 600px; margin: 6px auto; }
+.r96 p { margin: 10px auto; max-width: 620px; }
+
+/* ---- blink ---- */
+.r96 .blink { animation: r96blink 1.05s steps(1) infinite; }
+@keyframes r96blink { 50% { visibility: hidden; } }
+
+/* ---- marquee (no <marquee> tag needed) ---- */
+.r96 .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000080;
+  color: #ffff00;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px ridge #b0b0ff;
+  padding: 5px 0;
+  margin: 14px 0;
+}
+.r96 .marquee > span { display: inline-block; padding-left: 100%; animation: r96marquee 22s linear infinite; }
+.r96 .marquee.fast > span { animation-duration: 13s; }
+@keyframes r96marquee { to { transform: translateX(-100%); } }
+
+/* ---- Win95 beveled buttons ---- */
+.r96 .btn95 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000 !important;
+  background: #c0c0c0;
+  border: 3px outset #f4f4f4;
+  padding: 7px 20px;
+  margin: 6px;
+  text-decoration: none !important;
+  display: inline-block;
+  cursor: pointer;
+}
+.r96 .btn95:hover { background: #cacaca; }
+.r96 .btn95:active { border-style: inset; }
+.r96 .btn95.go { background: #1a7a16; color: #fff !important; border-color: #5ad04a #0a3a08 #0a3a08 #5ad04a; }
+
+/* ---- bordered ridge panels & faux screenshots ---- */
+.r96 .panel {
+  border: 3px ridge #c4c4c4;
+  background: #f3f3f3;
+  padding: 16px 18px;
+  margin: 16px auto;
+  text-align: left;
+  max-width: 640px;
+}
+.r96 .ss {                      /* faux app "screenshot" window */
+  border: 2px solid #808080;
+  background: #fff;
+  margin: 12px auto;
+  max-width: 420px;
+  text-align: left;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+.r96 .ss-bar {
+  background: linear-gradient(#000080, #1084d0);
+  color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;
+  padding: 3px 8px; display: flex; justify-content: space-between; align-items: center;
+}
+.r96 .ss-bar .x { background: #c0c0c0; color: #000; border: 2px outset #fff; padding: 0 5px; font-size: 11px; }
+.r96 .ss-body { padding: 9px 11px; font-size: 13px; }
+.r96 .chat-me, .r96 .chat-bot { display: block; margin: 5px 0; padding: 6px 9px; border: 1px solid #999; font-size: 13px; }
+.r96 .chat-bot { background: #e8efe6; }
+.r96 .chat-me  { background: #d6e4f5; text-align: right; }
+
+/* ---- data tables ---- */
+.r96 table.grid96 { margin: 14px auto; border-collapse: collapse; background: #fff; }
+.r96 table.grid96 caption { font-weight: bold; padding-bottom: 6px; }
+.r96 table.grid96 th, .r96 table.grid96 td { border: 2px ridge #b6b6b6; padding: 7px 13px; font-size: 14px; }
+.r96 table.grid96 th { background: #000080; color: #fff; font-family: Arial, sans-serif; }
+.r96 table.grid96 td.num { font-family: "Courier New", monospace; font-weight: bold; }
+
+/* ---- the 3-column footer "site map" table ---- */
+.r96 table.sitemap { margin: 10px auto; }
+.r96 table.sitemap th { color: #0000cc; font-size: 19px; font-weight: bold; padding: 6px 26px; }
+.r96 table.sitemap td { padding: 4px 26px; vertical-align: top; }
+
+/* ---- green-LED hit counter ---- */
+.r96 .counter {
+  display: inline-block;
+  background: #000; color: #2bff2b;
+  font-family: "Courier New", monospace; font-weight: bold;
+  font-size: 22px; letter-spacing: 4px;
+  padding: 4px 10px; border: 3px ridge #555;
+}
+
+/* ---- under-construction hazard bar ---- */
+.r96 .construction {
+  margin: 18px auto; max-width: 560px;
+  border: 3px solid #000;
+  background: repeating-linear-gradient(45deg, #ffd400 0 16px, #000 16px 32px);
+  padding: 4px;
+}
+.r96 .construction span {
+  display: block; background: #fff; color: #000;
+  font-family: Arial, sans-serif; font-weight: bold; font-size: 14px;
+  padding: 6px; letter-spacing: 1px;
+}
+
+/* ---- "Best viewed in / Made with" badge row ---- */
+.r96 .badges { margin: 14px 0 2px; }
+.r96 .badge {
+  display: inline-block; margin: 4px;
+  font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+  color: #fff; background: #1a1a1a; border: 2px outset #888;
+  padding: 5px 9px; line-height: 1.2; text-align: center;
+}
+.r96 .badge.netscape { background: linear-gradient(#1a1a1a, #333); color: #66ccff; }
+.r96 .badge.email { background: #006600; }
+
+/* ---- section eyebrow label ---- */
+.r96 .eyebrow {
+  display: inline-block;
+  font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #fff; background: #cc0000; padding: 3px 12px; margin: 8px 0;
+}
+
+/* ---- text nav bar ---- */
+.r96 .topnav {
+  font-family: Arial, sans-serif; font-size: 14px; font-weight: bold;
+  margin: 4px 0 10px;
+}
+.r96 .topnav a { margin: 0 4px; }
+
+/* ---- bulleted lists, centered block ---- */
+.r96 ul.r96list { display: inline-block; text-align: left; margin: 12px auto; max-width: 600px; padding-left: 22px; }
+.r96 ul.r96list li { margin: 9px 0; }
+
+.r96 .footer96 { font-size: 13px; color: #222; }
+.r96 .small { font-size: 12px; color: #444; }
+.r96 .sky { /* little blue title rule used under logos */ width: 90px; border-top: 3px double #000080; margin: 8px auto; }
