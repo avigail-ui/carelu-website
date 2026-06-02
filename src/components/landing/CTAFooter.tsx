@@ -37,9 +37,8 @@ export default function CTAFooter() {
 
       {/* Footer */}
       <footer style={{ padding: 32, display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Logo size={24} />
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#999' }}>Carelu</span>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Logo size={28} />
         </div>
         <p style={{ fontSize: 12, color: '#999', margin: 0 }}>&copy; 2026 Carelu, Inc. All rights reserved.</p>
       </footer>

@@ -26,14 +26,14 @@ export default function NavDropdown() {
     >
       <button
         style={{
-          fontSize: 'var(--text-sm)', fontWeight: 500, color: 'var(--gray-500)',
+          fontSize: 'var(--text-sm)', fontWeight: 500, color: 'var(--green-900)',
           background: 'none', border: 'none', cursor: 'pointer',
           display: 'inline-flex', alignItems: 'center', gap: 4,
-          padding: 0, fontFamily: 'inherit',
-          transition: 'color 0.2s',
+          padding: '8px 16px', fontFamily: 'inherit', borderRadius: 999,
+          transition: 'background-color 0.2s',
         }}
-        onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--green-900)'; }}
-        onMouseLeave={(e) => { if (!open) e.currentTarget.style.color = 'var(--gray-500)'; }}
+        onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.06)'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
       >
         Who We Serve
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"

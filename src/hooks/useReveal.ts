@@ -19,7 +19,21 @@ export function useReveal() {
       { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     );
 
-    document.querySelectorAll('.rv, .rv-scale, .rv-left, .rv-right, .step-divider').forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const selector = '.rv, .rv-scale, .rv-left, .rv-right, .step-divider';
+    const observeAll = () => {
+      document.querySelectorAll(selector).forEach((el) => {
+        if (!el.classList.contains('visible')) observer.observe(el);
+      });
+    };
+
+    observeAll();
+    // Re-observe whenever new matching elements get added (lazy-mounted sections, etc.)
+    const mut = new MutationObserver(observeAll);
+    mut.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      mut.disconnect();
+    };
   }, []);
 }

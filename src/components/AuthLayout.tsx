@@ -13,9 +13,8 @@ export default function AuthLayout({ children, altText, altLinkText, altLinkTo }
     <div className="min-h-screen bg-white flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-5">
-        <Link to="/" className="flex items-center gap-2.5 no-underline">
-          <Logo size={36} />
-          <span className="text-lg font-semibold text-gray-900 tracking-tight">Carelu</span>
+        <Link to="/" className="flex items-center no-underline">
+          <Logo size={40} />
         </Link>
         <div className="flex items-center gap-3">
           <span className="text-sm text-gray-500 hidden sm:inline">{altText}</span>
