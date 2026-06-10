@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useReveal } from '../hooks/useReveal';
-import NavDropdown from '../components/NavDropdown';
+import DemoModalHost from '../components/DemoModal';
 
 /* ================================================================
    LEADTRAP — $100K LANDING
@@ -19,25 +19,25 @@ function getLiveCount() {
   return Math.floor(BASELINE_COUNT + Math.max(0, Date.now() - BASELINE_DATE) * GROWTH_PER_MS);
 }
 
-const W: React.CSSProperties = { maxWidth: 1200, margin: '0 auto', padding: '0 40px' };
-const accent = '#4A7C3F';
+const W: React.CSSProperties = { maxWidth: 1200, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' };
 
-// ── SCROLL PROGRESS ──
-function ScrollProgress() {
-  const ref = useRef<HTMLDivElement>(null);
+// ── MOBILE BREAKPOINT ── single source of truth for JS-level layout branches
+// (CSS media queries handle styling; this handles structural differences like
+// the how-it-works carousel going vertical).
+const MOBILE_BP = 768;
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(`(max-width: ${MOBILE_BP}px)`).matches,
+  );
   useEffect(() => {
-    let raf = 0;
-    const update = () => {
-      if (!ref.current) return;
-      ref.current.style.transform = `scaleX(${window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)})`;
-    };
-    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    update();
-    return () => { cancelAnimationFrame(raf); window.removeEventListener('scroll', onScroll); };
+    const mq = window.matchMedia(`(max-width: ${MOBILE_BP}px)`);
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
   }, []);
-  return <div ref={ref} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: 2, background: `linear-gradient(90deg, ${accent}, rgba(43,42,38,0.2))`, transformOrigin: '0 0', transform: 'scaleX(0)', zIndex: 1000, willChange: 'transform' }} />;
+  return isMobile;
 }
+
 
 // ── ANIMATED COUNTER ──
 function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?: string; prefix?: string }) {
@@ -64,30 +64,20 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
   return <span ref={ref}>{prefix}{count}{suffix}</span>;
 }
 
-// ── SECTION LABEL ──
-function Label({ children }: { children: string }) {
-  return (
-    <span className="rv" style={{
-      display: 'inline-block', fontSize: 11, fontWeight: 600,
-      letterSpacing: '0.14em', textTransform: 'uppercase' as const,
-      color: accent, marginBottom: 24,
-    }}>{children}</span>
-  );
-}
 
 /* ================================================================
    NAV
    ================================================================ */
 function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // Lock page scroll while the mobile menu is open
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    if (!mobileOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, [mobileOpen]);
 
   return (
     <>
@@ -107,26 +97,26 @@ function Nav() {
           border: '1px solid rgba(43,42,38,0.07)',
         }}>
           {/* Left links */}
-          <a href="#product" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
+          <a href="#platform" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Product</a>
           <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Company</a>
 
           {/* Center logo */}
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
+          <a href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
             <img src="/carelu-logo.png" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
           </a>
 
           {/* Right: login + button */}
           <a href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Log in</a>
-          <a href="/demo" style={{
+          <a href="/demo" className="nav-demo-btn" style={{
             fontSize: 14, fontWeight: 600, color: '#1A1A1A',
             padding: '12px 24px', borderRadius: 14, textDecoration: 'none',
             display: 'inline-flex', alignItems: 'center',
@@ -138,10 +128,10 @@ function Nav() {
             onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.14)'; }}
             onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)'; }}
           >
-            Request demo
+            Get a Demo
           </a>
-          <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 4 }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round">
+          <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" aria-expanded={mobileOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 11, marginLeft: 2 }}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="1.8" strokeLinecap="round" style={{ display: 'block' }}>
               {mobileOpen
                 ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
                 : <><line x1="4" y1="7" x2="20" y2="7" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="17" x2="20" y2="17" /></>
@@ -152,10 +142,17 @@ function Nav() {
       </nav>
 
       {mobileOpen && (
-        <div style={{ position: 'fixed', top: 72, left: 0, right: 0, bottom: 0, zIndex: 99, background: 'rgba(250,248,243,0.98)', backdropFilter: 'blur(20px)', padding: '40px 28px', display: 'flex', flexDirection: 'column' }}
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 99, background: 'rgba(250,248,243,0.98)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', padding: '96px 28px 28px', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}
           onClick={() => setMobileOpen(false)}>
-          {['Platform', 'How It Works', 'Results', 'FAQ'].map(t => (
-            <a key={t} href={`#${t.toLowerCase().replace(/\s+/g, '-')}`} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '22px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{t}</a>
+          {[
+            { t: 'Platform',     href: '#platform' },
+            { t: 'How It Works', href: '#how-it-works' },
+            { t: 'Results',      href: '#results' },
+            { t: 'FAQ',          href: '#faq' },
+            { t: 'Company',      href: '/carelu/company' },
+            { t: 'Log in',       href: '/login' },
+          ].map(l => (
+            <a key={l.t} href={l.href} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '20px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{l.t}</a>
           ))}
           <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#1A1A1A', backgroundColor: '#fff', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32, border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 4px 18px rgba(0,0,0,0.1)' }}>
             Get a Demo
@@ -208,21 +205,19 @@ function Hero() {
     };
   }, []);
 
-  const reveal = (start: number, end: number) =>
-    Math.max(0, Math.min(1, (progress - start) / (end - start)));
-  // Pill + headline are visible at page load (via CSS mount animation below).
-  // Only subhead, CTAs, and logos reveal on scroll.
-  const subheadOp  = reveal(0.10, 0.26);
-  const ctaOp      = reveal(0.30, 0.46);
-  const logosOp    = reveal(0.50, 0.68);
+  // Everything in the hero is visible on page load — pill, headline, subhead,
+  // CTAs, and logos all fade in together (staggered via the heroIn CSS animation
+  // below) rather than waiting for the user to scroll. `progress` still drives
+  // the parallax/dissolve as the hero scrolls away.
+  void progress;
 
   return (
     <section ref={sectionRef} style={{
-      position: 'relative', height: '220vh',
+      position: 'relative', height: '100svh',
       background: '#f0e6d2',
     }}>
       <div style={{
-        position: 'sticky', top: 0, height: '100vh',
+        position: 'sticky', top: 0, height: '100svh',
         overflow: 'hidden', background: 'transparent',
       }}>
         <div
@@ -255,7 +250,7 @@ function Hero() {
           pointerEvents: 'none',
         }} />
 
-        <div style={{
+        <div className="hero-center" style={{
           position: 'absolute', inset: 0, zIndex: 3,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
           padding: '0 24px',
@@ -265,7 +260,7 @@ function Hero() {
               marginBottom: 28,
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both',
             }}>
-              <span style={{
+              <span className="hero-badge" style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase',
                 color: '#fff',
@@ -273,11 +268,12 @@ function Hero() {
                 border: '1px solid rgba(255,255,255,0.22)',
                 backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
                 padding: '8px 18px', borderRadius: 100,
+                textAlign: 'center',
               }}>The very first care enablement platform</span>
             </div>
 
             <h1 style={{
-              fontFamily: 'var(--font-display)', fontSize: 'clamp(48px, 7vw, 104px)',
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 104px)',
               fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.03em',
               color: '#fff', maxWidth: 1000, margin: '0 auto',
               textShadow: '0 2px 30px rgba(0,0,0,0.35)',
@@ -288,22 +284,18 @@ function Hero() {
 
             <p style={{
               fontSize: 'clamp(15px, 1.4vw, 19px)',
-              color: 'rgba(255,255,255,0.88)',
+              color: '#fff',
               lineHeight: 1.6, maxWidth: 600, margin: '24px auto 40px',
-              fontWeight: 400,
-              textShadow: '0 1px 12px rgba(0,0,0,0.35)',
-              opacity: subheadOp,
-              transform: `translateY(${(1 - subheadOp) * 16}px)`,
-              transition: 'opacity 0.3s ease, transform 0.3s ease',
+              fontWeight: 500,
+              textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
+              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
               Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health.
             </p>
 
-            <div style={{
+            <div className="hero-cta-row" style={{
               display: 'inline-flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', justifyContent: 'center',
-              opacity: ctaOp,
-              transform: `translateY(${(1 - ctaOp) * 16}px)`,
-              transition: 'opacity 0.3s ease, transform 0.3s ease',
+              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both',
             }}>
               <a href="/demo" className="hero-cta-btn" style={{
                 display: 'inline-flex', alignItems: 'center', gap: 10,
@@ -322,14 +314,16 @@ function Hero() {
                 display: 'inline-flex', alignItems: 'center', gap: 10,
                 fontSize: 15, fontWeight: 600, color: '#fff',
                 padding: '14px 26px', borderRadius: 100, textDecoration: 'none',
-                border: '1.5px solid rgba(255,255,255,0.85)',
-                background: 'transparent',
-                backdropFilter: 'blur(10px) saturate(1.1)', WebkitBackdropFilter: 'blur(10px) saturate(1.1)',
-                transition: 'background-color 0.2s, transform 0.2s, border-color 0.2s',
+                border: '1px solid rgba(255,255,255,0.55)',
+                background: 'linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.10))',
+                backdropFilter: 'blur(16px) saturate(1.4)', WebkitBackdropFilter: 'blur(16px) saturate(1.4)',
+                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 18px rgba(0,0,0,0.12)',
+                textShadow: '0 1px 8px rgba(0,0,0,0.3)',
+                transition: 'background-color 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.3s',
                 letterSpacing: '-0.005em',
               }}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.borderColor = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.85)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.22)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.85)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.45), 0 8px 26px rgba(0,0,0,0.18)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.55)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 18px rgba(0,0,0,0.12)'; }}
               >
                 See How It Works
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -346,9 +340,7 @@ function Hero() {
         <div style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
           paddingBottom: 'clamp(10px, 1.6vh, 22px)',
-          opacity: logosOp,
-          transform: `translateY(${(1 - logosOp) * 16}px)`,
-          transition: 'opacity 0.3s ease, transform 0.3s ease',
+          animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both',
         }}>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
@@ -435,6 +427,7 @@ function DemoVideo() {
             loop
             playsInline
             preload="metadata"
+            poster="/demo-poster.jpg"
             style={{ width: '100%', height: 'auto', display: 'block', background: '#fff' }}
           >
             <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
@@ -448,12 +441,12 @@ function DemoVideo() {
               style={{
                 position: 'absolute', inset: 0,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: 'rgba(255,255,255,0.96)',
+                background: 'linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.04) 40%, rgba(0,0,0,0.22) 100%)',
                 border: 'none', cursor: 'pointer',
                 transition: 'background 0.3s ease',
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,1)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.96)'; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.08) 40%, rgba(0,0,0,0.28) 100%)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.04) 40%, rgba(0,0,0,0.22) 100%)'; }}
             >
               <span style={{
                 position: 'relative',
@@ -475,7 +468,7 @@ function DemoVideo() {
               <span style={{
                 position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)',
                 fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase',
-                color: 'rgba(26,46,31,0.65)',
+                color: '#fff', textShadow: '0 1px 8px rgba(0,0,0,0.45)',
               }}>
                 Watch demo · 2 min
               </span>
@@ -502,47 +495,6 @@ const allLogos = [
   { src: '/logos/link-color.png', alt: 'Links ABA', smaller: true },
 ];
 
-function LogoBar() {
-  return (
-    <div style={{ padding: '88px 0 96px' }}>
-      <p className="rv" style={{
-        fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
-        textTransform: 'uppercase' as const, color: 'rgba(43,42,38,0.42)',
-        textAlign: 'center', marginBottom: 48,
-      }}>
-        Trusted by the fastest growing ABA providers
-      </p>
-      <div style={{ overflow: 'hidden', position: 'relative' }}>
-        {/* Wider edge fades for a smoother "scrolling into view" feel */}
-        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 220, background: 'linear-gradient(to right, #FAF8F3 0%, rgba(250,248,243,0.85) 40%, transparent 100%)', zIndex: 2, pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 220, background: 'linear-gradient(to left,  #FAF8F3 0%, rgba(250,248,243,0.85) 40%, transparent 100%)', zIndex: 2, pointerEvents: 'none' }} />
-        <div className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
-          {[0, 1].map(set => (
-            <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 96, paddingRight: 96 }}>
-              {allLogos.map(logo => (
-                <img
-                  key={`${set}-${logo.alt}`}
-                  src={logo.src}
-                  alt={logo.alt}
-                  style={{
-                    height: (logo as { smaller?: boolean }).smaller ? 42 : 56,
-                    width: 'auto', objectFit: 'contain',
-                    opacity: 0.7, flexShrink: 0,
-                    filter: 'grayscale(100%) brightness(0.55) contrast(1.05)',
-                    transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-                    willChange: 'transform, filter',
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)'; e.currentTarget.style.transform = 'scale(1.04)'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.opacity = '0.7'; e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.05)'; e.currentTarget.style.transform = 'scale(1)'; }}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 
 /* Real tool logos raining down behind the problem headline — the "too many systems" chaos */
@@ -713,91 +665,13 @@ function IconPlayground({ opacity }: { opacity: number }) {
   );
 }
 
-/* RiverFlow — channels merge as tributaries into one Carelu river -> completed intake */
-const RIVER_CHANNELS: { label: string; y: number; c: string; trib: string; d: React.ReactNode }[] = [
-  { label: 'Phone', y: 40,  c: '#4A7C3F', trib: 'M92,40 C 250,40 300,150 430,150',  d: <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3" /> },
-  { label: 'Text',  y: 95,  c: '#5E9462', trib: 'M92,95 C 250,95 330,150 430,150',  d: <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z" /> },
-  { label: 'Email', y: 150, c: '#2C3E2D', trib: 'M92,150 L 430,150',                 d: <><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" /></> },
-  { label: 'Web',   y: 205, c: '#4A7C3F', trib: 'M92,205 C 250,205 330,150 430,150', d: <><circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z" /></> },
-  { label: 'Fax',   y: 260, c: '#5E9462', trib: 'M92,260 C 250,260 300,150 430,150', d: <><path d="M6 9V3h12v6" /><rect x="6" y="13" width="12" height="8" /><path d="M6 17H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2" /></> },
-];
-const MAIN_RIVER = 'M430,150 C 560,108 700,192 846,150';
+// Step-card visuals animate only once the user actually reaches them: the
+// element must be ~60% visible AND inside the central band of the viewport
+// (the negative horizontal rootMargin keeps cards peeking in from the edge of
+// the horizontal carousel from triggering early).
+const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% 0px -18%' };
 
-function RiverFlow() {
-  return (
-    <svg viewBox="0 0 920 300" fill="none" style={{ display: 'block', width: '100%', height: 'auto', maxWidth: 920, margin: '0 auto', overflow: 'visible' }}>
-      <defs>
-        <linearGradient id="riverG" x1="430" y1="0" x2="846" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#7FA877" /><stop offset="1" stopColor="#2C3E2D" />
-        </linearGradient>
-        <radialGradient id="riverGlow" cx="0.5" cy="0.5" r="0.5">
-          <stop offset="0" stopColor="#9CB98E" stopOpacity="0.32" /><stop offset="1" stopColor="#9CB98E" stopOpacity="0" />
-        </radialGradient>
-        <filter id="chipShadow" x="-60%" y="-60%" width="220%" height="220%">
-          <feDropShadow dx="0" dy="4" stdDeviation="6" floodColor="#1A2E1F" floodOpacity="0.13" />
-        </filter>
-      </defs>
 
-      {/* ambient glow */}
-      <ellipse cx="610" cy="150" rx="390" ry="150" fill="url(#riverGlow)" />
-
-      {/* tributaries */}
-      {RIVER_CHANNELS.map((ch, i) => (
-        <path key={`t${i}`} id={`trib${i}`} d={ch.trib} stroke="#B7C4A8" strokeWidth="1.6" strokeLinecap="round"
-          style={{ strokeDasharray: '2 9', animation: 'riverDash 0.9s linear infinite' }} />
-      ))}
-
-      {/* main river: soft body + current + flowing glint */}
-      <path d={MAIN_RIVER} stroke="#C8D0B8" strokeOpacity="0.55" strokeWidth="11" strokeLinecap="round" />
-      <path id="mainRiver" d={MAIN_RIVER} stroke="url(#riverG)" strokeWidth="3.5" strokeLinecap="round" />
-      <path d={MAIN_RIVER} stroke="#F0F5EE" strokeWidth="2" strokeLinecap="round"
-        style={{ strokeDasharray: '4 18', animation: 'riverDash 0.9s linear infinite' }} />
-
-      {/* tributary droplets — channels feeding the river */}
-      {RIVER_CHANNELS.map((ch, i) => (
-        <circle key={`td${i}`} r="3.2" fill={ch.c} opacity="0">
-          <animateMotion dur="2.8s" begin={`${i * 0.5}s`} repeatCount="indefinite"><mpath href={`#trib${i}`} /></animateMotion>
-          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.8s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
-        </circle>
-      ))}
-
-      {/* droplets flowing down the main river */}
-      {[0, 0.9, 1.8, 2.7].map((b, i) => (
-        <circle key={`md${i}`} r="4.5" fill="#3B5E34" opacity="0">
-          <animateMotion dur="3.6s" begin={`${b}s`} repeatCount="indefinite"><mpath href="#mainRiver" /></animateMotion>
-          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.86;1" dur="3.6s" begin={`${b}s`} repeatCount="indefinite" />
-        </circle>
-      ))}
-
-      {/* channel source chips */}
-      {RIVER_CHANNELS.map((ch, i) => (
-        <g key={`c${i}`}>
-          <rect x="54" y={ch.y - 18} width="36" height="36" rx="11" fill="#fff" filter="url(#chipShadow)" />
-          <g transform={`translate(63 ${ch.y - 9}) scale(0.75)`} stroke={ch.c} strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round" fill="none">{ch.d}</g>
-          <text x="72" y={ch.y + 31} textAnchor="middle" fontSize="12.5" fontWeight="600" fill="#2C3E2D" style={{ fontFamily: 'var(--font-body)' }}>{ch.label}</text>
-        </g>
-      ))}
-
-      {/* completed node with pulse */}
-      <circle cx="846" cy="150" r="30" fill="none" stroke="#2C3E2D" strokeOpacity="0.5">
-        <animate attributeName="r" values="30;48" dur="2.6s" repeatCount="indefinite" />
-        <animate attributeName="stroke-opacity" values="0.5;0" dur="2.6s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="846" cy="150" r="30" fill="#2C3E2D" />
-      <path d="M833 150l9 9 17 -18" stroke="#fff" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-      <text x="846" y="202" textAnchor="middle" fontSize="13" fontWeight="700" fill="#1A2E1F" style={{ fontFamily: 'var(--font-body)' }}>Completed intake</text>
-    </svg>
-  );
-}
-
-/* easeOutBounce — drop with gravity acceleration, bounce on landing */
-function easeOutBounce(x: number): number {
-  const n1 = 7.5625, d1 = 2.75;
-  if (x < 1 / d1) return n1 * x * x;
-  if (x < 2 / d1) { x -= 1.5 / d1; return n1 * x * x + 0.75; }
-  if (x < 2.5 / d1) { x -= 2.25 / d1; return n1 * x * x + 0.9375; }
-  x -= 2.625 / d1; return n1 * x * x + 0.984375;
-}
 
 /* ================================================================
    THE PROBLEM — Carelu-style browser chaos (dark mode)
@@ -835,30 +709,14 @@ function Problem() {
     };
   }, []);
 
-  const tabs = ['Monday.com', 'DocuSign', 'IntakeQ', 'Gmail', 'Google Voice', 'eFax', 'Outlook', 'Scheduling', 'Insurance...', 'Sheets', 'Slack', 'RingCentral', 'Jotform', 'Calendly', 'CentralReach', 'Zoho', 'PandaDoc'];
-
-  // Phase timing — rescaled so the chaos animation uses the full t = 0 → 1 range
-  // (originally animation finished at t = 0.5 because there was a "solution reveal"
-  // taking up the other half — that reveal has since moved to MuralReveal, so we
-  // tightened the section and stretched the phases.)
+  // The chaos animation was reduced to the icon rain only — the old browser-tabs
+  // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
   const rainOpacity = 1; // icons always rain — never fade out
-  const browserVisible = t > 0.28;
-  const enterProgress = t < 0.28 ? 0 : Math.min(1, (t - 0.28) / 0.24);
-  const browserX = 0;
-  const browserY = (1 - easeOutBounce(enterProgress)) * -72; // fall from the top, bounce on landing
-  const cursorProgress = t < 0.6 ? 0 : Math.min(1, (t - 0.6) / 0.4);
-  const ce = cursorProgress < 0.5 ? 2 * cursorProgress * cursorProgress : 1 - Math.pow(-2 * cursorProgress + 2, 2) / 2;
-  const cursorX = 55 - ce * 52.5;
-  const cursorY = 65 - ce * 62.5;
-  // Tabs stay visible throughout — no "closing to empty" final state.
-  // The section just scrolls away naturally; user sees the chaos as they pass through.
-  const closed = false;
-  const closing = false;
-  const closeScale = 1;
+  const closed = false;  // section never "closes" — it just scrolls away naturally
 
   return (
     <div ref={trackRef} style={{
-      height: '100vh', position: 'relative',
+      height: '100svh', position: 'relative',
       display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
       backgroundColor: closed ? '#FAF8F3' : '#fff',
       transition: 'background-color 0.5s',
@@ -883,7 +741,7 @@ function Problem() {
         <div style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 36px', marginBottom: 32, width: '100%' }}>
           {/* Problem text */}
           <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               You're juggling multiple systems for inquiries, forms, insurance, and scheduling.
             </h2>
             <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
@@ -894,7 +752,7 @@ function Problem() {
           {/* Spacer */}
           <div style={{ visibility: 'hidden' }}>
             <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
             <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
           </div>
         </div>
@@ -1213,7 +1071,7 @@ function CustomerStories() {
         </div>
 
         {/* Proof stats row */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 56, borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: 28 }}>
+        <div className="proof-stats" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 56, borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: 28 }}>
           {[
             { node: <><Counter target={60} suffix="%" /> → <Counter target={15} suffix="%" /></>, desc: 'Family drop-off rate, first month with Carelu' },
             { node: <><Counter target={0} /> missed</>, desc: 'Every lead followed up — no one falls through the cracks' },
@@ -1314,7 +1172,7 @@ function HandoffVisual() {
         }, 280);
         obs.disconnect();
       }
-    }, { threshold: 0.4 });
+    }, VISUAL_IN_VIEW);
     obs.observe(el);
     return () => { obs.disconnect(); if (interval) clearInterval(interval); };
   }, []);
@@ -1334,7 +1192,7 @@ function HandoffVisual() {
       position: 'relative',
       width: '100%', maxWidth: 440, margin: '0 auto',
       background: '#fff', borderRadius: 22,
-      padding: '32px 32px 28px',
+      padding: 'clamp(18px, 5vw, 32px) clamp(14px, 4.5vw, 32px) clamp(18px, 5vw, 28px)',
       border: '1px solid rgba(0,0,0,0.05)',
       boxShadow: '0 8px 40px rgba(0,0,0,0.04)',
       overflow: 'hidden',
@@ -1470,7 +1328,7 @@ function HandoffVisual() {
                   )}
                 </div>
                 <span style={{
-                  fontSize: 11,
+                  fontSize: 'clamp(9px, 2.8vw, 11px)',
                   color: done ? 'var(--green-900)' : 'var(--gray-500)',
                   fontWeight: 400,
                   whiteSpace: 'nowrap',
@@ -1574,7 +1432,7 @@ function ChecklistVisual() {
         });
         obs.disconnect();
       }
-    }, { threshold: 0.4 });
+    }, VISUAL_IN_VIEW);
     obs.observe(el);
     return () => { obs.disconnect(); timeouts.forEach((t) => clearTimeout(t)); };
   }, []);
@@ -1690,7 +1548,7 @@ function ChannelsHub() {
         }, 260);
         obs.disconnect();
       }
-    }, { threshold: 0.45 });
+    }, VISUAL_IN_VIEW);
     obs.observe(el);
     return () => { obs.disconnect(); if (interval) clearInterval(interval); };
   }, []);
@@ -1830,12 +1688,96 @@ function HowCarelu() {
   return <HowItWorksScroll steps={steps} />;
 }
 
-function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string; title: string; desc: string; visual: React.ReactNode }> }) {
+type HowStep = { step: string; tag: string; title: string; desc: string; visual: React.ReactNode };
+
+// One step card — shared by the desktop horizontal track and the mobile vertical stack.
+function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
+  return (
+    <div style={{
+      background: '#fff', borderRadius: 24,
+      boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
+      display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1.2fr',
+      overflow: 'hidden',
+      width: mobile ? '100%' : 'clamp(640px, 78vw, 900px)',
+      minHeight: mobile ? 0 : 380,
+      minWidth: 0,
+      flexShrink: 0,
+    }}>
+      <div style={{
+        padding: mobile ? '28px 20px' : 36,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: 'rgba(0,0,0,0.015)',
+        minWidth: 0, overflow: 'hidden',
+      }}>
+        {s.visual}
+      </div>
+      <div style={{
+        padding: mobile ? '28px 24px 24px' : '40px 40px 32px',
+        display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+        minWidth: 0,
+      }}>
+        <div>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 10,
+            fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+            letterSpacing: '0.12em', textTransform: 'uppercase',
+            marginBottom: 14,
+          }}>
+            <span style={{
+              width: 22, height: 22, borderRadius: '50%',
+              background: 'var(--lime)', color: 'var(--green-900)',
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 11, fontWeight: 700, letterSpacing: 0,
+              fontFamily: 'var(--font-body)',
+            }}>{s.step}</span>
+            Step
+          </div>
+          <h3 style={{
+            fontFamily: 'var(--font-display)', fontSize: mobile ? 24 : 'clamp(22px, 2.4vw, 30px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.2, letterSpacing: '-0.5px',
+            margin: '0 0 14px',
+          }}>
+            {s.title}
+          </h3>
+          <p style={{
+            fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0,
+          }}>
+            {s.desc}
+          </p>
+        </div>
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          marginTop: mobile ? 22 : 28, paddingTop: 20, borderTop: '1px solid rgba(0,0,0,0.06)',
+        }}>
+          <span style={{
+            display: 'inline-block', fontSize: 12, fontWeight: 500,
+            color: 'var(--gray-600)', background: 'rgba(0,0,0,0.04)',
+            borderRadius: 999, padding: '6px 14px',
+          }}>
+            {s.tag}
+          </span>
+          <div style={{
+            width: 36, height: 36, borderRadius: '50%',
+            background: 'var(--green-900)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
+  const isMobile = useIsMobile();
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
+    if (isMobile) return; // mobile renders a vertical stack — no scroll-jacking
     const onScroll = () => {
       const section = sectionRef.current;
       const track = trackRef.current;
@@ -1851,10 +1793,21 @@ function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string;
       const END = 0.85;
       const animProgress = Math.max(0, Math.min(1, (progress - START) / (END - START)));
 
-      const trackWidth = track.scrollWidth;
+      // Center the FIRST card at animProgress=0 and the LAST card at
+      // animProgress=1, so the row enters with step 1 centered, slides left as
+      // you scroll, and ends with the final step centered (not flush to an edge).
       const viewportW = window.innerWidth;
-      const maxShift = Math.max(0, trackWidth - viewportW);
-      track.style.transform = `translate3d(${-animProgress * maxShift}px, 0, 0)`;
+      const cards = track.children;
+      const cardW = (cards[0] as HTMLElement).offsetWidth;
+      const gap = 32;                   // matches the track's `gap`
+      const padLeft = viewportW * 0.08; // matches the track's `padding: 0 8vw`
+      // translateX that puts card i's center at the viewport center
+      const centerShift = (i: number) =>
+        viewportW / 2 - (padLeft + i * (cardW + gap) + cardW / 2);
+      const startShift = centerShift(0);
+      const endShift = centerShift(cards.length - 1);
+      const shift = startShift + animProgress * (endShift - startShift);
+      track.style.transform = `translate3d(${shift}px, 0, 0)`;
 
       // Active card indicator
       const total = steps.length;
@@ -1868,14 +1821,48 @@ function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string;
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
     };
-  }, [steps.length]);
+  }, [steps.length, isMobile]);
 
+  // ── MOBILE: vertical stack — step 1 → 2 → 3 top to bottom, no pinning ──
+  if (isMobile) {
+    return (
+      <section id="how-it-works" style={{
+        position: 'relative', background: 'var(--bone)',
+        paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      }}>
+        <div style={{ textAlign: 'center', paddingBottom: 36 }}>
+          <div className="rv"><Pill>How it works</Pill></div>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 0, marginTop: 12, padding: '0 20px' }}>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 8vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12,
+              letterSpacing: '-0.02em', margin: 0,
+            }}>
+              Scale your practice on your terms.
+            </h2>
+          </div>
+        </div>
+        <div style={{
+          display: 'flex', flexDirection: 'column', gap: 20,
+          padding: '0 20px', maxWidth: 560, margin: '0 auto',
+        }}>
+          {steps.map((s, i) => (
+            <div key={s.step} className={`rv d${Math.min(i + 1, 5)}`} style={{ minWidth: 0 }}>
+              <HowStepCard s={s} mobile />
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
+
+  // ── DESKTOP: pinned horizontal track, step 1 centered → step 3 centered ──
   return (
-    <section ref={sectionRef} style={{
+    <section id="how-it-works" ref={sectionRef} style={{
       height: '320vh', position: 'relative', background: 'var(--bone)',
     }}>
       <div style={{
-        position: 'sticky', top: 0, height: '100vh',
+        position: 'sticky', top: 0, height: '100svh',
         display: 'flex', flexDirection: 'column',
         overflow: 'hidden',
       }}>
@@ -1897,7 +1884,7 @@ function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string;
               Scale your practice on your terms.
             </h2>
             <img
-              className="rv-scale"
+              className="rv-scale h2-doodle"
               src="/how-it-works-illustration.svg"
               alt=""
               aria-hidden="true"
@@ -1920,77 +1907,7 @@ function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string;
             }}
           >
             {steps.map((s) => (
-              <div key={s.step} style={{
-                background: '#fff', borderRadius: 24,
-                boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
-                display: 'grid', gridTemplateColumns: '1fr 1.2fr',
-                overflow: 'hidden',
-                width: 'clamp(640px, 78vw, 900px)',
-                minHeight: 380,
-                flexShrink: 0,
-              }}>
-                <div style={{
-                  padding: 36,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  background: 'rgba(0,0,0,0.015)',
-                }}>
-                  {s.visual}
-                </div>
-                <div style={{
-                  padding: '40px 40px 32px',
-                  display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-                }}>
-                  <div>
-                    <div style={{
-                      display: 'inline-flex', alignItems: 'center', gap: 10,
-                      fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-                      letterSpacing: '0.12em', textTransform: 'uppercase',
-                      marginBottom: 14,
-                    }}>
-                      <span style={{
-                        width: 22, height: 22, borderRadius: '50%',
-                        background: 'var(--lime)', color: 'var(--green-900)',
-                        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: 11, fontWeight: 700, letterSpacing: 0,
-                        fontFamily: 'var(--font-body)',
-                      }}>{s.step}</span>
-                      Step
-                    </div>
-                    <h3 style={{
-                      fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2.4vw, 30px)',
-                      fontWeight: 400, color: 'var(--green-900)',
-                      lineHeight: 1.2, letterSpacing: '-0.5px',
-                      margin: '0 0 14px',
-                    }}>
-                      {s.title}
-                    </h3>
-                    <p style={{
-                      fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0,
-                    }}>
-                      {s.desc}
-                    </p>
-                  </div>
-                  <div style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                    marginTop: 28, paddingTop: 20, borderTop: '1px solid rgba(0,0,0,0.06)',
-                  }}>
-                    <span style={{
-                      display: 'inline-block', fontSize: 12, fontWeight: 500,
-                      color: 'var(--gray-600)', background: 'rgba(0,0,0,0.04)',
-                      borderRadius: 999, padding: '6px 14px',
-                    }}>
-                      {s.tag}
-                    </span>
-                    <div style={{
-                      width: 36, height: 36, borderRadius: '50%',
-                      background: 'var(--green-900)',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <HowStepCard key={s.step} s={s} />
             ))}
           </div>
         </div>
@@ -2017,7 +1934,7 @@ function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string;
 // ── IMPACT — clean stat cards on cream ──────────
 function Impact() {
   return (
-    <section style={{
+    <section id="results" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
       background: 'var(--bone)',
     }}>
@@ -2025,7 +1942,7 @@ function Impact() {
         {/* Header — tighter spacing so it doesn't float disconnected from the data */}
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <div className="rv"><Pill>Proven results</Pill></div>
-          <div style={{
+          <div className="impact-head" style={{
             display: 'inline-flex', alignItems: 'center', gap: 0,
             marginTop: 12,
           }}>
@@ -2037,7 +1954,7 @@ function Impact() {
               The results speak louder than we can.
             </h2>
             <img
-              className="rv-scale"
+              className="rv-scale h2-doodle"
               src="/results-illustration.svg"
               alt=""
               aria-hidden="true"
@@ -2138,7 +2055,7 @@ function Compliance() {
     }}>
       <div style={W}>
         {/* The "certificate" — capped width, generous inner padding */}
-        <div className="rv-scale" style={{
+        <div className="rv-scale compliance-cert" style={{
           border: '1px solid var(--gray-200)',
           borderRadius: 22,
           padding: 'clamp(44px, 5.2vw, 72px)',
@@ -2196,7 +2113,7 @@ function Compliance() {
           </div>
 
           {/* Certification grid — tighter cell padding */}
-          <div className="mobile-stack" style={{
+          <div className="mobile-stack compliance-cells" style={{
             display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
             gap: 0, borderTop: '1px solid var(--gray-200)',
           }}>
@@ -2287,6 +2204,10 @@ function Faq() {
     { q: 'Will this replace our intake team?', a: "No -- and that's the point. Carelu handles the repetitive parts (eligibility checks, document collection, follow-ups) so your team can spend their time on clinical work and complex cases." },
     { q: 'How long until we\'re live?', a: 'Most providers go live within 1-2 weeks. We handle setup, configure your insurance rules and conversation flows, and train your team.' },
     { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context -- everything collected so far, the family\'s preferences, and a summary of the conversation.' },
+    { q: 'Does Carelu integrate with our EHR or practice management system?', a: 'Yes. Carelu connects to the systems you already use -- CentralReach, Rethink, and most major EHR and practice management platforms -- so completed cases flow straight into your existing workflow with no double entry.' },
+    { q: 'Which channels and languages does it support?', a: 'Phone, text, web forms, faxes, and email -- all in one inbox, answered 24/7. Conversations run natively in English and Spanish, with more languages on the way.' },
+    { q: 'Can it handle multiple locations and insurance panels?', a: 'Absolutely. Carelu supports multi-site practices with location-specific rules -- different insurance panels, service areas, and open capacity per site -- and routes every family to the right place automatically.' },
+    { q: 'What does onboarding look like?', a: 'We do the heavy lifting. Our team configures your insurance rules, service areas, and conversation flows, connects your channels, and trains your staff -- most providers are fully live within 1-2 weeks.' },
     { q: 'What does this actually cost?', a: 'We price based on volume and channels. Most providers see positive ROI within the first month. Book a demo and we\'ll walk through pricing for your setup.' },
   ];
 
@@ -2319,7 +2240,7 @@ function Faq() {
               style={{ width: '100%', maxWidth: 460, display: 'block', marginTop: 32, marginLeft: -24 }}
             />
           </div>
-          <div style={{
+          <div className="faq-card" style={{
             background: '#fff', borderRadius: 24, padding: '8px 32px',
             boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
           }}>
@@ -2339,7 +2260,7 @@ function Faq() {
                     display: 'inline-block', transform: open === i ? 'rotate(45deg)' : 'none', flexShrink: 0,
                   }}>+</span>
                 </button>
-                <div style={{ maxHeight: open === i ? 200 : 0, overflow: 'hidden', transition: 'max-height 0.5s var(--ease-dramatic)' }}>
+                <div style={{ maxHeight: open === i ? 400 : 0, overflow: 'hidden', transition: 'max-height 0.5s var(--ease-dramatic)' }}>
                   <p style={{ fontSize: 14, color: 'var(--gray-500)', lineHeight: 1.7, paddingBottom: 22, margin: 0 }}>{f.a}</p>
                 </div>
               </div>
@@ -2512,8 +2433,13 @@ function MuralReveal() {
   ];
   const PLATE_COUNT = plates.length;
 
+  // Defined before the geometry so mobile can use a tighter coordinate space.
+  const isMobile = useIsMobile();
+
   // ===== STACK GEOMETRY =====
-  const RX = 170;
+  // Mobile uses a narrower SVG canvas (less empty margin in the viewBox), so
+  // the same plates render ~35% larger on a phone without touching desktop.
+  const RX = isMobile ? 158 : 170;
   const RY = 48;
   const PLATE_DEPTH = 34;
   const PLATE_GAP_CLOSED = 0;     // closed → all plates collapsed under the top one
@@ -2522,12 +2448,12 @@ function MuralReveal() {
   const STROKE = 'rgba(140,140,160,0.55)';
   // =========================
 
-  const PLATE_CX = 580;
-  const LEFT_LABEL_X = 250;             // where the connector line starts (longer line now)
-  const LABEL_LEFT_ANCHOR_X = 30;       // left edge of label column
+  const PLATE_CX = isMobile ? 396 : 580;
+  const LEFT_LABEL_X = isMobile ? 200 : 250;   // where the connector line starts
+  const LABEL_LEFT_ANCHOR_X = isMobile ? 4 : 30; // left edge of label column
   const RIGHT_LABEL_X = PLATE_CX + RX + 60;
 
-  const SVG_W = 760;
+  const SVG_W = isMobile ? 560 : 760;
   // SVG height sized for the fully-open state (stable layout, no jumping)
   const SVG_H = TOP_CY + (PLATE_COUNT - 1) * PLATE_GAP_OPEN + PLATE_DEPTH + RY + 30;
 
@@ -2562,8 +2488,9 @@ function MuralReveal() {
 
   // Scroll deadzone: stack stays closed until the user has scrolled past START_THRESHOLD.
   // Below the threshold → animProgress = 0 → only "This Is What We Do" label is visible.
-  const START_THRESHOLD = 0.45;
-  const END_THRESHOLD = 0.72;
+  // Mobile gets a much shorter runway — long dead-scroll feels broken on a phone.
+  const START_THRESHOLD = isMobile ? 0.12 : 0.45;
+  const END_THRESHOLD = isMobile ? 0.6 : 0.72;
   const animProgress = Math.max(0, Math.min(1, (progress - START_THRESHOLD) / (END_THRESHOLD - START_THRESHOLD)));
 
   // Start CLOSED (only top plate + "This Is What We Do" visible),
@@ -2584,16 +2511,16 @@ function MuralReveal() {
   };
 
   return (
-    <section style={{
+    <section id="platform" style={{
       position: 'relative', background: 'var(--bone)',
     }}>
       <div ref={sectionRef} style={{
         // Scroll tracker — sticky inner lives here. Animation progress is tied to this height.
-        height: '220vh', position: 'relative',
+        height: isMobile ? '160svh' : '220vh', position: 'relative',
       }}>
       <div style={{
         position: 'sticky', top: 0,
-        height: '100vh',
+        height: '100svh',
         display: 'flex', flexDirection: 'column', justifyContent: 'flex-start',
         paddingTop: 24, paddingBottom: 24,
         overflow: 'hidden',
@@ -2725,7 +2652,7 @@ function MuralReveal() {
             const leftPct = (LABEL_LEFT_ANCHOR_X / SVG_W) * 100;
 
             return (
-              <div key={i} style={{
+              <div key={i} className="mural-label" style={{
                 position: 'absolute',
                 top: `${topPct}%`,
                 left: `${leftPct}%`,
@@ -2775,6 +2702,7 @@ export default function Landing() {
   return (
     <div style={{ background: '#FAF8F3', color: '#2B2A26', minHeight: '100vh' }}>
       {/* Top sections kept from main */}
+      <DemoModalHost />
       <Nav />
       <Hero />
       <DemoVideo />
