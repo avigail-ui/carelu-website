@@ -17,11 +17,15 @@ import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
 import CompanyV2 from './pages/CompanyV2'
 
+// On carelu.com the root IS the Carelu landing page; the Gateway chooser only
+// renders elsewhere (local dev, previews, and eventually leadtrap.com).
+const isCareluDomain = /(^|\.)carelu\.com$/i.test(window.location.hostname);
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Gateway />} />
+        <Route path="/" element={isCareluDomain ? <Landing /> : <Gateway />} />
         <Route path="/carelu" element={<Landing />} />
         <Route path="/carelu/company" element={<CareluCompany />} />
         <Route path="/company" element={<Company />} />

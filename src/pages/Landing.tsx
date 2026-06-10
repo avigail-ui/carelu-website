@@ -314,16 +314,14 @@ function Hero() {
                 display: 'inline-flex', alignItems: 'center', gap: 10,
                 fontSize: 15, fontWeight: 600, color: '#fff',
                 padding: '14px 26px', borderRadius: 100, textDecoration: 'none',
-                border: '1px solid rgba(255,255,255,0.55)',
-                background: 'linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.10))',
-                backdropFilter: 'blur(16px) saturate(1.4)', WebkitBackdropFilter: 'blur(16px) saturate(1.4)',
-                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 18px rgba(0,0,0,0.12)',
-                textShadow: '0 1px 8px rgba(0,0,0,0.3)',
-                transition: 'background-color 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.3s',
+                border: '1.5px solid rgba(255,255,255,0.85)',
+                background: 'transparent',
+                backdropFilter: 'blur(10px) saturate(1.1)', WebkitBackdropFilter: 'blur(10px) saturate(1.1)',
+                transition: 'background-color 0.2s, transform 0.2s, border-color 0.2s',
                 letterSpacing: '-0.005em',
               }}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.22)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.85)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.45), 0 8px 26px rgba(0,0,0,0.18)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.55)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.35), 0 4px 18px rgba(0,0,0,0.12)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.borderColor = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.85)'; e.currentTarget.style.transform = 'translateY(0)'; }}
               >
                 See How It Works
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
