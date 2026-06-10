@@ -664,10 +664,12 @@ function IconPlayground({ opacity }: { opacity: number }) {
 }
 
 // Step-card visuals animate only once the user actually reaches them: the
-// element must be ~60% visible AND inside the central band of the viewport
-// (the negative horizontal rootMargin keeps cards peeking in from the edge of
-// the horizontal carousel from triggering early).
-const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% 0px -18%' };
+// element must be ~60% visible AND inside the central band of the viewport.
+// The negative horizontal rootMargin keeps cards peeking in from the edge of
+// the desktop carousel from triggering early; the negative bottom margin does
+// the same for the mobile vertical stack, where the visual is the top of the
+// card and would otherwise fire while still hugging the bottom screen edge.
+const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% -24% -18%' };
 
 
 
