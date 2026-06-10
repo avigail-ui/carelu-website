@@ -98,9 +98,9 @@ function Nav() {
       }}>
         <div style={{
           display: 'inline-flex', alignItems: 'center',
-          height: 72,
-          borderRadius: 22,
-          padding: '0 7px 0 0',
+          height: 56,
+          borderRadius: 18,
+          padding: '0 6px 0 0',
           background: 'rgba(250,248,243,0.72)',
           backdropFilter: 'blur(32px) saturate(1.3)',
           WebkitBackdropFilter: 'blur(32px) saturate(1.3)',
@@ -108,34 +108,35 @@ function Nav() {
         }}>
           {/* Left links */}
           <a href="#product" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#2C3E2D'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
           >Product</a>
           <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#2C3E2D'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
           >Company</a>
 
           {/* Center logo */}
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 100px' }}>
-            <img src="/carelu-logo.png" alt="Carelu" style={{ height: 42, width: 'auto', display: 'block' }} />
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
+            <img src="/carelu-logo.png" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
           </a>
 
           {/* Right: login + button */}
           <a href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#2C3E2D'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
           >Log in</a>
           <a href="/demo" style={{
-            fontSize: 14, fontWeight: 500, color: '#fff',
+            fontSize: 14, fontWeight: 600, color: '#1A1A1A',
             padding: '12px 24px', borderRadius: 14, textDecoration: 'none',
             display: 'inline-flex', alignItems: 'center',
-            border: 'none',
-            background: '#2C3E2D',
-            transition: 'background 0.2s',
+            border: '1px solid rgba(0,0,0,0.08)',
+            background: '#fff',
+            boxShadow: '0 4px 18px rgba(0,0,0,0.08)',
+            transition: 'background 0.2s, box-shadow 0.3s, transform 0.2s',
           }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = '#1A2E1F'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = '#2C3E2D'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.14)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)'; }}
           >
             Request demo
           </a>
@@ -156,7 +157,7 @@ function Nav() {
           {['Platform', 'How It Works', 'Results', 'FAQ'].map(t => (
             <a key={t} href={`#${t.toLowerCase().replace(/\s+/g, '-')}`} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '22px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{t}</a>
           ))}
-          <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#fff', backgroundColor: '#2C3E2D', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32 }}>
+          <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#1A1A1A', backgroundColor: '#fff', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32, border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 4px 18px rgba(0,0,0,0.1)' }}>
             Get a Demo
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -170,87 +171,316 @@ function Nav() {
    HERO
    ================================================================ */
 function Hero() {
+  const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [progress, setProgress] = useState(0);
+
+  // Scroll-driven video (only first VIDEO_CAP of duration plays) + staged content reveal
+  const VIDEO_CAP = 0.35;
   useEffect(() => {
-    const v = videoRef.current; if (!v) return;
-    const obs = new IntersectionObserver(([e]) => { e.isIntersecting ? v.play().catch(() => {}) : v.pause(); }, { threshold: 0.25 });
-    obs.observe(v);
-    return () => obs.disconnect();
+    let raf = 0;
+    const update = () => {
+      const sec = sectionRef.current; const v = videoRef.current;
+      if (!sec) return;
+      const rect = sec.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const total = sec.offsetHeight - vh;
+      if (total <= 0) return;
+      const p = Math.max(0, Math.min(1, -rect.top / total));
+      setProgress(p);
+      if (v) {
+        const dur = v.duration;
+        if (dur && isFinite(dur)) v.currentTime = p * dur * VIDEO_CAP;
+      }
+    };
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    const v = videoRef.current;
+    const onLoaded = () => update();
+    v?.addEventListener('loadedmetadata', onLoaded);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+    return () => {
+      cancelAnimationFrame(raf);
+      v?.removeEventListener('loadedmetadata', onLoaded);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
+  const reveal = (start: number, end: number) =>
+    Math.max(0, Math.min(1, (progress - start) / (end - start)));
+  // Pill + headline are visible at page load (via CSS mount animation below).
+  // Only subhead, CTAs, and logos reveal on scroll.
+  const subheadOp  = reveal(0.10, 0.26);
+  const ctaOp      = reveal(0.30, 0.46);
+  const logosOp    = reveal(0.50, 0.68);
+
   return (
-    <section style={{ paddingTop: 200, paddingBottom: 0, position: 'relative', overflow: 'hidden', backgroundImage: 'linear-gradient(180deg, rgba(26,46,31,0.34) 0%, rgba(26,46,31,0.12) 32%, rgba(250,248,243,0) 62%, #FAF8F3 100%), url(/sky.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }}>
-      {/* Ambient glow behind video */}
-      <div style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%)', width: '140%', height: '80%', background: `radial-gradient(ellipse 50% 50% at 50% 60%, rgba(74,124,63,0.07) 0%, transparent 70%)`, pointerEvents: 'none' }} />
-
-      <div style={{ ...W, position: 'relative', zIndex: 1, textAlign: 'center' }}>
-        <div className="hero-sub" style={{ marginBottom: 26 }}>
-          <span style={{
-            display: 'inline-flex', alignItems: 'center',
-            fontSize: 12.5, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase',
-            color: 'rgba(255,255,255,0.96)',
-            background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.34)',
-            backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
-            padding: '9px 18px', borderRadius: 100,
-          }}>The very first care enablement platform</span>
-        </div>
-        <h1 className="rv-scale" style={{
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 7vw, 96px)',
-          fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.03em',
-          color: '#fff', maxWidth: 1000, margin: '0 auto',
-        }}>
-          <span className="hero-line">The future of intake is here.</span>
-        </h1>
-
-        {/* short divider */}
-        <div className="hero-sub" style={{ width: 96, height: 1, background: '#ffffff', margin: '34px auto 0' }} />
-
-        <p className="hero-sub" style={{
-          fontSize: 'clamp(15px, 1.4vw, 19px)', color: 'rgba(255,255,255,0.94)',
-          lineHeight: 1.7, maxWidth: 620, margin: '24px auto 44px',
-          fontWeight: 400,
-        }}>
-          Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health.
-        </p>
-
-        <div className="hero-cta" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 80 }}>
-          <a href="/demo" className="hero-cta-btn" style={{
-            display: 'inline-flex', alignItems: 'center', gap: 10,
-            fontSize: 15, fontWeight: 600, color: '#fff', backgroundColor: '#2C3E2D',
-            padding: '14px 32px', borderRadius: 100, textDecoration: 'none',
-            transition: 'transform 0.2s, box-shadow 0.3s',
-            boxShadow: '0 1px 2px rgba(0,0,0,0.1), 0 0 40px rgba(43,42,38,0.06)',
+    <section ref={sectionRef} style={{
+      position: 'relative', height: '220vh',
+      background: '#f0e6d2',
+    }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100vh',
+        overflow: 'hidden', background: 'transparent',
+      }}>
+        <div
+          style={{
+            position: 'absolute', inset: 0, zIndex: 0,
+            overflow: 'hidden',
+            WebkitMaskImage: 'linear-gradient(180deg, #000 0%, #000 50%, rgba(0,0,0,0.85) 68%, rgba(0,0,0,0.45) 84%, rgba(0,0,0,0) 100%)',
+            maskImage: 'linear-gradient(180deg, #000 0%, #000 50%, rgba(0,0,0,0.85) 68%, rgba(0,0,0,0.45) 84%, rgba(0,0,0,0) 100%)',
           }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(43,42,38,0.1)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 1px 2px rgba(0,0,0,0.1), 0 0 40px rgba(43,42,38,0.06)'; }}
-          >
-            Get a Demo
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#how-it-works" style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            fontSize: 14, fontWeight: 500, color: 'rgba(255,255,255,0.94)',
-            padding: '14px 24px', borderRadius: 100, textDecoration: 'none',
-            border: '1px solid rgba(255,255,255,0.45)',
-            transition: 'color 0.2s, border-color 0.2s',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#2C3E2D'; e.currentTarget.style.borderColor = 'rgba(43,42,38,0.25)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; e.currentTarget.style.borderColor = 'rgba(43,42,38,0.1)'; }}
-          >
-            See How It Works
-          </a>
+        >
+          <div
+            style={{
+              position: 'absolute', inset: 0,
+              backgroundImage: 'url(/hero-sky.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              animation: 'heroSkyDrift 48s ease-in-out infinite',
+              willChange: 'transform',
+            }}
+          />
+        </div>
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
+          background: 'linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.10) 35%, rgba(0,0,0,0.05) 55%, rgba(0,0,0,0) 75%)',
+        }} />
+        <div style={{
+          position: 'absolute', left: 0, right: 0, bottom: 0, height: '55%', zIndex: 2,
+          background: 'linear-gradient(180deg, rgba(240,230,210,0) 0%, rgba(240,230,210,0.15) 30%, rgba(240,230,210,0.5) 55%, rgba(240,230,210,0.85) 78%, #f0e6d2 100%)',
+          pointerEvents: 'none',
+        }} />
+
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 3,
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+          padding: '0 24px',
+        }}>
+          <div style={{ ...W, textAlign: 'center', maxWidth: 1100, margin: '0 auto' }}>
+            <div style={{
+              marginBottom: 28,
+              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both',
+            }}>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase',
+                color: '#fff',
+                background: 'rgba(255,255,255,0.10)',
+                border: '1px solid rgba(255,255,255,0.22)',
+                backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
+                padding: '8px 18px', borderRadius: 100,
+              }}>The very first care enablement platform</span>
+            </div>
+
+            <h1 style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(48px, 7vw, 104px)',
+              fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.03em',
+              color: '#fff', maxWidth: 1000, margin: '0 auto',
+              textShadow: '0 2px 30px rgba(0,0,0,0.35)',
+              animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
+            }}>
+              The future of intake is here.
+            </h1>
+
+            <p style={{
+              fontSize: 'clamp(15px, 1.4vw, 19px)',
+              color: 'rgba(255,255,255,0.88)',
+              lineHeight: 1.6, maxWidth: 600, margin: '24px auto 40px',
+              fontWeight: 400,
+              textShadow: '0 1px 12px rgba(0,0,0,0.35)',
+              opacity: subheadOp,
+              transform: `translateY(${(1 - subheadOp) * 16}px)`,
+              transition: 'opacity 0.3s ease, transform 0.3s ease',
+            }}>
+              Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health.
+            </p>
+
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', justifyContent: 'center',
+              opacity: ctaOp,
+              transform: `translateY(${(1 - ctaOp) * 16}px)`,
+              transition: 'opacity 0.3s ease, transform 0.3s ease',
+            }}>
+              <a href="/demo" className="hero-cta-btn" style={{
+                display: 'inline-flex', alignItems: 'center', gap: 10,
+                fontSize: 15, fontWeight: 600, color: '#1A1A1A', backgroundColor: '#fff',
+                padding: '14px 28px', borderRadius: 100, textDecoration: 'none',
+                transition: 'transform 0.2s, box-shadow 0.3s',
+                boxShadow: '0 8px 28px rgba(0,0,0,0.32)',
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 36px rgba(0,0,0,0.4)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(0,0,0,0.32)'; }}
+              >
+                Get a Demo
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#how-it-works" style={{
+                display: 'inline-flex', alignItems: 'center', gap: 10,
+                fontSize: 15, fontWeight: 600, color: '#fff',
+                padding: '14px 26px', borderRadius: 100, textDecoration: 'none',
+                border: '1.5px solid rgba(255,255,255,0.85)',
+                background: 'transparent',
+                backdropFilter: 'blur(10px) saturate(1.1)', WebkitBackdropFilter: 'blur(10px) saturate(1.1)',
+                transition: 'background-color 0.2s, transform 0.2s, border-color 0.2s',
+                letterSpacing: '-0.005em',
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.borderColor = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.85)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+              >
+                See How It Works
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Video with premium frame */}
+        {/* Trusted-by logo strip — anchored at the bottom of the hero
+            Dark-grayscale logos with mix-blend-mode so they stay legible on both
+            the misty video and the cream dissolve below — no scrim/band needed */}
+        <div style={{
+          position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
+          paddingBottom: 'clamp(10px, 1.6vh, 22px)',
+          opacity: logosOp,
+          transform: `translateY(${(1 - logosOp) * 16}px)`,
+          transition: 'opacity 0.3s ease, transform 0.3s ease',
+        }}>
+          <p style={{
+            fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'rgba(60,50,40,0.7)',
+            textAlign: 'center', marginBottom: 20,
+            mixBlendMode: 'multiply',
+          }}>
+            Trusted by the fastest growing ABA providers
+          </p>
+          <div style={{ overflow: 'hidden', position: 'relative' }}>
+            <div className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
+              {[0, 1].map(set => (
+                <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 80, paddingRight: 80 }}>
+                  {allLogos.map(logo => (
+                    <img
+                      key={`${set}-${logo.alt}`}
+                      src={logo.src}
+                      alt={logo.alt}
+                      style={{
+                        height: (logo as { smaller?: boolean }).smaller ? 28 : 34,
+                        width: 'auto', objectFit: 'contain',
+                        opacity: 0.78, flexShrink: 0,
+                        filter: 'grayscale(100%) brightness(0.55) contrast(1.1)',
+                        mixBlendMode: 'multiply',
+                        transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), mix-blend-mode 0.2s ease',
+                        willChange: 'transform, filter',
+                        cursor: 'pointer',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.opacity = '1';
+                        e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)';
+                        e.currentTarget.style.mixBlendMode = 'normal';
+                        e.currentTarget.style.transform = 'scale(1.06)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.opacity = '0.78';
+                        e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.1)';
+                        e.currentTarget.style.mixBlendMode = 'multiply';
+                        e.currentTarget.style.transform = 'scale(1)';
+                      }}
+                    />
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ── DEMO VIDEO ── The older "watch demo" video in a white frame with play button.
+// Sits in its own section right under the hero.
+function DemoVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const handlePlay = () => {
+    const v = videoRef.current; if (!v) return;
+    v.play().catch(() => {});
+    setIsPlaying(true);
+  };
+
+  return (
+    <section style={{
+      paddingTop: 'clamp(80px, 10vh, 140px)',
+      paddingBottom: 'clamp(80px, 10vh, 140px)',
+      background: 'linear-gradient(180deg, #f0e6d2 0%, #f5ecd9 25%, #faf3e5 55%, #FAF8F3 100%)',
+    }}>
+      <div style={{ ...W, maxWidth: 1040, textAlign: 'center' }}>
         <div className="hero-visual" style={{
-          maxWidth: 1000, margin: '0 auto',
-          borderRadius: 16, overflow: 'hidden',
-          border: '1px solid rgba(43,42,38,0.08)',
-          boxShadow: '0 0 0 1px rgba(43,42,38,0.04), 0 24px 80px rgba(0,0,0,0.5), 0 0 120px rgba(74,124,63,0.05)',
+          maxWidth: 880, margin: '0 auto',
+          borderRadius: 18, overflow: 'hidden',
+          border: '1px solid rgba(0,0,0,0.08)',
+          background: '#fff',
+          boxShadow: '0 18px 60px rgba(0,0,0,0.12), 0 2px 10px rgba(0,0,0,0.06)',
+          position: 'relative',
         }}>
-          <video ref={videoRef} controls muted loop playsInline style={{ width: '100%', height: 'auto', display: 'block' }}>
+          <video
+            ref={videoRef}
+            controls={isPlaying}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            style={{ width: '100%', height: 'auto', display: 'block', background: '#fff' }}
+          >
             <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
           </video>
+
+          {!isPlaying && (
+            <button
+              type="button"
+              onClick={handlePlay}
+              aria-label="Play video"
+              style={{
+                position: 'absolute', inset: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: 'rgba(255,255,255,0.96)',
+                border: 'none', cursor: 'pointer',
+                transition: 'background 0.3s ease',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,1)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.96)'; }}
+            >
+              <span style={{
+                position: 'relative',
+                width: 72, height: 72, borderRadius: '50%',
+                background: '#1A1A1A',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: '0 8px 22px rgba(26,46,31,0.28), 0 0 0 1px rgba(26,46,31,0.06)',
+              }}>
+                <span style={{
+                  position: 'absolute', inset: -10, borderRadius: '50%',
+                  border: '1px solid rgba(26,46,31,0.22)',
+                  animation: 'hubPulse 2.4s ease-out infinite',
+                  pointerEvents: 'none',
+                }} />
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" style={{ marginLeft: 3 }}>
+                  <path d="M7 5v14l12-7L7 5z" />
+                </svg>
+              </span>
+              <span style={{
+                position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)',
+                fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase',
+                color: 'rgba(26,46,31,0.65)',
+              }}>
+                Watch demo · 2 min
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </section>
@@ -274,23 +504,37 @@ const allLogos = [
 
 function LogoBar() {
   return (
-    <div style={{ padding: '64px 0 72px' }}>
+    <div style={{ padding: '88px 0 96px' }}>
       <p className="rv" style={{
-        fontSize: 12, fontWeight: 500, letterSpacing: '0.12em',
-        textTransform: 'uppercase' as const, color: 'rgba(43,42,38,0.90)',
-        textAlign: 'center', marginBottom: 40,
+        fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
+        textTransform: 'uppercase' as const, color: 'rgba(43,42,38,0.42)',
+        textAlign: 'center', marginBottom: 48,
       }}>
-        Trusted by 100+ of the fastest growing ABA providers
+        Trusted by the fastest growing ABA providers
       </p>
       <div style={{ overflow: 'hidden', position: 'relative' }}>
-        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 120, background: 'linear-gradient(to right, #FAF8F3, transparent)', zIndex: 2, pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 120, background: 'linear-gradient(to left, #FAF8F3, transparent)', zIndex: 2, pointerEvents: 'none' }} />
-        <div className="marquee-track" style={{ animation: 'marqueeScroll 50s linear infinite' }}>
+        {/* Wider edge fades for a smoother "scrolling into view" feel */}
+        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 220, background: 'linear-gradient(to right, #FAF8F3 0%, rgba(250,248,243,0.85) 40%, transparent 100%)', zIndex: 2, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 220, background: 'linear-gradient(to left,  #FAF8F3 0%, rgba(250,248,243,0.85) 40%, transparent 100%)', zIndex: 2, pointerEvents: 'none' }} />
+        <div className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
           {[0, 1].map(set => (
-            <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 72, paddingRight: 72 }}>
+            <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 96, paddingRight: 96 }}>
               {allLogos.map(logo => (
-                <img key={`${set}-${logo.alt}`} src={logo.src} alt={logo.alt}
-                  style={{ height: (logo as { smaller?: boolean }).smaller ? 58 : 82, width: 'auto', objectFit: 'contain', opacity: 0.85, flexShrink: 0, filter: (logo as { bright?: number }).bright ? `brightness(${(logo as { bright?: number }).bright})` : 'none' }} />
+                <img
+                  key={`${set}-${logo.alt}`}
+                  src={logo.src}
+                  alt={logo.alt}
+                  style={{
+                    height: (logo as { smaller?: boolean }).smaller ? 42 : 56,
+                    width: 'auto', objectFit: 'contain',
+                    opacity: 0.7, flexShrink: 0,
+                    filter: 'grayscale(100%) brightness(0.55) contrast(1.05)',
+                    transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+                    willChange: 'transform, filter',
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)'; e.currentTarget.style.transform = 'scale(1.04)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.opacity = '0.7'; e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.05)'; e.currentTarget.style.transform = 'scale(1)'; }}
+                />
               ))}
             </div>
           ))}
@@ -563,44 +807,63 @@ function Problem() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [t, setT] = useState(0);
 
+  // Scroll-tied progress (so the animation rewinds when user scrolls back up).
+  // No sticky pinning — uses the section's natural position in the viewport to compute t,
+  // so there's no 100vh "exit transition" that reads as empty space.
   useEffect(() => {
-    const handleScroll = () => {
-      if (!trackRef.current) return;
-      const rect = trackRef.current.getBoundingClientRect();
-      const trackH = rect.height - window.innerHeight;
-      if (trackH <= 0) return;
-      setT(Math.max(0, Math.min(1, -rect.top / trackH)));
+    let raf = 0;
+    const update = () => {
+      const el = trackRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      // t = 0 when the section's top is at viewport bottom (just appearing);
+      // t = 1 when the section's bottom is at viewport top (fully scrolled past).
+      // Animation runs as the section traverses the viewport — t=0 when section's
+      // top hits the viewport bottom, t=1 when the section's top hits the viewport top.
+      const t = Math.max(0, Math.min(1, (vh - rect.top) / vh));
+      setT(t);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   const tabs = ['Monday.com', 'DocuSign', 'IntakeQ', 'Gmail', 'Google Voice', 'eFax', 'Outlook', 'Scheduling', 'Insurance...', 'Sheets', 'Slack', 'RingCentral', 'Jotform', 'Calendly', 'CentralReach', 'Zoho', 'PandaDoc'];
 
-  // Phase timing
-  const rainOpacity = Math.max(0, Math.min(1, (0.5 - t) / 0.12)); // icons rain during the calm headline beat, fade as windows arrive
-  const browserVisible = t > 0.14;
-  const enterProgress = t < 0.14 ? 0 : Math.min(1, (t - 0.14) / 0.12);
+  // Phase timing — rescaled so the chaos animation uses the full t = 0 → 1 range
+  // (originally animation finished at t = 0.5 because there was a "solution reveal"
+  // taking up the other half — that reveal has since moved to MuralReveal, so we
+  // tightened the section and stretched the phases.)
+  const rainOpacity = 1; // icons always rain — never fade out
+  const browserVisible = t > 0.28;
+  const enterProgress = t < 0.28 ? 0 : Math.min(1, (t - 0.28) / 0.24);
   const browserX = 0;
   const browserY = (1 - easeOutBounce(enterProgress)) * -72; // fall from the top, bounce on landing
-  const cursorProgress = t < 0.3 ? 0 : Math.min(1, (t - 0.3) / 0.2);
+  const cursorProgress = t < 0.6 ? 0 : Math.min(1, (t - 0.6) / 0.4);
   const ce = cursorProgress < 0.5 ? 2 * cursorProgress * cursorProgress : 1 - Math.pow(-2 * cursorProgress + 2, 2) / 2;
   const cursorX = 55 - ce * 52.5;
   const cursorY = 65 - ce * 62.5;
-  const closed = t > 0.5;
-  const closing = t > 0.55 && !closed;
-  const closeScale = closing ? Math.max(0, 1 - (t - 0.55) * 14) : 1;
+  // Tabs stay visible throughout — no "closing to empty" final state.
+  // The section just scrolls away naturally; user sees the chaos as they pass through.
+  const closed = false;
+  const closing = false;
+  const closeScale = 1;
 
   return (
-    <div ref={trackRef} style={{ height: '220vh', position: 'relative' }}>
-      <div style={{
-        position: 'sticky', top: 0, height: '100vh',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-        backgroundColor: closed ? '#F0F5EE' : '#fff',
-        transition: 'background-color 0.5s',
-        overflow: 'hidden',
-      }}>
+    <div ref={trackRef} style={{
+      height: '100vh', position: 'relative',
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+      backgroundColor: closed ? '#FAF8F3' : '#fff',
+      transition: 'background-color 0.5s',
+      overflow: 'hidden',
+    }}>
         {/* Ambient glow for solution phase -- no earth image, pure dark with subtle accent radial */}
         {t > 0.5 && (
           <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
@@ -619,8 +882,8 @@ function Problem() {
         {/* Text overlay */}
         <div style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 36px', marginBottom: 32, width: '100%' }}>
           {/* Problem text */}
-          <div style={{ opacity: t > 0.5 ? 0 : 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.12, color: '#000', maxWidth: 640, margin: '0 auto 16px' }}>
+          <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               You're juggling multiple systems for inquiries, forms, insurance, and scheduling.
             </h2>
             <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
@@ -631,500 +894,1453 @@ function Problem() {
           {/* Spacer */}
           <div style={{ visibility: 'hidden' }}>
             <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.12, maxWidth: 640, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
             <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
           </div>
         </div>
 
-        {/* Floating capability pills around central glow -- Artisan style */}
-        {t > 0.5 && (() => {
-          const cw = Math.min(Math.max((t - 0.58) / 0.34, 0), 1); // headline gradient sweep
-
-          return (
-            <div style={{
-              position: 'absolute', inset: 0, zIndex: 9,
-              display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-              opacity: t > 0.6 ? 1 : 0, transition: 'opacity 0.6s',
-              pointerEvents: 'none',
-            }}>
-              {/* Headline */}
-              <h2 style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 60px)',
-                fontWeight: 400, lineHeight: 1.06, letterSpacing: '-0.02em',
-                textAlign: 'center', marginBottom: 18, position: 'relative', zIndex: 2,
-                backgroundImage: 'linear-gradient(90deg, #5E9462 0%, #4A7C3F 16%, #2C3E2D 34%, #4A7C3F 48%, #1A2E1F 58%, #1A2E1F 100%)',
-                backgroundSize: '215% 100%',
-                backgroundPosition: `${cw * 100}% 0`,
-                WebkitBackgroundClip: 'text', backgroundClip: 'text',
-                WebkitTextFillColor: 'transparent', color: 'transparent',
-                transition: 'background-position 0.25s linear',
-              }}>
-                Carelu makes sure no one slips away
-              </h2>
-              <p style={{ fontSize: 16, color: 'rgba(43,42,38,0.79)', textAlign: 'center', lineHeight: 1.6, maxWidth: 560, margin: '0 auto', position: 'relative', zIndex: 2 }}>
-                Every channel, instant qualification, document and signature collection, and follow-up that never quits — all handled by one AI built for ABA intake.
-              </p>
-
-              {/* River: every channel flows through Carelu to a completed intake */}
-              <div style={{ width: '100%', maxWidth: 940, margin: '36px auto 0', position: 'relative', zIndex: 2 }}>
-                <RiverFlow />
-              </div>
-            </div>
-          );
-        })()}
-      </div>
+        {/* Solution-phase reveal was moved to the MuralReveal section below.
+            Keeping this conditional empty so the chaos-tabs animation still plays out. */}
     </div>
   );
 }
 
 /* ================================================================
-   HOW IT WORKS — Monaco-style 3-section layout with animated mockups
+   ─── SECTIONS BELOW WERE BROUGHT IN FROM SESSION WORK ───
    ================================================================ */
-/* ===== How it works — Monaco-style auto-cycling feature sections ===== */
-const MOCK_CARD: React.CSSProperties = { background: '#ffffff', borderRadius: 16, border: '1px solid rgba(43,42,38,0.06)', overflow: 'hidden' };
-const FEATURE_BLOCK: React.CSSProperties = { background: '#ffffff', borderRadius: 20, border: '1px solid rgba(43,42,38,0.05)', padding: 'clamp(40px, 5vw, 64px)', marginBottom: 80 };
-const STEP_H3: React.CSSProperties = { fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 400, color: '#2B2A26', lineHeight: 1.1, marginBottom: 16, letterSpacing: '-0.02em' };
-const STEP_SUB: React.CSSProperties = { fontSize: 14.5, color: 'rgba(43,42,38,0.74)', lineHeight: 1.7, marginBottom: 28, maxWidth: 420 };
-const stepGrid = (mockFirst: boolean): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: mockFirst ? '1fr 1.1fr' : '1.1fr 1fr', gap: 56, alignItems: 'center' });
 
-const MockHead = (title: string, badge?: { text: string; tone?: 'green' | 'accent' | 'amber' }) => (
-  <div style={{ padding: '14px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-    <span style={{ fontSize: 13, fontWeight: 600, color: 'rgba(43,42,38,0.90)' }}>{title}</span>
-    {badge && (
-      <span style={{ fontSize: 10, fontWeight: 600, padding: '3px 10px', borderRadius: 100,
-        background: badge.tone === 'green' ? 'rgba(34,197,94,0.12)' : badge.tone === 'amber' ? 'rgba(245,158,11,0.1)' : 'rgba(74,124,63,0.1)',
-        color: badge.tone === 'green' ? '#22c55e' : badge.tone === 'amber' ? '#f59e0b' : accent }}>{badge.text}</span>
-    )}
-  </div>
-);
-const Check = (color = '#22c55e') => (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>);
+// ── LIVE COUNTER — animated count-up on enter, live ticks afterwards ──
+function LiveCounter() {
+  const target = getLiveCount();
+  const [count, setCount] = useState(0);
+  const [bumped, setBumped] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const ran = useRef(false);
 
-// A feature block whose bullets auto-advance while it's on screen, with the
-// mock morphing to match. Clicking a bullet jumps to it. (Monaco's motion.)
-function CycleStep({ heading, sub, bullets, mock, mockFirst = false, boxed = false }: {
-  heading: React.ReactNode;
-  sub: string;
-  bullets: { label: string; desc: string }[];
-  mock: (active: number) => React.ReactNode;
-  mockFirst?: boolean;
-  boxed?: boolean;
-}) {
-  const [active, setActive] = useState(0);
-  const [inView, setInView] = useState(false);
+  // Animate from 0 → target when the counter scrolls into view
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !ran.current) {
+        ran.current = true;
+        const dur = 2200;
+        const t0 = performance.now();
+        (function tick(now: number) {
+          const p = Math.min((now - t0) / dur, 1);
+          // ease-out quart for a "racing then settling" feel
+          const eased = 1 - Math.pow(1 - p, 4);
+          setCount(Math.round(eased * target));
+          if (p < 1) requestAnimationFrame(tick);
+        })(t0);
+        obs.disconnect();
+      }
+    }, { threshold: 0.3 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [target]);
+
+  // After the initial count-up, keep ticking live every ~6s with a subtle "bump" cue
+  useEffect(() => {
+    if (!ran.current) return;
+    const interval = setInterval(() => {
+      const next = getLiveCount();
+      setCount((prev) => (next > prev ? next : prev));
+      setBumped(true);
+      setTimeout(() => setBumped(false), 600);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div ref={ref} className="rv-scale" style={{ textAlign: 'center' }}>
+      <div style={{
+        fontFamily: 'var(--font-display)',
+        fontSize: 'clamp(44px, 5vw, 68px)',
+        fontWeight: 400,
+        color: 'var(--green-900)',
+        lineHeight: 1,
+        letterSpacing: '-0.02em',
+        fontVariantNumeric: 'lining-nums tabular-nums',
+        fontFeatureSettings: '"lnum" 1, "tnum" 1',
+        transform: bumped ? 'scale(1.012)' : 'scale(1)',
+        transition: 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+        willChange: 'transform',
+      }}>
+        {count.toLocaleString()}+
+      </div>
+      <div style={{
+        marginTop: 12,
+        fontSize: 15, fontWeight: 500,
+        color: 'var(--green-900)', opacity: 0.6,
+      }}>
+        families connected to care
+      </div>
+      <div style={{
+        marginTop: 14,
+        display: 'inline-flex', alignItems: 'center', gap: 7,
+      }}>
+        <span className="dot-pulse" style={{
+          width: 7, height: 7, borderRadius: '50%',
+          backgroundColor: 'var(--lime)', display: 'inline-block',
+          boxShadow: '0 0 0 3px rgba(212, 242, 92, 0.3)',
+        }} />
+        <span style={{
+          fontSize: 11, fontWeight: 600, letterSpacing: '0.18em',
+          textTransform: 'uppercase', color: 'var(--green-900)', opacity: 0.5,
+        }}>
+          Live
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function Pill({ children, dark }: { children: string; dark?: boolean }) {
+  return (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center',
+      fontFamily: 'var(--font-body)',
+      fontSize: 14, fontWeight: 500,
+      color: dark ? 'rgba(255,255,255,0.85)' : '#1A1A1A',
+      backgroundColor: dark ? 'rgba(255,255,255,0.10)' : '#fff',
+      padding: '10px 20px', borderRadius: 100,
+      marginBottom: 24,
+      letterSpacing: '-0.005em',
+      border: dark ? '1px solid rgba(255,255,255,0.18)' : '1px solid rgba(0,0,0,0.06)',
+      boxShadow: dark ? 'none' : '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)',
+    }}>
+      {children}
+    </span>
+  );
+}
+
+// ── CUSTOMER STORIES ─────────────────────────────
+const customerStories = [
+  {
+    logo: '/logos/golden-care.png',
+    photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=900&fit=crop&crop=faces',
+    quote: "Our intake coordinator was spending 6 hours a day on follow-ups. With Carelu, she spends that time actually helping families get started with care.",
+    name: 'Maria C.',
+    role: 'Clinical Director',
+    company: 'Golden Care Therapy',
+  },
+  {
+    logo: '/logos/cross-river.png',
+    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=900&fit=crop&crop=faces',
+    quote: "We opened three new locations last quarter. With Carelu, we didn't hire a single new intake coordinator. Every site was live on day one.",
+    name: 'James T.',
+    role: 'VP of Operations',
+    company: 'Cross River Therapy',
+  },
+  {
+    logo: '/logos/strive-aba.png',
+    photo: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=900&fit=crop&crop=faces',
+    quote: "A parent texted us at 11pm on a Saturday. By Monday morning, their child was already scheduled for an assessment. That never happened before Carelu.",
+    name: 'Rachel M.',
+    role: 'Director of Admissions',
+    company: 'Strive ABA Therapy',
+  },
+  {
+    logo: '/logos/supportive-care.png',
+    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=900&fit=crop&crop=faces',
+    quote: "We went from losing 60% of families during intake to retaining 85%. The ROI was obvious within the first two weeks.",
+    name: 'David K.',
+    role: 'Operations Manager',
+    company: 'Supportive Care ABA',
+  },
+  {
+    logo: '/logos/above-beyond.webp',
+    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=900&fit=crop&crop=faces',
+    quote: "We used to lose families over the weekend. Now Carelu handles Saturday and Sunday inquiries the same as Tuesday at 10am. Our waitlist is shorter than it's ever been.",
+    name: 'Sarah L.',
+    role: 'Intake Manager',
+    company: 'Above & Beyond ABA',
+  },
+  {
+    logo: '/logos/blossom-aba.webp',
+    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=900&fit=crop&crop=faces',
+    quote: "The follow-up alone saved us 20 hours a week. Parents get nudged for missing documents automatically -- our team just reviews completed cases.",
+    name: 'Michael R.',
+    role: 'Regional Director',
+    company: 'Blossom ABA',
+  },
+];
+
+function CustomerStories() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const active = customerStories[activeIdx];
+  const prev = () => setActiveIdx((i) => (i - 1 + customerStories.length) % customerStories.length);
+  const next = () => setActiveIdx((i) => (i + 1) % customerStories.length);
+
+  // Small corner markers — subtle dark squares like the Intercom layout
+  const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
+
+  return (
+    <section style={{
+      paddingTop: 'clamp(56px, 8vw, 100px)', paddingBottom: 'clamp(56px, 8vw, 100px)',
+      background: '#fff',
+      position: 'relative',
+    }}>
+      <div style={W}>
+        {/* Section header */}
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+          <div className="rv"><Pill>Customer stories</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em',
+            color: 'var(--green-900)', maxWidth: 720, margin: '12px auto 0',
+          }}>
+            Hear from teams who trust Carelu.
+          </h2>
+        </div>
+
+        {/* Testimonial frame — sits on the white section, just keeps the corner markers */}
+        <div className="rv-scale d2" style={{
+          position: 'relative',
+          maxWidth: 1100, margin: '0 auto',
+          padding: 'clamp(24px, 3.5vw, 48px) clamp(28px, 4vw, 56px)',
+        }}>
+          {/* 4 corner markers */}
+          <div style={{ position: 'absolute', top: 0,  left: 0,  ...cornerSq }} />
+          <div style={{ position: 'absolute', top: 0,  right: 0, ...cornerSq }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0,  ...cornerSq }} />
+          <div style={{ position: 'absolute', bottom: 0, right: 0, ...cornerSq }} />
+
+          <div className="testimonial-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 280px',
+            gap: 56,
+            alignItems: 'center',
+          }}>
+            {/* Left column: logo + quote + name */}
+            <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
+              <img
+                src={active.logo}
+                alt={active.company}
+                style={{
+                  height: 30, width: 'auto', objectFit: 'contain',
+                  filter: 'grayscale(100%) brightness(0.35) contrast(1)',
+                  marginBottom: 28,
+                  display: 'block',
+                }}
+              />
+              <blockquote style={{
+                fontSize: 'clamp(20px, 2.1vw, 28px)',
+                lineHeight: 1.4, letterSpacing: '-0.2px',
+                color: 'var(--green-900)',
+                fontWeight: 400,
+                margin: '0 0 28px',
+              }}>
+                &ldquo;{active.quote}&rdquo;
+              </blockquote>
+              <div>
+                <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)', marginBottom: 4 }}>
+                  {active.name}
+                </div>
+                <div style={{ fontSize: 15, color: 'var(--gray-500)' }}>
+                  {active.role}, {active.company}
+                </div>
+              </div>
+            </div>
+
+            {/* Right column: square portrait */}
+            <div className="testimonial-photo" style={{
+              width: 280, height: 300,
+              overflow: 'hidden',
+              position: 'relative',
+              justifySelf: 'end',
+              borderRadius: 8,
+            }}>
+              <img
+                key={activeIdx}
+                src={active.photo}
+                alt={active.name}
+                style={{
+                  width: '100%', height: '100%', objectFit: 'cover',
+                  objectPosition: 'center top',
+                  animation: 'testFade 0.5s var(--ease-dramatic)',
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation: prev/next arrows + dots */}
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 32,
+          marginTop: 28,
+        }}>
+          <button onClick={prev} aria-label="Previous" style={{
+            width: 40, height: 40, borderRadius: '50%', border: '1px solid rgba(0,0,0,0.15)',
+            background: 'transparent', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: 'var(--green-900)', transition: 'background 0.2s, border-color 0.2s',
+          }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.3)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; }}
+          >
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.5 15L7.5 10L12.5 5" /></svg>
+          </button>
+
+          <div style={{ display: 'flex', gap: 8 }}>
+            {customerStories.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveIdx(i)}
+                aria-label={`Story ${i + 1}`}
+                style={{
+                  width: i === activeIdx ? 24 : 8, height: 8,
+                  borderRadius: 4, border: 'none', padding: 0,
+                  background: i === activeIdx ? 'var(--green-900)' : 'rgba(0,0,0,0.18)',
+                  cursor: 'pointer',
+                  transition: 'width 0.3s var(--ease-dramatic), background 0.2s',
+                }}
+              />
+            ))}
+          </div>
+
+          <button onClick={next} aria-label="Next" style={{
+            width: 40, height: 40, borderRadius: '50%', border: '1px solid rgba(0,0,0,0.15)',
+            background: 'transparent', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: 'var(--green-900)', transition: 'background 0.2s, border-color 0.2s',
+          }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.3)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; }}
+          >
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7.5 5L12.5 10L7.5 15" /></svg>
+          </button>
+        </div>
+
+        {/* Proof stats row */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 56, borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: 28 }}>
+          {[
+            { node: <><Counter target={60} suffix="%" /> → <Counter target={15} suffix="%" /></>, desc: 'Family drop-off rate, first month with Carelu' },
+            { node: <><Counter target={0} /> missed</>, desc: 'Every lead followed up — no one falls through the cracks' },
+            { node: <><Counter target={24} /> / <Counter target={7} /></>, desc: 'Nights, weekends, holidays — never miss a family' },
+          ].map((s, i) => (
+            <div key={i} className={`rv d${i + 1}`} style={{ padding: '0 24px', borderLeft: i > 0 ? '1px solid rgba(0,0,0,0.1)' : 'none' }}>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)', color: 'var(--green-900)', marginBottom: 8, fontVariantNumeric: 'lining-nums tabular-nums' }}>{s.node}</div>
+              <div style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.desc}</div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+// ── CHANNEL ICONS — small stroke-based glyphs for each pill ──
+function ChannelIcon({ name }: { name: string }) {
+  const common = {
+    width: 13, height: 13,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.7,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  };
+  switch (name) {
+    case 'Phone':
+      return (
+        <svg {...common}>
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      );
+    case 'Text':
+      return (
+        <svg {...common}>
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+      );
+    case 'Chat':
+      return (
+        <svg {...common}>
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+      );
+    case 'Forms':
+      return (
+        <svg {...common}>
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="9" y1="13" x2="15" y2="13" />
+          <line x1="9" y1="17" x2="13" y2="17" />
+        </svg>
+      );
+    case 'Fax':
+      return (
+        <svg {...common}>
+          <polyline points="6 9 6 2 18 2 18 9" />
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+          <rect x="6" y="14" width="12" height="8" rx="1" />
+        </svg>
+      );
+    case 'Email':
+      return (
+        <svg {...common}>
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <polyline points="2 7 12 13 22 7" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
+// ── HANDOFF VISUAL — patient card with animated 5-step progress ribbon + team handoff footer ──
+function HandoffVisual() {
+  const milestones = ['Intake', 'Insurance', 'Forms', 'Schedule', 'Ready'];
+  const [filled, setFilled] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = ref.current; if (!el) return;
-    const o = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.4 });
-    o.observe(el);
-    return () => o.disconnect();
+    const el = ref.current;
+    if (!el) return;
+    let interval: ReturnType<typeof setInterval> | undefined;
+    let ran = false;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !ran) {
+        ran = true;
+        let p = 0;
+        interval = setInterval(() => {
+          p++;
+          setFilled(p);
+          if (p >= milestones.length) {
+            if (interval) clearInterval(interval);
+          }
+        }, 280);
+        obs.disconnect();
+      }
+    }, { threshold: 0.4 });
+    obs.observe(el);
+    return () => { obs.disconnect(); if (interval) clearInterval(interval); };
   }, []);
 
-  useEffect(() => {
-    if (!inView) return;
-    const id = setInterval(() => setActive((a) => (a + 1) % bullets.length), 4000);
-    return () => clearInterval(id);
-  }, [inView, bullets.length]);
+  const teamAvatars: { initials: string; bg: string }[] = [
+    { initials: 'SK', bg: '#4285F4' }, // Google blue
+    { initials: 'MR', bg: '#EA4335' }, // Google red
+    { initials: 'AP', bg: '#34A853' }, // Google green
+  ];
 
-  const text = (
-    <div>
-      <h3 style={STEP_H3}>{heading}</h3>
-      <p style={STEP_SUB}>{sub}</p>
-      <div>
-        {bullets.map((b, i) => (
-          <button key={i} onClick={() => setActive(i)} style={{ display: 'block', textAlign: 'left', background: 'none', border: 'none', cursor: 'pointer', padding: '12px 0 12px 20px', borderLeft: `2px solid ${active === i ? '#fff' : 'rgba(43,42,38,0.08)'}`, transition: 'border-color 0.4s', width: '100%' }}>
-            <div style={{ fontSize: 14, fontWeight: active === i ? 600 : 400, color: active === i ? '#fff' : 'rgba(43,42,38,0.4)', transition: 'color 0.4s' }}>{b.label}</div>
-            {active === i && <div style={{ fontSize: 13, color: 'rgba(43,42,38,0.86)', lineHeight: 1.6, marginTop: 6 }}>{b.desc}</div>}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-
-  const card = (
-    <div style={MOCK_CARD}>
-      <div key={active} style={{ animation: 'mockSwap 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}>
-        {mock(active)}
-      </div>
-    </div>
-  );
+  // Filled progress percent — derived from `filled`
+  const fillPct = (Math.max(0, Math.min(filled - 1, milestones.length - 1)) / (milestones.length - 1)) * 100;
+  const ready = filled >= milestones.length;
 
   return (
-    <div ref={ref} className="rv" style={boxed ? FEATURE_BLOCK : { marginBottom: 80 }}>
-      <div className="mobile-stack" style={stepGrid(mockFirst)}>
-        {mockFirst ? <>{card}{text}</> : <>{text}{card}</>}
-      </div>
-    </div>
-  );
-}
+    <div ref={ref} style={{
+      position: 'relative',
+      width: '100%', maxWidth: 440, margin: '0 auto',
+      background: '#fff', borderRadius: 22,
+      padding: '32px 32px 28px',
+      border: '1px solid rgba(0,0,0,0.05)',
+      boxShadow: '0 8px 40px rgba(0,0,0,0.04)',
+      overflow: 'hidden',
+    }}>
+      {/* Soft connection web — sits behind all content as a subtle background pattern */}
+      <svg
+        viewBox="0 0 440 480"
+        preserveAspectRatio="xMidYMid slice"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.5 }}
+        aria-hidden="true"
+      >
+        <defs>
+          <radialGradient id="handoffWebGlow" cx="50%" cy="55%" r="55%">
+            <stop offset="0%" stopColor="rgba(212,242,92,0.18)" />
+            <stop offset="70%" stopColor="rgba(212,242,92,0)" />
+          </radialGradient>
+        </defs>
+        <circle cx="220" cy="260" r="200" fill="url(#handoffWebGlow)" />
+        {/* Six anchor nodes around the card with curved cross-connections */}
+        {(() => {
+          const cx = 220, cy = 260, r = 180;
+          const nodes = Array.from({ length: 6 }, (_, i) => {
+            const a = (-90 + i * 60) * (Math.PI / 180);
+            return { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r };
+          });
+          const lines: React.ReactElement[] = [];
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j of [1, 2]) {
+              const p1 = nodes[i];
+              const p2 = nodes[(i + j) % nodes.length];
+              const mx = (p1.x + p2.x) / 2;
+              const my = (p1.y + p2.y) / 2;
+              const qx = cx + (mx - cx) * 0.35;
+              const qy = cy + (my - cy) * 0.35;
+              lines.push(
+                <path
+                  key={`${i}-${j}`}
+                  d={`M ${p1.x} ${p1.y} Q ${qx} ${qy} ${p2.x} ${p2.y}`}
+                  fill="none"
+                  stroke="rgba(26,46,31,0.07)"
+                  strokeWidth="1"
+                />
+              );
+            }
+          }
+          return lines;
+        })()}
+      </svg>
 
-function HowItWorks() {
-  // ── Section 1: They reach out. We pick up. ──
-  const mock1 = (a: number) => {
-    if (a === 0) return (<>
-      {MockHead('Inbox', { text: 'Live', tone: 'accent' })}
-      <div style={{ padding: '4px 0' }}>
-        {[{ n: 'Maria T.', ch: 'Phone' }, { n: 'David K.', ch: 'Web form' }, { n: 'Sarah J.', ch: 'Text' }, { n: 'Luis R.', ch: 'Chat' }, { n: 'James W.', ch: 'Email' }].map((r, j, arr) => (
-          <div key={j} style={{ padding: '10px 18px', display: 'flex', alignItems: 'center', gap: 10, borderBottom: j < arr.length - 1 ? '1px solid rgba(43,42,38,0.04)' : 'none' }}>
-            <div style={{ width: 26, height: 26, borderRadius: '50%', background: `hsl(${j * 55 + 200}, 45%, 55%)`, color: '#2B2A26', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{r.n[0]}</div>
-            <div style={{ flex: 1 }}><div style={{ fontSize: 12.5, fontWeight: 600, color: 'rgba(43,42,38,0.90)' }}>{r.n}</div><div style={{ fontSize: 10, color: 'rgba(43,42,38,0.82)' }}>{r.ch} · just now</div></div>
-            <span style={{ fontSize: 9, fontWeight: 600, padding: '2px 8px', borderRadius: 100, background: 'rgba(74,124,63,0.12)', color: accent }}>New</span>
-          </div>
-        ))}
-      </div>
-    </>);
-    if (a === 1) return (<>
-      {MockHead('Answered automatically', { text: '24/7', tone: 'green' })}
-      <div style={{ padding: '22px 18px', textAlign: 'center' }}>
-        <div style={{ fontFamily: 'var(--font-display)', fontSize: 54, color: '#2B2A26', lineHeight: 1 }}><Counter target={8} suffix="s" /></div>
-        <div style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.74)', marginTop: 6 }}>average first response</div>
-        <div style={{ marginTop: 16, padding: '10px 12px', borderRadius: 10, background: 'rgba(34,197,94,0.06)', border: '1px solid rgba(34,197,94,0.12)', fontSize: 12, color: 'rgba(43,42,38,0.89)' }}>Even at 11pm on a Saturday — no voicemail, no wait.</div>
-      </div>
-    </>);
-    return (<>
-      {MockHead('Every family, their language')}
-      <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', gap: 10, minHeight: 150 }}>
-        <div style={{ alignSelf: 'flex-start', maxWidth: '88%', padding: '10px 13px', borderRadius: 12, background: '#ffffff', border: '1px solid rgba(43,42,38,0.06)' }}>
-          <div style={{ fontSize: 9, color: accent, fontWeight: 700, marginBottom: 3 }}>EN</div>
-          <div style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.90)' }}>Hi! How can I help you and your child get started?</div>
-        </div>
-        <div style={{ alignSelf: 'flex-start', maxWidth: '88%', padding: '10px 13px', borderRadius: 12, background: 'rgba(74,124,63,0.1)', border: '1px solid rgba(74,124,63,0.16)' }}>
-          <div style={{ fontSize: 9, color: accent, fontWeight: 700, marginBottom: 3 }}>ES</div>
-          <div style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.90)' }}>¡Hola! ¿Cómo puedo ayudar a usted y a su hijo a empezar?</div>
-        </div>
-      </div>
-    </>);
-  };
-
-  // ── Section 2: Qualified on contact. ──
-  const mock2 = (a: number) => {
-    if (a === 0) return (<>
-      {MockHead('Service Area · Florida', { text: 'One config', tone: 'accent' })}
-      <div style={{ padding: '4px 0' }}>
-        {[{ k: 'Location', v: 'Miami, FL' }, { k: 'Age range', v: '2–7 yrs' }, { k: 'Diagnosis', v: 'Autism — required' }, { k: 'Service types', v: 'ABA, Assessment' }].map((r, j, arr) => (
-          <div key={j} style={{ padding: '12px 18px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: j < arr.length - 1 ? '1px solid rgba(43,42,38,0.04)' : 'none' }}>
-            <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.74)' }}>{r.k}</span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}><span style={{ fontSize: 12, color: 'rgba(43,42,38,0.90)', fontWeight: 500 }}>{r.v}</span>{Check()}</div>
-          </div>
-        ))}
-      </div>
-    </>);
-    if (a === 1) return (<>
-      {MockHead('Insurance', { text: 'Per plan', tone: 'accent' })}
-      <div style={{ padding: '8px 18px' }}>
-        {[{ p: 'Blue Cross PPO', s: 'In-network', t: 'green' }, { p: 'Aetna HMO', s: 'Case-by-case', t: 'amber' }, { p: 'Cigna Open Access', s: 'Case-by-case', t: 'amber' }, { p: 'Out-of-state Medicaid', s: 'Not accepted', t: 'red' }].map((r, j, arr) => (
-          <div key={j} style={{ padding: '11px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: j < arr.length - 1 ? '1px solid rgba(43,42,38,0.04)' : 'none' }}>
-            <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.90)' }}>{r.p}</span>
-            <span style={{ fontSize: 10, fontWeight: 600, padding: '3px 10px', borderRadius: 100, background: r.t === 'green' ? 'rgba(34,197,94,0.12)' : r.t === 'amber' ? 'rgba(245,158,11,0.1)' : 'rgba(236,106,94,0.12)', color: r.t === 'green' ? '#22c55e' : r.t === 'amber' ? '#f59e0b' : '#ec6a5e' }}>{r.s}</span>
-          </div>
-        ))}
-      </div>
-    </>);
-    return (<>
-      {MockHead('Result', { text: 'Pre-approved', tone: 'green' })}
-      <div style={{ padding: '22px 18px', textAlign: 'center', minHeight: 150 }}>
-        <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(34,197,94,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}>{Check()}</div>
-        <div style={{ fontFamily: 'var(--font-display)', fontSize: 26, color: '#2B2A26' }}>Pre-approved</div>
-        <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.74)', marginTop: 6 }}>Miami, FL · age 4 · Blue Cross PPO</div>
-        <div style={{ fontSize: 12, color: accent, marginTop: 12 }}>answered in <Counter target={3} suffix=" min" /></div>
-      </div>
-    </>);
-  };
-
-  // ── Section 3: Intake, completed. ──
-  const mock3 = (a: number) => {
-    if (a === 0) return (<>
-      {MockHead('Jake Torres · Intake', { text: '78% complete', tone: 'accent' })}
-      <div style={{ padding: '10px 18px' }}>
-        {[{ d: 'Consent to Treat', done: true }, { d: 'HIPAA authorization', done: true }, { d: 'Insurance card', done: true }, { d: 'Diagnosis report', done: false }].map((r, j, arr) => (
-          <div key={j} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 0', borderBottom: j < arr.length - 1 ? '1px solid rgba(43,42,38,0.04)' : 'none' }}>
-            {r.done ? Check() : <div style={{ width: 14, height: 14, borderRadius: '50%', border: '1.5px solid rgba(43,42,38,0.18)' }} />}
-            <span style={{ fontSize: 12.5, color: r.done ? 'rgba(43,42,38,0.6)' : 'rgba(43,42,38,0.35)', flex: 1 }}>{r.d}</span>
-            {!r.done && <span style={{ fontSize: 10, color: '#f59e0b' }}>chasing…</span>}
-          </div>
-        ))}
-      </div>
-    </>);
-    if (a === 1) return (<>
-      {MockHead('Following up', { text: 'Auto', tone: 'accent' })}
-      <div style={{ padding: '12px 18px', display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {[{ m: "Hi Maria, just need Jake's diagnosis report to finish up — you can upload it right here.", t: 'Day 2 · auto' }, { m: 'Quick nudge on that report whenever you get a sec!', t: 'Day 4 · auto' }, { m: 'Got it — thank you! The intake is complete.', t: 'Day 5' }].map((f, j) => (
-          <div key={j} style={{ padding: '10px 13px', borderRadius: 10, background: 'rgba(74,124,63,0.06)', border: '1px solid rgba(74,124,63,0.1)' }}>
-            <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.90)', lineHeight: 1.5 }}>{f.m}</div>
-            <div style={{ fontSize: 10, color: 'rgba(43,42,38,0.79)', marginTop: 4 }}>{f.t}</div>
-          </div>
-        ))}
-      </div>
-    </>);
-    return (<>
-      {MockHead('Jake Torres · Complete', { text: 'Ready', tone: 'green' })}
-      <div style={{ padding: '14px 18px' }}>
-        {['Qualified — Blue Cross PPO', 'Consent to Treat signed', 'HIPAA authorized', 'Insurance card on file', 'Diagnosis report on file'].map((item, j, arr) => (
-          <div key={j} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 0', fontSize: 12.5, color: 'rgba(43,42,38,0.90)', borderBottom: j < arr.length - 1 ? '1px solid rgba(43,42,38,0.04)' : 'none' }}>{Check()} {item}</div>
-        ))}
-        <div style={{ marginTop: 12, padding: '10px 12px', borderRadius: 10, background: 'rgba(34,197,94,0.06)', border: '1px solid rgba(34,197,94,0.12)', fontSize: 12, color: 'rgba(43,42,38,0.89)', textAlign: 'center' }}>Ready for your team to take on</div>
-      </div>
-    </>);
-  };
-
-  return (
-    <section id="how-it-works" style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <div style={{ textAlign: 'center', marginBottom: 80 }}>
-          <Label>How it works</Label>
-          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, lineHeight: 1.08, color: '#2B2A26', letterSpacing: '-0.02em' }}>
-            Scale your practice<br />on your terms.
-          </h2>
-          <p className="rv" style={{ fontSize: 16, color: 'rgba(43,42,38,0.74)', lineHeight: 1.7, margin: '20px auto 0', maxWidth: 560 }}>
-            Carelu runs intake end-to-end, so you grow your caseload without growing your team.
-          </p>
+      {/* Content sits above the web */}
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        {/* Top status — small pill, generous breathing room */}
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: 8,
+          padding: '6px 12px', borderRadius: 100,
+          background: ready ? 'rgba(212,242,92,0.22)' : 'rgba(0,0,0,0.04)',
+          marginBottom: 28,
+          transition: 'background 0.4s',
+        }}>
+          <span style={{
+            width: 7, height: 7, borderRadius: '50%',
+            background: ready ? 'var(--lime)' : 'rgba(0,0,0,0.25)',
+            transition: 'background 0.4s',
+          }} />
+          <span style={{
+            fontSize: 11, fontWeight: 500, letterSpacing: '0.1em',
+            color: 'var(--green-900)',
+            textTransform: 'uppercase',
+          }}>
+            {ready ? 'Case ready' : 'In progress'}
+          </span>
         </div>
 
-        <CycleStep
-          boxed
-          mockFirst
-          heading={<>They reach out.<br />We pick up.</>}
-          sub="Families reach out from everywhere — phone, text, email, web forms, your chat. Carelu answers every one instantly, around the clock, in English and Spanish, so no family slips away before anyone's even at their desk."
-          bullets={[
-            { label: 'Every channel, one inbox', desc: 'Phone, text, email, web, fax, and chat all land in a single view. Nothing gets lost.' },
-            { label: 'Answered in seconds', desc: 'Every family gets an instant response, day or night, not a voicemail they never return to.' },
-            { label: 'English & Spanish', desc: 'Meets every family in their language from the first word.' },
-          ]}
-          mock={mock1}
-        />
-
-        <CycleStep
-          heading="Qualified on contact."
-          sub="The moment a family reaches out, our agents check them against your clinic's rules — location, age, diagnosis, service type, insurance — and give a clear answer on the spot, so your team never spends a day on a family you can't serve."
-          bullets={[
-            { label: 'Your rules, one config', desc: 'Set your Service Areas once; every channel reads from the same rules and gives the same answer.' },
-            { label: 'Insurance, checked', desc: 'In-network, case-by-case, or not accepted — sorted automatically, per plan.' },
-            { label: 'Pre-approved on the spot', desc: 'Families see a clear yes or no in minutes, not after days of back-and-forth.' },
-          ]}
-          mock={mock2}
-        />
-
-        <CycleStep
-          boxed
-          mockFirst
-          heading="Intake, completed."
-          sub="Once a family qualifies, our agents keep going — collecting every document, gathering e-signatures, and following up on anything missing until the case is a complete intake. Your coordinators stop chasing leads and start building trust with families."
-          bullets={[
-            { label: 'Documents & e-signatures', desc: 'Collected in conversation, not chased over weeks of calls and texts.' },
-            { label: 'Follow-up, handled', desc: 'The relentless chasing intake used to require, done for you.' },
-            { label: 'A complete intake', desc: 'Qualified, documents in, consent signed — the case ready for your team to take on.' },
-          ]}
-          mock={mock3}
-        />
-
-      </div>
-    </section>
-  );
-}
-
-/* ================================================================
-   TESTIMONIALS
-   ================================================================ */
-const stories = [
-  { logo: '/logos/golden-care.png', photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=900&fit=crop&crop=faces', quote: "Our intake coordinator was spending 6 hours a day on follow-ups. Now she spends that time helping families get started with care.", name: 'Maria C.', role: 'Clinical Director', company: 'Golden Care' },
-  { logo: '/logos/cross-river.png', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=900&fit=crop&crop=faces', quote: "We opened three new locations last quarter. We didn't hire a single new intake coordinator. Every site was live on day one.", name: 'James T.', role: 'VP of Operations', company: 'Cross River Therapy' },
-  { logo: '/logos/strive-aba.png', photo: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=900&fit=crop&crop=faces', quote: "A parent texted us at 11pm on a Saturday. By Monday morning, their child was already scheduled for an assessment.", name: 'Rachel M.', role: 'Director of Admissions', company: 'Strive ABA' },
-  { logo: '/logos/supportive-care.png', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=900&fit=crop&crop=faces', quote: "We went from losing 60% of families during intake to retaining 85%. The ROI was obvious within two weeks.", name: 'David K.', role: 'Ops Manager', company: 'Supportive Care ABA' },
-  { logo: '/logos/above-beyond.webp', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=900&fit=crop&crop=faces', quote: "We used to lose families over the weekend. Now Carelu handles Saturday and Sunday the same as Tuesday at 10am.", name: 'Sarah L.', role: 'Intake Manager', company: 'Above & Beyond' },
-  { logo: '/logos/blossom-aba.webp', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=900&fit=crop&crop=faces', quote: "The follow-up alone saved us 20 hours a week. Parents get nudged for missing documents automatically.", name: 'Michael R.', role: 'Regional Director', company: 'Blossom ABA' },
-];
-
-function Testimonials() {
-  const [active, setActive] = useState(0);
-  const DWELL = 7000;
-
-  useEffect(() => {
-    const id = setInterval(() => setActive(a => (a + 1) % stories.length), DWELL);
-    return () => clearInterval(id);
-  }, [active]);
-
-  const s = stories[active];
-
-  return (
-    <section id="customers" style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <div style={{ marginBottom: 'clamp(40px, 5vw, 64px)' }}>
-          <Label>Customer stories</Label>
-          <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#2B2A26', lineHeight: 1.08, letterSpacing: '-0.02em' }}>
-            Trusted by the fastest-growing<br />ABA providers.
-          </h2>
-        </div>
-
-        <div className="testi-grid" style={{ display: 'grid', gridTemplateColumns: '0.82fr 1fr', gap: 'clamp(32px, 5vw, 80px)', alignItems: 'center' }}>
-          {/* Photo */}
-          <div key={`photo-${active}`} style={{ animation: 'mockSwap 0.55s var(--ease-dramatic)', borderRadius: 20, overflow: 'hidden', aspectRatio: '4 / 5', background: '#E8EDE4', boxShadow: '0 24px 70px rgba(26,46,31,0.13)' }}>
-            <img src={s.photo} alt={s.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 18%', display: 'block' }} />
-          </div>
-
-          {/* Quote + attribution */}
-          <div key={`text-${active}`} style={{ animation: 'mockSwap 0.55s var(--ease-dramatic)' }}>
-            <p style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2.7vw, 40px)', fontWeight: 400, lineHeight: 1.22, letterSpacing: '-0.012em', color: '#1A2E1F', margin: 0 }}>
-              &ldquo;{s.quote}&rdquo;
-            </p>
-            <div style={{ marginTop: 'clamp(24px, 3vw, 36px)' }}>
-              <div style={{ fontSize: 17, fontWeight: 600, color: '#1A2E1F' }}>{s.name}</div>
-              <div style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.58)', marginTop: 3 }}>{s.role}</div>
-              <div style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.58)' }}>{s.company}</div>
+        {/* Patient identity — clean horizontal row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 36 }}>
+          <div style={{
+            width: 52, height: 52, borderRadius: '50%',
+            background: 'linear-gradient(135deg, #F4F1EA 0%, #E9E4D6 100%)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 500,
+            letterSpacing: '0.02em',
+            color: 'var(--green-900)', flexShrink: 0,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+          }}>JM</div>
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)', marginBottom: 3 }}>
+              Jake M., age 4
             </div>
-            <img src={s.logo} alt={s.company} style={{ height: 88, width: 'auto', objectFit: 'contain', marginTop: 30, opacity: 0.95 }} />
-          </div>
-        </div>
-
-        {/* Progress segments */}
-        <div style={{ display: 'flex', gap: 10, marginTop: 'clamp(40px, 5vw, 60px)' }}>
-          {stories.map((_, i) => (
-            <button key={i} onClick={() => setActive(i)} aria-label={`Show story ${i + 1}`} style={{
-              flex: 1, height: 3, padding: 0, border: 'none', cursor: 'pointer',
-              borderRadius: 100, background: 'rgba(43,42,38,0.13)', overflow: 'hidden', position: 'relative',
-            }}>
-              {i < active && <span style={{ position: 'absolute', inset: 0, background: '#1A2E1F' }} />}
-              {i === active && <span key={`fill-${active}`} style={{ position: 'absolute', inset: 0, background: '#1A2E1F', transformOrigin: 'left', animation: `fillBar ${DWELL}ms linear forwards` }} />}
-            </button>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ================================================================
-   RESULTS COUNTER
-   ================================================================ */
-function ResultsCounter() {
-  const [count, setCount] = useState(getLiveCount);
-  useEffect(() => { const i = setInterval(() => setCount(getLiveCount()), 10000); return () => clearInterval(i); }, []);
-
-  return (
-    <section id="results" style={{ position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: '#ffffff' }} />
-
-      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <Label>Proven Results</Label>
-        <h2 className="rv-scale" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#2B2A26', marginBottom: 48, lineHeight: 1.08, letterSpacing: '-0.02em' }}>
-          The results speak louder than we can.
-        </h2>
-
-        <div className="rv-scale" style={{ textAlign: 'center', marginBottom: 64 }}>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(56px, 9vw, 112px)', color: '#2B2A26', lineHeight: 1, letterSpacing: '-0.03em', fontWeight: 400 }}>
-            {count.toLocaleString()}+
-          </div>
-          <div style={{ fontSize: 'clamp(18px, 2vw, 24px)', color: 'rgba(43,42,38,0.84)', marginTop: 12, fontFamily: 'var(--font-display)', fontWeight: 400, fontStyle: 'italic' }}>
-            families admitted through Carelu
-          </div>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 12 }}>
-            <span className="dot-pulse" style={{ width: 5, height: 5, borderRadius: '50%', backgroundColor: accent, display: 'inline-block' }} />
-            <span style={{ fontSize: 11, color: 'rgba(43,42,38,0.74)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>Live</span>
-          </div>
-        </div>
-
-        <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
-          {[
-            { v: 3, s: '\u00d7', label: 'More families admitted', sub: 'Same team. Same hours. Triple the output.' },
-            { v: 10, s: ' min', p: '<', label: 'First contact to intake-ready', sub: 'What used to take 3-5 days.' },
-            { v: 85, s: '%', label: 'Family completion rate', sub: 'Industry average is under 30%.' },
-            { v: 0, s: '', label: 'Manual follow-ups', sub: 'Your team focuses on care, not chasing.' },
-          ].map((s, i) => (
-            <div key={s.label} className={`rv-scale d${i + 1}`} style={{
-              background: '#ffffff', borderRadius: 16,
-              padding: '40px 28px', border: '1px solid rgba(43,42,38,0.1)',
-            }}>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 48px)', color: '#2B2A26', lineHeight: 1, marginBottom: 12, fontWeight: 400 }}>
-                <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
-              </div>
-              <div style={{ fontWeight: 600, color: '#2B2A26', fontSize: 14, marginBottom: 6 }}>{s.label}</div>
-              <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.79)', lineHeight: 1.5 }}>{s.sub}</div>
+            <div style={{ fontSize: 13, color: 'var(--gray-500)' }}>
+              Blue Cross PPO · ABA Therapy
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* RunAlongside removed */
-
-/* ================================================================
-   COMPLIANCE
-   ================================================================ */
-function Compliance() {
-  return (
-    <section style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
-      <div style={W}>
-        <div className="rv-scale" style={{ border: '1px solid rgba(43,42,38,0.06)', borderRadius: 20, overflow: 'hidden' }}>
-          <div style={{ textAlign: 'center', padding: 'clamp(48px, 6vw, 72px) clamp(24px, 4vw, 48px) 40px' }}>
-            <div style={{ width: 48, height: 48, borderRadius: '50%', margin: '0 auto 20px', background: 'rgba(74,124,63,0.08)', border: '1px solid rgba(74,124,63,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={accent} strokeWidth="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/></svg>
-            </div>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#2B2A26', lineHeight: 1.08, marginBottom: 12, letterSpacing: '-0.02em' }}>
-              Your compliance team<br />will love us.
-            </h2>
-            <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.82)', maxWidth: 380, margin: '0 auto' }}>Built for healthcare from day one. Not retrofitted.</p>
           </div>
-          <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid rgba(43,42,38,0.06)' }}>
-            {[
-              { label: 'HIPAA', detail: 'End-to-end encryption, signed BAAs, annual audits' },
-              { label: 'SOC 2', detail: 'Type II certified, continuous monitoring' },
-              { label: 'AES-256', detail: 'Encrypted at rest and in transit' },
-              { label: 'US Only', detail: 'HIPAA-eligible data centers' },
-              { label: 'RBAC', detail: 'Role-based access, full audit trail' },
-              { label: 'BAA', detail: 'Signed before you go live, every time' },
-            ].map((item, i) => (
-              <div key={item.label} className={`rv d${i + 1}`} style={{
-                padding: '28px 24px',
-                borderRight: (i % 3 !== 2) ? '1px solid rgba(43,42,38,0.06)' : 'none',
-                borderBottom: i < 3 ? '1px solid rgba(43,42,38,0.06)' : 'none',
+        </div>
+
+      {/* Progress ribbon — delicate outlined dots, hairline connector */}
+      <div style={{ position: 'relative', padding: '0 10px', marginBottom: 32 }}>
+        {/* Background line — hairline, matches the channel-web aesthetic */}
+        <div style={{
+          position: 'absolute', top: 6.5, left: 18, right: 18,
+          height: 1, background: 'rgba(26,46,31,0.10)',
+        }} />
+        {/* Filled progress line — still hairline, just a touch more visible */}
+        <div style={{
+          position: 'absolute', top: 6.5, left: 18,
+          width: `calc((100% - 36px) * ${fillPct / 100})`,
+          height: 1, background: 'rgba(26,46,31,0.45)',
+          transition: 'width 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+        }} />
+        {/* Milestone dots + labels */}
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between' }}>
+          {milestones.map((m, i) => {
+            const done = filled > i;
+            const isReadyDot = i === milestones.length - 1 && done;
+            return (
+              <div key={m} style={{
+                display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 11,
               }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 19, fontWeight: 400, color: '#2B2A26', marginBottom: 6 }}>{item.label}</div>
-                <div style={{ fontSize: 13, color: 'rgba(43,42,38,0.82)', lineHeight: 1.5 }}>{item.detail}</div>
+                <div style={{
+                  width: 13, height: 13, borderRadius: '50%',
+                  background: '#fff',
+                  border: done
+                    ? '1px solid rgba(26,46,31,0.55)'
+                    : '1px solid rgba(26,46,31,0.18)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  transform: done ? 'scale(1)' : 'scale(0.85)',
+                  transition: 'transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease 0.15s',
+                  boxShadow: isReadyDot && ready ? '0 0 0 4px rgba(212, 242, 92, 0.4)' : 'none',
+                }}>
+                  {done && (
+                    <svg width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="rgba(26,46,31,0.7)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: done ? 1 : 0, transition: 'opacity 0.25s ease 0.2s' }}>
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  )}
+                </div>
+                <span style={{
+                  fontSize: 11,
+                  color: done ? 'var(--green-900)' : 'var(--gray-500)',
+                  fontWeight: 400,
+                  whiteSpace: 'nowrap',
+                  transition: 'color 0.3s ease',
+                  opacity: done ? 0.85 : 0.65,
+                }}>{m}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Handoff footer — simple, single-line layout */}
+      <div style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        gap: 16,
+        opacity: ready ? 1 : 0.55,
+        transform: ready ? 'translateY(0)' : 'translateY(4px)',
+        transition: 'opacity 0.5s ease 0.1s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+          <span style={{
+            width: 22, height: 22, borderRadius: '50%',
+            background: 'var(--lime)',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            flexShrink: 0,
+          }}>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </span>
+          <span style={{
+            fontSize: 13, fontWeight: 400, color: 'var(--green-900)',
+            whiteSpace: 'nowrap',
+          }}>
+            Handed off to clinical team
+          </span>
+        </div>
+        <div style={{ display: 'flex', flexShrink: 0 }}>
+          {teamAvatars.map((a, i) => (
+            <div key={a.initials} style={{
+              width: 24, height: 24, borderRadius: '50%',
+              background: a.bg,
+              border: '2px solid #fff',
+              marginLeft: i > 0 ? -8 : 0,
+              fontSize: 9, fontWeight: 600,
+              color: '#fff',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>{a.initials}</div>
+          ))}
+        </div>
+      </div>
+      </div>
+    </div>
+  );
+}
+
+// ── CHECKLIST VISUAL — each row's icon goes idle → loading-spinner → check (cascading) ──
+function ChecklistVisual() {
+  const items = [
+    { label: 'Insurance verified', sub: 'Blue Cross PPO', done: true },
+    { label: 'Consent form', sub: 'Signed', done: true },
+    { label: 'Insurance card', sub: 'Uploaded via text', done: true },
+    { label: 'Diagnosis report', sub: 'Requested', done: true },
+  ];
+  type ItemState = 'idle' | 'loading' | 'done';
+  const [states, setStates] = useState<ItemState[]>(['idle', 'idle', 'idle', 'idle']);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const timeouts: ReturnType<typeof setTimeout>[] = [];
+    let ran = false;
+    const STAGGER = 350;
+    const LOAD_MS = 650;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !ran) {
+        ran = true;
+        items.forEach((item, i) => {
+          const startT = i * STAGGER;
+          // start loading
+          timeouts.push(setTimeout(() => {
+            setStates((prev) => {
+              const next = [...prev];
+              next[i] = 'loading';
+              return next;
+            });
+          }, startT));
+          // for items that complete, flip to done after a short load
+          if (item.done) {
+            timeouts.push(setTimeout(() => {
+              setStates((prev) => {
+                const next = [...prev];
+                next[i] = 'done';
+                return next;
+              });
+            }, startT + LOAD_MS));
+          }
+        });
+        obs.disconnect();
+      }
+    }, { threshold: 0.4 });
+    obs.observe(el);
+    return () => { obs.disconnect(); timeouts.forEach((t) => clearTimeout(t)); };
+  }, []);
+
+  return (
+    <div ref={ref} style={{ width: '100%', maxWidth: 320, margin: '0 auto', textAlign: 'left' }}>
+      {items.map((item, j, arr) => {
+        const state = states[j];
+        const isDone = state === 'done';
+        const isLoading = state === 'loading';
+        return (
+          <div key={j} style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            padding: '14px 0',
+            borderBottom: j < arr.length - 1 ? '1px solid rgba(0,0,0,0.08)' : 'none',
+          }}>
+            <div>
+              <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--green-900)', marginBottom: 2 }}>{item.label}</div>
+              <div style={{ fontSize: 12, color: 'var(--gray-500)' }}>{item.sub}</div>
+            </div>
+
+            <div style={{ position: 'relative', width: 24, height: 24 }}>
+              {/* idle: faded dashed placeholder */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                width: 24, height: 24, borderRadius: '50%',
+                border: '1.5px dashed rgba(0,0,0,0.18)',
+                opacity: state === 'idle' ? 1 : 0,
+                transform: state === 'idle' ? 'scale(1)' : 'scale(0.8)',
+                transition: 'opacity 0.25s ease, transform 0.25s ease',
+                pointerEvents: 'none',
+              }} />
+
+              {/* loading: spinning lime arc on a faint stone ring */}
+              <svg
+                width="24" height="24" viewBox="0 0 24 24"
+                fill="none"
+                style={{
+                  position: 'absolute', inset: 0,
+                  opacity: isLoading ? 1 : 0,
+                  transform: isLoading ? 'scale(1)' : 'scale(0.85)',
+                  transition: 'opacity 0.2s ease, transform 0.25s ease',
+                  animation: isLoading ? 'spin 0.8s linear infinite' : 'none',
+                  pointerEvents: 'none',
+                }}
+              >
+                <circle cx="12" cy="12" r="10" stroke="rgba(0,0,0,0.08)" strokeWidth="2.4" />
+                <circle cx="12" cy="12" r="10" stroke="var(--lime)" strokeWidth="2.6"
+                  strokeLinecap="round" strokeDasharray="20 48" />
+              </svg>
+
+              {/* done: lime-filled circle + dark check, with an expanding lime pulse */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                width: 24, height: 24, borderRadius: '50%',
+                background: 'var(--lime)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                opacity: isDone ? 1 : 0,
+                transform: isDone ? 'scale(1)' : 'scale(0.5)',
+                transition: 'opacity 0.3s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                pointerEvents: 'none',
+                boxShadow: isDone ? '0 1px 8px rgba(212, 242, 92, 0.45)' : 'none',
+              }}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--green-900)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline
+                    points="20 6 9 17 4 12"
+                    style={{
+                      strokeDasharray: 30,
+                      strokeDashoffset: isDone ? 0 : 30,
+                      transition: 'stroke-dashoffset 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.12s',
+                    }}
+                  />
+                </svg>
+              </div>
+              {isDone && (
+                <div style={{
+                  position: 'absolute', top: '50%', left: '50%',
+                  width: 24, height: 24, borderRadius: '50%',
+                  border: '2px solid var(--lime)',
+                  animation: 'checkLand 0.7s ease-out both',
+                  pointerEvents: 'none',
+                }} />
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ── CHANNELS HUB — sequential reveal: center first, then each pill clockwise ──
+function ChannelsHub() {
+  const channels = ['Phone', 'Text', 'Chat', 'Forms', 'Fax', 'Email'];
+  const [step, setStep] = useState(0); // 0 = hidden, 1..6 = each pill appears, then connections
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    let interval: ReturnType<typeof setInterval> | undefined;
+    let ran = false;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !ran) {
+        ran = true;
+        let s = 0;
+        interval = setInterval(() => {
+          s++;
+          setStep(s);
+          if (s >= channels.length + 1) {
+            if (interval) clearInterval(interval);
+          }
+        }, 260);
+        obs.disconnect();
+      }
+    }, { threshold: 0.45 });
+    obs.observe(el);
+    return () => { obs.disconnect(); if (interval) clearInterval(interval); };
+  }, []);
+
+  // Hexagonal positions for each pill — same as before
+  const PILL_RADIUS = 130;
+  const positions = channels.map((_, i) => {
+    const a = (-90 + i * 60) * (Math.PI / 180);
+    return { x: 180 + Math.cos(a) * PILL_RADIUS, y: 180 + Math.sin(a) * PILL_RADIUS };
+  });
+
+  // Web of curved connections — every pair of adjacent + every-other-pair
+  // (gives a rich "all connected" mesh without a central hub).
+  const connections: { from: number; to: number }[] = [];
+  for (let i = 0; i < channels.length; i++) {
+    connections.push({ from: i, to: (i + 1) % channels.length }); // hex ring
+    connections.push({ from: i, to: (i + 2) % channels.length }); // skip-one inner chords
+  }
+  const webVisible = step >= channels.length + 1;
+
+  return (
+    <div ref={ref} style={{ position: 'relative', width: '100%', maxWidth: 360, aspectRatio: '1 / 1', margin: '0 auto' }}>
+      <svg viewBox="0 0 360 360" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+        <defs>
+          {/* Soft gradient so the web reads as a calm connection, not heavy lines */}
+          <radialGradient id="webGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="var(--lime)" stopOpacity="0.18" />
+            <stop offset="100%" stopColor="var(--lime)" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        {/* Center glow — subtle warm haze under the web */}
+        <circle cx="180" cy="180" r="120" fill="url(#webGlow)"
+          style={{ opacity: webVisible ? 1 : 0, transition: 'opacity 0.8s ease' }}
+        />
+
+        {/* Web — curved lines connecting pills */}
+        {connections.map((c, i) => {
+          const p1 = positions[c.from];
+          const p2 = positions[c.to];
+          // Curve control point bowed toward the center for a soft, organic feel
+          const mx = (p1.x + p2.x) / 2;
+          const my = (p1.y + p2.y) / 2;
+          const cx = 180 + (mx - 180) * 0.4;
+          const cy = 180 + (my - 180) * 0.4;
+          const path = `M ${p1.x} ${p1.y} Q ${cx} ${cy} ${p2.x} ${p2.y}`;
+          // Each line lights up shortly after both endpoints are visible
+          const lineDelay = Math.max(c.from, c.to) * 0.26;
+          return (
+            <path
+              key={i}
+              d={path}
+              fill="none"
+              stroke="rgba(26,46,31,0.18)"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              style={{
+                opacity: webVisible ? 1 : 0,
+                transition: `opacity 0.6s ease ${lineDelay}s`,
+              }}
+            />
+          );
+        })}
+
+        {/* Glowing node dot at each pill anchor (small accent under each pill) */}
+        {positions.map((p, i) => {
+          const visible = step >= i + 1;
+          return (
+            <circle
+              key={i}
+              cx={p.x} cy={p.y} r="4"
+              fill="var(--lime)"
+              style={{
+                opacity: visible ? 0.9 : 0,
+                transition: 'opacity 0.4s ease',
+                filter: 'drop-shadow(0 0 6px rgba(212,242,92,0.6))',
+              }}
+            />
+          );
+        })}
+      </svg>
+
+      {/* Channel pills */}
+      {channels.map((ch, i) => {
+        const a = (-90 + i * 60) * (Math.PI / 180);
+        const x = 50 + Math.cos(a) * 36;
+        const y = 50 + Math.sin(a) * 36;
+        const visible = step >= i + 1;
+        return (
+          <div key={ch} style={{
+            position: 'absolute', left: `${x}%`, top: `${y}%`,
+            transform: `translate(-50%, -50%) scale(${visible ? 1 : 0.4})`,
+            opacity: visible ? 1 : 0,
+            background: '#fff', border: '1px solid rgba(0,0,0,0.08)',
+            borderRadius: 999, padding: '7px 14px 7px 11px',
+            fontSize: 12, fontWeight: 500, color: 'var(--green-900)',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
+            whiteSpace: 'nowrap',
+            display: 'inline-flex', alignItems: 'center', gap: 7,
+            transition: 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease',
+          }}>
+            <ChannelIcon name={ch} />
+            {ch}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
+// ── HOW CARELU WORKS ── (video subsection removed)
+function HowCarelu() {
+  const steps = [
+    {
+      step: '01',
+      tag: 'Multi-channel',
+      title: 'Every channel. One inbox.',
+      desc: 'Phone calls, texts, web forms, faxes, emails — Carelu answers them all instantly, 24/7, in English and Spanish. Families get a response in seconds, not days.',
+      visual: <ChannelsHub />,
+    },
+    {
+      step: '02',
+      tag: 'AI-powered',
+      title: 'Qualifies and collects. Automatically.',
+      desc: 'Carelu knows your insurance panels, service areas, and open capacity. It verifies eligibility, collects insurance cards, gathers consent forms — all through natural conversation.',
+      visual: <ChecklistVisual />,
+    },
+    {
+      step: '03',
+      tag: 'Automated',
+      title: 'Follows up and delivers. Zero handoff.',
+      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands off a complete, ready case.',
+      visual: <HandoffVisual />,
+    },
+  ];
+  return <HowItWorksScroll steps={steps} />;
+}
+
+function HowItWorksScroll({ steps }: { steps: Array<{ step: string; tag: string; title: string; desc: string; visual: React.ReactNode }> }) {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const section = sectionRef.current;
+      const track = trackRef.current;
+      if (!section || !track) return;
+      const rect = section.getBoundingClientRect();
+      const trackH = rect.height - window.innerHeight;
+      if (trackH <= 0) return;
+
+      const progress = Math.max(0, Math.min(1, -rect.top / trackH));
+      // Animation starts as soon as the section enters view (header + first card
+      // visible together) and finishes shortly before it scrolls off.
+      const START = 0.05;
+      const END = 0.85;
+      const animProgress = Math.max(0, Math.min(1, (progress - START) / (END - START)));
+
+      const trackWidth = track.scrollWidth;
+      const viewportW = window.innerWidth;
+      const maxShift = Math.max(0, trackWidth - viewportW);
+      track.style.transform = `translate3d(${-animProgress * maxShift}px, 0, 0)`;
+
+      // Active card indicator
+      const total = steps.length;
+      const idx = Math.min(total - 1, Math.floor(animProgress * total));
+      setActiveIdx(idx);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [steps.length]);
+
+  return (
+    <section ref={sectionRef} style={{
+      height: '320vh', position: 'relative', background: 'var(--bone)',
+    }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100vh',
+        display: 'flex', flexDirection: 'column',
+        overflow: 'hidden',
+      }}>
+        {/* Header — INSIDE the sticky pin so it stays locked with the cards */}
+        <div style={{
+          paddingTop: 'clamp(36px, 5vh, 64px)', paddingBottom: 'clamp(48px, 7vh, 88px)',
+          textAlign: 'center', flex: '0 0 auto',
+        }}>
+          <div className="rv"><Pill>How it works</Pill></div>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 0,
+            marginTop: 12,
+          }}>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12,
+              letterSpacing: '-0.02em', margin: 0,
+            }}>
+              Scale your practice on your terms.
+            </h2>
+            <img
+              className="rv-scale"
+              src="/how-it-works-illustration.svg"
+              alt=""
+              aria-hidden="true"
+              style={{ width: 135, height: 'auto', display: 'block', flexShrink: 0, margin: '-38px -22px -38px -12px' }}
+            />
+          </div>
+        </div>
+        {/* Horizontal track of cards */}
+        <div style={{
+          flex: '0 0 auto', display: 'flex', alignItems: 'center',
+          overflow: 'hidden', position: 'relative',
+        }}>
+          <div
+            ref={trackRef}
+            style={{
+              display: 'flex', gap: 32,
+              padding: '0 8vw',
+              willChange: 'transform',
+              transition: 'transform 0.05s linear',
+            }}
+          >
+            {steps.map((s) => (
+              <div key={s.step} style={{
+                background: '#fff', borderRadius: 24,
+                boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
+                display: 'grid', gridTemplateColumns: '1fr 1.2fr',
+                overflow: 'hidden',
+                width: 'clamp(640px, 78vw, 900px)',
+                minHeight: 380,
+                flexShrink: 0,
+              }}>
+                <div style={{
+                  padding: 36,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'rgba(0,0,0,0.015)',
+                }}>
+                  {s.visual}
+                </div>
+                <div style={{
+                  padding: '40px 40px 32px',
+                  display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+                }}>
+                  <div>
+                    <div style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 10,
+                      fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                      letterSpacing: '0.12em', textTransform: 'uppercase',
+                      marginBottom: 14,
+                    }}>
+                      <span style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        background: 'var(--lime)', color: 'var(--green-900)',
+                        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                        fontSize: 11, fontWeight: 700, letterSpacing: 0,
+                        fontFamily: 'var(--font-body)',
+                      }}>{s.step}</span>
+                      Step
+                    </div>
+                    <h3 style={{
+                      fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2.4vw, 30px)',
+                      fontWeight: 400, color: 'var(--green-900)',
+                      lineHeight: 1.2, letterSpacing: '-0.5px',
+                      margin: '0 0 14px',
+                    }}>
+                      {s.title}
+                    </h3>
+                    <p style={{
+                      fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0,
+                    }}>
+                      {s.desc}
+                    </p>
+                  </div>
+                  <div style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    marginTop: 28, paddingTop: 20, borderTop: '1px solid rgba(0,0,0,0.06)',
+                  }}>
+                    <span style={{
+                      display: 'inline-block', fontSize: 12, fontWeight: 500,
+                      color: 'var(--gray-600)', background: 'rgba(0,0,0,0.04)',
+                      borderRadius: 999, padding: '6px 14px',
+                    }}>
+                      {s.tag}
+                    </span>
+                    <div style={{
+                      width: 36, height: 36, borderRadius: '50%',
+                      background: 'var(--green-900)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Progress dots — sit lower, with extra breathing room above */}
+        <div style={{
+          marginTop: 'clamp(48px, 7vh, 96px)', paddingBottom: 'clamp(24px, 4vh, 48px)',
+          display: 'flex', justifyContent: 'center', gap: 8,
+        }}>
+          {steps.map((_, i) => (
+            <div key={i} style={{
+              width: i === activeIdx ? 24 : 8, height: 8,
+              borderRadius: 4,
+              background: i === activeIdx ? 'var(--green-900)' : 'rgba(0,0,0,0.18)',
+              transition: 'width 0.3s var(--ease-dramatic), background 0.2s',
+            }} />
+          ))}
+        </div>
       </div>
     </section>
   );
 }
 
-/* ================================================================
-   FAQ
-   ================================================================ */
+// ── IMPACT — clean stat cards on cream ──────────
+function Impact() {
+  return (
+    <section style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        {/* Header — tighter spacing so it doesn't float disconnected from the data */}
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+          <div className="rv"><Pill>Proven results</Pill></div>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 0,
+            marginTop: 12,
+          }}>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)',
+              lineHeight: 1.12, letterSpacing: '-0.02em', margin: 0,
+            }}>
+              The results speak louder than we can.
+            </h2>
+            <img
+              className="rv-scale"
+              src="/results-illustration.svg"
+              alt=""
+              aria-hidden="true"
+              style={{ width: 92, height: 'auto', display: 'block', flexShrink: 0, margin: '-16px 0 -16px 18px' }}
+            />
+          </div>
+        </div>
+
+        {/* Unified stats block — counter and cards live in one composition with consistent spacing */}
+        <div style={{ maxWidth: 1100, margin: '0 auto', color: 'var(--green-900)' }}>
+          <div style={{ textAlign: 'center', marginBottom: 32 }}>
+            <LiveCounter />
+          </div>
+
+          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
+          {[
+            { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
+            { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
+            { v: 85, s: '%', t2: 'Family completion rate', d: 'Industry average is under 30%.' },
+            { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
+          ].map((s, i) => (
+            <div
+              key={s.t2}
+              className={`rv-scale d${i + 1}`}
+              style={{
+                background: '#fff', borderRadius: 20,
+                padding: '40px 28px',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
+                cursor: 'default',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-6px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(20, 40, 30, 0.12), 0 2px 6px rgba(0,0,0,0.04)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)';
+              }}
+            >
+              <div style={{
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)',
+                fontWeight: 400,
+                color: 'var(--green-900)', lineHeight: 1, marginBottom: 16,
+                letterSpacing: '-0.02em',
+                fontVariantNumeric: 'lining-nums tabular-nums',
+              }}>
+                <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
+              </div>
+              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 6 }}>{s.t2}</div>
+              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.d}</div>
+            </div>
+          ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+
+// ── COMPLIANCE -- formal certificate style ─────
+function Compliance() {
+  const items = [
+    { label: 'HIPAA', detail: 'End-to-end encryption, signed BAAs, annual audits' },
+    { label: 'SOC 2', detail: 'Type II certified, continuous monitoring' },
+    { label: 'AES-256', detail: 'Data encrypted at rest and in transit (TLS 1.2+)' },
+    { label: 'US Only', detail: 'HIPAA-eligible data centers, no offshore processing' },
+    { label: 'RBAC', detail: 'Role-based access controls, full audit trail on PHI' },
+    { label: 'BAA', detail: 'Signed before you go live, every time' },
+  ];
+
+  const headlineWords = ['Your', 'compliance', 'team', 'will', 'love', 'us.'];
+
+  // Custom intersection observer for the header — drives the orchestrated reveal
+  // (shield pulse → shield outline draw → checkmark draw → word cascade → subtitle)
+  const headRef = useRef<HTMLDivElement>(null);
+  const [headInView, setHeadInView] = useState(false);
+
+  useEffect(() => {
+    const el = headRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setHeadInView(true);
+        obs.disconnect();
+      }
+    }, { threshold: 0.3 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <section style={{
+      paddingTop: 'clamp(56px, 8vw, 100px)', paddingBottom: 'clamp(56px, 8vw, 100px)',
+      background: 'var(--white)',
+    }}>
+      <div style={W}>
+        {/* The "certificate" — capped width, generous inner padding */}
+        <div className="rv-scale" style={{
+          border: '1px solid var(--gray-200)',
+          borderRadius: 22,
+          padding: 'clamp(44px, 5.2vw, 72px)',
+          position: 'relative',
+          overflow: 'hidden',
+          maxWidth: 1080,
+          margin: '0 auto',
+        }}>
+          {/* Corner flourishes — slightly smaller */}
+          {[{ top: 0, left: 0 }, { top: 0, right: 0, scaleX: -1 }, { bottom: 0, left: 0, scaleY: -1 }, { bottom: 0, right: 0, scaleX: -1, scaleY: -1 }].map((pos, i) => (
+            <svg key={i} width="36" height="36" viewBox="0 0 36 36" fill="none" style={{
+              position: 'absolute', ...pos,
+              transform: `scaleX(${pos.scaleX ?? 1}) scaleY(${pos.scaleY ?? 1})`,
+              opacity: 0.14,
+            }}>
+              <path d="M0 0 L36 0 L36 3 L3 3 L3 36 L0 36 Z" fill="var(--green-800)" />
+            </svg>
+          ))}
+
+          {/* Shield icon + headline */}
+          <div
+            ref={headRef}
+            className={`compliance-head${headInView ? ' visible' : ''}`}
+            style={{ textAlign: 'center', marginBottom: 32 }}
+          >
+            <div className="compliance-shield" style={{
+              width: 52, height: 52, borderRadius: '50%', margin: '0 auto 18px',
+              background: 'var(--sage-100)', border: '1px solid var(--sage-200)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              willChange: 'transform, box-shadow',
+            }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-700)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path className="compliance-shield-path" pathLength={1} d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path className="compliance-check" pathLength={1} d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <h2 style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)', fontWeight: 400,
+              color: 'var(--green-900)', lineHeight: 1.12, marginBottom: 12,
+              letterSpacing: '-0.02em',
+            }}>
+              {headlineWords.map((word, i) => (
+                <span
+                  key={i}
+                  className="compliance-word"
+                  style={{ animationDelay: `${0.25 + i * 0.08}s` }}
+                >
+                  {word}{i < headlineWords.length - 1 ? ' ' : ''}
+                </span>
+              ))}
+            </h2>
+            <p className="compliance-subtitle" style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-400)', maxWidth: 400, margin: '0 auto', lineHeight: 1.5 }}>
+              Built for healthcare from day one. Not retrofitted.
+            </p>
+          </div>
+
+          {/* Certification grid — tighter cell padding */}
+          <div className="mobile-stack" style={{
+            display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: 0, borderTop: '1px solid var(--gray-200)',
+          }}>
+            {items.map((item, i) => (
+              <div
+                key={item.label}
+                className={`rv d${i + 1}`}
+                style={{
+                  padding: '28px 24px',
+                  borderRight: (i % 3 !== 2) ? '1px solid var(--gray-200)' : 'none',
+                  borderBottom: i < 3 ? '1px solid var(--gray-200)' : 'none',
+                }}
+              >
+                <div style={{
+                  fontFamily: 'var(--font-display)', fontSize: 20, fontWeight: 400,
+                  color: 'var(--green-900)', marginBottom: 6, letterSpacing: '-0.02em',
+                }}>
+                  {item.label}
+                </div>
+                <div style={{ fontSize: 13, color: 'var(--gray-400)', lineHeight: 1.5 }}>
+                  {item.detail}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Scoped keyframes — soft, subtle reveal */}
+          <style>{`
+            @keyframes complianceFadeUp {
+              from { opacity: 0; transform: translateY(8px); }
+              to   { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes complianceShieldFade {
+              from { opacity: 0; transform: scale(0.96); }
+              to   { opacity: 1; transform: scale(1); }
+            }
+
+            .compliance-word {
+              display: inline-block;
+              opacity: 0;
+              transform: translateY(8px);
+              will-change: transform, opacity;
+            }
+            .compliance-head.visible .compliance-word {
+              animation: complianceFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+            }
+
+            .compliance-shield {
+              opacity: 0;
+              transform: scale(0.96);
+              transform-origin: center center;
+              will-change: transform, opacity;
+            }
+            .compliance-head.visible .compliance-shield {
+              animation: complianceShieldFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+            }
+
+            .compliance-shield-path { /* renders normally, no draw-in */ }
+            .compliance-check { /* renders normally, no draw-in */ }
+
+            .compliance-subtitle {
+              opacity: 0;
+              transform: translateY(8px);
+              will-change: transform, opacity;
+            }
+            .compliance-head.visible .compliance-subtitle {
+              animation: complianceFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+              .compliance-word, .compliance-subtitle, .compliance-shield {
+                opacity: 1 !important; transform: none !important;
+              }
+            }
+          `}</style>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+// ── FAQ ──────────────────────────────────────────
 function Faq() {
   const [open, setOpen] = useState<number | null>(null);
   const faqs = [
-    { q: 'How does Carelu keep patient data safe?', a: 'End-to-end encryption, signed BAAs with every provider, annual SOC 2 Type II audits, and all data stored in HIPAA-eligible US data centers.' },
-    { q: 'Will this replace our intake team?', a: "No -- Carelu handles the repetitive parts (eligibility, documents, follow-ups) so your team focuses on clinical work and complex cases." },
+    { q: 'How does Carelu keep patient data safe?', a: 'We use end-to-end encryption, sign BAAs with every provider, undergo annual SOC 2 Type II audits, and store all data in HIPAA-eligible US data centers.' },
+    { q: 'Will this replace our intake team?', a: "No -- and that's the point. Carelu handles the repetitive parts (eligibility checks, document collection, follow-ups) so your team can spend their time on clinical work and complex cases." },
     { q: 'How long until we\'re live?', a: 'Most providers go live within 1-2 weeks. We handle setup, configure your insurance rules and conversation flows, and train your team.' },
-    { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context -- everything collected, the family\'s preferences, and a conversation summary.' },
-    { q: 'What does this actually cost?', a: 'Pricing is based on volume and channels. Most providers see positive ROI within the first month. Book a demo for your specific setup.' },
+    { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context -- everything collected so far, the family\'s preferences, and a summary of the conversation.' },
+    { q: 'What does this actually cost?', a: 'We price based on volume and channels. Most providers see positive ROI within the first month. Book a demo and we\'ll walk through pricing for your setup.' },
   ];
 
   return (
-    <section id="faq" style={{ paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)' }}>
+    <section id="faq" style={{
+      paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
       <div style={W}>
-        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: 96 }}>
+        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 80, maxWidth: 1100, margin: '0 auto' }}>
           <div className="rv-left">
-            <Label>FAQ</Label>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#2B2A26', lineHeight: 1.08, letterSpacing: '-0.02em', marginBottom: 20 }}>
-              Let's clear<br />things up.
+            <div className="rv"><Pill>Questions</Pill></div>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)',
+              lineHeight: 1.12, letterSpacing: '-0.02em', marginBottom: 16,
+            }}>
+              Let&apos;s clear things up.
             </h2>
-            <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.82)', lineHeight: 1.6 }}>
-              Still have questions?<br /><a href="mailto:hello@leadtrap.ai" style={{ color: accent, fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>We're real humans -- just ask.</a>
+            <p style={{ fontSize: 15, color: 'var(--gray-500)', lineHeight: 1.6 }}>
+              Still have questions? <a href="mailto:hello@carelu.ai" style={{ color: 'var(--green-900)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>We&apos;re real humans — just ask.</a>
             </p>
+
+            {/* Hand-drawn doodle: new eye illustration */}
+            <img
+              className="rv d2"
+              src="/faq-doodle-new.svg"
+              alt=""
+              aria-hidden="true"
+              style={{ width: '100%', maxWidth: 460, display: 'block', marginTop: 32, marginLeft: -24 }}
+            />
           </div>
-          <div>
+          <div style={{
+            background: '#fff', borderRadius: 24, padding: '8px 32px',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
+          }}>
             {faqs.map((f, i) => (
-              <div key={i} className={`rv-right d${Math.min(i + 1, 5)}`} style={{ borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
-                <button onClick={() => setOpen(open === i ? null : i)} aria-expanded={open === i} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 0', border: 'none', background: 'none', textAlign: 'left', gap: 20, cursor: 'pointer' }}>
-                  <span style={{ fontSize: 15, fontWeight: 500, color: open === i ? '#fff' : 'rgba(43,42,38,0.7)', transition: 'color 0.2s' }}>{f.q}</span>
-                  <span style={{ fontSize: 18, color: 'rgba(43,42,38,0.54)', transition: 'transform 0.3s var(--ease-dramatic)', display: 'inline-block', transform: open === i ? 'rotate(45deg)' : 'none', flexShrink: 0, lineHeight: 1 }}>+</span>
+              <div key={i} className={`rv-right d${Math.min(i + 1, 5)}`} style={{
+                borderBottom: i < faqs.length - 1 ? '1px solid rgba(0,0,0,0.06)' : 'none',
+              }}>
+                <button onClick={() => setOpen(open === i ? null : i)} aria-expanded={open === i} aria-label={`${open === i ? 'Collapse' : 'Expand'}: ${f.q}`} style={{
+                  width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  padding: '24px 0', border: 'none', background: 'none', textAlign: 'left', gap: 16,
+                  cursor: 'pointer',
+                }}>
+                  <span style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)' }}>{f.q}</span>
+                  <span aria-hidden="true" style={{
+                    fontSize: 20, color: 'var(--gray-500)',
+                    transition: 'transform 0.3s var(--ease-dramatic)',
+                    display: 'inline-block', transform: open === i ? 'rotate(45deg)' : 'none', flexShrink: 0,
+                  }}>+</span>
                 </button>
                 <div style={{ maxHeight: open === i ? 200 : 0, overflow: 'hidden', transition: 'max-height 0.5s var(--ease-dramatic)' }}>
-                  <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.86)', lineHeight: 1.7, paddingBottom: 24 }}>{f.a}</p>
+                  <p style={{ fontSize: 14, color: 'var(--gray-500)', lineHeight: 1.7, paddingBottom: 22, margin: 0 }}>{f.a}</p>
                 </div>
               </div>
             ))}
@@ -1135,90 +2351,453 @@ function Faq() {
   );
 }
 
-/* ================================================================
-   CTA + FOOTER
-   ================================================================ */
-function CtaFooter() {
-  return (
-    <>
-      {/* CTA */}
-      <section style={{ padding: '0 40px 40px' }}>
-        <div className="cta-grid rv-scale" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 12, maxWidth: 1200, margin: '0 auto' }}>
-          <div style={{ background: '#ffffff', borderRadius: 16, padding: 'clamp(40px, 5vw, 64px)', border: '1px solid rgba(43,42,38,0.06)' }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 400, color: '#2B2A26', lineHeight: 1.1, marginBottom: 16, letterSpacing: '-0.02em' }}>
-              Stop losing families.<br />Start{' '}
-              <span style={{ fontStyle: 'italic', color: accent }}>growing</span>.
-            </h2>
-            <p style={{ fontSize: 16, color: 'rgba(43,42,38,0.86)', lineHeight: 1.6, maxWidth: 420 }}>
-              Carelu handles intake end-to-end so your team delivers care, not paperwork.
-            </p>
-          </div>
-          <a href="/demo" style={{
-            background: '#fff', borderRadius: 16, padding: '40px 36px', color: '#000',
-            display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-            textDecoration: 'none', transition: 'transform 0.3s',
-            position: 'relative', overflow: 'hidden', minHeight: 200,
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
-          >
-            <div>
-              <span style={{ fontSize: 11, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.1em', textTransform: 'uppercase' as const, fontWeight: 600 }}>Go live in days</span>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.5vw, 32px)', color: '#000', marginTop: 14, lineHeight: 1.15, letterSpacing: '-0.02em' }}>
-                See how it works<br />for your practice.
-              </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 28, paddingTop: 20, borderTop: '1px solid rgba(0,0,0,0.08)' }}>
-              <span style={{ fontSize: 16, fontWeight: 600, color: '#000' }}>Get a Demo</span>
-              <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#1A2E1F', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
 
-      {/* Footer */}
-      <footer style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 40px 36px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <img src="/carelu-logo.png" alt="Carelu" style={{ height: 22, width: 'auto', opacity: 0.85, display: 'block' }} />
-          </div>
-          <div style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
-            {['ABA Therapy', 'Mental Health', 'Home Care'].map(link => (
-              <a key={link} href={`/for/${link.toLowerCase().replace(/\s+/g, '-')}`}
-                style={{ fontSize: 12, color: 'rgba(43,42,38,0.79)', textDecoration: 'none', transition: 'color 0.2s' }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.5)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.25)'; }}
-              >{link}</a>
-            ))}
-            <span style={{ width: 1, height: 12, background: '#ffffff' }} />
-            <a href="mailto:hello@leadtrap.ai" style={{ fontSize: 12, color: 'rgba(43,42,38,0.79)', textDecoration: 'none' }}>hello@leadtrap.ai</a>
-          </div>
-          <span style={{ fontSize: 11, color: 'rgba(43,42,38,0.49)' }}>&copy; 2026 Carelu, Inc.</span>
+
+// ── CTA + FOOTER ─────────────────────────────────
+function CtaFooter() {
+  const columns: { title: string; links: string[] }[] = [
+    { title: 'Product',    links: ['Intake AI', 'Insurance Verification', 'Document Collection', 'Follow-ups', 'Scheduling'] },
+    { title: 'Industries', links: ['ABA Therapy', 'Mental Health', 'Home Care', 'Addiction Treatment', 'Hospice'] },
+    { title: 'Customers',  links: ['Single-Site', 'Multi-Site', 'Enterprise'] },
+    { title: 'Company',    links: ['About', 'Careers', 'News', 'Contact'] },
+    { title: 'Resources',  links: ['Documentation', 'Trust', 'Status', 'Security'] },
+  ];
+
+  return (
+    <footer style={{
+      position: 'relative',
+      padding: 'clamp(260px, 26vw, 400px) 36px 36px',
+      background: 'var(--bone)',
+      overflow: 'hidden',
+    }}>
+      {/* Landscape image — at 80% opacity so it stays the dominant background but with a softer feel */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: 'url(/footer-landscape-new.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 40%',
+        backgroundRepeat: 'no-repeat',
+        opacity: 0.8,
+        pointerEvents: 'none',
+      }} />
+      {/* Top cream fade — blends the landscape into the bone page background above */}
+      <div style={{
+        position: 'absolute', top: 0, left: 0, right: 0, height: 'clamp(140px, 18vw, 240px)',
+        background: 'linear-gradient(180deg, var(--bone) 0%, rgba(250,248,243,0.85) 35%, rgba(250,248,243,0) 100%)',
+        pointerEvents: 'none', zIndex: 2,
+      }} />
+      {/* Dark wash for white text legibility */}
+      <div style={{
+        position: 'absolute', inset: 0, pointerEvents: 'none',
+        background: 'linear-gradient(180deg, rgba(20,30,25,0.06) 0%, rgba(20,30,25,0.20) 55%, rgba(20,30,25,0.38) 100%)',
+      }} />
+
+      <div style={{ position: 'relative', zIndex: 1, maxWidth: 1200, margin: '0 auto' }}>
+        {/* Headline */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(60px, 8vw, 100px)' }}>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--bone)',
+            lineHeight: 1.12, letterSpacing: '-0.02em',
+            maxWidth: 860, margin: '0 auto 14px',
+            textShadow: '0 2px 16px rgba(0,0,0,0.25)',
+          }}>
+            Somewhere right now, a parent is searching for care for their child.
+          </h2>
+          <p className="rv d2" style={{
+            fontSize: 15, color: 'rgba(250,248,243,0.82)', lineHeight: 1.7,
+            maxWidth: 560, margin: '0 auto',
+            textShadow: '0 1px 8px rgba(0,0,0,0.2)',
+          }}>
+            Let&apos;s make sure they find you — and that when they do, someone&apos;s there.
+          </p>
         </div>
-      </footer>
-    </>
+
+        {/* Link columns */}
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)',
+          gap: 32, marginBottom: 80,
+        }} className="footer-grid">
+          {columns.map((col) => (
+            <div key={col.title}>
+              <div style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: 13, fontWeight: 600, color: 'var(--bone)',
+                marginBottom: 16,
+                textShadow: '0 1px 6px rgba(0,0,0,0.2)',
+              }}>
+                {col.title}
+              </div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {col.links.map((link) => (
+                  <li key={link}>
+                    <a href="#" style={{
+                      fontSize: 13, color: 'rgba(250,248,243,0.75)',
+                      textDecoration: 'none', transition: 'color 0.2s',
+                      textShadow: '0 1px 4px rgba(0,0,0,0.18)',
+                    }}
+                      onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--bone)'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(250,248,243,0.75)'; }}
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom row: brand + legal */}
+        <div style={{
+          paddingTop: 28, borderTop: '1px solid rgba(250,248,243,0.22)',
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          flexWrap: 'wrap', gap: 16,
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+            <img
+              src="/carelu-logo.png"
+              alt="Carelu"
+              style={{
+                height: 24, width: 'auto', display: 'block',
+                filter: 'brightness(0) invert(1) drop-shadow(0 1px 6px rgba(0,0,0,0.2))',
+              }}
+            />
+            <span style={{
+              width: 1, height: 18, background: 'rgba(250,248,243,0.32)', display: 'inline-block',
+            }} />
+            <span style={{
+              fontSize: 11, color: 'rgba(250,248,243,0.7)',
+              fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase',
+              textShadow: '0 1px 4px rgba(0,0,0,0.2)',
+              whiteSpace: 'nowrap',
+            }}>
+              Powered by
+            </span>
+            <img
+              src="/leadtrap-full-white.svg"
+              alt="LeadTrap"
+              style={{
+                height: 24, width: 'auto', display: 'block',
+                filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.2))',
+              }}
+            />
+          </div>
+          <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 Carelu, Inc.</span>
+            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
+            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
+            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
+            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>HIPAA · SOC 2</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
 
-/* ================================================================
-   PAGE
-   ================================================================ */
+
+// ── MURAL REVEAL — stacked plates illustration (SVG, no images) ──
+function MuralReveal() {
+  // Workflow ordered bottom-to-top. All labels sit on the LEFT, stack pushed to the right.
+  type Side = 'left' | 'right';
+  const plates: { title: string; isTop?: boolean; side: Side }[] = [
+    { title: 'This Is What We Do', isTop: true, side: 'left' }, // [0] top — umbrella
+    { title: 'Follow-up',          side: 'left' },              // [1]
+    { title: 'Scheduling',         side: 'left' },              // [2]
+    { title: 'Diagnosis',          side: 'left' },              // [3]
+    { title: 'Consent forms',      side: 'left' },              // [4]
+    { title: 'Insurance card',     side: 'left' },              // [5]
+    { title: 'Eligibility',        side: 'left' },              // [6] first step
+  ];
+  const PLATE_COUNT = plates.length;
+
+  // ===== STACK GEOMETRY =====
+  const RX = 170;
+  const RY = 48;
+  const PLATE_DEPTH = 34;
+  const PLATE_GAP_CLOSED = 0;     // closed → all plates collapsed under the top one
+  const PLATE_GAP_OPEN = 64;      // fully open → roomy stack
+  const TOP_CY = 56;
+  const STROKE = 'rgba(140,140,160,0.55)';
+  // =========================
+
+  const PLATE_CX = 580;
+  const LEFT_LABEL_X = 250;             // where the connector line starts (longer line now)
+  const LABEL_LEFT_ANCHOR_X = 30;       // left edge of label column
+  const RIGHT_LABEL_X = PLATE_CX + RX + 60;
+
+  const SVG_W = 760;
+  // SVG height sized for the fully-open state (stable layout, no jumping)
+  const SVG_H = TOP_CY + (PLATE_COUNT - 1) * PLATE_GAP_OPEN + PLATE_DEPTH + RY + 30;
+
+  // ── Scroll-tied progress (0 = closed, 1 = fully open) ──
+  // Ref on the scroll-tracker div (not the outer section) so we can add a cream buffer
+  // BELOW the tracker before the next section appears.
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    let rafId = 0;
+    const update = () => {
+      const sec = sectionRef.current;
+      if (!sec) return;
+      const rect = sec.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const total = sec.offsetHeight - vh;
+      if (total <= 0) { setProgress(0); return; }
+      const scrolled = -rect.top;
+      const p = Math.max(0, Math.min(1, scrolled / total));
+      setProgress(p);
+    };
+    const onScroll = () => { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  // Scroll deadzone: stack stays closed until the user has scrolled past START_THRESHOLD.
+  // Below the threshold → animProgress = 0 → only "This Is What We Do" label is visible.
+  const START_THRESHOLD = 0.45;
+  const END_THRESHOLD = 0.72;
+  const animProgress = Math.max(0, Math.min(1, (progress - START_THRESHOLD) / (END_THRESHOLD - START_THRESHOLD)));
+
+  // Start CLOSED (only top plate + "This Is What We Do" visible),
+  // OPEN as the user scrolls — layers + labels progressively reveal one by one.
+  // ease-out cubic for a soft "settle" feel
+  const eased = 1 - Math.pow(1 - animProgress, 3);
+  const PLATE_GAP = PLATE_GAP_CLOSED + (PLATE_GAP_OPEN - PLATE_GAP_CLOSED) * eased;
+
+  // Label/connector opacity — top label is always visible; others start hidden
+  // and FADE IN sequentially as their plate emerges from underneath.
+  const labelOpacity = (i: number) => {
+    if (i === 0) return 1;
+    // each non-top label appears as its plate emerges (top-down: closest to top first)
+    const step = 1 / PLATE_COUNT;
+    const start = (i - 1) * step * 0.9;
+    const end = start + step * 0.9;
+    return Math.max(0, Math.min(1, (animProgress - start) / (end - start)));
+  };
+
+  return (
+    <section style={{
+      position: 'relative', background: 'var(--bone)',
+    }}>
+      <div ref={sectionRef} style={{
+        // Scroll tracker — sticky inner lives here. Animation progress is tied to this height.
+        height: '220vh', position: 'relative',
+      }}>
+      <div style={{
+        position: 'sticky', top: 0,
+        height: '100vh',
+        display: 'flex', flexDirection: 'column', justifyContent: 'flex-start',
+        paddingTop: 24, paddingBottom: 24,
+        overflow: 'hidden',
+      }}>
+      <div style={W}>
+        {/* Section heading — compact so the stacked-plates diagram has room to open */}
+        <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 28px', padding: '0 24px' }}>
+          <div className="rv"><Pill>Introducing Carelu</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)',
+            fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400,
+            color: 'var(--green-900)',
+            lineHeight: 1.12,
+            letterSpacing: '-0.02em',
+            margin: '8px 0 14px',
+          }}>
+            One platform. Every channel.<br />
+            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>Always on.</span>
+          </h2>
+          <p className="rv d2" style={{
+            fontSize: 15, color: 'var(--gray-500)',
+            lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
+          }}>
+            AI intake infrastructure that makes sure every family who can receive care does.
+          </p>
+        </div>
+
+        {/* The stacked-plates diagram — narrower max-width for a more compact size */}
+        <div className="layers-diagram rv-scale d3" style={{
+          position: 'relative',
+          width: '100%', maxWidth: 620,
+          margin: '0 auto',
+          aspectRatio: `${SVG_W} / ${SVG_H}`,
+        }}>
+          <svg
+            viewBox={`0 0 ${SVG_W} ${SVG_H}`}
+            preserveAspectRatio="xMidYMid meet"
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
+          >
+            <defs>
+              {/* Warm turquoise gradient for the top plate */}
+              <linearGradient id="topFace" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%"   stopColor="#BFE0AE" />
+                <stop offset="100%" stopColor="#DCEDC4" />
+              </linearGradient>
+              {/* Diagonal criss-cross grid for the top plate */}
+              <pattern id="topGrid" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <path d="M 22 0 L 0 0 0 22" fill="none" stroke="rgba(255,255,255,0.85)" strokeWidth="0.6" />
+              </pattern>
+              <radialGradient id="gridFade" cx="50%" cy="50%" r="55%">
+                <stop offset="0%"   stopColor="#fff" stopOpacity="1" />
+                <stop offset="100%" stopColor="#fff" stopOpacity="0.35" />
+              </radialGradient>
+              <mask id="topGridMask">
+                <ellipse cx={PLATE_CX} cy={TOP_CY} rx={RX * 0.96} ry={RY * 0.96} fill="url(#gridFade)" />
+              </mask>
+              {/* Elegant fade for the connector lines — starts soft near the label, lands solid at the plate */}
+              <linearGradient id="connectorFade" gradientUnits="userSpaceOnUse"
+                x1={LEFT_LABEL_X} y1="0" x2={PLATE_CX - RX} y2="0">
+                <stop offset="0"    stopColor="#1A2E1F" stopOpacity="0.05" />
+                <stop offset="0.35" stopColor="#1A2E1F" stopOpacity="0.32" />
+                <stop offset="1"    stopColor="#1A2E1F" stopOpacity="0.55" />
+              </linearGradient>
+            </defs>
+
+            {/* Render plates BACK-TO-FRONT (bottom of stack first, top last) so upper plates
+                occlude the ones below. Side bands are filled opaquely → real stacked-plate look. */}
+            {plates.slice().reverse().map((plate, reverseIdx) => {
+              const i = PLATE_COUNT - 1 - reverseIdx;
+              const topCy = TOP_CY + i * PLATE_GAP;
+              return (
+                <g key={i}>
+                  {/* Side band — filled OPAQUE; the stroke traces the visible edges. */}
+                  <path
+                    d={`M ${PLATE_CX - RX},${topCy}
+                        a ${RX},${RY} 0 0 0 ${RX * 2},0
+                        v ${PLATE_DEPTH}
+                        a ${RX},${RY} 0 0 1 ${-RX * 2},0
+                        z`}
+                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : 'var(--bone)'}
+                    stroke={STROKE} strokeWidth="1"
+                  />
+                  {/* The full top face — only for the topmost plate. */}
+                  {plate.isTop && (
+                    <>
+                      <ellipse cx={PLATE_CX} cy={topCy} rx={RX} ry={RY}
+                        fill="url(#topFace)" stroke={STROKE} strokeWidth="1" />
+                      <rect x={PLATE_CX - RX} y={topCy - RY} width={RX * 2} height={RY * 2}
+                        fill="url(#topGrid)" mask="url(#topGridMask)" />
+                    </>
+                  )}
+                </g>
+              );
+            })}
+
+            {/* Connector lines — left or right based on label side */}
+            {plates.map((plate, i) => {
+              const topCy = TOP_CY + i * PLATE_GAP;
+              // For occluded plates (1..6) anchor the dot on the visible portion of the side rim.
+              const overlap = Math.max(0, PLATE_DEPTH - PLATE_GAP);
+              const visibleTopY = i === 0 ? topCy : topCy + overlap;
+              const dotY = (visibleTopY + topCy + PLATE_DEPTH) / 2;
+              const isLeft = plate.side === 'left';
+              const plateEdgeX = isLeft ? PLATE_CX - RX - 4 : PLATE_CX + RX + 4;
+              const labelEdgeX = isLeft ? LEFT_LABEL_X + 6 : RIGHT_LABEL_X - 6;
+              return (
+                <g key={`conn-${i}`} style={{ opacity: labelOpacity(i), transition: 'opacity 0.3s ease' }}>
+                  <line
+                    x1={labelEdgeX} y1={dotY}
+                    x2={plateEdgeX} y2={dotY}
+                    stroke="url(#connectorFade)"
+                    strokeWidth="0.9"
+                    strokeLinecap="round"
+                  />
+                  <circle cx={plateEdgeX} cy={dotY} r="2.6" fill="var(--green-900)" />
+                </g>
+              );
+            })}
+          </svg>
+
+          {/* Labels overlaid — all left-aligned, each preceded by a lime checkmark circle */}
+          {plates.map((plate, i) => {
+            const topCy = TOP_CY + i * PLATE_GAP;
+            const overlap = Math.max(0, PLATE_DEPTH - PLATE_GAP);
+            const visibleTopY = i === 0 ? topCy : topCy + overlap;
+            const dotY = (visibleTopY + topCy + PLATE_DEPTH) / 2;
+            const topPct = (dotY / SVG_H) * 100;
+            const leftPct = (LABEL_LEFT_ANCHOR_X / SVG_W) * 100;
+
+            return (
+              <div key={i} style={{
+                position: 'absolute',
+                top: `${topPct}%`,
+                left: `${leftPct}%`,
+                transform: 'translateY(-50%)',
+                display: 'inline-flex',
+
+                alignItems: 'center',
+                gap: 10,
+                fontSize: plate.isTop ? 15 : 13.5,
+                fontWeight: plate.isTop ? 500 : 400,
+                color: 'var(--green-900)',
+                letterSpacing: '-0.005em',
+                whiteSpace: 'nowrap',
+                opacity: labelOpacity(i),
+                transition: 'opacity 0.3s ease',
+              }}>
+                <span style={{
+                  width: 18, height: 18, borderRadius: '50%',
+                  background: 'var(--lime)',
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  flexShrink: 0,
+                }}>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="var(--green-900)" strokeWidth="3"
+                    strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                {plate.title}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  );
+}
+
+// ── PAGE ─────────────────────────────────────────
+
+
+// ── PAGE ─────────────────────────────────────────
 export default function Landing() {
   useReveal();
   return (
     <div style={{ background: '#FAF8F3', color: '#2B2A26', minHeight: '100vh' }}>
+      {/* Top sections kept from main */}
       <Nav />
       <Hero />
-      <LogoBar />
+      <DemoVideo />
       <Problem />
-      <HowItWorks />
-      <Testimonials />
-      <ResultsCounter />
-      <Compliance />
-      <Faq />
-      <CtaFooter />
+
+      {/* Session-work sections below — wrapped in .session-light to restore
+          the cream/dark-green palette that these components expect. */}
+      <div className="session-light">
+        <MuralReveal />
+        <Impact />
+        <HowCarelu />
+        <CustomerStories />
+        <Compliance />
+        <Faq />
+        <CtaFooter />
+      </div>
+
+      {/*
+        ── ARCHIVED ──
+        The original "chaos tabs" Problem animation lives in:
+        src/components/_archive/ChaosTabsAnimation.tsx
+        Import { ChaosTabsAnimation } and render here if you want it back.
+      */}
     </div>
   );
 }

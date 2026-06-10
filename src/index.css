@@ -130,6 +130,12 @@ button { font-family: inherit; cursor: pointer; }
   from { opacity: 0; transform: translateY(48px); filter: blur(6px); }
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
+/* Slow Ken Burns + cloud drift for the static sky hero background */
+@keyframes heroSkyDrift {
+  0%   { transform: scale(1.08) translate3d(-1.5%, -0.5%, 0); }
+  50%  { transform: scale(1.12) translate3d(1.5%, 0.5%, 0); }
+  100% { transform: scale(1.08) translate3d(-1.5%, -0.5%, 0); }
+}
 /* Monaco-style mock swap: gentle rise + fade, used by the auto-cycling feature mocks */
 @keyframes mockSwap {
   from { opacity: 0; transform: translateY(10px); }
@@ -777,4 +783,83 @@ button { font-family: inherit; cursor: pointer; }
     flex-wrap: wrap;
     gap: 12px !important;
   }
+}
+
+/* ================================================================
+   ─── SESSION-WORK ADDITIONS ───
+   Light palette + lime accent + animation keyframes used by the
+   bottom half of the carelu landing (everything below <Problem />).
+   The session components live inside .session-light, which overrides
+   the dark-mode root vars back to the original cream palette.
+   ================================================================ */
+.session-light {
+  --green-900: #1A1A1A;
+  --green-800: #1A1A1A;
+  --green-700: #1A1A1A;
+  --green-600: #1A1A1A;
+  --green-500: #2B2A26;
+  --sage-300: #C5BFB2;
+  --sage-200: #DDD8CC;
+  --sage-100: #EDE9E0;
+  --sage-50:  #F4F1EA;
+  --terra: #C4683D;
+  --terra-mid: #EBA57F;
+  --terra-light: #F8EEE7;
+  --clay: #5C2A14;
+  --bone: #FAF8F3;
+  --linen: #EDE8DC;
+  --stone: #8C8674;
+  --teal: #4686BA;
+  --teal-dark: #1F3B38;
+  --teal-light: #E5EDED;
+  --white: #FFFFFF;
+  --gray-50: #FAF8F3;
+  --gray-100: #EDE8DC;
+  --gray-200: #E2E0DC;
+  --gray-300: #CCC9C4;
+  --gray-400: #8C8674;
+  --gray-500: #8C8674;
+  --gray-600: #55524E;
+  --gray-800: #2B2A26;
+  --black: #2B2A26;
+  --lime: #D4F25C;
+  --lime-soft: #E8F8A3;
+  background: var(--bone);
+  color: var(--black);
+}
+
+/* keyframes for the session animations */
+@keyframes checkLand {
+  0%   { transform: translate(-50%, -50%) scale(0.6); opacity: 0.9; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes hubPulse {
+  0%   { box-shadow: 0 0 0 0   rgba(74,124,63,0.45); }
+  70%  { box-shadow: 0 0 0 18px rgba(74,124,63,0);   }
+  100% { box-shadow: 0 0 0 0   rgba(74,124,63,0);   }
+}
+@keyframes channelFloat {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50%      { transform: translate(-50%, -50%) translateY(-4px); }
+}
+@keyframes spokeGlow {
+  0%, 100% { stroke-opacity: 0.12; }
+  50%      { stroke-opacity: 0.32; }
+}
+@keyframes layerLabelIn {
+  from { opacity: 0; transform: translateY(-50%) translateX(0); }
+  to   { opacity: 1; transform: translateY(-50%); }
+}
+
+/* mobile: footer link columns collapse to 2 */
+@media (max-width: 768px) {
+  .session-light .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 28px !important; }
 }
