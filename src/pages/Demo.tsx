@@ -25,7 +25,7 @@ function Nav() {
         border: '1px solid rgba(43,42,38,0.07)',
       }}>
         <a href="/carelu" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          <img src="/carelu-logo.png" alt="Carelu" style={{ height: 30, width: 'auto', display: 'block' }} />
+          <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 30, width: 'auto', display: 'block' }} />
         </a>
         <a href="/carelu" style={{
           fontSize: 14, fontWeight: 500, color: 'rgba(43,42,38,0.84)', textDecoration: 'none',
@@ -65,7 +65,7 @@ export default function Demo() {
 
       <footer style={{ borderTop: '1px solid rgba(43,42,38,0.08)', padding: '24px' }}>
         <div style={{ maxWidth: 1080, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 12, fontSize: 12, color: '#8C8674' }}>
-          <img src="/carelu-logo.png" alt="Carelu" style={{ height: 20, width: 'auto', opacity: 0.8 }} />
+          <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 20, width: 'auto', opacity: 0.8 }} />
           <span>© {new Date().getFullYear()} Carelu, Inc. · HIPAA · SOC 2</span>
         </div>
       </footer>

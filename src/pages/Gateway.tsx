@@ -39,7 +39,7 @@ function CareluMock() {
       fontFamily: 'var(--font-body)',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 16px', borderBottom: '1px solid #EEF1EC' }}>
-        <img src="/carelu-logo.png" alt="Carelu" style={{ height: 18, width: 'auto', display: 'block' }} />
+        <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 18, width: 'auto', display: 'block' }} />
       </div>
       <div style={{ padding: '16px 16px 20px', display: 'flex', flexDirection: 'column', gap: 9 }}>
         <Bubble who="bot" text="Hi! Welcome to Bright Horizons ABA — what's your child's name?" />

@@ -100,7 +100,7 @@ function Nav() {
           <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 500, color: INK, textDecoration: 'none' }}>Company</a>
 
           <a href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
-            <img src="/carelu-logo.png" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
+            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
           </a>
 
           <a href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s' }}
@@ -537,7 +537,7 @@ function CtaFooter() {
         <div style={{ ...W, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <a href="/carelu" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
-              <img src="/carelu-logo.png" alt="Carelu" style={{ height: 24, width: 'auto', display: 'block' }} />
+              <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 24, width: 'auto', display: 'block' }} />
             </a>
             <span style={{ width: 1, height: 18, background: 'rgba(43,42,38,0.2)', display: 'inline-block' }} />
             <span style={{

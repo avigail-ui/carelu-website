@@ -108,7 +108,7 @@ function Nav() {
 
           {/* Center logo */}
           <a href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
-            <img src="/carelu-logo.png" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
+            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
           </a>
 
           {/* Right: login + button */}
@@ -2377,7 +2377,7 @@ function CtaFooter() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <img
-              src="/carelu-logo.png"
+              src="/carelu-logo.svg"
               alt="Carelu"
               style={{
                 height: 24, width: 'auto', display: 'block',
