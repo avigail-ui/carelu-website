@@ -2041,18 +2041,23 @@ function GettingStarted() {
   const steps = [
     {
       n: '01',
-      title: 'One kickoff call',
-      desc: 'Tell us how you work — your insurance panels, service areas, programs, and what a complete intake looks like for you.',
+      title: 'Meet your specialist',
+      desc: 'A short call with an intake specialist to walk through how your practice works — panels, service areas, programs.',
     },
     {
       n: '02',
-      title: 'We handle the setup',
-      desc: 'We configure Carelu around your practice and connect it to your website. Nothing for your team to install. No IT project.',
+      title: 'Sign and get set up',
+      desc: 'We configure Carelu around your practice and connect it to your website. Nothing for your team to install.',
     },
     {
       n: '03',
-      title: 'Go live, together',
-      desc: 'We watch the first families come through with you and fine-tune as we go. From then on, Carelu just runs.',
+      title: 'We train your team',
+      desc: 'One session, and your team knows how Carelu works and where to find everything it collects.',
+    },
+    {
+      n: '04',
+      title: 'Go live, with visibility',
+      desc: 'Your dashboard shows every conversation and every intake as it happens. A dedicated growth partner stays on your account.',
     },
   ];
   const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
@@ -2069,24 +2074,18 @@ function GettingStarted() {
             fontWeight: 400, color: 'var(--green-900)',
             lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
           }}>
-            Up and running in days. Not months.
+            Getting started is simple.
           </h2>
-          <p className="rv d2" style={{
-            fontSize: 'var(--text-sm)', color: 'var(--gray-500)',
-            maxWidth: 420, margin: '16px auto 0', lineHeight: 1.5,
-          }}>
-            Onboarding is a call, not a project.
-          </p>
         </div>
 
         {/* Editorial timeline — ghost numerals over a rule that draws itself in */}
         <div className="rv gs-tl" style={{ maxWidth: 1060, margin: 'clamp(48px, 6vw, 80px) auto 0' }}>
-          <div className="gs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
+          <div className="gs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
             {steps.map((s) => (
               <div key={s.n} className="gs-step" style={{ position: 'relative', paddingRight: 'clamp(24px, 3.5vw, 56px)' }}>
                 <div className="gs-num" aria-hidden="true" style={{
                   fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 400,
-                  fontSize: 'clamp(64px, 7vw, 92px)', lineHeight: 1,
+                  fontSize: 'clamp(56px, 5.5vw, 78px)', lineHeight: 1,
                   color: 'transparent', WebkitTextStroke: '1px rgba(44,62,45,0.32)',
                   marginBottom: 18, userSelect: 'none',
                 }}>
@@ -2105,13 +2104,13 @@ function GettingStarted() {
                   }} />
                 </div>
                 <h3 className="gs-body" style={{
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2.3vw, 28px)',
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 1.8vw, 25px)',
                   fontWeight: 400, color: 'var(--green-900)',
                   lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
                 }}>
                   {s.title}
                 </h3>
-                <p className="gs-body" style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.65, margin: 0 }}>
+                <p className="gs-body" style={{ fontSize: 14.5, color: 'var(--gray-600)', lineHeight: 1.65, margin: 0 }}>
                   {s.desc}
                 </p>
               </div>
@@ -2148,9 +2147,8 @@ function GettingStarted() {
             fontSize: 15.5, color: 'var(--gray-600)', lineHeight: 1.7,
             maxWidth: 480, margin: '0 auto 32px',
           }}>
-            Every practice has a direct line to the people who build Carelu.
-            A question, a new service area, a change to your panels — you message us,
-            and it&rsquo;s done. Usually the same day.
+            Every practice has a direct line to the people who build Carelu —
+            for questions, changes, or anything in between.
           </p>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, textAlign: 'left' }}>
             <img src="/yoni.png" alt="Yoni Belson, founder of Carelu" style={{
@@ -2163,6 +2161,17 @@ function GettingStarted() {
             </div>
           </div>
         </div>
+
+        {/* Quiet enterprise pointer */}
+        <p className="rv" style={{
+          textAlign: 'center', fontSize: 14, color: 'var(--gray-500)',
+          margin: '40px auto 0', maxWidth: 520, lineHeight: 1.6,
+        }}>
+          Larger organization? We&rsquo;ll shape onboarding around your locations, systems, and team.{' '}
+          <a href="/demo" style={{ color: 'var(--green-900)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>
+            Talk to us
+          </a>
+        </p>
       </div>
 
       {/* Scoped reveal choreography — rule draws left to right, dots pop, copy rises */}
@@ -2176,14 +2185,17 @@ function GettingStarted() {
         .gs-tl .gs-body { opacity: 0; transform: translateY(14px); transition: opacity 0.7s ease, transform 0.7s var(--ease-dramatic); }
         .gs-tl.visible .gs-body { opacity: 1; transform: translateY(0); }
         .gs-tl .gs-step:nth-child(1) .gs-rule { transition-delay: 0.1s; }
-        .gs-tl .gs-step:nth-child(2) .gs-rule { transition-delay: 0.45s; }
-        .gs-tl .gs-step:nth-child(3) .gs-rule { transition-delay: 0.8s; }
+        .gs-tl .gs-step:nth-child(2) .gs-rule { transition-delay: 0.4s; }
+        .gs-tl .gs-step:nth-child(3) .gs-rule { transition-delay: 0.7s; }
+        .gs-tl .gs-step:nth-child(4) .gs-rule { transition-delay: 1s; }
         .gs-tl .gs-step:nth-child(1) .gs-dot { transition-delay: 0.1s; }
-        .gs-tl .gs-step:nth-child(2) .gs-dot { transition-delay: 0.45s; }
-        .gs-tl .gs-step:nth-child(3) .gs-dot { transition-delay: 0.8s; }
+        .gs-tl .gs-step:nth-child(2) .gs-dot { transition-delay: 0.4s; }
+        .gs-tl .gs-step:nth-child(3) .gs-dot { transition-delay: 0.7s; }
+        .gs-tl .gs-step:nth-child(4) .gs-dot { transition-delay: 1s; }
         .gs-tl .gs-step:nth-child(1) .gs-num,  .gs-tl .gs-step:nth-child(1) .gs-body { transition-delay: 0.15s; }
-        .gs-tl .gs-step:nth-child(2) .gs-num,  .gs-tl .gs-step:nth-child(2) .gs-body { transition-delay: 0.5s; }
-        .gs-tl .gs-step:nth-child(3) .gs-num,  .gs-tl .gs-step:nth-child(3) .gs-body { transition-delay: 0.85s; }
+        .gs-tl .gs-step:nth-child(2) .gs-num,  .gs-tl .gs-step:nth-child(2) .gs-body { transition-delay: 0.45s; }
+        .gs-tl .gs-step:nth-child(3) .gs-num,  .gs-tl .gs-step:nth-child(3) .gs-body { transition-delay: 0.75s; }
+        .gs-tl .gs-step:nth-child(4) .gs-num,  .gs-tl .gs-step:nth-child(4) .gs-body { transition-delay: 1.05s; }
         @media (max-width: 768px) {
           .gs-grid { grid-template-columns: 1fr !important; row-gap: 48px !important; }
           .gs-step { padding-right: 0 !important; }
