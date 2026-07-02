@@ -1,6 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
 import DemoModalHost from '../components/DemoModal';
+
+// Nav link that client-side-routes internal pages (no full reload → no font-swap
+// flash in the nav pill). Same-page hash anchors and /demo (modal-intercepted)
+// stay plain <a> tags.
+function NavA({ href, ...rest }: { href: string } & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>) {
+  const clientSide = href.startsWith('/') && !href.startsWith('/demo');
+  return clientSide ? <Link to={href} {...rest} /> : <a href={href} {...rest} />;
+}
 
 /* ================================================================
    LEADTRAP — $100K LANDING
@@ -100,10 +109,10 @@ export function Nav({ base = '' }: { base?: string }) {
           border: '1px solid rgba(43,42,38,0.07)',
         }}>
           {/* Left links */}
-          <a href={`${base}#platform`} className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
+          <NavA href={`${base}#platform`} className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Product</a>
+          >Product</NavA>
           <div className="hide-mobile" style={{ position: 'relative', display: 'inline-flex', alignSelf: 'stretch', alignItems: 'center' }}
             onMouseEnter={() => setSolutionsOpen(true)}
             onMouseLeave={() => setSolutionsOpen(false)}
@@ -136,7 +145,7 @@ export function Nav({ base = '' }: { base?: string }) {
                     { t: 'Multi-Site', d: 'Every location, one system', href: '/solutions/multi-site' },
                     { t: 'Enterprise', d: 'Scale, integrations, security', href: '/solutions/enterprise' },
                   ].map(l => (
-                    <a key={l.t} href={l.href} style={{
+                    <NavA key={l.t} href={l.href} style={{
                       display: 'block', padding: '10px 14px', borderRadius: 10,
                       textDecoration: 'none', transition: 'background 0.15s',
                     }}
@@ -145,27 +154,27 @@ export function Nav({ base = '' }: { base?: string }) {
                     >
                       <span style={{ display: 'block', fontSize: 14, fontWeight: 500, color: '#1A1A1A' }}>{l.t}</span>
                       <span style={{ display: 'block', fontSize: 12, color: 'rgba(43,42,38,0.55)', marginTop: 1 }}>{l.d}</span>
-                    </a>
+                    </NavA>
                   ))}
                 </div>
               </div>
             )}
           </div>
-          <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
+          <NavA href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Company</a>
+          >Company</NavA>
 
           {/* Center logo */}
-          <a href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
+          <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
             <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
-          </a>
+          </NavA>
 
           {/* Right: login + button */}
-          <a href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
+          <NavA href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Log in</a>
+          >Log in</NavA>
           <a href="/demo" className="nav-demo-btn" style={{
             fontSize: 14, fontWeight: 600, color: '#1A1A1A',
             padding: '12px 24px', borderRadius: 14, textDecoration: 'none',
@@ -205,7 +214,7 @@ export function Nav({ base = '' }: { base?: string }) {
             { t: 'Company',      href: '/carelu/company' },
             { t: 'Log in',       href: '/login' },
           ].map(l => (
-            <a key={l.t} href={l.href} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '20px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{l.t}</a>
+            <NavA key={l.t} href={l.href} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '20px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{l.t}</NavA>
           ))}
           <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#1A1A1A', backgroundColor: '#fff', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32, border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 4px 18px rgba(0,0,0,0.1)' }}>
             Get a Demo
@@ -2068,7 +2077,7 @@ function Outcomes() {
   const [open, setOpen] = useState<number | null>(0);
   const metrics = [
     {
-      v: 30, s: '%', label: 'Increase in lead volume',
+      v: 40, s: '%', label: 'Increase in lead volume',
       bullets: [
         'Engaging AI chat starts conversations website forms never could.',
         'AI phone coverage does intake on after-hours, overflow, and missed calls.',
@@ -2086,9 +2095,10 @@ function Outcomes() {
       ],
     },
     {
-      v: 40, s: '%', label: 'Less staff time per intake',
+      v: 70, s: '%', label: 'Less staff time per intake',
       bullets: [
         'Eligibility checked and documents collected without a human touching it.',
+        'Every follow-up handled — families, doctors, missing pieces.',
         'Your coordinators handle exceptions, not data entry.',
         'One coordinator runs what used to take a team.',
       ],
@@ -3261,6 +3271,13 @@ function MuralReveal() {
 // ── PAGE ─────────────────────────────────────────
 export default function Landing() {
   useReveal();
+  // Scroll to the section hash when arriving via a client-side navigation
+  // (e.g. Product in the nav from /solutions/* → /carelu#platform).
+  useEffect(() => {
+    const { hash } = window.location;
+    if (!hash) return;
+    requestAnimationFrame(() => document.querySelector(hash)?.scrollIntoView());
+  }, []);
   return (
     <div style={{ background: '#FAF8F3', color: '#2B2A26', minHeight: '100vh' }}>
       {/* Top sections kept from main */}

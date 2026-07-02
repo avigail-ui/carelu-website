@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import './index.css'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
@@ -22,9 +22,20 @@ import CompanyV2 from './pages/CompanyV2'
 // renders elsewhere (local dev, previews, and eventually leadtrap.com).
 const isCareluDomain = /(^|\.)carelu\.com$/i.test(window.location.hostname);
 
+// Client-side navigations keep the scroll position by default — reset to top on
+// route change (hash links scroll themselves via the target page's mount effect).
+function ScrollReset() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!hash) window.scrollTo(0, 0);
+  }, [pathname, hash]);
+  return null;
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollReset />
       <Routes>
         <Route path="/" element={isCareluDomain ? <Landing /> : <Gateway />} />
         <Route path="/carelu" element={<Landing />} />
