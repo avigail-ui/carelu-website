@@ -2219,7 +2219,6 @@ function GettingStarted() {
       visual: <GsVignetteLive />,
     },
   ];
-  const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
   return (
     <section id="getting-started" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
@@ -2284,40 +2283,6 @@ function GettingStarted() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Founder note — direct access to the team, framed like the testimonial quotes */}
-        <div className="rv gs-note" style={{
-          position: 'relative', maxWidth: 680,
-          margin: 'clamp(64px, 7vw, 104px) auto 0',
-          padding: 'clamp(36px, 5vw, 56px) clamp(28px, 4vw, 56px)',
-          textAlign: 'center',
-        }}>
-          <div style={{ position: 'absolute', top: 0, left: 0, ...cornerSq }} />
-          <div style={{ position: 'absolute', top: 0, right: 0, ...cornerSq }} />
-          <div style={{ position: 'absolute', bottom: 0, left: 0, ...cornerSq }} />
-          <div style={{ position: 'absolute', bottom: 0, right: 0, ...cornerSq }} />
-
-          <div style={{
-            fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-            letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 20,
-          }}>
-            Your team, extended
-          </div>
-          <p style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 3vw, 36px)',
-            fontWeight: 400, color: 'var(--green-900)',
-            lineHeight: 1.25, letterSpacing: '-0.02em', margin: '0 0 18px',
-          }}>
-            An extension of your team, from day one.
-          </p>
-          <p style={{
-            fontSize: 15.5, color: 'var(--gray-600)', lineHeight: 1.7,
-            maxWidth: 480, margin: '0 auto',
-          }}>
-            A dedicated growth partner who knows your practice, keeps an eye on
-            your intakes, and handles changes for you — a teammate, not a vendor.
-          </p>
         </div>
 
         {/* Quiet enterprise pointer */}
