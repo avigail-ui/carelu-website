@@ -2019,7 +2019,7 @@ function Outcomes() {
   const [open, setOpen] = useState<number | null>(0);
   const metrics = [
     {
-      v: 30, label: 'Increase in lead volume',
+      v: 30, s: '%', label: 'Increase in lead volume',
       bullets: [
         'Engaging AI chat starts conversations website forms never could.',
         'AI phone coverage does intake on after-hours, overflow, and missed calls.',
@@ -2028,27 +2028,36 @@ function Outcomes() {
       ],
     },
     {
-      v: 20, label: 'Increase in conversion rates',
+      v: 85, s: '%', label: 'Intake completion rate',
       bullets: [
-        'First to respond, first to finish — before families call the next provider on their list.',
-        'Real-time qualification against your panels, service areas, and capacity.',
-        'No drop-off to phone tag or 30-page packets.',
+        'Magic forms turn 30-page packets into one natural conversation.',
+        'Instant qualification against your panels, service areas, and capacity.',
+        'Automatic follow-ups on every missing piece — documents, signatures, consents.',
+        'Doctors reached out to directly when a diagnosis report is missing.',
       ],
     },
     {
-      v: 40, label: 'Less staff time per intake',
+      v: 40, s: '%', label: 'Less staff time per intake',
       bullets: [
-        'Documents, consents, and signatures collected in one conversation.',
-        'Automatic follow-up on every missing piece.',
-        'Doctors nudged for reports so your team isn’t chasing.',
+        'Eligibility checked and documents collected without a human touching it.',
+        'Your coordinators handle exceptions, not data entry.',
+        'One coordinator runs what used to take a team.',
       ],
     },
     {
-      v: 35, label: 'Improvement in show-up rates',
+      v: 35, s: '%', label: 'Improvement in show-up rates',
       bullets: [
-        'Assessments scheduled while the family is still engaged.',
+        'Assessments scheduled the moment prior authorization clears.',
         'Reminders before every appointment.',
         'Families who go quiet are re-engaged automatically.',
+      ],
+    },
+    {
+      v: 1000, s: '+', label: 'RBTs and BCBAs hired through Carelu',
+      bullets: [
+        'Candidates apply through the same natural conversation families do — no clunky portals.',
+        'Credentials, availability, and screening questions collected up front.',
+        'Thousands of clinicians brought to providers, alongside their families.',
       ],
     },
   ];
@@ -2092,7 +2101,7 @@ function Outcomes() {
                   fontVariantNumeric: 'lining-nums tabular-nums',
                   whiteSpace: 'nowrap',
                 }}>
-                  <Counter target={m.v} suffix="%" />
+                  <Counter target={m.v} suffix={m.s} />
                 </span>
                 <span style={{
                   fontSize: 'clamp(16px, 1.7vw, 19px)', fontWeight: 500,
