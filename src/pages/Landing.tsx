@@ -2036,7 +2036,7 @@ function Impact() {
 }
 
 
-// ── GETTING STARTED — onboarding process + direct team access ─────
+// ── GETTING STARTED — editorial timeline + founder note on direct access ─────
 function GettingStarted() {
   const steps = [
     {
@@ -2055,13 +2055,14 @@ function GettingStarted() {
       desc: 'We watch the first families come through with you and fine-tune as we go. From then on, Carelu just runs.',
     },
   ];
+  const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
   return (
     <section id="getting-started" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
       background: 'var(--bone)',
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+        <div style={{ textAlign: 'center' }}>
           <div className="rv"><Pill>Getting started</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
@@ -2070,82 +2071,126 @@ function GettingStarted() {
           }}>
             Up and running in days. Not months.
           </h2>
+          <p className="rv d2" style={{
+            fontSize: 'var(--text-sm)', color: 'var(--gray-500)',
+            maxWidth: 420, margin: '16px auto 0', lineHeight: 1.5,
+          }}>
+            Onboarding is a call, not a project.
+          </p>
         </div>
 
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <div style={{
-            display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16,
-          }}>
-            {steps.map((s, i) => (
-              <div key={s.n} className={`rv d${i + 1}`} style={{
-                background: '#fff', borderRadius: 20,
-                padding: '36px 28px',
-                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
-              }}>
-                <div style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 10,
-                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-                  letterSpacing: '0.12em', textTransform: 'uppercase',
-                  marginBottom: 16,
+        {/* Editorial timeline — ghost numerals over a rule that draws itself in */}
+        <div className="rv gs-tl" style={{ maxWidth: 1060, margin: 'clamp(48px, 6vw, 80px) auto 0' }}>
+          <div className="gs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
+            {steps.map((s) => (
+              <div key={s.n} className="gs-step" style={{ position: 'relative', paddingRight: 'clamp(24px, 3.5vw, 56px)' }}>
+                <div className="gs-num" aria-hidden="true" style={{
+                  fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 400,
+                  fontSize: 'clamp(64px, 7vw, 92px)', lineHeight: 1,
+                  color: 'transparent', WebkitTextStroke: '1px rgba(44,62,45,0.32)',
+                  marginBottom: 18, userSelect: 'none',
                 }}>
-                  <span style={{
-                    width: 22, height: 22, borderRadius: '50%',
-                    background: 'var(--lime)', color: 'var(--green-900)',
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: 11, fontWeight: 700, letterSpacing: 0,
-                  }}>{s.n}</span>
-                  Step
+                  {s.n}
                 </div>
-                <h3 style={{
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2.2vw, 27px)',
+                <div style={{ position: 'relative', height: 11, marginBottom: 26 }}>
+                  <div className="gs-rule" style={{
+                    position: 'absolute', top: 5, left: 0, right: 0, height: 1,
+                    background: 'rgba(44,62,45,0.18)',
+                  }} />
+                  <span className="gs-dot" style={{
+                    position: 'absolute', top: 0, left: 0,
+                    width: 11, height: 11, borderRadius: '50%',
+                    background: 'var(--lime)', border: '1.5px solid var(--green-900)',
+                    display: 'block',
+                  }} />
+                </div>
+                <h3 className="gs-body" style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2.3vw, 28px)',
                   fontWeight: 400, color: 'var(--green-900)',
                   lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
                 }}>
                   {s.title}
                 </h3>
-                <p style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0 }}>
+                <p className="gs-body" style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.65, margin: 0 }}>
                   {s.desc}
                 </p>
               </div>
             ))}
           </div>
+        </div>
 
-          {/* Direct access to the team */}
-          <div className="rv d4" style={{
-            marginTop: 16,
-            background: '#2C3E2D', borderRadius: 20,
-            padding: 'clamp(28px, 4vw, 44px)',
-            display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 'clamp(20px, 3vw, 40px)',
+        {/* Founder note — direct access to the team, framed like the testimonial quotes */}
+        <div className="rv gs-note" style={{
+          position: 'relative', maxWidth: 680,
+          margin: 'clamp(72px, 8vw, 120px) auto 0',
+          padding: 'clamp(36px, 5vw, 56px) clamp(28px, 4vw, 56px)',
+          textAlign: 'center',
+        }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, ...cornerSq }} />
+          <div style={{ position: 'absolute', top: 0, right: 0, ...cornerSq }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, ...cornerSq }} />
+          <div style={{ position: 'absolute', bottom: 0, right: 0, ...cornerSq }} />
+
+          <div style={{
+            fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+            letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 20,
           }}>
-            <div style={{ flex: '1 1 380px', minWidth: 0 }}>
-              <h3 style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.6vw, 32px)',
-                fontWeight: 400, color: '#FAF8F3',
-                lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
-              }}>
-                And you always have a direct line to us.
-              </h3>
-              <p style={{ fontSize: 15, color: 'rgba(250,248,243,0.75)', lineHeight: 1.65, margin: 0 }}>
-                No ticket queues. No support tiers. Every practice gets direct access to the
-                team behind Carelu — reach out and a real person who knows your setup answers.
-                Need a change to your panels, areas, or intake requirements? It&rsquo;s handled the same day.
-              </p>
-            </div>
-            <div style={{
-              display: 'flex', alignItems: 'center', gap: 14, flex: '0 1 auto', minWidth: 0,
-            }}>
-              <img src="/yoni.png" alt="Yoni, founder of Carelu" style={{
-                width: 64, height: 64, borderRadius: '50%', objectFit: 'cover',
-                border: '2px solid rgba(250,248,243,0.35)', flexShrink: 0,
-              }} />
-              <div style={{ minWidth: 0 }}>
-                <div style={{ fontSize: 15, fontWeight: 600, color: '#FAF8F3' }}>Yoni Belson</div>
-                <div style={{ fontSize: 13, color: 'rgba(250,248,243,0.65)' }}>Founder — on the phone with practices every day</div>
-              </div>
+            Direct access
+          </div>
+          <p style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 3vw, 36px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.25, letterSpacing: '-0.02em', margin: '0 0 18px',
+          }}>
+            You&rsquo;ll never talk to a ticket queue.
+          </p>
+          <p style={{
+            fontSize: 15.5, color: 'var(--gray-600)', lineHeight: 1.7,
+            maxWidth: 480, margin: '0 auto 32px',
+          }}>
+            Every practice has a direct line to the people who build Carelu.
+            A question, a new service area, a change to your panels — you message us,
+            and it&rsquo;s done. Usually the same day.
+          </p>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, textAlign: 'left' }}>
+            <img src="/yoni.png" alt="Yoni Belson, founder of Carelu" style={{
+              width: 48, height: 48, borderRadius: '50%', objectFit: 'cover',
+              flexShrink: 0,
+            }} />
+            <div>
+              <div style={{ fontSize: 15, fontWeight: 500, color: 'var(--green-900)' }}>Yoni Belson</div>
+              <div style={{ fontSize: 13, color: 'var(--gray-500)' }}>Founder, Carelu</div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Scoped reveal choreography — rule draws left to right, dots pop, copy rises */}
+      <style>{`
+        .gs-tl .gs-rule { transform: scaleX(0); transform-origin: left center; transition: transform 1s var(--ease-dramatic); }
+        .gs-tl.visible .gs-rule { transform: scaleX(1); }
+        .gs-tl .gs-dot { opacity: 0; transform: scale(0.3); transition: opacity 0.45s ease, transform 0.55s var(--ease-dramatic); }
+        .gs-tl.visible .gs-dot { opacity: 1; transform: scale(1); }
+        .gs-tl .gs-num { opacity: 0; transform: translateY(10px); transition: opacity 0.7s ease, transform 0.7s var(--ease-dramatic); }
+        .gs-tl.visible .gs-num { opacity: 1; transform: translateY(0); }
+        .gs-tl .gs-body { opacity: 0; transform: translateY(14px); transition: opacity 0.7s ease, transform 0.7s var(--ease-dramatic); }
+        .gs-tl.visible .gs-body { opacity: 1; transform: translateY(0); }
+        .gs-tl .gs-step:nth-child(1) .gs-rule { transition-delay: 0.1s; }
+        .gs-tl .gs-step:nth-child(2) .gs-rule { transition-delay: 0.45s; }
+        .gs-tl .gs-step:nth-child(3) .gs-rule { transition-delay: 0.8s; }
+        .gs-tl .gs-step:nth-child(1) .gs-dot { transition-delay: 0.1s; }
+        .gs-tl .gs-step:nth-child(2) .gs-dot { transition-delay: 0.45s; }
+        .gs-tl .gs-step:nth-child(3) .gs-dot { transition-delay: 0.8s; }
+        .gs-tl .gs-step:nth-child(1) .gs-num,  .gs-tl .gs-step:nth-child(1) .gs-body { transition-delay: 0.15s; }
+        .gs-tl .gs-step:nth-child(2) .gs-num,  .gs-tl .gs-step:nth-child(2) .gs-body { transition-delay: 0.5s; }
+        .gs-tl .gs-step:nth-child(3) .gs-num,  .gs-tl .gs-step:nth-child(3) .gs-body { transition-delay: 0.85s; }
+        @media (max-width: 768px) {
+          .gs-grid { grid-template-columns: 1fr !important; row-gap: 48px !important; }
+          .gs-step { padding-right: 0 !important; }
+          .gs-tl .gs-rule { right: auto !important; width: 64px; }
+          .gs-num { font-size: 56px !important; margin-bottom: 12px !important; }
+        }
+      `}</style>
     </section>
   );
 }
