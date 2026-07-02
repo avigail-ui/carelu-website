@@ -2923,8 +2923,13 @@ function CtaFooter() {
                       link === 'Single-Site' ? '/solutions/single-site'
                       : link === 'Multi-Site' ? '/solutions/multi-site'
                       : link === 'Enterprise' ? '/solutions/enterprise'
+                      : link === 'About' ? '/carelu/company'
+                      : link === 'Careers' ? '/carelu/company#careers'
+                      : link === 'Trust' || link === 'Security' ? 'https://trust.delve.co/leadtrap'
                       : '#'
-                    } style={{
+                    }
+                    {...((link === 'Trust' || link === 'Security') ? { target: '_blank', rel: 'noreferrer' } : {})}
+                    style={{
                       fontSize: 13, color: 'rgba(250,248,243,0.75)',
                       textDecoration: 'none', transition: 'color 0.2s',
                       textShadow: '0 1px 4px rgba(0,0,0,0.18)',
@@ -2967,20 +2972,28 @@ function CtaFooter() {
             }}>
               Powered by
             </span>
-            <img
-              src="/leadtrap-full-white.svg"
-              alt="LeadTrap"
-              style={{
-                height: 24, width: 'auto', display: 'block',
-                filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.2))',
-              }}
-            />
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+              <img
+                src="/leadtrap-mark.svg"
+                alt=""
+                style={{
+                  height: 26, width: 26, display: 'block', borderRadius: '50%',
+                  filter: 'invert(1) drop-shadow(0 1px 6px rgba(0,0,0,0.2))',
+                }}
+              />
+              <span style={{
+                fontSize: 13, fontWeight: 700, color: '#fff',
+                textShadow: '0 1px 4px rgba(0,0,0,0.2)', letterSpacing: '-0.01em',
+              }}>
+                LeadTrap
+              </span>
+            </span>
           </div>
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 Carelu, Inc.</span>
+            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 LeadTrap, Inc. dba Carelu</span>
             <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
-            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
-            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
+            <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
+            <a href="https://trust.delve.co/leadtrap" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
             <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>HIPAA · SOC 2</span>
           </div>
         </div>
