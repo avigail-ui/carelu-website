@@ -222,33 +222,34 @@ export function Nav({ base = '' }: { base?: string }) {
    ================================================================ */
 
 // One laurel branch (left side) — mirrored with `flip` for the right side.
-// Thin stem with almond leaves along it; inherits color via currentColor.
+// Full festival-style wreath half: leaf pairs herringboned along a deep arc.
 function LaurelBranch({ flip }: { flip?: boolean }) {
-  const leaves = [
-    { x: 15, y: 44.5, r: -34 },
-    { x: 10.5, y: 38, r: -52 },
-    { x: 7.5, y: 30.5, r: -70 },
-    { x: 6.8, y: 22.5, r: -88 },
-    { x: 8.2, y: 14.5, r: -106 },
-    { x: 11.5, y: 7.5, r: -122 },
+  // (x, y) = station on the stem; t = growth direction (deg, -90 = straight up)
+  const stations = [
+    { x: 17.5, y: 49, t: -130 },
+    { x: 13, y: 42.5, t: -113 },
+    { x: 10, y: 35.5, t: -101 },
+    { x: 8.4, y: 28, t: -91 },
+    { x: 8.4, y: 20.5, t: -81 },
+    { x: 9.8, y: 13.5, t: -69 },
+    { x: 12.4, y: 7, t: -56 },
   ];
+  const SPREAD = 44; // half-angle between the two leaves of a pair
   return (
     <svg
-      width="22" height="52" viewBox="0 0 22 52" fill="none" aria-hidden="true"
+      width="31" height="67" viewBox="0 0 26 56" fill="none" aria-hidden="true"
       style={{
         display: 'block', flexShrink: 0,
         transform: flip ? 'scaleX(-1)' : undefined,
         filter: 'drop-shadow(0 1px 0 rgba(255,255,255,0.3))',
       }}
     >
-      <path d="M18.5 50 C 8 42.5, 4.5 27, 12 3.5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none" />
-      {leaves.map((l, i) => (
-        <path
-          key={i}
-          d="M0 0 Q 3.4 -2.2 6.8 0 Q 3.4 2.2 0 0"
-          fill="currentColor"
-          transform={`translate(${l.x} ${l.y}) rotate(${l.r})`}
-        />
+      <path d="M21 54 C 7 46.5, 3.5 26, 14.5 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" fill="none" />
+      {stations.map((s, i) => (
+        <g key={i} transform={`translate(${s.x} ${s.y})`}>
+          <path d="M0 0 Q 4.5 -3.4 9 0 Q 4.5 3.4 0 0" fill="currentColor" transform={`rotate(${s.t - SPREAD})`} />
+          <path d="M0 0 Q 4.5 -3.4 9 0 Q 4.5 3.4 0 0" fill="currentColor" transform={`rotate(${s.t + SPREAD})`} />
+        </g>
       ))}
     </svg>
   );
