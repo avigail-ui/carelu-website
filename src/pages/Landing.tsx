@@ -1700,7 +1700,7 @@ function HowCarelu() {
     {
       step: '03',
       tag: 'Automated',
-      title: 'Follows up and delivers. Zero chasing.',
+      title: 'Follows up and delivers. Every time.',
       desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands off a complete, ready case.',
       visual: <HandoffVisual />,
     },
