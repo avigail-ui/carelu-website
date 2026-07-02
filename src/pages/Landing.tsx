@@ -2048,7 +2048,7 @@ function GsVignetteCall() {
       width: 250,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <img src="/yoni.png" alt="" style={{
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces" alt="" style={{
           width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
           objectFit: 'cover', border: '1px solid var(--sage-200)',
         }} />
@@ -2302,32 +2302,22 @@ function GettingStarted() {
             fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
             letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 20,
           }}>
-            Direct access
+            Your team, extended
           </div>
           <p style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 3vw, 36px)',
             fontWeight: 400, color: 'var(--green-900)',
             lineHeight: 1.25, letterSpacing: '-0.02em', margin: '0 0 18px',
           }}>
-            You&rsquo;ll never talk to a ticket queue.
+            An extension of your team, from day one.
           </p>
           <p style={{
             fontSize: 15.5, color: 'var(--gray-600)', lineHeight: 1.7,
-            maxWidth: 480, margin: '0 auto 32px',
+            maxWidth: 480, margin: '0 auto',
           }}>
-            Every practice has a direct line to the people who build Carelu —
-            for questions, changes, or anything in between.
+            A dedicated growth partner who knows your practice, keeps an eye on
+            your intakes, and handles changes for you — a teammate, not a vendor.
           </p>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, textAlign: 'left' }}>
-            <img src="/yoni.png" alt="Yoni Belson, founder of Carelu" style={{
-              width: 48, height: 48, borderRadius: '50%', objectFit: 'cover',
-              flexShrink: 0,
-            }} />
-            <div>
-              <div style={{ fontSize: 15, fontWeight: 500, color: 'var(--green-900)' }}>Yoni Belson</div>
-              <div style={{ fontSize: 13, color: 'var(--gray-500)' }}>Founder, Carelu</div>
-            </div>
-          </div>
         </div>
 
         {/* Quiet enterprise pointer */}
