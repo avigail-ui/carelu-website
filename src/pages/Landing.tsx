@@ -70,6 +70,7 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
    ================================================================ */
 function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
 
   // Lock page scroll while the mobile menu is open
   useEffect(() => {
@@ -101,6 +102,53 @@ function Nav() {
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Product</a>
+          <div className="hide-mobile" style={{ position: 'relative', display: 'inline-flex', alignSelf: 'stretch', alignItems: 'center' }}
+            onMouseEnter={() => setSolutionsOpen(true)}
+            onMouseLeave={() => setSolutionsOpen(false)}
+          >
+            <button className="nav-link" aria-expanded={solutionsOpen} style={{
+              fontSize: 14, fontWeight: 400, color: solutionsOpen ? '#1A1A1A' : 'rgba(43,42,38,0.84)',
+              background: 'none', border: 'none', cursor: 'pointer',
+              padding: '0 18px', transition: 'color 0.2s',
+              display: 'inline-flex', alignItems: 'center', gap: 6, height: '100%',
+              fontFamily: 'inherit',
+            }}>
+              Solutions
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{
+                transform: solutionsOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.25s var(--ease-dramatic)',
+              }}><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {solutionsOpen && (
+              <div style={{
+                position: 'absolute', top: '100%', left: 8, paddingTop: 8, zIndex: 101,
+              }}>
+                <div style={{
+                  background: 'rgba(250,248,243,0.96)',
+                  backdropFilter: 'blur(28px) saturate(1.3)', WebkitBackdropFilter: 'blur(28px) saturate(1.3)',
+                  border: '1px solid rgba(43,42,38,0.08)', borderRadius: 16,
+                  boxShadow: '0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04)',
+                  padding: 8, minWidth: 200,
+                }}>
+                  {[
+                    { t: 'Single-Site', d: 'One clinic, full front office', href: '/solutions/single-site' },
+                    { t: 'Multi-Site', d: 'Every location, one system', href: '/solutions/multi-site' },
+                    { t: 'Enterprise', d: 'Scale, integrations, security', href: '/solutions/enterprise' },
+                  ].map(l => (
+                    <a key={l.t} href={l.href} style={{
+                      display: 'block', padding: '10px 14px', borderRadius: 10,
+                      textDecoration: 'none', transition: 'background 0.15s',
+                    }}
+                      onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(43,42,38,0.05)'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+                    >
+                      <span style={{ display: 'block', fontSize: 14, fontWeight: 500, color: '#1A1A1A' }}>{l.t}</span>
+                      <span style={{ display: 'block', fontSize: 12, color: 'rgba(43,42,38,0.55)', marginTop: 1 }}>{l.d}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
           <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
@@ -148,6 +196,9 @@ function Nav() {
             { t: 'Platform',     href: '#platform' },
             { t: 'How It Works', href: '#how-it-works' },
             { t: 'Results',      href: '#results' },
+            { t: 'Single-Site',  href: '/solutions/single-site' },
+            { t: 'Multi-Site',   href: '/solutions/multi-site' },
+            { t: 'Enterprise',   href: '/solutions/enterprise' },
             { t: 'FAQ',          href: '#faq' },
             { t: 'Company',      href: '/carelu/company' },
             { t: 'Log in',       href: '/login' },
@@ -290,7 +341,7 @@ function Hero() {
               textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
-              Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health, from single clinics to multi-state organizations.
+              Carelu runs your entire intake — from first contact to admitted patient. For ABA and behavioral health organizations of every size.
             </p>
 
             <div className="hero-cta-row" style={{
@@ -1961,28 +2012,136 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
   );
 }
 
-// ── IMPACT — expandable metric rows on cream ──────────
-function Impact() {
-  const [open, setOpen] = useState<number | null>(null);
+// ── OUTCOMES — expandable improvement-metric rows ──────────
+function Outcomes() {
+  const [open, setOpen] = useState<number | null>(0);
   const metrics = [
     {
-      v: 3, s: '×', label: 'More families admitted',
-      detail: 'Same team, same hours — triple the output. Carelu answers every family instantly and finishes the intakes that used to stall, so the families you can help actually make it to care.',
+      v: 30, label: 'Increase in lead volume',
+      bullets: [
+        'Engaging AI chat starts conversations website forms never could.',
+        'Every inquiry answered in seconds — nights and weekends included.',
+        'English and Spanish, natively.',
+      ],
     },
     {
-      v: 10, s: '', p: '<', unit: 'min', label: 'From first contact to intake-ready',
-      detail: 'What used to take 3–5 days of phone tag happens in a single conversation — eligibility, documents, consents, and scheduling, handled the moment a family reaches out.',
+      v: 20, label: 'Increase in conversion rates',
+      bullets: [
+        'First to respond, first to finish — before families call the next provider on their list.',
+        'Real-time qualification against your panels, service areas, and capacity.',
+        'No drop-off to phone tag or 30-page packets.',
+      ],
     },
     {
-      v: 85, s: '%', label: 'Family completion rate',
-      detail: 'The industry average is under 30%. Families finish with Carelu because it’s one natural conversation on their phone — not a 30-page packet and a week of back-and-forth.',
+      v: 40, label: 'Improvement in intake completion',
+      bullets: [
+        'Documents, consents, and signatures collected in one conversation.',
+        'Automatic follow-up on every missing piece.',
+        'Doctors nudged for reports so your team isn’t chasing.',
+      ],
     },
     {
-      v: 0, s: '', label: 'Manual follow-ups for your team',
-      detail: 'Missing document? Unsigned consent? A doctor gone quiet? Carelu nudges, reminds, and follows up on its own — your team never keeps a chase list again.',
+      v: 35, label: 'Improvement in show-up rates',
+      bullets: [
+        'Assessments scheduled while the family is still engaged.',
+        'Reminders before every appointment.',
+        'Families who go quiet are re-engaged automatically.',
+      ],
     },
   ];
-  const numCol = 'clamp(96px, 12vw, 160px)';
+  const numCol = 'clamp(96px, 11vw, 150px)';
+  return (
+    <section id="outcomes" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 56px)' }}>
+          <div className="rv"><Pill>Outcomes</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+          }}>
+            Improve the metrics that matter.
+          </h2>
+        </div>
+
+        <div style={{ maxWidth: 1000, margin: '0 auto', borderTop: '1px solid rgba(0,0,0,0.10)' }}>
+          {metrics.map((m, i) => (
+            <div key={m.label} className={`rv d${i + 1}`} style={{ borderBottom: '1px solid rgba(0,0,0,0.10)' }}>
+              <button
+                onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
+                aria-label={`${open === i ? 'Collapse' : 'Expand'}: ${m.label}`}
+                style={{
+                  width: '100%', display: 'grid',
+                  gridTemplateColumns: `${numCol} 1fr auto`,
+                  alignItems: 'center', gap: 'clamp(16px, 2.5vw, 32px)',
+                  padding: '26px 0', border: 'none', background: 'none',
+                  textAlign: 'left', cursor: 'pointer',
+                }}
+              >
+                <span style={{
+                  fontFamily: 'var(--font-display)', fontWeight: 400,
+                  fontSize: 'clamp(38px, 4.2vw, 58px)', lineHeight: 1,
+                  color: 'var(--green-900)', letterSpacing: '-0.02em',
+                  fontVariantNumeric: 'lining-nums tabular-nums',
+                  whiteSpace: 'nowrap',
+                }}>
+                  <Counter target={m.v} suffix="%" />
+                </span>
+                <span style={{
+                  fontSize: 'clamp(16px, 1.7vw, 19px)', fontWeight: 500,
+                  color: 'var(--green-900)', letterSpacing: '-0.01em',
+                }}>
+                  {m.label}
+                </span>
+                <span aria-hidden="true" style={{
+                  width: 38, height: 38, borderRadius: '50%',
+                  border: '1px solid rgba(0,0,0,0.15)',
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  color: 'var(--green-900)', fontSize: 19, fontWeight: 300, lineHeight: 1,
+                  background: open === i ? 'var(--lime)' : 'transparent',
+                  borderColor: open === i ? 'var(--green-900)' : 'rgba(0,0,0,0.15)',
+                  transform: open === i ? 'rotate(45deg)' : 'none',
+                  transition: 'transform 0.35s var(--ease-dramatic), background 0.25s, border-color 0.25s',
+                }}>
+                  +
+                </span>
+              </button>
+              <div style={{
+                maxHeight: open === i ? 260 : 0, overflow: 'hidden',
+                transition: 'max-height 0.5s var(--ease-dramatic)',
+              }}>
+                <div style={{
+                  display: 'grid', gridTemplateColumns: `${numCol} 1fr auto`,
+                  gap: 'clamp(16px, 2.5vw, 32px)',
+                }}>
+                  <span />
+                  <ul style={{
+                    margin: 0, paddingBottom: 26, paddingLeft: 18, maxWidth: 560,
+                    listStyle: 'disc',
+                  }}>
+                    {m.bullets.map((b) => (
+                      <li key={b} style={{
+                        fontSize: 15, color: 'var(--gray-500)', lineHeight: 1.75,
+                      }}>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+// ── IMPACT — clean stat cards on cream ──────────
+function Impact() {
   return (
     <section id="results" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
@@ -2019,75 +2178,45 @@ function Impact() {
             <LiveCounter />
           </div>
 
-          {/* Expandable metric rows \u2014 big serif numerals, hairline dividers, FAQ-style disclosure */}
-          <div style={{ borderTop: '1px solid rgba(0,0,0,0.10)' }}>
-            {metrics.map((m, i) => (
-              <div key={m.label} className={`rv d${i + 1}`} style={{ borderBottom: '1px solid rgba(0,0,0,0.10)' }}>
-                <button
-                  onClick={() => setOpen(open === i ? null : i)}
-                  aria-expanded={open === i}
-                  aria-label={`${open === i ? 'Collapse' : 'Expand'}: ${m.label}`}
-                  style={{
-                    width: '100%', display: 'grid',
-                    gridTemplateColumns: `${numCol} 1fr auto`,
-                    alignItems: 'center', gap: 'clamp(16px, 2.5vw, 32px)',
-                    padding: '26px 0', border: 'none', background: 'none',
-                    textAlign: 'left', cursor: 'pointer',
-                  }}
-                >
-                  <span style={{
-                    fontFamily: 'var(--font-display)', fontWeight: 400,
-                    fontSize: 'clamp(38px, 4.4vw, 62px)', lineHeight: 1,
-                    color: 'var(--green-900)', letterSpacing: '-0.02em',
-                    fontVariantNumeric: 'lining-nums tabular-nums',
-                    whiteSpace: 'nowrap',
-                  }}>
-                    <Counter target={m.v} suffix={m.s} prefix={m.p || ''} />
-                    {'unit' in m && m.unit && (
-                      <span style={{
-                        fontSize: '0.38em', fontFamily: 'var(--font-body)', fontWeight: 500,
-                        marginLeft: 7, letterSpacing: 0, color: 'var(--gray-500)',
-                      }}>{m.unit}</span>
-                    )}
-                  </span>
-                  <span style={{
-                    fontSize: 'clamp(16px, 1.7vw, 19px)', fontWeight: 500,
-                    color: 'var(--green-900)', letterSpacing: '-0.01em',
-                  }}>
-                    {m.label}
-                  </span>
-                  <span aria-hidden="true" style={{
-                    width: 38, height: 38, borderRadius: '50%',
-                    border: '1px solid rgba(0,0,0,0.15)',
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    color: 'var(--green-900)', fontSize: 19, fontWeight: 300, lineHeight: 1,
-                    background: open === i ? 'var(--lime)' : 'transparent',
-                    borderColor: open === i ? 'var(--green-900)' : 'rgba(0,0,0,0.15)',
-                    transform: open === i ? 'rotate(45deg)' : 'none',
-                    transition: 'transform 0.35s var(--ease-dramatic), background 0.25s, border-color 0.25s',
-                  }}>
-                    +
-                  </span>
-                </button>
-                <div style={{
-                  maxHeight: open === i ? 220 : 0, overflow: 'hidden',
-                  transition: 'max-height 0.5s var(--ease-dramatic)',
-                }}>
-                  <div style={{
-                    display: 'grid', gridTemplateColumns: `${numCol} 1fr auto`,
-                    gap: 'clamp(16px, 2.5vw, 32px)',
-                  }}>
-                    <span />
-                    <p style={{
-                      margin: 0, paddingBottom: 26, maxWidth: 560,
-                      fontSize: 15, color: 'var(--gray-500)', lineHeight: 1.7,
-                    }}>
-                      {m.detail}
-                    </p>
-                  </div>
-                </div>
+          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
+          {[
+            { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
+            { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
+            { v: 85, s: '%', t2: 'Family completion rate', d: 'Industry average is under 30%.' },
+            { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
+          ].map((s, i) => (
+            <div
+              key={s.t2}
+              className={`rv-scale d${i + 1}`}
+              style={{
+                background: '#fff', borderRadius: 20,
+                padding: '40px 28px',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
+                cursor: 'default',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-6px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(20, 40, 30, 0.12), 0 2px 6px rgba(0,0,0,0.04)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)';
+              }}
+            >
+              <div style={{
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)',
+                fontWeight: 400,
+                color: 'var(--green-900)', lineHeight: 1, marginBottom: 16,
+                letterSpacing: '-0.02em',
+                fontVariantNumeric: 'lining-nums tabular-nums',
+              }}>
+                <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
               </div>
-            ))}
+              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 6 }}>{s.t2}</div>
+              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.d}</div>
+            </div>
+          ))}
           </div>
         </div>
 
@@ -2264,7 +2393,7 @@ function GettingStarted() {
     {
       n: '02',
       title: 'Sign and get set up',
-      desc: 'We configure Carelu around your practice and connect it across your front office — website, forms, scheduling, the systems your team already uses.',
+      desc: 'We configure Carelu around your practice and connect it across your front office. Integrations with leading CRMs and EMRs mean you launch fast — without changing your core systems.',
       visual: <GsVignetteSign />,
     },
     {
@@ -2719,7 +2848,12 @@ function CtaFooter() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {col.links.map((link) => (
                   <li key={link}>
-                    <a href="#" style={{
+                    <a href={
+                      link === 'Single-Site' ? '/solutions/single-site'
+                      : link === 'Multi-Site' ? '/solutions/multi-site'
+                      : link === 'Enterprise' ? '/solutions/enterprise'
+                      : '#'
+                    } style={{
                       fontSize: 13, color: 'rgba(250,248,243,0.75)',
                       textDecoration: 'none', transition: 'color 0.2s',
                       textShadow: '0 1px 4px rgba(0,0,0,0.18)',
@@ -3081,6 +3215,7 @@ export default function Landing() {
         <MuralReveal />
         <Impact />
         <HowCarelu />
+        <Outcomes />
         <CustomerStories />
         <GettingStarted />
         <Compliance />

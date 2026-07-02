@@ -10,6 +10,7 @@ import Demo from './pages/Demo'
 import SegmentPage from './pages/SegmentPage'
 import BrandProposal from './pages/BrandProposal'
 import Gateway from './pages/Gateway'
+import SolutionsPage from './pages/SolutionsPage'
 import Company from './pages/Company'
 import CareluCompany from './pages/CareluCompany'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
@@ -34,6 +35,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/verify" element={<Verify />} />
         <Route path="/demo" element={<Demo />} />
         <Route path="/for/:slug" element={<SegmentPage />} />
+        <Route path="/solutions/:slug" element={<SolutionsPage />} />
         <Route path="/brand" element={<BrandProposal />} />
         {/* --- V2 sandbox routes --- */}
         <Route path="/v2" element={<GatewayV2 />} />
