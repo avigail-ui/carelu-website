@@ -55,7 +55,7 @@ export const segments: Record<string, SegmentConfig> = {
     stats: [
       { value: '3×', label: 'More families admitted per month' },
       { value: '<10 min', label: 'First contact to intake-ready' },
-      { value: '85%', label: 'Family completion rate' },
+      { value: '85%', label: 'Increase in intake completion' },
     ],
     testimonial: {
       quote: 'We were losing 60% of families before they ever completed intake. Carelu brought that number under 15% in the first month.',
@@ -167,7 +167,7 @@ export const segments: Record<string, SegmentConfig> = {
       { title: 'Automated scheduling and follow-up', desc: 'Once intake is complete, Carelu can trigger scheduling. If documents are missing, it follows up gently by text — no staff time required.' },
     ],
     stats: [
-      { value: '85%', label: 'Patient completion rate' },
+      { value: '85%', label: 'Increase in intake completion' },
       { value: '< 10 min', label: 'Intake to scheduled appointment' },
       { value: '0', label: 'Patients lost to intake friction' },
     ],

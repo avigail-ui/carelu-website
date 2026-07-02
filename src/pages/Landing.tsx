@@ -61,7 +61,7 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
     obs.observe(el);
     return () => obs.disconnect();
   }, [target]);
-  return <span ref={ref}>{prefix}{count}{suffix}</span>;
+  return <span ref={ref}>{prefix}{count.toLocaleString('en-US')}{suffix}</span>;
 }
 
 
@@ -383,16 +383,26 @@ function Hero() {
               </a>
             </div>
 
-            {/* Enterprise trust signals */}
-            <p style={{
-              marginTop: 26, marginBottom: 0,
-              fontSize: 12.5, fontWeight: 600, letterSpacing: '0.06em',
-              color: '#fff',
-              textShadow: '0 1px 3px rgba(0,0,0,0.5), 0 2px 14px rgba(0,0,0,0.4)',
-              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
-            }}>
-              HIPAA compliant&ensp;&middot;&ensp;SOC 2 Type II&ensp;&middot;&ensp;BAA signed with every provider
-            </p>
+            {/* Enterprise trust signals — dark frosted pill so it stays legible on bright clouds */}
+            <div style={{ marginTop: 26, animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both' }}>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center',
+                gap: '6px 14px',
+                fontSize: 12.5, fontWeight: 600, letterSpacing: '0.05em',
+                color: '#fff',
+                background: 'rgba(20, 30, 22, 0.34)',
+                border: '1px solid rgba(255,255,255,0.16)',
+                backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)',
+                padding: '9px 20px', borderRadius: 100,
+              }}>
+                {['HIPAA compliant', 'SOC 2 Type II', 'BAA signed with every provider'].map((label, i) => (
+                  <span key={label} style={{ display: 'inline-flex', alignItems: 'center', gap: 14 }}>
+                    {i > 0 && <span style={{ width: 3, height: 3, borderRadius: '50%', background: 'rgba(255,255,255,0.55)' }} />}
+                    {label}
+                  </span>
+                ))}
+              </span>
+            </div>
           </div>
         </div>
 
@@ -2028,7 +2038,7 @@ function Outcomes() {
       ],
     },
     {
-      v: 85, s: '%', label: 'Intake completion rate',
+      v: 85, s: '%', label: 'Increase in intake completion',
       bullets: [
         'Magic forms turn 30-page packets into one natural conversation.',
         'Instant qualification against your panels, service areas, and capacity.',
@@ -2053,7 +2063,7 @@ function Outcomes() {
       ],
     },
     {
-      v: 1000, s: '+', label: 'RBTs and BCBAs hired through Carelu',
+      v: 5000, s: '+', label: 'RBTs and BCBAs hired through Carelu',
       bullets: [
         'Candidates apply through the same natural conversation families do — no clunky portals.',
         'Credentials, availability, and screening questions collected up front.',
@@ -2194,7 +2204,7 @@ function Impact() {
           {[
             { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
             { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
-            { v: 85, s: '%', t2: 'Family completion rate', d: 'Industry average is under 30%.' },
+            { v: 85, s: '%', t2: 'Increase in intake completion', d: 'Families finish what they start.' },
             { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
           ].map((s, i) => (
             <div
