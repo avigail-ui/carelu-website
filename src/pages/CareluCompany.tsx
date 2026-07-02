@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import DemoModalHost from '../components/DemoModal';
+import { Nav } from './Landing';
 
 /* ================================================================
    CARELU — COMPANY / ABOUT
@@ -68,88 +69,6 @@ function SectionHead({ pill, title, sub }: { pill: string; title: React.ReactNod
   );
 }
 
-/* ── NAV — same floating pill as the landing page ── */
-function Nav() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    if (!mobileOpen) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = prev; };
-  }, [mobileOpen]);
-
-  return (
-    <>
-      <nav style={{
-        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        display: 'flex', justifyContent: 'center',
-        padding: '16px 20px 0',
-      }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center',
-          height: 56, borderRadius: 18, padding: '0 6px 0 0',
-          background: 'rgba(250,248,243,0.72)',
-          backdropFilter: 'blur(32px) saturate(1.3)', WebkitBackdropFilter: 'blur(32px) saturate(1.3)',
-          border: '1px solid rgba(43,42,38,0.07)',
-        }}>
-          <a href="/carelu#platform" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = INK; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Product</a>
-          <a href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 500, color: INK, textDecoration: 'none' }}>Company</a>
-
-          <a href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
-          </a>
-
-          <a href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = INK; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Log in</a>
-          <a href="/demo" className="nav-demo-btn" style={{
-            fontSize: 14, fontWeight: 600, color: INK,
-            padding: '12px 24px', borderRadius: 14, textDecoration: 'none',
-            display: 'inline-flex', alignItems: 'center',
-            border: '1px solid rgba(0,0,0,0.08)', background: '#fff',
-            boxShadow: '0 4px 18px rgba(0,0,0,0.08)',
-            transition: 'background 0.2s, box-shadow 0.3s, transform 0.2s',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.14)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)'; }}
-          >Get a Demo</a>
-          <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" aria-expanded={mobileOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 11, marginLeft: 2 }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={INK} strokeWidth="1.8" strokeLinecap="round" style={{ display: 'block' }}>
-              {mobileOpen
-                ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
-                : <><line x1="4" y1="7" x2="20" y2="7" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="17" x2="20" y2="17" /></>
-              }
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      {mobileOpen && (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 99, background: 'rgba(250,248,243,0.98)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', padding: '96px 28px 28px', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}
-          onClick={() => setMobileOpen(false)}>
-          {[
-            { t: 'Product', href: '/carelu#platform' },
-            { t: 'Why we exist', href: '#story' },
-            { t: 'Careers', href: '#careers' },
-            { t: 'Log in', href: '/login' },
-          ].map(l => (
-            <a key={l.t} href={l.href} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '20px 0', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>{l.t}</a>
-          ))}
-          <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: INK, backgroundColor: '#fff', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32, border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 4px 18px rgba(0,0,0,0.1)' }}>
-            Get a Demo
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      )}
-    </>
-  );
-}
-
 /* ── HERO — same sky treatment as the landing hero ── */
 function Hero() {
   return (
@@ -159,7 +78,7 @@ function Hero() {
         backgroundImage: 'url(/hero-sky.jpg)', backgroundSize: 'cover', backgroundPosition: 'center',
         animation: 'heroSkyDrift 48s ease-in-out infinite', willChange: 'transform',
       }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.10) 35%, rgba(0,0,0,0) 65%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.10) 62%, rgba(0,0,0,0) 82%)', pointerEvents: 'none' }} />
       <div style={{
         position: 'absolute', left: 0, right: 0, bottom: 0, height: '45%',
         background: `linear-gradient(180deg, rgba(250,248,243,0) 0%, rgba(250,248,243,0.6) 60%, ${BONE} 100%)`,
@@ -182,7 +101,7 @@ function Hero() {
         <p style={{
           fontSize: 'clamp(15px, 1.4vw, 19px)', color: '#fff', fontWeight: 500,
           lineHeight: 1.65, maxWidth: 600, margin: '24px auto 0',
-          textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
+          textShadow: '0 1px 3px rgba(0,0,0,0.5), 0 2px 20px rgba(0,0,0,0.45)',
           animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
         }}>
           Behavioral health runs on intake — and intake is where families get lost.
@@ -575,7 +494,7 @@ export default function CareluCompany() {
   return (
     <div className="session-light" style={{ minHeight: '100vh', background: BONE, color: '#2B2A26', fontFamily: 'var(--font-body)' }}>
       <DemoModalHost />
-      <Nav />
+      <Nav base="/carelu" />
       <Hero />
       <Scale />
       <LogoBand />

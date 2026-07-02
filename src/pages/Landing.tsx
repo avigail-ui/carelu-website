@@ -386,9 +386,9 @@ function Hero() {
             {/* Enterprise trust signals */}
             <p style={{
               marginTop: 26, marginBottom: 0,
-              fontSize: 12, fontWeight: 500, letterSpacing: '0.06em',
-              color: 'rgba(255,255,255,0.78)',
-              textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+              fontSize: 12.5, fontWeight: 600, letterSpacing: '0.06em',
+              color: '#fff',
+              textShadow: '0 1px 3px rgba(0,0,0,0.5), 0 2px 14px rgba(0,0,0,0.4)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
             }}>
               HIPAA compliant&ensp;&middot;&ensp;SOC 2 Type II&ensp;&middot;&ensp;BAA signed with every provider
