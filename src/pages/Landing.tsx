@@ -2048,14 +2048,10 @@ function GsVignetteCall() {
       width: 250,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{
+        <img src="/yoni.png" alt="" style={{
           width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
-          background: 'var(--sage-100)', border: '1px solid var(--sage-200)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 12, fontWeight: 600, color: 'var(--green-700)',
-        }}>
-          IS
-        </div>
+          objectFit: 'cover', border: '1px solid var(--sage-200)',
+        }} />
         <div style={{ minWidth: 0 }}>
           <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>Intro call</div>
           <div style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Intake specialist &middot; 30 min</div>
@@ -2201,25 +2197,25 @@ function GettingStarted() {
     {
       n: '01',
       title: 'Meet your specialist',
-      desc: 'A short call with an intake specialist to walk through how your practice works — panels, service areas, programs.',
+      desc: 'A short call to walk through how your practice works — panels, service areas, programs. You’ll meet the person who’ll be working alongside your team.',
       visual: <GsVignetteCall />,
     },
     {
       n: '02',
       title: 'Sign and get set up',
-      desc: 'We configure Carelu around your practice and connect it to your website. Nothing for your team to install.',
+      desc: 'We configure Carelu around your practice and connect it across your front office — website, forms, scheduling, the systems your team already uses.',
       visual: <GsVignetteSign />,
     },
     {
       n: '03',
       title: 'We train your team',
-      desc: 'One session, and your team knows how Carelu works and where to find everything it collects.',
+      desc: 'One session, and your team knows how Carelu works and where to find everything it collects. It should feel like a new teammate, not new software.',
       visual: <GsVignetteTrain />,
     },
     {
       n: '04',
       title: 'Go live, with visibility',
-      desc: 'Your dashboard shows every conversation and every intake as it happens. A dedicated growth partner stays on your account.',
+      desc: 'Your dashboard shows every conversation and every intake as it happens. And a dedicated growth partner stays on your account, working it like one of your own.',
       visual: <GsVignetteLive />,
     },
   ];
