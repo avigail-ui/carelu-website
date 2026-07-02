@@ -507,7 +507,6 @@ const RAIN_ICONS = [
   { n: 'pandadoc',            left: 69, size: 33, dur: 10.0, delay: 2.2 },
   { n: 'gmail',               left: 78, size: 42, dur: 7.5,  delay: 0.9 },
   { n: 'outlook',             left: 88, size: 34, dur: 9.2,  delay: 2.9 },
-  { n: 'centralreach',        left: 95, size: 30, dur: 8.8,  delay: 4.2 },
   { n: 'calltrackingmetrics', left: 9,  size: 30, dur: 11.5, delay: 4.8 },
   { n: 'callrail',            left: 28, size: 32, dur: 10.2, delay: 5.2 },
   { n: 'salesforce',          left: 46, size: 38, dur: 8.6,  delay: 1.5 },
@@ -2037,6 +2036,121 @@ function Impact() {
 }
 
 
+// ── GETTING STARTED — onboarding process + direct team access ─────
+function GettingStarted() {
+  const steps = [
+    {
+      n: '01',
+      title: 'One kickoff call',
+      desc: 'Tell us how you work — your insurance panels, service areas, programs, and what a complete intake looks like for you.',
+    },
+    {
+      n: '02',
+      title: 'We handle the setup',
+      desc: 'We configure Carelu around your practice and connect it to your website. Nothing for your team to install. No IT project.',
+    },
+    {
+      n: '03',
+      title: 'Go live, together',
+      desc: 'We watch the first families come through with you and fine-tune as we go. From then on, Carelu just runs.',
+    },
+  ];
+  return (
+    <section id="getting-started" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+          <div className="rv"><Pill>Getting started</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+          }}>
+            Up and running in days. Not months.
+          </h2>
+        </div>
+
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{
+            display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16,
+          }}>
+            {steps.map((s, i) => (
+              <div key={s.n} className={`rv d${i + 1}`} style={{
+                background: '#fff', borderRadius: 20,
+                padding: '36px 28px',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
+              }}>
+                <div style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 10,
+                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                  letterSpacing: '0.12em', textTransform: 'uppercase',
+                  marginBottom: 16,
+                }}>
+                  <span style={{
+                    width: 22, height: 22, borderRadius: '50%',
+                    background: 'var(--lime)', color: 'var(--green-900)',
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: 11, fontWeight: 700, letterSpacing: 0,
+                  }}>{s.n}</span>
+                  Step
+                </div>
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2.2vw, 27px)',
+                  fontWeight: 400, color: 'var(--green-900)',
+                  lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
+                }}>
+                  {s.title}
+                </h3>
+                <p style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0 }}>
+                  {s.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Direct access to the team */}
+          <div className="rv d4" style={{
+            marginTop: 16,
+            background: '#2C3E2D', borderRadius: 20,
+            padding: 'clamp(28px, 4vw, 44px)',
+            display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 'clamp(20px, 3vw, 40px)',
+          }}>
+            <div style={{ flex: '1 1 380px', minWidth: 0 }}>
+              <h3 style={{
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.6vw, 32px)',
+                fontWeight: 400, color: '#FAF8F3',
+                lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
+              }}>
+                And you always have a direct line to us.
+              </h3>
+              <p style={{ fontSize: 15, color: 'rgba(250,248,243,0.75)', lineHeight: 1.65, margin: 0 }}>
+                No ticket queues. No support tiers. Every practice gets direct access to the
+                team behind Carelu — reach out and a real person who knows your setup answers.
+                Need a change to your panels, areas, or intake requirements? It&rsquo;s handled the same day.
+              </p>
+            </div>
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 14, flex: '0 1 auto', minWidth: 0,
+            }}>
+              <img src="/yoni.png" alt="Yoni, founder of Carelu" style={{
+                width: 64, height: 64, borderRadius: '50%', objectFit: 'cover',
+                border: '2px solid rgba(250,248,243,0.35)', flexShrink: 0,
+              }} />
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: 15, fontWeight: 600, color: '#FAF8F3' }}>Yoni Belson</div>
+                <div style={{ fontSize: 13, color: 'rgba(250,248,243,0.65)' }}>Founder — on the phone with practices every day</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 // ── COMPLIANCE -- formal certificate style ─────
 function Compliance() {
   const items = [
@@ -2735,6 +2849,7 @@ export default function Landing() {
         <Impact />
         <HowCarelu />
         <CustomerStories />
+        <GettingStarted />
         <Compliance />
         <Faq />
         <CtaFooter />
