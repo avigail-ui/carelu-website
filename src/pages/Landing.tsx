@@ -250,7 +250,6 @@ function LaurelBranch({ flip }: { flip?: boolean }) {
       style={{
         display: 'block', flexShrink: 0,
         transform: flip ? 'scaleX(-1)' : undefined,
-        filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.35))',
       }}
     >
       <path d="M21 54 C 7 46.5, 3.5 26, 14.5 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" fill="none" />
@@ -439,8 +438,8 @@ function Hero() {
                 { big: 'BAA', small: 'Every provider' },
               ].map(({ big, small }) => (
                 <div key={big} style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 5, color: '#fff',
-                  textShadow: '0 1px 3px rgba(0,0,0,0.4), 0 1px 12px rgba(0,0,0,0.3)',
+                  display: 'inline-flex', alignItems: 'center', gap: 5,
+                  color: 'rgba(60,50,40,0.7)', mixBlendMode: 'multiply',
                 }}>
                   <LaurelBranch />
                   <div style={{ textAlign: 'center' }}>
@@ -2972,17 +2971,17 @@ function CtaFooter() {
             }}>
               Powered by
             </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
               <img
                 src="/leadtrap-mark.svg"
                 alt=""
                 style={{
-                  height: 26, width: 26, display: 'block', borderRadius: '50%',
+                  height: 18, width: 18, display: 'block', borderRadius: '50%',
                   filter: 'invert(1) drop-shadow(0 1px 6px rgba(0,0,0,0.2))',
                 }}
               />
               <span style={{
-                fontSize: 13, fontWeight: 700, color: '#fff',
+                fontSize: 11.5, fontWeight: 700, color: '#fff',
                 textShadow: '0 1px 4px rgba(0,0,0,0.2)', letterSpacing: '-0.01em',
               }}>
                 LeadTrap
@@ -2990,7 +2989,7 @@ function CtaFooter() {
             </span>
           </div>
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 LeadTrap, Inc. dba Carelu</span>
+            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 LeadTrap, Inc.</span>
             <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
             <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
             <a href="https://trust.delve.co/leadtrap" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>

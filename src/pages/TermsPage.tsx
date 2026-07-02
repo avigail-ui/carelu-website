@@ -351,7 +351,7 @@ export default function TermsPage() {
             <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 22, width: 'auto', display: 'block', opacity: 0.85 }} />
           </a>
           <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)' }}>
-            © {new Date().getFullYear()} LeadTrap, Inc. dba Carelu
+            © {new Date().getFullYear()} LeadTrap, Inc.
           </span>
         </div>
       </footer>
