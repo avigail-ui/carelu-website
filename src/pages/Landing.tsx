@@ -241,7 +241,7 @@ function LaurelBranch({ flip }: { flip?: boolean }) {
       style={{
         display: 'block', flexShrink: 0,
         transform: flip ? 'scaleX(-1)' : undefined,
-        filter: 'drop-shadow(0 1px 0 rgba(255,255,255,0.3))',
+        filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.35))',
       }}
     >
       <path d="M21 54 C 7 46.5, 3.5 26, 14.5 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" fill="none" />
@@ -361,7 +361,7 @@ function Hero() {
             </div>
 
             <h1 style={{
-              fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 104px)',
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 96px)',
               fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.03em',
               color: '#fff', maxWidth: 1000, margin: '0 auto',
               textShadow: '0 2px 30px rgba(0,0,0,0.35)',
@@ -430,8 +430,8 @@ function Hero() {
                 { big: 'BAA', small: 'Every provider' },
               ].map(({ big, small }) => (
                 <div key={big} style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 5, color: 'rgba(37, 51, 40, 0.92)',
-                  textShadow: '0 1px 0 rgba(255,255,255,0.35)',
+                  display: 'inline-flex', alignItems: 'center', gap: 5, color: '#fff',
+                  textShadow: '0 1px 3px rgba(0,0,0,0.4), 0 1px 12px rgba(0,0,0,0.3)',
                 }}>
                   <LaurelBranch />
                   <div style={{ textAlign: 'center' }}>
