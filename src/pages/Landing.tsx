@@ -1390,7 +1390,7 @@ function HandoffVisual() {
 // ── CHECKLIST VISUAL — each row's icon goes idle → loading-spinner → check (cascading) ──
 function ChecklistVisual() {
   const items = [
-    { label: 'Insurance captured', sub: 'Blue Cross PPO', done: true },
+    { label: 'Insurance verified', sub: 'Blue Cross PPO', done: true },
     { label: 'Consent form', sub: 'Signed', done: true },
     { label: 'Insurance card', sub: 'Uploaded via text', done: true },
     { label: 'Diagnosis report', sub: 'Requested', done: true },
@@ -1526,14 +1526,13 @@ function ChecklistVisual() {
 
 // ── CHANNELS HUB — sequential reveal: center first, then each pill clockwise ──
 function ChannelsHub() {
-  // Chat and forms are live today — everything else is badged "Coming soon".
   const channels = [
-    { name: 'Phone', soon: true },
-    { name: 'Text', soon: true },
+    { name: 'Phone', soon: false },
+    { name: 'Text', soon: false },
     { name: 'Chat', soon: false },
     { name: 'Forms', soon: false },
     { name: 'Fax', soon: true },
-    { name: 'Email', soon: true },
+    { name: 'Email', soon: false },
   ];
   const [step, setStep] = useState(0); // 0 = hidden, 1..6 = each pill appears, then connections
   const ref = useRef<HTMLDivElement>(null);
@@ -1688,21 +1687,21 @@ function HowCarelu() {
       step: '01',
       tag: 'Multi-channel',
       title: 'Every family. Answered in seconds.',
-      desc: 'A family who waits keeps calling down their list. Carelu answers the moment they reach out — instantly, day or night, in English and Spanish. First to respond. First to finish.',
+      desc: 'Phone calls, texts, web forms, faxes, emails — Carelu answers them all instantly, 24/7, in English and Spanish. Families get a response in seconds, not days.',
       visual: <ChannelsHub />,
     },
     {
       step: '02',
       tag: 'AI-powered',
       title: 'Qualifies and collects. Automatically.',
-      desc: 'Carelu knows your insurance panels, service areas, and open capacity. It qualifies every family against them, then collects everything a complete intake needs — insurance cards, diagnosis reports, consent forms, signatures — through natural conversation. Not a 30-page packet.',
+      desc: 'Carelu knows your insurance panels, service areas, and open capacity. It verifies eligibility, collects insurance cards, gathers consent forms — all through natural conversation.',
       visual: <ChecklistVisual />,
     },
     {
       step: '03',
       tag: 'Automated',
       title: 'Follows up and delivers. Zero chasing.',
-      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands your team a complete, ready case. More intakes finished. More kids in care.',
+      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands off a complete, ready case.',
       visual: <HandoffVisual />,
     },
   ];
@@ -1873,16 +1872,6 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             </div>
           ))}
         </div>
-        <p className="rv" style={{
-          margin: '40px auto 0', padding: '0 28px', maxWidth: 480,
-          textAlign: 'center',
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 5.5vw, 24px)',
-          fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.35,
-          letterSpacing: '-0.01em',
-        }}>
-          <span style={{ opacity: 0.55 }}>Other tools give you one more thing to manage.</span>{' '}
-          Carelu does the thing.
-        </p>
       </section>
     );
   }
@@ -1945,7 +1934,7 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 
         {/* Progress dots — sit lower, with extra breathing room above */}
         <div style={{
-          marginTop: 'clamp(32px, 5vh, 64px)',
+          marginTop: 'clamp(48px, 7vh, 96px)', paddingBottom: 'clamp(24px, 4vh, 48px)',
           display: 'flex', justifyContent: 'center', gap: 8,
         }}>
           {steps.map((_, i) => (
@@ -1957,21 +1946,6 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             }} />
           ))}
         </div>
-
-        {/* Section closer — fades in as the final step lands */}
-        <p style={{
-          margin: 0, marginTop: 'clamp(14px, 2.5vh, 26px)', paddingBottom: 'clamp(20px, 3.5vh, 40px)',
-          textAlign: 'center',
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(18px, 1.6vw, 24px)',
-          fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.3,
-          letterSpacing: '-0.01em',
-          opacity: activeIdx === steps.length - 1 ? 1 : 0,
-          transform: activeIdx === steps.length - 1 ? 'none' : 'translateY(10px)',
-          transition: 'opacity 0.6s ease, transform 0.6s var(--ease-dramatic)',
-        }}>
-          <span style={{ opacity: 0.55 }}>Other tools give you one more thing to manage.</span>{' '}
-          Carelu does the thing.
-        </p>
       </div>
     </section>
   );
