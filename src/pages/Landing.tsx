@@ -2036,28 +2036,191 @@ function Impact() {
 }
 
 
-// ── GETTING STARTED — editorial timeline + founder note on direct access ─────
+// ── GETTING STARTED — 2×2 vignette cards + founder note on direct access ─────
+
+// Small animated vignettes for each onboarding step — same crafted-miniature
+// language as ChecklistVisual / HandoffVisual.
+function GsVignetteCall() {
+  return (
+    <div className="gs-pop" style={{
+      background: '#fff', borderRadius: 14, padding: '16px 18px',
+      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
+      width: 250,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{
+          width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
+          background: 'var(--sage-100)', border: '1px solid var(--sage-200)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: 12, fontWeight: 600, color: 'var(--green-700)',
+        }}>
+          IS
+        </div>
+        <div style={{ minWidth: 0 }}>
+          <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>Intro call</div>
+          <div style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Intake specialist &middot; 30 min</div>
+        </div>
+      </div>
+      <div style={{
+        marginTop: 12, paddingTop: 12, borderTop: '1px solid rgba(0,0,0,0.06)',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      }}>
+        <span style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Tue, 11:00 AM</span>
+        <span className="gs-check" style={{
+          display: 'inline-flex', alignItems: 'center', gap: 5,
+          background: 'var(--lime)', color: 'var(--green-900)',
+          fontSize: 10.5, fontWeight: 600, borderRadius: 999, padding: '4px 9px',
+        }}>
+          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
+          Scheduled
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function GsVignetteSign() {
+  return (
+    <div className="gs-pop" style={{
+      background: '#fff', borderRadius: 14, padding: '18px 20px 14px',
+      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
+      width: 250,
+    }}>
+      {[112, 168, 138].map((w) => (
+        <div key={w} style={{ height: 5, width: w, borderRadius: 3, background: 'rgba(0,0,0,0.07)', marginBottom: 8 }} />
+      ))}
+      <div style={{
+        marginTop: 14, paddingTop: 4, borderTop: '1px solid rgba(0,0,0,0.06)',
+        display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 12,
+      }}>
+        <svg width="128" height="42" viewBox="0 0 128 42" fill="none" style={{ display: 'block' }}>
+          <path
+            className="gs-sig"
+            pathLength={1}
+            d="M6 32 C 20 6, 30 4, 27 20 C 24 33, 12 37, 24 28 C 38 18, 44 14, 52 22 C 58 28, 64 20, 72 24 C 80 28, 88 18, 98 24 C 106 29, 114 24, 122 27"
+            stroke="var(--green-800, #2C3E2D)" strokeWidth="1.6" strokeLinecap="round"
+          />
+        </svg>
+        <span className="gs-check" style={{
+          width: 22, height: 22, borderRadius: '50%', flexShrink: 0,
+          background: 'var(--lime)', color: 'var(--green-900)',
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function GsVignetteTrain() {
+  const team = [
+    { initials: 'DK', bg: '#7B8F7B' },
+    { initials: 'RA', bg: '#A08F76' },
+    { initials: 'MS', bg: '#6E7F8D' },
+    { initials: 'TB', bg: '#8D7B8F' },
+  ];
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        {team.map((a, i) => (
+          <div key={a.initials} className="gs-av" style={{
+            width: 44, height: 44, borderRadius: '50%',
+            background: a.bg, border: '2.5px solid #fff',
+            marginLeft: i > 0 ? -10 : 0,
+            fontSize: 12, fontWeight: 600, color: '#fff',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 14px rgba(0,0,0,0.10)',
+            position: 'relative', zIndex: team.length - i,
+          }}>
+            {a.initials}
+          </div>
+        ))}
+      </div>
+      <div className="gs-check" style={{
+        display: 'inline-flex', alignItems: 'center', gap: 6,
+        marginTop: 16,
+        background: '#fff', border: '1px solid rgba(0,0,0,0.07)',
+        borderRadius: 999, padding: '6px 13px',
+        fontSize: 11.5, fontWeight: 500, color: 'var(--green-900)',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+      }}>
+        <span style={{
+          width: 15, height: 15, borderRadius: '50%', background: 'var(--lime)',
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'var(--green-900)',
+        }}>
+          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
+        </span>
+        Team onboarded
+      </div>
+    </div>
+  );
+}
+
+function GsVignetteLive() {
+  return (
+    <div className="gs-pop" style={{
+      background: '#fff', borderRadius: 14, padding: '16px 18px 14px',
+      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
+      width: 250,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 4 }}>
+        <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--gray-500)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+          Intakes this week
+        </span>
+        <span className="gs-check" style={{
+          display: 'inline-flex', alignItems: 'center', gap: 4,
+          fontSize: 10.5, fontWeight: 600, color: 'var(--green-900)',
+          background: 'var(--lime)', borderRadius: 999, padding: '3px 8px',
+        }}>
+          Live
+        </span>
+      </div>
+      <div style={{
+        fontFamily: 'var(--font-display)', fontSize: 34, lineHeight: 1.1,
+        color: 'var(--green-900)', fontVariantNumeric: 'lining-nums tabular-nums',
+        marginBottom: 6,
+      }}>
+        <Counter target={12} />
+      </div>
+      <svg width="100%" height="38" viewBox="0 0 214 38" fill="none" preserveAspectRatio="none" style={{ display: 'block' }}>
+        <path
+          className="gs-spark"
+          pathLength={1}
+          d="M2 32 C 26 30, 38 24, 56 25 C 76 26, 88 18, 108 19 C 126 20, 138 12, 158 13 C 176 14, 194 8, 212 5"
+          stroke="var(--green-800, #2C3E2D)" strokeWidth="1.8" strokeLinecap="round"
+        />
+        <circle className="gs-check" cx="212" cy="5" r="3.5" fill="var(--lime)" stroke="var(--green-900)" strokeWidth="1.2" />
+      </svg>
+    </div>
+  );
+}
+
 function GettingStarted() {
   const steps = [
     {
       n: '01',
       title: 'Meet your specialist',
       desc: 'A short call with an intake specialist to walk through how your practice works — panels, service areas, programs.',
+      visual: <GsVignetteCall />,
     },
     {
       n: '02',
       title: 'Sign and get set up',
       desc: 'We configure Carelu around your practice and connect it to your website. Nothing for your team to install.',
+      visual: <GsVignetteSign />,
     },
     {
       n: '03',
       title: 'We train your team',
       desc: 'One session, and your team knows how Carelu works and where to find everything it collects.',
+      visual: <GsVignetteTrain />,
     },
     {
       n: '04',
       title: 'Go live, with visibility',
       desc: 'Your dashboard shows every conversation and every intake as it happens. A dedicated growth partner stays on your account.',
+      visual: <GsVignetteLive />,
     },
   ];
   const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
@@ -2067,7 +2230,7 @@ function GettingStarted() {
       background: 'var(--bone)',
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5vw, 64px)' }}>
           <div className="rv"><Pill>Getting started</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
@@ -2078,50 +2241,59 @@ function GettingStarted() {
           </h2>
         </div>
 
-        {/* Editorial timeline — ghost numerals over a rule that draws itself in */}
-        <div className="rv gs-tl" style={{ maxWidth: 1060, margin: 'clamp(48px, 6vw, 80px) auto 0' }}>
-          <div className="gs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
-            {steps.map((s) => (
-              <div key={s.n} className="gs-step" style={{ position: 'relative', paddingRight: 'clamp(24px, 3.5vw, 56px)' }}>
-                <div className="gs-num" aria-hidden="true" style={{
-                  fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 400,
-                  fontSize: 'clamp(56px, 5.5vw, 78px)', lineHeight: 1,
-                  color: 'transparent', WebkitTextStroke: '1px rgba(44,62,45,0.32)',
-                  marginBottom: 18, userSelect: 'none',
+        {/* 2×2 step cards — each with a small animated vignette */}
+        <div className="gs-grid" style={{
+          display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 20,
+          maxWidth: 1000, margin: '0 auto',
+        }}>
+          {steps.map((s, i) => (
+            <div key={s.n} className={`rv gs-card d${i + 1}`} style={{
+              background: '#fff', borderRadius: 24,
+              boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
+              overflow: 'hidden',
+              display: 'flex', flexDirection: 'column',
+            }}>
+              <div style={{
+                background: 'rgba(0,0,0,0.015)', borderBottom: '1px solid rgba(0,0,0,0.04)',
+                minHeight: 178, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                padding: '26px 24px',
+              }}>
+                {s.visual}
+              </div>
+              <div style={{ padding: '26px 30px 30px' }}>
+                <div style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 10,
+                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                  letterSpacing: '0.12em', textTransform: 'uppercase',
+                  marginBottom: 12,
                 }}>
-                  {s.n}
+                  <span style={{
+                    width: 22, height: 22, borderRadius: '50%',
+                    background: 'var(--lime)', color: 'var(--green-900)',
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: 11, fontWeight: 700, letterSpacing: 0,
+                  }}>{s.n}</span>
+                  Step
                 </div>
-                <div style={{ position: 'relative', height: 11, marginBottom: 26 }}>
-                  <div className="gs-rule" style={{
-                    position: 'absolute', top: 5, left: 0, right: 0, height: 1,
-                    background: 'rgba(44,62,45,0.18)',
-                  }} />
-                  <span className="gs-dot" style={{
-                    position: 'absolute', top: 0, left: 0,
-                    width: 11, height: 11, borderRadius: '50%',
-                    background: 'var(--lime)', border: '1.5px solid var(--green-900)',
-                    display: 'block',
-                  }} />
-                </div>
-                <h3 className="gs-body" style={{
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 1.8vw, 25px)',
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2vw, 26px)',
                   fontWeight: 400, color: 'var(--green-900)',
-                  lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 12px',
+                  lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 10px',
                 }}>
                   {s.title}
                 </h3>
-                <p className="gs-body" style={{ fontSize: 14.5, color: 'var(--gray-600)', lineHeight: 1.65, margin: 0 }}>
+                <p style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0 }}>
                   {s.desc}
                 </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
         {/* Founder note — direct access to the team, framed like the testimonial quotes */}
         <div className="rv gs-note" style={{
           position: 'relative', maxWidth: 680,
-          margin: 'clamp(72px, 8vw, 120px) auto 0',
+          margin: 'clamp(64px, 7vw, 104px) auto 0',
           padding: 'clamp(36px, 5vw, 56px) clamp(28px, 4vw, 56px)',
           textAlign: 'center',
         }}>
@@ -2174,33 +2346,24 @@ function GettingStarted() {
         </p>
       </div>
 
-      {/* Scoped reveal choreography — rule draws left to right, dots pop, copy rises */}
+      {/* Scoped vignette choreography — cards rise via .rv; inner pieces follow */}
       <style>{`
-        .gs-tl .gs-rule { transform: scaleX(0); transform-origin: left center; transition: transform 1s var(--ease-dramatic); }
-        .gs-tl.visible .gs-rule { transform: scaleX(1); }
-        .gs-tl .gs-dot { opacity: 0; transform: scale(0.3); transition: opacity 0.45s ease, transform 0.55s var(--ease-dramatic); }
-        .gs-tl.visible .gs-dot { opacity: 1; transform: scale(1); }
-        .gs-tl .gs-num { opacity: 0; transform: translateY(10px); transition: opacity 0.7s ease, transform 0.7s var(--ease-dramatic); }
-        .gs-tl.visible .gs-num { opacity: 1; transform: translateY(0); }
-        .gs-tl .gs-body { opacity: 0; transform: translateY(14px); transition: opacity 0.7s ease, transform 0.7s var(--ease-dramatic); }
-        .gs-tl.visible .gs-body { opacity: 1; transform: translateY(0); }
-        .gs-tl .gs-step:nth-child(1) .gs-rule { transition-delay: 0.1s; }
-        .gs-tl .gs-step:nth-child(2) .gs-rule { transition-delay: 0.4s; }
-        .gs-tl .gs-step:nth-child(3) .gs-rule { transition-delay: 0.7s; }
-        .gs-tl .gs-step:nth-child(4) .gs-rule { transition-delay: 1s; }
-        .gs-tl .gs-step:nth-child(1) .gs-dot { transition-delay: 0.1s; }
-        .gs-tl .gs-step:nth-child(2) .gs-dot { transition-delay: 0.4s; }
-        .gs-tl .gs-step:nth-child(3) .gs-dot { transition-delay: 0.7s; }
-        .gs-tl .gs-step:nth-child(4) .gs-dot { transition-delay: 1s; }
-        .gs-tl .gs-step:nth-child(1) .gs-num,  .gs-tl .gs-step:nth-child(1) .gs-body { transition-delay: 0.15s; }
-        .gs-tl .gs-step:nth-child(2) .gs-num,  .gs-tl .gs-step:nth-child(2) .gs-body { transition-delay: 0.45s; }
-        .gs-tl .gs-step:nth-child(3) .gs-num,  .gs-tl .gs-step:nth-child(3) .gs-body { transition-delay: 0.75s; }
-        .gs-tl .gs-step:nth-child(4) .gs-num,  .gs-tl .gs-step:nth-child(4) .gs-body { transition-delay: 1.05s; }
+        .gs-card .gs-pop { opacity: 0; transform: translateY(12px) scale(0.97); transition: opacity 0.6s ease 0.25s, transform 0.65s var(--ease-dramatic) 0.25s; }
+        .gs-card.visible .gs-pop { opacity: 1; transform: translateY(0) scale(1); }
+        .gs-card .gs-check { opacity: 0; transform: scale(0.4); transition: opacity 0.4s ease 1.05s, transform 0.5s var(--ease-dramatic) 1.05s; }
+        .gs-card.visible .gs-check { opacity: 1; transform: scale(1); }
+        .gs-card .gs-sig { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s ease-in-out 0.45s; }
+        .gs-card.visible .gs-sig { stroke-dashoffset: 0; }
+        .gs-card .gs-spark { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s ease-in-out 0.45s; }
+        .gs-card.visible .gs-spark { stroke-dashoffset: 0; }
+        .gs-card .gs-av { opacity: 0; transform: scale(0.3) translateY(6px); transition: opacity 0.45s ease, transform 0.55s var(--ease-dramatic); }
+        .gs-card.visible .gs-av { opacity: 1; transform: scale(1) translateY(0); }
+        .gs-card.visible .gs-av:nth-child(1) { transition-delay: 0.3s; }
+        .gs-card.visible .gs-av:nth-child(2) { transition-delay: 0.42s; }
+        .gs-card.visible .gs-av:nth-child(3) { transition-delay: 0.54s; }
+        .gs-card.visible .gs-av:nth-child(4) { transition-delay: 0.66s; }
         @media (max-width: 768px) {
-          .gs-grid { grid-template-columns: 1fr !important; row-gap: 48px !important; }
-          .gs-step { padding-right: 0 !important; }
-          .gs-tl .gs-rule { right: auto !important; width: 64px; }
-          .gs-num { font-size: 56px !important; margin-bottom: 12px !important; }
+          .gs-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>
