@@ -290,7 +290,7 @@ function Hero() {
               textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
-              Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health.
+              Carelu runs your entire intake operation — from first contact to admitted patient. Built for ABA therapy and behavioral health, from single clinics to multi-state organizations.
             </p>
 
             <div className="hero-cta-row" style={{
@@ -329,6 +329,17 @@ function Hero() {
                 </svg>
               </a>
             </div>
+
+            {/* Enterprise trust signals */}
+            <p style={{
+              marginTop: 26, marginBottom: 0,
+              fontSize: 12, fontWeight: 500, letterSpacing: '0.06em',
+              color: 'rgba(255,255,255,0.78)',
+              textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
+            }}>
+              HIPAA compliant&ensp;&middot;&ensp;SOC 2 Type II&ensp;&middot;&ensp;BAA signed with every provider
+            </p>
           </div>
         </div>
 
@@ -1950,8 +1961,28 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
   );
 }
 
-// ── IMPACT — clean stat cards on cream ──────────
+// ── IMPACT — expandable metric rows on cream ──────────
 function Impact() {
+  const [open, setOpen] = useState<number | null>(null);
+  const metrics = [
+    {
+      v: 3, s: '×', label: 'More families admitted',
+      detail: 'Same team, same hours — triple the output. Carelu answers every family instantly and finishes the intakes that used to stall, so the families you can help actually make it to care.',
+    },
+    {
+      v: 10, s: '', p: '<', unit: 'min', label: 'From first contact to intake-ready',
+      detail: 'What used to take 3–5 days of phone tag happens in a single conversation — eligibility, documents, consents, and scheduling, handled the moment a family reaches out.',
+    },
+    {
+      v: 85, s: '%', label: 'Family completion rate',
+      detail: 'The industry average is under 30%. Families finish with Carelu because it’s one natural conversation on their phone — not a 30-page packet and a week of back-and-forth.',
+    },
+    {
+      v: 0, s: '', label: 'Manual follow-ups for your team',
+      detail: 'Missing document? Unsigned consent? A doctor gone quiet? Carelu nudges, reminds, and follows up on its own — your team never keeps a chase list again.',
+    },
+  ];
+  const numCol = 'clamp(96px, 12vw, 160px)';
   return (
     <section id="results" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
@@ -1988,45 +2019,75 @@ function Impact() {
             <LiveCounter />
           </div>
 
-          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
-          {[
-            { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
-            { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
-            { v: 85, s: '%', t2: 'Family completion rate', d: 'Industry average is under 30%.' },
-            { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
-          ].map((s, i) => (
-            <div
-              key={s.t2}
-              className={`rv-scale d${i + 1}`}
-              style={{
-                background: '#fff', borderRadius: 20,
-                padding: '40px 28px',
-                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
-                transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
-                cursor: 'default',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(20, 40, 30, 0.12), 0 2px 6px rgba(0,0,0,0.04)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)';
-              }}
-            >
-              <div style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)',
-                fontWeight: 400,
-                color: 'var(--green-900)', lineHeight: 1, marginBottom: 16,
-                letterSpacing: '-0.02em',
-                fontVariantNumeric: 'lining-nums tabular-nums',
-              }}>
-                <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
+          {/* Expandable metric rows \u2014 big serif numerals, hairline dividers, FAQ-style disclosure */}
+          <div style={{ borderTop: '1px solid rgba(0,0,0,0.10)' }}>
+            {metrics.map((m, i) => (
+              <div key={m.label} className={`rv d${i + 1}`} style={{ borderBottom: '1px solid rgba(0,0,0,0.10)' }}>
+                <button
+                  onClick={() => setOpen(open === i ? null : i)}
+                  aria-expanded={open === i}
+                  aria-label={`${open === i ? 'Collapse' : 'Expand'}: ${m.label}`}
+                  style={{
+                    width: '100%', display: 'grid',
+                    gridTemplateColumns: `${numCol} 1fr auto`,
+                    alignItems: 'center', gap: 'clamp(16px, 2.5vw, 32px)',
+                    padding: '26px 0', border: 'none', background: 'none',
+                    textAlign: 'left', cursor: 'pointer',
+                  }}
+                >
+                  <span style={{
+                    fontFamily: 'var(--font-display)', fontWeight: 400,
+                    fontSize: 'clamp(38px, 4.4vw, 62px)', lineHeight: 1,
+                    color: 'var(--green-900)', letterSpacing: '-0.02em',
+                    fontVariantNumeric: 'lining-nums tabular-nums',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    <Counter target={m.v} suffix={m.s} prefix={m.p || ''} />
+                    {'unit' in m && m.unit && (
+                      <span style={{
+                        fontSize: '0.38em', fontFamily: 'var(--font-body)', fontWeight: 500,
+                        marginLeft: 7, letterSpacing: 0, color: 'var(--gray-500)',
+                      }}>{m.unit}</span>
+                    )}
+                  </span>
+                  <span style={{
+                    fontSize: 'clamp(16px, 1.7vw, 19px)', fontWeight: 500,
+                    color: 'var(--green-900)', letterSpacing: '-0.01em',
+                  }}>
+                    {m.label}
+                  </span>
+                  <span aria-hidden="true" style={{
+                    width: 38, height: 38, borderRadius: '50%',
+                    border: '1px solid rgba(0,0,0,0.15)',
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    color: 'var(--green-900)', fontSize: 19, fontWeight: 300, lineHeight: 1,
+                    background: open === i ? 'var(--lime)' : 'transparent',
+                    borderColor: open === i ? 'var(--green-900)' : 'rgba(0,0,0,0.15)',
+                    transform: open === i ? 'rotate(45deg)' : 'none',
+                    transition: 'transform 0.35s var(--ease-dramatic), background 0.25s, border-color 0.25s',
+                  }}>
+                    +
+                  </span>
+                </button>
+                <div style={{
+                  maxHeight: open === i ? 220 : 0, overflow: 'hidden',
+                  transition: 'max-height 0.5s var(--ease-dramatic)',
+                }}>
+                  <div style={{
+                    display: 'grid', gridTemplateColumns: `${numCol} 1fr auto`,
+                    gap: 'clamp(16px, 2.5vw, 32px)',
+                  }}>
+                    <span />
+                    <p style={{
+                      margin: 0, paddingBottom: 26, maxWidth: 560,
+                      fontSize: 15, color: 'var(--gray-500)', lineHeight: 1.7,
+                    }}>
+                      {m.detail}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 6 }}>{s.t2}</div>
-              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.d}</div>
-            </div>
-          ))}
+            ))}
           </div>
         </div>
 
