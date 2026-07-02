@@ -220,6 +220,40 @@ export function Nav({ base = '' }: { base?: string }) {
 /* ================================================================
    HERO
    ================================================================ */
+
+// One laurel branch (left side) — mirrored with `flip` for the right side.
+// Thin stem with almond leaves along it; inherits color via currentColor.
+function LaurelBranch({ flip }: { flip?: boolean }) {
+  const leaves = [
+    { x: 15, y: 44.5, r: -34 },
+    { x: 10.5, y: 38, r: -52 },
+    { x: 7.5, y: 30.5, r: -70 },
+    { x: 6.8, y: 22.5, r: -88 },
+    { x: 8.2, y: 14.5, r: -106 },
+    { x: 11.5, y: 7.5, r: -122 },
+  ];
+  return (
+    <svg
+      width="22" height="52" viewBox="0 0 22 52" fill="none" aria-hidden="true"
+      style={{
+        display: 'block', flexShrink: 0,
+        transform: flip ? 'scaleX(-1)' : undefined,
+        filter: 'drop-shadow(0 1px 0 rgba(255,255,255,0.3))',
+      }}
+    >
+      <path d="M18.5 50 C 8 42.5, 4.5 27, 12 3.5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none" />
+      {leaves.map((l, i) => (
+        <path
+          key={i}
+          d="M0 0 Q 3.4 -2.2 6.8 0 Q 3.4 2.2 0 0"
+          fill="currentColor"
+          transform={`translate(${l.x} ${l.y}) rotate(${l.r})`}
+        />
+      ))}
+    </svg>
+  );
+}
+
 function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -383,25 +417,29 @@ function Hero() {
               </a>
             </div>
 
-            {/* Enterprise trust signals — dark frosted pill so it stays legible on bright clouds */}
-            <div style={{ marginTop: 26, animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both' }}>
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center',
-                gap: '6px 14px',
-                fontSize: 12.5, fontWeight: 600, letterSpacing: '0.05em',
-                color: '#fff',
-                background: 'rgba(20, 30, 22, 0.34)',
-                border: '1px solid rgba(255,255,255,0.16)',
-                backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)',
-                padding: '9px 20px', borderRadius: 100,
-              }}>
-                {['HIPAA compliant', 'SOC 2 Type II', 'BAA signed with every provider'].map((label, i) => (
-                  <span key={label} style={{ display: 'inline-flex', alignItems: 'center', gap: 14 }}>
-                    {i > 0 && <span style={{ width: 3, height: 3, borderRadius: '50%', background: 'rgba(255,255,255,0.55)' }} />}
-                    {label}
-                  </span>
-                ))}
-              </span>
+            {/* Enterprise trust signals — laurel award badges */}
+            <div style={{
+              marginTop: 34, display: 'flex', justifyContent: 'center', alignItems: 'center',
+              flexWrap: 'wrap', gap: 'clamp(20px, 4vw, 52px)',
+              animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
+            }}>
+              {[
+                { big: 'HIPAA', small: 'Compliant' },
+                { big: 'SOC 2', small: 'Type II' },
+                { big: 'BAA', small: 'Every provider' },
+              ].map(({ big, small }) => (
+                <div key={big} style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 8, color: 'rgba(37, 51, 40, 0.92)',
+                  textShadow: '0 1px 0 rgba(255,255,255,0.35)',
+                }}>
+                  <LaurelBranch />
+                  <div style={{ textAlign: 'center', minWidth: 76 }}>
+                    <div style={{ fontSize: 15.5, fontWeight: 700, letterSpacing: '0.03em', lineHeight: 1.1 }}>{big}</div>
+                    <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: '0.17em', textTransform: 'uppercase', opacity: 0.92, marginTop: 3, whiteSpace: 'nowrap' }}>{small}</div>
+                  </div>
+                  <LaurelBranch flip />
+                </div>
+              ))}
             </div>
           </div>
         </div>
