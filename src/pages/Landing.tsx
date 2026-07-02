@@ -237,7 +237,7 @@ function LaurelBranch({ flip }: { flip?: boolean }) {
   const SPREAD = 44; // half-angle between the two leaves of a pair
   return (
     <svg
-      width="31" height="67" viewBox="0 0 26 56" fill="none" aria-hidden="true"
+      width="15" height="32" viewBox="0 0 26 56" fill="none" aria-hidden="true"
       style={{
         display: 'block', flexShrink: 0,
         transform: flip ? 'scaleX(-1)' : undefined,
@@ -418,10 +418,10 @@ function Hero() {
               </a>
             </div>
 
-            {/* Enterprise trust signals — laurel award badges */}
+            {/* Enterprise trust signals — one thin line of laurel award badges */}
             <div style={{
-              marginTop: 34, display: 'flex', justifyContent: 'center', alignItems: 'center',
-              flexWrap: 'wrap', gap: 'clamp(20px, 4vw, 52px)',
+              marginTop: 26, display: 'flex', justifyContent: 'center', alignItems: 'center',
+              flexWrap: 'nowrap', gap: 'clamp(10px, 3.2vw, 44px)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
             }}>
               {[
@@ -430,13 +430,13 @@ function Hero() {
                 { big: 'BAA', small: 'Every provider' },
               ].map(({ big, small }) => (
                 <div key={big} style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 8, color: 'rgba(37, 51, 40, 0.92)',
+                  display: 'inline-flex', alignItems: 'center', gap: 5, color: 'rgba(37, 51, 40, 0.92)',
                   textShadow: '0 1px 0 rgba(255,255,255,0.35)',
                 }}>
                   <LaurelBranch />
-                  <div style={{ textAlign: 'center', minWidth: 76 }}>
-                    <div style={{ fontSize: 15.5, fontWeight: 700, letterSpacing: '0.03em', lineHeight: 1.1 }}>{big}</div>
-                    <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: '0.17em', textTransform: 'uppercase', opacity: 0.92, marginTop: 3, whiteSpace: 'nowrap' }}>{small}</div>
+                  <div style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: 'clamp(12.5px, 1.1vw, 14px)', fontWeight: 700, letterSpacing: '0.03em', lineHeight: 1.1, whiteSpace: 'nowrap' }}>{big}</div>
+                    <div style={{ fontSize: 7.5, fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.92, marginTop: 2, whiteSpace: 'nowrap' }}>{small}</div>
                   </div>
                   <LaurelBranch flip />
                 </div>
