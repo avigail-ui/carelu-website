@@ -347,7 +347,7 @@ function Hero() {
             textAlign: 'center', marginBottom: 20,
             mixBlendMode: 'multiply',
           }}>
-            Trusted by the fastest growing ABA providers
+            Trusted by 100+ of the fastest growing ABA providers
           </p>
           <div style={{ overflow: 'hidden', position: 'relative' }}>
             <div className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
