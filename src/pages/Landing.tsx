@@ -2054,7 +2054,7 @@ function GsVignetteCall() {
         }} />
         <div style={{ minWidth: 0 }}>
           <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>Intro call</div>
-          <div style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Intake specialist &middot; 30 min</div>
+          <div style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Intake specialist &middot; 45 min</div>
         </div>
       </div>
       <div style={{
