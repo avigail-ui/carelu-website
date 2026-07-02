@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
+import { Nav } from './Landing';
 
 /* ================================================================
    CARELU — SOLUTIONS (Single-Site / Multi-Site / Enterprise)
@@ -66,90 +66,6 @@ const SIZES: Record<string, SizeData> = {
   },
 };
 
-function Nav({ current }: { current: string }) {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  useEffect(() => {
-    if (!mobileOpen) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = prev; };
-  }, [mobileOpen]);
-
-  const tabs = [
-    { t: 'Single-Site', slug: 'single-site' },
-    { t: 'Multi-Site', slug: 'multi-site' },
-    { t: 'Enterprise', slug: 'enterprise' },
-  ];
-
-  return (
-    <>
-      <nav style={{
-        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        display: 'flex', justifyContent: 'center', padding: '16px 20px 0',
-      }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', height: 56,
-          borderRadius: 18, padding: '0 6px',
-          background: 'rgba(250,248,243,0.72)',
-          backdropFilter: 'blur(32px) saturate(1.3)', WebkitBackdropFilter: 'blur(32px) saturate(1.3)',
-          border: '1px solid rgba(43,42,38,0.07)',
-        }}>
-          <a href="/carelu" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', padding: '0 20px 0 22px' }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 28, width: 'auto', display: 'block' }} />
-          </a>
-          {tabs.map(tab => (
-            <a key={tab.slug} href={`/solutions/${tab.slug}`} className="hide-mobile" style={{
-              fontSize: 14, fontWeight: current === tab.slug ? 600 : 400,
-              color: current === tab.slug ? INK : 'rgba(43,42,38,0.72)',
-              textDecoration: 'none', padding: '8px 14px', borderRadius: 10,
-              background: current === tab.slug ? 'rgba(43,42,38,0.06)' : 'transparent',
-              transition: 'color 0.2s, background 0.2s',
-            }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = INK; }}
-              onMouseLeave={(e) => { if (current !== tab.slug) e.currentTarget.style.color = 'rgba(43,42,38,0.72)'; }}
-            >{tab.t}</a>
-          ))}
-          <a href="/demo" style={{
-            fontSize: 14, fontWeight: 600, color: INK,
-            padding: '12px 24px', borderRadius: 14, textDecoration: 'none', marginLeft: 10,
-            border: '1px solid rgba(0,0,0,0.08)', background: '#fff',
-            boxShadow: '0 4px 18px rgba(0,0,0,0.08)',
-            transition: 'box-shadow 0.3s, transform 0.2s',
-            display: 'inline-flex', alignItems: 'center',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.14)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)'; }}
-          >Get a Demo</a>
-          <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" aria-expanded={mobileOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 11, marginLeft: 2 }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={INK} strokeWidth="1.8" strokeLinecap="round" style={{ display: 'block' }}>
-              {mobileOpen
-                ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
-                : <><line x1="4" y1="7" x2="20" y2="7" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="17" x2="20" y2="17" /></>
-              }
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      {mobileOpen && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 99, background: 'rgba(250,248,243,0.98)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', padding: '96px 28px 28px', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}
-          onClick={() => setMobileOpen(false)}>
-          {[
-            { t: 'Home', href: '/carelu' },
-            ...tabs.map(tab => ({ t: tab.t, href: `/solutions/${tab.slug}` })),
-            { t: 'Company', href: '/carelu/company' },
-          ].map(l => (
-            <a key={l.t} href={l.href} style={{ fontSize: 22, fontWeight: 400, fontFamily: 'var(--font-display)', color: '#2B2A26', textDecoration: 'none', padding: '20px 0', borderBottom: `1px solid ${HAIR}` }}>{l.t}</a>
-          ))}
-          <a href="/demo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: INK, backgroundColor: '#fff', padding: '18px 24px', borderRadius: 14, textDecoration: 'none', marginTop: 32, border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 4px 18px rgba(0,0,0,0.1)' }}>
-            Get a Demo
-          </a>
-        </div>
-      )}
-    </>
-  );
-}
-
 export default function SolutionsPage() {
   const { slug } = useParams<{ slug: string }>();
   useReveal();
@@ -159,7 +75,7 @@ export default function SolutionsPage() {
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
       <DemoModalHost />
-      <Nav current={slug!} />
+      <Nav base="/carelu" />
 
       {/* Hero */}
       <section style={{ paddingTop: 'clamp(150px, 18vw, 220px)', paddingBottom: 'clamp(40px, 6vw, 72px)', textAlign: 'center' }}>

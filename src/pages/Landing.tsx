@@ -68,7 +68,9 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
 /* ================================================================
    NAV
    ================================================================ */
-function Nav() {
+// `base` prefixes the section-anchor links so the same nav works from other
+// routes (e.g. /solutions/*) — pass base="/carelu" there.
+export function Nav({ base = '' }: { base?: string }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
 
@@ -98,7 +100,7 @@ function Nav() {
           border: '1px solid rgba(43,42,38,0.07)',
         }}>
           {/* Left links */}
-          <a href="#platform" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
+          <a href={`${base}#platform`} className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Product</a>
@@ -193,13 +195,13 @@ function Nav() {
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 99, background: 'rgba(250,248,243,0.98)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', padding: '96px 28px 28px', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}
           onClick={() => setMobileOpen(false)}>
           {[
-            { t: 'Platform',     href: '#platform' },
-            { t: 'How It Works', href: '#how-it-works' },
-            { t: 'Results',      href: '#results' },
+            { t: 'Platform',     href: `${base}#platform` },
+            { t: 'How It Works', href: `${base}#how-it-works` },
+            { t: 'Results',      href: `${base}#results` },
             { t: 'Single-Site',  href: '/solutions/single-site' },
             { t: 'Multi-Site',   href: '/solutions/multi-site' },
             { t: 'Enterprise',   href: '/solutions/enterprise' },
-            { t: 'FAQ',          href: '#faq' },
+            { t: 'FAQ',          href: `${base}#faq` },
             { t: 'Company',      href: '/carelu/company' },
             { t: 'Log in',       href: '/login' },
           ].map(l => (
@@ -2020,6 +2022,7 @@ function Outcomes() {
       v: 30, label: 'Increase in lead volume',
       bullets: [
         'Engaging AI chat starts conversations website forms never could.',
+        'AI phone coverage does intake on after-hours, overflow, and missed calls.',
         'Every inquiry answered in seconds — nights and weekends included.',
         'English and Spanish, natively.',
       ],
@@ -2033,7 +2036,7 @@ function Outcomes() {
       ],
     },
     {
-      v: 40, label: 'Improvement in intake completion',
+      v: 40, label: 'Less staff time per intake',
       bullets: [
         'Documents, consents, and signatures collected in one conversation.',
         'Automatic follow-up on every missing piece.',
