@@ -788,6 +788,8 @@ nav .nav-link:first-child { margin-left: 12px; }
   .hero-cta-row { flex-direction: column; width: 100%; max-width: 250px; margin: 0 auto; gap: 10px !important; }
   .hero-cta-row > a { width: 100%; justify-content: center; padding: 13px 22px !important; font-size: 14px !important; }
   .hero-center { padding-bottom: 120px !important; }
+  /* Laurel trust badges sit lower on mobile — breathing room under the CTAs */
+  .hero-laurels { margin-top: 88px !important; }
 
   /* Decorative doodles next to section headlines — scale down, don't push text */
   .h2-doodle { width: clamp(48px, 14vw, 92px) !important; margin: -10px 0 -10px 8px !important; }

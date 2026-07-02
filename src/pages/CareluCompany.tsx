@@ -69,44 +69,56 @@ function SectionHead({ pill, title, sub }: { pill: string; title: React.ReactNod
   );
 }
 
-/* ── HERO — same sky treatment as the landing hero ── */
+/* ── HERO — same clean bone-and-ink format as the Solutions pages ── */
 function Hero() {
   return (
-    <section style={{ position: 'relative', minHeight: 'min(88svh, 780px)', display: 'flex', overflow: 'hidden', background: '#f0e6d2' }}>
+    <section style={{ background: BONE, textAlign: 'center', padding: 'clamp(150px, 18vw, 220px) 24px clamp(40px, 6vw, 72px)' }}>
+      <div style={{ animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both' }}>
+        <Pill>Our mission</Pill>
+      </div>
+      <h1 style={{
+        fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 5.6vw, 76px)',
+        fontWeight: 400, lineHeight: 1.06, letterSpacing: '-0.025em',
+        color: INK, margin: '26px auto 0', maxWidth: 820,
+        animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
+      }}>
+        More families,<br />into care, faster.
+      </h1>
+      <p style={{
+        fontSize: 'clamp(15px, 1.5vw, 18px)', color: 'rgba(43,42,38,0.68)',
+        lineHeight: 1.65, maxWidth: 600, margin: '24px auto 0',
+        animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
+      }}>
+        Behavioral health runs on intake — and intake is where families get lost.
+        Carelu exists to make sure none of them do.
+      </p>
       <div style={{
-        position: 'absolute', inset: 0,
-        backgroundImage: 'url(/hero-sky.jpg)', backgroundSize: 'cover', backgroundPosition: 'center',
-        animation: 'heroSkyDrift 48s ease-in-out infinite', willChange: 'transform',
-      }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.10) 62%, rgba(0,0,0,0) 82%)', pointerEvents: 'none' }} />
-      <div style={{
-        position: 'absolute', left: 0, right: 0, bottom: 0, height: '45%',
-        background: `linear-gradient(180deg, rgba(250,248,243,0) 0%, rgba(250,248,243,0.6) 60%, ${BONE} 100%)`,
-        pointerEvents: 'none',
-      }} />
-
-      <div style={{ position: 'relative', zIndex: 2, margin: 'auto', maxWidth: 900, textAlign: 'center', padding: 'clamp(140px, 18vh, 190px) 24px clamp(90px, 14vh, 150px)' }}>
-        <div style={{ animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both' }}>
-          <Pill onSky>Our mission</Pill>
-        </div>
-        <h1 style={{
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 6.5vw, 92px)',
-          fontWeight: 400, lineHeight: 1.04, letterSpacing: '-0.03em',
-          color: '#fff', margin: '26px 0 0',
-          textShadow: '0 2px 30px rgba(0,0,0,0.35)',
-          animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
-        }}>
-          More families,<br />into care, faster.
-        </h1>
-        <p style={{
-          fontSize: 'clamp(15px, 1.4vw, 19px)', color: '#fff', fontWeight: 500,
-          lineHeight: 1.65, maxWidth: 600, margin: '24px auto 0',
-          textShadow: '0 1px 3px rgba(0,0,0,0.5), 0 2px 20px rgba(0,0,0,0.45)',
-          animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
-        }}>
-          Behavioral health runs on intake — and intake is where families get lost.
-          Carelu exists to make sure none of them do.
-        </p>
+        display: 'inline-flex', gap: 12, marginTop: 36, flexWrap: 'wrap', justifyContent: 'center',
+        animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both',
+      }}>
+        <a href="/demo" style={{
+          display: 'inline-flex', alignItems: 'center', gap: 10,
+          fontSize: 15, fontWeight: 600, color: BONE, backgroundColor: INK,
+          padding: '14px 28px', borderRadius: 100, textDecoration: 'none',
+          transition: 'transform 0.2s, box-shadow 0.3s',
+          boxShadow: '0 8px 28px rgba(0,0,0,0.18)',
+        }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
+        >
+          Get a Demo
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+        </a>
+        <a href="/carelu#how-it-works" style={{
+          display: 'inline-flex', alignItems: 'center', gap: 10,
+          fontSize: 15, fontWeight: 600, color: INK,
+          padding: '14px 26px', borderRadius: 100, textDecoration: 'none',
+          border: '1.5px solid rgba(43,42,38,0.25)', background: 'transparent',
+          transition: 'border-color 0.2s, transform 0.2s',
+        }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = INK; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(43,42,38,0.25)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+        >See How It Works</a>
       </div>
     </section>
   );

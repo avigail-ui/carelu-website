@@ -419,7 +419,7 @@ function Hero() {
             </div>
 
             {/* Enterprise trust signals — one thin line of laurel award badges */}
-            <div style={{
+            <div className="hero-laurels" style={{
               marginTop: 26, display: 'flex', justifyContent: 'center', alignItems: 'center',
               flexWrap: 'nowrap', gap: 'clamp(10px, 3.2vw, 44px)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
