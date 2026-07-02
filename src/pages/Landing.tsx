@@ -1390,7 +1390,7 @@ function HandoffVisual() {
 // ── CHECKLIST VISUAL — each row's icon goes idle → loading-spinner → check (cascading) ──
 function ChecklistVisual() {
   const items = [
-    { label: 'Insurance verified', sub: 'Blue Cross PPO', done: true },
+    { label: 'Insurance captured', sub: 'Blue Cross PPO', done: true },
     { label: 'Consent form', sub: 'Signed', done: true },
     { label: 'Insurance card', sub: 'Uploaded via text', done: true },
     { label: 'Diagnosis report', sub: 'Requested', done: true },
@@ -1526,7 +1526,15 @@ function ChecklistVisual() {
 
 // ── CHANNELS HUB — sequential reveal: center first, then each pill clockwise ──
 function ChannelsHub() {
-  const channels = ['Phone', 'Text', 'Chat', 'Forms', 'Fax', 'Email'];
+  // Chat and forms are live today — everything else is badged "Coming soon".
+  const channels = [
+    { name: 'Phone', soon: true },
+    { name: 'Text', soon: true },
+    { name: 'Chat', soon: false },
+    { name: 'Forms', soon: false },
+    { name: 'Fax', soon: true },
+    { name: 'Email', soon: true },
+  ];
   const [step, setStep] = useState(0); // 0 = hidden, 1..6 = each pill appears, then connections
   const ref = useRef<HTMLDivElement>(null);
 
@@ -1638,7 +1646,7 @@ function ChannelsHub() {
         const y = 50 + Math.sin(a) * 36;
         const visible = step >= i + 1;
         return (
-          <div key={ch} style={{
+          <div key={ch.name} style={{
             position: 'absolute', left: `${x}%`, top: `${y}%`,
             transform: `translate(-50%, -50%) scale(${visible ? 1 : 0.4})`,
             opacity: visible ? 1 : 0,
@@ -1650,8 +1658,21 @@ function ChannelsHub() {
             display: 'inline-flex', alignItems: 'center', gap: 7,
             transition: 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease',
           }}>
-            <ChannelIcon name={ch} />
-            {ch}
+            <ChannelIcon name={ch.name} />
+            {ch.name}
+            {ch.soon && (
+              <span style={{
+                position: 'absolute', top: -9, right: -8,
+                background: 'var(--bone)', border: '1px solid rgba(0,0,0,0.08)',
+                borderRadius: 999, padding: '2.5px 6px',
+                fontSize: 8, fontWeight: 600, letterSpacing: '0.05em',
+                textTransform: 'uppercase', lineHeight: 1,
+                color: 'rgba(26,46,31,0.55)',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.05)',
+              }}>
+                Coming soon
+              </span>
+            )}
           </div>
         );
       })}
@@ -1666,22 +1687,22 @@ function HowCarelu() {
     {
       step: '01',
       tag: 'Multi-channel',
-      title: 'Every channel. One inbox.',
-      desc: 'Phone calls, texts, web forms, faxes, emails — Carelu answers them all instantly, 24/7, in English and Spanish. Families get a response in seconds, not days.',
+      title: 'Every family. Answered in seconds.',
+      desc: 'A family who waits keeps calling down their list. Carelu answers the moment they reach out — instantly, day or night, in English and Spanish. First to respond. First to finish.',
       visual: <ChannelsHub />,
     },
     {
       step: '02',
       tag: 'AI-powered',
       title: 'Qualifies and collects. Automatically.',
-      desc: 'Carelu knows your insurance panels, service areas, and open capacity. It verifies eligibility, collects insurance cards, gathers consent forms — all through natural conversation.',
+      desc: 'Carelu knows your insurance panels, service areas, and open capacity. It qualifies every family against them, then collects everything a complete intake needs — insurance cards, diagnosis reports, consent forms, signatures — through natural conversation. Not a 30-page packet.',
       visual: <ChecklistVisual />,
     },
     {
       step: '03',
       tag: 'Automated',
-      title: 'Follows up and delivers. Zero handoff.',
-      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands off a complete, ready case.',
+      title: 'Follows up and delivers. Zero chasing.',
+      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands your team a complete, ready case. More intakes finished. More kids in care.',
       visual: <HandoffVisual />,
     },
   ];
@@ -1852,6 +1873,16 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             </div>
           ))}
         </div>
+        <p className="rv" style={{
+          margin: '40px auto 0', padding: '0 28px', maxWidth: 480,
+          textAlign: 'center',
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 5.5vw, 24px)',
+          fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.35,
+          letterSpacing: '-0.01em',
+        }}>
+          <span style={{ opacity: 0.55 }}>Other tools give you one more thing to manage.</span>{' '}
+          Carelu does the thing.
+        </p>
       </section>
     );
   }
@@ -1914,7 +1945,7 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 
         {/* Progress dots — sit lower, with extra breathing room above */}
         <div style={{
-          marginTop: 'clamp(48px, 7vh, 96px)', paddingBottom: 'clamp(24px, 4vh, 48px)',
+          marginTop: 'clamp(32px, 5vh, 64px)',
           display: 'flex', justifyContent: 'center', gap: 8,
         }}>
           {steps.map((_, i) => (
@@ -1926,6 +1957,21 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             }} />
           ))}
         </div>
+
+        {/* Section closer — fades in as the final step lands */}
+        <p style={{
+          margin: 0, marginTop: 'clamp(14px, 2.5vh, 26px)', paddingBottom: 'clamp(20px, 3.5vh, 40px)',
+          textAlign: 'center',
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(18px, 1.6vw, 24px)',
+          fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.3,
+          letterSpacing: '-0.01em',
+          opacity: activeIdx === steps.length - 1 ? 1 : 0,
+          transform: activeIdx === steps.length - 1 ? 'none' : 'translateY(10px)',
+          transition: 'opacity 0.6s ease, transform 0.6s var(--ease-dramatic)',
+        }}>
+          <span style={{ opacity: 0.55 }}>Other tools give you one more thing to manage.</span>{' '}
+          Carelu does the thing.
+        </p>
       </div>
     </section>
   );
