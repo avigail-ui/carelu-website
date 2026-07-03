@@ -308,11 +308,11 @@ function Hero() {
   void progress;
 
   return (
-    <section ref={sectionRef} style={{
+    <section ref={sectionRef} className="hero-section" style={{
       position: 'relative', height: '100svh',
       background: '#f0e6d2',
     }}>
-      <div style={{
+      <div className="hero-sticky" style={{
         position: 'sticky', top: 0, height: '100svh',
         overflow: 'hidden', background: 'transparent',
       }}>
@@ -456,7 +456,7 @@ function Hero() {
         {/* Trusted-by logo strip — anchored at the bottom of the hero
             Dark-grayscale logos with mix-blend-mode so they stay legible on both
             the misty video and the cream dissolve below — no scrim/band needed */}
-        <div style={{
+        <div className="hero-logos" style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
           paddingBottom: 'clamp(10px, 1.6vh, 22px)',
           animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both',

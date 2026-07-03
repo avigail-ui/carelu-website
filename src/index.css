@@ -788,12 +788,32 @@ nav .nav-link:first-child { margin-left: 12px; }
   .hero-cta-row { flex-direction: column; width: 100%; max-width: 250px; margin: 0 auto; gap: 10px !important; }
   .hero-cta-row > a { width: 100%; justify-content: center; padding: 13px 22px !important; font-size: 14px !important; }
   .hero-center { padding-bottom: 120px !important; }
-  /* Laurel trust badges sit lower on mobile — breathing room under the CTAs */
-  .hero-laurels { margin-top: 88px !important; }
+  /* Laurel trust badges sit low in the open sky on mobile — pinned near the
+     bottom so they don't inflate the centered block and push the badge/headline
+     up toward the nav. On short screens they stay in-flow (no overlap risk). */
+  .hero-laurels { margin-top: 48px !important; }
 
   /* Decorative doodles next to section headlines — scale down, don't push text */
   .h2-doodle { width: clamp(48px, 14vw, 92px) !important; margin: -10px 0 -10px 8px !important; }
+}
 
+/* Tall portrait phones: pin the laurels to the lower sky, out of the centered
+   flow, so the badge/headline keep their original position under the nav */
+@media (max-width: 768px) and (min-height: 750px) {
+  .hero-laurels { position: absolute; left: 24px; right: 24px; bottom: 150px; margin-top: 0 !important; }
+}
+
+/* Short viewports (landscape phones): 100svh can't fit the hero — let it flow
+   taller than the screen instead of layering content on top of itself */
+@media (max-height: 540px) {
+  .hero-section { height: auto !important; }
+  .hero-sticky { height: auto !important; position: relative !important; }
+  .hero-center { position: static !important; padding: 120px 24px 36px !important; }
+  .hero-laurels { position: static !important; margin-top: 28px !important; }
+  .hero-logos { position: static !important; padding-top: 32px; }
+}
+
+@media (max-width: 768px) {
   /* Results header — abacus doodle sits ABOVE the headline so it stays centered */
   .impact-head { flex-direction: column-reverse; }
   .impact-head .h2-doodle { margin: 0 0 10px !important; width: 64px !important; }
