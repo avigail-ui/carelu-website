@@ -1151,14 +1151,22 @@ function CustomerStories() {
               </div>
             </div>
 
-            {/* Arched portrait — a real face builds trust; play button appears
+            {/* Snapshot portrait — a print pinned to the page: cream border,
+                slight tilt. A real face builds trust; play button appears
                 automatically when the story has a video */}
             <div className="stories-photo" style={{
-              position: 'relative', width: 290, height: 360,
-              justifySelf: 'end', overflow: 'hidden',
-              borderRadius: '170px 26px 170px 26px',
-              boxShadow: '0 12px 40px rgba(20,40,30,0.12), 0 2px 6px rgba(0,0,0,0.05)',
+              position: 'relative', width: 276,
+              justifySelf: 'end',
+              transform: 'rotate(-2.5deg)',
+              background: '#FDFCF9',
+              padding: '10px 10px 13px',
+              borderRadius: 18,
+              boxShadow: '0 16px 44px rgba(20,40,30,0.16), 0 2px 8px rgba(0,0,0,0.06)',
             }}>
+              <div style={{
+                position: 'relative', overflow: 'hidden',
+                borderRadius: 10, width: '100%', aspectRatio: '4 / 5',
+              }}>
               <img
                 key={activeIdx}
                 src={active.photo}
@@ -1195,6 +1203,7 @@ function CustomerStories() {
                   </span>
                 </button>
               )}
+              </div>
             </div>
           </div>
         </div>

@@ -820,7 +820,7 @@ nav .nav-link:first-child { margin-left: 12px; }
 
   /* Testimonial — portrait stacks above the quote; logo selector collapses to arrows + dots */
   .stories-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
-  .stories-photo { width: 210px !important; height: 264px !important; justify-self: center !important; order: -1; }
+  .stories-photo { width: 200px !important; justify-self: center !important; order: -1; }
   .stories-logos { display: none !important; }
   .stories-mobile-nav { display: flex !important; }
 
