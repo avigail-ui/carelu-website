@@ -1000,6 +1000,7 @@ type CustomerStory = {
   logo: string; photo: string; quote: string;
   name: string; role: string; company: string;
   video?: string;
+  logoH?: number; // selector-row height override for logos that render small
 };
 const customerStories: CustomerStory[] = [
   {
@@ -1036,6 +1037,7 @@ const customerStories: CustomerStory[] = [
   },
   {
     logo: '/logos/above-beyond.webp',
+    logoH: 40,
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=900&fit=crop&crop=faces',
     quote: "We used to lose families over the weekend. Now Carelu handles Saturday and Sunday inquiries the same as Tuesday at 10am. Our waitlist is shorter than it's ever been.",
     name: 'Sarah L.',
@@ -1115,8 +1117,9 @@ function CustomerStories() {
             gap: 'clamp(32px, 5vw, 72px)',
             alignItems: 'center',
           }}>
-            {/* Quote column */}
-            <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
+            {/* Quote column — all stories stacked in one grid cell and
+                crossfaded, so outgoing and incoming quotes blend smoothly */}
+            <div>
               {/* Oversized serif quote flourish */}
               <div aria-hidden="true" style={{
                 fontFamily: 'var(--font-display)', fontStyle: 'italic',
@@ -1128,26 +1131,38 @@ function CustomerStories() {
               }}>
                 &ldquo;
               </div>
-              <blockquote style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(21px, 2.3vw, 30px)',
-                lineHeight: 1.4, letterSpacing: '-0.02em',
-                color: 'var(--green-900)',
-                fontWeight: 400,
-                margin: 0,
-              }}>
-                {active.quote}
-              </blockquote>
-              <div style={{ marginTop: 26 }}>
-                <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--green-900)' }}>
-                  {active.name}
-                </div>
-                <div style={{
-                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-                  letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 5,
-                }}>
-                  {active.role} &middot; {active.company}
-                </div>
+              <div style={{ display: 'grid' }}>
+                {customerStories.map((s, i) => (
+                  <div key={s.company} aria-hidden={i !== activeIdx} style={{
+                    gridArea: '1 / 1',
+                    opacity: i === activeIdx ? 1 : 0,
+                    transform: i === activeIdx ? 'none' : 'translateY(12px)',
+                    transition: 'opacity 0.8s ease, transform 0.8s var(--ease-dramatic)',
+                    pointerEvents: i === activeIdx ? 'auto' : 'none',
+                  }}>
+                    <blockquote style={{
+                      fontFamily: 'var(--font-display)',
+                      fontSize: 'clamp(21px, 2.3vw, 30px)',
+                      lineHeight: 1.4, letterSpacing: '-0.02em',
+                      color: 'var(--green-900)',
+                      fontWeight: 400,
+                      margin: 0,
+                    }}>
+                      {s.quote}
+                    </blockquote>
+                    <div style={{ marginTop: 26 }}>
+                      <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--green-900)' }}>
+                        {s.name}
+                      </div>
+                      <div style={{
+                        fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                        letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 5,
+                      }}>
+                        {s.role} &middot; {s.company}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -1167,17 +1182,22 @@ function CustomerStories() {
                 position: 'relative', overflow: 'hidden',
                 borderRadius: 10, width: '100%', aspectRatio: '4 / 5',
               }}>
-              <img
-                key={activeIdx}
-                src={active.photo}
-                alt={active.name}
-                style={{
-                  width: '100%', height: '100%', objectFit: 'cover',
-                  objectPosition: 'center top',
-                  animation: 'testFade 0.5s var(--ease-dramatic)',
-                  display: 'block',
-                }}
-              />
+              {/* All portraits stacked and crossfaded — also preloads every
+                  photo so rotation never flashes */}
+              {customerStories.map((s, i) => (
+                <img
+                  key={s.company}
+                  src={s.photo}
+                  alt={i === activeIdx ? s.name : ''}
+                  style={{
+                    position: 'absolute', inset: 0,
+                    width: '100%', height: '100%', objectFit: 'cover',
+                    objectPosition: 'center top', display: 'block',
+                    opacity: i === activeIdx ? 1 : 0,
+                    transition: 'opacity 0.8s ease',
+                  }}
+                />
+              ))}
               {active.video && (
                 <button
                   onClick={() => setVideoOpen(true)}
@@ -1231,7 +1251,7 @@ function CustomerStories() {
               <img
                 src={s.logo}
                 alt={s.company}
-                style={{ height: 26, width: 'auto', objectFit: 'contain', display: 'block' }}
+                style={{ height: s.logoH ?? 26, width: 'auto', objectFit: 'contain', display: 'block' }}
               />
               <span style={{
                 position: 'absolute', left: '50%', bottom: 0,
