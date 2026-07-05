@@ -56,7 +56,7 @@ const SIZES: Record<string, SizeData> = {
     h1: 'Intake infrastructure at scale.',
     sub: 'Multi-state rollouts, deep integrations, and a dedicated partner invested like your own team. Built to pass your security review.',
     features: [
-      { title: 'Integrates with your stack', desc: 'Leading CRMs and EMRs — Salesforce, HubSpot, CentralReach, and more — plus webhooks for everything else. Launch without changing your core systems.' },
+      { title: 'Integrates with your stack', desc: 'Leading CRMs and EMRs — Salesforce, HubSpot, CentralReach, and more — plus webhooks for everything else. Every document and detail syncs back to one family record, so nothing is entered twice.' },
       { title: 'Security first', desc: 'HIPAA compliant, SOC 2 Type II, BAAs signed before you go live, US-only data centers. We support your security review end to end.' },
       { title: 'Rollouts, managed', desc: 'Phased launches across regions and brands, with location-specific rules configured for you — not by you.' },
       { title: 'A dedicated partner', desc: 'A named growth partner who knows your organization, watches your funnel, and handles changes without a ticket queue.' },

@@ -1800,97 +1800,6 @@ function ChannelsHub() {
 }
 
 
-// ── FAMILY RECORD VISUAL — record rows sync in from different sources ──
-function FamilyRecordVisual() {
-  const rows = [
-    { label: 'Insurance card attached', sub: 'From mom’s email' },
-    { label: 'Age updated to 3', sub: 'Mentioned in chat' },
-    { label: 'Availability added', sub: 'Updated by your team' },
-  ];
-  const [shown, setShown] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    let interval: ReturnType<typeof setInterval> | undefined;
-    let ran = false;
-    const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !ran) {
-        ran = true;
-        let n = 0;
-        interval = setInterval(() => {
-          n++;
-          setShown(n);
-          if (n >= rows.length && interval) clearInterval(interval);
-        }, 550);
-        obs.disconnect();
-      }
-    }, VISUAL_IN_VIEW);
-    obs.observe(el);
-    return () => { obs.disconnect(); if (interval) clearInterval(interval); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return (
-    <div ref={ref} style={{
-      background: '#fff', borderRadius: 16, padding: '18px 18px 8px',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04)',
-      width: '100%', maxWidth: 300,
-    }}>
-      {/* Record header */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 11, paddingBottom: 14, borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
-        <div style={{
-          width: 36, height: 36, borderRadius: '50%', flexShrink: 0,
-          background: 'var(--sage-100)', border: '1px solid var(--sage-200)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 12, fontWeight: 600, color: 'var(--green-700)',
-        }}>JM</div>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ fontSize: 13.5, fontWeight: 600, color: 'var(--green-900)' }}>Jake M.</div>
-          <div style={{ fontSize: 11, color: 'var(--gray-500)' }}>Blue Cross PPO &middot; ABA Therapy</div>
-        </div>
-        <span style={{
-          display: 'inline-flex', alignItems: 'center', gap: 5, flexShrink: 0,
-          fontSize: 10, fontWeight: 600, color: 'var(--green-900)',
-          background: 'var(--lime)', borderRadius: 999, padding: '4px 9px',
-        }}>
-          <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--green-900)' }} />
-          Synced
-        </span>
-      </div>
-
-      {/* Rows sync in one by one, each tagged with where it came from */}
-      {rows.map((r, i) => {
-        const visible = shown >= i + 1;
-        return (
-          <div key={r.label} style={{
-            display: 'flex', alignItems: 'center', gap: 10,
-            padding: '11px 0',
-            borderBottom: i < rows.length - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none',
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'none' : 'translateY(8px)',
-            transition: 'opacity 0.45s ease, transform 0.5s var(--ease-dramatic)',
-          }}>
-            <span style={{
-              width: 18, height: 18, borderRadius: '50%', flexShrink: 0,
-              background: 'var(--lime)', color: 'var(--green-900)',
-              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
-            </span>
-            <div style={{ minWidth: 0 }}>
-              <div style={{ fontSize: 12.5, fontWeight: 500, color: 'var(--green-900)' }}>{r.label}</div>
-              <div style={{ fontSize: 10.5, color: 'var(--gray-500)' }}>{r.sub}</div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-
 // ── HOW CARELU WORKS ── (video subsection removed)
 function HowCarelu() {
   const steps = [
@@ -1912,15 +1821,8 @@ function HowCarelu() {
       step: '03',
       tag: 'Automated',
       title: 'Follows up and delivers. Every time.',
-      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. Once everything is collected and signed, Carelu schedules the assessment and hands off a complete, ready case.',
+      desc: 'Missing documents? Carelu nudges. Doctor hasn\'t responded? It follows up. And every document and detail syncs to the family record — intake\'s source of truth. Once it\'s complete and signed, Carelu schedules the assessment and hands off a ready case.',
       visual: <HandoffVisual />,
-    },
-    {
-      step: '04',
-      tag: 'Source of truth',
-      title: 'Every detail. On the record.',
-      desc: 'The family record is intake’s source of truth — and it keeps itself. A document arrives by email? Attached. Mom mentions her son just turned three? Updated. Your team and the family both keep it current. Nothing asked twice, nothing lost.',
-      visual: <FamilyRecordVisual />,
     },
   ];
   return <HowItWorksScroll steps={steps} />;
@@ -2097,7 +1999,7 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
   // ── DESKTOP: pinned horizontal track, step 1 centered → step 3 centered ──
   return (
     <section id="how-it-works" ref={sectionRef} style={{
-      height: '400vh', position: 'relative', background: 'var(--bone)',
+      height: '320vh', position: 'relative', background: 'var(--bone)',
     }}>
       <div style={{
         position: 'sticky', top: 0, height: '100svh',
@@ -2194,7 +2096,7 @@ function Outcomes() {
     {
       v: 70, s: '%', label: 'Less staff time per intake',
       bullets: [
-        'Eligibility checked and documents collected without a human touching it.',
+        'Eligibility checked, documents collected, everything synced to the family record — no re-entry.',
         'Every follow-up handled — families, doctors, missing pieces.',
         'Your coordinators handle exceptions, not data entry.',
         'One coordinator runs what used to take a team.',
@@ -2869,6 +2771,7 @@ function Faq() {
     { q: 'What if a family needs a real person?', a: 'Carelu hands off to your team with full context -- everything collected so far, the family\'s preferences, and a summary of the conversation.' },
     { q: 'Does Carelu integrate with our EHR or practice management system?', a: 'Yes. Carelu connects to the systems you already use -- CentralReach, Rethink, and most major EHR and practice management platforms -- so completed cases flow straight into your existing workflow with no double entry.' },
     { q: 'Can this work with my CRM?', a: 'Yes. Some practices use Carelu as their CRM, but we also integrate with Salesforce, Monday, Zoho, HubSpot, GoHighLevel, and ClickUp -- and we\'re always adding more. And with webhooks, you can connect Carelu to any other CRM or internal system.' },
+    { q: 'Where does all the intake information live?', a: 'On the family record -- intake\'s single source of truth. A document emailed in is attached automatically, a detail mentioned in conversation updates the record, and both your team and the family can keep it current. It syncs to the systems you already use, so nothing is entered twice.' },
     { q: 'Which channels and languages does it support?', a: 'Phone, text, web forms, faxes, and email -- all in one inbox, answered 24/7. Conversations run natively in English and Spanish, with more languages on the way.' },
     { q: 'Can it handle multiple locations and insurance panels?', a: 'Absolutely. Carelu supports multi-site practices with location-specific rules -- different insurance panels, service areas, and open capacity per site -- and routes every family to the right place automatically.' },
     { q: 'What does onboarding look like?', a: 'We do the heavy lifting. Our team configures your insurance rules, service areas, and conversation flows, connects your channels, and trains your staff -- most providers are fully live within 1-2 weeks.' },
