@@ -1072,11 +1072,13 @@ function CustomerStories() {
           </h2>
         </div>
 
-        {/* Testimonial frame — sits on the white section, just keeps the corner markers */}
+        {/* Editorial pull-quote — big serif quote framed by the corner markers,
+            no stock photography; the client logo carries the attribution */}
         <div className="rv-scale d2" style={{
           position: 'relative',
-          maxWidth: 1100, margin: '0 auto',
-          padding: 'clamp(24px, 3.5vw, 48px) clamp(28px, 4vw, 56px)',
+          maxWidth: 920, margin: '0 auto',
+          padding: 'clamp(40px, 5vw, 64px) clamp(24px, 4vw, 56px) clamp(32px, 4vw, 48px)',
+          textAlign: 'center',
         }}>
           {/* 4 corner markers */}
           <div style={{ position: 'absolute', top: 0,  left: 0,  ...cornerSq }} />
@@ -1084,82 +1086,95 @@ function CustomerStories() {
           <div style={{ position: 'absolute', bottom: 0, left: 0,  ...cornerSq }} />
           <div style={{ position: 'absolute', bottom: 0, right: 0, ...cornerSq }} />
 
-          <div className="testimonial-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 280px',
-            gap: 56,
-            alignItems: 'center',
+          {/* Oversized serif quote mark — the section's one decorative flourish */}
+          <div aria-hidden="true" style={{
+            fontFamily: 'var(--font-display)', fontStyle: 'italic',
+            fontSize: 'clamp(84px, 9vw, 128px)', lineHeight: 0.5,
+            height: 'clamp(38px, 4.5vw, 58px)',
+            color: 'var(--lime)',
+            WebkitTextStroke: '1px rgba(44,62,45,0.55)',
+            userSelect: 'none',
           }}>
-            {/* Left column: logo + quote + name */}
-            <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
-              <img
-                src={active.logo}
-                alt={active.company}
-                style={{
-                  height: 30, width: 'auto', objectFit: 'contain',
-                  filter: 'grayscale(100%) brightness(0.35) contrast(1)',
-                  marginBottom: 28,
-                  display: 'block',
-                }}
-              />
-              <blockquote style={{
-                fontSize: 'clamp(20px, 2.1vw, 28px)',
-                lineHeight: 1.4, letterSpacing: '-0.2px',
-                color: 'var(--green-900)',
-                fontWeight: 400,
-                margin: '0 0 28px',
-              }}>
-                &ldquo;{active.quote}&rdquo;
-              </blockquote>
-              <div>
-                <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)', marginBottom: 4 }}>
-                  {active.name}
-                </div>
-                <div style={{ fontSize: 15, color: 'var(--gray-500)' }}>
-                  {active.role}, {active.company}
-                </div>
-              </div>
-            </div>
+            &ldquo;
+          </div>
 
-            {/* Right column: square portrait */}
-            <div className="testimonial-photo" style={{
-              width: 280, height: 300,
-              overflow: 'hidden',
-              position: 'relative',
-              justifySelf: 'end',
-              borderRadius: 8,
+          <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
+            <blockquote style={{
+              fontFamily: 'var(--font-display)',
+              fontSize: 'clamp(22px, 2.6vw, 33px)',
+              lineHeight: 1.38, letterSpacing: '-0.02em',
+              color: 'var(--green-900)',
+              fontWeight: 400,
+              maxWidth: 760, margin: '0 auto',
             }}>
-              <img
-                key={activeIdx}
-                src={active.photo}
-                alt={active.name}
-                style={{
-                  width: '100%', height: '100%', objectFit: 'cover',
-                  objectPosition: 'center top',
-                  animation: 'testFade 0.5s var(--ease-dramatic)',
-                }}
-              />
+              {active.quote}
+            </blockquote>
+            <div style={{ marginTop: 30 }}>
+              <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--green-900)' }}>
+                {active.name}
+              </div>
+              <div style={{
+                fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 5,
+              }}>
+                {active.role} &middot; {active.company}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Navigation: prev/next arrows + dots */}
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 32,
-          marginTop: 28,
+        {/* Desktop: client logos are the navigation — active one in full ink */}
+        <div className="stories-logos" style={{
+          display: 'flex', justifyContent: 'center', alignItems: 'center',
+          gap: 'clamp(20px, 3.5vw, 44px)', marginTop: 30, flexWrap: 'wrap',
+        }}>
+          {customerStories.map((s, i) => (
+            <button
+              key={s.company}
+              onClick={() => setActiveIdx(i)}
+              aria-label={`Show story from ${s.company}`}
+              style={{
+                background: 'none', border: 'none', cursor: 'pointer',
+                padding: '6px 2px 12px', position: 'relative',
+                opacity: i === activeIdx ? 1 : 0.32,
+                transition: 'opacity 0.25s ease',
+              }}
+              onMouseEnter={(e) => { if (i !== activeIdx) e.currentTarget.style.opacity = '0.65'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = i === activeIdx ? '1' : '0.32'; }}
+            >
+              <img
+                src={s.logo}
+                alt={s.company}
+                style={{
+                  height: 24, width: 'auto', objectFit: 'contain', display: 'block',
+                  filter: 'grayscale(100%) brightness(0.35) contrast(1)',
+                }}
+              />
+              <span style={{
+                position: 'absolute', left: '50%', bottom: 0,
+                width: 22, height: 2, borderRadius: 1,
+                background: 'var(--green-900)',
+                transform: `translateX(-50%) scaleX(${i === activeIdx ? 1 : 0})`,
+                transformOrigin: 'center',
+                transition: 'transform 0.35s var(--ease-dramatic)',
+              }} />
+            </button>
+          ))}
+        </div>
+
+        {/* Mobile: arrows + dots (logo row hides below 768px) */}
+        <div className="stories-mobile-nav" style={{
+          display: 'none', alignItems: 'center', justifyContent: 'center', gap: 28,
+          marginTop: 24,
         }}>
           <button onClick={prev} aria-label="Previous" style={{
             width: 40, height: 40, borderRadius: '50%', border: '1px solid rgba(0,0,0,0.15)',
             background: 'transparent', cursor: 'pointer',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: 'var(--green-900)', transition: 'background 0.2s, border-color 0.2s',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.3)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; }}
-          >
+            color: 'var(--green-900)',
+          }}>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.5 15L7.5 10L12.5 5" /></svg>
           </button>
-
           <div style={{ display: 'flex', gap: 8 }}>
             {customerStories.map((_, i) => (
               <button
@@ -1176,16 +1191,12 @@ function CustomerStories() {
               />
             ))}
           </div>
-
           <button onClick={next} aria-label="Next" style={{
             width: 40, height: 40, borderRadius: '50%', border: '1px solid rgba(0,0,0,0.15)',
             background: 'transparent', cursor: 'pointer',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: 'var(--green-900)', transition: 'background 0.2s, border-color 0.2s',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.05)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.3)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; }}
-          >
+            color: 'var(--green-900)',
+          }}>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7.5 5L12.5 10L7.5 15" /></svg>
           </button>
         </div>
