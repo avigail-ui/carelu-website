@@ -1055,9 +1055,20 @@ const customerStories: CustomerStory[] = [
 function CustomerStories() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [videoOpen, setVideoOpen] = useState(false);
+  const [paused, setPaused] = useState(false);
   const active = customerStories[activeIdx];
   const prev = () => { setVideoOpen(false); setActiveIdx((i) => (i - 1 + customerStories.length) % customerStories.length); };
   const next = () => { setVideoOpen(false); setActiveIdx((i) => (i + 1) % customerStories.length); };
+
+  // Auto-rotate every 6s; pauses while hovered or while a video is playing.
+  // Re-runs on activeIdx so any manual navigation resets the clock.
+  useEffect(() => {
+    if (paused || videoOpen) return;
+    const t = setInterval(() => {
+      setActiveIdx((i) => (i + 1) % customerStories.length);
+    }, 6000);
+    return () => clearInterval(t);
+  }, [activeIdx, paused, videoOpen]);
 
   // Small corner markers — subtle dark squares like the Intercom layout
   const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
@@ -1084,11 +1095,14 @@ function CustomerStories() {
         {/* Editorial testimonial — serif pull-quote beside an arched portrait.
             Photos are placeholders until real customer shots come in; a story
             with a `video` URL gets a play button that opens the lightbox. */}
-        <div className="rv-scale d2" style={{
-          position: 'relative',
-          maxWidth: 1060, margin: '0 auto',
-          padding: 'clamp(32px, 4.5vw, 56px) clamp(24px, 4vw, 56px)',
-        }}>
+        <div className="rv-scale d2"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          style={{
+            position: 'relative',
+            maxWidth: 1060, margin: '0 auto',
+            padding: 'clamp(32px, 4.5vw, 56px) clamp(24px, 4vw, 56px)',
+          }}>
           {/* 4 corner markers */}
           <div style={{ position: 'absolute', top: 0,  left: 0,  ...cornerSq }} />
           <div style={{ position: 'absolute', top: 0,  right: 0, ...cornerSq }} />
@@ -1142,7 +1156,7 @@ function CustomerStories() {
             <div className="stories-photo" style={{
               position: 'relative', width: 290, height: 360,
               justifySelf: 'end', overflow: 'hidden',
-              borderRadius: '160px 160px 20px 20px',
+              borderRadius: '170px 26px 170px 26px',
               boxShadow: '0 12px 40px rgba(20,40,30,0.12), 0 2px 6px rgba(0,0,0,0.05)',
             }}>
               <img
@@ -1302,13 +1316,22 @@ function CustomerStories() {
         {/* Proof stats row */}
         <div className="proof-stats" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 56, borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: 28 }}>
           {[
-            { node: <><Counter target={60} suffix="%" /> → <Counter target={15} suffix="%" /></>, desc: 'Family drop-off rate, first month with Carelu' },
+            {
+              node: <>
+                <Counter target={60} suffix="%" />
+                <svg width="26" height="12" viewBox="0 0 30 12" fill="none" stroke="var(--green-900)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" style={{ margin: '0 10px', display: 'inline-block', verticalAlign: 'middle', opacity: 0.7 }}>
+                  <path d="M1 6h27M23 1.5L28.5 6L23 10.5" />
+                </svg>
+                <Counter target={15} suffix="%" />
+              </>,
+              desc: 'Family drop-off rate, first month with Carelu',
+            },
             { node: <><Counter target={0} /> missed</>, desc: 'Every lead followed up — no one falls through the cracks' },
             { node: <><Counter target={24} /> / <Counter target={7} /></>, desc: 'Nights, weekends, holidays — never miss a family' },
           ].map((s, i) => (
-            <div key={i} className={`rv d${i + 1}`} style={{ padding: '0 24px', borderLeft: i > 0 ? '1px solid rgba(0,0,0,0.1)' : 'none' }}>
+            <div key={i} className={`rv d${i + 1}`} style={{ padding: '0 24px', textAlign: 'center', borderLeft: i > 0 ? '1px solid rgba(0,0,0,0.1)' : 'none' }}>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)', color: 'var(--green-900)', marginBottom: 8, fontVariantNumeric: 'lining-nums tabular-nums' }}>{s.node}</div>
-              <div style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.desc}</div>
+              <div style={{ fontSize: 'var(--text-sm)', color: 'var(--gray-500)', lineHeight: 1.5, maxWidth: 320, margin: '0 auto' }}>{s.desc}</div>
             </div>
           ))}
         </div>
