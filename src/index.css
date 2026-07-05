@@ -818,7 +818,9 @@ nav .nav-link:first-child { margin-left: 12px; }
   .impact-head { flex-direction: column-reverse; }
   .impact-head .h2-doodle { margin: 0 0 10px !important; width: 64px !important; }
 
-  /* Testimonial — logo selector collapses to arrows + dots */
+  /* Testimonial — portrait stacks above the quote; logo selector collapses to arrows + dots */
+  .stories-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .stories-photo { width: 210px !important; height: 264px !important; justify-self: center !important; order: -1; }
   .stories-logos { display: none !important; }
   .stories-mobile-nav { display: flex !important; }
 

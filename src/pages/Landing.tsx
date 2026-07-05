@@ -993,7 +993,15 @@ function Pill({ children, dark }: { children: string; dark?: boolean }) {
 }
 
 // ── CUSTOMER STORIES ─────────────────────────────
-const customerStories = [
+// `photo` is a placeholder headshot until real customer photos come in.
+// Add a `video` URL to any story and its portrait grows a play button that
+// opens the lightbox player.
+type CustomerStory = {
+  logo: string; photo: string; quote: string;
+  name: string; role: string; company: string;
+  video?: string;
+};
+const customerStories: CustomerStory[] = [
   {
     logo: '/logos/golden-care.png',
     photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=900&fit=crop&crop=faces',
@@ -1046,9 +1054,10 @@ const customerStories = [
 
 function CustomerStories() {
   const [activeIdx, setActiveIdx] = useState(0);
+  const [videoOpen, setVideoOpen] = useState(false);
   const active = customerStories[activeIdx];
-  const prev = () => setActiveIdx((i) => (i - 1 + customerStories.length) % customerStories.length);
-  const next = () => setActiveIdx((i) => (i + 1) % customerStories.length);
+  const prev = () => { setVideoOpen(false); setActiveIdx((i) => (i - 1 + customerStories.length) % customerStories.length); };
+  const next = () => { setVideoOpen(false); setActiveIdx((i) => (i + 1) % customerStories.length); };
 
   // Small corner markers — subtle dark squares like the Intercom layout
   const cornerSq = { width: 6, height: 6, background: 'rgba(0,0,0,0.18)' } as const;
@@ -1072,13 +1081,13 @@ function CustomerStories() {
           </h2>
         </div>
 
-        {/* Editorial pull-quote — big serif quote framed by the corner markers,
-            no stock photography; the client logo carries the attribution */}
+        {/* Editorial testimonial — serif pull-quote beside an arched portrait.
+            Photos are placeholders until real customer shots come in; a story
+            with a `video` URL gets a play button that opens the lightbox. */}
         <div className="rv-scale d2" style={{
           position: 'relative',
-          maxWidth: 920, margin: '0 auto',
-          padding: 'clamp(40px, 5vw, 64px) clamp(24px, 4vw, 56px) clamp(32px, 4vw, 48px)',
-          textAlign: 'center',
+          maxWidth: 1060, margin: '0 auto',
+          padding: 'clamp(32px, 4.5vw, 56px) clamp(24px, 4vw, 56px)',
         }}>
           {/* 4 corner markers */}
           <div style={{ position: 'absolute', top: 0,  left: 0,  ...cornerSq }} />
@@ -1086,44 +1095,97 @@ function CustomerStories() {
           <div style={{ position: 'absolute', bottom: 0, left: 0,  ...cornerSq }} />
           <div style={{ position: 'absolute', bottom: 0, right: 0, ...cornerSq }} />
 
-          {/* Oversized serif quote mark — the section's one decorative flourish */}
-          <div aria-hidden="true" style={{
-            fontFamily: 'var(--font-display)', fontStyle: 'italic',
-            fontSize: 'clamp(84px, 9vw, 128px)', lineHeight: 0.5,
-            height: 'clamp(38px, 4.5vw, 58px)',
-            color: 'var(--lime)',
-            WebkitTextStroke: '1px rgba(44,62,45,0.55)',
-            userSelect: 'none',
+          <div className="stories-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 290px',
+            gap: 'clamp(32px, 5vw, 72px)',
+            alignItems: 'center',
           }}>
-            &ldquo;
-          </div>
-
-          <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
-            <blockquote style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(22px, 2.6vw, 33px)',
-              lineHeight: 1.38, letterSpacing: '-0.02em',
-              color: 'var(--green-900)',
-              fontWeight: 400,
-              maxWidth: 760, margin: '0 auto',
-            }}>
-              {active.quote}
-            </blockquote>
-            <div style={{ marginTop: 30 }}>
-              <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--green-900)' }}>
-                {active.name}
-              </div>
-              <div style={{
-                fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-                letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 5,
+            {/* Quote column */}
+            <div key={activeIdx} style={{ animation: 'testFade 0.5s var(--ease-dramatic)' }}>
+              {/* Oversized serif quote flourish */}
+              <div aria-hidden="true" style={{
+                fontFamily: 'var(--font-display)', fontStyle: 'italic',
+                fontSize: 'clamp(72px, 7vw, 100px)', lineHeight: 0.5,
+                height: 'clamp(34px, 3.5vw, 46px)',
+                color: 'var(--lime)',
+                WebkitTextStroke: '1px rgba(44,62,45,0.55)',
+                userSelect: 'none',
               }}>
-                {active.role} &middot; {active.company}
+                &ldquo;
               </div>
+              <blockquote style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: 'clamp(21px, 2.3vw, 30px)',
+                lineHeight: 1.4, letterSpacing: '-0.02em',
+                color: 'var(--green-900)',
+                fontWeight: 400,
+                margin: 0,
+              }}>
+                {active.quote}
+              </blockquote>
+              <div style={{ marginTop: 26 }}>
+                <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--green-900)' }}>
+                  {active.name}
+                </div>
+                <div style={{
+                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
+                  letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 5,
+                }}>
+                  {active.role} &middot; {active.company}
+                </div>
+              </div>
+            </div>
+
+            {/* Arched portrait — a real face builds trust; play button appears
+                automatically when the story has a video */}
+            <div className="stories-photo" style={{
+              position: 'relative', width: 290, height: 360,
+              justifySelf: 'end', overflow: 'hidden',
+              borderRadius: '160px 160px 20px 20px',
+              boxShadow: '0 12px 40px rgba(20,40,30,0.12), 0 2px 6px rgba(0,0,0,0.05)',
+            }}>
+              <img
+                key={activeIdx}
+                src={active.photo}
+                alt={active.name}
+                style={{
+                  width: '100%', height: '100%', objectFit: 'cover',
+                  objectPosition: 'center top',
+                  animation: 'testFade 0.5s var(--ease-dramatic)',
+                  display: 'block',
+                }}
+              />
+              {active.video && (
+                <button
+                  onClick={() => setVideoOpen(true)}
+                  aria-label={`Play video from ${active.name}`}
+                  style={{
+                    position: 'absolute', inset: 0, width: '100%', height: '100%',
+                    background: 'rgba(20,30,22,0.18)', border: 'none', cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    transition: 'background 0.25s',
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(20,30,22,0.30)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(20,30,22,0.18)'; }}
+                >
+                  <span style={{
+                    width: 62, height: 62, borderRadius: '50%',
+                    background: 'rgba(250,248,243,0.94)',
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 8px 28px rgba(0,0,0,0.25)',
+                  }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--green-900)" style={{ marginLeft: 3 }}>
+                      <path d="M8 5.5v13l11-6.5z" />
+                    </svg>
+                  </span>
+                </button>
+              )}
             </div>
           </div>
         </div>
 
-        {/* Desktop: client logos are the navigation — active one in full ink */}
+        {/* Desktop: client logos are the navigation — full color, faded when inactive */}
         <div className="stories-logos" style={{
           display: 'flex', justifyContent: 'center', alignItems: 'center',
           gap: 'clamp(20px, 3.5vw, 44px)', marginTop: 30, flexWrap: 'wrap',
@@ -1136,19 +1198,17 @@ function CustomerStories() {
               style={{
                 background: 'none', border: 'none', cursor: 'pointer',
                 padding: '6px 2px 12px', position: 'relative',
-                opacity: i === activeIdx ? 1 : 0.32,
-                transition: 'opacity 0.25s ease',
+                opacity: i === activeIdx ? 1 : 0.35,
+                filter: i === activeIdx ? 'none' : 'saturate(0.4)',
+                transition: 'opacity 0.25s ease, filter 0.25s ease',
               }}
-              onMouseEnter={(e) => { if (i !== activeIdx) e.currentTarget.style.opacity = '0.65'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.opacity = i === activeIdx ? '1' : '0.32'; }}
+              onMouseEnter={(e) => { if (i !== activeIdx) e.currentTarget.style.opacity = '0.7'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = i === activeIdx ? '1' : '0.35'; }}
             >
               <img
                 src={s.logo}
                 alt={s.company}
-                style={{
-                  height: 24, width: 'auto', objectFit: 'contain', display: 'block',
-                  filter: 'grayscale(100%) brightness(0.35) contrast(1)',
-                }}
+                style={{ height: 26, width: 'auto', objectFit: 'contain', display: 'block' }}
               />
               <span style={{
                 position: 'absolute', left: '50%', bottom: 0,
@@ -1200,6 +1260,44 @@ function CustomerStories() {
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7.5 5L12.5 10L7.5 15" /></svg>
           </button>
         </div>
+
+        {/* Video lightbox — used by stories that ship a `video` URL */}
+        {videoOpen && active.video && (
+          <div
+            onClick={() => setVideoOpen(false)}
+            style={{
+              position: 'fixed', inset: 0, zIndex: 200,
+              background: 'rgba(15,20,16,0.82)',
+              backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              padding: 24,
+            }}
+          >
+            <button
+              onClick={() => setVideoOpen(false)}
+              aria-label="Close video"
+              style={{
+                position: 'absolute', top: 20, right: 24,
+                width: 44, height: 44, borderRadius: '50%',
+                background: 'rgba(250,248,243,0.12)', border: '1px solid rgba(250,248,243,0.3)',
+                color: '#FAF8F3', cursor: 'pointer', fontSize: 20, lineHeight: 1,
+              }}
+            >
+              ×
+            </button>
+            <video
+              src={active.video}
+              controls
+              autoPlay
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth: 'min(920px, 100%)', maxHeight: '80vh',
+                borderRadius: 16, background: '#000',
+                boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
+              }}
+            />
+          </div>
+        )}
 
         {/* Proof stats row */}
         <div className="proof-stats" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, marginTop: 56, borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: 28 }}>
