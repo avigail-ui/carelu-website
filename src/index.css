@@ -5,6 +5,9 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
+/* Care-enablement side-by-side: two columns on desktop, stacked on mobile */
+.ce-compare { grid-template-columns: 1fr 1fr; }
+@media (max-width: 768px) { .ce-compare { grid-template-columns: 1fr; } }
 
 :root {
   /* LEADTRAP — DARK MODE. INEVITABLE. */

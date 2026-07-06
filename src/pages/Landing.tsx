@@ -954,152 +954,156 @@ function Problem() {
   );
 }
 
-/* ── THE DIFFERENCE ── A few words on the experience/problem, then the solution
-   shown concretely: a live intake that Carelu runs end to end. The four jobs a
-   system of record would just store — answer, chase, verify, book — check
-   themselves off and the family lands in care. The name "Carelu" is held back
-   for the "Introducing Carelu" reveal directly below. */
-const CE_TASKS = [
-  'Inquiry answered — in 30 seconds',
-  'Missing form chased down & signed',
-  'Insurance benefits verified',
+/* ── THE DIFFERENCE ── Keep the "we've run intake thousands of times" strength,
+   then a blunt claim (your system of record is killing your business) proven by
+   a side-by-side: the same four intake jobs sit dead in a system of record vs.
+   run themselves in a care enablement platform. */
+const SOR_LOGOS = [
+  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
+  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
+  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
+  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
+  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
+  { src: '/logos/sor/notion.svg', name: 'Notion' },
+];
+const SOR_ITEMS = [
+  'Inquiry logged — nobody replies',
+  'Form requested, never chased',
+  'Benefits sit pending for days',
+  'Assessment never gets booked',
+];
+const CE_ITEMS = [
+  'Answered in 30 seconds',
+  'Form chased down & signed',
+  'Benefits verified same day',
   'Assessment on the calendar',
 ];
 
 function CareEnablement() {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [phase, setPhase] = useState<'idle' | 'waiting' | 'done'>('idle');
+  const gridRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
-    const el = cardRef.current;
+    const el = gridRef.current;
     if (!el) return;
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let timers: ReturnType<typeof setTimeout>[] = [];
-    const clear = () => { timers.forEach(clearTimeout); timers = []; };
-    const obs = new IntersectionObserver(([e]) => {
-      clear();
-      if (e.isIntersecting) {
-        if (reduce) { setPhase('done'); return; }
-        setPhase('waiting');
-        timers.push(setTimeout(() => setPhase('done'), 850));
-      } else {
-        setPhase('idle');
-      }
-    }, { threshold: 0.5 });
+    const obs = new IntersectionObserver(([e]) => setActive(e.isIntersecting), { threshold: 0.4 });
     obs.observe(el);
-    return () => { obs.disconnect(); clear(); };
+    return () => obs.disconnect();
   }, []);
 
-  const done = phase === 'done';
-  const resultDelay = CE_TASKS.length * 0.24 + 0.2;
+  const outcomeDelay = CE_ITEMS.length * 0.16 + 0.2;
 
   return (
     <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)' }}>
-      <div style={{ ...W, maxWidth: 820 }}>
-        {/* Experience + the problem, in a breath */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vw, 68px)' }}>
+      <div style={{ ...W, maxWidth: 940 }}>
+        {/* Experience, then the blunt claim */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5.5vw, 64px)' }}>
           <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 52px)',
             fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
-            color: 'var(--green-900)', maxWidth: 720, margin: '0 auto',
+            color: 'var(--green-900)', maxWidth: 760, margin: '0 auto',
           }}>
-            We&rsquo;ve run intake thousands of times.
+            We&rsquo;ve run intake thousands of times &mdash; long enough to know your{' '}
+            <span style={{ fontStyle: 'italic' }}>system of record is killing your business.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 540, margin: '18px auto 0',
+            lineHeight: 1.6, maxWidth: 560, margin: '18px auto 0',
           }}>
-            The families you lose aren&rsquo;t a clinical problem. They&rsquo;re an operational one.
+            It stores every family and waits for your team. The same intake, two ways:
           </p>
         </div>
 
-        {/* The solution, shown: an intake that runs itself, end to end */}
-        <div ref={cardRef} className="rv-scale d3" style={{ maxWidth: 470, margin: '0 auto' }}>
+        {/* Side by side */}
+        <div ref={gridRef} className="ce-compare rv-scale d3" style={{ display: 'grid', gap: 'clamp(16px, 2.4vw, 26px)', alignItems: 'stretch' }}>
+          {/* ── System of record (dead) ── */}
           <div style={{
-            background: '#fff', border: '1px solid rgba(20,40,30,0.1)', borderRadius: 20,
-            boxShadow: '0 24px 60px rgba(20,40,30,0.09), 0 2px 6px rgba(20,40,30,0.04)',
-            padding: 'clamp(20px, 3vw, 28px)', textAlign: 'left',
+            background: '#F5F4F0', border: '1px solid rgba(20,40,30,0.08)', borderRadius: 20,
+            padding: 'clamp(22px, 3vw, 30px)', display: 'flex', flexDirection: 'column',
           }}>
-            {/* who + when — a real family, after hours */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-              <div style={{
-                width: 38, height: 38, borderRadius: '50%', background: 'var(--bone)', flexShrink: 0,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'var(--font-display)', fontSize: 17, color: 'var(--green-900)',
-              }}>R</div>
-              <div style={{ flex: 1 }}>
-                <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--green-900)' }}>New family inquiry</div>
-                <div style={{ fontSize: 12, color: 'var(--gray-500)' }}>Saturday · 9:14 PM</div>
-              </div>
-              <div style={{
-                fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
-                padding: '5px 10px', borderRadius: 999,
-                background: done ? 'rgba(212,242,92,0.5)' : 'var(--bone)',
-                color: done ? 'var(--green-900)' : 'var(--gray-500)',
-                transition: `background .4s ease ${resultDelay}s, color .4s ease ${resultDelay}s`,
-              }}>
-                {done ? 'Handled' : 'Waiting'}
+            <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gray-500)' }}>
+              System of record
+            </div>
+            <div style={{ fontSize: 14, color: 'var(--gray-500)', marginTop: 4 }}>Stores the work, and waits.</div>
+            {/* logos */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', margin: '16px 0 22px' }}>
+              {SOR_LOGOS.map((l) => (
+                <img key={l.name} src={l.src} alt="" style={{ height: 17, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.4 }} />
+              ))}
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {SOR_ITEMS.map((t) => (
+                <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <span style={{ width: 22, height: 22, borderRadius: '50%', flexShrink: 0, border: '1.5px solid rgba(20,40,30,0.16)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="rgba(20,40,30,0.3)" strokeWidth="1.6" strokeLinecap="round" /></svg>
+                  </span>
+                  <span style={{ fontSize: 15, color: 'var(--gray-500)' }}>{t}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: 'auto', paddingTop: 20 }}>
+              <div style={{ borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ width: 10, height: 10, borderRadius: '50%', background: 'rgba(20,40,30,0.22)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: 19, color: 'var(--gray-500)', fontStyle: 'italic' }}>
+                  The family calls someone else.
+                </span>
               </div>
             </div>
+          </div>
 
-            {/* the four jobs — they check themselves off */}
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              {CE_TASKS.map((t, i) => {
-                const delay = i * 0.24;
+          {/* ── Care enablement platform (alive) ── */}
+          <div style={{
+            background: '#fff', border: '1px solid rgba(74,124,63,0.35)', borderRadius: 20,
+            boxShadow: '0 24px 60px rgba(20,40,30,0.09)', padding: 'clamp(22px, 3vw, 30px)',
+            display: 'flex', flexDirection: 'column',
+          }}>
+            <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--green-900)' }}>
+              Care enablement platform
+            </div>
+            <div style={{ fontSize: 14, color: 'var(--green-900)', marginTop: 4, fontWeight: 500 }}>Does the work.</div>
+            {/* spacer matching the logo row so rows align across cards */}
+            <div style={{ height: 17, margin: '16px 0 22px', display: 'flex', alignItems: 'center' }}>
+              <span style={{ fontSize: 13, color: 'var(--gray-500)' }}>One platform, always on.</span>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {CE_ITEMS.map((t, i) => {
+                const delay = i * 0.16;
                 return (
-                  <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 13, padding: '11px 0' }}>
+                  <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                     <span style={{
-                      width: 23, height: 23, borderRadius: 7, flexShrink: 0,
+                      width: 22, height: 22, borderRadius: 7, flexShrink: 0,
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      border: done ? '1px solid var(--lime)' : '1.5px solid rgba(20,40,30,0.16)',
-                      background: done ? 'var(--lime)' : 'transparent',
+                      border: active ? '1px solid var(--lime)' : '1.5px solid rgba(20,40,30,0.16)',
+                      background: active ? 'var(--lime)' : 'transparent',
                       transition: `background .35s ease ${delay}s, border-color .35s ease ${delay}s`,
                     }}>
-                      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" style={{
-                        opacity: done ? 1 : 0, transform: done ? 'scale(1)' : 'scale(0.5)',
+                      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" style={{
+                        opacity: active ? 1 : 0, transform: active ? 'scale(1)' : 'scale(0.5)',
                         transition: `opacity .3s ease ${delay + 0.1}s, transform .3s cubic-bezier(0.34,1.56,0.64,1) ${delay + 0.1}s`,
                       }}>
                         <path d="M3.5 8.5l3 3 6-6.5" stroke="var(--green-900)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
-                    <span style={{
-                      fontSize: 15.5, color: done ? 'var(--green-900)' : 'var(--gray-500)',
-                      transition: `color .35s ease ${delay}s`,
-                    }}>{t}</span>
+                    <span style={{ fontSize: 15, color: active ? 'var(--green-900)' : 'var(--gray-500)', transition: `color .35s ease ${delay}s` }}>{t}</span>
                   </div>
                 );
               })}
             </div>
-
-            {/* the outcome */}
-            <div style={{
-              marginTop: 12, paddingTop: 16, borderTop: '1px solid rgba(20,40,30,0.08)',
-              display: 'flex', alignItems: 'center', gap: 11,
-            }}>
-              <span style={{
-                width: 11, height: 11, borderRadius: '50%', background: 'var(--lime)',
-                boxShadow: done ? '0 0 0 5px rgba(212,242,92,0.28)' : 'none',
-                opacity: done ? 1 : 0.25, transition: `all .45s ease ${resultDelay}s`,
-              }} />
-              <span style={{
-                fontFamily: 'var(--font-display)', fontSize: 21, color: 'var(--green-900)',
-                opacity: done ? 1 : 0.3, transition: `opacity .45s ease ${resultDelay}s`,
-              }}>In care.</span>
+            <div style={{ marginTop: 'auto', paddingTop: 20 }}>
+              <div style={{ borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{
+                  width: 11, height: 11, borderRadius: '50%', background: 'var(--lime)', flexShrink: 0,
+                  boxShadow: active ? '0 0 0 5px rgba(212,242,92,0.28)' : 'none',
+                  opacity: active ? 1 : 0.3, transition: `all .45s ease ${outcomeDelay}s`,
+                }} />
+                <span style={{
+                  fontFamily: 'var(--font-display)', fontSize: 20, color: 'var(--green-900)',
+                  opacity: active ? 1 : 0.35, transition: `opacity .45s ease ${outcomeDelay}s`,
+                }}>The family is in care.</span>
+              </div>
             </div>
           </div>
-
-          {/* the punchline — the category, tied to what you just watched */}
-          <p style={{
-            textAlign: 'center', margin: 'clamp(30px, 4vw, 44px) auto 0', maxWidth: 540,
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(18px, 2vw, 25px)',
-            lineHeight: 1.4, letterSpacing: '-0.01em',
-          }}>
-            <span style={{ color: 'var(--gray-500)' }}>A system of record stores the work. </span>
-            <span style={{ color: 'var(--green-900)', opacity: done ? 1 : 0.4, transition: 'opacity .5s ease' }}>
-              A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it.
-            </span>
-          </p>
         </div>
       </div>
     </section>
