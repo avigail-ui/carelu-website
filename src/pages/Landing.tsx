@@ -266,6 +266,7 @@ function LaurelBranch({ flip }: { flip?: boolean }) {
 function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const marqueeRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
 
   // Preload the full-color logo variants so the hover swap is instant
@@ -274,6 +275,26 @@ function Hero() {
       const c = (l as { color?: string }).color;
       if (c) { const img = new Image(); img.src = c; }
     });
+  }, []);
+
+  // Safari fast-forwards a CSS animation to "catch up" the wall-clock time it
+  // spent backgrounded — so after an app switch the logo marquee flies. Restart
+  // the animation from zero whenever the page becomes visible again (also covers
+  // bfcache restores via pageshow) so it always resumes at the intended speed.
+  useEffect(() => {
+    const restart = () => {
+      const el = marqueeRef.current;
+      if (!el || document.hidden) return;
+      el.style.animation = 'none';
+      void el.offsetWidth; // force reflow
+      el.style.animation = 'marqueeScroll 60s linear infinite';
+    };
+    document.addEventListener('visibilitychange', restart);
+    window.addEventListener('pageshow', restart);
+    return () => {
+      document.removeEventListener('visibilitychange', restart);
+      window.removeEventListener('pageshow', restart);
+    };
   }, []);
 
   // Scroll-driven video (only first VIDEO_CAP of duration plays) + staged content reveal
@@ -478,8 +499,8 @@ function Hero() {
           }}>
             Trusted by 100+ of the fastest growing ABA providers
           </p>
-          <div style={{ overflow: 'hidden', position: 'relative' }}>
-            <div className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
+          <div className="hero-logos-mask" style={{ overflow: 'hidden', position: 'relative' }}>
+            <div ref={marqueeRef} className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
               {[0, 1].map(set => (
                 <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 80, paddingRight: 80 }}>
                   {allLogos.map(logo => (
