@@ -676,13 +676,12 @@ const allLogos = [
   { src: '/logos/dark/totalcare.png', alt: 'Total Care', color: '/logos/totalcare.webp' },
   { src: '/logos/dark/kidsclub.png', alt: 'Kids Club ABA', color: '/logos/kidsclub.png' },
   { src: '/logos/dark/cross-river.png', alt: 'Cross River', color: '/logos/cross-river.png' },
-  { src: '/logos/dark/bridgecare.png', alt: 'BridgeCare ABA', h: 30, color: '/logos/bridgecare.png' },
+  { src: '/logos/advanced-autism.svg', alt: 'Advanced Autism Services', h: 40 },
   { src: '/logos/dark/supportive-care.png', alt: 'Supportive Care', color: '/logos/supportive-care.png' },
   { src: '/logos/dark/stepahead.png', alt: 'Step Ahead ABA', h: 46, color: '/logos/stepahead.png' },
   { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52, color: '/logos/above-beyond.webp' },
   { src: '/logos/dark/behaviorcare.png', alt: 'BehaviorCare Therapy', color: '/logos/behaviorcare.png' },
   { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA', h: 46, color: '/logos/blossom-aba.webp' },
-  { src: '/logos/dark/achievements.png', alt: 'Achievements ABA', h: 46, color: '/logos/achievements.png' },
   { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true, color: '/logos/link-color.png' },
 ];
 
@@ -967,24 +966,15 @@ const SOR_LOGOS = [
   { src: '/logos/sor/notion.svg', name: 'Notion' },
 ];
 
-// Scattered start positions (px offsets from centre) for the logos in the press
-const PRESS_SCATTER = [
-  { x: -140, y: -36, r: -9 },
-  { x: -72, y: 42, r: 7 },
-  { x: -6, y: -52, r: -4 },
-  { x: 70, y: 46, r: 8 },
-  { x: 134, y: -28, r: -7 },
-  { x: 44, y: 60, r: 5 },
-];
-
 function CareEnablement() {
-  const chamberRef = useRef<HTMLDivElement>(null);
-  // idle → the systems of record float scattered; crush → the press slams them
-  // together (dark plates, lime seam); bloom → plates retract and Carelu emerges.
-  const [phase, setPhase] = useState<'idle' | 'crush' | 'bloom'>('idle');
+  const stageRef = useRef<HTMLDivElement>(null);
+  // idle → a dashed, seamy path through your tools; problem → a family slips
+  // through a gap and is lost; heal → the line closes into one unbroken lime
+  // stroke and a family flows all the way through as Carelu.
+  const [phase, setPhase] = useState<'idle' | 'problem' | 'heal'>('idle');
 
   useEffect(() => {
-    const el = chamberRef.current;
+    const el = stageRef.current;
     if (!el) return;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let timers: ReturnType<typeof setTimeout>[] = [];
@@ -992,136 +982,114 @@ function CareEnablement() {
     const obs = new IntersectionObserver(([e]) => {
       clear();
       if (e.isIntersecting) {
-        if (reduce) { setPhase('bloom'); return; }
-        setPhase('idle'); // show the scattered mess first
-        timers.push(setTimeout(() => setPhase('crush'), 450));
-        timers.push(setTimeout(() => setPhase('bloom'), 1300));
+        if (reduce) { setPhase('heal'); return; }
+        setPhase('problem');
+        timers.push(setTimeout(() => setPhase('heal'), 2300));
       } else {
         setPhase('idle');
       }
-    }, { threshold: 0.55 });
+    }, { threshold: 0.5 });
     obs.observe(el);
     return () => { obs.disconnect(); clear(); };
   }, []);
 
-  const crushed = phase !== 'idle';
-  const bloomed = phase === 'bloom';
+  const heal = phase === 'heal';
 
   return (
     <section style={{
       background: '#fff',
       paddingTop: 'clamp(64px, 9vw, 120px)', paddingBottom: 'clamp(64px, 9vw, 120px)',
     }}>
-      <div style={{ ...W, maxWidth: 960 }}>
-        {/* Header — the unique lesson, framed as the problem */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(38px, 5vw, 58px)' }}>
+      <div style={{ ...W, maxWidth: 880 }}>
+        {/* Header — the lesson, tight. The line below does the showing. */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(44px, 6vw, 72px)' }}>
           <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(31px, 4.6vw, 52px)',
-            fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 50px)',
+            fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
             color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
           }}>
-            Families don&rsquo;t fall through the cracks.{' '}
-            <span style={{ fontStyle: 'italic' }}>They fall through the seams between your tools.</span>
+            Every tool you add is one more{' '}
+            <span style={{ fontStyle: 'italic' }}>seam for a family to slip through.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.5vw, 19px)', color: 'var(--gray-500)',
-            lineHeight: 1.65, maxWidth: 660, margin: '20px auto 0',
+            lineHeight: 1.6, maxWidth: 520, margin: '18px auto 0',
           }}>
-            After thousands of intakes, we learned the losses aren&rsquo;t clinical — they&rsquo;re
-            operational. A form never chased, a call never returned, an eligibility check left for a
-            week. Every tool you add is one more seam for a family to slip through.
+            The losses aren&rsquo;t clinical. They&rsquo;re operational.
           </p>
         </div>
 
-        {/* The press — systems of record crushed together, Carelu emerges */}
-        <div ref={chamberRef} className="rv-scale d3" style={{
-          position: 'relative', maxWidth: 620, height: 'clamp(280px, 60vw, 330px)',
-          margin: '0 auto', borderRadius: 26, overflow: 'hidden',
-          background: 'radial-gradient(120% 80% at 50% 45%, #fbfaf6 0%, #efeadd 100%)',
-          border: '1px solid rgba(0,0,0,0.08)',
-          boxShadow: 'inset 0 2px 22px rgba(0,0,0,0.05)',
+        {/* The seam → seamless line */}
+        <div ref={stageRef} className="seam-stage rv-scale d3" style={{
+          position: 'relative', maxWidth: 600, height: 200, margin: '0 auto',
         }}>
-          {/* Scattered systems of record */}
+          {/* Dashed, seamy path through the stack */}
+          <div style={{
+            position: 'absolute', left: '1%', right: '1%', top: '42%',
+            borderTop: '1.5px dashed rgba(44,62,45,0.3)',
+            opacity: heal ? 0 : 1, transition: 'opacity 0.55s ease',
+          }} />
+          {/* The unbroken line, drawn on heal */}
+          <div style={{
+            position: 'absolute', left: '1%', right: '1%', top: '42%', height: 2,
+            background: 'var(--lime)', transformOrigin: 'left center',
+            transform: heal ? 'scaleX(1)' : 'scaleX(0)',
+            transition: 'transform 1.1s cubic-bezier(0.6, 0, 0.2, 1) 0.1s',
+            boxShadow: heal ? '0 0 12px rgba(212,242,92,0.55)' : 'none',
+          }} />
+          {/* Endpoint — admitted */}
+          <div style={{
+            position: 'absolute', right: '1%', top: '42%', width: 14, height: 14,
+            marginTop: -7, marginRight: -7, borderRadius: '50%',
+            background: heal ? 'var(--lime)' : 'transparent',
+            border: heal ? 'none' : '1.5px dashed rgba(44,62,45,0.3)',
+            transform: heal ? 'scale(1)' : 'scale(0.7)',
+            boxShadow: heal ? '0 0 0 6px rgba(212,242,92,0.22)' : 'none',
+            transition: 'all 0.5s ease 0.9s',
+          }} />
+          {/* Your tools, sitting on the seams */}
           {SOR_LOGOS.map((l, i) => {
-            const s = PRESS_SCATTER[i];
+            const left = 12 + i * (76 / 5);
             return (
               <img key={l.name} src={l.src} alt="" style={{
-                position: 'absolute', left: '50%', top: '50%',
-                width: 34, height: 34, objectFit: 'contain',
-                filter: 'grayscale(1)', opacity: crushed ? 0 : 0.42,
-                transform: crushed
-                  ? 'translate(-50%, -50%) scaleX(0.4) scaleY(0.05)'
-                  : `translate(calc(-50% + ${s.x}px), calc(-50% + ${s.y}px)) rotate(${s.r}deg)`,
-                transition: 'transform 0.75s cubic-bezier(0.6, 0, 0.2, 1), opacity 0.5s ease',
-                transitionDelay: crushed ? '0s' : `${i * 0.04}s`,
+                position: 'absolute', left: `${left}%`, top: '42%',
+                width: 26, height: 26, marginTop: -13, marginLeft: -13, objectFit: 'contain',
+                filter: 'grayscale(1)', opacity: heal ? 0 : 0.4,
+                transform: heal ? 'translateY(-16px)' : 'none',
+                transition: 'opacity 0.6s ease, transform 0.7s cubic-bezier(0.6, 0, 0.2, 1)',
+                transitionDelay: `${i * 0.03}s`,
               }} />
             );
           })}
-
-          {/* Press plates — slam shut on crush (lime seam where they meet), retract on bloom */}
+          {/* Families slipping through the gaps */}
+          {phase === 'problem' && (
+            <>
+              <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '34%', animationDelay: '0.15s' } as React.CSSProperties} />
+              <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '62%', animationDelay: '0.75s' } as React.CSSProperties} />
+            </>
+          )}
+          {/* A family flows all the way through */}
+          {heal && <span className="seam-dot seam-flow" />}
+          {/* Carelu emerges as the line */}
           <div style={{
-            position: 'absolute', left: 0, right: 0, top: 0, height: '50%',
-            background: 'linear-gradient(180deg, #33472f 0%, #22301e 100%)',
-            transform: crushed && !bloomed ? 'translateY(0)' : 'translateY(-110%)',
-            transition: 'transform 0.55s cubic-bezier(0.7, 0, 0.3, 1)',
-            boxShadow: '0 8px 20px rgba(0,0,0,0.28)',
+            position: 'absolute', left: 0, right: 0, top: '60%', textAlign: 'center',
+            opacity: heal ? 1 : 0, transform: heal ? 'translateY(0)' : 'translateY(8px)',
+            transition: 'opacity 0.7s ease 0.5s, transform 0.7s ease 0.5s',
           }}>
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 4, background: 'var(--lime)', opacity: 0.75 }} />
-          </div>
-          <div style={{
-            position: 'absolute', left: 0, right: 0, bottom: 0, height: '50%',
-            background: 'linear-gradient(0deg, #33472f 0%, #22301e 100%)',
-            transform: crushed && !bloomed ? 'translateY(0)' : 'translateY(110%)',
-            transition: 'transform 0.55s cubic-bezier(0.7, 0, 0.3, 1)',
-            boxShadow: '0 -8px 20px rgba(0,0,0,0.28)',
-          }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--lime)', opacity: 0.75 }} />
-          </div>
-
-          {/* Carelu blooms out of the seam */}
-          <div style={{
-            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
-            opacity: bloomed ? 1 : 0,
-            transform: bloomed ? 'scale(1)' : 'scale(0.62)',
-            transition: 'opacity 0.7s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)',
-            transitionDelay: bloomed ? '0.08s' : '0s',
-          }}>
-            <div aria-hidden="true" style={{
-              position: 'absolute', width: 300, height: 190,
-              background: 'radial-gradient(ellipse at center, rgba(212,242,92,0.5) 0%, transparent 70%)',
-              filter: 'blur(8px)',
-            }} />
-            <div style={{
-              position: 'relative', fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(42px, 6vw, 62px)', color: 'var(--green-900)', letterSpacing: '-0.01em',
-            }}>Carelu</div>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', color: 'var(--green-900)' }}>Carelu</div>
           </div>
         </div>
 
-        {/* What a care enablement platform is */}
-        <div className="rv" style={{ textAlign: 'center', maxWidth: 640, margin: 'clamp(38px, 5vw, 54px) auto 0' }}>
-          <div style={{
-            fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
-            color: 'var(--gray-500)', marginBottom: 14,
-          }}>
-            So we built something new
-          </div>
-          <p style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 29px)',
-            lineHeight: 1.4, letterSpacing: '-0.01em', color: 'var(--green-900)', margin: 0,
-          }}>
-            A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> — not a system of
-            record that stores the work and waits, but the layer that actually does it.
-          </p>
-          <p style={{
-            fontSize: 'clamp(15px, 1.4vw, 17px)', color: 'var(--gray-500)',
-            lineHeight: 1.65, margin: '16px auto 0', maxWidth: 560,
-          }}>
-            It answers families, chases every form, verifies benefits, and books the assessment — so
-            every family who can receive care, does.
-          </p>
-        </div>
+        {/* What a care enablement platform is — one line */}
+        <p className="rv" style={{
+          textAlign: 'center', maxWidth: 620, margin: 'clamp(44px, 6vw, 64px) auto 0',
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(19px, 2.2vw, 27px)',
+          lineHeight: 1.4, letterSpacing: '-0.01em', color: 'var(--green-900)',
+        }}>
+          A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> doesn&rsquo;t store the
+          work and wait. It does it — one unbroken line from first hello to admitted.
+        </p>
       </div>
     </section>
   );
