@@ -5,33 +5,6 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
-/* Care-enablement "seam" animation — a family dot slips through a gap (problem),
-   then flows the whole unbroken line (heal). */
-.seam-dot {
-  position: absolute; top: 45%; width: 9px; height: 9px; border-radius: 50%;
-  will-change: left, transform, opacity; pointer-events: none;
-}
-.seam-slip {
-  background: rgba(44,62,45,0.6);
-  animation: seamSlip 1.5s cubic-bezier(0.5, 0, 0.5, 1) both;
-}
-.seam-flow {
-  background: var(--lime); box-shadow: 0 0 9px rgba(212,242,92,0.75);
-  animation: seamFlow 1.7s cubic-bezier(0.45, 0, 0.3, 1) 0.35s both;
-}
-@keyframes seamSlip {
-  0%   { left: 2%;          opacity: 0; transform: translate(-50%, -50%); }
-  16%  {                    opacity: 1; }
-  52%  { left: var(--gap);  opacity: 1; transform: translate(-50%, -50%); }
-  78%  { left: var(--gap);  opacity: 0; transform: translate(-50%, 44px); }
-  100% { left: var(--gap);  opacity: 0; transform: translate(-50%, 44px); }
-}
-@keyframes seamFlow {
-  0%   { left: 2%;  opacity: 0; transform: translate(-50%, -50%); }
-  16%  {            opacity: 1; }
-  88%  { left: 94%; opacity: 1; transform: translate(-50%, -50%); }
-  100% { left: 97%; opacity: 0; transform: translate(-50%, -50%); }
-}
 
 :root {
   /* LEADTRAP — DARK MODE. INEVITABLE. */

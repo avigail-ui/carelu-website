@@ -954,16 +954,24 @@ function Problem() {
   );
 }
 
-/* ── THE DIFFERENCE ── The quiet turn from the Problem section. One statement of
-   the category, carried by design: a journey line from first hello to in care.
-   Broken, a family slips through a seam; healed, it flows all the way. The name
-   "Carelu" is intentionally held back for the "Introducing Carelu" reveal below. */
+/* ── THE DIFFERENCE ── A few words on the experience/problem, then the solution
+   shown concretely: a live intake that Carelu runs end to end. The four jobs a
+   system of record would just store — answer, chase, verify, book — check
+   themselves off and the family lands in care. The name "Carelu" is held back
+   for the "Introducing Carelu" reveal directly below. */
+const CE_TASKS = [
+  'Inquiry answered — in 30 seconds',
+  'Missing form chased down & signed',
+  'Insurance benefits verified',
+  'Assessment on the calendar',
+];
+
 function CareEnablement() {
-  const stageRef = useRef<HTMLDivElement>(null);
-  const [phase, setPhase] = useState<'idle' | 'problem' | 'heal'>('idle');
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [phase, setPhase] = useState<'idle' | 'waiting' | 'done'>('idle');
 
   useEffect(() => {
-    const el = stageRef.current;
+    const el = cardRef.current;
     if (!el) return;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let timers: ReturnType<typeof setTimeout>[] = [];
@@ -971,58 +979,127 @@ function CareEnablement() {
     const obs = new IntersectionObserver(([e]) => {
       clear();
       if (e.isIntersecting) {
-        if (reduce) { setPhase('heal'); return; }
-        setPhase('problem');
-        timers.push(setTimeout(() => setPhase('heal'), 2100));
+        if (reduce) { setPhase('done'); return; }
+        setPhase('waiting');
+        timers.push(setTimeout(() => setPhase('done'), 850));
       } else {
         setPhase('idle');
       }
-    }, { threshold: 0.55 });
+    }, { threshold: 0.5 });
     obs.observe(el);
     return () => { obs.disconnect(); clear(); };
   }, []);
 
-  const heal = phase === 'heal';
-  const label: React.CSSProperties = {
-    position: 'absolute', top: '60%', fontSize: 11, fontWeight: 600,
-    letterSpacing: '0.14em', textTransform: 'uppercase', whiteSpace: 'nowrap',
-  };
+  const done = phase === 'done';
+  const resultDelay = CE_TASKS.length * 0.24 + 0.2;
 
   return (
     <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)' }}>
       <div style={{ ...W, maxWidth: 820 }}>
-        {/* One statement — the category, defined by contrast. Design does the rest. */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(52px, 7vw, 96px)' }}>
-          <div className="rv"><Pill>The difference</Pill></div>
+        {/* Experience + the problem, in a breath */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vw, 68px)' }}>
+          <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 46px)',
-            fontWeight: 400, lineHeight: 1.18, letterSpacing: '-0.02em',
-            maxWidth: 720, margin: '0 auto',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 52px)',
+            fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
+            color: 'var(--green-900)', maxWidth: 720, margin: '0 auto',
           }}>
-            <span style={{ display: 'block', color: 'var(--gray-500)' }}>A system of record stores the work.</span>
-            <span style={{ display: 'block', color: 'var(--green-900)' }}>
-              A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it.
-            </span>
+            We&rsquo;ve run intake thousands of times.
           </h2>
+          <p className="rv-scale d2" style={{
+            fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
+            lineHeight: 1.6, maxWidth: 540, margin: '18px auto 0',
+          }}>
+            The families you lose aren&rsquo;t a clinical problem. They&rsquo;re an operational one.
+          </p>
         </div>
 
-        {/* The journey — first hello to in care */}
-        <div ref={stageRef} className="seam-stage rv-scale d2" style={{ position: 'relative', maxWidth: 560, height: 130, margin: '0 auto' }}>
-          {/* broken dashed path with a seam near the middle */}
-          <div style={{ position: 'absolute', left: '3%', width: '42%', top: '45%', borderTop: '1.5px dashed rgba(44,62,45,0.32)', opacity: heal ? 0 : 1, transition: 'opacity 0.5s ease' }} />
-          <div style={{ position: 'absolute', right: '3%', width: '42%', top: '45%', borderTop: '1.5px dashed rgba(44,62,45,0.32)', opacity: heal ? 0 : 1, transition: 'opacity 0.5s ease' }} />
-          {/* the unbroken line */}
-          <div style={{ position: 'absolute', left: '3%', right: '3%', top: '45%', height: 2, background: 'var(--lime)', transformOrigin: 'left center', transform: heal ? 'scaleX(1)' : 'scaleX(0)', transition: 'transform 1.05s cubic-bezier(0.6,0,0.2,1) 0.1s', boxShadow: heal ? '0 0 12px rgba(212,242,92,0.55)' : 'none' }} />
-          {/* start node */}
-          <div style={{ position: 'absolute', left: '3%', top: '45%', width: 10, height: 10, marginTop: -5, marginLeft: -5, borderRadius: '50%', background: 'rgba(44,62,45,0.42)' }} />
-          <div style={{ ...label, left: '3%', transform: 'translateX(-1px)', color: 'var(--gray-500)' }}>First hello</div>
-          {/* end node — in care */}
-          <div style={{ position: 'absolute', right: '3%', top: '45%', width: 14, height: 14, marginTop: -7, marginRight: -7, borderRadius: '50%', background: heal ? 'var(--lime)' : 'transparent', border: heal ? 'none' : '1.5px dashed rgba(44,62,45,0.32)', transform: heal ? 'scale(1)' : 'scale(0.7)', boxShadow: heal ? '0 0 0 6px rgba(212,242,92,0.22)' : 'none', transition: 'all 0.5s ease 0.85s' }} />
-          <div style={{ ...label, right: '3%', textAlign: 'right', transform: 'translateX(1px)', color: heal ? 'var(--green-900)' : 'var(--gray-500)', transition: 'color 0.5s ease 0.85s' }}>In care</div>
-          {/* a family slips through the seam */}
-          {phase === 'problem' && <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '50%' } as React.CSSProperties} />}
-          {/* a family flows all the way through */}
-          {heal && <span className="seam-dot seam-flow" />}
+        {/* The solution, shown: an intake that runs itself, end to end */}
+        <div ref={cardRef} className="rv-scale d3" style={{ maxWidth: 470, margin: '0 auto' }}>
+          <div style={{
+            background: '#fff', border: '1px solid rgba(20,40,30,0.1)', borderRadius: 20,
+            boxShadow: '0 24px 60px rgba(20,40,30,0.09), 0 2px 6px rgba(20,40,30,0.04)',
+            padding: 'clamp(20px, 3vw, 28px)', textAlign: 'left',
+          }}>
+            {/* who + when — a real family, after hours */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+              <div style={{
+                width: 38, height: 38, borderRadius: '50%', background: 'var(--bone)', flexShrink: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontFamily: 'var(--font-display)', fontSize: 17, color: 'var(--green-900)',
+              }}>R</div>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--green-900)' }}>New family inquiry</div>
+                <div style={{ fontSize: 12, color: 'var(--gray-500)' }}>Saturday · 9:14 PM</div>
+              </div>
+              <div style={{
+                fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
+                padding: '5px 10px', borderRadius: 999,
+                background: done ? 'rgba(212,242,92,0.5)' : 'var(--bone)',
+                color: done ? 'var(--green-900)' : 'var(--gray-500)',
+                transition: `background .4s ease ${resultDelay}s, color .4s ease ${resultDelay}s`,
+              }}>
+                {done ? 'Handled' : 'Waiting'}
+              </div>
+            </div>
+
+            {/* the four jobs — they check themselves off */}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              {CE_TASKS.map((t, i) => {
+                const delay = i * 0.24;
+                return (
+                  <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 13, padding: '11px 0' }}>
+                    <span style={{
+                      width: 23, height: 23, borderRadius: 7, flexShrink: 0,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      border: done ? '1px solid var(--lime)' : '1.5px solid rgba(20,40,30,0.16)',
+                      background: done ? 'var(--lime)' : 'transparent',
+                      transition: `background .35s ease ${delay}s, border-color .35s ease ${delay}s`,
+                    }}>
+                      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" style={{
+                        opacity: done ? 1 : 0, transform: done ? 'scale(1)' : 'scale(0.5)',
+                        transition: `opacity .3s ease ${delay + 0.1}s, transform .3s cubic-bezier(0.34,1.56,0.64,1) ${delay + 0.1}s`,
+                      }}>
+                        <path d="M3.5 8.5l3 3 6-6.5" stroke="var(--green-900)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <span style={{
+                      fontSize: 15.5, color: done ? 'var(--green-900)' : 'var(--gray-500)',
+                      transition: `color .35s ease ${delay}s`,
+                    }}>{t}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* the outcome */}
+            <div style={{
+              marginTop: 12, paddingTop: 16, borderTop: '1px solid rgba(20,40,30,0.08)',
+              display: 'flex', alignItems: 'center', gap: 11,
+            }}>
+              <span style={{
+                width: 11, height: 11, borderRadius: '50%', background: 'var(--lime)',
+                boxShadow: done ? '0 0 0 5px rgba(212,242,92,0.28)' : 'none',
+                opacity: done ? 1 : 0.25, transition: `all .45s ease ${resultDelay}s`,
+              }} />
+              <span style={{
+                fontFamily: 'var(--font-display)', fontSize: 21, color: 'var(--green-900)',
+                opacity: done ? 1 : 0.3, transition: `opacity .45s ease ${resultDelay}s`,
+              }}>In care.</span>
+            </div>
+          </div>
+
+          {/* the punchline — the category, tied to what you just watched */}
+          <p style={{
+            textAlign: 'center', margin: 'clamp(30px, 4vw, 44px) auto 0', maxWidth: 540,
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(18px, 2vw, 25px)',
+            lineHeight: 1.4, letterSpacing: '-0.01em',
+          }}>
+            <span style={{ color: 'var(--gray-500)' }}>A system of record stores the work. </span>
+            <span style={{ color: 'var(--green-900)', opacity: done ? 1 : 0.4, transition: 'opacity .5s ease' }}>
+              A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it.
+            </span>
+          </p>
         </div>
       </div>
     </section>
