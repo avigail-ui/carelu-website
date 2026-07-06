@@ -646,11 +646,17 @@ const allLogos = [
   { src: '/logos/dark/grateful-care.png', alt: 'Grateful Care', color: '/logos/grateful-care.avif' },
   { src: '/logos/advanceable-aba.svg', alt: 'Advanceable ABA', smaller: true },
   { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services', h: 30, color: '/logos/inbloom.png' },
+  { src: '/logos/dark/apex.png', alt: 'Apex ABA', color: '/logos/apex.png' },
   { src: '/logos/dark/totalcare.png', alt: 'Total Care', color: '/logos/totalcare.webp' },
+  { src: '/logos/dark/kidsclub.png', alt: 'Kids Club ABA', color: '/logos/kidsclub.png' },
   { src: '/logos/dark/cross-river.png', alt: 'Cross River', color: '/logos/cross-river.png' },
+  { src: '/logos/dark/bridgecare.png', alt: 'BridgeCare ABA', h: 30, color: '/logos/bridgecare.png' },
   { src: '/logos/dark/supportive-care.png', alt: 'Supportive Care', color: '/logos/supportive-care.png' },
+  { src: '/logos/dark/stepahead.png', alt: 'Step Ahead ABA', h: 46, color: '/logos/stepahead.png' },
   { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52, color: '/logos/above-beyond.webp' },
+  { src: '/logos/dark/behaviorcare.png', alt: 'BehaviorCare Therapy', color: '/logos/behaviorcare.png' },
   { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA', h: 46, color: '/logos/blossom-aba.webp' },
+  { src: '/logos/dark/achievements.png', alt: 'Achievements ABA', h: 46, color: '/logos/achievements.png' },
   { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true, color: '/logos/link-color.png' },
 ];
 
