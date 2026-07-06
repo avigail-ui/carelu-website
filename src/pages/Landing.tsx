@@ -480,10 +480,13 @@ function Hero() {
                       src={logo.src}
                       alt={logo.alt}
                       style={{
-                        height: (logo as { smaller?: boolean }).smaller ? 28 : 34,
+                        height: (logo as { smaller?: boolean }).smaller ? 34 : 40,
                         width: 'auto', objectFit: 'contain',
-                        opacity: 0.78, flexShrink: 0,
-                        filter: 'grayscale(100%) brightness(0.55) contrast(1.1)',
+                        opacity: 0.92, flexShrink: 0,
+                        // Tamed color: recognizable brands stay in color (recognition sells
+                        // in a niche vertical), lightly desaturated + multiply over the cream
+                        // so 11 mismatched palettes still read as one cohesive row.
+                        filter: 'saturate(0.88) contrast(1.02)',
                         mixBlendMode: 'multiply',
                         transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), mix-blend-mode 0.2s ease',
                         willChange: 'transform, filter',
@@ -491,13 +494,13 @@ function Hero() {
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.opacity = '1';
-                        e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)';
+                        e.currentTarget.style.filter = 'saturate(1) contrast(1)';
                         e.currentTarget.style.mixBlendMode = 'normal';
                         e.currentTarget.style.transform = 'scale(1.06)';
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.opacity = '0.78';
-                        e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.1)';
+                        e.currentTarget.style.opacity = '0.92';
+                        e.currentTarget.style.filter = 'saturate(0.88) contrast(1.02)';
                         e.currentTarget.style.mixBlendMode = 'multiply';
                         e.currentTarget.style.transform = 'scale(1)';
                       }}
