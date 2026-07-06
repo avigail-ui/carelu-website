@@ -607,6 +607,7 @@ function DemoVideo() {
 // through the greyscale filter. Originals stay for the full-color testimonial nav.
 const allLogos = [
   { src: '/logos/dark/strive-aba.png', alt: 'Strive ABA' },
+  { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services' },
   { src: '/logos/treetop.png', alt: 'The Treetop', h: 44 },
   { src: '/logos/dark/golden-care-full.png', alt: 'Golden Care' },
   { src: '/logos/dark/grateful-care.png', alt: 'Grateful Care' },
@@ -615,7 +616,6 @@ const allLogos = [
   { src: '/logos/dark/cross-river.png', alt: 'Cross River' },
   { src: '/logos/dark/totalcare.png', alt: 'Total Care' },
   { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52 },
-  { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services' },
   { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA' },
   { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true },
 ];
