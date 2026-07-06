@@ -923,6 +923,113 @@ function Problem() {
   );
 }
 
+/* ── SYSTEMS OF RECORD ── The tools you juggle just store the work; Carelu does it.
+   Greyed brand marks (systems of record) → an arrow → Carelu (the system of action). */
+const SOR_LOGOS = [
+  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
+  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
+  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
+  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
+  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
+  { src: '/logos/sor/notion.svg', name: 'Notion' },
+];
+
+function SystemsOfRecord() {
+  return (
+    <section style={{
+      background: '#fff',
+      paddingTop: 'clamp(64px, 9vw, 120px)', paddingBottom: 'clamp(64px, 9vw, 120px)',
+    }}>
+      <div style={{ ...W, maxWidth: 1080 }}>
+        {/* Header */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vw, 60px)' }}>
+          <div className="rv"><Pill>The difference</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(31px, 4.6vw, 54px)',
+            fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em',
+            color: 'var(--green-900)', maxWidth: 800, margin: '0 auto',
+          }}>
+            Stop managing systems of record.{' '}
+            <span style={{ fontStyle: 'italic' }}>Start getting results.</span>
+          </h2>
+          <p className="rv-scale d2" style={{
+            fontSize: 'clamp(16px, 1.5vw, 19px)', color: 'var(--gray-500)',
+            lineHeight: 1.65, maxWidth: 640, margin: '20px auto 0',
+          }}>
+            HubSpot, Salesforce, and the rest store your intake — they don&rsquo;t run it.
+            Your team still chases every form, every callback, every auth. Carelu is the
+            platform that actually does the work, then syncs the record for you.
+          </p>
+        </div>
+
+        {/* Comparison band: systems of record → Carelu */}
+        <div className="sor-band rv-scale d3" style={{
+          display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'stretch',
+          gap: 'clamp(14px, 2.6vw, 30px)',
+        }}>
+          {/* Systems of record — greyed, passive */}
+          <div style={{
+            background: 'var(--bone)', border: '1px solid rgba(0,0,0,0.07)',
+            borderRadius: 22, padding: 'clamp(22px, 3vw, 34px) clamp(18px, 2.4vw, 30px)',
+          }}>
+            <div style={{
+              fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
+              color: 'var(--gray-500)', marginBottom: 22, textAlign: 'center',
+            }}>
+              Systems of record
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px 10px' }}>
+              {SOR_LOGOS.map((l) => (
+                <div key={l.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+                  <img src={l.src} alt={l.name} style={{
+                    width: 26, height: 26, objectFit: 'contain',
+                    opacity: 0.38, filter: 'grayscale(1)',
+                  }} />
+                  <span style={{ fontSize: 11.5, fontWeight: 600, color: 'var(--gray-500)', opacity: 0.7 }}>{l.name}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{ fontSize: 13.5, color: 'var(--gray-500)', textAlign: 'center', marginTop: 24, lineHeight: 1.55 }}>
+              They hold the record.<br />Your team still does the work.
+            </div>
+          </div>
+
+          {/* Arrow */}
+          <div className="sor-arrow" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--green-900)', opacity: 0.55 }}>
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+          </div>
+
+          {/* Carelu — the system of action */}
+          <div style={{
+            background: 'linear-gradient(158deg, #22301e 0%, #2e4130 100%)',
+            borderRadius: 22, padding: 'clamp(26px, 3vw, 36px)',
+            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+            position: 'relative', overflow: 'hidden',
+          }}>
+            <div aria-hidden="true" style={{
+              position: 'absolute', top: '-30%', left: '50%', transform: 'translateX(-50%)',
+              width: '80%', height: '70%',
+              background: 'radial-gradient(ellipse at center, rgba(212,242,92,0.16) 0%, transparent 70%)',
+            }} />
+            <div style={{ position: 'relative', textAlign: 'center' }}>
+              <div style={{
+                fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
+                color: 'var(--lime)', marginBottom: 16,
+              }}>
+                The platform that does it
+              </div>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4vw, 42px)', color: '#fff', lineHeight: 1 }}>Carelu</div>
+              <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.82)', marginTop: 16, lineHeight: 1.55, maxWidth: 300 }}>
+                Answers families, chases forms, verifies insurance, and books the assessment — first contact to admitted patient.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ================================================================
    ─── SECTIONS BELOW WERE BROUGHT IN FROM SESSION WORK ───
    ================================================================ */
@@ -3503,6 +3610,7 @@ export default function Landing() {
       {/* Session-work sections below — wrapped in .session-light to restore
           the cream/dark-green palette that these components expect. */}
       <div className="session-light">
+        <SystemsOfRecord />
         <MuralReveal />
         <Impact />
         <HowCarelu />

@@ -803,6 +803,10 @@ nav .nav-link:first-child { margin-left: 12px; }
 
   /* Decorative doodles next to section headlines — scale down, don't push text */
   .h2-doodle { width: clamp(48px, 14vw, 92px) !important; margin: -10px 0 -10px 8px !important; }
+
+  /* Systems-of-record comparison: stack the two cards, arrow points down */
+  .sor-band { grid-template-columns: 1fr !important; }
+  .sor-arrow svg { transform: rotate(90deg); }
 }
 
 /* Tall portrait phones: keep the laurels in-flow just below the CTAs (not pinned
