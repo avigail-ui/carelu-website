@@ -268,6 +268,14 @@ function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [progress, setProgress] = useState(0);
 
+  // Preload the full-color logo variants so the hover swap is instant
+  useEffect(() => {
+    allLogos.forEach((l) => {
+      const c = (l as { color?: string }).color;
+      if (c) { const img = new Image(); img.src = c; }
+    });
+  }, []);
+
   // Scroll-driven video (only first VIDEO_CAP of duration plays) + staged content reveal
   const VIDEO_CAP = 0.35;
   useEffect(() => {
@@ -490,12 +498,17 @@ function Hero() {
                         cursor: 'pointer',
                       }}
                       onMouseEnter={(e) => {
+                        // Swap to the full-color original (the resting image has its
+                        // wordmark baked to near-black, so it has no color to reveal)
+                        const c = (logo as { color?: string }).color;
+                        if (c) e.currentTarget.src = c;
                         e.currentTarget.style.opacity = '1';
                         e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)';
                         e.currentTarget.style.mixBlendMode = 'normal';
                         e.currentTarget.style.transform = 'scale(1.06)';
                       }}
                       onMouseLeave={(e) => {
+                        e.currentTarget.src = logo.src;
                         e.currentTarget.style.opacity = '0.78';
                         e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.1)';
                         e.currentTarget.style.mixBlendMode = 'multiply';
@@ -606,18 +619,18 @@ function DemoVideo() {
 // darkened to near-black (icon shade untouched) so the company NAMES read clearly
 // through the greyscale filter. Originals stay for the full-color testimonial nav.
 const allLogos = [
-  { src: '/logos/dark/strive-aba.png', alt: 'Strive ABA' },
+  { src: '/logos/dark/strive-aba.png', alt: 'Strive ABA', color: '/logos/strive-aba.png' },
   { src: '/logos/treetop.png', alt: 'The Treetop', h: 44 },
-  { src: '/logos/dark/golden-care-full.png', alt: 'Golden Care' },
-  { src: '/logos/dark/grateful-care.png', alt: 'Grateful Care' },
+  { src: '/logos/dark/golden-care-full.png', alt: 'Golden Care', color: '/logos/golden-care-full.png' },
+  { src: '/logos/dark/grateful-care.png', alt: 'Grateful Care', color: '/logos/grateful-care.avif' },
   { src: '/logos/advanceable-aba.svg', alt: 'Advanceable ABA', smaller: true },
-  { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services', h: 30 },
-  { src: '/logos/dark/supportive-care.png', alt: 'Supportive Care' },
-  { src: '/logos/dark/cross-river.png', alt: 'Cross River' },
-  { src: '/logos/dark/totalcare.png', alt: 'Total Care' },
-  { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52 },
-  { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA' },
-  { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true },
+  { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services', h: 30, color: '/logos/inbloom.png' },
+  { src: '/logos/dark/totalcare.png', alt: 'Total Care', color: '/logos/totalcare.webp' },
+  { src: '/logos/dark/cross-river.png', alt: 'Cross River', color: '/logos/cross-river.png' },
+  { src: '/logos/dark/supportive-care.png', alt: 'Supportive Care', color: '/logos/supportive-care.png' },
+  { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52, color: '/logos/above-beyond.webp' },
+  { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA', h: 46, color: '/logos/blossom-aba.webp' },
+  { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true, color: '/logos/link-color.png' },
 ];
 
 
