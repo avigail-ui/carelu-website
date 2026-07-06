@@ -482,11 +482,8 @@ function Hero() {
                       style={{
                         height: (logo as { h?: number }).h ?? ((logo as { smaller?: boolean }).smaller ? 34 : 40),
                         width: 'auto', objectFit: 'contain',
-                        opacity: 0.82, flexShrink: 0,
-                        // Quiet near-monochrome: a whisper of brand color remains for
-                        // recognition, but the strip stays calm so the hero headline/CTA
-                        // keep the eye. Hover lifts to full color for the curious.
-                        filter: 'saturate(0.32) brightness(0.9) contrast(1.05)',
+                        opacity: 0.78, flexShrink: 0,
+                        filter: 'grayscale(100%) brightness(0.55) contrast(1.1)',
                         mixBlendMode: 'multiply',
                         transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), mix-blend-mode 0.2s ease',
                         willChange: 'transform, filter',
@@ -494,13 +491,13 @@ function Hero() {
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.opacity = '1';
-                        e.currentTarget.style.filter = 'saturate(1) brightness(1) contrast(1)';
+                        e.currentTarget.style.filter = 'grayscale(0%) brightness(1) contrast(1)';
                         e.currentTarget.style.mixBlendMode = 'normal';
                         e.currentTarget.style.transform = 'scale(1.06)';
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.opacity = '0.82';
-                        e.currentTarget.style.filter = 'saturate(0.32) brightness(0.9) contrast(1.05)';
+                        e.currentTarget.style.opacity = '0.78';
+                        e.currentTarget.style.filter = 'grayscale(100%) brightness(0.55) contrast(1.1)';
                         e.currentTarget.style.mixBlendMode = 'multiply';
                         e.currentTarget.style.transform = 'scale(1)';
                       }}
