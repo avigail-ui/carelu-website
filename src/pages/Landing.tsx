@@ -3413,8 +3413,8 @@ function MuralReveal() {
   // Scroll deadzone: stack stays closed until the user has scrolled past START_THRESHOLD.
   // Below the threshold → animProgress = 0 → only "This Is What We Do" label is visible.
   // Mobile gets a much shorter runway — long dead-scroll feels broken on a phone.
-  const START_THRESHOLD = isMobile ? 0.12 : 0.45;
-  const END_THRESHOLD = isMobile ? 0.6 : 0.72;
+  const START_THRESHOLD = isMobile ? 0.1 : 0.2;
+  const END_THRESHOLD = isMobile ? 0.82 : 0.88;
   const animProgress = Math.max(0, Math.min(1, (progress - START_THRESHOLD) / (END_THRESHOLD - START_THRESHOLD)));
 
   // Start CLOSED (only top plate + "This Is What We Do" visible),
@@ -3440,12 +3440,13 @@ function MuralReveal() {
     }}>
       <div ref={sectionRef} style={{
         // Scroll tracker — sticky inner lives here. Animation progress is tied to this height.
-        height: isMobile ? '160svh' : '220vh', position: 'relative',
+        // Kept tight so almost all the scroll drives the reveal (little dead space).
+        height: isMobile ? '150svh' : '165vh', position: 'relative',
       }}>
       <div style={{
         position: 'sticky', top: 0,
         height: '100svh',
-        display: 'flex', flexDirection: 'column', justifyContent: 'flex-start',
+        display: 'flex', flexDirection: 'column', justifyContent: 'center',
         paddingTop: 24, paddingBottom: 24,
         overflow: 'hidden',
       }}>
