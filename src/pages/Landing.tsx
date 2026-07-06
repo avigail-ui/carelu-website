@@ -602,18 +602,22 @@ function DemoVideo() {
 /* ================================================================
    LOGO BAR
    ================================================================ */
+// Above-the-fold strip uses the `dark/` variants — same logos with the wordmark
+// darkened to near-black (icon shade untouched) so the company NAMES read clearly
+// through the greyscale filter. Originals stay for the full-color testimonial nav.
 const allLogos = [
-  { src: '/logos/strive-aba.png', alt: 'Strive ABA' },
+  { src: '/logos/dark/strive-aba.png', alt: 'Strive ABA' },
   { src: '/logos/treetop.png', alt: 'The Treetop', h: 44 },
-  { src: '/logos/golden-care-full.png', alt: 'Golden Care' },
-  { src: '/logos/grateful-care.avif', alt: 'Grateful Care' },
+  { src: '/logos/dark/golden-care-full.png', alt: 'Golden Care' },
+  { src: '/logos/dark/grateful-care.png', alt: 'Grateful Care' },
   { src: '/logos/advanceable-aba.svg', alt: 'Advanceable ABA', smaller: true },
-  { src: '/logos/supportive-care.png', alt: 'Supportive Care' },
-  { src: '/logos/cross-river.png', alt: 'Cross River' },
-  { src: '/logos/totalcare.webp', alt: 'Total Care' },
-  { src: '/logos/above-beyond.webp', alt: 'Above & Beyond', h: 52 },
-  { src: '/logos/blossom-aba.webp', alt: 'Blossom ABA' },
-  { src: '/logos/link-color.png', alt: 'Links ABA', smaller: true },
+  { src: '/logos/dark/supportive-care.png', alt: 'Supportive Care' },
+  { src: '/logos/dark/cross-river.png', alt: 'Cross River' },
+  { src: '/logos/dark/totalcare.png', alt: 'Total Care' },
+  { src: '/logos/dark/above-beyond.png', alt: 'Above & Beyond', h: 52 },
+  { src: '/logos/dark/inbloom.png', alt: 'InBloom Autism Services' },
+  { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA' },
+  { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true },
 ];
 
 
@@ -2278,7 +2282,7 @@ function Outcomes() {
       bullets: [
         'Candidates apply through the same natural conversation families do — no clunky portals.',
         'Credentials, availability, and screening questions collected up front.',
-        'Thousands of clinicians brought to providers, alongside their families.',
+        'Thousands of clinicians brought to providers.',
       ],
     },
   ];
@@ -3153,7 +3157,6 @@ function CtaFooter() {
             </span>
           </div>
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>© 2026 LeadTrap, Inc.</span>
             <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
             <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
             <a href="https://trust.delve.co/leadtrap" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
