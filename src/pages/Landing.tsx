@@ -1004,14 +1004,15 @@ function CareEnablement() {
             fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
             color: 'var(--green-900)', maxWidth: 760, margin: '0 auto',
           }}>
-            We&rsquo;ve run intake thousands of times &mdash; long enough to know your{' '}
-            <span style={{ fontStyle: 'italic' }}>system of record is killing your business.</span>
+            We&rsquo;ve run intake thousands of times &mdash; long enough to know your team
+            isn&rsquo;t losing families. <span style={{ fontStyle: 'italic' }}>Your system of record is.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 560, margin: '18px auto 0',
+            lineHeight: 1.6, maxWidth: 580, margin: '18px auto 0',
           }}>
-            It stores every family and waits for your team. The same intake, two ways:
+            Every tool you&rsquo;re juggling is one &mdash; built to store the work and wait for
+            a person. Here&rsquo;s the same intake, two ways:
           </p>
         </div>
 
