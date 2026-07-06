@@ -378,8 +378,8 @@ function Hero() {
 
             <h1 style={{
               fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 96px)',
-              fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.03em',
-              color: '#fff', maxWidth: 1000, margin: '0 auto',
+              fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.008em',
+              color: '#fff', maxWidth: 1080, margin: '0 auto',
               textShadow: '0 2px 30px rgba(0,0,0,0.35)',
               animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
             }}>
@@ -436,7 +436,7 @@ function Hero() {
 
             {/* Enterprise trust signals — one thin line of laurel award badges */}
             <div className="hero-laurels" style={{
-              marginTop: 26, display: 'flex', justifyContent: 'center', alignItems: 'center',
+              marginTop: 46, display: 'flex', justifyContent: 'center', alignItems: 'center',
               flexWrap: 'nowrap', gap: 'clamp(10px, 3.2vw, 44px)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
             }}>
