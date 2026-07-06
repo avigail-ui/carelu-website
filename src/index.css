@@ -818,11 +818,12 @@ nav .nav-link:first-child { margin-left: 12px; }
   .impact-head { flex-direction: column-reverse; }
   .impact-head .h2-doodle { margin: 0 0 10px !important; width: 64px !important; }
 
-  /* Testimonial — portrait stacks above the quote; logo selector collapses to arrows + dots */
+  /* Testimonial — portrait stacks above the quote; client logos stay as the
+     tappable nav (wrap to as many rows as needed), so mobile keeps the brand proof */
   .stories-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
   .stories-photo { width: 200px !important; justify-self: center !important; order: -1; }
-  .stories-logos { display: none !important; }
-  .stories-mobile-nav { display: flex !important; }
+  .stories-logos { display: flex !important; gap: 14px 22px !important; margin-top: 26px !important; padding: 0 6px; }
+  .stories-mobile-nav { display: none !important; }
 
   /* Proof stats under testimonial — vertical rows with top rules */
   .proof-stats { grid-template-columns: 1fr !important; }

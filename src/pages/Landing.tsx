@@ -604,8 +604,10 @@ function DemoVideo() {
    ================================================================ */
 const allLogos = [
   { src: '/logos/strive-aba.png', alt: 'Strive ABA' },
+  { src: '/logos/treetop.png', alt: 'The Treetop', smaller: true },
   { src: '/logos/golden-care-full.png', alt: 'Golden Care' },
   { src: '/logos/grateful-care.avif', alt: 'Grateful Care' },
+  { src: '/logos/advanceable-aba.svg', alt: 'Advanceable ABA', smaller: true },
   { src: '/logos/supportive-care.png', alt: 'Supportive Care' },
   { src: '/logos/cross-river.png', alt: 'Cross River' },
   { src: '/logos/totalcare.webp', alt: 'Total Care' },
@@ -1136,8 +1138,8 @@ function CustomerStories() {
                   <div key={s.company} aria-hidden={i !== activeIdx} style={{
                     gridArea: '1 / 1',
                     opacity: i === activeIdx ? 1 : 0,
-                    transform: i === activeIdx ? 'none' : 'translateY(12px)',
-                    transition: 'opacity 0.8s ease, transform 0.8s var(--ease-dramatic)',
+                    transform: i === activeIdx ? 'none' : 'translateY(6px)',
+                    transition: 'opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
                     pointerEvents: i === activeIdx ? 'auto' : 'none',
                   }}>
                     <blockquote style={{
@@ -1194,7 +1196,7 @@ function CustomerStories() {
                     width: '100%', height: '100%', objectFit: 'cover',
                     objectPosition: 'center top', display: 'block',
                     opacity: i === activeIdx ? 1 : 0,
-                    transition: 'opacity 0.8s ease',
+                    transition: 'opacity 1s cubic-bezier(0.4, 0, 0.2, 1)',
                   }}
                 />
               ))}
