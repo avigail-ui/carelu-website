@@ -8,7 +8,7 @@
 /* Care-enablement "seam" animation — a family dot slips through a gap (problem),
    then flows the whole unbroken line (heal). */
 .seam-dot {
-  position: absolute; top: 42%; width: 9px; height: 9px; border-radius: 50%;
+  position: absolute; top: 45%; width: 9px; height: 9px; border-radius: 50%;
   will-change: left, transform, opacity; pointer-events: none;
 }
 .seam-slip {

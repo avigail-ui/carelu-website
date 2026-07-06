@@ -954,23 +954,12 @@ function Problem() {
   );
 }
 
-/* ── CARE ENABLEMENT ── The story of what we learned: families are lost in the
-   seams between tools. A press crushes the systems of record together and Carelu
-   emerges — the care enablement platform. */
-const SOR_LOGOS = [
-  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
-  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
-  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
-  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
-  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
-  { src: '/logos/sor/notion.svg', name: 'Notion' },
-];
-
+/* ── THE DIFFERENCE ── The quiet turn from the Problem section. One statement of
+   the category, carried by design: a journey line from first hello to in care.
+   Broken, a family slips through a seam; healed, it flows all the way. The name
+   "Carelu" is intentionally held back for the "Introducing Carelu" reveal below. */
 function CareEnablement() {
   const stageRef = useRef<HTMLDivElement>(null);
-  // idle → a dashed, seamy path through your tools; problem → a family slips
-  // through a gap and is lost; heal → the line closes into one unbroken lime
-  // stroke and a family flows all the way through as Carelu.
   const [phase, setPhase] = useState<'idle' | 'problem' | 'heal'>('idle');
 
   useEffect(() => {
@@ -984,114 +973,57 @@ function CareEnablement() {
       if (e.isIntersecting) {
         if (reduce) { setPhase('heal'); return; }
         setPhase('problem');
-        timers.push(setTimeout(() => setPhase('heal'), 2300));
+        timers.push(setTimeout(() => setPhase('heal'), 2100));
       } else {
         setPhase('idle');
       }
-    }, { threshold: 0.5 });
+    }, { threshold: 0.55 });
     obs.observe(el);
     return () => { obs.disconnect(); clear(); };
   }, []);
 
   const heal = phase === 'heal';
+  const label: React.CSSProperties = {
+    position: 'absolute', top: '60%', fontSize: 11, fontWeight: 600,
+    letterSpacing: '0.14em', textTransform: 'uppercase', whiteSpace: 'nowrap',
+  };
 
   return (
-    <section style={{
-      background: '#fff',
-      paddingTop: 'clamp(64px, 9vw, 120px)', paddingBottom: 'clamp(64px, 9vw, 120px)',
-    }}>
-      <div style={{ ...W, maxWidth: 880 }}>
-        {/* Header — the lesson, tight. The line below does the showing. */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(44px, 6vw, 72px)' }}>
-          <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
+    <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)' }}>
+      <div style={{ ...W, maxWidth: 820 }}>
+        {/* One statement — the category, defined by contrast. Design does the rest. */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(52px, 7vw, 96px)' }}>
+          <div className="rv"><Pill>The difference</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 50px)',
-            fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
-            color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 46px)',
+            fontWeight: 400, lineHeight: 1.18, letterSpacing: '-0.02em',
+            maxWidth: 720, margin: '0 auto',
           }}>
-            After thousands of intakes, we learned the losses aren&rsquo;t clinical. They&rsquo;re{' '}
-            <span style={{ fontStyle: 'italic' }}>operational.</span>
+            <span style={{ display: 'block', color: 'var(--gray-500)' }}>A system of record stores the work.</span>
+            <span style={{ display: 'block', color: 'var(--green-900)' }}>
+              A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it.
+            </span>
           </h2>
-          <p className="rv-scale d2" style={{
-            fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 600, margin: '20px auto 0',
-          }}>
-            A form never chased, a call never returned, an eligibility check left for a week &mdash;
-            and a provider down the street answers first.
-          </p>
         </div>
 
-        {/* The seam → seamless line */}
-        <div ref={stageRef} className="seam-stage rv-scale d3" style={{
-          position: 'relative', maxWidth: 600, height: 200, margin: '0 auto',
-        }}>
-          {/* Dashed, seamy path through the stack */}
-          <div style={{
-            position: 'absolute', left: '1%', right: '1%', top: '42%',
-            borderTop: '1.5px dashed rgba(44,62,45,0.3)',
-            opacity: heal ? 0 : 1, transition: 'opacity 0.55s ease',
-          }} />
-          {/* The unbroken line, drawn on heal */}
-          <div style={{
-            position: 'absolute', left: '1%', right: '1%', top: '42%', height: 2,
-            background: 'var(--lime)', transformOrigin: 'left center',
-            transform: heal ? 'scaleX(1)' : 'scaleX(0)',
-            transition: 'transform 1.1s cubic-bezier(0.6, 0, 0.2, 1) 0.1s',
-            boxShadow: heal ? '0 0 12px rgba(212,242,92,0.55)' : 'none',
-          }} />
-          {/* Endpoint — admitted */}
-          <div style={{
-            position: 'absolute', right: '1%', top: '42%', width: 14, height: 14,
-            marginTop: -7, marginRight: -7, borderRadius: '50%',
-            background: heal ? 'var(--lime)' : 'transparent',
-            border: heal ? 'none' : '1.5px dashed rgba(44,62,45,0.3)',
-            transform: heal ? 'scale(1)' : 'scale(0.7)',
-            boxShadow: heal ? '0 0 0 6px rgba(212,242,92,0.22)' : 'none',
-            transition: 'all 0.5s ease 0.9s',
-          }} />
-          {/* Your tools, sitting on the seams */}
-          {SOR_LOGOS.map((l, i) => {
-            const left = 12 + i * (76 / 5);
-            return (
-              <img key={l.name} src={l.src} alt="" style={{
-                position: 'absolute', left: `${left}%`, top: '42%',
-                width: 26, height: 26, marginTop: -13, marginLeft: -13, objectFit: 'contain',
-                filter: 'grayscale(1)', opacity: heal ? 0 : 0.4,
-                transform: heal ? 'translateY(-16px)' : 'none',
-                transition: 'opacity 0.6s ease, transform 0.7s cubic-bezier(0.6, 0, 0.2, 1)',
-                transitionDelay: `${i * 0.03}s`,
-              }} />
-            );
-          })}
-          {/* Families slipping through the gaps */}
-          {phase === 'problem' && (
-            <>
-              <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '34%', animationDelay: '0.15s' } as React.CSSProperties} />
-              <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '62%', animationDelay: '0.75s' } as React.CSSProperties} />
-            </>
-          )}
-          {/* A family flows all the way through */}
+        {/* The journey — first hello to in care */}
+        <div ref={stageRef} className="seam-stage rv-scale d2" style={{ position: 'relative', maxWidth: 560, height: 130, margin: '0 auto' }}>
+          {/* broken dashed path with a seam near the middle */}
+          <div style={{ position: 'absolute', left: '3%', width: '42%', top: '45%', borderTop: '1.5px dashed rgba(44,62,45,0.32)', opacity: heal ? 0 : 1, transition: 'opacity 0.5s ease' }} />
+          <div style={{ position: 'absolute', right: '3%', width: '42%', top: '45%', borderTop: '1.5px dashed rgba(44,62,45,0.32)', opacity: heal ? 0 : 1, transition: 'opacity 0.5s ease' }} />
+          {/* the unbroken line */}
+          <div style={{ position: 'absolute', left: '3%', right: '3%', top: '45%', height: 2, background: 'var(--lime)', transformOrigin: 'left center', transform: heal ? 'scaleX(1)' : 'scaleX(0)', transition: 'transform 1.05s cubic-bezier(0.6,0,0.2,1) 0.1s', boxShadow: heal ? '0 0 12px rgba(212,242,92,0.55)' : 'none' }} />
+          {/* start node */}
+          <div style={{ position: 'absolute', left: '3%', top: '45%', width: 10, height: 10, marginTop: -5, marginLeft: -5, borderRadius: '50%', background: 'rgba(44,62,45,0.42)' }} />
+          <div style={{ ...label, left: '3%', transform: 'translateX(-1px)', color: 'var(--gray-500)' }}>First hello</div>
+          {/* end node — in care */}
+          <div style={{ position: 'absolute', right: '3%', top: '45%', width: 14, height: 14, marginTop: -7, marginRight: -7, borderRadius: '50%', background: heal ? 'var(--lime)' : 'transparent', border: heal ? 'none' : '1.5px dashed rgba(44,62,45,0.32)', transform: heal ? 'scale(1)' : 'scale(0.7)', boxShadow: heal ? '0 0 0 6px rgba(212,242,92,0.22)' : 'none', transition: 'all 0.5s ease 0.85s' }} />
+          <div style={{ ...label, right: '3%', textAlign: 'right', transform: 'translateX(1px)', color: heal ? 'var(--green-900)' : 'var(--gray-500)', transition: 'color 0.5s ease 0.85s' }}>In care</div>
+          {/* a family slips through the seam */}
+          {phase === 'problem' && <span className="seam-dot seam-slip" style={{ ['--gap' as string]: '50%' } as React.CSSProperties} />}
+          {/* a family flows all the way through */}
           {heal && <span className="seam-dot seam-flow" />}
-          {/* Carelu emerges as the line */}
-          <div style={{
-            position: 'absolute', left: 0, right: 0, top: '60%', textAlign: 'center',
-            opacity: heal ? 1 : 0, transform: heal ? 'translateY(0)' : 'translateY(8px)',
-            transition: 'opacity 0.7s ease 0.5s, transform 0.7s ease 0.5s',
-          }}>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', color: 'var(--green-900)' }}>Carelu</div>
-          </div>
         </div>
-
-        {/* What a care enablement platform is — one line */}
-        <p className="rv" style={{
-          textAlign: 'center', maxWidth: 620, margin: 'clamp(44px, 6vw, 64px) auto 0',
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(19px, 2.2vw, 27px)',
-          lineHeight: 1.4, letterSpacing: '-0.01em', color: 'var(--green-900)',
-        }}>
-          The systems you juggle only store the work, and wait. A{' '}
-          <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it &mdash;
-          answering, chasing, verifying, booking &mdash; so no family waits, and none slip through.
-        </p>
       </div>
     </section>
   );
