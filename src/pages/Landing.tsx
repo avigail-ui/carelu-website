@@ -480,13 +480,13 @@ function Hero() {
                       src={logo.src}
                       alt={logo.alt}
                       style={{
-                        height: (logo as { smaller?: boolean }).smaller ? 34 : 40,
+                        height: (logo as { h?: number }).h ?? ((logo as { smaller?: boolean }).smaller ? 34 : 40),
                         width: 'auto', objectFit: 'contain',
-                        opacity: 0.92, flexShrink: 0,
-                        // Tamed color: recognizable brands stay in color (recognition sells
-                        // in a niche vertical), lightly desaturated + multiply over the cream
-                        // so 11 mismatched palettes still read as one cohesive row.
-                        filter: 'saturate(0.88) contrast(1.02)',
+                        opacity: 0.82, flexShrink: 0,
+                        // Quiet near-monochrome: a whisper of brand color remains for
+                        // recognition, but the strip stays calm so the hero headline/CTA
+                        // keep the eye. Hover lifts to full color for the curious.
+                        filter: 'saturate(0.32) brightness(0.9) contrast(1.05)',
                         mixBlendMode: 'multiply',
                         transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), mix-blend-mode 0.2s ease',
                         willChange: 'transform, filter',
@@ -494,13 +494,13 @@ function Hero() {
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.opacity = '1';
-                        e.currentTarget.style.filter = 'saturate(1) contrast(1)';
+                        e.currentTarget.style.filter = 'saturate(1) brightness(1) contrast(1)';
                         e.currentTarget.style.mixBlendMode = 'normal';
                         e.currentTarget.style.transform = 'scale(1.06)';
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.opacity = '0.92';
-                        e.currentTarget.style.filter = 'saturate(0.88) contrast(1.02)';
+                        e.currentTarget.style.opacity = '0.82';
+                        e.currentTarget.style.filter = 'saturate(0.32) brightness(0.9) contrast(1.05)';
                         e.currentTarget.style.mixBlendMode = 'multiply';
                         e.currentTarget.style.transform = 'scale(1)';
                       }}
@@ -607,14 +607,14 @@ function DemoVideo() {
    ================================================================ */
 const allLogos = [
   { src: '/logos/strive-aba.png', alt: 'Strive ABA' },
-  { src: '/logos/treetop.png', alt: 'The Treetop', smaller: true },
+  { src: '/logos/treetop.png', alt: 'The Treetop', h: 44 },
   { src: '/logos/golden-care-full.png', alt: 'Golden Care' },
   { src: '/logos/grateful-care.avif', alt: 'Grateful Care' },
   { src: '/logos/advanceable-aba.svg', alt: 'Advanceable ABA', smaller: true },
   { src: '/logos/supportive-care.png', alt: 'Supportive Care' },
   { src: '/logos/cross-river.png', alt: 'Cross River' },
   { src: '/logos/totalcare.webp', alt: 'Total Care' },
-  { src: '/logos/above-beyond.webp', alt: 'Above & Beyond' },
+  { src: '/logos/above-beyond.webp', alt: 'Above & Beyond', h: 52 },
   { src: '/logos/blossom-aba.webp', alt: 'Blossom ABA' },
   { src: '/logos/link-color.png', alt: 'Links ABA', smaller: true },
 ];
