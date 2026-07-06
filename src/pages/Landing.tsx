@@ -955,8 +955,9 @@ function Problem() {
   );
 }
 
-/* ── SYSTEMS OF RECORD ── The tools you juggle just store the work; Carelu does it.
-   Greyed brand marks (systems of record) → an arrow → Carelu (the system of action). */
+/* ── CARE ENABLEMENT ── The story of what we learned: families are lost in the
+   seams between tools. A press crushes the systems of record together and Carelu
+   emerges — the care enablement platform. */
 const SOR_LOGOS = [
   { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
   { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
@@ -966,96 +967,160 @@ const SOR_LOGOS = [
   { src: '/logos/sor/notion.svg', name: 'Notion' },
 ];
 
-function SystemsOfRecord() {
+// Scattered start positions (px offsets from centre) for the logos in the press
+const PRESS_SCATTER = [
+  { x: -140, y: -36, r: -9 },
+  { x: -72, y: 42, r: 7 },
+  { x: -6, y: -52, r: -4 },
+  { x: 70, y: 46, r: 8 },
+  { x: 134, y: -28, r: -7 },
+  { x: 44, y: 60, r: 5 },
+];
+
+function CareEnablement() {
+  const chamberRef = useRef<HTMLDivElement>(null);
+  // idle → the systems of record float scattered; crush → the press slams them
+  // together (dark plates, lime seam); bloom → plates retract and Carelu emerges.
+  const [phase, setPhase] = useState<'idle' | 'crush' | 'bloom'>('idle');
+
+  useEffect(() => {
+    const el = chamberRef.current;
+    if (!el) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let timers: ReturnType<typeof setTimeout>[] = [];
+    const clear = () => { timers.forEach(clearTimeout); timers = []; };
+    const obs = new IntersectionObserver(([e]) => {
+      clear();
+      if (e.isIntersecting) {
+        if (reduce) { setPhase('bloom'); return; }
+        setPhase('idle'); // show the scattered mess first
+        timers.push(setTimeout(() => setPhase('crush'), 450));
+        timers.push(setTimeout(() => setPhase('bloom'), 1300));
+      } else {
+        setPhase('idle');
+      }
+    }, { threshold: 0.55 });
+    obs.observe(el);
+    return () => { obs.disconnect(); clear(); };
+  }, []);
+
+  const crushed = phase !== 'idle';
+  const bloomed = phase === 'bloom';
+
   return (
     <section style={{
       background: '#fff',
       paddingTop: 'clamp(64px, 9vw, 120px)', paddingBottom: 'clamp(64px, 9vw, 120px)',
     }}>
-      <div style={{ ...W, maxWidth: 1080 }}>
-        {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vw, 60px)' }}>
-          <div className="rv"><Pill>The difference</Pill></div>
+      <div style={{ ...W, maxWidth: 960 }}>
+        {/* Header — the unique lesson, framed as the problem */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(38px, 5vw, 58px)' }}>
+          <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(31px, 4.6vw, 54px)',
-            fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em',
-            color: 'var(--green-900)', maxWidth: 800, margin: '0 auto',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(31px, 4.6vw, 52px)',
+            fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em',
+            color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
           }}>
-            Stop managing systems of record.{' '}
-            <span style={{ fontStyle: 'italic' }}>Start getting results.</span>
+            Families don&rsquo;t fall through the cracks.{' '}
+            <span style={{ fontStyle: 'italic' }}>They fall through the seams between your tools.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.5vw, 19px)', color: 'var(--gray-500)',
-            lineHeight: 1.65, maxWidth: 640, margin: '20px auto 0',
+            lineHeight: 1.65, maxWidth: 660, margin: '20px auto 0',
           }}>
-            HubSpot, Salesforce, and the rest store your intake — they don&rsquo;t run it.
-            Your team still chases every form, every callback, every auth. Carelu is the
-            platform that actually does the work, then syncs the record for you.
+            After thousands of intakes, we learned the losses aren&rsquo;t clinical — they&rsquo;re
+            operational. A form never chased, a call never returned, an eligibility check left for a
+            week. Every tool you add is one more seam for a family to slip through.
           </p>
         </div>
 
-        {/* Comparison band: systems of record → Carelu */}
-        <div className="sor-band rv-scale d3" style={{
-          display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'stretch',
-          gap: 'clamp(14px, 2.6vw, 30px)',
+        {/* The press — systems of record crushed together, Carelu emerges */}
+        <div ref={chamberRef} className="rv-scale d3" style={{
+          position: 'relative', maxWidth: 620, height: 'clamp(280px, 60vw, 330px)',
+          margin: '0 auto', borderRadius: 26, overflow: 'hidden',
+          background: 'radial-gradient(120% 80% at 50% 45%, #fbfaf6 0%, #efeadd 100%)',
+          border: '1px solid rgba(0,0,0,0.08)',
+          boxShadow: 'inset 0 2px 22px rgba(0,0,0,0.05)',
         }}>
-          {/* Systems of record — greyed, passive */}
+          {/* Scattered systems of record */}
+          {SOR_LOGOS.map((l, i) => {
+            const s = PRESS_SCATTER[i];
+            return (
+              <img key={l.name} src={l.src} alt="" style={{
+                position: 'absolute', left: '50%', top: '50%',
+                width: 34, height: 34, objectFit: 'contain',
+                filter: 'grayscale(1)', opacity: crushed ? 0 : 0.42,
+                transform: crushed
+                  ? 'translate(-50%, -50%) scaleX(0.4) scaleY(0.05)'
+                  : `translate(calc(-50% + ${s.x}px), calc(-50% + ${s.y}px)) rotate(${s.r}deg)`,
+                transition: 'transform 0.75s cubic-bezier(0.6, 0, 0.2, 1), opacity 0.5s ease',
+                transitionDelay: crushed ? '0s' : `${i * 0.04}s`,
+              }} />
+            );
+          })}
+
+          {/* Press plates — slam shut on crush (lime seam where they meet), retract on bloom */}
           <div style={{
-            background: 'var(--bone)', border: '1px solid rgba(0,0,0,0.07)',
-            borderRadius: 22, padding: 'clamp(22px, 3vw, 34px) clamp(18px, 2.4vw, 30px)',
+            position: 'absolute', left: 0, right: 0, top: 0, height: '50%',
+            background: 'linear-gradient(180deg, #33472f 0%, #22301e 100%)',
+            transform: crushed && !bloomed ? 'translateY(0)' : 'translateY(-110%)',
+            transition: 'transform 0.55s cubic-bezier(0.7, 0, 0.3, 1)',
+            boxShadow: '0 8px 20px rgba(0,0,0,0.28)',
           }}>
-            <div style={{
-              fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
-              color: 'var(--gray-500)', marginBottom: 22, textAlign: 'center',
-            }}>
-              Systems of record
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px 10px' }}>
-              {SOR_LOGOS.map((l) => (
-                <div key={l.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-                  <img src={l.src} alt={l.name} style={{
-                    width: 26, height: 26, objectFit: 'contain',
-                    opacity: 0.38, filter: 'grayscale(1)',
-                  }} />
-                  <span style={{ fontSize: 11.5, fontWeight: 600, color: 'var(--gray-500)', opacity: 0.7 }}>{l.name}</span>
-                </div>
-              ))}
-            </div>
-            <div style={{ fontSize: 13.5, color: 'var(--gray-500)', textAlign: 'center', marginTop: 24, lineHeight: 1.55 }}>
-              They hold the record.<br />Your team still does the work.
-            </div>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 4, background: 'var(--lime)', opacity: 0.75 }} />
           </div>
-
-          {/* Arrow */}
-          <div className="sor-arrow" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--green-900)', opacity: 0.55 }}>
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
-          </div>
-
-          {/* Carelu — the system of action */}
           <div style={{
-            background: 'linear-gradient(158deg, #22301e 0%, #2e4130 100%)',
-            borderRadius: 22, padding: 'clamp(26px, 3vw, 36px)',
-            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
-            position: 'relative', overflow: 'hidden',
+            position: 'absolute', left: 0, right: 0, bottom: 0, height: '50%',
+            background: 'linear-gradient(0deg, #33472f 0%, #22301e 100%)',
+            transform: crushed && !bloomed ? 'translateY(0)' : 'translateY(110%)',
+            transition: 'transform 0.55s cubic-bezier(0.7, 0, 0.3, 1)',
+            boxShadow: '0 -8px 20px rgba(0,0,0,0.28)',
+          }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--lime)', opacity: 0.75 }} />
+          </div>
+
+          {/* Carelu blooms out of the seam */}
+          <div style={{
+            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            opacity: bloomed ? 1 : 0,
+            transform: bloomed ? 'scale(1)' : 'scale(0.62)',
+            transition: 'opacity 0.7s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)',
+            transitionDelay: bloomed ? '0.08s' : '0s',
           }}>
             <div aria-hidden="true" style={{
-              position: 'absolute', top: '-30%', left: '50%', transform: 'translateX(-50%)',
-              width: '80%', height: '70%',
-              background: 'radial-gradient(ellipse at center, rgba(212,242,92,0.16) 0%, transparent 70%)',
+              position: 'absolute', width: 300, height: 190,
+              background: 'radial-gradient(ellipse at center, rgba(212,242,92,0.5) 0%, transparent 70%)',
+              filter: 'blur(8px)',
             }} />
-            <div style={{ position: 'relative', textAlign: 'center' }}>
-              <div style={{
-                fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
-                color: 'var(--lime)', marginBottom: 16,
-              }}>
-                The platform that does it
-              </div>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4vw, 42px)', color: '#fff', lineHeight: 1 }}>Carelu</div>
-              <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.82)', marginTop: 16, lineHeight: 1.55, maxWidth: 300 }}>
-                Answers families, chases forms, verifies insurance, and books the assessment — first contact to admitted patient.
-              </div>
-            </div>
+            <div style={{
+              position: 'relative', fontFamily: 'var(--font-display)',
+              fontSize: 'clamp(42px, 6vw, 62px)', color: 'var(--green-900)', letterSpacing: '-0.01em',
+            }}>Carelu</div>
           </div>
+        </div>
+
+        {/* What a care enablement platform is */}
+        <div className="rv" style={{ textAlign: 'center', maxWidth: 640, margin: 'clamp(38px, 5vw, 54px) auto 0' }}>
+          <div style={{
+            fontSize: 11, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase',
+            color: 'var(--gray-500)', marginBottom: 14,
+          }}>
+            So we built something new
+          </div>
+          <p style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 29px)',
+            lineHeight: 1.4, letterSpacing: '-0.01em', color: 'var(--green-900)', margin: 0,
+          }}>
+            A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> — not a system of
+            record that stores the work and waits, but the layer that actually does it.
+          </p>
+          <p style={{
+            fontSize: 'clamp(15px, 1.4vw, 17px)', color: 'var(--gray-500)',
+            lineHeight: 1.65, margin: '16px auto 0', maxWidth: 560,
+          }}>
+            It answers families, chases every form, verifies benefits, and books the assessment — so
+            every family who can receive care, does.
+          </p>
         </div>
       </div>
     </section>
@@ -3643,7 +3708,7 @@ export default function Landing() {
       {/* Session-work sections below — wrapped in .session-light to restore
           the cream/dark-green palette that these components expect. */}
       <div className="session-light">
-        <SystemsOfRecord />
+        <CareEnablement />
         <MuralReveal />
         <Impact />
         <HowCarelu />
