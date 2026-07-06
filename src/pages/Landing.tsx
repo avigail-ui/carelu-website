@@ -267,7 +267,30 @@ function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const marqueeRef = useRef<HTMLDivElement>(null);
+  const laurelsRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
+
+  // Center the trust laurels in the empty gap between the CTAs and the logo strip
+  // (they're pulled out of the centered flow and absolutely positioned). Measured
+  // in JS so "halfway" is exact on every viewport; re-runs after the entrance
+  // animations settle and on resize. Skipped on landscape phones (static in flow).
+  useEffect(() => {
+    const place = () => {
+      const lau = laurelsRef.current;
+      if (!lau || getComputedStyle(lau).position === 'static') return;
+      const parent = lau.offsetParent as HTMLElement | null;
+      const cta = document.querySelector('.hero-cta-row') as HTMLElement | null;
+      const logos = document.querySelector('.hero-logos') as HTMLElement | null;
+      if (!parent || !cta || !logos) return;
+      const pTop = parent.getBoundingClientRect().top;
+      const ctaB = cta.getBoundingClientRect().bottom - pTop;
+      const logosT = logos.getBoundingClientRect().top - pTop;
+      lau.style.top = `${Math.round((ctaB + logosT) / 2 - lau.offsetHeight / 2)}px`;
+    };
+    const timers = [250, 1200, 2400].map((d) => setTimeout(place, d));
+    window.addEventListener('resize', place);
+    return () => { timers.forEach(clearTimeout); window.removeEventListener('resize', place); };
+  }, []);
 
   // Preload the full-color logo variants so the hover swap is instant
   useEffect(() => {
@@ -455,9 +478,12 @@ function Hero() {
               </a>
             </div>
 
-            {/* Enterprise trust signals — one thin line of laurel award badges */}
-            <div className="hero-laurels" style={{
-              marginTop: 46, display: 'flex', justifyContent: 'center', alignItems: 'center',
+            {/* Enterprise trust signals — one thin line of laurel award badges.
+                Pulled out of the centered flow and JS-centered in the gap between
+                the CTAs and the logo strip (see the placement effect above). */}
+            <div ref={laurelsRef} className="hero-laurels" style={{
+              position: 'absolute', left: 0, right: 0, top: 0,
+              display: 'flex', justifyContent: 'center', alignItems: 'center',
               flexWrap: 'nowrap', gap: 'clamp(10px, 3.2vw, 44px)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both',
             }}>

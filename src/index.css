@@ -787,9 +787,11 @@ nav .nav-link:first-child { margin-left: 12px; }
   .hero-badge { font-size: 10px !important; padding: 7px 14px !important; letter-spacing: 0.1em !important; }
   .hero-cta-row { flex-direction: column; width: 100%; max-width: 250px; margin: 0 auto; gap: 10px !important; }
   .hero-cta-row > a { width: 100%; justify-content: center; padding: 13px 22px !important; font-size: 14px !important; }
-  .hero-center { padding-bottom: 120px !important; }
-  /* Laurel trust badges sit just below the CTA buttons on mobile */
-  .hero-laurels { margin-top: 26px !important; }
+  /* Top-align the hero content with a fixed top gap so the pill always clears the
+     nav on load — centering it in a dynamic svh let the block ride up under the nav
+     on first paint (before the mobile URL bar collapsed). */
+  .hero-center { justify-content: flex-start !important; padding-top: clamp(96px, 15vh, 132px) !important; padding-bottom: 120px !important; }
+  /* Laurels are absolutely positioned + JS-centered in the CTA→logos gap (see Hero) */
 
   /* Logo marquee — the 60s desktop sweep crawls on a narrow phone, so speed it up
      (kept a touch slower than the first pass, still lively) */
@@ -807,12 +809,6 @@ nav .nav-link:first-child { margin-left: 12px; }
   /* Systems-of-record comparison: stack the two cards, arrow points down */
   .sor-band { grid-template-columns: 1fr !important; }
   .sor-arrow svg { transform: rotate(90deg); }
-}
-
-/* Tall portrait phones: keep the laurels in-flow just below the CTAs (not pinned
-   to the lower sky) so they sit right under the buttons */
-@media (max-width: 768px) and (min-height: 750px) {
-  .hero-laurels { position: static !important; margin-top: 26px !important; }
 }
 
 /* Short viewports (landscape phones): 100svh can't fit the hero — let it flow
