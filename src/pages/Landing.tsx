@@ -1009,14 +1009,15 @@ function CareEnablement() {
             fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
             color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
           }}>
-            Every tool you add is one more{' '}
-            <span style={{ fontStyle: 'italic' }}>seam for a family to slip through.</span>
+            After thousands of intakes, we learned the losses aren&rsquo;t clinical. They&rsquo;re{' '}
+            <span style={{ fontStyle: 'italic' }}>operational.</span>
           </h2>
           <p className="rv-scale d2" style={{
-            fontSize: 'clamp(16px, 1.5vw, 19px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 520, margin: '18px auto 0',
+            fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
+            lineHeight: 1.6, maxWidth: 600, margin: '20px auto 0',
           }}>
-            The losses aren&rsquo;t clinical. They&rsquo;re operational.
+            A form never chased, a call never returned, an eligibility check left for a week &mdash;
+            and a provider down the street answers first.
           </p>
         </div>
 
@@ -1087,8 +1088,9 @@ function CareEnablement() {
           fontFamily: 'var(--font-display)', fontSize: 'clamp(19px, 2.2vw, 27px)',
           lineHeight: 1.4, letterSpacing: '-0.01em', color: 'var(--green-900)',
         }}>
-          A <span style={{ fontStyle: 'italic' }}>care enablement platform</span> doesn&rsquo;t store the
-          work and wait. It does it — one unbroken line from first hello to admitted.
+          The systems you juggle only store the work, and wait. A{' '}
+          <span style={{ fontStyle: 'italic' }}>care enablement platform</span> does it &mdash;
+          answering, chasing, verifying, booking &mdash; so no family waits, and none slip through.
         </p>
       </div>
     </section>
