@@ -793,6 +793,9 @@ nav .nav-link:first-child { margin-left: 12px; }
      up toward the nav. On short screens they stay in-flow (no overlap risk). */
   .hero-laurels { margin-top: 48px !important; }
 
+  /* Logo marquee — the 60s desktop sweep crawls on a narrow phone, so speed it up */
+  .marquee-track { animation-duration: 26s !important; }
+
   /* Decorative doodles next to section headlines — scale down, don't push text */
   .h2-doodle { width: clamp(48px, 14vw, 92px) !important; margin: -10px 0 -10px 8px !important; }
 }
