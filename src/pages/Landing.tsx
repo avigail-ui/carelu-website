@@ -753,8 +753,7 @@ function CareEnablement() {
   const carPts = CE_XS.map((x, i) => [x, yFor(CE_CARELU[i])] as [number, number]);
   const sorLine = smoothPath(sorPts);
   const carLine = smoothPath(carPts);
-  // the widening gap between the two lines is the loss — shade it directly
-  const lossWedge = `${carLine} ${smoothPath([...sorPts].reverse()).replace('M', 'L')} Z`;
+  const areaClose = ` L${CE_XS[4]},212 L${CE_XS[0]},212 Z`;
 
   return (
     <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)', overflow: 'hidden' }}>
@@ -786,10 +785,10 @@ function CareEnablement() {
           {/* legend */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 30, marginBottom: 16, flexWrap: 'wrap' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: 'var(--green-900)' }}>
-              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#3E7C3F' }} /> With Carelu
+              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#4A7C3F' }} /> Carelu
             </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: '#B4553E' }}>
-              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#C85A44' }} /> On a system of record
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: 'var(--gray-500)' }}>
+              <span style={{ width: 22, height: 3, borderRadius: 2, background: 'rgba(20,40,30,0.42)' }} /> System of record
             </span>
           </div>
 
@@ -801,13 +800,6 @@ function CareEnablement() {
           </div>
 
           <svg viewBox="0 0 700 250" width="100%" style={{ display: 'block', overflow: 'visible' }}>
-            <defs>
-              <linearGradient id="lossGrad" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stopColor="rgba(200,90,68,0.05)" />
-                <stop offset="1" stopColor="rgba(200,90,68,0.22)" />
-              </linearGradient>
-            </defs>
-
             {/* start anchor — both lines begin with every family who reaches out */}
             <text x={CE_XS[0] - 4} y={16} fontSize="11.5" fontWeight="600" fill="var(--gray-500)" textAnchor="start">Every family who reaches out</text>
 
@@ -815,21 +807,22 @@ function CareEnablement() {
             {CE_XS.map((x) => <line key={x} x1={x} y1={26} x2={x} y2={212} stroke="rgba(20,40,30,0.05)" strokeWidth="1" />)}
             <line x1={CE_XS[0]} y1={212} x2={CE_XS[4]} y2={212} stroke="rgba(20,40,30,0.1)" strokeWidth="1" />
 
-            {/* the widening gap between the lines = families lost */}
-            <path className="chart-area" d={lossWedge} fill="url(#lossGrad)" />
+            {/* lime fill under Carelu = families kept; the gap down to the grey line = families lost */}
+            <path className="chart-area" d={carLine + areaClose} fill="rgba(212,242,92,0.30)" />
+            <path className="chart-area" d={sorLine + areaClose} fill="rgba(30,40,32,0.06)" />
 
             {/* curves */}
-            <path className="chart-line line-s" d={sorLine} fill="none" stroke="#C85A44" strokeWidth="2.25" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
-            <path className="chart-line line-c" d={carLine} fill="none" stroke="#3E7C3F" strokeWidth="2.5" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+            <path className="chart-line line-s" d={sorLine} fill="none" stroke="rgba(20,40,30,0.42)" strokeWidth="1.9" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+            <path className="chart-line line-c" d={carLine} fill="none" stroke="#4A7C3F" strokeWidth="2.5" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
 
             {/* stage dots */}
-            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3} fill="#C85A44" />)}
-            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#3E7C3F" />)}
+            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#8A8F88" />)}
+            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#4A7C3F" />)}
 
             {/* endpoint outcomes — tied to each line's colour */}
             <g className="chart-anno">
               <text x={CE_XS[4] + 13} y={carPts[4][1] + 4} fontSize="13.5" fontWeight="700" fill="var(--green-900)">In care</text>
-              <text x={CE_XS[4] + 13} y={sorPts[4][1] + 4} fontSize="13.5" fontWeight="700" fontStyle="italic" fill="#B4553E">Lost</text>
+              <text x={CE_XS[4] + 13} y={sorPts[4][1] + 4} fontSize="13.5" fontStyle="italic" fill="var(--gray-500)">Lost</text>
             </g>
 
             {/* stage labels */}
