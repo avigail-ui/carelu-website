@@ -726,7 +726,7 @@ const RAIN_ICONS = [
 type RainBody = {
   n: string; size: number; left: number; drift: number;
   x: number; y: number; vx: number; vy: number;
-  angle: number; vangle: number; el: HTMLDivElement | null;
+  angle: number; vangle: number; settled: boolean; still: number; el: HTMLDivElement | null;
 };
 
 /* Physics sandbox: logos fall in, bounce, and can be grabbed + thrown */
@@ -735,6 +735,7 @@ function IconPlayground({ opacity }: { opacity: number }) {
   const bodiesRef = useRef<RainBody[]>([]);
   const dragRef = useRef<{ b: RainBody; offX: number; offY: number; vx: number; vy: number } | null>(null);
   const rafRef = useRef(0);
+  const startedRef = useRef(false);
 
   if (bodiesRef.current.length === 0) {
     // shrink tiles on narrow screens so the pile stays low instead of burying the text
@@ -742,7 +743,7 @@ function IconPlayground({ opacity }: { opacity: number }) {
     bodiesRef.current = RAIN_ICONS.map((ic) => ({
       n: ic.n, size: Math.round(ic.size * scale), left: ic.left, drift: 1.3 + Math.random() * 1.7,
       x: 0, y: 0, vx: 0, vy: 0,
-      angle: Math.random() * 44 - 22, vangle: Math.random() * 5 - 2.5, el: null,
+      angle: Math.random() * 44 - 22, vangle: Math.random() * 5 - 2.5, settled: false, still: 0, el: null,
     }));
   }
 
@@ -754,76 +755,96 @@ function IconPlayground({ opacity }: { opacity: number }) {
 
     bodiesRef.current.forEach((b, i) => {
       b.x = (b.left / 100) * Math.max(W - b.size, 1);
-      b.y = -b.size - (i % 5) * 220 - Math.random() * H * 0.5; // staggered above -> drop in over time
-      b.vx = (Math.random() - 0.5) * 1.4; b.vy = 0;
+      b.y = -b.size - (i % 5) * 200 - Math.random() * H * 0.4; // staggered above -> drop in over time
+      b.vx = 0; b.vy = 0; b.settled = false; b.still = 0;
     });
 
-    const GRAV = 0.62;   // real gravity — heavy, ungraceful fall
+    // Hold the tiles above the fold until the section scrolls into view, then drop.
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { startedRef.current = true; io.disconnect(); }
+    }, { threshold: 0.35 });
+    io.observe(wrap);
+
+    const GRAV = 0.6;    // real gravity — heavy, ungraceful fall
     const VMAX = 22;     // terminal velocity
     const AIRX = 0.02;   // slight horizontal air drag
     const WALL = 0.4;
-    const FLOORF = 0.82; // friction as tiles land + settle on the floor
-    const E = 0.14;      // low bounciness so tiles pile instead of scattering
+    const FLOORF = 0.7;  // friction as tiles land + settle on the floor
+    const E = 0.05;      // near-zero bounce so tiles pile and stop fast
+    const SLEEP = 0.55;  // per-frame motion below this counts toward settling
     const step = () => {
       const drag = dragRef.current;
       const bodies = bodiesRef.current;
 
-      // 1) integrate under gravity (dragged tile is positioned by the pointer)
+      // Hold above the fold until the section is in view.
+      if (!startedRef.current) {
+        for (const b of bodies) if (b.el) b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.angle}deg)`;
+        rafRef.current = requestAnimationFrame(step);
+        return;
+      }
+
+      // 1) integrate under gravity (settled + dragged tiles are skipped)
       for (const b of bodies) {
-        if (drag && drag.b === b) continue;
+        if ((drag && drag.b === b) || b.settled) continue;
         b.vy += GRAV; if (b.vy > VMAX) b.vy = VMAX;
         b.vx += (0 - b.vx) * AIRX;
-        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.98;
+        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.88;
         if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * WALL; }
         else if (b.x > W - b.size) { b.x = W - b.size; b.vx = -Math.abs(b.vx) * WALL; }
         const fy = H - b.size;               // floor: tiles land and pile up
         if (b.y > fy) {
           b.y = fy;
-          b.vy = Math.abs(b.vy) < 2 ? 0 : -b.vy * 0.18;
-          b.vx *= FLOORF; b.vangle *= 0.6;
+          b.vy = Math.abs(b.vy) < 2 ? 0 : -b.vy * 0.12;
+          b.vx *= FLOORF; b.vangle *= 0.25;
         }
       }
 
-      // 2) tile-to-tile collisions — separate + elastic bounce (equal mass; dragged tile = immovable)
+      // 2) tile-to-tile collisions — settled/dragged tiles are immovable anchors for the pile
       for (let i = 0; i < bodies.length; i++) {
         const a = bodies[i]; const ar = a.size * 0.46;
-        const aDrag = !!drag && drag.b === a;
+        const aFix = (!!drag && drag.b === a) || a.settled;
         for (let j = i + 1; j < bodies.length; j++) {
           const c = bodies[j]; const cr = c.size * 0.46;
           const dx = (c.x + c.size / 2) - (a.x + a.size / 2);
           const dy = (c.y + c.size / 2) - (a.y + a.size / 2);
           const min = ar + cr; const d2 = dx * dx + dy * dy;
           if (d2 >= min * min || d2 === 0) continue;
+          const cFix = (!!drag && drag.b === c) || c.settled;
+          if (aFix && cFix) continue; // both anchored — leave them
           const d = Math.sqrt(d2); const nx = dx / d, ny = dy / d; const overlap = min - d;
-          const cDrag = !!drag && drag.b === c;
           // positional separation
-          if (aDrag && !cDrag) { c.x += nx * overlap; c.y += ny * overlap; }
-          else if (cDrag && !aDrag) { a.x -= nx * overlap; a.y -= ny * overlap; }
-          else if (!aDrag && !cDrag) { a.x -= nx * overlap / 2; a.y -= ny * overlap / 2; c.x += nx * overlap / 2; c.y += ny * overlap / 2; }
-          // velocity impulse (treat a dragged tile as having zero velocity)
-          const avx = aDrag ? 0 : a.vx, avy = aDrag ? 0 : a.vy;
-          const cvx = cDrag ? 0 : c.vx, cvy = cDrag ? 0 : c.vy;
+          if (aFix) { c.x += nx * overlap; c.y += ny * overlap; }
+          else if (cFix) { a.x -= nx * overlap; a.y -= ny * overlap; }
+          else { a.x -= nx * overlap / 2; a.y -= ny * overlap / 2; c.x += nx * overlap / 2; c.y += ny * overlap / 2; }
+          // velocity impulse (anchored tile counts as zero velocity)
+          const avx = aFix ? 0 : a.vx, avy = aFix ? 0 : a.vy;
+          const cvx = cFix ? 0 : c.vx, cvy = cFix ? 0 : c.vy;
           const rvn = (cvx - avx) * nx + (cvy - avy) * ny;
           if (rvn < 0) {
-            if (aDrag && !cDrag) { const jj = -(1 + E) * rvn; c.vx += jj * nx; c.vy += jj * ny; c.vangle += (Math.random() - 0.5) * 2.5; }
-            else if (cDrag && !aDrag) { const jj = -(1 + E) * rvn; a.vx -= jj * nx; a.vy -= jj * ny; a.vangle += (Math.random() - 0.5) * 2.5; }
-            else if (!aDrag && !cDrag) {
-              const jj = -(1 + E) * rvn / 2;
-              a.vx -= jj * nx; a.vy -= jj * ny; c.vx += jj * nx; c.vy += jj * ny;
-              a.vangle -= jj * 0.5; c.vangle += jj * 0.5;
-            }
+            if (aFix) { const jj = -(1 + E) * rvn; c.vx += jj * nx; c.vy += jj * ny; }
+            else if (cFix) { const jj = -(1 + E) * rvn; a.vx -= jj * nx; a.vy -= jj * ny; }
+            else { const jj = -(1 + E) * rvn / 2; a.vx -= jj * nx; a.vy -= jj * ny; c.vx += jj * nx; c.vy += jj * ny; }
           }
         }
       }
 
-      // 3) paint
+      // 3) settle: a tile that's barely moving for a beat goes to sleep and stays put
+      for (const b of bodies) {
+        if (b.settled || (drag && drag.b === b)) continue;
+        const motion = Math.abs(b.vx) + Math.abs(b.vy) + Math.abs(b.vangle);
+        if (motion < SLEEP) {
+          if (++b.still > 14) { b.settled = true; b.vx = 0; b.vy = 0; b.vangle = 0; }
+        } else b.still = 0;
+      }
+
+      // 4) paint
       for (const b of bodies) {
         if (b.el) b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.angle}deg)`;
       }
       rafRef.current = requestAnimationFrame(step);
     };
     rafRef.current = requestAnimationFrame(step);
-    return () => { cancelAnimationFrame(rafRef.current); window.removeEventListener('resize', onResize); };
+    return () => { cancelAnimationFrame(rafRef.current); io.disconnect(); window.removeEventListener('resize', onResize); };
   }, []);
 
   const down = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
@@ -833,7 +854,7 @@ function IconPlayground({ opacity }: { opacity: number }) {
     e.currentTarget.style.cursor = 'grabbing';
     const r = wrap.getBoundingClientRect();
     dragRef.current = { b, offX: (e.clientX - r.left) - b.x, offY: (e.clientY - r.top) - b.y, vx: 0, vy: 0 };
-    b.vangle = 0;
+    b.vangle = 0; b.settled = false; b.still = 0; // wake it so it can be dragged + fall again
   };
   const move = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
     const drag = dragRef.current; const wrap = wrapRef.current;
