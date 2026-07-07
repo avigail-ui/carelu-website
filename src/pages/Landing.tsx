@@ -954,10 +954,19 @@ function Problem() {
   );
 }
 
-/* ── THE DIFFERENCE ── Death vs. life, side by side. The system of record has
-   flatlined; Carelu has a pulse. Before/after, one panel each. */
+/* ── THE DIFFERENCE ── Death vs. life, side by side, on two heart monitors: the
+   system of record has flatlined; Carelu has a pulse. Before/after. */
 const HB_PATH = 'M0,28 H44 L54,28 L60,8 L68,48 L76,28 L86,28 H144 L154,28 L160,8 L168,48 L176,28 L186,28 H244 L254,28 L260,8 L268,48 L276,28 L286,28 H340';
-const FLAT_PATH = 'M0,28 H82 L92,20 L102,36 L112,28 H206 L214,25 L220,31 L226,28 H340';
+const FLAT_PATH = 'M0,28 H104 L112,22 L120,34 L128,28 H340';
+const SOR_LOGOS = [
+  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
+  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
+  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
+  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
+  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
+  { src: '/logos/sor/notion.svg', name: 'Notion' },
+];
+const CE_CAPS = ['Answers', 'Chases', 'Verifies', 'Books'];
 
 function CareEnablement() {
   const cardBase: React.CSSProperties = {
@@ -991,7 +1000,7 @@ function CareEnablement() {
           </p>
         </div>
 
-        {/* Death | Life */}
+        {/* Death | Life — two heart monitors */}
         <div className="ce-vs rv-scale d3" style={{ display: 'grid', gap: 'clamp(16px, 2.4vw, 26px)', alignItems: 'stretch' }}>
           {/* ── Flatlined: the system of record ── */}
           <div style={{ ...cardBase, background: '#EAE8E2', border: '1px solid rgba(20,40,30,0.08)' }}>
@@ -999,14 +1008,23 @@ function CareEnablement() {
               <span style={{ ...labelTxt, color: 'var(--gray-500)' }}>System of record</span>
               <span style={{ ...tag, background: 'rgba(20,40,30,0.07)', color: 'var(--gray-500)' }}>Before</span>
             </div>
-            <div style={{ marginTop: 8, fontSize: 14.5, color: 'var(--gray-500)' }}>Captures the inquiry, then waits.</div>
-            <div style={{ margin: '24px 0 22px' }}>
-              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block', overflow: 'visible' }}>
-                <path d={FLAT_PATH} fill="none" stroke="rgba(20,40,30,0.3)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="340" cy="28" r="4" fill="rgba(20,40,30,0.28)" />
+            {/* your stack — greyed, lifeless */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', margin: '18px 0 20px', minHeight: 20 }}>
+              {SOR_LOGOS.map((l) => (
+                <img key={l.name} src={l.src} alt={l.name} style={{ height: 17, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.38 }} />
+              ))}
+            </div>
+            {/* the monitor — flatlined */}
+            <div style={{
+              borderRadius: 12, padding: '20px 18px', background: 'linear-gradient(160deg, #232a25, #171d18)',
+              backgroundImage: 'linear-gradient(160deg, #232a25, #171d18), linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)',
+              backgroundSize: 'auto, 15px 15px, 15px 15px',
+            }}>
+              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block' }}>
+                <path d={FLAT_PATH} fill="none" stroke="rgba(160,180,165,0.5)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
               </svg>
             </div>
-            <div style={{ marginTop: 'auto', borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div style={{ marginTop: 'auto', paddingTop: 18, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 18, height: 18, borderRadius: '50%', flexShrink: 0, border: '1.5px solid rgba(20,40,30,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="rgba(20,40,30,0.35)" strokeWidth="1.6" strokeLinecap="round" /></svg>
               </span>
@@ -1020,18 +1038,28 @@ function CareEnablement() {
               <span style={{ ...labelTxt, color: 'var(--green-900)' }}>Carelu</span>
               <span style={{ ...tag, background: 'rgba(212,242,92,0.55)', color: 'var(--green-900)' }}>After</span>
             </div>
-            <div style={{ marginTop: 8, fontSize: 14.5, color: 'var(--green-900)', fontWeight: 500 }}>Answers, chases, verifies, books.</div>
-            <div style={{ margin: '24px 0 22px' }}>
+            {/* what it does — alive */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', margin: '18px 0 20px', minHeight: 20 }}>
+              {CE_CAPS.map((c) => (
+                <span key={c} style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--green-900)', background: 'rgba(212,242,92,0.4)', padding: '4px 11px', borderRadius: 999 }}>{c}</span>
+              ))}
+            </div>
+            {/* the monitor — beating */}
+            <div style={{
+              borderRadius: 12, padding: '20px 18px', background: 'linear-gradient(160deg, #1a2a1c, #101a12)',
+              backgroundImage: 'linear-gradient(160deg, #1a2a1c, #101a12), linear-gradient(rgba(212,242,92,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(212,242,92,0.05) 1px, transparent 1px)',
+              backgroundSize: 'auto, 15px 15px, 15px 15px',
+            }}>
               <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block', overflow: 'visible' }}>
-                <path id="hbPath" className="ecg-alive" d={HB_PATH} fill="none" stroke="var(--lime)" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-                <circle r="4.6" fill="#4A7C3F" style={{ filter: 'drop-shadow(0 0 5px rgba(212,242,92,0.95))' }}>
+                <path id="hbPath" className="ecg-alive" d={HB_PATH} fill="none" stroke="var(--lime)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+                <circle r="3.4" fill="#F4FFCE" style={{ filter: 'drop-shadow(0 0 4px rgba(212,242,92,1))' }}>
                   <animateMotion dur="2.6s" repeatCount="indefinite">
                     <mpath href="#hbPath" />
                   </animateMotion>
                 </circle>
               </svg>
             </div>
-            <div style={{ marginTop: 'auto', borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div style={{ marginTop: 'auto', paddingTop: 18, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ width: 12, height: 12, borderRadius: '50%', flexShrink: 0, background: 'var(--lime)', boxShadow: '0 0 0 5px rgba(212,242,92,0.28)' }} />
               <span style={{ fontFamily: 'var(--font-display)', fontSize: 20, color: 'var(--green-900)' }}>In care.</span>
             </div>
