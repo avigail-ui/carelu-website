@@ -700,26 +700,27 @@ const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '
 
 
 /* Real tool logos raining down behind the problem headline — the "too many systems" chaos */
+// Big, heavy tiles that fall in and pile up along the bottom of the section.
 const RAIN_ICONS = [
-  { n: 'zoho',                left: 5,  size: 40, dur: 9.0,  delay: 0.0 },
-  { n: 'clickup',             left: 14, size: 32, dur: 10.5, delay: 1.8 },
-  { n: 'monday',              left: 23, size: 42, dur: 7.8,  delay: 0.6 },
-  { n: 'calendly',            left: 33, size: 34, dur: 9.6,  delay: 2.6 },
-  { n: 'lobbie',              left: 42, size: 38, dur: 8.4,  delay: 0.3 },
-  { n: 'intakeq',             left: 51, size: 30, dur: 11.0, delay: 3.4 },
-  { n: 'docusign',            left: 60, size: 40, dur: 8.0,  delay: 1.1 },
-  { n: 'pandadoc',            left: 69, size: 33, dur: 10.0, delay: 2.2 },
-  { n: 'gmail',               left: 78, size: 42, dur: 7.5,  delay: 0.9 },
-  { n: 'outlook',             left: 88, size: 34, dur: 9.2,  delay: 2.9 },
-  { n: 'calltrackingmetrics', left: 9,  size: 30, dur: 11.5, delay: 4.8 },
-  { n: 'callrail',            left: 28, size: 32, dur: 10.2, delay: 5.2 },
-  { n: 'salesforce',          left: 46, size: 38, dur: 8.6,  delay: 1.5 },
-  { n: 'jotform',             left: 64, size: 30, dur: 11.2, delay: 3.8 },
-  { n: 'typeform',            left: 83, size: 32, dur: 9.8,  delay: 4.5 },
-  { n: 'googlesheets',        left: 19, size: 34, dur: 8.2,  delay: 3.0 },
-  { n: 'ringcentral',         left: 56, size: 36, dur: 9.4,  delay: 0.4 },
-  { n: 'rethink',             left: 73, size: 30, dur: 10.8, delay: 5.5 },
-  { n: 'twilio',              left: 38, size: 40, dur: 7.9,  delay: 2.0 },
+  { n: 'zoho',                left: 4,  size: 122 },
+  { n: 'clickup',             left: 15, size: 104 },
+  { n: 'monday',              left: 26, size: 132 },
+  { n: 'calendly',            left: 37, size: 110 },
+  { n: 'lobbie',              left: 48, size: 126 },
+  { n: 'intakeq',             left: 58, size: 98 },
+  { n: 'docusign',            left: 69, size: 128 },
+  { n: 'pandadoc',            left: 80, size: 106 },
+  { n: 'gmail',               left: 90, size: 134 },
+  { n: 'outlook',             left: 10, size: 112 },
+  { n: 'calltrackingmetrics', left: 21, size: 96 },
+  { n: 'callrail',            left: 32, size: 118 },
+  { n: 'salesforce',          left: 44, size: 130 },
+  { n: 'jotform',             left: 55, size: 100 },
+  { n: 'typeform',            left: 66, size: 114 },
+  { n: 'googlesheets',        left: 76, size: 108 },
+  { n: 'ringcentral',         left: 86, size: 120 },
+  { n: 'rethink',             left: 63, size: 102 },
+  { n: 'twilio',              left: 50, size: 124 },
 ];
 
 type RainBody = {
@@ -736,10 +737,12 @@ function IconPlayground({ opacity }: { opacity: number }) {
   const rafRef = useRef(0);
 
   if (bodiesRef.current.length === 0) {
+    // shrink tiles on narrow screens so the pile stays low instead of burying the text
+    const scale = (typeof window !== 'undefined' && window.innerWidth < 640) ? 0.56 : 1;
     bodiesRef.current = RAIN_ICONS.map((ic) => ({
-      n: ic.n, size: ic.size, left: ic.left, drift: 1.3 + Math.random() * 1.7,
+      n: ic.n, size: Math.round(ic.size * scale), left: ic.left, drift: 1.3 + Math.random() * 1.7,
       x: 0, y: 0, vx: 0, vy: 0,
-      angle: Math.random() * 26 - 13, vangle: Math.random() * 1.6 - 0.8, el: null,
+      angle: Math.random() * 44 - 22, vangle: Math.random() * 5 - 2.5, el: null,
     }));
   }
 
@@ -751,28 +754,33 @@ function IconPlayground({ opacity }: { opacity: number }) {
 
     bodiesRef.current.forEach((b, i) => {
       b.x = (b.left / 100) * Math.max(W - b.size, 1);
-      b.y = -b.size - (i % 7) * 110 - Math.random() * H * 0.6; // staggered above -> rains in over time
-      b.vx = (Math.random() - 0.5) * 0.8; b.vy = b.drift;
+      b.y = -b.size - (i % 5) * 220 - Math.random() * H * 0.5; // staggered above -> drop in over time
+      b.vx = (Math.random() - 0.5) * 1.4; b.vy = 0;
     });
 
-    const EY = 0.035, EX = 0.03, WALL = 0.6;
-    const E = 0.72; // bounciness between tiles
+    const GRAV = 0.62;   // real gravity — heavy, ungraceful fall
+    const VMAX = 22;     // terminal velocity
+    const AIRX = 0.02;   // slight horizontal air drag
+    const WALL = 0.4;
+    const FLOORF = 0.82; // friction as tiles land + settle on the floor
+    const E = 0.14;      // low bounciness so tiles pile instead of scattering
     const step = () => {
       const drag = dragRef.current;
       const bodies = bodiesRef.current;
 
-      // 1) integrate (dragged tile is positioned by the pointer)
+      // 1) integrate under gravity (dragged tile is positioned by the pointer)
       for (const b of bodies) {
         if (drag && drag.b === b) continue;
-        b.vy += (b.drift - b.vy) * EY;   // ease back to a gentle fall after a throw
-        b.vx += (0 - b.vx) * EX;
-        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.96;
-        if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * WALL; b.vangle += 0.5; }
-        else if (b.x > W - b.size) { b.x = W - b.size; b.vx = -Math.abs(b.vx) * WALL; b.vangle -= 0.5; }
-        if (b.y > H + b.size) { // recycle to the top -> endless rain
-          b.y = -b.size - Math.random() * 200;
-          b.x = Math.random() * Math.max(W - b.size, 1);
-          b.vx = (Math.random() - 0.5) * 0.8; b.vy = b.drift; b.angle = Math.random() * 26 - 13;
+        b.vy += GRAV; if (b.vy > VMAX) b.vy = VMAX;
+        b.vx += (0 - b.vx) * AIRX;
+        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.98;
+        if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * WALL; }
+        else if (b.x > W - b.size) { b.x = W - b.size; b.vx = -Math.abs(b.vx) * WALL; }
+        const fy = H - b.size;               // floor: tiles land and pile up
+        if (b.y > fy) {
+          b.y = fy;
+          b.vy = Math.abs(b.vy) < 2 ? 0 : -b.vy * 0.18;
+          b.vx *= FLOORF; b.vangle *= 0.6;
         }
       }
 
@@ -854,12 +862,12 @@ function IconPlayground({ opacity }: { opacity: number }) {
           onPointerDown={down(b)} onPointerMove={move(b)} onPointerUp={up(b)} onPointerCancel={up(b)}
           style={{
             position: 'absolute', top: 0, left: 0, width: b.size, height: b.size,
-            borderRadius: b.size * 0.26, background: '#fff', border: '1px solid rgba(0,0,0,0.06)',
-            boxShadow: '0 6px 18px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            borderRadius: b.size * 0.24, background: '#F2F0EA', border: '1px solid rgba(30,30,25,0.04)',
+            boxShadow: '0 12px 32px rgba(30,30,25,0.09)', display: 'flex', alignItems: 'center', justifyContent: 'center',
             cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform',
             pointerEvents: interactive ? 'auto' : 'none',
           }}>
-          <img src={`/logos/rain/${b.n}.png`} alt="" draggable={false} style={{ width: '62%', height: '62%', objectFit: 'contain', pointerEvents: 'none' }} />
+          <img src={`/logos/rain/${b.n}.png`} alt="" draggable={false} style={{ width: '56%', height: '56%', objectFit: 'contain', pointerEvents: 'none' }} />
         </div>
       ))}
     </div>
@@ -931,15 +939,16 @@ function Problem() {
         {/* Draggable, throwable tool-logo playground during the calm headline beat */}
         <IconPlayground opacity={rainOpacity} />
 
-        {/* Text overlay */}
-        <div style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 36px', marginBottom: 32, width: '100%' }}>
+        {/* Text overlay — above the tile pile so it stays readable; pointer-through
+            so the tiles behind it are still draggable */}
+        <div style={{ textAlign: 'center', position: 'relative', zIndex: 6, pointerEvents: 'none', padding: '0 36px', marginBottom: 32, width: '100%' }}>
           {/* Problem text */}
           <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               You&rsquo;re juggling a dozen systems to run a single intake.
             </h2>
             <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 560, margin: '0 auto' }}>
-              Every one is a system of record — built to manage the work, not do it. So the chasing falls to your team, and families leave for whoever answers first. That&rsquo;s why Carelu is a <span style={{ color: '#111', fontWeight: 500 }}>care enablement platform</span>, not another system of record.
+              They all connect to a system of record — built to manage the work, not do it. So the chasing falls to your team, and families leave for whoever answers first. That&rsquo;s why Carelu is a <span style={{ color: '#111', fontWeight: 500 }}>care enablement platform</span>, not another system of record.
             </p>
           </div>
           {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
