@@ -954,137 +954,87 @@ function Problem() {
   );
 }
 
-/* ── THE DIFFERENCE ── The stakes, then a violent payoff: a press slams down and
-   crushes the "System of record" (logos and all), then Carelu rises to say why it
-   isn't one — it does the work a record only stores. */
-const SOR_LOGOS = [
-  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
-  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
-  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
-  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
-  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
-  { src: '/logos/sor/notion.svg', name: 'Notion' },
-];
-const CE_ITEMS = [
-  'Answers in 30 seconds',
-  'Chases the form down',
-  'Verifies benefits',
-  'Books the assessment',
-];
+/* ── THE DIFFERENCE ── Death vs. life, side by side. The system of record has
+   flatlined; Carelu has a pulse. Before/after, one panel each. */
+const HB_PATH = 'M0,28 H44 L54,28 L60,8 L68,48 L76,28 L86,28 H144 L154,28 L160,8 L168,48 L176,28 L186,28 H244 L254,28 L260,8 L268,48 L276,28 L286,28 H340';
+const FLAT_PATH = 'M0,28 H82 L92,20 L102,36 L112,28 H206 L214,25 L220,31 L226,28 H340';
 
 function CareEnablement() {
-  const stageRef = useRef<HTMLDivElement>(null);
-  const [crushed, setCrushed] = useState(false);
-  const reduceRef = useRef(false);
-
-  useEffect(() => {
-    reduceRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const el = stageRef.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => setCrushed(e.isIntersecting), { threshold: 0.5 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  const animate = crushed && !reduceRef.current;
+  const cardBase: React.CSSProperties = {
+    borderRadius: 20, padding: 'clamp(22px, 3vw, 30px)',
+    display: 'flex', flexDirection: 'column',
+  };
+  const labelRow: React.CSSProperties = { display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 };
+  const labelTxt: React.CSSProperties = { fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase' };
+  const tag: React.CSSProperties = { fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 9px', borderRadius: 999 };
 
   return (
     <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)', overflow: 'hidden' }}>
-      <div style={{ ...W, maxWidth: 780 }}>
-        {/* The stakes */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
+      <div style={{ ...W, maxWidth: 920 }}>
+        {/* The claim + why */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5.5vw, 64px)' }}>
           <div className="rv"><Pill>The difference</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 52px)',
             fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
-            color: 'var(--green-900)', maxWidth: 720, margin: '0 auto',
+            color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
           }}>
-            Your system of record is quietly{' '}
-            <span style={{ fontStyle: 'italic' }}>killing your business.</span>
+            After thousands of intakes, we&rsquo;ve seen it: a{' '}
+            <span style={{ fontStyle: 'italic' }}>system of record is killing your business.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 540, margin: '18px auto 0',
+            lineHeight: 1.6, maxWidth: 560, margin: '18px auto 0',
           }}>
-            It stores every family and waits &mdash; while one by one, they vanish to the
-            provider who called back first.
+            It captures the family and waits &mdash; while they slip away to the competitor who
+            answered first.
           </p>
         </div>
 
-        {/* The crush — overflow:hidden clips the press to the stage; the stage
-            height collapses after impact so no dead space is left above the remains. */}
-        <div
-          ref={stageRef}
-          style={{
-            position: 'relative', overflow: 'hidden', margin: '0 auto', maxWidth: 460,
-            height: crushed ? 66 : 200,
-            transition: animate ? 'height 0.55s ease 1.05s' : 'none',
-          }}
-        >
-          <div className={animate ? 'sor-shake' : ''} style={{ position: 'absolute', inset: 0 }}>
-            {/* floor */}
-            <div style={{ position: 'absolute', bottom: 29, left: '8%', right: '8%', height: 2, background: 'rgba(20,40,30,0.12)' }} />
-            {/* shockwave */}
-            {animate && <div className="sor-shock" style={{ position: 'absolute', bottom: 22, left: 0, right: 0, margin: '0 auto', width: 190, height: 44, borderRadius: '50%', border: '2px solid rgba(20,40,30,0.32)' }} />}
-            {/* the system of record — crushed */}
-            <div
-              className={animate ? 'sor-squish' : ''}
-              style={{
-                position: 'absolute', bottom: 30, left: 0, right: 0, margin: '0 auto',
-                width: 'min(340px, 86%)', height: 118, boxSizing: 'border-box', overflow: 'hidden',
-                transformOrigin: 'bottom center',
-                transform: !animate && crushed ? 'scaleY(0.12) scaleX(1.12)' : undefined,
-                background: '#F5F4F0', border: '1px solid rgba(20,40,30,0.1)', borderRadius: 16,
-                padding: '16px 22px', boxShadow: '0 10px 30px rgba(20,40,30,0.08)',
-              }}
-            >
-              <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gray-500)' }}>System of record</div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 15, flexWrap: 'wrap', margin: '13px 0 11px' }}>
-                {SOR_LOGOS.map((l) => (
-                  <img key={l.name} src={l.src} alt="" style={{ height: 17, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.4 }} />
-                ))}
-              </div>
-              <div style={{ fontSize: 14, color: 'var(--gray-500)', fontStyle: 'italic' }}>Stores the work. Waits.</div>
+        {/* Death | Life */}
+        <div className="ce-vs rv-scale d3" style={{ display: 'grid', gap: 'clamp(16px, 2.4vw, 26px)', alignItems: 'stretch' }}>
+          {/* ── Flatlined: the system of record ── */}
+          <div style={{ ...cardBase, background: '#EAE8E2', border: '1px solid rgba(20,40,30,0.08)' }}>
+            <div style={labelRow}>
+              <span style={{ ...labelTxt, color: 'var(--gray-500)' }}>System of record</span>
+              <span style={{ ...tag, background: 'rgba(20,40,30,0.07)', color: 'var(--gray-500)' }}>Before</span>
             </div>
-            {/* the press */}
-            <div
-              className={animate ? 'sor-press' : ''}
-              style={{
-                position: 'absolute', bottom: 148, left: 0, right: 0, margin: '0 auto',
-                width: 'min(392px, 92%)', height: 24,
-                borderRadius: 5, background: 'linear-gradient(#3a3a34, #22221e)',
-                boxShadow: '0 8px 22px rgba(0,0,0,0.3)',
-                transform: animate ? undefined : 'translateY(-260px)',
-                opacity: reduceRef.current ? 0 : 1,
-              }}
-            >
-              <div style={{ position: 'absolute', bottom: -5, left: 10, right: 10, height: 5, borderRadius: 3, background: 'rgba(0,0,0,0.22)' }} />
+            <div style={{ marginTop: 8, fontSize: 14.5, color: 'var(--gray-500)' }}>Captures the inquiry, then waits.</div>
+            <div style={{ margin: '24px 0 22px' }}>
+              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block', overflow: 'visible' }}>
+                <path d={FLAT_PATH} fill="none" stroke="rgba(20,40,30,0.3)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="340" cy="28" r="4" fill="rgba(20,40,30,0.28)" />
+              </svg>
+            </div>
+            <div style={{ marginTop: 'auto', borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ width: 18, height: 18, borderRadius: '50%', flexShrink: 0, border: '1.5px solid rgba(20,40,30,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="rgba(20,40,30,0.35)" strokeWidth="1.6" strokeLinecap="round" /></svg>
+              </span>
+              <span style={{ fontFamily: 'var(--font-display)', fontSize: 20, fontStyle: 'italic', color: 'var(--gray-500)' }}>Lost to a competitor.</span>
             </div>
           </div>
-        </div>
 
-        {/* Why it isn't one */}
-        <div style={{
-          textAlign: 'center', marginTop: 'clamp(28px, 4vw, 44px)',
-          opacity: crushed ? 1 : 0, transform: crushed ? 'translateY(0)' : 'translateY(14px)',
-          transition: `opacity 0.7s ease ${reduceRef.current ? 0 : 1.15}s, transform 0.7s ease ${reduceRef.current ? 0 : 1.15}s`,
-        }}>
-          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.6vw, 44px)', fontWeight: 400, lineHeight: 1.15, letterSpacing: '-0.02em', color: 'var(--green-900)', margin: 0 }}>
-            Carelu isn&rsquo;t one.
-          </h3>
-          <p style={{ fontSize: 'clamp(16px, 1.7vw, 20px)', color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 560, margin: '16px auto 0' }}>
-            It does the work a system of record only stores &mdash; so nothing waits, and no
-            family slips to a competitor.
-          </p>
-          <div className="ce-does" style={{ display: 'grid', gap: 12, maxWidth: 460, margin: '28px auto 0', textAlign: 'left' }}>
-            {CE_ITEMS.map((t) => (
-              <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 11 }}>
-                <span style={{ width: 22, height: 22, borderRadius: 7, flexShrink: 0, background: 'var(--lime)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-6.5" stroke="var(--green-900)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </span>
-                <span style={{ fontSize: 15.5, color: 'var(--green-900)' }}>{t}</span>
-              </div>
-            ))}
+          {/* ── Alive: Carelu ── */}
+          <div style={{ ...cardBase, background: '#fff', border: '1px solid rgba(74,124,63,0.4)', boxShadow: '0 24px 60px rgba(20,40,30,0.1)' }}>
+            <div style={labelRow}>
+              <span style={{ ...labelTxt, color: 'var(--green-900)' }}>Carelu</span>
+              <span style={{ ...tag, background: 'rgba(212,242,92,0.55)', color: 'var(--green-900)' }}>After</span>
+            </div>
+            <div style={{ marginTop: 8, fontSize: 14.5, color: 'var(--green-900)', fontWeight: 500 }}>Answers, chases, verifies, books.</div>
+            <div style={{ margin: '24px 0 22px' }}>
+              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block', overflow: 'visible' }}>
+                <path id="hbPath" className="ecg-alive" d={HB_PATH} fill="none" stroke="var(--lime)" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+                <circle r="4.6" fill="#4A7C3F" style={{ filter: 'drop-shadow(0 0 5px rgba(212,242,92,0.95))' }}>
+                  <animateMotion dur="2.6s" repeatCount="indefinite">
+                    <mpath href="#hbPath" />
+                  </animateMotion>
+                </circle>
+              </svg>
+            </div>
+            <div style={{ marginTop: 'auto', borderTop: '1px solid rgba(20,40,30,0.08)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ width: 12, height: 12, borderRadius: '50%', flexShrink: 0, background: 'var(--lime)', boxShadow: '0 0 0 5px rgba(212,242,92,0.28)' }} />
+              <span style={{ fontFamily: 'var(--font-display)', fontSize: 20, color: 'var(--green-900)' }}>In care.</span>
+            </div>
           </div>
         </div>
       </div>

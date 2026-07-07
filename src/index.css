@@ -5,44 +5,19 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
-/* Care-enablement "why it isn't one": two-up on desktop, single column on mobile */
-.ce-does { grid-template-columns: 1fr 1fr; }
-@media (max-width: 640px) { .ce-does { grid-template-columns: 1fr; } }
+/* Care-enablement death/life: two panels on desktop, stacked on mobile */
+.ce-vs { grid-template-columns: 1fr 1fr; }
+@media (max-width: 768px) { .ce-vs { grid-template-columns: 1fr; } }
 
-/* The crush — a press slams down and squishes the system of record flat.
-   All four animations share the 1.9s timeline so their keyframes stay in sync. */
-.sor-press  { animation: sorPress 1.9s cubic-bezier(0.5, 0, 0.25, 1) forwards; }
-.sor-squish { animation: sorSquish 1.9s cubic-bezier(0.5, 0, 0.25, 1) forwards; transform-origin: bottom center; }
-.sor-shake  { animation: sorShake 1.9s ease-out forwards; }
-.sor-shock  { animation: sorShock 1.9s ease-out forwards; }
-@keyframes sorPress {
-  0%   { transform: translateY(-260px); }   /* above the stage, clipped */
-  36%  { transform: translateY(104px); }    /* slam down onto the crushed slab */
-  44%  { transform: translateY(96px); }      /* recoil */
-  54%  { transform: translateY(104px); }
-  100% { transform: translateY(-260px); }    /* lift away */
-}
-@keyframes sorSquish {
-  0%, 26% { transform: scaleY(1) scaleX(1); }         /* intact as the press falls */
-  36%     { transform: scaleY(0.1) scaleX(1.16); }    /* crushed exactly as the press lands */
-  44%     { transform: scaleY(0.14) scaleX(1.09); }   /* tiny bounce */
-  100%    { transform: scaleY(0.12) scaleX(1.12); }   /* stays flattened */
-}
-@keyframes sorShake {
-  0%, 33% { transform: translate(0, 0); }
-  37% { transform: translate(-5px, 1px); }
-  40% { transform: translate(5px, -2px); }
-  43% { transform: translate(-4px, 1px); }
-  47% { transform: translate(3px, -1px); }
-  51%, 100% { transform: translate(0, 0); }
-}
-@keyframes sorShock {
-  0%, 30% { opacity: 0; transform: scale(0.3); }
-  40% { opacity: 0.5; }
-  72%, 100% { opacity: 0; transform: scale(2.6); }
+/* The living heartbeat line — a gentle glow pulse so it reads as alive even
+   before you notice the blip tracing it. */
+.ecg-alive { animation: ecgPulse 1.5s ease-in-out infinite; }
+@keyframes ecgPulse {
+  0%, 100% { filter: drop-shadow(0 0 1px rgba(212,242,92,0.35)); }
+  50%      { filter: drop-shadow(0 0 5px rgba(212,242,92,0.85)); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sor-press, .sor-squish, .sor-shake, .sor-shock { animation: none; }
+  .ecg-alive { animation: none; }
 }
 
 :root {
