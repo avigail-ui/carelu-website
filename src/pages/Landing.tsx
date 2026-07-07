@@ -699,147 +699,264 @@ const allLogos = [
 const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% -24% -18%' };
 
 
-/* ── THE PROBLEM ── Lead with the claim, then show the leak: a system of record
-   loses a family at every stage of intake, while Carelu holds them. */
-const SOR_LOGOS = [
-  { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
-  { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
-  { src: '/logos/sor/zoho.svg', name: 'Zoho' },
-  { src: '/logos/sor/airtable.svg', name: 'Airtable' },
-  { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
-  { src: '/logos/sor/notion.svg', name: 'Notion' },
+/* Real tool logos raining down behind the problem headline — the "too many systems" chaos */
+const RAIN_ICONS = [
+  { n: 'zoho',                left: 5,  size: 40, dur: 9.0,  delay: 0.0 },
+  { n: 'clickup',             left: 14, size: 32, dur: 10.5, delay: 1.8 },
+  { n: 'monday',              left: 23, size: 42, dur: 7.8,  delay: 0.6 },
+  { n: 'calendly',            left: 33, size: 34, dur: 9.6,  delay: 2.6 },
+  { n: 'lobbie',              left: 42, size: 38, dur: 8.4,  delay: 0.3 },
+  { n: 'intakeq',             left: 51, size: 30, dur: 11.0, delay: 3.4 },
+  { n: 'docusign',            left: 60, size: 40, dur: 8.0,  delay: 1.1 },
+  { n: 'pandadoc',            left: 69, size: 33, dur: 10.0, delay: 2.2 },
+  { n: 'gmail',               left: 78, size: 42, dur: 7.5,  delay: 0.9 },
+  { n: 'outlook',             left: 88, size: 34, dur: 9.2,  delay: 2.9 },
+  { n: 'calltrackingmetrics', left: 9,  size: 30, dur: 11.5, delay: 4.8 },
+  { n: 'callrail',            left: 28, size: 32, dur: 10.2, delay: 5.2 },
+  { n: 'salesforce',          left: 46, size: 38, dur: 8.6,  delay: 1.5 },
+  { n: 'jotform',             left: 64, size: 30, dur: 11.2, delay: 3.8 },
+  { n: 'typeform',            left: 83, size: 32, dur: 9.8,  delay: 4.5 },
+  { n: 'googlesheets',        left: 19, size: 34, dur: 8.2,  delay: 3.0 },
+  { n: 'ringcentral',         left: 56, size: 36, dur: 9.4,  delay: 0.4 },
+  { n: 'rethink',             left: 73, size: 30, dur: 10.8, delay: 5.5 },
+  { n: 'twilio',              left: 38, size: 40, dur: 7.9,  delay: 2.0 },
 ];
-const CE_STAGES = ['Inquiry', 'Form', 'Benefits', 'Assessment', 'Ready for care'];
-const CE_XS = [46, 168, 290, 412, 534];
-const yFor = (r: number) => 210 - (r / 100) * 178;
-// illustrative retention through the funnel — shape, not a claimed statistic
-const CE_SOR = [100, 70, 48, 30, 16];
-const CE_CARELU = [100, 96, 92, 89, 86];
 
-// Catmull-Rom → cubic bezier, for a smooth curve through the stage points.
-function smoothPath(pts: [number, number][]): string {
-  if (pts.length < 2) return '';
-  let d = `M${pts[0][0]},${pts[0][1]}`;
-  for (let i = 0; i < pts.length - 1; i++) {
-    const p0 = pts[i - 1] || pts[i];
-    const p1 = pts[i];
-    const p2 = pts[i + 1];
-    const p3 = pts[i + 2] || p2;
-    const c1x = p1[0] + (p2[0] - p0[0]) / 6;
-    const c1y = p1[1] + (p2[1] - p0[1]) / 6;
-    const c2x = p2[0] - (p3[0] - p1[0]) / 6;
-    const c2y = p2[1] - (p3[1] - p1[1]) / 6;
-    d += ` C${c1x},${c1y} ${c2x},${c2y} ${p2[0]},${p2[1]}`;
+type RainBody = {
+  n: string; size: number; left: number; drift: number;
+  x: number; y: number; vx: number; vy: number;
+  angle: number; vangle: number; el: HTMLDivElement | null;
+};
+
+/* Physics sandbox: logos fall in, bounce, and can be grabbed + thrown */
+function IconPlayground({ opacity }: { opacity: number }) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const bodiesRef = useRef<RainBody[]>([]);
+  const dragRef = useRef<{ b: RainBody; offX: number; offY: number; vx: number; vy: number } | null>(null);
+  const rafRef = useRef(0);
+
+  if (bodiesRef.current.length === 0) {
+    bodiesRef.current = RAIN_ICONS.map((ic) => ({
+      n: ic.n, size: ic.size, left: ic.left, drift: 1.3 + Math.random() * 1.7,
+      x: 0, y: 0, vx: 0, vy: 0,
+      angle: Math.random() * 26 - 13, vangle: Math.random() * 1.6 - 0.8, el: null,
+    }));
   }
-  return d;
-}
-
-function CareEnablement() {
-  const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = chartRef.current;
-    if (!el) return;
-    // add `.in` via classList (not React state) so we don't clobber the
-    // `.visible` class useReveal adds to the same node
-    const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { el.classList.add('in'); obs.disconnect(); }
-    }, { threshold: 0.35 });
-    obs.observe(el);
-    return () => obs.disconnect();
+    const wrap = wrapRef.current; if (!wrap) return;
+    let W = wrap.clientWidth, H = wrap.clientHeight;
+    const onResize = () => { W = wrap.clientWidth; H = wrap.clientHeight; };
+    window.addEventListener('resize', onResize);
+
+    bodiesRef.current.forEach((b, i) => {
+      b.x = (b.left / 100) * Math.max(W - b.size, 1);
+      b.y = -b.size - (i % 7) * 110 - Math.random() * H * 0.6; // staggered above -> rains in over time
+      b.vx = (Math.random() - 0.5) * 0.8; b.vy = b.drift;
+    });
+
+    const EY = 0.035, EX = 0.03, WALL = 0.6;
+    const E = 0.72; // bounciness between tiles
+    const step = () => {
+      const drag = dragRef.current;
+      const bodies = bodiesRef.current;
+
+      // 1) integrate (dragged tile is positioned by the pointer)
+      for (const b of bodies) {
+        if (drag && drag.b === b) continue;
+        b.vy += (b.drift - b.vy) * EY;   // ease back to a gentle fall after a throw
+        b.vx += (0 - b.vx) * EX;
+        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.96;
+        if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * WALL; b.vangle += 0.5; }
+        else if (b.x > W - b.size) { b.x = W - b.size; b.vx = -Math.abs(b.vx) * WALL; b.vangle -= 0.5; }
+        if (b.y > H + b.size) { // recycle to the top -> endless rain
+          b.y = -b.size - Math.random() * 200;
+          b.x = Math.random() * Math.max(W - b.size, 1);
+          b.vx = (Math.random() - 0.5) * 0.8; b.vy = b.drift; b.angle = Math.random() * 26 - 13;
+        }
+      }
+
+      // 2) tile-to-tile collisions — separate + elastic bounce (equal mass; dragged tile = immovable)
+      for (let i = 0; i < bodies.length; i++) {
+        const a = bodies[i]; const ar = a.size * 0.46;
+        const aDrag = !!drag && drag.b === a;
+        for (let j = i + 1; j < bodies.length; j++) {
+          const c = bodies[j]; const cr = c.size * 0.46;
+          const dx = (c.x + c.size / 2) - (a.x + a.size / 2);
+          const dy = (c.y + c.size / 2) - (a.y + a.size / 2);
+          const min = ar + cr; const d2 = dx * dx + dy * dy;
+          if (d2 >= min * min || d2 === 0) continue;
+          const d = Math.sqrt(d2); const nx = dx / d, ny = dy / d; const overlap = min - d;
+          const cDrag = !!drag && drag.b === c;
+          // positional separation
+          if (aDrag && !cDrag) { c.x += nx * overlap; c.y += ny * overlap; }
+          else if (cDrag && !aDrag) { a.x -= nx * overlap; a.y -= ny * overlap; }
+          else if (!aDrag && !cDrag) { a.x -= nx * overlap / 2; a.y -= ny * overlap / 2; c.x += nx * overlap / 2; c.y += ny * overlap / 2; }
+          // velocity impulse (treat a dragged tile as having zero velocity)
+          const avx = aDrag ? 0 : a.vx, avy = aDrag ? 0 : a.vy;
+          const cvx = cDrag ? 0 : c.vx, cvy = cDrag ? 0 : c.vy;
+          const rvn = (cvx - avx) * nx + (cvy - avy) * ny;
+          if (rvn < 0) {
+            if (aDrag && !cDrag) { const jj = -(1 + E) * rvn; c.vx += jj * nx; c.vy += jj * ny; c.vangle += (Math.random() - 0.5) * 2.5; }
+            else if (cDrag && !aDrag) { const jj = -(1 + E) * rvn; a.vx -= jj * nx; a.vy -= jj * ny; a.vangle += (Math.random() - 0.5) * 2.5; }
+            else if (!aDrag && !cDrag) {
+              const jj = -(1 + E) * rvn / 2;
+              a.vx -= jj * nx; a.vy -= jj * ny; c.vx += jj * nx; c.vy += jj * ny;
+              a.vangle -= jj * 0.5; c.vangle += jj * 0.5;
+            }
+          }
+        }
+      }
+
+      // 3) paint
+      for (const b of bodies) {
+        if (b.el) b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.angle}deg)`;
+      }
+      rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => { cancelAnimationFrame(rafRef.current); window.removeEventListener('resize', onResize); };
   }, []);
 
-  const sorPts = CE_XS.map((x, i) => [x, yFor(CE_SOR[i])] as [number, number]);
-  const carPts = CE_XS.map((x, i) => [x, yFor(CE_CARELU[i])] as [number, number]);
-  const sorLine = smoothPath(sorPts);
-  const carLine = smoothPath(carPts);
-  const areaClose = ` L${CE_XS[4]},212 L${CE_XS[0]},212 Z`;
+  const down = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
+    const wrap = wrapRef.current; if (!wrap) return;
+    e.preventDefault();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    e.currentTarget.style.cursor = 'grabbing';
+    const r = wrap.getBoundingClientRect();
+    dragRef.current = { b, offX: (e.clientX - r.left) - b.x, offY: (e.clientY - r.top) - b.y, vx: 0, vy: 0 };
+    b.vangle = 0;
+  };
+  const move = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current; const wrap = wrapRef.current;
+    if (!drag || drag.b !== b || !wrap) return;
+    const r = wrap.getBoundingClientRect();
+    const nx = (e.clientX - r.left) - drag.offX;
+    const ny = (e.clientY - r.top) - drag.offY;
+    drag.vx = nx - b.x; drag.vy = ny - b.y;
+    b.x = nx; b.y = ny;
+  };
+  const up = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current;
+    e.currentTarget.style.cursor = 'grab';
+    if (!drag || drag.b !== b) return;
+    const clamp = (v: number) => Math.max(-48, Math.min(48, v));
+    b.vx = clamp(drag.vx * 1.15); b.vy = clamp(drag.vy * 1.15); b.vangle = clamp(drag.vx) * 0.4;
+    dragRef.current = null;
+    try { e.currentTarget.releasePointerCapture(e.pointerId); } catch { /* noop */ }
+  };
 
+  const interactive = opacity > 0.25;
   return (
-    <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)', overflow: 'hidden' }}>
-      <div style={{ ...W, maxWidth: 820 }}>
-        {/* The claim, first */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 60px)' }}>
-          <div className="rv"><Pill>The problem</Pill></div>
-          <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 60px)',
-            fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.025em',
-            color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
+    <div ref={wrapRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 5, pointerEvents: 'none', opacity, transition: 'opacity 0.3s', visibility: opacity > 0.04 ? 'visible' : 'hidden' }}>
+      {bodiesRef.current.map((b, i) => (
+        <div key={i} ref={(el) => { b.el = el; }}
+          onPointerDown={down(b)} onPointerMove={move(b)} onPointerUp={up(b)} onPointerCancel={up(b)}
+          style={{
+            position: 'absolute', top: 0, left: 0, width: b.size, height: b.size,
+            borderRadius: b.size * 0.26, background: '#fff', border: '1px solid rgba(0,0,0,0.06)',
+            boxShadow: '0 6px 18px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform',
+            pointerEvents: interactive ? 'auto' : 'none',
           }}>
-            Your system of record is{' '}
-            <span style={{ fontStyle: 'italic' }}>killing your business.</span>
-          </h2>
-          <p className="rv-scale d2" style={{
-            fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 640, margin: '18px auto 0',
-          }}>
-            After thousands of intakes, the cause was always the same &mdash; and it was{' '}
-            <span style={{ color: 'var(--green-900)', fontStyle: 'italic' }}>never a staffing problem.</span>{' '}
-            A system of record stores the family and waits; it never acts. So the follow-up falls
-            back on your team &mdash; and every hour it waits, a competitor answers first.
-          </p>
+          <img src={`/logos/rain/${b.n}.png`} alt="" draggable={false} style={{ width: '62%', height: '62%', objectFit: 'contain', pointerEvents: 'none' }} />
         </div>
-
-        {/* The leak — of every family who reaches out, how many make it to care */}
-        <div ref={chartRef} className="ce-chart rv-scale d3" style={{ maxWidth: 680, margin: '0 auto' }}>
-          {/* legend */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 30, marginBottom: 16, flexWrap: 'wrap' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: 'var(--green-900)' }}>
-              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#4A7C3F' }} /> Carelu
-            </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: 'var(--gray-500)' }}>
-              <span style={{ width: 22, height: 3, borderRadius: 2, background: 'rgba(20,40,30,0.42)' }} /> System of record
-            </span>
-          </div>
-
-          {/* the system of record = the tools you're stitching together, shown plainly */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 'clamp(20px, 3.4vw, 34px)', flexWrap: 'wrap', marginBottom: 26 }}>
-            {SOR_LOGOS.map((l) => (
-              <img key={l.name} src={l.src} alt={l.name} style={{ height: 26, width: 'auto', filter: 'grayscale(1)', opacity: 0.5 }} />
-            ))}
-          </div>
-
-          <svg viewBox="0 0 700 250" width="100%" style={{ display: 'block', overflow: 'visible' }}>
-            {/* start anchor — both lines begin with every family who reaches out */}
-            <text x={CE_XS[0] - 4} y={16} fontSize="11.5" fontWeight="600" fill="var(--gray-500)" textAnchor="start">Every family who reaches out</text>
-
-            {/* stage gridlines + baseline */}
-            {CE_XS.map((x) => <line key={x} x1={x} y1={26} x2={x} y2={212} stroke="rgba(20,40,30,0.05)" strokeWidth="1" />)}
-            <line x1={CE_XS[0]} y1={212} x2={CE_XS[4]} y2={212} stroke="rgba(20,40,30,0.1)" strokeWidth="1" />
-
-            {/* lime fill under Carelu = families kept; the gap down to the grey line = families lost */}
-            <path className="chart-area" d={carLine + areaClose} fill="rgba(212,242,92,0.30)" />
-            <path className="chart-area" d={sorLine + areaClose} fill="rgba(30,40,32,0.06)" />
-
-            {/* curves */}
-            <path className="chart-line line-s" d={sorLine} fill="none" stroke="rgba(20,40,30,0.42)" strokeWidth="1.9" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
-            <path className="chart-line line-c" d={carLine} fill="none" stroke="#4A7C3F" strokeWidth="2.5" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
-
-            {/* stage dots */}
-            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#8A8F88" />)}
-            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#4A7C3F" />)}
-
-            {/* endpoint outcomes — tied to each line's colour */}
-            <g className="chart-anno">
-              <text x={CE_XS[4] + 13} y={carPts[4][1] + 4} fontSize="13.5" fontWeight="700" fill="var(--green-900)">In care</text>
-              <text x={CE_XS[4] + 13} y={sorPts[4][1] + 4} fontSize="13.5" fontStyle="italic" fill="var(--gray-500)">Lost</text>
-            </g>
-
-            {/* stage labels */}
-            {CE_STAGES.map((s, i) => (
-              <text key={s} x={CE_XS[i]} y={234} fontSize="11.5" fontWeight="600" letterSpacing="0.04em" fill="var(--gray-500)" textAnchor="middle">{s}</text>
-            ))}
-          </svg>
-
-          {/* caption cements the read so the chart isn't asked to carry it alone */}
-          <p className="chart-anno" style={{ textAlign: 'center', fontSize: 14.5, color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 500, margin: '20px auto 0' }}>
-            By the time a family is ready to start, a system of record has already lost most of them.
-          </p>
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 }
+
+
+/* ================================================================
+   THE PROBLEM — Carelu-style browser chaos (dark mode)
+   Sticky scroll: text → browser windows slam in → cursor closes → solution
+   ================================================================ */
+function Problem() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [t, setT] = useState(0);
+
+  // Scroll-tied progress (so the animation rewinds when user scrolls back up).
+  // No sticky pinning — uses the section's natural position in the viewport to compute t,
+  // so there's no 100vh "exit transition" that reads as empty space.
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      const el = trackRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      // t = 0 when the section's top is at viewport bottom (just appearing);
+      // t = 1 when the section's bottom is at viewport top (fully scrolled past).
+      // Animation runs as the section traverses the viewport — t=0 when section's
+      // top hits the viewport bottom, t=1 when the section's top hits the viewport top.
+      const t = Math.max(0, Math.min(1, (vh - rect.top) / vh));
+      setT(t);
+    };
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  // The chaos animation was reduced to the icon rain only — the old browser-tabs
+  // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
+  const rainOpacity = 1; // icons always rain — never fade out
+  const closed = false;  // section never "closes" — it just scrolls away naturally
+
+  return (
+    <div ref={trackRef} style={{
+      height: '100svh', position: 'relative',
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+      backgroundColor: closed ? '#FAF8F3' : '#fff',
+      transition: 'background-color 0.5s',
+      overflow: 'hidden',
+    }}>
+        {/* Ambient glow for solution phase -- no earth image, pure dark with subtle accent radial */}
+        {t > 0.5 && (
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
+            <div style={{
+              position: 'absolute', top: '30%', left: '50%', transform: 'translateX(-50%)',
+              width: '120%', height: '80%',
+              background: `radial-gradient(ellipse 40% 40% at 50% 40%, rgba(74,124,63,${Math.min((t - 0.5) * 2, 0.08)}) 0%, transparent 70%)`,
+              transition: 'opacity 0.8s',
+            }} />
+          </div>
+        )}
+
+        {/* Draggable, throwable tool-logo playground during the calm headline beat */}
+        <IconPlayground opacity={rainOpacity} />
+
+        {/* Text overlay */}
+        <div style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 36px', marginBottom: 32, width: '100%' }}>
+          {/* Problem text */}
+          <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
+              You&rsquo;re juggling a dozen systems to run a single intake.
+            </h2>
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
+              Inquiries, forms, insurance, scheduling — each in its own tool, none of them talking. So your team spends the day chasing what slips through, and families leave for whoever answers first.
+            </p>
+          </div>
+          {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
+          {/* Spacer */}
+          <div style={{ visibility: 'hidden' }}>
+            <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
+            <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
+          </div>
+        </div>
+
+        {/* Solution-phase reveal was moved to the MuralReveal section below.
+            Keeping this conditional empty so the chaos-tabs animation still plays out. */}
+    </div>
+  );
+}
+
 
 /* ================================================================
    ─── SECTIONS BELOW WERE BROUGHT IN FROM SESSION WORK ───
@@ -3417,12 +3534,11 @@ export default function Landing() {
       <Nav />
       <Hero />
       <DemoVideo />
+      <Problem />
 
       {/* Session-work sections below — wrapped in .session-light to restore
           the cream/dark-green palette that these components expect. */}
       <div className="session-light">
-        {/* CareEnablement is now the problem statement (replaced the juggling section) */}
-        <CareEnablement />
         <MuralReveal />
         <Impact />
         <HowCarelu />
