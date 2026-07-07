@@ -979,8 +979,8 @@ function Problem() {
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               You&rsquo;re juggling a dozen systems to run a single intake.
             </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 560, margin: '0 auto' }}>
-              They all connect to a system of record — built to manage the work, not do it. So the chasing falls to your team, and families leave for whoever answers first. That&rsquo;s why Carelu is a <span style={{ color: '#111', fontWeight: 500 }}>care enablement platform</span>, not another system of record.
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 470, margin: '0 auto' }}>
+              More tools, more logins, more handoffs &mdash; and still, families slip away before they reach care.
             </p>
           </div>
           {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
@@ -3407,7 +3407,7 @@ function MuralReveal() {
             fontSize: 15, color: 'var(--gray-500)',
             lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
           }}>
-            AI intake infrastructure that makes sure every family who can receive care does.
+            The care enablement platform that makes sure every family who can receive care does &mdash; not another system of record.
           </p>
         </div>
 
