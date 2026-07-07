@@ -864,6 +864,96 @@ const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '
 
 
 
+/* ================================================================
+   THE PROBLEM — Carelu-style browser chaos (dark mode)
+   Sticky scroll: text → browser windows slam in → cursor closes → solution
+   ================================================================ */
+function Problem() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [t, setT] = useState(0);
+
+  // Scroll-tied progress (so the animation rewinds when user scrolls back up).
+  // No sticky pinning — uses the section's natural position in the viewport to compute t,
+  // so there's no 100vh "exit transition" that reads as empty space.
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      const el = trackRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      // t = 0 when the section's top is at viewport bottom (just appearing);
+      // t = 1 when the section's bottom is at viewport top (fully scrolled past).
+      // Animation runs as the section traverses the viewport — t=0 when section's
+      // top hits the viewport bottom, t=1 when the section's top hits the viewport top.
+      const t = Math.max(0, Math.min(1, (vh - rect.top) / vh));
+      setT(t);
+    };
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  // The chaos animation was reduced to the icon rain only — the old browser-tabs
+  // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
+  const rainOpacity = 1; // icons always rain — never fade out
+  const closed = false;  // section never "closes" — it just scrolls away naturally
+
+  return (
+    <div ref={trackRef} style={{
+      height: '100svh', position: 'relative',
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+      backgroundColor: closed ? '#FAF8F3' : '#fff',
+      transition: 'background-color 0.5s',
+      overflow: 'hidden',
+    }}>
+        {/* Ambient glow for solution phase -- no earth image, pure dark with subtle accent radial */}
+        {t > 0.5 && (
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
+            <div style={{
+              position: 'absolute', top: '30%', left: '50%', transform: 'translateX(-50%)',
+              width: '120%', height: '80%',
+              background: `radial-gradient(ellipse 40% 40% at 50% 40%, rgba(74,124,63,${Math.min((t - 0.5) * 2, 0.08)}) 0%, transparent 70%)`,
+              transition: 'opacity 0.8s',
+            }} />
+          </div>
+        )}
+
+        {/* Draggable, throwable tool-logo playground during the calm headline beat */}
+        <IconPlayground opacity={rainOpacity} />
+
+        {/* Text overlay */}
+        <div style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 36px', marginBottom: 32, width: '100%' }}>
+          {/* Problem text */}
+          <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
+              You're juggling multiple systems for inquiries, forms, insurance, and scheduling.
+            </h2>
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
+              Your team spends all day chasing families for missing forms and signatures — and still loses them before they ever get to care.
+            </p>
+          </div>
+          {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
+          {/* Spacer */}
+          <div style={{ visibility: 'hidden' }}>
+            <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
+            <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
+          </div>
+        </div>
+
+        {/* Solution-phase reveal was moved to the MuralReveal section below.
+            Keeping this conditional empty so the chaos-tabs animation still plays out. */}
+    </div>
+  );
+}
+
 /* ── THE DIFFERENCE ── Keep the "we've run intake thousands of times" strength,
    then a blunt claim (your system of record is killing your business) proven by
    a side-by-side: the same four intake jobs sit dead in a system of record vs.
@@ -892,7 +982,6 @@ const CE_ITEMS = [
 function CareEnablement() {
   const gridRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     const el = gridRef.current;
@@ -905,22 +994,10 @@ function CareEnablement() {
   const outcomeDelay = CE_ITEMS.length * 0.16 + 0.2;
 
   return (
-    <section style={{ background: '#fff', position: 'relative', overflow: 'hidden', paddingTop: 'clamp(88px, 11vw, 148px)', paddingBottom: 'clamp(76px, 10vw, 132px)' }}>
-      {/* The tools you're juggling — falling and draggable, the old Problem beat
-          folded in as living background behind the headline (not its own section). */}
-      <div aria-hidden="true" style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 'clamp(400px, 52vh, 600px)', zIndex: 0,
-        WebkitMaskImage: `linear-gradient(#000 ${isMobile ? 52 : 62}%, transparent 100%)`,
-        maskImage: `linear-gradient(#000 ${isMobile ? 52 : 62}%, transparent 100%)`,
-      }}>
-        {/* Softer on mobile — the narrow column packs the tiles over the headline. */}
-        <IconPlayground opacity={isMobile ? 0.4 : 0.62} />
-      </div>
-
-      <div style={{ ...W, maxWidth: 940, position: 'relative', zIndex: 1 }}>
-        {/* Experience + the reframe. pointer-events:none lets the icons behind
-            stay grabbable straight through the text. */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5.5vw, 64px)', pointerEvents: 'none' }}>
+    <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)' }}>
+      <div style={{ ...W, maxWidth: 940 }}>
+        {/* Experience, then the blunt claim */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5.5vw, 64px)' }}>
           <div className="rv"><Pill>What we&rsquo;ve learned</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 52px)',
@@ -934,8 +1011,8 @@ function CareEnablement() {
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
             lineHeight: 1.6, maxWidth: 580, margin: '18px auto 0',
           }}>
-            Every tool you&rsquo;re juggling stores the work and waits for a person.
-            Here&rsquo;s the same intake, two ways:
+            Every tool you&rsquo;re juggling is one &mdash; built to store the work and wait for
+            a person. Here&rsquo;s the same intake, two ways:
           </p>
         </div>
 
@@ -3610,6 +3687,7 @@ export default function Landing() {
       <Nav />
       <Hero />
       <DemoVideo />
+      <Problem />
 
       {/* Session-work sections below — wrapped in .session-light to restore
           the cream/dark-green palette that these components expect. */}
