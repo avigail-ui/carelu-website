@@ -723,7 +723,7 @@ const RAIN_ICONS = [
   { n: 'simplepractice',      left: 30, size: 128 },
   { n: 'intakeq',             left: 50, size: 100 },
   { n: 'lobbie',              left: 63, size: 118 },
-  { n: 'centralreach',        left: 72, size: 122 },
+  { n: 'quo',                 left: 72, size: 122 },
   { n: 'rethink',             left: 40, size: 104 },
   { n: 'artemisaba',          left: 55, size: 126 },
   { n: 'anonymoushealth',     left: 84, size: 108 },
