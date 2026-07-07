@@ -954,10 +954,8 @@ function Problem() {
   );
 }
 
-/* ── THE DIFFERENCE ── Death vs. life, side by side, on two heart monitors: the
-   system of record has flatlined; Carelu has a pulse. Before/after. */
-const HB_PATH = 'M0,28 H44 L54,28 L60,8 L68,48 L76,28 L86,28 H144 L154,28 L160,8 L168,48 L176,28 L186,28 H244 L254,28 L260,8 L268,48 L276,28 L286,28 H340';
-const FLAT_PATH = 'M0,28 H104 L112,22 L120,34 L128,28 H340';
+/* ── THE DIFFERENCE ── Lead with the claim, then show the leak: a system of
+   record loses a family at every stage of intake, while Carelu holds them. */
 const SOR_LOGOS = [
   { src: '/logos/sor/salesforce.svg', name: 'Salesforce' },
   { src: '/logos/sor/hubspot.svg', name: 'HubSpot' },
@@ -966,104 +964,120 @@ const SOR_LOGOS = [
   { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
   { src: '/logos/sor/notion.svg', name: 'Notion' },
 ];
-const CE_CAPS = ['Answers', 'Chases', 'Verifies', 'Books'];
+const CE_STAGES = ['Inquiry', 'Form', 'Benefits', 'Assessment', 'In care'];
+const CE_XS = [46, 168, 290, 412, 534];
+const yFor = (r: number) => 210 - (r / 100) * 178;
+// illustrative retention through the funnel — shape, not a claimed statistic
+const CE_SOR = [100, 70, 48, 30, 16];
+const CE_CARELU = [100, 96, 92, 89, 86];
+
+// Catmull-Rom → cubic bezier, for a smooth curve through the stage points.
+function smoothPath(pts: [number, number][]): string {
+  if (pts.length < 2) return '';
+  let d = `M${pts[0][0]},${pts[0][1]}`;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[i - 1] || pts[i];
+    const p1 = pts[i];
+    const p2 = pts[i + 1];
+    const p3 = pts[i + 2] || p2;
+    const c1x = p1[0] + (p2[0] - p0[0]) / 6;
+    const c1y = p1[1] + (p2[1] - p0[1]) / 6;
+    const c2x = p2[0] - (p3[0] - p1[0]) / 6;
+    const c2y = p2[1] - (p3[1] - p1[1]) / 6;
+    d += ` C${c1x},${c1y} ${c2x},${c2y} ${p2[0]},${p2[1]}`;
+  }
+  return d;
+}
 
 function CareEnablement() {
-  const cardBase: React.CSSProperties = {
-    borderRadius: 20, padding: 'clamp(22px, 3vw, 30px)',
-    display: 'flex', flexDirection: 'column',
-  };
-  const labelRow: React.CSSProperties = { display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 };
-  const labelTxt: React.CSSProperties = { fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase' };
-  const tag: React.CSSProperties = { fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 9px', borderRadius: 999 };
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = chartRef.current;
+    if (!el) return;
+    // add `.in` via classList (not React state) so we don't clobber the
+    // `.visible` class useReveal adds to the same node
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { el.classList.add('in'); obs.disconnect(); }
+    }, { threshold: 0.35 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  const sorPts = CE_XS.map((x, i) => [x, yFor(CE_SOR[i])] as [number, number]);
+  const carPts = CE_XS.map((x, i) => [x, yFor(CE_CARELU[i])] as [number, number]);
+  const sorLine = smoothPath(sorPts);
+  const carLine = smoothPath(carPts);
+  const areaClose = ` L${CE_XS[4]},210 L${CE_XS[0]},210 Z`;
 
   return (
     <section style={{ background: '#fff', paddingTop: 'clamp(76px, 10vw, 132px)', paddingBottom: 'clamp(76px, 10vw, 132px)', overflow: 'hidden' }}>
-      <div style={{ ...W, maxWidth: 920 }}>
-        {/* The claim + why */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5.5vw, 64px)' }}>
+      <div style={{ ...W, maxWidth: 820 }}>
+        {/* The claim, first */}
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 60px)' }}>
           <div className="rv"><Pill>The difference</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 4.4vw, 52px)',
-            fontWeight: 400, lineHeight: 1.14, letterSpacing: '-0.02em',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 60px)',
+            fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.025em',
             color: 'var(--green-900)', maxWidth: 780, margin: '0 auto',
           }}>
-            After thousands of intakes, we&rsquo;ve seen it: a{' '}
-            <span style={{ fontStyle: 'italic' }}>system of record is killing your business.</span>
+            Your system of record is{' '}
+            <span style={{ fontStyle: 'italic' }}>killing your business.</span>
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
             lineHeight: 1.6, maxWidth: 560, margin: '18px auto 0',
           }}>
-            It captures the family and waits &mdash; while they slip away to the competitor who
-            answered first.
+            After thousands of intakes, we found the same thing every time: at every stage it
+            makes a family wait, more of them slip away.
           </p>
         </div>
 
-        {/* Death | Life — two heart monitors */}
-        <div className="ce-vs rv-scale d3" style={{ display: 'grid', gap: 'clamp(16px, 2.4vw, 26px)', alignItems: 'stretch' }}>
-          {/* ── Flatlined: the system of record ── */}
-          <div style={{ ...cardBase, background: '#EAE8E2', border: '1px solid rgba(20,40,30,0.08)' }}>
-            <div style={labelRow}>
-              <span style={{ ...labelTxt, color: 'var(--gray-500)' }}>System of record</span>
-              <span style={{ ...tag, background: 'rgba(20,40,30,0.07)', color: 'var(--gray-500)' }}>Before</span>
-            </div>
-            {/* your stack — greyed, lifeless */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', margin: '18px 0 20px', minHeight: 20 }}>
-              {SOR_LOGOS.map((l) => (
-                <img key={l.name} src={l.src} alt={l.name} style={{ height: 17, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.38 }} />
-              ))}
-            </div>
-            {/* the monitor — flatlined */}
-            <div style={{
-              borderRadius: 12, padding: '20px 18px', background: 'linear-gradient(160deg, #232a25, #171d18)',
-              backgroundImage: 'linear-gradient(160deg, #232a25, #171d18), linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)',
-              backgroundSize: 'auto, 15px 15px, 15px 15px',
-            }}>
-              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block' }}>
-                <path d={FLAT_PATH} fill="none" stroke="rgba(160,180,165,0.5)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
-              </svg>
-            </div>
-            <div style={{ marginTop: 'auto', paddingTop: 18, display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span style={{ width: 18, height: 18, borderRadius: '50%', flexShrink: 0, border: '1.5px solid rgba(20,40,30,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="rgba(20,40,30,0.35)" strokeWidth="1.6" strokeLinecap="round" /></svg>
+        {/* The leak — drop-off at every stage, Carelu vs. a system of record */}
+        <div ref={chartRef} className="ce-chart rv-scale d3" style={{ maxWidth: 660, margin: '0 auto' }}>
+          {/* legend */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 28, marginBottom: 14, flexWrap: 'wrap' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>
+              <span style={{ width: 20, height: 3, borderRadius: 2, background: '#4A7C3F' }} /> Carelu
+            </span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 600, color: 'var(--gray-500)' }}>
+              <span style={{ width: 20, height: 2, borderRadius: 2, background: 'rgba(20,40,30,0.42)' }} /> System of record
+              <span style={{ display: 'inline-flex', gap: 7, marginLeft: 4 }}>
+                {SOR_LOGOS.slice(0, 4).map((l) => (
+                  <img key={l.name} src={l.src} alt="" style={{ height: 13, width: 'auto', filter: 'grayscale(1)', opacity: 0.4 }} />
+                ))}
               </span>
-              <span style={{ fontFamily: 'var(--font-display)', fontSize: 20, fontStyle: 'italic', color: 'var(--gray-500)' }}>Lost to a competitor.</span>
-            </div>
+            </span>
           </div>
 
-          {/* ── Alive: Carelu ── */}
-          <div style={{ ...cardBase, background: '#fff', border: '1px solid rgba(74,124,63,0.4)', boxShadow: '0 24px 60px rgba(20,40,30,0.1)' }}>
-            <div style={labelRow}>
-              <span style={{ ...labelTxt, color: 'var(--green-900)' }}>Carelu</span>
-              <span style={{ ...tag, background: 'rgba(212,242,92,0.55)', color: 'var(--green-900)' }}>After</span>
-            </div>
-            {/* what it does — alive */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', margin: '18px 0 20px', minHeight: 20 }}>
-              {CE_CAPS.map((c) => (
-                <span key={c} style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--green-900)', background: 'rgba(212,242,92,0.4)', padding: '4px 11px', borderRadius: 999 }}>{c}</span>
-              ))}
-            </div>
-            {/* the monitor — beating */}
-            <div style={{
-              borderRadius: 12, padding: '20px 18px', background: 'linear-gradient(160deg, #1a2a1c, #101a12)',
-              backgroundImage: 'linear-gradient(160deg, #1a2a1c, #101a12), linear-gradient(rgba(212,242,92,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(212,242,92,0.05) 1px, transparent 1px)',
-              backgroundSize: 'auto, 15px 15px, 15px 15px',
-            }}>
-              <svg viewBox="0 0 340 56" width="100%" preserveAspectRatio="xMidYMid meet" style={{ display: 'block', overflow: 'visible' }}>
-                <path id="hbPath" className="ecg-alive" d={HB_PATH} fill="none" stroke="var(--lime)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
-                <circle r="3.4" fill="#F4FFCE" style={{ filter: 'drop-shadow(0 0 4px rgba(212,242,92,1))' }}>
-                  <animateMotion dur="2.6s" repeatCount="indefinite">
-                    <mpath href="#hbPath" />
-                  </animateMotion>
-                </circle>
-              </svg>
-            </div>
-            <div style={{ marginTop: 'auto', paddingTop: 18, display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span style={{ width: 12, height: 12, borderRadius: '50%', flexShrink: 0, background: 'var(--lime)', boxShadow: '0 0 0 5px rgba(212,242,92,0.28)' }} />
-              <span style={{ fontFamily: 'var(--font-display)', fontSize: 20, color: 'var(--green-900)' }}>In care.</span>
-            </div>
-          </div>
+          <svg viewBox="0 0 660 250" width="100%" style={{ display: 'block', overflow: 'visible' }}>
+            {/* stage gridlines + baseline */}
+            {CE_XS.map((x) => <line key={x} x1={x} y1={26} x2={x} y2={210} stroke="rgba(20,40,30,0.06)" strokeWidth="1" />)}
+            <line x1={CE_XS[0]} y1={210} x2={CE_XS[4]} y2={210} stroke="rgba(20,40,30,0.12)" strokeWidth="1" />
+
+            {/* the gap Carelu saves (between the curves) reads via the two area fills */}
+            <path className="chart-area" d={carLine + areaClose} fill="rgba(212,242,92,0.28)" />
+            <path className="chart-area" d={sorLine + areaClose} fill="rgba(30,40,32,0.07)" />
+
+            {/* curves */}
+            <path className="chart-line line-s" d={sorLine} fill="none" stroke="rgba(20,40,30,0.42)" strokeWidth="2" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+            <path className="chart-line line-c" d={carLine} fill="none" stroke="#4A7C3F" strokeWidth="2.75" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+
+            {/* stage dots */}
+            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.4} fill="#8A8F88" />)}
+            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.8} fill="#4A7C3F" />)}
+
+            {/* endpoint annotations */}
+            <g className="chart-anno">
+              <text x={CE_XS[4] + 12} y={carPts[4][1] + 4} fontSize="14" fontWeight="700" fill="var(--green-900)">In care</text>
+              <text x={CE_XS[4] + 12} y={sorPts[4][1] + 4} fontSize="14" fontWeight="700" fill="var(--gray-500)" fontStyle="italic">Lost</text>
+            </g>
+
+            {/* stage labels */}
+            {CE_STAGES.map((s, i) => (
+              <text key={s} x={CE_XS[i]} y={234} fontSize="11.5" fontWeight="600" letterSpacing="0.04em" fill="var(--gray-500)" textAnchor="middle">{s}</text>
+            ))}
+          </svg>
         </div>
       </div>
     </section>

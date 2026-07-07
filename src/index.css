@@ -5,19 +5,23 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
-/* Care-enablement death/life: two panels on desktop, stacked on mobile */
-.ce-vs { grid-template-columns: 1fr 1fr; }
-@media (max-width: 768px) { .ce-vs { grid-template-columns: 1fr; } }
-
-/* The living heartbeat line — a gentle glow pulse so it reads as alive even
-   before you notice the blip tracing it. */
-.ecg-alive { animation: ecgPulse 1.5s ease-in-out infinite; }
-@keyframes ecgPulse {
-  0%, 100% { filter: drop-shadow(0 0 1px rgba(212,242,92,0.35)); }
-  50%      { filter: drop-shadow(0 0 5px rgba(212,242,92,0.85)); }
-}
+/* Care-enablement drop-off chart — the two curves draw in, then the fills,
+   dots, and endpoint labels fade up, so you watch the leak open up. */
+.ce-chart .chart-line { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.ce-chart.in .line-s  { animation: drawLine 1.25s ease 0.1s forwards; }
+.ce-chart.in .line-c  { animation: drawLine 1.25s ease 0.4s forwards; }
+@keyframes drawLine { to { stroke-dashoffset: 0; } }
+.ce-chart .chart-area,
+.ce-chart .chart-dot,
+.ce-chart .chart-anno { opacity: 0; transition: opacity 0.6s ease; }
+.ce-chart.in .chart-area { opacity: 1; transition-delay: 0.55s; }
+.ce-chart.in .chart-dot  { opacity: 1; transition-delay: 0.9s; }
+.ce-chart.in .chart-anno { opacity: 1; transition-delay: 1.15s; }
 @media (prefers-reduced-motion: reduce) {
-  .ecg-alive { animation: none; }
+  .ce-chart .chart-line { stroke-dashoffset: 0; animation: none; }
+  .ce-chart .chart-area,
+  .ce-chart .chart-dot,
+  .ce-chart .chart-anno { opacity: 1; transition: none; }
 }
 
 :root {
