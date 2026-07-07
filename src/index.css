@@ -5,6 +5,16 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
+/* Nav pill: balanced side groups keep the logo dead-center regardless of how
+   wide the left links vs. right actions are. */
+.nav-side { display: flex; align-items: center; flex: 1 1 0; min-width: 0; }
+.nav-side-left { justify-content: flex-start; }
+.nav-side-right { justify-content: flex-end; }
+@media (max-width: 768px) {
+  .nav-pill { width: auto !important; }
+  .nav-side { flex: 0 0 auto; }
+}
+
 /* Care-enablement drop-off chart — the two curves draw in, then the fills,
    dots, and endpoint labels fade up, so you watch the leak open up. */
 .ce-chart .chart-line { stroke-dasharray: 1; stroke-dashoffset: 1; }

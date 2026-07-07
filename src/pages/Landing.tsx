@@ -98,8 +98,9 @@ export function Nav({ base = '' }: { base?: string }) {
         display: 'flex', justifyContent: 'center',
         padding: '16px 20px 0',
       }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center',
+        <div className="nav-pill" style={{
+          display: 'flex', alignItems: 'center',
+          width: 'min(720px, calc(100vw - 40px))',
           height: 56,
           borderRadius: 18,
           padding: '0 6px 0 0',
@@ -109,6 +110,7 @@ export function Nav({ base = '' }: { base?: string }) {
           border: '1px solid rgba(43,42,38,0.07)',
         }}>
           {/* Left links */}
+          <div className="nav-side nav-side-left">
           <NavA href={`${base}#platform`} className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
@@ -164,13 +166,15 @@ export function Nav({ base = '' }: { base?: string }) {
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
           >Company</NavA>
+          </div>
 
           {/* Center logo */}
-          <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, margin: '0 64px' }}>
+          <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
             <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
           </NavA>
 
           {/* Right: login + button */}
+          <div className="nav-side nav-side-right">
           <NavA href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
@@ -197,6 +201,7 @@ export function Nav({ base = '' }: { base?: string }) {
               }
             </svg>
           </button>
+          </div>
         </div>
       </nav>
 
@@ -704,7 +709,7 @@ const SOR_LOGOS = [
   { src: '/logos/sor/clickup.svg', name: 'ClickUp' },
   { src: '/logos/sor/notion.svg', name: 'Notion' },
 ];
-const CE_STAGES = ['Inquiry', 'Form', 'Benefits', 'Assessment', 'In care'];
+const CE_STAGES = ['Inquiry', 'Form', 'Benefits', 'Assessment', 'Ready for care'];
 const CE_XS = [46, 168, 290, 412, 534];
 const yFor = (r: number) => 210 - (r / 100) * 178;
 // illustrative retention through the funnel — shape, not a claimed statistic
@@ -767,59 +772,64 @@ function CareEnablement() {
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 620, margin: '18px auto 0',
+            lineHeight: 1.6, maxWidth: 640, margin: '18px auto 0',
           }}>
-            After thousands of intakes, we learned{' '}
-            <span style={{ color: 'var(--green-900)', fontStyle: 'italic' }}>it isn&rsquo;t a staffing problem.</span>{' '}
-            A system of record only stores each family, so every follow-up falls on your team by
-            hand &mdash; and the hours it takes are hours a competitor uses to answer first.
+            After thousands of intakes, the cause was always the same &mdash; and it was{' '}
+            <span style={{ color: 'var(--green-900)', fontStyle: 'italic' }}>never a staffing problem.</span>{' '}
+            A system of record stores the family and waits; it never acts. So the follow-up falls
+            back on your team &mdash; and every hour it waits, a competitor answers first.
           </p>
         </div>
 
-        {/* The leak — drop-off at every stage, Carelu vs. a system of record */}
-        <div ref={chartRef} className="ce-chart rv-scale d3" style={{ maxWidth: 660, margin: '0 auto' }}>
+        {/* The leak — of every family who reaches out, how many make it to care */}
+        <div ref={chartRef} className="ce-chart rv-scale d3" style={{ maxWidth: 680, margin: '0 auto' }}>
           {/* legend */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 28, marginBottom: 14, flexWrap: 'wrap' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>
-              <span style={{ width: 20, height: 3, borderRadius: 2, background: '#4A7C3F' }} /> Carelu
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 30, marginBottom: 16, flexWrap: 'wrap' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: 'var(--green-900)' }}>
+              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#3E7C3F' }} /> With Carelu
             </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 600, color: 'var(--gray-500)' }}>
-              <span style={{ width: 20, height: 2, borderRadius: 2, background: 'rgba(20,40,30,0.42)' }} /> System of record
-              <span style={{ display: 'inline-flex', gap: 7, marginLeft: 4 }}>
-                {SOR_LOGOS.slice(0, 4).map((l) => (
-                  <img key={l.name} src={l.src} alt="" style={{ height: 13, width: 'auto', filter: 'grayscale(1)', opacity: 0.4 }} />
-                ))}
-              </span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13.5, fontWeight: 600, color: '#B4553E' }}>
+              <span style={{ width: 22, height: 3, borderRadius: 2, background: '#C85A44' }} /> On a system of record
             </span>
           </div>
 
-          <svg viewBox="0 0 660 250" width="100%" style={{ display: 'block', overflow: 'visible' }}>
+          {/* the system of record = the tools you're stitching together, shown plainly */}
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 'clamp(20px, 3.4vw, 34px)', flexWrap: 'wrap', marginBottom: 26 }}>
+            {SOR_LOGOS.map((l) => (
+              <img key={l.name} src={l.src} alt={l.name} style={{ height: 26, width: 'auto', filter: 'grayscale(1)', opacity: 0.5 }} />
+            ))}
+          </div>
+
+          <svg viewBox="0 0 700 250" width="100%" style={{ display: 'block', overflow: 'visible' }}>
             <defs>
               <linearGradient id="lossGrad" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stopColor="rgba(43,62,45,0.03)" />
-                <stop offset="1" stopColor="rgba(43,62,45,0.14)" />
+                <stop offset="0" stopColor="rgba(200,90,68,0.05)" />
+                <stop offset="1" stopColor="rgba(200,90,68,0.22)" />
               </linearGradient>
             </defs>
 
+            {/* start anchor — both lines begin with every family who reaches out */}
+            <text x={CE_XS[0] - 4} y={16} fontSize="11.5" fontWeight="600" fill="var(--gray-500)" textAnchor="start">Every family who reaches out</text>
+
             {/* stage gridlines + baseline */}
-            {CE_XS.map((x) => <line key={x} x1={x} y1={22} x2={x} y2={212} stroke="rgba(20,40,30,0.055)" strokeWidth="1" />)}
+            {CE_XS.map((x) => <line key={x} x1={x} y1={26} x2={x} y2={212} stroke="rgba(20,40,30,0.05)" strokeWidth="1" />)}
             <line x1={CE_XS[0]} y1={212} x2={CE_XS[4]} y2={212} stroke="rgba(20,40,30,0.1)" strokeWidth="1" />
 
             {/* the widening gap between the lines = families lost */}
             <path className="chart-area" d={lossWedge} fill="url(#lossGrad)" />
 
             {/* curves */}
-            <path className="chart-line line-s" d={sorLine} fill="none" stroke="rgba(20,40,30,0.4)" strokeWidth="1.75" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
-            <path className="chart-line line-c" d={carLine} fill="none" stroke="#4A7C3F" strokeWidth="2.25" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+            <path className="chart-line line-s" d={sorLine} fill="none" stroke="#C85A44" strokeWidth="2.25" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
+            <path className="chart-line line-c" d={carLine} fill="none" stroke="#3E7C3F" strokeWidth="2.5" pathLength={1} strokeLinecap="round" strokeLinejoin="round" />
 
-            {/* stage dots — hollow so the lines read as the primary form */}
-            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={2.8} fill="#fff" stroke="rgba(20,40,30,0.4)" strokeWidth="1.5" />)}
-            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3} fill="#4A7C3F" />)}
+            {/* stage dots */}
+            {sorPts.map((p, i) => <circle key={`s${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3} fill="#C85A44" />)}
+            {carPts.map((p, i) => <circle key={`c${i}`} className="chart-dot" cx={p[0]} cy={p[1]} r={3.2} fill="#3E7C3F" />)}
 
-            {/* endpoint annotations */}
+            {/* endpoint outcomes — tied to each line's colour */}
             <g className="chart-anno">
-              <text x={CE_XS[4] + 13} y={carPts[4][1] + 4} fontSize="13" fontWeight="700" letterSpacing="0.01em" fill="var(--green-900)">In care</text>
-              <text x={CE_XS[4] + 13} y={sorPts[4][1] + 4} fontSize="13" fontStyle="italic" fill="var(--gray-500)">Lost</text>
+              <text x={CE_XS[4] + 13} y={carPts[4][1] + 4} fontSize="13.5" fontWeight="700" fill="var(--green-900)">In care</text>
+              <text x={CE_XS[4] + 13} y={sorPts[4][1] + 4} fontSize="13.5" fontWeight="700" fontStyle="italic" fill="#B4553E">Lost</text>
             </g>
 
             {/* stage labels */}
@@ -827,6 +837,11 @@ function CareEnablement() {
               <text key={s} x={CE_XS[i]} y={234} fontSize="11.5" fontWeight="600" letterSpacing="0.04em" fill="var(--gray-500)" textAnchor="middle">{s}</text>
             ))}
           </svg>
+
+          {/* caption cements the read so the chart isn't asked to carry it alone */}
+          <p className="chart-anno" style={{ textAlign: 'center', fontSize: 14.5, color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 500, margin: '20px auto 0' }}>
+            By the time a family is ready to start, a system of record has already lost most of them.
+          </p>
         </div>
       </div>
     </section>
