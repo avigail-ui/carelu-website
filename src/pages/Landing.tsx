@@ -771,7 +771,8 @@ function IconPlayground({ opacity }: { opacity: number }) {
     const WALL = 0.4;
     const FLOORF = 0.7;  // friction as tiles land + settle on the floor
     const E = 0.05;      // near-zero bounce so tiles pile and stop fast
-    const SLEEP = 0.55;  // per-frame motion below this counts toward settling
+    const SLEEP = 1.0;   // per-frame motion below this counts toward settling
+    let frames = 0;      // frames since the drop began (drives the settle backstop)
     const step = () => {
       const drag = dragRef.current;
       const bodies = bodiesRef.current;
@@ -782,6 +783,7 @@ function IconPlayground({ opacity }: { opacity: number }) {
         rafRef.current = requestAnimationFrame(step);
         return;
       }
+      frames++;
 
       // 1) integrate under gravity (settled + dragged tiles are skipped)
       for (const b of bodies) {
@@ -828,12 +830,15 @@ function IconPlayground({ opacity }: { opacity: number }) {
         }
       }
 
-      // 3) settle: a tile that's barely moving for a beat goes to sleep and stays put
+      // 3) settle: a barely-moving tile sleeps. A hard backstop (~4s after the drop)
+      //    freezes any tile still jittering, so nothing vibrates forever. Tiles grabbed
+      //    later fall outside this window and still settle naturally by the motion test.
+      const forceSettle = frames > 240 && frames < 360;
       for (const b of bodies) {
         if (b.settled || (drag && drag.b === b)) continue;
         const motion = Math.abs(b.vx) + Math.abs(b.vy) + Math.abs(b.vangle);
-        if (motion < SLEEP) {
-          if (++b.still > 14) { b.settled = true; b.vx = 0; b.vy = 0; b.vangle = 0; }
+        if (forceSettle || motion < SLEEP) {
+          if (forceSettle || ++b.still > 10) { b.settled = true; b.vx = 0; b.vy = 0; b.vangle = 0; }
         } else b.still = 0;
       }
 
