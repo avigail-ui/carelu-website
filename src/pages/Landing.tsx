@@ -1026,10 +1026,12 @@ function CareEnablement() {
           </h2>
           <p className="rv-scale d2" style={{
             fontSize: 'clamp(16px, 1.6vw, 20px)', color: 'var(--gray-500)',
-            lineHeight: 1.6, maxWidth: 560, margin: '18px auto 0',
+            lineHeight: 1.6, maxWidth: 620, margin: '18px auto 0',
           }}>
-            After thousands of intakes, we found the same thing every time: at every stage it
-            makes a family wait, more of them slip away.
+            After thousands of intakes, we learned{' '}
+            <span style={{ color: 'var(--green-900)', fontStyle: 'italic' }}>it isn&rsquo;t a staffing problem.</span>{' '}
+            A system of record only stores each family, so every follow-up falls on your team by
+            hand &mdash; and the hours it takes are hours a competitor uses to answer first.
           </p>
         </div>
 
