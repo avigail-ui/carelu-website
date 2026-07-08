@@ -982,14 +982,13 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
               <path d="M4.5 5v14c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5" />
               <path d="M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8" />
             </svg>
-            {/* On mobile the headline right below already says "system of record",
-                and a narrow screen has no room — show the caption on desktop only. */}
+            {/* Caption for the central data store — desktop only; a narrow screen has no room */}
             {nd.size > 75 && (
               <span style={{
                 position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
                 fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
                 color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
-              }}>System of record</span>
+              }}>Your records</span>
             )}
           </div>
         ) : (
@@ -1086,7 +1085,7 @@ function Problem() {
           {/* Problem text */}
           <div ref={textRef} style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
-              Nothing&rsquo;s broken. You&rsquo;re still losing families.
+              Nothing&rsquo;s broken.<br />You&rsquo;re still losing families.
             </h2>
             <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 580, margin: '0 auto' }}>
               More tools, more headcount, more complexity &mdash; but none of it moves on its own. So intake stalls, and families slip to the competitor who answers first.
