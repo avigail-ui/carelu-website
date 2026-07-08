@@ -739,6 +739,8 @@ type WebNode = {
   ax: number; ay: number;   // drift amplitude (px)
   x: number; y: number;     // current center (px)
   rev: number;              // reveal progress 0..1
+  hub?: boolean;            // the inert System-of-Record hub everything tethers to
+  dead?: boolean;           // a stuck/dead integration — rendered greyed out
   el: HTMLDivElement | null;
 };
 type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | null };
@@ -753,45 +755,63 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
   const rafRef = useRef(0);
   const startedRef = useRef(false);
   const tRef = useRef(0);
+  const maskRef = useRef<SVGRectElement | null>(null);
 
   if (nodesRef.current.length === 0) {
     // deterministic pseudo-random keyed off the index (stable across SSR/hydration)
     const rnd = (i: number, s: number) => { const v = Math.sin((i + 1) * s) * 43758.5453; return v - Math.floor(v); };
     const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
     const scale = mobile ? 0.64 : 1;
-    nodesRef.current = WEB_ICONS.map((ic, i) => {
+    // A few integrations are dead — data pours in but nothing comes back out.
+    const DEAD = new Set(['whatconverts', 'docusign', 'lobbie']);
+
+    // [0] The inert System-of-Record hub, sitting above the headline. Everything tethers
+    // to it; it barely drifts (it just holds data, it doesn't do the work).
+    const hub: WebNode = {
+      n: '__hub', size: Math.round((mobile ? 62 : 92)),
+      bx: 0.5, by: mobile ? 0.19 : 0.28,
+      phx: 0.4, phy: 1.3, ax: mobile ? 1.2 : 2, ay: mobile ? 1.2 : 2,
+      x: 0, y: 0, rev: 0, hub: true, el: null,
+    };
+    const tools: WebNode[] = WEB_ICONS.map((ic, i) => {
       let bx = ic.bx, by = ic.by;
       if (mobile) {
         // Narrow portrait: pull nodes off the edges (no clipping) and squeeze them into
         // a top band + a bottom band, leaving the middle clear for the taller headline.
         bx = 0.5 + (bx - 0.5) * 0.86;
         by = by < 0.46
-          ? 0.17 + (by / 0.46) * 0.16          // top band  → [0.17, 0.33]
+          ? 0.28 + (by / 0.46) * 0.11          // top band  → [0.28, 0.39] (below the hub)
           : 0.60 + ((by - 0.46) / 0.54) * 0.34; // bottom band → [0.60, 0.94]
       }
       return {
         n: ic.n, size: Math.round(ic.size * scale), bx, by,
         phx: rnd(i, 12.9898) * Math.PI * 2, phy: rnd(i, 78.233) * Math.PI * 2,
         ax: 4 + rnd(i, 3.7) * 6, ay: 4 + rnd(i, 5.1) * 6,
-        x: 0, y: 0, rev: 0, el: null,
+        x: 0, y: 0, rev: 0, dead: DEAD.has(ic.n), el: null,
       };
     });
-    // Edges: wire each node to its two nearest neighbours (deduped). Roughly a third
-    // are "broken" — dashed with a wider gap — so the web reads as frayed, not whole.
-    const nodes = nodesRef.current;
-    const seen = new Set<string>();
+    const nodes = [hub, ...tools];
+    nodesRef.current = nodes;
+
+    // Edges tell the story: every tool tethers to the hub (index 0). Roughly a third of
+    // those spokes are "broken" — dashed, gapped short of the tile — so it reads as a
+    // system half its integrations have quietly fallen off of. A sparse tool-to-tool
+    // mesh on top keeps it tangled rather than a tidy starburst.
     const edges: WebEdge[] = [];
-    for (let i = 0; i < nodes.length; i++) {
-      const near = nodes
-        .map((m, j) => ({ j, dd: (m.bx - nodes[i].bx) ** 2 + (m.by - nodes[i].by) ** 2 }))
-        .filter((o) => o.j !== i)
-        .sort((a, b) => a.dd - b.dd);
-      for (let k = 0; k < 2; k++) {
-        const j = near[k].j;
-        const a = Math.min(i, j), b = Math.max(i, j);
-        const key = `${a}-${b}`;
-        if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: (a * 7 + b * 3) % 3 === 0, line: null }); }
+    for (let i = 1; i < nodes.length; i++) {
+      edges.push({ a: 0, b: i, broken: (i * 5 + 2) % 3 === 0, line: null });
+    }
+    const seen = new Set<string>();
+    for (let i = 1; i < nodes.length; i++) {
+      let best = -1, bestd = Infinity;
+      for (let j = 1; j < nodes.length; j++) {
+        if (j === i) continue;
+        const dd = (nodes[j].bx - nodes[i].bx) ** 2 + (nodes[j].by - nodes[i].by) ** 2;
+        if (dd < bestd) { bestd = dd; best = j; }
       }
+      const a = Math.min(i, best), b = Math.max(i, best);
+      const key = `${a}-${b}`;
+      if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: (a + b) % 2 === 0, line: null }); }
     }
     edgesRef.current = edges;
   }
@@ -830,7 +850,17 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         });
         if (l !== Infinity) {
           const GAP = 16;
-          keep = { l: l - wr.left - GAP, t: t - wr.top - GAP, r: r - wr.left + GAP, b: bt - wr.top + GAP };
+          const bl = l - wr.left, bt2 = t - wr.top, br = r - wr.left, bb = bt - wr.top;
+          keep = { l: bl - GAP, t: bt2 - GAP, r: br + GAP, b: bb + GAP };
+          // Punch the same box (a touch larger) out of the thread layer so no spoke
+          // ever crosses the text — the blurred mask fades threads out as they approach.
+          if (maskRef.current) {
+            const M = 26;
+            maskRef.current.setAttribute('x', String(bl - M));
+            maskRef.current.setAttribute('y', String(bt2 - M));
+            maskRef.current.setAttribute('width', String((br - bl) + M * 2));
+            maskRef.current.setAttribute('height', String((bb - bt2) + M * 2));
+          }
         }
       }
 
@@ -914,27 +944,72 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
   return (
     <div ref={wrapRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 5, pointerEvents: 'none' }}>
       <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} aria-hidden="true">
-        {edgesRef.current.map((e, i) => (
-          <line key={i} ref={(el) => { e.line = el; }}
-            stroke="#2A2A24"
-            strokeWidth={e.broken ? 1 : 1.4}
-            strokeDasharray={e.broken ? '3 7' : undefined}
-            strokeLinecap="round"
-            opacity={0} />
-        ))}
+        <defs>
+          <filter id="webMaskBlur" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="12" />
+          </filter>
+          <mask id="webTextMask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            {/* black = hidden; blurred so threads feather out approaching the text */}
+            <rect ref={maskRef} x="0" y="0" width="0" height="0" rx="34" fill="black" filter="url(#webMaskBlur)" />
+          </mask>
+        </defs>
+        <g mask="url(#webTextMask)">
+          {edgesRef.current.map((e, i) => (
+            <line key={i} ref={(el) => { e.line = el; }}
+              stroke="#2A2A24"
+              strokeWidth={e.broken ? 1 : 1.3}
+              strokeDasharray={e.broken ? '1.5 11' : undefined}
+              strokeLinecap="round"
+              opacity={0} />
+          ))}
+        </g>
       </svg>
       {nodesRef.current.map((nd, i) => (
-        <div key={i} ref={(el) => { nd.el = el; }}
-          onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
-          style={{
-            position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
-            borderRadius: nd.size * 0.26, background: '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
-            boxShadow: '0 8px 22px rgba(30,30,25,0.10)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
-            pointerEvents: 'auto',
-          }}>
-          <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{ width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none' }} />
-        </div>
+        nd.hub ? (
+          <div key={i} ref={(el) => { nd.el = el; }}
+            onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
+            style={{
+              position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
+              borderRadius: nd.size * 0.28, background: '#EAE9E4', border: '1px solid rgba(30,30,25,0.12)',
+              boxShadow: '0 10px 30px rgba(30,30,25,0.13)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
+              pointerEvents: 'auto',
+            }}>
+            {/* inert data cylinder */}
+            <svg width={nd.size * 0.44} height={nd.size * 0.44} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <ellipse cx="12" cy="5" rx="7.5" ry="2.8" />
+              <path d="M4.5 5v14c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5" />
+              <path d="M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8" />
+            </svg>
+            {/* On mobile the headline right below already says "system of record",
+                and a narrow screen has no room — show the caption on desktop only. */}
+            {nd.size > 75 && (
+              <span style={{
+                position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
+                fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
+                color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
+              }}>System of record</span>
+            )}
+          </div>
+        ) : (
+          <div key={i} ref={(el) => { nd.el = el; }}
+            onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
+            style={{
+              position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
+              borderRadius: nd.size * 0.26,
+              background: nd.dead ? '#EFEEEA' : '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
+              boxShadow: nd.dead ? '0 4px 12px rgba(30,30,25,0.06)' : '0 8px 22px rgba(30,30,25,0.10)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
+              pointerEvents: 'auto',
+            }}>
+            <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{
+              width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none',
+              filter: nd.dead ? 'grayscale(1)' : 'none', opacity: nd.dead ? 0.4 : 1,
+            }} />
+          </div>
+        )
       ))}
     </div>
   );
