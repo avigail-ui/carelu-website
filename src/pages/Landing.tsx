@@ -720,6 +720,7 @@ const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
   { n: 'simplepractice',      bx: 0.79, by: 0.52, size: 72 },
   { n: 'ringcentral',         bx: 0.93, by: 0.62, size: 60 },
   { n: 'lobbie',              bx: 0.35, by: 0.64, size: 60 },
+  { n: 'bolt',                bx: 0.24, by: 0.57, size: 62 },
   { n: 'rethink',             bx: 0.51, by: 0.71, size: 56 },
   { n: 'intakeq',             bx: 0.66, by: 0.64, size: 56 },
   { n: 'artemisaba',          bx: 0.84, by: 0.68, size: 64 },
