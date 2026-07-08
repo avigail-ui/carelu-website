@@ -699,58 +699,99 @@ const allLogos = [
 const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% -24% -18%' };
 
 
-/* Real tool logos raining down behind the problem headline — the "too many systems" chaos */
-// Big, heavy tiles that fall in and pile up along the bottom of the section.
-const RAIN_ICONS = [
-  { n: 'salesforce',          left: 4,  size: 122 },
-  { n: 'hubspot',             left: 15, size: 108 },
-  { n: 'ghl',                 left: 26, size: 118 },
-  { n: 'zoho',                left: 37, size: 126 },
-  { n: 'monday',              left: 48, size: 100 },
-  { n: 'clickup',             left: 58, size: 130 },
-  { n: 'callrail',            left: 69, size: 104 },
-  { n: 'calltrackingmetrics', left: 80, size: 124 },
-  { n: 'whatconverts',        left: 90, size: 98 },
-  { n: 'ringcentral',         left: 10, size: 112 },
-  { n: 'twilio',              left: 21, size: 128 },
-  { n: 'calendly',            left: 32, size: 102 },
-  { n: 'googlecalendar',      left: 43, size: 120 },
-  { n: 'gmail',               left: 54, size: 106 },
-  { n: 'outlook',             left: 65, size: 132 },
-  { n: 'docusign',            left: 76, size: 96 },
-  { n: 'pandadoc',            left: 86, size: 116 },
-  { n: 'jotform',             left: 8,  size: 110 },
-  { n: 'simplepractice',      left: 30, size: 128 },
-  { n: 'intakeq',             left: 50, size: 100 },
-  { n: 'lobbie',              left: 63, size: 118 },
-  { n: 'quo',                 left: 72, size: 122 },
-  { n: 'rethink',             left: 40, size: 104 },
-  { n: 'artemisaba',          left: 55, size: 126 },
-  { n: 'anonymoushealth',     left: 84, size: 108 },
+/* Every tool an ABA org already runs, laid out as a loose web around the headline —
+   all wired to a system of record, but the threads are frayed and half-broken.
+   Positions are normalized (0..1) fractions of the section, kept clear of the
+   centered text zone. "Connected, but not." */
+const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
+  { n: 'salesforce',          bx: 0.08, by: 0.30, size: 74 },
+  { n: 'hubspot',             bx: 0.21, by: 0.15, size: 58 },
+  { n: 'quo',                 bx: 0.40, by: 0.16, size: 60 },
+  { n: 'outlook',             bx: 0.60, by: 0.16, size: 64 },
+  { n: 'googlecalendar',      bx: 0.78, by: 0.14, size: 58 },
+  { n: 'calendly',            bx: 0.91, by: 0.20, size: 56 },
+  { n: 'docusign',            bx: 0.26, by: 0.31, size: 54 },
+  { n: 'gmail',               bx: 0.64, by: 0.26, size: 52 },
+  { n: 'twilio',              bx: 0.94, by: 0.40, size: 66 },
+  { n: 'ghl',                 bx: 0.06, by: 0.52, size: 62 },
+  { n: 'jotform',             bx: 0.19, by: 0.52, size: 56 },
+  { n: 'simplepractice',      bx: 0.79, by: 0.52, size: 72 },
+  { n: 'ringcentral',         bx: 0.93, by: 0.62, size: 60 },
+  { n: 'lobbie',              bx: 0.35, by: 0.64, size: 60 },
+  { n: 'rethink',             bx: 0.51, by: 0.71, size: 56 },
+  { n: 'intakeq',             bx: 0.66, by: 0.64, size: 56 },
+  { n: 'artemisaba',          bx: 0.84, by: 0.68, size: 64 },
+  { n: 'zoho',                bx: 0.13, by: 0.71, size: 66 },
+  { n: 'pandadoc',            bx: 0.08, by: 0.87, size: 58 },
+  { n: 'monday',              bx: 0.24, by: 0.85, size: 58 },
+  { n: 'clickup',             bx: 0.42, by: 0.91, size: 72 },
+  { n: 'callrail',            bx: 0.58, by: 0.87, size: 56 },
+  { n: 'calltrackingmetrics', bx: 0.72, by: 0.90, size: 64 },
+  { n: 'whatconverts',        bx: 0.88, by: 0.84, size: 54 },
 ];
 
-type RainBody = {
-  n: string; size: number; left: number; drift: number;
-  x: number; y: number; vx: number; vy: number;
-  angle: number; vangle: number; settled: boolean; still: number; el: HTMLDivElement | null;
+type WebNode = {
+  n: string; size: number;
+  bx: number; by: number;   // base position (fraction of section W/H)
+  phx: number; phy: number; // drift phase
+  ax: number; ay: number;   // drift amplitude (px)
+  x: number; y: number;     // current center (px)
+  rev: number;              // reveal progress 0..1
+  el: HTMLDivElement | null;
 };
+type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | null };
 
-/* Physics sandbox: logos fall in, bounce, and can be grabbed + thrown */
-function IconPlayground({ opacity }: { opacity: number }) {
+/* The tangled-web sandbox: logos wired together by frayed threads, gently drifting,
+   grab-and-pull to stretch the connections. */
+function SystemWeb() {
   const wrapRef = useRef<HTMLDivElement>(null);
-  const bodiesRef = useRef<RainBody[]>([]);
-  const dragRef = useRef<{ b: RainBody; offX: number; offY: number; vx: number; vy: number } | null>(null);
+  const nodesRef = useRef<WebNode[]>([]);
+  const edgesRef = useRef<WebEdge[]>([]);
+  const dragRef = useRef<{ node: WebNode; offX: number; offY: number } | null>(null);
   const rafRef = useRef(0);
   const startedRef = useRef(false);
+  const tRef = useRef(0);
 
-  if (bodiesRef.current.length === 0) {
-    // shrink tiles on narrow screens so the pile stays low instead of burying the text
-    const scale = (typeof window !== 'undefined' && window.innerWidth < 640) ? 0.56 : 1;
-    bodiesRef.current = RAIN_ICONS.map((ic) => ({
-      n: ic.n, size: Math.round(ic.size * scale), left: ic.left, drift: 1.3 + Math.random() * 1.7,
-      x: 0, y: 0, vx: 0, vy: 0,
-      angle: Math.random() * 44 - 22, vangle: Math.random() * 5 - 2.5, settled: false, still: 0, el: null,
-    }));
+  if (nodesRef.current.length === 0) {
+    // deterministic pseudo-random keyed off the index (stable across SSR/hydration)
+    const rnd = (i: number, s: number) => { const v = Math.sin((i + 1) * s) * 43758.5453; return v - Math.floor(v); };
+    const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
+    const scale = mobile ? 0.64 : 1;
+    nodesRef.current = WEB_ICONS.map((ic, i) => {
+      let bx = ic.bx, by = ic.by;
+      if (mobile) {
+        // Narrow portrait: pull nodes off the edges (no clipping) and squeeze them into
+        // a top band + a bottom band, leaving the middle clear for the taller headline.
+        bx = 0.5 + (bx - 0.5) * 0.86;
+        by = by < 0.46
+          ? 0.17 + (by / 0.46) * 0.16          // top band  → [0.17, 0.33]
+          : 0.60 + ((by - 0.46) / 0.54) * 0.34; // bottom band → [0.60, 0.94]
+      }
+      return {
+        n: ic.n, size: Math.round(ic.size * scale), bx, by,
+        phx: rnd(i, 12.9898) * Math.PI * 2, phy: rnd(i, 78.233) * Math.PI * 2,
+        ax: 4 + rnd(i, 3.7) * 6, ay: 4 + rnd(i, 5.1) * 6,
+        x: 0, y: 0, rev: 0, el: null,
+      };
+    });
+    // Edges: wire each node to its two nearest neighbours (deduped). Roughly a third
+    // are "broken" — dashed with a wider gap — so the web reads as frayed, not whole.
+    const nodes = nodesRef.current;
+    const seen = new Set<string>();
+    const edges: WebEdge[] = [];
+    for (let i = 0; i < nodes.length; i++) {
+      const near = nodes
+        .map((m, j) => ({ j, dd: (m.bx - nodes[i].bx) ** 2 + (m.by - nodes[i].by) ** 2 }))
+        .filter((o) => o.j !== i)
+        .sort((a, b) => a.dd - b.dd);
+      for (let k = 0; k < 2; k++) {
+        const j = near[k].j;
+        const a = Math.min(i, j), b = Math.max(i, j);
+        const key = `${a}-${b}`;
+        if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: (a * 7 + b * 3) % 3 === 0, line: null }); }
+      }
+    }
+    edgesRef.current = edges;
   }
 
   useEffect(() => {
@@ -759,98 +800,45 @@ function IconPlayground({ opacity }: { opacity: number }) {
     const onResize = () => { W = wrap.clientWidth; H = wrap.clientHeight; };
     window.addEventListener('resize', onResize);
 
-    bodiesRef.current.forEach((b, i) => {
-      b.x = (b.left / 100) * Math.max(W - b.size, 1);
-      b.y = -b.size - (i % 5) * 200 - Math.random() * H * 0.4; // staggered above -> drop in over time
-      b.vx = 0; b.vy = 0; b.settled = false; b.still = 0;
-    });
-
-    // Hold the tiles above the fold until the section scrolls into view, then drop.
+    // Hold the web hidden until the section scrolls into view, then reveal it.
     const io = new IntersectionObserver(([e]) => {
       if (e.isIntersecting) { startedRef.current = true; io.disconnect(); }
-    }, { threshold: 0.35 });
+    }, { threshold: 0.3 });
     io.observe(wrap);
 
-    const GRAV = 0.6;    // real gravity — heavy, ungraceful fall
-    const VMAX = 22;     // terminal velocity
-    const AIRX = 0.02;   // slight horizontal air drag
-    const WALL = 0.4;
-    const FLOORF = 0.7;  // friction as tiles land + settle on the floor
-    const E = 0.05;      // near-zero bounce so tiles pile and stop fast
-    const SLEEP = 1.0;   // per-frame motion below this counts toward settling
-    let frames = 0;      // frames since the drop began (drives the settle backstop)
     const step = () => {
-      const drag = dragRef.current;
-      const bodies = bodiesRef.current;
+      const nodes = nodesRef.current, edges = edgesRef.current, drag = dragRef.current;
+      tRef.current += 0.016;
+      const T = tRef.current;
+      const started = startedRef.current;
 
-      // Hold above the fold until the section is in view.
-      if (!startedRef.current) {
-        for (const b of bodies) if (b.el) b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.angle}deg)`;
-        rafRef.current = requestAnimationFrame(step);
-        return;
-      }
-      frames++;
-
-      // 1) integrate under gravity (settled + dragged tiles are skipped)
-      for (const b of bodies) {
-        if ((drag && drag.b === b) || b.settled) continue;
-        b.vy += GRAV; if (b.vy > VMAX) b.vy = VMAX;
-        b.vx += (0 - b.vx) * AIRX;
-        b.x += b.vx; b.y += b.vy; b.angle += b.vangle; b.vangle *= 0.88;
-        if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * WALL; }
-        else if (b.x > W - b.size) { b.x = W - b.size; b.vx = -Math.abs(b.vx) * WALL; }
-        const fy = H - b.size;               // floor: tiles land and pile up
-        if (b.y > fy) {
-          b.y = fy;
-          b.vy = Math.abs(b.vy) < 2 ? 0 : -b.vy * 0.12;
-          b.vx *= FLOORF; b.vangle *= 0.25;
+      for (let i = 0; i < nodes.length; i++) {
+        const nd = nodes[i];
+        if (started) nd.rev = Math.max(0, Math.min(1, (T - i * 0.045) / 0.6)); // staggered fade-in
+        if (!drag || drag.node !== nd) {
+          nd.x = nd.bx * W + Math.sin(T * 0.5 + nd.phx) * nd.ax;   // slow ambient drift
+          nd.y = nd.by * H + Math.cos(T * 0.42 + nd.phy) * nd.ay;
+        }
+        if (nd.el) {
+          const s = 0.62 + 0.38 * nd.rev;
+          nd.el.style.transform = `translate(${nd.x - nd.size / 2}px, ${nd.y - nd.size / 2}px) scale(${s})`;
+          nd.el.style.opacity = String(nd.rev);
         }
       }
 
-      // 2) tile-to-tile collisions — settled/dragged tiles are immovable anchors for the pile
-      for (let i = 0; i < bodies.length; i++) {
-        const a = bodies[i]; const ar = a.size * 0.46;
-        const aFix = (!!drag && drag.b === a) || a.settled;
-        for (let j = i + 1; j < bodies.length; j++) {
-          const c = bodies[j]; const cr = c.size * 0.46;
-          const dx = (c.x + c.size / 2) - (a.x + a.size / 2);
-          const dy = (c.y + c.size / 2) - (a.y + a.size / 2);
-          const min = ar + cr; const d2 = dx * dx + dy * dy;
-          if (d2 >= min * min || d2 === 0) continue;
-          const cFix = (!!drag && drag.b === c) || c.settled;
-          if (aFix && cFix) continue; // both anchored — leave them
-          const d = Math.sqrt(d2); const nx = dx / d, ny = dy / d; const overlap = min - d;
-          // positional separation
-          if (aFix) { c.x += nx * overlap; c.y += ny * overlap; }
-          else if (cFix) { a.x -= nx * overlap; a.y -= ny * overlap; }
-          else { a.x -= nx * overlap / 2; a.y -= ny * overlap / 2; c.x += nx * overlap / 2; c.y += ny * overlap / 2; }
-          // velocity impulse (anchored tile counts as zero velocity)
-          const avx = aFix ? 0 : a.vx, avy = aFix ? 0 : a.vy;
-          const cvx = cFix ? 0 : c.vx, cvy = cFix ? 0 : c.vy;
-          const rvn = (cvx - avx) * nx + (cvy - avy) * ny;
-          if (rvn < 0) {
-            if (aFix) { const jj = -(1 + E) * rvn; c.vx += jj * nx; c.vy += jj * ny; }
-            else if (cFix) { const jj = -(1 + E) * rvn; a.vx -= jj * nx; a.vy -= jj * ny; }
-            else { const jj = -(1 + E) * rvn / 2; a.vx -= jj * nx; a.vy -= jj * ny; c.vx += jj * nx; c.vy += jj * ny; }
-          }
-        }
-      }
-
-      // 3) settle: a barely-moving tile sleeps. A hard backstop (~4s after the drop)
-      //    freezes any tile still jittering, so nothing vibrates forever. Tiles grabbed
-      //    later fall outside this window and still settle naturally by the motion test.
-      const forceSettle = frames > 240 && frames < 360;
-      for (const b of bodies) {
-        if (b.settled || (drag && drag.b === b)) continue;
-        const motion = Math.abs(b.vx) + Math.abs(b.vy) + Math.abs(b.vangle);
-        if (forceSettle || motion < SLEEP) {
-          if (forceSettle || ++b.still > 10) { b.settled = true; b.vx = 0; b.vy = 0; b.vangle = 0; }
-        } else b.still = 0;
-      }
-
-      // 4) paint
-      for (const b of bodies) {
-        if (b.el) b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.angle}deg)`;
+      for (const e of edges) {
+        if (!e.line) continue;
+        const a = nodes[e.a], b = nodes[e.b];
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const len = Math.hypot(dx, dy) || 1;
+        const ux = dx / len, uy = dy / len;
+        const gapA = a.size / 2 + (e.broken ? 15 : 4);   // broken threads stop well short of the tile
+        const gapB = b.size / 2 + (e.broken ? 15 : 4);
+        e.line.setAttribute('x1', String(a.x + ux * gapA));
+        e.line.setAttribute('y1', String(a.y + uy * gapA));
+        e.line.setAttribute('x2', String(b.x - ux * gapB));
+        e.line.setAttribute('y2', String(b.y - uy * gapB));
+        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.12 : 0.2)));
       }
       rafRef.current = requestAnimationFrame(step);
     };
@@ -858,48 +846,58 @@ function IconPlayground({ opacity }: { opacity: number }) {
     return () => { cancelAnimationFrame(rafRef.current); io.disconnect(); window.removeEventListener('resize', onResize); };
   }, []);
 
-  const down = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
+  const down = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
     const wrap = wrapRef.current; if (!wrap) return;
     e.preventDefault();
     e.currentTarget.setPointerCapture(e.pointerId);
     e.currentTarget.style.cursor = 'grabbing';
     const r = wrap.getBoundingClientRect();
-    dragRef.current = { b, offX: (e.clientX - r.left) - b.x, offY: (e.clientY - r.top) - b.y, vx: 0, vy: 0 };
-    b.vangle = 0; b.settled = false; b.still = 0; // wake it so it can be dragged + fall again
+    dragRef.current = { node: nd, offX: (e.clientX - r.left) - nd.x, offY: (e.clientY - r.top) - nd.y };
   };
-  const move = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
+  const move = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
     const drag = dragRef.current; const wrap = wrapRef.current;
-    if (!drag || drag.b !== b || !wrap) return;
+    if (!drag || drag.node !== nd || !wrap) return;
     const r = wrap.getBoundingClientRect();
-    const nx = (e.clientX - r.left) - drag.offX;
-    const ny = (e.clientY - r.top) - drag.offY;
-    drag.vx = nx - b.x; drag.vy = ny - b.y;
-    b.x = nx; b.y = ny;
+    nd.x = (e.clientX - r.left) - drag.offX;
+    nd.y = (e.clientY - r.top) - drag.offY;
   };
-  const up = (b: RainBody) => (e: React.PointerEvent<HTMLDivElement>) => {
-    const drag = dragRef.current;
+  const up = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
     e.currentTarget.style.cursor = 'grab';
-    if (!drag || drag.b !== b) return;
-    const clamp = (v: number) => Math.max(-48, Math.min(48, v));
-    b.vx = clamp(drag.vx * 1.15); b.vy = clamp(drag.vy * 1.15); b.vangle = clamp(drag.vx) * 0.4;
-    dragRef.current = null;
+    if (dragRef.current && dragRef.current.node === nd) {
+      // rebase so the ambient drift resumes around where it was dropped (no snap-back)
+      const wrap = wrapRef.current; const T = tRef.current;
+      if (wrap && wrap.clientWidth && wrap.clientHeight) {
+        nd.bx = (nd.x - Math.sin(T * 0.5 + nd.phx) * nd.ax) / wrap.clientWidth;
+        nd.by = (nd.y - Math.cos(T * 0.42 + nd.phy) * nd.ay) / wrap.clientHeight;
+      }
+      dragRef.current = null;
+    }
     try { e.currentTarget.releasePointerCapture(e.pointerId); } catch { /* noop */ }
   };
 
-  const interactive = opacity > 0.25;
   return (
-    <div ref={wrapRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 5, pointerEvents: 'none', opacity, transition: 'opacity 0.3s', visibility: opacity > 0.04 ? 'visible' : 'hidden' }}>
-      {bodiesRef.current.map((b, i) => (
-        <div key={i} ref={(el) => { b.el = el; }}
-          onPointerDown={down(b)} onPointerMove={move(b)} onPointerUp={up(b)} onPointerCancel={up(b)}
+    <div ref={wrapRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 5, pointerEvents: 'none' }}>
+      <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} aria-hidden="true">
+        {edgesRef.current.map((e, i) => (
+          <line key={i} ref={(el) => { e.line = el; }}
+            stroke="#2A2A24"
+            strokeWidth={e.broken ? 1 : 1.4}
+            strokeDasharray={e.broken ? '3 7' : undefined}
+            strokeLinecap="round"
+            opacity={0} />
+        ))}
+      </svg>
+      {nodesRef.current.map((nd, i) => (
+        <div key={i} ref={(el) => { nd.el = el; }}
+          onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
           style={{
-            position: 'absolute', top: 0, left: 0, width: b.size, height: b.size,
-            borderRadius: b.size * 0.24, background: '#F2F0EA', border: '1px solid rgba(30,30,25,0.04)',
-            boxShadow: '0 12px 32px rgba(30,30,25,0.09)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform',
-            pointerEvents: interactive ? 'auto' : 'none',
+            position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
+            borderRadius: nd.size * 0.26, background: '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
+            boxShadow: '0 8px 22px rgba(30,30,25,0.10)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
+            pointerEvents: 'auto',
           }}>
-          <img src={`/logos/rain/${b.n}.png`} alt="" draggable={false} style={{ width: '56%', height: '56%', objectFit: 'contain', pointerEvents: 'none' }} />
+          <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{ width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none' }} />
         </div>
       ))}
     </div>
@@ -943,9 +941,8 @@ function Problem() {
     };
   }, []);
 
-  // The chaos animation was reduced to the icon rain only — the old browser-tabs
+  // The chaos animation was reduced to the tool web only — the old browser-tabs
   // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
-  const rainOpacity = 1; // icons always rain — never fade out
   const closed = false;  // section never "closes" — it just scrolls away naturally
 
   return (
@@ -968,8 +965,8 @@ function Problem() {
           </div>
         )}
 
-        {/* Draggable, throwable tool-logo playground during the calm headline beat */}
-        <IconPlayground opacity={rainOpacity} />
+        {/* Loose, frayed web of every tool wired to the system of record */}
+        <SystemWeb />
 
         {/* Text overlay — above the tile pile so it stays readable; pointer-through
             so the tiles behind it are still draggable */}
@@ -977,10 +974,10 @@ function Problem() {
           {/* Problem text */}
           <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
-              You&rsquo;re juggling a dozen systems to run a single intake.
+              Your system of record is killing your business.
             </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 470, margin: '0 auto' }}>
-              More tools, more logins, more handoffs &mdash; and still, families slip away before they reach care.
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 500, margin: '0 auto' }}>
+              More tools, more headcount, more complexity &mdash; and still, families slip away before they reach care.
             </p>
           </div>
           {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
@@ -3202,7 +3199,7 @@ function CtaFooter() {
                       : link === 'Enterprise' ? '/solutions/enterprise'
                       : link === 'About' ? '/carelu/company'
                       : link === 'Careers' ? '/carelu/company#careers'
-                      : link === 'Trust' || link === 'Security' ? 'https://trust.delve.co/leadtrap'
+                      : link === 'Trust' || link === 'Security' ? 'https://trust.carelu.com'
                       : '#'
                     }
                     {...((link === 'Trust' || link === 'Security') ? { target: '_blank', rel: 'noreferrer' } : {})}
@@ -3269,7 +3266,7 @@ function CtaFooter() {
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
             <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
             <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
-            <a href="https://trust.delve.co/leadtrap" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
+            <a href="https://trust.carelu.com" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
             <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>HIPAA · SOC 2</span>
           </div>
         </div>
