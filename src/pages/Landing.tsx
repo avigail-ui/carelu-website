@@ -3499,14 +3499,6 @@ function MuralReveal() {
       <div style={W}>
         {/* Section heading — compact so the stacked-plates diagram has room to open */}
         <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 28px', padding: '0 24px' }}>
-          {/* Tension kicker — none of those tools act on their own, so people do the robot work */}
-          <p className="rv" style={{
-            fontFamily: 'var(--font-display)', fontStyle: 'italic',
-            fontSize: 'clamp(18px, 2vw, 22px)', color: 'var(--green-900)',
-            lineHeight: 1.4, maxWidth: 540, margin: '0 auto 22px', opacity: 0.85,
-          }}>
-            None of it moves on its own. Your best people spend all day on the least human work.
-          </p>
           <div className="rv"><Pill>Introducing Carelu</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)',
@@ -3522,9 +3514,9 @@ function MuralReveal() {
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
-            lineHeight: 1.55, maxWidth: 540, margin: '0 auto',
+            lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
           }}>
-            Carelu runs the entire intake &mdash; eligibility, insurance, scheduling, follow-up &mdash; so your team is human only where it truly matters.
+            The care enablement platform that makes sure every family who can receive care does &mdash; not another system of record.
           </p>
         </div>
 
