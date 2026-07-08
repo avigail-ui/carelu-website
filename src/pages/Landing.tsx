@@ -762,56 +762,44 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
     const rnd = (i: number, s: number) => { const v = Math.sin((i + 1) * s) * 43758.5453; return v - Math.floor(v); };
     const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
     const scale = mobile ? 0.64 : 1;
-    // A few integrations are dead — data pours in but nothing comes back out.
-    const DEAD = new Set(['whatconverts', 'docusign', 'lobbie']);
 
-    // [0] The inert System-of-Record hub, sitting above the headline. Everything tethers
-    // to it; it barely drifts (it just holds data, it doesn't do the work).
-    const hub: WebNode = {
-      n: '__hub', size: Math.round((mobile ? 62 : 92)),
-      bx: 0.5, by: mobile ? 0.19 : 0.28,
-      phx: 0.4, phy: 1.3, ax: mobile ? 1.2 : 2, ay: mobile ? 1.2 : 2,
-      x: 0, y: 0, rev: 0, hub: true, el: null,
-    };
-    const tools: WebNode[] = WEB_ICONS.map((ic, i) => {
+    // No center, no villain — just a sprawl of tools, all wired to each other and looking
+    // perfectly fine. That's the point of "Nothing's broken": it's all connected, nothing's
+    // technically wrong, and families still slip away.
+    const nodes: WebNode[] = WEB_ICONS.map((ic, i) => {
       let bx = ic.bx, by = ic.by;
       if (mobile) {
         // Narrow portrait: pull nodes off the edges (no clipping) and squeeze them into
         // a top band + a bottom band, leaving the middle clear for the taller headline.
         bx = 0.5 + (bx - 0.5) * 0.86;
         by = by < 0.46
-          ? 0.28 + (by / 0.46) * 0.11          // top band  → [0.28, 0.39] (below the hub)
+          ? 0.20 + (by / 0.46) * 0.15          // top band  → [0.20, 0.35]
           : 0.60 + ((by - 0.46) / 0.54) * 0.34; // bottom band → [0.60, 0.94]
       }
       return {
         n: ic.n, size: Math.round(ic.size * scale), bx, by,
         phx: rnd(i, 12.9898) * Math.PI * 2, phy: rnd(i, 78.233) * Math.PI * 2,
         ax: 4 + rnd(i, 3.7) * 6, ay: 4 + rnd(i, 5.1) * 6,
-        x: 0, y: 0, rev: 0, dead: DEAD.has(ic.n), el: null,
+        x: 0, y: 0, rev: 0, el: null,
       };
     });
-    const nodes = [hub, ...tools];
     nodesRef.current = nodes;
 
-    // Edges tell the story: every tool tethers to the hub (index 0). Roughly a third of
-    // those spokes are "broken" — dashed, gapped short of the tile — so it reads as a
-    // system half its integrations have quietly fallen off of. A sparse tool-to-tool
-    // mesh on top keeps it tangled rather than a tidy starburst.
-    const edges: WebEdge[] = [];
-    for (let i = 1; i < nodes.length; i++) {
-      edges.push({ a: 0, b: i, broken: (i * 5 + 2) % 3 === 0, line: null });
-    }
+    // Decentralized mesh: wire each tool to its two nearest neighbours (deduped). All
+    // threads intact — it looks connected, because nothing's broken.
     const seen = new Set<string>();
-    for (let i = 1; i < nodes.length; i++) {
-      let best = -1, bestd = Infinity;
-      for (let j = 1; j < nodes.length; j++) {
-        if (j === i) continue;
-        const dd = (nodes[j].bx - nodes[i].bx) ** 2 + (nodes[j].by - nodes[i].by) ** 2;
-        if (dd < bestd) { bestd = dd; best = j; }
+    const edges: WebEdge[] = [];
+    for (let i = 0; i < nodes.length; i++) {
+      const near = nodes
+        .map((m, j) => ({ j, dd: (m.bx - nodes[i].bx) ** 2 + (m.by - nodes[i].by) ** 2 }))
+        .filter((o) => o.j !== i)
+        .sort((a, b) => a.dd - b.dd);
+      for (let k = 0; k < 2; k++) {
+        const j = near[k].j;
+        const a = Math.min(i, j), b = Math.max(i, j);
+        const key = `${a}-${b}`;
+        if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: false, line: null }); }
       }
-      const a = Math.min(i, best), b = Math.max(i, best);
-      const key = `${a}-${b}`;
-      if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: (a + b) % 2 === 0, line: null }); }
     }
     edgesRef.current = edges;
   }
@@ -966,48 +954,21 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         </g>
       </svg>
       {nodesRef.current.map((nd, i) => (
-        nd.hub ? (
-          <div key={i} ref={(el) => { nd.el = el; }}
-            onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
-            style={{
-              position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
-              borderRadius: nd.size * 0.28, background: '#EAE9E4', border: '1px solid rgba(30,30,25,0.12)',
-              boxShadow: '0 10px 30px rgba(30,30,25,0.13)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-              cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
-              pointerEvents: 'auto',
-            }}>
-            {/* The human everything lands on — your intake rep, buried under the whole stack */}
-            <svg width={nd.size * 0.46} height={nd.size * 0.46} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="8" r="4" />
-              <path d="M4.5 20.5c0-4.2 3.4-6.8 7.5-6.8s7.5 2.6 7.5 6.8" />
-            </svg>
-            {/* Caption — desktop only; a narrow screen has no room */}
-            {nd.size > 75 && (
-              <span style={{
-                position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
-                fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
-                color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
-              }}>Your intake rep</span>
-            )}
-          </div>
-        ) : (
-          <div key={i} ref={(el) => { nd.el = el; }}
-            onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
-            style={{
-              position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
-              borderRadius: nd.size * 0.26,
-              background: nd.dead ? '#EFEEEA' : '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
-              boxShadow: nd.dead ? '0 4px 12px rgba(30,30,25,0.06)' : '0 8px 22px rgba(30,30,25,0.10)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
-              pointerEvents: 'auto',
-            }}>
-            <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{
-              width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none',
-              filter: nd.dead ? 'grayscale(1)' : 'none', opacity: nd.dead ? 0.4 : 1,
-            }} />
-          </div>
-        )
+        <div key={i} ref={(el) => { nd.el = el; }}
+          onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
+          style={{
+            position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
+            borderRadius: nd.size * 0.26,
+            background: '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
+            boxShadow: '0 8px 22px rgba(30,30,25,0.10)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
+            pointerEvents: 'auto',
+          }}>
+          <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{
+            width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none',
+          }} />
+        </div>
       ))}
     </div>
   );
