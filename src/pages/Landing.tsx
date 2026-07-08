@@ -103,7 +103,7 @@ export function Nav({ base = '' }: { base?: string }) {
           width: 'min(720px, calc(100vw - 40px))',
           height: 56,
           borderRadius: 18,
-          padding: '0 6px 0 0',
+          padding: '0 6px',
           background: 'rgba(250,248,243,0.72)',
           backdropFilter: 'blur(32px) saturate(1.3)',
           WebkitBackdropFilter: 'blur(32px) saturate(1.3)',
@@ -168,9 +168,11 @@ export function Nav({ base = '' }: { base?: string }) {
           >Company</NavA>
           </div>
 
-          {/* Center logo */}
+          {/* Center logo — the wordmark's ink sits ~5px left of its box center
+              (dense "Care" + light trailing signature), so a small optical nudge
+              lands it on true center. */}
           <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 32, width: 'auto', display: 'block' }} />
+            <img src="/carelu-logo.svg" alt="Carelu" className="nav-logo-img" style={{ height: 32, width: 'auto', display: 'block', transform: 'translateX(5px)' }} />
           </NavA>
 
           {/* Right: login + button */}
@@ -743,7 +745,7 @@ type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | n
 
 /* The tangled-web sandbox: logos wired together by frayed threads, gently drifting,
    grab-and-pull to stretch the connections. */
-function SystemWeb() {
+function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null> }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const nodesRef = useRef<WebNode[]>([]);
   const edgesRef = useRef<WebEdge[]>([]);
@@ -812,12 +814,46 @@ function SystemWeb() {
       const T = tRef.current;
       const started = startedRef.current;
 
+      // Live keep-out box around the headline + subhead so no tile drifts over the
+      // text and hurts readability. Union of the actual line boxes (tight, not the
+      // full-width block), in wrap-local coords, padded by GAP.
+      let keep: { l: number; t: number; r: number; b: number } | null = null;
+      const tc = textRef.current;
+      if (tc) {
+        const wr = wrap.getBoundingClientRect();
+        let l = Infinity, t = Infinity, r = -Infinity, bt = -Infinity;
+        tc.querySelectorAll('h2, p').forEach((el) => {
+          for (const rc of el.getClientRects()) {
+            l = Math.min(l, rc.left); t = Math.min(t, rc.top);
+            r = Math.max(r, rc.right); bt = Math.max(bt, rc.bottom);
+          }
+        });
+        if (l !== Infinity) {
+          const GAP = 16;
+          keep = { l: l - wr.left - GAP, t: t - wr.top - GAP, r: r - wr.left + GAP, b: bt - wr.top + GAP };
+        }
+      }
+
       for (let i = 0; i < nodes.length; i++) {
         const nd = nodes[i];
         if (started) nd.rev = Math.max(0, Math.min(1, (T - i * 0.045) / 0.6)); // staggered fade-in
         if (!drag || drag.node !== nd) {
           nd.x = nd.bx * W + Math.sin(T * 0.5 + nd.phx) * nd.ax;   // slow ambient drift
           nd.y = nd.by * H + Math.cos(T * 0.42 + nd.phy) * nd.ay;
+          // push out of the text box along the axis of least penetration (drift resets
+          // each frame, so this is stable — the tile just hovers along the text edge)
+          if (keep) {
+            const h = nd.size / 2;
+            const nl = nd.x - h, nr = nd.x + h, nt = nd.y - h, nb = nd.y + h;
+            if (nr > keep.l && nl < keep.r && nb > keep.t && nt < keep.b) {
+              const penL = nr - keep.l, penR = keep.r - nl, penU = nb - keep.t, penD = keep.b - nt;
+              const min = Math.min(penL, penR, penU, penD);
+              if (min === penL) nd.x -= penL;
+              else if (min === penR) nd.x += penR;
+              else if (min === penU) nd.y -= penU;
+              else nd.y += penD;
+            }
+          }
         }
         if (nd.el) {
           const s = 0.62 + 0.38 * nd.rev;
@@ -911,6 +947,7 @@ function SystemWeb() {
    ================================================================ */
 function Problem() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
   const [t, setT] = useState(0);
 
   // Scroll-tied progress (so the animation rewinds when user scrolls back up).
@@ -966,13 +1003,13 @@ function Problem() {
         )}
 
         {/* Loose, frayed web of every tool wired to the system of record */}
-        <SystemWeb />
+        <SystemWeb textRef={textRef} />
 
         {/* Text overlay — above the tile pile so it stays readable; pointer-through
             so the tiles behind it are still draggable */}
         <div style={{ textAlign: 'center', position: 'relative', zIndex: 6, pointerEvents: 'none', padding: '0 36px', marginBottom: 32, width: '100%' }}>
           {/* Problem text */}
-          <div style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
+          <div ref={textRef} style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               Your system of record is killing your business.
             </h2>

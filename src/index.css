@@ -11,7 +11,7 @@
 .nav-side-left { justify-content: flex-start; }
 .nav-side-right { justify-content: flex-end; }
 @media (max-width: 768px) {
-  .nav-pill { width: auto !important; }
+  /* Full-width pill: logo pinned far left, actions far right (see nav > div rule below) */
   .nav-side { flex: 0 0 auto; }
 }
 
