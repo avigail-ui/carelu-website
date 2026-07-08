@@ -976,19 +976,18 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
               cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
               pointerEvents: 'auto',
             }}>
-            {/* inert data cylinder */}
-            <svg width={nd.size * 0.44} height={nd.size * 0.44} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <ellipse cx="12" cy="5" rx="7.5" ry="2.8" />
-              <path d="M4.5 5v14c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5" />
-              <path d="M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8" />
+            {/* The human everything lands on — your intake rep, buried under the whole stack */}
+            <svg width={nd.size * 0.46} height={nd.size * 0.46} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4.5 20.5c0-4.2 3.4-6.8 7.5-6.8s7.5 2.6 7.5 6.8" />
             </svg>
-            {/* Caption for the central data store — desktop only; a narrow screen has no room */}
+            {/* Caption — desktop only; a narrow screen has no room */}
             {nd.size > 75 && (
               <span style={{
                 position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
                 fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
                 color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
-              }}>Your records</span>
+              }}>Your intake rep</span>
             )}
           </div>
         ) : (
