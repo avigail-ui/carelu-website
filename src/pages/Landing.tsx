@@ -1088,8 +1088,8 @@ function Problem() {
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
               Your system of record is killing your business.
             </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 540, margin: '0 auto' }}>
-              None of it moves on its own. So intake stalls &mdash; and families slip to the competitor who answers first.
+            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 580, margin: '0 auto' }}>
+              More tools, more headcount, more complexity &mdash; but none of it moves on its own. So intake stalls, and families slip to the competitor who answers first.
             </p>
           </div>
           {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
