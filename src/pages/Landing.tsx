@@ -763,10 +763,17 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
     const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
     const scale = mobile ? 0.64 : 1;
 
+    // Mobile shows a curated subset — 24 tiles is too dense on a narrow screen.
+    const MOBILE_KEEP = new Set([
+      'salesforce', 'hubspot', 'quo', 'outlook', 'googlecalendar', 'calendly',
+      'simplepractice', 'ringcentral', 'intakeq', 'monday', 'clickup', 'pandadoc', 'callrail',
+    ]);
+    const source = mobile ? WEB_ICONS.filter((ic) => MOBILE_KEEP.has(ic.n)) : WEB_ICONS;
+
     // No center, no villain — just a sprawl of tools, all wired to each other and looking
     // perfectly fine. That's the point of "Nothing's broken": it's all connected, nothing's
     // technically wrong, and families still slip away.
-    const nodes: WebNode[] = WEB_ICONS.map((ic, i) => {
+    const nodes: WebNode[] = source.map((ic, i) => {
       let bx = ic.bx, by = ic.by;
       if (mobile) {
         // Narrow portrait: pull nodes off the edges (no clipping) and squeeze them into
