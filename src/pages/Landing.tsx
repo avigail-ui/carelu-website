@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
 import DemoModalHost from '../components/DemoModal';
@@ -747,7 +747,10 @@ type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | n
 
 /* The tangled-web sandbox: logos wired together by frayed threads, gently drifting,
    grab-and-pull to stretch the connections. */
-function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null> }) {
+const SystemWeb = React.memo(function SystemWeb({ textRef, collapseRef }: {
+  textRef: React.RefObject<HTMLDivElement | null>;
+  collapseRef: React.MutableRefObject<number>;
+}) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const nodesRef = useRef<WebNode[]>([]);
   const edgesRef = useRef<WebEdge[]>([]);
@@ -756,6 +759,8 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
   const startedRef = useRef(false);
   const tRef = useRef(0);
   const maskRef = useRef<SVGRectElement | null>(null);
+  const hubCoreRef = useRef<HTMLSpanElement | null>(null); // grey data-cylinder (fades out on resolve)
+  const hubBadgeRef = useRef<HTMLSpanElement | null>(null); // Carelu badge (fades in on resolve)
 
   if (nodesRef.current.length === 0) {
     // deterministic pseudo-random keyed off the index (stable across SSR/hydration)
@@ -864,6 +869,12 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         }
       }
 
+      // Resolve-on-scroll: as the section scrolls out, the frayed web COLLAPSES —
+      // every tool rushes into the hub and fades, the hub heals from grey data-store
+      // into the Carelu badge. `col` 0 = tangled, 1 = fully resolved.
+      const col = collapseRef.current;
+      const ce = col * col * (3 - 2 * col); // smoothstep
+
       for (let i = 0; i < nodes.length; i++) {
         const nd = nodes[i];
         if (started) nd.rev = Math.max(0, Math.min(1, (T - i * 0.045) / 0.6)); // staggered fade-in
@@ -885,26 +896,48 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
             }
           }
         }
+
+        let sc = 0.62 + 0.38 * nd.rev;
+        let op = nd.rev;
+        if (nd.hub) {
+          // hub heals: swells slightly, grey cylinder crossfades to the Carelu badge
+          sc *= 1 + 0.18 * ce;
+          if (hubCoreRef.current) hubCoreRef.current.style.opacity = String(1 - Math.min(1, ce * 1.4));
+          if (hubBadgeRef.current) hubBadgeRef.current.style.opacity = String(Math.max(0, (ce - 0.1) / 0.9));
+        } else if (ce > 0) {
+          // tool converges into the hub and fades out; dead tiles revive as they heal
+          const hx = nodes[0].x, hy = nodes[0].y;
+          nd.x = nd.x + (hx - nd.x) * ce;   // write back so the threads follow
+          nd.y = nd.y + (hy - nd.y) * ce;
+          sc *= 1 - 0.55 * ce;
+          op *= 1 - Math.max(0, (ce - 0.2) / 0.42); // fully gone by ~0.6 so they don't wash the badge
+          if (nd.dead && nd.el) {
+            const im = nd.el.querySelector('img') as HTMLImageElement | null;
+            if (im) { im.style.filter = `grayscale(${1 - ce})`; im.style.opacity = String(0.4 + 0.6 * ce); }
+          }
+        }
         if (nd.el) {
-          const s = 0.62 + 0.38 * nd.rev;
-          nd.el.style.transform = `translate(${nd.x - nd.size / 2}px, ${nd.y - nd.size / 2}px) scale(${s})`;
-          nd.el.style.opacity = String(nd.rev);
+          nd.el.style.transform = `translate(${nd.x - nd.size / 2}px, ${nd.y - nd.size / 2}px) scale(${sc})`;
+          nd.el.style.opacity = String(op);
         }
       }
 
+      const threadFade = 1 - Math.max(0, (ce - 0.1) / 0.9); // threads dissolve as the web collapses
       for (const e of edges) {
         if (!e.line) continue;
         const a = nodes[e.a], b = nodes[e.b];
         const dx = b.x - a.x, dy = b.y - a.y;
         const len = Math.hypot(dx, dy) || 1;
         const ux = dx / len, uy = dy / len;
-        const gapA = a.size / 2 + (e.broken ? 15 : 4);   // broken threads stop well short of the tile
-        const gapB = b.size / 2 + (e.broken ? 15 : 4);
+        const brokenGap = 15 - 11 * ce;                  // broken threads pull taut (heal) as it resolves
+        const gapA = a.size / 2 + (e.broken ? brokenGap : 4);
+        const gapB = b.size / 2 + (e.broken ? brokenGap : 4);
         e.line.setAttribute('x1', String(a.x + ux * gapA));
         e.line.setAttribute('y1', String(a.y + uy * gapA));
         e.line.setAttribute('x2', String(b.x - ux * gapB));
         e.line.setAttribute('y2', String(b.y - uy * gapB));
-        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.12 : 0.2)));
+        if (e.broken) e.line.setAttribute('stroke-dasharray', `1.5 ${Math.max(0.5, 11 - 9 * ce)}`); // dashes close up
+        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.12 : 0.2) * threadFade));
       }
       rafRef.current = requestAnimationFrame(step);
     };
@@ -976,21 +1009,35 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
               cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
               pointerEvents: 'auto',
             }}>
-            {/* inert data cylinder */}
-            <svg width={nd.size * 0.44} height={nd.size * 0.44} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <ellipse cx="12" cy="5" rx="7.5" ry="2.8" />
-              <path d="M4.5 5v14c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5" />
-              <path d="M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8" />
-            </svg>
-            {/* On mobile the headline right below already says "system of record",
-                and a narrow screen has no room — show the caption on desktop only. */}
-            {nd.size > 75 && (
-              <span style={{
-                position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
-                fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
-                color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
-              }}>System of record</span>
-            )}
+            {/* inert data cylinder + caption — fades out as the web resolves */}
+            <span ref={hubCoreRef} style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <svg width={nd.size * 0.44} height={nd.size * 0.44} viewBox="0 0 24 24" fill="none" stroke="#8C8A80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <ellipse cx="12" cy="5" rx="7.5" ry="2.8" />
+                <path d="M4.5 5v14c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5" />
+                <path d="M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8" />
+              </svg>
+              {/* On mobile the headline right below already says "system of record",
+                  and a narrow screen has no room — show the caption on desktop only. */}
+              {nd.size > 75 && (
+                <span style={{
+                  position: 'absolute', top: 'calc(100% + 9px)', left: '50%', transform: 'translateX(-50%)',
+                  fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase',
+                  color: '#A6A49B', fontWeight: 600, whiteSpace: 'nowrap',
+                }}>System of record</span>
+              )}
+            </span>
+            {/* Carelu badge — the resolved "one platform" the web collapses into */}
+            <span ref={hubBadgeRef} style={{
+              position: 'absolute', inset: 0, borderRadius: nd.size * 0.28,
+              background: '#4A7C3F', display: 'flex', alignItems: 'center', justifyContent: 'center',
+              opacity: 0, boxShadow: '0 14px 36px rgba(44,62,45,0.30)',
+            }}>
+              <svg width={nd.size * 0.5} height={nd.size * 0.5} viewBox="0 0 24 24" fill="none" stroke="#EAF3E4" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 21v-8.5" />
+                <path d="M12 13.5c0-3.2 2.1-6 6-6 0 3.2-2.1 6-6 6z" />
+                <path d="M12 15.5c0-2.6-1.9-5-5-5 0 2.6 1.9 5 5 5z" />
+              </svg>
+            </span>
           </div>
         ) : (
           <div key={i} ref={(el) => { nd.el = el; }}
@@ -1013,21 +1060,22 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
       ))}
     </div>
   );
-}
+});
 
 
 /* ================================================================
-   THE PROBLEM — Carelu-style browser chaos (dark mode)
-   Sticky scroll: text → browser windows slam in → cursor closes → solution
+   THE PROBLEM — the tangled system-of-record web that RESOLVES into Carelu.
+   Sticky-pinned: hold the frayed web, then on scroll it collapses into the
+   Carelu hub while the headline crossfades to the bridge into "Introducing Carelu".
    ================================================================ */
 function Problem() {
   const trackRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
-  const [t, setT] = useState(0);
+  const collapseRef = useRef(0);
+  const [p, setP] = useState(0);
 
-  // Scroll-tied progress (so the animation rewinds when user scrolls back up).
-  // No sticky pinning — uses the section's natural position in the viewport to compute t,
-  // so there's no 100vh "exit transition" that reads as empty space.
+  // Sticky-pinned scroll: `p` = progress through the tall track (0 at top-aligned,
+  // 1 when the runway is fully scrolled). The web holds tangled, then resolves.
   useEffect(() => {
     let raf = 0;
     const update = () => {
@@ -1035,12 +1083,11 @@ function Problem() {
       if (!el) return;
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      // t = 0 when the section's top is at viewport bottom (just appearing);
-      // t = 1 when the section's bottom is at viewport top (fully scrolled past).
-      // Animation runs as the section traverses the viewport — t=0 when section's
-      // top hits the viewport bottom, t=1 when the section's top hits the viewport top.
-      const t = Math.max(0, Math.min(1, (vh - rect.top) / vh));
-      setT(t);
+      const total = el.offsetHeight - vh;
+      const prog = total > 0 ? Math.max(0, Math.min(1, -rect.top / total)) : 0;
+      // Hold the frayed web until 45% scrolled, then collapse it into Carelu by ~78%.
+      collapseRef.current = Math.max(0, Math.min(1, (prog - 0.45) / 0.33));
+      setP(prog);
     };
     const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
     update();
@@ -1053,56 +1100,59 @@ function Problem() {
     };
   }, []);
 
-  // The chaos animation was reduced to the tool web only — the old browser-tabs
-  // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
-  const closed = false;  // section never "closes" — it just scrolls away naturally
+  const smooth = (e0: number, e1: number, x: number) => {
+    const t = Math.max(0, Math.min(1, (x - e0) / (e1 - e0)));
+    return t * t * (3 - 2 * t);
+  };
+  const col = Math.max(0, Math.min(1, (p - 0.45) / 0.33)); // matches collapseRef, for the text + glow
+  const aOp = 1 - smooth(0.44, 0.54, p);  // problem headline clears before tiles travel through it
+  const bOp = smooth(0.64, 0.82, p);      // Carelu bridge fades in once the web has collapsed
 
   return (
-    <div ref={trackRef} style={{
-      height: '100svh', position: 'relative',
-      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-      backgroundColor: closed ? '#FAF8F3' : '#fff',
-      transition: 'background-color 0.5s',
-      overflow: 'hidden',
-    }}>
-        {/* Ambient glow for solution phase -- no earth image, pure dark with subtle accent radial */}
-        {t > 0.5 && (
-          <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
+    <div ref={trackRef} style={{ height: '185svh', position: 'relative', backgroundColor: '#fff' }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100svh', overflow: 'hidden',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+      }}>
+        {/* Ambient green glow that grows as the web resolves into Carelu */}
+        {col > 0.01 && (
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', pointerEvents: 'none' }}>
             <div style={{
-              position: 'absolute', top: '30%', left: '50%', transform: 'translateX(-50%)',
+              position: 'absolute', top: '18%', left: '50%', transform: 'translateX(-50%)',
               width: '120%', height: '80%',
-              background: `radial-gradient(ellipse 40% 40% at 50% 40%, rgba(74,124,63,${Math.min((t - 0.5) * 2, 0.08)}) 0%, transparent 70%)`,
-              transition: 'opacity 0.8s',
+              background: `radial-gradient(ellipse 42% 42% at 50% 40%, rgba(74,124,63,${(col * 0.1).toFixed(3)}) 0%, transparent 70%)`,
             }} />
           </div>
         )}
 
-        {/* Loose, frayed web of every tool wired to the system of record */}
-        <SystemWeb textRef={textRef} />
+        {/* The frayed system-of-record web that collapses into the Carelu hub */}
+        <SystemWeb textRef={textRef} collapseRef={collapseRef} />
 
-        {/* Text overlay — above the tile pile so it stays readable; pointer-through
-            so the tiles behind it are still draggable */}
-        <div style={{ textAlign: 'center', position: 'relative', zIndex: 6, pointerEvents: 'none', padding: '0 36px', marginBottom: 32, width: '100%' }}>
-          {/* Problem text */}
-          <div ref={textRef} style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
-              Your system of record is killing your business.
-            </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 500, margin: '0 auto' }}>
-              More tools, more headcount, more complexity &mdash; and still, families slip away before they reach care.
-            </p>
-          </div>
-          {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
-          {/* Spacer */}
-          <div style={{ visibility: 'hidden' }}>
-            <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
-            <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
+        {/* Text overlay — the problem headline crossfades into the Carelu bridge line.
+            Pointer-through so the tiles behind stay draggable. */}
+        <div style={{ textAlign: 'center', position: 'relative', zIndex: 6, pointerEvents: 'none', padding: '0 36px', width: '100%' }}>
+          <div ref={textRef} style={{ position: 'relative', maxWidth: 760, margin: '0 auto' }}>
+            {/* A — the problem */}
+            <div style={{ opacity: aOp }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
+                Your system of record is killing your business.
+              </h2>
+              <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 500, margin: '0 auto' }}>
+                More tools, more headcount, more complexity &mdash; and still, families slip away before they reach care.
+              </p>
+            </div>
+            {/* B — resolves into Carelu (fades in over A) */}
+            <div style={{ position: 'absolute', inset: 0, opacity: bOp }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#2E5A38', maxWidth: 760, margin: '0 auto 16px' }}>
+                Carelu does the work your systems won&rsquo;t.
+              </h2>
+              <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
+                One platform, wired into everything you already run &mdash; quietly moving every family forward.
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* Solution-phase reveal was moved to the MuralReveal section below.
-            Keeping this conditional empty so the chaos-tabs animation still plays out. */}
+      </div>
     </div>
   );
 }
