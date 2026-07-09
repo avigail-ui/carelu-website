@@ -3381,6 +3381,7 @@ function MuralReveal() {
   const PLATE_GAP_CLOSED = 0;     // closed → all plates collapsed under the top one
   const PLATE_GAP_OPEN = 64;      // fully open → roomy stack
   const TOP_CY = 56;
+  const STROKE = 'rgba(140,140,160,0.55)';
   // =========================
 
   const PLATE_CX = isMobile ? 396 : 580;
@@ -3444,23 +3445,6 @@ function MuralReveal() {
     const end = start + step * 0.9;
     return Math.max(0, Math.min(1, (animProgress - start) / (end - start)));
   };
-
-  // ── Green depth ramp: top plate lightest, deepening down the stack ──
-  // Face = the lid; band = the side wall (darker → reads as 3D).
-  const FACE_TOP = [214, 236, 192]; // #D6ECC0 (brightest, top of stack)
-  const FACE_BOT = [143, 190, 106]; // #8FBE6A (deepest, bottom of stack)
-  const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
-  const rampT = (i: number) => (PLATE_COUNT > 1 ? i / (PLATE_COUNT - 1) : 0);
-  const faceFill = (i: number) => {
-    const t = rampT(i);
-    return `rgb(${Math.round(lerp(FACE_TOP[0], FACE_BOT[0], t))},${Math.round(lerp(FACE_TOP[1], FACE_BOT[1], t))},${Math.round(lerp(FACE_TOP[2], FACE_BOT[2], t))})`;
-  };
-  const bandFill = (i: number) => {
-    const t = rampT(i);
-    const k = 0.80; // darken the wall for depth
-    return `rgb(${Math.round(lerp(FACE_TOP[0], FACE_BOT[0], t) * k)},${Math.round(lerp(FACE_TOP[1], FACE_BOT[1], t) * k)},${Math.round(lerp(FACE_TOP[2], FACE_BOT[2], t) * k)})`;
-  };
-  const PLATE_STROKE = 'rgba(78,110,62,0.45)';
 
   return (
     <section id="platform" style={{
@@ -3547,24 +3531,24 @@ function MuralReveal() {
               const topCy = TOP_CY + i * PLATE_GAP;
               return (
                 <g key={i}>
-                  {/* Side band — the plate WALL, darker than the lid so the stack reads as 3D. */}
+                  {/* Side band — filled OPAQUE; the stroke traces the visible edges. */}
                   <path
                     d={`M ${PLATE_CX - RX},${topCy}
                         a ${RX},${RY} 0 0 0 ${RX * 2},0
                         v ${PLATE_DEPTH}
                         a ${RX},${RY} 0 0 1 ${-RX * 2},0
                         z`}
-                    fill={bandFill(i)}
-                    stroke={PLATE_STROKE} strokeWidth="1"
+                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : 'var(--bone)'}
+                    stroke={STROKE} strokeWidth="1"
                   />
-                  {/* Solid lid for EVERY plate — green ramp deepens down the stack. */}
-                  <ellipse cx={PLATE_CX} cy={topCy} rx={RX} ry={RY}
-                    fill={plate.isTop ? 'url(#topFace)' : faceFill(i)}
-                    stroke={PLATE_STROKE} strokeWidth="1" />
-                  {/* Criss-cross highlight — top plate keeps its premium grid cap. */}
+                  {/* The full top face — only for the topmost plate. */}
                   {plate.isTop && (
-                    <rect x={PLATE_CX - RX} y={topCy - RY} width={RX * 2} height={RY * 2}
-                      fill="url(#topGrid)" mask="url(#topGridMask)" />
+                    <>
+                      <ellipse cx={PLATE_CX} cy={topCy} rx={RX} ry={RY}
+                        fill="url(#topFace)" stroke={STROKE} strokeWidth="1" />
+                      <rect x={PLATE_CX - RX} y={topCy - RY} width={RX * 2} height={RY * 2}
+                        fill="url(#topGrid)" mask="url(#topGridMask)" />
+                    </>
                   )}
                 </g>
               );
