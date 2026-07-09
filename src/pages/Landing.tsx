@@ -3467,6 +3467,13 @@ function MuralReveal() {
         {/* Section heading — compact so the stacked-plates diagram has room to open */}
         <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 28px', padding: '0 24px' }}>
           <div className="rv"><Pill>Introducing Carelu</Pill></div>
+          {/* The "what" — names the category and states the outcome, bridging from the problem */}
+          <p className="rv" style={{
+            fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.6vw, 18px)', fontWeight: 500,
+            color: 'var(--green-900)', lineHeight: 1.5, maxWidth: 560, margin: '14px auto 2px',
+          }}>
+            The care enablement platform that runs your intake &mdash; and scales your practice for you.
+          </p>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(34px, 4.2vw, 52px)',
@@ -3474,16 +3481,16 @@ function MuralReveal() {
             color: 'var(--green-900)',
             lineHeight: 1.12,
             letterSpacing: '-0.02em',
-            margin: '8px 0 14px',
+            margin: '10px 0 14px',
           }}>
             One platform. Every channel.<br />
             <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>Always on.</span>
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
-            lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
+            lineHeight: 1.55, maxWidth: 540, margin: '0 auto',
           }}>
-            The care enablement platform that makes sure every family who can receive care does &mdash; not another system of record.
+            Every inquiry answered, verified, and scheduled the moment it lands &mdash; so no family waits, and none slip away.
           </p>
         </div>
 
