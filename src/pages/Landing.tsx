@@ -3360,13 +3360,15 @@ function MuralReveal() {
   // Workflow ordered bottom-to-top. All labels sit on the LEFT, stack pushed to the right.
   type Side = 'left' | 'right';
   const plates: { title: string; isTop?: boolean; side: Side }[] = [
-    { title: 'This Is What We Do', isTop: true, side: 'left' }, // [0] top — umbrella
-    { title: 'Follow-up',          side: 'left' },              // [1]
-    { title: 'Scheduling',         side: 'left' },              // [2]
-    { title: 'Diagnosis',          side: 'left' },              // [3]
-    { title: 'Consent forms',      side: 'left' },              // [4]
-    { title: 'Insurance card',     side: 'left' },              // [5]
-    { title: 'Eligibility',        side: 'left' },              // [6] first step
+    { title: 'This Is What We Do',   isTop: true, side: 'left' }, // [0] top — umbrella
+    { title: 'Answer families',      side: 'left' },              // [1] first step
+    { title: 'Check eligibility',    side: 'left' },              // [2]
+    { title: 'Collect insurance cards', side: 'left' },           // [3]
+    { title: 'Collect diagnosis',    side: 'left' },              // [4]
+    { title: 'Sign release forms',   side: 'left' },              // [5]
+    { title: 'Complete intake',      side: 'left' },              // [6]
+    { title: 'Follow-up',            side: 'left' },              // [7]
+    { title: 'Behavioral intake',    side: 'left' },              // [8] last step
   ];
   const PLATE_COUNT = plates.length;
 
@@ -3467,13 +3469,6 @@ function MuralReveal() {
         {/* Section heading — compact so the stacked-plates diagram has room to open */}
         <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 28px', padding: '0 24px' }}>
           <div className="rv"><Pill>Introducing Carelu</Pill></div>
-          {/* The "what" — names the category and states the outcome, bridging from the problem */}
-          <p className="rv" style={{
-            fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.6vw, 18px)', fontWeight: 500,
-            color: 'var(--green-900)', lineHeight: 1.5, maxWidth: 560, margin: '14px auto 2px',
-          }}>
-            The care enablement platform that runs your intake &mdash; and scales your practice for you.
-          </p>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(34px, 4.2vw, 52px)',
@@ -3481,16 +3476,16 @@ function MuralReveal() {
             color: 'var(--green-900)',
             lineHeight: 1.12,
             letterSpacing: '-0.02em',
-            margin: '10px 0 14px',
+            margin: '8px 0 14px',
           }}>
             One platform. Every channel.<br />
             <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>Always on.</span>
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
-            lineHeight: 1.55, maxWidth: 540, margin: '0 auto',
+            lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
           }}>
-            Every inquiry answered, verified, and scheduled the moment it lands &mdash; so no family waits, and none slip away.
+            The care enablement platform that makes sure every family who can receive care does &mdash; not another system of record.
           </p>
         </div>
 
