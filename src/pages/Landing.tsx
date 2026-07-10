@@ -714,6 +714,7 @@ const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
   { n: 'calendly',            bx: 0.91, by: 0.20, size: 56 },
   { n: 'docusign',            bx: 0.26, by: 0.31, size: 54 },
   { n: 'gmail',               bx: 0.64, by: 0.26, size: 52 },
+  { n: 'googlesheets',        bx: 0.47, by: 0.42, size: 56 },
   { n: 'twilio',              bx: 0.94, by: 0.40, size: 66 },
   { n: 'ghl',                 bx: 0.06, by: 0.52, size: 62 },
   { n: 'jotform',             bx: 0.19, by: 0.52, size: 56 },
