@@ -1057,7 +1057,7 @@ function Problem() {
               Nothing&rsquo;s broken.<br />You&rsquo;re still losing families.
             </h2>
             <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 600, margin: '0 auto' }}>
-              Your front office has more tools, more headcount, more handoffs than ever &mdash; and still, none of it moves on its own. So intake stalls, and families slip to the competitor who answers first.
+              Your front office has more tools, more headcount, more handoffs than ever &mdash; and still, none of it moves on its own. So intake stalls, and families slip to the competitor who completes intake first.
             </p>
           </div>
           {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
@@ -1144,7 +1144,7 @@ function LiveCounter() {
         fontSize: 15, fontWeight: 500,
         color: 'var(--green-900)', opacity: 0.6,
       }}>
-        families connected to care
+        families connected to care across 43 states
       </div>
       <div style={{
         marginTop: 14,
