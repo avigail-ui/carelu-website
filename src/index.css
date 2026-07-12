@@ -5,6 +5,18 @@
    Every transition, every space, every curve — considered.
    ============================================================ */
 
+/* Metric-adjusted fallback for the EB Garamond display face. EB Garamond is
+   ~87% the advance width of Georgia and ~96% of Times, so the old Georgia
+   fallback rendered display text oversized and overflowing on first paint,
+   then reflowed when the webfont swapped in. This maps a Times-based fallback
+   to EB Garamond's measured width (eb/times = 0.956) so the pre-swap render
+   occupies the same space — no jump, no overflow while the font loads. */
+@font-face {
+  font-family: 'EB Garamond Fallback';
+  src: local('Times New Roman'), local('Times');
+  size-adjust: 95.6%;
+}
+
 /* Nav pill: balanced side groups keep the logo dead-center regardless of how
    wide the left links vs. right actions are. */
 .nav-side { display: flex; align-items: center; flex: 1 1 0; min-width: 0; }
@@ -66,7 +78,7 @@
   --gray-800: #e4e4e7;
   --black: #fafafa;
 
-  --font-display: 'EB Garamond', Georgia, serif;
+  --font-display: 'EB Garamond', 'EB Garamond Fallback', Georgia, serif;
   --font-logo: 'Instrument Serif', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 
