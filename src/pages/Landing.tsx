@@ -2426,74 +2426,46 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 }
 
 // ── OUTCOMES — expandable improvement-metric rows ──────────
-// ── CHANNEL PLAYBOOK — the intake shown as an actual conversation, per channel ──
-type PlayActor = 'Family' | 'Carelu' | 'Team';
-type PlayStep = { who: PlayActor; text: string };
+// ── CHANNEL PLAYBOOK — the first hello told as a human moment, per channel ──
 type PlayChannel = {
-  key: string; label: string; name: string; tagline: string;
-  headline: string; meta: string; outcomes: string[]; steps: PlayStep[];
+  key: string; label: string;
+  quote: string; who: string;       // the family's own words + who/where
+  resolution: string;               // what Carelu quietly did, in prose
+  outcomes: string[];
 };
 
-const CP_GREEN = '#3f7a34';       // brand green for Carelu bubbles (green-900 is near-black in .session-light)
+const CP_GREEN = '#3f7a34';
 const CP_GREEN_DK = '#2e5a26';
 
 function ChannelPlaybook() {
   const channels: PlayChannel[] = [
     {
-      key: 'Phone', label: 'Phone', name: 'Phone agent',
-      tagline: 'A family calls — day, night, or lunch rush. Someone always picks up.',
-      headline: 'Live phone call', meta: 'Answered on the first ring · 9:47pm',
-      outcomes: ['Answered in under a second', 'Eligibility verified on the call', 'Assessment booked before hangup'],
-      steps: [
-        { who: 'Family', text: 'Hi, I got a referral for my son and I don’t know where to start…' },
-        { who: 'Carelu', text: 'You’re in the right place — I can get everything started right now. Do you have your insurance card handy?' },
-        { who: 'Family', text: 'Yes — it’s an Aetna plan.' },
-        { who: 'Carelu', text: 'Perfect, you’re in-network with us. I’ve verified eligibility and I’ll grab a few details to get the assessment on the calendar.' },
-        { who: 'Carelu', text: 'You’re booked for Thursday at 10am. You’ll get a text confirmation in a moment.' },
-        { who: 'Team', text: 'Your team opens the record to a qualified, scheduled family — and the full call transcript.' },
-      ],
+      key: 'Phone', label: 'Phone',
+      quote: 'I got a referral for my son. I don’t even know where to start.',
+      who: 'A parent · called at 9:47pm',
+      resolution: 'Carelu picked up on the first ring — confirmed their insurance, gathered what was needed, and booked the assessment before they hung up.',
+      outcomes: ['Answered in seconds', 'In-network, confirmed live', 'Booked before hangup'],
     },
     {
-      key: 'Chat', label: 'Chat', name: 'Chat agent',
-      tagline: 'The widget on your site turns a late-night visitor into a booked family.',
-      headline: 'Website chat', meta: 'On your site · online 24/7',
-      outcomes: ['Greeted instantly, any hour', 'Insurance confirmed live', 'Continues by text if they leave'],
-      steps: [
-        { who: 'Family', text: 'Do you take Blue Cross? Trying to figure this out before my kid’s bedtime 😅' },
-        { who: 'Carelu', text: 'We do! I just confirmed your plan is in-network. Want me to start the intake right here?' },
-        { who: 'Family', text: 'Yes please.' },
-        { who: 'Carelu', text: 'Great. I’ll text you a secure link to snap a photo of your card — no forms to download.' },
-        { who: 'Carelu', text: 'If you need to run, no problem — we’ll pick this right back up over text.' },
-        { who: 'Team', text: 'Your team inherits a ready case — no chat logs to comb through.' },
-      ],
+      key: 'Chat', label: 'Chat',
+      quote: 'Do you even take our insurance? I’m trying to sort this before bedtime.',
+      who: 'A parent · website chat, 11:58pm',
+      resolution: 'Carelu greeted them instantly, confirmed their plan, and started intake right there — then carried it on by text after they closed the tab.',
+      outcomes: ['Greeted instantly, any hour', 'Coverage confirmed live', 'Continued over text'],
     },
     {
-      key: 'Forms', label: 'Forms', name: 'Form agent',
-      tagline: 'A web form or referral used to mean a 2–3 day dead zone. Not anymore.',
-      headline: 'Web form → text', meta: 'Form submitted · reply sent in seconds',
-      outcomes: ['No 2–3 day dead zone', '30-page packet → a few texts', 'Zero data entry for your staff'],
-      steps: [
-        { who: 'Family', text: '[ Submitted your “Request an appointment” form ]' },
-        { who: 'Carelu', text: 'Thanks for reaching out! I’ll pick up right where the form left off — no need to repeat yourself.' },
-        { who: 'Carelu', text: 'Just a couple quick questions instead of the full packet: what’s your child’s date of birth?' },
-        { who: 'Family', text: '03/14/2021' },
-        { who: 'Carelu', text: 'Got it. I’ll collect the diagnosis report and consents, then lock in the assessment — everything syncs to your record.' },
-        { who: 'Team', text: 'Your team never touches a single data-entry field.' },
-      ],
+      key: 'Forms', label: 'Forms',
+      quote: 'I filled out the form. Now I just… wait to hear back, I guess.',
+      who: 'A parent · web form',
+      resolution: 'Carelu texted back within seconds — no dead zone. Turned the 30-page packet into a few questions and booked the assessment, syncing every field to the record.',
+      outcomes: ['Replied in seconds, not days', '30-page packet → a few texts', 'Zero data entry for staff'],
     },
     {
-      key: 'Text', label: 'Text', name: 'Text agent',
-      tagline: 'Families already live in their text threads. Carelu meets them there.',
-      headline: 'Text thread', meta: 'SMS · replies in seconds',
+      key: 'Text', label: 'Text',
+      quote: 'Do you have any openings for my 4-year-old?',
+      who: 'A parent · by text',
+      resolution: 'Carelu replied in seconds, qualified them right in the thread, collected the documents, and scheduled the assessment with a reminder.',
       outcomes: ['Replies in seconds, any hour', 'Qualified in the thread', 'Booked with a reminder'],
-      steps: [
-        { who: 'Family', text: 'Do you have any openings for my 4-year-old?' },
-        { who: 'Carelu', text: 'We do! I can help you get started right now. Which insurance are you using?' },
-        { who: 'Family', text: 'UnitedHealthcare' },
-        { who: 'Carelu', text: 'You’re in-network 🎉 I’ll collect a couple documents here and get the assessment scheduled.' },
-        { who: 'Carelu', text: 'All set — Tuesday at 2pm. I’ll send a reminder the day before.' },
-        { who: 'Team', text: 'Your team gets a warm, ready family — same brain as every other channel.' },
-      ],
     },
   ];
 
@@ -2506,8 +2478,8 @@ function ChannelPlaybook() {
       background: 'var(--bone)',
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
-          <div className="rv"><Pill>Under the hood</Pill></div>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(30px, 4vw, 46px)' }}>
+          <div className="rv"><Pill>First contact</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
             fontWeight: 400, color: 'var(--green-900)',
@@ -2517,16 +2489,16 @@ function ChannelPlaybook() {
           </h2>
           <p className="rv d2" style={{
             fontSize: 16, color: 'var(--gray-500)', lineHeight: 1.55,
-            maxWidth: 560, margin: '16px auto 0',
+            maxWidth: 580, margin: '16px auto 0',
           }}>
-            No black box. Here&rsquo;s the real conversation, on every channel Carelu answers.
+            However they reach out &mdash; unsure, overwhelmed, at any hour &mdash; they&rsquo;re met in seconds and carried all the way to their first appointment.
           </p>
         </div>
 
-        {/* Channel tabs */}
+        {/* Channel switch */}
         <div className="rv d2" style={{
           display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10,
-          marginBottom: 'clamp(24px, 3vw, 34px)',
+          marginBottom: 'clamp(34px, 5vw, 56px)',
         }}>
           {channels.map((c, i) => {
             const on = i === active;
@@ -2541,7 +2513,7 @@ function ChannelPlaybook() {
                   color: on ? '#fff' : 'var(--gray-600)',
                   background: on ? CP_GREEN : 'transparent',
                   border: on ? `1px solid ${CP_GREEN}` : '1px solid rgba(0,0,0,0.12)',
-                  boxShadow: on ? '0 6px 18px rgba(63,122,52,0.28)' : 'none',
+                  boxShadow: on ? '0 6px 18px rgba(63,122,52,0.24)' : 'none',
                   padding: '10px 18px', borderRadius: 100, cursor: 'pointer',
                   transition: 'all 0.2s ease',
                 }}
@@ -2560,169 +2532,72 @@ function ChannelPlaybook() {
           })}
         </div>
 
-        {/* Playbook card */}
-        <div className="rv d3" style={{
-          maxWidth: 960, margin: '0 auto',
-          background: '#fff', borderRadius: 24,
-          border: '1px solid rgba(0,0,0,0.05)',
-          boxShadow: '0 18px 60px rgba(46,74,42,0.10)',
-          overflow: 'hidden',
-        }}>
-          <div className="cp-grid" style={{
-            display: 'grid', gridTemplateColumns: 'var(--cp-cols, 320px 1fr)',
+        {/* The moment — remounts on channel change to replay the fade */}
+        <div key={ch.key} className="cp-moment" style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
+          {/* The family's own words */}
+          <div aria-hidden style={{
+            fontFamily: 'var(--font-display)', fontSize: 92, lineHeight: 0.8,
+            color: 'var(--lime)', height: 44, marginBottom: 4,
+            animation: 'mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) both',
+          }}>&ldquo;</div>
+          <blockquote style={{
+            fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 400,
+            fontSize: 'clamp(27px, 3.6vw, 42px)', color: 'var(--green-900)',
+            lineHeight: 1.26, letterSpacing: '-0.01em', margin: '0 auto',
+            maxWidth: 720, textWrap: 'balance',
+            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.05s both',
+          } as React.CSSProperties}>
+            {ch.quote}
+          </blockquote>
+          <div style={{
+            marginTop: 18, display: 'inline-flex', alignItems: 'center', gap: 9,
+            fontSize: 12, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase',
+            color: 'var(--gray-500)',
+            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.1s both',
           }}>
-            {/* Identity + outcomes column */}
-            <div className="cp-identity" style={{
-              padding: 'clamp(26px, 3vw, 38px)',
-              borderRight: '1px solid rgba(0,0,0,0.06)',
-              background: 'linear-gradient(160deg, rgba(63,122,52,0.05), rgba(63,122,52,0.015))',
-              display: 'flex', flexDirection: 'column',
+            <span style={{
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              width: 22, height: 22, borderRadius: '50%', background: 'rgba(0,0,0,0.05)', color: 'var(--gray-500)',
             }}>
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                width: 46, height: 46, borderRadius: 14,
-                background: 'var(--lime)', color: CP_GREEN_DK,
-                marginBottom: 18,
+              <ChannelIcon name={ch.key} />
+            </span>
+            {ch.who}
+          </div>
+
+          {/* The turn — the family's words give way to Carelu's quiet work */}
+          <div style={{
+            width: 1, height: 46, margin: '30px auto 26px',
+            background: 'linear-gradient(rgba(63,122,52,0), rgba(63,122,52,0.45))',
+          }} />
+
+          <p style={{
+            fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 1.5vw, 19px)',
+            color: '#4b544a', lineHeight: 1.62, margin: '0 auto', maxWidth: 620,
+            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.15s both',
+          }}>
+            {ch.resolution}
+          </p>
+
+          {/* Where it lands */}
+          <div style={{
+            marginTop: 30, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10,
+          }}>
+            {ch.outcomes.map((o, i) => (
+              <span key={ch.key + i} style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                fontSize: 13, fontWeight: 600, color: CP_GREEN_DK,
+                background: 'rgba(63,122,52,0.07)', border: '1px solid rgba(63,122,52,0.20)',
+                padding: '7px 14px', borderRadius: 100,
+                animation: `mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) ${0.25 + i * 0.07}s both`,
               }}>
-                <span style={{ display: 'inline-flex', transform: 'scale(1.9)' }}><ChannelIcon name={ch.key} /></span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={CP_GREEN} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {o}
               </span>
-              <h3 style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.6vw, 30px)',
-                fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.15,
-                letterSpacing: '-0.01em', margin: '0 0 10px',
-              }}>
-                {ch.name}
-              </h3>
-              <p style={{
-                fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.55, margin: '0 0 26px',
-              }}>
-                {ch.tagline}
-              </p>
-              <div style={{
-                marginTop: 'auto', paddingTop: 22, borderTop: '1px solid rgba(0,0,0,0.07)',
-                display: 'flex', flexDirection: 'column', gap: 13,
-              }}>
-                {ch.outcomes.map((o, i) => (
-                  <div key={ch.key + i} style={{
-                    display: 'flex', alignItems: 'flex-start', gap: 11,
-                    animation: `mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) ${0.15 + i * 0.08}s both`,
-                  }}>
-                    <span style={{
-                      flexShrink: 0, width: 20, height: 20, borderRadius: '50%',
-                      background: CP_GREEN, display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                      marginTop: 1,
-                    }}>
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                    </span>
-                    <span style={{ fontSize: 13.5, fontWeight: 600, color: CP_GREEN_DK, lineHeight: 1.4 }}>{o}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Conversation column — remounts on channel change to replay the stagger */}
-            <div key={ch.key} style={{ display: 'flex', flexDirection: 'column', background: 'rgba(0,0,0,0.02)' }}>
-              {/* Channel header bar */}
-              <div style={{
-                display: 'flex', alignItems: 'center', gap: 12,
-                padding: '15px clamp(18px, 2.5vw, 26px)',
-                background: '#fff', borderBottom: '1px solid rgba(0,0,0,0.06)',
-              }}>
-                <span style={{
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  width: 34, height: 34, borderRadius: '50%', background: CP_GREEN, color: '#fff',
-                }}>
-                  <span style={{ display: 'inline-flex', transform: 'scale(1.25)' }}><ChannelIcon name={ch.key} /></span>
-                </span>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontFamily: 'var(--font-body)', fontSize: 14.5, fontWeight: 600, color: 'var(--green-900)' }}>{ch.headline}</div>
-                  <div style={{ fontSize: 12, color: 'var(--gray-500)' }}>{ch.meta}</div>
-                </div>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                  <span className="dot-pulse" style={{ width: 7, height: 7, borderRadius: '50%', background: CP_GREEN, boxShadow: '0 0 0 3px rgba(63,122,52,0.18)' }} />
-                  <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gray-500)' }}>Live</span>
-                </span>
-              </div>
-
-              {/* Message thread */}
-              <div style={{
-                display: 'flex', flexDirection: 'column', gap: 12,
-                padding: 'clamp(20px, 2.6vw, 28px) clamp(18px, 2.6vw, 28px)',
-                flex: 1,
-              }}>
-                {ch.steps.map((s, i) => {
-                  const anim = `mockSwap 0.45s cubic-bezier(0.16,1,0.3,1) ${i * 0.09}s both`;
-                  if (s.who === 'Team') {
-                    return (
-                      <div key={i} style={{
-                        display: 'flex', alignItems: 'center', gap: 12, marginTop: 6,
-                        background: 'rgba(63,122,52,0.09)', border: '1px solid rgba(63,122,52,0.22)',
-                        borderRadius: 14, padding: '13px 15px', animation: anim,
-                      }}>
-                        <span style={{
-                          flexShrink: 0, width: 28, height: 28, borderRadius: '50%', background: CP_GREEN,
-                          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                        }}>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                        </span>
-                        <div style={{ minWidth: 0 }}>
-                          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.04em', color: CP_GREEN_DK, marginBottom: 2 }}>Handed to your team</div>
-                          <div style={{ fontSize: 13.5, color: 'var(--gray-600)', lineHeight: 1.45 }}>{s.text}</div>
-                        </div>
-                      </div>
-                    );
-                  }
-                  const isFamily = s.who === 'Family';
-                  return (
-                    <div key={i} style={{
-                      display: 'flex', justifyContent: isFamily ? 'flex-start' : 'flex-end',
-                      gap: 8, alignItems: 'flex-end', animation: anim,
-                    }}>
-                      {isFamily && <ConvoAvatar who="Family" />}
-                      <div style={{
-                        maxWidth: '80%',
-                        fontSize: 14.5, lineHeight: 1.5,
-                        padding: '10px 14px',
-                        borderRadius: 18,
-                        ...(isFamily
-                          ? { background: '#fff', color: '#3a3f37', border: '1px solid rgba(0,0,0,0.07)', borderBottomLeftRadius: 5 }
-                          : { background: CP_GREEN, color: '#f3f9ee', borderBottomRightRadius: 5 }),
-                      }}>
-                        {s.text}
-                      </div>
-                      {!isFamily && <ConvoAvatar who="Carelu" />}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-// Small round avatar for the conversation thread.
-function ConvoAvatar({ who }: { who: 'Family' | 'Carelu' }) {
-  if (who === 'Carelu') {
-    return (
-      <span style={{
-        flexShrink: 0, width: 28, height: 28, borderRadius: '50%',
-        background: 'var(--lime)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-        fontFamily: 'var(--font-display)', fontSize: 15, fontWeight: 600, color: CP_GREEN_DK,
-      }}>C</span>
-    );
-  }
-  return (
-    <span style={{
-      flexShrink: 0, width: 28, height: 28, borderRadius: '50%',
-      background: 'rgba(0,0,0,0.07)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-    }}>
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gray-500)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="3.5" /><path d="M5.5 20c0-3.6 3-5.5 6.5-5.5s6.5 1.9 6.5 5.5" />
-      </svg>
-    </span>
   );
 }
 

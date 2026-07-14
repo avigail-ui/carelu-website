@@ -27,12 +27,6 @@
   .nav-side { flex: 0 0 auto; }
 }
 
-/* Channel Playbook: two columns on desktop, stack on mobile with the identity
-   column's divider moving from right edge to bottom edge. */
-@media (max-width: 760px) {
-  .cp-grid { --cp-cols: 1fr; }
-  .cp-identity { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.06); text-align: left; }
-}
 
 /* Care-enablement drop-off chart — the two curves draw in, then the fills,
    dots, and endpoint labels fade up, so you watch the leak open up. */
