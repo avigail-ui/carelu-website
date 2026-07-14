@@ -3823,16 +3823,17 @@ function MuralReveal() {
                 <stop offset="0.35" stopColor="#1A2E1F" stopOpacity="0.32" />
                 <stop offset="1"    stopColor="#1A2E1F" stopOpacity="0.55" />
               </linearGradient>
-              {/* Flow pulse that streams down the stack — "we're doing the work" */}
-              <radialGradient id="flowGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%"   stopColor="#f2ffcf" stopOpacity="0.95" />
-                <stop offset="38%"  stopColor="#d4f25c" stopOpacity="0.65" />
-                <stop offset="100%" stopColor="#d4f25c" stopOpacity="0" />
-              </radialGradient>
-              <linearGradient id="flowTrail" x1="0" y1="0" x2="0" y2="1">
+              {/* Electric current that runs down the cylinder's side seams */}
+              <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%"   stopColor="#d4f25c" stopOpacity="0" />
-                <stop offset="100%" stopColor="#d4f25c" stopOpacity="0.5" />
+                <stop offset="34%"  stopColor="#d4f25c" stopOpacity="0.85" />
+                <stop offset="50%"  stopColor="#f7ffdd" stopOpacity="1" />
+                <stop offset="66%"  stopColor="#d4f25c" stopOpacity="0.85" />
+                <stop offset="100%" stopColor="#d4f25c" stopOpacity="0" />
               </linearGradient>
+              <filter id="sparkBlur" x="-300%" y="-40%" width="700%" height="180%">
+                <feGaussianBlur stdDeviation="2.6" />
+              </filter>
             </defs>
 
             {/* Render plates BACK-TO-FRONT (bottom of stack first, top last) so upper plates
@@ -3889,26 +3890,27 @@ function MuralReveal() {
               );
             })}
 
-            {/* Flow pulses streaming down the stack's core — reads as Carelu moving
-                the work through each stage. Appears once the stack has opened. */}
-            {eased > 0.7 && (() => {
-              const dotYof = (i: number) => {
-                const topCy = TOP_CY + i * PLATE_GAP;
-                const overlap = Math.max(0, PLATE_DEPTH - PLATE_GAP);
-                const visibleTopY = i === 0 ? topCy : topCy + overlap;
-                return (visibleTopY + topCy + PLATE_DEPTH) / 2;
-              };
-              const flowTop = dotYof(0);
-              const flowTravel = dotYof(PLATE_COUNT - 1) - flowTop;
-              return [0, 1].map((k) => (
-                <g key={`flow-${k}`} className="stack-flow"
-                  style={{ ['--flow-travel' as string]: `${flowTravel}px`, animationDelay: `${k * -1.35}s` }}>
-                  <rect x={PLATE_CX - 2} y={flowTop - 32} width={4} height={32} rx={2} fill="url(#flowTrail)" />
-                  <circle cx={PLATE_CX} cy={flowTop} r={16} fill="url(#flowGlow)" />
-                  <circle cx={PLATE_CX} cy={flowTop} r={5} fill="var(--lime)" stroke="#4a7c3f" strokeWidth={1.3} />
-                  <circle cx={PLATE_CX} cy={flowTop} r={2} fill="#f7ffdd" />
+            {/* Electric current running down the cylinder's left & right side seams —
+                reads as the stack "live" and moving the work downward. */}
+            {eased > 0.6 && (() => {
+              const SPARK_H = 46;
+              const sideLen = (PLATE_COUNT - 1) * PLATE_GAP + PLATE_DEPTH;
+              const spark = (x: number, key: string, delay: number) => (
+                <g key={key} className="stack-spark"
+                  style={{ ['--spark-travel' as string]: `${sideLen}px`, animationDelay: `${delay}s` }}>
+                  <rect x={x - 5.5} y={TOP_CY} width={11} height={SPARK_H} rx={5.5} fill="url(#sparkGrad)" filter="url(#sparkBlur)" opacity={0.85} />
+                  <rect x={x - 1.4} y={TOP_CY} width={2.8} height={SPARK_H} rx={1.4} fill="url(#sparkGrad)" />
                 </g>
-              ));
+              );
+              const leftX = PLATE_CX - RX;
+              const rightX = PLATE_CX + RX;
+              const dur = 1.9;
+              return [
+                spark(leftX, 'sparkL1', 0),
+                spark(leftX, 'sparkL2', -dur / 2),
+                spark(rightX, 'sparkR1', -dur / 4),
+                spark(rightX, 'sparkR2', (-dur / 4) - dur / 2),
+              ];
             })()}
           </svg>
 
