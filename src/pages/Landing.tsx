@@ -3776,8 +3776,8 @@ function MuralReveal() {
             letterSpacing: '-0.02em',
             margin: '8px 0 14px',
           }}>
-            One platform. Every channel.<br />
-            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>Always on.</span>
+            From first hello<br />
+            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>to first session.</span>
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
