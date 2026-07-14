@@ -2426,6 +2426,226 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 }
 
 // ── OUTCOMES — expandable improvement-metric rows ──────────
+// ── CHANNEL PLAYBOOK — literal, per-channel "what actually happens" timelines ──
+type PlayActor = 'Family' | 'Carelu' | 'Team';
+type PlayStep = { who: PlayActor; text: string };
+type PlayChannel = { key: string; label: string; name: string; tagline: string; steps: PlayStep[] };
+
+function ChannelPlaybook() {
+  const channels: PlayChannel[] = [
+    {
+      key: 'Phone', label: 'Phone', name: 'Phone agent',
+      tagline: 'A family calls — day, night, or lunch rush. Someone always picks up.',
+      steps: [
+        { who: 'Family', text: 'Calls your main line at 9:47pm, long after the office has gone home.' },
+        { who: 'Carelu', text: 'Picks up on the first ring and greets them by your practice name — in English or Spanish, whichever they speak.' },
+        { who: 'Carelu', text: 'Pulls up your insurance panels and service area and verifies eligibility live, right on the call.' },
+        { who: 'Carelu', text: 'Collects the child’s details and insurance by voice — no hold music, no “we’ll call you back.”' },
+        { who: 'Carelu', text: 'Books the assessment against your real availability before hanging up.' },
+        { who: 'Team', text: 'Opens the record to a qualified, scheduled family and the full call transcript.' },
+      ],
+    },
+    {
+      key: 'Chat', label: 'Chat', name: 'Chat agent',
+      tagline: 'The widget on your site turns a late-night visitor into a booked family.',
+      steps: [
+        { who: 'Family', text: 'Lands on your site at midnight, unsure if you even take their plan.' },
+        { who: 'Carelu', text: 'The chat widget greets them instantly and starts qualifying through conversation.' },
+        { who: 'Carelu', text: 'Checks their insurance against your panels and confirms you can help — right there.' },
+        { who: 'Carelu', text: 'Texts a secure link so they can snap photos of both sides of their card.' },
+        { who: 'Carelu', text: 'If they close the tab, the conversation picks back up over text until intake’s done.' },
+        { who: 'Team', text: 'Inherits a ready case — no chat logs to comb through.' },
+      ],
+    },
+    {
+      key: 'Forms', label: 'Forms', name: 'Form agent',
+      tagline: 'A web form or referral used to mean a 2–3 day dead zone. Not anymore.',
+      steps: [
+        { who: 'Family', text: 'Fills out your web form — or a referral hits your inbox — and braces to wait days.' },
+        { who: 'Carelu', text: 'Texts them back within seconds, picking up exactly where the form left off.' },
+        { who: 'Carelu', text: 'Turns the rest of your 30-page packet into a few natural questions over text.' },
+        { who: 'Carelu', text: 'Collects consents, insurance, and the diagnosis report — chasing anything missing.' },
+        { who: 'Carelu', text: 'Books the assessment and syncs every field to the family record.' },
+        { who: 'Team', text: 'Never touches a single data-entry field.' },
+      ],
+    },
+    {
+      key: 'Text', label: 'Text', name: 'Text agent',
+      tagline: 'Families already live in their text threads. Carelu meets them there.',
+      steps: [
+        { who: 'Family', text: 'Texts your number: “Do you have any openings for my 4-year-old?”' },
+        { who: 'Carelu', text: 'Replies in seconds, any hour, and starts the intake in the thread they’re already in.' },
+        { who: 'Carelu', text: 'Qualifies them against your panels and answers their questions in plain language.' },
+        { who: 'Carelu', text: 'Collects documents by text and follows up on whatever’s still outstanding.' },
+        { who: 'Carelu', text: 'Schedules the assessment and confirms it with a reminder.' },
+        { who: 'Team', text: 'Gets a warm, ready family — same brain as every other channel.' },
+      ],
+    },
+  ];
+
+  const [active, setActive] = useState(0);
+  const ch = channels[active];
+
+  const actorStyle: Record<PlayActor, React.CSSProperties> = {
+    Family: { background: 'rgba(0,0,0,0.055)', color: 'var(--gray-600)' },
+    Carelu: { background: 'var(--lime)', color: 'var(--green-900)' },
+    Team:   { background: 'transparent', color: '#3a6b32', border: '1px solid rgba(74,124,63,0.45)' },
+  };
+  const dotColor: Record<PlayActor, string> = {
+    Family: 'rgba(0,0,0,0.22)',
+    Carelu: 'var(--lime)',
+    Team:   '#4a7c3f',
+  };
+
+  return (
+    <section id="how-channels" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
+          <div className="rv"><Pill>Under the hood</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+          }}>
+            What actually happens when a<br />family reaches out.
+          </h2>
+          <p className="rv d2" style={{
+            fontSize: 16, color: 'var(--gray-500)', lineHeight: 1.55,
+            maxWidth: 560, margin: '16px auto 0',
+          }}>
+            No black box. Here&rsquo;s the literal play-by-play for every channel Carelu answers.
+          </p>
+        </div>
+
+        {/* Channel tabs */}
+        <div className="rv d2" style={{
+          display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10,
+          marginBottom: 'clamp(24px, 3vw, 34px)',
+        }}>
+          {channels.map((c, i) => {
+            const on = i === active;
+            return (
+              <button
+                key={c.key}
+                onClick={() => setActive(i)}
+                aria-pressed={on}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 9,
+                  fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600,
+                  color: on ? 'var(--green-900)' : 'var(--gray-600)',
+                  background: on ? '#fff' : 'transparent',
+                  border: on ? '1px solid rgba(0,0,0,0.08)' : '1px solid rgba(0,0,0,0.12)',
+                  boxShadow: on ? '0 4px 16px rgba(0,0,0,0.06)' : 'none',
+                  padding: '10px 18px', borderRadius: 100, cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  width: 22, height: 22, borderRadius: '50%',
+                  background: on ? 'var(--lime)' : 'rgba(0,0,0,0.06)',
+                  color: on ? 'var(--green-900)' : 'var(--gray-500)',
+                }}>
+                  <ChannelIcon name={c.key} />
+                </span>
+                {c.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Playbook card */}
+        <div className="rv d3" style={{
+          maxWidth: 940, margin: '0 auto',
+          background: '#fff', borderRadius: 24,
+          border: '1px solid rgba(0,0,0,0.05)',
+          boxShadow: '0 8px 40px rgba(0,0,0,0.05)',
+          overflow: 'hidden',
+        }}>
+          <div className="cp-grid" style={{
+            display: 'grid', gridTemplateColumns: 'var(--cp-cols, 300px 1fr)',
+          }}>
+            {/* Identity column */}
+            <div className="cp-identity" style={{
+              padding: 'clamp(26px, 3vw, 40px)',
+              borderRight: '1px solid rgba(0,0,0,0.06)',
+              background: 'rgba(0,0,0,0.015)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'center',
+            }}>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                width: 46, height: 46, borderRadius: 14,
+                background: 'var(--lime)', color: 'var(--green-900)',
+                marginBottom: 18,
+              }}>
+                <span style={{ display: 'inline-flex', transform: 'scale(1.9)' }}><ChannelIcon name={ch.key} /></span>
+              </span>
+              <h3 style={{
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.6vw, 30px)',
+                fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.15,
+                letterSpacing: '-0.01em', margin: '0 0 10px',
+              }}>
+                {ch.name}
+              </h3>
+              <p style={{
+                fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.55, margin: 0,
+              }}>
+                {ch.tagline}
+              </p>
+            </div>
+
+            {/* Timeline column — remounts on channel change to replay the stagger */}
+            <div key={ch.key} style={{ padding: 'clamp(24px, 3vw, 38px) clamp(22px, 3vw, 40px)' }}>
+              {ch.steps.map((s, i) => {
+                const last = i === ch.steps.length - 1;
+                return (
+                  <div key={i} style={{
+                    display: 'flex', gap: 16,
+                    animation: `mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) ${i * 0.07}s both`,
+                  }}>
+                    {/* Rail: dot + connector */}
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 14 }}>
+                      <span style={{
+                        width: 12, height: 12, borderRadius: '50%',
+                        background: dotColor[s.who], flexShrink: 0, marginTop: 3,
+                        boxShadow: s.who === 'Carelu' ? '0 0 0 4px rgba(212,242,92,0.25)' : 'none',
+                        border: s.who === 'Team' ? '2px solid #4a7c3f' : 'none',
+                        boxSizing: 'border-box',
+                        backgroundColor: s.who === 'Team' ? 'transparent' : dotColor[s.who],
+                      }} />
+                      {!last && <span style={{ flex: 1, width: 2, background: 'rgba(0,0,0,0.08)', marginTop: 4 }} />}
+                    </div>
+                    {/* Content */}
+                    <div style={{ paddingBottom: last ? 0 : 20, minWidth: 0 }}>
+                      <span style={{
+                        display: 'inline-flex', alignItems: 'center',
+                        fontFamily: 'var(--font-body)', fontSize: 10.5, fontWeight: 700,
+                        letterSpacing: '0.08em', textTransform: 'uppercase',
+                        padding: '3px 9px', borderRadius: 100, marginBottom: 7,
+                        ...actorStyle[s.who],
+                      }}>
+                        {s.who === 'Carelu' ? 'Carelu' : s.who === 'Team' ? 'Your team' : 'Family'}
+                      </span>
+                      <p style={{
+                        fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.55, margin: 0,
+                      }}>
+                        {s.text}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Outcomes() {
   const [open, setOpen] = useState<number | null>(0);
   const metrics = [
@@ -3659,6 +3879,7 @@ export default function Landing() {
         <MuralReveal />
         <Impact />
         <HowCarelu />
+        <ChannelPlaybook />
         <Outcomes />
         <CustomerStories />
         <GettingStarted />
