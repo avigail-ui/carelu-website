@@ -184,16 +184,6 @@ button { font-family: inherit; cursor: pointer; }
   from { opacity: 0; transform: translateY(48px); filter: blur(6px); }
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
-/* Electric current running down the layer stack's side seams (MuralReveal).
-   Travel distance (side length) is passed per-render via --spark-travel. */
-@keyframes stackSpark {
-  from { transform: translateY(-46px); }
-  to   { transform: translateY(var(--spark-travel, 300px)); }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .stack-spark { animation: stackSpark 1.9s linear infinite; will-change: transform; }
-}
-
 /* Slow Ken Burns + cloud drift for the static sky hero background */
 @keyframes heroSkyDrift {
   0%   { transform: scale(1.08) translate3d(-1.5%, -0.5%, 0); }

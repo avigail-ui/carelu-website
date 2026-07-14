@@ -3747,6 +3747,16 @@ function MuralReveal() {
     return Math.max(0, Math.min(1, (animProgress - start) / (end - start)));
   };
 
+  // Cylinders soak up green as the stack expands: each disc mixes from bone →
+  // sage in step with its own reveal, so scrolling colors the platform in.
+  const BONE_RGB = [250, 248, 243];
+  const SAGE_RGB = [192, 224, 165];
+  const plateFill = (i: number) => {
+    const t = Math.max(0, Math.min(1, labelOpacity(i)));
+    const c = (a: number, b: number) => Math.round(a + (b - a) * t);
+    return `rgb(${c(BONE_RGB[0], SAGE_RGB[0])},${c(BONE_RGB[1], SAGE_RGB[1])},${c(BONE_RGB[2], SAGE_RGB[2])})`;
+  };
+
   return (
     <section id="platform" style={{
       position: 'relative', background: 'var(--bone)',
@@ -3823,17 +3833,6 @@ function MuralReveal() {
                 <stop offset="0.35" stopColor="#1A2E1F" stopOpacity="0.32" />
                 <stop offset="1"    stopColor="#1A2E1F" stopOpacity="0.55" />
               </linearGradient>
-              {/* Electric current that runs down the cylinder's side seams */}
-              <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%"   stopColor="#d4f25c" stopOpacity="0" />
-                <stop offset="34%"  stopColor="#d4f25c" stopOpacity="0.85" />
-                <stop offset="50%"  stopColor="#f7ffdd" stopOpacity="1" />
-                <stop offset="66%"  stopColor="#d4f25c" stopOpacity="0.85" />
-                <stop offset="100%" stopColor="#d4f25c" stopOpacity="0" />
-              </linearGradient>
-              <filter id="sparkBlur" x="-300%" y="-40%" width="700%" height="180%">
-                <feGaussianBlur stdDeviation="2.6" />
-              </filter>
             </defs>
 
             {/* Render plates BACK-TO-FRONT (bottom of stack first, top last) so upper plates
@@ -3850,7 +3849,7 @@ function MuralReveal() {
                         v ${PLATE_DEPTH}
                         a ${RX},${RY} 0 0 1 ${-RX * 2},0
                         z`}
-                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : 'var(--bone)'}
+                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : plateFill(i)}
                     stroke={STROKE} strokeWidth="1"
                   />
                   {/* The full top face — only for the topmost plate. */}
@@ -3890,28 +3889,6 @@ function MuralReveal() {
               );
             })}
 
-            {/* Electric current running down the cylinder's left & right side seams —
-                reads as the stack "live" and moving the work downward. */}
-            {eased > 0.6 && (() => {
-              const SPARK_H = 46;
-              const sideLen = (PLATE_COUNT - 1) * PLATE_GAP + PLATE_DEPTH;
-              const spark = (x: number, key: string, delay: number) => (
-                <g key={key} className="stack-spark"
-                  style={{ ['--spark-travel' as string]: `${sideLen}px`, animationDelay: `${delay}s` }}>
-                  <rect x={x - 5.5} y={TOP_CY} width={11} height={SPARK_H} rx={5.5} fill="url(#sparkGrad)" filter="url(#sparkBlur)" opacity={0.85} />
-                  <rect x={x - 1.4} y={TOP_CY} width={2.8} height={SPARK_H} rx={1.4} fill="url(#sparkGrad)" />
-                </g>
-              );
-              const leftX = PLATE_CX - RX;
-              const rightX = PLATE_CX + RX;
-              const dur = 1.9;
-              return [
-                spark(leftX, 'sparkL1', 0),
-                spark(leftX, 'sparkL2', -dur / 2),
-                spark(rightX, 'sparkR1', -dur / 4),
-                spark(rightX, 'sparkR2', (-dur / 4) - dur / 2),
-              ];
-            })()}
           </svg>
 
           {/* Labels overlaid — all left-aligned, each preceded by a lime checkmark circle */}
