@@ -3663,9 +3663,9 @@ function MuralReveal() {
   const plates: { title: string; isTop?: boolean; side: Side }[] = [
     { title: 'This Is What We Do', isTop: true, side: 'left' }, // [0] top — umbrella
     { title: 'Answer families',    side: 'left' },              // [1] first contact
-    { title: 'Verify insurance',   side: 'left' },              // [2] eligibility + cards
-    { title: 'Gather records',     side: 'left' },              // [3] diagnosis + releases
-    { title: 'Complete intake',    side: 'left' },              // [4] every field + follow-up
+    { title: 'Gather records',     side: 'left' },              // [2] diagnosis + releases
+    { title: 'Complete intake',    side: 'left' },              // [3] every field + follow-up
+    { title: 'Verify insurance',   side: 'left' },              // [4] eligibility + cards
     { title: 'Behavioral intake',  side: 'left' },              // [5] human handoff
   ];
   const PLATE_COUNT = plates.length;
@@ -3777,7 +3777,7 @@ function MuralReveal() {
             margin: '8px 0 14px',
           }}>
             From first hello<br />
-            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>to first session.</span>
+            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>to first appointment.</span>
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
