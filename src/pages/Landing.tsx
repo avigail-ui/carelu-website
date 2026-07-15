@@ -2360,12 +2360,12 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
     }}>
       <div style={{
         position: 'sticky', top: 0, height: '100svh',
-        display: 'flex', flexDirection: 'column',
+        display: 'flex', flexDirection: 'column', justifyContent: 'center',
         overflow: 'hidden',
       }}>
         {/* Header — INSIDE the sticky pin so it stays locked with the cards */}
         <div style={{
-          paddingTop: 'clamp(36px, 5vh, 64px)', paddingBottom: 'clamp(48px, 7vh, 88px)',
+          paddingTop: 'clamp(24px, 3vh, 40px)', paddingBottom: 'clamp(24px, 3.5vh, 44px)',
           textAlign: 'center', flex: '0 0 auto',
         }}>
           <div className="rv"><Pill>How it works</Pill></div>
@@ -2389,10 +2389,10 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             />
           </div>
         </div>
-        {/* Horizontal track of cards — grows to fill the pin so the dots sit at
-            the bottom of the viewport instead of leaving a dead band below them */}
+        {/* Horizontal track of cards — sits right under the header (the whole
+            header+cards+dots group is vertically centered in the pin) */}
         <div style={{
-          flex: '1 1 auto', display: 'flex', alignItems: 'center',
+          flex: '0 0 auto', display: 'flex', alignItems: 'center',
           overflow: 'hidden', position: 'relative',
         }}>
           <div
@@ -2410,10 +2410,9 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
           </div>
         </div>
 
-        {/* Progress dots — sit at the bottom of the pin (the flex-grow track
-            above already provides the breathing room) */}
+        {/* Progress dots — just below the card row */}
         <div style={{
-          marginTop: 0, paddingBottom: 'clamp(24px, 4vh, 48px)',
+          marginTop: 'clamp(20px, 3vh, 32px)', paddingBottom: 0,
           display: 'flex', justifyContent: 'center', gap: 8,
         }}>
           {steps.map((_, i) => (
