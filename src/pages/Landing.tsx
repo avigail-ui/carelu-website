@@ -2415,180 +2415,6 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 }
 
 // ── OUTCOMES — expandable improvement-metric rows ──────────
-// ── CHANNEL PLAYBOOK — the first hello told as a human moment, per channel ──
-type PlayChannel = {
-  key: string; label: string;
-  quote: string; who: string;       // the family's own words + who/where
-  resolution: string;               // what Carelu quietly did, in prose
-  outcomes: string[];
-};
-
-const CP_GREEN = '#3f7a34';
-const CP_GREEN_DK = '#2e5a26';
-
-function ChannelPlaybook() {
-  const channels: PlayChannel[] = [
-    {
-      key: 'Phone', label: 'Phone',
-      quote: 'I got a referral for my son. I don’t even know where to start.',
-      who: 'A parent · called at 9:47pm',
-      resolution: 'Carelu picked up on the first ring — confirmed their insurance, gathered what was needed, and booked the assessment before they hung up.',
-      outcomes: ['Answered in seconds', 'In-network, confirmed live', 'Booked before hangup'],
-    },
-    {
-      key: 'Chat', label: 'Chat',
-      quote: 'Do you even take our insurance? I’m trying to sort this before bedtime.',
-      who: 'A parent · website chat, 11:58pm',
-      resolution: 'Carelu greeted them instantly, confirmed their plan, and started intake right there — then carried it on by text after they closed the tab.',
-      outcomes: ['Greeted instantly, any hour', 'Coverage confirmed live', 'Continued over text'],
-    },
-    {
-      key: 'Forms', label: 'Forms',
-      quote: 'I filled out the form. Now I just… wait to hear back, I guess.',
-      who: 'A parent · web form',
-      resolution: 'Carelu texted back within seconds — no dead zone. Turned the 30-page packet into a few questions and booked the assessment, syncing every field to the record.',
-      outcomes: ['Replied in seconds, not days', '30-page packet → a few texts', 'Zero data entry for staff'],
-    },
-    {
-      key: 'Text', label: 'Text',
-      quote: 'Do you have any openings for my 4-year-old?',
-      who: 'A parent · by text',
-      resolution: 'Carelu replied in seconds, qualified them right in the thread, collected the documents, and scheduled the assessment with a reminder.',
-      outcomes: ['Replies in seconds, any hour', 'Qualified in the thread', 'Booked with a reminder'],
-    },
-  ];
-
-  const [active, setActive] = useState(0);
-  const ch = channels[active];
-
-  return (
-    <section id="how-channels" style={{
-      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
-      background: 'var(--bone)',
-    }}>
-      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(30px, 4vw, 46px)' }}>
-          <div className="rv"><Pill>First contact</Pill></div>
-          <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
-            fontWeight: 400, color: 'var(--green-900)',
-            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
-          }}>
-            What actually happens when a<br />family reaches out.
-          </h2>
-          <p className="rv d2" style={{
-            fontSize: 16, color: 'var(--gray-500)', lineHeight: 1.55,
-            maxWidth: 580, margin: '16px auto 0',
-          }}>
-            However they reach out &mdash; unsure, overwhelmed, at any hour &mdash; they&rsquo;re met in seconds and carried all the way to their first appointment.
-          </p>
-        </div>
-
-        {/* Channel switch */}
-        <div className="rv d2" style={{
-          display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10,
-          marginBottom: 'clamp(34px, 5vw, 56px)',
-        }}>
-          {channels.map((c, i) => {
-            const on = i === active;
-            return (
-              <button
-                key={c.key}
-                onClick={() => setActive(i)}
-                aria-pressed={on}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 9,
-                  fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600,
-                  color: on ? '#fff' : 'var(--gray-600)',
-                  background: on ? CP_GREEN : 'transparent',
-                  border: on ? `1px solid ${CP_GREEN}` : '1px solid rgba(0,0,0,0.12)',
-                  boxShadow: on ? '0 6px 18px rgba(63,122,52,0.24)' : 'none',
-                  padding: '10px 18px', borderRadius: 100, cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                }}
-              >
-                <span style={{
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  width: 22, height: 22, borderRadius: '50%',
-                  background: on ? 'var(--lime)' : 'rgba(0,0,0,0.06)',
-                  color: on ? CP_GREEN_DK : 'var(--gray-500)',
-                }}>
-                  <ChannelIcon name={c.key} />
-                </span>
-                {c.label}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* The moment — remounts on channel change to replay the fade */}
-        <div key={ch.key} className="cp-moment" style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
-          {/* The family's own words */}
-          <div aria-hidden style={{
-            fontFamily: 'var(--font-display)', fontSize: 92, lineHeight: 0.8,
-            color: 'var(--lime)', height: 44, marginBottom: 4,
-            animation: 'mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) both',
-          }}>&ldquo;</div>
-          <blockquote style={{
-            fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 400,
-            fontSize: 'clamp(27px, 3.6vw, 42px)', color: 'var(--green-900)',
-            lineHeight: 1.26, letterSpacing: '-0.01em', margin: '0 auto',
-            maxWidth: 720, textWrap: 'balance',
-            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.05s both',
-          } as React.CSSProperties}>
-            {ch.quote}
-          </blockquote>
-          <div style={{
-            marginTop: 18, display: 'inline-flex', alignItems: 'center', gap: 9,
-            fontSize: 12, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase',
-            color: 'var(--gray-500)',
-            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.1s both',
-          }}>
-            <span style={{
-              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-              width: 22, height: 22, borderRadius: '50%', background: 'rgba(0,0,0,0.05)', color: 'var(--gray-500)',
-            }}>
-              <ChannelIcon name={ch.key} />
-            </span>
-            {ch.who}
-          </div>
-
-          {/* The turn — the family's words give way to Carelu's quiet work */}
-          <div style={{
-            width: 1, height: 46, margin: '30px auto 26px',
-            background: 'linear-gradient(rgba(63,122,52,0), rgba(63,122,52,0.45))',
-          }} />
-
-          <p style={{
-            fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 1.5vw, 19px)',
-            color: '#4b544a', lineHeight: 1.62, margin: '0 auto', maxWidth: 620,
-            animation: 'mockSwap 0.55s cubic-bezier(0.16,1,0.3,1) 0.15s both',
-          }}>
-            {ch.resolution}
-          </p>
-
-          {/* Where it lands */}
-          <div style={{
-            marginTop: 30, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10,
-          }}>
-            {ch.outcomes.map((o, i) => (
-              <span key={ch.key + i} style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8,
-                fontSize: 13, fontWeight: 600, color: CP_GREEN_DK,
-                background: 'rgba(63,122,52,0.07)', border: '1px solid rgba(63,122,52,0.20)',
-                padding: '7px 14px', borderRadius: 100,
-                animation: `mockSwap 0.5s cubic-bezier(0.16,1,0.3,1) ${0.25 + i * 0.07}s both`,
-              }}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={CP_GREEN} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                {o}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Outcomes() {
   const [open, setOpen] = useState<number | null>(0);
@@ -3611,16 +3437,6 @@ function MuralReveal() {
     return Math.max(0, Math.min(1, (animProgress - start) / (end - start)));
   };
 
-  // Cylinders soak up green as the stack expands: each disc mixes from bone →
-  // sage in step with its own reveal, so scrolling colors the platform in.
-  const BONE_RGB = [250, 248, 243];
-  const SAGE_RGB = [192, 224, 165];
-  const plateFill = (i: number) => {
-    const t = Math.max(0, Math.min(1, labelOpacity(i)));
-    const c = (a: number, b: number) => Math.round(a + (b - a) * t);
-    return `rgb(${c(BONE_RGB[0], SAGE_RGB[0])},${c(BONE_RGB[1], SAGE_RGB[1])},${c(BONE_RGB[2], SAGE_RGB[2])})`;
-  };
-
   return (
     <section id="platform" style={{
       position: 'relative', background: 'var(--bone)',
@@ -3713,7 +3529,7 @@ function MuralReveal() {
                         v ${PLATE_DEPTH}
                         a ${RX},${RY} 0 0 1 ${-RX * 2},0
                         z`}
-                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : plateFill(i)}
+                    fill={plate.isTop ? 'rgba(191,224,174,0.6)' : 'var(--bone)'}
                     stroke={STROKE} strokeWidth="1"
                   />
                   {/* The full top face — only for the topmost plate. */}
@@ -3834,7 +3650,6 @@ export default function Landing() {
         <MuralReveal />
         <Impact />
         <HowCarelu />
-        <ChannelPlaybook />
         <Outcomes />
         <CustomerStories />
         <GettingStarted />
