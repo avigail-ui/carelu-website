@@ -705,23 +705,36 @@ const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '
    all wired to a system of record, but the threads are frayed and half-broken.
    Positions are normalized (0..1) fractions of the section, kept clear of the
    centered text zone. "Connected, but not." */
-// Curated, spread-out ring of front-office tools with the center left clear so
-// the headline breathes. Kept intentionally sparse — the point lands with a
-// dozen recognizable marks, not a wall of them.
+// The full sprawl of front-office tools — a busy, tangled web that makes the
+// "Nothing's broken. You're still losing families." point: it's ALL connected,
+// nothing's technically wrong, and families still slip.
 const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
   { n: 'salesforce',          bx: 0.08, by: 0.30, size: 74 },
   { n: 'hubspot',             bx: 0.21, by: 0.15, size: 58 },
-  { n: 'outlook',             bx: 0.50, by: 0.21, size: 64 },
+  { n: 'quo',                 bx: 0.40, by: 0.16, size: 60 },
+  { n: 'outlook',             bx: 0.60, by: 0.16, size: 64 },
   { n: 'googlecalendar',      bx: 0.78, by: 0.14, size: 58 },
-  { n: 'calendly',            bx: 0.91, by: 0.22, size: 56 },
-  { n: 'ghl',                 bx: 0.06, by: 0.54, size: 62 },
-  { n: 'simplepractice',      bx: 0.80, by: 0.50, size: 72 },
-  { n: 'ringcentral',         bx: 0.93, by: 0.64, size: 60 },
-  { n: 'intakeq',             bx: 0.66, by: 0.66, size: 56 },
+  { n: 'calendly',            bx: 0.91, by: 0.20, size: 56 },
+  { n: 'docusign',            bx: 0.26, by: 0.31, size: 54 },
+  { n: 'gmail',               bx: 0.64, by: 0.26, size: 52 },
+  { n: 'googlesheets',        bx: 0.47, by: 0.42, size: 56 },
+  { n: 'twilio',              bx: 0.94, by: 0.40, size: 66 },
+  { n: 'ghl',                 bx: 0.06, by: 0.52, size: 62 },
+  { n: 'jotform',             bx: 0.19, by: 0.52, size: 56 },
+  { n: 'simplepractice',      bx: 0.79, by: 0.52, size: 72 },
+  { n: 'ringcentral',         bx: 0.93, by: 0.62, size: 60 },
+  { n: 'lobbie',              bx: 0.35, by: 0.64, size: 60 },
+  { n: 'bolt',                bx: 0.24, by: 0.57, size: 62 },
+  { n: 'rethink',             bx: 0.51, by: 0.71, size: 56 },
+  { n: 'intakeq',             bx: 0.66, by: 0.64, size: 56 },
+  { n: 'artemisaba',          bx: 0.84, by: 0.68, size: 64 },
+  { n: 'zoho',                bx: 0.13, by: 0.71, size: 66 },
   { n: 'pandadoc',            bx: 0.08, by: 0.87, size: 58 },
-  { n: 'monday',              bx: 0.25, by: 0.86, size: 58 },
-  { n: 'clickup',             bx: 0.44, by: 0.92, size: 72 },
+  { n: 'monday',              bx: 0.24, by: 0.85, size: 58 },
+  { n: 'clickup',             bx: 0.42, by: 0.91, size: 72 },
+  { n: 'callrail',            bx: 0.58, by: 0.87, size: 56 },
   { n: 'calltrackingmetrics', bx: 0.72, by: 0.90, size: 64 },
+  { n: 'whatconverts',        bx: 0.88, by: 0.84, size: 54 },
 ];
 
 type WebNode = {
@@ -755,9 +768,10 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
     const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
     const scale = mobile ? 0.64 : 1;
 
-    // Mobile shows an even smaller subset — a handful of tiles reads clean on a phone.
+    // Mobile shows a curated subset — the full 26 tiles is too dense on a narrow screen.
     const MOBILE_KEEP = new Set([
-      'salesforce', 'hubspot', 'googlecalendar', 'simplepractice', 'monday', 'clickup',
+      'salesforce', 'hubspot', 'quo', 'outlook', 'googlecalendar', 'calendly',
+      'simplepractice', 'ringcentral', 'intakeq', 'monday', 'clickup', 'pandadoc', 'callrail',
     ]);
     const source = mobile ? WEB_ICONS.filter((ic) => MOBILE_KEEP.has(ic.n)) : WEB_ICONS;
 
