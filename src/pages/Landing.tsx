@@ -2375,9 +2375,10 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
             />
           </div>
         </div>
-        {/* Horizontal track of cards */}
+        {/* Horizontal track of cards — grows to fill the pin so the dots sit at
+            the bottom of the viewport instead of leaving a dead band below them */}
         <div style={{
-          flex: '0 0 auto', display: 'flex', alignItems: 'center',
+          flex: '1 1 auto', display: 'flex', alignItems: 'center',
           overflow: 'hidden', position: 'relative',
         }}>
           <div
@@ -2395,9 +2396,10 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
           </div>
         </div>
 
-        {/* Progress dots — sit lower, with extra breathing room above */}
+        {/* Progress dots — sit at the bottom of the pin (the flex-grow track
+            above already provides the breathing room) */}
         <div style={{
-          marginTop: 'clamp(48px, 7vh, 96px)', paddingBottom: 'clamp(24px, 4vh, 48px)',
+          marginTop: 0, paddingBottom: 'clamp(24px, 4vh, 48px)',
           display: 'flex', justifyContent: 'center', gap: 8,
         }}>
           {steps.map((_, i) => (
@@ -3456,7 +3458,7 @@ function MuralReveal() {
       <div style={W}>
         {/* Section heading — compact so the stacked-plates diagram has room to open */}
         <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 28px', padding: '0 24px' }}>
-          <div className="rv"><Pill>Introducing Carelu</Pill></div>
+          <div className="rv"><Pill>The care enablement platform</Pill></div>
           <h2 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(34px, 4.2vw, 52px)',
@@ -3466,14 +3468,14 @@ function MuralReveal() {
             letterSpacing: '-0.02em',
             margin: '8px 0 14px',
           }}>
-            From first hello<br />
-            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>to first appointment.</span>
+            Your team builds trust.<br />
+            <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>Carelu does the rest.</span>
           </h2>
           <p className="rv d2" style={{
             fontSize: 15, color: 'var(--gray-500)',
             lineHeight: 1.55, maxWidth: 520, margin: '0 auto',
           }}>
-            The care enablement platform that makes sure every family who can receive care does &mdash; not another system of record.
+            Your stack is tools someone has to run. Carelu does the work itself &mdash; freeing your people for the calls, and the trust, only they can build.
           </p>
         </div>
 
