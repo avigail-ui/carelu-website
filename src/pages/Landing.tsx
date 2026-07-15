@@ -2429,6 +2429,154 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
   );
 }
 
+// ── INSIDE CARELU — real product screenshots + device mocks (SCAFFOLD) ──
+// Placeholder frames below. To drop in a real screenshot, replace the
+// <ScreenshotPlaceholder .../> with:  <img src="/product/xxx.png" alt="…"
+//   style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+// (put the PNGs in /public/product/).
+const IC_GREEN = '#3f7a34';
+
+function ScreenshotPlaceholder({ label }: { label: string }) {
+  return (
+    <div style={{
+      width: '100%', height: '100%', minHeight: 200,
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 10,
+      background: 'linear-gradient(160deg, #fbfbf9, #f2f1ec)', color: '#b9b5aa',
+    }}>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 15l4-4 4 4 3-3 4 4" /><circle cx="8.5" cy="9" r="1.3" />
+      </svg>
+      <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{label}</span>
+      <span style={{ fontSize: 11, letterSpacing: '0.02em' }}>screenshot goes here</span>
+    </div>
+  );
+}
+
+function InsideCarelu() {
+  const [view, setView] = useState<'web' | 'mobile'>('web');
+
+  const spotlights = [
+    {
+      eyebrow: 'One queue',
+      title: 'Every referral, in one place.',
+      body: 'Phone, chat, forms, faxes, and EHR referrals all land in a single live queue — sorted, statused, and searchable. Your team stops hunting across tools and just works the list.',
+      points: ['Live status on every family', 'Every source unified — no tab-switching', 'Find anything in one search'],
+    },
+    {
+      eyebrow: 'The family record',
+      title: 'A record that fills itself.',
+      body: 'Insurance, diagnosis, consents, and eligibility are captured and verified automatically, then synced to one record your team and clinicians can trust. Nothing entered twice.',
+      points: ['Eligibility verified up front', 'Documents collected and filed', 'One source of truth, always current'],
+    },
+  ];
+
+  return (
+    <section id="inside-carelu" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        {/* Header */}
+        <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto clamp(34px, 5vw, 52px)' }}>
+          <div className="rv"><Pill>Inside Carelu</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--green-900)', lineHeight: 1.12,
+            letterSpacing: '-0.02em', margin: '12px 0 0',
+          }}>
+            See the whole intake,<br />in one place.
+          </h2>
+          <p className="rv d2" style={{
+            fontSize: 16, color: 'var(--gray-500)', lineHeight: 1.55, maxWidth: 560, margin: '16px auto 0',
+          }}>
+            Not another dashboard to babysit — the working surface your team actually runs the day from.
+          </p>
+        </div>
+
+        {/* Device mock + Mobile/Web toggle */}
+        <div className="rv-scale d2" style={{
+          position: 'relative', borderRadius: 28, overflow: 'hidden',
+          padding: 'clamp(30px, 5vw, 66px) clamp(18px, 4vw, 56px) clamp(58px, 7vw, 84px)',
+          background: 'linear-gradient(155deg, #cfe0f2 0%, #e7e2d6 55%, #f0ead9 100%)',
+        }}>
+          {view === 'web' ? (
+            /* Laptop frame */
+            <div style={{ maxWidth: 860, margin: '0 auto' }}>
+              <div style={{ background: '#1c1c1e', borderRadius: '14px 14px 0 0', padding: '10px 10px 0', boxShadow: '0 34px 70px rgba(20,30,18,0.24)' }}>
+                <div style={{ aspectRatio: '16 / 10', background: '#fff', borderRadius: 6, overflow: 'hidden' }}>
+                  <ScreenshotPlaceholder label="Referral dashboard" />
+                </div>
+              </div>
+              <div style={{ height: 15, background: 'linear-gradient(#3a3a3c, #232325)', borderRadius: '0 0 4px 4px', margin: '0 -16px', position: 'relative' }}>
+                <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: 96, height: 5, background: 'rgba(0,0,0,0.35)', borderRadius: '0 0 7px 7px' }} />
+              </div>
+            </div>
+          ) : (
+            /* Phone frame */
+            <div style={{ maxWidth: 300, margin: '0 auto' }}>
+              <div style={{ background: '#1c1c1e', borderRadius: 38, padding: 9, boxShadow: '0 34px 70px rgba(20,30,18,0.24)' }}>
+                <div style={{ aspectRatio: '9 / 19', background: '#fff', borderRadius: 30, overflow: 'hidden' }}>
+                  <ScreenshotPlaceholder label="Mobile app" />
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 'clamp(18px, 3vw, 28px)', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'inline-flex', gap: 4, padding: 4, borderRadius: 100, background: 'rgba(255,255,255,0.72)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', boxShadow: '0 8px 24px rgba(30,40,25,0.14)' }}>
+              {(['mobile', 'web'] as const).map((v) => {
+                const on = view === v;
+                return (
+                  <button key={v} onClick={() => setView(v)} aria-pressed={on} style={{
+                    fontFamily: 'var(--font-body)', fontSize: 13.5, fontWeight: 600, cursor: 'pointer',
+                    color: on ? '#fff' : 'var(--gray-600)', background: on ? IC_GREEN : 'transparent',
+                    border: 'none', padding: '8px 20px', borderRadius: 100, transition: 'all 0.2s ease',
+                  }}>
+                    {v === 'web' ? 'Web App' : 'Mobile'}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Feature spotlights */}
+        <div style={{ marginTop: 'clamp(52px, 7vw, 96px)', display: 'flex', flexDirection: 'column', gap: 'clamp(48px, 7vw, 96px)' }}>
+          {spotlights.map((s, i) => (
+            <div key={s.title} className={`spotlight-row rv${i % 2 ? ' rev' : ''}`}>
+              <div className="sp-media">
+                <div style={{ borderRadius: 22, padding: 'clamp(16px, 2.5vw, 32px)', background: 'linear-gradient(150deg, #cfe0f2, #f0ead9)' }}>
+                  <div style={{ aspectRatio: '4 / 3', background: '#fff', borderRadius: 12, overflow: 'hidden', boxShadow: '0 18px 44px rgba(30,40,25,0.12)' }}>
+                    <ScreenshotPlaceholder label={s.eyebrow} />
+                  </div>
+                </div>
+              </div>
+              <div className="sp-copy">
+                <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: IC_GREEN }}>{s.eyebrow}</div>
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: 400,
+                  color: 'var(--green-900)', lineHeight: 1.15, letterSpacing: '-0.01em', margin: '12px 0 14px',
+                }}>{s.title}</h3>
+                <p style={{ fontSize: 16.5, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0 }}>{s.body}</p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: '22px 0 0', display: 'flex', flexDirection: 'column', gap: 11 }}>
+                  {s.points.map((pt) => (
+                    <li key={pt} style={{ display: 'flex', gap: 11, alignItems: 'flex-start', fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.45 }}>
+                      <span style={{ flexShrink: 0, width: 20, height: 20, borderRadius: '50%', background: 'rgba(63,122,52,0.12)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke={IC_GREEN} strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                      </span>
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ── OUTCOMES — expandable improvement-metric rows ──────────
 
 function Outcomes() {
@@ -3665,6 +3813,7 @@ export default function Landing() {
         <MuralReveal />
         <Impact />
         <HowCarelu />
+        <InsideCarelu />
         <Outcomes />
         <CustomerStories />
         <GettingStarted />
