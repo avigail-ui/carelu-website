@@ -434,7 +434,7 @@ function Hero() {
               textShadow: '0 2px 30px rgba(0,0,0,0.35)',
               animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
             }}>
-              The future of intake is here.
+              Your front office,<br />but it runs itself.
             </h1>
 
             <p style={{
@@ -445,7 +445,7 @@ function Hero() {
               textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
-              Carelu runs your entire intake — from first contact to admitted patient. For ABA and behavioral health organizations of every size.
+              Carelu runs the whole front office — every call, form, and follow-up, from first hello to first appointment. For ABA and behavioral health organizations of every size.
             </p>
 
             <div className="hero-cta-row" style={{
