@@ -431,10 +431,11 @@ function Hero() {
               fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 96px)',
               fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.008em',
               color: '#fff', maxWidth: 1080, margin: '0 auto',
+              textWrap: 'balance',
               textShadow: '0 2px 30px rgba(0,0,0,0.35)',
               animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
             }}>
-              Your front office,<br />but it runs itself.
+              The Front Office of Care.
             </h1>
 
             <p style={{
