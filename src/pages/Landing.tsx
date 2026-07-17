@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
 import DemoModalHost from '../components/DemoModal';
@@ -279,24 +279,36 @@ function Hero() {
 
   // Center the trust laurels in the empty gap between the CTAs and the logo strip
   // (they're pulled out of the centered flow and absolutely positioned). Measured
-  // in JS so "halfway" is exact on every viewport; re-runs after the entrance
-  // animations settle and on resize. Skipped on landscape phones (static in flow).
-  useEffect(() => {
+  // in JS so "halfway" is exact on every viewport. Uses offsetTop/offsetHeight —
+  // which ignore CSS transforms — so the hero entrance animation's translateY(48px)
+  // doesn't corrupt the measurement; and runs in useLayoutEffect (before the browser
+  // paints) so the badges land in place with no visible jump. Re-runs on resize and
+  // once fonts load (in case metrics shift the CTA/logo positions).
+  useLayoutEffect(() => {
+    // Sum offsetTop up the offsetParent chain to `stop` — transform-immune, unlike
+    // getBoundingClientRect, so the entrance animation can't skew it.
+    const offTop = (el: HTMLElement | null, stop: HTMLElement | null) => {
+      let y = 0; let n: HTMLElement | null = el;
+      while (n && n !== stop) { y += n.offsetTop; n = n.offsetParent as HTMLElement | null; }
+      return y;
+    };
     const place = () => {
       const lau = laurelsRef.current;
       if (!lau || getComputedStyle(lau).position === 'static') return;
+      const section = sectionRef.current;
       const parent = lau.offsetParent as HTMLElement | null;
       const cta = document.querySelector('.hero-cta-row') as HTMLElement | null;
       const logos = document.querySelector('.hero-logos') as HTMLElement | null;
-      if (!parent || !cta || !logos) return;
-      const pTop = parent.getBoundingClientRect().top;
-      const ctaB = cta.getBoundingClientRect().bottom - pTop;
-      const logosT = logos.getBoundingClientRect().top - pTop;
-      lau.style.top = `${Math.round((ctaB + logosT) / 2 - lau.offsetHeight / 2)}px`;
+      if (!section || !parent || !cta || !logos) return;
+      const ctaB = offTop(cta, section) + cta.offsetHeight;   // CTA bottom, rel section
+      const logosT = offTop(logos, section);                  // logo strip top, rel section
+      const parentT = offTop(parent, section);                // laurels' offsetParent top
+      lau.style.top = `${Math.round((ctaB + logosT) / 2 - lau.offsetHeight / 2 - parentT)}px`;
     };
-    const timers = [250, 1200, 2400].map((d) => setTimeout(place, d));
+    place();
     window.addEventListener('resize', place);
-    return () => { timers.forEach(clearTimeout); window.removeEventListener('resize', place); };
+    if (document.fonts?.ready) document.fonts.ready.then(place).catch(() => {});
+    return () => { window.removeEventListener('resize', place); };
   }, []);
 
   // Preload the full-color logo variants so the hover swap is instant
