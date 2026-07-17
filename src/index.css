@@ -184,6 +184,32 @@ button { font-family: inherit; cursor: pointer; }
   50%  { transform: scale(1.12) translate3d(1.5%, 0.5%, 0); }
   100% { transform: scale(1.08) translate3d(-1.5%, -0.5%, 0); }
 }
+/* Living-sky: a soft warm sunlight bloom drifting across the clouds behind the hero */
+@keyframes heroBloom {
+  0%   { transform: translate3d(-8%, -6%, 0) scale(1);    opacity: 0.55; }
+  50%  { transform: translate3d(10%, 4%, 0)  scale(1.15); opacity: 0.85; }
+  100% { transform: translate3d(-8%, -6%, 0) scale(1);    opacity: 0.55; }
+}
+
+/* Hero live-activity: card entrance + the green "live" pulse ring */
+@keyframes heroCardIn {
+  from { opacity: 0; transform: translateY(22px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+@keyframes livePing {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  70%  { transform: scale(2.6); opacity: 0; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+.live-ping { position: relative; display: inline-flex; }
+.live-ping::before {
+  content: ''; position: absolute; inset: 0; border-radius: 50%;
+  background: #4ade80; animation: livePing 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+/* the activity card floats over the sky only on wider screens; below that it'd crowd the hero */
+.hero-activity { display: none; }
+@media (min-width: 1180px) { .hero-activity { display: block; } }
+
 /* Monaco-style mock swap: gentle rise + fade, used by the auto-cycling feature mocks */
 @keyframes mockSwap {
   from { opacity: 0; transform: translateY(10px); }
