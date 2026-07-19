@@ -713,7 +713,7 @@ const allLogos = [
   { src: '/logos/dark/behaviorcare.png', alt: 'BehaviorCare Therapy', color: '/logos/behaviorcare.png' },
   { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA', h: 46, color: '/logos/blossom-aba.webp' },
   { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true, color: '/logos/link-color.png' },
-  { src: '/logos/storybook-aba.png', alt: 'Storybook ABA', h: 56, color: '/logos/storybook-aba.png' },
+  { src: '/logos/storybook-aba.png', alt: 'Storybook ABA', h: 42, color: '/logos/storybook-aba.png' },
 ];
 
 
