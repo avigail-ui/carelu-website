@@ -191,11 +191,15 @@ button { font-family: inherit; cursor: pointer; }
   100% { transform: translate3d(-8%, -6%, 0) scale(1);    opacity: 0.55; }
 }
 
-/* Cookie consent banner entrance */
+/* Cookie consent banner entrance + hover polish */
 @keyframes cookieIn {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(16px) scale(0.985); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
+.cookie-consent .cc-solid:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(46,90,38,0.34); }
+.cookie-consent .cc-ghost:hover { background: rgba(47,58,38,0.05); border-color: rgba(47,58,38,0.38); }
+.cookie-consent .cc-link:hover  { color: #234a1d; }
+.cookie-consent a:hover { border-bottom-color: rgba(63,122,52,0.9) !important; }
 
 /* Monaco-style mock swap: gentle rise + fade, used by the auto-cycling feature mocks */
 @keyframes mockSwap {

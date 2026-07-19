@@ -19,7 +19,8 @@ import { useEffect, useState } from 'react';
 const STORAGE_KEY = 'carelu_cookie_consent_v1';
 const GREEN = '#3f7a34';
 const GREEN_DK = '#2e5a26';
-const INK = '#1f2a1c';
+const INK = '#26301f';
+const INK_SOFT = '#5c6353';
 
 type Categories = { analytics: boolean; marketing: boolean };
 type Stored = { choice: 'all' | 'reject' | 'custom'; categories: Categories; ts: number };
@@ -77,74 +78,69 @@ export default function CookieConsent() {
       className="cookie-consent"
       style={{
         position: 'fixed', zIndex: 9999,
-        left: 'clamp(12px, 3vw, 28px)', bottom: 'clamp(12px, 3vw, 28px)',
-        width: 'min(440px, calc(100vw - 24px))',
-        background: 'rgba(255,255,255,0.96)',
-        backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
-        border: '1px solid rgba(60,70,50,0.14)',
-        borderRadius: 18,
-        boxShadow: '0 24px 60px rgba(20,30,18,0.22)',
-        padding: 'clamp(18px, 2.6vw, 24px)',
-        animation: 'cookieIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both',
+        left: 'clamp(12px, 2.4vw, 26px)', bottom: 'clamp(12px, 2.4vw, 26px)',
+        width: 'min(408px, calc(100vw - 24px))',
+        background: 'linear-gradient(176deg, #ffffff 0%, #fbfaf5 100%)',
+        border: '1px solid rgba(47,58,38,0.10)',
+        borderRadius: 20,
+        boxShadow: '0 1px 2px rgba(30,42,24,0.05), 0 28px 56px -20px rgba(28,46,22,0.30)',
+        padding: 'clamp(20px, 2.4vw, 26px)',
+        animation: 'cookieIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: 9, marginBottom: 10 }}>
-        <span style={{ fontSize: 18 }} aria-hidden>🍪</span>
-        <h2 style={{ margin: 0, fontFamily: 'var(--font-display)', fontSize: 19, fontWeight: 500, color: INK, letterSpacing: '-0.01em' }}>
-          Your privacy
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+        <span aria-hidden style={{
+          flexShrink: 0, width: 36, height: 36, borderRadius: 12,
+          background: 'rgba(63,122,52,0.10)',
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke={GREEN} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </span>
+        <h2 style={{ margin: 0, fontFamily: 'var(--font-display)', fontSize: 20, fontWeight: 500, color: INK, letterSpacing: '-0.015em' }}>
+          A note on your privacy
         </h2>
       </div>
 
-      <p style={{ margin: 0, fontSize: 13.5, lineHeight: 1.55, color: '#4a5142' }}>
-        We use cookies to run the site and, with your okay, to measure traffic and
-        improve our marketing. You can accept all, reject non-essential, or choose
-        what’s on. See our{' '}
-        <a href="/terms" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'underline' }}>privacy&nbsp;policy</a>.
+      <p style={{ margin: 0, fontSize: 13.5, lineHeight: 1.6, color: INK_SOFT }}>
+        We use cookies to run Carelu and, with your consent, to measure traffic and
+        improve our marketing. Read our{' '}
+        <a href="/terms" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'none', borderBottom: `1px solid rgba(63,122,52,0.4)`, paddingBottom: 1 }}>privacy&nbsp;policy</a>.
       </p>
 
       {manage && (
-        <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 2 }}>
-          <CatRow
-            title="Strictly necessary"
-            desc="Required for the site to work. Always on."
-            checked disabled
-          />
-          <CatRow
-            title="Analytics"
-            desc="Helps us understand how the site is used."
-            checked={cats.analytics}
-            onChange={(v) => setCats((c) => ({ ...c, analytics: v }))}
-          />
-          <CatRow
-            title="Marketing"
-            desc="Used to measure and improve our ads."
-            checked={cats.marketing}
-            onChange={(v) => setCats((c) => ({ ...c, marketing: v }))}
-          />
+        <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column' }}>
+          <CatRow title="Strictly necessary" desc="Required for the site to work. Always on." checked disabled first />
+          <CatRow title="Analytics" desc="Helps us understand how the site is used." checked={cats.analytics} onChange={(v) => setCats((c) => ({ ...c, analytics: v }))} />
+          <CatRow title="Marketing" desc="Used to measure and improve our ads." checked={cats.marketing} onChange={(v) => setCats((c) => ({ ...c, marketing: v }))} />
         </div>
       )}
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9, marginTop: 18, alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 20, alignItems: 'center' }}>
         {!manage ? (
-          <button onClick={() => setManage(true)} style={linkBtn}>Manage</button>
+          <button onClick={() => setManage(true)} style={linkBtn} className="cc-link">Customize</button>
         ) : (
-          <button onClick={saveChoices} style={linkBtn}>Save choices</button>
+          <button onClick={saveChoices} style={linkBtn} className="cc-link">Save choices</button>
         )}
         <div style={{ flex: 1 }} />
-        <button onClick={rejectAll} style={ghostBtn}>Reject</button>
-        <button onClick={acceptAll} style={solidBtn}>Accept all</button>
+        <button onClick={rejectAll} style={ghostBtn} className="cc-ghost">Reject</button>
+        <button onClick={acceptAll} style={solidBtn} className="cc-solid">Accept all</button>
       </div>
     </div>
   );
 }
 
-function CatRow({ title, desc, checked, disabled, onChange }: {
-  title: string; desc: string; checked: boolean; disabled?: boolean; onChange?: (v: boolean) => void;
+function CatRow({ title, desc, checked, disabled, first, onChange }: {
+  title: string; desc: string; checked: boolean; disabled?: boolean; first?: boolean; onChange?: (v: boolean) => void;
 }) {
   return (
     <label style={{
-      display: 'flex', alignItems: 'flex-start', gap: 11, padding: '10px 0',
-      borderTop: '1px solid rgba(60,70,50,0.08)', cursor: disabled ? 'default' : 'pointer',
+      display: 'flex', alignItems: 'flex-start', gap: 12, padding: '12px 0',
+      borderTop: first ? '1px solid rgba(47,58,38,0.09)' : 'none',
+      borderBottom: '1px solid rgba(47,58,38,0.09)',
+      cursor: disabled ? 'default' : 'pointer',
     }}>
       <button
         type="button"
@@ -154,21 +150,21 @@ function CatRow({ title, desc, checked, disabled, onChange }: {
         disabled={disabled}
         onClick={() => !disabled && onChange?.(!checked)}
         style={{
-          flexShrink: 0, marginTop: 2, width: 38, height: 22, borderRadius: 100, border: 'none',
-          background: checked ? GREEN : 'rgba(120,128,110,0.35)',
-          opacity: disabled ? 0.6 : 1, cursor: disabled ? 'default' : 'pointer',
-          position: 'relative', transition: 'background 0.2s ease',
+          flexShrink: 0, marginTop: 1, width: 36, height: 21, borderRadius: 100, border: 'none',
+          background: checked ? GREEN : 'rgba(90,99,82,0.30)',
+          opacity: disabled ? 0.55 : 1, cursor: disabled ? 'default' : 'pointer',
+          position: 'relative', transition: 'background 0.22s ease',
         }}
       >
         <span style={{
-          position: 'absolute', top: 3, left: checked ? 19 : 3, width: 16, height: 16,
-          borderRadius: '50%', background: '#fff', transition: 'left 0.2s cubic-bezier(0.16,1,0.3,1)',
-          boxShadow: '0 1px 3px rgba(0,0,0,0.25)',
+          position: 'absolute', top: 3, left: checked ? 18 : 3, width: 15, height: 15,
+          borderRadius: '50%', background: '#fff', transition: 'left 0.22s cubic-bezier(0.16,1,0.3,1)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.28)',
         }} />
       </button>
       <span>
-        <span style={{ display: 'block', fontSize: 13.5, fontWeight: 600, color: INK }}>{title}</span>
-        <span style={{ display: 'block', fontSize: 12, color: '#6a715f', lineHeight: 1.4 }}>{desc}</span>
+        <span style={{ display: 'block', fontSize: 13.5, fontWeight: 600, color: INK, letterSpacing: '-0.005em' }}>{title}</span>
+        <span style={{ display: 'block', fontSize: 12, color: '#767c6b', lineHeight: 1.45, marginTop: 1 }}>{desc}</span>
       </span>
     </label>
   );
@@ -176,8 +172,13 @@ function CatRow({ title, desc, checked, disabled, onChange }: {
 
 const baseBtn: React.CSSProperties = {
   fontFamily: 'var(--font-body)', fontSize: 13.5, fontWeight: 600, cursor: 'pointer',
-  padding: '9px 18px', borderRadius: 100, transition: 'all 0.18s ease', whiteSpace: 'nowrap',
+  padding: '10px 20px', borderRadius: 100, transition: 'transform 0.18s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease',
+  whiteSpace: 'nowrap', letterSpacing: '-0.005em',
 };
-const solidBtn: React.CSSProperties = { ...baseBtn, color: '#fff', background: GREEN, border: `1px solid ${GREEN}` };
-const ghostBtn: React.CSSProperties = { ...baseBtn, color: INK, background: 'transparent', border: '1px solid rgba(60,70,50,0.28)' };
-const linkBtn: React.CSSProperties = { ...baseBtn, color: GREEN_DK, background: 'transparent', border: 'none', padding: '9px 4px', textDecoration: 'underline' };
+const solidBtn: React.CSSProperties = {
+  ...baseBtn, color: '#fff', border: '1px solid transparent',
+  background: `linear-gradient(180deg, #468739, ${GREEN})`,
+  boxShadow: '0 2px 6px rgba(46,90,38,0.30)',
+};
+const ghostBtn: React.CSSProperties = { ...baseBtn, color: INK, background: 'transparent', border: '1px solid rgba(47,58,38,0.22)' };
+const linkBtn: React.CSSProperties = { ...baseBtn, color: GREEN_DK, background: 'transparent', border: 'none', padding: '10px 2px' };
