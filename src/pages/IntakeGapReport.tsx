@@ -8,8 +8,9 @@ import { Nav } from './Landing';
    CARELU RESEARCH — THE INTAKE GAP (Intake Data Report №1)
    Original research page. Every figure is computed from Carelu's
    own production fleet (aggregated + de-identified — no PHI).
-   Stats sourced from the July 2026 Intake Gap analysis:
-   249 provider accounts · 29,155 family inquiries · 42,942 conversations.
+   Re-harvested from prod July 19, 2026 — ABA-only cohort:
+   120 ABA provider organizations · 185,054 family conversations ·
+   29,021 captured intake leads · families in 48 states.
    ================================================================ */
 
 const INK = '#1A1A1A';
@@ -32,12 +33,12 @@ type Finding = {
 
 const FINDINGS: Finding[] = [
   {
-    stat: '41',
+    stat: '48',
     statSuffix: '%',
-    title: 'of family inquiries arrive outside business hours.',
-    body: 'Two of every five families reach out evenings, weekends, or before 8am — when most front desks are dark. These are the most motivated families in the funnel (they\'re researching after the kids are in bed), and for most practices they hit voicemail.',
-    n: 'n = 29,155 inquiries, Jul 2025 – Jul 2026, Mon–Fri 8am–6pm ET baseline',
-    bar: 41,
+    title: 'of family conversations start outside business hours.',
+    body: 'Nearly half of all first conversations begin on evenings, weekends, or before 8am — when most front desks are dark. These are the most motivated families in the funnel (they\'re researching after the kids are in bed), and for most practices they hit voicemail.',
+    n: 'n = 185,054 conversations across 120 ABA providers, Mon–Fri 8am–6pm ET baseline',
+    bar: 48,
   },
   {
     stat: '+35',
@@ -76,7 +77,7 @@ const FINDINGS: Finding[] = [
     statSuffix: '%',
     title: 'of families reach out before they have a diagnosis.',
     body: 'More than a fifth of inquiries arrive pre-diagnosis. Most practices turn these families away with "come back when you have the report" — losing them permanently. The providers who guide them to diagnostic partners own the relationship when the diagnosis lands.',
-    n: 'n = 29,155 inquiries; diagnosis status disclosed in conversation',
+    n: 'n = 29,021 captured family leads; diagnosis status disclosed in conversation',
     bar: 22,
   },
   {
@@ -104,6 +105,23 @@ const FINDINGS: Finding[] = [
   },
 ];
 
+// State distribution of captured family leads (n = 25,518 leads with state
+// data across 48 states + DC). Share of national demand, top 12 shown.
+const STATES: { st: string; name: string; pct: number; providers: number }[] = [
+  { st: 'GA', name: 'Georgia', pct: 13.6, providers: 38 },
+  { st: 'NC', name: 'North Carolina', pct: 13.3, providers: 42 },
+  { st: 'IN', name: 'Indiana', pct: 9.1, providers: 15 },
+  { st: 'VA', name: 'Virginia', pct: 6.4, providers: 27 },
+  { st: 'TN', name: 'Tennessee', pct: 6.4, providers: 15 },
+  { st: 'OH', name: 'Ohio', pct: 5.0, providers: 15 },
+  { st: 'AZ', name: 'Arizona', pct: 4.9, providers: 18 },
+  { st: 'UT', name: 'Utah', pct: 4.7, providers: 20 },
+  { st: 'NJ', name: 'New Jersey', pct: 4.2, providers: 31 },
+  { st: 'CO', name: 'Colorado', pct: 3.7, providers: 30 },
+  { st: 'NY', name: 'New York', pct: 3.2, providers: 32 },
+  { st: 'FL', name: 'Florida', pct: 3.1, providers: 29 },
+];
+
 function useReportJsonLd() {
   useEffect(() => {
     const script = document.createElement('script');
@@ -116,7 +134,7 @@ function useReportJsonLd() {
       url: 'https://carelu.com/research/the-intake-gap',
       datePublished: '2026-07-19',
       description:
-        'Original research on ABA intake: 29,155 family inquiries and 42,942 conversations across 249 provider accounts, aggregated and de-identified. Key findings: 41% of inquiries arrive after hours, 40% of leads are job seekers, 46% Medicaid payer mix, and 0 of 114 providers offer in-conversation booking.',
+        'Original research on ABA intake: 185,054 family conversations across 120 ABA provider organizations in 48 states, aggregated and de-identified. Key findings: 48% of conversations start after hours, 40% of leads are job seekers, 46% Medicaid payer mix, and 0 of 114 providers offer in-conversation booking.',
       author: { '@type': 'Organization', name: 'Carelu Research', url: 'https://carelu.com/' },
       publisher: { '@id': 'https://carelu.com/#organization' },
     });
@@ -142,7 +160,7 @@ export default function IntakeGapReport() {
   useSeo({
     title: 'The Intake Gap — ABA Intake Data Report | Carelu Research',
     description:
-      'Original research from 29,155 family inquiries across 249 ABA provider accounts: 41% of inquiries arrive after hours, 40% of leads are job seekers, 46% are Medicaid, and 0 of 114 providers offer in-conversation booking.',
+      'Original research from 185,054 family conversations across 120 ABA providers in 48 states: 48% of conversations start after hours, 40% of leads are job seekers, 46% are Medicaid, and 0 of 114 providers offer in-conversation booking.',
     canonical: '/research/the-intake-gap',
   });
   useReportJsonLd();
@@ -176,8 +194,8 @@ export default function IntakeGapReport() {
             fontSize: 'clamp(16px, 1.6vw, 19px)', color: 'rgba(43,42,38,0.7)',
             lineHeight: 1.65, maxWidth: 640, margin: '24px auto 0',
           }}>
-            What 29,155 family inquiries reveal about where behavioral-health providers
-            actually lose families — and how much growth is sitting inside the funnel they already have.
+            What 185,054 family conversations across 120 ABA providers reveal about where
+            providers actually lose families — and how much growth is sitting inside the funnel they already have.
           </p>
         </div>
       </section>
@@ -193,10 +211,10 @@ export default function IntakeGapReport() {
             textAlign: 'center',
           }}>
             {[
-              { v: '249', l: 'provider accounts analyzed' },
-              { v: '29,155', l: 'family inquiries · Jul ’25 – Jul ’26' },
-              { v: '42,942', l: 'intake conversations' },
-              { v: '13 mo', l: 'of longitudinal volume data' },
+              { v: '120', l: 'ABA provider organizations' },
+              { v: '185,054', l: 'family conversations' },
+              { v: '29,021', l: 'captured intake leads' },
+              { v: '48', l: 'states & DC represented' },
             ].map((m) => (
               <div key={m.l}>
                 <div style={{
@@ -208,7 +226,7 @@ export default function IntakeGapReport() {
             ))}
           </div>
           <p className="rv" style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)', lineHeight: 1.6, margin: '14px auto 0', maxWidth: 760, textAlign: 'center' }}>
-            All figures are computed from Carelu production data, aggregated across providers and de-identified.
+            All figures are computed from Carelu production data for ABA providers only (non-ABA verticals excluded), aggregated across providers and de-identified.
             No protected health information appears in this report; no individual family or provider is identifiable.
           </p>
         </div>
@@ -259,6 +277,47 @@ export default function IntakeGapReport() {
         </section>
       ))}
 
+      {/* State by state */}
+      <section style={{ padding: 'clamp(40px, 6vw, 70px) 0 0' }}>
+        <div style={MEASURE}>
+          <div className="rv" style={{ borderTop: `1px solid ${HAIR}`, paddingTop: 'clamp(30px, 4vw, 48px)' }}>
+            <div style={{ display: 'flex', gap: 'clamp(20px, 3.5vw, 40px)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+              <div style={{ flex: '0 0 auto', minWidth: 168 }}>
+                <div style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(56px, 7vw, 88px)',
+                  color: GREEN, lineHeight: 0.95, letterSpacing: '-0.03em', fontVariantNumeric: 'tabular-nums',
+                }}>48</div>
+                <div style={{ fontSize: 13, color: 'rgba(43,42,38,0.55)', marginTop: 8 }}>states &amp; DC represented</div>
+              </div>
+              <div style={{ flex: '1 1 340px' }}>
+                <h2 style={{
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.3vw, 28px)',
+                  fontWeight: 400, color: INK, lineHeight: 1.25, letterSpacing: '-0.012em', margin: '0 0 12px',
+                }}>Demand comes from 48 states — and clusters hard.</h2>
+                <p style={{ fontSize: 15.5, color: 'rgba(43,42,38,0.7)', lineHeight: 1.7, margin: '0 0 18px' }}>
+                  Families reached out from 47 states plus Washington, DC, but demand concentrates: Georgia and North
+                  Carolina alone account for 27% of it, and the top twelve states carry more than three
+                  quarters. Wherever your state sits on this list, the pattern inside the funnel — after-hours
+                  arrivals, unanswered first contacts, silent waitlists — looks the same.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
+                  {STATES.map((row) => (
+                    <div key={row.st} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <span style={{ flexShrink: 0, width: 118, fontSize: 12.5, fontWeight: 600, color: INK }}>{row.name}</span>
+                      <div style={{ flex: 1 }}><Bar value={row.pct * (100 / 14)} /></div>
+                      <span style={{ flexShrink: 0, width: 46, textAlign: 'right', fontSize: 12.5, color: 'rgba(43,42,38,0.6)', fontVariantNumeric: 'tabular-nums' }}>{row.pct}%</span>
+                    </div>
+                  ))}
+                </div>
+                <p style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.42)', margin: '12px 0 0' }}>
+                  n = 25,518 captured family leads with state data · share of national demand · top 12 of 48 states & DC shown
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The read */}
       <section style={{ padding: 'clamp(48px, 7vw, 90px) 0 0' }}>
         <div style={MEASURE}>
@@ -276,7 +335,7 @@ export default function IntakeGapReport() {
               color: INK, lineHeight: 1.35, letterSpacing: '-0.01em', margin: 0,
             }}>
               Demand is growing 35% a year, but the machinery to receive it hasn't been built:
-              two in five families arrive when no one answers, none can book an appointment
+              nearly half of families arrive when no one answers, none can book an appointment
               when they do get through, and almost no one follows up when they go quiet.
               The growth most providers are buying with marketing is already sitting,
               unanswered, inside their own funnel.
