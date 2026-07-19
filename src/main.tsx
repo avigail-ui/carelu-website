@@ -1,6 +1,6 @@
 import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import './index.css'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
@@ -19,7 +19,9 @@ import ResourcePage from './pages/ResourcePage'
 import IntakeGapReport from './pages/IntakeGapReport'
 import LeakCalculator from './pages/LeakCalculator'
 import PayerPage from './pages/PayerPage'
-import ComparePage from './pages/ComparePage'
+import IntegrationPage from './pages/IntegrationPage'
+import PayersDirectory from './pages/PayersDirectory'
+import IntegrationsDirectory from './pages/IntegrationsDirectory'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
@@ -31,6 +33,11 @@ const isCareluDomain = /(^|\.)carelu\.com$/i.test(window.location.hostname);
 
 // Client-side navigations keep the scroll position by default — reset to top on
 // route change (hash links scroll themselves via the target page's mount effect).
+function CompareRedirect() {
+  const { pathname } = useLocation();
+  return <Navigate to={pathname.replace('/compare/', '/integrations/')} replace />;
+}
+
 function ScrollReset() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -57,8 +64,12 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/resources/:slug" element={<ResourcePage />} />
         <Route path="/research/the-intake-gap" element={<IntakeGapReport />} />
         <Route path="/tools/intake-leak-calculator" element={<LeakCalculator />} />
+        <Route path="/payers" element={<PayersDirectory />} />
         <Route path="/payers/:slug" element={<PayerPage />} />
-        <Route path="/compare/:slug" element={<ComparePage />} />
+        <Route path="/integrations" element={<IntegrationsDirectory />} />
+        <Route path="/integrations/:slug" element={<IntegrationPage />} />
+        {/* legacy /compare URLs 301 into integrations */}
+        <Route path="/compare/:slug" element={<CompareRedirect />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/brand" element={<BrandProposal />} />
         {/* --- V2 sandbox routes --- */}

@@ -3232,7 +3232,7 @@ function CtaFooter() {
     { title: 'Industries', links: ['ABA Therapy', 'Mental Health', 'Home Care', 'Addiction Treatment', 'Hospice'] },
     { title: 'Customers',  links: ['Single-Site', 'Multi-Site', 'Enterprise'] },
     { title: 'Company',    links: ['About', 'Careers', 'News', 'Contact'] },
-    { title: 'Resources',  links: ['Documentation', 'Trust', 'Status', 'Security'] },
+    { title: 'Resources',  links: ['The Intake Gap (Research)', 'Intake Leak Calculator', 'Intake Guides', 'Payer Guides', 'Integrations', 'Trust'] },
   ];
 
   return (
@@ -3310,6 +3310,16 @@ function CtaFooter() {
                       : link === 'About' ? '/carelu/company'
                       : link === 'Careers' ? '/carelu/company#careers'
                       : link === 'Trust' || link === 'Security' ? 'https://trust.carelu.com'
+                      : link === 'ABA Therapy' ? '/for/aba-therapy'
+                      : link === 'Mental Health' ? '/for/mental-health'
+                      : link === 'Home Care' ? '/for/home-care'
+                      : link === 'Addiction Treatment' ? '/for/addiction-treatment'
+                      : link === 'Hospice' ? '/for/hospice'
+                      : link === 'The Intake Gap (Research)' ? '/research/the-intake-gap'
+                      : link === 'Intake Leak Calculator' ? '/tools/intake-leak-calculator'
+                      : link === 'Intake Guides' ? '/resources/aba-client-intake-process'
+                      : link === 'Payer Guides' ? '/payers'
+                      : link === 'Integrations' ? '/integrations'
                       : '#'
                     }
                     {...((link === 'Trust' || link === 'Security') ? { target: '_blank', rel: 'noreferrer' } : {})}
