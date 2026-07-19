@@ -1,0 +1,86 @@
+{
+ "https://medicaid.georgia.gov/programs/all-programs/autism-spectrum-disorder": {
+  "hash": "ac6bd61a5bc97ae9055b34f46ba6fe59e10711d5b30a4aae3396165881009e63",
+  "bytes": 208630,
+  "checked": "2026-07-19T20:00:06.902Z",
+  "title": "GA DCH — Autism Spectrum Disorder program"
+ },
+ "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download": {
+  "hash": "a777d990f7be8ff75e5a789732476f64ead071d0a7ea933abd484b7eba955905",
+  "bytes": 456011,
+  "checked": "2026-07-19T20:00:07.642Z",
+  "title": "GA DCH — Part II ASD Policy Manual"
+ },
+ "https://medicaid.georgia.gov/programs/all-programs/tefrakatie-beckett": {
+  "hash": "676c8f69007ae0978c31642ab90c6bc0305c74126763d137a34a239d342ff88f",
+  "bytes": 217831,
+  "checked": "2026-07-19T20:00:07.857Z",
+  "title": "GA DCH — Katie Beckett / TEFRA"
+ },
+ "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101": {
+  "hash": "65bd949b6135309fff513e20ebd56a499f7f789b56a953ed425a1b894796e81f",
+  "bytes": 379923,
+  "checked": "2026-07-19T20:00:10.090Z",
+  "title": "CareSource GA MCD-MM-0212 (ABA policy)"
+ },
+ "https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf": {
+  "hash": "cf3b5551cdb1b7b349a04df60bea5e87d5a625e279ace6eaa9692531b111bc7d",
+  "bytes": 436634,
+  "checked": "2026-07-19T20:00:12.725Z",
+  "title": "Peach State GA.CP.BH.504 (ASD services)"
+ },
+ "https://www.aetna.com/cpb/medical/data/500_599/0554.html": {
+  "hash": "9aafc8edbcbbe82de4a1325604aace166e4ba1d9c707daa19115b8d4a8040d6b",
+  "bytes": 46131,
+  "checked": "2026-07-19T20:00:13.660Z",
+  "title": "Aetna CPB 0554 — Applied Behavior Analysis"
+ },
+ "https://www.aetna.com/cpb/medical/data/600_699/0648.html": {
+  "hash": "cebdc2c808822d1b53ca7c1de5be30fd8046e8fed0626ded0d260e88fb65c380",
+  "bytes": 434858,
+  "checked": "2026-07-19T20:00:14.655Z",
+  "title": "Aetna CPB 0648 — Autism Spectrum Disorders"
+ },
+ "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf": {
+  "hash": "8899bb6c327d216a898b5ab258f72907acb4b1971ed214d45a23f5b5e0b3cadc",
+  "bytes": 399489,
+  "checked": "2026-07-19T20:00:17.848Z",
+  "title": "Cigna EN0499 — Intensive Behavioral Interventions"
+ },
+ "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf": {
+  "hash": "8d8918b51e8c2985cae67cbdb54e8b437af63e15ef1cf51b8d442c4519f4a85a",
+  "bytes": 261929,
+  "checked": "2026-07-19T20:00:18.584Z",
+  "title": "Cigna autism resource guide (Mar 2025)"
+ },
+ "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf": {
+  "hash": "44c407ab8333a3e6184d9b22059871e3df27479021f302f49f80fdcf11d0027d",
+  "bytes": 4367,
+  "checked": "2026-07-19T20:00:19.479Z",
+  "title": "Optum ABA Supplemental Clinical Criteria (BH803ABASCC)"
+ },
+ "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf": {
+  "hash": "e03e873f4af7f54579767d21c45cf22f8cb11c0b6582caf9bfcc1a1c0a3a43a0",
+  "bytes": 4367,
+  "checked": "2026-07-19T20:00:19.988Z",
+  "title": "Optum ABA FAQ (Provider Express)"
+ },
+ "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf": {
+  "hash": "7b79f796bd720c3a790bdfd127e867f973e06a5cdc262c016ddf9dfaa323e75f",
+  "bytes": 388331,
+  "checked": "2026-07-19T20:00:23.737Z",
+  "title": "Anthem ABA Provider Resource Guide (Oct 2024)"
+ },
+ "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-59-10/": {
+  "failing": true,
+  "why": "HTTP 403",
+  "checked": "2026-07-19T20:00:23.901Z",
+  "title": "Ava's Law — O.C.G.A. § 33-24-59.10"
+ },
+ "https://sos.ga.gov/georgia-behavior-analyst-licensing-board": {
+  "failing": true,
+  "why": "HTTP 403",
+  "checked": "2026-07-19T20:00:26.515Z",
+  "title": "Georgia Behavior Analyst Licensing Board"
+ }
+}
