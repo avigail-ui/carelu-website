@@ -16,6 +16,8 @@ import Company from './pages/Company'
 import CareluCompany from './pages/CareluCompany'
 import CookieConsent from './components/CookieConsent'
 import ResourcePage from './pages/ResourcePage'
+import IntakeGapReport from './pages/IntakeGapReport'
+import LeakCalculator from './pages/LeakCalculator'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
@@ -51,6 +53,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/for/:slug" element={<SegmentPage />} />
         <Route path="/solutions/:slug" element={<SolutionsPage />} />
         <Route path="/resources/:slug" element={<ResourcePage />} />
+        <Route path="/research/the-intake-gap" element={<IntakeGapReport />} />
+        <Route path="/tools/intake-leak-calculator" element={<LeakCalculator />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/brand" element={<BrandProposal />} />
         {/* --- V2 sandbox routes --- */}
