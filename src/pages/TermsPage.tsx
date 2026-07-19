@@ -1,5 +1,6 @@
 import DemoModalHost from '../components/DemoModal';
 import { Nav } from './Landing';
+import { useSeo } from '../hooks/useSeo';
 
 /* ================================================================
    TERMS OF SERVICE — LeadTrap, Inc. dba Carelu
@@ -29,6 +30,7 @@ function B({ children }: { children: React.ReactNode }) {
 }
 
 export default function TermsPage() {
+  useSeo({ title: 'Terms — Carelu', description: 'Carelu terms of service and privacy.', canonical: '/terms' });
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
       <DemoModalHost />

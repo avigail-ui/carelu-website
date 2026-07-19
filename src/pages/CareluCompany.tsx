@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import DemoModalHost from '../components/DemoModal';
 import { Nav } from './Landing';
+import { useSeo } from '../hooks/useSeo';
 
 /* ================================================================
    CARELU — COMPANY / ABOUT
@@ -493,6 +494,11 @@ function CtaFooter() {
 }
 
 export default function CareluCompany() {
+  useSeo({
+    title: 'Company — Carelu | The Front Office of Care',
+    description: 'Why Carelu exists: to help ABA and behavioral-health providers meet every family who reaches out and complete their intake before anyone else can.',
+    canonical: '/carelu/company',
+  });
   // same reveal-on-scroll behavior as the landing page
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { useReveal } from '../hooks/useReveal';
+import { useSeo } from '../hooks/useSeo';
 import NavDropdown from '../components/NavDropdown';
 import { segments } from '../data/segments';
 import type { SegmentConfig } from '../data/segments';
@@ -123,6 +124,11 @@ function LogoBar() {
 
 function SegmentContent({ config }: { config: SegmentConfig }) {
   useReveal();
+  useSeo({
+    title: `Carelu for ${config.label} — AI Intake & Lead Response`,
+    description: config.sub,
+    canonical: `/for/${config.slug}`,
+  });
 
   return (
     <div style={{ fontFamily: 'DM Sans, sans-serif' }}>

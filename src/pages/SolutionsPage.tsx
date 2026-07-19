@@ -1,7 +1,14 @@
 import { useParams, Navigate } from 'react-router-dom';
 import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
+import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
+
+const SOLUTION_TITLES: Record<string, string> = {
+  'single-site': 'Single-Site Clinics',
+  'multi-site': 'Multi-Site Groups',
+  'enterprise': 'Enterprise Providers',
+};
 
 /* ================================================================
    CARELU — SOLUTIONS (Single-Site / Multi-Site / Enterprise)
@@ -70,6 +77,11 @@ export default function SolutionsPage() {
   const { slug } = useParams<{ slug: string }>();
   useReveal();
   const data = slug ? SIZES[slug] : undefined;
+  useSeo({
+    title: `Carelu for ${(slug && SOLUTION_TITLES[slug]) || 'Providers'} — AI Intake at Scale`,
+    description: data?.sub,
+    canonical: slug ? `/solutions/${slug}` : undefined,
+  });
   if (!data) return <Navigate to="/carelu" replace />;
 
   return (

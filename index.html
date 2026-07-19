@@ -5,8 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carelu — The Front Office of Care | AI Intake for ABA Providers</title>
-    <meta name="robots" content="max-image-preview:none" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="description" content="Carelu meets every family who reaches out and finishes their intake before anyone else can. More families admitted — same team. Built for ABA therapy and behavioral health." />
+    <link rel="canonical" href="https://carelu.com/" />
 
     <!-- Open Graph / social previews -->
     <meta property="og:type" content="website" />
@@ -28,6 +29,77 @@
     <meta name="twitter:image:alt" content="Carelu. The front office of care." />
 
     <meta name="theme-color" content="#2C3E2D" />
+
+    <!-- Structured data (JSON-LD) — Organization, WebSite, SoftwareApplication, FAQ.
+         Feeds Google rich results and AI Overview / LLM citations. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://carelu.com/#organization",
+          "name": "Carelu",
+          "url": "https://carelu.com/",
+          "logo": "https://carelu.com/og-front-office.png",
+          "description": "Carelu is the front office of care — an AI intake and lead-response platform for ABA therapy and behavioral-health providers.",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://carelu.com/#website",
+          "url": "https://carelu.com/",
+          "name": "Carelu",
+          "publisher": { "@id": "https://carelu.com/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Carelu",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://carelu.com/",
+          "description": "AI intake and lead-response platform for ABA therapy and behavioral-health providers. Carelu answers every family across phone, chat, form, and text, completes intake, and verifies insurance — so providers admit more families with the same team.",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "ABA therapy and behavioral-health providers"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I stop losing ABA families to slow intake?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Respond to every inquiry the moment it arrives — across every channel, day and night — and complete intake before a competitor does. Carelu automates that first response and the full intake so no family waits, admitting more families without adding front-desk staff."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does an AI intake agent work for ABA therapy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It answers calls, chats, forms, and texts; collects the family's information and documents; verifies insurance eligibility; schedules the first appointment; and routes anything needing a human to your team — with a full record on every family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Carelu HIPAA compliant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Carelu is HIPAA compliant and SOC 2 Type II, and signs a BAA with every provider."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
