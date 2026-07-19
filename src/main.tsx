@@ -14,6 +14,7 @@ import SolutionsPage from './pages/SolutionsPage'
 import TermsPage from './pages/TermsPage'
 import Company from './pages/Company'
 import CareluCompany from './pages/CareluCompany'
+import CookieConsent from './components/CookieConsent'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
@@ -55,6 +56,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/v2/carelu" element={<LandingV2 />} />
         <Route path="/v2/company" element={<CompanyV2 />} />
       </Routes>
+      <CookieConsent />
     </BrowserRouter>
   </StrictMode>,
 )

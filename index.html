@@ -33,11 +33,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17268711903"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      // Consent Mode v2: default everything to DENIED until the visitor accepts
+      // via the cookie banner. Any persisted choice (localStorage) is re-applied
+      // here on load so the tag never fires ad/analytics storage without consent.
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500
+      });
+      try {
+        var stored = JSON.parse(localStorage.getItem('carelu_cookie_consent_v1') || 'null');
+        if (stored && stored.choice) {
+          var marketing = stored.choice === 'all' || (stored.categories && stored.categories.marketing);
+          var analytics = stored.choice === 'all' || (stored.categories && stored.categories.analytics);
+          gtag('consent', 'update', {
+            ad_storage: marketing ? 'granted' : 'denied',
+            ad_user_data: marketing ? 'granted' : 'denied',
+            ad_personalization: marketing ? 'granted' : 'denied',
+            analytics_storage: analytics ? 'granted' : 'denied'
+          });
+        }
+      } catch (e) {}
       gtag('js', new Date());
       gtag('config', 'AW-17268711903');
     </script>

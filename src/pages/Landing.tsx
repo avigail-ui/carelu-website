@@ -3375,6 +3375,10 @@ function CtaFooter() {
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
             <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
             <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
+            <button
+              onClick={() => window.careluOpenCookiePrefs?.()}
+              style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}
+            >Cookie preferences</button>
             <a href="https://trust.carelu.com" target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Security</a>
             <span style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>HIPAA · SOC 2</span>
           </div>
