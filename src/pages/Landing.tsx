@@ -270,103 +270,12 @@ function LaurelBranch({ flip }: { flip?: boolean }) {
   );
 }
 
-// Floating "live intake" card that peeks over the hero sky — a real-product
-// signal. It cycles: a new family arrives, then the intake steps check off one
-// by one, then it resets with a new family. Desktop-only (see .hero-activity CSS).
-const HERO_FAMILIES = ['Maria R.', 'James T.', 'Priya N.', 'David K.', 'Sofia L.'];
-const HERO_STEPS = ['Greeted & scheduled', 'Insurance verified', 'Intake complete'];
-function HeroActivityCard() {
-  const [family, setFamily] = useState(0);
-  const [step, setStep] = useState(0); // 0 = just arrived; 1..3 = steps checked
-  useEffect(() => {
-    const id = setInterval(() => {
-      setStep((s) => {
-        if (s >= HERO_STEPS.length) { setFamily((f) => (f + 1) % HERO_FAMILIES.length); return 0; }
-        return s + 1;
-      });
-    }, 1400);
-    return () => clearInterval(id);
-  }, []);
-  return (
-    <div className="hero-activity" style={{
-      position: 'absolute', right: 'clamp(24px, 3vw, 52px)', bottom: 'clamp(120px, 15vh, 170px)',
-      zIndex: 4, width: 268,
-      animation: 'heroCardIn 1s cubic-bezier(0.16, 1, 0.3, 1) 1.4s both',
-    }}>
-      <div style={{
-        borderRadius: 18, padding: '16px 18px',
-        background: 'rgba(255,255,255,0.72)',
-        backdropFilter: 'blur(16px) saturate(1.2)', WebkitBackdropFilter: 'blur(16px) saturate(1.2)',
-        border: '1px solid rgba(255,255,255,0.6)',
-        boxShadow: '0 20px 50px rgba(20,30,18,0.22)',
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 13 }}>
-          <span className="live-ping" style={{ width: 7, height: 7 }}>
-            <span style={{ position: 'relative', width: 7, height: 7, borderRadius: '50%', background: '#22c55e' }} />
-          </span>
-          <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#2e5a26' }}>Live intake</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-          <span style={{ flexShrink: 0, width: 30, height: 30, borderRadius: '50%', background: 'rgba(63,122,52,0.12)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3f7a34" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <div style={{ lineHeight: 1.25 }}>
-            <div style={{ fontSize: 13.5, fontWeight: 700, color: '#1f2a1c' }}>{HERO_FAMILIES[family]}</div>
-            <div style={{ fontSize: 11.5, color: '#5a6152' }}>New family · inbound call</div>
-          </div>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, borderTop: '1px solid rgba(60,70,50,0.10)', paddingTop: 12 }}>
-          {HERO_STEPS.map((label, i) => {
-            const done = step > i;
-            return (
-              <div key={label} style={{
-                display: 'flex', alignItems: 'center', gap: 9,
-                fontSize: 12.5, color: done ? '#2e5a26' : '#9aa08f',
-                opacity: done ? 1 : 0.55, transition: 'color 0.4s ease, opacity 0.4s ease',
-              }}>
-                <span style={{
-                  flexShrink: 0, width: 17, height: 17, borderRadius: '50%',
-                  background: done ? '#3f7a34' : 'rgba(120,128,110,0.18)',
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  transition: 'background 0.4s ease',
-                }}>
-                  {done
-                    ? <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                    : <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'rgba(120,128,110,0.5)' }} />}
-                </span>
-                {label}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const marqueeRef = useRef<HTMLDivElement>(null);
   const laurelsRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
-
-  // Live "families connected" ticker under the CTAs — counts up on load from a
-  // value just below the live total, then keeps ticking every few seconds so the
-  // hero feels alive. Uses the same getLiveCount() source as the Impact section.
-  const [liveCount, setLiveCount] = useState(() => getLiveCount());
-  useEffect(() => {
-    const target = getLiveCount();
-    const from = target - 240;
-    const dur = 2000; const t0 = performance.now();
-    let raf = requestAnimationFrame(function tick(now: number) {
-      const p = Math.min((now - t0) / dur, 1);
-      setLiveCount(Math.round(from + (target - from) * (1 - Math.pow(1 - p, 4))));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    });
-    const interval = setInterval(() => setLiveCount((prev) => Math.max(prev, getLiveCount())), 5000);
-    return () => { cancelAnimationFrame(raf); clearInterval(interval); };
-  }, []);
 
   // Center the trust laurels in the empty gap between the CTAs and the logo strip
   // (they're pulled out of the centered flow and absolutely positioned). Measured
@@ -599,25 +508,6 @@ function Hero() {
               </a>
             </div>
 
-            {/* Live activity ticker — the growing families-connected total, counting
-                up on load. A green pulse marks it as live, not a static number. */}
-            <div style={{
-              marginTop: 22,
-              display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 9,
-              animation: 'heroIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.95s both',
-            }}>
-              <span className="live-ping" style={{ width: 8, height: 8 }}>
-                <span style={{ position: 'relative', width: 8, height: 8, borderRadius: '50%', background: '#4ade80', boxShadow: '0 0 8px rgba(74,222,128,0.9)' }} />
-              </span>
-              <span style={{
-                fontSize: 14, fontWeight: 500, color: '#fff', letterSpacing: '-0.005em',
-                textShadow: '0 1px 2px rgba(0,0,0,0.32), 0 2px 14px rgba(0,0,0,0.4)',
-                fontVariantNumeric: 'tabular-nums',
-              }}>
-                <strong style={{ fontWeight: 700 }}>{liveCount.toLocaleString('en-US')}+</strong> families connected to care
-              </span>
-            </div>
-
             {/* Enterprise trust signals — one thin line of laurel award badges.
                 Pulled out of the centered flow and JS-centered in the gap between
                 the CTAs and the logo strip (see the placement effect above). */}
@@ -647,8 +537,6 @@ function Hero() {
             </div>
           </div>
         </div>
-
-        <HeroActivityCard />
 
         {/* Trusted-by logo strip — anchored at the bottom of the hero
             Dark-grayscale logos with mix-blend-mode so they stay legible on both
