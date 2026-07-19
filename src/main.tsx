@@ -18,6 +18,8 @@ import CookieConsent from './components/CookieConsent'
 import ResourcePage from './pages/ResourcePage'
 import IntakeGapReport from './pages/IntakeGapReport'
 import LeakCalculator from './pages/LeakCalculator'
+import PayerPage from './pages/PayerPage'
+import ComparePage from './pages/ComparePage'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
@@ -55,6 +57,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/resources/:slug" element={<ResourcePage />} />
         <Route path="/research/the-intake-gap" element={<IntakeGapReport />} />
         <Route path="/tools/intake-leak-calculator" element={<LeakCalculator />} />
+        <Route path="/payers/:slug" element={<PayerPage />} />
+        <Route path="/compare/:slug" element={<ComparePage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/brand" element={<BrandProposal />} />
         {/* --- V2 sandbox routes --- */}
