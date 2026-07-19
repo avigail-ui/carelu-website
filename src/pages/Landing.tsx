@@ -1,6 +1,7 @@
 import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
+import { useSeo } from '../hooks/useSeo';
 import DemoModalHost from '../components/DemoModal';
 
 // Nav link that client-side-routes internal pages (no full reload → no font-swap
@@ -3671,6 +3672,11 @@ function MuralReveal() {
 // ── PAGE ─────────────────────────────────────────
 export default function Landing() {
   useReveal();
+  useSeo({
+    title: 'Carelu — The Front Office of Care | AI Intake for ABA Providers',
+    description: 'Carelu meets every family who reaches out and finishes their intake before anyone else can. More families admitted — same team. Built for ABA therapy and behavioral health.',
+    canonical: '/',
+  });
   // Scroll to the section hash when arriving via a client-side navigation
   // (e.g. Product in the nav from /solutions/* → /carelu#platform).
   useEffect(() => {
