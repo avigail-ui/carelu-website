@@ -1,0 +1,569 @@
+{
+ "state": "GA",
+ "reviewed": "July 2026",
+ "payers": [
+  {
+   "name": "Georgia Medicaid (DCH)",
+   "count": 18,
+   "guide": "georgia-medicaid",
+   "state": "GA"
+  },
+  {
+   "name": "CareSource (GA Medicaid CMO)",
+   "count": 1,
+   "guide": "",
+   "state": "GA"
+  },
+  {
+   "name": "Peach State Health Plan (GA Medicaid CMO)",
+   "count": 1,
+   "guide": "",
+   "state": "GA"
+  },
+  {
+   "name": "Anthem BCBS Georgia",
+   "count": 5,
+   "guide": "anthem-bcbs-georgia",
+   "state": "GA"
+  },
+  {
+   "name": "Aetna",
+   "count": 3,
+   "guide": "aetna",
+   "state": "GA"
+  },
+  {
+   "name": "Cigna / Evernorth",
+   "count": 7,
+   "guide": "cigna",
+   "state": "GA"
+  },
+  {
+   "name": "UnitedHealthcare / Optum",
+   "count": 6,
+   "guide": "unitedhealthcare-optum",
+   "state": "GA"
+  },
+  {
+   "name": "State of Georgia (mandate & licensure)",
+   "count": 2,
+   "guide": "",
+   "state": "GA"
+  },
+  {
+   "name": "Humana",
+   "count": 1,
+   "guide": "",
+   "state": "GA"
+  }
+ ],
+ "policies": [
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Provider qualifications",
+   "title": "Who can enroll and bill (QHCP)",
+   "body": "Licensed physicians, licensed psychologists, BCBA-Ds, and BCBAs may enroll and bill as the Qualified Health Care Professional (QHCP). BCaBAs and RBTs may NOT enroll or serve as the QHCP — they render under the QHCP's or facility's Medicaid ID, billed with the appropriate practitioner-level modifier (manual §601.1).",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download",
+   "effectiveDate": "Manual baseline Jan 2018; revisions through 2024",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Provider qualifications",
+   "title": "One year of ASD experience attestation",
+   "body": "All enrolling QHCPs and supervised direct-care staff must attest to at least 1 year of full-time verifiable experience serving youth with ASD (manual §601.4; ASD Provider FAQs).",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-faqs-providers/download",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Provider qualifications",
+   "title": "Medicaid enrollment package (COS 445 / Specialty 566)",
+   "body": "Enrollment requires: GAMMIS Individual Enrollment Web Application, IRS W-9, NPI via NPPES, EFT agreement, copy of BCBA certificate, 1-year ASD experience attestation, CV/resume, proof of malpractice insurance, and CVO documentation. Provider must be physically located in Georgia or within 50 miles of the Georgia border. The ordering/referring provider's NPI must appear on claims or they deny (§902.3).",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/board-certified-behavioral-analyst/download",
+   "effectiveDate": "Checklist rev. 1/2018",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "PA required for ALL Adaptive Behavior Services",
+   "body": "Separate prior authorizations are required for (1) the behavioral assessment and (2) the treatment plan/services. The PA must be requested by the enrolled QHCP. Treatment authorizations are issued in 6-month increments. FFS PAs are submitted via the GAMMIS web portal (manual Ch. 800).",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "Treatment PA documentation package",
+   "body": "Required with a treatment PA (manual §801.2): diagnosis plus summarized assessment results; proposed Plan of Care documenting all other services for care coordination; IFSP and IEP if applicable; psychological assessment if applicable; prior hospitalization/out-of-home placement records if applicable; progress notes; supporting clinical documentation. CMO implementations also require a Letter of Medical Necessity and the Medicaid Cover Page (manual Appendix D). Assessments from non-Medicaid-covered evaluations are accepted if dated within 6 months of the request.",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Reauthorization",
+   "title": "6-month reauthorization requirements",
+   "body": "Follow-up PA requests must include: a summary of previous goals and progress; results of a behavior assessment conducted within 2 months of the requested PA effective date (with graphs and current measurements); and updated individualized goals per BACB practice guidelines. Behavioral assessment/reassessment must occur at least every 6 months.",
+   "citationUrl": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Covered codes and required modifiers",
+   "body": "CPT 97151–97158, 0362T, and 0373T are reimbursed in 15-minute units. Practitioner-level modifiers are required: U1 physician/psychiatrist, U2 psychologist/BCBA-D, U3 BCBA, U4 BCaBA, U5 RBT. Setting modifiers: U6 in-clinic, U7 out-of-clinic (higher rate), GT telehealth. Georgia is the only CSG South state with setting-differentiated rates.",
+   "citationUrl": "https://csgsouth.org/wp-content/uploads/HSPS-Converted-IR__Comparison-of-Medicaid-Reimbursement-for-ABA-Individual-Services.pdf",
+   "effectiveDate": "CSG South comparison, Feb 2026",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Maximum daily units (MUE)",
+   "body": "Per CMS MUE as published by the State of GA (via CareSource MM-0212, eff. 1/1/2025): 97151=32, 97152=16, 97153=32, 97154=18, 97155=24, 97156=16, 97157=16, 97158=16, 0362T=16, 0373T=32 daily units.",
+   "citationUrl": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101",
+   "effectiveDate": "1/1/2025",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Assessment hour cap: 8 hours per 6 months",
+   "body": "Comprehensive behavioral assessments are not to exceed 8 hours every 6 months unless additional justification is provided. Assessment PA may be requested in 3-month increments, once per 6-month treatment period, no more than 2 months before the next treatment authorization's effective date. NOTE: confirmed via CareSource policy aligned to the DCH manual — verify against the live GAMMIS manual text.",
+   "citationUrl": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Documentation",
+   "title": "Diagnosis requirements",
+   "body": "A documented DSM-5 ASD diagnosis is required, established by a licensed physician, licensed psychologist, or other licensed professional designated by the Georgia Composite Medical Board, with 1 year of autism experience, using evidence-based tools. Reimbursable ICD-10: F84.0, F84.2, F84.3, F84.5, F84.8, F84.9. Per the updated manual (via CMO policies): the comprehensive diagnostic evaluation needs at least 2 tools — 1 clinician tool (e.g., ADOS-2, CARS-2, GARS-3) + 1 caregiver tool (e.g., ADI-R, SCQ, SRS-2) — within the last 5 years; school psychoeducational assessments are not acceptable.",
+   "citationUrl": "https://medicaid.georgia.gov/programs/all-programs/autism-spectrum-disorder",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Treatment plan",
+   "title": "Plan of Care content requirements",
+   "body": "The POC must link assessment results to individualized, measurable goals with baseline data and mastery criteria per BACB guidelines; include both skill-acquisition and behavior-reduction goals (operational definitions, strategies, graphs); demonstrate services are not custodial; document coordination across providers; and define discharge/titration criteria. A school plan is required when services are delivered in an educational setting (behavior-reduction focus only; IEP attached for public-school students). Graph standards: labeled axes, 2:3 y:x ratio, max 3 behaviors per graph, data no older than 2 months at PA submission.",
+   "citationUrl": "https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Documentation",
+   "title": "Record-keeping rules",
+   "body": "Retain claims, clinical documentation, and supporting materials a minimum of 5 years from date of service. Progress notes must be legible, detailed, complete, signed and dated (no rubber stamps; e-signatures per Part I §106). Corrections by single strike-through with initials and date — no white-out. Real-time documentation only; no back-dating. Services billed must equal services provided (manual §602).",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Documentation",
+   "title": "Parent/caregiver participation requirements",
+   "body": "Active parent/caregiver participation is a condition of eligibility — caregivers must be able to implement ABS techniques at home (manual §903). CMO operationalization: 2–4 documented caregiver goals with baseline data and mastery criteria; minimum 2 hours/month of caregiver training/participation (or documented justification); mere presence during sessions does not count as training.",
+   "citationUrl": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Supervision",
+   "title": "Supervision ratios and records",
+   "body": "A physician, psychiatrist, BCBA-D, or BCBA may supervise up to six (6) BCaBAs and/or RBTs at any point in time (manual §601.3). Supervisors and supervisees must keep contemporaneous records of date, duration, type, and summary of each supervision session — subject to audit and recoupment. Supervision is not separately reimbursable (built into direct-service rates). RBTs must receive supervision for at least 5% of monthly ABA service hours; effective 1/1/2026 BACB requires RBT supervisors to hold BCBA or BCaBA certification.",
+   "citationUrl": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Telehealth",
+   "title": "Telehealth allowances",
+   "body": "ABA via telehealth is allowed per GA DCH using the GT modifier; telehealth-deliverable codes include 97151, 97152, 97153, 97155, 97156 (GT rates generally equal in-clinic rates). Telehealth is only billable if the rendering provider is in Georgia or within 50 miles of the Georgia border. Billing rules are in the DCH Telehealth Guidance manual.",
+   "citationUrl": "https://medicaid.georgia.gov/document/document/telehealth-guidance/download",
+   "effectiveDate": "Telemedicine guidance, Jan 2024",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Other",
+   "title": "Eligibility and treatment-hour parameters",
+   "body": "Coverage is for individuals under age 21 under EPSDT (effective Jan 1, 2018). Therapy can range from 10–30 hours/week, or more if medically necessary (manual §903). CMO parameters: generally ≤6 hours/day up to 30 hours/week unless clinically justified; <20 hours/week if the child attends school full-time; protocol modification (97155) ≥2 hours/week or 10% of direct hours.",
+   "citationUrl": "https://medicaid.georgia.gov/programs/all-programs/autism-spectrum-disorder",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Other",
+   "title": "Katie Beckett / TEFRA access pathway",
+   "body": "The Katie Beckett deeming waiver covers children ≤18 who qualify as disabled and live at home; family income is ignored, and qualification is based on institutional level of care (not diagnosis alone). It confers full Medicaid eligibility, which unlocks the ABS/ABA benefit — the primary access route for middle/higher-income families. A Katie Beckett online application portal launched April 15, 2026. ABS does not require a NOW/COMP waiver.",
+   "citationUrl": "https://medicaid.georgia.gov/programs/all-programs/tefrakatie-beckett",
+   "effectiveDate": "",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "state": "GA",
+   "category": "Other",
+   "title": "CMO landscape and 2026 transition",
+   "body": "ABA is NOT carved out of Georgia Families managed care — each CMO administers PA under its own policy aligned to the DCH manual. December 2024 awards went to CareSource, Humana, Molina, and UnitedHealthcare (UHC also won Georgia Families 360°); Peach State and Amerigroup lost and filed protests. Incumbent contracts extended through June 30, 2026; go-live may slip toward January 2027. CareSource cut reimbursement to 80% of the GA Medicaid fee schedule effective May 11, 2026.",
+   "citationUrl": "https://openminds.com/market-intelligence/news/for-georgia-medicaid-managed-care-contracts-one-incumbent-three-new-plans/",
+   "effectiveDate": "As of June 2026",
+   "guide": "georgia-medicaid"
+  },
+  {
+   "payer": "CareSource (GA Medicaid CMO)",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "CareSource UM specifics (MM-0212)",
+   "body": "CareSource performs in-house PA/medical review using the GA ASD manual plus MCG Health criteria, and requires signed treatment documentation submitted prior to claims submission. Rate alert: effective 5/11/2026 CareSource pays 80% of the Georgia Medicaid fee schedule for all covered services.",
+   "citationUrl": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101",
+   "effectiveDate": "Policy eff. 1/1/2025; rate change 5/11/2026",
+   "guide": ""
+  },
+  {
+   "payer": "Peach State Health Plan (GA Medicaid CMO)",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "Peach State UM specifics (GA.CP.BH.504)",
+   "body": "PA criteria are explicitly based on the DCH Part II ASD manual. Hour parameters: ≤6 hours/day up to 30 hours/week unless clinically justified; <20 hours/week for full-time students; 97155 protocol modification ≥2 hours/week or 10% of direct hours. If attendance falls below 80% of authorized hours, justification documentation is required. 0373T requests need an extra-technician plan, environmental modifications per target behavior, a titration plan toward 97153, and a BCBA on-site and immediately available.",
+   "citationUrl": "https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf",
+   "effectiveDate": "Rev. 10/25",
+   "guide": ""
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "Medical necessity criteria (CG-BEH-02)",
+   "body": "Requires ALL of: ASD diagnosis by a licensed/qualified professional; person-centered treatment plan with measurable, baseline-anchored goals; provider licensed/certified per state law; completed functional assessments (motor, language, social, adaptive); age-appropriate goals targeting social/communication/language/adaptive deficits. Initial behavior-identification assessment capped at 20 combined hours.",
+   "citationUrl": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf",
+   "effectiveDate": "CG-BEH-02 last confirmed review 11/09/2023",
+   "guide": "anthem-bcbs-georgia"
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "state": "GA",
+   "category": "Reauthorization",
+   "title": "Reauthorization cadence",
+   "body": "Updated treatment plan every 6 months (or per state mandate); interim progress assessment at least every 6 months; standardized developmental assessments at minimum every 2 years; documented clinically significant progress in adaptive functioning, communication, language, or social skills.",
+   "citationUrl": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf",
+   "effectiveDate": "",
+   "guide": "anthem-bcbs-georgia"
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Billing rules and hour limits",
+   "body": "Codes 97151–97158 plus 0362T/0373T. Concurrent billing: a QHP may only bill 97155 alongside 97153 when both the technician and QHP are face-to-face with the patient and the QHP is directing. Direct ABT limited to ≤40 hours/week; protocol modification up to 2 hours per 10 hours of direct therapy, max 8 hours/week. Degree-level modifiers required (HM/HN/HO). Technician-rendered ABA must show the supervising BCBA/QHP in Box 31 of the CMS-1500. NCCI MUE limits apply.",
+   "citationUrl": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf",
+   "effectiveDate": "Resource Guide, Oct 2024",
+   "guide": "anthem-bcbs-georgia"
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "state": "GA",
+   "category": "Documentation",
+   "title": "Documentation standards",
+   "body": "Treatment plan must be in the record showing review/update at minimum every 6 months. Timed-code documentation must include total minutes and start/stop times. Notes entered within 30 days, with signature plus credentials per entry. Plan must include family education and parent/caregiver training components, estimated mastery dates, generalization strategies, and transition/discharge planning.",
+   "citationUrl": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf",
+   "effectiveDate": "",
+   "guide": "anthem-bcbs-georgia"
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "state": "GA",
+   "category": "Telehealth",
+   "title": "Telehealth via Virtual Visits policy",
+   "body": "POS 10 (member at home) and POS 02 (other) listed for ABA; coverage governed by Anthem's Virtual Visits reimbursement policy and CPT Appendix P. Allowed codes may vary by state — the Georgia-specific allowed-code list is unverified; confirm before relying on it.",
+   "citationUrl": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf",
+   "effectiveDate": "",
+   "guide": "anthem-bcbs-georgia"
+  },
+  {
+   "payer": "Aetna",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "Precertification process and required information",
+   "body": "ABA is covered only for ASD (F84.0–F84.9); experimental/investigational for all non-ASD indications (CPB 0554). Effective 1/1/2026, form GR-69017-4 replaces all other ABA precert forms — submitted via Availity 2-step (precert add + clinical questionnaire) or phone 1-800-424-4047. Requires: DSM-5 diagnosis code(s) with diagnosing provider and credentials; requested hours per CPT code; name/credential of the supervising clinician; concurrent services (PT/OT/ST, school) and collaboration; clinical rationale for any change in hours.",
+   "citationUrl": "https://www.aetna.com/cpb/medical/data/500_599/0554.html",
+   "effectiveDate": "CPB 0554 reviewed 11/26/2025; form eff. 1/1/2026",
+   "guide": "aetna"
+  },
+  {
+   "payer": "Aetna",
+   "state": "GA",
+   "category": "Provider qualifications",
+   "title": "Provider qualification requirements",
+   "body": "Practitioners treating ASD with ABA need BACB national certification or state behavior-analyst licensure; unlicensed/non-certified staff require supervision per practice standards. Diagnosis must be DSM-5 ASD by a provider qualified to diagnose within scope (licensed psychologist, psychiatrist, physician). CPB 0648 references a National Academy of Sciences minimum of 25 hours/week, 12 months/year of planned intervention.",
+   "citationUrl": "https://www.aetna.com/cpb/medical/data/600_699/0648.html",
+   "effectiveDate": "",
+   "guide": "aetna"
+  },
+  {
+   "payer": "Aetna",
+   "state": "GA",
+   "category": "Telehealth",
+   "title": "Telehealth coverage for ABA codes",
+   "body": "Aetna covers telehealth for 97151, 97153, 97155, 97156, 97157 (97152 excluded). Aetna announced ending ABA telehealth effective 12/1/2023 but rescinded and extended coverage (12/11/2023). Modifiers GT/95/FR per the Aetna telemedicine payment policy. Reauthorization cadence reportedly ~6 months with repeat validated assessment every 6–12 months (secondary sources — verify with Aetna directly).",
+   "citationUrl": "https://abacodes.org/aetna-rescinds-policy-ending-telehealth-coverage-for-aba-services-in-december-2023/",
+   "effectiveDate": "",
+   "guide": "aetna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "No PA for assessment codes; treatment PA process",
+   "body": "No PA is required for assessment codes 97151, 97152, 0362T with an autism diagnosis when the provider is independently licensed or a BCBA and the plan covers ABA. Treatment PA: submit the completed assessment plus treatment plan with the ABA PA form, up to 30 days before or within 2 weeks after start of service (later triggers retrospective review). Initiation requires a standardized, validated instrument (current edition, e.g., Vineland-3) administered within 60 days before treatment start, with deficits mapped to DSM-5-TR ASD domains and to treatment-plan goals.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf",
+   "effectiveDate": "Resource guide Mar 2025; EN0499 eff. 5/15/2026",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Reauthorization",
+   "title": "Continued-treatment requirements",
+   "body": "Updated plan addressing current deficits/progress; baseline + interim + current data collected ≤60 days before the continued-treatment start date and ≤60 days before the request; ongoing sustained progress; repeat standardized assessment within 1 year of the continued-treatment start date; if progress is absent, documented barriers plus a protocol-modification plan; re-assessment required after any treatment break >60 days; intensity increases require rationale plus supporting data.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf",
+   "effectiveDate": "EN0499 eff. 5/15/2026",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Treatment plan",
+   "title": "Treatment plan content requirements",
+   "body": "Measurable goals with operational definitions, measurement method, and mastery criteria, tied to ASD symptoms and assessment results; quantitative baseline data (dated, per setting); parent/caregiver (stakeholder) training goals with their own baselines, mastery criteria, and data plan; supervision plan with named, credentialed supervisor; clearly defined, measurable, realistic discharge criteria with transition/fading plan; planned intensity justified by severity, goals, and response (hours justification).",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf",
+   "effectiveDate": "",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Documentation",
+   "title": "Session note requirements",
+   "body": "Each session note must include: start/end date and time, location, focus, detailed intervention description, persons present, service type, and the name, credential, and signature of the rendering provider.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf",
+   "effectiveDate": "",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Coverage scope and billing restrictions",
+   "body": "Covered when criteria met: 97151–97158, 0362T, 0373T. ASD only — Rett syndrome (F84.2) excluded; non-ASD indications not medically necessary. ABA is not covered when delivered to the same individual at the same time as another therapy (e.g., speech or OT). Only one provider may bill a given unit of time, except 97153/97154 + 97155 under direct supervision with both face-to-face. Multiple ABA agencies in one auth period require documented coordination.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf",
+   "effectiveDate": "",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Supervision",
+   "title": "Supervision and credentialing",
+   "body": "Assessment and case supervision by a BCBA, Licensed Behavior Analyst, or independently licensed mental health clinician with documented ABA training. Direct case supervision means the BCBA is face-to-face with the patient and the RBT/BCaBA concurrently; standard is 1–2 hours of supervision per 10 hours of direct treatment. Evernorth does not credential nonlicensed/noncertified staff — their services bill under the supervising provider.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf",
+   "effectiveDate": "",
+   "guide": "cigna"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "state": "GA",
+   "category": "Telehealth",
+   "title": "All ABA codes covered via telehealth",
+   "body": "Per the March 2025 resource guide: \"All ABA CPT codes are covered telehealth services.\" EN0499 frames delivery as in-person, telehealth, or hybrid based on individual characteristics, caregiver participation, environment, evidence, and technology.",
+   "citationUrl": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf",
+   "effectiveDate": "Mar 2025",
+   "guide": "cigna"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Prior authorization",
+   "title": "Two-step authorization via Provider Express",
+   "body": "PA is required for ABA (unless contract/law specifies otherwise) as a 2-step process: assessment authorization, then treatment authorization, submitted via the Provider Express portal. Georgia is not on the list of states with standalone state-mandated criteria, so the standard Optum Supplemental Clinical Criteria (BH803ABASCC) applies to Georgia commercial plans. Initial review covers functional assessment/FBA, caregiver interviews, direct observation, record review, baseline skills, and norm-referenced instruments.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf",
+   "effectiveDate": "BH803ABASCC082025, interim review 04/2026",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Reauthorization",
+   "title": "Continued-service reviews (every 4–6 months)",
+   "body": "Most treatment reviews are required every 4–6 months depending on the account/state law. Progress must be documented for each targeted symptom/behavior using the same measurement modes as baseline (mastered-program rates, change scores, updated standardized adaptive measures). The 6-month rule: inadequate/no progress within 6 months requires assessment of reasons plus treatment modification. Utilization below 80% of authorized hours over a 2-week period is scrutinized. Caregiver involvement/progress must be documented.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf",
+   "effectiveDate": "",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Supervision",
+   "title": "Supervision standards",
+   "body": "Direct case supervision of 1–2 hours per 10 hours of direct treatment per week (per CASP). Minimum 1 hour of 97155 per case per month. Supervision-to-direct ratios above 1:10 require clinical rationale.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf",
+   "effectiveDate": "",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Billing & CPT codes",
+   "title": "Code clusters and concurrent billing",
+   "body": "Authorizations are issued in 4 code clusters: assessment (97151, 97152); direct care (97153, 97154); multi-staff (0362T, 0373T); QHP services (97155–97158) — units can shift within a cluster. Concurrent billing allowed: 97153+97155 (supervision), 97154+97155, and 97153+97156 (parent training is distinct). Team meetings without the member present are not covered; treatment planning is bundled. Excluded: services that are not ABA (e.g., 1:1 classroom aide) and services covered under IDEA.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf",
+   "effectiveDate": "",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Provider qualifications",
+   "title": "Provider and technician qualifications",
+   "body": "Diagnosis by a state-licensed physician, psychologist, or other licensed clinician qualified to diagnose, per DSM-5-TR, confirmed with at least one clinically validated tool (ADI-R, ADOS-2, DISCO; second-level: CARS-2, RITA-T, STAT). Credentialed ABA provider = master's/doctoral BCBA, licensed behavioral health clinician credentialed for ABA, or BCaBA/non-licensed technician under direct BCBA supervision. Technicians should be RBTs or equivalently certified. A parent serving as RBT for their own child is flagged as an ethics violation.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf",
+   "effectiveDate": "",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "state": "GA",
+   "category": "Telehealth",
+   "title": "Virtual visits attestation required",
+   "body": "Tele-supervision and virtual family training require the provider to be an approved Optum virtual-visits provider with a completed attestation on Provider Express, and the authorization must note virtual delivery. Telehealth is framed as a supplement, not a replacement, for in-person delivery.",
+   "citationUrl": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf",
+   "effectiveDate": "",
+   "guide": "unitedhealthcare-optum"
+  },
+  {
+   "payer": "State of Georgia (mandate & licensure)",
+   "state": "GA",
+   "category": "Licensure",
+   "title": "Behavior analyst licensure (O.C.G.A. Title 43, Ch. 7A)",
+   "body": "Georgia licenses behavior analysts under HB 412 (2022): the Georgia Behavior Analyst Licensing Board (Secretary of State, Professional Licensing Boards Division; GOALS application system). Licensure is certification-based: current BCBA → behavior analyst license; BCaBA → assistant behavior analyst license. Application deadlines: behavior analysts 9/30/2025; assistant behavior analysts 3/31/2026 — practicing after these dates without applying may constitute unlicensed practice. RBTs are not state-licensed (BACB certification under supervision). Assistant behavior analysts require ongoing supervision by a licensed behavior analyst per BACB requirements (§43-7A-5(4)).",
+   "citationUrl": "https://sos.ga.gov/georgia-behavior-analyst-licensing-board",
+   "effectiveDate": "HB 412 (2022); deadlines 2025–2026",
+   "guide": ""
+  },
+  {
+   "payer": "State of Georgia (mandate & licensure)",
+   "state": "GA",
+   "category": "Other",
+   "title": "Ava's Law autism mandate (O.C.G.A. § 33-24-59.10)",
+   "body": "State-regulated accident and sickness plans (individual and group, incl. state employee plans) must cover ASD for individuals age 20 or under; treatment includes ABA, licensed mental health counseling, and speech/OT/PT. ABA may be limited to $35,000/year (SB 118, eff. 1/1/2019). ABA must be provided by a person certified by a national board of behavior analysts or under such a person's supervision. Exemptions: employers with ≤10 employees; self-funded ERISA plans (federal preemption). MHPAEA parity generally renders the dollar/age caps unenforceable against covered large-group plans (treat a payer applying the $35K cap to a large group as a parity red flag); Georgia HB 1013 (2022) codifies state parity enforcement.",
+   "citationUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-59-10/",
+   "effectiveDate": "SB 118 eff. 1/1/2019; HB 1013 (2022)",
+   "guide": ""
+  },
+  {
+   "payer": "Humana",
+   "state": "GA",
+   "category": "Other",
+   "title": "Limited commercial relevance in Georgia",
+   "body": "Humana exited the employer group commercial medical business (announced 2/23/2023, phased over 18–24 months); its Georgia ABA exposure is Medicare Advantage/Medicaid (it won a 2024 Georgia Families CMO award) and TRICARE East (Humana Military, Autism Care Demonstration). Policy HUM-0587-004 (eff. 3/1/2023): DSM-5 ASD diagnosis; comprehensive ABA assessment by a BCBA; BCBA supervision averaging 2 hours per 10 hours of direct treatment with ≥50% direct; treatment >40 hours/week not covered; measurable discharge criteria required. Verify whether a later revision exists on Humana's portal.",
+   "citationUrl": "https://press.humana.com/news/news-details/2023/Humana-to-Exit-Employer-Group-Commercial-Medical-Products-Business/default.aspx",
+   "effectiveDate": "HUM-0587-004 eff. 3/1/2023",
+   "guide": ""
+  }
+ ],
+ "sources": [
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "title": "Autism Spectrum Disorder program page",
+   "url": "https://medicaid.georgia.gov/programs/all-programs/autism-spectrum-disorder"
+  },
+  {
+   "payer": "Georgia Medicaid (DCH)",
+   "title": "Part II Policies & Procedures for ASD Services (manual PDF)",
+   "url": "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download"
+  },
+  {
+   "payer": "CareSource (GA Medicaid CMO)",
+   "title": "ABA for ASD policy — GA MCD-MM-0212",
+   "url": "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101"
+  },
+  {
+   "payer": "Peach State Health Plan (GA Medicaid CMO)",
+   "title": "Autism Spectrum Disorder Services — GA.CP.BH.504",
+   "url": "https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf"
+  },
+  {
+   "payer": "Amerigroup (GA Medicaid CMO)",
+   "title": "Adaptive Behavioral Treatment for ASD — CG-BEH-02 (GA Medicaid)",
+   "url": "https://provider.amerigroup.com/docs/gpp/GA_CAID_UMGuideline_AdaptiveBehavioralTreatmentAutismSpectrumDisorder.pdf?v=202101081602"
+  },
+  {
+   "payer": "Anthem BCBS Georgia",
+   "title": "ABA Provider Resource Guide — Commercial (incl. Georgia), Oct 2024",
+   "url": "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf"
+  },
+  {
+   "payer": "Aetna",
+   "title": "CPB 0554 — Applied Behavior Analysis",
+   "url": "https://www.aetna.com/cpb/medical/data/500_599/0554.html"
+  },
+  {
+   "payer": "Aetna",
+   "title": "CPB 0648 — Autism Spectrum Disorders",
+   "url": "https://www.aetna.com/cpb/medical/data/600_699/0648.html"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "title": "EN0499 — Intensive Behavioral Interventions",
+   "url": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf"
+  },
+  {
+   "payer": "Cigna / Evernorth",
+   "title": "Autism resource guide for behavioral health providers (Mar 2025)",
+   "url": "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf"
+  },
+  {
+   "payer": "UnitedHealthcare / Optum",
+   "title": "Optum Behavioral Health ABA Supplemental Clinical Criteria",
+   "url": "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf"
+  },
+  {
+   "payer": "State of Georgia (mandate & licensure)",
+   "title": "Georgia Behavior Analyst Licensing Board",
+   "url": "https://sos.ga.gov/georgia-behavior-analyst-licensing-board"
+  },
+  {
+   "payer": "State of Georgia (mandate & licensure)",
+   "title": "Ava's Law — O.C.G.A. § 33-24-59.10 (autism insurance mandate)",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-59-10/"
+  }
+ ]
+}

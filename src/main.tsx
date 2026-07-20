@@ -23,6 +23,8 @@ import IntegrationPage from './pages/IntegrationPage'
 import PayersDirectory from './pages/PayersDirectory'
 import IntegrationsDirectory from './pages/IntegrationsDirectory'
 import CrmComparison from './pages/CrmComparison'
+import CrmVsPage from './pages/CrmVsPage'
+import { CRM_SLUGS } from './data/crms'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
 import LandingV2 from './pages/LandingV2'
@@ -70,6 +72,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/integrations" element={<IntegrationsDirectory />} />
         <Route path="/integrations/:slug" element={<IntegrationPage />} />
         <Route path="/carelu-vs-crm" element={<CrmComparison />} />
+        {CRM_SLUGS.map((slug) => (
+          <Route key={slug} path={`/carelu-vs-${slug}`} element={<CrmVsPage />} />
+        ))}
         {/* legacy /compare URLs 301 into integrations */}
         <Route path="/compare/:slug" element={<CompareRedirect />} />
         <Route path="/terms" element={<TermsPage />} />

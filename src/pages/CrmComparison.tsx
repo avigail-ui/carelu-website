@@ -195,6 +195,41 @@ export default function CrmComparison() {
         </div>
       </section>
 
+      {/* Individual CRM comparisons */}
+      <section style={{ paddingTop: 'clamp(40px, 5.5vw, 64px)' }}>
+        <div style={MEASURE}>
+          <h2 className="rv" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2.6vw, 31px)', fontWeight: 400,
+            color: INK, lineHeight: 1.2, letterSpacing: '-0.015em', margin: '0 0 8px',
+          }}>Compare Carelu to a specific CRM</h2>
+          <p className="rv" style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 16px', lineHeight: 1.6 }}>
+            The same story, tool by tool — plus how Carelu works inside each one.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 12 }}>
+            {[
+              { slug: 'salesforce', name: 'Salesforce' },
+              { slug: 'hubspot', name: 'HubSpot' },
+              { slug: 'zoho', name: 'Zoho' },
+              { slug: 'monday', name: 'monday.com' },
+              { slug: 'clickup', name: 'ClickUp' },
+            ].map((c) => (
+              <a key={c.slug} href={`/carelu-vs-${c.slug}`} className="rv" style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8,
+                background: '#fff', borderRadius: 14, padding: '16px 20px', textDecoration: 'none',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'transform 0.2s, box-shadow 0.25s',
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)'; }}
+              >
+                <span style={{ fontSize: 14.5, fontWeight: 600, color: INK }}>Carelu vs. {c.name}</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={GREEN} strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ paddingTop: 'clamp(40px, 5.5vw, 64px)' }}>
         <div style={MEASURE}>
