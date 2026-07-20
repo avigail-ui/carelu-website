@@ -135,4 +135,40 @@ export const integrations: Record<string, IntegrationConfig> = {
       { q: 'What does Carelu add if we already have practice management?', a: 'The pre-admission funnel: 24/7 instant response, up-front verification, automated document collection, and waitlist nurture — the window where our research shows 40–85% of families are lost.' },
     ],
   },
+
+  'chorus': {
+    slug: 'chorus',
+    name: 'Chorus',
+    pill: 'Integration · Chorus',
+    h1: 'Carelu + Chorus: full intake, straight into revenue cycle.',
+    metaTitle: 'Chorus Integration — AI Intake Into Your RCM Platform | Carelu',
+    metaDescription:
+      'Carelu connects with Chorus: it answers every family, completes intake, and gathers the documentation Chorus needs — so eligibility, claims, and revenue cycle run on a clean, verified record from day one.',
+    intro: [
+      'Chorus automates the revenue side of autism care — eligibility, remittances, patient responsibility, and claims. Carelu sits one step earlier, at the family\'s very first hello: it answers every inquiry, completes intake, and captures the insurance and clinical details cleanly, so the record that flows into Chorus is complete and verified before a single claim is built. Front office and revenue cycle, working off the same trusted data.',
+    ],
+    whatItIs:
+      'Chorus is a modular, cloud-native revenue-cycle-management platform for behavioral health and autism care — eligibility verification, remits, patient-pay, and claims — with FHIR/X12 interoperability that connects to existing EHR and billing systems. (Based on public information; verify current capabilities with the vendor.)',
+    whatCareluAdds:
+      'Carelu adds the front office in front of the revenue cycle: 24/7 answering across phone, chat, form, and text; qualification and up-front benefits capture; and conversational collection of the insurance details and documents that claims depend on — so Chorus starts every family with clean, complete data.',
+    flow: [
+      { title: 'A family reaches out', desc: 'Any channel, any hour — Carelu answers in seconds and starts the intake conversation.' },
+      { title: 'Carelu captures clean insurance data', desc: 'Payer, member and group IDs, card images, and diagnosis details — collected accurately up front, not reconstructed later.' },
+      { title: 'Documents & consents collect themselves', desc: 'Everything the record needs, gathered conversationally with automatic follow-up.' },
+      { title: 'Chorus runs the revenue cycle', desc: 'The verified record flows into Chorus, so eligibility, claims, and remits work off accurate data from day one.' },
+    ],
+    rows: [
+      { job: 'Answering new families 24/7, on every channel', where: 'Carelu' },
+      { job: 'Qualification & up-front benefits capture', where: 'Carelu' },
+      { job: 'Insurance detail & document collection', where: 'Carelu' },
+      { job: 'Waitlist nurture & re-engagement', where: 'Carelu' },
+      { job: 'Eligibility, remits & claims processing', where: 'Chorus' },
+      { job: 'Patient responsibility & revenue cycle', where: 'Chorus' },
+    ],
+    faq: [
+      { q: 'Does Carelu replace Chorus?', a: 'No — they cover different stages. Carelu runs the front office (answering, intake, document capture); Chorus runs the revenue cycle (eligibility, claims, remits). Together, revenue cycle starts from a clean, verified intake record.' },
+      { q: 'How does Carelu connect to Chorus?', a: 'Carelu integrates with leading systems and supports webhooks, and Chorus is built for interoperability (FHIR/X12) — so verified intake data flows into the revenue cycle without re-keying.' },
+      { q: 'Why does clean intake matter for RCM?', a: 'Most claim denials trace back to bad or missing intake data — wrong member IDs, unverified benefits, missing documentation. Carelu captures it accurately at first contact, so Chorus works off data that\'s right the first time.' },
+    ],
+  },
 };
