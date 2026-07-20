@@ -74,16 +74,24 @@ export default function LeakCalculator() {
     return () => { document.getElementById('calc-jsonld')?.remove(); };
   }, []);
 
+  // Carelu's asserted recovery of currently-lost families — a static figure we
+  // stand behind, not a user guess, and not shown to the visitor. Grounded in
+  // the Intake Gap research: ~48% of inquiries arrive after hours (largely
+  // unanswered) and the first provider to respond usually wins, so roughly half
+  // of current losses are recoverable by always-on, complete intake. The
+  // visitor sees the OUTCOME (growth), not the assumption.
+  const RECOVERY = 0.5;
+
   const [inquiries, setInquiries] = useState(40);
-  const [starts, setStarts] = useState(10);
+  const [starts, setStarts] = useState(24);
   const [revenue, setRevenue] = useState(45000);
-  const [recovery, setRecovery] = useState(30); // % of currently-lost families a faster funnel recovers
 
   const effStarts = Math.min(starts, inquiries);
-  const conversion = inquiries > 0 ? effStarts / inquiries : 0;
   const lostPerMonth = Math.max(0, inquiries - effStarts);   // families not starting today
-  const recoverablePerYear = lostPerMonth * (recovery / 100) * 12;
-  const revenueRecovered = recoverablePerYear * revenue;
+  const recoveredPerMonth = lostPerMonth * RECOVERY;
+  const recoveredPerYear = recoveredPerMonth * 12;
+  const revenueRecovered = recoveredPerYear * revenue;
+  const growth = effStarts > 0 ? recoveredPerMonth / effStarts : 0;  // % more families started
   const afterHours = Math.round(inquiries * 0.48);
 
   return (
@@ -115,7 +123,7 @@ export default function LeakCalculator() {
             fontSize: 'clamp(15px, 1.5vw, 18px)', color: 'rgba(43,42,38,0.68)',
             lineHeight: 1.65, maxWidth: 600, margin: '22px auto 0',
           }}>
-            Three numbers you already know. One number you probably don't.
+            Three numbers you already know — and the growth you're leaving on the table.
           </p>
         </div>
       </section>
@@ -152,13 +160,6 @@ export default function LeakCalculator() {
                 format={(v) => fmtMoney(v)}
                 onChange={setRevenue}
               />
-              <Slider
-                label="Share of lost families you could recover"
-                hint="Not every family is winnable — some aren't eligible or choose another provider. This is the slice a faster, always-on intake realistically saves. We default to a conservative 30%."
-                value={recovery} min={10} max={60} step={5}
-                format={(v) => `${v}%`}
-                onChange={setRecovery}
-              />
             </div>
 
             {/* Results */}
@@ -170,47 +171,49 @@ export default function LeakCalculator() {
             }}>
               <div>
                 <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 8 }}>
-                  Families not starting today
+                  Growth in families started, with Carelu
                 </div>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 4vw, 52px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {Math.round(lostPerMonth * 12)}
+                  <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 64px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+                    +{Math.round(growth * 100)}%
                   </span>
-                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>inquiries a year that don’t become clients ({Math.round(conversion * 100)}% currently start)</span>
+                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>more families reaching a first session — same team, same marketing</span>
                 </div>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
                 <div>
                   <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 6 }}>
-                    Recoverable / year
+                    Additional families
                   </div>
-                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {Math.round(recoverablePerYear)}
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+                    +{Math.round(recoveredPerYear)}
                   </div>
-                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>families, at {recovery}% recovery</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>started per year</div>
                 </div>
                 <div>
                   <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 6 }}>
-                    Revenue recovered
+                    Added revenue
                   </div>
-                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {fmtMoney(revenueRecovered)}
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+                    +{fmtMoney(revenueRecovered)}
                   </div>
-                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>per year, annualized</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>per year</div>
                 </div>
               </div>
 
               <div style={{ borderTop: '1px solid rgba(250,248,243,0.12)', paddingTop: 18, fontSize: 13.5, color: 'rgba(250,248,243,0.68)', lineHeight: 1.6 }}>
-                ~<strong style={{ color: BONE }}>{afterHours} of your {inquiries} monthly inquiries</strong> likely arrive
-                outside business hours — 48% of all family inquiries do, and those are the most recoverable.{' '}
+                Carelu answers <strong style={{ color: BONE }}>100% of your inquiries instantly</strong> and runs intake to
+                completion — winning back the families you lose to slow response and dropped follow-up.{' '}
+                {afterHours} of your {inquiries} monthly inquiries arrive after hours (48% do), and the first
+                provider to respond usually wins.{' '}
                 <a href="/research/the-intake-gap" style={{ color: '#D4F25C', textDecoration: 'underline' }}>See the research →</a>
               </div>
             </div>
           </div>
 
           <p className="rv" style={{ fontSize: 12, color: 'rgba(43,42,38,0.45)', lineHeight: 1.6, margin: '14px auto 0', maxWidth: 720, textAlign: 'center' }}>
-            Estimates, not guarantees — you control the recovery assumption above. Grounded in Carelu Research,
+            Estimates, not guarantees — a modeled projection grounded in Carelu Research,
             {' '}<em>The Intake Gap</em> (2026) and the intake conversion ranges in our{' '}
             <a href="/resources/aba-intake-drop-off" style={{ color: 'rgba(43,42,38,0.6)' }}>drop-off guide</a>.
           </p>
