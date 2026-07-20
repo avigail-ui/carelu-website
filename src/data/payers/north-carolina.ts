@@ -23,6 +23,7 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
       { label: 'Plan review', value: 'LQASP treatment plan reviewed ≥ every 6 months, rewritten annually' },
       { label: 'Rates (per 15 min)', value: '97151 $30.56 · 97153 $20.81 · 97155 $32.22 · 97156 $23.70' },
       { label: 'Watch', value: 'HB 696 ABA provisions effective 8/1/2026; new CCP 8F draft in comment' },
+      { label: 'Diagnosis recency', value: 'Under-3 provisional dx must be confirmed within 6 months' },
     ],
     sections: [
       {

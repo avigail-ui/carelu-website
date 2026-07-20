@@ -103,6 +103,7 @@ export const nationalPayers: Record<string, PayerConfig> = {
       { label: 'Submission window', value: 'Up to 30 days before or within 2 weeks after start' },
       { label: 'Telehealth', value: '"All ABA CPT codes are covered telehealth services"' },
       { label: 'Policy', value: 'EN0499 (eff. 5/15/2026) + autism resource guide' },
+      { label: 'Assessment recency', value: 'Standardized assessment within 60 days of treatment start' },
     ],
     sections: [
       {

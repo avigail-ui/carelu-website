@@ -4,7 +4,6 @@ import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
 import { payers, PAYER_REVIEWED, STATE_META } from '../data/payers';
-import POLICIES from '../data/payer_policies.json';
 
 /* ================================================================
    CARELU — PAYER HUB (/payers)
@@ -34,7 +33,38 @@ const STATES = STATE_META.map((meta) => ({
   commercial: ALL.filter((p) => p.kind === 'commercial' && p.state === meta.code),
 }));
 const ROADMAP = ['New Jersey', 'Colorado', 'Arizona', 'Utah', 'Texas', 'Florida', 'TRICARE (Autism Care Demonstration)'];
-const CATEGORIES = Array.from(new Set(POLICIES.policies.map((p) => p.category))).sort();
+
+/* The policy database is the guides, flattened: every section of every guide
+   becomes one searchable policy entry, so search coverage always matches the
+   guide catalog with no separate dataset to maintain. */
+type PolicyEntry = {
+  payer: string; state: string; guide: string; category: string;
+  title: string; body: string; hay: string; citationUrl?: string;
+};
+function categorize(h2: string): string {
+  if (/telehealth/i.test(h2)) return 'Telehealth';
+  if (/mandate|ava.s law|carve-out/i.test(h2)) return 'State mandate';
+  if (/licens|credential|qualif|supervis|contacts/i.test(h2)) return 'Licensure & credentialing';
+  if (/rate|billing|reimburs|fee/i.test(h2)) return 'Rates & billing';
+  if (/reauthorization|continued|review/i.test(h2)) return 'Reauthorization';
+  if (/auth|precert|documentation bar|request package|otr|docs-before-claims/i.test(h2)) return 'Prior authorization';
+  if (/diagnos/i.test(h2)) return 'Diagnosis';
+  return 'Coverage';
+}
+const POLICY_DB: PolicyEntry[] = ALL.flatMap((p) =>
+  p.sections.map((s) => {
+    const body = (s.body ?? []).join(' ');
+    const listText = (s.list ?? []).map((i) => `${i.title} ${i.desc}`).join(' ');
+    return {
+      payer: p.payer, state: p.state ?? '', guide: p.slug,
+      category: categorize(s.h2), title: s.h2,
+      body: body || listText,
+      hay: `${p.payer} ${p.state} ${s.h2} ${body} ${listText}`.toLowerCase(),
+      citationUrl: s.cites?.[0]?.url ?? p.sources[0]?.url,
+    };
+  })
+);
+const CATEGORIES = Array.from(new Set(POLICY_DB.map((p) => p.category))).sort();
 
 // Compact assessment-PA verdict for directory cards. Only rendered when the
 // guide carries a verified assessmentPA fact — unknowns show nothing.
@@ -86,20 +116,74 @@ export default function PayersDirectory() {
   const [cat, setCat] = useState<string>('All');
   const query = q.trim().toLowerCase();
 
+  const searching = query.length > 0 || cat !== 'All';
+
   const filtered = useMemo(() => {
-    return POLICIES.policies.filter((p) => {
+    return POLICY_DB.filter((p) => {
       if (cat !== 'All' && p.category !== cat) return false;
       if (!query) return true;
-      const hay = `${p.payer} ${p.state} ${p.category} ${p.title} ${p.body}`.toLowerCase();
-      return hay.includes(query);
+      return p.hay.includes(query) || p.category.toLowerCase().includes(query);
     });
   }, [query, cat]);
 
   const byPayer = useMemo(() => {
-    const m: Record<string, typeof POLICIES.policies> = {};
+    const m: Record<string, PolicyEntry[]> = {};
     for (const p of filtered) (m[p.payer] ||= []).push(p);
     return m;
   }, [filtered]);
+
+  // Rendered right under the search bar while searching/filtering; parked
+  // below the guide catalog when idle.
+  const policyDb = (
+    <section style={{ paddingBottom: 'clamp(40px, 6vw, 64px)' }}>
+      <div style={W}>
+        <h2 className="rv" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 28px)', fontWeight: 400, color: INK, letterSpacing: '-0.012em', margin: '0 0 4px' }}>
+          Policy database
+        </h2>
+        <p className="rv" style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 18px' }}>
+          {filtered.length === POLICY_DB.length
+            ? `All ${POLICY_DB.length} policy rules from the ${ALL.length} guides`
+            : `${filtered.length} of ${POLICY_DB.length} policy rules`}
+          {query ? ` matching “${q.trim()}”` : ''}{cat !== 'All' ? ` · ${cat}` : ''}.
+        </p>
+
+        {filtered.length === 0 && (
+          <p style={{ fontSize: 15, color: 'rgba(43,42,38,0.6)', padding: '20px 0' }}>
+            No policies match that search. Try a payer name, a state, or a topic like “prior authorization” or “rates.”
+          </p>
+        )}
+
+        {Object.entries(byPayer).map(([payer, list]) => {
+          const guide = list[0].guide;
+          return (
+            <div key={payer} className="rv" style={{ marginBottom: 26 }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: INK, margin: 0, fontFamily: 'var(--font-body)' }}>
+                  {payer} <span style={{ fontSize: 12, fontWeight: 500, color: 'rgba(43,42,38,0.45)' }}>· {list[0].state} · {list.length} {list.length === 1 ? 'rule' : 'rules'}</span>
+                </h3>
+                {guide && <a href={`/payers/${guide}`} style={{ fontSize: 12.5, fontWeight: 600, color: '#2e5a26', textDecoration: 'none', borderBottom: '1.5px solid rgba(63,122,52,0.4)', paddingBottom: 1 }}>Read the full guide →</a>}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {list.map((p, i) => (
+                  <div key={p.title + i} style={{ background: '#fff', borderRadius: 14, padding: 'clamp(16px, 2.2vw, 22px)', boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 7, flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: GREEN, background: 'rgba(63,122,52,0.09)', padding: '3px 9px', borderRadius: 100 }}>{p.category}</span>
+                    </div>
+                    <h4 style={{ fontSize: 15, fontWeight: 700, color: INK, margin: '0 0 6px', fontFamily: 'var(--font-body)' }}>{p.title}</h4>
+                    <p style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.68)', lineHeight: 1.6, margin: '0 0 8px' }}>
+                      {p.body.length > 380 ? p.body.slice(0, 380).replace(/\s+\S*$/, '') + '…' : p.body}
+                      {p.body.length > 380 && <> <a href={`/payers/${p.guide}`} style={{ color: '#2e5a26', fontWeight: 600 }}>full guide →</a></>}
+                    </p>
+                    {p.citationUrl && <a href={p.citationUrl} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(43,42,38,0.55)', wordBreak: 'break-all' }}>Source ↗</a>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
 
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
@@ -127,7 +211,7 @@ export default function PayersDirectory() {
             lineHeight: 1.65, maxWidth: 640, margin: '20px auto 0',
           }}>
             {ALL.length} intake-focused payer guides — state Medicaid programs, every Medicaid MCO, and
-            national commercial payers — plus {POLICIES.policies.length} searchable policy rules, each
+            commercial plans state by state — plus {POLICY_DB.length} searchable policy rules, each
             linked to its primary source. Compiled from primary documents, last reviewed {PAYER_REVIEWED}.
           </p>
         </div>
@@ -167,16 +251,14 @@ export default function PayersDirectory() {
         </div>
       </section>
 
-      {/* Guide cards */}
+      {/* While searching, results surface right here — next to the search bar. */}
+      {searching && policyDb}
+
+      {/* Guide cards — state-first */}
       <section style={{ paddingBottom: 'clamp(28px, 4vw, 44px)' }}>
         <div style={W}>
-          <h2 className="rv" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 28px)', fontWeight: 400, color: INK, letterSpacing: '-0.012em', margin: '0 0 4px' }}>Payer guides</h2>
-          <p className="rv" style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 16px' }}>Full intake-focused guides. National policies apply across states; state guides cover Medicaid and state-regulated plans.</p>
-          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '4px 0 4px' }}>National commercial payers</div>
-          <p className="rv" style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.55)', margin: '0 0 12px' }}>Clinical policies are largely national — but each carrier also runs state-specific Medicaid plans, and state mandates change what fully-insured plans must cover. Each guide has a per-state note.</p>
-          <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 26 }}>
-            {NATIONAL.map((g) => <GuideCard key={g.slug} href={`/payers/${g.slug}`} name={g.payer} desc={g.cardDesc ?? ''} assessmentPA={g.assessmentPA} />)}
-          </div>
+          <h2 className="rv" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 28px)', fontWeight: 400, color: INK, letterSpacing: '-0.012em', margin: '0 0 4px' }}>Payer guides, by state</h2>
+          <p className="rv" style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 20px' }}>Every state lists its Medicaid program, each Medicaid MCO, and the commercial plans operating there — each with its own intake-focused guide.</p>
 
           {STATES.map((st) => (
             <div key={st.meta.code} style={{ marginBottom: 30 }}>
@@ -216,56 +298,18 @@ export default function PayersDirectory() {
               )}
             </div>
           ))}
+
+          <div className="rv" style={{ marginTop: 4, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.55)' }}>National policy deep-dives:</span>
+            {NATIONAL.map((g) => (
+              <a key={g.slug} href={`/payers/${g.slug}`} style={{ fontSize: 12.5, fontWeight: 600, color: '#2e5a26', background: 'rgba(63,122,52,0.08)', padding: '6px 13px', borderRadius: 100, textDecoration: 'none' }}>{g.payer} →</a>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Policy database */}
-      <section style={{ paddingBottom: 'clamp(40px, 6vw, 64px)' }}>
-        <div style={W}>
-          <h2 className="rv" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 28px)', fontWeight: 400, color: INK, letterSpacing: '-0.012em', margin: '0 0 4px' }}>
-            Policy database
-          </h2>
-          <p className="rv" style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 18px' }}>
-            {filtered.length === POLICIES.policies.length
-              ? `All ${POLICIES.policies.length} policies`
-              : `${filtered.length} of ${POLICIES.policies.length} policies`}
-            {query ? ` matching “${q.trim()}”` : ''}{cat !== 'All' ? ` · ${cat}` : ''}.
-          </p>
-
-          {filtered.length === 0 && (
-            <p style={{ fontSize: 15, color: 'rgba(43,42,38,0.6)', padding: '20px 0' }}>
-              No policies match that search. Try a payer name, a topic like “prior authorization,” or a CPT code.
-            </p>
-          )}
-
-          {Object.entries(byPayer).map(([payer, list]) => {
-            const guide = list[0].guide;
-            return (
-              <div key={payer} className="rv" style={{ marginBottom: 26 }}>
-                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
-                  <h3 style={{ fontSize: 17, fontWeight: 700, color: INK, margin: 0, fontFamily: 'var(--font-body)' }}>
-                    {payer} <span style={{ fontSize: 12, fontWeight: 500, color: 'rgba(43,42,38,0.45)' }}>· {list[0].state} · {list.length} {list.length === 1 ? 'policy' : 'policies'}</span>
-                  </h3>
-                  {guide && <a href={`/payers/${guide}`} style={{ fontSize: 12.5, fontWeight: 600, color: '#2e5a26', textDecoration: 'none', borderBottom: '1.5px solid rgba(63,122,52,0.4)', paddingBottom: 1 }}>Read the full guide →</a>}
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {list.map((p, i) => (
-                    <div key={p.title + i} style={{ background: '#fff', borderRadius: 14, padding: 'clamp(16px, 2.2vw, 22px)', boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 7, flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: GREEN, background: 'rgba(63,122,52,0.09)', padding: '3px 9px', borderRadius: 100 }}>{p.category}</span>
-                        {p.effectiveDate && <span style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.45)' }}>{p.effectiveDate}</span>}
-                      </div>
-                      <h4 style={{ fontSize: 15, fontWeight: 700, color: INK, margin: '0 0 6px', fontFamily: 'var(--font-body)' }}>{p.title}</h4>
-                      <p style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.68)', lineHeight: 1.6, margin: '0 0 8px' }}>{p.body}</p>
-                      <a href={p.citationUrl} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: 'rgba(43,42,38,0.55)', wordBreak: 'break-all' }}>Source ↗</a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      {/* Policy database (idle position — full list, crawlable) */}
+      {!searching && policyDb}
 
       {/* Roadmap + checklist + disclaimer */}
       <section style={{ paddingBottom: 'clamp(40px, 6vw, 60px)' }}>

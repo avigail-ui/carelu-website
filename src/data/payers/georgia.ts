@@ -23,6 +23,7 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { label: 'Typical hours', value: '10–30 hrs/week; more if medically necessary' },
       { label: 'Middle-income path', value: 'Katie Beckett waiver (income ignored)' },
       { label: 'Managed care', value: 'CMOs administer PA under their own aligned policies' },
+      { label: 'Diagnosis recency', value: 'Eval instruments within 5 years; outside assessments within 6 months' },
     ],
     sections: [
       {
@@ -181,6 +182,7 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { label: 'Docs', value: 'Signed treatment documentation before claims submission' },
       { label: 'Daily units', value: 'CMS MUE per-code daily-unit limits apply' },
       { label: '2026 rate', value: 'Pays 80% of the GA Medicaid fee schedule (eff. 5/11/2026)' },
+      { label: 'Diagnosis recency', value: 'Eval within 5 years (DCH-aligned criteria)' },
     ],
     sections: [
       {
@@ -242,6 +244,7 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { label: 'Students', value: '<20 hrs/week if attending school full-time' },
       { label: 'Attendance', value: 'Below 80% of authorized hours requires justification' },
       { label: 'Note', value: 'Lost the 2024 CMO rebid (protest pending) — watch status' },
+      { label: 'Diagnosis recency', value: 'Eval within 5 years (DCH-aligned criteria)' },
     ],
     sections: [
       {
@@ -295,6 +298,7 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { label: 'Prior auth', value: 'Required; medical-necessity review' },
       { label: 'Caution', value: 'Published guideline dated 2017/2018 — verify current version' },
       { label: 'Note', value: 'Amerigroup\'s Georgia CMO status was affected by the 2024 rebid' },
+      { label: 'Diagnosis recency', value: 'Eval within 5 years (DCH-aligned criteria)' },
     ],
     sections: [
       {

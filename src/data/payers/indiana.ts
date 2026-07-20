@@ -23,6 +23,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Lifetime cap', value: '4,000 hours for comprehensive ABA (16+ hrs/wk); targeted ABA ≤15 hrs/wk exempt' },
       { label: 'Hours', value: 'Up to 40 hrs/wk requestable; beyond that needs additional PA' },
       { label: 'Rates', value: 'Published fee schedule, cut 6% (4/1/2026) then 4% more (4/1/2027)' },
+      { label: 'Diagnosis recency', value: 'CDE >1 year old needs updated statement of need + current assessment' },
     ],
     sections: [
       {
@@ -103,6 +104,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Hours', value: 'Up to 40 hrs/wk; beyond needs additional PA (mirrors IHCP)' },
       { label: 'Submission', value: 'Availity / Interactive Care Reviewer; IHCP universal PA form by fax' },
       { label: 'Caution', value: 'Guideline last reviewed 2021 — 2026 state changes control' },
+      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
     ],
     sections: [
       {
@@ -166,6 +168,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Diagnosis', value: 'Named instrument + date + score required (ADI-R, ADOS, CARS-2, etc.)' },
       { label: 'Outcome measure', value: 'One instrument for the whole episode (VB-MAPP, ABLLS, Vineland…)' },
       { label: 'Submission', value: 'Fax OTR to (866) 694-3649; UM (877) 647-4848; portal accepted' },
+      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
     ],
     sections: [
       {
@@ -221,6 +224,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Contacts', value: 'UM (844) 607-2831 · fax (844) 432-8924' },
       { label: 'One-agency rule', value: 'One lead analyst and one ABA agency per member at a time' },
       { label: 'Audit posture', value: 'Post-payment audits / prepay review on ABA compliance' },
+      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
     ],
     sections: [
       {
@@ -284,6 +288,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Contacts', value: 'Vary by program/delivery system — MDwise.org/quickcontact' },
       { label: 'Out-of-network', value: 'PA required for ALL services from non-contracted providers' },
       { label: 'Claim filing', value: '90 days contracted / 180 days non-contracted' },
+      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
     ],
     sections: [
       {
@@ -336,6 +341,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Prior auth', value: 'Required — ABA Treatment Request Form via Provider Express' },
       { label: 'Timelines', value: 'Non-urgent ≤7 days (max 14); urgent 48 hrs; concurrent 1 business day' },
       { label: 'Note', value: 'Most routine outpatient BH needs no PA at UHC — ABA is the exception' },
+      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
     ],
     sections: [
       {

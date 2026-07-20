@@ -99,6 +99,7 @@ export const ohioPayers: Record<string, PayerConfig> = {
       { label: 'Instruments', value: 'ADOS, ADI-R, or CARS-2; evals >24 months old need a symptom letter' },
       { label: 'Claims rule', value: 'Treatment records BEFORE claims — no docs, no payment' },
       { label: 'Discontinuation', value: 'No meaningful progress across two successive 6-month periods' },
+      { label: 'Diagnosis recency', value: 'Eval >24 months old needs a current-symptoms letter' },
     ],
     sections: [
       {
@@ -163,6 +164,7 @@ export const ohioPayers: Record<string, PayerConfig> = {
       { label: 'Hour parameters', value: '≤6 hrs/day, ≤30 hrs/wk unless justified; <20 hrs/wk for full-time students' },
       { label: 'Supervision', value: '97155 ≥2 hrs/wk or 10% of direct hours; max 20% unless justified' },
       { label: 'Diagnosis window', value: 'CDE accepted within the past 5 years' },
+      { label: 'Diagnosis recency', value: 'CDE accepted within the past 5 years' },
     ],
     sections: [
       {
