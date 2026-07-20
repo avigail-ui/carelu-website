@@ -25,6 +25,7 @@ export const newJerseyPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min, FFS)', value: '97153 $15.00 · 97155 $21.25 · 97151/97156 $25.00' },
       { label: 'Daily unit guide', value: '97151 32u · 97153 32u · 97155 24u · 97156 16u — overridable under EPSDT' },
       { label: 'Licensure', value: 'NJ Licensed Applied Behavior Analyst (LBA) / assistant LaBA' },
+      { label: 'Staff screening', value: 'FBI/SBI fingerprint check at LBA/LaBA licensure; monthly exclusion screening (LEIE, NJ debarment, Treasurer lists); techs ride the BACB RBT background-check floor' },
     ],
     sections: [
       {
@@ -69,6 +70,27 @@ export const newJerseyPayers: Record<string, PayerConfig> = {
           { title: 'NJ Board of Applied Behavior Analyst Examiners — FAQ', url: 'https://www.njconsumeraffairs.gov/abae/Pages/FAQ.aspx' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'At the technician level, New Jersey layers a Medicaid credential on an unlicensed role. The founding DMAHS newsletter names the RBT as the technician provider — high school diploma or GED, the 40-hour training, a passed competency exam, and "close, ongoing supervision" by a BCBA-D, BCBA, or BCaBA — and its provider-specialty table lists RBT (alongside BCaBA) as the permitted renderer of 97152/97153. The state itself doesn\'t license technicians: N.J.S.A. 45:8B-103.b(2) exempts "paraprofessional technicians" delivering ABA under a licensee\'s direction, and the board\'s rules (N.J.A.C. 13:42B-1.2, effective May 6, 2024) expressly fold BACB-certified RBTs into that exempt category. MCO manuals run looser — Optum\'s 2022 NJ orientation asks only that behavior technicians be high school graduates with appropriate BCBA training and supervision, and Horizon says RBT certification is "preferred," not required — but because state FFS policy makes RBT the operative credential, hire to the RBT standard to satisfy the strictest applicable rule. That standard carries its own screening: the BACB\'s RBT 2026 requirements demand age 18+, a criminal background check plus an abuse-registry check reviewed by an attestor, the updated 40-hour training (delivered by BCBAs/BCaBAs who\'ve completed the 8-hour supervision training), and the RBT Initial Competency Assessment.',
+          'Background-check obligations split by role. LBA and LaBA applicants clear a criminal history check as part of licensure — the board\'s FAQ notes application processing time depends partly on its completion — coordinated through the Division of Consumer Affairs\' Criminal History Review Unit, which runs FBI and state (SBI) fingerprint checks via New Jersey\'s contracted live-scan vendor (the CHRU\'s published board list hadn\'t yet named the ABA board when checked in mid-2026). For unlicensed technicians, no NJ statute or FamilyCare ABA policy mandating fingerprint or child-abuse-registry checks was found — the BACB\'s RBT screening is the floor, supplemented by whatever your MCO contracts add (agency-level fingerprinting at FFS enrollment, per N.J.A.C. 10:77-4.9(g), is a separate provider-enrollment matter — see above). What binds every hire regardless of role is exclusion screening: NJ guidance (updated January 2023, an obligation the state has run since 2010) requires Medicaid providers and MCOs to verify monthly that current and prospective employees, contractors, and subcontractors aren\'t excluded, unlicensed, or uncertified — searching the NJ debarment list, the federal OIG LEIE, the NJ Treasurer\'s exclusions database, and where applicable the Consumer Affairs and Department of Health licensure databases.',
+          'On the supervisory side, licensure is now operational, not just on paper: P.L.2019, c.337 created the Board of Applied Behavior Analyst Examiners and bars unlicensed practice, board rules took effect May 6, 2024, applications opened September 12, 2024, and by February 2026 there were 3,506 active licensees (3,476 LBAs, 30 LaBAs). LBAs need a graduate degree plus current BCBA certification; LaBAs a bachelor\'s plus BCaBA plus an identified LBA supervisor — with supervision floors of at least 5% of practice hours weekly (or one hour every two weeks, whichever is more) in the first year, dropping to 2% or one hour monthly thereafter, face-to-face, under a supervisor who has completed the BACB 8-hour supervisor training. An LBA may delegate intervention implementation to technicians but not assessment, treatment-plan development, or intervention design — and the board holds that supervision in all its forms is itself licensed practice. Two clocks worth tracking in hiring plans: providers working under DDD contracts must hold licenses by May 6, 2027 and Early Intervention contractors by May 6, 2029, while school-district employees delivering ABA solely for their district remain exempt.',
+        ],
+        cites: [
+          { title: 'DMAHS Provider Newsletter Vol 30 No 06 — RBT/QHP provider requirements', url: 'https://web.archive.org/web/2023/https://www.nj.gov/humanservices/dmahs/news/Provider_Newsletter_for_Applied_Behavior_Analysis_Therapy.pdf' },
+          { title: 'P.L.2019, c.337 — Applied Behavior Analyst Licensing Act (N.J.S.A. 45:8B-91 et seq.)', url: 'https://web.archive.org/web/2024id_/https://pub.njleg.state.nj.us/Bills/2018/PL19/337_.PDF' },
+          { title: 'N.J.A.C. 13:42B-1.2 — Definitions (paraprofessional technician incl. RBT)', url: 'https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-42B-1-2' },
+          { title: 'BACB RBT 2026 Requirements (July 2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+          { title: 'NJ Board of Applied Behavior Analyst Examiners — FAQ', url: 'https://www.njconsumeraffairs.gov/abae/Pages/FAQ.aspx' },
+          { title: 'NJ Division of Consumer Affairs — Criminal History Review Unit', url: 'https://www.njconsumeraffairs.gov/ocp/pages/chru.aspx' },
+          { title: 'Streamline Verify — Exclusion screening guidance for NJ Medicaid providers (Jan 2023)', url: 'https://streamlineverify.com/updated-guidance-on-exclusion-screening-for-new-jerseys-medicaid-providers-and-plans/' },
+          { title: 'Autism NJ — Quick Guide to ABA Licensure Regulations (N.J.A.C. 13:42B)', url: 'https://autismnj.org/article/quick-guide-to-aba-licensure-regulations/' },
+          { title: 'Autism NJ — Behavior Analyst Licensure in New Jersey: Where We Are Now', url: 'https://autismnj.org/article/behavior-analyst-licensure-in-new-jersey-where-we-are-now/' },
+          { title: 'Optum/UHC Community Plan — NJ FamilyCare ABA Provider Orientation (2022)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/njaba/NJ.FamilyCare.Medicaid.ABA.pdf' },
+          { title: 'Horizon NJ Health — Overview of ABA Services (Dec 2020)', url: 'https://www.horizonnjhealth.com/sites/default/files/2020-12/Overview%20of%20ABA%20Services.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'MCO — or pending-enrollment status', desc: 'Horizon, Aetna, Fidelis, UHC, or Wellpoint decides the portal and process; a member still pending MCO assignment can start FFS with NO prior authorization.' },
@@ -84,6 +106,16 @@ export const newJerseyPayers: Record<string, PayerConfig> = {
       { title: 'ProviderSpark NJ Medicaid rates (NJMMIS CY2026 Q2)', url: 'https://www.providerspark.com/for-providers/medicaid-rates/new-jersey/' },
       { title: 'DMAHS BH Integration Points of Contact V3.1 (per-MCO ABA contacts)', url: 'https://www.nj.gov/humanservices/dmhas/documents/pdf/resources/providers/DMAHS-BH-Integration-Points-of-Contact.pdf' },
       { title: 'Optum ABA State Mandates BH803ABASTM12026 — NJ Medicaid entry', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/scc/ABA_SCC_SM.pdf' },
+      { title: 'P.L.2019, c.337 — Applied Behavior Analyst Licensing Act (N.J.S.A. 45:8B-91 et seq.)', url: 'https://web.archive.org/web/2024id_/https://pub.njleg.state.nj.us/Bills/2018/PL19/337_.PDF' },
+      { title: 'N.J.A.C. 13:42B-1.2 — Definitions (paraprofessional technician incl. RBT)', url: 'https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-42B-1-2' },
+      { title: 'BACB RBT 2026 Requirements (July 2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+      { title: 'NJ Board of Applied Behavior Analyst Examiners — FAQ', url: 'https://www.njconsumeraffairs.gov/abae/Pages/FAQ.aspx' },
+      { title: 'NJ Division of Consumer Affairs — Criminal History Review Unit', url: 'https://www.njconsumeraffairs.gov/ocp/pages/chru.aspx' },
+      { title: 'Streamline Verify — Exclusion screening guidance for NJ Medicaid providers (Jan 2023)', url: 'https://streamlineverify.com/updated-guidance-on-exclusion-screening-for-new-jerseys-medicaid-providers-and-plans/' },
+      { title: 'Autism NJ — Quick Guide to ABA Licensure Regulations (N.J.A.C. 13:42B)', url: 'https://autismnj.org/article/quick-guide-to-aba-licensure-regulations/' },
+      { title: 'Autism NJ — Behavior Analyst Licensure in New Jersey: Where We Are Now', url: 'https://autismnj.org/article/behavior-analyst-licensure-in-new-jersey-where-we-are-now/' },
+      { title: 'Optum/UHC Community Plan — NJ FamilyCare ABA Provider Orientation (2022)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/njaba/NJ.FamilyCare.Medicaid.ABA.pdf' },
+      { title: 'Horizon NJ Health — Overview of ABA Services (Dec 2020)', url: 'https://www.horizonnjhealth.com/sites/default/files/2020-12/Overview%20of%20ABA%20Services.pdf' },
     ],
     faq: [
       { q: 'Does NJ FamilyCare cover ABA therapy?', a: 'Yes — under EPSDT for members with autism (roughly 18 months to 21), delivered and prior-authorized through the five NJ FamilyCare MCOs since April 1, 2020.' },

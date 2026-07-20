@@ -25,6 +25,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Hours', value: 'Up to 40 hrs/wk requestable; beyond that needs additional PA' },
       { label: 'Rates', value: 'Published fee schedule, cut 6% (4/1/2026) then 4% more (4/1/2027)' },
       { label: 'Diagnosis recency', value: 'CDE >1 year old needs updated statement of need + current assessment' },
+      { label: 'Staff screening', value: 'All ABA specialties high-risk — Indiana State Police fingerprint check before each RBT/BCaBA/BCBA enrolls' },
     ],
     sections: [
       {
@@ -43,7 +44,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
         h2: 'What changed in 2026 (and 2027)',
         body: [
           'Effective April 1, 2026, IHCP covers ABA exclusively through the EPSDT benefit; members 21 and older have a transition window through September 30, 2026, and for dates of service on or after October 1, 2026, IHCP will not authorize or reimburse ABA for members 21+ — making age a first-order intake question. Also effective April 1, 2026: comprehensive ABA (16+ hours/week, billed with modifier UA) draws from a 4,000-hour (16,000-unit) lifetime allocation per member — 97155 and 97156 are excluded from the allocation, and the IHCP Portal\'s "Limit Details" panel shows usage — while targeted ABA is capped at 15 hours/week but exempt from the lifetime cap. Codes 97151, 97152, 97153, 97154, and 0373T can no longer be billed with telehealth modifier 95.',
-          'Separately, ABA group agencies must show accreditation initiated (ACQ or BHCOE) by August 1, 2026 and be fully accredited by October 1, 2027 or face disenrollment — worth verifying on any partner or acquisition conversation.',
+          'Separately, an accreditation mandate now binds every ABA group enrollment — new and existing. Currently enrolled agencies must submit documentation showing accreditation has been initiated with the Autism Commission on Quality (ACQ) or the Behavioral Health Center of Excellence (BHCOE) by August 1, 2026 (to INXIXabaenrollments@gainwelltechnologies.com or via the IHCP Portal) — a deadline that is days away as this guide is updated — and must hold active accreditation by October 1, 2027. Missing either milestone results in enrollment deactivation, not just a warning. One footnote worth reading twice: BT202646 states a previous BHCOE accreditation is accepted only "until an agency\'s reaccreditation with ACQ," so agencies choosing an accreditor should plan the reaccreditation path, not just the first credential.',
         ],
         cites: [
           { title: 'IHCP Bulletin BT202627 — ABA policy & rate changes (2/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
@@ -57,6 +58,22 @@ export const indianaPayers: Record<string, PayerConfig> = {
         ],
         cites: [
           { title: 'IHCP Bulletin BT202627 — full ABA rate tables (eff. 4/1/2026 & 4/1/2027)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
+        ],
+      },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Indiana is one of the few states where technicians enroll in Medicaid individually. Since December 18, 2024, RBTs enroll with the IHCP as rendering providers (provider type 11, specialty 625 — ABA Therapist RBT), and all RBTs and BCaBAs had to be individually enrolled by April 1, 2025 — each with their own Type 1 NPI, enrolled once and then associated with every group they render for. Since April 1, 2025 the rendering NPI on claims must align with the credential-level modifier (U1 RBT / U2 BCaBA / U3 BCBA-HSPP), though a bulletin update note delayed enforcement of that alignment. There is no separate state RBT license: IC 25-8.5-3-6 lets "direct contact technicians" practice without a license when implementing plans under the supervision and direction of a licensed behavior analyst, so the certification floor is the BACB\'s — age 18+, high-school education, the 40-hour training, competency assessment, and the RBT exam, plus the BACB\'s own requirement that every applicant pass a criminal background check and an abuse-registry check within 180 days before applying.',
+          'On top of that, IHCP classifies all three ABA specialties (615 Masters/Doctoral-HSPP, 624 Bachelors, 625 RBT) as HIGH risk at enrollment — which triggers a fingerprint-based criminal background check for every individually enrolling RBT, BCaBA, and BCBA before the application can be completed. Fingerprints go through the Indiana State Police, the provider pays the fee, and results are sent to the FSSA (not the agency) for review; the check is specific to the individual, so an enrolled RBT joining a second group doesn\'t need a new one. Enrolled school corporations are exempt, but group providers rendering ABA in school settings are not, and specialty 615 group/billing enrollments additionally get a site visit. FSSA can deny enrollment for convictions it "determines is inconsistent with the best interest of IHCP members" — violent, financial, substance, abuse, and firearm offenses are the published examples. Build the fingerprint step into your hiring timeline: it sits between offer and first billable session.',
+          'Supervisor-side, Indiana now licenses behavior analysts: LBA and LABA credentials under IC 25-8.5 (applications live May 13, 2025), with LBA licensure requiring current BCBA certification plus a national criminal history background check ($100 application; LABAs pay $75 and must file a signed supervision contract with a licensed behavior analyst). For IHCP enrollment, specialty 615 is limited to HSPP-licensed or BCBA/BCBA-D-certified providers, and the assessments feeding every PA may only be performed by a psychologist, BCBA-D, or master\'s-level BCBA. The binding ratio since April 1, 2026: at least 1 hour of BCBA (or IHCP-approved qualifying clinician) supervision per 8 hours of technician-delivered therapy — and with 97153 now in-person only, that supervision capacity has to exist where the sessions happen. These screening rules ride on IHCP enrollment across fee-for-service and the MCEs; we found no evidence the plans add employee-level checks beyond the state baseline, but current MCE provider manuals weren\'t exhaustively reviewed — confirm with each plan at credentialing.',
+        ],
+        cites: [
+          { title: 'IHCP Bulletin BT2024194 — ABA provider enrollment & high-risk screening (11/2024)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2024194.pdf' },
+          { title: 'IHCP Bulletin BT202519 — ABA enrollment FAQ (fingerprinting, deadlines) (2/2025)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202519.pdf' },
+          { title: 'IHCP Bulletin BT202627 — supervision ratio & 2026 ABA changes', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
+          { title: 'Indiana PLA — Behavior Analyst licensing information', url: 'https://www.in.gov/pla/professions/behavior-analyst/behavior-analyst-licensing-information/' },
+          { title: 'IC 25-8.5-3-6 — Prohibitions; exceptions (direct contact technicians)', url: 'https://codes.findlaw.com/in/title-25-professions-and-occupations/in-code-sect-25-8-5-3-6/' },
+          { title: 'BACB RBT Handbook', url: 'https://www.bacb.com/rbt-handbook' },
         ],
       },
     ],
@@ -73,6 +90,11 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { title: 'IHCP Bulletin BT202562 — ABA documentation requirements', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202562.pdf' },
       { title: 'IHCP Bulletin BT202646 — ABA agency accreditation', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202646.pdf' },
       { title: 'IHCP — ABA prior authorization checklist', url: 'https://www.in.gov/medicaid/providers/files/ihcp-aba-prior-auth-checklist.pdf' },
+      { title: 'IHCP Bulletin BT2024194 — ABA provider enrollment & high-risk screening', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2024194.pdf' },
+      { title: 'IHCP Bulletin BT202519 — ABA enrollment FAQ', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202519.pdf' },
+      { title: 'Indiana PLA — Behavior Analyst licensing information', url: 'https://www.in.gov/pla/professions/behavior-analyst/behavior-analyst-licensing-information/' },
+      { title: 'IC 25-8.5-3-6 — Prohibitions; exceptions', url: 'https://codes.findlaw.com/in/title-25-professions-and-occupations/in-code-sect-25-8-5-3-6/' },
+      { title: 'BACB RBT Handbook', url: 'https://www.bacb.com/rbt-handbook' },
     ],
     faq: [
       { q: 'Does Indiana Medicaid cover ABA therapy?', a: 'Yes — IHCP covers medically necessary ABA for autism with prior authorization on all services. Since April 1, 2026 it is covered exclusively through EPSDT, and coverage ends for members 21+ for dates of service on or after October 1, 2026.' },

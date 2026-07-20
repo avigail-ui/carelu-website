@@ -25,6 +25,7 @@ export const missouriPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min)', value: '97153: $20.13 (HO/HN) vs. $16.37 (HM technician/RBT); 97151/97155/97156: $25.26 (HO)' },
       { label: 'RBT rule', value: 'National RBT credential mandatory — 90-day grace from passing the competency assessment' },
       { label: 'Licensure', value: 'Missouri LBA (RSMo 337.315); psychologists need MHD ABA-specialty approval' },
+      { label: 'Staff screening', value: 'RBTs: BACB background + abuse-registry check; LBA/LaBA: MSHP + FBI fingerprints; FCSR not automatic for ABA' },
     ],
     sections: [
       {
@@ -70,6 +71,26 @@ export const missouriPayers: Record<string, PayerConfig> = {
           { title: 'MO HealthNet Behavioral Health Services Manual, §1.16 ABA Services (May 2026)', url: 'https://mydss.mo.gov/sites/mydss/files/media/file/2026/05/Behavioral%20Health%20Services%20Manual.docx' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'At the technician level, Missouri layers almost nothing on the BACB — because it delegated the whole credential: 13 CSR 70-98.030 requires technicians to be "credentialed by the Behavior Analyst Certification Board (BACB) as a Registered Behavior Technician," with no state-registry alternative, and the April 1, 2024 policy adds the age/education floor (18+, high-school diploma or national equivalent, the 40-hour training and competency assessment) alongside the 90-day exam runway covered above. That makes the BACB\'s own screening rules the binding check for every technician hire: within 180 days of paying for the RBT application, the applicant must pass a criminal background check and an abuse-registry check "comparable to those required of home health aides, child care professionals, and teachers" — an employer-run check inside that window satisfies it if you keep the documentation for audit. One pipeline wrinkle: applicants on or after January 1, 2026 need the updated 2026 40-hour training (certificate carrying the 2026 approval statement, trainer an active BCBA/BCaBA with supervision training) and the updated competency assessment.',
+          'Supervisors carry the state\'s only individual-level fingerprint mandate. LBA and LaBA licensure under RSMo 337.315 (Behavior Analyst Advisory Board, Division of Professional Registration — applications now run through the MOPRO portal, launched January 14, 2025) requires two classified fingerprint sets: one processed by the Missouri State Highway Patrol against the state repository, the second forwarded to the FBI. Missouri also adds a training mandate found nowhere in the ABA payment rules: at least two hours of suicide assessment, referral, treatment, and management training at initial licensure and at every renewal (HB 1719, effective August 28, 2018). Useful for hiring pre-certification talent: the statute provides provisional licenses allowing practice under licensed supervision before BCBA/BCaBA certification — terminating automatically after one year, renewable once for a two-year maximum — plus 90-day temporary licenses (one extension) for practitioners licensed elsewhere. On structure, 13 CSR 70-98.030 requires each technician to work under an LBA, an LaBA, or a licensed psychologist officially granted supervisory privileges by the BACB, with the supervisory relationship documented in writing; the rule sets no numeric ratio of its own, so the BACB\'s 5%-of-monthly-hours RBT supervision minimum (two monthly face-to-face contacts, at least one individual) is the operative floor.',
+          'At the agency level, screening runs through Missouri Medicaid Audit & Compliance: under 13 CSR 65-2 and 42 CFR 455.450, MMAC screens every provider at initial enrollment and revalidation by federal risk category — limited-risk screening covers cross-state license verification, identity confirmation, and database checks (SSA Death Master File, NPPES, OIG exclusions, Medicare enrollment, National Sex Offender Public Website); moderate risk (the default for any provider type not otherwise categorized) adds pre-enrollment and unannounced post-enrollment site visits; high risk adds fingerprint-based FBI and MSHP checks of every 5%-or-greater owner, submitted via the MACHS system through the state vendor IDEMIA, with an exemption for owners fingerprinted for Medicare or another state Medicaid within the last two years. Two honest caveats close the picture. First, Missouri\'s Family Care Safety Registry is not automatic for ABA agencies: RSMo 210.900 ties the "mental health worker" registration duty to personal-care staff of DD facilities and group homes, so a standard outpatient/in-home ABA clinic isn\'t covered by definition — though agencies operating DD facilities or group homes or employing personal-care workers are (registration within 15 days of hire), and many providers use the FCSR voluntarily as an inexpensive screening tool. Second, the MO HealthNet ABA rule itself contains no employee background-check provision, so the binding individual-level checks are exactly the BACB RBT check and the licensure fingerprinting above — confirm any employer-level extras with MMAC provider enrollment rather than assuming them.',
+        ],
+        cites: [
+          { title: '13 CSR 70-98.030 — Applied Behavior Analysis Services', url: 'https://www.law.cornell.edu/regulations/missouri/13-CSR-70-98-030' },
+          { title: 'MO HealthNet Provider Bulletin Vol. 47 No. 19 — Grace Period for RBT Credential', url: 'https://mydss.mo.gov/sites/mydss/files/media/pdf/2024/09/ABA-Grace-Period-RBT-Bulletin.pdf' },
+          { title: 'BACB RBT Handbook (background-check eligibility requirement)', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230407-a.pdf' },
+          { title: 'BACB — Meeting RBT Requirements During the 2026 Transition', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+          { title: 'RSMo § 337.315 — behavior analyst licensure (fingerprints, provisional licenses)', url: 'https://revisor.mo.gov/main/OneSection.aspx?section=337.315' },
+          { title: 'Missouri Behavior Analyst Advisory Board (Division of Professional Registration)', url: 'https://pr.mo.gov/ba.asp' },
+          { title: 'MMAC — Provider Assigned Risk Categories', url: 'https://mmac.mo.gov/providers/provider-enrollment/new-providers/provider-assigned-risk-categories/' },
+          { title: 'MMAC — Fingerprint Based Criminal History Checks', url: 'https://mmac.mo.gov/providers/provider-enrollment/new-providers/fingerprint-based-criminal-history-checks/' },
+          { title: 'RSMo § 210.900 — Family Care Safety Registry definitions', url: 'https://revisor.mo.gov/main/OneSection.aspx?section=210.900' },
+          { title: 'MO DHSS FAQ — Who is required to register with the Family Care Safety Registry?', url: 'https://mohealth.uservoice.com/knowledgebase/articles/1166425-who-is-required-to-register-with-the-family-care-s' },
+        ],
+      },
     ],
     collect: [
       { title: 'MO HealthNet eligibility — not the plan card', desc: 'Whichever MCO card the family shows, ABA is state FFS. Verify MO HealthNet eligibility; skip the MCO analysis entirely.' },
@@ -85,6 +106,16 @@ export const missouriPayers: Record<string, PayerConfig> = {
       { title: 'MHD ABA provider training — Applied Behavior Analysis Services (April 2022)', url: 'https://dss.mo.gov/mhd/providers/education/files/rodgers-applied-behavior-analysis.pdf' },
       { title: 'Healthy Blue MO HealthNet Managed Care Provider Manual', url: 'https://provider.healthybluemo.com/docs/gpp/MO_CAID_HealthNetManagedCareProviderManual.pdf' },
       { title: 'Show Me Healthy Kids Provider Reference Manual', url: 'https://www.homestatehealth.com/content/dam/centene/home-state-health/pdfs/HSH-SMHK-Provider-Manual_508%20Compliant%20063022.pdf' },
+      { title: '13 CSR 70-98.030 — Applied Behavior Analysis Services', url: 'https://www.law.cornell.edu/regulations/missouri/13-CSR-70-98-030' },
+      { title: 'MO HealthNet Provider Bulletin Vol. 47 No. 19 — Grace Period for RBT Credential', url: 'https://mydss.mo.gov/sites/mydss/files/media/pdf/2024/09/ABA-Grace-Period-RBT-Bulletin.pdf' },
+      { title: 'BACB RBT Handbook', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230407-a.pdf' },
+      { title: 'BACB — Meeting RBT Requirements During the 2026 Transition', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+      { title: 'RSMo § 337.315 — behavior analyst licensure (Missouri Revisor of Statutes)', url: 'https://revisor.mo.gov/main/OneSection.aspx?section=337.315' },
+      { title: 'Missouri Behavior Analyst Advisory Board (Division of Professional Registration)', url: 'https://pr.mo.gov/ba.asp' },
+      { title: 'MMAC — Provider Assigned Risk Categories', url: 'https://mmac.mo.gov/providers/provider-enrollment/new-providers/provider-assigned-risk-categories/' },
+      { title: 'MMAC — Fingerprint Based Criminal History Checks', url: 'https://mmac.mo.gov/providers/provider-enrollment/new-providers/fingerprint-based-criminal-history-checks/' },
+      { title: 'RSMo § 210.900 — Family Care Safety Registry definitions', url: 'https://revisor.mo.gov/main/OneSection.aspx?section=210.900' },
+      { title: 'MO DHSS FAQ — Family Care Safety Registry registration requirements', url: 'https://mohealth.uservoice.com/knowledgebase/articles/1166425-who-is-required-to-register-with-the-family-care-s' },
     ],
     faq: [
       { q: 'Does MO HealthNet cover ABA therapy?', a: 'Yes — for participants under 21, with precertification. The standard benefit requires an ASD diagnosis from a licensed physician or psychologist; under EPSDT/HCY, ABA is also covered for other diagnoses when medically necessary.' },

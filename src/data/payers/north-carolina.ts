@@ -23,8 +23,9 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
       { label: 'Auth periods', value: 'Initial and reauth each up to 180 days' },
       { label: 'Plan review', value: 'LQASP treatment plan reviewed ≥ every 6 months, rewritten annually' },
       { label: 'Rates (per 15 min)', value: '97151 $30.56 · 97153 $20.81 · 97155 $32.22 · 97156 $23.70' },
-      { label: 'Watch', value: 'HB 696 ABA provisions effective 8/1/2026; new CCP 8F draft in comment' },
+      { label: 'Watch', value: 'HB 696 ABA provisions law as of 4/30/2026; final CCP 8F rewrite pending — verify before relying on timing' },
       { label: 'Diagnosis recency', value: 'Under-3 provisional dx must be confirmed within 6 months' },
+      { label: 'Staff screening', value: 'BACB checks + G.S. 122C-80 criminal check + pre-hire HCPR registry check; RBT/ABAT within 120 days of hire' },
     ],
     sections: [
       {
@@ -60,9 +61,9 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
         ],
       },
       {
-        h2: 'HB 696: the August 2026 overhaul',
+        h2: 'HB 696: the 2026 overhaul',
         body: [
-          'HB 696 (Session Law 2026-1, signed April 30, 2026) rewires NC Medicaid ABA effective August 1, 2026: no new out-of-state BCBA/QASP-supervisor enrollments; assessments must be in-person (telehealth assessments aren\'t reimbursed absent a documented exception); paraprofessionals can\'t deliver services by telehealth except documented necessity; telehealth LQASP observation/direction is capped at 50% per beneficiary (with DHHS implementing policy reportedly tightening remote supervision to roughly 20% of therapy time); the 10% LQASP observation floor is codified; and paraprofessionals must hold RBT or ABAT certification, with a 120-day grace period for new hires. Plans above 16 hours/week originally required monthly reapproval — softened to every 3 months in the budget signed July 7, 2026. Separately, a revised CCP 8F went through public comment May 15 – June 14, 2026, so expect a new policy version to supersede the December 2020 document.',
+          'HB 696 (Session Law 2026-1, signed April 30, 2026) rewires NC Medicaid ABA — and its provisions are law as of April 30, 2026, with implementation running through a rewrite of CCP 8F that was still in draft as of July 2026 (initial comment May 15 – June 14; a second 10-day comment window closed July 20, 2026), so verify the final 8F before relying on timing. The substance: no new out-of-state BCBA/QASP-supervisor enrollments; assessments must be in-person (telehealth assessments aren\'t reimbursed absent a documented exception); paraprofessionals can\'t deliver services by telehealth except documented necessity; telehealth LQASP observation/direction is capped at 50% per beneficiary (with DHHS implementing policy reportedly tightening remote supervision to roughly 20% of therapy time); the 10% LQASP observation floor is codified; and paraprofessionals must hold RBT or ABAT certification, with a 120-day grace period for new hires. Plans above 16 hours/week originally required monthly reapproval — softened to every 3 months in the budget signed July 7, 2026.',
         ],
         cites: [
           { title: 'Governor\'s office — HB 696 signing (4/30/2026)', url: 'https://governor.nc.gov/news/press-releases/2026/04/30/governor-stein-takes-action-one-bill' },
@@ -70,12 +71,29 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
           { title: 'NCTracks — CCP 8F public-comment notice (5/2026)', url: 'https://www.nctracks.nc.gov/content/public/providers/provider-communications/2026----Announcements/Public-Comment-Notice--Policy-8F---Research-Based-Behavioral-Health-Treatment-for-Autism-Spectrum-Disorder.html' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Start with the technician layer, because S.L. 2026-1 changed it: behavior technicians must be certified — RBT (BACB) or ABAT (QABA) — within 120 calendar days of their date of hire (or the agency\'s first Medicaid enrollment, whichever is later). New hires may render services during the window under all required supervision, but the draft CCP 8F is blunt about the consequence: a technician who misses the deadline "must cease rendering services" until certified. The BACB\'s own 2026 requirements have to fit inside that clock: a 40-hour training that must span at least 5 days, an initial competency assessment, an employer-run criminal background check plus a separate abuse-registry check completed within 180 days before the application (both reviewed by a BCBA-level Attesting Certificant who signs the attestation form), and the Pearson VUE exam — so start the packet on day one of employment, not day sixty.',
+          'NC then stacks two state statutes on the BACB layer. G.S. 122C-80 requires a criminal history check for unlicensed hires at MH/DD/SA providers: a state check for applicants who\'ve lived in NC five-plus years, state plus national fingerprint-based check for more recent arrivals, with the check request submitted within five business days of the conditional offer (conditional employment pending results is allowed, and a relevant conviction is weighed for seriousness, recency, and nexus to the job — not automatically disqualifying). Separately, G.S. 131E-256 requires checking the Health Care Personnel Registry BEFORE hiring any unlicensed staff with direct access — community-based DD service providers are covered even without a 122C license — and each registry access must be noted in your business files. The fourth layer is agency-level: NCTracks screens the enrolling organization and its 5%+ owners under the federal risk-based rules (42 CFR Part 455), with fingerprint-based checks for high-risk categories — confirm your agency\'s current risk category with NCTracks provider enrollment, and note that managed-care contracting never substitutes for NCTracks enrollment.',
+          'Supervisors need an NC license, not just a certification: behavior analysts license through the NC Behavior Analyst Licensure Board (G.S. Chapter 90, Article 43) — LBA (current BCBA or QBA) at a $250 application fee, LaBA (BCaBA or QASP-S) at $200, each plus a $14 criminal-background-check fee run through Castle Branch (package VN90) and a completed fingerprint record card, submitted via the board\'s Licensure Gateway portal. Direct Medicaid enrollment as a BCBA requires both the certification and the license (taxonomy 103K00000X). The S.L. 2026-1 supervision floors then bind the staffing model (figures per the pending CCP 8F draft — verify the final policy): at least 10% of all paraprofessional-delivered services must involve LQASP observation and direction; for beneficiaries above 200 paraprofessional hours per six-month period, LQASP hours must land between 10% and 20% of paraprofessional hours, documented in the treatment plan with deviations clinically justified; telehealth 97155 is capped at 50% of total 97155 per beneficiary; and out-of-state BCBAs can no longer newly enroll. Plan-level certification adds essentially nothing on top — Alliance\'s RB-BHT guidance and WellCare\'s WNC.CP.109 both defer to the state baseline — the plans\' real staffing exposure is agency certification reviews against DMH/DD/SAS standards and 10A NCAC 27G personnel files (job descriptions, supervision plans), not extra background checks.',
+        ],
+        cites: [
+          { title: 'NC Medicaid — draft amended CCP 8F (7/2026 comment version)', url: 'https://medicaid.ncdhhs.gov/media/16091/download?attachment' },
+          { title: 'BACB — RBT Handbook (updated 6/2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260116-a.pdf' },
+          { title: 'G.S. 122C-80 — criminal history record checks (MH/DD/SA providers)', url: 'https://codes.findlaw.com/nc/chapter-122c-mental-health-developmental-disabilities-and-substance-abuse-act-of-1985/nc-gen-st-sect-122c-80/' },
+          { title: 'G.S. 131E-256 — Health Care Personnel Registry', url: 'https://codes.findlaw.com/nc/chapter-131e-health-care-facilities-and-services/nc-gen-st-sect-131e-256/' },
+          { title: 'NCBALB — Requirements for Licensure', url: 'https://ncbehavioranalystboard.org/requirements-for-licensure/' },
+          { title: 'Alliance Health — Guidance for RB-BHT Providers', url: 'https://www.alliancehealthplan.org/provider-updates/guidance-for-rb-bht-providers/' },
+          { title: 'WellCare NC — WNC.CP.109 RB-BHT clinical policy', url: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'Medicaid ID & health plan', desc: 'Standard Plan, Tailored Plan, CFSP, or NC Medicaid Direct — it decides the portal, forms, and UM contacts.' },
       { title: 'ASD diagnosis + validated tool', desc: 'Diagnosis, instrument, and date; for under-3, provisional-diagnosis status and the 6-month confirmation clock.' },
       { title: 'Service order', desc: 'Signed by an MD/DO/LP, based on an assessment, dated on/before service start, valid one year.' },
-      { title: 'Assessment (in-person from 8/2026)', desc: 'HB 696 requires in-person assessments — plan scheduling and staffing accordingly.' },
+      { title: 'Assessment (in-person under HB 696)', desc: 'HB 696\'s in-person assessment requirement is law as of April 30, 2026, operationalized through the pending CCP 8F rewrite — verify the final 8F before relying on timing, and plan scheduling accordingly.' },
       { title: 'Supervisor credentials & location', desc: 'Out-of-state supervisor enrollment is closing; RBT/ABAT certification is now mandatory for paraprofessionals.' },
     ],
     sources: [
@@ -85,11 +103,18 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
       { title: 'Alliance Health — Standard Rate Schedule (RB-BHT)', url: 'https://www.alliancehealthplan.org/document-library/97251' },
       { title: 'Governor\'s office — HB 696 signing', url: 'https://governor.nc.gov/news/press-releases/2026/04/30/governor-stein-takes-action-one-bill' },
       { title: 'NC Health News — new ABA rules coverage', url: 'https://www.northcarolinahealthnews.org/2026/07/15/autism-aba-therapy-medicaid-new-rules/' },
+      { title: 'NC Medicaid — draft amended CCP 8F (7/2026 comment version)', url: 'https://medicaid.ncdhhs.gov/media/16091/download?attachment' },
+      { title: 'BACB — RBT Handbook (updated 6/2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260116-a.pdf' },
+      { title: 'G.S. 122C-80 — criminal history record checks', url: 'https://codes.findlaw.com/nc/chapter-122c-mental-health-developmental-disabilities-and-substance-abuse-act-of-1985/nc-gen-st-sect-122c-80/' },
+      { title: 'G.S. 131E-256 — Health Care Personnel Registry', url: 'https://codes.findlaw.com/nc/chapter-131e-health-care-facilities-and-services/nc-gen-st-sect-131e-256/' },
+      { title: 'NCBALB — Requirements for Licensure', url: 'https://ncbehavioranalystboard.org/requirements-for-licensure/' },
+      { title: 'Alliance Health — Guidance for RB-BHT Providers', url: 'https://www.alliancehealthplan.org/provider-updates/guidance-for-rb-bht-providers/' },
+      { title: 'WellCare NC — WNC.CP.109 RB-BHT clinical policy', url: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf' },
     ],
     faq: [
       { q: 'Does North Carolina Medicaid cover ABA therapy?', a: 'Yes — as Research-Based Behavioral Health Treatment (RB-BHT) under Clinical Coverage Policy 8F, in every delivery channel (Medicaid Direct, Standard Plans, Tailored Plans, and the Children & Families Specialty Plan). All RB-BHT services require prior authorization, including the assessment.' },
       { q: 'What does NC Medicaid pay for ABA?', a: 'Published per-15-minute rates, effective 10/1/2025: 97151 $30.56, 97153 $20.81, 97155 $32.22, 97156 $23.70 — and every managed-care plan must pay at least 100% of the state fee schedule unless the provider agrees otherwise.' },
-      { q: 'What does HB 696 change for ABA providers?', a: 'From August 1, 2026: in-person assessments, no new out-of-state supervisor enrollments, RBT/ABAT certification for paraprofessionals, a 50% cap on telehealth supervision, a codified 10% observation floor, and 3-month reapprovals for plans above 16 hours/week.' },
+      { q: 'What does HB 696 change for ABA providers?', a: 'In-person assessments, no new out-of-state supervisor enrollments, RBT/ABAT certification for paraprofessionals, a 50% cap on telehealth supervision, a codified 10% observation floor, and 3-month reapprovals for plans above 16 hours/week. The provisions are law as of April 30, 2026, with implementation running through a CCP 8F rewrite still pending as of July 2026 — verify the final 8F before relying on timing.' },
       { q: 'Can a young child start before a confirmed diagnosis?', a: 'For children under three, NC Medicaid accepts a provisional ASD diagnosis when services begin, with a definitive diagnosis expected within six months.' },
     ],
   },

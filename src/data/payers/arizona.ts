@@ -25,6 +25,7 @@ export const arizonaPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min)', value: '97153: $17.91 HM · $21.32 HN · $23.69 HO/HP; 97155: $25.05–$37.28 (home ~10% more)' },
       { label: 'Licensure', value: 'Arizona-licensed behavior analyst (A.R.S. § 32-2091, Board of Psychologist Examiners)' },
       { label: 'Watch', value: 'AMPM 320-S rewrite in flight (2026) + March 2026 in-network provider terminations' },
+      { label: 'Staff screening', value: 'AHCCCS FCBC hits owners/execs only — front-line staff get DPS cards via ADHS licensure (apply within 7 working days) and DDD Level One cards' },
     ],
     sections: [
       {
@@ -70,6 +71,24 @@ export const arizonaPayers: Record<string, PayerConfig> = {
           { title: 'azfamily — Nearly 1K Arizona children with autism to lose ABA therapy coverage (3/5/2026)', url: 'https://www.azfamily.com/2026/03/05/nearly-1k-arizona-children-with-autism-lose-aba-therapy-coverage/' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'AMPM 320-S never says "RBT." A Behavior Technician is "a paraprofessional credentialed by a nationally recognized Behavior Analyst certification board or as specified in A.A.C. R9-10-101(39)" — meaning either a nationally certified tech (the RBT pathway) or an unlicensed Behavioral Health Technician working at a licensed health care institution under Behavioral Health Professional oversight. There is no state RBT registry; the Arizona-licensed Behavior Analyst (A.R.S. § 32-2091, Board of Psychologist Examiners) is responsible for all clinical direction and supervision, for training technicians, and for their compliance with the policy — and because 320-S sets no numeric supervision percentage of its own, the BACB\'s floor is the binding number for RBT-credentialed staff: 5% of monthly service hours, including two face-to-face contacts. ADHS outpatient-treatment-center rules (R9-10-1011) add that personnel providing behavioral health services must be at least 18, and if you staff the RBT pathway, the BACB baseline travels with it: a criminal background check plus an abuse-registry check, both completed within 180 days before the certification application, and — from January 1, 2026 — the new 40-hour curriculum (delivered over 5–180 days by trained BCBAs/BCaBAs), an updated competency assessment, and a 2-year recertification cycle.',
+          'Now the part Arizona owners most often get backwards: fingerprint clearance cards. AHCCCS enrollment screening itself barely touches your staff — per PEP-902, the fingerprint-based criminal background check (run exclusively through Arizona DPS; FBI checks and out-of-state cards are not accepted) applies to "high-risk" provider types like 77 Behavioral Health Outpatient Clinic and IC Integrated Clinic, and only to individual high-risk providers, 5%+ direct or indirect owners, and the Directors/Executive Directors/CEOs/Presidents on the Corporation Commission listing; employees below that line are expressly exempt. But front-line staff need DPS cards anyway — the trigger is just elsewhere. Under A.R.S. § 36-425.03, all personnel, volunteers included, of a children\'s behavioral health program (behavioral health services to patients under 18 at an ADHS-licensed facility) must hold a valid fingerprint clearance card or apply within 7 working days of starting, and must certify on notarized forms that they are not awaiting trial on or convicted of the offenses listed in A.R.S. § 41-1758.03. Licensed behavior analysts carry their own card requirement as a condition of licensure (A.R.S. § 32-2091.02, effective January 1, 2022) — and the proposed 2026 AMPM rewrite would push licensure-plus-fingerprint into AHCCCS registration itself.',
+          'The DDD side of the dual path layers on the heaviest screening. Qualified Vendors must hold Level One fingerprint clearance cards (A.R.S. § 41-1758.07) for all employee types except immediate relatives, add staff to the roster within 30 days of hire, and the OLCR tracking system re-validates every card against DPS every 24 hours — an expired card surfaces the next day, not at revalidation. DDD also screens staff against the APS Registry automatically every 24 hours, requires DCS Central Registry (child abuse/neglect) checks under A.R.S. § 8-804 for anyone providing direct service to children — with a Direct Service Position Form (DDD-1727A) completed before service pending results — and mandates monthly LEIE and SAM exclusion searches for all employees, contractors, and subcontractor staff, with results retained 5 years. New direct-care workers get 90 days to complete CPR, First Aid, and Article 9 training and cannot work alone with members until they do. Two gaps to confirm directly: AMPM 320-S is silent on TB tests or health screening for ABA staff (any such duty flows from the R9-10 article your ADHS license class sits under), and the ACC plans publish no staff screening beyond the state baseline — Mercy Care defers clinical standards to AHCCCS policy — so confirm plan-specific credentialing paperwork at contracting.',
+        ],
+        cites: [
+          { title: 'AMPM 320-S — Behavior Analysis Services (AHCCCS)', url: 'https://www.azahcccs.gov/shared/Downloads/MedicalPolicyManual/300/320S.pdf' },
+          { title: 'BACB — RBT 2026 requirements transition guidance', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+          { title: 'Ariz. Admin. Code R9-10-1011 — Outpatient Treatment Centers, Behavioral Health Services', url: 'https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R9-10-1011' },
+          { title: 'AHCCCS PEP-902 — Fingerprint-Based Criminal Background Check requirement', url: 'https://www.azahcccs.gov/PlansProviders/Downloads/apep/FCBC_OnePager.pdf' },
+          { title: 'A.R.S. § 36-425.03 — Children\'s behavioral health programs; fingerprinting', url: 'https://www.azleg.gov/ars/36/00425-03.htm' },
+          { title: 'A.R.S. § 32-2091.02 — Behavior analysts; licensure qualifications', url: 'https://www.azleg.gov/ars/32/02091-02.htm' },
+          { title: 'DES/DDD — Staff Roster and Background Check Guide', url: 'https://des.az.gov/sites/default/files/media/Roster_and_BG_Check_Guide_110822.pdf' },
+          { title: 'DES/DDD — Central Registry, LEIE and SAM background check requirements (8/7/2015)', url: 'https://des.az.gov/sites/default/files/central_registry_leie_sam_requirements.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'ACC plan vs. DDD enrollment', desc: 'The routing question — an ACC card and a DDD Health Plan card mean different payers, portals, and auth pathways.' },
@@ -85,6 +104,13 @@ export const arizonaPayers: Record<string, PayerConfig> = {
       { title: 'AHCCCS — informational webinars on proposed ABA policy updates (4/3/2026)', url: 'https://www.azahcccs.gov/shared/News/GeneralNews/ABA_PolicyUpdates.html' },
       { title: 'DES — DDD Health Plans information', url: 'https://des.az.gov/services/disabilities/developmental-disabilities/individuals-and-families/supports-and-services/ddd-health-plans-info' },
       { title: 'azfamily — Nearly 1K Arizona children lose in-network ABA (3/5/2026)', url: 'https://www.azfamily.com/2026/03/05/nearly-1k-arizona-children-with-autism-lose-aba-therapy-coverage/' },
+      { title: 'AHCCCS PEP-902 — Fingerprint-Based Criminal Background Check requirement', url: 'https://www.azahcccs.gov/PlansProviders/Downloads/apep/FCBC_OnePager.pdf' },
+      { title: 'A.R.S. § 36-425.03 — Children\'s behavioral health programs; fingerprinting', url: 'https://www.azleg.gov/ars/36/00425-03.htm' },
+      { title: 'A.R.S. § 32-2091.02 — Behavior analysts; licensure qualifications', url: 'https://www.azleg.gov/ars/32/02091-02.htm' },
+      { title: 'Ariz. Admin. Code R9-10-1011 — Outpatient Treatment Centers, Behavioral Health Services', url: 'https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R9-10-1011' },
+      { title: 'DES/DDD — Staff Roster and Background Check Guide', url: 'https://des.az.gov/sites/default/files/media/Roster_and_BG_Check_Guide_110822.pdf' },
+      { title: 'DES/DDD — Central Registry, LEIE and SAM background check requirements (8/7/2015)', url: 'https://des.az.gov/sites/default/files/central_registry_leie_sam_requirements.pdf' },
+      { title: 'BACB — RBT 2026 requirements transition guidance', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
     ],
     faq: [
       { q: 'Does AHCCCS cover ABA therapy?', a: 'Yes — under AMPM 320-S, for members with autism spectrum disorder and/or other diagnoses as justified by medical necessity. Coverage runs through the member\'s ACC plan, or through a DDD Health Plan (Mercy Care DD or UHCCP DD) for ALTCS-DD members.' },

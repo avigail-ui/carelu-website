@@ -25,6 +25,7 @@ export const floridaPayers: Record<string, PayerConfig> = {
       { label: 'Hour cap', value: 'Up to 40 hrs/week as prior-authorized in the behavior plan' },
       { label: 'Rates (per 15 min)', value: '97151 $19.05 · 97153 $12.26 · 97155 $19.17 · 97156 $19.05' },
       { label: 'Administered by', value: 'Nine MMA plans (since 2/1/2025) + Acentra FFS for non-enrolled recipients' },
+      { label: 'Staff screening', value: 'Level 2 fingerprint (FDLE + FBI) via the Clearinghouse — every rendering practitioner, employer-renewed every 5 years' },
     ],
     sections: [
       {
@@ -70,6 +71,26 @@ export const floridaPayers: Record<string, PayerConfig> = {
           { title: 'Behavior Analysis Fee Schedule eff. 8/1/2022 (archived AHCA primary)', url: 'https://web.archive.org/web/20241006051746/https://fl.acentra.com/wp-content/uploads/sites/14/2024/03/BA_Services_2022_Fee_Schedule.pdf' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Florida licenses no behavior analysts: s. 393.17, F.S. instead recognizes certification from a national credentialing board — the BACB — and the FL-CBA is a closed legacy credential (the BACB absorbed the old state program in October 2003; no new FL-CBAs are issued, and a lapsed one requires requalifying as a BCBA). Under the December 2024 coverage policy, technicians must be BACB-credentialed RBTs working under a BCBA or BCaBA, and the Lead Analyst on every case must be a BCBA, an FL-CBA, or a practitioner licensed under chapter 490 or 491. The policy adds no training hours beyond the BACB\'s own RBT requirements (40-hour training, competency assessment, exam, plus the BACB\'s own criminal-background and abuse-registry check within 180 days of applying). The staffing catch is enrollment: every rendering practitioner individually enrolls in Florida Medicaid — Lead Analysts as provider type 392, BCaBAs as 391, RBTs as 390, with 390s and 391s enrollable only as members of an enrolled BA group (type 393). Each application needs a color copy of the BACB certification matching the applicant\'s legal name (black-and-white copies are rejected) and a completed background screening — AHCA says missing screenings and missing tax-ID proof are the two most common causes of BA application delays.',
+          'The background screening reaches far past owners: s. 409.907(8)(a), F.S. requires a Level 2 screening not just for the provider and each principal (officers, directors, managing employees, 5%+ owners) but for anyone who participates "by way of rendering services to Medicaid recipients or having direct access to Medicaid recipients" — i.e., every RBT, BCaBA, and analyst on the schedule. Mechanics: the employer initiates the screening through the Care Provider Background Screening Clearinghouse; the candidate submits fingerprints and a photo at an approved Livescan provider; FDLE runs the statewide check and the FBI the national one, plus sex-offender registry searches in states of residence over the preceding 5 years; the eligibility determination must be in hand before employment begins, and for Medicaid enrollment the screening must be within the last 5 years. Prints are retained — FDLE automatically reports new Florida arrests against them — and the employer must initiate a Clearinghouse renewal via the Clearinghouse Results Website before the 5-year expiration (the window opens 60 days out); miss it and the prints drop, the determination expires, and the employee re-fingerprints at a Livescan provider at higher cost. Since January 1, 2024, employers must also register with the Clearinghouse and report employment-status changes within 5 business days. One honest gap: neither the coverage policy nor AHCA\'s BA enrollment materials publish an OIG-LEIE/SAM.gov exclusion-screening cadence for BA staff — federal exclusion-screening obligations still apply, so set your own monthly-check policy rather than waiting for a state instruction.',
+          'Supervision floors: Florida sets no numeric ratio in rule. The coverage policy instead requires all BA services — including supervision of BCaBAs and RBTs — to follow "current practice standards as published by the Council of Autism Service Providers," as laid out in the supervision plan inside the approved behavior plan (which must name the authorized supervisors). The incorporated CASP standard is 1–2 hours of case supervision per 10 hours of direct treatment; the BACB\'s 5%-of-monthly-hours minimum for RBTs remains the floor underneath. Supervision is billable — the supervisor can be reimbursed for observing a supervisee implementing the plan, but the supervisee isn\'t paid for the same time period. At the plan level, the two MMA plans checked (Simply/Carelon and Humana) layer only administrative credentialing and portal registration on top — no evidence of employee-level screening beyond the AHCA Level 2/Clearinghouse baseline, which already covers every rendering practitioner through enrollment.',
+        ],
+        cites: [
+          { title: 'Florida Statutes s. 393.17 (behavior analyst certification)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/393.17' },
+          { title: 'BACB — Florida Certified Behavior Analysts (FL-CBAs)', url: 'https://www.bacb.com/flcba/' },
+          { title: 'Florida Medicaid Behavior Analysis Services Coverage Policy (Dec 2024, Rule 59G-4.125)', url: 'https://www.flrules.org/gateway/readRefFile.asp?refId=17525&filename=Florida%20Medicaid%20Behavior%20Analysis%20Services%20Coverage%20Policy.pdf' },
+          { title: 'AHCA — Enrolling as a Florida Medicaid Behavior Analysis Provider (webinar deck + FAQ)', url: 'https://ahca.myflorida.com/content/download/11448/file/Enrolling_as_a_Florida_Medicaid_Behavior_Analysis_Provider.pdf' },
+          { title: 'Florida Statutes s. 409.907 (Medicaid provider agreements; background screening)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/409.907' },
+          { title: 'Florida Statutes s. 435.04 (Level 2 screening standards)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/435.04' },
+          { title: 'Florida Statutes s. 435.12 (Care Provider Background Screening Clearinghouse)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/435.12' },
+          { title: 'AHCA — Clearinghouse Renewals', url: 'https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening/clearinghouse-renewals' },
+          { title: 'CASP — ABA Practice Guidelines for the Treatment of ASD (3.0)', url: 'https://assets-002.noviams.com/novi-file-uploads/casp/pdfs-and-documents/ASD_Guidelines/ABA_Practice_Guidelines_3_0-70a721a1.pdf' },
+          { title: 'BACB — RBT Handbook', url: 'https://www.bacb.com/wp-content/uploads/2022/01/RBTHandbook.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'MMA plan (or FFS)', desc: 'One of the nine plans, or unenrolled/FFS via Acentra — it decides the entire PA pathway.' },
@@ -86,6 +107,15 @@ export const floridaPayers: Record<string, PayerConfig> = {
       { title: 'Acuity News — Florida Medicaid ABA in 2026 (carve-in & rates)', url: 'https://acuity.news/regulation/florida-medicaid-aba-in-2026-managed-care-carve-in-a-refreshed-coverage-policy-and-where-ahca-rates-sit-across-the-southeast/' },
       { title: 'BellMedEx — Florida Medicaid ABA fee schedule rates 2026', url: 'https://bellmedex.com/florida-medicaid-applied-behavior-analysis-fee-schedule-rates/' },
       { title: 'Behavior Analysis Fee Schedule eff. 8/1/2022 (archived AHCA primary)', url: 'https://web.archive.org/web/20241006051746/https://fl.acentra.com/wp-content/uploads/sites/14/2024/03/BA_Services_2022_Fee_Schedule.pdf' },
+      { title: 'Florida Statutes s. 393.17 (behavior analyst certification)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/393.17' },
+      { title: 'BACB — Florida Certified Behavior Analysts (FL-CBAs)', url: 'https://www.bacb.com/flcba/' },
+      { title: 'AHCA — Enrolling as a Florida Medicaid Behavior Analysis Provider (webinar deck + FAQ)', url: 'https://ahca.myflorida.com/content/download/11448/file/Enrolling_as_a_Florida_Medicaid_Behavior_Analysis_Provider.pdf' },
+      { title: 'Florida Statutes s. 409.907 (Medicaid provider agreements; background screening)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/409.907' },
+      { title: 'Florida Statutes s. 435.04 (Level 2 screening standards)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/435.04' },
+      { title: 'Florida Statutes s. 435.12 (Care Provider Background Screening Clearinghouse)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/435.12' },
+      { title: 'AHCA — Clearinghouse Renewals', url: 'https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening/clearinghouse-renewals' },
+      { title: 'CASP — ABA Practice Guidelines for the Treatment of ASD (3.0)', url: 'https://assets-002.noviams.com/novi-file-uploads/casp/pdfs-and-documents/ASD_Guidelines/ABA_Practice_Guidelines_3_0-70a721a1.pdf' },
+      { title: 'BACB — RBT Handbook', url: 'https://www.bacb.com/wp-content/uploads/2022/01/RBTHandbook.pdf' },
     ],
     faq: [
       { q: 'Does Florida Medicaid require an autism diagnosis for ABA?', a: 'No. Eligibility is functional — behavior that impairs a major life activity, for recipients under 21. The gate is a referral from an independent physician or qualifying practitioner, including a physician\'s order for BA services and a Comprehensive Diagnostic Evaluation. Claims carry the most specific supporting diagnosis, but no F84.x code is required.' },

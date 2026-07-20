@@ -25,6 +25,7 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
       { label: 'Hour caps', value: '6 hrs/day; weekly cap conflicts — MSD text says 20, DHHS materials say up to 30' },
       { label: 'Rates (per 15 min)', value: '97151 $38.16 · 97153 $18.70 · 97155 $22.72 · 97156 $26.06 (eff. 8/1/2025)' },
       { label: 'Licensure', value: 'NE LBA license mandatory for Medicaid BCBAs since 1/1/2025' },
+      { label: 'Staff screening', value: 'No fingerprint tier for ABA enrollment — abuse-registry checks reach staff via the BACB\'s 180-day requirement, not a state mandate' },
     ],
     sections: [
       {
@@ -71,6 +72,26 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
           { title: 'Provider Bulletin 25-02 — ABA Service Definitions (eff. Feb 7, 2025)', url: 'https://dhhs.ne.gov/Medicaid%20Provider%20Bulletins/Provider%20Bulletin%2025-02.pdf' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'At the technician level, Nebraska is now a pure-BACB state. Under the treatment MSD, the only staff who may deliver 97153/97154 under a licensed clinician are RBTs with current BACB certification or Licensed assistant Behavior Analysts (LaBAs) — and PB 25-02 dropped the state\'s longstanding bachelor\'s-degree-plus-experience requirement for RBTs, leaving BACB certification plus individual Nebraska Medicaid enrollment (RBT is its own provider type, 85, on the fee schedule) as the whole state requirement. There is no state technician registry and no training hours beyond the BACB floor — which itself requires each RBT applicant to pass both a criminal background check and an abuse-registry check within 180 days of applying, attested by a certificant.',
+          'Nebraska\'s enrollment screening is lighter on ABA than agencies often assume. Provider types are risk-tiered per 42 CFR 455: BCBA (type 83) screens at Moderate risk (federal database checks plus unannounced site visits), while BCaBA (84) and RBT (85) screen at Limited — no fingerprint-based criminal background check at enrollment unless a trigger (payment suspension for a credible fraud allegation, a $1,500+ overpayment, an exclusion within 10 years) escalates the provider to High risk. The registry checks that trip up multi-line agencies bind elsewhere: the annual Child/Adult Abuse and Neglect Central Registry, Sex Offender Registry, and NDEN checks attach to individual HCBS (waiver/PAS) and NEMT providers, not ABA provider types 83–85 — so for a standard ABA practice, abuse-registry screening reaches staff through the BACB\'s own 180-day check rather than a state mandate. Two caveats: DHHS states that enrolled providers "should also be screening their employees based on the services they provide," and an agency that also delivers waiver service lines inherits the HCBS checks for those staff.',
+          'Supervision is where the staffing math binds. Since January 1, 2025, every Medicaid-serving BCBA must hold a Nebraska LBA license and every BCaBA a LaBA license under the Behavior Analyst Practice Act (Neb. Rev. Stat. §§ 38-4401 to 38-4414, with BACB certification as the licensure floor) — note the practice-act regulations (172 NAC 10) were still in draft on the DHHS licensure page, so confirm current application mechanics with the Licensure Unit. The MSD\'s floors: direct observation of each technician for no less than 10% of weekly direct-service hours, documented in progress notes (PB 25-02 describes required supervision as 10–20% — the same kind of document conflict as the hour caps, so staff to the higher reading for margin), at least 1 hour per month of in-person observation of each technician or LaBA, and no more than 24 technicians per LBA. Plan-level extras: since January 1, 2025 all three Heritage Health MCOs run credentialing through a single CVO, Verisys; Nebraska Total Care adds a credentialing application (or CAQH authorization), malpractice face sheet, five-year work history, cultural-competency training evidence, and re-credentialing at least every 36 months; and Optum (UHC\'s ABA network) layers staff-level rules on groups — supervising BCBAs with BACB supervisory certification, RBT (or equivalent national) certification for technicians, and $1M/$3M professional liability coverage.',
+        ],
+        cites: [
+          { title: 'ABA Medicaid Service Definition (treatment MSD)', url: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Applied%20Behavior%20Analysis.pdf' },
+          { title: 'Provider Bulletin 25-02 — ABA Service Definitions (eff. Feb 7, 2025)', url: 'https://dhhs.ne.gov/Medicaid%20Provider%20Bulletins/Provider%20Bulletin%2025-02.pdf' },
+          { title: 'Medicaid Requirements for Substance Use Disorder and Applied Behavior Analysis Services (umbrella staffing document)', url: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Medicaid%20Requirements%20for%20Substance%20Use%20Disorder%20and%20Applied%20Behavior%20Analysis%20Services.pdf' },
+          { title: 'BACB RBT Handbook — eligibility, background check + abuse-registry check', url: 'https://www.bacb.com/rbt-handbook' },
+          { title: 'DHHS Provider Screening Risk Levels (updated 3/22/2024)', url: 'https://dhhs.ne.gov/Documents/Provider%20Screening%20Risk%20Levels.pdf' },
+          { title: 'DHHS — Medicaid Provider Screening and Enrollment Requirements', url: 'https://dhhs.ne.gov/Pages/Medicaid-Provider-Screening-and-Enrollment-Requirements.aspx' },
+          { title: 'Nebraska Medicaid Provider Screening and Enrollment 2024 Newsletter (Maximus — registry checks for individual HCBS/NEMT providers)', url: 'https://www.nebraskamedicaidproviderenrollment.com/Documents/MaximusNewsletter2024.pdf' },
+          { title: 'NE DHHS Licensure — Behavior Analyst (Behavior Analyst Practice Act; 172 NAC 10 draft)', url: 'https://dhhs.ne.gov/licensure/Pages/Behavior-Analyst.aspx' },
+          { title: 'Nebraska Total Care — Contracting and Credentialing (Verisys CVO eff. 1/1/2025)', url: 'https://www.nebraskatotalcare.com/providers/credentialing.html' },
+          { title: 'Optum — NE Heritage Health Medicaid Autism/ABA Program provider training (NE_4556)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/neaba/NE_4556_ABA-HeritageTrain.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'Heritage Health MCO', desc: 'Nebraska Total Care, Molina, or UnitedHealthcare Community Plan — same state MSD rules, very different submission machinery.' },
@@ -87,6 +108,14 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
       { title: 'Health Plan Advisory 25-08 — ABA Rates (to Heritage Health MCOs)', url: 'https://dhhs.ne.gov/Guidance%20Docs/Health%20Plan%20Advisory%2025-08%20-%20Applied%20Behavior%20Analysis%20Rates.pdf' },
       { title: 'DHHS "Applied Behavior Analysis Facts" page', url: 'https://dhhs.ne.gov/Pages/Applied-Behavior-Analysis.aspx' },
       { title: 'SFY27 Mental Health & Substance Use Fee Schedule (July 2026)', url: 'https://dhhs.ne.gov/Medicaid%20Practitioner%20Fee%20Schedules/MHSUD%20SFY27%20Fee%20Schedule.xlsx' },
+      { title: 'Medicaid Requirements for Substance Use Disorder and Applied Behavior Analysis Services (umbrella staffing document)', url: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Medicaid%20Requirements%20for%20Substance%20Use%20Disorder%20and%20Applied%20Behavior%20Analysis%20Services.pdf' },
+      { title: 'BACB RBT Handbook — eligibility, background check + abuse-registry check', url: 'https://www.bacb.com/rbt-handbook' },
+      { title: 'DHHS Provider Screening Risk Levels (updated 3/22/2024)', url: 'https://dhhs.ne.gov/Documents/Provider%20Screening%20Risk%20Levels.pdf' },
+      { title: 'DHHS — Medicaid Provider Screening and Enrollment Requirements', url: 'https://dhhs.ne.gov/Pages/Medicaid-Provider-Screening-and-Enrollment-Requirements.aspx' },
+      { title: 'Nebraska Medicaid Provider Screening and Enrollment 2024 Newsletter (Maximus — registry checks for individual HCBS/NEMT providers)', url: 'https://www.nebraskamedicaidproviderenrollment.com/Documents/MaximusNewsletter2024.pdf' },
+      { title: 'NE DHHS Licensure — Behavior Analyst (Behavior Analyst Practice Act; 172 NAC 10 draft)', url: 'https://dhhs.ne.gov/licensure/Pages/Behavior-Analyst.aspx' },
+      { title: 'Nebraska Total Care — Contracting and Credentialing (Verisys CVO eff. 1/1/2025)', url: 'https://www.nebraskatotalcare.com/providers/credentialing.html' },
+      { title: 'Optum — NE Heritage Health Medicaid Autism/ABA Program provider training (NE_4556)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/neaba/NE_4556_ABA-HeritageTrain.pdf' },
     ],
     faq: [
       { q: 'Does Nebraska Medicaid cover ABA therapy?', a: 'Yes — for members under 21 through EPSDT, administered entirely by the three Heritage Health MCOs under the state\'s ABA Medicaid Service Definitions (effective February 2025). Prior authorization runs through the member\'s MCO.' },

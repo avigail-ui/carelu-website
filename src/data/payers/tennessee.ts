@@ -24,6 +24,7 @@ export const tennesseePayers: Record<string, PayerConfig> = {
       { label: 'Licensure', value: 'Direct ABA requires a TN Licensed Behavior Analyst (LBA)' },
       { label: 'Administered by', value: 'BlueCare, UnitedHealthcare Community Plan, Wellpoint (all MCO)' },
       { label: 'Rates', value: 'Not published — negotiated in each MCO\'s provider contracts' },
+      { label: 'Staff screening', value: 'BACB checks for RBTs; LTSS/Katie Beckett staff: criminal check within 30 days pre-start + 6 registries, monthly SAM/LEIE/TTPL' },
     ],
     sections: [
       {
@@ -62,6 +63,21 @@ export const tennesseePayers: Record<string, PayerConfig> = {
           { title: 'CSG South — Comparison of Medicaid Reimbursement for ABA Individual Services (Feb 2026)', url: 'https://csgsouth.org/wp-content/uploads/HSPS-Converted-IR__Comparison-of-Medicaid-Reimbursement-for-ABA-Individual-Services.pdf' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Tennessee does not license or register behavior technicians — the tri-MCO program description is the binding document, and it requires that RBTs and their supervising BCBAs "comply with ALL of the current BACB requirements for credentialing, ethics, competency, supervision, and maintenance of the RBT credential." Unlicensed staff deliver ABA under the extended authority and direction of a TN LBA and may not represent themselves as behavior analysts. So the BACB floor is the operative technician standard: 18+, high-school education, the 40-hour training and initial competency assessment (updated curriculum from January 2026), and — within 180 days of paying for the RBT application — a criminal background check plus an abuse-registry check "comparable to those required of home health aides, child care professionals, and teachers," attested by the RBT supervisor or employer. Tennessee sets no numeric supervision ratio of its own, so the BACB minimum governs: 5% of monthly service hours supervised, with two face-to-face contacts per month, at least one individual.',
+          'State-mandated screening enters through TennCare\'s Aligned Background Check Protocol (effective July 1, 2024), and its scope matters: it formally binds LTSS providers — 1915(c) waiver, Katie Beckett, ECF CHOICES, and CHOICES. For those programs, every employee, subcontractor, or volunteer with direct member contact needs a Title 52-compliant criminal check (TBI fingerprint check, or a state-licensed private investigation company as an alternative; nationwide check if the hire has lived in TN a year or less) completed within 30 days before their first day of direct contact, plus six registry clearances: the TN Elderly/Vulnerable Abuse Registry, National Sex Offender Registry, SAM, OIG LEIE, the TennCare Terminated Provider List, and TN FOIL. A hit on the first five is automatically disqualifying; convictions and FOIL hits require a documented individualized assessment — blanket no-felony policies are prohibited. SAM, LEIE, and TTPL must then be rechecked monthly, and TennCare can recoup payments for services rendered by staff whose checks weren\'t compliant. An ABA agency serving only standard EPSDT members inherits employee screening chiefly through the BACB requirement and its MCO contract terms — but any agency serving Katie Beckett children falls squarely under the protocol, so most practices should simply run it for everyone.',
+          'At the supervisor level, direct ABA requires a Tennessee Licensed Behavior Analyst (LBA) — a BCBA or BCBA-D credential is the qualification basis — through the Applied Behavior Analyst Licensing Committee. Application mechanics under the May 2025-revised Rules 1180-05: minimum age 21, a vendor-submitted criminal background check sent directly to the Committee, two good-moral-character letters, and fees of $50 (application), $40 (license), and $150 biennial renewal, which also requires proof of current BACB certification plus 3 CE hours on cultural diversity. Assistant-level LABAs (BCaBA-based) may practice only under LBA supervision, and practicing without a license draws $500–$1,000 civil penalties. One carve-out worth knowing: a licensed mental health clinician who can attest to BACB and MCO standards may provide direct ABA without an LBA license if practicing within a provider group, not independently. Each MCO also independently verifies BCBA credentials at network enrollment, requires an annual ABA quality-assurance attestation — and does not separately reimburse non-client-specific administrative supervision or technician training. The rules and program description publish no TB-test, CPR, or crisis-training mandate for ABA staff (only a crisis plan per BACB best practices); confirm any extra health-screening requirements with your MCO contract.',
+        ],
+        cites: [
+          { title: 'ABA Provider Requirements & Program Description — TennCare MCOs (rev. 06/2024)', url: 'https://www.provider.wellpoint.com/docs/gpp/TN_WLP_CAID_BH_ABARequirements.pdf' },
+          { title: 'TennCare Aligned Background Check Protocol (eff. July 1, 2024)', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/AlignedBackgroundCheckProtocol.pdf' },
+          { title: 'Rules of the TN Applied Behavior Analyst Licensing Committee, Ch. 1180-05 (rev. May 2025)', url: 'https://publications.tnsosfiles.com/rules/1180/1180-05.20250507.pdf' },
+          { title: 'BACB — Meeting RBT Requirements During the 2026 Transition (updated 08/2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+          { title: 'BACB RBT Handbook', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230622-a.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'TennCare MCO', desc: 'BlueCare, UnitedHealthcare, or Wellpoint — clinically identical program, but the portal, fax, and mechanics differ per plan.' },
@@ -76,6 +92,10 @@ export const tennesseePayers: Record<string, PayerConfig> = {
       { title: 'Universal Request for ABA form (all 3 MCOs, Jan 2026)', url: 'https://www.provider.wellpoint.com/docs/gpp/TN_WLP_CAID_BH_RequestABA.pdf' },
       { title: 'Tri-MCO ABA Overview of Updates (Sept 2024)', url: 'https://www.provider.wellpoint.com/docs/gpp/TN_WLP_CAID_BH_ABAOverviewofUpdates.pdf' },
       { title: 'CSG South — Medicaid ABA reimbursement comparison (Feb 2026)', url: 'https://csgsouth.org/wp-content/uploads/HSPS-Converted-IR__Comparison-of-Medicaid-Reimbursement-for-ABA-Individual-Services.pdf' },
+      { title: 'TennCare Aligned Background Check Protocol (eff. July 1, 2024)', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/AlignedBackgroundCheckProtocol.pdf' },
+      { title: 'Rules of the TN Applied Behavior Analyst Licensing Committee, Ch. 1180-05 (rev. May 2025)', url: 'https://publications.tnsosfiles.com/rules/1180/1180-05.20250507.pdf' },
+      { title: 'BACB — Meeting RBT Requirements During the 2026 Transition (updated 08/2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+      { title: 'BACB RBT Handbook', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230622-a.pdf' },
     ],
     faq: [
       { q: 'Does TennCare cover ABA therapy?', a: 'Yes — for members up to age 21 through the EPSDT benefit, with no annual benefit limit and no fixed hour cap (hours are justified clinically). Coverage requires prior authorization and medical necessity, through the member\'s MCO.' },

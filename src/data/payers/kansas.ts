@@ -25,6 +25,7 @@ export const kansasPayers: Record<string, PayerConfig> = {
       { label: 'Administered by', value: 'Sunflower, UHC Community Plan, Healthy Blue (all MCO, contracts 2025–2027)' },
       { label: 'Licensure', value: 'Kansas LBA/LaBA (BSRB) since 7/1/2016; every provider needs their own KMAP ID' },
       { label: 'Rates', value: 'Not reliably published — KMAP interactive lookup is the source of truth (last verified rate action 4/1/2019)' },
+      { label: 'Staff screening', value: 'Five-part enrollment check: KBI + APS/CPS registries + Nurse Aide Registry + motor-vehicle screen (every CCTS/IIS applicant)' },
     ],
     sections: [
       {
@@ -71,6 +72,22 @@ export const kansasPayers: Record<string, PayerConfig> = {
           { title: 'KMAP Bulletin 22128 — BH rate increase 7/1/2022 (9715x not included)', url: 'https://www.sunflowerhealthplan.com/newsroom/kmap-221280.html' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Kansas is one of the few states where RBT certification is genuinely optional for Medicaid work. Since April 3, 2020, IIS technicians (KMAP type 11, specialty 404, billing 97153) qualify one of two ways: hold an RBT certificate, or complete the state-equivalent pathway — age 18+, high-school diploma or equivalent, 40 hours of ABA training including 8 hours of supervised intervention work and 3 hours of ethics (plus at least 1 hour each in criterion-referenced assessment, social skills, parent training, and program development), an initial competency assessment, and an acceptance letter from the KDADS HCBS Autism Program Manager or HCBS Director. That letter is individually issued, so it adds onboarding lead time; either track requires annual training to stay qualified. Technicians don\'t need a BSRB license — K.S.A. 65-7503 expressly exempts autism specialists and IIS providers under the state autism program from behavior analyst licensure. If you hire on the RBT track, the BACB\'s own floor still applies: the 40-hour training completed over 5–180 days, a competency assessment within 90 days of applying, and both a criminal background check and an abuse-registry check passed within 180 days of application payment.',
+          'The state layer is a five-part enrollment screening package. Under the same April 2020 policy, every individually enrolling CCTS and IIS applicant must demonstrate a clean background across checks of Kansas Bureau of Investigation (KBI) records, the Adult Protective Services and Child Protective Services registries, the Nurse Aide Registry, and a motor-vehicle screen — that last one is a Kansas oddity, so collect driving records at onboarding. The bulletins don\'t publish a re-check cadence, and the KMAP HCBS Autism manual (which reportedly also requires proof of background checks and insurance at enrollment) sits on a portal we couldn\'t reach during research — confirm current screening details with KMAP provider enrollment directly. Layer federal exclusion screening on top regardless: check every hire against the HHS-OIG LEIE (and SAM.gov) at hire and monthly, since employing an excluded individual draws civil monetary penalties.',
+          'At the supervisor tier, licensure has been mandatory since July 1, 2016: practicing ABA in Kansas requires a Licensed Behavior Analyst — or a Licensed Assistant Behavior Analyst under LBA supervision — through the Behavioral Sciences Regulatory Board under K.S.A. 65-7501 et seq. CCTS enrollment (type 11, specialty 403) takes a BSRB-licensed BCBA, BCBA-D, or BCaBA, or — another Kansas-specific alternative — a master\'s-level professional with documented ASD experience, state-approved training, and a KDADS letter. IIS technicians must work under the direction of a BCBA or qualified CCTS practitioner, but no Kansas-specific observation percentage or tech-per-supervisor ratio appears in any accessible primary source — for RBT-certified staff, the BACB\'s 5%-of-hours monthly supervision minimum (two face-to-face contacts per month, one individual, one observing service delivery) is the operative floor. The BSRB\'s own site was unreachable during our research, so confirm renewal and CE specifics with the board. Plan-level, Optum/UHC adds the real extras: KanCare ABA providers must hold a KMAP ID, carry $1M-per-occurrence / $1M-aggregate professional liability coverage, and contract separately with Optum\'s Kansas ABA network — and KMAP itself warns that MCO implementation dates can lag state policy, so verify each MCO\'s rollout individually. The MCO documents we reviewed add no staff-level background checks beyond the state baseline.',
+        ],
+        cites: [
+          { title: 'KMAP Bulletin 20147 — Autism CCTS & IIS provider qualification changes (eff. 4/3/2020)', url: 'https://www.sunflowerhealthplan.com/newsroom/kmap-20147.html' },
+          { title: 'KMAP Bulletin 21013 — CCTS/IIS provider enrollment clarification', url: 'https://www.sunflowerhealthplan.com/newsroom/kmap-21013.html' },
+          { title: 'K.S.A. 65-7503 — behavior analyst licensure required; exemptions', url: 'https://www.ksrevisor.gov/statutes/chapters/ch65/065_075_0003.html' },
+          { title: 'BACB RBT Handbook (updated 06/2026)', url: 'https://www.bacb.com/rbt-handbook' },
+          { title: 'HHS-OIG Exclusions Program (LEIE)', url: 'https://oig.hhs.gov/exclusions/' },
+          { title: 'Optum/UHC — KanCare Autism/ABA Program provider training (BH00698_10292024)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ksABA/ks-abaTraining.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'KanCare MCO', desc: 'Sunflower, UnitedHealthcare, or Healthy Blue — same CCTS/IIS baseline, different PA machinery. Anything saying "Aetna Better Health" is stale (moved to Healthy Blue 1/1/2025).' },
@@ -87,6 +104,12 @@ export const kansasPayers: Record<string, PayerConfig> = {
       { title: 'UHC/Optum — KanCare ASD getting-started guide (BH00567_10102024)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ksABA/ksHowToAuth.pdf' },
       { title: 'KDHE — KanCare MCO contract awards 2025–2027', url: 'https://www.kdhe.ks.gov/CivicAlerts.aspx?AID=1104' },
       { title: 'KMAP fee schedules — interactive lookup (source of truth for current rates)', url: 'https://portal.kmap-state-ks.us/PublicPage/ProviderPricing/FeeSchedules' },
+      { title: 'KMAP Bulletin 20147 — Autism CCTS & IIS provider qualification changes (eff. 4/3/2020)', url: 'https://www.sunflowerhealthplan.com/newsroom/kmap-20147.html' },
+      { title: 'KMAP Bulletin 21013 — CCTS/IIS provider enrollment clarification', url: 'https://www.sunflowerhealthplan.com/newsroom/kmap-21013.html' },
+      { title: 'K.S.A. 65-7503 — behavior analyst licensure required; exemptions', url: 'https://www.ksrevisor.gov/statutes/chapters/ch65/065_075_0003.html' },
+      { title: 'BACB RBT Handbook (updated 06/2026)', url: 'https://www.bacb.com/rbt-handbook' },
+      { title: 'HHS-OIG Exclusions Program (LEIE)', url: 'https://oig.hhs.gov/exclusions/' },
+      { title: 'Optum/UHC — KanCare Autism/ABA Program provider training (BH00698_10292024)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ksABA/ks-abaTraining.pdf' },
     ],
     faq: [
       { q: 'Does KanCare (Kansas Medicaid) cover ABA therapy?', a: 'Yes — but Kansas doesn\'t label it ABA. It\'s covered under EPSDT for members age 20 and under as two services: CCTS (the BCBA tier, soft limit 50 hours/year) and IIS (the technician 1:1 tier, initially authorized up to 25 hours/week, more on medical necessity), with prior authorization through the member\'s MCO.' },

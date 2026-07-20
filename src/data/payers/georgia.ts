@@ -25,6 +25,7 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { label: 'Middle-income path', value: 'Katie Beckett waiver (income ignored)' },
       { label: 'Managed care', value: 'CMOs administer PA under their own aligned policies' },
       { label: 'Diagnosis recency', value: 'Eval instruments within 5 years; outside assessments within 6 months' },
+      { label: 'Staff screening', value: 'GCIC+FBI fingerprints for licensed analysts; BACB 180-day check is the only technician-level screen' },
     ],
     sections: [
       {
@@ -61,6 +62,22 @@ export const georgiaPayers: Record<string, PayerConfig> = {
           'Georgia reimburses CPT 97151–97158, 0362T, and 0373T in 15-minute units, with practitioner-level modifiers (U1–U5) and setting modifiers — U6 in-clinic, U7 out-of-clinic at a higher rate, GT telehealth. Georgia is unusual in paying different rates by setting, which makes the family\'s preferred setting (home vs. center) an intake question with direct revenue implications. Telehealth is billable only if the rendering provider is in Georgia or within 50 miles of the border.',
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        cites: [
+          { title: 'Georgia HB 412 (2022) — O.C.G.A. Title 43, Ch. 7A', url: 'https://gov.georgia.gov/document/2022-signed-legislation/hb-412/download' },
+          { title: 'Ga. Comp. R. & Regs. 75-5-.01 (licensure by certification)', url: 'https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-75-5-.01' },
+          { title: 'GA licensure application deadlines (secondary source)', url: 'https://www.appliedbehavioranalysisedu.org/georgia/' },
+          { title: 'GA DCH — Part II ASD Policy Manual', url: 'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download' },
+          { title: 'BACB RBT Handbook', url: 'https://www.bacb.com/rbt-handbook' },
+          { title: 'Peach State GA.CP.BH.504 (ASD services)', url: 'https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf' },
+        ],
+        body: [
+          'Georgia licensure is new and the deadlines have already passed. HB 412 created O.C.G.A. Title 43, Chapter 7A effective July 1, 2023: behavior analysts and assistant behavior analysts must now be licensed by the Georgia Behavior Analyst Licensing Board (under the Secretary of State), and unlicensed practice carries a $1,000 fine per violation. Every license applicant must clear a GCIC + FBI fingerprint record check at their own expense — filing the application is express consent. The Board required behavior analysts to file complete applications by September 30, 2025 and assistants by March 31, 2026; anyone who missed those dates may be treated as practicing without a license. (Sourcing caveat: those deadlines are confirmed on secondary sources — the Board\'s own pages on sos.ga.gov block automated retrieval — so verify current status with the Board directly.) Licenses run two years and require maintaining active BCBA/BCaBA certification.',
+          'The Medicaid staffing structure runs through the QHCP. Only a licensed physician, psychologist, BCBA-D, or BCBA can be the enrolled QHCP, and each may supervise up to six BCaBAs and RBTs at any point in time — a hard ratio that caps how many technicians one BCBA can carry. A BCaBA must be supervised by a BCBA/BCBA-D but may in turn supervise RBTs; an RBT can never be the QHCP. Every direct-care professional (RBTs included) must attest to one year of experience serving youth with ASD on the Department\'s Attestation form, which must be updated and resubmitted within two weeks of any staffing change — a compliance chore intake and HR should share. Supervision doesn\'t require the supervisor on site, but both supervisor and supervisee must keep contemporaneous records of each session\'s date, duration, type, and content; discrepancies subject the associated claims to recoupment.',
+          'At the technician level, Georgia is notably light on state screening: technicians are exempt from licensure (they must use nonprofessional titles like "behavior technician"), and neither the statute nor the publicly posted ASD manual imposes a state background-check, fingerprint, or registry mandate on them — the operative screen is the BACB\'s own: a criminal background check plus abuse-registry check within 180 days before the RBT application, with 5%-of-hours monthly supervision and at least two face-to-face contacts per month. Plan-level extras do bind: Peach State requires protocol modification (BCBA-level case direction) at ≥2 hours/week or 10% of direct service hours (whichever is greater), and 0373T sessions must include a BCBA onsite and immediately available. One honest gap: the ASD manual publicly posted is the January 2018 version, and current quarterly manuals plus enrollment-screening detail live inside GAMMIS, which blocks public access — confirm staff-level exclusion-screening expectations (OIG LEIE / SAM.gov cadence) with DCH provider enrollment.',
+        ],
+      },
     ],
     collect: [
       { title: 'Medicaid ID + CMO', desc: 'Which plan the child is on (CareSource, Peach State, Amerigroup, or FFS) — it decides the whole PA path.' },
@@ -76,6 +93,10 @@ export const georgiaPayers: Record<string, PayerConfig> = {
       { title: 'GA DCH — Katie Beckett / TEFRA', url: 'https://medicaid.georgia.gov/programs/all-programs/tefrakatie-beckett' },
       { title: 'CareSource GA MCD-MM-0212 (ABA policy)', url: 'https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101' },
       { title: 'Peach State GA.CP.BH.504 (ASD services)', url: 'https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf' },
+      { title: 'Georgia HB 412 (2022) — O.C.G.A. Title 43, Ch. 7A', url: 'https://gov.georgia.gov/document/2022-signed-legislation/hb-412/download' },
+      { title: 'Ga. Comp. R. & Regs. 75-5-.01 (licensure by certification)', url: 'https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-75-5-.01' },
+      { title: 'GA licensure application deadlines (secondary source)', url: 'https://www.appliedbehavioranalysisedu.org/georgia/' },
+      { title: 'BACB RBT Handbook', url: 'https://www.bacb.com/rbt-handbook' },
     ],
     faq: [
       { q: 'Does Georgia Medicaid cover ABA therapy?', a: 'Yes — for members under age 21 with a documented DSM-5 ASD diagnosis, under EPSDT, effective since January 2018. All services require prior authorization.' },

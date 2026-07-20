@@ -25,6 +25,7 @@ export const marylandPayers: Record<string, PayerConfig> = {
       { label: 'Diagnosis recency', value: 'No fixed expiry — but a Clinical Confirmation Form may be required, depending on age at diagnosis and time since' },
       { label: 'Rates (per 15 min, eff. 2/1/2026)', value: '97153: $24.41 BCBA · $20.91 BCaBA · $19.17 RBT/BT; 97151/97155: $38.34' },
       { label: 'Portals', value: 'Carelon ProviderConnect (auths) · Availity Essentials (claims)' },
+      { label: 'Staff screening', value: 'CJIS background check for every enrolled individual (via ePREP) + OIG exclusion checks of all staff every 30 days' },
     ],
     sections: [
       {
@@ -69,6 +70,23 @@ export const marylandPayers: Record<string, PayerConfig> = {
           { title: 'MDH ABA Provider Manual (eff. Feb 1, 2026)', url: 'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Maryland\'s defining staffing rule: every individual who renders ABA — psychologist, BCBA-D, BCBA, BCaBA, RBT, and even not-yet-certified BTs — enrolls with Maryland Medicaid individually through ePREP, on top of the group\'s own enrollment. The technician floor is codified in state regulation, not just BACB policy: under COMAR 10.09.28.02, an RBT must be 18 or older, hold current BACB registration, hold a high school diploma or national equivalent (a copy attaches to the ePREP application), and work under a documented supervisory relationship with a licensed psychologist, licensed BCBA-D, or licensed BCBA. There is no separate Maryland RBT license or state technician registry — the binding credential is BACB certification plus individual Medicaid enrollment. The pre-certification BT on-ramp (specialty code 325, license number \'BT\', 90-day expiration) covered above has one hiring trap: the 90-day grace period attaches to the person, not your company — a BT who used part of it at a prior employer doesn\'t restart the clock with you. Underneath all of this sits the BACB\'s own floor: RBT applicants must pass a criminal background check and abuse-registry check within 180 days of paying for the certification application, confirmed by the RBT Supervisor or Requirements Coordinator, and effective January 1, 2026 the 40-hour training must follow the updated 2026 curriculum, delivered by active BCBAs/BCaBAs who\'ve completed the BACB\'s 8-hour supervision training.',
+          'State screening runs through two instruments, and both are yours to manage. First, the CJIS criminal background check: COMAR 10.09.28.02 makes a completed Criminal Justice Information System background check a condition of participation for the group and each enrolled individual — it\'s completed as part of ePREP enrollment, using the CJIS Private Party Petition form from the Department of Public Safety and Correctional Services (DPSCS). There\'s no separate fingerprint clearance card system for ABA staff; fingerprint-based CHRC obligations attach to licensure applicants (behavior analysts), while unlicensed staff clear through Medicaid enrollment. Second, ongoing exclusion screening: the provider manual makes agencies responsible for OIG exclusion checks of ALL staff who touch the Medicaid program — direct service or administrative support — every 30 days, with documentation maintained; failure to screen is subject to disciplinary action. Enrolled providers must also be sanction-free — no current sanctions or disciplinary actions from licensing authorities, Medicare, Maryland Medical Assistance, or other federally funded programs.',
+          'At the supervisor tier, Maryland has required licensure since January 2015: anyone practicing behavior analysis needs a Licensed Behavior Analyst (LBA) license from the Board of Professional Counselors and Therapists — current BCBA/BCBA-D certification, a master\'s or higher from a BACB-accredited/approved program, and a criminal history records check obtained before applying; the license renews every 2 years with a fresh CHRC at each renewal (and the board moves to online-only applications June 20, 2026). For Medicaid, supervisors need both the LBA license and current BACB certification (a licensed psychologist with the ABA attestation is the alternative). The supervision floors that bind your staffing model: direction of a technician (BCaBA/RBT/BT) must equal at least 10% of the technician\'s direct-service hours AND be performed in person at least 25% of the time (COMAR 10.09.28.04) — with remote direction requiring MDH or BHASO approval, and 0362T requiring the supervisor onsite. The BACB\'s 5%-monthly RBT supervision minimum (two face-to-face contacts, one individual) layers underneath. One structural mercy: because ABA runs through a single BHASO, there is no plan-by-plan credentialing — enroll each person via ePREP (applications reviewed by MDH, not the ASO), then register once with Carelon for ProviderConnect/Availity access; Carelon publishes no separate staff-credentialing standard beyond the state\'s, though it does require sentinel-event reporting (including any sexual activity between a staff member and a participant) within 24 hours.',
+        ],
+        cites: [
+          { title: 'COMAR 10.09.28.02 — Provider Qualifications and Conditions for Participation', url: 'https://www.law.cornell.edu/regulations/maryland/COMAR-10-09-28-02' },
+          { title: 'MDH ABA Provider Manual (eff. Feb 1, 2026)', url: 'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf' },
+          { title: 'COMAR 10.09.28.04 — Covered Services (direction of a technician)', url: 'http://mdrules.elaws.us/comar/10.09.28.04' },
+          { title: 'MDH Board of Professional Counselors & Therapists — Behavior Analyst License', url: 'https://health.maryland.gov/bopc/pages/analysts.aspx' },
+          { title: 'COMAR 10.58.16.06 — Renewal (behavior analysts)', url: 'https://regs.maryland.gov/us/md/exec/comar/10.58.16.06' },
+          { title: 'BACB RBT Handbook', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230622-a.pdf' },
+          { title: 'BACB — RBT Requirements During the 2026 Transition (upd. 08/2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
+        ],
+      },
     ],
     collect: [
       { title: 'Medicaid eligibility — not the MCO', desc: 'Verify Medical Assistance eligibility and route everything to Carelon; the HealthChoice MCO on the card is irrelevant for ABA.' },
@@ -84,6 +102,12 @@ export const marylandPayers: Record<string, PayerConfig> = {
       { title: 'MDH HealthChoice — Behavioral Health Coverage (carve-out)', url: 'https://health.maryland.gov/mmcp/healthchoice/Pages/BehavioralHealthCoverage.aspx' },
       { title: 'MDH HealthChoice home page', url: 'https://health.maryland.gov/mmcp/healthchoice/pages/home.aspx' },
       { title: 'Carelon Behavioral Health of Maryland — ABA providers', url: 'https://maryland.carelonbh.com/aba-providers/' },
+      { title: 'COMAR 10.09.28.02 — Provider Qualifications and Conditions for Participation', url: 'https://www.law.cornell.edu/regulations/maryland/COMAR-10-09-28-02' },
+      { title: 'COMAR 10.09.28.04 — Covered Services (direction of a technician)', url: 'http://mdrules.elaws.us/comar/10.09.28.04' },
+      { title: 'MDH Board of Professional Counselors & Therapists — Behavior Analyst License', url: 'https://health.maryland.gov/bopc/pages/analysts.aspx' },
+      { title: 'COMAR 10.58.16.06 — Renewal (behavior analysts)', url: 'https://regs.maryland.gov/us/md/exec/comar/10.58.16.06' },
+      { title: 'BACB RBT Handbook', url: 'https://assets.bacb.com/wp-content/uploads/2022/01/RBTHandbook_230622-a.pdf' },
+      { title: 'BACB — RBT Requirements During the 2026 Transition (upd. 08/2025)', url: 'https://www.bacb.com/wp-content/uploads/2025/07/RBT-2026-Requirements_250723-a.pdf' },
     ],
     faq: [
       { q: 'Does Maryland Medicaid cover ABA therapy?', a: 'Yes — for children under 21 with a confirmed ASD diagnosis, under the EPSDT benefit (COMAR 10.09.28). Every ABA service requires prior authorization from Carelon Behavioral Health, the state\'s BHASO, with authorizations running up to 180 days.' },

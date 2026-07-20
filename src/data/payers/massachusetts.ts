@@ -25,6 +25,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min)', value: '97153 $16.37 · 97151/97155/97156 $30.73 · 97154 $13.91 (101 CMR 358)' },
       { label: 'Administered by', value: 'Six BH administrators: MBHP, Carelon (WellSense/Fallon), Tufts internal UM, Optum (MGB), plus Fallon & HNE as plans' },
       { label: 'Supervision watch', value: 'CY2024 audit enforces a 1:10 97155:97153 floor — recoupment letters issued Feb–Mar 2026' },
+      { label: 'Staff screening', value: 'RBT not required (3 BT pathways); plan-level BRC + 262 CMR 8.04 employer checks — no blanket state CORI mandate' },
     ],
     sections: [
       {
@@ -68,6 +69,22 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
           { title: 'MassHealth ABA rate freeze — 101 CMR 358 re-adoption (Acuity News)', url: 'https://acuity.news/regulation/masshealth-aba-reimbursement-rate-freeze-101-cmr-358/' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Massachusetts does not require RBT certification for technicians — and has no state registry or license for them. Under the Carelon/MBHP ABA performance specification (updated February 15, 2026), a Behavior Technician must be 18 or older, work under the direct supervision of a Licensed Applied Behavior Analyst (LABA), and meet one of three pathways: a high school diploma or GED plus 12 months\' experience with people with developmental disabilities, children, or families; an associate\'s degree in a human, social, or educational services discipline plus 6 months\' experience; or BACB RBT certification plus 3 months\' experience. That first pathway makes the MassHealth hiring pool meaningfully wider than in RBT-mandate states. Techs hired via the RBT route still carry the BACB\'s own floor: the 40-hour training, competency assessment, exam ($65 BACB + $45 Pearson VUE in 2026), and — often missed — a BACB-required criminal background check plus abuse-registry check passed no more than 180 days before the application, confirmed by an independent Attesting Certificant.',
+          'On background checks, know where the obligation actually comes from: Massachusetts CORI checks are not state-mandated for MassHealth ABA providers. 101 CMR 15.03 requires CORI only for EOHHS, its agencies, and vendor programs, and expressly states that MassHealth providers are not subject to it solely by virtue of their status (an agency that also holds a DDS/DCF purchase-of-service contract does fall within the mandatory scope, and EOHHS retains discretion to consider CORI in participation decisions). The binding checks sit elsewhere: the Carelon/MBHP spec requires the ABA provider to ensure all staff have received a background record check (BRC); 262 CMR 8.04 obligates LABAs who employ unlicensed paraprofessionals to conduct criminal background checks and makes them professionally responsible for those staff\'s clinical oversight; and 42 CFR 455.436 federal exclusion screening (OIG LEIE and SAM, checked at enrollment and no less than monthly) is the floor most agencies mirror with monthly staff screening.',
+          'Supervisors must hold the state license — the MBHP spec requires the supervising analyst to be licensed per 262 CMR 10.00, so a BCBA certificate alone does not satisfy the credentialed-team definition. LABA licensure (262 CMR 10.03) takes a qualifying graduate degree, supervised fieldwork (1,500 hours independent / 1,000 practicum / 750 intensive practicum), and the Board-approved exam; assistant-level LAABAs (262 CMR 10.04) must receive at least one hour per month of individual face-to-face supervision from a LABA, who must approve all treatment plans before treatment. The staffing ratio that binds capacity is the spec\'s supervision band: LABA supervision at no less than 10% of Behavior Technician direct-service hours (not above 25% without documented clinical rationale; minimum one hour per month for members with 10 or fewer direct hours) — and per the CY2024 audit, falling below 10% drew partial recoupment while falling below 5% drew full recoupment of direct-service payments. Round it out with the spec\'s hire-plus-annual staff training across 16 enumerated topics and its bar on staff having any pre-existing non-clinical relationship with the member.',
+        ],
+        cites: [
+          { title: 'Carelon/MBHP Performance Specifications — Applied Behavior Analysis (upd. Feb 15, 2026)', url: 'https://providers.masspartnership.com/pdf/PerfSpec-ABA.pdf' },
+          { title: 'BACB RBT Handbook (upd. 06/2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260529-2-a.pdf' },
+          { title: '101 CMR 15.03 — EOHHS Criminal Offender Record Checks, Scope (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/101-CMR-15-03' },
+          { title: '262 CMR 8.04 — Standards of Conduct for LABAs/LAABAs (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/262-CMR-8-04' },
+          { title: '262 CMR 10.03 — Applied Behavior Analyst Licensure (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/262-CMR-10-03' },
+          { title: '42 CFR 455.436 — Federal database checks (Cornell LII)', url: 'https://www.law.cornell.edu/cfr/text/42/455.436' },
+        ],
+      },
     ],
     collect: [
       { title: 'Plan → BH administrator', desc: 'PCC/ACO/HNE → MBHP; WellSense/Fallon → Carelon; Tufts Together → Point32 internal; MGB → Optum. It decides the form and portal.' },
@@ -85,6 +102,12 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       { title: 'MassHealth Managed Care Options — plan/BH-vendor map (April 2023)', url: 'https://abh.memberclicks.net/assets/docs/KeepingCoverage/2023%20MassHealth%20Accountable%20and%20Managed%20Care%20Options%20031723.pdf' },
       { title: 'MassHealth ABA supervision audit & recoupment (Acuity News)', url: 'https://acuity.news/regulation/masshealth-aba-supervision-audit-recoupment-litigation-2026/' },
       { title: 'MassHealth ABA rate freeze — 101 CMR 358 re-adoption (Acuity News)', url: 'https://acuity.news/regulation/masshealth-aba-reimbursement-rate-freeze-101-cmr-358/' },
+      { title: 'Carelon/MBHP Performance Specifications — Applied Behavior Analysis (upd. Feb 15, 2026)', url: 'https://providers.masspartnership.com/pdf/PerfSpec-ABA.pdf' },
+      { title: 'BACB RBT Handbook (upd. 06/2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260529-2-a.pdf' },
+      { title: '101 CMR 15.03 — EOHHS Criminal Offender Record Checks, Scope (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/101-CMR-15-03' },
+      { title: '262 CMR 8.04 — Standards of Conduct for LABAs/LAABAs (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/262-CMR-8-04' },
+      { title: '262 CMR 10.03 — Applied Behavior Analyst Licensure (Cornell LII)', url: 'https://www.law.cornell.edu/regulations/massachusetts/262-CMR-10-03' },
+      { title: '42 CFR 455.436 — Federal database checks (Cornell LII)', url: 'https://www.law.cornell.edu/cfr/text/42/455.436' },
     ],
     faq: [
       { q: 'Does MassHealth cover ABA therapy?', a: 'Yes — for members under 21 (under 19 on Family Assistance) through EPSDT, with no annual or lifetime dollar or unit caps. Prior authorization is required for all ABA services, submitted to the behavioral-health administrator behind the member\'s plan.' },

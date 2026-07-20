@@ -25,6 +25,7 @@ export const newYorkPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min)', value: '97153: $14.45 (eff. 4/1/2026, after a phased 25% cut) · 97151/97155/97156: $19.26' },
       { label: 'Licensure', value: 'NYSED Licensed Behavior Analyst (LBA) — only LBAs enroll and bill' },
       { label: 'Settings', value: 'Home, clinic, community — NOT reimbursable in schools' },
+      { label: 'Staff screening', value: 'No RBT or state background-check mandate for technicians — screening flows from OMIG/LEIE/SAM exclusion checks, plus Justice Center checks only in OMH/OPWDD/OCFS-certified settings' },
     ],
     sections: [
       {
@@ -70,6 +71,25 @@ export const newYorkPayers: Record<string, PayerConfig> = {
           { title: 'eMedNY ABA Provider Policy Manual (updated Oct 1, 2025)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'New York has no RBT mandate. The FFS manual defines the technician tier simply as an "unlicensed individual" — someone not licensed, certified, or registered by the state as an ABA provider — with no credential, training-hour, age, or education requirement attached. What the state regulates instead is scope: an LBA may not delegate any task within the ABA scope of practice, even under direct supervision, so technicians only execute the scripted treatment-plan activities the LBA wrote, record data without interpreting it, prepare the setting, and write factual session notes. The middle tier is unique to New York: the Certified Behavior Analyst Assistant (CBAA), a NYSED credential under Education Law Article 167 requiring a bachelor\'s degree (in ABA, or a related field plus ABA certificate coursework), 1,000 hours of supervised experience, and passage of both the NYCBAA and NY Autism exams. And if you staff with RBTs anyway — many agencies do — the BACB\'s own floor travels with the credential: 18+, high-school education, the 40-hour training and competency assessment, and a passed criminal background check plus abuse-registry check no more than 180 days before the certification application.',
+          'On background screening, the ABA Policy Manual itself imposes no employee-level background-check, fingerprinting, or registry requirement — the obligations arrive from adjacent rules, keyed to what your agency is. At provider enrollment, NY Medicaid screens applications at the federal limited/moderate/high risk tiers and collects the $750 federal application fee (2026) from certain provider types (waived if already paid to Medicare or another state\'s Medicaid/CHIP within 12 months); enrollment fingerprinting attaches only at the high-risk tier, so confirm your risk category with provider enrollment. Justice Center pre-employment checks — Staff Exclusion List check first, then a fingerprint-based criminal background check via IdentoGO, fully completed before the hire has regular unsupervised contact with recipients — bind programs under Justice Center jurisdiction (OMH- and OPWDD-operated/certified programs, OCFS residential programs for children), not a standalone LBA practice billing Medicaid FFS; but an agency that also runs OPWDD-certified services (e.g., community habilitation) carries the full four-check stack: SEL, CBC, an MHL 16.34 check, and the OCFS child-abuse SCR check. Every agency, whatever its settings, should screen staff against the three exclusion databases OMIG names — the NYS Medicaid exclusion list, the federal OIG LEIE, and SAM.gov; OMIG doesn\'t publish a check frequency, so set a recurring cadence in your compliance plan.',
+          'The supervisor credential is the LBA, and New York is explicit that BCBA certification alone "is not sufficient" to practice — it\'s only a pathway to licensure, which requires a master\'s from a NYSED-registered ABA program (or substantial equivalent), the exam (BCBA satisfies it), supervised experience, good moral character, minimum age 21, NYSED-approved child-abuse-reporting coursework, and a $300 fee. The supervision math covered above — 5% of each technician\'s monthly service hours, two face-to-face contacts, the six-supervisee cap — is what turns those credentials into a staffing model. Plans then layer on their own stacks: Optum/UHC Community Plan requires network LBAs to hold active BCBA certification plus the NY license plus a NY Medicaid ID (CBAAs need their own Medicaid ID), along with professional liability insurance and a virtual-visits attestation for telehealth supervision; Healthfirst stretches record retention to 10 years for MMC providers (vs. the state\'s 6-year/age-22 floor). No NY Medicaid plan we checked requires RBT certification for technicians.',
+        ],
+        cites: [
+          { title: 'eMedNY ABA Provider Policy Manual (updated Oct 1, 2025)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+          { title: 'NYSED Office of the Professions — CBAA FAQs', url: 'https://www.op.nysed.gov/professions/certified-behavior-analyst-assistants/faqs' },
+          { title: 'BACB RBT Handbook (June 2026 update)', url: 'https://www.bacb.com/rbt-handbook' },
+          { title: 'eMedNY Provider Enrollment — federal application fee ($750 for 2026)', url: 'https://www.emedny.org/info/providerenrollment/ffs.aspx' },
+          { title: 'NYS Justice Center — Pre-Employment Checks (SEL, then CBC)', url: 'https://www.justicecenter.ny.gov/pre-employment-checks' },
+          { title: 'OMIG — Medicaid Exclusions (screen NYS list, OIG LEIE, SAM.gov)', url: 'https://omig.ny.gov/medicaid-fraud/medicaid-exclusions' },
+          { title: 'NYSED Office of the Professions — LBA License Requirements (Section 8804, Subpart 79-17)', url: 'https://www.op.nysed.gov/professions/licensed-behavior-analysts/licensecertification-requirements' },
+          { title: 'Optum NY Medicaid ABA Provider Orientation (2025)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/nyaba/NYabaPres.pdf' },
+          { title: 'Healthfirst — ABA supervision requirements', url: 'https://hfproviders.org/resource-posts/applied-behavior-analysis-supervision-requirements' },
+        ],
+      },
     ],
     collect: [
       { title: 'FFS or which MMC plan', desc: 'The single fact that decides whether there\'s a PA at all — get the card, not the family\'s guess.' },
@@ -84,6 +104,14 @@ export const newYorkPayers: Record<string, PayerConfig> = {
       { title: 'NYS Medicaid Update, August 2025 (Vol 41 No 8)', url: 'https://health.ny.gov/health_care/medicaid/program/update/2025/no08_2025-08.htm' },
       { title: 'eMedNY — Managed Care Information plan directory (v2026-2, 4/1/2026)', url: 'https://www.emedny.org/providermanuals/allproviders/pdfs/information_for_all_providers_managed_care_information.pdf' },
       { title: 'Acuity News — NY Medicaid ABA rates 2026 (secondary; cross-checked against primary sources)', url: 'https://acuity.news/regulation/new-york-medicaid-aba-reimbursement-rate-reduction-2026/' },
+      { title: 'NYSED Office of the Professions — LBA License Requirements (Section 8804, Subpart 79-17)', url: 'https://www.op.nysed.gov/professions/licensed-behavior-analysts/licensecertification-requirements' },
+      { title: 'NYSED Office of the Professions — CBAA FAQs', url: 'https://www.op.nysed.gov/professions/certified-behavior-analyst-assistants/faqs' },
+      { title: 'BACB RBT Handbook (June 2026 update)', url: 'https://www.bacb.com/rbt-handbook' },
+      { title: 'eMedNY Provider Enrollment — federal application fee', url: 'https://www.emedny.org/info/providerenrollment/ffs.aspx' },
+      { title: 'NYS Justice Center — Pre-Employment Checks', url: 'https://www.justicecenter.ny.gov/pre-employment-checks' },
+      { title: 'OMIG — Medicaid Exclusions', url: 'https://omig.ny.gov/medicaid-fraud/medicaid-exclusions' },
+      { title: 'Optum NY Medicaid ABA Provider Orientation (2025)', url: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/nyaba/NYabaPres.pdf' },
+      { title: 'Healthfirst — ABA supervision requirements', url: 'https://hfproviders.org/resource-posts/applied-behavior-analysis-supervision-requirements' },
     ],
     faq: [
       { q: 'Does New York Medicaid require prior authorization for ABA?', a: 'At the fee-for-service layer, no — the current FFS policy manual contains no PA requirement; the gate is a practitioner referral valid up to 2 years. But most children are in Medicaid Managed Care, and every major MMC plan does require prior authorization under its own process.' },

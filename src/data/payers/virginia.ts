@@ -24,6 +24,7 @@ export const virginiaPayers: Record<string, PayerConfig> = {
       { label: '20-hr threshold', value: 'Requests ≥20 hrs/week need an individualized activity schedule' },
       { label: 'Rates (per 15 min)', value: '97153: $15.00 tech · $23.48 LABA · $46.63 LBA (licensure tiers)' },
       { label: 'FFS auth vendor', value: 'Acentra Health (Atrezzo portal); MCOs run their own UM' },
+      { label: 'Staff screening', value: 'RBT NOT required — unlicensed techs under LBA/LABA supervision (18VAC85-150)' },
     ],
     sections: [
       {
@@ -66,6 +67,25 @@ export const virginiaPayers: Record<string, PayerConfig> = {
           { title: 'VirginiaABA — October 2025 Medicaid changes (per-code SAs)', url: 'https://virginiaaba.org/october-2025-medicaid-changes-what-providers-need-to-know/' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Virginia does not require the RBT credential. Technician-level Medicaid ABA is delivered by unlicensed personnel working under a Licensed Behavior Analyst (LBA) or Licensed Assistant Behavior Analyst (LABA) per the Board of Medicine\'s supervision rules (18VAC85-150), and there is no state technician registry — DMAS classifies staff simply as licensed or unlicensed. Scope limits still bind: technicians may give input but cannot develop, review, or update the ISP (an LBA/LABA/LMHP task), and cannot render or bill parent/family training. If you staff with RBTs voluntarily, the BACB floor travels with the credential — age 18+, high-school education, the 40-hour training, a competency assessment, a criminal background check plus abuse-registry check within the 180 days before applying, and ongoing supervision of at least 5% of monthly service hours. VirginiaABA\'s guidance also holds that technicians must be W-2 employees paid for indirect time (supervision, data analysis), not 1099 contractors — association guidance we couldn\'t trace to a DMAS document, but worth pricing into the staffing model.',
+          'The screening picture is unusual: ABA agencies sit outside DBHDS licensure (the pre-2012 DBHDS outpatient ABA license became unnecessary once the Board of Medicine took over individual licensure), so Virginia\'s barrier-crime regime — Va. Code § 37.2-416\'s CCRE/FBI checks and DSS child-abuse-registry searches — does not bind an ABA-only agency; it applies only if you separately hold a DBHDS license for other services. Employee-level checks instead arrive through the BACB (for RBT-certified hires) and through MCO contracts: Anthem HealthKeepers Plus\'s provider manual (effective 7/1/2026) requires OIG LEIE exclusion screening before hiring or contracting with any individual, periodic re-checks of current employees and contractors, and immediate reporting of any exclusion — the federal rule behind it (42 CFR 1001.1901) bars payment for anything an excluded person furnishes. At the entity level, Medicaid enrollment consent covers criminal background checks, with fingerprinting only if DMAS or CMS designates the provider high categorical risk (42 CFR 455.434); ABA is not on the federal high-risk provider list, but DMAS\'s risk-category assignment for ABA isn\'t published — confirm at enrollment. Revalidation runs at least every five years via PRSS.',
+          'Supervisor licensure runs through the Board of Medicine under Va. Code § 54.1-2957.16: LBA requires current BCBA certification, LABA requires current BCaBA plus documented supervision by an LBA. The supervision floors are qualitative, not ratio-based — 18VAC85-150-120 makes the LBA ultimately responsible for care under his supervision, requires a written supervisory agreement with each LABA, and sets formal LABA supervision at no less than one hour at least every four weeks (informal phone/email contact doesn\'t count), with no numeric supervisor-to-technician ratio or percent-of-hours observation floor anywhere in the regulation; DMAS explicitly defers unlicensed-staff supervision frequency to the Board and the BACB. Two billing consequences: supervision without the client present isn\'t separately billable (technician rates were built to include it), and each LBA must be individually enrolled in MES and credentialed with each Cardinal Care MCO you accept — a per-supervisor, per-plan administrative load. Two items we couldn\'t verify directly: the current Appendix D\'s own staffing text (host unreachable at review) and the LBA continuing-education renewal rule (18VAC85-150-100) — confirm both with DMAS provider enrollment and the Board.',
+        ],
+        cites: [
+          { title: 'DMAS — Project BRAVO ABA FAQ', url: 'https://www.dmas.virginia.gov/media/4271/project-bravo-services-faqs-aba.pdf' },
+          { title: 'VirginiaABA — For Medicaid Providers (FAQ)', url: 'https://virginiaaba.org/resources/for-behavior-analysts/for-medicaid-providers/' },
+          { title: '18VAC85-150-120 — supervisory responsibilities', url: 'https://www.law.cornell.edu/regulations/virginia/18VAC85-150-120' },
+          { title: '18VAC85-150-130 — supervision of unlicensed personnel', url: 'https://law.lis.virginia.gov/admincode/title18/agency85/chapter150/section130/' },
+          { title: 'Va. Code § 54.1-2957.16 — behavior analyst licensure', url: 'https://law.lis.virginia.gov/vacode/title54.1/chapter29/section54.1-2957.16/' },
+          { title: 'Va. Code § 37.2-416 — DBHDS barrier-crime background checks', url: 'https://law.lis.virginia.gov/vacode/title37.2/chapter4/section37.2-416/' },
+          { title: 'Anthem HealthKeepers Plus — provider manual (eff. 7/1/2026, exclusion screening)', url: 'https://providers.anthem.com/docs/gpp/VA_CAID_ProviderManual.pdf' },
+          { title: 'BACB — RBT Handbook (2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260116-a.pdf' },
+          { title: '42 CFR 455.434 — criminal background checks', url: 'https://www.law.cornell.edu/cfr/text/42/455.434' },
+        ],
+      },
     ],
     collect: [
       { title: 'Member ID & Cardinal Care MCO', desc: 'Aetna, Anthem, Humana, Sentara, or UHC (or FFS) — same clinical rules, different submission machinery.' },
@@ -80,6 +100,14 @@ export const virginiaPayers: Record<string, PayerConfig> = {
       { title: 'DMAS — procedure fee files (CPT)', url: 'https://www.dmas.virginia.gov/for-providers/rates-and-rate-setting/procedure-fee-files-cpt-codes/' },
       { title: 'DMAS — Project BRAVO ABA FAQ', url: 'https://www.dmas.virginia.gov/media/4271/project-bravo-services-faqs-aba.pdf' },
       { title: 'DMAS — service authorization (Acentra Health)', url: 'https://www.dmas.virginia.gov/for-providers/service-authorization/' },
+      { title: 'VirginiaABA — For Medicaid Providers (FAQ)', url: 'https://virginiaaba.org/resources/for-behavior-analysts/for-medicaid-providers/' },
+      { title: '18VAC85-150-120 — supervisory responsibilities', url: 'https://www.law.cornell.edu/regulations/virginia/18VAC85-150-120' },
+      { title: '18VAC85-150-130 — supervision of unlicensed personnel', url: 'https://law.lis.virginia.gov/admincode/title18/agency85/chapter150/section130/' },
+      { title: 'Va. Code § 54.1-2957.16 — behavior analyst licensure', url: 'https://law.lis.virginia.gov/vacode/title54.1/chapter29/section54.1-2957.16/' },
+      { title: 'Va. Code § 37.2-416 — DBHDS barrier-crime background checks', url: 'https://law.lis.virginia.gov/vacode/title37.2/chapter4/section37.2-416/' },
+      { title: 'Anthem HealthKeepers Plus — provider manual (eff. 7/1/2026)', url: 'https://providers.anthem.com/docs/gpp/VA_CAID_ProviderManual.pdf' },
+      { title: 'BACB — RBT Handbook (2026)', url: 'https://www.bacb.com/wp-content/uploads/2025/08/RBTHandbook_260116-a.pdf' },
+      { title: '42 CFR 455.434 — criminal background checks', url: 'https://www.law.cornell.edu/cfr/text/42/455.434' },
     ],
     faq: [
       { q: 'Does Virginia Medicaid cover ABA therapy?', a: 'Yes — for members under 21 with autism, under the EPSDT benefit, with no hard hour cap. Assessment codes need no service authorization; all treatment hours are authorized with units itemized per CPT code.' },

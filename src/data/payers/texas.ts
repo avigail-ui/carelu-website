@@ -25,6 +25,7 @@ export const texasPayers: Record<string, PayerConfig> = {
       { label: 'Rates (per 15 min)', value: '97153: $14.50 · 97151: $27.56 · 97155: $20.08–$25.10 (eff. 9/1/2025, ~11.5% increase)' },
       { label: 'Daily cap', value: '8 hours (32 units) of direct treatment across 97153, 97154, 97155, 97158' },
       { label: 'Delivery', value: 'FFS via TMHP + STAR / STAR Kids / STAR Health MCOs — identical TMPPM criteria' },
+      { label: 'Staff screening', value: 'BTs need RBT, BCAT, or ABAT cert (no Medicaid enrollment); monthly LEIE + HHSC-OIG exclusion checks on all staff' },
     ],
     sections: [
       {
@@ -69,6 +70,24 @@ export const texasPayers: Record<string, PayerConfig> = {
           { title: 'TMHP — HHSC Release of Autism Services Benefits (eff. 2/1/2022)', url: 'https://www.tmhp.com/news/2021-07-30-hhsc-release-autism-services-benefits-effective-february-1-2022' },
         ],
       },
+      {
+        h2: 'Staffing & credentialing: who you can hire, and what they must clear',
+        body: [
+          'Texas certifies behavior technicians but doesn\'t license them. The TMPPM (§ 2.3.6.3) requires every BT to hold one of three certifications — RBT, BCAT, or ABAT — so the RBT is accepted but explicitly not the only pathway. BTs may not enroll in Texas Medicaid (they render under the enrolled LBA), may not use "therapist" in their job title when interacting with Medicaid families, and may not conduct assessments or modify the treatment plan. There\'s no state license, registry, or training-hour add-on for BTs: Occupations Code § 506.054 exempts a person designated as a behavior technician from behavior analyst licensure when working under the authority and direction of an LBA or LaBA, so the certification requirement comes from Medicaid policy, not licensure law. For the RBT pathway, the BACB\'s own floor is what screens your hires: 18+, high-school education, a criminal background check and abuse-registry check no more than 180 days before applying, the 40-hour training, a competency assessment, and the exam.',
+          'The agency-level screening that actually binds a standalone ABA practice is exclusion screening, not the long-term-care registries. As a condition of enrollment, all providers must screen every employee and contractor every month against both the federal HHS-OIG LEIE and the Texas HHSC-OIG exclusion list (TMPPM Vol. 1, § 1.3.1) — build this into payroll-cycle compliance, not just onboarding. The Employee Misconduct Registry, by contrast, applies only to the facility types listed in Health & Safety Code § 253.001 (nursing facilities, HCSSAs, assisted living, ICF/IID, and similar) — a standalone ABA agency isn\'t on that list, so EMR pre-hire checks aren\'t legally required unless you also hold one of those licenses. Fingerprinting is similarly narrow: it attaches at provider enrollment, only for high categorical-risk providers and owners with a 5%+ interest (via IdentoGO, with proof uploaded to PEMS within 30 days of application) — individually licensed behavior analysts are not designated high-risk. At the supervisor level, TDLR requires every LBA and LaBA applicant to pass a criminal history background check as a condition of licensure.',
+          'Supervision structure follows enrollment structure. Only the LBA enrolls and bills; the LBA must directly employ or contract with every LaBA and BT on the team, and LaBAs can\'t practice independently — by statute they must be supervised by an LBA per their certifying body\'s requirements. The TMPPM makes LBAs the direct supervisors of LaBAs and BTs but sets no numeric ratio of its own, deferring to certifying-body minimums — which makes the BACB standard the operative floor for RBT-credentialed staff: supervision of at least 5% of service hours each month, with at least two face-to-face contacts per month (one observing service delivery, one individual). One billing wrinkle to plan around: only direct supervision — the LBA observing the LaBA or BT with the client — is reimbursable, under 97155; indirect supervision (caseload review, data discussion) is unpaid time. And BTs and LaBAs must deliver 1:1 treatment in person — no remote service delivery. MCOs mirror this baseline (Texas Children\'s Health Plan\'s autism guideline repeats it nearly verbatim), but only TCHP was checked in depth — confirm each MCO\'s provider manual for staff-level extras at contracting.',
+        ],
+        cites: [
+          { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+          { title: 'Tex. Occ. Code § 506.054 — Paraprofessional licensure exemption', url: 'https://texas.public.law/statutes/tex._occ._code_section_506.054' },
+          { title: 'BACB RBT Handbook (updated 06/2026)', url: 'https://www.bacb.com/rbt-handbook' },
+          { title: 'TMPPM Vol. 1, Provider Enrollment and Responsibilities, § 1.3.1 (monthly exclusion screening)', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/1_01_Provider_Enrollment/1_01_Provider_Enrollment.htm' },
+          { title: 'Tex. Health & Safety Code § 253.001 — EMR covered facility types', url: 'https://texas.public.law/statutes/tex._health_and_safety_code_section_253.001' },
+          { title: 'TMHP — Texas Medicaid Provider Fingerprinting Requirement FAQ (D00412)', url: 'https://www.tmhp.com/sites/default/files/file-library/topics/provider-enrollment/texas-medicaid-provider-fingerprinting-requirement-FAQ.pdf' },
+          { title: 'TDLR — How to Apply for a Behavior Analyst License', url: 'https://www.tdlr.texas.gov/bhv/bhvapply.htm' },
+          { title: 'Tex. Occ. Code § 506.254 — Licensed Assistant Behavior Analyst', url: 'https://texas.public.law/statutes/tex._occ._code_section_506.254' },
+        ],
+      },
     ],
     collect: [
       { title: 'Program & plan', desc: 'FFS vs. STAR / STAR Kids / STAR Health, and which MCO — same clinical rules, different PA machinery.' },
@@ -83,6 +102,13 @@ export const texasPayers: Record<string, PayerConfig> = {
       { title: 'TMHP — Update to a PA Requirement for Autism Services (eff. 4/1/2025)', url: 'https://www.tmhp.com/news/2025-02-14-update-prior-authorization-requirement-autism-services-effective-april-1-2025' },
       { title: 'HHSC Provider Finance — ABA fee adjustment packet (eff. 9/1/2025)', url: 'https://pfd.hhs.texas.gov/sites/default/files/documents/2025/9-1-2025-fee-adj-fetal-med-applied-behavior-dental-rate.pdf' },
       { title: 'TMHP Online Fee Lookup', url: 'https://public.tmhp.com/FeeSchedules/Default.aspx' },
+      { title: 'Tex. Occ. Code § 506.054 — Paraprofessional licensure exemption', url: 'https://texas.public.law/statutes/tex._occ._code_section_506.054' },
+      { title: 'BACB RBT Handbook (updated 06/2026)', url: 'https://www.bacb.com/rbt-handbook' },
+      { title: 'TMPPM Vol. 1, Provider Enrollment and Responsibilities, § 1.3.1 (monthly exclusion screening)', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/1_01_Provider_Enrollment/1_01_Provider_Enrollment.htm' },
+      { title: 'Tex. Health & Safety Code § 253.001 — EMR covered facility types', url: 'https://texas.public.law/statutes/tex._health_and_safety_code_section_253.001' },
+      { title: 'TMHP — Texas Medicaid Provider Fingerprinting Requirement FAQ (D00412)', url: 'https://www.tmhp.com/sites/default/files/file-library/topics/provider-enrollment/texas-medicaid-provider-fingerprinting-requirement-FAQ.pdf' },
+      { title: 'TDLR — How to Apply for a Behavior Analyst License', url: 'https://www.tdlr.texas.gov/bhv/bhvapply.htm' },
+      { title: 'Tex. Occ. Code § 506.254 — Licensed Assistant Behavior Analyst', url: 'https://texas.public.law/statutes/tex._occ._code_section_506.254' },
     ],
     faq: [
       { q: 'Does Texas Medicaid cover ABA therapy?', a: 'Yes — since February 1, 2022, as the Autism Services benefit under THSteps-CCP (EPSDT), for members from birth through age 20 with an ASD diagnosis. Everything requires prior authorization, from the evaluation forward. CHIP is excluded.' },
