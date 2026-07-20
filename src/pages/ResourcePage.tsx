@@ -199,6 +199,43 @@ function ResourceArticle({ config }: { config: ResourceConfig }) {
         </div>
       </section>
 
+      {/* How Carelu compares (optional) */}
+      {config.compare && config.compare.length > 0 && (
+        <section style={{ paddingTop: 'clamp(48px, 7vw, 84px)' }}>
+          <div style={MEASURE}>
+            <h2 className="rv" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.7vw, 33px)',
+              fontWeight: 400, color: INK, lineHeight: 1.18, letterSpacing: '-0.015em', margin: '0 0 12px',
+            }}>{config.compareTitle || 'How Carelu compares'}</h2>
+            {config.compareIntro && (
+              <p className="rv" style={{ fontSize: 15.5, color: 'rgba(43,42,38,0.7)', lineHeight: 1.7, margin: '0 0 20px' }}>{config.compareIntro}</p>
+            )}
+            <div className="rv" style={{ background: '#fff', borderRadius: 18, boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)', overflow: 'hidden' }}>
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 560 }}>
+                  <thead>
+                    <tr style={{ borderBottom: `1px solid ${HAIR}` }}>
+                      <th style={{ textAlign: 'left', padding: '15px 20px', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.5)' }}>Step</th>
+                      <th style={{ textAlign: 'left', padding: '15px 20px', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.5)' }}>Doing it manually</th>
+                      <th style={{ textAlign: 'left', padding: '15px 20px', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: GREEN }}>With Carelu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {config.compare.map((r, i) => (
+                      <tr key={r.step} style={{ borderBottom: i < config.compare!.length - 1 ? `1px solid ${HAIR}` : 'none' }}>
+                        <td style={{ padding: '14px 20px', fontSize: 14, fontWeight: 600, color: INK, lineHeight: 1.45 }}>{r.step}</td>
+                        <td style={{ padding: '14px 20px', fontSize: 13.5, color: 'rgba(43,42,38,0.6)', lineHeight: 1.5 }}>{r.manual}</td>
+                        <td style={{ padding: '14px 20px', fontSize: 13.5, color: '#2e5a26', fontWeight: 600, lineHeight: 1.5 }}>{r.carelu}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Closing CTA */}
       <section style={{ padding: 'clamp(56px, 8vw, 100px) 0 clamp(80px, 10vw, 130px)', textAlign: 'center' }}>
         <div style={W}>

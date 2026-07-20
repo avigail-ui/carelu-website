@@ -13,6 +13,7 @@ export interface ResourceSection {
   list?: ResourceListItem[]; // optional card list under the paragraphs
 }
 export interface ResourceFaq { q: string; a: string }
+export interface ResourceCompareRow { step: string; manual: string; carelu: string }
 export interface ResourceConfig {
   slug: string;
   pill: string;
@@ -23,6 +24,10 @@ export interface ResourceConfig {
   sections: ResourceSection[];
   download?: { label: string; file: string; blurb: string };
   faq: ResourceFaq[];
+  // Optional "manual benchmark vs Carelu" comparison, rendered near the end.
+  compareTitle?: string;
+  compareIntro?: string;
+  compare?: ResourceCompareRow[];
   ctaHeadline: string;
   ctaSub: string;
 }
@@ -156,6 +161,15 @@ export const resources: Record<string, ResourceConfig> = {
       file: '/downloads/aba-intake-checklist.pdf',
       blurb: 'The full process on one printable page — use it to map your own funnel and find your leaks.',
     },
+    compareTitle: 'The same steps — done for you, in a fraction of the time.',
+    compareIntro: 'Those benchmarks assume a fully-staffed team hitting every step on time. Carelu holds the whole sequence to the fast end of the range automatically, around the clock — so the delays that lose families never happen.',
+    compare: [
+      { step: 'First response', manual: 'Under 5 min — if someone is available', carelu: 'Instant, 24/7, on every channel' },
+      { step: 'Insurance verification', manual: '24–48 hours, staff by phone', carelu: 'At first contact, automatically' },
+      { step: 'Documents & consents', manual: '~1 week, with staff chasing', carelu: 'Same session, chased automatically' },
+      { step: 'Assessment scheduling', manual: 'After verification clears', carelu: 'Booked in the first conversation' },
+      { step: 'Inquiry → first appointment', manual: 'Under 2 weeks (the goal)', carelu: 'Days — no waiting on callbacks' },
+    ],
     faq: [
       {
         q: 'How long should ABA intake take?',

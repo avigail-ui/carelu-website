@@ -88,9 +88,16 @@ function PayerGuide({ config }: { config: PayerConfig }) {
           }}>
             {config.h1}
           </h1>
-          <p className="rv d2" style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)', margin: '18px auto 0' }}>
-            Last reviewed {PAYER_REVIEWED} · compiled from the primary sources linked below
-          </p>
+          <div className="rv d2" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'center', margin: '18px auto 0' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 600, color: GREEN_DKC, background: 'rgba(63,122,52,0.08)', padding: '6px 13px', borderRadius: 100 }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 8v4l3 2" /><circle cx="12" cy="12" r="9" /></svg>
+              Last updated {PAYER_REVIEWED}
+            </span>
+            <a href="#sources" style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 600, color: 'rgba(43,42,38,0.65)', background: '#fff', padding: '6px 13px', borderRadius: 100, textDecoration: 'none', border: '1px solid rgba(43,42,38,0.1)' }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" /><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" /></svg>
+              {config.sources.length} primary sources
+            </a>
+          </div>
         </div>
       </section>
 
@@ -208,7 +215,7 @@ function PayerGuide({ config }: { config: PayerConfig }) {
       </section>
 
       {/* Sources + disclaimer */}
-      <section style={{ paddingTop: 'clamp(30px, 4vw, 46px)' }}>
+      <section id="sources" style={{ paddingTop: 'clamp(30px, 4vw, 46px)', scrollMarginTop: 90 }}>
         <div style={MEASURE}>
           <div className="rv" style={{ padding: '18px 22px', borderLeft: `3px solid rgba(43,42,38,0.2)`, background: 'rgba(43,42,38,0.03)', borderRadius: '0 12px 12px 0' }}>
             <div style={{ fontSize: 12, fontWeight: 700, color: INK, marginBottom: 8, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Primary sources</div>

@@ -15,7 +15,6 @@ const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const HAIR = 'rgba(43,42,38,0.08)';
 const GREEN = '#3f7a34';
-const BENCHMARK = 0.8; // well-run funnel conversion (see /resources/aba-intake-drop-off)
 
 const W: React.CSSProperties = { maxWidth: 1100, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' };
 
@@ -78,14 +77,14 @@ export default function LeakCalculator() {
   const [inquiries, setInquiries] = useState(40);
   const [starts, setStarts] = useState(10);
   const [revenue, setRevenue] = useState(45000);
+  const [recovery, setRecovery] = useState(30); // % of currently-lost families a faster funnel recovers
 
   const effStarts = Math.min(starts, inquiries);
   const conversion = inquiries > 0 ? effStarts / inquiries : 0;
-  const benchmarkStarts = inquiries * BENCHMARK;
-  const lostPerMonth = Math.max(0, benchmarkStarts - effStarts);
-  const lostPerYear = lostPerMonth * 12;
-  const revenueGap = lostPerYear * revenue;
-  const afterHours = Math.round(inquiries * 0.41);
+  const lostPerMonth = Math.max(0, inquiries - effStarts);   // families not starting today
+  const recoverablePerYear = lostPerMonth * (recovery / 100) * 12;
+  const revenueRecovered = recoverablePerYear * revenue;
+  const afterHours = Math.round(inquiries * 0.48);
 
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
@@ -153,6 +152,13 @@ export default function LeakCalculator() {
                 format={(v) => fmtMoney(v)}
                 onChange={setRevenue}
               />
+              <Slider
+                label="Share of lost families you could recover"
+                hint="Not every family is winnable — some aren't eligible or choose another provider. This is the slice a faster, always-on intake realistically saves. We default to a conservative 30%."
+                value={recovery} min={10} max={60} step={5}
+                format={(v) => `${v}%`}
+                onChange={setRecovery}
+              />
             </div>
 
             {/* Results */}
@@ -164,51 +170,49 @@ export default function LeakCalculator() {
             }}>
               <div>
                 <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 8 }}>
-                  Your intake conversion
+                  Families not starting today
                 </div>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 4vw, 52px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {Math.round(conversion * 100)}%
+                    {Math.round(lostPerMonth * 12)}
                   </span>
-                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>vs. {Math.round(BENCHMARK * 100)}% for a well-run funnel</span>
-                </div>
-                <div style={{ marginTop: 12, height: 10, borderRadius: 100, background: 'rgba(250,248,243,0.14)', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', inset: 0, width: `${Math.min(conversion * 100, 100)}%`, background: '#D4F25C', borderRadius: 100, transition: 'width 0.4s cubic-bezier(0.16,1,0.3,1)' }} />
-                  <div style={{ position: 'absolute', top: -2, bottom: -2, left: `${BENCHMARK * 100}%`, width: 2, background: 'rgba(250,248,243,0.7)' }} />
+                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>inquiries a year that don’t become clients ({Math.round(conversion * 100)}% currently start)</span>
                 </div>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
                 <div>
                   <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 6 }}>
-                    Families lost / year
+                    Recoverable / year
                   </div>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {Math.round(lostPerYear)}
+                    {Math.round(recoverablePerYear)}
                   </div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>families, at {recovery}% recovery</div>
                 </div>
                 <div>
                   <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 6 }}>
-                    Revenue left behind
+                    Revenue recovered
                   </div>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    {fmtMoney(revenueGap)}
+                    {fmtMoney(revenueRecovered)}
                   </div>
-                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>annualized, vs. an 80% funnel</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>per year, annualized</div>
                 </div>
               </div>
 
               <div style={{ borderTop: '1px solid rgba(250,248,243,0.12)', paddingTop: 18, fontSize: 13.5, color: 'rgba(250,248,243,0.68)', lineHeight: 1.6 }}>
                 ~<strong style={{ color: BONE }}>{afterHours} of your {inquiries} monthly inquiries</strong> likely arrive
-                outside business hours — 41% of all family inquiries do.{' '}
+                outside business hours — 48% of all family inquiries do, and those are the most recoverable.{' '}
                 <a href="/research/the-intake-gap" style={{ color: '#D4F25C', textDecoration: 'underline' }}>See the research →</a>
               </div>
             </div>
           </div>
 
           <p className="rv" style={{ fontSize: 12, color: 'rgba(43,42,38,0.45)', lineHeight: 1.6, margin: '14px auto 0', maxWidth: 720, textAlign: 'center' }}>
-            Estimates, not guarantees. Benchmarks from Carelu Research, <em>The Intake Gap</em> (2026) and the
-            intake conversion ranges documented in our <a href="/resources/aba-intake-drop-off" style={{ color: 'rgba(43,42,38,0.6)' }}>drop-off guide</a>.
+            Estimates, not guarantees — you control the recovery assumption above. Grounded in Carelu Research,
+            {' '}<em>The Intake Gap</em> (2026) and the intake conversion ranges in our{' '}
+            <a href="/resources/aba-intake-drop-off" style={{ color: 'rgba(43,42,38,0.6)' }}>drop-off guide</a>.
           </p>
         </div>
       </section>
@@ -228,7 +232,7 @@ export default function LeakCalculator() {
             lineHeight: 1.65, maxWidth: 540, margin: '0 auto 30px',
           }}>
             Instant answers on every channel, day and night. Insurance verified up front.
-            Every document chased automatically. That's how funnels reach 80%.
+            Every document chased automatically — so the families you can win, you win.
           </p>
           <a href="/demo" className="rv d2" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
