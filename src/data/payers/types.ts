@@ -56,6 +56,7 @@ export const STATE_META: StateMeta[] = [
   { code: 'NJ', name: 'New Jersey', mandate: 'P.L. 2009, c.115 (N.J.S.A. 17:48-6ii et al.)', medicaidSlug: 'new-jersey-medicaid' },
   { code: 'MD', name: 'Maryland', mandate: 'Habilitative services mandate (Md. Ins. \u00a7 15-835 + COMAR 31.10.39.03)', medicaidSlug: 'maryland-medicaid' },
   { code: 'CO', name: 'Colorado', mandate: 'Colorado autism insurance mandate (C.R.S. \u00a7 10-16-104(1.4))', medicaidSlug: 'colorado-medicaid' },
+  { code: 'UT', name: 'Utah', mandate: 'Utah autism insurance mandate (Utah Code \u00a7 31A-22-642; caps removed 2020)', medicaidSlug: 'utah-medicaid' },
   { code: 'AZ', name: 'Arizona', mandate: 'Steven\u2019s Law (A.R.S. \u00a7 20-826.04; dollar caps repealed by SB 1590, 2025)', medicaidSlug: 'arizona-ahcccs' },
   { code: 'NY', name: 'New York', mandate: 'NY autism mandate (Ins. Law \u00a7\u00a7 3216(i)(25), 3221(l)(17), 4303(ee))', medicaidSlug: 'new-york-medicaid' },
   { code: 'NM', name: 'New Mexico', mandate: 'New Mexico autism insurance mandate (NMSA 1978 \u00a7 59A-22-49)', medicaidSlug: 'new-mexico-medicaid' },

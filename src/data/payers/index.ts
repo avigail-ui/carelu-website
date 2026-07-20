@@ -19,6 +19,7 @@ import { massachusettsPayers } from './massachusetts';
 import { floridaPayers } from './florida';
 import { kansasPayers } from './kansas';
 import { nebraskaPayers } from './nebraska';
+import { utahPayers } from './utah';
 
 export const payers: Record<string, PayerConfig> = {
   ...nationalPayers,
@@ -40,4 +41,5 @@ export const payers: Record<string, PayerConfig> = {
   ...floridaPayers,
   ...kansasPayers,
   ...nebraskaPayers,
+  ...utahPayers,
 };
