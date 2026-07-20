@@ -3,6 +3,7 @@ import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
+import STATS from '../data/intake_gap_stats.json';
 
 /* ================================================================
    CARELU RESEARCH — THE INTAKE GAP (Intake Data Report №1)
@@ -33,12 +34,12 @@ type Finding = {
 
 const FINDINGS: Finding[] = [
   {
-    stat: '48',
+    stat: String(STATS.cohort.afterHoursPct),
     statSuffix: '%',
     title: 'of family conversations start outside business hours.',
     body: 'Nearly half of all first conversations begin on evenings, weekends, or before 8am — when most front desks are dark. These are the most motivated families in the funnel (they\'re researching after the kids are in bed), and for most practices they hit voicemail.',
-    n: 'n = 185,054 conversations across 120 ABA providers, Mon–Fri 8am–6pm ET baseline',
-    bar: 48,
+    n: `n = ${STATS.cohort.conversations.toLocaleString('en-US')} conversations across ${STATS.cohort.providers} ABA providers, Mon–Fri 8am–6pm ET baseline`,
+    bar: STATS.cohort.afterHoursPct,
   },
   {
     stat: '+35',
@@ -105,22 +106,10 @@ const FINDINGS: Finding[] = [
   },
 ];
 
-// State distribution of captured family leads (n = 25,518 leads with state
-// data across 48 states + DC). Share of national demand, top 12 shown.
-const STATES: { st: string; name: string; pct: number; providers: number }[] = [
-  { st: 'GA', name: 'Georgia', pct: 13.6, providers: 38 },
-  { st: 'NC', name: 'North Carolina', pct: 13.3, providers: 42 },
-  { st: 'IN', name: 'Indiana', pct: 9.1, providers: 15 },
-  { st: 'VA', name: 'Virginia', pct: 6.4, providers: 27 },
-  { st: 'TN', name: 'Tennessee', pct: 6.4, providers: 15 },
-  { st: 'OH', name: 'Ohio', pct: 5.0, providers: 15 },
-  { st: 'AZ', name: 'Arizona', pct: 4.9, providers: 18 },
-  { st: 'UT', name: 'Utah', pct: 4.7, providers: 20 },
-  { st: 'NJ', name: 'New Jersey', pct: 4.2, providers: 31 },
-  { st: 'CO', name: 'Colorado', pct: 3.7, providers: 30 },
-  { st: 'NY', name: 'New York', pct: 3.2, providers: 32 },
-  { st: 'FL', name: 'Florida', pct: 3.1, providers: 29 },
-];
+// State distribution + per-state payer mix are read from a data file that a
+// scheduled refresh (scripts/report-refresh) regenerates from prod — so these
+// numbers can update without touching the page.
+const STATES = STATS.stateDistribution;
 
 function useReportJsonLd() {
   useEffect(() => {
@@ -211,10 +200,10 @@ export default function IntakeGapReport() {
             textAlign: 'center',
           }}>
             {[
-              { v: '120', l: 'ABA provider organizations' },
-              { v: '185,054', l: 'family conversations' },
-              { v: '29,021', l: 'captured intake leads' },
-              { v: '48', l: 'states & DC represented' },
+              { v: STATS.cohort.providers.toLocaleString('en-US'), l: 'ABA provider organizations' },
+              { v: STATS.cohort.conversations.toLocaleString('en-US'), l: 'family conversations' },
+              { v: STATS.cohort.leads.toLocaleString('en-US'), l: 'captured intake leads' },
+              { v: String(STATS.cohort.states), l: 'states & DC represented' },
             ].map((m) => (
               <div key={m.l}>
                 <div style={{
@@ -313,6 +302,53 @@ export default function IntakeGapReport() {
                   n = 25,518 captured family leads with state data · share of national demand · top 12 of 48 states & DC shown
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance by state */}
+      <section style={{ padding: 'clamp(40px, 6vw, 70px) 0 0' }}>
+        <div style={MEASURE}>
+          <div className="rv" style={{ borderTop: `1px solid ${HAIR}`, paddingTop: 'clamp(30px, 4vw, 48px)' }}>
+            <h2 style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.7vw, 33px)',
+              fontWeight: 400, color: INK, lineHeight: 1.18, letterSpacing: '-0.015em', margin: '0 0 12px',
+            }}>The payer mix is a different map in every state.</h2>
+            <p style={{ fontSize: 15.5, color: 'rgba(43,42,38,0.7)', lineHeight: 1.7, margin: '0 0 8px' }}>
+              Nationally, {STATS.insuranceNational[0]?.pct}% of families name Medicaid — but the plan a
+              family actually carries is intensely local. Ohio runs on CareSource; Tennessee on TennCare
+              and BlueCare; Georgia on Peach State, CareSource, and Amerigroup. An intake script tuned for
+              one state's payers is misconfigured the moment you cross a border. Here's the leading payer
+              mix families reported, in the twelve highest-demand states.
+            </p>
+            <p style={{ fontSize: 12, color: 'rgba(43,42,38,0.45)', margin: '0 0 22px' }}>
+              Share of families naming each payer, per state · Medicaid plans (incl. managed-care orgs) shown in green ·
+              n = {STATS.insuranceClassified.toLocaleString('en-US')} classified responses
+            </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: 14 }}>
+              {Object.entries(STATS.insuranceByState).map(([state, data]) => (
+                <div key={state} style={{
+                  background: '#fff', borderRadius: 16, padding: '18px 20px',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)',
+                }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: INK, marginBottom: 12, letterSpacing: '-0.01em' }}>{state}</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {data.top.map((p) => (
+                      <div key={p.payer}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, marginBottom: 3 }}>
+                          <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.72)', lineHeight: 1.3 }}>{p.payer}</span>
+                          <span style={{ fontSize: 12, fontWeight: 700, color: p.medicaid ? GREEN : 'rgba(43,42,38,0.6)', fontVariantNumeric: 'tabular-nums', flexShrink: 0 }}>{p.pct}%</span>
+                        </div>
+                        <div style={{ height: 5, borderRadius: 100, background: 'rgba(43,42,38,0.07)', overflow: 'hidden' }}>
+                          <div style={{ width: `${Math.max(p.pct, 2)}%`, height: '100%', borderRadius: 100, background: p.medicaid ? GREEN : 'rgba(43,42,38,0.4)' }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

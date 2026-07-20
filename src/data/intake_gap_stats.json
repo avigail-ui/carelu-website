@@ -1,0 +1,429 @@
+{
+  "generatedAt": "2026-07-20",
+  "cohort": {
+    "providers": 120,
+    "conversations": 185054,
+    "leads": 29021,
+    "states": 48,
+    "afterHoursPct": 48
+  },
+  "stateDistribution": [
+    {
+      "st": "GA",
+      "name": "Georgia",
+      "pct": 13.6,
+      "providers": 38
+    },
+    {
+      "st": "NC",
+      "name": "North Carolina",
+      "pct": 13.3,
+      "providers": 42
+    },
+    {
+      "st": "IN",
+      "name": "Indiana",
+      "pct": 9.1,
+      "providers": 15
+    },
+    {
+      "st": "VA",
+      "name": "Virginia",
+      "pct": 6.4,
+      "providers": 27
+    },
+    {
+      "st": "TN",
+      "name": "Tennessee",
+      "pct": 6.4,
+      "providers": 15
+    },
+    {
+      "st": "OH",
+      "name": "Ohio",
+      "pct": 5.0,
+      "providers": 15
+    },
+    {
+      "st": "AZ",
+      "name": "Arizona",
+      "pct": 4.9,
+      "providers": 18
+    },
+    {
+      "st": "UT",
+      "name": "Utah",
+      "pct": 4.7,
+      "providers": 20
+    },
+    {
+      "st": "NJ",
+      "name": "New Jersey",
+      "pct": 4.2,
+      "providers": 31
+    },
+    {
+      "st": "CO",
+      "name": "Colorado",
+      "pct": 3.7,
+      "providers": 30
+    },
+    {
+      "st": "NY",
+      "name": "New York",
+      "pct": 3.2,
+      "providers": 32
+    },
+    {
+      "st": "FL",
+      "name": "Florida",
+      "pct": 3.1,
+      "providers": 29
+    }
+  ],
+  "insuranceNational": [
+    {
+      "payer": "Medicaid (unspecified)",
+      "pct": 33,
+      "medicaid": true
+    },
+    {
+      "payer": "Blue Cross Blue Shield",
+      "pct": 10,
+      "medicaid": false
+    },
+    {
+      "payer": "UnitedHealthcare / Optum",
+      "pct": 9,
+      "medicaid": false
+    },
+    {
+      "payer": "Anthem",
+      "pct": 8,
+      "medicaid": false
+    },
+    {
+      "payer": "CareSource",
+      "pct": 5,
+      "medicaid": true
+    },
+    {
+      "payer": "Aetna",
+      "pct": 5,
+      "medicaid": false
+    },
+    {
+      "payer": "Cigna / Evernorth",
+      "pct": 3,
+      "medicaid": false
+    },
+    {
+      "payer": "Molina",
+      "pct": 2,
+      "medicaid": true
+    }
+  ],
+  "insuranceClassified": 11647,
+  "insuranceByState": {
+    "Georgia": {
+      "total": 1374,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 33,
+          "medicaid": true
+        },
+        {
+          "payer": "Peach State",
+          "pct": 14,
+          "medicaid": true
+        },
+        {
+          "payer": "CareSource",
+          "pct": 13,
+          "medicaid": true
+        },
+        {
+          "payer": "Amerigroup",
+          "pct": 12,
+          "medicaid": true
+        }
+      ]
+    },
+    "North Carolina": {
+      "total": 1625,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 43,
+          "medicaid": true
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 11,
+          "medicaid": false
+        },
+        {
+          "payer": "Trillium",
+          "pct": 8,
+          "medicaid": true
+        },
+        {
+          "payer": "Alliance Health",
+          "pct": 8,
+          "medicaid": true
+        }
+      ]
+    },
+    "Indiana": {
+      "total": 1202,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 39,
+          "medicaid": true
+        },
+        {
+          "payer": "Anthem",
+          "pct": 26,
+          "medicaid": false
+        },
+        {
+          "payer": "CareSource",
+          "pct": 10,
+          "medicaid": true
+        },
+        {
+          "payer": "MHS (IN)",
+          "pct": 8,
+          "medicaid": true
+        }
+      ]
+    },
+    "Virginia": {
+      "total": 923,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 31,
+          "medicaid": true
+        },
+        {
+          "payer": "Anthem",
+          "pct": 24,
+          "medicaid": false
+        },
+        {
+          "payer": "Aetna",
+          "pct": 9,
+          "medicaid": false
+        },
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 8,
+          "medicaid": false
+        }
+      ]
+    },
+    "Tennessee": {
+      "total": 382,
+      "top": [
+        {
+          "payer": "TennCare",
+          "pct": 26,
+          "medicaid": true
+        },
+        {
+          "payer": "BlueCare (TN)",
+          "pct": 19,
+          "medicaid": true
+        },
+        {
+          "payer": "Wellpoint",
+          "pct": 16,
+          "medicaid": true
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 15,
+          "medicaid": false
+        }
+      ]
+    },
+    "Ohio": {
+      "total": 798,
+      "top": [
+        {
+          "payer": "CareSource",
+          "pct": 37,
+          "medicaid": true
+        },
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 12,
+          "medicaid": true
+        },
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 10,
+          "medicaid": false
+        },
+        {
+          "payer": "Anthem",
+          "pct": 9,
+          "medicaid": false
+        }
+      ]
+    },
+    "Arizona": {
+      "total": 304,
+      "top": [
+        {
+          "payer": "Mercy Care / AHCCCS",
+          "pct": 39,
+          "medicaid": true
+        },
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 27,
+          "medicaid": false
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 12,
+          "medicaid": false
+        },
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 6,
+          "medicaid": true
+        }
+      ]
+    },
+    "Utah": {
+      "total": 690,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 40,
+          "medicaid": true
+        },
+        {
+          "payer": "Select Health",
+          "pct": 21,
+          "medicaid": false
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 10,
+          "medicaid": false
+        },
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 8,
+          "medicaid": false
+        }
+      ]
+    },
+    "New Jersey": {
+      "total": 290,
+      "top": [
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 25,
+          "medicaid": false
+        },
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 20,
+          "medicaid": true
+        },
+        {
+          "payer": "Aetna",
+          "pct": 19,
+          "medicaid": false
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 18,
+          "medicaid": false
+        }
+      ]
+    },
+    "Colorado": {
+      "total": 641,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 67,
+          "medicaid": true
+        },
+        {
+          "payer": "Cigna / Evernorth",
+          "pct": 6,
+          "medicaid": false
+        },
+        {
+          "payer": "UnitedHealthcare / Optum",
+          "pct": 6,
+          "medicaid": false
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 6,
+          "medicaid": false
+        }
+      ]
+    },
+    "New York": {
+      "total": 421,
+      "top": [
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 46,
+          "medicaid": true
+        },
+        {
+          "payer": "Fidelis",
+          "pct": 20,
+          "medicaid": true
+        },
+        {
+          "payer": "Blue Cross Blue Shield",
+          "pct": 9,
+          "medicaid": false
+        },
+        {
+          "payer": "Anthem",
+          "pct": 9,
+          "medicaid": false
+        }
+      ]
+    },
+    "Florida": {
+      "total": 250,
+      "top": [
+        {
+          "payer": "Sunshine / Ambetter",
+          "pct": 25,
+          "medicaid": false
+        },
+        {
+          "payer": "Medicaid (unspecified)",
+          "pct": 20,
+          "medicaid": true
+        },
+        {
+          "payer": "Aetna",
+          "pct": 14,
+          "medicaid": false
+        },
+        {
+          "payer": "Anthem",
+          "pct": 12,
+          "medicaid": false
+        }
+      ]
+    }
+  }
+}
