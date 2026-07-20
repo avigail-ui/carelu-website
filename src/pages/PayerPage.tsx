@@ -4,8 +4,8 @@ import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
-import { payers, PAYER_REVIEWED } from '../data/payers';
-import type { PayerConfig } from '../data/payers';
+import { payers, PAYER_REVIEWED, STATE_META } from '../data/payers';
+import type { PayerConfig, PayerSource } from '../data/payers';
 
 /* ================================================================
    CARELU — PAYER GUIDES (/payers/:slug)
@@ -63,6 +63,29 @@ function PayerGuide({ config }: { config: PayerConfig }) {
   });
   usePayerJsonLd(config);
 
+  // Numbered source list: the guide's sources plus any section-level cites not
+  // already in it. Superscript markers in the text reference these numbers.
+  const allSources: PayerSource[] = [...config.sources];
+  for (const s of config.sections) {
+    for (const c of s.cites ?? []) {
+      if (!allSources.some((x) => x.url === c.url)) allSources.push(c);
+    }
+  }
+  const srcNum = (url: string) => allSources.findIndex((x) => x.url === url) + 1;
+  const CiteSup = ({ cites }: { cites?: PayerSource[] }) => {
+    if (!cites || cites.length === 0) return null;
+    return (
+      <sup style={{ fontSize: '0.68em', lineHeight: 0 }}>
+        {cites.map((c, i) => (
+          <a key={c.url} href={`#src-${srcNum(c.url)}`} title={c.title}
+            style={{ color: GREEN_DKC, textDecoration: 'none', fontWeight: 700, marginLeft: i === 0 ? 3 : 2 }}>
+            [{srcNum(c.url)}]
+          </a>
+        ))}
+      </sup>
+    );
+  };
+
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
       <DemoModalHost />
@@ -110,16 +133,40 @@ function PayerGuide({ config }: { config: PayerConfig }) {
               lineHeight: 1.75, margin: '0 0 20px',
             }}>{p}</p>
           ))}
-          {config.kind === 'commercial' && config.state === 'US' && (
-            <div className="rv" style={{ background: 'rgba(58,95,134,0.06)', border: '1px solid rgba(58,95,134,0.2)', borderRadius: 14, padding: '16px 20px', margin: '4px 0 8px' }}>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#3a5f86', marginBottom: 6 }}>How this varies by state</div>
-              <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.72)', lineHeight: 1.65, margin: 0 }}>
-                {config.payer}’s ABA clinical policy is largely national, but how it actually applies is state-specific: (1) state autism mandates change what fully-insured plans must cover; (2) {config.payer} runs state-specific Medicaid managed-care plans with their own rules; and (3) self-funded employer plans can carve benefits differently. Always pair this guide with the member’s state and plan-funding type — and a live benefits check.
-              </p>
+          {config.kind === 'medicaid-mco' && config.parent && (
+            <div className="rv" style={{ background: 'rgba(63,122,52,0.05)', border: '1px solid rgba(63,122,52,0.18)', borderRadius: 14, padding: '14px 20px', margin: '4px 0 8px', fontSize: 13.5, color: 'rgba(43,42,38,0.72)', lineHeight: 1.6 }}>
+              This plan administers the <strong style={{ color: INK }}>{config.parent}</strong> ABA benefit — the state rules are the floor, and this page covers what the plan layers on top.
+              {(() => {
+                const parentGuide = Object.values(payers).find((p) => p.kind === 'state-medicaid' && p.state === config.state);
+                return parentGuide ? <> Read it together with the <a href={`/payers/${parentGuide.slug}`} style={{ color: GREEN_DKC, fontWeight: 600 }}>{parentGuide.payer} guide →</a></> : null;
+              })()}
             </div>
           )}
         </div>
       </section>
+
+      {/* Prior auth at a glance — the two questions every intake team asks first */}
+      {(config.assessmentPA || config.treatmentPA) && (
+        <section style={{ paddingTop: 'clamp(8px, 1.5vw, 16px)' }}>
+          <div style={MEASURE}>
+            <div className="rv" style={{
+              background: '#fff', borderRadius: 18, border: '1.5px solid rgba(63,122,52,0.3)',
+              boxShadow: '0 6px 28px rgba(46,90,38,0.08)', overflow: 'hidden',
+              display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            }}>
+              {[
+                { label: 'Prior auth for the assessment', value: config.assessmentPA },
+                { label: 'Prior auth for treatment', value: config.treatmentPA },
+              ].filter((x) => x.value).map((x) => (
+                <div key={x.label} style={{ padding: 'clamp(16px, 2.2vw, 22px)', borderTop: `3px solid ${GREEN}` }}>
+                  <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.11em', textTransform: 'uppercase', color: GREEN, marginBottom: 7 }}>{x.label}</div>
+                  <div style={{ fontSize: 14.5, fontWeight: 600, color: INK, lineHeight: 1.55 }}>{x.value}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* At a glance */}
       <section style={{ padding: 'clamp(16px, 2.5vw, 30px) 0' }}>
@@ -150,7 +197,9 @@ function PayerGuide({ config }: { config: PayerConfig }) {
               letterSpacing: '-0.014em', margin: '0 0 14px',
             }}>{s.h2}</h2>
             {s.body?.map((p, i) => (
-              <p key={i} className="rv" style={{ fontSize: 15.5, color: 'rgba(43,42,38,0.72)', lineHeight: 1.75, margin: '0 0 16px' }}>{p}</p>
+              <p key={i} className="rv" style={{ fontSize: 15.5, color: 'rgba(43,42,38,0.72)', lineHeight: 1.75, margin: '0 0 16px' }}>
+                {p}<CiteSup cites={s.cites} />
+              </p>
             ))}
             {s.list && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginTop: 4 }}>
@@ -161,7 +210,9 @@ function PayerGuide({ config }: { config: PayerConfig }) {
                     boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)',
                   }}>
                     <h3 style={{ fontSize: 15, fontWeight: 700, color: INK, margin: '0 0 5px', fontFamily: 'var(--font-body)' }}>{item.title}</h3>
-                    <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.65)', lineHeight: 1.62, margin: 0 }}>{item.desc}</p>
+                    <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.65)', lineHeight: 1.62, margin: 0 }}>
+                      {item.desc}<CiteSup cites={s.cites} />
+                    </p>
                   </div>
                 ))}
               </div>
@@ -169,6 +220,57 @@ function PayerGuide({ config }: { config: PayerConfig }) {
           </div>
         </section>
       ))}
+
+      {/* Commercial national guides: how the policy plays out state by state */}
+      {config.kind === 'commercial' && config.state === 'US' && (
+        <section style={{ paddingTop: 'clamp(36px, 5vw, 56px)' }}>
+          <div style={MEASURE}>
+            <h2 className="rv" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2.6vw, 31px)',
+              fontWeight: 400, color: INK, lineHeight: 1.2, letterSpacing: '-0.014em', margin: '0 0 10px',
+            }}>How {config.payer} works state by state</h2>
+            <p className="rv" style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.68)', lineHeight: 1.7, margin: '0 0 16px' }}>
+              The clinical policy above is national, but three state-level layers change what a family's card actually buys:
+              the state autism mandate (what fully-insured plans must cover), the carrier's state Medicaid plans (which follow
+              the state Medicaid rules, not this commercial policy), and plan funding type (self-funded ERISA plans can carve
+              benefits differently). Here's the picture in the states we cover:
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {STATE_META.map((st) => {
+                const familyPlans = Object.values(payers).filter(
+                  (p) => p.kind === 'medicaid-mco' && p.state === st.code && p.family && p.family === config.family
+                );
+                return (
+                  <div key={st.code} className="rv" style={{ background: '#fff', borderRadius: 14, padding: 'clamp(14px, 2vw, 20px)', boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap', marginBottom: 4 }}>
+                      <span style={{ fontSize: 15, fontWeight: 700, color: INK }}>{st.name}</span>
+                      <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.5)' }}>Mandate: {st.mandate}</span>
+                    </div>
+                    <p style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.68)', lineHeight: 1.6, margin: 0 }}>
+                      Fully-insured {config.payer} plans issued in {st.name} sit under the state mandate above.{' '}
+                      {familyPlans.length > 0 ? (
+                        <>For Medicaid members, {config.payer} operates{' '}
+                          {familyPlans.map((p, i) => (
+                            <span key={p.slug}>
+                              {i > 0 && (i === familyPlans.length - 1 ? ' and ' : ', ')}
+                              <a href={`/payers/${p.slug}`} style={{ color: GREEN_DKC, fontWeight: 600 }}>{p.payer}</a>
+                            </span>
+                          ))}
+                          {' '}— covered by its own guide, not this one.{' '}
+                        </>
+                      ) : null}
+                      State Medicaid baseline:{' '}
+                      <a href={`/payers/${st.medicaidSlug}`} style={{ color: GREEN_DKC, fontWeight: 600 }}>
+                        {payers[st.medicaidSlug]?.payer ?? st.name} guide →
+                      </a>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* What intake should collect */}
       <section style={{ paddingTop: 'clamp(36px, 5vw, 56px)' }}>
@@ -227,13 +329,13 @@ function PayerGuide({ config }: { config: PayerConfig }) {
         <div style={MEASURE}>
           <div className="rv" style={{ padding: '18px 22px', borderLeft: `3px solid rgba(43,42,38,0.2)`, background: 'rgba(43,42,38,0.03)', borderRadius: '0 12px 12px 0' }}>
             <div style={{ fontSize: 12, fontWeight: 700, color: INK, marginBottom: 8, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Primary sources</div>
-            <ul style={{ margin: 0, padding: '0 0 0 18px', display: 'flex', flexDirection: 'column', gap: 5 }}>
-              {config.sources.map((s) => (
-                <li key={s.url} style={{ fontSize: 13, lineHeight: 1.55 }}>
+            <ol style={{ margin: 0, padding: '0 0 0 22px', display: 'flex', flexDirection: 'column', gap: 5 }}>
+              {allSources.map((s, i) => (
+                <li key={s.url} id={`src-${i + 1}`} style={{ fontSize: 13, lineHeight: 1.55, scrollMarginTop: 100 }}>
                   <a href={s.url} target="_blank" rel="noreferrer" style={{ color: 'rgba(43,42,38,0.75)' }}>{s.title}</a>
                 </li>
               ))}
-            </ul>
+            </ol>
             <p style={{ fontSize: 12, color: 'rgba(43,42,38,0.55)', lineHeight: 1.6, margin: '12px 0 0' }}>
               Payer policies change frequently and vary by plan, state, and funding type. This guide was
               compiled from the sources above and last reviewed {PAYER_REVIEWED}; it is general information,

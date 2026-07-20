@@ -13,19 +13,22 @@
  * Slack webhook is a Workflow Builder trigger: flat JSON, plain text only
  * (same convention as leadtrap-bot-monitor).
  */
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
 
 const ROOT = fileURLToPath(new URL('../..', import.meta.url));
-const PAYERS_TS = ROOT + 'src/data/payers.ts';
+const PAYERS_DIR = ROOT + 'src/data/payers/';
 const SNAP_PATH = fileURLToPath(new URL('./snapshots.json', import.meta.url));
 const SLACK = process.env.SLACK_WEBHOOK_URL;
 const SLACK_FIELD = process.env.SLACK_WEBHOOK_FIELD || 'text';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
-// Pull { title, url } pairs out of the sources arrays in payers.ts.
-const src = readFileSync(PAYERS_TS, 'utf8');
+// Pull { title, url } pairs out of the sources arrays across src/data/payers/*.ts.
+const src = readdirSync(PAYERS_DIR)
+  .filter((f) => f.endsWith('.ts'))
+  .map((f) => readFileSync(PAYERS_DIR + f, 'utf8'))
+  .join('\n');
 const sources = [];
 const re = /\{ title: '((?:[^'\\]|\\.)*)', url: '([^']+)' \}/g;
 let m;
@@ -85,7 +88,7 @@ console.log(`[${date}] checked ${sources.length} sources: ${changed.length} chan
 if ((changed.length || failed.length) && SLACK) {
   const lines = [`Carelu payer-source watch (${date})`];
   if (changed.length) {
-    lines.push('', `CHANGED — review the guide + bump PAYER_REVIEWED in src/data/payers.ts:`);
+    lines.push('', `CHANGED — review the guide + bump PAYER_REVIEWED in src/data/payers/types.ts:`);
     for (const c of changed) lines.push(`• ${c.title} — ${c.url}`);
   }
   if (failed.length) {
