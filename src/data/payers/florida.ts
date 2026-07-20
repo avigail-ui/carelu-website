@@ -1,4 +1,4 @@
-import type { PayerConfig } from './types';
+import type { PayerConfig } from './types.js';
 
 export const floridaPayers: Record<string, PayerConfig> = {
   'florida-medicaid': {

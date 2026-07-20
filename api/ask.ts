@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { payers, PAYER_REVIEWED } from '../src/data/payers';
+import { payers, PAYER_REVIEWED } from '../src/data/payers/index.js';
 
 /* ================================================================
    POST /api/ask — the payer-directory chat.

@@ -1,4 +1,4 @@
-import type { PayerConfig } from './types';
+import type { PayerConfig } from './types.js';
 
 export const massachusettsPayers: Record<string, PayerConfig> = {
   'masshealth-massachusetts-medicaid': {
