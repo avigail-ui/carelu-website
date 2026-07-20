@@ -3232,7 +3232,7 @@ function CtaFooter() {
     { title: 'Industries', links: ['ABA Therapy', 'Mental Health', 'Home Care', 'Addiction Treatment', 'Hospice'] },
     { title: 'Customers',  links: ['Single-Site', 'Multi-Site', 'Enterprise'] },
     { title: 'Company',    links: ['About', 'Careers', 'News', 'Contact'] },
-    { title: 'Resources',  links: ['The Intake Gap (Research)', 'Intake Leak Calculator', 'Intake Guides', 'Payer Guides', 'Integrations', 'Carelu vs a CRM', 'Trust'] },
+    { title: 'Resources',  links: ['The Intake Gap (Research)', 'Intake Leak Calculator', 'Intake Guides', 'Payer Guides', 'Front-Office Risks', 'Integrations', 'Carelu vs a CRM', 'Trust'] },
   ];
 
   return (
@@ -3321,6 +3321,7 @@ function CtaFooter() {
                       : link === 'Payer Guides' ? '/payers'
                       : link === 'Integrations' ? '/integrations'
                       : link === 'Carelu vs a CRM' ? '/carelu-vs-crm'
+                      : link === 'Front-Office Risks' ? '/aba-front-office-risks'
                       : '#'
                     }
                     {...((link === 'Trust' || link === 'Security') ? { target: '_blank', rel: 'noreferrer' } : {})}

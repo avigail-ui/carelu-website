@@ -3,6 +3,7 @@ import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
 import { integrations } from '../data/integrations';
+import { crms } from '../data/crms';
 
 /* ================================================================
    CARELU — INTEGRATIONS DIRECTORY (/integrations)
@@ -59,6 +60,7 @@ export default function IntegrationsDirectory() {
 
       <section style={{ paddingBottom: 'clamp(30px, 4vw, 48px)' }}>
         <div style={W}>
+          <div className="rv" style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '0 0 12px' }}>Practice platforms & EHRs</div>
           <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
             {Object.values(integrations).map((g) => (
               <a key={g.slug} href={`/integrations/${g.slug}`} className="rv" style={{
@@ -79,14 +81,37 @@ export default function IntegrationsDirectory() {
             ))}
           </div>
 
+          <div className="rv" style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '26px 0 12px' }}>CRMs</div>
+          <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+            {Object.values(crms).map((c) => (
+              <a key={c.slug} href={`/carelu-vs-${c.slug}`} className="rv" style={{
+                display: 'block', background: '#fff', borderRadius: 18,
+                padding: 'clamp(20px, 2.6vw, 28px)', textDecoration: 'none',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'transform 0.2s, box-shadow 0.25s',
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 12px 36px rgba(0,0,0,0.09)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)'; }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, marginBottom: 8 }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(19px, 2vw, 23px)', fontWeight: 400, color: INK, margin: 0, letterSpacing: '-0.01em' }}>{c.name}</h3>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={GREEN} strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </div>
+                <p style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.62)', lineHeight: 1.6, margin: 0 }}>
+                  Carelu does the intake and syncs complete records into {c.name} — or serves as your CRM. See how it works.
+                </p>
+              </a>
+            ))}
+          </div>
+
           <div className="rv" style={{
             marginTop: 16, background: 'rgba(63,122,52,0.05)', border: '1px dashed rgba(63,122,52,0.35)',
             borderRadius: 16, padding: 'clamp(18px, 2.4vw, 26px)',
           }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: INK, marginBottom: 6 }}>Plus CRMs, EMRs & everything with a webhook</div>
+            <div style={{ fontSize: 13, fontWeight: 700, color: INK, marginBottom: 6 }}>Plus everything with a webhook</div>
             <p style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.65)', lineHeight: 1.6, margin: 0 }}>
-              Carelu also connects to Salesforce, HubSpot, and other leading systems — and supports webhooks
-              for anything custom. If your platform isn't listed, it almost certainly still works.{' '}
+              Beyond the platforms and CRMs above, Carelu supports webhooks for anything custom. If your
+              system isn't listed, it almost certainly still works.{' '}
               <a href="/demo" style={{ color: '#2e5a26', fontWeight: 600 }}>Ask us about yours</a>.
             </p>
           </div>

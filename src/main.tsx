@@ -24,6 +24,8 @@ import PayersDirectory from './pages/PayersDirectory'
 import IntegrationsDirectory from './pages/IntegrationsDirectory'
 import CrmComparison from './pages/CrmComparison'
 import CrmVsPage from './pages/CrmVsPage'
+import ZapierMakeRisk from './pages/ZapierMakeRisk'
+import FrontOfficeRisks from './pages/FrontOfficeRisks'
 import { CRM_SLUGS } from './data/crms'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
@@ -72,6 +74,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/integrations" element={<IntegrationsDirectory />} />
         <Route path="/integrations/:slug" element={<IntegrationPage />} />
         <Route path="/carelu-vs-crm" element={<CrmComparison />} />
+        <Route path="/zapier-make-hipaa-risk" element={<ZapierMakeRisk />} />
+        <Route path="/aba-front-office-risks" element={<FrontOfficeRisks />} />
         {CRM_SLUGS.map((slug) => (
           <Route key={slug} path={`/carelu-vs-${slug}`} element={<CrmVsPage />} />
         ))}
