@@ -35,8 +35,28 @@ const STATES: { state: string; guides: { slug: string; name: string; desc: strin
       { slug: 'anthem-bcbs-georgia', name: 'Anthem BCBS Georgia', desc: 'CG-BEH-02 criteria + Ava\'s Law and parity protections.' },
     ],
   },
+  {
+    state: 'North Carolina',
+    guides: [{ slug: 'north-carolina-medicaid', name: 'North Carolina Medicaid', desc: 'RB-BHT under Clinical Coverage Policy 8F, under 21, 6-month plan reviews.' }],
+  },
+  {
+    state: 'Indiana',
+    guides: [{ slug: 'indiana-medicaid', name: 'Indiana Medicaid (IHCP)', desc: 'Medically necessary ABA, all PA, 2026 EPSDT-only + under-21 shift.' }],
+  },
+  {
+    state: 'Virginia',
+    guides: [{ slug: 'virginia-medicaid', name: 'Virginia Medicaid (DMAS)', desc: 'EPSDT under 21, PA with per-code unit requests (eff. Oct 2025).' }],
+  },
+  {
+    state: 'Tennessee',
+    guides: [{ slug: 'tenncare-tennessee-medicaid', name: 'TennCare', desc: 'Through age 21 via EPSDT, no annual limit, LBA licensure, MCO-run.' }],
+  },
+  {
+    state: 'Ohio',
+    guides: [{ slug: 'ohio-medicaid', name: 'Ohio Medicaid', desc: 'OAC rule 5160-34-02, all PA, DSM-5-TR dx, 6-month reviews, CareSource.' }],
+  },
 ];
-const ROADMAP = ['North Carolina', 'New Jersey', 'Texas', 'Florida', 'TRICARE (Autism Care Demonstration)'];
+const ROADMAP = ['New Jersey', 'Colorado', 'Arizona', 'Utah', 'Texas', 'Florida', 'TRICARE (Autism Care Demonstration)'];
 const CATEGORIES = Array.from(new Set(POLICIES.policies.map((p) => p.category))).sort();
 
 function GuideCard({ href, name, desc }: { href: string; name: string; desc: string }) {

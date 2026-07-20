@@ -371,4 +371,260 @@ export const payers: Record<string, PayerConfig> = {
       { q: 'Which plans are exempt from Ava\'s Law?', a: 'Self-funded ERISA plans (federal preemption) and employers with 10 or fewer employees. That\'s why intake should always capture the employer and funding type, not just the insurance card.' },
     ],
   },
+
+  'north-carolina-medicaid': {
+    slug: 'north-carolina-medicaid',
+    payer: 'North Carolina Medicaid',
+    pill: 'Payer Guide · North Carolina Medicaid',
+    h1: 'North Carolina Medicaid ABA coverage: the intake guide.',
+    metaTitle: 'North Carolina Medicaid ABA (RB-BHT) Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How NC Medicaid covers ABA as Research-Based Behavioral Health Treatment (RB-BHT) under Clinical Coverage Policy 8F — eligibility under 21, prior authorization, 6-month treatment-plan reviews, and what intake should collect.',
+    intro: [
+      'North Carolina is one of the highest-demand ABA states in the country, and NC Medicaid covers ABA as "Research-Based Behavioral Health Treatment" (RB-BHT) under Clinical Coverage Policy 8F. Coverage is real, but it runs through EPSDT rules, service-authorization requirements, and a policy that is actively changing — here is what an intake team needs to know.',
+    ],
+    atGlance: [
+      { label: 'Covers ABA?', value: 'Yes — RB-BHT for members under 21 with ASD (EPSDT)' },
+      { label: 'Policy', value: 'Clinical Coverage Policy 8F (RB-BHT for ASD)' },
+      { label: 'Prior auth', value: 'Service authorization required; extensions to continue' },
+      { label: 'Plan review', value: 'Treatment plan reviewed at least every 6 months by an LQASP' },
+      { label: 'Under age 3', value: 'Provisional ASD diagnosis accepted; confirm within 6 months' },
+      { label: 'Watch', value: 'Policy 8F and 2026 legislation (HB 696) are in flux' },
+    ],
+    sections: [
+      {
+        h2: 'Who qualifies',
+        body: [
+          'RB-BHT is covered for Medicaid members under 21 with a diagnosis of ASD established using a scientifically validated diagnostic tool. For children under three, a provisional diagnosis is accepted at the time services begin, with a confirmed ASD diagnosis expected within six months — a detail worth capturing at intake so young families aren\'t turned away prematurely.',
+        ],
+      },
+      {
+        h2: 'Authorization & treatment plan',
+        body: [
+          'Services require service authorization, and an extension of that authorization must be obtained to continue coverage. The treatment plan must be reviewed at least once every six months by a Licensed Qualified Autism Service Provider (LQASP) and updated as appropriate. As with any 6-month cadence, the baseline data collected at intake is what every future review is measured against.',
+        ],
+      },
+      {
+        h2: 'A policy in motion',
+        body: [
+          'Policy 8F has been open for public comment and North Carolina enacted ABA-related legislation (HB 696) in 2026, so specifics are changing. Treat the linked NC Medicaid pages as the source of truth and re-check before relying on any single requirement.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Medicaid ID & health plan', desc: 'Which managed care plan (or NC Medicaid Direct) the member is enrolled in.' },
+      { title: 'ASD diagnosis + tool', desc: 'Diagnosis, the validated instrument used, and date; for under-3, provisional-diagnosis status and the 6-month confirmation timeline.' },
+      { title: 'Diagnosing provider', desc: 'Name and credentials of the qualified professional who made the diagnosis.' },
+      { title: 'Assessment (FBA)', desc: 'The comprehensive assessment supporting medical necessity for the authorization request.' },
+    ],
+    sources: [
+      { title: 'NC Medicaid — 8F Research-Based Behavioral Health Treatment (RB-BHT) for ASD', url: 'https://medicaid.ncdhhs.gov/8f-research-based-behavioral-health-treatment-rb-bht-autism-spectrum-disorder-asd' },
+      { title: 'NC Medicaid — Program-Specific Clinical Coverage Policies', url: 'https://medicaid.ncdhhs.gov/providers/program-specific-clinical-coverage-policies' },
+    ],
+    faq: [
+      { q: 'Does North Carolina Medicaid cover ABA therapy?', a: 'Yes — as Research-Based Behavioral Health Treatment (RB-BHT) under Clinical Coverage Policy 8F, for members under 21 with an ASD diagnosis, under the EPSDT benefit. Services require service authorization.' },
+      { q: 'Can a young child start before a confirmed diagnosis?', a: 'For children under three, NC Medicaid accepts a provisional ASD diagnosis when services begin, with a confirmed diagnosis expected within six months.' },
+      { q: 'How often is the treatment plan reviewed?', a: 'At least every six months, by a Licensed Qualified Autism Service Provider (LQASP), with an authorization extension required to continue services.' },
+    ],
+  },
+
+  'indiana-medicaid': {
+    slug: 'indiana-medicaid',
+    payer: 'Indiana Medicaid (IHCP)',
+    pill: 'Payer Guide · Indiana Medicaid',
+    h1: 'Indiana Medicaid ABA coverage: the intake guide.',
+    metaTitle: 'Indiana Medicaid (IHCP) ABA Coverage & Prior Auth Guide | Carelu',
+    metaDescription:
+      'How Indiana Medicaid (IHCP) covers ABA for autism — medically necessary coverage, prior authorization on all ABA, the 2026 move to EPSDT-only and the under-21 limit, and telehealth changes.',
+    intro: [
+      'Indiana Medicaid — the Indiana Health Coverage Programs (IHCP) — covers ABA for autism when medically necessary, across traditional Medicaid and its managed-care entities. The program is in the middle of significant 2026 changes to how and for whom ABA is covered, so intake teams should know both the baseline and what\'s shifting.',
+    ],
+    atGlance: [
+      { label: 'Covers ABA?', value: 'Yes — medically necessary ABA for ASD' },
+      { label: 'Prior auth', value: 'Required for all ABA services' },
+      { label: '2026 change', value: 'ABA covered exclusively through EPSDT (eff. 4/1/2026)' },
+      { label: 'Age limit', value: 'No ABA reimbursement for members 21+ (DOS on/after 10/1/2026)' },
+      { label: 'Telehealth', value: '97151–97154 & 0373T no longer billable with modifier 95 (eff. 4/1/2026)' },
+      { label: 'Rates', value: 'Reimbursement phasedown underway 2026–2027' },
+    ],
+    sections: [
+      {
+        h2: 'Coverage & authorization',
+        body: [
+          'IHCP covers ABA when medically necessary for the treatment of ASD, and all ABA services require prior authorization — the provider requests approval and demonstrates medical necessity before services begin. Coverage spans the state\'s managed-care plans and traditional Medicaid.',
+        ],
+      },
+      {
+        h2: 'What changed in 2026',
+        body: [
+          'Effective April 1, 2026, IHCP covers ABA exclusively through the EPSDT benefit, and for dates of service on or after October 1, 2026, it will no longer authorize or reimburse ABA for members 21 and older — making age a first-order intake question. Also effective April 1, 2026, assessment/treatment codes 97151, 97152, 97153, 97154, and 0373T can no longer be billed with the telehealth modifier 95, as these require in-person interaction. A reimbursement-rate phasedown is scheduled across 2026–2027.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Member ID & managed-care plan', desc: 'Which IHCP plan the member is on drives the PA process and timelines.' },
+      { title: 'Age / date of birth', desc: 'The 2026 changes limit coverage to under-21 — confirm eligibility up front.' },
+      { title: 'ASD diagnosis', desc: 'Diagnosis, diagnosing provider and credentials, and the evaluation date.' },
+      { title: 'Service setting', desc: 'In-person requirements now apply to key codes — capture the intended delivery setting.' },
+    ],
+    sources: [
+      { title: 'IHCP Bulletin — ABA policy updates (in.gov/medicaid)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
+      { title: 'Indiana Medicaid — Provider home (bulletins & modules)', url: 'https://www.in.gov/medicaid/providers/' },
+    ],
+    faq: [
+      { q: 'Does Indiana Medicaid cover ABA therapy?', a: 'Yes — IHCP covers medically necessary ABA for autism, with prior authorization required for all ABA services. As of April 1, 2026, ABA is covered exclusively through the EPSDT benefit.' },
+      { q: 'Is there an age limit for ABA under Indiana Medicaid?', a: 'Yes — for dates of service on or after October 1, 2026, IHCP will no longer authorize or reimburse ABA for members 21 and older.' },
+      { q: 'Can Indiana Medicaid ABA be delivered by telehealth?', a: 'Effective April 1, 2026, codes 97151, 97152, 97153, 97154, and 0373T can no longer be billed with the telehealth modifier 95 — they require direct, in-person interaction. Verify current rules before scheduling.' },
+    ],
+  },
+
+  'virginia-medicaid': {
+    slug: 'virginia-medicaid',
+    payer: 'Virginia Medicaid (DMAS)',
+    pill: 'Payer Guide · Virginia Medicaid',
+    h1: 'Virginia Medicaid ABA coverage: the intake guide.',
+    metaTitle: 'Virginia Medicaid (DMAS) ABA Coverage & Prior Auth Guide | Carelu',
+    metaDescription:
+      'How Virginia Medicaid (DMAS) covers ABA for autism under EPSDT — eligibility under 21, prior authorization with per-code unit requests (eff. Oct 2025), diagnosis and FBA documentation, and what intake should collect.',
+    intro: [
+      'Virginia Medicaid, administered by the Department of Medical Assistance Services (DMAS), covers ABA for children with autism under the EPSDT benefit. Coverage is medically-necessity driven and prior-authorized, with a 2025 update to how authorizations are submitted — here is the intake-level picture.',
+    ],
+    atGlance: [
+      { label: 'Covers ABA?', value: 'Yes — under 21, via EPSDT' },
+      { label: 'Prior auth', value: 'Required before services begin' },
+      { label: 'Auth detail', value: 'Requests must include units per ABA CPT code (eff. 10/15/2025)' },
+      { label: 'Diagnosis', value: 'ASD dx by a qualified professional' },
+      { label: 'Medical necessity', value: 'Documented by a licensed physician' },
+      { label: 'Assessment', value: 'Comprehensive assessment (e.g., FBA) supports the PA' },
+    ],
+    sections: [
+      {
+        h2: 'Coverage under EPSDT',
+        body: [
+          'ABA is covered for Medicaid members under 21 under the EPSDT benefit, the federal rule requiring states to cover medically necessary services for children — even services not otherwise listed as standard benefits. Coverage is prior-authorized: services must be approved before they begin.',
+        ],
+      },
+      {
+        h2: 'Authorization requirements',
+        body: [
+          'A diagnosis of ASD by a qualified professional, documentation of medical necessity by a licensed physician, and a comprehensive assessment (such as a functional behavior assessment) supporting the need for services are required with the prior-authorization request. Effective for dates of service October 15, 2025 and later, providers must submit service authorizations that include the units requested for each ABA CPT code used in treatment — so intake and clinical planning need to align on requested intensity by code.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Member ID & health plan', desc: 'Which DMAS managed-care plan (or FFS) the member is on.' },
+      { title: 'ASD diagnosis', desc: 'Diagnosis, the qualified professional who made it, and the date.' },
+      { title: 'Medical-necessity documentation', desc: 'The licensed physician\'s documentation supporting services.' },
+      { title: 'Assessment (FBA)', desc: 'The comprehensive assessment that supports the authorization request and requested units.' },
+    ],
+    sources: [
+      { title: 'Virginia Medicaid (DMAS) — ABA service authorization update (eff. 10/15/2025)', url: 'https://vamedicaid.dmas.virginia.gov/bulletin/service-authorization-update-applied-behavior-analysis-aba-effective-october-15-2025' },
+      { title: 'Virginia Medicaid (DMAS) — provider bulletins & manuals', url: 'https://vamedicaid.dmas.virginia.gov/' },
+    ],
+    faq: [
+      { q: 'Does Virginia Medicaid cover ABA therapy?', a: 'Yes — for members under 21 with autism, under the EPSDT benefit. ABA requires prior authorization before services begin.' },
+      { q: 'What does Virginia Medicaid require for ABA prior authorization?', a: 'An ASD diagnosis by a qualified professional, medical-necessity documentation by a licensed physician, and a comprehensive assessment (such as an FBA). Since October 15, 2025, requests must also include the units requested for each ABA CPT code.' },
+      { q: 'Who can diagnose autism for Virginia Medicaid ABA coverage?', a: 'A qualified professional; the request also needs medical-necessity documentation by a licensed physician. Verify current DMAS requirements before submitting.' },
+    ],
+  },
+
+  'tenncare-tennessee-medicaid': {
+    slug: 'tenncare-tennessee-medicaid',
+    payer: 'TennCare (Tennessee Medicaid)',
+    pill: 'Payer Guide · TennCare',
+    h1: 'TennCare (Tennessee Medicaid) ABA coverage: the intake guide.',
+    metaTitle: 'TennCare ABA Coverage & Prior Authorization Guide | Carelu',
+    metaDescription:
+      'How TennCare (Tennessee Medicaid) covers ABA for autism under EPSDT — coverage up to age 21 with no annual benefit limit, prior authorization and medical necessity, LBA licensure, and MCO administration.',
+    intro: [
+      'TennCare, Tennessee\'s Medicaid program, covers ABA for children with autism through the EPSDT benefit — administered through its managed care organizations. Tennessee is a strong ABA-demand state, and TennCare\'s coverage is notably broad on the benefit side, with the usual authorization and licensure gates.',
+    ],
+    atGlance: [
+      { label: 'Covers ABA?', value: 'Yes — through age 21, via EPSDT' },
+      { label: 'Annual limit', value: 'No annual benefit limit (weekly-hour limits may apply)' },
+      { label: 'Prior auth', value: 'Required; subject to medical necessity' },
+      { label: 'Licensure', value: 'Direct ABA requires a TN Licensed Behavior Analyst (LBA)' },
+      { label: 'Administered by', value: 'TennCare MCOs (e.g., UnitedHealthcare, Wellpoint/Amerigroup)' },
+      { label: 'Auth timeline', value: 'Commonly ~2–6 weeks depending on the case' },
+    ],
+    sections: [
+      {
+        h2: 'Coverage & benefit',
+        body: [
+          'Children on TennCare receive services through EPSDT, which requires coverage of medically necessary services — including ABA — for members under 21. There is no annual benefit limit on ABA under TennCare, though weekly-hour limits may apply. Covered ABA generally includes assessment, direct therapy, and parent training.',
+        ],
+      },
+      {
+        h2: 'Authorization & provider requirements',
+        body: [
+          'A licensed provider must prescribe the service, and coverage is always subject to medical necessity, with prior authorization required. Tennessee requires that a BCBA or other qualified licensed clinician delivering direct ABA be licensed as a Licensed Behavior Analyst (LBA) through the Tennessee Applied Behavior Analyst Licensing Board. Because TennCare is administered through MCOs, capture which plan the family is on — it drives the PA process and timelines (commonly two to six weeks).',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'TennCare MCO', desc: 'Which managed care organization administers the member\'s benefit — it determines the PA path.' },
+      { title: 'ASD diagnosis', desc: 'Diagnosis, diagnosing provider and credentials, and date.' },
+      { title: 'Prescribing provider', desc: 'The licensed provider prescribing ABA services.' },
+      { title: 'LBA licensure', desc: 'Confirm the supervising/rendering analyst holds a Tennessee LBA license.' },
+    ],
+    sources: [
+      { title: 'TennCare — official program site', url: 'https://www.tn.gov/tenncare.html' },
+      { title: 'TennCare MCO — ABA program description (UnitedHealthcare, TN)', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/commplan/tn/behavioral-health/TN-ABA-Program-Description.pdf' },
+    ],
+    faq: [
+      { q: 'Does TennCare cover ABA therapy?', a: 'Yes — for members up to age 21 through the EPSDT benefit, with no annual benefit limit (though weekly-hour limits may apply). Coverage is subject to prior authorization and medical necessity.' },
+      { q: 'Who can provide ABA under TennCare?', a: 'Direct ABA must be delivered by a BCBA or qualified licensed clinician who holds a Tennessee Licensed Behavior Analyst (LBA) license, under the state\'s ABA licensing board.' },
+      { q: 'How long does TennCare ABA authorization take?', a: 'Approval timelines commonly range from about two to six weeks depending on the case and the managed care organization administering the benefit.' },
+    ],
+  },
+
+  'ohio-medicaid': {
+    slug: 'ohio-medicaid',
+    payer: 'Ohio Medicaid',
+    pill: 'Payer Guide · Ohio Medicaid',
+    h1: 'Ohio Medicaid ABA coverage: the intake guide.',
+    metaTitle: 'Ohio Medicaid ABA Coverage & Prior Authorization Guide | Carelu',
+    metaDescription:
+      'How Ohio Medicaid covers ABA for autism under Ohio Administrative Code rule 5160-34-02 — prior authorization on all ABA, DSM-5-TR diagnosis requirements, 6-month medical-necessity reviews, and CareSource administration.',
+    intro: [
+      'Ohio Medicaid covers ABA — "adaptive behavior services" — for the assessment and treatment of autism spectrum disorder under Ohio Administrative Code rule 5160-34-02. Ohio runs heavily through managed care (CareSource is the dominant plan in our data), so intake needs both the state rule and the plan-level process.',
+    ],
+    atGlance: [
+      { label: 'Covers ABA?', value: 'Yes — adaptive behavior services for ASD' },
+      { label: 'Rule', value: 'Ohio Administrative Code 5160-34-02' },
+      { label: 'Prior auth', value: 'Required for all covered ABA codes' },
+      { label: 'Diagnosis', value: 'Comprehensive evaluation, DSM-5-TR criteria, by a licensed clinician' },
+      { label: 'Reviews', value: 'Medical-necessity review at baseline, then every 6 months' },
+      { label: 'Common plan', value: 'CareSource administers a large share of Ohio Medicaid ABA' },
+    ],
+    sections: [
+      {
+        h2: 'Coverage & the state rule',
+        body: [
+          'Ohio Administrative Code rule 5160-34-02 describes coverage for adaptive behavior services (ABA) for the assessment and treatment of ASD and related disorders. Prior authorization is required for all covered ABA codes, at both initial and ongoing stages.',
+        ],
+      },
+      {
+        h2: 'Diagnosis & medical necessity',
+        body: [
+          'The ASD diagnosis must be validated by a documented comprehensive diagnostic evaluation completed by a licensed physician, psychologist, or other licensed clinician qualified to diagnose autism, demonstrating the DSM-5-TR diagnostic criteria. Medical-necessity review is required at baseline and then at least every six months (or sooner if clinically necessary) — so the intake record and baseline data set the terms of every future review. Because much of Ohio Medicaid runs through CareSource and other MCOs, capture the plan to determine the exact submission path.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Member ID & managed-care plan', desc: 'Which Ohio Medicaid MCO (CareSource and others) the member is on.' },
+      { title: 'ASD diagnosis (DSM-5-TR)', desc: 'The comprehensive diagnostic evaluation, the licensed clinician who completed it, and the date.' },
+      { title: 'Assessment for authorization', desc: 'Documentation supporting medical necessity for the PA request.' },
+      { title: 'Review cadence', desc: 'Set expectations for the baseline and 6-month medical-necessity reviews from day one.' },
+    ],
+    sources: [
+      { title: 'Ohio Administrative Code — Rule 5160-34-02 (adaptive behavior services)', url: 'https://codes.ohio.gov/ohio-administrative-code/rule-5160-34-02' },
+      { title: 'CareSource — Ohio Medicaid ABA policy (MM-0028)', url: 'https://www.caresource.com/documents/medicaid-oh-policy-medical-mm-0028-20250301' },
+    ],
+    faq: [
+      { q: 'Does Ohio Medicaid cover ABA therapy?', a: 'Yes — as adaptive behavior services for the assessment and treatment of ASD, under Ohio Administrative Code rule 5160-34-02. Prior authorization is required for all covered ABA codes.' },
+      { q: 'What diagnosis does Ohio Medicaid require for ABA?', a: 'A comprehensive diagnostic evaluation demonstrating DSM-5-TR ASD criteria, completed by a licensed physician, psychologist, or other clinician qualified to diagnose autism.' },
+      { q: 'How often is medical necessity reviewed?', a: 'At baseline and then at least every six months (or sooner if clinically necessary). Verify current requirements against the state rule and the member\'s managed-care plan.' },
+    ],
+  },
 };

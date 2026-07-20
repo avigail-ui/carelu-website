@@ -2,85 +2,145 @@
  "https://medicaid.georgia.gov/programs/all-programs/autism-spectrum-disorder": {
   "hash": "ac6bd61a5bc97ae9055b34f46ba6fe59e10711d5b30a4aae3396165881009e63",
   "bytes": 208630,
-  "checked": "2026-07-20T09:24:23.617Z",
+  "checked": "2026-07-20T10:37:40.038Z",
   "title": "GA DCH — Autism Spectrum Disorder program"
  },
  "https://medicaid.georgia.gov/document/publication/asd-policy-manual/download": {
   "hash": "a777d990f7be8ff75e5a789732476f64ead071d0a7ea933abd484b7eba955905",
   "bytes": 456011,
-  "checked": "2026-07-20T09:24:24.296Z",
+  "checked": "2026-07-20T10:37:40.718Z",
   "title": "GA DCH — Part II ASD Policy Manual"
  },
  "https://medicaid.georgia.gov/programs/all-programs/tefrakatie-beckett": {
   "hash": "676c8f69007ae0978c31642ab90c6bc0305c74126763d137a34a239d342ff88f",
   "bytes": 217831,
-  "checked": "2026-07-20T09:24:24.513Z",
+  "checked": "2026-07-20T10:37:41.027Z",
   "title": "GA DCH — Katie Beckett / TEFRA"
  },
  "https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101": {
   "hash": "65bd949b6135309fff513e20ebd56a499f7f789b56a953ed425a1b894796e81f",
   "bytes": 379923,
-  "checked": "2026-07-20T09:24:26.789Z",
+  "checked": "2026-07-20T10:37:44.461Z",
   "title": "CareSource GA MCD-MM-0212 (ABA policy)"
  },
  "https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf": {
   "hash": "cf3b5551cdb1b7b349a04df60bea5e87d5a625e279ace6eaa9692531b111bc7d",
   "bytes": 436634,
-  "checked": "2026-07-20T09:24:28.662Z",
+  "checked": "2026-07-20T10:37:45.495Z",
   "title": "Peach State GA.CP.BH.504 (ASD services)"
  },
  "https://www.aetna.com/cpb/medical/data/500_599/0554.html": {
   "hash": "9aafc8edbcbbe82de4a1325604aace166e4ba1d9c707daa19115b8d4a8040d6b",
   "bytes": 46132,
-  "checked": "2026-07-20T09:24:29.925Z",
+  "checked": "2026-07-20T10:37:45.946Z",
   "title": "Aetna CPB 0554 — Applied Behavior Analysis"
  },
  "https://www.aetna.com/cpb/medical/data/600_699/0648.html": {
   "hash": "cebdc2c808822d1b53ca7c1de5be30fd8046e8fed0626ded0d260e88fb65c380",
-  "bytes": 434858,
-  "checked": "2026-07-20T09:24:30.326Z",
+  "bytes": 434859,
+  "checked": "2026-07-20T10:37:46.397Z",
   "title": "Aetna CPB 0648 — Autism Spectrum Disorders"
  },
  "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf": {
   "hash": "8899bb6c327d216a898b5ab258f72907acb4b1971ed214d45a23f5b5e0b3cadc",
   "bytes": 399489,
-  "checked": "2026-07-20T09:24:33.523Z",
+  "checked": "2026-07-20T10:37:46.640Z",
   "title": "Cigna EN0499 — Intensive Behavioral Interventions"
  },
  "https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf": {
   "hash": "8d8918b51e8c2985cae67cbdb54e8b437af63e15ef1cf51b8d442c4519f4a85a",
   "bytes": 261929,
-  "checked": "2026-07-20T09:24:33.545Z",
+  "checked": "2026-07-20T10:37:46.660Z",
   "title": "Cigna autism resource guide (Mar 2025)"
  },
  "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf": {
   "hash": "44c407ab8333a3e6184d9b22059871e3df27479021f302f49f80fdcf11d0027d",
   "bytes": 4367,
-  "checked": "2026-07-20T09:24:34.533Z",
+  "checked": "2026-07-20T10:37:47.467Z",
   "title": "Optum ABA Supplemental Clinical Criteria (BH803ABASCC)"
  },
  "https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf": {
   "hash": "e03e873f4af7f54579767d21c45cf22f8cb11c0b6582caf9bfcc1a1c0a3a43a0",
   "bytes": 4367,
-  "checked": "2026-07-20T09:24:35.013Z",
+  "checked": "2026-07-20T10:37:48.006Z",
   "title": "Optum ABA FAQ (Provider Express)"
  },
  "https://files.providernews.anthem.com/5585/MULTI-BCBS-CM-072378-24-CPN72366-EXPRESS-ABA-prov-resource-gd-FINAL-V3.pdf": {
   "hash": "7b79f796bd720c3a790bdfd127e867f973e06a5cdc262c016ddf9dfaa323e75f",
   "bytes": 388331,
-  "checked": "2026-07-20T09:24:36.107Z",
+  "checked": "2026-07-20T10:37:48.252Z",
   "title": "Anthem ABA Provider Resource Guide (Oct 2024)"
  },
  "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-59-10/": {
   "failing": true,
   "why": "HTTP 403",
-  "checked": "2026-07-20T09:24:36.292Z",
+  "checked": "2026-07-20T10:37:48.400Z",
   "title": "Ava's Law — O.C.G.A. § 33-24-59.10"
  },
  "https://sos.ga.gov/georgia-behavior-analyst-licensing-board": {
   "failing": true,
   "why": "HTTP 403",
-  "checked": "2026-07-20T09:24:38.097Z",
+  "checked": "2026-07-20T10:37:48.610Z",
   "title": "Georgia Behavior Analyst Licensing Board"
+ },
+ "https://medicaid.ncdhhs.gov/8f-research-based-behavioral-health-treatment-rb-bht-autism-spectrum-disorder-asd": {
+  "hash": "b76ace4de272f104ab0755cb3d6f04469e998b5de075744d5ebf065b1fd474a5",
+  "bytes": 53019,
+  "checked": "2026-07-20T10:37:49.932Z",
+  "title": "NC Medicaid — 8F Research-Based Behavioral Health Treatment (RB-BHT) for ASD"
+ },
+ "https://medicaid.ncdhhs.gov/providers/program-specific-clinical-coverage-policies": {
+  "hash": "ab9595c5b3d9830002e99e4066994abfcc8ecd5522eb40a04222f1b8f418187e",
+  "bytes": 127611,
+  "checked": "2026-07-20T10:37:50.044Z",
+  "title": "NC Medicaid — Program-Specific Clinical Coverage Policies"
+ },
+ "https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf": {
+  "hash": "3cd3740a1d7decdd37b8d7b7850753081a3ab5ccbf1776337ca5df1138b92557",
+  "bytes": 433687,
+  "checked": "2026-07-20T10:37:51.670Z",
+  "title": "IHCP Bulletin — ABA policy updates (in.gov/medicaid)"
+ },
+ "https://www.in.gov/medicaid/providers/": {
+  "hash": "7a1d589ed0f76cc2f4f81a0eec69860ecfb717fcd700919656299e0d8a72f75b",
+  "bytes": 102339,
+  "checked": "2026-07-20T10:37:52.427Z",
+  "title": "Indiana Medicaid — Provider home (bulletins & modules)"
+ },
+ "https://vamedicaid.dmas.virginia.gov/bulletin/service-authorization-update-applied-behavior-analysis-aba-effective-october-15-2025": {
+  "failing": true,
+  "why": "fetch failed",
+  "checked": "2026-07-20T10:38:02.667Z",
+  "title": "Virginia Medicaid (DMAS) — ABA service authorization update (eff. 10/15/2025)"
+ },
+ "https://vamedicaid.dmas.virginia.gov/": {
+  "failing": true,
+  "why": "fetch failed",
+  "checked": "2026-07-20T10:38:13.172Z",
+  "title": "Virginia Medicaid (DMAS) — provider bulletins & manuals"
+ },
+ "https://www.tn.gov/tenncare.html": {
+  "hash": "6bb48cc9de3273bdb3d48a90042f71779d2d527e582d969ada03a59842f219b7",
+  "bytes": 38776,
+  "checked": "2026-07-20T10:38:15.101Z",
+  "title": "TennCare — official program site"
+ },
+ "https://www.uhcprovider.com/content/dam/provider/docs/public/commplan/tn/behavioral-health/TN-ABA-Program-Description.pdf": {
+  "hash": "37b06daf766d216976057a367d901859118858135f5261dec3fdc5d9ff2805d6",
+  "bytes": 342064,
+  "checked": "2026-07-20T10:38:16.802Z",
+  "title": "TennCare MCO — ABA program description (UnitedHealthcare, TN)"
+ },
+ "https://codes.ohio.gov/ohio-administrative-code/rule-5160-34-02": {
+  "failing": true,
+  "why": "fetch failed",
+  "checked": "2026-07-20T10:38:20.547Z",
+  "title": "Ohio Administrative Code — Rule 5160-34-02 (adaptive behavior services)"
+ },
+ "https://www.caresource.com/documents/medicaid-oh-policy-medical-mm-0028-20250301": {
+  "hash": "7cc92aa4478632b0d02fa26df037fb5c6a3b5f5c41b51ffacc76e08b7a12edb8",
+  "bytes": 397836,
+  "checked": "2026-07-20T10:38:22.743Z",
+  "title": "CareSource — Ohio Medicaid ABA policy (MM-0028)"
  }
 }
