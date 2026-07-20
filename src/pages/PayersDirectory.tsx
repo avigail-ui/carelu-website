@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import DemoModalHost from '../components/DemoModal';
+import AskPayers from '../components/AskPayers';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
@@ -112,19 +113,13 @@ export default function PayersDirectory() {
     canonical: '/payers',
   });
 
-  const [q, setQ] = useState('');
   const [cat, setCat] = useState<string>('All');
-  const query = q.trim().toLowerCase();
 
-  const searching = query.length > 0 || cat !== 'All';
+  const searching = cat !== 'All';
 
   const filtered = useMemo(() => {
-    return POLICY_DB.filter((p) => {
-      if (cat !== 'All' && p.category !== cat) return false;
-      if (!query) return true;
-      return p.hay.includes(query) || p.category.toLowerCase().includes(query);
-    });
-  }, [query, cat]);
+    return POLICY_DB.filter((p) => cat === 'All' || p.category === cat);
+  }, [cat]);
 
   const byPayer = useMemo(() => {
     const m: Record<string, PolicyEntry[]> = {};
@@ -144,12 +139,12 @@ export default function PayersDirectory() {
           {filtered.length === POLICY_DB.length
             ? `All ${POLICY_DB.length} policy rules from the ${ALL.length} guides`
             : `${filtered.length} of ${POLICY_DB.length} policy rules`}
-          {query ? ` matching “${q.trim()}”` : ''}{cat !== 'All' ? ` · ${cat}` : ''}.
+          {cat !== 'All' ? ` · ${cat}` : ''}.
         </p>
 
         {filtered.length === 0 && (
           <p style={{ fontSize: 15, color: 'rgba(43,42,38,0.6)', padding: '20px 0' }}>
-            No policies match that search. Try a payer name, a state, or a topic like “prior authorization” or “rates.”
+            No policies in this category yet.
           </p>
         )}
 
@@ -217,27 +212,12 @@ export default function PayersDirectory() {
         </div>
       </section>
 
-      {/* Search + category filter */}
+      {/* Ask-the-directory chat + category filter for the policy database */}
       <section style={{ paddingBottom: 'clamp(24px, 3vw, 36px)' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' }}>
-          <div className="rv" style={{ position: 'relative' }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(43,42,38,0.4)" strokeWidth="2" strokeLinecap="round" style={{ position: 'absolute', left: 18, top: '50%', transform: 'translateY(-50%)' }}><circle cx="11" cy="11" r="8" /><path d="M21 21l-4.3-4.3" /></svg>
-            <input
-              type="search"
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Search payers and policies — e.g. prior auth, telehealth, Aetna, CPT 97153…"
-              aria-label="Search payer policies"
-              style={{
-                width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 15,
-                color: INK, background: '#fff', border: '1px solid rgba(43,42,38,0.14)', borderRadius: 100,
-                padding: '15px 20px 15px 46px', outline: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
-              }}
-              onFocus={(e) => { e.currentTarget.style.borderColor = GREEN; }}
-              onBlur={(e) => { e.currentTarget.style.borderColor = 'rgba(43,42,38,0.14)'; }}
-            />
-          </div>
-          <div className="rv" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14, justifyContent: 'center' }}>
+          <AskPayers />
+          <div className="rv" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 16, justifyContent: 'center', alignItems: 'center' }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.45)' }}>Browse rules:</span>
             {['All', ...CATEGORIES].map((c) => (
               <button key={c} onClick={() => setCat(c)} style={{
                 fontFamily: 'var(--font-body)', fontSize: 12.5, fontWeight: 600, cursor: 'pointer',
