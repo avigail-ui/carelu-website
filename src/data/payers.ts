@@ -10,6 +10,7 @@ export interface PayerFact { label: string; value: string }
 export interface PayerSection { h2: string; body?: string[]; list?: { title: string; desc: string }[] }
 export interface PayerSource { title: string; url: string }
 export interface PayerFaq { q: string; a: string }
+export type PayerKind = 'state-medicaid' | 'medicaid-mco' | 'commercial';
 export interface PayerConfig {
   slug: string;
   payer: string;
@@ -23,6 +24,10 @@ export interface PayerConfig {
   collect: { title: string; desc: string }[]; // what intake should gather from the family
   sources: PayerSource[];
   faq: PayerFaq[];
+  // Taxonomy for the state-organized directory.
+  state?: string;          // 'GA', 'NC', ... or 'US' for national commercial policy
+  kind?: PayerKind;        // state medicaid program, a Medicaid MCO, or commercial
+  parent?: string;         // for MCOs: the state Medicaid program they administer
 }
 
 const REVIEWED = 'July 2026';
@@ -33,6 +38,7 @@ export const payers: Record<string, PayerConfig> = {
   'georgia-medicaid': {
     slug: 'georgia-medicaid',
     payer: 'Georgia Medicaid',
+    state: 'GA', kind: 'state-medicaid',
     pill: 'Payer Guide · Georgia Medicaid',
     h1: 'Georgia Medicaid ABA coverage: the intake guide.',
     metaTitle: 'Georgia Medicaid ABA Coverage & Prior Auth: Intake Guide | Carelu',
@@ -106,6 +112,7 @@ export const payers: Record<string, PayerConfig> = {
   'aetna': {
     slug: 'aetna',
     payer: 'Aetna',
+    state: 'US', kind: 'commercial',
     pill: 'Payer Guide · Aetna',
     h1: 'Aetna ABA coverage: verification & prior-auth guide.',
     metaTitle: 'Does Aetna Cover ABA Therapy? Prior Auth & Intake Guide | Carelu',
@@ -176,6 +183,7 @@ export const payers: Record<string, PayerConfig> = {
   'cigna': {
     slug: 'cigna',
     payer: 'Cigna / Evernorth',
+    state: 'US', kind: 'commercial',
     pill: 'Payer Guide · Cigna / Evernorth',
     h1: 'Cigna ABA coverage: prior auth, plans & telehealth.',
     metaTitle: 'Cigna ABA Coverage & Prior Authorization: Intake Guide | Carelu',
@@ -244,6 +252,7 @@ export const payers: Record<string, PayerConfig> = {
   'unitedhealthcare-optum': {
     slug: 'unitedhealthcare-optum',
     payer: 'UnitedHealthcare / Optum',
+    state: 'US', kind: 'commercial',
     pill: 'Payer Guide · UnitedHealthcare / Optum',
     h1: 'UnitedHealthcare & Optum ABA: the authorization guide.',
     metaTitle: 'UnitedHealthcare / Optum ABA Prior Auth & Coverage Guide | Carelu',
@@ -308,6 +317,7 @@ export const payers: Record<string, PayerConfig> = {
   'anthem-bcbs-georgia': {
     slug: 'anthem-bcbs-georgia',
     payer: 'Anthem BCBS Georgia',
+    state: 'GA', kind: 'commercial',
     pill: 'Payer Guide · Anthem BCBS Georgia',
     h1: 'Anthem BCBS Georgia ABA coverage (+ Ava\'s Law).',
     metaTitle: 'Anthem BCBS Georgia ABA Coverage & Ava\'s Law: Intake Guide | Carelu',
@@ -372,9 +382,157 @@ export const payers: Record<string, PayerConfig> = {
     ],
   },
 
+  'caresource-georgia': {
+    slug: 'caresource-georgia',
+    payer: 'CareSource (Georgia Medicaid CMO)',
+    pill: 'Payer Guide · CareSource Georgia',
+    h1: 'CareSource Georgia ABA coverage (GA Medicaid CMO).',
+    metaTitle: 'CareSource Georgia Medicaid ABA (CMO) Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How CareSource administers ABA for Georgia Medicaid members — policy MCD-MM-0212 aligned to the DCH ASD manual, in-house medical review, MUE daily-unit limits, and a 2026 reimbursement change.',
+    state: 'GA', kind: 'medicaid-mco', parent: 'Georgia Medicaid',
+    intro: [
+      'CareSource is one of the Georgia Medicaid care management organizations (CMOs) that administers the ABA benefit. Its ABA policy (MCD-MM-0212) is aligned to the Georgia DCH Part II ASD manual, but CareSource layers its own utilization-management process on top — so if a family carries CareSource, this is the guide that governs their authorization.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Georgia Medicaid CMO (managed care)' },
+      { label: 'Policy', value: 'GA MCD-MM-0212, aligned to the DCH ASD manual' },
+      { label: 'Prior auth', value: 'Required; in-house PA/medical review (GA manual + MCG)' },
+      { label: 'Docs', value: 'Signed treatment documentation before claims submission' },
+      { label: 'Daily units', value: 'CMS MUE per-code daily-unit limits apply' },
+      { label: '2026 rate', value: 'Pays 80% of the GA Medicaid fee schedule (eff. 5/11/2026)' },
+    ],
+    sections: [
+      {
+        h2: 'How CareSource administers the benefit',
+        body: [
+          'CareSource performs in-house prior authorization and medical review using the Georgia ASD manual plus MCG Health criteria, and requires signed treatment documentation to be submitted prior to claims submission. Because it aligns to the DCH manual, the underlying clinical rules mirror Georgia Medicaid — but the submission path, forms, and timelines are CareSource\'s own.',
+        ],
+        list: [
+          { title: 'Maximum daily units (MUE)', desc: 'Per CMS MUE as published by GA (via MM-0212): e.g., 97151=32, 97153=32, 97155=24, 97156=16 daily units — capture requested intensity by code.' },
+          { title: 'Assessment cap', desc: 'Comprehensive assessments generally not to exceed 8 hours per 6-month period, consistent with the DCH manual.' },
+        ],
+      },
+      {
+        h2: 'The 2026 rate change',
+        body: [
+          'Effective May 11, 2026, CareSource pays 80% of the Georgia Medicaid fee schedule for covered services — a material change for practices modeling CareSource revenue. It does not change coverage, but it changes the economics of every CareSource authorization.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'CareSource member ID', desc: 'Confirm the family is on CareSource (vs. another GA CMO or FFS) — it decides the whole PA path.' },
+      { title: 'DSM-5 ASD diagnosis + tools', desc: 'Diagnosis, instruments used, and date, per the DCH manual requirements CareSource follows.' },
+      { title: 'Treatment documentation', desc: 'Signed treatment documentation is required before claims — set the expectation at intake.' },
+      { title: 'Requested units by code', desc: 'MUE daily-unit limits apply, so plan requested intensity code by code.' },
+    ],
+    sources: [
+      { title: 'CareSource — GA MCD-MM-0212 (ABA policy)', url: 'https://www.caresource.com/documents/medicaid-ga-policy-medical-mm-0212-20250101' },
+      { title: 'GA DCH — Part II ASD Policy Manual', url: 'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download' },
+    ],
+    faq: [
+      { q: 'Does CareSource Georgia cover ABA therapy?', a: 'Yes — CareSource administers the Georgia Medicaid ABA benefit under policy MCD-MM-0212, aligned to the DCH ASD manual, with in-house prior authorization and medical review. Members must be under 21 with an ASD diagnosis.' },
+      { q: 'What changed with CareSource ABA reimbursement in 2026?', a: 'Effective May 11, 2026, CareSource pays 80% of the Georgia Medicaid fee schedule for covered services. Coverage is unchanged; the reimbursement rate is lower.' },
+      { q: 'How is CareSource different from Georgia Medicaid fee-for-service?', a: 'The clinical rules align to the DCH ASD manual, but CareSource runs its own PA/medical-review process (using MCG criteria) and requires signed treatment documentation before claims. Always confirm the member\'s plan at intake.' },
+    ],
+  },
+
+  'peach-state-georgia': {
+    slug: 'peach-state-georgia',
+    payer: 'Peach State Health Plan (GA Medicaid CMO)',
+    pill: 'Payer Guide · Peach State (GA)',
+    h1: 'Peach State Health Plan ABA coverage (GA Medicaid CMO).',
+    metaTitle: 'Peach State Health Plan (GA Medicaid CMO) ABA Coverage | Carelu',
+    metaDescription:
+      'How Peach State Health Plan administers ABA for Georgia Medicaid — policy GA.CP.BH.504 aligned to the DCH ASD manual, hour parameters, the 80%-attendance rule, and 0373T requirements.',
+    state: 'GA', kind: 'medicaid-mco', parent: 'Georgia Medicaid',
+    intro: [
+      'Peach State Health Plan is a Georgia Medicaid CMO that administers the ABA benefit under clinical policy GA.CP.BH.504, with prior-authorization criteria explicitly based on the DCH Part II ASD manual. For families carrying Peach State, this is the plan-level layer on top of the state rules.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Georgia Medicaid CMO (managed care)' },
+      { label: 'Policy', value: 'GA.CP.BH.504 (ASD services), based on the DCH manual' },
+      { label: 'Hours', value: '≤6 hrs/day up to 30/week unless clinically justified' },
+      { label: 'Students', value: '<20 hrs/week if attending school full-time' },
+      { label: 'Attendance', value: 'Below 80% of authorized hours requires justification' },
+      { label: 'Note', value: 'Lost the 2024 CMO rebid (protest pending) — watch status' },
+    ],
+    sections: [
+      {
+        h2: 'Utilization parameters',
+        body: [
+          'Peach State\'s PA criteria follow the DCH ASD manual. Hour parameters: no more than 6 hours per day, up to 30 hours per week unless clinically justified; fewer than 20 hours per week for full-time students; protocol modification (97155) at least 2 hours per week or 10% of direct hours. If attendance falls below 80% of authorized hours, justification documentation is required — which makes capturing realistic family availability at intake a reauthorization safeguard.',
+        ],
+        list: [
+          { title: '0373T requirements', desc: 'Requests need an extra-technician plan, environmental modifications per target behavior, a titration plan toward 97153, and a BCBA on-site and immediately available.' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Peach State member ID', desc: 'Confirm the plan — it determines the PA process and forms.' },
+      { title: 'DSM-5 ASD diagnosis', desc: 'Per the DCH manual criteria Peach State follows.' },
+      { title: 'Realistic availability', desc: 'The 80%-attendance rule makes accurate availability a first-order intake question.' },
+      { title: 'School status', desc: 'Full-time school attendance caps weekly hours below 20 — capture it up front.' },
+    ],
+    sources: [
+      { title: 'Peach State — GA.CP.BH.504 (ASD services)', url: 'https://www.pshpgeorgia.com/content/dam/centene/peachstate/policies/clinical-policies/GA.CP.BH.504.pdf' },
+      { title: 'GA DCH — Part II ASD Policy Manual', url: 'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download' },
+    ],
+    faq: [
+      { q: 'Does Peach State Health Plan cover ABA therapy?', a: 'Yes — Peach State administers the Georgia Medicaid ABA benefit under policy GA.CP.BH.504, with prior-authorization criteria based on the DCH ASD manual, for members under 21 with ASD.' },
+      { q: 'What are Peach State\'s ABA hour limits?', a: 'Generally no more than 6 hours/day up to 30 hours/week unless clinically justified, and under 20 hours/week for full-time students. Attendance below 80% of authorized hours requires justification.' },
+      { q: 'Is Peach State staying a Georgia Medicaid CMO?', a: 'Peach State lost the December 2024 CMO rebid and filed a protest; the transition timeline has been in flux. Confirm the member\'s current plan and any transition at intake.' },
+    ],
+  },
+
+  'amerigroup-georgia': {
+    slug: 'amerigroup-georgia',
+    payer: 'Amerigroup (GA Medicaid CMO)',
+    pill: 'Payer Guide · Amerigroup (GA)',
+    h1: 'Amerigroup Georgia ABA coverage (GA Medicaid CMO).',
+    metaTitle: 'Amerigroup Georgia Medicaid (CMO) ABA Coverage Guide | Carelu',
+    metaDescription:
+      'How Amerigroup administers ABA for Georgia Medicaid — the CG-BEH-02 adaptive behavioral treatment guideline aligned to the DCH ASD manual, with prior authorization and medical-necessity review.',
+    state: 'GA', kind: 'medicaid-mco', parent: 'Georgia Medicaid',
+    intro: [
+      'Amerigroup is a Georgia Medicaid CMO that administers ABA under its Adaptive Behavioral Treatment for ASD guideline (CG-BEH-02), aligned to the Georgia DCH ASD manual. Its published guideline has an older revision date, so verifying the current version on the Amerigroup provider portal is especially important here.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Georgia Medicaid CMO (managed care)' },
+      { label: 'Guideline', value: 'CG-BEH-02 (Adaptive Behavioral Treatment for ASD)' },
+      { label: 'Aligned to', value: 'Georgia DCH Part II ASD manual' },
+      { label: 'Prior auth', value: 'Required; medical-necessity review' },
+      { label: 'Caution', value: 'Published guideline dated 2017/2018 — verify current version' },
+      { label: 'Note', value: 'Amerigroup\'s Georgia CMO status was affected by the 2024 rebid' },
+    ],
+    sections: [
+      {
+        h2: 'How Amerigroup administers the benefit',
+        body: [
+          'Amerigroup covers ABA under CG-BEH-02, its adaptive behavioral treatment guideline, aligned to the Georgia DCH ASD manual and subject to prior authorization and medical-necessity review. Because the published version is dated 2017/2018 and likely superseded, treat the linked guideline as a starting point and confirm the current requirements on the Amerigroup provider portal before relying on any specific rule.',
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Amerigroup member ID', desc: 'Confirm the plan and current CMO status at intake.' },
+      { title: 'DSM-5 ASD diagnosis', desc: 'Per the DCH manual criteria the guideline aligns to.' },
+      { title: 'Medical-necessity documentation', desc: 'Required for the prior-authorization request.' },
+      { title: 'Plan of Care', desc: 'Measurable, baseline-anchored goals consistent with the DCH manual.' },
+    ],
+    sources: [
+      { title: 'Amerigroup — Adaptive Behavioral Treatment for ASD (CG-BEH-02, GA Medicaid)', url: 'https://provider.amerigroup.com/docs/gpp/GA_CAID_UMGuideline_AdaptiveBehavioralTreatmentAutismSpectrumDisorder.pdf?v=202101081602' },
+      { title: 'GA DCH — Part II ASD Policy Manual', url: 'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download' },
+    ],
+    faq: [
+      { q: 'Does Amerigroup Georgia cover ABA therapy?', a: 'Yes — Amerigroup administers the Georgia Medicaid ABA benefit under its CG-BEH-02 adaptive behavioral treatment guideline, aligned to the DCH ASD manual, with prior authorization and medical-necessity review.' },
+      { q: 'Is Amerigroup\'s Georgia ABA guideline current?', a: 'The publicly available version is dated 2017/2018 and is likely superseded. Verify the current guideline on the Amerigroup provider portal before relying on specific requirements.' },
+    ],
+  },
+
   'north-carolina-medicaid': {
     slug: 'north-carolina-medicaid',
     payer: 'North Carolina Medicaid',
+    state: 'NC', kind: 'state-medicaid',
     pill: 'Payer Guide · North Carolina Medicaid',
     h1: 'North Carolina Medicaid ABA coverage: the intake guide.',
     metaTitle: 'North Carolina Medicaid ABA (RB-BHT) Coverage & Prior Auth | Carelu',
@@ -431,6 +589,7 @@ export const payers: Record<string, PayerConfig> = {
   'indiana-medicaid': {
     slug: 'indiana-medicaid',
     payer: 'Indiana Medicaid (IHCP)',
+    state: 'IN', kind: 'state-medicaid',
     pill: 'Payer Guide · Indiana Medicaid',
     h1: 'Indiana Medicaid ABA coverage: the intake guide.',
     metaTitle: 'Indiana Medicaid (IHCP) ABA Coverage & Prior Auth Guide | Carelu',
@@ -481,6 +640,7 @@ export const payers: Record<string, PayerConfig> = {
   'virginia-medicaid': {
     slug: 'virginia-medicaid',
     payer: 'Virginia Medicaid (DMAS)',
+    state: 'VA', kind: 'state-medicaid',
     pill: 'Payer Guide · Virginia Medicaid',
     h1: 'Virginia Medicaid ABA coverage: the intake guide.',
     metaTitle: 'Virginia Medicaid (DMAS) ABA Coverage & Prior Auth Guide | Carelu',
@@ -531,6 +691,7 @@ export const payers: Record<string, PayerConfig> = {
   'tenncare-tennessee-medicaid': {
     slug: 'tenncare-tennessee-medicaid',
     payer: 'TennCare (Tennessee Medicaid)',
+    state: 'TN', kind: 'state-medicaid',
     pill: 'Payer Guide · TennCare',
     h1: 'TennCare (Tennessee Medicaid) ABA coverage: the intake guide.',
     metaTitle: 'TennCare ABA Coverage & Prior Authorization Guide | Carelu',
@@ -581,6 +742,7 @@ export const payers: Record<string, PayerConfig> = {
   'ohio-medicaid': {
     slug: 'ohio-medicaid',
     payer: 'Ohio Medicaid',
+    state: 'OH', kind: 'state-medicaid',
     pill: 'Payer Guide · Ohio Medicaid',
     h1: 'Ohio Medicaid ABA coverage: the intake guide.',
     metaTitle: 'Ohio Medicaid ABA Coverage & Prior Authorization Guide | Carelu',

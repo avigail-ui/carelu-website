@@ -27,33 +27,56 @@ const NATIONAL = [
   { slug: 'cigna', name: 'Cigna / Evernorth', desc: 'No PA on assessment codes; EN0499 treatment authorization; full telehealth.' },
   { slug: 'unitedhealthcare-optum', name: 'UnitedHealthcare / Optum', desc: 'Two-step auth via Provider Express, 4–6 month reviews, code clusters.' },
 ];
-const STATES: { state: string; guides: { slug: string; name: string; desc: string }[] }[] = [
+
+type Guide = { slug: string; name: string; desc: string };
+type StateBlock = {
+  state: string;
+  mandate?: string;                 // state autism mandate
+  medicaid: Guide[];                // state Medicaid program guide(s)
+  mcosLinked?: Guide[];             // Medicaid MCOs with full guides
+  mcoRoster?: string[];             // MCOs administering the benefit (roster, guides pending)
+};
+
+const STATES: StateBlock[] = [
   {
     state: 'Georgia',
-    guides: [
-      { slug: 'georgia-medicaid', name: 'Georgia Medicaid (DCH)', desc: 'EPSDT coverage under 21, Katie Beckett path, CMO landscape, PA packages.' },
-      { slug: 'anthem-bcbs-georgia', name: 'Anthem BCBS Georgia', desc: 'CG-BEH-02 criteria + Ava\'s Law and parity protections.' },
+    mandate: 'Ava’s Law (O.C.G.A. § 33-24-59.10)',
+    medicaid: [{ slug: 'georgia-medicaid', name: 'Georgia Medicaid (DCH)', desc: 'EPSDT under 21, Katie Beckett path, CMO landscape, PA packages.' }],
+    mcosLinked: [
+      { slug: 'caresource-georgia', name: 'CareSource (GA)', desc: 'MCD-MM-0212 aligned to the DCH manual; in-house PA; 2026 rate change.' },
+      { slug: 'peach-state-georgia', name: 'Peach State Health Plan', desc: 'GA.CP.BH.504; hour parameters + 80%-attendance rule; 0373T rules.' },
+      { slug: 'amerigroup-georgia', name: 'Amerigroup (GA)', desc: 'CG-BEH-02 adaptive behavioral treatment; verify current version.' },
     ],
   },
   {
     state: 'North Carolina',
-    guides: [{ slug: 'north-carolina-medicaid', name: 'North Carolina Medicaid', desc: 'RB-BHT under Clinical Coverage Policy 8F, under 21, 6-month plan reviews.' }],
+    mandate: 'NC autism insurance mandate (S.L. 2015-258)',
+    medicaid: [{ slug: 'north-carolina-medicaid', name: 'North Carolina Medicaid', desc: 'RB-BHT under Clinical Coverage Policy 8F, under 21, 6-month plan reviews.' }],
+    mcoRoster: ['Alliance Health (Tailored Plan)', 'Trillium Health Resources', 'Vaya Health', 'Partners Health Management', 'Healthy Blue', 'AmeriHealth Caritas', 'Carolina Complete Health', 'UnitedHealthcare Community Plan', 'WellCare'],
   },
   {
     state: 'Indiana',
-    guides: [{ slug: 'indiana-medicaid', name: 'Indiana Medicaid (IHCP)', desc: 'Medically necessary ABA, all PA, 2026 EPSDT-only + under-21 shift.' }],
+    mandate: 'Indiana autism insurance mandate (IC 27-8-14.2)',
+    medicaid: [{ slug: 'indiana-medicaid', name: 'Indiana Medicaid (IHCP)', desc: 'Medically necessary ABA, all PA, 2026 EPSDT-only + under-21 shift.' }],
+    mcoRoster: ['Anthem', 'MHS (Managed Health Services)', 'CareSource', 'MDwise'],
   },
   {
     state: 'Virginia',
-    guides: [{ slug: 'virginia-medicaid', name: 'Virginia Medicaid (DMAS)', desc: 'EPSDT under 21, PA with per-code unit requests (eff. Oct 2025).' }],
+    mandate: 'Virginia autism insurance mandate (§ 38.2-3418.17)',
+    medicaid: [{ slug: 'virginia-medicaid', name: 'Virginia Medicaid (DMAS)', desc: 'EPSDT under 21, PA with per-code unit requests (eff. Oct 2025).' }],
+    mcoRoster: ['Aetna Better Health of Virginia', 'Anthem HealthKeepers Plus', 'Molina Healthcare', 'Sentara Community Plan', 'UnitedHealthcare Community Plan'],
   },
   {
     state: 'Tennessee',
-    guides: [{ slug: 'tenncare-tennessee-medicaid', name: 'TennCare', desc: 'Through age 21 via EPSDT, no annual limit, LBA licensure, MCO-run.' }],
+    mandate: 'Tennessee autism coverage (state law)',
+    medicaid: [{ slug: 'tenncare-tennessee-medicaid', name: 'TennCare', desc: 'Through age 21 via EPSDT, no annual limit, LBA licensure, MCO-run.' }],
+    mcoRoster: ['BlueCare (BlueCross BlueShield of TN)', 'UnitedHealthcare Community Plan', 'Wellpoint (formerly Amerigroup)'],
   },
   {
     state: 'Ohio',
-    guides: [{ slug: 'ohio-medicaid', name: 'Ohio Medicaid', desc: 'OAC rule 5160-34-02, all PA, DSM-5-TR dx, 6-month reviews, CareSource.' }],
+    mandate: 'Ohio autism insurance mandate (R.C. 3923.87)',
+    medicaid: [{ slug: 'ohio-medicaid', name: 'Ohio Medicaid', desc: 'OAC rule 5160-34-02, all PA, DSM-5-TR dx, 6-month reviews.' }],
+    mcoRoster: ['CareSource', 'Buckeye Health Plan', 'Molina Healthcare', 'Anthem Blue Cross Blue Shield', 'UnitedHealthcare Community Plan', 'AmeriHealth Caritas Ohio', 'Humana Healthy Horizons'],
   },
 ];
 const ROADMAP = ['New Jersey', 'Colorado', 'Arizona', 'Utah', 'Texas', 'Florida', 'TRICARE (Autism Care Demonstration)'];
@@ -176,16 +199,46 @@ export default function PayersDirectory() {
         <div style={W}>
           <h2 className="rv" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(21px, 2.4vw, 28px)', fontWeight: 400, color: INK, letterSpacing: '-0.012em', margin: '0 0 4px' }}>Payer guides</h2>
           <p className="rv" style={{ fontSize: 13.5, color: 'rgba(43,42,38,0.6)', margin: '0 0 16px' }}>Full intake-focused guides. National policies apply across states; state guides cover Medicaid and state-regulated plans.</p>
-          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '4px 0 10px' }}>National commercial payers</div>
-          <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 20 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '4px 0 4px' }}>National commercial payers</div>
+          <p className="rv" style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.55)', margin: '0 0 12px' }}>Clinical policies are largely national — but each carrier also runs state-specific Medicaid plans, and state mandates change what fully-insured plans must cover. Each guide has a per-state note.</p>
+          <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 26 }}>
             {NATIONAL.map((g) => <GuideCard key={g.slug} href={`/payers/${g.slug}`} name={g.name} desc={g.desc} />)}
           </div>
+
           {STATES.map((st) => (
-            <div key={st.state}>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GREEN, margin: '4px 0 10px' }}>{st.state}</div>
-              <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
-                {st.guides.map((g) => <GuideCard key={g.slug} href={`/payers/${g.slug}`} name={g.name} desc={g.desc} />)}
+            <div key={st.state} style={{ marginBottom: 26 }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap', margin: '4px 0 12px' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(19px, 2vw, 24px)', color: INK, letterSpacing: '-0.01em' }}>{st.state}</span>
+                {st.mandate && <span style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.5)' }}>Mandate: {st.mandate}</span>}
               </div>
+
+              <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.45)', margin: '0 0 8px' }}>State Medicaid</div>
+              <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: st.mcosLinked || st.mcoRoster ? 14 : 0 }}>
+                {st.medicaid.map((g) => <GuideCard key={g.slug} href={`/payers/${g.slug}`} name={g.name} desc={g.desc} />)}
+              </div>
+
+              {st.mcosLinked && (
+                <>
+                  <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.45)', margin: '0 0 8px' }}>Medicaid MCOs</div>
+                  <div className="dir-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+                    {st.mcosLinked.map((g) => <GuideCard key={g.slug} href={`/payers/${g.slug}`} name={g.name} desc={g.desc} />)}
+                  </div>
+                </>
+              )}
+
+              {st.mcoRoster && (
+                <div style={{ background: '#fff', borderRadius: 14, padding: 'clamp(14px, 2vw, 20px)', boxShadow: '0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03)' }}>
+                  <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.45)', marginBottom: 8 }}>Medicaid MCOs in {st.state}</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                    {st.mcoRoster.map((m) => (
+                      <span key={m} style={{ fontSize: 12.5, fontWeight: 500, color: 'rgba(43,42,38,0.72)', background: 'rgba(43,42,38,0.05)', padding: '6px 13px', borderRadius: 100 }}>{m}</span>
+                    ))}
+                  </div>
+                  <p style={{ fontSize: 12, color: 'rgba(43,42,38,0.5)', lineHeight: 1.55, margin: '10px 0 0' }}>
+                    Each MCO administers the {st.state} Medicaid ABA benefit under its own utilization policy, generally aligned to the state rules above. Dedicated per-MCO guides are being added — the state Medicaid guide covers the shared requirements today.
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </div>

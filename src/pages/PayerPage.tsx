@@ -110,6 +110,14 @@ function PayerGuide({ config }: { config: PayerConfig }) {
               lineHeight: 1.75, margin: '0 0 20px',
             }}>{p}</p>
           ))}
+          {config.kind === 'commercial' && config.state === 'US' && (
+            <div className="rv" style={{ background: 'rgba(58,95,134,0.06)', border: '1px solid rgba(58,95,134,0.2)', borderRadius: 14, padding: '16px 20px', margin: '4px 0 8px' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#3a5f86', marginBottom: 6 }}>How this varies by state</div>
+              <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.72)', lineHeight: 1.65, margin: 0 }}>
+                {config.payer}’s ABA clinical policy is largely national, but how it actually applies is state-specific: (1) state autism mandates change what fully-insured plans must cover; (2) {config.payer} runs state-specific Medicaid managed-care plans with their own rules; and (3) self-funded employer plans can carve benefits differently. Always pair this guide with the member’s state and plan-funding type — and a live benefits check.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
