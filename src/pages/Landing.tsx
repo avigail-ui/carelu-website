@@ -715,6 +715,7 @@ const allLogos = [
   { src: '/logos/dark/blossom-aba.png', alt: 'Blossom ABA', h: 46, color: '/logos/blossom-aba.webp' },
   { src: '/logos/dark/link-color.png', alt: 'Links ABA', smaller: true, color: '/logos/link-color.png' },
   { src: '/logos/storybook-aba.png', alt: 'Storybook ABA', h: 42, color: '/logos/storybook-aba.png' },
+  { src: '/logos/littlechamps-aba.png', alt: 'Little Champs ABA', h: 34, color: '/logos/littlechamps-aba.png' },
 ];
 
 
