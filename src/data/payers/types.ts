@@ -39,6 +39,7 @@ export interface PayerConfig {
   // Funnel-critical facts surfaced prominently (assessment PA is asked constantly).
   assessmentPA?: string;   // does the ASSESSMENT (not just treatment) need prior auth?
   treatmentPA?: string;    // does treatment need prior auth?
+  dxRequired?: string;     // is an autism diagnosis required (and how strict)?
 }
 
 export const PAYER_REVIEWED = 'July 2026';

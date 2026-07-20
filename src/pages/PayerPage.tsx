@@ -145,8 +145,8 @@ function PayerGuide({ config }: { config: PayerConfig }) {
         </div>
       </section>
 
-      {/* Prior auth at a glance — the two questions every intake team asks first */}
-      {(config.assessmentPA || config.treatmentPA) && (
+      {/* Prior auth + diagnosis at a glance — the questions every intake team asks first */}
+      {(config.assessmentPA || config.treatmentPA || config.dxRequired) && (
         <section style={{ paddingTop: 'clamp(8px, 1.5vw, 16px)' }}>
           <div style={MEASURE}>
             <div className="rv" style={{
@@ -157,6 +157,7 @@ function PayerGuide({ config }: { config: PayerConfig }) {
               {[
                 { label: 'Prior auth for the assessment', value: config.assessmentPA },
                 { label: 'Prior auth for treatment', value: config.treatmentPA },
+                { label: 'Autism diagnosis required?', value: config.dxRequired },
               ].filter((x) => x.value).map((x) => (
                 <div key={x.label} style={{ padding: 'clamp(16px, 2.2vw, 22px)', borderTop: `3px solid ${GREEN}` }}>
                   <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.11em', textTransform: 'uppercase', color: GREEN, marginBottom: 7 }}>{x.label}</div>
