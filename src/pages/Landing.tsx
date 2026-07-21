@@ -5,10 +5,8 @@ import { useSeo } from '../hooks/useSeo';
 import DemoModalHost from '../components/DemoModal';
 import STATS from '../data/intake_gap_stats.json';
 
-// Hero proof numbers, derived from the same prod-harvested stats as the
-// Intake Gap report (refreshed monthly). Rounded DOWN so the claim always
-// undersells the live number.
-const HERO_CONVERSATIONS = `${(Math.floor(STATS.cohort.conversations / 5000) * 5000).toLocaleString('en-US')}+`;
+// Live state count from the same prod-harvested stats as the Intake Gap
+// report (refreshed monthly) — used in the logo-strip caption.
 const HERO_STATES = STATS.cohort.states;
 
 // Nav link that client-side-routes internal pages (no full reload → no font-swap
@@ -477,9 +475,6 @@ function Hero() {
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
               Carelu runs your entire intake — from first contact to admitted patient. For ABA and behavioral health organizations of every size.
-              <span style={{ display: 'block', marginTop: 10, fontWeight: 700, letterSpacing: '0.01em' }}>
-                {HERO_CONVERSATIONS} family conversations. {HERO_STATES} states.
-              </span>
             </p>
 
             <div className="hero-cta-row" style={{
@@ -564,7 +559,7 @@ function Hero() {
             textAlign: 'center', marginBottom: 20,
             mixBlendMode: 'multiply',
           }}>
-            Trusted by 100+ of the fastest growing ABA providers
+            Families connected to care across {HERO_STATES} states
           </p>
           <div className="hero-logos-mask" style={{ overflow: 'hidden', position: 'relative' }}>
             <div ref={marqueeRef} className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
