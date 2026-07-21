@@ -30,9 +30,14 @@ const src = readdirSync(PAYERS_DIR)
   .map((f) => readFileSync(PAYERS_DIR + f, 'utf8'))
   .join('\n');
 const sources = [];
+const seen = new Set();
 const re = /\{ title: '((?:[^'\\]|\\.)*)', url: '([^']+)' \}/g;
 let m;
-while ((m = re.exec(src))) sources.push({ title: m[1].replace(/\\'/g, "'"), url: m[2] });
+while ((m = re.exec(src))) {
+  if (seen.has(m[2])) continue;
+  seen.add(m[2]);
+  sources.push({ title: m[1].replace(/\\'/g, "'"), url: m[2] });
+}
 
 const snaps = existsSync(SNAP_PATH) ? JSON.parse(readFileSync(SNAP_PATH, 'utf8')) : {};
 
