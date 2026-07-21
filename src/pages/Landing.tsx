@@ -6,7 +6,7 @@ import DemoModalHost from '../components/DemoModal';
 import STATS from '../data/intake_gap_stats.json';
 
 // Live state count from the same prod-harvested stats as the Intake Gap
-// report (refreshed monthly) — used in the logo-strip caption.
+// report (refreshed monthly) — used in the results-section counter caption.
 const HERO_STATES = STATS.cohort.states;
 
 // Nav link that client-side-routes internal pages (no full reload → no font-swap
@@ -168,10 +168,6 @@ export function Nav({ base = '' }: { base?: string }) {
               </div>
             )}
           </div>
-          <NavA href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Company</NavA>
           </div>
 
           {/* Center logo — the wordmark's ink sits ~5px left of its box center
@@ -181,8 +177,14 @@ export function Nav({ base = '' }: { base?: string }) {
             <img src="/carelu-logo.svg" alt="Carelu" className="nav-logo-img" style={{ height: 32, width: 'auto', display: 'block', transform: 'translateX(5px)' }} />
           </NavA>
 
-          {/* Right: login + button */}
+          {/* Right: company + login + button. Company lives on this side so both
+              link groups have near-equal content width — that keeps the whitespace
+              on either side of the centered wordmark symmetric. */}
           <div className="nav-side nav-side-right">
+          <NavA href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
+          >Company</NavA>
           <NavA href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
@@ -559,7 +561,7 @@ function Hero() {
             textAlign: 'center', marginBottom: 20,
             mixBlendMode: 'multiply',
           }}>
-            Families connected to care across {HERO_STATES} states
+            Trusted by 100+ of the fastest growing ABA providers
           </p>
           <div className="hero-logos-mask" style={{ overflow: 'hidden', position: 'relative' }}>
             <div ref={marqueeRef} className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
@@ -1178,7 +1180,7 @@ function LiveCounter() {
         fontSize: 15, fontWeight: 500,
         color: 'var(--green-900)', opacity: 0.6,
       }}>
-        families connected to care across 43 states
+        families connected to care across {HERO_STATES} states
       </div>
       <div style={{
         marginTop: 14,

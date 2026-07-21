@@ -17,9 +17,11 @@
   size-adjust: 95.6%;
 }
 
-/* Nav pill: balanced side groups keep the logo dead-center regardless of how
-   wide the left links vs. right actions are. */
-.nav-side { display: flex; align-items: center; flex: 1 1 0; min-width: 0; }
+/* Nav pill: the side groups size to their content and the pill distributes the
+   leftover space, so the whitespace on either side of the wordmark is equal —
+   optically centered even when the groups' widths differ. */
+.nav-pill { justify-content: space-between; }
+.nav-side { display: flex; align-items: center; flex: 0 1 auto; min-width: 0; }
 .nav-side-left { justify-content: flex-start; }
 .nav-side-right { justify-content: flex-end; }
 @media (max-width: 768px) {
