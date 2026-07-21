@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import DemoModalHost from '../components/DemoModal';
+import STATS from '../data/intake_gap_stats.json';
+
+// Hero proof numbers, derived from the same prod-harvested stats as the
+// Intake Gap report (refreshed monthly). Rounded DOWN so the claim always
+// undersells the live number.
+const HERO_CONVERSATIONS = `${(Math.floor(STATS.cohort.conversations / 5000) * 5000).toLocaleString('en-US')}+`;
+const HERO_STATES = STATS.cohort.states;
 
 // Nav link that client-side-routes internal pages (no full reload → no font-swap
 // flash in the nav pill). Same-page hash anchors and /demo (modal-intercepted)
@@ -470,6 +477,9 @@ function Hero() {
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
               Carelu runs your entire intake — from first contact to admitted patient. For ABA and behavioral health organizations of every size.
+              <span style={{ display: 'block', marginTop: 10, fontWeight: 700, letterSpacing: '0.01em' }}>
+                {HERO_CONVERSATIONS} family conversations. {HERO_STATES} states.
+              </span>
             </p>
 
             <div className="hero-cta-row" style={{
