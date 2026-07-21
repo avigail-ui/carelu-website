@@ -48,7 +48,8 @@ export default function AskPayers() {
 
     const ctrl = new AbortController();
     abortRef.current = ctrl;
-    try {
+    let gotText = false;
+    const attempt = async () => {
       const res = await fetch('/api/ask', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
@@ -65,12 +66,24 @@ export default function AskPayers() {
         const { done, value } = await reader.read();
         if (done) break;
         acc += decoder.decode(value, { stream: true });
+        gotText = true;
         const snapshot = acc;
         setMessages((cur) => {
           const copy = [...cur];
           copy[copy.length - 1] = { role: 'assistant', content: snapshot };
           return copy;
         });
+      }
+    };
+    try {
+      try {
+        await attempt();
+      } catch (e) {
+        // One silent retry for transient failures (cold starts, 5xx blips) —
+        // but not if text already streamed or the user aborted.
+        if (gotText || ctrl.signal.aborted) throw e;
+        await new Promise((r) => setTimeout(r, 1200));
+        await attempt();
       }
     } catch {
       setMessages((cur) => {
