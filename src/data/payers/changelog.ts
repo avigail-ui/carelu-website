@@ -364,4 +364,55 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Texas VOB enrichment shipped: Layer 1 (EDI crosswalk), Layer 3 (code-level coverage grid), and Layer 4 (Medicaid rate tables; none for commercial) populated for all 12 Texas guides. Unlike hhs.texas.gov (403-blocked to automated fetch per docs/vob-gaps.md), tmhp.com was directly retrievable: the 270/271 Medicaid/CHIP Eligibility Companion Guide (Nov 2024), the TMPPM Children\'s Services Handbook §2.3 Autism Services, and TMHP\'s "AUTISM SERVICES" static fee schedule (PRCR615C) were all fetched and read in full. Cross-checking the handbook against the fee schedule independently confirmed Texas\'s actual THSteps-CCP Autism Services billable code set is 97151, 97153, 97154, 97155, 97156, 97158, and 99366 — CPT codes 97152, 97157, 0362T, and 0373T appear in neither primary source and ship \'unverified\' across every Medicaid-track guide rather than populated from another state\'s code list. Texas\'s ABA benefit is confirmed not carved out to any third-party BH administrator anywhere in the state (all 8 Medicaid MCOs ship bhCarveOut.administrator:\'none\'), with one nuance already established in existing texas.ts prose: UnitedHealthcare Community Plan of Texas routes ABA authorization to its own Optum-administered BH network rather than its medical PA pipeline (abaRidesOn:\'bh\'). The 3 commercial guides (aetna-texas, cigna-texas, unitedhealthcare-texas) reuse their already-verified national clinical policies (EN0499, CPB 0554/0648, Optum 2022RP501A) with the full national CPT code set, per the build spec\'s "do not attempt commercial rates" instruction.',
+    guides: [
+      'texas-medicaid',
+      'superior-healthplan-texas',
+      'texas-childrens-health-plan',
+      'wellpoint-texas',
+      'unitedhealthcare-community-plan-texas',
+      'aetna-better-health-texas',
+      'molina-healthcare-texas',
+      'community-first-health-plans',
+      'driscoll-health-plan',
+      'aetna-texas',
+      'cigna-texas',
+      'unitedhealthcare-texas',
+    ],
+    details: [
+      {
+        slug: 'texas-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          "The 270/271 Companion Guide's Appendix 11.1 \"Managed Care Program Codes\" table (STAR=1, STAR PLUS=2, Foster Care/STAR Health=6, CHIP=8, STAR Kids=K, populated in EB05) is a PROGRAM-level code table, not a per-MCO health-plan lookup — the actual MCO name rides as free text in REF02 (REF01=18) inside the 2110C \"Covered Managed Care\" EB loop. Eligibility span is a date range (DTP*356/357), not a fixed monthly bucket. Both facts verified directly from the TMHP-hosted companion guide (Nov 2024) — not blocked like hhs.texas.gov.",
+        sourceUrl: 'https://www.tmhp.com/sites/default/files/file-library/edi/D00026_270_271_Medicaid_CHIP_Eligibility_Companion_Guide.pdf',
+      },
+      {
+        slug: 'texas-medicaid',
+        field: 'codeGrid / rates',
+        change:
+          "Confirmed via two independent primary sources (TMPPM §2.3 and the Autism Services fee schedule PRCR615C) that 97152, 97157, 0362T, and 0373T are not part of Texas's THSteps-CCP Autism Services billable code set — zero occurrences in the full handbook text, zero rows in the fee schedule. Verified rates for the 7 codes that ARE covered: 97151 $27.56 (HO), 97153 $14.50, 97154 $1.63, 97155 $20.08 (HN)/$25.10 (HO), 97156 $18.40 (HN)/$23.01 (HO), 97158 $2.25 (HN)/$2.81 (HO), 99366 $33.96 — eff. 9/1/2025 where updated.",
+        sourceUrl: 'https://public.tmhp.com/FeeSchedules/StaticFeeSchedule/FeeSchedules.aspx?fn=%5C%5Ctmhp.net%5CFeeSchedule%5CPROD%5CStatic%5CTexas_Medicaid_Fee_Schedule_PRCR615C.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-texas',
+        field: 'edi.bhCarveOut',
+        change:
+          "Confirmed ABA authorization routes to UHC's own Optum-administered behavioral health network (888-887-9003), not the medical PA pipeline — abaRidesOn:'bh', twoHopRequired inferred true. The BH network's own distinct EDI payer ID (candidate: pVerify's UHG007) could not be confirmed for Texas specifically and ships unverified.",
+        sourceUrl: 'https://www.uhcprovider.com/content/dam/provider/docs/public/commplan/tx/prior-auth/star-kids/TX-UHCCP-STAR-KIDS-Prior-Auth-Eff-11-1-2025.pdf',
+      },
+      {
+        slug: 'wellpoint-texas',
+        field: 'edi.payerId.availity',
+        change:
+          "No entry branded \"Wellpoint\" exists in Availity's public payer list for Texas — only pre-rebrand \"Amerigroup\" entries split by region (Houston/Ft. Worth/Multiple States/generic). Shipped unverified rather than guessing which regional code applies.",
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];

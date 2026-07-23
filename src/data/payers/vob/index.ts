@@ -10,10 +10,12 @@ import type { VobExtension } from './types.js';
 import { georgiaVob } from './georgia.js';
 import { northCarolinaVob } from './north-carolina.js';
 import { floridaVob } from './florida.js';
+import { texasVob } from './texas.js';
 
 export const vob: Record<string, VobExtension> = {
   ...georgiaVob,
   ...northCarolinaVob,
   ...floridaVob,
+  ...texasVob,
   // ... as further states are delivered
 };
