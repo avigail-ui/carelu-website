@@ -1089,22 +1089,32 @@ const aetnaBetterHealthFlEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, ABHFL_QRG, BSN_PROVIDER_SITE],
 };
 
+/* QA correction (2026-07-23): ABHFL_QRG (Rev. 11/2024) was re-fetched and read
+   in full this pass — it is a single-page administrative contact sheet
+   (phone/fax numbers, EDI payer IDs, PA phone lines). It contains zero
+   mentions of ABA, CPT codes, or any code-level coverage/PA detail. Citing
+   it as a 'confirmed'/plan-specific source for covered/paRequired on every
+   code (as the previous version of this file did) was a miscitation — the
+   claim doesn't appear in the cited document. These facts are still true
+   (bound by the AHCA coverage policy's plan-compliance clause, §1.2) but
+   correctly ship as 'inferred', matching the treatment mcoEntry() already
+   gives 97157 below and every other MCO's code-level facts by default. */
 const aetnaBetterHealthFlCodeGrid: Record<string, CodeGridEntry> = {
-  '97151': mcoEntry('97151', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '97152': mcoEntry('97152', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '0362T': mcoEntry('0362T', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '97153': mcoEntry('97153', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '97154': mcoEntry('97154', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '97155': mcoEntry('97155', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '97156': mcoEntry('97156', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97151': mcoEntry('97151', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '97152': mcoEntry('97152', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '0362T': mcoEntry('0362T', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '97153': mcoEntry('97153', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '97154': mcoEntry('97154', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '97155': mcoEntry('97155', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '97156': mcoEntry('97156', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
   '97157': mcoEntry('97157', {
     planName: 'Aetna Better Health of Florida',
     confirmed: ['covered'],
     extraNote: 'ABHFL publishes no BA code-level table of its own — the state-verified absence applies here by the same plan-compliance clause as every other MMA plan.',
     extraSources: [],
   }),
-  '97158': mcoEntry('97158', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
-  '0373T': mcoEntry('0373T', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97158': mcoEntry('97158', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
+  '0373T': mcoEntry('0373T', { planName: 'Aetna Better Health of Florida', confirmed: [], extraSources: [] }),
 };
 
 /* ==================== molina-healthcare-florida ==================== */
@@ -1281,22 +1291,32 @@ const floridaCommunityCareEdi: EdiRouting = {
   sources: [FCC_BA_PAGE, BSN_PROVIDER_SITE],
 };
 
+/* QA correction (2026-07-23): FCC_BA_PAGE (fcchealthplan.com/ba-services/) was
+   re-fetched this pass — it confirms the BSN partnership and in-house UM
+   department (still valid for the EDI layer above), but explicitly does NOT
+   include a CPT code table, unit caps, or a covered-code list; it only points
+   to a separate "Prior Authorization Program PDF" not reviewed this pass.
+   Citing it as a 'confirmed' plan-specific source for covered/paRequired on
+   every code (as the previous version of this file did) was a miscitation.
+   These facts are still true (bound by the AHCA coverage policy's
+   plan-compliance clause, §1.2) but correctly ship as 'inferred', matching
+   the treatment mcoEntry() already gives 97157 below. */
 const floridaCommunityCareCodeGrid: Record<string, CodeGridEntry> = {
-  '97151': mcoEntry('97151', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '97152': mcoEntry('97152', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '0362T': mcoEntry('0362T', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '97153': mcoEntry('97153', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '97154': mcoEntry('97154', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '97155': mcoEntry('97155', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '97156': mcoEntry('97156', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97151': mcoEntry('97151', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '97152': mcoEntry('97152', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '0362T': mcoEntry('0362T', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '97153': mcoEntry('97153', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '97154': mcoEntry('97154', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '97155': mcoEntry('97155', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '97156': mcoEntry('97156', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
   '97157': mcoEntry('97157', {
     planName: 'Florida Community Care',
     confirmed: ['covered'],
     extraNote: "FCC's BA services page publishes no code-level table of its own — the state-verified absence applies here by the same plan-compliance clause as every other MMA plan.",
     extraSources: [],
   }),
-  '97158': mcoEntry('97158', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
-  '0373T': mcoEntry('0373T', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97158': mcoEntry('97158', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
+  '0373T': mcoEntry('0373T', { planName: 'Florida Community Care', confirmed: [], extraSources: [] }),
 };
 
 /* ==================== aetna-florida (commercial) ==================== */

@@ -627,4 +627,65 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 169, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      'QA spot-check FL+TX: 213 fields checked, 157 confirmed, 8 corrected, 48 downgraded.',
+    guides: [
+      'florida-medicaid',
+      'aetna-better-health-florida',
+      'florida-community-care',
+      'unitedhealthcare-florida',
+      'texas-medicaid',
+      'cigna-texas',
+      'community-first-health-plans',
+      'driscoll-health-plan',
+    ],
+    details: [
+      {
+        slug: 'aetna-better-health-florida',
+        field: 'codeGrid.*.covered / codeGrid.*.paRequired (9 codes)',
+        change:
+          "Downgraded 'verified' to 'inferred' — re-fetched ABHFL_QRG (Rev. 11/2024) in full: it's a single-page administrative contact sheet (phone/fax/EDI IDs) with zero mentions of ABA, CPT codes, or code-level coverage/PA detail. Citing it as a plan-specific confirming source for every code's covered/paRequired was a miscitation; the underlying values are unchanged (still bound by the AHCA coverage policy's plan-compliance clause, §1.2) but now correctly shown as inferred rather than plan-confirmed.",
+        sourceUrl: 'https://www.aetnabetterhealth.com/content/dam/aetna/medicaid/florida/provider/pdf/abhfl_quick_reference_guide.pdf',
+      },
+      {
+        slug: 'florida-community-care',
+        field: 'codeGrid.*.covered / codeGrid.*.paRequired (9 codes)',
+        change:
+          "Downgraded 'verified' to 'inferred' — re-fetched FCC_BA_PAGE: confirms the BSN partnership and in-house UM department, but explicitly contains no CPT table, unit caps, or covered-code list. Citing it as a plan-specific confirming source for every code's covered/paRequired was a miscitation; values unchanged, status corrected.",
+        sourceUrl: 'https://fcchealthplan.com/ba-services/',
+      },
+      {
+        slug: 'cigna-texas',
+        field: 'codeGrid.*.paRequired (11 codes)',
+        change:
+          "Downgraded 'verified' to 'unverified' — re-fetched EN0499 in full: it contains zero occurrences of \"prior authorization\" or \"precertification\" and states no per-code PA distinction between assessment and treatment codes. The prior 'Not required on assessment codes / Required on treatment codes' split was not supported by this document; now marked unverified with guidance to confirm via Cigna/Evernorth provider services.",
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+      {
+        slug: 'cigna-texas',
+        field: 'codeGrid.99366.covered',
+        change:
+          "Downgraded 'verified' to 'unverified' — 99366 (interdisciplinary team meeting) does not appear anywhere in EN0499's coding table (which lists only 97151-97158/0362T/0373T); the policy does not address interdisciplinary team-meeting billing at all.",
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+      {
+        slug: 'driscoll-health-plan',
+        field: 'codeGrid.97152',
+        change:
+          "Corrected from 'not on Texas's billable ABA code set' (unverified) to a confirmed Driscoll-specific exception: Driscoll's own live PA-lookup portal lists 97152 as \"AUTHORIZATION REQUIRED\" for STAR/STAR Kids (excl. CHIP/CHIP Perinate), citing TMPPM §2.3, with HO/HN/HM and 95-telehealth modifier rules — even though 97152 is independently confirmed absent from the current TMPPM handbook text and the Autism Services fee schedule. Not changed for texas-medicaid or the other 7 TX MCO guides, which show no equivalent finding.",
+        sourceUrl: 'https://webapps.driscollhealthplan.com/priorauthcheck/?s=Autism+(ABA)+Services',
+      },
+      {
+        slug: 'driscoll-health-plan',
+        field: 'codeGrid.97157',
+        change:
+          "Same correction as 97152 above: Driscoll's PA portal lists 97157 as \"AUTHORIZATION REQUIRED\" for STAR/STAR Kids citing TMPPM §2.3, despite the code's confirmed absence from the current TMPPM handbook text and fee schedule. Driscoll-specific only.",
+        sourceUrl: 'https://webapps.driscollhealthplan.com/priorauthcheck/?s=Autism+(ABA)+Services',
+      },
+    ],
+    totals: { guides: 169, states: 19 },
+  },
 ];

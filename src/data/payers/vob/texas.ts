@@ -286,6 +286,40 @@ function tmppmCodeGrid(planNotes?: Partial<Record<'97151' | '97153' | '97154' | 
   };
 }
 
+/* QA correction (2026-07-23): Driscoll's own live PA-lookup portal
+   (webapps.driscollhealthplan.com/priorauthcheck) was fetched this pass and
+   lists BOTH 97152 and 97157 as "AUTHORIZATION REQUIRED" for STAR/STAR Kids
+   (excluded on CHIP/CHIP Perinate), each entry citing "TMPPM Children
+   Services Handbook Volume 2, Section 2.3, Medicaid Autism Services Policy"
+   as its own review-criteria source. This directly contradicts the shared
+   tmppmCodeGrid()'s notInStateCodeSet() finding for these two codes AS
+   APPLIED TO DRISCOLL SPECIFICALLY — even though 97152/97157 independently
+   confirmed absent from the TMPPM handbook text and the Autism Services
+   static fee schedule (PRCR615C) as currently published. Overridden below
+   for driscoll-health-plan only; not changed for texas-medicaid or the other
+   7 MCO guides, since no equivalent finding exists for them this pass. */
+function driscollPortalCode(code: string, description: string): CodeGridEntry {
+  return {
+    covered: `Yes, per Driscoll's own live PA-lookup portal (STAR, STAR Kids; excluded on CHIP/CHIP Perinate) — contradicts the "not on Texas's billable ABA code set" finding shipped for ${code} elsewhere in this file (texas-medicaid and the other 7 MCO guides); treat as a confirmed Driscoll-specific exception, not the statewide default.`,
+    paRequired: `Required, effective 2/1/2025, per Driscoll's PA portal (${description}).`,
+    unitCap: 'unverified — not shown on the PA portal entry',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified — not shown on the PA portal entry'],
+    telehealth: "95 modifier required for telehealth visits, per Driscoll's PA portal",
+    modifiers: ['HO (LBA)', 'HN (LaBA)', 'HM (BT) — required on auth requests and claims, as applicable', '95 (telehealth)'],
+    notes: `Driscoll's PA portal cites "TMPPM Children Services Handbook Volume 2, Section 2.3, Medicaid Autism Services Policy" as its review criteria for ${code}, even though ${code} does not appear anywhere in that handbook chapter's text or in TMHP's "AUTISM SERVICES" static fee schedule (PRCR615C) — independently confirmed this pass. Verify directly with Driscoll before assuming this applies to any other Texas Medicaid plan.`,
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'verified',
+      modifiers: 'verified',
+    },
+    sources: [DRISCOLL_PA_PORTAL],
+  };
+}
+
 /* -------------------- Layer 4: rate tables -------------------- */
 
 const TX_MEDICAID_RATES: RateTable = {
@@ -649,17 +683,26 @@ const cignaTxCommercialEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, CIGNA_AUTISM_RESOURCE_GUIDE],
 };
 
+/* QA correction (2026-07-23): EN0499 was re-fetched and read in full this
+   pass. Its coding table lists 97151-97158/0362T/0373T (NOT 99366) as
+   "Considered Medically Necessary when criteria...are met" but the document
+   contains zero occurrences of "prior authorization," "precertification," or
+   any per-code PA distinction — there is no statement anywhere in it that
+   assessment codes (97151/97152/0362T) are PA-exempt while treatment codes
+   require a PA form. The previous version of this field asserted that
+   distinction as 'verified' against this source; it is a miscitation and is
+   downgraded to 'unverified' below. */
 const cignaTxCodeGridNotes: Record<string, string> = {
-  '97151': 'Not required (per EN0499 — no PA on assessment codes)',
-  '97152': 'Not required (per EN0499 — no PA on assessment codes)',
-  '97153': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '97154': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '97155': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '97156': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '97157': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '97158': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
-  '0362T': 'Not required (per EN0499 — no PA on assessment codes)',
-  '0373T': 'Required — assessment + treatment plan with the ABA PA form (EN0499)',
+  '97151': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97152': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97153': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97154': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97155': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97156': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97157': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '97158': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '0362T': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
+  '0373T': "unverified — EN0499 does not state a per-code PA requirement (confirm via Cigna/Evernorth provider services or the precertification list)",
   '99366': 'unverified — EN0499 does not address interdisciplinary team-meeting billing',
 };
 
@@ -667,17 +710,21 @@ const cignaTxCommercialCodeGrid: Record<string, CodeGridEntry> = Object.fromEntr
   Object.entries(cignaTxCodeGridNotes).map(([code, paRequired]) => [
     code,
     {
-      covered: 'Yes — for ASD, per national policy EN0499 (no Texas carve-out — confirmed no TX-specific exception in the current edition)',
+      covered:
+        code === '99366'
+          ? 'unverified — 99366 (interdisciplinary team meeting) does not appear in EN0499\'s coding table at all; EN0499 does not address interdisciplinary team-meeting billing'
+          : 'Yes — for ASD, per national policy EN0499 (no Texas carve-out — confirmed no TX-specific exception in the current edition)',
       paRequired,
       unitCap: 'unverified',
       capPeriod: 'unverified',
       posAllowed: ['unverified'],
       telehealth: 'unverified',
       modifiers: ['unverified'],
-      notes: 'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics (unit caps, POS, telehealth modifiers) are published in it.',
+      notes:
+        'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics (unit caps, POS, telehealth modifiers) or per-code PA requirements are published in it.',
       fieldStatus: {
-        covered: 'verified',
-        paRequired: 'verified',
+        covered: code === '99366' ? 'unverified' : 'verified',
+        paRequired: 'unverified',
         unitCap: 'unverified',
         posAllowed: 'unverified',
         telehealth: 'unverified',
@@ -825,9 +872,13 @@ export const texasVob: Record<string, VobExtension> = {
   },
   'driscoll-health-plan': {
     edi: driscollEdi,
-    codeGrid: tmppmCodeGrid({
-      '97151': "Verify per-code PA status on Driscoll's Prior Authorization Requirement Portal (driscollhealthplan.com/priorauthcheck) before submitting; Driscoll uses the statewide Texas Authorization Referral Form (TARF), not a proprietary form.",
-    }),
+    codeGrid: {
+      ...tmppmCodeGrid({
+        '97151': "Verify per-code PA status on Driscoll's Prior Authorization Requirement Portal (driscollhealthplan.com/priorauthcheck) before submitting; Driscoll uses the statewide Texas Authorization Referral Form (TARF), not a proprietary form.",
+      }),
+      '97152': driscollPortalCode('97152', 'PR Behavior ID Support Assmt by 1 Tech, EA 15 Min'),
+      '97157': driscollPortalCode('97157', 'PR Multiple Fam Group Bhv Tx Gdn Phys/QHP, EA 15 Min'),
+    },
     rates: mcoUnverifiedRates('Driscoll Health Plan'),
     lastUpdated: ACCESS_DATE,
   },
