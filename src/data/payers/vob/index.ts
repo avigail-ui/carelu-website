@@ -13,5 +13,5 @@ import { northCarolinaVob } from './north-carolina.js';
 export const vob: Record<string, VobExtension> = {
   ...georgiaVob,
   ...northCarolinaVob,
-  // ... as more states are delivered
+  // ... as further states are delivered
 };

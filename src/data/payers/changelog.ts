@@ -245,4 +245,64 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'NC VOB enrichment SPLIT B shipped (docs/vob-build.md): Layer 1 (EDI crosswalk) + Layer 3 (code-level coverage grid) for all 7 guides, plus Layer 4 (Medicaid rate tables) for the 3 Tailored Plans that post one. Verified NC Medicaid\'s CCP 8F billable RB-BHT code set is 97151-97157 ONLY — 97158/0362T/0373T are confirmed absent from 8F\'s own code table, from Alliance\'s and Trillium\'s rate schedules, and from Vaya\'s authorization guidelines, so codeGrid ships those three as "not in state code set" rather than inventing entries; the full 10-code CPT set applies as normal to the 3 commercial guides. None of the 4 Tailored Plans (Alliance, Trillium, Vaya, Partners) appear under their own name on pVerify\'s or Availity\'s national payer lists (both fetched and full-text searched, not skimmed) — nor does NC Medicaid itself appear on Availity\'s list — so EDI payerId ships unverified for all 4 except where a plan\'s own document gave one directly (Trillium: Change Healthcare 56089 / SSI Group 43071, from its own Claims Submission Protocol). Vaya\'s document library, reported bot-blocked in the original compile, was retried and is NOT currently blocked — its Authorization Guidelines v2.0 and RB-BHT Guidance both extracted cleanly as plain text and supplied real code-level passthrough thresholds (97151: 32 units/6mo; 97155: 10% of 97153/97154 hours), applied as \'inferred\' to the other 3 Tailored Plans per the statewide CCP 8F pattern. Partners\' payer ID 68069 was confirmed, via Partners\' own FAQ with Carolina Complete Health, to be CCH\'s PHYSICAL-health delegation ID, not a behavioral-health/RB-BHT one — shipped unverified rather than reusing it incorrectly. UnitedHealthcare\'s Optum BH carve-out has real NC evidence this pass (Optum\'s own NC Medicaid ABA Quick Reference Guide: "Claims Payer ID 87726," same as medical) applied as inferred cross-LOB pattern to the commercial guide. Cigna/Evernorth\'s same-payer-ID pass-through (62308) reconfirmed, consistent with the Georgia build.',
+    guides: [
+      'alliance-health-north-carolina',
+      'trillium-health-resources',
+      'vaya-health',
+      'partners-health-management',
+      'aetna-north-carolina',
+      'cigna-north-carolina',
+      'unitedhealthcare-north-carolina',
+    ],
+    details: [
+      {
+        slug: 'trillium-health-resources',
+        field: 'rates',
+        change:
+          'Own posted Rate Table FY 26-27: 97151 $30.56, 97152 $61.73, 97153 $20.81, 97154 $11.37, 97155 $32.22, 97156 $23.70, 97157 $11.51 per 15-min unit — matches Alliance\'s posted schedule exactly.',
+        sourceUrl: 'https://www.trilliumhealthresources.org/sites/default/files/docs/Billing-Codes-Rates/Trillium-Rate-Table-FY-26-27.pdf',
+      },
+      {
+        slug: 'vaya-health',
+        field: 'rates.byCode.97156',
+        change:
+          'Vaya\'s only located rate document (dated 8/1/2024, eff. 7/1/2024) lists 97156 at $30.00, conflicting with the $23.70 both Alliance and Trillium currently post (eff. 10/1/2025) — flagged as a conflict rather than silently reconciled; shipped unverified pending a current Vaya-specific schedule.',
+        sourceUrl: 'https://providers.vayahealth.com/wp-content/uploads/2024/07/Standard_Rate_Schedule_Tailored-Plan-Medicaid-Direct_Non-Clinician_20240801.pdf',
+      },
+      {
+        slug: 'vaya-health',
+        field: 'edi (bot-block retry)',
+        change:
+          'Vaya\'s provider-document library, reported bot-blocked in the original corpus compile, is NOT currently blocked — its Authorization Guidelines v2.0 (9/5/2025) and RB-BHT Guidance (5/1/2025) both retrieved and extracted cleanly as plain text this pass.',
+        sourceUrl: 'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf',
+      },
+      {
+        slug: 'partners-health-management',
+        field: 'edi.payerId',
+        change:
+          'Payer ID 68069 confirmed (via the Partners/Carolina Complete Health FAQ) to be CCH\'s payer ID for physical-health claims delegated under the Tailored-Plan/Centene arrangement, NOT a behavioral-health/RB-BHT payer ID — shipped unverified rather than misapplying it.',
+        sourceUrl: 'https://network.carolinacompletehealth.com/content/dam/centene/carolinacompletehealth/pdfs/Partners-Carolina-Complete-Health-FAQ-General-Topics-3.7.24.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-north-carolina',
+        field: 'edi.bhCarveOut',
+        change:
+          'Optum\'s own NC Medicaid ABA Quick Reference Guide confirms "Claims Payer ID 87726" (same as UHC medical) for autism/ABA claims addressed to Optum Behavioral Health — applied to this commercial guide as inferred cross-LOB pattern evidence (the QRG itself is Medicaid-specific), not a commercial-specific confirmation.',
+        sourceUrl: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ncaba/ncABA-QRG.pdf',
+      },
+      {
+        slug: 'codeGrid (all 4 Tailored Plans)',
+        field: 'codeGrid.97158 / codeGrid.0362T / codeGrid.0373T',
+        change:
+          'Confirmed absent from NC Medicaid\'s actual CCP 8F billable RB-BHT code set (97151-97157 only) — verified directly against CCP 8F\'s own CPT table, Alliance\'s and Trillium\'s rate schedules, and Vaya\'s authorization guidelines, rather than assumed from the standard 10-code CPT list.',
+        sourceUrl: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];

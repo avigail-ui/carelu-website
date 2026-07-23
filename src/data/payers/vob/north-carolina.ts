@@ -696,9 +696,774 @@ const wellcareEdi: EdiRouting = {
   sources: [WELLCARE_PROVIDER_RESOURCES, PVERIFY_PAYER_LIST, OPTUM_RTE_LIST, CCH_MERGER_PAGE, NCDHHS_MERGER_PLAYBOOK],
 };
 
-/* ==================== export ==================== */
+/* ================================================================
+   VOB ENRICHMENT — North Carolina SPLIT B: Tailored Plans (Alliance,
+   Trillium, Vaya, Partners) + commercial (Aetna, Cigna, UnitedHealthcare).
+   Layers 1 (EDI crosswalk) + 3 (code grid) + 4 (rate tables, Tailored
+   Plans only — commercial rates are contract-specific and excluded
+   per docs/vob-build.md). NC Medicaid Direct + the five Standard
+   Plans are a separate change-set (SPLIT A) landing in this same
+   file/export from a parallel session — see the merge note on
+   `northCarolinaVob` below.
 
+   Sourcing notes (read before editing):
+   - NC Medicaid's actual RB-BHT billable code set under Clinical
+     Coverage Policy 8F is 97151-97157 ONLY. The 8F PDF's own
+     telehealth-eligibility table (Attachment A) stops at 97157; no
+     97158, 0362T, or 0373T appears in 8F, in Alliance's or Trillium's
+     posted rate schedules, or in Vaya's authorization guidelines or
+     rate schedule. This was verified by direct retrieval and text
+     extraction of all four documents (not assumed) — codeGrid entries
+     for those three CPT/HCPCS codes are marked "not part of NC's CCP
+     8F billable code set" rather than invented. 99366 was checked and
+     is likewise absent from 8F's code table.
+   - None of Alliance Health, Trillium Health Resources, Vaya Health, or
+     Partners Health Management appear under their own name on either
+     the pVerify March-2026 payer list or the Availity Essentials 837
+     payer list (both fetched and full-text-searched this pass, not
+     skimmed) — nor does NC Medicaid itself appear on Availity's list.
+     This is a structural fact, not a gap in this pass: Tailored Plan
+     eligibility for RB-BHT most likely resolves through NC Medicaid's
+     own 271 (NCTracks), with Tailored Plan enrollment surfacing as an
+     MCO segment inside that response — the same mechanism the state-
+     Medicaid guide's medicaid271Notes covers (a parallel session's
+     scope, not populated here). Each Tailored Plan's own claims/EDI
+     documentation was used instead where it exists.
+   - Vaya's provider-document library, reported bot-blocked in the
+     original corpus compile, was retried this pass and is NOT
+     blocked: both its RB-BHT Authorization Guidelines v2.0 (Sept 2025)
+     and its RB-BHT Guidance (May 2025) are plain-text PDFs that
+     extracted cleanly. What remains genuinely unverified for Vaya is
+     a *current* (FY26-27-cycle) rate schedule — the only rate
+     document found is dated 7/1/2024 and one of its rates (97156)
+     conflicts with the current statewide figure Alliance and Trillium
+     both post; see the Vaya rates block below for the conflict detail.
+   - Partners' payer ID 68069, which surfaces in several search hits
+     and in the Partners/Carolina Complete Health FAQ, is confirmed by
+     that same FAQ to be Carolina Complete Health's payer ID for
+     PHYSICAL health claims delegated to CCH under the Tailored-Plan/
+     Centene infrastructure arrangement (Availity list independently
+     confirms 68069 = "Centene Corporation") — NOT a behavioral-health
+     or RB-BHT payer ID. Partners' own BH claims route through
+     ProAuth/Alpha+ with no clearinghouse payer ID found this pass;
+     shipped 'unverified' rather than reusing 68069, which would be
+     wrong.
+   - Cigna/Evernorth's carve-out is the same national, already-verified
+     same-payer-ID pass-through documented in the Georgia build (Cigna's
+     own Autism Resource Guide states "Use Evernorth payer ID 62308").
+     UnitedHealthcare's Optum BH routing has real NC-specific evidence
+     this pass, via the (Medicaid) UHC Community Plan of NC ABA Quick
+     Reference Guide: "Claims Payer ID 87726" (same as UHC's medical
+     payer ID) for all autism/ABA claims, addressed to "Optum
+     Behavioral Health." That QRG is Medicaid-specific, so it's applied
+     to the COMMERCIAL unitedhealthcare-north-carolina guide as
+     'inferred' cross-state/cross-LOB pattern evidence, not verified —
+     pVerify separately lists a distinct "UHG007 United Healthcare -
+     Optum Behavioral Solutions" entry not resolved against 87726 for
+     commercial NC specifically.
+   ================================================================ */
+/* -------------------- shared source refs -------------------- */
+
+const PVERIFY_PAYER_LIST_NCB = src(
+  'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+  'pVerify public payer list, dated March 2026 — full-text extracted and searched; no entry for Alliance Health, Trillium Health Resources, Vaya Health, or Partners Health Management under any name variant.'
+);
+const AVAILITY_PAYER_LIST_NCB = src(
+  'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+  "Availity Essentials public payer list (837/270-271 payer IDs) — full-text extracted and searched; no entry for Alliance Health, Trillium Health Resources, Vaya Health, or Partners Health Management, and no entry for NC Medicaid itself. Payer ID 68069 in this list resolves to \"Centene Corporation,\" cross-confirming it is Carolina Complete Health's ID, not a Tailored Plan's."
+);
+const CCP_8F = src(
+  'https://medicaid.ncdhhs.gov/documents/files/8f-1/open',
+  'NC Medicaid Clinical Coverage Policy 8F (RB-BHT) — Section D/Attachment A: the CPT code table (telehealth-eligible with GT; telephonic-eligible with KX only for 97156/97157 under caregiver-barrier criteria in §3.1.2/3.2.5) stops at 97157. Section F (Place of Service) is narrative only — no POS numeric codes given. Retrieved and full-text extracted directly, not summarized from a mirror.'
+);
+const ALLIANCE_RATE_SCHEDULE_NCB = src(
+  'https://www.alliancehealthplan.org/document-library/97251',
+  "Alliance Health — Standard Rate Schedule, \"FY26 - Updated June 2026 V2 Format Revision/RB-BHT\" — RB-BHT line items (97151-97157) at $30.56/$61.73/$20.81/$11.37/$32.22/$23.70/$11.51 per 15-min unit, effective 10/1/2025. Retrieved and full-text extracted directly; no 97158, 0362T, or 0373T line items exist in the document."
+);
+const ALLIANCE_RBBHT_GUIDANCE = src(
+  'https://www.alliancehealthplan.org/provider-updates/guidance-for-rb-bht-providers/',
+  'Alliance Health — Guidance for RB-BHT Providers (Feb 2026) — diagnostic-instrument and service-order requirements; already cited in the base corpus prose.'
+);
+const TRILLIUM_RATE_TABLE = src(
+  'https://www.trilliumhealthresources.org/sites/default/files/docs/Billing-Codes-Rates/Trillium-Rate-Table-FY-26-27.pdf',
+  'Trillium Health Resources — Rate Table FY 26-27 — 97151-97157 (marked "**" = unified rate across legacy LME/MCOs) at $30.56/$61.73/$20.81/$11.37/$32.22/$23.70/$11.51 per 15-min unit, matching Alliance’s posted figures exactly. The table’s own Effective/End Date columns for these rows read 1/1/2024-12/31/2099 (a validity window in the rate-engine sense, not a distinct effective date) rather than restating 10/1/2025 — flagged here rather than silently reconciled. No 97158, 0362T, or 0373T rows exist in the document.'
+);
+const TRILLIUM_CLAIMS_PROTOCOL = src(
+  'https://www.trilliumhealthresources.org/sites/default/files/docs/Provider-documents/Claims/Trillium-Medicaid-Direct-Tailored-Plan-Claims-Submission-Protocol.pdf',
+  'Trillium — Tailored Plan & Medicaid Direct Claims Submission Protocol (rev. 9/23/2025) — states verbatim: Behavioral Health clearinghouse claims use Change Healthcare (payer ID 56089) or The SSI Group (payer ID 43071); Physical Health claims route to Carolina Complete Health via payer ID 68069 (a Centene delegation, confirmed separately on the Availity list). Retrieved and full-text extracted directly.'
+);
+const TRILLIUM_BENEFIT_PLAN = src(
+  'https://www.trilliumhealthresources.org/sites/default/files/docs/Benefit-Plans-Services-Definitions/Trillium-Medicaid-Child-BH-Benefit-Plan.pdf',
+  'Trillium — Medicaid Child BH Services Benefit Plan (rev. 7/2026) — already cited in the base corpus prose; source for the GT/KX telehealth-modifier language restated here.'
+);
+const VAYA_AUTH_GUIDELINES = src(
+  'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf',
+  'Vaya Health — Authorization Guidelines: Medicaid RB-BHT for ASD, v2.0, effective 9/5/2025 — code-by-code SAR documentation requirements and passthrough thresholds (97151: notification SAR up to 32 units/6 months, then medical-necessity review; 97155: notification SAR up to 1 hour per 10 hours of 97153/97154, then review). Reported bot-blocked in the original corpus compile; retried this pass and retrieved cleanly as plain text (not a scanned image) via direct download + pdftotext — NOT currently blocked.'
+);
+const VAYA_RBBHT_GUIDANCE = src(
+  'https://providers.vayahealth.com/wp-content/uploads/2025/05/RB_BHT_Guidance_20250522.pdf',
+  'Vaya Health — RB-BHT (ABA) Guidance, v1.0, rev. 5/1/2025 — confirms the 97155 passthrough as "up to 10% of approved 97153 hours" (consistent with the 1-hr-per-10-hr ratio in the Authorization Guidelines) and restates the May 2019 NC Medicaid Bulletin that 97155 does not cover routine technician-supervision/fidelity checks. Retrieved and extracted cleanly.'
+);
+const VAYA_RATE_SCHEDULE_2024 = src(
+  'https://providers.vayahealth.com/wp-content/uploads/2024/07/Standard_Rate_Schedule_Tailored-Plan-Medicaid-Direct_Non-Clinician_20240801.pdf',
+  'Vaya Health — Standard Rate Schedule: Tailored Plan/Medicaid Direct (Non-Clinician), dated 8/1/2024, rates effective 7/1/2024 — 97151-97157 listed; six of seven match Alliance/Trillium’s current 10/1/2025 statewide figures exactly, but 97156 is listed at $30.00 vs. the $23.70 both other Tailored Plans currently post. Retrieved and full-text extracted directly. This is the only Vaya rate document located this pass despite a search for a current FY26-27-cycle schedule (the Rate & Checkwrite Schedules page lists only generic "Clinician-Based"/"Non-Clinician-Based" schedule links, not a current one located and confirmed to postdate the Oct-2025/Jan-2026 rate cut-and-restoration cycle) — flagged staleRisk, not silently used as current.',
+  true
+);
+const VAYA_OFFICEALLY_ENROLLMENT = src(
+  'https://cms.officeally.com/OfficeAlly/Forms/EDI/VayaHealth_SmokyMtn_EDI_ENR_PKT.pdf',
+  'Office Ally — Vaya Health (payer ID 13010) pre-enrollment instructions, Office Ally’s own clearinghouse document. Retrieved and full-text extracted directly. Vaya does not appear under this or any name on pVerify’s or Availity’s national lists (see those source notes) — Office Ally is a separate, third clearinghouse, confirmed directly rather than inferred.'
+);
+const PARTNERS_ALL_CODES_ALERT = src(
+  'https://providers.partnersbhm.org/authorizations-for-research-based-behavioral-health-treatment-transition-to-all-codes/',
+  "Partners — RB-BHT authorizations transition to ALL codes (provider alert); already cited in the base corpus prose."
+);
+const PARTNERS_CCH_FAQ = src(
+  'https://network.carolinacompletehealth.com/content/dam/centene/carolinacompletehealth/pdfs/Partners-Carolina-Complete-Health-FAQ-General-Topics-3.7.24.pdf',
+  "Partners/Carolina Complete Health FAQ (3/7/2024) — states verbatim that Payer ID 68069 is \"for physical health claims\" processed by Carolina Complete Health, and that behavioral health claims (where RB-BHT lives) go through Partners’ own portal/Alpha+, a separate system with no payer ID given in this document. Retrieved and full-text extracted directly — used here to rule OUT 68069 as Partners’ BH/RB-BHT payer ID, not to confirm one."
+);
+const UHC_NC_MEDICAID_ABA_QRG = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ncaba/ncABA-QRG.pdf',
+  'Optum Provider Express — "UnitedHealthcare Community Plan of North Carolina ABA Program Quick Reference Guide" — states verbatim "Electronic Submission ... Claims Payer ID 87726" (same ID as UHC’s medical claims) and "Mail paper claims to: Optum Behavioral Health." This is the Medicaid Community Plan QRG, not a commercial document — retrieved and full-text extracted directly (the page wraps the PDF in a JS download redirect; fetched the underlying asset path directly).'
+);
+const CIGNA_EN0499 = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+  'Evernorth/Cigna EN0499, effective 2026-05-15 — all 10 codes listed as medically necessary when criteria are met; no unit caps, POS codes, or telehealth/licensure-tier modifiers published. Same national policy already verified in the Georgia build.'
+);
+const CIGNA_AUTISM_RESOURCE_GUIDE = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf',
+  'Cigna Autism Resource Guide, Mar 2025 — states verbatim "Use Evernorth payer ID 62308," confirming ABA/autism claims use the SAME payer ID as Cigna’s medical claims (no separate Evernorth EDI hop). Same national document already verified in the Georgia build; already cited in the NC corpus prose.'
+);
+const OPTUM_SCC = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf',
+  'Optum ABA Supplemental Clinical Criteria, Policy BH803ABASCC082025 — contains zero CPT codes; points to a separate Optum ABA Reimbursement Policy for coding detail. Already cited in the NC corpus prose and verified in the Georgia build.'
+);
+const OPTUM_REIMBURSEMENT_POLICY = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
+  "Optum ABA Reimbursement Policy 2022RP501A — a NATIONAL commercial policy, not NC-specific. Max-daily-units and HN/HM/HO/HP modifier tiers per code; no POS or telehealth modifier given. Applied here as 'inferred' absent a confirmed NC-specific override, same treatment as the Georgia build."
+);
+const AETNA_CPB0554 = src(
+  'https://www.aetna.com/cpb/medical/data/500_599/0554.html',
+  'Aetna CPB 0554 — scoped to Down syndrome/non-ASD indications; cross-references CPB 0648 for actual ASD coverage. No coding/reimbursement mechanics.'
+);
+const AETNA_CPB0648 = src(
+  'https://www.aetna.com/cpb/medical/data/600_699/0648.html',
+  'Aetna CPB 0648 (Autism Spectrum Disorders) — 97151-97158 listed as covered if selection criteria are met (0362T/0373T under "other CPT codes related to the CPB"); no unit caps, POS codes, telehealth modifiers, or licensure-tier modifiers given. No separate Aetna ABA billing/reimbursement policy located, same as the Georgia build.'
+);
+
+/* -------------------- Layer 3: codeGrid factories -------------------- */
+
+/* NC Medicaid's CCP 8F billable RB-BHT set is 97151-97157 ONLY (verified —
+   see file header). This factory carries the shared, state-level facts
+   (telehealth/telephonic modifier eligibility, place-of-service language,
+   180-day auth-cycle framing) that are identical across all four Tailored
+   Plans; each call layers in the plan's own authorization mechanism. */
+function ncTailoredPlanEntry(opts: {
+  code: string;
+  paRequired: string;
+  paFieldStatus: 'verified' | 'inferred';
+  unitCap: string;
+  unitCapFieldStatus: 'verified' | 'inferred' | 'unverified';
+  notes?: string;
+  extraSources?: SourceRef[];
+}): CodeGridEntry {
+  const kxEligible = opts.code === '97156' || opts.code === '97157';
+  return {
+    covered: 'Yes',
+    paRequired: opts.paRequired,
+    unitCap: opts.unitCap,
+    capPeriod: '180 days (initial + reauth, per CCP 8F auth cycle)',
+    posAllowed: [
+      'home (primary private residence)',
+      'office/clinic',
+      'school or work',
+      'community / place of recreation or socialization',
+      '(CCP 8F Section F is narrative only — no POS numeric codes given)',
+    ],
+    telehealth: kxEligible
+      ? "Yes — GT modifier for telehealth (audio-visual). Telephonic (audio-only, KX modifier) also allowed, but ONLY when the caregiver's physical/behavioral health status or an access barrier (transportation, technology) prevents in-person or telehealth participation (CCP 8F §3.1.2/3.2.5)."
+      : 'Yes — GT modifier for telehealth (audio-visual). Telephonic (KX) delivery is not permitted for this code per CCP 8F’s Attachment A code table.',
+    modifiers: kxEligible
+      ? ['GT (telehealth)', 'KX (telephonic, caregiver-barrier criteria only)']
+      : ['GT (telehealth)'],
+    notes: opts.notes,
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: opts.paFieldStatus,
+      unitCap: opts.unitCapFieldStatus,
+      posAllowed: 'verified',
+      telehealth: 'verified',
+      modifiers: 'verified',
+    },
+    sources: [CCP_8F, ...(opts.extraSources ?? [])],
+  };
+}
+
+function ncCodeNotInStateSet(code: string): CodeGridEntry {
+  return {
+    covered: `No — ${code} is not part of NC Medicaid's CCP 8F billable RB-BHT code set (97151–97157 only)`,
+    paRequired: 'N/A',
+    unitCap: 'N/A',
+    capPeriod: 'N/A',
+    posAllowed: [],
+    telehealth: 'N/A',
+    modifiers: [],
+    notes:
+      "Confirmed absent from CCP 8F's own CPT code table (Attachment A), from Alliance's and Trillium's posted rate schedules, and from Vaya's authorization guidelines and rate schedule — checked directly, not assumed from the CPT list.",
+    fieldStatus: { covered: 'verified', paRequired: 'verified' },
+    sources: [CCP_8F, ALLIANCE_RATE_SCHEDULE_NCB, TRILLIUM_RATE_TABLE, VAYA_AUTH_GUIDELINES],
+  };
+}
+
+/* -------------------- commercial codeGrid factories (full CPT set, same national policies verified in Georgia) -------------------- */
+
+function cignaEntryNC(paRequired: string): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired,
+    unitCap: 'unverified',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers: ['unverified'],
+    notes:
+      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics are published in it. Same finding as the Georgia build (national policy, not NC-specific).',
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [CIGNA_EN0499],
+  };
+}
+
+function aetnaEntryNC(): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired: 'Required — precertification (form GR-69017-4)',
+    unitCap: 'unverified',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers: ['unverified'],
+    notes:
+      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass (same finding as the Georgia build).',
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [AETNA_CPB0554, AETNA_CPB0648],
+  };
+}
+
+function uhcEntryNC(unitCap: string, modifiers: string[]): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired:
+      'Required — two-step Optum authorization (assessment, then treatment); continued-service review every 4–6 months',
+    unitCap,
+    capPeriod: 'day',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers,
+    notes:
+      "Unit caps and modifiers sourced from Optum's NATIONAL ABA Reimbursement Policy (2022RP501A), same as the Georgia build — applied absent a confirmed NC-specific override. Claims-routing payer ID (87726, same as medical) is corroborated by Optum's own NC MEDICAID ABA Quick Reference Guide, applied here as inferred cross-LOB evidence, not a commercial-specific confirmation. Verify via: Provider Express / UHC provider services.",
+    fieldStatus: {
+      covered: 'inferred',
+      paRequired: 'verified',
+      unitCap: 'inferred',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'inferred',
+    },
+    sources: [OPTUM_SCC, OPTUM_REIMBURSEMENT_POLICY, UHC_NC_MEDICAID_ABA_QRG],
+  };
+}
+
+/* ==================== alliance-health-north-carolina ==================== */
+
+const allianceEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none',
+    administratorPayerId: '',
+    abaRidesOn: 'bh',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Alliance Health does not appear on pVerify’s March-2026 national payer list under any name variant — confirm via pVerify onboarding directly.',
+    'payerId.availity': 'Alliance Health does not appear on the Availity Essentials 837 payer list either — confirm via Availity onboarding directly.',
+    'payerId.changeHealthcare':
+      'Multiple independent clearinghouse-adjacent payer-ID directories (Office Ally-family listings, practice-management EHR payer finders) consistently show "Alliance Behavioral Health, payer ID 23071" — but none is Change Healthcare’s, pVerify’s, or Availity’s own official list, and Alliance’s own EDI/claims pages return 403 to automated retrieval. Confirm 23071 and its clearinghouse directly with Alliance Provider Support ((855) 759-9700 / Claims@AllianceHealthPlan.org) before automating routing on it.',
+    supports270271: 'Same as above — Alliance’s own EDI/Trading-Partner-Agreement pages block automated access (403); confirm directly.',
+    'bhCarveOut.administrator': 'Alliance is itself the LME/MCO administering behavioral health (including RB-BHT) directly — inferred from its role as a Tailored Plan, not from a document naming "no carve-out" explicitly.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB],
+};
+
+function allianceCodeGrid(): Record<string, CodeGridEntry> {
+  const cover = 'Required — per CCP 8F, submitted with Alliance’s fillable RB-BHT cover sheet through Alliance UM';
+  return {
+    '97151': ncTailoredPlanEntry({
+      code: '97151', paRequired: cover, paFieldStatus: 'verified',
+      unitCap: 'unverified — no Alliance-specific or statewide per-code unit cap document located (180-day auth cycle is the governing limit)',
+      unitCapFieldStatus: 'unverified',
+      notes: 'Diagnostic-instrument bar applies at this step: ADI-R, ADOS-2, CARS-2, or TELE-ASD-PEDS required (Alliance Feb-2026 guidance); GARS/M-CHAT/SRS rejected as standalone.',
+      extraSources: [ALLIANCE_RBBHT_GUIDANCE],
+    }),
+    '97152': ncTailoredPlanEntry({ code: '97152', paRequired: cover, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97153': ncTailoredPlanEntry({ code: '97153', paRequired: cover, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97154': ncTailoredPlanEntry({ code: '97154', paRequired: cover, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97155': ncTailoredPlanEntry({
+      code: '97155', paRequired: cover, paFieldStatus: 'verified',
+      unitCap: 'Inferred from Vaya’s statewide-pattern passthrough: routinely approved up to 1 hour per 10 hours of 97153/97154 (10%); above that, reviewed for medical necessity. Not confirmed as an Alliance-specific rule.',
+      unitCapFieldStatus: 'inferred',
+      extraSources: [VAYA_RBBHT_GUIDANCE],
+    }),
+    '97156': ncTailoredPlanEntry({ code: '97156', paRequired: cover, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97157': ncTailoredPlanEntry({ code: '97157', paRequired: cover, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97158': ncCodeNotInStateSet('97158'),
+    '0362T': ncCodeNotInStateSet('0362T'),
+    '0373T': ncCodeNotInStateSet('0373T'),
+  };
+}
+
+const allianceRates: RateTable = {
+  source: 'Alliance Health — Standard Rate Schedule',
+  effectiveDate: '2025-10-01',
+  byCode: {
+    '97151': { rate: '$30.56', unit: '15min' },
+    '97152': { rate: '$61.73', unit: '15min' },
+    '97153': { rate: '$20.81', unit: '15min' },
+    '97154': { rate: '$11.37', unit: '15min' },
+    '97155': { rate: '$32.22', unit: '15min' },
+    '97156': { rate: '$23.70', unit: '15min' },
+    '97157': { rate: '$11.51', unit: '15min' },
+    '97158': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0362T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0373T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+  },
+  sources: [ALLIANCE_RATE_SCHEDULE_NCB],
+};
+
+/* ==================== trillium-health-resources ==================== */
+
+const trilliumEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: '56089' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none',
+    administratorPayerId: '',
+    abaRidesOn: 'bh',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Trillium does not appear on pVerify’s national payer list under any name variant.',
+    'payerId.availity': 'Trillium does not appear on the Availity Essentials 837 payer list either.',
+    supports270271: 'Confirm 270/271 eligibility routing directly with Trillium — its own Claims Submission Protocol documents 837 claims routing (Change Healthcare 56089, The SSI Group 43071) but not eligibility-check routing specifically.',
+    'bhCarveOut.administrator': 'Trillium is itself the LME/MCO administering behavioral health (including RB-BHT) directly — inferred from its role as a Tailored Plan and from its own claims protocol routing BH claims in-house (not to a third-party administrator).',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB, TRILLIUM_CLAIMS_PROTOCOL, TRILLIUM_BENEFIT_PLAN],
+};
+
+function trilliumCodeGrid(): Record<string, CodeGridEntry> {
+  const tar = 'Required — TAR (initial + reauth up to 180 days each, telehealth included); reauth due before current auth expires';
+  return {
+    '97151': ncTailoredPlanEntry({
+      code: '97151', paRequired: tar, paFieldStatus: 'verified',
+      unitCap: 'unverified — no Trillium-specific per-code unit cap document located',
+      unitCapFieldStatus: 'unverified',
+      notes: 'No published unit caps (per the base corpus prose); units run in 15-minute increments. Inferred from Vaya’s statewide pattern: other Tailored Plans notify-approve up to 32 units/6 months before requiring medical-necessity review.',
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97152': ncTailoredPlanEntry({ code: '97152', paRequired: tar, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97153': ncTailoredPlanEntry({ code: '97153', paRequired: tar, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97154': ncTailoredPlanEntry({ code: '97154', paRequired: tar, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97155': ncTailoredPlanEntry({
+      code: '97155', paRequired: tar, paFieldStatus: 'verified',
+      unitCap: 'Inferred from Vaya’s statewide-pattern passthrough: up to 1 hour per 10 hours of 97153/97154 (10%); above that, medical-necessity review. Not confirmed as a Trillium-specific rule.',
+      unitCapFieldStatus: 'inferred',
+      extraSources: [VAYA_RBBHT_GUIDANCE],
+    }),
+    '97156': ncTailoredPlanEntry({ code: '97156', paRequired: tar, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }),
+    '97157': ncTailoredPlanEntry({ code: '97157', paRequired: tar, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified' }, ),
+    '97158': ncCodeNotInStateSet('97158'),
+    '0362T': ncCodeNotInStateSet('0362T'),
+    '0373T': ncCodeNotInStateSet('0373T'),
+  };
+}
+
+const trilliumRates: RateTable = {
+  source: 'Trillium Health Resources — Rate Table FY 26-27',
+  effectiveDate: '2025-10-01',
+  byCode: {
+    '97151': { rate: '$30.56', unit: '15min' },
+    '97152': { rate: '$61.73', unit: '15min' },
+    '97153': { rate: '$20.81', unit: '15min' },
+    '97154': { rate: '$11.37', unit: '15min' },
+    '97155': { rate: '$32.22', unit: '15min' },
+    '97156': { rate: '$23.70', unit: '15min' },
+    '97157': { rate: '$11.51', unit: '15min' },
+    '97158': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0362T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0373T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+  },
+  sources: [TRILLIUM_RATE_TABLE, ALLIANCE_RATE_SCHEDULE_NCB],
+};
+
+/* ==================== vaya-health ==================== */
+
+const vayaEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none',
+    administratorPayerId: '',
+    abaRidesOn: 'bh',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Vaya does not appear on pVerify’s national payer list under any name variant.',
+    'payerId.availity': 'Vaya does not appear on the Availity Essentials 837 payer list either.',
+    'payerId.changeHealthcare':
+      'Vaya IS confirmed on Office Ally — a third clearinghouse not named in this schema — as payer ID 13010, directly from Office Ally’s own pre-enrollment instructions PDF. Not pVerify’s, Availity’s, or (confirmed) Change Healthcare’s own ID; confirm the clearinghouse-specific mapping with Vaya EDI (EDI@vayahealth.com) or (828) 586-5501 ext. 5227/3313 before automating routing.',
+    supports270271: 'Confirm 270/271 eligibility routing directly — Vaya publishes separate "EDI 270 and 271 Companion Guide" and "EDI Real-Time 270 and 271 Companion Guide" documents (referenced on its claims-submission page) whose content was not retrieved this pass.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB, VAYA_OFFICEALLY_ENROLLMENT],
+};
+
+function vayaCodeGrid(): Record<string, CodeGridEntry> {
+  return {
+    '97151': ncTailoredPlanEntry({
+      code: '97151',
+      paRequired: 'Passthrough: notification SAR + service order, up to 32 units per 6 months; requests above 32 units reviewed for medical necessity. Above 32 units, Initial/Concurrent SAR + service order + clinical documentation validating ASD diagnosis via a scientifically validated tool required.',
+      paFieldStatus: 'verified',
+      unitCap: '32 units per 6 months (passthrough notification threshold; higher requests reviewed)',
+      unitCapFieldStatus: 'verified',
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97152': ncTailoredPlanEntry({
+      code: '97152',
+      paRequired: 'Initial: SAR + FBA + treatment plan + service order (annual) + clinical documentation validating ASD diagnosis. Concurrent: SAR + FBA + treatment plan + service order (annual).',
+      paFieldStatus: 'verified',
+      unitCap: 'unverified — no passthrough threshold published for this code (unlike 97151/97155)',
+      unitCapFieldStatus: 'unverified',
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97153': ncTailoredPlanEntry({
+      code: '97153',
+      paRequired: 'Initial: SAR + FBA + treatment plan + service order (annual) + clinical documentation validating ASD diagnosis. Concurrent: SAR + FBA + treatment plan + service order (annual).',
+      paFieldStatus: 'verified',
+      unitCap: 'unverified — no passthrough threshold published for this code',
+      unitCapFieldStatus: 'unverified',
+      notes: "Vaya's guidelines list this as \"97153 96\" — modifier 96 (habilitative) appears alongside the base code in its documentation table.",
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97154': ncTailoredPlanEntry({
+      code: '97154',
+      paRequired: 'Initial: SAR + FBA + treatment plan + service order (annual) + clinical documentation validating ASD diagnosis. Concurrent: SAR + FBA + treatment plan + service order (annual).',
+      paFieldStatus: 'verified',
+      unitCap: 'unverified — no passthrough threshold published for this code',
+      unitCapFieldStatus: 'unverified',
+      notes: "Vaya's guidelines list this as \"97154 96\" — modifier 96 (habilitative) appears alongside the base code.",
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97155': ncTailoredPlanEntry({
+      code: '97155',
+      paRequired: 'Passthrough: notification SAR, up to 1 hour per 10 hours of direct intervention (97153/97154) — i.e. 10%. Requests for a higher ratio: SAR + service order + clinical documentation validating ASD diagnosis + FBA + treatment plan, reviewed for medical necessity.',
+      paFieldStatus: 'verified',
+      unitCap: '1 hour per 10 hours of 97153/97154 (10% passthrough threshold; higher ratios reviewed)',
+      unitCapFieldStatus: 'verified',
+      notes: 'Confirmed by two independent Vaya documents (Authorization Guidelines v2.0 and the May-2025 RB-BHT Guidance) and consistent with the May-2019 NC Medicaid Bulletin restriction that 97155 does not cover routine technician-supervision/fidelity checks.',
+      extraSources: [VAYA_AUTH_GUIDELINES, VAYA_RBBHT_GUIDANCE],
+    }),
+    '97156': ncTailoredPlanEntry({
+      code: '97156',
+      paRequired: 'Initial: SAR + FBA + treatment plan + service order (annual) + clinical documentation validating ASD diagnosis. Concurrent: SAR + FBA + treatment plan + service order (annual).',
+      paFieldStatus: 'verified',
+      unitCap: 'unverified — no passthrough threshold published for this code',
+      unitCapFieldStatus: 'unverified',
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97157': ncTailoredPlanEntry({
+      code: '97157',
+      paRequired: 'Initial: SAR + FBA + treatment plan + service order (annual) + clinical documentation validating ASD diagnosis. Concurrent: SAR + FBA + treatment plan + service order (annual).',
+      paFieldStatus: 'verified',
+      unitCap: 'unverified — no passthrough threshold published for this code',
+      unitCapFieldStatus: 'unverified',
+      extraSources: [VAYA_AUTH_GUIDELINES],
+    }),
+    '97158': ncCodeNotInStateSet('97158'),
+    '0362T': ncCodeNotInStateSet('0362T'),
+    '0373T': ncCodeNotInStateSet('0373T'),
+  };
+}
+
+const vayaRates: RateTable = {
+  source: 'Vaya Health — Standard Rate Schedule: Tailored Plan/Medicaid Direct (Non-Clinician), dated 8/1/2024',
+  effectiveDate: '2024-07-01',
+  byCode: {
+    '97151': { rate: '$30.56', unit: '15min' },
+    '97152': { rate: '$61.73', unit: '15min' },
+    '97153': { rate: '$20.81', unit: '15min' },
+    '97154': { rate: '$11.37', unit: '15min' },
+    '97155': { rate: '$32.22', unit: '15min' },
+    '97156': {
+      rate: 'unverified — Vaya’s 8/1/2024 schedule lists $30.00, which CONFLICTS with the $23.70 both Alliance and Trillium currently post (eff. 10/1/2025); flagged rather than reconciled',
+      unit: '15min',
+    },
+    '97157': { rate: '$11.51', unit: '15min' },
+    '97158': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0362T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0373T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+  },
+  sources: [VAYA_RATE_SCHEDULE_2024, ALLIANCE_RATE_SCHEDULE_NCB, TRILLIUM_RATE_TABLE],
+};
+
+/* ==================== partners-health-management ==================== */
+
+const partnersEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none',
+    administratorPayerId: '',
+    abaRidesOn: 'bh',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Partners does not appear on pVerify’s national payer list under any name variant.',
+    'payerId.availity': 'Partners does not appear on the Availity Essentials 837 payer list either.',
+    'payerId.changeHealthcare':
+      "Payer ID 68069, which surfaces in several search results for “Partners,” is confirmed by Partners' OWN FAQ with Carolina Complete Health to be CCH's payer ID for PHYSICAL health claims delegated under the Tailored-Plan/Centene arrangement — NOT a behavioral-health or RB-BHT payer ID (RB-BHT is a BH service). Availity independently lists 68069 as \"Centene Corporation.\" Partners' own BH claims route through ProAuth (authorization) and Alpha+ (claims), with no clearinghouse payer ID found in any document retrieved this pass — confirm directly via ClaimsDepartment@PartnersBHM.org before assuming a routing.",
+    supports270271: 'Same as above — confirm directly with Partners EDI/claims support.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB, PARTNERS_CCH_FAQ],
+};
+
+function partnersCodeGrid(): Record<string, CodeGridEntry> {
+  const allCodes =
+    'Required — ONE "ALL codes" authorization on the base code (submitted via ProAuth, base code as Primary Procedure Code on the Prescreen, Treatment Type selected from the dropdown) covers every RB-BHT code and modifier combination, telehealth included. Billing must still trace to the approved treatment plan or risk recoupment on post-payment review.';
+  return {
+    '97151': ncTailoredPlanEntry({ code: '97151', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified — no Partners-specific or statewide per-code unit cap document located', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97152': ncTailoredPlanEntry({ code: '97152', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97153': ncTailoredPlanEntry({ code: '97153', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97154': ncTailoredPlanEntry({ code: '97154', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97155': ncTailoredPlanEntry({
+      code: '97155', paRequired: allCodes, paFieldStatus: 'verified',
+      unitCap: 'Inferred from Vaya’s statewide-pattern passthrough: up to 1 hour per 10 hours of 97153/97154 (10%). Not confirmed as a Partners-specific rule — the ALL-codes model may not enforce a distinct 97155 ratio at all.',
+      unitCapFieldStatus: 'inferred',
+      extraSources: [PARTNERS_ALL_CODES_ALERT, VAYA_RBBHT_GUIDANCE],
+    }),
+    '97156': ncTailoredPlanEntry({ code: '97156', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97157': ncTailoredPlanEntry({ code: '97157', paRequired: allCodes, paFieldStatus: 'verified', unitCap: 'unverified', unitCapFieldStatus: 'unverified', extraSources: [PARTNERS_ALL_CODES_ALERT] }),
+    '97158': ncCodeNotInStateSet('97158'),
+    '0362T': ncCodeNotInStateSet('0362T'),
+    '0373T': ncCodeNotInStateSet('0373T'),
+  };
+}
+
+const partnersRates: RateTable = {
+  source: 'unverified — no publicly posted Partners-specific RB-BHT rate schedule located this pass',
+  effectiveDate: 'unverified',
+  byCode: {
+    '97151': { rate: 'unverified', unit: '15min' },
+    '97152': { rate: 'unverified', unit: '15min' },
+    '97153': { rate: 'unverified', unit: '15min' },
+    '97154': { rate: 'unverified', unit: '15min' },
+    '97155': { rate: 'unverified', unit: '15min' },
+    '97156': { rate: 'unverified', unit: '15min' },
+    '97157': { rate: 'unverified', unit: '15min' },
+    '97158': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0362T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+    '0373T': { rate: 'N/A', unit: 'N/A — not part of NC’s CCP 8F billable code set' },
+  },
+  sources: [
+    src(
+      'https://www.partnersbhm.org/tailoredplan/providers/manuals-forms-and-policies/clinical-coverage-policies/',
+      'Partners publishes clinical coverage policy adoption (defers to CCP 8F) but no distinct rate schedule was located on its provider site this pass — unlike Alliance and Trillium, which both post one. NC’s ≥100%-of-fee-schedule floor (already in the base corpus prose) means the statewide 97151-97157 figures Alliance/Trillium post likely apply as a floor, but that is inferred, not a Partners-specific confirmation.'
+    ),
+  ],
+};
+
+/* ==================== aetna-north-carolina (commercial) ==================== */
+
+const aetnaEdiNC: EdiRouting = {
+  payerId: { pverify: '00001', availity: '60054', changeHealthcare: '60054' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'unverified',
+    administratorPayerId: 'unverified',
+    abaRidesOn: 'unverified',
+    twoHopRequired: 'unverified',
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'unverified',
+  },
+  verifyVia: {
+    supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
+    'bhCarveOut.administrator':
+      'Not researched to a primary source this pass (same gap as the Georgia build) — confirm via Aetna provider services or the ABA precertification form (GR-69017-4) whether Aetna administers ABA in-house or via a separate behavioral-health carve-out for North Carolina.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB],
+};
+
+const aetnaCodeGridNC: Record<string, CodeGridEntry> = {
+  '97151': aetnaEntryNC(), '97152': aetnaEntryNC(), '97153': aetnaEntryNC(), '97154': aetnaEntryNC(), '97155': aetnaEntryNC(),
+  '97156': aetnaEntryNC(), '97157': aetnaEntryNC(), '97158': aetnaEntryNC(), '0362T': aetnaEntryNC(), '0373T': aetnaEntryNC(),
+};
+
+/* ==================== cigna-north-carolina (commercial) ==================== */
+
+const cignaEdiNC: EdiRouting = {
+  payerId: { pverify: '00004', availity: '62308', changeHealthcare: '62308' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Evernorth Behavioral Health',
+    administratorPayerId: '62308',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'verified',
+    'bhCarveOut.abaRidesOn': 'verified',
+    'bhCarveOut.twoHopRequired': 'verified',
+  },
+  verifyVia: {
+    supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB, CIGNA_AUTISM_RESOURCE_GUIDE],
+};
+
+const cignaCodeGridNC: Record<string, CodeGridEntry> = {
+  '97151': cignaEntryNC('Not required (per EN0499)'),
+  '97152': cignaEntryNC('Not required (per EN0499)'),
+  '97153': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97154': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97155': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97156': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97157': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97158': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '0362T': cignaEntryNC('Not required (per EN0499)'),
+  '0373T': cignaEntryNC('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+};
+
+/* ==================== unitedhealthcare-north-carolina (commercial) ==================== */
+
+const unitedhealthcareEdiNC: EdiRouting = {
+  payerId: { pverify: '00192', availity: '87726', changeHealthcare: '87726' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Optum Behavioral Health',
+    administratorPayerId: '87726',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+    'bhCarveOut.administratorPayerId': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
+    'bhCarveOut.administratorPayerId':
+      "Confirmed for MEDICAID: Optum's own “UnitedHealthcare Community Plan of North Carolina ABA Program Quick Reference Guide” states verbatim “Claims Payer ID 87726” (same as medical) for autism/ABA claims, addressed to Optum Behavioral Health. Applied to this COMMERCIAL guide as inferred cross-LOB pattern evidence, not a commercial-specific confirmation — pVerify separately lists a distinct “UHG007 United Healthcare - Optum Behavioral Solutions” payer ID not reconciled against 87726 for commercial NC. Confirm directly via Provider Express / UHC provider services before automating commercial routing.",
+    'bhCarveOut.abaRidesOn': 'Same as administratorPayerId.',
+    'bhCarveOut.twoHopRequired': 'Same as administratorPayerId.',
+  },
+  sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB, OPTUM_SCC, UHC_NC_MEDICAID_ABA_QRG],
+};
+
+const unitedhealthcareCodeGridNC: Record<string, CodeGridEntry> = {
+  '97151': uhcEntryNC('32 units/day (≤8 hrs)', ['HN', 'HO', 'HP']),
+  '97152': uhcEntryNC('16 units/day (≤4 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97153': uhcEntryNC('32 units/day (≤8 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97154': uhcEntryNC('18 units/day (≤4.5 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97155': uhcEntryNC('24 units/day (≤6 hrs)', ['HN', 'HO', 'HP']),
+  '97156': uhcEntryNC('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '97157': uhcEntryNC('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '97158': uhcEntryNC('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '0362T': uhcEntryNC('16 units/day (≤4 hrs)', []),
+  '0373T': uhcEntryNC('32 units/day (≤8 hrs)', []),
+};
+
+/* ==================== export ====================
+   SPLIT A (NC Medicaid Direct + 5 Standard Plans) and SPLIT B
+   (4 Tailored Plans + 3 commercial) landed concurrently from two
+   sessions and were combined here on rebase per the merge rule in
+   the build prompt: keep both sides, never remove or rewrite the
+   other session's entries. All 13 North Carolina VOB-enriched guide
+   slugs are covered.
+   ================================================================ */
 export const northCarolinaVob: Record<string, VobExtension> = {
+  // ---- SPLIT A: NC Medicaid Direct + Standard Plans ----
   'north-carolina-medicaid': {
     edi: northCarolinaMedicaidEdi,
     codeGrid: northCarolinaMedicaidCodeGrid,
@@ -735,4 +1500,12 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     rates: wellcareRates,
     lastUpdated: ACCESS_DATE,
   },
+  // ---- SPLIT B: Tailored Plans + commercial ----
+  'alliance-health-north-carolina': { edi: allianceEdi, codeGrid: allianceCodeGrid(), rates: allianceRates, lastUpdated: ACCESS_DATE },
+  'trillium-health-resources': { edi: trilliumEdi, codeGrid: trilliumCodeGrid(), rates: trilliumRates, lastUpdated: ACCESS_DATE },
+  'vaya-health': { edi: vayaEdi, codeGrid: vayaCodeGrid(), rates: vayaRates, lastUpdated: ACCESS_DATE },
+  'partners-health-management': { edi: partnersEdi, codeGrid: partnersCodeGrid(), rates: partnersRates, lastUpdated: ACCESS_DATE },
+  'aetna-north-carolina': { edi: aetnaEdiNC, codeGrid: aetnaCodeGridNC, lastUpdated: ACCESS_DATE },
+  'cigna-north-carolina': { edi: cignaEdiNC, codeGrid: cignaCodeGridNC, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-north-carolina': { edi: unitedhealthcareEdiNC, codeGrid: unitedhealthcareCodeGridNC, lastUpdated: ACCESS_DATE },
 };
