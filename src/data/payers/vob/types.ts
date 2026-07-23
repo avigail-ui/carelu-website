@@ -82,7 +82,9 @@ export interface RateTable {
 
 /* Layer 7 — contact & channel layer for the residual scripted-call path */
 export interface VobContact {
-  providerServicesPhone: string;
+  // Omitted (not 'unverified') when no fetched primary source confirmed a
+  // number — phone numbers are high-stakes; never guess or fill a placeholder.
+  providerServicesPhone?: string;
   ivrPath?: string;
   hours?: string;
   portal?: { name: string; url: string };
