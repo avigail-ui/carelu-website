@@ -804,4 +804,416 @@ export const newYorkPayers: Record<string, PayerConfig> = {
       { q: 'What does UnitedHealthcare pay for ABA in New York?', a: 'Commercial ABA rates are not published — they are negotiated in your participating-provider agreement. Benchmark against the NY Medicaid fee schedule ($19.26/unit for most codes; $14.45 for 97153) and treat rate-setting as part of contracting.' },
     ],
   },
+
+  'excellus-bcbs-new-york': {
+    slug: 'excellus-bcbs-new-york',
+    cardDesc: 'Central/Western NY + Southern Tier; own named ABA medical policy (3.01.11) — but outpatient PA specifics sit behind the portal login.',
+    dxRequired: 'Yes — DSM-5-TR ASD per Excellus\'s own ABA medical policy (3.01.11), layered on the state\'s under-21 ASD/Rett baseline; Rett-specific language isn\'t in the Excellus policy itself',
+    payer: 'Excellus BlueCross BlueShield (NY Medicaid)',
+    state: 'NY', kind: 'medicaid-mco', parent: 'New York Medicaid',
+    pill: 'Payer Guide · Excellus BCBS (NY)',
+    h1: 'Excellus BlueCross BlueShield ABA coverage (NY Medicaid Managed Care).',
+    metaTitle: 'Excellus BCBS New York (Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Excellus BlueCross BlueShield administers NY Medicaid ABA — its own named ABA medical policy (3.01.11), the 13-county Central/Western NY and Southern Tier footprint, in-house behavioral health with no vendor carve-out, and what prior-auth and telehealth specifics remain unpublished.',
+    intro: [
+      'Excellus BlueCross BlueShield — the nonprofit Rochester-based plan running Medicaid Managed Care as HMOBlue Option, Blue Choice Option, and Premier Option (HARP: Blue Option Plus) across 182,280 members per the state\'s enrollment report — stands out among New York\'s upstate MCOs for actually publishing a named ABA clinical policy rather than leaving the benefit entirely to the state baseline. Medical Policy 3.01.11, "Applied Behavior Analysis," lists the covered CPT codes, documentation expectations, and licensure tiers directly, and its own "Product Disclaimer" spells out how it relates to the state program: where eMedNY hasn\'t published Medicaid-specific criteria, Excellus\'s medical policy fills the gap. What the plan does not publish is the outpatient prior-authorization mechanics themselves — so this guide covers the well-documented clinical policy and flags exactly what to confirm before booking.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Mainstream MMC (Excellus Health Plan, Inc.) — HMOBlue Option, Blue Choice Option, Premier Option; HARP: Blue Option Plus' },
+      { label: 'Footprint', value: '13 counties: Broome, Erie, Herkimer, Livingston, Monroe, Oneida, Onondaga, Ontario, Orleans, Otsego, Seneca, Wayne, Yates' },
+      { label: 'Clinical policy', value: 'Own Medical Policy 3.01.11, "Applied Behavior Analysis" (current eff. 6/18/2026) — names 97151–97158, 0362T, 0373T' },
+      { label: 'BH/ABA UM', value: 'In-house — no vendor carve-out found; eviCore handles only radiology, cardiology, MSK, oncology, and sleep for Excellus, not BH' },
+      { label: 'Prior auth specifics', value: 'Not published for outpatient ABA — plan directs providers to check eMedNY for MMC/HARP code coverage, then confirm via BH Care Management' },
+      { label: 'Claims', value: '120-day timely filing for professional claims' },
+    ],
+    sections: [
+      {
+        h2: 'A named medical policy — filling the gaps eMedNY leaves open',
+        body: [
+          'Excellus publishes its own dedicated ABA clinical policy — Medical Policy 3.01.11, "Applied Behavior Analysis" (current version effective June 18, 2026) — rather than leaving coverage entirely to the state baseline. The policy deems ABA medically appropriate for DSM-5-TR autism spectrum disorder, treats alternative approaches (DIR/Floortime, TEACCH, RDI) as investigational, and names the codes in scope: 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, 0362T, and 0373T. Its Product Disclaimer states the operative rule for Medicaid members directly: "If a Medicaid product covers a specific service, and there are no New York State Medicaid guidelines (eMedNY) criteria, medical policy criteria apply to the benefit" — so for anything eMedNY\'s ABA Policy Manual doesn\'t spell out, Excellus\'s own medical-necessity criteria govern.',
+        ],
+        cites: [
+          { title: 'Excellus Medical Policy 3.01.11 — Applied Behavior Analysis (eff. 6/18/2026)', url: 'https://www.excellusbcbs.com/documents/d/global/exc-prv-applied-behavior-analysis' },
+        ],
+      },
+      {
+        h2: 'Documentation and licensure — heavier than the state referral alone',
+        body: [
+          'Beyond the state\'s referral packet, Excellus\'s medical policy calls for a specific documentation set at review: psychological/other testing reports, a copy of the IEP where one exists, Early Intervention or Preschool progress notes, the frequency/duration/location of requested sessions, the treating provider\'s certification/credentials, requested supervision hours, and an assessment/treatment plan naming target behaviors — with resubmission expected at least every 12 months (or more often where state rules require it, e.g., NY\'s own 6-month update cycle). The policy also restates New York\'s licensure tiers directly: LBA/BCBA for assessment, treatment planning, and oversight; CBAA/BCaBA to deliver services under supervision; and RBTs/behavior technicians restricted to protocol implementation and data collection, per NYS Education Law. One school-related note: ABA delivered as part of an IEP or Preschool/School Supportive Health Services Program is excluded as a school-district "free care" service, though supplemental, non-IEP ABA may still be covered.',
+        ],
+        cites: [
+          { title: 'Excellus Medical Policy 3.01.11 — Applied Behavior Analysis', url: 'https://www.excellusbcbs.com/documents/d/global/exc-prv-applied-behavior-analysis' },
+        ],
+      },
+      {
+        h2: 'Prior authorization: what\'s published, and what to confirm',
+        body: [
+          'We found no Excellus-published list stating whether the assessment (97151) or the treatment codes require prior authorization for outpatient ABA specifically — the medical policy describes a "medical necessity review... when applicable" rather than a hard PA gate tied to each code. Excellus\'s general prior-authorization guidance for Medicaid Managed Care and HARP members instead directs providers to "review the eMedNY website for benefit coverage of specific codes prior to submitting a prior authorization request" — consistent with the Product Disclaimer above: check the state rule first, then Excellus\'s medical policy fills any gap. Behavioral health and ABA are not delegated to eviCore (Excellus\'s vendor for radiology, cardiology, musculoskeletal, oncology, and sleep) or to any other named UM vendor we could confirm — BH Care Management for Medicaid and HARP members runs through Excellus directly. An Inpatient Prior Authorization Form exists for institutional behavioral-health levels of care (partial hospitalization, psychiatric inpatient, SUD detox/rehab), submitted through Excellus\'s own SDS portal, but we located no equivalent standalone form for outpatient ABA. Treat outpatient ABA PA requirements, turnaround times, and the exact submission channel as open questions for Provider Services until the plan confirms them in writing.',
+        ],
+        cites: [
+          { title: 'Excellus — Prior Authorization', url: 'https://www.excellusbcbs.com/prior-authorization' },
+          { title: 'Excellus provider portal — SDS authorization portal', url: 'https://provider.excellusbcbs.com/authorizations/sds-portal' },
+        ],
+      },
+      {
+        h2: 'Telehealth and billing basics',
+        body: [
+          'Excellus\'s general Telemedicine and Telehealth medical policy — its most recent confirmed revision markers run only through 2017 — does not list any ABA codes (97151–97158) in its covered CPT/HCPCS table, and the ABA medical policy itself only cites third-party guidance (the Council of Autism Service Providers\' 2021 telehealth practice parameter) as supportive literature, not a coverage commitment. Whether Excellus Medicaid MMC will reimburse ABA codes delivered via telehealth, and under what modifier, is not confirmed — verify with Provider Services before scheduling remote sessions. On claims: professional timely filing is 120 days from the date of service (the clock for coordination-of-benefits claims starts at the primary payer\'s EOB date); a missed deadline can be appealed via a Timely Filing Review request within 120 days of the remittance.',
+        ],
+        cites: [
+          { title: 'Excellus Telemedicine and Telehealth Corporate Medical Policy (#1.01.49)', url: 'https://provider.excellusbcbs.com/documents/20152/127460/EXC-PRV-Telehealth_Telemedicine+Corporate+Medical+Policy.pdf' },
+          { title: 'Excellus — "Navigating the Blues" Billing Orientation Guidebook (Oct 2025)', url: 'https://provider.excellusbcbs.com/documents/53971/224461/Navigating+the+Blues+Billing+Orientation+Guidebook.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Complete state referral packet', desc: 'Under-21 ASD/Rett dx, referral with severity and DSM-5 checklist — the clinical baseline Excellus\'s medical policy sits on top of.' },
+      { title: 'IEP and Early Intervention records', desc: 'Excellus\'s policy asks for an IEP copy where one exists, plus EI/Preschool progress notes — pull these at intake, not at review time.' },
+      { title: 'Target-behavior treatment plan + supervision hours', desc: 'The medical policy expects an assessment/treatment plan naming target behaviors and the requested supervision hours.' },
+      { title: 'PA confirmation in writing', desc: 'Outpatient ABA PA specifics aren\'t published — confirm the process and turnaround through Provider Services before booking.' },
+      { title: 'Telehealth confirmation', desc: 'ABA-code telehealth coverage isn\'t confirmed by any Excellus document we found — verify per case.' },
+    ],
+    sources: [
+      { title: 'Excellus Medical Policy 3.01.11 — Applied Behavior Analysis (eff. 6/18/2026)', url: 'https://www.excellusbcbs.com/documents/d/global/exc-prv-applied-behavior-analysis' },
+      { title: 'Excellus — Prior Authorization', url: 'https://www.excellusbcbs.com/prior-authorization' },
+      { title: 'Excellus provider portal — SDS authorization portal', url: 'https://provider.excellusbcbs.com/authorizations/sds-portal' },
+      { title: 'Excellus Telemedicine and Telehealth Corporate Medical Policy (#1.01.49)', url: 'https://provider.excellusbcbs.com/documents/20152/127460/EXC-PRV-Telehealth_Telemedicine+Corporate+Medical+Policy.pdf' },
+      { title: 'Excellus — "Navigating the Blues" Billing Orientation Guidebook (Oct 2025)', url: 'https://provider.excellusbcbs.com/documents/53971/224461/Navigating+the+Blues+Billing+Orientation+Guidebook.pdf' },
+      { title: 'NYS DOH Medicaid Managed Care Enrollment Report, January 2025 (per NY DOH enrollment report; verify current month)', url: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2025/docs/en01_25.pdf' },
+      { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+    ],
+    faq: [
+      { q: 'Does Excellus BlueCross BlueShield cover ABA therapy?', a: 'Yes — it carries the NY Medicaid ABA carve-in and publishes its own ABA Medical Policy (3.01.11) naming the covered codes (97151–97158, 0362T, 0373T) and documentation requirements, layered on the state\'s under-21 ASD/Rett baseline.' },
+      { q: 'Does Excellus require prior authorization for ABA?', a: 'Not published for the specific codes — Excellus\'s guidance directs providers to check eMedNY for code-level Medicaid coverage first, then confirm any plan-level PA process with Provider Services; no standalone outpatient ABA PA form was found.' },
+      { q: 'Does a BH vendor manage ABA for Excellus Medicaid members?', a: 'No vendor carve-out was found — eviCore manages only radiology, cardiology, musculoskeletal, oncology, and sleep for Excellus, and behavioral health/ABA runs through Excellus\'s own BH Care Management team.' },
+    ],
+  },
+
+  'mvp-health-plan-new-york': {
+    slug: 'mvp-health-plan-new-york',
+    cardDesc: 'In-house BH/ABA UM; PA required for both assessment and treatment — but 0362T/0373T are excluded from Medicaid Managed Care reimbursement.',
+    assessmentPA: 'Required — MVP\'s ABA payment policy requires prior authorization for the assessment, referred by an NYS-licensed, Medicaid-enrolled physician, psychologist, psychiatric NP, pediatric NP, or PA',
+    treatmentPA: 'Required — treatment authorized via MVP\'s BH authorization request (fax 1-855-853-4850); 0362T and 0373T appear on the covered-code list but are excluded from Medicaid Managed Care reimbursement specifically',
+    dxRequired: 'Yes — under 21, ASD/Rett per the state baseline; MVP\'s 2026 payment-policy update restates the NYS-licensed/Medicaid-enrolled referral rule verbatim, with a 2-year referral validity',
+    payer: 'MVP Health Plan (NY Medicaid)',
+    state: 'NY', kind: 'medicaid-mco', parent: 'New York Medicaid',
+    pill: 'Payer Guide · MVP Health Plan (NY)',
+    h1: 'MVP Health Plan ABA coverage (NY Medicaid Managed Care).',
+    metaTitle: 'MVP Health Plan New York (Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How MVP Health Plan authorizes NY Medicaid ABA — its own named ABA payment policy, prior authorization on both assessment and treatment, the 0362T/0373T Medicaid exclusion, the July 2025 school-setting bar, and a telehealth waiver tied to an expired federal deadline.',
+    intro: [
+      'MVP Health Plan — covering roughly 162,046 members across a 30-county Capital Region, Hudson Valley, North Country, and western-NY footprint under its "MVP Medicaid Managed Care" brand (HARP: MVP Harmonious Health Care Plan) — administers behavioral health, including ABA, entirely in-house: no vendor carve-out exists for BH, even though MVP does delegate radiology, musculoskeletal, and post-acute UM to eviCore, Magellan, and naviHealth respectively. MVP publishes an actual named ABA payment policy with real teeth — a firm prior-authorization requirement on assessment and treatment alike, an explicit exclusion of two otherwise-covered codes from Medicaid reimbursement, and a July 2025 school-setting bar — making this one of the better-documented upstate plans in this directory, with only a handful of open questions left for Provider Services.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Mainstream MMC (MVP Health Plan, Inc.) — "MVP Medicaid Managed Care"; HARP: MVP Harmonious Health Care Plan' },
+      { label: 'Footprint', value: '30 counties spanning Capital Region, Hudson Valley, North Country, and parts of Western NY (incl. Albany, Monroe, Orange, Rockland, Westchester)' },
+      { label: 'BH/ABA UM', value: 'In-house — MVP wrote its own ABA medical-necessity criteria in 2021; no vendor carve-out (eviCore/Magellan/naviHealth handle only radiology, MSK, and post-acute)' },
+      { label: 'Prior auth', value: 'Required for ABA assessment and treatment alike, per MVP\'s own ABA Payment Policy and its Behavioral Health Authorization Requirements grid' },
+      { label: 'Codes excluded from Medicaid', value: '0362T and 0373T appear on MVP\'s general covered-code list but are explicitly excluded from Medicaid Managed Care reimbursement' },
+      { label: 'School setting', value: 'ABA (97151–97158, 0362T, 0373T) not reimbursable with Place of Service = School, effective 7/1/2025' },
+    ],
+    sections: [
+      {
+        h2: 'A named ABA payment policy — with a Medicaid-specific code exclusion',
+        body: [
+          'MVP publishes a standalone "Applied Behavior Analysis Services" payment policy (current version effective 4/1/2026), reviewed most recently February 2026 with no changes. It lists the covered codes — 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, 0362T, and 0373T — but carries a Medicaid-specific carve-out worth flagging for billing: "The following procedures are excluded from Medicaid Managed Care (MMC) plan coverage: Behavior identification supporting assessment (CPT 0362T); Adaptive behavior treatment with protocol modification (0373T)." That exclusion has held across every version of the policy reviewed (2024 through 2026) — so while those two codes are billable on MVP\'s other lines of business, they are not reimbursable under NY Medicaid Managed Care specifically. Separately, RBT/unlicensed-professional-rendered services are only reimbursable under 97152, 97153, and 97154 — not 97151 or 97155–97158.',
+        ],
+        cites: [
+          { title: 'MVP Applied Behavior Analysis Services Payment Policy (eff. 4/1/2026)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2026/april/mvp-payment-policies-effective-april-1-2026.pdf' },
+        ],
+      },
+      {
+        h2: 'Prior authorization: required on both ends, referral-gated like the state',
+        body: [
+          'MVP\'s Behavioral Health Services and Authorization Requirements grid states plainly that Applied Behavior Analysis for NY Medicaid (including CHP) carries "Auth Required," effective with the Medicaid ABA benefit\'s own 1/1/2023 start date, for children ages 0–20. The ABA payment policy confirms prior authorization is required "for ABA Assessments and Services" alike, and its current (2026) version adds a Medicaid-specific referral rule matching the state\'s own: the member must be referred by an NYS-licensed and NYS Medicaid-enrolled physician (including psychiatrist and developmental/behavioral pediatrician), psychologist, psychiatric nurse practitioner, pediatric nurse practitioner, or physician assistant, with the referral valid 2 years and carrying age, diagnosis, date of initial diagnosis, comorbidities, severity, the DSM-5 diagnostic checklist, and a statement of medical necessity. Submit authorization requests by phone (1-800-684-9286), fax (1-855-853-4850) with the clinical support, or by email to BHservices@mvphealthcare.com; MVP\'s Behavioral Health Authorization and Notification request forms are indexed at mvphealthcare.com/providers/forms.',
+        ],
+        cites: [
+          { title: 'MVP Behavioral Health Services and Authorization Requirements', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider/online-resources/bh-services-and-authorization-requirements' },
+          { title: 'MVP Applied Behavior Analysis Services Payment Policy (eff. 4/1/2026)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2026/april/mvp-payment-policies-effective-april-1-2026.pdf' },
+        ],
+      },
+      {
+        h2: 'The school-setting bar, and what to watch on HARP',
+        body: [
+          'Effective July 1, 2025, MVP will not reimburse any ABA code (97151–97158, 0362T, 0373T) billed with Place of Service = School — a FastFax notice confirms requests for school-setting delivery are "administratively denied," and treatment plans submitted with a PA request must now specify the place(s) of service. ABA also isn\'t covered as a substitute for Early Intervention or when delivered under an IEP or Preschool/School Supportive Health Services Program. One item worth confirming directly with MVP: earlier policy versions stated ABA was "not covered... for Health and Recovery Plans (HARP)," but the current policy\'s scope line now lists HARP among the covered lines of business without an explicit statement reversing the old exclusion — treat HARP-enrolled members\' ABA coverage as a call-to-confirm rather than an assumed yes.',
+        ],
+        cites: [
+          { title: 'MVP FastFax #2025.16 — ABA School Setting Exclusion (3/27/2025)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/fastfax/2025/2025-16-aba-school-setting-exclusion.pdf' },
+          { title: 'MVP Applied Behavior Analysis Services Payment Policy (eff. 4/1/2026)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2026/april/mvp-payment-policies-effective-april-1-2026.pdf' },
+        ],
+      },
+      {
+        h2: 'Telehealth and billing basics',
+        body: [
+          'MVP\'s ABA payment policy ties telehealth reimbursement to a federal waiver rather than stating a firm standing rule: "MVP shall reimburse ABA services delivered via video-enabled telehealth through March 31, 2025, or until the CMS waiver expires, whichever is later. Following the expiration or change of the waiver, MVP may deny ABA services delivered via telehealth in accordance with applicable state laws or regulations." That waiver-contingent language is unchanged in the current (April 2026) policy, so treat ABA telehealth coverage as unconfirmed and verify current status with Provider Services before scheduling remote sessions — audio-only, fax-only, and e-mail-only delivery are explicitly not reimbursable regardless. On claims: timely filing is 180 days from the date of service (or per contract), with a matching 180-day window to request an adjustment after a denial or incorrect payment; EDI submissions use Payee ID 14165, and paper claims go to MVP Health Care, Attn: Claims Department, PO Box 2207, Schenectady, NY 12301.',
+        ],
+        cites: [
+          { title: 'MVP Applied Behavior Analysis Services Payment Policy (eff. 4/1/2026)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2026/april/mvp-payment-policies-effective-april-1-2026.pdf' },
+          { title: 'MVP 2025 Provider Policies (Claims, Contacting MVP Health Care)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2025/january/mvp-provider-policies-effective-january-1-2025.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Complete state-style referral packet', desc: 'NYS-licensed, Medicaid-enrolled referring provider; dx + initial dx date, comorbidities, severity, DSM-5 checklist, statement of medical necessity; referral valid 2 years.' },
+      { title: 'Place-of-service plan', desc: 'ABA is not reimbursable with POS = School as of 7/1/2025 — confirm the delivery setting before submitting the PA request.' },
+      { title: 'HARP status confirmation', desc: 'If the member is HARP-enrolled, confirm ABA coverage directly with MVP — the policy\'s scope and its older HARP exclusion haven\'t been explicitly reconciled in writing.' },
+      { title: 'Billing-code check for 0362T/0373T', desc: 'Both are Medicaid-excluded at MVP despite appearing covered elsewhere — verify before billing to avoid a denial.' },
+      { title: 'Telehealth status per case', desc: 'MVP\'s telehealth ABA language is tied to an expired federal waiver reference — confirm current reimbursement status before delivering remotely.' },
+    ],
+    sources: [
+      { title: 'MVP Applied Behavior Analysis Services Payment Policy (eff. 4/1/2026)', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2026/april/mvp-payment-policies-effective-april-1-2026.pdf' },
+      { title: 'MVP Behavioral Health Services and Authorization Requirements', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider/online-resources/bh-services-and-authorization-requirements' },
+      { title: 'MVP FastFax #2025.16 — ABA School Setting Exclusion', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/fastfax/2025/2025-16-aba-school-setting-exclusion.pdf' },
+      { title: 'MVP 2025 Provider Policies', url: 'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2025/january/mvp-provider-policies-effective-january-1-2025.pdf' },
+      { title: 'MVP Medicaid Managed Care plan page (30-county service area)', url: 'https://www.mvphealthcare.com/plans/medicaid' },
+      { title: 'NYS DOH Medicaid Managed Care Enrollment Report (per NY DOH enrollment report; verify current month)', url: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/' },
+      { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+    ],
+    faq: [
+      { q: 'Does MVP Health Plan cover ABA therapy?', a: 'Yes — MVP carries the NY Medicaid ABA carve-in and publishes its own ABA Payment Policy, with prior authorization required for both assessment and treatment and in-house behavioral health utilization management (no vendor carve-out).' },
+      { q: 'Are all ABA codes billable to MVP Medicaid?', a: 'Not quite — 0362T and 0373T appear on MVP\'s general covered-code list but are explicitly excluded from Medicaid Managed Care reimbursement specifically. Confirm code-by-code before billing.' },
+      { q: 'Can ABA be delivered in a school setting for MVP Medicaid members?', a: 'No — effective July 1, 2025, MVP administratively denies any ABA code billed with Place of Service = School, across all its lines of business.' },
+      { q: 'Does MVP cover ABA via telehealth?', a: 'Unclear as of this review — MVP\'s payment policy ties telehealth ABA reimbursement to a CMS waiver referencing a March 31, 2025 date without a subsequent update, so confirm current telehealth status with Provider Services before scheduling remote sessions.' },
+    ],
+  },
+
+  'cdphp-new-york': {
+    slug: 'cdphp-new-york',
+    cardDesc: 'Capital District plan; ABA codes named in-house at CDPHP\'s own Behavioral Health Access Center — but PA specifics and limits sit behind the secure portal.',
+    dxRequired: 'Yes — state baseline: under 21, ASD/Rett per DSM-5, with the state practitioner referral; CDPHP names 97151–97158 in its POAM but defers PA/limit specifics to the secure provider portal',
+    payer: 'CDPHP (NY Medicaid)',
+    state: 'NY', kind: 'medicaid-mco', parent: 'New York Medicaid',
+    pill: 'Payer Guide · CDPHP (NY)',
+    h1: 'CDPHP ABA coverage (NY Medicaid Managed Care).',
+    metaTitle: 'CDPHP New York (Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How CDPHP (Capital District Physicians\' Health Plan) handles NY Medicaid ABA — its in-house Behavioral Health Access Center, the ABA codes named in the Provider Office Administrative Manual, and the prior-auth and telehealth specifics that sit behind the secure provider portal.',
+    intro: [
+      'CDPHP — Capital District Physicians\' Health Plan, Inc. — runs its NY Medicaid ABA benefit through its own "Medicaid–Select Plan" and "Medicaid–HARP" products, with behavioral health managed entirely in-house through an internal Behavioral Health Access Center rather than an outside BH vendor. CDPHP\'s Provider Office Administrative Manual (POAM) names the ABA CPT codes directly and states the benefit carries no annual maximum, which is more than several plans in this directory publish — but the manual repeatedly defers the actual prior-authorization mechanics and code-level limits to a "Prior Authorization Guideline" document that sits behind the secure provider-portal login, so this guide covers what CDPHP states plainly and flags what to confirm before booking.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Mainstream MMC — "Medicaid–Select Plan" and "Medicaid–HARP" (Capital District Physicians\' Health Plan, Inc.)' },
+      { label: 'Footprint', value: 'Capital District (Albany-area)' },
+      { label: 'BH/ABA UM', value: 'In-house — CDPHP Behavioral Health Access Center (518-641-3600 / 1-888-320-9584); no named BH vendor carve-out' },
+      { label: 'ABA benefit limit', value: '"Not subject to a maximum benefit" — covered until services are no longer medically necessary, per the POAM' },
+      { label: 'ABA codes named', value: '97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158 — PA/limit specifics deferred to the secure portal' },
+      { label: 'Credentialing', value: 'ABA must be provided or supervised by a NYS-licensed, board-certified behavior analyst (BCBA/BCBA-D) per the POAM' },
+    ],
+    sections: [
+      {
+        h2: 'What CDPHP states plainly — and what it defers to the portal',
+        body: [
+          'CDPHP\'s Provider Office Administrative Manual, Section 18 (Behavioral Health), names the ABA benefit directly: "Applied behavior analysis — Coverage is not subject to a maximum benefit and the individual is covered until the services are no longer medically necessary." It lists the CPT codes in scope — 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158 — and requires that "ABA services must be provided by or supervised by a NYS-licensed, board-certified behavior analyst (BCBA/BCBA-D)," noting CDPHP maintains a credentialed ABA provider network. For the operational detail — code-level prior-authorization requirements, unit or session limits, and documentation specifics — the manual repeatedly points providers to "the complete policy by logging in securely at provider.cdphp.com," so those specifics aren\'t independently confirmable from public materials.',
+        ],
+        cites: [
+          { title: 'CDPHP Provider Office Administrative Manual, Section 18 — Behavioral Health (rev. July 2025)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-18-behavioral-health.pdf' },
+        ],
+      },
+      {
+        h2: 'Prior authorization: a general BH gate, ABA specifics unconfirmed',
+        body: [
+          'CDPHP\'s general behavioral-health rule is that no authorization is required for outpatient mental health or substance-use-disorder treatment by participating psychiatrists, psychiatric NPs, psychologists, LMSWs, and mental health counselors — but "certain behavioral health services in Medicaid–Select Plan and Medicaid–HARP require prior authorization by calling the Behavioral Health Access Center," with the complete list held in the secure-portal "Prior Authorization Guideline" document. Nothing in CDPHP\'s public materials confirms whether the ABA assessment (97151) is treated under that general no-PA rule or is one of the "certain services" requiring authorization, nor whether the treatment codes carry unit caps. Route ABA authorization questions to the Behavioral Health Access Center directly, and get the answer in writing per case before scheduling.',
+        ],
+        cites: [
+          { title: 'CDPHP Provider Office Administrative Manual, Section 18 — Behavioral Health (rev. July 2025)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-18-behavioral-health.pdf' },
+          { title: 'CDPHP Provider Office Administrative Manual, Section 5 — Referral/Authorization Process (rev. January 2025)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-5-referral-authorization-process.pdf' },
+        ],
+      },
+      {
+        h2: 'Telehealth and billing basics',
+        body: [
+          'CDPHP has no published ABA-specific telehealth billing policy (place-of-service code, modifier, or reimbursement parity) in any document we could access; its behavioral-health provider resources instead link out to the American Telemedicine Association\'s 2017 "Practice Guidelines for Telemental Health with Children and Adolescents" — a third-party clinical-practice standard, not a CDPHP coverage commitment. On claims: CDPHP\'s Claim Submission manual repeatedly references a filing deadline "within established filing limits" without stating the specific day count in the sections we could access, so confirm the exact timely-filing window with Provider Services; claim disputes use a "Provider Review Form" filed within 6 months of the claim\'s adjudication date, mailed to CDPHP Provider Services, 6 Wellness Way, Latham, NY 12110.',
+        ],
+        cites: [
+          { title: 'CDPHP — American Telemedicine Association telemental health guidelines (hosted resource)', url: 'https://www.cdphp.com/-/media/files/providers/behavioral-health/hedis-toolkit-and-bh-guidelines/practice-guidelines-telemental-health.pdf' },
+          { title: 'CDPHP Provider Office Administrative Manual, Section 9 — Claim Submission (rev. July 2024)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-9-claim-submission.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Complete state referral packet', desc: 'Under-21 ASD/Rett dx, referral with severity and DSM-5 checklist — the clinical baseline CDPHP\'s POAM sits on top of.' },
+      { title: 'BCBA/BCBA-D credentials', desc: 'CDPHP requires ABA be provided or supervised by a NYS-licensed BCBA/BCBA-D — confirm network credentialing status before scheduling.' },
+      { title: 'PA confirmation in writing', desc: 'Code-level PA requirements and any limits aren\'t published — call the Behavioral Health Access Center (518-641-3600 / 1-888-320-9584) and get the answer in writing per case.' },
+      { title: 'Telehealth confirmation', desc: 'No CDPHP-specific ABA telehealth billing policy was found — verify POS/modifier requirements before delivering remotely.' },
+      { title: 'Timely filing window', desc: 'The exact day-count for claims filing isn\'t stated in the public POAM sections — confirm with Provider Services (518-641-3500 / 1-800-926-7526).' },
+    ],
+    sources: [
+      { title: 'CDPHP Provider Office Administrative Manual, Section 18 — Behavioral Health (rev. July 2025)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-18-behavioral-health.pdf' },
+      { title: 'CDPHP Provider Office Administrative Manual, Section 5 — Referral/Authorization Process (rev. January 2025)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-5-referral-authorization-process.pdf' },
+      { title: 'CDPHP Provider Office Administrative Manual, Section 9 — Claim Submission (rev. July 2024)', url: 'https://www.cdphp.com/-/media/files/providers/poam/section-9-claim-submission.pdf' },
+      { title: 'CDPHP — American Telemedicine Association telemental health guidelines (hosted resource)', url: 'https://www.cdphp.com/-/media/files/providers/behavioral-health/hedis-toolkit-and-bh-guidelines/practice-guidelines-telemental-health.pdf' },
+      { title: 'NYS DOH Medicaid Managed Care Enrollment Report (per NY DOH enrollment report; verify current month)', url: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/' },
+      { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+    ],
+    faq: [
+      { q: 'Does CDPHP cover ABA therapy?', a: 'Yes — CDPHP\'s Provider Office Administrative Manual names ABA (CPT 97151–97158) as a covered Medicaid–Select Plan and Medicaid–HARP benefit with no maximum benefit limit, provided or supervised by a NYS-licensed BCBA/BCBA-D.' },
+      { q: 'Does CDPHP require prior authorization for ABA?', a: 'Not confirmed from public materials — CDPHP states that "certain" behavioral health services in its Medicaid lines require prior authorization via the Behavioral Health Access Center, but doesn\'t specify whether ABA codes are among them. Confirm per case at 518-641-3600 / 1-888-320-9584.' },
+      { q: 'Is there a session or dollar cap on CDPHP\'s ABA benefit?', a: 'CDPHP\'s manual states the benefit "is not subject to a maximum benefit," but doesn\'t rule out per-authorization unit limits, which sit behind the secure-portal Prior Authorization Guideline — confirm before assuming unlimited units.' },
+    ],
+  },
+
+  'independent-health-new-york': {
+    slug: 'independent-health-new-york',
+    cardDesc: 'Erie County/Buffalo only (not Monroe); Carelon runs general BH, but ABA looks to be administered directly by Independent Health — confirm which before routing a case.',
+    dxRequired: 'Yes — state baseline: under 21, ASD and/or Rett syndrome, assessed/treated by a Licensed Behavior Analyst or a Certified Behavior Analyst Assistant under LBA supervision, per the MediSource member handbook',
+    payer: 'Independent Health (NY Medicaid)',
+    state: 'NY', kind: 'medicaid-mco', parent: 'New York Medicaid',
+    pill: 'Payer Guide · Independent Health (NY)',
+    h1: 'Independent Health ABA coverage (NY Medicaid Managed Care).',
+    metaTitle: 'Independent Health New York (Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Independent Health (MediSource) handles NY Medicaid ABA — the Erie County-only footprint, Carelon\'s behavioral-health delegation and where ABA appears to sit outside it, and the prior-auth and billing specifics that remain unpublished.',
+    intro: [
+      'Independent Health Association runs NY Medicaid Managed Care under the brand "MediSource" (HARP: MediSource Connect), serving Erie County — the Buffalo market — specifically; the state\'s own enrollment tables do not list Independent Health under Monroe County, so treat this as a Buffalo/Erie plan rather than a Buffalo-and-Rochester one. Independent Health delegates behavioral health benefit management for its state products to Carelon Behavioral Health — but the evidence points to ABA sitting outside that delegation: the current MediSource member handbook places its ABA section apart from the "Behavioral Health Care" section that carries Carelon\'s crisis-line branding throughout, describing ABA in "Independent Health covers..." language instead. That distinction isn\'t stated explicitly in a single provider-facing sentence we could find, so this guide treats it as strongly indicated rather than certain, and flags it as the first thing to confirm on any Independent Health case.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Mainstream MMC — "MediSource"; HARP: "MediSource Connect" (Independent Health Association, Inc.)' },
+      { label: 'Footprint', value: 'Erie County (Buffalo) — the state\'s enrollment tables do not list Independent Health under Monroe County' },
+      { label: 'BH/ABA UM', value: 'Carelon Behavioral Health manages general BH for MediSource; ABA appears to sit outside that delegation and be administered by Independent Health directly (strongly indicated, not confirmed in an explicit statement)' },
+      { label: 'Prior auth', value: 'Not published for ABA codes specifically — the member handbook\'s general PA list doesn\'t name ABA; confirm with Provider Services' },
+      { label: 'Providers', value: 'Licensed Behavior Analyst (LBA), or Certified Behavior Analyst Assistant (CBAA) under LBA supervision, per the MediSource handbook' },
+      { label: 'Portal', value: 'HealthTrio Connect (general); Carelon\'s provider.beaconhealthoptions.com for BH-delegated services' },
+    ],
+    sections: [
+      {
+        h2: 'The Carelon delegation — and why ABA looks like the exception',
+        body: [
+          'Independent Health states directly, on its current provider policies page, that "Carelon now oversees all behavioral health benefit management services for our MediSource, MediSource Connect, Child Health Plus and Essential Plans" — covering appeals, care management, claims, eligibility, prior authorization, network operations, and utilization review for behavioral health generally. But the 2026 MediSource Member Handbook places its "Applied Behavior Analysis (ABA) Services" description in a separate part of the document — grouped with Children\'s HCBS and Article 29-I VFCA services rather than the "Behavioral Health Care" (mental health/substance use) section — and describes it in "Independent Health covers..." and "Independent Health will work with you and your provider" language, with no Carelon reference anywhere in that section, while every page of the Behavioral Health Care section footers Carelon\'s crisis line. That placement is consistent with New York\'s statewide pattern of no BH-vendor carve-out for the mainstream MMC ABA benefit — but because no single sentence confirms it plainly, verify with Provider Services which entity (Independent Health or Carelon) actually adjudicates ABA authorizations and claims before routing a case to either one.',
+        ],
+        cites: [
+          { title: 'Independent Health — Behavioral Health for State Products', url: 'https://www.independenthealth.com/providers/policies-and-guidelies/behavioral-health-for-state-products' },
+          { title: 'Independent Health MediSource Member Handbook (2026)', url: 'https://www.independenthealth.com/content/dam/independenthealth/individuals-and-families/find-a-health-plan/documents/state/medisource-member-handbook.pdf' },
+        ],
+      },
+      {
+        h2: 'Eligibility and providers, per the member handbook',
+        body: [
+          'The MediSource handbook states ABA is covered for children/youth under 21 with autism spectrum disorder and/or Rett syndrome, with assessment and treatment delivered by a physician, Licensed Behavior Analyst (LBA), or Certified Behavior Analyst Assistant (CBAA) working under LBA supervision — matching the state\'s licensure framework. Covered service types named include individual treatment in the home or another setting, group adaptive behavior treatment, and family/caregiver training and support. No Independent Health-specific documentation list (beyond the state\'s own referral requirements), assessment instruments, or reauthorization cadence is published for MediSource — those specifics, if they exist, sit behind the HealthTrio provider-portal login.',
+        ],
+        cites: [
+          { title: 'Independent Health MediSource Member Handbook (2026)', url: 'https://www.independenthealth.com/content/dam/independenthealth/individuals-and-families/find-a-health-plan/documents/state/medisource-member-handbook.pdf' },
+        ],
+      },
+      {
+        h2: 'Prior authorization, telehealth, and billing basics',
+        body: [
+          'No Independent Health document we could access confirms whether the ABA assessment or treatment codes require prior authorization for MediSource — the handbook\'s general member-facing PA-required list (out-of-plan services, subacute/SNF admissions, home care, personal care, PERS, mental health, DME, certain surgeries) does not name ABA specifically, but that list is a simplified member summary, not the provider procedure-code grid, so its silence isn\'t proof no PA is required. No ABA-specific telehealth policy was found either. On billing: Carelon\'s claims rules for Independent Health\'s other behavioral-health services set timely filing at 90 days from date of service for MediSource (120 days for Essential Plan/Child Health Plus) — whether that same window applies to ABA claims, or whether ABA bills to Independent Health directly on a different timeline, is unconfirmed. Confirm PA requirements, telehealth eligibility, and the correct claims-filing window with Provider Services before booking or billing.',
+        ],
+        cites: [
+          { title: 'Independent Health/Beacon Provider FAQ Tip Sheet (2016; general BH claims rules, unconfirmed as still current)', url: 'https://www.independenthealth.com/content/dam/independenthealth/provider/Policies-and-Guidelines/documents/IHBeaconProviderFAQTipSheet.pdf' },
+          { title: 'Independent Health MediSource Member Handbook (2026)', url: 'https://www.independenthealth.com/content/dam/independenthealth/individuals-and-families/find-a-health-plan/documents/state/medisource-member-handbook.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Complete state referral packet', desc: 'Under-21 ASD/Rett dx, referral with severity and DSM-5 checklist — the clinical baseline MediSource sits on top of.' },
+      { title: 'Which entity to route to', desc: 'Confirm whether Independent Health or Carelon actually handles ABA authorization/claims for this member before submitting anything — the public materials don\'t settle it explicitly.' },
+      { title: 'LBA/CBAA credentials', desc: 'The handbook requires LBA delivery or LBA-supervised CBAA delivery — confirm network credentialing status.' },
+      { title: 'PA confirmation in writing', desc: 'ABA-specific PA requirements aren\'t published — confirm per case via Member Services (716-250-7183 / 1-833-891-9372) or the provider portal.' },
+      { title: 'County/plan match', desc: 'Independent Health\'s MediSource footprint is Erie County — confirm the member is actually in-service-area before assuming coverage.' },
+    ],
+    sources: [
+      { title: 'Independent Health — Behavioral Health for State Products', url: 'https://www.independenthealth.com/providers/policies-and-guidelies/behavioral-health-for-state-products' },
+      { title: 'Independent Health MediSource Member Handbook (2026)', url: 'https://www.independenthealth.com/content/dam/independenthealth/individuals-and-families/find-a-health-plan/documents/state/medisource-member-handbook.pdf' },
+      { title: 'Independent Health — MediSource plan page', url: 'https://www.independenthealth.com/individuals-and-families/find-a-health-plan/state-plans/medisource' },
+      { title: 'Independent Health — MediSource Connect (HARP) plan page', url: 'https://www.independenthealth.com/individuals-and-families/find-a-health-plan/state-plans/medisource-connect' },
+      { title: 'Independent Health/Beacon Provider FAQ Tip Sheet (2016)', url: 'https://www.independenthealth.com/content/dam/independenthealth/provider/Policies-and-Guidelines/documents/IHBeaconProviderFAQTipSheet.pdf' },
+      { title: 'NYS DOH Medicaid Managed Care Enrollment Report, June 2026', url: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2026/docs/en06_26.pdf' },
+      { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+    ],
+    faq: [
+      { q: 'Does Independent Health cover ABA therapy?', a: 'Yes — its MediSource Medicaid plan covers ABA for members under 21 with ASD and/or Rett syndrome, delivered by an LBA or an LBA-supervised CBAA, per the current member handbook.' },
+      { q: 'Does Carelon handle ABA authorizations for Independent Health?', a: 'Carelon manages general behavioral health for Independent Health\'s state products, but ABA appears to be administered by Independent Health directly based on how the member handbook separates the two benefits — not confirmed in one explicit sentence, so verify with Provider Services before routing a case.' },
+      { q: 'Is Independent Health available in Rochester/Monroe County?', a: 'No — the state\'s Medicaid Managed Care enrollment tables list Independent Health only under Erie County (Buffalo), not Monroe County.' },
+    ],
+  },
+
+  'highmark-western-new-york': {
+    slug: 'highmark-western-new-york',
+    cardDesc: '8 WNY counties; ABA requires authorization and carries a stated $45,000/year cap — delegate is Wellpoint Partnership Plan (a Carelon mention in the same manual is unresolved).',
+    assessmentPA: 'Required — a standalone "Request for Authorization: Autism Spectrum Disorder Testing" form gates the diagnostic workup, submitted via Availity Essentials or fax to 844-452-8073',
+    treatmentPA: 'Required — ABA services are listed as requiring authorization across MMC, HARP, and CHPlus in the Provider Manual\'s PA table; the same manual states a $45,000-per-calendar-year ABA benefit maximum',
+    dxRequired: 'Yes — state baseline (under 21, ASD/Rett); Highmark\'s testing-authorization form asks for validated screeners (ASRS, SCQ, SRS, M-CHAT, CARS, GADS) plus DSM-5/ICD-10 codes',
+    payer: 'Highmark Western and Northeastern New York (NY Medicaid)',
+    state: 'NY', kind: 'medicaid-mco', parent: 'New York Medicaid',
+    pill: 'Payer Guide · Highmark WNY (NY)',
+    h1: 'Highmark Western and Northeastern New York ABA coverage (NY Medicaid Managed Care).',
+    metaTitle: 'Highmark Western NY (Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Highmark Western and Northeastern New York (formerly HealthNow/BCBS of Western NY) authorizes NY Medicaid ABA — the $45,000/year benefit cap, prior auth on assessment and treatment, the Wellpoint Partnership Plan delegation, and telehealth codes from a dated COVID-era bulletin.',
+    intro: [
+      'Highmark Western and Northeastern New York Inc. — the plan formerly branded HealthNow New York / BlueCross BlueShield of Western New York, now operating as "Highmark Blue Cross Blue Shield of Western New York" since the 2021 Highmark affiliation — runs NY Medicaid Managed Care, HARP, and Child Health Plus across eight Western New York counties: Allegany, Cattaraugus, Chautauqua, Erie, Genesee, Niagara, Orleans, and Wyoming. Unlike several plans in this directory, Highmark WNY names its ABA rules with unusual specificity — a stated dollar cap, an explicit prior-authorization requirement, and named telehealth codes — through a longstanding delegation to Wellpoint Partnership Plan, LLC (formerly Amerigroup Partnership Plan), which the plan\'s own Provider Manual says has managed its Medicaid behavioral health since 2016.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Mainstream MMC, HARP & CHPlus — "Highmark Blue Cross Blue Shield of Western New York" (legal entity: Highmark Western and Northeastern New York Inc.)' },
+      { label: 'Footprint', value: '8 counties: Allegany, Cattaraugus, Chautauqua, Erie, Genesee, Niagara, Orleans, Wyoming' },
+      { label: 'BH/ABA UM', value: 'Delegated to Wellpoint Partnership Plan, LLC (formerly Amerigroup Partnership Plan) since 2016; the same manual also names Carelon Behavioral Health elsewhere — unresolved, confirm which applies' },
+      { label: 'ABA benefit cap', value: '"$45,000 per calendar year" — stated directly in the Provider Manual\'s ASD section' },
+      { label: 'Prior auth', value: 'Required — ABA listed on the PA/medical-necessity table for MMC, SSI, HARP, and CHPlus alike; a standalone assessment/testing authorization form is published' },
+      { label: 'Telehealth', value: '97151, 97153, 97155 (POS 02, modifier 95/GT) and 97156/97157 caregiver training confirmed in a 2020/Jan-2022 COVID-era bulletin — verify current applicability' },
+    ],
+    sections: [
+      {
+        h2: 'A stated dollar cap and a confirmed PA requirement',
+        body: [
+          'Highmark WNY\'s Medicaid/CHPlus Provider Manual states its Autism Spectrum Disorder section plainly: "The maximum applied behavioral health analysis benefit is $45,000 per calendar year" — a specific dollar figure this guide has not found published this precisely by any other upstate NY Medicaid plan. The manual\'s Behavioral Health prior-authorization table confirms ABA requires authorization across the board: "Applied behavior analysis (ABA) services — Covered effective 1/1/2023: requires authorization" for MMC and SSI, and "Covered: requires authorization" for HARP and CHPlus alike. Psychological and neuropsychological testing used to establish or support the ASD diagnosis is separately listed as requiring authorization based on medical necessity criteria.',
+        ],
+        cites: [
+          { title: 'Highmark BCBS of Western New York Provider Manual — Medicaid Managed Care and Child Health Plus (eff. 4/1/2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_ProviderManual.pdf' },
+        ],
+      },
+      {
+        h2: 'The assessment gate — and the delegation question',
+        body: [
+          'Highmark WNY publishes a standalone "Request for Authorization: Autism Spectrum Disorder Testing" form (Feb 2026) covering the psych/neuropsych testing codes used to diagnose ASD (96130, 96131, 96136–96139), requiring clinical history, validated screener results (ASRS, SCQ, SRS, M-CHAT, CARS, GARS, GADS), and DSM-5/ICD-10 codes — and it explicitly asks "Is this a request to access ABA services?" as a checkbox, tying the testing authorization directly to the ABA pathway. Submit via Availity Essentials or fax to 844-452-8073, before rendering services. On delegation: the Provider Manual states repeatedly, with a dedicated contact inbox (WNYBehavioralHealthTeam@wellpoint.com), that Wellpoint Partnership Plan, LLC has administered the plan\'s Medicaid Managed Care, HARP, and CHPlus behavioral health since 2016 — but the same manual\'s vendor-disclosure footer also names Carelon Behavioral Health IPA Strategies, LLC as performing utilization review "on behalf of the health plan," without clarifying which lines of business that covers. The Wellpoint citations are far more numerous and Medicaid-specific; treat Wellpoint as the operative BH/ABA delegate, but confirm directly with Provider Services before assuming it over Carelon on any given case.',
+        ],
+        cites: [
+          { title: 'Highmark WNY — Request for Authorization: Autism Spectrum Disorder Testing (Feb 2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYHM_ReqAuth_AutismSpectrumDisorderTesting.pdf' },
+          { title: 'Highmark BCBS of Western New York Provider Manual (eff. 4/1/2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_ProviderManual.pdf' },
+        ],
+      },
+      {
+        h2: 'Telehealth — confirmed codes, but from a dated bulletin',
+        body: [
+          'A Highmark WNY provider bulletin (originally issued June 2020 for COVID-19, republished January 2022) names the exact ABA telehealth codes it recognizes: "Highmark BCBSWNY would recognize ABA therapy for functional behavior assessment (FBA) (97151), adaptive behavioral treatment by protocol or protocol modification (97153, 97155), and telehealth caregiver training (97156, 97157) visits within the member\'s benefits, with POS 02 and modifier 95 or GT." The same bulletin is explicit that telephonic-only (audio-only) delivery does not qualify — ABA requires audio-plus-video telehealth. Because this bulletin was written for the COVID period and no newer document was found superseding it, confirm with Provider Services that this telehealth guidance is still the operative policy before relying on it for a current authorization.',
+        ],
+        cites: [
+          { title: 'Highmark WNY — COVID-19 Guidance for Telehealth/Telephonic Care for Behavioral Health Services (Medicaid/CHPlus, rev. Jan 2022)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_CAID_PU_COVID19GuidanceTelehealthBH.pdf' },
+        ],
+      },
+      {
+        h2: 'Billing basics',
+        body: [
+          'Timely filing is 120 days from the date of service (or per the provider agreement); corrected claims must be submitted within 90 days of the Explanation of Payment. Claims route through Availity Essentials, Highmark\'s exclusive EDI clearinghouse partner (payer ID 00246), or by paper to New York Claims, P.O. Box 61010, Virginia Beach, VA 23466-1010. Medical appeals of an adverse determination must be filed within 60 calendar days of the notice-of-action date, and payment disputes within 45 calendar days of the Explanation of Payment.',
+        ],
+        cites: [
+          { title: 'Highmark BCBS of Western New York Provider Manual — Quick Reference (eff. 4/1/2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_ProviderManual.pdf' },
+          { title: 'Highmark WNY Billing FAQ Bulletin (May 2023)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_Training_FAQBilling.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Complete state referral packet', desc: 'Under-21 ASD/Rett dx, referral with severity and DSM-5 checklist — the clinical baseline underneath the plan\'s own PA process.' },
+      { title: 'ASD Testing Authorization form', desc: 'File this before the diagnostic workup — it explicitly gates access to ABA services, with validated-screener results attached.' },
+      { title: 'Annual benefit tracking', desc: 'The $45,000/calendar-year ABA cap makes spend-to-date a scheduling constraint — track it against the treatment plan\'s intensity from day one.' },
+      { title: 'Delegate confirmation', desc: 'Confirm with Provider Services whether Wellpoint Partnership Plan or Carelon is the operative BH/ABA reviewer for this case before submitting.' },
+      { title: 'Telehealth currency check', desc: 'The only telehealth guidance found is a COVID-era bulletin — confirm it\'s still operative before billing 97151/97153/97155/97156/97157 via telehealth.' },
+    ],
+    sources: [
+      { title: 'Highmark BCBS of Western New York Provider Manual — Medicaid Managed Care and Child Health Plus (eff. 4/1/2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_ProviderManual.pdf' },
+      { title: 'Highmark WNY — Request for Authorization: Autism Spectrum Disorder Testing (Feb 2026)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYHM_ReqAuth_AutismSpectrumDisorderTesting.pdf' },
+      { title: 'Highmark WNY — COVID-19 Guidance for Telehealth/Telephonic Care for Behavioral Health Services (rev. Jan 2022)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_CAID_PU_COVID19GuidanceTelehealthBH.pdf' },
+      { title: 'Highmark WNY Billing FAQ Bulletin (May 2023)', url: 'https://providerpublic.mybcbswny.com/docs/gpp/NYNY_NYW_Training_FAQBilling.pdf' },
+      { title: 'NYS DOH Medicaid Managed Care Enrollment Report, November 2025', url: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2025/docs/en11_25.pdf' },
+      { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+    ],
+    faq: [
+      { q: 'Does Highmark Western New York cover ABA therapy?', a: 'Yes — for NY Medicaid Managed Care, HARP, and Child Health Plus members under 21 with ASD/Rett, effective 1/1/2023, subject to a stated $45,000-per-calendar-year benefit maximum and prior authorization.' },
+      { q: 'Does the ABA assessment require prior authorization at Highmark WNY?', a: 'Yes — a standalone Autism Spectrum Disorder Testing authorization form gates the diagnostic workup and explicitly asks whether the request is meant to access ABA services, submitted via Availity Essentials or fax before services are rendered.' },
+      { q: 'Who manages behavioral health for Highmark Western New York Medicaid?', a: 'Wellpoint Partnership Plan, LLC (formerly Amerigroup Partnership Plan) has managed the plan\'s Medicaid Managed Care, HARP, and CHPlus behavioral health since 2016, per the Provider Manual — though the same manual also references Carelon Behavioral Health in a vendor-disclosure footer without clarifying scope. Confirm with Provider Services which applies to your case.' },
+      { q: 'Is Highmark Western New York available outside Western NY?', a: 'No — the Medicaid Managed Care/HARP/CHPlus product is limited to eight Western New York counties (Allegany, Cattaraugus, Chautauqua, Erie, Genesee, Niagara, Orleans, Wyoming), despite the plan\'s legal name including "Northeastern New York."' },
+    ],
+  },
 };

@@ -475,4 +475,18 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'guides-added',
+    summary:
+      'Five upstate NY Medicaid MCO guides added, closing the largest enrollment gaps identified by the MCO census (docs/vob-gaps.md): Excellus BlueCross BlueShield (182,280 members, Central/Western NY + Southern Tier), MVP Health Plan (162,046, Capital Region/Hudson Valley/North Country), CDPHP (82,431, Capital District), Independent Health (60,275 per the census; a more recent NY DOH report found 61,649, Erie County only — not Monroe as previously assumed), and Highmark Western & Northeastern NY (45,402, 8 WNY counties). Each guide is built from the plan\'s own primary sources (provider manuals, named ABA/BH clinical or payment policies, prior-authorization forms) rather than the state baseline alone; where a plan-specific detail (PA turnaround, telehealth reimbursement, exact BH delegate) could not be confirmed in a public document, the guide says so explicitly and points to Provider Services rather than guessing.',
+    guides: [
+      'excellus-bcbs-new-york',
+      'mvp-health-plan-new-york',
+      'cdphp-new-york',
+      'independent-health-new-york',
+      'highmark-western-new-york',
+    ],
+    totals: { guides: 169, states: 19 },
+  },
 ];
