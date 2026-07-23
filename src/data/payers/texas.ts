@@ -629,6 +629,415 @@ export const texasPayers: Record<string, PayerConfig> = {
     ],
   },
 
+  'community-health-choice-texas': {
+    slug: 'community-health-choice-texas',
+    cardDesc: 'Own ABA Medical Review Guideline (adopted 6/2026); TSPA+CCP form; 85% attendance rule on extensions.',
+    assessmentPA: 'Required — Texas Standard PA form (TSPA) + CCP PA form, signed prescriber referral, ASD dx within 3 years; 97151 capped 6 hrs/24 units',
+    treatmentPA: 'Required — 90-day initial + 90-day extension (needs an 85%-attendance log + BCBA-signed progress note) then 180-day recerts',
+    dxRequired: 'Yes — ASD per TMPPM criteria, restated in Community Health Choice\'s own ABA Medical Review Guideline',
+    payer: 'Community Health Choice',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · Community Health Choice',
+    h1: 'Community Health Choice ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'Community Health Choice (Texas Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Community Health Choice administers Texas Medicaid ABA in Harris and Jefferson counties — its own ABA Medical Review Guideline, the TSPA + CCP form combination, the 85% attendance-log rule, named-exclusion list, and Houston-area PA contacts.',
+    intro: [
+      'Community Health Choice (CHC) — the nonprofit Houston plan launched in 1997 by Harris Health System, serving STAR (Harris and Jefferson counties), STAR+PLUS, CHIP, and Marketplace lines — is one of the few Texas MCOs to publish its own dedicated ABA clinical document: a "Medical Review Guideline: Applied Behavioral Analysis (ABA) Services," newly adopted by its Medical Care Management Committee in June 2026. Read closely, it is substantially a TMPPM restatement — same diagnoser list, 3-year recency rule, 8-hour daily cap — but CHC layers its own UM machinery on top: named frequency tiers, an explicit 85%-attendance threshold on extension requests, and a named list of excluded, non-ABA interventions. CHIP is excluded from the benefit, as it is statewide.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Texas Medicaid MCO (nonprofit, Harris Health System) — STAR (Harris + Jefferson), STAR+PLUS, CHIP, Marketplace' },
+      { label: 'Clinical rules', value: 'CHC\'s own ABA Medical Review Guideline (adopted 6/2026) — a TMPPM restatement plus CHC-specific UM tiers' },
+      { label: 'Prior auth', value: 'Evaluation: TSPA + CCP PA form. Extension/recert: adds an 85%-attendance log + BCBA-signed progress note' },
+      { label: 'Named exclusions', value: 'DIR/Floortime, TEACCH, and RDI explicitly excluded as non-ABA; school-setting shadow/companion services excluded' },
+      { label: 'Submission', value: 'Provider portal or fax 713.295.2283 / 1.844.899.2495 (STAR); BH-specific outpatient fax 713.576.0931' },
+      { label: 'Rates', value: 'Not published — contract-specific, references the TMHP fee schedule' },
+    ],
+    sections: [
+      {
+        h2: 'CHC\'s own ABA Medical Review Guideline',
+        body: [
+          'CHC\'s guideline names the Texas Medicaid Provider Procedures Manual, Children\'s Services Handbook §2 Autism Services, as its governing authority and states it "represents the minimum requirements to determine medical necessity for ABA services." It lists 97151, 97153, 97154, 97155, 97156, and 97158 explicitly (0362T and 99366 are not mentioned in CHC\'s own document — rely on the TMPPM baseline for those two codes); maps its own credentialing terms to the state\'s (BCBA = LBA, BCaBA = LaBA, BT = behavior technician requiring RBT/BCAT/ABAT certification); and requires the evaluation PA to bundle a signed prescriber referral with both the Texas Standard Prior Authorization Form (TSPA) and the state\'s CCP Prior Authorization Request Form — two forms, not one, for the initial 97151 request. The 6-hour/24-unit evaluation cap and 3-year diagnosis recency rule both match the statewide baseline.',
+          'One inconsistency worth flagging for UM before your first STAR+PLUS submission: the guideline\'s own "Applies To" checkboxes mark STAR and Marketplace, but leave STAR+PLUS unchecked — even though its narrative text elsewhere discusses "Medicaid members" broadly. CHC\'s own STAR+PLUS service-area document (below) also omits Jefferson County. Confirm STAR+PLUS applicability directly with CHC\'s UM department rather than assuming either way.',
+        ],
+        cites: [
+          { title: 'Community Health Choice — Medical Review Guideline: Applied Behavioral Analysis (ABA) Services (adopted 6/2026, PDF)', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2026/07/mrg-aba-services-guideline.pdf' },
+          { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+        ],
+      },
+      {
+        h2: 'The attendance rule and CHC\'s named exclusions',
+        body: [
+          'CHC\'s 90-day extension and 180-day recertification requests both require an attendance log for the child and the parent/caregiver, plus a progress summary signed by the BCBA (LBA) and the parent — and CHC states members/caregivers are "expected to attend at least 85% of scheduled sessions"; falling below that threshold requires the ABA therapist to document why and what corrective measures were taken. Build attendance tracking into practice workflow from day one at CHC, not just at the recert deadline. The guideline also names specific interventions it does not consider ABA and will not authorize under this benefit — DIR/Floortime, TEACCH, and RDI are called out explicitly — and excludes ABA delivered as school-setting shadowing, para-professional, or companion services, along with goals limited to academic content or "performative social norms" not tied to health or safety.',
+        ],
+        cites: [
+          { title: 'Community Health Choice — Medical Review Guideline: Applied Behavioral Analysis (ABA) Services (adopted 6/2026, PDF)', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2026/07/mrg-aba-services-guideline.pdf' },
+        ],
+      },
+      {
+        h2: 'Service area and submission mechanics',
+        body: [
+          'CHC\'s STAR quick reference guide confirms both target counties — Harris and Jefferson — are served under STAR. Its STAR+PLUS quick reference guide, however, lists only Harris (and eight other counties) — Jefferson does not appear on the STAR+PLUS list, consistent with the "Applies To" gap noted above. CHIP is excluded from ABA entirely, per CHC\'s own HHS Provider Manual ("CHIP Exclusions from Covered Services: Applied Behavior Analysis (ABA) Therapy"). PA requests submit through the secure provider portal or by fax — 713.295.2283 or 1.844.899.2495 for general STAR authorizations, with a separate behavioral-health outpatient fax at 713.576.0931 (inpatient 713.576.0932). CHC also accepts its own "Preferred Prior Authorization Form" for non-ABA requests, but the ABA guideline specifically calls for the TSPA + CCP form combination.',
+        ],
+        cites: [
+          { title: 'Community Health Choice — STAR Program Provider Quick Reference Guide', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2021/04/STAR-QRG-3-2021.pdf' },
+          { title: 'Community Health Choice — STAR+PLUS Program Provider Quick Reference Guide', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2024/09/STARPLUS-Quick-Reference-Guide.pdf' },
+          { title: 'Community Health Choice — HHS Provider Manual (STAR/CHIP/CHIP Perinatal/STAR+PLUS)', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2025/10/HHS-Provider-Manual.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'STAR vs. STAR+PLUS vs. CHIP', desc: 'CHIP is excluded from ABA. Jefferson County is confirmed for STAR — confirm STAR+PLUS eligibility with CHC directly before promising the benefit there.' },
+      { title: 'ASD dx + recency', desc: 'CHC\'s diagnoser list and 3-year recency rule match the TMPPM baseline — screen recency at intake.' },
+      { title: 'Attendance tracking', desc: 'The 85% attendance threshold drives extension and recert approval — log child and caregiver attendance from the first session.' },
+      { title: 'Modality documentation', desc: 'Avoid billing or documenting DIR/Floortime, TEACCH, or RDI as ABA — CHC\'s guideline names them as excluded, non-ABA interventions.' },
+    ],
+    sources: [
+      { title: 'Community Health Choice — Medical Review Guideline: Applied Behavioral Analysis (ABA) Services (adopted 6/2026, PDF)', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2026/07/mrg-aba-services-guideline.pdf' },
+      { title: 'Community Health Choice — STAR Program Provider Quick Reference Guide', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2021/04/STAR-QRG-3-2021.pdf' },
+      { title: 'Community Health Choice — STAR+PLUS Program Provider Quick Reference Guide', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2024/09/STARPLUS-Quick-Reference-Guide.pdf' },
+      { title: 'Community Health Choice — HHS Provider Manual (STAR/CHIP/CHIP Perinatal/STAR+PLUS)', url: 'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2025/10/HHS-Provider-Manual.pdf' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does Community Health Choice cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit under CHC\'s own ABA Medical Review Guideline (adopted June 2026), which restates TMPPM criteria for STAR members in Harris and Jefferson counties. CHIP is excluded.' },
+      { q: 'What\'s different about CHC\'s ABA policy?', a: 'CHC layers its own UM machinery on the TMPPM baseline: named frequency tiers, an 85%-attendance requirement on extension and recertification requests, and an explicit list of excluded non-ABA interventions (DIR/Floortime, TEACCH, RDI).' },
+      { q: 'What form does CHC require for the ABA evaluation PA?', a: 'Both the Texas Standard Prior Authorization Form (TSPA) and the state\'s CCP Prior Authorization Request Form, plus a signed prescriber referral — CHC\'s guideline requires the combination, not either form alone.' },
+    ],
+  },
+
+  'bcbs-texas-medicaid': {
+    slug: 'bcbs-texas-medicaid',
+    family: 'bcbs',
+    cardDesc: 'STAR/STAR Kids in Travis; insourced BH from Magellan in 2024; PA code grid confirms 97151-97158.',
+    assessmentPA: 'Required — per the statewide TMPPM benefit; submit via fax 1-888-530-9809 or the Availity provider portal',
+    treatmentPA: 'Required — same fax/portal; BCBSTX brought behavioral health/ABA administration in-house in 2024, ending its Magellan carve-out',
+    dxRequired: 'Yes — ASD per the statewide TMPPM criteria (no distinct BCBSTX Medicaid ABA policy found)',
+    payer: 'Blue Cross Blue Shield of Texas (Medicaid)',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · BCBSTX Medicaid',
+    h1: 'Blue Cross Blue Shield of Texas Medicaid ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'BCBSTX Medicaid (STAR) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Blue Cross Blue Shield of Texas administers Medicaid ABA in the Travis/Austin service area — the 2024 insourcing of behavioral health from Magellan, the current PA procedure code grid, and submission mechanics via fax and Availity.',
+    intro: [
+      'Blue Cross Blue Shield of Texas (BCBSTX), a Division of Health Care Service Corporation, runs STAR and STAR Kids in the Travis service area — distinct from BCBSTX\'s commercial and Federal Employee Program lines, which follow different rules entirely (see our BCBSTX commercial guide for those). BCBSTX publishes no dedicated Autism Services chapter in its combined STAR/CHIP/STAR Kids provider manual; ABA policy instead lives in a standalone PA checklist and a periodically updated PA procedure code grid. The operationally important fact for intake: BCBSTX carved Medicaid behavioral health out to Magellan as recently as mid-2023, then "insourced" it in 2024 — older documents referencing Magellan are stale.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Texas Medicaid MCO (HCSC) — STAR, STAR Kids (Travis service area; STAR Kids adds MRSA Central)' },
+      { label: 'Clinical rules', value: 'TMPPM Autism Services criteria (no distinct BCBSTX Medicaid ABA policy found)' },
+      { label: 'Prior auth', value: 'Required on 97151, 97153, 97154, 97155, 97156, 97158 (confirmed on BCBSTX\'s own PA code grid, eff. 1/1/2024)' },
+      { label: 'Behavioral health', value: 'Insourced from Magellan in 2024 — BCBSTX now administers BH/ABA PA directly, not via a vendor carve-out' },
+      { label: 'Submission', value: 'BH intake fax 1-888-530-9809, or the Availity Essentials provider portal' },
+      { label: 'Rates', value: 'Not published — contract-specific' },
+    ],
+    sections: [
+      {
+        h2: 'The 2024 end of the Magellan carve-out',
+        body: [
+          'As late as a 7/5/2023-dated PA summary, BCBSTX directed providers to "contact Magellan for authorization requirements" for Texas Medicaid behavioral health — a classic BH carve-out. On May 10, 2024, BCBSTX announced the "insourcing of Behavioral Health Services for Medicaid," and every current-generation document we could find (the ABA PA Requirement Checklist, revised 4/26/2024, and a September 2024 UM provider training deck) makes no mention of Magellan and instead routes ABA authorization to BCBSTX\'s own behavioral-health intake fax, 1-888-530-9809, or the Availity Essentials portal. We found no document stating explicitly that the Magellan relationship has fully ended for every BH service line — if a legacy document you\'re working from still references Magellan, treat it as superseded and confirm current routing with BCBSTX\'s Medicaid Provider Network Representative before submitting.',
+        ],
+        cites: [
+          { title: 'BCBSTX — Medicaid Behavioral Health / ABA Forms Update (news, 5/10/2024)', url: 'https://www.bcbstx.com/provider/medicaid/education-and-reference/news/2024/05-10-2024-md-behavioral-health-aba-forms' },
+          { title: 'BCBSTX — Applied Behavioral Analysis PA Requirement Checklist (rev. 4/26/2024, PDF)', url: 'https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/applied-behavioral-analysis-pa-requirement-checklist.pdf' },
+        ],
+      },
+      {
+        h2: 'What the current PA code grid confirms',
+        body: [
+          'BCBSTX\'s Texas Medicaid Benefit Prior Authorization Procedure Code List lists 97151, 97153, 97154, 97155, 97156, and 97158 each as "Applied Behavioral Health (Allowable only for members 20 years of age or younger)," PA-required, effective 1/1/2024 — matching the statewide code set. We could not find 0362T or 99366 on this list or any other BCBSTX Medicaid document; treat their handling as unconfirmed and rely on TMPPM baseline expectations rather than a BCBSTX-specific rule. General PA turnaround per BCBSTX\'s own UM training material is 3 business days for routine requests — we found no ABA-specific SLA distinct from that standard.',
+        ],
+        cites: [
+          { title: 'BCBSTX — Texas Medicaid Benefit Prior Authorization Procedure Code List (PDF)', url: 'https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/prior-auth-proc-code-grid-06012026.pdf' },
+          { title: 'BCBSTX — Texas Medicaid STAR, CHIP, and STAR Kids Provider Manual (PDF)', url: 'https://www.bcbstx.com/content/dam/hcsc/docs/provider/tx/provider-medicaid/education/2067877-758408-0324-TX-Medicaid-STAR-CHIP-STARKids-Provider-Manual-Handbook.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Line of business', desc: 'Confirm the card is BCBSTX Medicaid (STAR/STAR Kids), not commercial or FEP — different guides, different rules.' },
+      { title: 'ASD dx + recency', desc: 'State baseline: qualified diagnoser, DSM severity, within 3 years.' },
+      { title: 'Current routing, not legacy Magellan', desc: 'If an older document or contact points to Magellan, confirm with BCBSTX provider relations — BH/ABA was insourced in 2024.' },
+      { title: 'Prescriber referral', desc: 'The state\'s signed-referral requirement applies unchanged for the evaluation PA.' },
+    ],
+    sources: [
+      { title: 'BCBSTX — Medicaid Behavioral Health / ABA Forms Update (news, 5/10/2024)', url: 'https://www.bcbstx.com/provider/medicaid/education-and-reference/news/2024/05-10-2024-md-behavioral-health-aba-forms' },
+      { title: 'BCBSTX — Applied Behavioral Analysis PA Requirement Checklist (rev. 4/26/2024, PDF)', url: 'https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/applied-behavioral-analysis-pa-requirement-checklist.pdf' },
+      { title: 'BCBSTX — Texas Medicaid Benefit Prior Authorization Procedure Code List (PDF)', url: 'https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/prior-auth-proc-code-grid-06012026.pdf' },
+      { title: 'BCBSTX — Texas Medicaid STAR, CHIP, and STAR Kids Provider Manual (PDF)', url: 'https://www.bcbstx.com/content/dam/hcsc/docs/provider/tx/provider-medicaid/education/2067877-758408-0324-TX-Medicaid-STAR-CHIP-STARKids-Provider-Manual-Handbook.pdf' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does Blue Cross Blue Shield of Texas Medicaid cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit for STAR and STAR Kids members in the Travis service area, on TMPPM criteria. BCBSTX publishes no distinct clinical policy; its own PA code grid confirms PA is required on the core ABA codes.' },
+      { q: 'Is ABA carved out to a behavioral health vendor at BCBSTX Medicaid?', a: 'Not currently — BCBSTX carved Medicaid BH out to Magellan as recently as mid-2023, but announced "insourcing" of Medicaid behavioral health in May 2024. Current PA documents route ABA to BCBSTX\'s own fax and portal, not Magellan.' },
+      { q: 'How do I submit an ABA PA to BCBSTX Medicaid?', a: 'Fax to 1-888-530-9809 or submit through the Availity Essentials provider portal, per BCBSTX\'s current ABA PA Requirement Checklist.' },
+    ],
+  },
+
+  'cook-childrens-health-plan': {
+    slug: 'cook-childrens-health-plan',
+    cardDesc: 'Dedicated 123-page ABA training deck; 6-county Fort Worth-area STAR + STAR Kids; EpicCare Link portal.',
+    assessmentPA: 'Required — 97151 capped 6 hrs/24 units, HO modifier only, 30-day authorization window; signed referral + 3-yr dx recency',
+    treatmentPA: 'Required — TMPPM 90/90/180 cadence via the CCP PA form; 97155/97156/97158 need HO or HN modifier',
+    dxRequired: 'Yes — ASD per TMPPM criteria, restated in Cook Children\'s own ABA provider training materials',
+    payer: 'Cook Children\'s Health Plan',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · Cook Children\'s Health Plan',
+    h1: 'Cook Children\'s Health Plan ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'Cook Children\'s Health Plan (Texas Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Cook Children\'s Health Plan administers Texas Medicaid ABA across its six-county Fort Worth-area service area — its dedicated 123-page ABA provider training, code/modifier table, telehealth rules, and EpicCare Link submission process.',
+    intro: [
+      'Cook Children\'s Health Plan — the pediatric-focused plan affiliated with Cook Children\'s Health Care System, serving STAR and STAR Kids across six North Texas counties (Wise, Denton, Parker, Tarrant, Hood, and Johnson) — publishes an unusually deep ABA provider-education footprint for a Texas MCO: a dedicated 123-page "Applied Behavior Analysis" training deck plus a separate acute-PA training covering ABA mechanics in detail. Read closely, it\'s a faithful restatement of TMPPM §2.3 rather than a distinct plan overlay — the value here is the clarity and depth of the restatement, not a different rulebook. We found no ABA process that differs between STAR and STAR Kids in the plan\'s own materials.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Texas Medicaid MCO (pediatric-focused) — STAR, STAR Kids, CHIP, CHIP Perinatal (Wise/Denton/Parker/Tarrant/Hood/Johnson)' },
+      { label: 'Clinical rules', value: 'TMPPM Autism Services criteria, restated in a dedicated 123-page ABA provider training deck' },
+      { label: 'Prior auth', value: 'Required — evaluation, treatment, recerts, and re-evaluations, per TMPPM §2.3.7.x' },
+      { label: 'Submission', value: 'EpicCare Link secure provider portal; fax only if portal access is pending (STAR/CHIP 682-885-8402)' },
+      { label: 'PA turnaround', value: 'Routine 3 business days; urgent 1 business day; life-threatening 1 hour (plan\'s own figures)' },
+      { label: 'Rates', value: 'Not published — plan states it follows the TMHP fee schedule' },
+    ],
+    sections: [
+      {
+        h2: 'The code and modifier table, restated in detail',
+        body: [
+          'Cook Children\'s own training confirms the statewide code set with granular billing notes: 97151 (evaluation/re-evaluation) caps at 6 hours/24 units with a 30-day authorization window and takes the HO modifier only; 97153 and 97154 (direct and group treatment) take no required modifier (HO/HN/HM are informational); 97155, 97156, and 97158 require an HO or HN modifier; and 99366 (interdisciplinary team meetings) takes no modifier, is reimbursable only against an F84.0 autism diagnosis, is capped at twice per year, and requires at least three licensed professionals — one of them the LBA — meeting for a minimum of 30 minutes. Direct treatment caps at 8 hours/day combined across 97153, 97154, 97155, and 97158. Telehealth (modifier 95) is allowed for 97151, 97155, 97156, 97158, and 99366; the plan\'s materials specifically note LaBAs and RBTs may not deliver any service remotely.',
+        ],
+        cites: [
+          { title: 'Cook Children\'s Health Plan — Applied Behavior Analysis provider training (rev. 1/15/2025, PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/provider-relations/applied-behavior-analysis-011525-.pdf' },
+          { title: 'Cook Children\'s Health Plan — Acute Prior Authorization (Including PDN & ABA) provider training (rev. 6/24/2026, PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/electronic-visit/acute-prior-authorization-including-pdn--aba-062426.pdf' },
+        ],
+      },
+      {
+        h2: 'Submitting through EpicCare Link',
+        body: [
+          'Cook Children\'s runs authorization through an EpicCare Link secure provider portal, and its determination letters are delivered only through the portal\'s In Basket — the plan states explicitly that PA determination letters will not be faxed. Fax submission (STAR/CHIP: 682-885-8402; STAR Kids: 682-303-0005 or 844-843-0005) is offered only for providers whose portal access is still pending. The plan uses the statewide-style CCP Prior Authorization Request Form with a dedicated ABA checkbox and section. One inconsistency to route around: the plan\'s own materials print at least three different variants of its PA-inquiry email address across different documents — call Provider Support Services at 1-888-243-3312 to confirm the current address rather than guessing from a specific PDF.',
+        ],
+        cites: [
+          { title: 'Cook Children\'s Health Plan — Prior Authorization Search & Submission', url: 'https://www.cookchp.org/providers/prior-authorization-search/' },
+          { title: 'Cook Children\'s Health Plan — Comprehensive Care Program Prior Authorization Request Form (PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/provider-manual/comprehensive-care-program-prior-authorization-request-form-2024.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Service area check', desc: 'Six counties, not Tarrant alone: Wise, Denton, Parker, Tarrant, Hood, Johnson.' },
+      { title: 'ASD dx + recency', desc: 'TMPPM baseline: qualified diagnoser, DSM severity, within 3 years.' },
+      { title: 'Modifier discipline', desc: '97155/97156/97158 need HO or HN; 97151 takes HO only — align billing staff to the plan\'s table.' },
+      { title: 'Portal access first', desc: 'Get EpicCare Link access set up before your first case — determination letters aren\'t faxed.' },
+    ],
+    sources: [
+      { title: 'Cook Children\'s Health Plan — Applied Behavior Analysis provider training (rev. 1/15/2025, PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/provider-relations/applied-behavior-analysis-011525-.pdf' },
+      { title: 'Cook Children\'s Health Plan — Acute Prior Authorization (Including PDN & ABA) provider training (rev. 6/24/2026, PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/electronic-visit/acute-prior-authorization-including-pdn--aba-062426.pdf' },
+      { title: 'Cook Children\'s Health Plan — Prior Authorization Search & Submission', url: 'https://www.cookchp.org/providers/prior-authorization-search/' },
+      { title: 'Cook Children\'s Health Plan — Comprehensive Care Program Prior Authorization Request Form (PDF)', url: 'https://www.cookchp.org/siteassets/documents/pdfs/provider-manual/comprehensive-care-program-prior-authorization-request-form-2024.pdf' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does Cook Children\'s Health Plan cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit across STAR and STAR Kids in its six-county North Texas service area, on TMPPM criteria, with a dedicated 123-page ABA provider training restating the requirements in detail.' },
+      { q: 'Does STAR Kids have different ABA rules than STAR at Cook Children\'s?', a: 'We found no distinguishing STAR Kids ABA process in the plan\'s own materials — the ABA policy applies uniformly across Medicaid, CHIP, and STAR Kids.' },
+      { q: 'How do I submit an ABA PA to Cook Children\'s?', a: 'Through the EpicCare Link secure provider portal, using the Comprehensive Care Program PA form. Fax (682-885-8402 for STAR/CHIP) is available only while portal access is pending — determination letters are delivered via the portal only, not by fax.' },
+    ],
+  },
+
+  'parkland-community-health-plan': {
+    slug: 'parkland-community-health-plan',
+    cardDesc: 'Dallas County safety-net STAR plan; BH insourced from Carelon 9/1/2025; PA covers 97151-99366, not 0362T.',
+    assessmentPA: 'Required — per the statewide TMPPM benefit; PCHP\'s own PA list confirms 97151 and every treatment code',
+    treatmentPA: 'Required — Texas Standard PA form; behavioral health moved from Carelon to direct PCHP administration 9/1/2025',
+    dxRequired: 'Yes — ASD per the statewide TMPPM criteria (ages 0-20, diagnosed or reconfirmed within 3 years)',
+    payer: 'Parkland Community Health Plan',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · Parkland Community Health Plan',
+    h1: 'Parkland Community Health Plan ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'Parkland Community Health Plan (Texas Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Parkland Community Health Plan administers Texas Medicaid ABA in Dallas County — the September 2025 move of behavioral health from Carelon to direct PCHP administration, its PA code list, and submission mechanics.',
+    intro: [
+      'Parkland Community Health Plan (PCHP) — a program of Dallas County Hospital District serving STAR, CHIP, and CHIP Perinate across seven North Texas counties (Dallas, Collin, Ellis, Hunt, Kaufman, Navarro, and Rockwall) — delivers the state Autism Services benefit for members ages 0–20 with an ASD diagnosis made or reconfirmed within 3 years, available on STAR only (CHIP is excluded, matching the statewide rule). The operational fact that matters most for intake right now: PCHP transitioned behavioral health administration away from the Carelon Behavioral Health network and brought it in-house, effective September 1, 2025 — providers who contracted with Carelon for Parkland\'s BH network had to re-contract directly with PCHP, and older Carelon-branded provider manuals for this plan are no longer current.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Texas Medicaid MCO (Dallas County Hospital District) — STAR, CHIP, CHIP Perinate (7-county Dallas service area)' },
+      { label: 'Clinical rules', value: 'TMPPM Autism Services criteria; PCHP publishes no distinct ABA clinical policy beyond its PA list' },
+      { label: 'Prior auth', value: 'Required — PCHP\'s own PA list: "required for ABA evaluation, initial course of treatment, and subsequent re-evaluations for recertification"' },
+      { label: 'Behavioral health', value: 'Insourced from Carelon Behavioral Health effective 9/1/2025 — administered directly by PCHP now' },
+      { label: 'Submission', value: 'BH-specific fax 214-266-2064 / 1-844-266-2064; general PA fax 214-266-2085 / 1-844-303-1382' },
+      { label: 'Rates', value: 'Not published — contract-specific' },
+    ],
+    sections: [
+      {
+        h2: 'What PCHP\'s own PA list confirms',
+        body: [
+          'PCHP\'s Prior Authorization Requirements document (effective September 1, 2025) states plainly: "Prior authorization is required for ABA evaluation, initial course of treatment, and subsequent re-evaluations for recertification." Its code table lists 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, and 99366 explicitly under an "Applied Behavior Analysis" category — 0362T does not appear anywhere in the list, and we found no PCHP document addressing that code specifically, so treat its status as unconfirmed rather than assuming it is or isn\'t required. The document points to a supporting-documentation appendix for code-level specifics that we could not independently verify — confirm current documentation requirements with PCHP provider services before your first submission.',
+        ],
+        cites: [
+          { title: 'Parkland Community Health Plan — Prior Authorization Requirements (eff. 9/1/2025, PDF)', url: 'https://providers.parklandhealthplan.com/Uploads/Public/Documents/Provider/PCHP%202025%20Prior%20Authorization%20Requirements%20v2.pdf' },
+          { title: 'Parkland Community Health Plan — ABA benefit overview (member-facing)', url: 'https://parklandhealthplan.com/living-well/blog/articles/aba' },
+        ],
+      },
+      {
+        h2: 'The September 2025 behavioral health transition',
+        body: [
+          'PCHP announced it was "transitioning Behavioral Health services from Carelon effective Sept. 1, 2025," with providers required to contract and credential directly with PCHP to remain in-network for behavioral health, and new member ID cards issued with updated BH information. PCHP\'s own 218-page provider manual, last revised September 2024, still describes "Carelon and PCHP will work together" and contains no ABA-specific content at all — it predates both the transition and any ABA-specific policy detail, so treat it as materially out of date for behavioral health and ABA purposes. The PA requirements PDF and direct contact with PCHP provider services (1-888-672-2277) are the more current sources.',
+        ],
+        cites: [
+          { title: 'Parkland Community Health Plan — Behavioral Health Services Transition Announcement', url: 'https://parklandhealthplan.com/living-well/blog/articles/pchp-benefits-update-changes-to-behavioral-health-services/' },
+          { title: 'Parkland Community Health Plan — Behavioral Health network page', url: 'https://providers.parklandhealthplan.com/our-network/behavioral-health/' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'STAR vs. CHIP', desc: 'ABA is available for STAR members only — CHIP is excluded, per PCHP\'s own member-facing benefit page.' },
+      { title: 'ASD dx + recency', desc: 'Diagnosed or reconfirmed within 3 years, by a developmental pediatrician, neurologist, psychiatrist, or licensed psychologist.' },
+      { title: 'Current BH contracting status', desc: 'Confirm your practice is credentialed directly with PCHP (not still routed to Carelon) post-9/1/2025.' },
+      { title: 'PA channel', desc: 'Use the BH-specific fax (214-266-2064) or PCHP\'s provider portal — don\'t default to a Carelon-era process.' },
+    ],
+    sources: [
+      { title: 'Parkland Community Health Plan — Prior Authorization Requirements (eff. 9/1/2025, PDF)', url: 'https://providers.parklandhealthplan.com/Uploads/Public/Documents/Provider/PCHP%202025%20Prior%20Authorization%20Requirements%20v2.pdf' },
+      { title: 'Parkland Community Health Plan — ABA benefit overview (member-facing)', url: 'https://parklandhealthplan.com/living-well/blog/articles/aba' },
+      { title: 'Parkland Community Health Plan — Behavioral Health Services Transition Announcement', url: 'https://parklandhealthplan.com/living-well/blog/articles/pchp-benefits-update-changes-to-behavioral-health-services/' },
+      { title: 'Parkland Community Health Plan — Behavioral Health network page', url: 'https://providers.parklandhealthplan.com/our-network/behavioral-health/' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does Parkland Community Health Plan cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit for STAR members ages 0-20 with an ASD diagnosis, on TMPPM criteria. CHIP members are excluded.' },
+      { q: 'Is behavioral health still carved out to Carelon at PCHP?', a: 'No — PCHP transitioned behavioral health administration from Carelon to direct in-house administration effective September 1, 2025. Providers had to re-contract directly with PCHP.' },
+      { q: 'What codes does PCHP require PA for?', a: '97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, and 99366, per PCHP\'s own Prior Authorization Requirements list (eff. 9/1/2025). 0362T does not appear on that list — its status is unconfirmed.' },
+    ],
+  },
+
+  'el-paso-health': {
+    slug: 'el-paso-health',
+    cardDesc: 'El Paso\'s founding Medicaid MCO (ex-El Paso First); 85% attendance rule; not the SDA\'s only plan.',
+    assessmentPA: 'Required — 97151 capped 6 hrs/24 units, HO modifier only; initial evaluation authorization valid 60 days from the requested date',
+    treatmentPA: 'Required — 90-day initial + 90-day extension (attendance logs + LBA progress summary) then up-to-180-day recerts',
+    dxRequired: 'Yes — ASD per TMPPM criteria; El Paso Health requires a validated diagnostic tool (ADOS, ADI-R, CARS) — screening tools alone don\'t qualify',
+    payer: 'El Paso Health',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · El Paso Health',
+    h1: 'El Paso Health ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'El Paso Health (Texas Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How El Paso Health (formerly El Paso First) administers Texas Medicaid ABA in the El Paso service area — its ABA Request Checklist, the 85% attendance rule, validated-diagnostic-tool requirement, and PA submission mechanics.',
+    intro: [
+      'El Paso Health — a nonprofit HMO established by the El Paso County Hospital District, rebranded from "El Paso First Health Plans" in 2017, serving STAR, CHIP, and STAR+PLUS across El Paso and Hudspeth counties — is one of the more document-rich Texas MCOs for ABA: a dedicated ABA Request Checklist and two 2026 provider memos spell out documentation requirements in more detail than most plans publish. One framing note: El Paso Health is the market\'s founding and longest-standing Medicaid plan, but is not the sole MCO in the El Paso service delivery area — secondary HHSC service-area sources indicate Molina and Superior also participate in STAR and/or CHIP there, so confirm current network participation for STAR+PLUS specifically rather than assuming exclusivity.',
+    ],
+    atGlance: [
+      { label: 'Plan type', value: 'Texas Medicaid MCO (nonprofit, El Paso County Hospital District) — STAR, CHIP, STAR+PLUS (El Paso + Hudspeth counties)' },
+      { label: 'Clinical rules', value: 'TMPPM Autism Services criteria, detailed in El Paso Health\'s own ABA Request Checklist and 2026 provider memos' },
+      { label: 'Prior auth', value: 'Required — evaluation (97151, HO modifier, 6-hr/24-unit cap), treatment, extension, and recertification' },
+      { label: 'Attendance rule', value: '85%-attendance threshold on extension/recert requests, for both child and parent/caregiver sessions' },
+      { label: 'Submission', value: 'Portal (secure.healthx.com/elpasoprovider) or fax 915-298-7866 / 1-844-298-7866; phone 915-532-3778' },
+      { label: 'Rates', value: 'Not published — contract-specific' },
+    ],
+    sections: [
+      {
+        h2: 'The ABA Request Checklist and 2026 documentation memos',
+        body: [
+          'El Paso Health\'s ABA Request Checklist (effective 2/1/2022) lays out each PA stage: the initial evaluation (97151, capped at 6 hours/24 units, HO modifier only) needs a signed prescriber referral and comprehensive diagnostic documentation, and the resulting authorization is valid for 60 days from the requested evaluation date; the initial 90-day treatment request needs the signed evaluation/treatment plan plus the referral; a 90-day extension (billed under 97155) needs attendance logs and an LBA progress summary; and 180-day recertifications need a re-evaluation (97151 again, up to 6 hrs/24 units) that, per the checklist, "does not require prior auth, will be reviewed upon submission." Two provider memos dated 5/15/2026 add detail beyond the statewide baseline: attendance logs for both the child and the parent/caregiver are required with every extension/recert, and services fall below 85% attendance trigger a requirement for the LBA to document why and what corrective steps were taken. A separate memo specifies the ASD diagnostic evaluation must use a validated standardized tool — ADOS, ADI-R, or CARS are named — and that screening tools like the M-CHAT-R/F cannot substitute.',
+        ],
+        cites: [
+          { title: 'El Paso Health — ABA Request Checklist (eff. 2/1/2022, PDF)', url: 'https://elpasohealth.com/documents/ABA-REQUEST-CHECKLIST-final-2022.pdf' },
+          { title: 'El Paso Health — Documentation Required for ABA Authorizations (memo, 5/15/2026, PDF)', url: 'https://www.elpasohealth.com/pdf/EPH%20-%20Documententaton%20for%20ABA%20Authorization%20_.pdf' },
+          { title: 'El Paso Health — Comprehensive Diagnostic Evaluation for Autism Services (memo, 5/15/2026, PDF)', url: 'https://www.elpasohealth.com/pdf/EPH-PR-Comprehensive%20Diagnostic%20Evaluation%20for%20Autism%20Services.pdf' },
+        ],
+      },
+      {
+        h2: 'Submission mechanics — and an outdated document to avoid',
+        body: [
+          'PA requests submit through the DHP-style provider portal at secure.healthx.com/elpasoprovider, or by fax (outpatient/scheduled: 915-298-7866 or 1-844-298-7866) or phone (915-532-3778 or 1-877-532-3778 for STAR/CHIP; 1-833-742-3127 for STAR+PLUS). El Paso Health accepts the Texas Standard Prior Authorization Request Form, its own "Request for Behavioral Health Services" form, or the statewide CCP Prior Authorization Request Form. One caution: the plan\'s older PA Requirements Catalog (dated 2022, with code effective dates from 2019–2021) lists 97151–97158 and 99366 as "no authorization required" — that directly contradicts the current ABA Request Checklist and 2026 memos, and appears to be a stale, unmaintained document that predates the 2/1/2022 Autism Services benefit. Don\'t cite it; the ABA Request Checklist and current memos govern.',
+        ],
+        cites: [
+          { title: 'El Paso Health — Prior Authorization (provider page)', url: 'https://elpasohealth.com/providers/prior-authorization.html' },
+          { title: 'El Paso Health — STAR/CHIP/STAR+PLUS Quick Reference Guide (PDF)', url: 'https://www.elpasohealth.com/pdf/EPH-STARCHIPSTARPLUS%20Quick%20Reference%20Guide.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Line of business + network check', desc: 'STAR/CHIP/STAR+PLUS — and confirm El Paso Health is the member\'s assigned MCO, since Molina and Superior also serve the El Paso SDA.' },
+      { title: 'Validated diagnostic tool on file', desc: 'El Paso Health requires ADOS, ADI-R, or CARS-level documentation — a screening tool alone won\'t support the PA.' },
+      { title: 'Attendance logging', desc: 'Track child and caregiver session attendance from day one — the 85% threshold gates extension and recert approval.' },
+      { title: 'Prescriber referral', desc: 'A signed, dated referral attaches to the evaluation PA, per both the statewide rule and El Paso Health\'s checklist.' },
+    ],
+    sources: [
+      { title: 'El Paso Health — ABA Request Checklist (eff. 2/1/2022, PDF)', url: 'https://elpasohealth.com/documents/ABA-REQUEST-CHECKLIST-final-2022.pdf' },
+      { title: 'El Paso Health — Documentation Required for ABA Authorizations (memo, 5/15/2026, PDF)', url: 'https://www.elpasohealth.com/pdf/EPH%20-%20Documententaton%20for%20ABA%20Authorization%20_.pdf' },
+      { title: 'El Paso Health — Comprehensive Diagnostic Evaluation for Autism Services (memo, 5/15/2026, PDF)', url: 'https://www.elpasohealth.com/pdf/EPH-PR-Comprehensive%20Diagnostic%20Evaluation%20for%20Autism%20Services.pdf' },
+      { title: 'El Paso Health — STAR/CHIP/STAR+PLUS Quick Reference Guide (PDF)', url: 'https://www.elpasohealth.com/pdf/EPH-STARCHIPSTARPLUS%20Quick%20Reference%20Guide.pdf' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does El Paso Health cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit across STAR, CHIP, and STAR+PLUS in El Paso and Hudspeth counties, detailed in the plan\'s own ABA Request Checklist and 2026 documentation memos.' },
+      { q: 'Is El Paso Health the only Medicaid MCO in El Paso?', a: 'It\'s the market\'s founding plan, but not the only one — Molina and Superior also participate in STAR and/or CHIP there per HHSC service-area sources. Confirm the member\'s assigned MCO before assuming El Paso Health.' },
+      { q: 'What diagnostic documentation does El Paso Health require?', a: 'A validated standardized tool — ADOS, ADI-R, or CARS are named in the plan\'s own memo — plus DSM criteria, severity level, and (per a separate memo) documented comorbid conditions and trauma history. Screening tools like the M-CHAT-R/F don\'t substitute.' },
+    ],
+  },
+
+  'firstcare-health-plans': {
+    slug: 'firstcare-health-plans',
+    cardDesc: 'Lubbock + MRSA West STAR/CHIP; PA confirmed on 97151-99366; plans wind down 8/31/2026 (pending approval).',
+    assessmentPA: 'Required — per FirstCare\'s own PA code list; submit via the Texas Standard PA form, myFirstCare portal, or fax',
+    treatmentPA: 'Required — 97151, 97153, 97154, 97155, 97156, 97158, 99366 all confirmed on FirstCare\'s Medicaid PA list',
+    dxRequired: 'Yes — ASD per the statewide TMPPM criteria; FirstCare\'s Medicaid PA defers to the TMPPM, not its commercial autism policy',
+    payer: 'FirstCare Health Plans',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · FirstCare Health Plans',
+    h1: 'FirstCare Health Plans ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'FirstCare Health Plans (Texas Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How FirstCare Health Plans administers Texas Medicaid ABA in Lubbock and MRSA West — its Medicaid PA code list, submission mechanics via the myFirstCare portal, and the confirmed August 2026 plan wind-down.',
+    intro: [
+      'FirstCare Health Plans — SHA LLC dba FirstCare, owned by Baylor Scott & White Health Plan, serving STAR in the Lubbock service area and the large Medicaid Rural Service Area (MRSA) West, plus CHIP in Lubbock only — administers ABA on the statewide TMPPM baseline with no dedicated Autism Services provider-manual section of its own; the plan\'s Behavioral Health section covers mental health and substance-use benefits in detail but never mentions autism or ABA. **The fact that matters most before building any workflow around FirstCare: the plan\'s own site states "Our plans end on Aug. 31, 2026, subject to regulatory approval"** — confirm current enrollment and transition guidance with FirstCare and HHSC before treating this as a stable long-term payer relationship.',
+    ],
+    atGlance: [
+      { label: 'Plan status', value: 'Winding down — FirstCare\'s own site states plans end 8/31/2026, subject to regulatory approval' },
+      { label: 'Plan type', value: 'Texas Medicaid MCO (Baylor Scott & White Health Plan) — STAR (Lubbock + MRSA West), CHIP (Lubbock only)' },
+      { label: 'Clinical rules', value: 'TMPPM Autism Services criteria; FirstCare\'s Medicaid PA list defers to it, not its commercial Autism policy #206' },
+      { label: 'Prior auth', value: 'Confirmed required on 97151, 97153, 97154, 97155, 97156, 97158, 99366 (Medicaid PA code list, eff. 7/1/2026)' },
+      { label: 'Submission', value: 'myFirstCare provider portal, or the Texas Standard PA form by fax to the Health Services Dept.' },
+      { label: 'Rates', value: 'Not published — contract-specific' },
+    ],
+    sections: [
+      {
+        h2: 'What FirstCare\'s Medicaid PA list confirms — and doesn\'t',
+        body: [
+          'FirstCare\'s STAR & CHIP Notification/Prior Authorization Codes list (effective 7/1/2026) lists 97151, 97153, 97154, 97155, 97156, 97158, and 99366 as requiring authorization, filed under "Therapy services" rather than behavioral health. Notably absent from that Medicaid-specific list: 97152, 97157, 0362T, and 0373T — those four codes appear only in FirstCare\'s separate commercial-oriented Medical Coverage Policy #206 ("Autism Spectrum Disorder"), which explicitly defers Medicaid decisions to the TMPPM: "For Medicaid plans, please confirm coverage as outlined in the Texas Medicaid Provider Procedures Manual." That same commercial policy confirms the Texas mandate\'s $36,000/year ABA cap for members 10+ "do not apply to self-funded/ERISA plans, Medicaid, or Medicare" — consistent with the statewide Medicaid baseline having no dollar cap. Treat 97152/97157/0362T/0373T PA status for FirstCare Medicaid as unconfirmed rather than assuming either way.',
+        ],
+        cites: [
+          { title: 'FirstCare — Texas Medicaid/CHIP Notification/Prior Authorization Codes (eff. 7/1/2026, PDF)', url: 'https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR/PA-List.pdf' },
+          { title: 'FirstCare — Medical Coverage Policy #206: Autism Spectrum Disorder (PDF)', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf' },
+        ],
+      },
+      {
+        h2: 'Submission mechanics, and the wind-down to plan for',
+        body: [
+          'Requests submit through the myFirstCare Self-Service Portal (my.firstcare.com/Web) or by fax using the Texas Standard Prior Authorization Request Form — FirstCare uses the statewide form, not a proprietary one. General turnaround is 3 working days from receipt of complete clinical information, and the plan asks providers to submit at least 5 days before the anticipated service date. One routing ambiguity we could not resolve: FirstCare\'s own contact tables list a separate Medical PA line (1-800-884-4905, fax 1-800-248-1852) and a Behavioral Health PA line (1-855-395-9652, fax 1-844-436-8779) — since ABA codes are filed under "Therapy services" rather than "Behavioral health" on the code list, confirm which line actually processes ABA requests before your first submission. And plan around the closure date directly: FirstCare\'s STAR page states its plans end August 31, 2026 pending regulatory approval — verify current transition guidance for any active caseload well before that date.',
+        ],
+        cites: [
+          { title: 'FirstCare — 2026 STAR and CHIP Provider Manual (PDF)', url: 'https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR-CHIP-Provider-Manual.pdf' },
+          { title: 'FirstCare — STAR Medicaid (plan status)', url: 'https://www.firstcare.com/en/Individuals-and-Families/STAR-CHIP/STAR-Medicaid' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Plan continuity check', desc: 'FirstCare\'s own site states plans end 8/31/2026 (pending approval) — confirm current status and any HHSC-directed member transition plan before onboarding new cases.' },
+      { title: 'STAR vs. CHIP', desc: 'STAR covers Lubbock + MRSA West; CHIP is Lubbock service area only.' },
+      { title: 'ASD dx + recency', desc: 'State baseline: qualified diagnoser, DSM severity, within 3 years.' },
+      { title: 'PA routing confirmation', desc: 'Confirm whether Medical PA or Behavioral Health PA processes ABA requests — FirstCare\'s own documents don\'t make this unambiguous.' },
+    ],
+    sources: [
+      { title: 'FirstCare — Texas Medicaid/CHIP Notification/Prior Authorization Codes (eff. 7/1/2026, PDF)', url: 'https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR/PA-List.pdf' },
+      { title: 'FirstCare — Medical Coverage Policy #206: Autism Spectrum Disorder (PDF)', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf' },
+      { title: 'FirstCare — 2026 STAR and CHIP Provider Manual (PDF)', url: 'https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR-CHIP-Provider-Manual.pdf' },
+      { title: 'FirstCare — STAR Medicaid (plan status)', url: 'https://www.firstcare.com/en/Individuals-and-Families/STAR-CHIP/STAR-Medicaid' },
+      { title: 'TMPPM Children\'s Services Handbook, § 2.3 Autism Services', url: 'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm' },
+    ],
+    faq: [
+      { q: 'Does FirstCare Health Plans cover ABA?', a: 'Yes — the Texas Medicaid Autism Services benefit for STAR members in Lubbock and MRSA West, on TMPPM criteria. FirstCare\'s own Medicaid PA code list confirms PA is required on 97151, 97153-97156, 97158, and 99366.' },
+      { q: 'Is FirstCare still accepting new Texas Medicaid members?', a: 'FirstCare\'s own site states its plans end August 31, 2026, subject to regulatory approval — confirm current enrollment and transition status directly with FirstCare or HHSC before building a long-term care plan around this payer.' },
+      { q: 'Does the Texas mandate\'s $36,000 ABA cap apply to FirstCare Medicaid?', a: 'No — FirstCare\'s own commercial autism policy confirms the mandate\'s dollar cap applies to state-regulated commercial plans, not Medicaid, matching the no-cap statewide Medicaid baseline.' },
+    ],
+  },
+
   'aetna-texas': {
     slug: 'aetna-texas',
     family: 'aetna',

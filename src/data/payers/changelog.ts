@@ -688,4 +688,19 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 169, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'guides-added',
+    summary:
+      'Six Texas Medicaid MCO guides added, closing the largest remaining Texas gaps identified by the MCO census (docs/vob-gaps.md): Community Health Choice (Harris/Houston + Jefferson SDAs, own ABA Medical Review Guideline adopted 6/2026), Blue Cross Blue Shield of Texas Medicaid (Travis/Austin SDA, insourced behavioral health from Magellan in 2024), Cook Children\'s Health Plan (six-county Fort Worth-area STAR + STAR Kids, dedicated 123-page ABA provider training), Parkland Community Health Plan (Dallas County STAR, behavioral health insourced from Carelon 9/1/2025), El Paso Health (El Paso + Hudspeth counties, formerly El Paso First — not the SDA\'s sole MCO per HHSC service-area sources, corrected from the census\'s working assumption), and FirstCare Health Plans (Lubbock + MRSA West, plan wind-down confirmed for 8/31/2026 pending regulatory approval). Each guide is built from the plan\'s own primary sources (provider manuals, ABA-specific policy documents, PA checklists and code lists) rather than the state TMPPM baseline alone; hhs.texas.gov blocks automated access, so any claim confirmable only there is written around with explicit confirm-with-plan language rather than asserted.',
+    guides: [
+      'community-health-choice-texas',
+      'bcbs-texas-medicaid',
+      'cook-childrens-health-plan',
+      'parkland-community-health-plan',
+      'el-paso-health',
+      'firstcare-health-plans',
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
