@@ -1026,4 +1026,94 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Ohio + Missouri VOB enrichment shipped (docs/vob-build.md): Layer 1 (EDI routing crosswalk), Layer 3 (code-level coverage grid), and Layer 4 (Medicaid rate tables, Medicaid lines only) for all 11 Ohio guides and all 4 Missouri guides. OHIO 270/271: worked the known obstacle — managedcare.medicaid.ohio.gov and the ODM companion-guide listing page both 404 to automated fetch, but the ODM Next Generation Fiscal Intermediary (Gainwell) 5010 270/271 Companion Guide v13.0 (2023-06-30) was retrieved directly from Ohio\'s asset CDN and read in full: Loop 2110C EB01=\'MC\' flags MCO enrollment, the MCO entity is named free-text in Loop 2120C NM1 (NM101=\'PR\'), EB05 carries the coded plan-coverage description, eligibility spans are MONTHLY (EB06=\'34\'), and the guide carries a FIXED ODM trading-partner code table (ISA06/08) plus a 2100A NM109 MCE-payer-ID table that make each MCO — including Aetna OhioRISE (trading partner 0021914 / MCE payer 60054) — separately visible on the wire. Encoded the OhioRISE landmine as a verified 271 fact: OhioRISE IS visible in eligibility but per ODM\'s Mixed Services Protocol NEVER pays ABA; the member\'s medical MCO does. Ohio rates ship from ODM\'s ABA fee appendix (Appendix A to draft rule 5160-34-03, package ERF188422B.pdf) — the only published ODM ABA fee document, transcribed verbatim with its DRAFT/not-yet-filed status and blank effective-date column flagged rather than presented as in-force; codes.ohio.gov (in-force OAC 5160-34) is JS/bot-gated and could not be re-read. Ohio prices by practitioner-tier descriptor (Independent COBA/BCBA/BCBA-D · BCaBA · RBT), NOT by HN/HO/HM modifier — codeGrid modifiers ship accordingly. Per-code daily caps use the CMS NCCI MUE ceiling enumerated verbatim in CareSource MM-0028 (verified there, inferred elsewhere; the state rule sets none of its own). Both bot-blocks from the original compile were RETRIED and are no longer blocked (AmeriHealth Caritas OH BH PA page and Molina OH PA page both load); Optum\'s OH Medicaid LOCG PDF and Anthem\'s CG-BEH-02 GPP asset are JS-gated / not-extractable, so those plans\' per-code detail ships \'inferred\'/\'unverified\' with a verifyVia. Confirmed Anthem OH Medicaid\'s Carelon relationship is a UM/prior-authorization hop ONLY (Carelon "provides utilization management services on behalf of the health plan") — ABA claims have no second hop and ride the ODM FI to Anthem\'s MCE payer ID 0002937, resolving the OH-Anthem-Carelon gap the Layer 6 map flagged as unconfirmed. MISSOURI: reconfirmed the ABA FFS carve-out (ABA billed to state FFS even for MCO enrollees) against two sources newer than the corpus\'s prior 7/2023 statement — the MO HealthNet Managed Care Policy Statements "Effective 10/2024" (SFY25) and Healthy Blue\'s Sep-2025 provider manual, both quoting it verbatim (staleRisk downgraded to low). The eMOMED 5010 270/271 Companion Guide (Dec 2023) documents managed-care enrollment via EB04=\'MC\' in Loop 2110C (ME code in EB05 / REF02 when REF01=\'M7\'), the MCO plan hotline in Loop 2120C PER04, MO HealthNet\'s in-transaction identifier NM109=\'431754897\', monthly eligibility keyed to calendar-month boundaries, and NO carrier-code->MCO-name table (values resolve from the Health Plan Record Layout Manual §C-45) — the ABA carve-out is a routing fact, not a discrete 271 field. The MHD Applied Behavioral Analysis fee schedule (.xlsx, file-stamped 2026-07-07) was parsed directly: all 10 codes covered and priced by tier (HO behavior analyst/psychologist · HN assistant · HM RBT-billed-by-supervisor, plus U8 in-home and TM telehealth), with the fee file marking every TM row precert-not-required and no U8 row ever paired with a technician (HM) combination. Availity\'s public payer list (2012-dated) has no Missouri Medicaid row and is unreliable for the OH MCOs; pVerify codes captured as pVerify-internal (not X12 CPIDs); Change Healthcare CPIDs remain login-gated and ship unverified. The 6 commercial guides (Aetna/Cigna/UnitedHealthcare in each state) get Layers 1+3 only per spec, reusing the already-verified national policies (CPB 0554/0648, EN0499, Optum SCC/2022RP501A) with the state autism mandates noted (OH R.C. 3923.84 floors; MO RSMo 376.1224 $40k/yr cap); Cigna\'s per-code PA split ships \'unverified\' consistent with this corpus\'s cigna-texas EN0499 re-verification, and Optum\'s ABA State Mandates supplement HAS an Ohio entry (CNS/CNP ordering, eff. 3/2025) but no Missouri entry.',
+    guides: [
+      'ohio-medicaid',
+      'caresource-ohio',
+      'buckeye-health-plan',
+      'molina-healthcare-ohio',
+      'anthem-ohio-medicaid',
+      'unitedhealthcare-community-plan-ohio',
+      'amerihealth-caritas-ohio',
+      'humana-healthy-horizons-ohio',
+      'aetna-ohio',
+      'cigna-ohio',
+      'unitedhealthcare-ohio',
+      'missouri-medicaid',
+      'aetna-missouri',
+      'cigna-missouri',
+      'unitedhealthcare-missouri',
+    ],
+    details: [
+      {
+        slug: 'ohio-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'ODM/Gainwell FI 270/271 Companion Guide v13.0 (2023-06-30) read in full (retrieved from dam.assets.ohio.gov after managedcare.medicaid.ohio.gov 404\'d): Loop 2110C EB01=\'MC\' flags MCO enrollment; MCO named free-text in 2120C NM1 (NM101=\'PR\'); EB05 coded plan description; monthly spans (EB06=\'34\'). Populated mcoCarrierCodes from the guide\'s fixed ISA06/08 trading-partner table + 2100A NM109 MCE-payer-ID table (e.g. 0003150 CareSource, 0004202 Buckeye, 0007316 Molina, 88337 UHC, 842435374 AmeriHealth Caritas, 61103 Humana, 0002937 Anthem, 0021914/60054 Aetna OhioRISE).',
+        sourceUrl:
+          'https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Providers/MITS/HIPAA%205010%20Implementation/CompanionGuide/OMES/FFS/Ohio270-271.pdf',
+      },
+      {
+        slug: 'ohio-medicaid',
+        field: 'edi.medicaid271Notes (OhioRISE landmine)',
+        change:
+          'OhioRISE (Aetna) is separately visible in the 271 (trading partner 0021914 / MCE claims payer ID 60054) but NEVER pays ABA per ODM\'s Mixed Services Protocol — the underlying medical MCO does. Encoded as a verified 271-visibility + payer-routing fact so the eligibility response is not misread as OhioRISE being the ABA payer.',
+        sourceUrl: 'https://dam.assets.ohio.gov/image/upload/v1743449666/managedcare.medicaid.ohio.gov/OhioRISE/OhioRISE_Mixed_Services_Protocol_20250401.pdf',
+      },
+      {
+        slug: 'ohio-medicaid',
+        field: 'rates',
+        change:
+          'ODM ABA fee appendix (Appendix A to DRAFT rule 5160-34-03, ERF188422B.pdf, stamped "DRAFT - NOT YET FILED", blank effective-date column) transcribed verbatim: 97151 $30.49 Independent/$22.67 BCaBA, 97152 $17.00 RBT, 97153 $16.04 RBT, 97154 $7.61 RBT, 97155 $27.28/$20.63, 97156 $30.09/$22.37, 97157 $14.46/$10.62, 97158 $14.46/$10.62, 0362T/0373T $33.54. Priced by practitioner tier, not by billing modifier. Shipped with draft status flagged, not as an in-force schedule.',
+        sourceUrl: 'https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders,%20Partners/LegalandContracts/Rules/ERF188422B.pdf',
+      },
+      {
+        slug: 'caresource-ohio',
+        field: 'codeGrid.*.unitCap',
+        change:
+          'Full CMS NCCI MUE daily-unit table extracted verbatim from MM-0028 (97151=32, 97152=16, 97153=32, 97154=18, 97155=24, 97156=16, 97157=16, 97158=16, 0362T=16, 0373T=32) — verified on CareSource, applied as the inferred federal ceiling on the other OH guides since the state rule sets no per-code daily cap of its own.',
+        sourceUrl: 'https://www.caresource.com/documents/medicaid-oh-policy-medical-mm-0028-20250701.pdf',
+      },
+      {
+        slug: 'anthem-ohio-medicaid',
+        field: 'edi.bhCarveOut',
+        change:
+          'Carelon Behavioral Health is a UM/prior-authorization hop ONLY (per the Carelon-Anthem OH integration QRG: "independent company providing utilization management services on behalf of the health plan") — ABA CLAIMS have no second EDI hop and route through the ODM FI to Anthem\'s MCE payer ID 0002937. twoHopRequired=true reflects the authorization hop; there is NO separate Carelon BH claims payer ID. Resolves the OH-Anthem-Carelon gap the Layer 6 carve-out map flagged as unconfirmed.',
+        sourceUrl: 'https://www.carelonbehavioralhealth.com/content/dam/digital/carelon/cbh-assets/documents/oh/ohbcbs-cd-025424-23-carelon-bh-intgrtn-qrg.pdf',
+      },
+      {
+        slug: 'buckeye-health-plan',
+        field: 'codeGrid.97151/97152.paRequired',
+        change:
+          'The in-network assessment-PA waiver in buckeye prose is NOT stated in CP.BH.104 itself (which was read in full) — it belongs on Buckeye\'s separate PA list / pre-auth check tool. Shipped \'inferred\' with a verifyVia rather than \'verified\', per accuracy-over-completeness.',
+        sourceUrl: 'https://www.buckeyehealthplan.com/content/dam/centene/Buckeye/policies/clinical-policies/CP.BH.104.pdf',
+      },
+      {
+        slug: 'amerihealth-caritas-ohio / molina-healthcare-ohio',
+        field: 'edi / codeGrid (bot-block retry)',
+        change:
+          'Both sites, reported bot-blocked in the original compile, were retried and are NOT currently blocked: AmeriHealth Caritas OH\'s BH PA page confirms ABA needs PA (UM 833-735-7700, fax 833-329-6411, Jiva/NaviNet); Molina OH\'s PA page loads but is member-facing with no code/EDI detail. Neither publishes an EDI payer ID on-page — routing uses the ODM FI MCE payer IDs (842435374, 0007316; Molina CHC id 20149 from claim.md, inferred).',
+        sourceUrl: 'https://www.amerihealthcaritasoh.com/provider/resources/behavioral-prior-auth',
+      },
+      {
+        slug: 'missouri-medicaid',
+        field: 'edi.medicaid271Notes + carve-out currency',
+        change:
+          'eMOMED 5010 270/271 Companion Guide (Dec 2023) read in full: managed-care enrollment via EB04=\'MC\' (Loop 2110C), ME code in EB05/REF02(M7), MCO plan hotline in 2120C PER04, in-transaction ID NM109=\'431754897\', monthly spans, NO carrier-code->MCO table (resolves via Health Plan Record Layout Manual §C-45). ABA FFS carve-out reconfirmed current against the MO HealthNet Managed Care Policy Statements "Effective 10/2024" (newer than the corpus\'s prior 7/2023) and Healthy Blue\'s Sep-2025 manual — staleRisk downgraded to low.',
+        sourceUrl: 'https://www.emomed.com/public/publicdocs/5010%20Companion%20Guide.pdf',
+      },
+      {
+        slug: 'missouri-medicaid',
+        field: 'rates / codeGrid',
+        change:
+          'MHD Applied Behavioral Analysis fee schedule (.xlsx, file-stamped 2026-07-07) parsed directly: all 10 codes covered and priced by tier (HO/HN/HM + U8 in-home + TM telehealth). Key figures: 97153 $20.13 (HO/HN)/$16.37 (HM, raised eff 7/1/2024), 97151/97155/97156/0362T/0373T $25.26 HO ($27.46 U8 in-home for 97155/0362T/0373T), 97154 $2.05 HM-only (eff 5/1/2025), 97157 $3.16/$2.52 (eff 12/18/2025), 97158 $3.16/$2.14. Every TM row is precert-not-required; technicians never carry U8. Daily maxima 97151=32, 97152=16, 97153=32, 97154=8, 97155=24, 97156=16, 97157=8, 97158=6, 0362T=16, 0373T=32.',
+        sourceUrl: 'https://apps.dss.mo.gov/fmsfeeschedules/dlfiles/Applied%20Behavioral%20Analysis.xlsx',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
