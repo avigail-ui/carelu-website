@@ -185,4 +185,64 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'NC split A shipped: Layer 1 (EDI routing crosswalk), Layer 3 (code-level coverage grid), and Layer 4 (Medicaid rate tables) populated for North Carolina Medicaid FFS and 4 of its Standard Plans, plus the merged WellCare of NC guide kept for historical/routing reference. Read the NCTracks 270/271 Companion Guide (ASC X12N005010X279A1, Apr 2025) in full — unlike Georgia\'s, it IS a static fetchable PDF: the 2110C EB loop (Appendix A) carries managed-care PLAN-TYPE codes (Standard/Tailored/Carve-out/Health Choice), while the specific MCO\'s identity/contact returns dynamically in the 2120C NM1/PER loop, not from a fixed carrier-name table — captured as such rather than forced into a false MCO-code map. Confirmed directly from the live CCP 8F PDF (Amended Date 2019-08-15, still in force) that NC Medicaid\'s RB-BHT code set is ONLY 97151-97157 — 97158/0362T/0373T ship as explicit "not covered" entries, not omitted or guessed. Corrected an assumed HB 696 8/1/2026 effective date after reading the ratified bill text directly: Session Law 2026-1\'s ABA provisions (Sec. 3C.18) are effective on enactment, 4/30/2026, with no rate or billing-rule change tied to 8/1/2026 anywhere in the bill, and the amended CCP 8F remains unpublished as of this access date. Confirmed Healthy Blue, AmeriHealth Caritas, and Carolina Complete Health each publish zero ABA code-level billing detail (pure 8F deference, several confirmed in the plans\' own document text); WellCare of NC\'s WNC.CP.109 is the one plan-authored CPT/modifier grid (GT/KX) in this set, kept historical per its 4/1/2026 merger into Carolina Complete Health, whose own merger page supplied the unified payer ID (68069) and legacy WellCare-only codes (PCS 23937, HHCS 57538) with an explicit pre-merger claims-rejection warning. Several EDI payer IDs surfaced clearinghouse-specific splits (different codes for claims vs. 270/271 RTE vs. ERA for the same payer, e.g. Healthy Blue, AmeriHealth Caritas NC) — each shipped with its own verifyVia note rather than collapsed into one number. UnitedHealthcare Community Plan NC: confirmed its Optum BH carve-out claims ride the SAME payer ID as medical (87726, no second EDI hop) but explicitly did NOT apply Optum\'s national ABA Modifier FAQ (HN/HO/HM/HP) to Medicaid, since that document scopes itself to "commercial members only."',
+    guides: [
+      'north-carolina-medicaid',
+      'healthy-blue-north-carolina',
+      'amerihealth-caritas-north-carolina',
+      'carolina-complete-health',
+      'unitedhealthcare-community-plan-north-carolina',
+      'wellcare-north-carolina',
+    ],
+    details: [
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'NCTracks 270/271 Companion Guide (Apr 2025) read in full: 2110C EB loop carries managed-care plan-TYPE codes (Appendix A: MCSTD, MCCRV, MCCFS, TPMC, TPHC, TPINV, TPTBI, HCSTD, HCCRV, PHPB, PHPC, PHHC); the specific MCO name/contact returns dynamically in the 2120C NM1/PER loop, not from this table. Real-time, CAQH-CORE-compliant exchange confirmed.',
+        sourceUrl:
+          'https://www.nctracks.nc.gov/content/dam/jcr:b987d9f5-d230-4c81-b78b-05780eb0bbaf/270_271%20Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20(7).pdf',
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'codeGrid.97158 / 0362T / 0373T',
+        change:
+          "Confirmed absent from CCP 8F Attachment A's billing-code table (97151-97157 only) by opening the current policy PDF directly — shipped as explicit 'not covered' entries across all 6 guides rather than omitted or filled with an invented cap.",
+        sourceUrl: 'https://medicaid.ncdhhs.gov/documents/files/8f/open',
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'codeGrid.*.notes (HB 696 date correction)',
+        change:
+          "Read the ratified HB 696 / Session Law 2026-1 bill text directly: ABA provisions (Sec. 3C.18) are effective 4/30/2026 (date of enactment), not 8/1/2026 — no primary source ties any ABA rate or billing-rule change to 8/1/2026, and the amended CCP 8F remains unpublished as of this access date.",
+        sourceUrl: 'https://dashboard.ncleg.gov/api/Services/BillDocument/2025/8406/0/HB%20696v5',
+      },
+      {
+        slug: 'carolina-complete-health',
+        field: 'edi.payerId / notes',
+        change:
+          "Unified payer ID 68069 effective 4/1/2026 confirmed via the plan's own merger page, along with legacy WellCare-only codes (PCS 23937, HHCS 57538) required for pre-4/1/2026 dates of service and the plan's explicit warning that submitting pre-merger WellCare claims under 68069 triggers a 'Mbr not valid on DOS' rejection.",
+        sourceUrl: 'https://network.carolinacompletehealth.com/merger.html',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-north-carolina',
+        field: 'edi.bhCarveOut',
+        change:
+          "Confirmed the Optum BH carve-out for ABA rides the SAME payer ID as UHC medical claims (87726) — no second EDI hop. Explicitly did NOT apply Optum's national ABA Modifier FAQ (HN/HO/HM/HP tiers) to this guide's codeGrid, since that document states it applies to commercial members only.",
+        sourceUrl: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ncaba/ncABA-QRG.pdf',
+      },
+      {
+        slug: 'wellcare-north-carolina',
+        field: 'codeGrid',
+        change:
+          "WNC.CP.109's own CPT/modifier grid (GT video-telehealth for 97151-97157; KX audio-only additionally for 97156/97157) shipped as historical/reference given the plan's 4/1/2026 merger into Carolina Complete Health — confirmed the policy document was still live and unchanged at access date but may be withdrawn without notice.",
+        sourceUrl: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];
