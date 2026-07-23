@@ -872,4 +872,73 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Indiana + Kansas VOB enrichment shipped: Layers 1 (EDI routing crosswalk) and 3 (code-level coverage grid) for all 16 guides (9 IN, 7 KS), plus Layer 4 (Medicaid rate tables) for the 10 Medicaid-line guides (indiana-medicaid + its 5 MCE guides; kansas-medicaid + its 3 KanCare MCOs). Indiana\'s 270/271 IHCP Companion Guide (v4.2, 3/31/2026) and fee-schedule bulletin BT202627 were both machine-readable this pass (unlike Georgia\'s equivalent) — Layer 1 medicaid271Notes ships fully verified (Loop 2100C EB/NM1 managed-care segment, both batch and real-time 270/271 confirmed), and Layer 4 ships the complete individual + group ABA rate table across both the current (DOS≥4/1/2026) and upcoming (DOS≥4/1/2027) phasedown steps for all 10 codes, extracted directly from the bulletin\'s Tables 1-3. MDwise\'s vob entry (historical) is flagged EXITED throughout — it ended as an HIP/Hoosier Healthwise MCE 1/1/2026 and should not route a live eligibility check; members reassigned to Anthem, CareSource, or MHS. Kansas\'s codeGrid deliberately ships its actual 7-code CCTS/IIS billable set (97151-97156, 97158 — no 97157, no 0362T/0373T), not the forced 10-code CPT list used elsewhere, per the build spec. The real KMAP 270/271 Companion Guide (v6.0, 5/2/2017, staleRisk:true) was located via a direct legacy-host document URL after the public portal page redirected to an SSO wall on every attempt; it gives the Loop 2110C/EB03=30 managed-care segment but no numeric carrier-code table. Kansas Medicaid rates for the State Plan 9715x codes remain honestly unverified beyond a stale 2019 anchor ($17.50/unit for 97151) — the KMAP interactive fee lookup is SSO-walled, and this pass\'s re-check of the FY2024-FY2026 HCBS rate bulletins confirmed they cover only BI/TA/I-DD waiver services and the separate HCBS Autism waiver code T2040, not the State Plan CCTS/IIS codes. National commercial payer IDs (Aetna 00001/60054, Cigna 00004/62308, UnitedHealthcare 00192/87726) reused verbatim from georgia.ts, re-confirmed by direct re-fetch of the pVerify/Availity public payer lists (same 08/08/2012 Availity staleness footer already flagged elsewhere in the corpus).',
+    guides: [
+      'indiana-medicaid',
+      'anthem-indiana-medicaid',
+      'mhs-indiana',
+      'caresource-indiana',
+      'mdwise-indiana',
+      'unitedhealthcare-community-plan-indiana',
+      'aetna-indiana',
+      'cigna-indiana',
+      'unitedhealthcare-indiana',
+      'kansas-medicaid',
+      'sunflower-health-plan-kansas',
+      'unitedhealthcare-community-plan-kansas',
+      'healthy-blue-kansas',
+      'aetna-kansas',
+      'cigna-kansas',
+      'unitedhealthcare-kansas',
+    ],
+    details: [
+      {
+        slug: 'indiana-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'Fully verified from the 270/271 IHCP Companion Guide (v4.2, 3/31/2026): Loop 2100C EB01=MC/EB04=HM/EB05=program name for managed-care coordination, followed by NM1 (NM101=P5, NM103=MCE name, NM109=MCE entity identifier); DTP02=RD8 date-range eligibility span. No numeric carrier-code table exists — MCEs are identified by name + entity ID only.',
+        sourceUrl: 'https://www.in.gov/medicaid/providers/files/270-271-ihcp-companion-guide.pdf',
+      },
+      {
+        slug: 'indiana-medicaid',
+        field: 'rates.byCode',
+        change:
+          'Complete individual + group ABA rate table for all 10 codes (97151-97158, 0362T, 0373T) across the current (DOS≥4/1/2026) and upcoming (DOS≥4/1/2027) phasedown steps, extracted directly from BT202627 Tables 1-3 (e.g. 97153 $16.04→$15.39; 97155 U3 $25.97→$24.93; 97154/97157/97158 group-size-tiered rates U4/U6/U8).',
+        sourceUrl: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf',
+      },
+      {
+        slug: 'mdwise-indiana',
+        field: 'edi + codeGrid',
+        change:
+          "Shipped historical/reference-only, flagged EXITED on every field: MDwise ended as an Indiana Medicaid MCE effective 1/1/2026 (FSSA press release); do not route a live eligibility check to this entry. Members reassigned to Anthem, CareSource, or MHS.",
+        sourceUrl: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf',
+      },
+      {
+        slug: 'kansas-medicaid',
+        field: 'codeGrid',
+        change:
+          "Ships Kansas's actual 7-code CCTS/IIS billable set (97151, 97152, 97155, 97156 from the 1/1/2017 State Plan transition; 97153, 97154, 97158 added 7/1/2024) — no 97157, no 0362T/0373T — per the build spec's instruction not to force the CPT list onto a state with a different code structure.",
+        sourceUrl: 'https://www.sunflowerhealthplan.com/newsroom/kmap-17129.html',
+      },
+      {
+        slug: 'kansas-medicaid',
+        field: 'edi.medicaid271Notes.mcoSegmentLocation',
+        change:
+          'The real KMAP 270/271 Standard Companion Guide (v6.0, 5/2/2017) was located via a direct legacy-host URL after the public portal page redirected to an SSO login wall on every attempt — Loop 2110C, 12th Repetition: EB03=30 interpreted as "Managed care organization," EB05=free-text plan name. Shipped with staleRisk:true given the 2017 date.',
+        sourceUrl: 'https://www.kmap-state-ks.us/Documents/EDI/2017-05_270-271-DXC.pdf',
+      },
+      {
+        slug: 'kansas-medicaid',
+        field: 'rates.byCode',
+        change:
+          "Genuinely unverified beyond a stale 2019 anchor (97151 = $17.50/unit, KMAP Bulletin 18259) — re-checked the KMAP interactive fee lookup (SSO-walled) and the FY2024/2025/2026 HCBS rate-increase bulletins this pass; confirmed those bulletins cover only Brain Injury/Technology Assisted/I-DD HCBS waiver rates plus the separate HCBS Autism waiver code T2040, not the State Plan 9715x codes. Every other code ships 'unverified — pull from the KMAP interactive fee-schedule lookup' rather than a guessed figure.",
+        sourceUrl: 'https://portal.kmap-state-ks.us/PublicPage/ProviderPricing/FeeSchedules',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
