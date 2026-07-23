@@ -61,7 +61,7 @@
      that pre-4/1/2026 WellCare claims submitted to CCH's ID reject
      with "Mbr not valid on DOS."
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap, VobContact } from './types.js';
 import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
