@@ -1,5 +1,6 @@
 import { PAYER_REVIEWED, STATE_META } from '../../src/data/payers/index.js';
 import { PAYER_CHANGELOG } from '../../src/data/payers/changelog.js';
+import { vob } from '../../src/data/payers/vob/index.js';
 import { SITE_URL, corpusHash, guideHash, jsonResponse, sortedGuides } from './_shared.js';
 
 /* ================================================================
@@ -21,6 +22,7 @@ export async function GET(request: Request): Promise<Response> {
     treatmentPA: p.treatmentPA,
     dxRequired: p.dxRequired,
     sections: p.sections.length,
+    vob: p.slug in vob, // VOB enrichment delivered for this guide (docs/vob-build.md)
     contentHash: guideHash(p),
     web: `${SITE_URL}/payers/${p.slug}`,
     api: `/api/payers/${p.slug}`,
@@ -38,6 +40,7 @@ export async function GET(request: Request): Promise<Response> {
         guides: guides.length,
         states: STATE_META.length,
         policyRules: sortedGuides.reduce((n, p) => n + p.sections.length, 0),
+        vobEnrichedGuides: Object.keys(vob).length,
       },
       corpusHash,
       latestChange,

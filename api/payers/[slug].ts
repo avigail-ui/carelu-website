@@ -1,4 +1,5 @@
 import { PAYER_REVIEWED, payers } from '../../src/data/payers/index.js';
+import { vob } from '../../src/data/payers/vob/index.js';
 import { SITE_URL, errorResponse, guideHash, jsonResponse } from './_shared.js';
 
 /* ================================================================
@@ -24,6 +25,9 @@ export async function GET(request: Request): Promise<Response> {
     web: `${SITE_URL}/payers/${guide.slug}`,
     api: `/api/payers/${guide.slug}`,
     guide,
+    // VOB enrichment layers (EDI routing, STC map, code grid, rates, contacts)
+    // per docs/vob-build.md — null until this guide's state has been delivered.
+    vob: vob[guide.slug] ?? null,
   };
 
   return jsonResponse(request, body, contentHash);

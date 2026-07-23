@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { payers } from '../../src/data/payers/index.js';
 import type { PayerConfig } from '../../src/data/payers/types.js';
+import { vob } from '../../src/data/payers/vob/index.js';
 
 /* ================================================================
    Shared helpers for the public payer-directory read API
@@ -20,12 +21,14 @@ export const sortedGuides: PayerConfig[] = Object.values(payers).sort((a, b) =>
   a.slug.localeCompare(b.slug)
 );
 
+// Hash covers the guide AND its VOB enrichment (null until populated), so
+// contentHash changes when either layer changes.
 export function guideHash(guide: PayerConfig): string {
-  return sha256(JSON.stringify(guide));
+  return sha256(JSON.stringify({ guide, vob: vob[guide.slug] ?? null }));
 }
 
-// Hash of the deterministic JSON of ALL guides — changes iff any guide changes.
-export const corpusHash = sha256(JSON.stringify(sortedGuides));
+// Hash of the deterministic JSON of ALL guides + VOB data — changes iff anything changes.
+export const corpusHash = sha256(JSON.stringify({ guides: sortedGuides, vob }));
 
 const BASE_HEADERS: Record<string, string> = {
   'access-control-allow-origin': '*',
