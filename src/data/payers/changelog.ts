@@ -1505,4 +1505,18 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
       'small-mid examples.',
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Layer 7 contacts + scripted questions: GA/NC/FL/TX/NY. vobContact populated for all 62 already-enriched guides across the two wedge-market states plus FL/TX/NY (GA 8, NC 13, FL 13, TX 12, NY 16): providerServicesPhone, hours, portal, fax, and ivrPath sourced by fetching each guide\'s provider quick-reference guide, provider manual, or contact page directly this pass — several PDFs returned binary/unreadable content to the fetch tool and were downloaded and text-extracted locally instead so every phone digit shipped was actually read, not guessed. A verified phone number was found for all 62 guides; where a fetch 403\'d, was JS-rendered, or the document simply had no contact section (e.g. several state Medicaid EDI portals already flagged blocked in docs/vob-gaps.md), the field was omitted per the "never fill with \'unverified\'" rule rather than invented — VobContact.providerServicesPhone was correspondingly made optional in types.ts. scriptedQuestions were generated (not scraped) per guide from that guide\'s OWN already-shipped edi.verifyVia keys, edi.bhCarveOut fields marked \'unverified\', stcMap fields marked \'unverified\'/\'plan-dependent\', and codeGrid fields marked \'unverified\' — 372 questions across the 62 guides (avg 6.0/guide, range 4-7); none qualified for the empty-array no-call outcome since Layer 1-3 data for these 5 states is still heavily unverified/plan-dependent across the board. No edi/stcMap/codeGrid/rates content was modified.',
+    guides: [
+      'georgia-medicaid', 'amerigroup-georgia', 'caresource-georgia', 'peach-state-georgia', 'anthem-bcbs-georgia', 'aetna-georgia', 'cigna-georgia', 'unitedhealthcare-georgia',
+      'north-carolina-medicaid', 'healthy-blue-north-carolina', 'amerihealth-caritas-north-carolina', 'carolina-complete-health', 'unitedhealthcare-community-plan-north-carolina', 'wellcare-north-carolina', 'alliance-health-north-carolina', 'trillium-health-resources', 'vaya-health', 'partners-health-management', 'aetna-north-carolina', 'cigna-north-carolina', 'unitedhealthcare-north-carolina',
+      'florida-medicaid', 'sunshine-health-florida', 'cms-health-plan-florida', 'simply-healthcare-florida', 'unitedhealthcare-community-plan-florida', 'humana-healthy-horizons-florida', 'aetna-better-health-florida', 'molina-healthcare-florida', 'community-care-plan-florida', 'florida-community-care', 'aetna-florida', 'cigna-florida', 'unitedhealthcare-florida',
+      'texas-medicaid', 'superior-healthplan-texas', 'texas-childrens-health-plan', 'wellpoint-texas', 'unitedhealthcare-community-plan-texas', 'aetna-better-health-texas', 'molina-healthcare-texas', 'community-first-health-plans', 'driscoll-health-plan', 'aetna-texas', 'cigna-texas', 'unitedhealthcare-texas',
+      'excellus-bcbs-new-york', 'mvp-health-plan-new-york', 'cdphp-new-york', 'independent-health-new-york', 'highmark-western-new-york', 'aetna-new-york', 'cigna-new-york', 'unitedhealthcare-new-york', 'new-york-medicaid', 'fidelis-care-new-york', 'unitedhealthcare-community-plan-new-york', 'anthem-healthplus-new-york', 'healthfirst-new-york', 'metroplus-health-new-york', 'emblemhealth-new-york', 'molina-healthcare-new-york',
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];

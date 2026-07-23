@@ -1544,6 +1544,291 @@ function ncTailoredPlanUnverifiedStc(planName: string): StcMap {
   };
 }
 
+/* ==================== Layer 7 — vobContact ====================
+   Contact data below is scraped, not inferred: every phone/fax/hours/IVR
+   value was read directly out of a primary source fetched THIS pass (PDF
+   text-extracted via pymupdf where WebFetch returned binary/unreadable
+   content, or a provider-contact page fetched directly). Where a fetch
+   turned up nothing usable (403, JS-rendered, or the document simply
+   doesn't contain contact info), the field is omitted rather than
+   guessed — see the per-guide notes below for what was tried.
+   - marketplace.wellcarenc.com was fetched and read this pass but is
+     WellCare's ACA Marketplace/Ambetter site, not the NC Medicaid
+     Standard Plan RB-BHT program in scope here (confirmed by its own
+     "Ambetter"/"Discontinuing operations" content) — its phone number
+     was discarded as wrong-product-line, not used.
+   - partnersbhm.org's public pages 403 to the WebFetch tool (consistent
+     with this file's existing bot-blocked notes for that domain) but
+     were reachable via a direct curl fetch with a browser user-agent
+     this pass; content was read and confirmed from that fetch.
+   - scriptedQuestions are generated per docs/vob-build.md Layer 7 from
+     each guide's OWN edi.verifyVia keys, edi.bhCarveOut.* fields whose
+     value is literally 'unverified', stcMap fields whose value is
+     'unverified'/'plan-dependent', and codeGrid fields whose value is
+     literally 'unverified' (or whose notes explicitly flag a gap) —
+     capped at 3-7, most consequential first. The medicaid271Notes MCO-
+     exclusion-from-271 fact and the 97158/0362T/0373T not-in-CCP-8F
+     fact are both verified, not gaps, and are correctly excluded here.
+   ================================================================ */
+
+/* -------------------- Layer 7 shared source refs -------------------- */
+
+const NCTRACKS_CONTACT_INFO = src(
+  'https://www.nctracks.nc.gov/content/dam/jcr:b987d9f5-d230-4c81-b78b-05780eb0bbaf/270_271%20Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20(7).pdf',
+  'Same NCTracks 270/271 Companion Guide PDF as NCTRACKS_270_271_CG, re-read this pass (via direct download + text extraction, since WebFetch returned only binary/unreadable content) for its §5 Contact Information section: "5.1 Electronic Data Interchange (EDI) Technical Assistance — Phone: 1-800-688-6696, option #1 ... Website: http://www.nctracks.nc.gov/provider/index.html." A separate AAA03 reject-code table instructs "call NCTracks Call Center at 1-800-688-6696, option 3" when reject reason code 42 (system down or data error) is returned. No hours of operation were stated for the Call Center in this document.'
+);
+const VAYA_CONTACT_PAGE = src(
+  'https://providers.vayahealth.com/contact/',
+  'Vaya Health — Contact Us page (provider section), fetched directly this pass — states verbatim the "Provider Support Service Line" is "1-866-990-9712," hours "7 a.m. to 6 p.m., Monday – Saturday, including holidays," and lists Authorizations (Utilization Management) at "1-800-893-6246, ext. 1515 (behavioral health), ext. 1526 (physical health)."'
+);
+const PARTNERS_PROVIDER_NETWORK_CONTACTS = src(
+  'https://providers.partnersbhm.org/provider-network-contacts/',
+  'Partners Health Management — Provider Network Contacts page. WebFetch returned empty content for this domain (consistent with this file\'s existing partnersbhm.org bot-block notes); fetched successfully instead via direct curl with a browser user-agent and read from the extracted text. States verbatim "Provider Services Line ... Call: 1-877-398-4145" and names the "ProviderCONNECT Portal" (login help and general questions both routed to the same 1-877-398-4145 line, per-topic email addresses given but no distinct phone numbers). No hours of operation were stated on this page.'
+);
+const AETNA_CONTACT_PAGE = src(
+  'https://www.aetna.com/about-us/contact-aetna.html',
+  'Aetna — official Contact Us page, "Medical providers" help topics, fetched directly this pass — states verbatim "Non-Medicare plans (includes individual & family plans): 1-888-632-3862 ${tty}, (choose precertification prompt)." This is Aetna\'s general non-Medicare provider/precertification service center, not an ABA-specific line — no dedicated Aetna ABA/autism contact page was located this pass, and no Aetna-specific portal name/URL was found on this page (the Availity portal association below is carried over as inferred from the pre-existing stc-defaults.ts finding that Aetna directs EDI submitters to Availity, not confirmed by a fresh fetch of an Aetna-branded portal page).'
+);
+const EVERNORTH_ABA_PA_FORM = src(
+  'https://static.evernorth.com/assets/evernorth/provider/pdf/resourceLibrary/behavioral/applied-behavior-analysis.pdf',
+  'Evernorth Behavioral Health — Applied Behavior Analysis Prior Authorization Form (PCOMM-2025-224), fetched and text-extracted directly this pass — states verbatim to "send it to ABA@Evernorth.com (preferred) or fax it to 860.687.9230," and to call "the Autism Care Coordinator team at 877.279.7603, Monday through Friday from 9:00 a.m. to 4:00 p.m. CT" for submission issues (a narrower window than the Autism Resource Guide\'s general 8:30 a.m.–5:00 p.m. CT team hours — both cited, not reconciled).'
+);
+const OPTUM_PROVIDER_EXPRESS_SUPPORT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/about-us/provider-express-support.html',
+  'Optum Provider Express — Support page, fetched directly this pass — states verbatim "you may also call the Provider Express Support Center at 1 866-209-9320 (toll-free) from 8 a.m. to 8 p.m. Eastern time." A general commercial/Medicaid Provider Express support line, not ABA-specific.'
+);
+
+/* ==================== north-carolina-medicaid ==================== */
+
+const northCarolinaMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-688-6696',
+  ivrPath:
+    'Option 1 for EDI technical assistance (270/271 support); option 3 for an explanation when a 271 response returns AAA03 reject reason code 42 (system down or data error) — per the Companion Guide §5.1 and its AAA03 reject-code table.',
+  portal: { name: 'NCTracks Provider Portal', url: 'http://www.nctracks.nc.gov/provider/index.html' },
+  scriptedQuestions: [
+    'What are the per-code unit caps and cap periods for 97151-97157 (e.g., 97153, 97155) — not published in the current CCP 8F PDF and not checked against the live NCTracks Fee Schedules Portal this pass?',
+    'What place-of-service settings/codes are allowed for RB-BHT delivery (home, clinic, school, telehealth)?',
+    'Do you use payer ID NCMCD (not 12K23, which is institutional-only) for 270/271 real-time eligibility checks, and what is your current Availity payer ID?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it charged per-visit or per-day?',
+    'Since NCTracks\' own 271 does not return DMH/behavioral-health benefit detail, which LME-MCO or plan should I contact directly to confirm this member\'s RB-BHT benefit and cost share?',
+  ],
+  sources: [NCTRACKS_CONTACT_INFO],
+};
+
+/* ==================== healthy-blue-north-carolina ==================== */
+
+const healthyBlueContact: VobContact = {
+  providerServicesPhone: '844-594-5072',
+  hours: 'Monday–Saturday, 7 a.m.–6 p.m. Eastern time (voice portal accessible 24/7)',
+  ivrPath:
+    'Provider Services main line, option 2 for Prior Authorization/Notification – Physical Health. Outpatient and Inpatient Behavioral Health Utilization Management (where RB-BHT authorization sits) is reached directly at 844-594-5082 — no separate IVR menu is documented for BH UM in the Provider Manual.',
+  portal: { name: 'Availity Essentials / Healthy Blue Provider Portal', url: 'https://provider.healthybluenc.com' },
+  scriptedQuestions: [
+    'Do you use payer ID 00602 or 14422 for real-time 270/271 eligibility checks (the plan\'s Professional Claims and Real-Time Eligibility lists show different codes)?',
+    'Does Healthy Blue administer RB-BHT in-house, or is there a behavioral-health carve-out administrator I should route to instead?',
+    'What are the unit caps and cap periods for 97151-97157?',
+    'What place-of-service codes and telehealth modifiers (GT/CR) are approved for RB-BHT billing?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per-visit or per-day?',
+    'Does the deductible apply to RB-BHT, and is there an out-of-pocket max that applies?',
+  ],
+  sources: [HEALTHY_BLUE_PROVIDER_MANUAL],
+};
+
+/* ==================== amerihealth-caritas-north-carolina ==================== */
+
+const amerihealthContact: VobContact = {
+  providerServicesPhone: '1-833-900-2262',
+  hours: 'Monday–Friday, 8 a.m.–5 p.m. (Behavioral Health Utilization Management)',
+  fax: '1-833-893-2262',
+  ivrPath:
+    'BH UM direct line 1-833-900-2262 handles RB-BHT prior-authorization questions during business hours; after hours, weekends, and holidays route to Member Services at 1-855-375-8811. Fax the completed Prior Authorization Request Form to 1-833-893-2262 (Inpatient Concurrent Review uses a separate fax, 1-833-894-2262).',
+  portal: { name: 'NaviNet', url: 'https://www.amerihealthcaritasnc.com/provider/resources/navinet.aspx' },
+  scriptedQuestions: [
+    'Which payer ID do you use for 270/271 real-time eligibility checks (pVerify, Availity, and Change Healthcare all show gaps or unreconciled codes)?',
+    'Is ABA/RB-BHT administered in-house, or through a separate behavioral-health carve-out administrator?',
+    'What are the current unit caps and cap periods for 97151-97157?',
+    'What telehealth modifiers and place-of-service codes are approved for RB-BHT?',
+    'Is the RB-BHT cost share a copay or coinsurance, charged per-visit or per-day, and does the deductible apply?',
+  ],
+  sources: [AMERIHEALTH_UM_GUIDE],
+};
+
+/* ==================== carolina-complete-health ==================== */
+
+const carolinaCompleteHealthContact: VobContact = {
+  providerServicesPhone: '1-833-552-3876',
+  hours: 'Monday–Saturday, 7 a.m.–6 p.m.',
+  portal: { name: 'Carolina Complete Health Provider Portal', url: 'https://provider.carolinacompletehealth.com' },
+  scriptedQuestions: [
+    'What is your Availity payer ID for real-time 270/271 eligibility checks?',
+    'Is RB-BHT administered in-house, or through a behavioral-health carve-out administrator?',
+    'What are the unit caps and cap periods for 97151-97157?',
+    'What telehealth modifiers and place-of-service codes are approved for RB-BHT?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day, and does it apply to the deductible?',
+  ],
+  sources: [CCH_BEHAVIORAL_HEALTH_PAGE],
+};
+
+/* ==================== unitedhealthcare-community-plan-north-carolina ==================== */
+
+const unitedhealthcareCommunityPlanContact: VobContact = {
+  providerServicesPhone: '866-633-4449',
+  ivrPath:
+    'The Customer Service Center (866-633-4449) handles claim status per the QRG. No fixed provider-services number is published for benefits/eligibility — the QRG instead directs callers to "the Behavioral Health number located on the back of the member\'s ID card." EDI Support for 270/271 feed issues is 1-800-210-8315 (ac_edi_ops@uhc.com).',
+  portal: { name: 'Optum Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Which payer ID (pVerify or Availity) do you use for real-time 270/271 eligibility checks on UHC Community Plan NC?',
+    'What are the unit caps and cap periods for 97151-97157?',
+    'Do the HN/HO/HM/HP credential-tier modifiers from Optum\'s national ABA Modifier FAQ apply to NC Medicaid ABA claims, or only to commercial members?',
+    'What telehealth mechanics and place-of-service codes are approved for RB-BHT under the Optum-managed network?',
+    'Is the ABA cost share a copay or coinsurance, and does the deductible apply?',
+  ],
+  sources: [UHC_NC_ABA_QRG],
+};
+
+/* ==================== wellcare-north-carolina (merged 4/1/2026; contact routes to Carolina Complete Health) ==================== */
+
+const wellcareContact: VobContact = {
+  providerServicesPhone: '1-833-552-3876',
+  hours:
+    'Monday–Saturday, 7 a.m.–6 p.m. — this is Carolina Complete Health\'s provider-services line, the successor plan post-merger; WellCare of North Carolina no longer operates a standalone provider-services line under its own name (a "1-833-925-2861" number found on marketplace.wellcarenc.com this pass was confirmed to belong to WellCare\'s separate ACA Marketplace/Ambetter product, not this Medicaid Standard Plan, and was discarded rather than used).',
+  portal: {
+    name: 'Carolina Complete Health Provider Portal (successor to WellCare of NC, effective 4/1/2026)',
+    url: 'https://provider.carolinacompletehealth.com',
+  },
+  scriptedQuestions: [
+    'For legacy WellCare-of-NC members, do RB-BHT eligibility and prior-authorization calls now route entirely through Carolina Complete Health\'s provider-services line?',
+    'Which payer ID should I use for eligibility checks post-merger — Carolina Complete Health\'s 68069, or a legacy WellCare-specific code?',
+    'What were the unit caps and cap periods for 97151-97157 under WNC.CP.109, and do they still apply post-merger?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it per-visit or per-day?',
+  ],
+  sources: [CCH_BEHAVIORAL_HEALTH_PAGE, CCH_MERGER_PAGE, NCDHHS_MERGER_PLAYBOOK],
+};
+
+/* ==================== alliance-health-north-carolina ==================== */
+
+const allianceContact: VobContact = {
+  providerServicesPhone: '855-759-9700',
+  ivrPath:
+    'Member and Recipient Services (800-510-9132) is member-facing only — use Provider Support (855-759-9700) for practice/provider calls.',
+  portal: { name: 'Alliance Health Provider Portal', url: 'https://providerportal.alliancehealthplan.org/' },
+  scriptedQuestions: [
+    'What is Alliance\'s payer ID (pVerify, Availity, or Change Healthcare) for 270/271 eligibility checks — none is confirmed on any national payer list?',
+    'Does Alliance support real-time 270/271 eligibility checks, or is this batch-only?',
+    'What are Alliance\'s per-code unit caps for 97151-97157, beyond the 180-day authorization-cycle ceiling?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it per-visit or per-day?',
+    'Since Alliance is the LME-MCO itself, what STC bucket or benefit detail does a 270/271 eligibility check actually return for RB-BHT?',
+  ],
+  sources: [ALLIANCE_RBBHT_GUIDANCE],
+};
+
+/* ==================== trillium-health-resources ==================== */
+
+const trilliumContact: VobContact = {
+  providerServicesPhone: '866-998-2597',
+  ivrPath:
+    'Listed as "Business & Administrative Matters" in the Claims Submission Protocol\'s Tailored Plan Medicaid contact block; "Member & Recipient Services" (877-685-2415) is the separate member-facing line — do not use it for provider calls.',
+  portal: { name: 'Trillium Provider Direct Portal', url: 'https://www.trilliumhealthresources.org' },
+  scriptedQuestions: [
+    'Do you support real-time 270/271 eligibility checks, and what is your Availity/pVerify payer ID — neither is found on their national lists?',
+    'What are Trillium\'s per-code unit caps for 97151-97157, beyond the 180-day TAR cycle?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it per-visit or per-day?',
+    'Does the deductible apply to RB-BHT, and is there an out-of-pocket max?',
+    'What STC bucket does Trillium return ABA benefit detail under on a 270/271 eligibility response?',
+  ],
+  sources: [TRILLIUM_CLAIMS_PROTOCOL],
+};
+
+/* ==================== vaya-health ==================== */
+
+const vayaContact: VobContact = {
+  providerServicesPhone: '1-866-990-9712',
+  hours: '7 a.m.–6 p.m., Monday–Saturday, including holidays',
+  ivrPath:
+    'General Provider Support Service Line is 1-866-990-9712. Code-specific Authorizations (behavioral health) route to 1-800-893-6246 ext. 1515; Provider Portal/IT technical assistance is ext. 1500.',
+  portal: { name: 'Vaya Provider Portal', url: 'https://providers.vayahealth.com/provider-portal/' },
+  scriptedQuestions: [
+    'What is Vaya\'s payer ID for 270/271 real-time eligibility checks — only Office Ally\'s 13010 is confirmed; Vaya does not appear on pVerify or Availity\'s national lists?',
+    'What are the per-code unit caps for 97152, 97153, 97154, 97156, and 97157 (97151\'s 32-units/6-months and 97155\'s 10% passthrough are already confirmed)?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it per-visit or per-day?',
+    'Does the deductible apply to RB-BHT, and is there an out-of-pocket max?',
+    'What STC bucket does Vaya return ABA benefit detail under on a 270/271 eligibility response?',
+  ],
+  sources: [VAYA_CONTACT_PAGE],
+};
+
+/* ==================== partners-health-management ==================== */
+
+const partnersContact: VobContact = {
+  providerServicesPhone: '1-877-398-4145',
+  portal: { name: 'Partners ProviderCONNECT Portal', url: 'https://providers.partnersbhm.org/category/providerconnect/' },
+  scriptedQuestions: [
+    'What is Partners\' payer ID for 270/271 eligibility checks — confirmed NOT 68069 (Carolina Complete Health\'s physical-health ID) — what do you actually use?',
+    'What are the per-code unit caps for 97151-97157 under the single ALL-codes authorization?',
+    'Is there a copay or coinsurance for RB-BHT, and if so is it per-visit or per-day?',
+    'Does the deductible apply to RB-BHT, and is there an out-of-pocket max?',
+    'What STC bucket does Partners return ABA benefit detail under on a 270/271 eligibility response?',
+  ],
+  sources: [PARTNERS_PROVIDER_NETWORK_CONTACTS],
+};
+
+/* ==================== aetna-north-carolina (commercial) ==================== */
+
+const aetnaContactNC: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  ivrPath:
+    'Choose the precertification prompt for ABA/behavioral-health prior-authorization requests — Aetna\'s own service-centers directory lists this as the Non-Medicare (including individual & family) plans line; no ABA-specific number was located.',
+  portal: { name: 'Availity Essentials (Aetna Payer Space)', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Does ABA route through a behavioral-health carve-out administrator, or stay on the medical plan — and what payer ID do you use for eligibility and claims?',
+    'What is your correct EDI payer ID for 270/271 real-time eligibility checks (both Availity\'s and Change Healthcare\'s listed codes are carried over from a stale 2012 snapshot)?',
+    'Is the ABA copay charged per-visit or per-day, and does it apply to the deductible?',
+    'What are the per-code unit caps, cap periods, and allowed place-of-service settings for 97151-97158/0362T/0373T?',
+    'What telehealth modifiers (GT/95) and licensure-tier modifiers are accepted on ABA claims?',
+    'What form or process is used for ABA precertification?',
+    'Does the plan\'s out-of-pocket max apply to ABA services?',
+  ],
+  sources: [AETNA_CONTACT_PAGE],
+};
+
+/* ==================== cigna-north-carolina (commercial) ==================== */
+
+const cignaContactNC: VobContact = {
+  providerServicesPhone: '877.279.7603',
+  hours:
+    'Monday–Friday, 8:30 a.m.–5:00 p.m. CT (Autism Care Coordinator team); PA-form submission issues specifically are staffed Monday–Friday, 9:00 a.m.–4:00 p.m. CT per the ABA Prior Authorization Form.',
+  fax: '860.687.9230',
+  ivrPath:
+    'Email ABA@Evernorth.com is preferred over fax for the ABA Prior Authorization Form. The general (non-ABA) Provider Services billing line is 800.926.2273.',
+  portal: { name: 'Evernorth Provider website', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'Is the ABA copay charged per-visit or per-day for this specific plan?',
+    'Is ABA cost share a copay or coinsurance for this plan (Cigna\'s family default is plan-dependent)?',
+    'Does the plan\'s out-of-pocket max apply to ABA/RB-BHT services?',
+    'What are the per-code unit caps and cap periods for 97151-97158/0362T/0373T?',
+    'What place-of-service settings and telehealth modifiers (GT/95) are accepted for ABA claims?',
+    'Do you support real-time or only batch 270/271 for this payer ID?',
+  ],
+  sources: [CIGNA_AUTISM_RESOURCE_GUIDE, EVERNORTH_ABA_PA_FORM],
+};
+
+/* ==================== unitedhealthcare-north-carolina (commercial) ==================== */
+
+const unitedhealthcareContactNC: VobContact = {
+  providerServicesPhone: '866-209-9320',
+  hours: '8 a.m.–8 p.m. Eastern time',
+  portal: { name: 'Optum Provider Express', url: 'https://www.providerexpress.com' },
+  scriptedQuestions: [
+    'Does ABA route to Optum Behavioral Health (payer ID 87726) for this specific commercial plan, or does it stay on standard medical routing — please confirm whether a second EDI hop is required?',
+    'Do you support real-time or only batch 270/271 for this payer ID?',
+    'Is ABA cost share a copay or coinsurance for this plan (UHC\'s family default is plan-dependent)?',
+    'Is the copay charged per-visit or per-day, and does the deductible apply?',
+    'Does the plan\'s out-of-pocket max apply to ABA services?',
+    'What telehealth modifiers and place-of-service settings are accepted for ABA billing under this plan?',
+  ],
+  sources: [OPTUM_PROVIDER_EXPRESS_SUPPORT],
+};
+
 /* ==================== export ====================
    SPLIT A (NC Medicaid Direct + 5 Standard Plans) and SPLIT B
    (4 Tailored Plans + 3 commercial) landed concurrently from two
@@ -1559,6 +1844,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: northCarolinaMedicaidCodeGrid,
     rates: northCarolinaMedicaidRates,
     stcMap: northCarolinaMedicaidStc,
+    vobContact: northCarolinaMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
   'healthy-blue-north-carolina': {
@@ -1566,6 +1852,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: healthyBlueCodeGrid,
     rates: healthyBlueRates,
     stcMap: ncStandardPlanUnverifiedStc('Healthy Blue'),
+    vobContact: healthyBlueContact,
     lastUpdated: ACCESS_DATE,
   },
   'amerihealth-caritas-north-carolina': {
@@ -1573,6 +1860,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: amerihealthCodeGrid,
     rates: amerihealthRates,
     stcMap: ncStandardPlanUnverifiedStc('AmeriHealth Caritas North Carolina'),
+    vobContact: amerihealthContact,
     lastUpdated: ACCESS_DATE,
   },
   'carolina-complete-health': {
@@ -1580,6 +1868,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: carolinaCompleteHealthCodeGrid,
     rates: carolinaCompleteHealthRates,
     stcMap: ncStandardPlanUnverifiedStc('Carolina Complete Health'),
+    vobContact: carolinaCompleteHealthContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-north-carolina': {
@@ -1587,6 +1876,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: unitedhealthcareCommunityPlanCodeGrid,
     rates: unitedhealthcareCommunityPlanRates,
     stcMap: ncStandardPlanUnverifiedStc('UnitedHealthcare Community Plan of North Carolina'),
+    vobContact: unitedhealthcareCommunityPlanContact,
     lastUpdated: ACCESS_DATE,
   },
   'wellcare-north-carolina': {
@@ -1594,6 +1884,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: wellcareCodeGrid,
     rates: wellcareRates,
     stcMap: ncStandardPlanUnverifiedStc('WellCare of North Carolina'),
+    vobContact: wellcareContact,
     lastUpdated: ACCESS_DATE,
   },
   // ---- SPLIT B: Tailored Plans + commercial ----
@@ -1602,6 +1893,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: allianceCodeGrid(),
     rates: allianceRates,
     stcMap: ncTailoredPlanUnverifiedStc('Alliance Health'),
+    vobContact: allianceContact,
     lastUpdated: ACCESS_DATE,
   },
   'trillium-health-resources': {
@@ -1609,6 +1901,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: trilliumCodeGrid(),
     rates: trilliumRates,
     stcMap: ncTailoredPlanUnverifiedStc('Trillium Health Resources'),
+    vobContact: trilliumContact,
     lastUpdated: ACCESS_DATE,
   },
   'vaya-health': {
@@ -1616,6 +1909,7 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: vayaCodeGrid(),
     rates: vayaRates,
     stcMap: ncTailoredPlanUnverifiedStc('Vaya Health'),
+    vobContact: vayaContact,
     lastUpdated: ACCESS_DATE,
   },
   'partners-health-management': {
@@ -1623,24 +1917,28 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     codeGrid: partnersCodeGrid(),
     rates: partnersRates,
     stcMap: ncTailoredPlanUnverifiedStc('Partners Health Management'),
+    vobContact: partnersContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-north-carolina': {
     edi: aetnaEdiNC,
     codeGrid: aetnaCodeGridNC,
     stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no North Carolina-specific 270/271 STC document found.'),
+    vobContact: aetnaContactNC,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-north-carolina': {
     edi: cignaEdiNC,
     codeGrid: cignaCodeGridNC,
     stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no North Carolina-specific override found.'),
+    vobContact: cignaContactNC,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-north-carolina': {
     edi: unitedhealthcareEdiNC,
     codeGrid: unitedhealthcareCodeGridNC,
     stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no North Carolina-specific override found.'),
+    vobContact: unitedhealthcareContactNC,
     lastUpdated: ACCESS_DATE,
   },
 };
