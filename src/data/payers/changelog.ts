@@ -1116,4 +1116,76 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'New Mexico + Arizona VOB enrichment shipped: Layers 1 (EDI routing crosswalk), 3 (code-level coverage grid, 97151–97158/0362T/0373T), and 4 (Medicaid rate tables) populated for all 8 NM Turquoise Care guides and all 11 AZ AHCCCS guides. NM: the LOD #53 ABA fee schedule (eff. 1/1/2025) ships verbatim with the full U5/U4/U3/U9/U1 credential ladder, and — because LOD #53 makes that FFS schedule an enforceable rate FLOOR for every Turquoise Care MCO and sub-vendor — the four MCO guides carry it as a verified minimum (their own paid rate at/above it is not published). PA verdicts come from the fee schedule\'s per-code flags (97153 + 0373T = PA; assessment/most treatment = no PA), independently confirmed for UHC Community Plan by its Turquoise Care QRG. The NM 271 MCO-enrollment loop/segment and carrier-code map ship \'unverified\' — the NM MMIS portal is Incapsula-blocked and NM routes 270/271 through the generic Conduent Eligibility Gateway (payer ID 00000001234); the HCA Turquoise Care Systems Manual\'s MCO/TPL constants are recorded as the closest (834/TPL, not 271) mapping. AZ: the AHCCCS ABA fee schedule (fixed rates eff. 11/1/2023, verified unchanged through FY26) ships with HM/HN/HO/HP tiers and the POS-12 home premium — with corrections vs. the guide prose (97155/97151/97158 have no HM tier; $25.05 is 97155-HN, not HM), and 97156/97157 (By Report) + 0362T/0373T (off the ABA schedule) ship \'unverified\'. The AHCCCS 5010A 270/271 Companion Guide v4.0 WAS retrievable: medicaid271Notes carries the verified 2120C NM1*Y2 managed-care segment and the 6-digit plan codes actually shown in its worked examples (Mercy Care 010306, AzCH 010422, DCS/CMDP 010166, CRS, AIHP, QMB/SLMB); UHCCP/Banner/Health-Choice/Molina 6-digit codes are not enumerated there → unverified. arizona-ddd carries no standalone payer ID (ABA rides the member\'s DDD Health Plan, Mercy Care DD 86052 or UHCCP DD 03432; DDD enrollment resolves in one 271 hop via EB05 "DDD Subcontractor Plan" + NM1*Y2). AHCCCS integrated BH into ACC (2018)/DDD (2019), so ABA rides each plan\'s medical payer ID — no BH carve-out, no two-hop. One unresolved conflict shipped as-is: UHC Community Plan NM claims ID — the Optum NM ABA QRG says 87726/ERA 86047, but UHC\'s own current affiliate list shows NM Medicaid = 87748 (87726 = NM Dual SNP) and 86047 = New Jersey. Cigna/Evernorth confirmed as a same-ID pass-through (62308) in both states. Commercial guides carry EDI + code grid but no rate table (contract-specific).',
+    guides: [
+      'new-mexico-medicaid',
+      'blue-cross-blue-shield-new-mexico',
+      'presbyterian-health-plan-new-mexico',
+      'molina-healthcare-new-mexico',
+      'unitedhealthcare-community-plan-new-mexico',
+      'aetna-new-mexico',
+      'cigna-new-mexico',
+      'unitedhealthcare-new-mexico',
+      'arizona-ahcccs',
+      'mercy-care-arizona',
+      'unitedhealthcare-community-plan-arizona',
+      'arizona-complete-health',
+      'banner-university-family-care',
+      'health-choice-arizona',
+      'molina-healthcare-arizona',
+      'arizona-ddd',
+      'aetna-arizona',
+      'cigna-arizona',
+      'unitedhealthcare-arizona',
+    ],
+    details: [
+      {
+        slug: 'new-mexico-medicaid',
+        field: 'rates',
+        change:
+          'LOD #53 ABA fee schedule (eff. 1/1/2025) shipped verbatim: 97151 $130.94 (U5/U4)/$112.65 (U3); 97153 $38.02/$37.99/$32.31/$23.35/$19.85 (U5/U4/U3/U9/U1); 97155 $55.55/$39.69; 97156 $35.79/$25.78; 0362T $130.94/$112.29; 0373T $119.05/$107.13; T1026 UC/UD $142.84/hr ($109.27 supervising BCaBA); ISP Update (T1026 HI HK) $206.33. Under LOD #53 this is an enforceable MCO rate floor.',
+        sourceUrl: 'https://www.hca.nm.gov/wp-content/uploads/FInal-LOD-53-Applied-Behavioral-Analysis-ABA-Fee-Schedule-Rates.pdf',
+      },
+      {
+        slug: 'new-mexico-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          "271 MCO-enrollment segment/carrier-code map shipped 'unverified': the NM MMIS provider portal is Imperva/Incapsula-blocked and NM appears to route 270/271 through the generic Conduent Eligibility Gateway (payer ID 00000001234, real-time, 1-yr look-back, date-range), which publishes no NM-specific MCO segment. The HCA Turquoise Care Systems Manual v1.10 MCO/TPL constants (TPLBCBS/TPLPRESBYTERIAN/TPLUNITED/TPLMOLINA) are 834/TPL, not 271. NEW: HCA 'Turquoise Claims' single-point-of-entry launched 3/23/2026 (legacy IDs denied after 6/15/2026).",
+        sourceUrl: 'https://downloads.conduent.com/content/usa/en/document/270-payer-guide-medicaid-5010.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-new-mexico',
+        field: 'edi.payerId.changeHealthcare',
+        change:
+          "Shipped as an unresolved conflict rather than guessed: the Optum NM Turquoise Care ABA QRG (cited in the guide prose) states claims Payer ID 87726 (ERA 86047), but UHC's own current Claims Payer List for Affiliates & Strategic Alliances shows NM Medicaid = 87748 (with 87726 labeled the NM Dual SNP, 'Former 87726') and 86047 = New Jersey; the NM ERA appears under a multi-state row (candidate 04567). changeHealthcare set to 87748 with the conflict documented.",
+        sourceUrl: 'https://www.uhcprovider.com/content/dam/provider/docs/public/resources/edi/Payer-List-UHC-Affiliates-Strategic-Alliances.pdf',
+      },
+      {
+        slug: 'arizona-ahcccs',
+        field: 'edi.medicaid271Notes',
+        change:
+          'AHCCCS 270/271 Companion Guide v4.0 (Sept 2022) retrieved: managed-care enrollment returns in 2110C (EB*3*IND*30*HM*<6-digit code+name>, REF*6P contract type) and the definitive 2120C NM1*Y2 (Managed Care Organization) segment; daily spans (D8/RD8); real-time + batch. mcoCarrierCodes populated from the guide\'s worked examples (010306 Mercy Care, 010422 AzCH, 010166 DCS/CMDP, 010115/999125 CRS, 999998 AIHP, 008715 QMB, 008040 SLMB). UHCCP/Banner/Health-Choice/Molina 6-digit codes are not enumerated in the guide → unverified.',
+        sourceUrl: 'https://www.azahcccs.gov/Resources/Downloads/EDIchanges/AZ270_271_CG.pdf',
+      },
+      {
+        slug: 'arizona-ahcccs',
+        field: 'rates',
+        change:
+          'AHCCCS ABA fee schedule (fixed eff. 11/1/2023, unchanged through FY26 eff. 10/1/2025): 97153 $17.91 (HM)/$21.32 (HN)/$23.69 (HO/HP) office, ~10–11.5% home premium. CORRECTIONS vs. prose: 97155/97151/97158 have NO HM tier ($25.05 = 97155-HN, not HM). 97156/97157 remain By Report; 0362T/0373T are off the ABA fee schedule → all four shipped unverified.',
+        sourceUrl: 'https://www.azahcccs.gov/AHCCCS/Downloads/PublicNotices/rates/FinalPublicNotice_RateChanges_20231101_ABA.pdf',
+      },
+      {
+        slug: 'arizona-ddd',
+        field: 'edi.bhCarveOut',
+        change:
+          "DDD has no standalone EDI payer ID — ABA rides the member's DDD Health Plan (Mercy Care DD 86052 or UHCCP DD 03432; both integrated BH since 10/1/2019). DDD enrollment resolves in one AHCCCS 271 hop via EB05 'DDD Subcontractor Plan'/'DES/DDD Targeted Support Coordination' + the NM1*Y2 plan; the CG publishes no DDD 6-digit code or explicit ABA routing rule, so that is established by the DES DDD Health Plans documents.",
+        sourceUrl: 'https://des.az.gov/services/disabilities/developmental-disabilities/individuals-and-families/supports-and-services/ddd-health-plans-info',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
