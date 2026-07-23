@@ -489,4 +489,66 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 169, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'NY split B shipped (docs/vob-build.md): Layer 1 (EDI routing crosswalk) + Layer 3 (code-level coverage grid) for 8 guides — the 5 upstate Medicaid MCOs (Excellus, MVP, CDPHP, Independent Health, Highmark Western & Northeastern NY) plus Aetna, Cigna, and UnitedHealthcare commercial. Layer 4 (Medicaid rates) intentionally NOT populated for any of the 5 MCOs: none publish their own ABA fee schedule, and the state eMedNY schedule is FFS-only and explicitly doesn\'t bind MMC plans (per the existing new-york-medicaid guide\'s own sourced text) — commercial gets no rates per spec either. Re-fetched pVerify\'s and Availity\'s public payer-list PDFs and, since both defeat naive text extraction (columns collapse into disjoint blocks), parsed them to structured tables this pass rather than reusing unconfirmed numbers. Resolved two ambiguities this corpus\'s Georgia guide had left open for the same commercial carriers: UnitedHealthcare\'s Optum Behavioral Health carve-out payer ID (UHG007, pVerify) and a plain "87726 UNITEDHEALTHCARE" Availity entry (Georgia\'s guide found none). Discovered the fetched Availity PDF carries an "As of 08/08/2012" footer — consistent with this corpus\'s prior aetna-florida finding on the same URL — so every Availity-sourced ID here ships \'inferred\', not \'verified\', except MVP\'s (independently confirmed via MVP\'s own 2025 Provider Policies document naming Payee ID 14165 directly). Captured the Medicaid-specific pVerify line item where one exists (Highmark: "01357 HIGHMARK BCBS WESTERN NY - MEDICAID AND CHP", distinct from its general "00325 BCBS of Western New York" and legacy "00326 Healthnow" entries) and flagged plain ambiguity honestly where none does (CDPHP: two unresolved generic candidates, 00328 and 002466; MVP: pVerify\'s only match is Child-Health-Plus-labeled, not a general MMC line; Excellus: no Medicaid-specific line among several regional sub-brand entries). Independent Health\'s codeGrid and BH-carve-out fields ship mostly \'inferred\'/\'unverified\' because its MediSource member handbook describes ABA by service category, not CPT code, and never states outright whether Carelon (which the plan says administers general BH) or Independent Health itself adjudicates ABA specifically — the handbook\'s own section placement is the only (indirect) evidence. Highmark WNY\'s codeGrid carries the richest confirmed telehealth detail in this split (97151/97153/97155/97156/97157 via POS 02 + modifier 95/GT, from a 2020/Jan-2022 COVID-era bulletin) alongside its stated $45,000/calendar-year benefit maximum. Commercial codeGrid entries mirror Georgia\'s finding that none of the three carriers publish code-level unit caps, POS codes, or modifiers nationally, layering on New York\'s 680-hour/year mandate cap and LBA-licensure requirement (DFS Circular Letter 6; NYSED Article 167) as notes since both are verified for New York directly. QA spot-check: re-opened Cigna\'s Autism Resource Guide, MVP\'s FastFax #2025.16, and Highmark\'s COVID-19 telehealth bulletin directly against the claims made from them in the guide prose — all three matched.',
+    guides: [
+      'excellus-bcbs-new-york',
+      'mvp-health-plan-new-york',
+      'cdphp-new-york',
+      'independent-health-new-york',
+      'highmark-western-new-york',
+      'aetna-new-york',
+      'cigna-new-york',
+      'unitedhealthcare-new-york',
+    ],
+    details: [
+      {
+        slug: 'unitedhealthcare-new-york',
+        field: 'edi.bhCarveOut.administratorPayerId',
+        change:
+          'Resolved this corpus\'s Georgia-guide ambiguity: pVerify lists a distinct "UHG007 United Healthcare - Optum Behavioral Solutions" line, separate from UHC\'s own 87726/00192 — used as the Optum BH carve-out\'s own payer ID, though whether ABA specifically rides that hop for NY commercial members (vs. UHC\'s medical ID) remains unconfirmed.',
+        sourceUrl: 'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+      },
+      {
+        slug: 'highmark-western-new-york',
+        field: 'edi.payerId',
+        change:
+          'Captured the Medicaid-specific pVerify line item directly: "01357 HIGHMARK BCBS WESTERN NY - MEDICAID AND CHP" — distinct from the plan\'s general "00325 BCBS of Western New York" and legacy-brand "00326 Healthnow" entries, neither of which is used for this Medicaid guide.',
+        sourceUrl: 'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+      },
+      {
+        slug: 'mvp-health-plan-new-york',
+        field: 'edi.payerId.availity',
+        change:
+          'Verified 14165 independent of the stale (2012-dated) Availity PDF: MVP\'s own 2025 Provider Policies document states directly "EDI submissions use Payee ID 14165," matching the Availity list\'s "14165 MVP HEALTH PLAN" entry.',
+        sourceUrl:
+          'https://www.mvphealthcare.com/-/media/project/mvp/healthcare/documents/provider-policies-and-payment-policies/2025/january/mvp-provider-policies-effective-january-1-2025.pdf',
+      },
+      {
+        slug: 'independent-health-new-york',
+        field: 'edi.bhCarveOut',
+        change:
+          'Shipped unverified rather than guessing: Independent Health\'s own policy page says Carelon "oversees all behavioral health benefit management" for its state products, but the current MediSource member handbook describes ABA in "Independent Health covers..." language, apart from the Carelon-branded BH section — indicative, not an explicit single-sentence confirmation either way.',
+        sourceUrl: 'https://www.independenthealth.com/providers/policies-and-guidelies/behavioral-health-for-state-products',
+      },
+      {
+        slug: 'cdphp-new-york',
+        field: 'edi.payerId',
+        change:
+          'Two unresolved candidate pVerify IDs found for CDPHP ("00328 Capital District Physicians Health Plan (CDPHP)" and "002466 CDPHP(Capital District Physicians Health Plan)"), both generic with no Medicaid designation — shipped both, unresolved, rather than picking one.',
+        sourceUrl: 'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+      },
+      {
+        slug: 'aetna-new-york',
+        field: 'edi.payerId.availity / edi.payerId.changeHealthcare',
+        change:
+          'Downgraded from \'verified\' to \'inferred\' after discovering the fetched Availity PDF carries an "As of 08/08/2012" footer (matching this corpus\'s prior aetna-florida finding on the identical URL) — 60054 remains Aetna\'s long-standing national payer ID but is not independently reconfirmed against a current export this pass.',
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+    ],
+    totals: { guides: 169, states: 19 },
+  },
 ];
