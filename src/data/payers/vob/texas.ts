@@ -205,6 +205,17 @@ const FIRSTCARE_POLICY_206 = src('https://wadcdnstorageprod.blob.core.windows.ne
 const FIRSTCARE_PROVIDER_MANUAL = src('https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR-CHIP-Provider-Manual.pdf', 'FirstCare — 2026 STAR and CHIP Provider Manual — general PA turnaround 3 working days; submit ≥5 days before anticipated service date.');
 const FIRSTCARE_STAR_STATUS = src('https://www.firstcare.com/en/Individuals-and-Families/STAR-CHIP/STAR-Medicaid', 'FirstCare — STAR Medicaid plan-status page — states plans end 8/31/2026, subject to regulatory approval.');
 
+/* -------------------- gap-fill correction pass: EDI payer-ID research -------------------- */
+const PVERIFY_PAYER_LIST_PAGE = src('https://pverify.com/payer-list/', "pVerify's public payer-list page (distinct from the March-2026 PDF cited elsewhere in this file) — JS-rendered, so entries below were confirmed via repeated, consistently-matching queries rather than a raw-HTML grep.");
+const OPTUM_RT_ELIGIBILITY_PAYER_LIST = src('https://www.optum.com/content/dam/o4-dam/resources/pdfs/guides/optuminsight-rt-eligibility-payer-list.pdf', "Optum's official Real-Time (270/271) Eligibility Payer List (last-modified 5/22/2025) — downloaded and text-extracted directly.");
+const CHC_EDI_PAGE = src('https://provider.communityhealthchoice.org/resources/him-hipaa/', 'Community Health Choice — HIM/HIPAA/EDI resources page — states "Community currently receives electronic transactions through the following clearinghouse: Change Healthcare... Payor ID: 60495" (does not specify claims- vs. eligibility-specific).');
+const BCBSTX_MEDICAID_ELIGIBILITY_PAGE = src('https://www.bcbstx.com/provider/medicaid/claims-and-eligibility/eligibility', 'BCBSTX — Medicaid Claims and Eligibility page — states Availity payer ID 66002 for STAR/CHIP/STAR Kids eligibility (single combined ID, no per-program split stated).');
+const CCHP_EDI_PAGE = src('https://www.cookchp.org/providers/electronic-submission-services/', "Cook Children's Health Plan — Electronic Submission Services page — states \"CHIP Payor ID is CCHP1 and STAR/STAR Kids Payor ID is CCHP9.\"");
+const PCHP_EDI_PAGE = src('https://providers.parklandhealthplan.com/claims-payments/electronic-data-interchange/', 'Parkland Community Health Plan — Electronic Data Interchange page — states "The Parkland Community Health Plan Payer ID for electronic claims is Payer ID # 66917," naming Availity, TriZetto Provider Solutions, Office Ally, Emdeon, and Claim Logic as accepted paths.');
+const EPH_PAYER_ID_PDF = src('https://www.elpasohealth.com/documents/EPH-PR-El-Paso-Health-Payer-Identifications---Updated-09.24.pdf', "El Paso Health — \"Availity/TPS Payer Identifications\" (updated 9/24) — states the plan's agreement is with Availity and TriZetto Provider Solutions only, with per-line-of-business codes (STAR/STAR+PLUS: EPF02; CHIP: EPF03; Healthcare Options: EPF37; Preferred Administrators: EPF10; Preferred Administrators Children's Hospital: EPF11) and no mention of Change Healthcare or Optum anywhere.");
+const TMHP_FIRSTCARE_EXIT_NEWS = src('https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid', 'TMHP news (7/17/2026) — "Baylor Scott & White and FirstCare Health Plans Will End Participation in Texas Medicaid" — TMHP will not accept claims with dates of service after 8/31/2026.', true);
+const HHS_FIRSTCARE_EXIT_NEWS = src('https://www.hhs.texas.gov/provider-news/2026/07/21/evv-impacts-baylor-scott-white-firstcare-mcos-end-participation-texas-medicaid-managed-care', 'Texas HHS provider news (7/21/2026) — confirms Baylor Scott & White/FirstCare\'s exit from Texas Medicaid managed care and resulting EVV impacts.', true);
+
 /* -------------------- Layer 3: TMPPM-baseline code grid -------------------- */
 /* Shared across texas-medicaid and all 8 Medicaid MCO guides — every MCO
    guide's existing prose already establishes it applies these state
@@ -902,139 +913,162 @@ function uhcTxEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
    rather than a guess. */
 
 const chcEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: { pverify: '01071', availity: '48145', changeHealthcare: 'unverified — conflicting candidates (60495 vs. 48145), see verifyVia' },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
+    'payerId.pverify': 'inferred',
+    'payerId.availity': 'verified',
     'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
-    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Community Health Choice" was independently confirmed this pass — confirm via pVerify/Availity onboarding or CHC provider services (713-295-2273).',
-    'payerId.availity': 'Same as pverify.',
-    supports270271: 'Confirm via clearinghouse onboarding — CHC as a Texas Medicaid MCO rides the same centralized TMHP 270/271 feed as every other MCO in this file (see texasMedicaidEdi.medicaid271Notes), but a distinct clearinghouse-side payer ID for CHC specifically was not confirmed.',
+    'payerId.pverify': "pVerify's payer-list page (JS-rendered) shows 01071 \"Community Health Choice\" (Eligibility: Yes) — confirmed via repeated matching queries, not an independent raw-HTML grep; slightly lower confidence than the Availity figure.",
+    'payerId.changeHealthcare':
+      "Two authoritative-looking values conflict and neither is picked as a default: (1) 60495, per CHC's own EDI page, which names Change Healthcare directly but doesn't specify claims- vs. eligibility-specific; (2) 48145, per Optum's official Real-Time (270/271) Eligibility Payer List, a document specifically scoped to eligibility — and it matches the Availity ID exactly. Confirm directly with Change Healthcare/Optum or CHC provider services (713-295-2273) before routing.",
+    supports270271: 'Availity master payer list (48145, INITLOAD) confirms Availity Essentials routing; also rides the centralized TMHP 270/271 feed described in texasMedicaidEdi.medicaid271Notes.',
     'bhCarveOut.administrator': "CHC's own ABA Medical Review Guideline describes CHC's own UM machinery throughout (frequency tiers, attendance rule, named exclusions) with no external BH vendor named anywhere.",
   },
-  sources: [CHC_ABA_GUIDELINE, CHC_HHS_MANUAL, CHC_STAR_QRG, CHC_STARPLUS_QRG],
+  sources: [CHC_ABA_GUIDELINE, CHC_HHS_MANUAL, CHC_STAR_QRG, CHC_STARPLUS_QRG, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST, CHC_EDI_PAGE, OPTUM_RT_ELIGIBILITY_PAYER_LIST],
 };
 
 const bcbstxMedicaidEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: { pverify: '01017 (STAR/CHIP) / 01352 (STAR Kids)', availity: '66002', changeHealthcare: 'HCSVC' },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
-    'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    'payerId.pverify': 'inferred',
+    'payerId.availity': 'inferred',
+    'payerId.changeHealthcare': 'inferred',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
     'payerId.pverify':
-      "BCBSTX's commercial/FEP lines have well-known distinct payer IDs, but a Medicaid-line-specific pVerify/Availity entry for \"BCBSTX Medicaid\"/STAR was not independently confirmed this pass — confirm via Availity Essentials onboarding, and take care not to route a Medicaid member on the commercial BCBSTX payer ID.",
-    'payerId.availity': 'Same as pverify.',
-    supports270271: 'Confirm via clearinghouse onboarding — BCBSTX Medicaid rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+      "pVerify's payer-list page shows TWO distinct Medicaid-specific entries, separate from the commercial BCBSTX code (00220): 01017 \"BCBS Texas Medicaid STAR CHIP\" and 01352 \"BCBS TEXAS MEDICAID STAR Kids.\" Confirmed via repeated matching queries, not an independent raw-HTML grep.",
+    'payerId.availity':
+      "66002 is stated on BCBSTX's own Medicaid eligibility page (covering STAR/CHIP/STAR Kids together, no per-program split) — but this exact code could NOT be found in Availity's own master payer-list PDF (only commercial BCBSTX-family codes appear there), so it's sourced from the payer's own site pointing at Availity, not independently cross-validated against Availity's published list. Confirm via Availity Essentials onboarding before routing.",
+    'payerId.changeHealthcare':
+      "HCSVC per Optum's official Real-Time Eligibility Payer List, labeled \"BCBS Texas Medicaid Star CHIP\" — explicitly STAR/CHIP scope; whether it also covers STAR Kids (which has its own distinct pVerify code, 01352) is unconfirmed.",
+    supports270271: 'Rides the same centralized TMHP 270/271 feed as every other MCO in this file; also has distinct clearinghouse-side codes across all three networks researched (see payerId fields).',
     'bhCarveOut.administrator':
       "As recently as a 7/5/2023-dated PA summary, BCBSTX directed providers to Magellan for Texas Medicaid behavioral health — a carve-out. BCBSTX announced 'insourcing' of Medicaid behavioral health on 5/10/2024, and every current-generation document found (PA checklist rev. 4/26/2024, Sept. 2024 UM training) routes ABA to BCBSTX's own BH intake fax/Availity, with no Magellan reference. Shipped 'none' for the CURRENT state; if a legacy document still references Magellan, treat it as superseded per BCBSTX's own 2024 announcement.",
   },
-  sources: [BCBSTX_MEDICAID_NEWS, BCBSTX_ABA_CHECKLIST, BCBSTX_MEDICAID_MANUAL, BCBSTX_PA_CODE_GRID],
+  sources: [BCBSTX_MEDICAID_NEWS, BCBSTX_ABA_CHECKLIST, BCBSTX_MEDICAID_MANUAL, BCBSTX_PA_CODE_GRID, PVERIFY_PAYER_LIST_PAGE, BCBSTX_MEDICAID_ELIGIBILITY_PAGE, OPTUM_RT_ELIGIBILITY_PAYER_LIST],
 };
 
 const cchpEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: { pverify: '01077', availity: 'CCHP1 (CHIP) / CCHP9 (STAR, STAR Kids)', changeHealthcare: 'unverified — confirmed absent from Optum\'s official Real-Time Eligibility Payer List' },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
+    'payerId.pverify': 'inferred',
+    'payerId.availity': 'verified',
     'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
-    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Cook Children\'s Health Plan" was independently confirmed this pass — confirm via clearinghouse onboarding or Provider Support Services (1-888-243-3312).',
-    'payerId.availity': 'Same as pverify.',
-    supports270271: "Confirm via clearinghouse onboarding — Cook Children's Health Plan rides the same centralized TMHP 270/271 feed as every other MCO in this file.",
+    'payerId.pverify': "pVerify's payer-list page shows a single 01077 \"Cook Children's Health Plan\" entry (Eligibility: Yes), no CHIP/STAR split — confirmed via repeated matching queries, not an independent raw-HTML grep.",
+    'payerId.availity': "Availity's own master list independently confirms both codes, matching Cook Children's own EDI page verbatim (\"CHIP Payor ID is CCHP1 and STAR/STAR Kids Payor ID is CCHP9\") — strong agreement between two independent sources.",
+    supports270271: "Confirmed via Availity's master payer list; also rides the centralized TMHP 270/271 feed as every other MCO in this file.",
     'bhCarveOut.administrator': "Cook Children's own 123-page ABA provider training and Acute PA training describe the plan's own EpicCare Link authorization pipeline throughout, with no external BH vendor named anywhere.",
   },
-  sources: [CCHP_ABA_TRAINING, CCHP_ACUTE_PA_TRAINING, CCHP_PA_SEARCH, CCHP_CCP_FORM],
+  sources: [CCHP_ABA_TRAINING, CCHP_ACUTE_PA_TRAINING, CCHP_PA_SEARCH, CCHP_CCP_FORM, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST, CCHP_EDI_PAGE, OPTUM_RT_ELIGIBILITY_PAYER_LIST],
 };
 
 const pchpEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: { pverify: 'unverified — confirmed absent from pVerify\'s payer list', availity: '66917', changeHealthcare: '66917' },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
     'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
-    'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
-    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Parkland Community Health Plan" was independently confirmed this pass — confirm via clearinghouse onboarding or PCHP provider services (1-888-672-2277).',
-    'payerId.availity': 'Same as pverify.',
-    supports270271: 'Confirm via clearinghouse onboarding — PCHP rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'payerId.pverify': 'Searched pVerify\'s payer-list page twice for "Parkland" in any form — no matching row exists. Confirm via pVerify onboarding if this changes.',
+    'payerId.availity':
+      "66917 is confirmed by THREE independent sources agreeing exactly: Availity's own master payer list, PCHP's own EDI page (\"Payer ID # 66917\"), and Optum's Real-Time Eligibility Payer List — the strongest cross-validation among the 6 new TX guides. One caveat: Optum's list also carries a legacy/alias entry, \"Schaller Anderson Parkland Community PRCHP\" (Schaller Anderson was an earlier third-party administrator) — flagged as likely deprecated but not fully confirmed dead; don't use PRCHP.",
+    'payerId.changeHealthcare': 'Same 66917 code confirmed in Optum\'s official Real-Time Eligibility Payer List ("Parkland Community Health Plan 66917 ALL").',
+    supports270271: 'Confirmed via Availity/Optum payer lists; also rides the centralized TMHP 270/271 feed as every other MCO in this file.',
     'bhCarveOut.administrator':
       "PCHP transitioned behavioral health administration from Carelon Behavioral Health to direct in-house administration effective 9/1/2025 — providers who had contracted with Carelon for PCHP's BH network had to re-contract directly with PCHP. Shipped 'none' for the CURRENT state; PCHP's own 218-page provider manual (last revised Sept. 2024) still describes a Carelon relationship and is treated as materially out of date for BH/ABA per PCHP's own transition announcement.",
   },
-  sources: [PCHP_PA_REQUIREMENTS, PCHP_BH_TRANSITION, PCHP_BH_NETWORK_PAGE, PCHP_ABA_OVERVIEW],
+  sources: [PCHP_PA_REQUIREMENTS, PCHP_BH_TRANSITION, PCHP_BH_NETWORK_PAGE, PCHP_ABA_OVERVIEW, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST, PCHP_EDI_PAGE, OPTUM_RT_ELIGIBILITY_PAYER_LIST],
 };
 
 const ephEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: {
+    pverify: '00796 (branded "El Paso First Health Plans CHIP" — CHIP scope only; STAR/STAR+PLUS coverage under this code unconfirmed)',
+    availity: 'EPF02 (STAR/STAR+PLUS), EPF03 (CHIP), EPF37 (Healthcare Options), EPF10/EPF11 (Preferred Administrators)',
+    changeHealthcare: 'N/A — El Paso Health\'s own documentation confirms no Change Healthcare/Optum relationship (Availity + TriZetto Provider Solutions only)',
+  },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
-    'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    'payerId.pverify': 'inferred',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
-    'payerId.pverify': 'No pVerify/Availity payer-list entry for "El Paso Health" (or its former name, "El Paso First Health Plans") was independently confirmed this pass — confirm via clearinghouse onboarding or El Paso Health provider services (915-532-3778).',
-    'payerId.availity': 'Same as pverify.',
-    supports270271: 'Confirm via clearinghouse onboarding — El Paso Health rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'payerId.pverify':
+      "Only one pVerify entry was found — 00796, explicitly branded \"El Paso First Health Plans CHIP\" — despite multiple targeted searches, no separate STAR/STAR+PLUS entry exists on pVerify's list. Whether 00796 also routes STAR/STAR+PLUS eligibility (as the single Availity code EPF02 does not cover CHIP) is unconfirmed; do not assume it does.",
+    'payerId.availity':
+      "Multiple line-specific codes confirmed by full agreement between El Paso Health's own \"Availity/TPS Payer Identifications\" PDF and Availity's independent master payer list: STAR Medicaid HMO (Premier Plan) + STAR+PLUS = EPF02; CHIP = EPF03; Healthcare Options (HCO) = EPF37; Preferred Administrators = EPF10; Preferred Administrators Children's Hospital = EPF11. Route by line of business, not a single generic code.",
+    'payerId.changeHealthcare': "El Paso Health's own payer-ID document states explicitly its clearinghouse agreement is with Availity and TriZetto Provider Solutions (TPS) only, with no mention of Change Healthcare or Optum anywhere; also confirmed absent from Optum's official Real-Time Eligibility Payer List — a verified absence, not an unresearched gap.",
+    supports270271: "Confirmed via Availity's master payer list and El Paso Health's own EDI documentation; also rides the centralized TMHP 270/271 feed as every other MCO in this file.",
     'bhCarveOut.administrator': "El Paso Health's own ABA Request Checklist and 2026 documentation memos describe the plan's own PA pipeline (portal, fax, phone) throughout, with no external BH vendor named anywhere.",
   },
-  sources: [EPH_ABA_CHECKLIST, EPH_DOC_MEMO, EPH_DX_MEMO, EPH_QRG],
+  sources: [EPH_ABA_CHECKLIST, EPH_DOC_MEMO, EPH_DX_MEMO, EPH_QRG, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST, EPH_PAYER_ID_PDF, OPTUM_RT_ELIGIBILITY_PAYER_LIST],
 };
 
 const firstcareEdi: EdiRouting = {
-  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
-  supports270271: 'unverified',
+  payerId: { pverify: '01105 (generic "FirstCare" — no Medicaid/STAR/CHIP-specific split found)', availity: '94998 (FirstCare Medicaid; distinct from 94999, FirstCare general/commercial)', changeHealthcare: 'unverified — confirmed absent from Optum\'s official Real-Time Eligibility Payer List' },
+  supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
-    'payerId.availity': 'unverified',
+    'payerId.pverify': 'inferred',
+    'payerId.availity': 'verified',
     'payerId.changeHealthcare': 'unverified',
-    supports270271: 'unverified',
+    supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'inferred',
   },
   verifyVia: {
-    'payerId.pverify': 'No pVerify/Availity payer-list entry for "FirstCare Health Plans" (Medicaid line) was independently confirmed this pass — confirm via clearinghouse onboarding. Note the plan\'s own site states its Medicaid plans end 8/31/2026, subject to regulatory approval; re-verify enrollment status before onboarding.',
-    'payerId.availity': 'Same as pverify.',
-    supports270271: 'Confirm via clearinghouse onboarding — FirstCare rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'payerId.pverify': "pVerify's payer-list page shows a single generic 01105 \"FirstCare\" entry (Eligibility: Yes) with no Medicaid-specific split — confirmed via repeated matching queries, not an independent raw-HTML grep. IMPORTANT: TMHP and Texas HHS both confirmed (7/17/2026 and 7/21/2026 respectively) that Baylor Scott & White/FirstCare is exiting Texas Medicaid managed care effective 9/1/2026 — TMHP will not accept claims with dates of service after 8/31/2026. Treat this MCO's Medicaid line as expiring, not a stable long-term payer, regardless of any payer ID confirmed here.",
+    'payerId.availity': "Availity's master payer list independently confirms two distinct codes: 94998 \"FIRSTCARE - MEDICAID\" and 94999 \"FIRSTCARE\" (general/commercial) — use 94998 for Medicaid members. FirstCare's own public provider pages do not independently state either code.",
+    supports270271: "Confirmed via Availity's master payer list; also rides the centralized TMHP 270/271 feed as every other MCO in this file — through 8/31/2026, per the confirmed Medicaid exit above.",
     'bhCarveOut.administrator':
       'FirstCare\'s Medicaid PA code list files ABA under "Therapy services," not "Behavioral health," and no external BH vendor is named for ABA specifically — but FirstCare\'s own contact tables list separate Medical PA (1-800-884-4905) and Behavioral Health PA (1-855-395-9652) lines, and which one actually processes ABA requests is not resolved in FirstCare\'s own documents. Shipped \'none\' (no third-party vendor) as inferred rather than verified, given that internal-routing ambiguity.',
   },
-  sources: [FIRSTCARE_PA_LIST, FIRSTCARE_POLICY_206, FIRSTCARE_PROVIDER_MANUAL, FIRSTCARE_STAR_STATUS],
+  sources: [
+    FIRSTCARE_PA_LIST,
+    FIRSTCARE_POLICY_206,
+    FIRSTCARE_PROVIDER_MANUAL,
+    FIRSTCARE_STAR_STATUS,
+    PVERIFY_PAYER_LIST_PAGE,
+    AVAILITY_PAYER_LIST,
+    OPTUM_RT_ELIGIBILITY_PAYER_LIST,
+    TMHP_FIRSTCARE_EXIT_NEWS,
+    HHS_FIRSTCARE_EXIT_NEWS,
+  ],
 };
 
 /* ==================== Layer 2 — STC interpretation maps ====================
@@ -1236,7 +1270,7 @@ export const texasVob: Record<string, VobExtension> = {
   'firstcare-health-plans': {
     edi: firstcareEdi,
     codeGrid: tmppmCodeGrid({
-      '97151': "FirstCare's Medicaid/CHIP PA code list (eff. 7/1/2026) confirms 97151 requires authorization, filed under \"Therapy services\" rather than \"Behavioral health.\" Submit via the myFirstCare Self-Service Portal (my.firstcare.com/Web) or fax using the Texas Standard PA form. FirstCare's own site states its plans end 8/31/2026, subject to regulatory approval — confirm current enrollment/transition status before treating this as a stable long-term payer relationship.",
+      '97151': "FirstCare's Medicaid/CHIP PA code list (eff. 7/1/2026) confirms 97151 requires authorization, filed under \"Therapy services\" rather than \"Behavioral health.\" Submit via the myFirstCare Self-Service Portal (my.firstcare.com/Web) or fax using the Texas Standard PA form. CONFIRMED (not just plan-stated): TMHP (7/17/2026) and Texas HHS (7/21/2026) both announced Baylor Scott & White/FirstCare is exiting Texas Medicaid managed care effective 9/1/2026 — TMHP will not accept claims with dates of service after 8/31/2026. Treat this MCO's Medicaid line as expiring within weeks of this dataset's access date, not a stable long-term payer relationship.",
     }),
     rates: mcoUnverifiedRates('FirstCare Health Plans'),
     stcMap: txMcoInferredStc('FirstCare Health Plans'),

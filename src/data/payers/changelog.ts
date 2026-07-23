@@ -1411,4 +1411,56 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      "EDI payer-ID follow-up for the 6 new Texas MCO guides shipped in the prior entry: their edi.payerId fields, shipped 'unverified' pending research, are now populated (or explicitly confirmed absent) against pVerify's payer-list page, Availity's master payer list (downloaded and grep-verified directly), and Optum's official Real-Time (270/271) Eligibility Payer List (also downloaded and grep-verified directly). Community Health Choice: pVerify 01071, Availity 48145 — Change Healthcare ships an explicit unresolved conflict (60495 per CHC's own EDI page vs. 48145 per Optum's eligibility list) rather than picking one. BCBS Texas Medicaid: two distinct pVerify codes confirmed (01017 STAR/CHIP, 01352 STAR Kids) — genuinely different from the single combined Availity code (66002, sourced from BCBSTX's own site, not independently found in Availity's own master list) and Optum's HCSVC (labeled STAR/CHIP scope only, STAR Kids coverage under it unconfirmed). Cook Children's Health Plan: pVerify 01077 (no CHIP/STAR split); Availity CCHP1 (CHIP) / CCHP9 (STAR, STAR Kids), cross-validated by the plan's own EDI page. Parkland Community Health Plan: confirmed absent from pVerify; Availity AND Change Healthcare both confirm 66917 (three independent sources agreeing exactly — the strongest cross-validation in this set), with a legacy 'Schaller Anderson Parkland Community PRCHP' alias flagged as likely deprecated but not fully confirmed dead. El Paso Health: pVerify's only entry (00796) is explicitly CHIP-scoped; Availity splits into 5 line-of-business-specific codes (EPF02 STAR/STAR+PLUS, EPF03 CHIP, EPF37 Healthcare Options, EPF10/EPF11 Preferred Administrators), all independently confirmed by the plan's own payer-ID PDF; Change Healthcare/Optum ships a verified absence (the plan's own documentation states its clearinghouse relationship is Availity + TriZetto only). FirstCare Health Plans: pVerify 01105 (generic, no Medicaid split); Availity distinguishes 94998 (Medicaid) from 94999 (general/commercial) — and a materially more important fact surfaced during this research: TMHP (7/17/2026) and Texas HHS (7/21/2026) both confirmed Baylor Scott & White/FirstCare is exiting Texas Medicaid managed care effective 9/1/2026 (TMHP will not accept claims with dates of service after 8/31/2026), upgrading the prior entry's softer 'plan's own site says subject to regulatory approval' framing to a confirmed exit date across two independent state sources. pVerify's page is JS-rendered and was queried via repeated matching results rather than an independent raw-HTML grep, so its values ship fieldStatus 'inferred' throughout this correction; Availity's and Optum's master-list PDFs were downloaded and text-extracted directly, so their values ship 'verified' where a clean single match was found.",
+    guides: [
+      'community-health-choice-texas',
+      'bcbs-texas-medicaid',
+      'cook-childrens-health-plan',
+      'parkland-community-health-plan',
+      'el-paso-health',
+      'firstcare-health-plans',
+    ],
+    details: [
+      {
+        slug: 'community-health-choice-texas',
+        field: 'edi.payerId.changeHealthcare',
+        change:
+          "Genuine cross-source conflict shipped unresolved rather than picking one: 60495 per CHC's own EDI page (names Change Healthcare directly but doesn't specify claims- vs. eligibility-specific) vs. 48145 per Optum's official Real-Time Eligibility Payer List (a document specifically scoped to 270/271, and matching the Availity ID exactly).",
+        sourceUrl: 'https://provider.communityhealthchoice.org/resources/him-hipaa/',
+      },
+      {
+        slug: 'bcbs-texas-medicaid',
+        field: 'edi.payerId.pverify',
+        change:
+          'Confirmed as two genuinely distinct codes, not one: 01017 for STAR/CHIP and 01352 for STAR Kids — a real per-program split at the pVerify level that does not exist at Availity (single combined 66002) or Optum (HCSVC, STAR/CHIP-scoped only).',
+        sourceUrl: 'https://pverify.com/payer-list/',
+      },
+      {
+        slug: 'parkland-community-health-plan',
+        field: 'edi.payerId',
+        change:
+          'Availity (66917), Change Healthcare/Optum (66917), and PCHP\'s own EDI page (66917) all agree exactly — the strongest cross-validation of any payer ID in this build. A legacy alias, "Schaller Anderson Parkland Community PRCHP," appears in Optum\'s list and is flagged as likely deprecated (an earlier third-party administrator) but not dropped outright since it could not be fully confirmed dead.',
+        sourceUrl: 'https://providers.parklandhealthplan.com/claims-payments/electronic-data-interchange/',
+      },
+      {
+        slug: 'el-paso-health',
+        field: 'edi.payerId.availity',
+        change:
+          "Not a single payer ID — El Paso Health routes 5 distinct line-of-business codes (EPF02 STAR/STAR+PLUS, EPF03 CHIP, EPF37 Healthcare Options, EPF10/EPF11 Preferred Administrators), independently confirmed by full agreement between the plan's own \"Availity/TPS Payer Identifications\" PDF and Availity's separate master payer list.",
+        sourceUrl: 'https://www.elpasohealth.com/documents/EPH-PR-El-Paso-Health-Payer-Identifications---Updated-09.24.pdf',
+      },
+      {
+        slug: 'firstcare-health-plans',
+        field: 'edi / codeGrid.97151',
+        change:
+          "Upgraded from the prior entry's softer sourcing (FirstCare's own site: plans end 8/31/2026, \"subject to regulatory approval\") to a confirmed exit: TMHP (7/17/2026) and Texas HHS (7/21/2026) both announced Baylor Scott & White/FirstCare is exiting Texas Medicaid managed care effective 9/1/2026, with TMHP stating it will not accept claims with dates of service after 8/31/2026.",
+        sourceUrl: 'https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
