@@ -1262,4 +1262,89 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'VOB enrichment: Tennessee + Nebraska, Layers 1 (EDI routing crosswalk), 3 (code-level coverage grid), and 4 (Medicaid rate tables) across all 14 guides. ' +
+      'TENNESSEE (7 guides — tenncare-tennessee-medicaid, bluecare-tennessee, unitedhealthcare-community-plan-tennessee, wellpoint-tennessee, aetna-tennessee, cigna-tennessee, unitedhealthcare-tennessee): confirmed TennCare publishes NO statewide or MCO ABA fee schedule at all (every Tennessee cell blank in the Feb 2026 CSG South multistate comparison) — Layer 4 ships as an explicit RateTable for all 4 Medicaid guides with every byCode entry the literal \'unverified\' and a source explaining why (the member\'s specific MCO contract is the only source of truth), the correct outcome per the build spec rather than a gap. The shared tri-MCO "ABA Provider Requirements and Program Description" and "Universal Request for ABA" form (both fetched and read in full) cover only 97151-97158 — 0362T/0373T appear in neither document, so tenncare-tennessee-medicaid, unitedhealthcare-community-plan-tennessee, and wellpoint-tennessee ship those two codes "not confirmed in the shared code set." BlueCare Tennessee is the one confirmed exception: its own 563-page Provider Administration Manual DOES list both codes with full CPT descriptions — a genuine per-MCO difference shipped as-is. TennCare\'s public "EDI Front Matter" (V8.0, fetched and read in full) confirms 270/271 is handled directly by the state (not brokered through the MCOs) via real-time SOAP or batch SFTP, but the loop/segment/carrier-code detail lives in the TennCare Companion Guide, available to registered trading partners only on request (EDI.TennCare@tn.gov) — medicaid271Notes ships unverified for that reason, same treatment as Georgia\'s inaccessible GAMMIS guide. A genuine cross-source EDI conflict was found and flagged rather than resolved: UHC\'s own 5/13/2026 Claims Payer List gives UnitedHealthcare Community Plan of Tennessee a dedicated Medical Payer ID (95378) distinct from the multi-state 87726 grouping, but the stale 2012 Availity snapshot maps that same 95378 to a different UHC affiliate entirely ("United Healthcare of River Valley"). ' +
+      'NEBRASKA (7 guides — nebraska-medicaid, nebraska-total-care, molina-healthcare-nebraska, unitedhealthcare-community-plan-nebraska, aetna-nebraska, cigna-nebraska, unitedhealthcare-nebraska): the August 1, 2025 rate cuts are fully confirmed against two independent primary sources (Provider Bulletin 25-14\'s own table and the MHSUD fee schedule\'s dedicated "ABA" tab, both the July 2025 and SFY27 editions): 97151 $38.16, 97152 $25.88, 97153 $18.70, 97154 $7.49, 97155 $22.72, 97156 $26.06, 97158 $12.05 per 15-minute unit, directed onto all 3 Heritage Health MCOs per Health Plan Advisory 25-08 (no independent MCO-negotiated rate). 97157, 0362T, and 0373T are confirmed ABSENT from Nebraska\'s billable ABA code set (checked against four independent primary sources) — shipped as a verified non-coverage fact, not a research gap. The state\'s own 20-vs-30-hour weekly cap conflict is preserved honestly: the treatment MSD\'s literal text caps direct-service codes at 20 hrs/week, while Provider Bulletin 25-02 and the DHHS ABA Facts page describe policy as allowing up to 30 hrs/week — both figures given in codeGrid notes rather than resolved by fiat. Telehealth (modifier 95, POS 02/10) confirmed allowed only for 97151/97155/97156, explicitly prohibited for 97152/97153/97154/97158. The NE MMIS 270/271 companion guide (dated 2015, staleRisk) was retrieved and read in full: Loop 2120C NM1 (entity code X3) carries the member\'s MCO name as free text, with no numeric carrier-code crosswalk table anywhere in the document — a verified absence, not a gap. pVerify payer IDs confirmed via direct table-extraction for both states (e.g. Nebraska Medicaid 01204, Nebraska Total Care 01205, Molina NE 06080, Tennessee Medicaid 00185); UnitedHealthcare Community Plan of Nebraska reuses the already-shipped Layer 6 carve-out fact (Optum Behavioral Health / "United Behavioral Health," payer ID 87726 / ERA 86047). ' +
+      'Both states: bhCarveOut fields throughout were kept consistent with the rows already shipped in vob/carveouts.ts rather than re-derived (Cigna/Evernorth 62308 no second hop nationally; Aetna commercial fully unverified nationally; per-state UHC facts reused as-is). Commercial Aetna/Cigna/UnitedHealthcare codeGrid entries reuse the national CPB/EN0499/Optum-policy source set and apply the same corrections georgia.ts\'s prior QA pass already made (the Aetna "GR-69017-4" precert form number and the UHC "every 4-6 months / 80% utilization" review cadence do not actually appear in their cited source documents — both existing states\' prose still cite them, but neither is asserted as verified here).',
+    guides: [
+      'tenncare-tennessee-medicaid',
+      'bluecare-tennessee',
+      'unitedhealthcare-community-plan-tennessee',
+      'wellpoint-tennessee',
+      'aetna-tennessee',
+      'cigna-tennessee',
+      'unitedhealthcare-tennessee',
+      'nebraska-medicaid',
+      'nebraska-total-care',
+      'molina-healthcare-nebraska',
+      'unitedhealthcare-community-plan-nebraska',
+      'aetna-nebraska',
+      'cigna-nebraska',
+      'unitedhealthcare-nebraska',
+    ],
+    details: [
+      {
+        slug: 'tenncare-tennessee-medicaid',
+        field: 'rates',
+        change:
+          'Confirmed TennCare publishes no statewide or MCO ABA fee schedule (every TN cell blank in the CSG South comparison) — shipped as an explicit RateTable with every byCode entry \'unverified\' and a source explaining why, per the build spec\'s guidance that this is the correct outcome for TN, not a gap to fill.',
+        sourceUrl: 'https://csgsouth.org/wp-content/uploads/HSPS-Converted-IR__Comparison-of-Medicaid-Reimbursement-for-ABA-Individual-Services.pdf',
+      },
+      {
+        slug: 'bluecare-tennessee',
+        field: 'codeGrid.0362T / codeGrid.0373T',
+        change:
+          "BlueCare's own 563-page Provider Administration Manual lists both codes with full CPT descriptions, unlike the shared tri-MCO Program Description and Universal Request form (which the other two MCO guides rely on and which omit both codes entirely) — a genuine per-MCO difference shipped as-is, not collapsed to one shared value.",
+        sourceUrl: 'https://content.bcbst.com/api/public/content/prov-bct-pam.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-tennessee',
+        field: 'edi.payerId.changeHealthcare',
+        change:
+          'Genuine cross-source conflict shipped unresolved: UHC\'s own 5/13/2026 Claims Payer List gives this plan a dedicated Medical Payer ID (95378), but the stale 2012 Availity snapshot maps that same number to a different UHC affiliate ("United Healthcare of River Valley").',
+        sourceUrl: 'https://www.uhcprovider.com/content/dam/provider/docs/public/resources/edi/Payer-List-UHC-Affiliates-Strategic-Alliances.pdf',
+      },
+      {
+        slug: 'nebraska-medicaid',
+        field: 'rates.byCode',
+        change:
+          'August 1, 2025 rate cuts cross-confirmed against two independent primary sources (Provider Bulletin 25-14 + the MHSUD fee schedule\'s ABA tab); per-provider-type billing eligibility captured in modifierTiers (e.g. 97153 billable by Provider Types 57/67/83/84/85 but not 1/2; ineligible types show $0 in the fee schedule, not a lower rate).',
+        sourceUrl: 'https://dhhs.ne.gov/Medicaid%20Provider%20Bulletins/Provider%20Bulletin%2025-14.pdf',
+      },
+      {
+        slug: 'nebraska-medicaid',
+        field: 'codeGrid.97157 / codeGrid.0362T / codeGrid.0373T',
+        change:
+          'Confirmed absent from Nebraska\'s billable ABA code set across four independent primary sources (Provider Bulletin 25-14, DHHS ABA Facts page, MHSUD fee schedule ABA tab, both ABA Medicaid Service Definitions\' own code lists) — shipped covered: \'No\' as a verified fact, not left as an unresearched gap.',
+        sourceUrl: 'https://dhhs.ne.gov/Pages/Applied-Behavior-Analysis.aspx',
+      },
+      {
+        slug: 'nebraska-medicaid',
+        field: 'codeGrid.97153.unitCap',
+        change:
+          'The 20-vs-30 hr/week conflict is presented as-is per the build spec: the treatment MSD\'s literal text caps direct-service hours at 20/week; Provider Bulletin 25-02 and the DHHS ABA Facts page both describe the policy as up to 30/week. Both figures shipped in the notes field, not resolved by picking one.',
+        sourceUrl: 'https://dhhs.ne.gov/Medicaid%20Provider%20Bulletins/Provider%20Bulletin%2025-02.pdf',
+      },
+      {
+        slug: 'nebraska-medicaid',
+        field: 'edi.medicaid271Notes.mcoSegmentLocation',
+        change:
+          'NE MMIS 270/271 Companion Guide (dated 3/9/2015, staleRisk) retrieved and read in full: Loop 2120C NM1, entity-identifier code X3, carries the member\'s MCO name as free text (code P3 separately carries the enrolled PCP\'s name) — no numeric MCO carrier-code table exists in the document, a verified absence rather than an unresearched gap.',
+        sourceUrl: 'https://dhhs.ne.gov/Documents/270-271%20Companion%20guide.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-nebraska',
+        field: 'edi.bhCarveOut',
+        change:
+          'Reused the already-shipped Layer 6 carve-out fact (Optum Behavioral Health, branded "United Behavioral Health"; payer ID 87726 / ERA 86047) rather than re-deriving a conflicting value — consistent with vob/carveouts.ts.',
+        sourceUrl:
+          'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/neaba/neNEMedicaidQRG.pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
