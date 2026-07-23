@@ -1133,6 +1133,18 @@ function txMcoInferredStc(planName: string): StcMap {
      finding it restated verbatim; a fresh fetch of driscollhealthplan.com
      this pass surfaced a companion PA/referrals phone (1-877-455-1053) at
      the same number's neighborhood, shipped as providerServicesPhone.
+   - Closing-sweep addendum (2026-07-23): vobContact for the 6 gap-fill
+     TX MCO guides (community-health-choice-texas, bcbs-texas-medicaid,
+     cook-childrens-health-plan, parkland-community-health-plan,
+     el-paso-health, firstcare-health-plans) below. Fax numbers for
+     several of these plans were already fetched and cited in this
+     file's own codeGrid notes (see chcEdi/bcbstxMedicaidEdi/cchpEdi/
+     pchpEdi/ephEdi/firstcareEdi source blocks above); providerServicesPhone
+     numbers were independently confirmed this pass directly from each
+     plan's own contact/phone-directory page. FirstCare's Medicaid
+     wind-down (confirmed exit 8/31/2026, same as baylor-scott-white-texas)
+     applies here too — its contact info is shipped as current through
+     that date, not a stable long-term line.
    ================================================================ */
 
 const texasMedicaidContact: VobContact = {
@@ -1323,6 +1335,288 @@ const uhcTxCommercialContact: VobContact = {
   sources: [src('https://www.uhcprovider.com/en/contact-us.html', 'UHCprovider.com Contact Us page, fetched this pass — general national provider services 877-842-3210, Behavioral Health & Substance Use (Optum) 877-614-0484 (24/7), UnitedHealthcare Provider Portal at uhcprovider.com; hours not stated for the 877-842-3210 line on this page.')],
 };
 
+/* ==================== closing sweep: vobContact for the 6 gap-fill TX MCO guides ==================== */
+
+const chcContact: VobContact = {
+  providerServicesPhone: '713.295.2300 (local) / 1.888.435.2850 (toll-free)',
+  hours: 'Monday-Friday, 8:00 a.m.-5:00 p.m. Central Time',
+  fax: '713.295.2283 (general); Behavioral Health PA — inpatient 713.576.0932, outpatient 713.576.0939',
+  portal: { name: 'Community Health Choice Provider Portal', url: 'https://providerportal.communityhealthchoice.org/s/login/' },
+  scriptedQuestions: [
+    'Confirm the correct EDI payer ID for 270/271 eligibility checks — 01071 (pVerify) vs. the two conflicting Change Healthcare candidates (60495 per CHC\'s own EDI page vs. 48145 per Optum\'s Real-Time Eligibility Payer List).',
+    'Does CHC support real-time (vs. batch) 270/271 eligibility for this payer ID?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply to ABA services?',
+    'Are CPT codes 97152, 97157, 0362T, and 0373T billable under CHC\'s Autism Services benefit at all, or only 97151/97153-97156/97158 per the Medical Review Guideline?',
+    'Is ABA confirmed covered for CHC Marketplace members the same way it is for STAR, and is it excluded for CHIP members as the HHS Provider Manual states?',
+  ],
+  sources: [
+    src('https://provider.communityhealthchoice.org/contact-community/', 'Community Health Choice — Contact Community (provider) page, fetched this pass — Provider Services 713.295.2300 (local) / 1.888.435.2850 (toll-free), Mon-Fri 8am-5pm; general fax 713.295.2283; Behavioral Health PA fax: inpatient 713.576.0932, outpatient 713.576.0939; Provider Portal at providerportal.communityhealthchoice.org.'),
+  ],
+};
+
+const bcbstxMedicaidContact: VobContact = {
+  providerServicesPhone: '1-877-560-8055 (STAR/CHIP) / 1-877-784-6802 (STAR Kids)',
+  hours: '8:00 a.m.-5:00 p.m. Central Time',
+  fax: '1-888-530-9809 (Behavioral Health/ABA PA intake, per BCBSTX\'s own PA Requirement Checklist)',
+  ivrPath: 'Provider Relations/Network line (credentialing, contracting): 1-855-212-1615 — separate from the member-services numbers above.',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'Confirm 66002 is the correct Availity payer ID for STAR/CHIP/STAR Kids eligibility, and whether STAR Kids (which has its own distinct pVerify code, 01352) is also covered by that single Availity ID.',
+    'Does BCBSTX support real-time (vs. batch) 270/271 eligibility for this payer ID?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'Is CPT 99366 billable under this plan\'s Autism Services benefit — it does not appear on BCBSTX\'s own PA code grid or provider manual?',
+    'Since BCBSTX insourced Medicaid behavioral health from Magellan in 2024, confirm ABA PA still routes to the 1-888-530-9809 BH intake fax or Availity, not a Magellan channel.',
+  ],
+  sources: [
+    src('https://www.bcbstx.com/provider/medicaid/contact', 'BCBS Texas — Provider Medicaid Contact Us page (confirmed via search this pass) — Medicaid (STAR)/CHIP Customer Service 1-877-560-8055, STAR Kids 1-877-784-6802, hours 8am-5pm CST; Provider Relations/Network 1-855-212-1615; eligibility/claims via Availity (availity.com).'),
+    BCBSTX_ABA_CHECKLIST,
+  ],
+};
+
+const cchpContact: VobContact = {
+  providerServicesPhone: '1-888-243-3312 (Provider Relations — credentialing, contracting, demographics)',
+  hours: 'Monday-Friday, 8:00 a.m.-5:00 p.m. (excluding state holidays)',
+  fax: '682-885-8402 (STAR/CHIP PA); 682-303-0005 or 844-843-0005 (STAR Kids PA, portal-access-pending only)',
+  ivrPath: 'General Member Services: 1-800-964-2247 — determination letters are delivered via the EpicCare Link In Basket only, never faxed; fax is for submission while portal access is pending.',
+  portal: { name: "Cook Children's EpicCare Link", url: 'https://www.cookchp.org/providers/prior-authorization-search/' },
+  scriptedQuestions: [
+    'Confirm the correct Availity payer ID split — CCHP1 for CHIP vs. CCHP9 for STAR/STAR Kids — for 270/271 eligibility checks.',
+    'Does Cook Children\'s Health Plan support real-time (vs. batch) 270/271 eligibility for these payer IDs?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'Is CPT 99366 billable beyond the F84.0-only, twice-per-year, 3-licensed-professional-minimum rule already confirmed in Cook Children\'s own ABA training?',
+    'Does the 8-hour/day combined direct-treatment cap across 97153/97154/97155/97158 confirmed in Cook Children\'s own training match the statewide TMPPM cap exactly, or does the plan apply a stricter overlay?',
+  ],
+  sources: [
+    src('https://www.cookchp.org/join/contact-us/', "Cook Children's Health Plan — Contact Us page, fetched this pass — Provider Relations toll-free 1-888-243-3312, Mon-Fri 8am-5pm (excl. state holidays), TTY 7-1-1/1-800-735-2988; General Member Services 1-800-964-2247."),
+    CCHP_ABA_TRAINING,
+    CCHP_ACUTE_PA_TRAINING,
+  ],
+};
+
+const pchpContact: VobContact = {
+  providerServicesPhone: '1-888-672-2277 (STAR) / 1-888-814-2352 (CHIP/CHIP Perinate)',
+  hours: '8:00 a.m.-5:00 p.m. Central Time, Monday-Friday (except state holidays)',
+  fax: 'BH-specific 214-266-2064 / 1-844-266-2064; general PA 214-266-2085 / 1-844-303-1382',
+  portal: { name: 'Parkland Community Health Plan Provider Portal', url: 'https://providers.parklandhealthplan.com/' },
+  scriptedQuestions: [
+    'Since PCHP insourced behavioral health from Carelon effective 9/1/2025, confirm our practice is credentialed directly with PCHP (not still routed through a Carelon-era process) before submitting an ABA PA.',
+    'Is there a confirmed EDI payer ID for 270/271 eligibility checks — pVerify shows no match for "Parkland" at all?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'PCHP\'s own PA Requirements list names 97152 and 97157 under "Applied Behavior Analysis," contradicting the statewide TMPPM code set — what are the unit caps, POS, and modifiers for these two codes specifically?',
+    'Is CPT 99366 billable under this plan\'s Autism Services benefit?',
+  ],
+  sources: [
+    src('https://parklandhealthplan.com/phone-directory', 'Parkland Community Health Plan — Important Phone Numbers page, fetched this pass — Member Services STAR 1-888-672-2277, CHIP/CHIP Perinate 1-888-814-2352, hours 8am-5pm CST Mon-Fri; Provider Portal at providers.parklandhealthplan.com.'),
+    PCHP_PA_REQUIREMENTS,
+    PCHP_BH_TRANSITION,
+  ],
+};
+
+const ephContact: VobContact = {
+  providerServicesPhone: '1-888-310-3434 (general correspondence)',
+  fax: '915-298-7866 / 1-844-298-7866 (outpatient/elective ABA PA); 915-532-2286 (general provider services)',
+  portal: { name: 'El Paso Health Provider Portal', url: 'https://secure.healthx.com/elpasoprovider' },
+  ivrPath: 'Telephonic PA requests (STAR): 915-532-3778.',
+  scriptedQuestions: [
+    'Confirm which of El Paso Health\'s line-of-business Availity codes (EPF02 STAR/STAR+PLUS, EPF03 CHIP) applies to this specific member for 270/271 eligibility checks.',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'El Paso Health\'s own ABA Request Checklist caps the evaluation at 6 hrs/24 units (HO only) — does this apply identically to the 60-day authorization-validity rule for re-evaluations, or does that differ per the 2026 memo?',
+    'Are CPT codes 97152, 97157, 0362T, and 0373T billable under El Paso Health\'s Autism Services benefit at all?',
+    'Is CPT 99366 billable under this plan\'s Autism Services benefit?',
+  ],
+  sources: [
+    src('http://elpasohealth.com/contact-us.html', 'El Paso Health — Contact Us page, fetched this pass — general correspondence 1-888-310-3434 (fax 915-532-2877); general provider services fax 915-532-2286; PA (outpatient/elective) fax 915-298-7866 / 1-844-298-7866, telephonic STAR requests 915-532-3778.'),
+    EPH_ABA_CHECKLIST,
+    EPH_QRG,
+  ],
+};
+
+const firstcareContact: VobContact = {
+  providerServicesPhone: '800.431.STAR (7798) — STAR Medicaid customer service',
+  hours: 'Utilization Management: Mon-Fri 6:00am-6:00pm CT, weekends/holidays 9:00am-12:00pm CT; online submissions accepted 24/7',
+  portal: { name: 'myFirstCare Self-Service Portal', url: 'https://my.firstcare.com/Web' },
+  scriptedQuestions: [
+    'CONFIRMED: Baylor Scott & White/FirstCare is exiting Texas Medicaid managed care effective 9/1/2026 (TMHP 7/17/2026, Texas HHS 7/21/2026) — confirm this family\'s post-exit MCO reassignment status before building a long-term authorization plan around FirstCare.',
+    'Confirm the correct Availity payer ID (94998 FirstCare Medicaid, distinct from 94999 general/commercial) is being used for this member\'s 270/271 eligibility check.',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'Since FirstCare files ABA under "Therapy services" rather than "Behavioral health," confirm whether ABA PA routes through the Medical PA line or the Behavioral Health PA line (1-855-395-9652).',
+    'Are CPT codes 97152, 97157, 0362T, and 0373T billable under FirstCare\'s Medicaid Autism Services benefit, or only under its separate commercial Medical Coverage Policy #206?',
+  ],
+  sources: [
+    src('https://www.firstcare.com/en/providers', "FirstCare — Providers page and related UM policy content (confirmed via search this pass) — STAR Medicaid customer service 800.431.STAR (7798); Utilization Management Mon-Fri 6am-6pm CT, weekends/holidays 9am-12pm CT, online authorization submission 24/7 via the FirstCare Self-Service Portal (my.firstcare.com/Web)."),
+    TMHP_FIRSTCARE_EXIT_NEWS,
+  ],
+};
+
+/* ==================== closing sweep: full VOB layers for baylor-scott-white-texas + dell-childrens-health-plan ==================== */
+
+const RIGHTCARE_PA_LIST = src(
+  'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/forms/medicaid/RightCare_Authorization_List.pdf',
+  'RightCare — Texas Medicaid/CHIP Prior Authorization Codes List (eff. 7/1/2026); already cited in texas.ts — confirms PA-required ABA codes 97151, 97153, 97154, 97155, 97156, 97158, 99366 (each eff. 1/3/2020), 97152/97157 absent, matching the statewide TMHP code set exactly.'
+);
+const RIGHTCARE_POLICY_206 = src(
+  'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf',
+  'BSWHP Medical Coverage Policy 206 — Autism Spectrum Disorder (eff. 7/1/2026); already cited in texas.ts — explicitly defers Medicaid coverage decisions to the TMPPM.'
+);
+const RIGHTCARE_PROVIDER_MANUAL = src(
+  'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/provider-manual.pdf',
+  "RightCare — 2026 Provider Manual; already cited in texas.ts — states behavioral health is administered in-house as \"RightCare Behavioral Health Management\" (phone 1-855-395-9652, fax 1-844-436-8779), distinct from the medical Prior Authorization/Medical Management line (1-855-691-7947, fax 1-512-383-8703 or 1-800-292-1349); General Provider Relations 1-855-TX-RIGHT (1-855-897-4448); reimbursement follows the Medicaid fee schedule \"when available.\""
+);
+const TMHP_BSW_EXIT_NEWS = src(
+  'https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid',
+  'TMHP news (7/17/2026) — Baylor Scott & White (RightCare, MRSA Central) and FirstCare Health Plans (MRSA West) will end participation in Texas Medicaid managed care effective 8/31/2026 (regulatory approval pending); claims for DOS on/after 9/1/2026 rejected; providers have until 8/31/2028 to submit claims for earlier DOS.',
+  true
+);
+
+const rightcareEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none — "RightCare Behavioral Health Management" is an in-house unit, not a third-party BH vendor (no Cenpatico/Beacon/Magellan/Carelon/Optum named anywhere in the plan\'s current provider manual or PA materials)',
+    administratorPayerId: 'N/A',
+    abaRidesOn: 'unverified',
+    twoHopRequired: 'unverified',
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.abaRidesOn': 'unverified',
+    'bhCarveOut.twoHopRequired': 'unverified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify or Availity entry for "RightCare," "Scott and White Health Plan," or "Baylor Scott & White" was confirmed this pass (the plan\'s own provider manual and network flyers are image/graphics-heavy PDFs that did not yield extractable EDI text) — confirm via RightCare Provider Relations (1-855-897-4448) or pVerify/Availity onboarding. Given the confirmed 8/31/2026 Medicaid exit, treat any answer as good only through that date.',
+    'payerId.availity': 'Same as payerId.pverify.',
+    'payerId.changeHealthcare': 'Same as payerId.pverify.',
+    supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
+    'bhCarveOut.abaRidesOn': 'RightCare\'s own PA code list does not separate ABA from general PT/OT/rehab codes by routing channel — confirm with RightCare directly (Medical Management 1-855-691-7947 vs. Behavioral Health Management 1-855-395-9652) before your first request.',
+    'bhCarveOut.twoHopRequired': 'Depends on the answer to abaRidesOn above.',
+  },
+  sources: [RIGHTCARE_PA_LIST, RIGHTCARE_POLICY_206, RIGHTCARE_PROVIDER_MANUAL, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST],
+};
+
+const rightcareContact: VobContact = {
+  fax: 'Medical Management/PA: 1-512-383-8703 or 1-800-292-1349; Behavioral Health Management: 1-844-436-8779',
+  providerServicesPhone: '1-855-691-7947 (Medical Management/PA) or 1-855-395-9652 (Behavioral Health Management) — confirm which routes ABA specifically',
+  ivrPath: 'General Provider Relations: 1-855-TX-RIGHT (1-855-897-4448).',
+  portal: { name: 'RightCare Self-Service Portal', url: 'https://rightcare.swhp.org/providers' },
+  scriptedQuestions: [
+    'CONFIRMED: RightCare is exiting Texas Medicaid managed care effective 8/31/2026 (TMHP 7/17/2026 announcement) — confirm this family\'s post-exit MCO reassignment status.',
+    'Does ABA prior authorization route through Medical Management (1-855-691-7947) or Behavioral Health Management (1-855-395-9652)? RightCare\'s own PA code list does not separate these codes by routing channel.',
+    'What EDI payer ID should be used for this member\'s 270/271 eligibility check?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+    'Does a RightCare-specific authorization-period length apply (vs. the general TMPPM baseline), and does DeWitt County fall within the MRSA Central service area for this plan specifically?',
+  ],
+  sources: [RIGHTCARE_PROVIDER_MANUAL, TMHP_BSW_EXIT_NEWS],
+};
+
+const rightcareCodeGrid: Record<string, CodeGridEntry> = tmppmCodeGrid({
+  '97151': "RightCare's own Medicaid/CHIP PA Codes list (eff. 7/1/2026) confirms 97151 as PA-required since 1/3/2020, matching the TMPPM baseline exactly. PLAN IS WINDING DOWN — exits Texas Medicaid 8/31/2026 (regulatory approval pending); PA processes remain unaffected during the transition per TMHP/RightCare's own notices.",
+});
+
+/* ==================== dell-childrens-health-plan ==================== */
+
+const DELL_PROVIDER_MANUAL = src(
+  'https://dellchildrenshealthplan.com/wp-content/uploads/2024/11/Provider-Manual-102024_web.pdf',
+  "Dell Children's Health Plan — STAR Medicaid and CHIP Provider Manual (Oct 2024); already cited in texas.ts — explicitly lists Applied Behavior Analysis (ABA) therapy as a covered STAR behavioral-health service; behavioral health (ABA included) is delegated to Magellan Healthcare."
+);
+const DELL_BH_PAGE = src(
+  'https://dellchildrenshealthplan.com/manage-your-health/behavioral-health/',
+  "Dell Children's Health Plan — Behavioral Health (member) page; already cited in texas.ts — states ABA \"is now a benefit for STAR members,\" requiring prior ASD diagnostic testing by a developmental pediatrician, neurologist, psychiatrist, licensed psychologist, or autism diagnosis team; directs self-referral to Magellan toll-free 1-800-424-1764."
+);
+const DELL_PA_LIST = src(
+  'https://dellchildrenshealthplan.com/wp-content/uploads/2026/04/Dell-Childrens-Prior-Authorization-List-Final-Effective-6_1_2026.xlsx-DCHP-PA-List-2.pdf',
+  "Dell Children's Health Plan — STAR/CHIP Prior Authorization List (eff. 6/1/2026); already cited in texas.ts — PA=Yes for 97151, 97153, 97154, 97155, 97156, 97158, 99366, cross-referenced to the TMPPM Children's Services Handbook; ALSO shows 97157 PA=Yes, an unresolved discrepancy against the statewide THSteps-CCP Autism Services code set."
+);
+const DELL_MANUALS_FORMS = src(
+  'https://dellchildrenshealthplan.com/for-providers/manuals-forms/',
+  "Dell Children's Health Plan — Manuals & Forms page; already cited in texas.ts — lists Magellan-branded BH Prior Auth Form, Initial Review Form, Concurrent Review Form accessed through the Magellan portal; dedicated BH PA fax (866) 354-8758, distinct from the plan's general medical PA fax 844-981-3329."
+);
+const MAGELLAN_TX_STATE_PAGE = src(
+  'https://www.magellanprovider.com/news-publications/state-plan-eap-specific-information/texas.aspx',
+  "Magellan Healthcare — Texas state-plan provider page (fetched this pass) — corroborates the Behavioral Health/substance-use hotline 1-800-424-1764 (TTY 7-1-1), available 24/7; BH prior-authorization forms and portal at magellanhealth.com; a separate Provider Customer Services line (1-844-781-2343, Mon-Fri 8am-5pm CT) handles medical/surgical/BH inpatient and outpatient authorization portal questions."
+);
+
+const dellChildrensEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified — the plan states Change Healthcare operates its EDI Gateway generally, but no specific payer ID was confirmed this pass' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Magellan Healthcare',
+    administratorPayerId: 'unverified',
+    abaRidesOn: 'bh',
+    twoHopRequired: true,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'unverified',
+    'bhCarveOut.abaRidesOn': 'verified',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify entry for "Dell Children\'s Health Plan" was confirmed this pass — confirm via pVerify onboarding or the plan\'s General Provider Services line (1-844-781-2343).',
+    'payerId.availity': 'A WebSearch this pass surfaced that Dell Children\'s Health Plan "has designated Change Healthcare to operate and service your EDI entry point (EDI Gateway)," but no specific payer ID was independently confirmed against a readable primary document — confirm via Change Healthcare (877-411-7271) or the plan directly.',
+    'payerId.changeHealthcare': 'Same as payerId.availity.',
+    supportsRealtime: 'Confirm real-time vs. batch via the plan\'s EDI Gateway (Change Healthcare) onboarding.',
+    'bhCarveOut.administratorPayerId': 'Confirm with Magellan Healthcare (1-800-424-1764) or via magellanhealth.com — no distinct EDI payer ID for the Magellan BH carve-out was confirmed this pass.',
+    'bhCarveOut.twoHopRequired': 'Inferred true because ABA prior authorization demonstrably requires contacting Magellan separately from the plan\'s general medical PA channel — but whether the 270/271 ELIGIBILITY check itself requires a second EDI hop to Magellan (vs. only the PA/UM step) was not independently confirmed.',
+  },
+  sources: [DELL_PROVIDER_MANUAL, DELL_BH_PAGE, MAGELLAN_TX_STATE_PAGE, PVERIFY_PAYER_LIST_PAGE, AVAILITY_PAYER_LIST],
+};
+
+const dellChildrensContact: VobContact = {
+  providerServicesPhone: '1-844-781-2343 (General Provider/Customer Services) or 1-800-424-1764 (Magellan Behavioral Health — 24/7)',
+  hours: 'General Provider Services: Mon-Fri 8am-5pm CT. Magellan BH hotline: 24/7.',
+  fax: '(866) 354-8758 (Magellan BH PA); 844-981-3329 (general medical PA)',
+  portal: { name: 'HealthX Provider Portal (medical) / magellanhealth.com (behavioral health)', url: 'https://dellchildrenshealthplan.com/for-providers/manuals-forms/' },
+  scriptedQuestions: [
+    'Confirm ABA prior authorization routes through Magellan Healthcare (1-800-424-1764 / magellanhealth.com) and not the plan\'s general medical PA channel — use the Magellan-branded BH Prior Auth Form.',
+    'PA list shows 97157 as PA=Yes even though it is absent from the statewide THSteps-CCP Autism Services code set — is 97157 actually billable under this plan\'s ABA benefit?',
+    'Is ABA an explicitly covered benefit for standard CHIP (non-STAR, non-Perinatal) members, or only for STAR members as the provider manual\'s STAR-specific list states?',
+    'What EDI payer ID should be used for this member\'s 270/271 eligibility check, given the plan\'s stated use of Change Healthcare as its EDI Gateway?',
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply?',
+  ],
+  sources: [DELL_BH_PAGE, DELL_MANUALS_FORMS, MAGELLAN_TX_STATE_PAGE],
+};
+
+function dellPaListDiscrepancyCode(code: string): CodeGridEntry {
+  return {
+    covered: `Yes, per Dell Children's own PA list (eff. 6/1/2026, PA=Yes) — contradicts the "not on Texas's billable ABA code set" finding shipped for ${code} elsewhere in this file (texas-medicaid and the other Medicaid MCO guides); the plan's own list gives no code-level detail beyond a PA=Yes/No flag, so treat as a confirmed Dell-specific discrepancy needing direct confirmation, not a resolved fact either way.`,
+    paRequired: `Required, per Dell Children's PA list (eff. 6/1/2026) — flagged PA=Yes for ${code} with no further code-level detail given.`,
+    unitCap: 'unverified — not shown on the PA list (a PA=Yes/No flag only)',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified — not shown on the PA list'],
+    telehealth: 'unverified — not addressed in the PA list',
+    modifiers: ['unverified — not shown on the PA list'],
+    notes: `DISCREPANCY: Dell Children's own PA list (eff. 6/1/2026) shows ${code} as PA=Yes, even though ${code} is confirmed absent from Texas Medicaid's actual THSteps-CCP Autism Services billable code set per TMHP's own fee schedule and handbook (independently confirmed this pass). Verify directly with Dell Children's/Magellan before assuming this applies to any other Texas Medicaid plan.`,
+    fieldStatus: {
+      covered: 'inferred',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [DELL_PA_LIST, TMPPM_HANDBOOK, AUTISM_FEE_SCHEDULE],
+  };
+}
+
+const dellChildrensCodeGrid: Record<string, CodeGridEntry> = {
+  ...tmppmCodeGrid({
+    '97151': "Dell Children's own PA list (eff. 6/1/2026) confirms 97151 PA=Yes, matching the TMPPM baseline. Behavioral health (ABA included) is delegated to Magellan Healthcare, not administered in-house — route PA through Magellan's own form/portal, not the plan's general medical channel.",
+  }),
+  '97157': dellPaListDiscrepancyCode('97157'),
+};
+
 /* ==================== export ==================== */
 
 export const texasVob: Record<string, VobExtension> = {
@@ -1450,6 +1744,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Community Health Choice'),
     stcMap: txMcoInferredStc('Community Health Choice'),
+    vobContact: chcContact,
     lastUpdated: ACCESS_DATE,
   },
   'bcbs-texas-medicaid': {
@@ -1460,6 +1755,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Blue Cross Blue Shield of Texas (Medicaid)'),
     stcMap: txMcoInferredStc('Blue Cross Blue Shield of Texas (Medicaid)'),
+    vobContact: bcbstxMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
   'cook-childrens-health-plan': {
@@ -1470,6 +1766,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates("Cook Children's Health Plan"),
     stcMap: txMcoInferredStc("Cook Children's Health Plan"),
+    vobContact: cchpContact,
     lastUpdated: ACCESS_DATE,
   },
   'parkland-community-health-plan': {
@@ -1483,6 +1780,7 @@ export const texasVob: Record<string, VobExtension> = {
     },
     rates: mcoUnverifiedRates('Parkland Community Health Plan'),
     stcMap: txMcoInferredStc('Parkland Community Health Plan'),
+    vobContact: pchpContact,
     lastUpdated: ACCESS_DATE,
   },
   'el-paso-health': {
@@ -1493,6 +1791,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('El Paso Health'),
     stcMap: txMcoInferredStc('El Paso Health'),
+    vobContact: ephContact,
     lastUpdated: ACCESS_DATE,
   },
   'firstcare-health-plans': {
@@ -1502,6 +1801,26 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('FirstCare Health Plans'),
     stcMap: txMcoInferredStc('FirstCare Health Plans'),
+    vobContact: firstcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
+
+  /* ==================== closing sweep: 2 final TX gap-fill guides ==================== */
+
+  'baylor-scott-white-texas': {
+    edi: rightcareEdi,
+    codeGrid: rightcareCodeGrid,
+    rates: mcoUnverifiedRates('RightCare (Baylor Scott & White Health Plan)'),
+    stcMap: txMcoInferredStc('RightCare (Baylor Scott & White Health Plan)'),
+    vobContact: rightcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'dell-childrens-health-plan': {
+    edi: dellChildrensEdi,
+    codeGrid: dellChildrensCodeGrid,
+    rates: mcoUnverifiedRates("Dell Children's Health Plan"),
+    stcMap: txMcoInferredStc("Dell Children's Health Plan"),
+    vobContact: dellChildrensContact,
     lastUpdated: ACCESS_DATE,
   },
 };

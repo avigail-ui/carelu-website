@@ -149,6 +149,38 @@ const OPTUM_PROVIDER_EXPRESS_CONTACT = src(
   'Optum "Provider Express — Contact Us" page — fetched this pass. Provider Services: "1-877-614-0484," Mon-Fri 7am-7pm CT (scope: credentialing, contracting, network status, provider demographics — not itself an ABA/PA line). Provider Express secure-portal technical support: "1-866-209-9320," same hours. No dedicated ABA/behavioral-health prior-authorization phone or fax number is published on this page; PA is submitted via the Provider Express secure portal or the number on the member\'s ID card.'
 );
 
+/* -------------------- select-health-utah source refs (closing sweep, 2026-07-23) -------------------- */
+
+const SELECTHEALTH_MEDICAID_SUMMARY = src(
+  'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/programs/government/medicaid-provider-summary.pdf',
+  "Select Health — Medicaid Provider Summary; already cited in src/data/payers/utah.ts — describes SelectHealth Community Care as one of Select Health's government/managed products, 'available to eligible members living in all Utah counties.'"
+);
+const SELECTHEALTH_PRM = src(
+  'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/Reference%20Manuals/prm-comm-govt.pdf',
+  "Select Health — Provider Reference Manual (Commercial & Government), Appendix B; already cited in utah.ts — states 'Select Health Community Care policies typically align with State of Utah Medicaid policy' and defines a 'Fee-For-Service Medicaid member' as anyone whose needed service is covered by Medicaid rather than the ACO plan — the same carve-out mechanism documented for all four Utah ACOs in the utah-medicaid VOB entry above. Does not explicitly name ABA/autism services on its carved-out-services list (mental-health medications, emergency transportation, LTC, apnea monitors, dental) — the FFS routing is inherited from Utah Medicaid's own carve-out policy, not a Select-Health-authored statement."
+);
+const SELECTHEALTH_POLICY_UPDATE_0226 = src(
+  'https://selecthealth.org/providers/policies/policy-update-bulletins/policy-update-0226',
+  "Select Health — Policy Update Bulletin, February 2026; already cited in utah.ts — confirms Policy #630 ('Applied Behavior Analysis (ABA)') was revised effective 1/1/2026 (reorganized medical-necessity criteria, removed an FEHB-plan exception). The policy PDF itself returned a maintenance error at every attempt this pass — specific diagnostic/hour-based criteria remain unverified pending direct confirmation."
+);
+const SELECTHEALTH_ABA_PREAUTH_FORM = src(
+  'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf',
+  "Select Health — ABA Preauthorization Form (2026); already cited in utah.ts — distinguishes an initial request (diagnostic evaluation report required) from a concurrent/continuation request (updated treatment plan with progress data required); routes by line of business via email: commercial to commercialUMintake@imail.org (fax 801-442-0825), Community Care (Medicaid/CHIP) to medicaidUMintake@imail.org (fax 801-442-0625) — relevant only for the non-ABA services Community Care still administers, since ABA itself routes to Utah Medicaid — Medicare to medicareUMintake@imail.org (fax 801-442-0302); 14-day decision window across all states. No numeric unit cap, POS code, or modifier is specified on the form itself."
+);
+const SELECTHEALTH_PREAUTH_FORMS_PAGE = src(
+  'https://selecthealth.org/providers/preauthorization/forms-reports',
+  "Select Health — Preauthorization Forms & Reports page; already cited in utah.ts — names the online 'Preauth & Care Plan Tool' (some requests auto-approve) and a general 24/7 preauthorization help desk, 800-442-4566; general commercial provider support runs through 800-222-6358."
+);
+const SELECTHEALTH_PAYER_ID_LIST = src(
+  'https://www.selecthealth.org/content/dam/selecthealth/Provider/PDFs/claims/payer-id-list.pdf',
+  'Select Health Payer ID List (effective 5/11/2026) — a WebSearch summary of this document this pass reported Availity (Basic software, through UHIN) as HT006873-001 and Availity (Advanced software) professional payer ID as SX107; a direct WebFetch of the PDF returned only compressed/encoded content and could not independently re-derive these values from readable text. Corroborated by a second, independent source (thepracticebridge.com\'s payer-ID finder, which separately lists "Select Health of Utah | Payer ID: SX107" for professional/institutional claims) — two-source agreement, but neither read directly from primary-document text this pass, so shipped as inferred rather than verified.',
+  true
+);
+const UT_31A_22_642_CURRENT = src(
+  'https://le.utah.gov/xcode/Title31A/Chapter22/C31A-22-S642_2026050620260506.html',
+  'Utah Code Section 31A-22-642 (current, eff. 5/6/2026); already cited in src/data/payers/utah.ts — the state autism mandate governing individual and large-group commercial plans (not small-group, not Medicaid).'
+);
+
 /* -------------------- Utah Medicaid (ASD FFS) codeGrid -------------------- */
 
 interface UtEntryOpts {
@@ -602,6 +634,112 @@ const unitedhealthcareContact: VobContact = {
   sources: [OPTUM_PROVIDER_EXPRESS_CONTACT, OPTUM_SCC],
 };
 
+/* ==================== select-health-utah (closing sweep) ====================
+   Two products under one guide, per the base guide's own prose: SelectHealth
+   Community Care (a Utah Medicaid ACO) carves ABA out to Utah Medicaid FFS
+   entirely — identical to every other UT ACO already documented in
+   utahMedicaidEdi above — while Select Health's commercial line
+   (employer/individual) runs its OWN clinical policy (#630) and its own ABA
+   Preauthorization Form. edi/codeGrid below describe the commercial line,
+   since that is the line Select Health actually administers ABA on; the
+   Community Care line's ABA eligibility/PA answer is utah-medicaid's own
+   entry (payerId.pverify 01324) — flagged explicitly in verifyVia rather
+   than duplicated here as if Select Health had a second, redundant Medicaid
+   ABA process of its own. */
+
+const selectHealthUtahEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'SX107 (Availity Advanced) / HT006873-001 (Availity Basic, via UHIN)', changeHealthcare: 'unverified' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator:
+      "For Community Care (Medicaid) members: none via Select Health — ABA is carved out entirely to Utah Medicaid FFS, identical to Utah's other three ACOs (see utah-medicaid above); Select Health does not administer or adjudicate ABA for these members at all. For commercial members: Select Health administers ABA in-house under its own Policy #630 — no third-party BH vendor named.",
+    administratorPayerId: 'N/A (Community Care) / unverified (commercial)',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'inferred',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify entry for "Select Health" or "SelectHealth Community Care" was independently confirmed this pass — confirm via pVerify onboarding.',
+    'payerId.availity':
+      'SX107/HT006873-001 come from a WebSearch summary of Select Health\'s own Payer ID List PDF, corroborated by a second independent source (thepracticebridge.com), but neither was read directly from readable primary-document text this pass — treat as inferred, not verified. IMPORTANT: for a Community Care (Medicaid) member, do NOT use this ID for an ABA eligibility check — route to utah-medicaid\'s own entry (pVerify 01324) instead, since ABA is carved out to state FFS entirely and Select Health never adjudicates it for these members.',
+    'payerId.changeHealthcare': 'Not checked against a dedicated Optum/Change Healthcare payer directory this pass.',
+    supportsRealtime: 'Confirm real-time vs. batch via UHIN/Availity onboarding for this payer ID.',
+  },
+  sources: [SELECTHEALTH_MEDICAID_SUMMARY, SELECTHEALTH_PRM, SELECTHEALTH_PAYER_ID_LIST, PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
+};
+
+function selectHealthCommercialEntry(): CodeGridEntry {
+  return {
+    covered: 'Yes — commercial members only, under Select Health\'s own Policy #630 ("Applied Behavior Analysis (ABA)," revised eff. 1/1/2026). NOT applicable to Community Care (Medicaid) members — see utah-medicaid\'s codeGrid instead; ABA never touches Select Health for those members.',
+    paRequired:
+      'Required — Select Health\'s own ABA Preauthorization Form: an initial request needs a diagnostic evaluation report; a concurrent/continuation request needs an updated treatment plan with progress data. Decisions on Utah commercial plans are due within 14 days absent expedited review.',
+    unitCap: 'unverified — Policy #630\'s specific medical-necessity/hour criteria could not be retrieved this pass (the policy PDF returned a maintenance error at every attempt); the Preauthorization Form itself gives no numeric unit cap.',
+    capPeriod: 'unverified',
+    posAllowed: ['office', 'home', 'other (per the Preauthorization Form\'s weekly-schedule field — no CMS POS numbers given)'],
+    telehealth: 'unverified — not addressed on the Preauthorization Form or in the retrievable Policy #630 update bulletin.',
+    modifiers: ['unverified'],
+    notes:
+      "Verify via: Select Health commercial UM intake (commercialUMintake@imail.org, fax 801-442-0825) — Policy #630's full medical-necessity criteria were not retrievable this pass; confirm unit caps, POS, and modifiers directly. The Utah Code 31A-22-642 mandate layer (individual + large group only — NOT small group) governs limits for qualifying plans, not coding mechanics.",
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'inferred',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [SELECTHEALTH_POLICY_UPDATE_0226, SELECTHEALTH_ABA_PREAUTH_FORM, UT_31A_22_642_CURRENT],
+  };
+}
+
+const selectHealthUtahCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': selectHealthCommercialEntry(),
+  '97152': selectHealthCommercialEntry(),
+  '97153': selectHealthCommercialEntry(),
+  '97154': selectHealthCommercialEntry(),
+  '97155': selectHealthCommercialEntry(),
+  '97156': selectHealthCommercialEntry(),
+  '97157': selectHealthCommercialEntry(),
+  '97158': selectHealthCommercialEntry(),
+  '0362T': selectHealthCommercialEntry(),
+  '0373T': selectHealthCommercialEntry(),
+};
+
+const selectHealthUtahRates: RateTable = {
+  source:
+    "No Select Health-specific ABA fee schedule (commercial or Community Care) was found published. For Community Care members, ABA rides Utah Medicaid FFS entirely, so utah-medicaid's own published PRISM rates ($19.67/15-min unit on 97153; $37.51 on 97151/97155/97156/H0032, effective 7/1/2026) are the actual reimbursement — not a Select Health rate at all, and not restated here to avoid implying Select Health sets it. For commercial members, rates are contract-negotiated and live in the practice's participating-provider agreement.",
+  effectiveDate: 'unverified — no Select Health-specific schedule exists for either product',
+  byCode: {
+    '97151': { rate: 'unverified — commercial is contract-negotiated; Community Care members bill Utah Medicaid FFS directly (see utah-medicaid: $37.51/unit)', unit: 'unverified' },
+    '97153': { rate: 'unverified — commercial is contract-negotiated; Community Care members bill Utah Medicaid FFS directly (see utah-medicaid: $19.67/unit)', unit: 'unverified' },
+    '97155': { rate: 'unverified — commercial is contract-negotiated; Community Care members bill Utah Medicaid FFS directly (see utah-medicaid: $37.51/unit)', unit: 'unverified' },
+    '97156': { rate: 'unverified — commercial is contract-negotiated; Community Care members bill Utah Medicaid FFS directly (see utah-medicaid: $37.51/unit)', unit: 'unverified' },
+  },
+  sources: [UT_PRISM_FEE_CSV, SELECTHEALTH_POLICY_UPDATE_0226],
+};
+
+const selectHealthUtahContact: VobContact = {
+  providerServicesPhone: '800-222-6358 (general commercial provider support) / 800-442-4566 (24/7 preauthorization help desk)',
+  fax: '801-442-0825 (commercial UM intake); Community Care (non-ABA services) 801-442-0625',
+  portal: { name: 'Select Health Preauth & Care Plan Tool', url: 'https://selecthealth.org/providers/preauthorization/forms-reports' },
+  scriptedQuestions: [
+    'Confirm which product this family is on — SelectHealth Community Care (Medicaid, routes ABA to Utah Medicaid FFS entirely) vs. Select Health commercial (Policy #630, its own PA process) — since the two have completely different ABA workflows.',
+    'For commercial members: what are Policy #630\'s actual unit caps, POS restrictions, and modifier requirements — the policy PDF itself was not retrievable this pass?',
+    'For commercial members: what market segment is this plan (individual/large-group vs. small-group/self-funded), since only the first two are protected by the Utah Code 31A-22-642 mandate?',
+    'Is telehealth allowed for any ABA codes under the commercial Policy #630, and if so which ones?',
+    'What EDI payer ID should be used for a commercial member\'s 270/271 eligibility check — SX107 or HT006873-001 — neither was independently confirmed against readable primary-source text this pass?',
+  ],
+  sources: [SELECTHEALTH_PREAUTH_FORMS_PAGE, SELECTHEALTH_ABA_PREAUTH_FORM],
+};
+
 /* ==================== export ==================== */
 
 export const utahVob: Record<string, VobExtension> = {
@@ -609,4 +747,11 @@ export const utahVob: Record<string, VobExtension> = {
   'aetna-utah': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
   'cigna-utah': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
   'unitedhealthcare-utah': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
+  'select-health-utah': {
+    edi: selectHealthUtahEdi,
+    codeGrid: selectHealthUtahCodeGrid,
+    rates: selectHealthUtahRates,
+    vobContact: selectHealthUtahContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

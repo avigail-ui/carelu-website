@@ -1710,4 +1710,70 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Closing sweep: VOB for final 4 guides + contacts for 9 — all guides now fully layered',
+    guides: [
+      'tenncare-select',
+      'select-health-utah',
+      'baylor-scott-white-texas',
+      'dell-childrens-health-plan',
+      'community-health-choice-texas',
+      'bcbs-texas-medicaid',
+      'cook-childrens-health-plan',
+      'parkland-community-health-plan',
+      'el-paso-health',
+      'firstcare-health-plans',
+      'aetna',
+      'cigna',
+      'unitedhealthcare-optum',
+    ],
+    details: [
+      {
+        slug: 'tenncare-select',
+        field: 'edi/codeGrid/rates/vobContact',
+        change:
+          'Full VOB layers shipped. TennCare Select is a separate PIHP state contract (Edison ID 83332) administered by the same entity as bluecare-tennessee (Volunteer State Health Plan/BlueCare Tennessee), sharing that entity\'s ABA policy — codeGrid reuses the verified BlueCare pattern unchanged. Select-specific contact numbers (Provider Service Line 1-800-276-1978, PA phone 1-800-711-4104, PA fax 1-800-292-5311 shared with BlueCare) confirmed from the base guide\'s own cited sources. EDI payer ID left unverified — a single-source FinThrive candidate (10504, fax-routed) could not be independently corroborated.',
+        sourceUrl: 'https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/2025/05-21-25/28.%20TennCare%20(Volunteer%20State%20Health%20Plan%20d.b.a%20BlueCare)%20Amend%201%20Redacted.pdf',
+      },
+      {
+        slug: 'select-health-utah',
+        field: 'edi/codeGrid/rates/vobContact',
+        change:
+          'Full VOB layers shipped. Two-product structure confirmed: SelectHealth Community Care (Medicaid ACO) carves ABA out to Utah Medicaid FFS entirely, identical to Utah\'s other three ACOs — no Select Health ABA process exists for these members. Commercial line runs its own Policy #630 with a dedicated ABA Preauthorization Form (initial vs. concurrent distinction, 14-day TX... UT decision window); unit caps/POS/modifiers unverified pending Policy #630\'s own text (returned a maintenance error at every fetch attempt). Availity payer ID (SX107) two-source corroborated but not read from primary text — shipped inferred.',
+        sourceUrl: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf',
+      },
+      {
+        slug: 'baylor-scott-white-texas',
+        field: 'edi/codeGrid/rates/stcMap/vobContact',
+        change:
+          'Full VOB layers shipped, reusing the shared TMPPM codeGrid factory. Plan is winding down (confirmed exit 8/31/2026 per TMHP 7/17/2026 announcement) — vobContact flags this first. BH carve-out confirmed none (in-house "RightCare Behavioral Health Management"); EDI payer IDs unverified (image-heavy plan PDFs did not yield extractable EDI text).',
+        sourceUrl: 'https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid',
+      },
+      {
+        slug: 'dell-childrens-health-plan',
+        field: 'edi/codeGrid/rates/stcMap/vobContact',
+        change:
+          'Full VOB layers shipped. BH carve-out confirmed to Magellan Healthcare (1-800-424-1764, two-hop routing) — the one Texas Medicaid MCO in this corpus with a genuine third-party BH vendor. A plan-specific 97157 PA=Yes discrepancy against the statewide THSteps-CCP code set is flagged, not silently resolved. EDI payer ID unverified (plan states Change Healthcare operates its EDI Gateway generally, no specific ID confirmed).',
+        sourceUrl: 'https://dellchildrenshealthplan.com/wp-content/uploads/2026/04/Dell-Childrens-Prior-Authorization-List-Final-Effective-6_1_2026.xlsx-DCHP-PA-List-2.pdf',
+      },
+      {
+        slug: 'community-health-choice-texas, bcbs-texas-medicaid, cook-childrens-health-plan, parkland-community-health-plan, el-paso-health, firstcare-health-plans',
+        field: 'vobContact',
+        change:
+          'Contact layer added for all 6 — providerServicesPhone independently confirmed this pass from each plan\'s own contact/phone-directory page; fax numbers reused from sources already cited in each guide\'s codeGrid. scriptedQuestions generated from each guide\'s own unverified/plan-dependent edi and codeGrid fields (EDI payer-ID ambiguity, copay/coinsurance timing, code-set exceptions). FirstCare\'s contact info flagged as good only through its confirmed 8/31/2026 Medicaid exit.',
+        sourceUrl: 'https://provider.communityhealthchoice.org/contact-community/',
+      },
+      {
+        slug: 'aetna, cigna, unitedhealthcare-optum',
+        field: 'vobContact',
+        change:
+          'Contact layer added for all 3 national guides, reusing the same national contact facts already independently fetched and cited this pass in vob/tennessee.ts and vob/utah.ts (Aetna 1-888-632-3862 commercial precert; Cigna/Evernorth 1-800-926-2273; Optum Provider Express 1-877-614-0484). scriptedQuestions generated from each guide\'s own unverified/plan-dependent codeGrid fields (unit caps, POS, BH carve-out routing are plan-dependent at the national-guide level by design).',
+        sourceUrl: 'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+      },
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];

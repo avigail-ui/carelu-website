@@ -895,6 +895,105 @@ const unitedhealthcareContact: VobContact = {
   sources: [PROVIDER_EXPRESS_SUPPORT_PAGE, OPTUM_SCC],
 };
 
+/* ==================== closing sweep: tenncare-select ====================
+   Sourcing notes: TennCare Select is a separate state PIHP contract (Edison
+   ID 83332) but is administered by the SAME entity as bluecare-tennessee —
+   Volunteer State Health Plan, Inc. d/b/a BlueCare Tennessee — and the
+   BlueCare Tennessee Provider Administration Manual's own ABA section
+   covers BOTH BlueCare and TennCareSelect members under one shared policy
+   (already verified and cited in src/data/payers/tennessee.ts). The
+   codeGrid below therefore reuses bluecareEntry() unchanged rather than
+   re-deriving it — same CPT codes, same PA mechanics, same telehealth
+   policy — with the difference being contact numbers and, for a subset of
+   members, LTSS sub-programs (SelectKids, SelectCommunity, Katie Beckett
+   Part A), which live in prose, not these VOB layers. A single-source,
+   fax-routed EDI payer-ID candidate ("10504," per a FinThrive payer-list
+   WebSearch snippet this pass) could not be independently corroborated
+   against a second primary source and is flagged, not shipped as
+   confirmed — same treatment already given to BlueCare's own multiple
+   unconfirmed pVerify candidates in this file. */
+
+const TENNCARE_SELECT_CONTRACT = src(
+  'https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/2025/05-21-25/28.%20TennCare%20(Volunteer%20State%20Health%20Plan%20d.b.a%20BlueCare)%20Amend%201%20Redacted.pdf',
+  'TennCare (Volunteer State Health Plan d.b.a. BlueCare) Contract Amendment #1, Edison Contract ID 83332 (term 1/1/2025-12/31/2027); already cited in src/data/payers/tennessee.ts — confirms TennCare Select operates as a separate PIHP agreement from BlueCare\'s standard MCO contract, both administered by Volunteer State Health Plan, Inc. d/b/a BlueCare Tennessee.'
+);
+const TENNCARE_SELECT_MCPAR = src(
+  'https://www.tn.gov/content/dam/tn/tenncare/documents/2025ManagedCareProgramAnnualReport.pdf',
+  "TennCare Managed Care Program Annual Report (MCPAR), submitted to CMS 6/29/2025 for CY2024; already cited in tennessee.ts — TennCare Select average monthly enrollment 37,095 (~2.5% of statewide TennCare)."
+);
+const FINTHRIVE_PAYER_LIST_SNIPPET = src(
+  'https://www.insuranceverifier.finthrive.com/Document/FinThrive%20Payer%20List.pdf',
+  'FinThrive Payer List — a WebSearch summary of this document this pass surfaced a single unconfirmed candidate row, "BlueCare Tennessee-TennCareSelect ... Payer ID 10504 ... via FAX," but a direct fetch of the PDF returned only compressed/encoded content and could not independently corroborate that row. Not a confirmed EDI payer ID — flagged as a single-source candidate only, not used to populate payerId.pverify/availity below.',
+  true
+);
+
+const tenncareSelectEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator:
+      'none — in-house (same finding as bluecare-tennessee): TennCare Select\'s ABA benefit is administered directly by Volunteer State Health Plan/BlueCare Tennessee under the SAME shared tri-MCO Provider Administration Manual policy that covers BlueCare — no external BH vendor (Carelon/Optum/Magellan) named',
+    administratorPayerId: 'N/A',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify':
+      "No TennCare-Select-specific pVerify row was confirmed this pass — pVerify's public list carries only the state-level \"00185 Tennessee Medicaid (TennCare)\" entry (Elig=Yes) and a generic \"00219 Blue Cross Blue Shield Tennessee\" row, neither confirmed TennCare-Select-specific. A single WebSearch snippet of the FinThrive payer list surfaced an unconfirmed candidate (\"10504,\" fax-routed) that could not be independently corroborated against a readable primary document — see FINTHRIVE_PAYER_LIST_SNIPPET. Confirm via pVerify onboarding or BCBST EDI enrollment (800-924-7141).",
+    'payerId.availity': 'Same as payerId.pverify — no TennCare-Select-specific row found in the fetched Availity 837 payer list. Confirm via BCBST EDI enrollment (800-924-7141) / eBusiness_service@bcbst.com.',
+    'payerId.changeHealthcare': 'Not checked against a dedicated Optum/Change Healthcare payer directory this pass.',
+    supportsRealtime:
+      "TennCare's own EDI Front Matter positions 270/271 as a state-run (not MCC/MCO) transaction — practical fallback: pVerify's state-level \"00185 Tennessee Medicaid (TennCare)\" entry (Elig=Yes) confirms TennCare enrollment; cross-reference the member's MCO card for TennCare Select assignment. Confirm directly via pVerify/Availity onboarding.",
+  },
+  sources: [TENNCARE_SELECT_CONTRACT, TENNCARE_SELECT_MCPAR, BLUECARE_PAM, TENNCARE_EDI_FRONT_MATTER, PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, FINTHRIVE_PAYER_LIST_SNIPPET],
+};
+
+const tenncareSelectCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': bluecareEntry('97151'),
+  '97152': bluecareEntry('97152'),
+  '97153': bluecareEntry(
+    '97153',
+    'Continuation requests must report % of authorized units used on this code — under 90% requires a written explanation. Billed "97153HO" when BCBA/QHP-delivered vs. plain 97153 when technician-delivered (eff. DOS 9/1/2019+, per the shared BlueCare/TennCare Select Provider Administration Manual).'
+  ),
+  '97154': bluecareEntry('97154'),
+  '97155': bluecareEntry(
+    '97155',
+    'Per the shared BlueCare/TennCare Select Provider Administration Manual: may be billed concurrently with technician-delivered codes when the BCBA is directing an RBT, the client is present, and one or more protocols have been modified.'
+  ),
+  '97156': bluecareEntry('97156', 'Parent-training volume delivered is tracked separately at continuation, per week/month, on the Universal Request form.'),
+  '97157': bluecareEntry('97157'),
+  '97158': bluecareEntry('97158'),
+  '0362T': bluecareEntry('0362T'),
+  '0373T': bluecareEntry('0373T'),
+};
+
+const tenncareSelectRates = tnNoRatesTable('TennCare Select (administered by Volunteer State Health Plan/BlueCare Tennessee)');
+
+const tenncareSelectContact: VobContact = {
+  providerServicesPhone: '1-800-276-1978 — TennCare Select Provider Service Line (distinct from BlueCare\'s 1-800-468-9736)',
+  ivrPath:
+    'PA questions: 1-800-711-4104 (TennCare Select Prior Auth phone, distinct from BlueCare\'s 1-888-423-0131). SelectKids (foster care) has its own line: Provider/Family Services 1-800-451-9147. SelectCommunity (IDD): 1-800-292-8196. Member Service Line (for confirming enrollment): 1-800-263-5479.',
+  fax: '1-800-292-5311 (Prior Auth fax — shared with BlueCare Tennessee); SelectKids fax 1-800-330-2842; SelectCommunity fax 1-888-255-9175',
+  portal: { name: 'BlueCare online provider tool (bluecare.bcbst.com) / Availity', url: 'https://bluecare.bcbst.com' },
+  scriptedQuestions: [
+    'Confirm this member is on TennCare Select rather than standard BlueCare — contact numbers and forms differ even though both run through the same BCBST/VSHP entity.',
+    'Is this member on a TennCare Select sub-program (SelectKids/foster care, SelectCommunity/IDD, or Katie Beckett Part A) with its own dedicated contact line?',
+    'Is 0362T (or 0373T) on the current Telehealth Approved Code List, and is there a published unit cap for either code?',
+    'What is the negotiated per-unit rate for the ABA code set under this member\'s TennCare Select provider contract, since TennCare publishes no statewide ABA fee schedule?',
+    'What EDI payer ID should be used for this member\'s 270/271 eligibility check — no TennCare-Select-specific code was confirmed this pass?',
+  ],
+  sources: [TENNCARE_SELECT_CONTRACT, BLUECARE_PAM],
+};
+
 /* ==================== export ==================== */
 
 export const tennesseeVob: Record<string, VobExtension> = {
@@ -932,6 +1031,13 @@ export const tennesseeVob: Record<string, VobExtension> = {
     edi: unitedhealthcareEdi,
     codeGrid: unitedhealthcareCodeGrid,
     vobContact: unitedhealthcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'tenncare-select': {
+    edi: tenncareSelectEdi,
+    codeGrid: tenncareSelectCodeGrid,
+    rates: tenncareSelectRates,
+    vobContact: tenncareSelectContact,
     lastUpdated: ACCESS_DATE,
   },
 };

@@ -43,7 +43,7 @@
      2022RP501A), that figure ships with its own fieldStatus rather
      than being flattened to 'plan-dependent'.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, VobContact } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -85,6 +85,31 @@ const OPTUM_REIMBURSEMENT_POLICY = src(
 const OPTUM_ABA_FAQ = src(
   'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaFAQ.pdf',
   'Optum ABA FAQ (Provider Express), already cited in src/data/payers/national.ts — tele-supervision and virtual family training require the provider to be an approved Optum virtual-visits provider with a completed attestation on Provider Express, and the authorization must note virtual delivery. Framed as a supplement to, not a replacement for, in-person care. Not code-specific.'
+);
+
+/* -------------------- Layer 7 vobContact source refs --------------------
+   Same national contact facts already independently fetched and cited
+   this pass (ACCESS_DATE 2026-07-23) in vob/tennessee.ts and vob/utah.ts —
+   reused here rather than re-fetched, per this file's own convention of
+   restructuring already-verified national facts rather than re-deriving
+   them (see the file-header sourcing note). */
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list for Aetna," effective 8/1/2024 — its own precertification table explicitly lists "3. Applied behavioral analysis (ABA)" against CPT codes 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, 0362T, 0373T. States verbatim: "Commercial plans: 1-888-632-3862 (TTY: 711); Medicare plans: 1-800-624-0756 (TTY: 711)" and directs submission via the Availity provider portal (Availity.com) or AetnaElectronicPrecert.com. Already independently fetched and cited (2026-07-23) in vob/tennessee.ts.',
+  true
+);
+const CIGNA_EBH_ADMIN_GUIDE = src(
+  'https://static.cigna.com/assets/chcp/pdf/resourceLibrary/behavioral/ebh-provider-admin-guide.pdf',
+  'Evernorth Behavioral Administrative Guidelines, PCOMM-2021-1080 (8/21) — its own "Important contact information" table states verbatim, under "Perform telephone transactions" (eligibility/coverage verification, claim status, precertification requests): "Phone: 800.926.2273"; online transactions route to Provider.Evernorth.com. Already independently fetched and cited (2026-07-23) in vob/tennessee.ts.',
+  true
+);
+const PROVIDER_EXPRESS_SUPPORT_PAGE = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/about-us/provider-express-support.html',
+  'Provider Express (Optum) Support page — states verbatim "1 866-209-9320 (toll-free)" as the Provider Express Support Center phone, hours "8 a.m. to 8 p.m. Eastern time"; live chat 8 a.m.-5 p.m. Central time through the same site. Already independently fetched and cited (2026-07-23) in vob/tennessee.ts.'
+);
+const OPTUM_PROVIDER_EXPRESS_CONTACT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum "Provider Express — Contact Us" page — Provider Services: "1-877-614-0484," Mon-Fri 7am-7pm CT (credentialing, contracting, network status, provider demographics — not itself an ABA/PA line); Provider Express secure-portal technical support "1-866-209-9320," same hours. No dedicated ABA/BH prior-authorization phone or fax published on this page — PA runs through the Provider Express portal or the number on the member\'s ID card. Already independently fetched and cited (2026-07-23) in vob/utah.ts.'
 );
 
 /* ==================== aetna (national commercial) ==================== */
@@ -315,22 +340,68 @@ const unitedhealthcareOptumCodeGrid: Record<string, CodeGridEntry> = Object.from
   ['97151', '97152', '97153', '97154', '97155', '97156', '97157', '97158', '0362T', '0373T', '99366'].map((code) => [code, unitedhealthcareOptumEntry(code)])
 );
 
+/* ==================== Layer 7 — vobContact ==================== */
+
+const aetnaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862 (commercial) / 1-800-624-0756 (Medicare)',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'Does Aetna administer ABA in-house for this plan, or via a behavioral-health carve-out — and if carved out, what administrator/payer ID should we use for eligibility checks?',
+    'Does this plan support real-time (vs. batch) 270/271 eligibility for payer ID 00001?',
+    'What are the daily/session unit caps for 97151-97158 and 0362T/0373T under this specific plan?',
+    'What place-of-service settings (home/office/school/telehealth) does this plan allow for ABA, and what modifiers does it require?',
+    'Is 99366 (interdisciplinary team meeting) a covered, billable benefit under this plan?',
+  ],
+  sources: [AETNA_BH_PRECERT_LIST],
+};
+
+const cignaContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273 (Evernorth Behavioral Health)',
+  portal: { name: 'CignaforHCP / Provider.Evernorth.com', url: 'https://cignaforhcp.cigna.com/app/login' },
+  scriptedQuestions: [
+    'Does this plan require prior authorization on ABA assessment codes (97151/97152/0362T) separately from treatment codes, since EN0499 does not state a per-code PA distinction?',
+    'Is 99366 (interdisciplinary team meeting) a covered, billable benefit under this plan?',
+    'What are the daily/session unit caps for 97151-97158 and 0362T/0373T under this specific plan?',
+    'What place-of-service settings does this plan allow for ABA, and what modifiers (beyond the confirmed telehealth-everywhere policy) does it require?',
+    'Does this plan support real-time (vs. batch) 270/271 eligibility for payer ID 00004?',
+  ],
+  sources: [CIGNA_EBH_ADMIN_GUIDE],
+};
+
+const unitedhealthcareOptumContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484 (Provider Express — Behavioral Health/ABA)',
+  hours: 'Mon-Fri 7:00am-7:00pm CT',
+  ivrPath: 'Provider Express secure-portal technical support runs a separate line, 1-866-209-9320, same hours — use 877-614-0484 for BH/ABA authorization and eligibility questions, not portal login issues.',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com/' },
+  scriptedQuestions: [
+    'Does ABA route through Optum Behavioral Health, or directly through UnitedHealthcare medical benefits for this specific plan?',
+    'What EDI payer ID routes the BH-side 270/271 eligibility check for this plan, and does eligibility itself require a second hop to Optum, or only the PA/UM step?',
+    'Do the national Reimbursement Policy (2022RP501A) daily unit caps apply to this specific plan, or does a state mandate/ASO plan document override them?',
+    'What place-of-service settings are allowed for ABA, and is telehealth permitted beyond tele-supervision/virtual family training?',
+    'Is 99366 (interdisciplinary team meeting) a covered, billable benefit under this plan?',
+  ],
+  sources: [OPTUM_PROVIDER_EXPRESS_CONTACT, PROVIDER_EXPRESS_SUPPORT_PAGE],
+};
+
 /* ==================== export ==================== */
 
 export const nationalVob: Record<string, VobExtension> = {
   aetna: {
     edi: aetnaEdi,
     codeGrid: aetnaCodeGrid,
+    vobContact: aetnaContact,
     lastUpdated: ACCESS_DATE,
   },
   cigna: {
     edi: cignaEdi,
     codeGrid: cignaCodeGrid,
+    vobContact: cignaContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-optum': {
     edi: unitedhealthcareOptumEdi,
     codeGrid: unitedhealthcareOptumCodeGrid,
+    vobContact: unitedhealthcareOptumContact,
     lastUpdated: ACCESS_DATE,
   },
 };
