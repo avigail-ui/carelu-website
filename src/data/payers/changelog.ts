@@ -1519,4 +1519,30 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      'QA spot-check NY+CO/UT/NM/AZ/OH/MO: 163 checked, 157 confirmed, 0 corrected, 2 downgraded. ' +
+      'Adversarial re-verification of the VOB edi/codeGrid/rates \'verified\' fields across seven state files — each state\'s state-Medicaid guide plus two other guides chosen at random, every cited primary source re-opened and re-read (binary PDF/xlsx/docx sources downloaded and text-extracted directly rather than trusted on faith). Guides audited: NY (new-york-medicaid, highmark-western-new-york, molina-healthcare-new-york); CO (colorado-medicaid, cigna-colorado, unitedhealthcare-colorado); UT (utah-medicaid, cigna-utah, unitedhealthcare-utah); NM (new-mexico-medicaid, presbyterian-health-plan-new-mexico, cigna-new-mexico); AZ (arizona-ahcccs, arizona-complete-health, cigna-arizona); OH (ohio-medicaid, caresource-ohio, cigna-ohio); MO (missouri-medicaid, cigna-missouri, unitedhealthcare-missouri). ' +
+      'The corpus held up: 157 fields CONFIRMED verbatim against their source (rates re-derived from the raw fee-schedule files in NY/CO/UT/AZ/OH/MO, Ohio\'s draft-rule rate table matched to the cent, NY\'s Highmark telehealth code set matched character-by-character), 0 REFUTED. Four fields were UNREACHABLE (not defects, left unchanged): CO\'s three bhCarveOut fields rest on Colorado PM 25-005, which hard-403s automated fetches, and AZ\'s arizona-ahcccs changeHealthcare \'AZMCD\' cites only the Optum homepage, which carries no payer directory. Two MISCITED citations were caught and downgraded to \'unverified\' with a verifyVia note (value strings left intact, nothing invented): arizona-ahcccs medicaid271Notes.mcoCarrierCodes and cigna-utah\'s assessment-code paRequired.',
+    guides: ['arizona-ahcccs', 'cigna-utah'],
+    details: [
+      {
+        slug: 'arizona-ahcccs',
+        field: 'edi.medicaid271Notes.mcoCarrierCodes',
+        change:
+          'MISCITED -> downgraded verified to unverified. Re-fetch of the AHCCCS 5010A 270/271 Companion Guide (v4.0) confirmed 7 of the 9 shipped 6-digit carrier codes in its worked 271 examples, but 999998 (AHCCCS American Indian Health Program FFS) and 008690 (FFS Temporary) appear nowhere in the document (0 hits across all 46 pp.). The segment FORMAT is confirmed; the specific per-plan codes are not fully supported by the cited guide. verifyVia expanded to enumerate the confirmed vs. absent codes and direct confirmation against a current AHCCCS carrier-code source before quoting.',
+        sourceUrl: 'https://www.azahcccs.gov/Resources/Downloads/EDIchanges/AZ270_271_CG.pdf',
+      },
+      {
+        slug: 'cigna-utah',
+        field: 'codeGrid.97151/97152/0362T.paRequired',
+        change:
+          'MISCITED -> downgraded verified to unverified on the three ABA assessment codes. EN0499 as fetched publishes only medical-necessity criteria and contains no \'prior authorization\'/\'precertification\' language, and never states that assessment codes are PA-exempt — so the shipped \'Not required (per EN0499)\' status is not supported by its citation. Value string left unchanged; fieldStatus.paRequired downgraded with a QA note pointing to Cigna/Evernorth precertification lists. The seven treatment codes (97153-97158, 0373T) whose PA claim IS backed by EN0499 were left untouched.',
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];

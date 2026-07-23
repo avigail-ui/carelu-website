@@ -321,14 +321,14 @@ const ahcccsEdi: EdiRouting = {
     supportsRealtime: 'verified',
     'bhCarveOut.administrator': 'verified',
     'medicaid271Notes.mcoSegmentLocation': 'verified',
-    'medicaid271Notes.mcoCarrierCodes': 'verified',
+    'medicaid271Notes.mcoCarrierCodes': 'unverified',
     'medicaid271Notes.eligibilitySpanGranularity': 'verified',
   },
   verifyVia: {
     'payerId.pverify': 'pVerify 00027 = "Arizona Medicaid (AHCCCS)" (Elig Y / Claim Y). Optum/Change Healthcare ID = AZMCD.',
     'payerId.availity': 'The public Availity list (2012 vintage) has no current AHCCCS row — confirm via Availity Essentials.',
     'medicaid271Notes.mcoCarrierCodes':
-      'These 6-digit codes are the ones ACTUALLY shown in the companion guide\'s §6 worked 271 examples. The guide does NOT publish a full appendix mapping every plan — UHCCP/APIPA, Banner-UFC, BCBSAZ Health Choice, and Molina-AZ 6-digit codes are NOT enumerated there and remain unverified (the segment FORMAT is confirmed; the specific per-plan codes are not).',
+      'Downgraded to unverified 2026-07-23: re-fetch of the AHCCCS 270/271 CG v4.0 confirmed 7 of the 9 shipped codes present in the guide\'s worked 271 examples (010306 MERCY CARE PLAN, 010422 AZ COMPLETE HEALTH CARE, 010166 DCS/CMDP, 010115 CRS FULLY INTEGRATED, 999125 CRS PARTIAL BH, 008715 AHCCCS QMB-ONLY, 008040 AHCCCS SLMB-PART B BUY-IN), but 999998 (AHCCCS American Indian HP FFS) and 008690 (FFS Temporary) were NOT found anywhere in the fetched guide — those two are miscited. The guide also does NOT publish a full appendix mapping every plan — UHCCP/APIPA, Banner-UFC, BCBSAZ Health Choice, and Molina-AZ 6-digit codes are NOT enumerated there either (the segment FORMAT is confirmed; the specific per-plan codes are not). Confirm 999998/008690 against a current AHCCCS carrier-code source before quoting.',
   },
   sources: [PVERIFY_PAYER_LIST, OPTUM_RTE_LIST, AHCCCS_COMPANION_GUIDE, AHCCCS_EDI_TECH_DOCS, AVAILITY_PAYER_LIST],
 };

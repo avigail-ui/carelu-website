@@ -339,7 +339,7 @@ function aetnaEntry(): CodeGridEntry {
   };
 }
 
-function cignaEntry(paRequired: string): CodeGridEntry {
+function cignaEntry(paRequired: string, paStatus: 'verified' | 'unverified' = 'verified', extraNote = ''): CodeGridEntry {
   return {
     covered: 'Yes',
     paRequired,
@@ -349,10 +349,10 @@ function cignaEntry(paRequired: string): CodeGridEntry {
     telehealth: 'unverified',
     modifiers: ['unverified'],
     notes:
-      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics are published in it. Utah is fully subject to EN0499 (only Virginia is carved out), so the no-assessment-PA fast path holds.',
+      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics are published in it. Utah is fully subject to EN0499 (only Virginia is carved out), so the no-assessment-PA fast path holds.' + extraNote,
     fieldStatus: {
       covered: 'verified',
-      paRequired: 'verified',
+      paRequired: paStatus,
       unitCap: 'unverified',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -459,15 +459,15 @@ const cignaEdi: EdiRouting = {
 };
 
 const cignaCodeGrid: Record<string, CodeGridEntry> = {
-  '97151': cignaEntry('Not required (per EN0499)'),
-  '97152': cignaEntry('Not required (per EN0499)'),
+  '97151': cignaEntry('Not required (per EN0499)', 'unverified', ' QA verify (2026-07-23): EN0499 as fetched publishes only medical-necessity criteria and contains no \'prior authorization\'/\'precertification\' language and no statement exempting assessment codes from PA, so this \'Not required\' value is downgraded from verified to unverified pending confirmation via Cigna/Evernorth precertification lists.'),
+  '97152': cignaEntry('Not required (per EN0499)', 'unverified', ' QA verify (2026-07-23): EN0499 as fetched publishes only medical-necessity criteria and contains no \'prior authorization\'/\'precertification\' language and no statement exempting assessment codes from PA, so this \'Not required\' value is downgraded from verified to unverified pending confirmation via Cigna/Evernorth precertification lists.'),
   '97153': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '97154': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '97155': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '97156': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '97157': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '97158': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
-  '0362T': cignaEntry('Not required (per EN0499)'),
+  '0362T': cignaEntry('Not required (per EN0499)', 'unverified', ' QA verify (2026-07-23): EN0499 as fetched publishes only medical-necessity criteria and contains no \'prior authorization\'/\'precertification\' language and no statement exempting assessment codes from PA, so this \'Not required\' value is downgraded from verified to unverified pending confirmation via Cigna/Evernorth precertification lists.'),
   '0373T': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
 };
 
