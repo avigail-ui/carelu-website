@@ -7,7 +7,9 @@
    ================================================================ */
 export * from './types.js';
 import type { VobExtension } from './types.js';
+import { georgiaVob } from './georgia.js';
 
 export const vob: Record<string, VobExtension> = {
-  // ...georgiaVob, ...northCarolinaVob, ... as states are delivered
+  ...georgiaVob,
+  // ...northCarolinaVob, ... as states are delivered
 };
