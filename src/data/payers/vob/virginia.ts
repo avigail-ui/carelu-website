@@ -25,7 +25,7 @@
      modifiers (no modifier = technician, HN = LABA, TF = LMHP,
      HO = LBA). Two MCO-specific facts change the grid: Anthem
      HealthKeepers Plus publishes the state's clearest code/modifier/POS
-     grid (GT telehealth on 97151/97153/97155/97156; school POS 03 on
+     grid (GT telehealth on all eight 97xxx codes 97151-97158; school POS 03 on
      97151/97155/97156), and Humana's PA list flags 0362T as
      PA-required — a genuine deviation from the DMAS assessment-code
      baseline, carried honestly rather than normalized away.
@@ -95,7 +95,7 @@ const VA_MES_270271_CG = src(
 );
 const ANTHEM_VA_ABA_GRID = src(
   'https://providers.anthem.com/docs/gpp/VA_CAID_ABARequirements.pdf?v=202302021327',
-  'Anthem HealthKeepers Plus (VA) — ABA requirements bulletin (Feb 2023): the state\'s clearest published ABA code/modifier/place-of-service grid — no SA on 97151/97152/0362T; SA required on 97153–97158 and 0373T; GT telehealth combinations payable on 97151, 97153, 97155, 97156; school allowed as a place of service (POS 03) for 97151, 97155, 97156.'
+  'Anthem HealthKeepers Plus (VA) — ABA requirements bulletin (Feb 2023): the state\'s clearest published ABA code/modifier/place-of-service grid — no SA on 97151/97152/0362T; SA required on 97153–97158 and 0373T; GT telehealth combinations payable on all eight 97xxx codes (97151–97158; only 0362T/0373T lack GT); school allowed as a place of service (POS 03) for 97151, 97155, 97156. (QA 2026-07-23: the grid was re-read in full — GT combinations appear for 97152/97154/97157/97158 as well, correcting an earlier reading that listed only 97151/97153/97155/97156.)'
 );
 const ANTHEM_VA_INITIAL_SA = src(
   'https://providers.anthem.com/docs/gpp/VA_CCC_BH_ABA_InitialStay.pdf?v=202301010312',
@@ -463,16 +463,17 @@ function anthemHkpTreatmentEntry(code: string, telehealthGt: boolean, schoolPos:
 }
 
 const anthemHkpCodeGrid: Record<string, CodeGridEntry> = {
-  // GT telehealth explicitly payable on 97151, 97153, 97155, 97156; school POS 03 on 97151, 97155, 97156.
+  // GT telehealth combinations payable on all eight 97xxx codes (97151-97158) per Anthem's Feb-2023 grid;
+  // only 0362T and 0373T lack GT combinations. School POS 03 on 97151, 97155, 97156.
   '97151': anthemHkpAssessmentEntry('97151', true, true),
-  '97152': anthemHkpAssessmentEntry('97152', false, false),
+  '97152': anthemHkpAssessmentEntry('97152', true, false),
   '0362T': anthemHkpAssessmentEntry('0362T', false, false),
   '97153': anthemHkpTreatmentEntry('97153', true, false),
-  '97154': anthemHkpTreatmentEntry('97154', false, false),
+  '97154': anthemHkpTreatmentEntry('97154', true, false),
   '97155': anthemHkpTreatmentEntry('97155', true, true),
   '97156': anthemHkpTreatmentEntry('97156', true, true),
-  '97157': anthemHkpTreatmentEntry('97157', false, false),
-  '97158': anthemHkpTreatmentEntry('97158', false, false),
+  '97157': anthemHkpTreatmentEntry('97157', true, false),
+  '97158': anthemHkpTreatmentEntry('97158', true, false),
   '0373T': anthemHkpTreatmentEntry('0373T', false, false),
 };
 
@@ -490,16 +491,16 @@ const humanaVaEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'inferred',
-    'payerId.availity': 'verified',
-    'payerId.changeHealthcare': 'verified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
   },
   verifyVia: {
     'payerId.pverify': 'pVerify has no VA-specific Humana row; 00112 = generic "Humana" (Medical, Eligibility=Yes). Confirm the Humana Healthy Horizons Virginia-specific mapping via pVerify payer search (plan entered VA 7/1/2025, replacing Molina).',
-    'payerId.availity': 'Payer ID 61101 per Humana\'s official VA Medicaid claims page (Humana\'s universal ID, used across Availity and Change Healthcare).',
-    'payerId.changeHealthcare': 'Same universal Humana ID 61101 per the VA Medicaid claims page.',
+    'payerId.availity': 'QA 2026-07-23 downgraded verified->unverified: 61101 appears in NEITHER cited source (the Humana VA PAL carries no payer IDs; the pVerify list carries Humana only as 00112). 61101 is Humana\'s widely-used universal ID but is not document-backed by a cited/reachable source here — confirm on Humana\'s official VA Medicaid claims page before treating as verified.',
+    'payerId.changeHealthcare': 'Same as payerId.availity: 61101 not present in either cited source; QA 2026-07-23 downgraded verified->unverified. Confirm via Humana\'s VA Medicaid claims page.',
     supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for 61101.',
   },
   sources: [HUMANA_VA_PAL, PVERIFY_PAYER_LIST],

@@ -231,13 +231,19 @@ function stateBaselineEntry(code: string, fieldConfidence: 'verified' | 'inferre
     notes: [
       isUnscheduled ? 'Not separately priced in the current fee schedule — see Layer 4 for the individual-consideration note.' : undefined,
       isGroup ? 'Group-session cap and size come from the Carelon/MBHP performance spec, not a fee-schedule/coding source.' : undefined,
+      fieldConfidence === 'verified'
+        ? 'QA 2026-07-23: paRequired fieldStatus downgraded verified->unverified — neither 101 CMR 358 (a rate regulation that explicitly disclaims being an authorization: "101 CMR 358.00 is not authorization for or approval of the services") nor the Carelon/MBHP performance spec states a blanket ABA PA requirement; the requirement is plausibly true but its load-bearing source (MassHealth ABA Provider Manual/Bulletin) is not cited here — verify there.'
+        : undefined,
       extraNotes,
     ]
       .filter(Boolean)
       .join(' '),
     fieldStatus: {
       covered: isUnscheduled ? 'inferred' : fieldConfidence,
-      paRequired: fieldConfidence,
+      // QA 2026-07-23: the blanket-PA claim is not stated in either cited source (101 CMR 358 disclaims
+      // authorization; the performance spec only says "if authorization is required"), so a 'verified'
+      // confidence is downgraded to 'unverified'. 'inferred' MCO callers are left as-is (a payer-pattern hedge).
+      paRequired: fieldConfidence === 'verified' ? 'unverified' : fieldConfidence,
       unitCap: isGroup ? fieldConfidence : 'unverified',
       posAllowed: fieldConfidence === 'verified' ? 'verified' : 'inferred',
       telehealth: fieldConfidence === 'verified' ? 'verified' : 'inferred',
@@ -404,10 +410,10 @@ const massHealthMedicaidEdi: EdiRouting = {
     'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'verified',
-    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administrator': 'unverified',
     'bhCarveOut.administratorPayerId': 'inferred',
     'bhCarveOut.abaRidesOn': 'unverified',
-    'bhCarveOut.twoHopRequired': 'verified',
+    'bhCarveOut.twoHopRequired': 'unverified',
     'medicaid271Notes.mcoSegmentLocation': 'verified',
     'medicaid271Notes.mcoCarrierCodes': 'verified',
     'medicaid271Notes.eligibilitySpanGranularity': 'verified',
@@ -417,6 +423,10 @@ const massHealthMedicaidEdi: EdiRouting = {
       "pVerify lists multiple MassHealth-family candidates (00133 'Massachusetts Medicaid', 01398 'MASSHEALTH', BO00082 'MASSHEALTH-BO', 01421 'MASSHEALTH-EDI') without a clearly canonical single ID — confirm which code your clearinghouse actually routes on before automating.",
     'payerId.availity': 'No MassHealth row found in the (stale, 2012) Availity payer list retrieved this pass — confirm directly via Availity onboarding.',
     'payerId.changeHealthcare': 'Not researched this pass — confirm via Optum/Change Healthcare payer finder.',
+    'bhCarveOut.administrator':
+      'QA 2026-07-23 downgraded verified->unverified: the six-administrator roster and its plan-by-plan routing are editorial synthesis of the individual MA plan guides (which DO each document their administrator) — the cited MassHealth 270/271 companion guide contains zero BH-carve-out-administrator content, so it cannot carry a "verified" label here. Confirm each member\'s administrator from the plan-specific guide (MBHP/Carelon, Fallon/Carelon, WellSense in-house, Tufts/Point32Health, MGB/Optum).',
+    'bhCarveOut.twoHopRequired':
+      'QA 2026-07-23 downgraded verified->unverified: whether a second EDI hop is required varies by which administrator the member\'s plan uses (the administrator field itself says routing "varies by plan"), and the cited companion guide does not address BH claim-routing hops — resolve per the plan-specific guide.',
     'bhCarveOut.abaRidesOn':
       'Varies by which of the six administrators the member\'s specific plan uses (MBHP/Carelon and Fallon/Carelon ride BH; WellSense folds into its own medical claims post-insourcing; Tufts and MGB have their own distinct arrangements) — see the plan-specific guides rather than treating the state program as one carve-out.',
   },
@@ -555,7 +565,7 @@ const wellsenseEdi: EdiRouting = {
     'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
-    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administrator': 'unverified',
     'bhCarveOut.administratorPayerId': 'inferred',
     'bhCarveOut.abaRidesOn': 'inferred',
     'bhCarveOut.twoHopRequired': 'inferred',
@@ -563,6 +573,8 @@ const wellsenseEdi: EdiRouting = {
   verifyVia: {
     'payerId.pverify':
       "pVerify lists this payer under its legacy name, 'Boston Medical Center Healthnet Plan' (01399) — WellSense's current name was queried but not found in retrieved pVerify content this pass; confirm the ID still applies under the current name.",
+    'bhCarveOut.administrator':
+      "QA 2026-07-23 downgraded verified->unverified: the '1/1/2026 in-house since previously Carelon/Beacon' claim is not stated in any of the three cited sources, and the cited WellSense EDI Companion Guide (Mar 2024) actively contradicts it (still routes BH to Beacon Health Strategies). The insourcing is TRUE but its supporting source — WellSense's own BH provider page (wellsense.org/providers/behavioral-health, 'all other products for MA and NH on Jan. 1, 2026') — is not among the cited refs; add/confirm it before restoring 'verified'.",
     'payerId.changeHealthcare': 'Not researched this pass — confirm via Optum/Change Healthcare payer finder.',
     'bhCarveOut.administratorPayerId':
       "WellSense's own EDI Claims Companion Guide (March 2024) still names Beacon Health Strategies for BH claims — that document PRE-DATES the 1/1/2026 insourcing and is now out of date on this specific point; no post-insourcing WellSense EDI document was found confirming the current BH routing mechanics.",

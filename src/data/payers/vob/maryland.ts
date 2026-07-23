@@ -233,10 +233,10 @@ function aetnaEntry(): CodeGridEntry {
     telehealth: 'unverified',
     modifiers: ['unverified'],
     notes:
-      "Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy or Maryland-specific exhibit could be located. Maryland's habilitative-services mandate (COMAR 31.10.39.03) bars denial solely on prescribed hours up to 25/week (ages 18mo–5) or 10/week (6–18) for fully-insured plans — that is a mandate floor, not a payer-published per-code cap, and doesn't resolve this field.",
+      "Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy or Maryland-specific exhibit could be located. Maryland's habilitative-services mandate (COMAR 31.10.39.03) bars denial solely on prescribed hours up to 25/week (ages 18mo–5) or 10/week (6–18) for fully-insured plans — that is a mandate floor, not a payer-published per-code cap, and doesn't resolve this field. QA 2026-07-23: paRequired downgraded verified->unverified — CPB 0554, re-read in full, contains no precertification/prior-authorization language and no form 'GR-69017-4'; the precert requirement is plausibly true via Aetna's national process but is not stated in the cited policy.",
     fieldStatus: {
       covered: 'verified',
-      paRequired: 'verified',
+      paRequired: 'unverified',
       unitCap: 'unverified',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -256,10 +256,10 @@ function cignaEntry(paRequired: string): CodeGridEntry {
     telehealth: 'unverified',
     modifiers: ['unverified'],
     notes:
-      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics or Maryland-specific exhibit are published in it.',
+      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics or Maryland-specific exhibit are published in it. QA 2026-07-23: paRequired downgraded verified->unverified — EN0499, re-read in full, contains no prior-authorization/precertification language, so the "(per EN0499)" attribution cannot support the per-code PA verdicts. The three assessment "Not required" values are separately corroborated by the Cigna Autism Resource Guide (cited at the EDI level); the treatment-code "Required" verdicts remain to be confirmed with Cigna/Evernorth provider services.',
     fieldStatus: {
       covered: 'verified',
-      paRequired: 'verified',
+      paRequired: 'unverified',
       unitCap: 'unverified',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -339,7 +339,7 @@ const marylandMedicaidEdi: EdiRouting = {
 
 const marylandMedicaidCodeGrid: Record<string, CodeGridEntry> = {
   '97151': mdMedicaidEntry('97151', '32 units/day', 'Gated by a preceding Comprehensive Diagnostic Evaluation (CDE) from a QHCP confirming ASD (F84.0/.5/.8/.9); only a psychologist, BCBA-D, or BCBA may complete this assessment.'),
-  '97152': mdMedicaidEntry('97152', 'unverified — not stated in the fee schedule beyond the per-unit rate', 'Verify daily max directly with Carelon; the manual\'s fee-schedule table gives a rate ($19.17) but no explicit daily unit cap for this specific code was found this pass.'),
+  '97152': mdMedicaidEntry('97152', '32 units/day', 'QA 2026-07-23: corrected from "unverified" — the MD ABA Provider Manual fee schedule (eff. 2/1/2026) states the daily max for 97152 verbatim: "97152 Behavior Identification ... BCaBA/RBT/BT $19.17 15 minutes 32 units Supporting Assessment." The earlier "no daily cap found" reading was wrong; 32 units/day is stated and matches the fieldStatus:verified.'),
   '97153': mdMedicaidEntry('97153', '32 units/day', 'Direct treatment; billed at BCBA, BCaBA, or RBT/BT tier depending on rendering staff credential.'),
   '97154': mdMedicaidEntry('97154', '16 units/day', 'Group adaptive behavior treatment; group limited to 2–8 ABA participants.'),
   '97155': mdMedicaidEntry('97155', '24 units/day', 'Protocol modification; GT modifier available for remote direction of a technician (same rate as in-person).'),

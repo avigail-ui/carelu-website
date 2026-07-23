@@ -62,7 +62,7 @@ const OPTUM_ABA_STATE_MANDATES = src(
 );
 const OPTUM_PROVIDER_EXPRESS_EDI = src(
   'https://public.providerexpress.com/content/ope-provexpr/us/en/clinical-resources/autismABA2/abaCAMediCal12.html',
-  'Optum/Provider Express public EDI page; the Florida guide quotes it stating "The Optum payer ID is 87726" (same as UnitedHealthcare\'s medical payer ID) directly, which is why FL commercial + FL/NC Medicaid Community Plan rows below carry fieldStatus-verified 87726.'
+  'Optum/Provider Express public page. QA 2026-07-23: re-read in full — this page is a North Carolina RBI-BHT provider-orientation page and does NOT contain any payer ID (the earlier note that it "states directly \'The Optum payer ID is 87726\'" was incorrect; that string does not appear on the page). 87726 is Optum\'s real payer ID, but it is document-backed only in the New Mexico (Turquoise Care) and Nebraska (Heritage Health) Medicaid ABA QRGs, where "Payer ID ... 87726" appears verbatim. Rows that carry 87726 on the basis of THIS page are therefore inferred cross-LOB, not verified from it.'
 );
 const AETNA_CPB0554 = src(
   'https://www.aetna.com/cpb/medical/data/500_599/0554.html',
@@ -132,7 +132,7 @@ const AETNA_COMMERCIAL_ROWS: CarveoutRow[] = [
 const UHC_COMMERCIAL_ROWS: CarveoutRow[] = ([
   ['GA', '87726', 'unverified', 'inferred cross-LOB from the NC/FL Optum EDI confirmation; pVerify separately lists a distinct "UHG007 United Healthcare - Optum Behavioral Solutions" code not resolved against 87726 for Georgia specifically.'],
   ['NC', '87726', 'medical', 'fieldStatus: inferred for this commercial guide — 87726 and "medical" side are directly verified only for NC Medicaid Community Plan (see below); applied here as a cross-LOB pattern, not a commercial-specific confirmation.'],
-  ['FL', '87726', 'medical', 'fieldStatus: verified. Optum\'s own Provider Express EDI page states directly, "The Optum payer ID is 87726."'],
+  ['FL', '87726', 'medical', 'fieldStatus: inferred (QA 2026-07-23 downgraded from verified). The cited Provider Express page was re-read and does NOT contain "The Optum payer ID is 87726" — see the OPTUM_PROVIDER_EXPRESS_EDI note. 87726 is Optum\'s real ID (document-backed in the NM/NE Medicaid QRGs) and applies cross-LOB, but is not verified for FL commercial from a FL-commercial-specific source.'],
   ['TX', 'unverified', 'unverified', 'No commercial-specific confirmation found; Optum\'s national ABA State Mandates supplement confirmed to have no Texas entry.'],
   ['NY', 'UHG007', 'unverified', 'pVerify-listed code UHG007, distinct from the 87726 used in FL/NC — see the cross-file inconsistency flagged at the top of this file. Whether ABA specifically rides that hop vs. UHC\'s medical ID for NY commercial members is unconfirmed.'],
   ['MD', 'unverified', 'unverified', 'No Maryland-specific payer ID or side confirmed for commercial UHC/Optum.'],

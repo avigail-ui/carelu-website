@@ -415,7 +415,7 @@ const indianaMedicaidEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'verified',
+    'payerId.availity': 'inferred',
     'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'verified',
@@ -425,6 +425,7 @@ const indianaMedicaidEdi: EdiRouting = {
     'medicaid271Notes.eligibilitySpanGranularity': 'verified',
   },
   verifyVia: {
+    'payerId.availity': 'Same 2012-vintage Availity list staleness finding as every other Indiana guide — the value "IHCP" is sourced from the Availity 837 payer list (footer "As of 08/08/2012"); downgraded from \'verified\' to \'inferred\' pending a current Availity export, consistent with the file rule and the sibling guides.',
     'payerId.changeHealthcare': 'Optum/Change Healthcare payer finder — not located this pass.',
     'bhCarveOut.administrator':
       'No IHCP source states an ABA-specific BH carve-out exists or doesn\'t; inferred "none" from every reviewed MCE guide describing ABA as billed directly under IHCP/MCE medical claims, not routed to a named BH administrator (contrast with unitedhealthcare-community-plan-indiana below, which DOES carve ABA to Optum). Confirm with FSSA/Gainwell EDI helpdesk if automating.',

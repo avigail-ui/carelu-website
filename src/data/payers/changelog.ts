@@ -1568,4 +1568,94 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      'QA spot-check VA/NJ/IN/KS/MA/MD/TN/NE + carveouts/employers/STC datasets: 228 checked, 201 confirmed, 3 corrected, 10 downgraded. Adversarial re-verification of every \'verified\' EDI/codeGrid/rates field in the state-Medicaid guide plus two random others per state, 15 carveout rows, 5 employer funding classifications against live DOL Form 5500 filings, and 3 Layer-2 STC family-default citations. Rates and dollar amounts held up especially well (VA DMAS CSVs, NE triple-sourced, MD/MA fee schedules, NJ FFS all confirmed verbatim); the corrections are a telehealth code-coverage widening and a fee-schedule daily cap, and the downgrades are \'verified\' labels sitting on sources that do not carry the fact (payer IDs, blanket-PA claims, BH carve-out rosters). Four MD EDI fields the source-fetch flagged were re-confirmed via the pVerify list (Aetna 00001 / Cigna 00004 both Eligibility=Yes) and left \'verified\'. Some carveout findings (dead-link 404s = unreachable; true-but-under-cited administrators such as MBHP/Carelon and CO Acentra/Gainwell; the file-flagged UHG007-vs-87726 inconsistency) were logged advisory and left unchanged rather than downgraded, to avoid discarding correct routing data.',
+    guides: [
+      'indiana-medicaid',
+      'anthem-healthkeepers-plus',
+      'humana-healthy-horizons-virginia',
+      'maryland-medicaid',
+      'aetna-maryland',
+      'cigna-maryland',
+      'masshealth-massachusetts-medicaid',
+      'mbhp-massachusetts',
+      'wellsense-massachusetts',
+    ],
+    details: [
+      {
+        slug: 'anthem-healthkeepers-plus',
+        field: 'codeGrid.telehealth (97152, 97154, 97157, 97158)',
+        change:
+          'CORRECTED. Anthem HealthKeepers Plus\'s Feb-2023 ABA requirements grid, re-read in full, lists GT telehealth combinations for 97152/97154/97157/97158 as well as 97151/97153/97155/97156 — GT is payable on all eight 97xxx codes (only 0362T/0373T lack a GT combination). The four codes\' telehealth was upgraded from \'not listed among Anthem\'s GT-payable codes\' (inferred) to GT-payable (verified); header comment and source note corrected.',
+        sourceUrl: 'https://providers.anthem.com/docs/gpp/VA_CAID_ABARequirements.pdf?v=202302021327',
+      },
+      {
+        slug: 'maryland-medicaid',
+        field: "codeGrid['97152'].unitCap",
+        change:
+          'CORRECTED "unverified — not stated in the fee schedule" -> "32 units/day". The Maryland ABA Provider Manual fee schedule (eff. 2/1/2026) states the 97152 daily max verbatim ("97152 Behavior Identification ... $19.17 15 minutes 32 units Supporting Assessment"), resolving an internal contradiction (the field read unverified while its fieldStatus was already \'verified\').',
+        sourceUrl: 'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf',
+      },
+      {
+        slug: 'indiana-medicaid',
+        field: 'edi.payerId.availity (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> inferred. The value "IHCP" is correct (Availity 837 list: IHCP / INMEDICAID), but the Availity list is stale (footer "As of 08/08/2012") and every other Indiana guide marks payerId.availity \'inferred\' per the file\'s own stated rule; this guide was the lone \'verified\' outlier. Added a matching verifyVia.',
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+      {
+        slug: 'humana-healthy-horizons-virginia',
+        field: 'edi.payerId.availity + edi.payerId.changeHealthcare (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified. Payer ID "61101" appears in NEITHER cited source: the Humana VA PA-and-notification list carries no payer IDs, and the pVerify list carries Humana only as generic 00112. 61101 is Humana\'s widely-used universal ID but is not document-backed by a cited/reachable source; verifyVia now points to Humana\'s official VA Medicaid claims page.',
+        sourceUrl: 'https://assets.humana.com/is/content/humana/VA%20Medicaid%20PALpdf',
+      },
+      {
+        slug: 'aetna-maryland',
+        field: 'codeGrid.paRequired (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified. Aetna CPB 0554, re-read in full, contains no precertification/prior-authorization language and no form "GR-69017-4" — it is a medical-necessity policy only, as the entry\'s own note already conceded. The precert requirement is plausibly true via Aetna\'s national process but is not stated in the cited policy.',
+        sourceUrl: 'https://www.aetna.com/cpb/medical/data/500_599/0554.html',
+      },
+      {
+        slug: 'cigna-maryland',
+        field: 'codeGrid.paRequired (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified. Cigna EN0499, re-read in full, contains no prior-authorization/precertification language, so the "(per EN0499)" attribution cannot support the per-code PA verdicts. The three assessment "Not required" values are separately corroborated by the Cigna Autism Resource Guide (cited at the EDI level); treatment-code "Required" verdicts remain to confirm with Cigna/Evernorth provider services.',
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+      {
+        slug: 'masshealth-massachusetts-medicaid',
+        field: 'codeGrid.paRequired + edi.bhCarveOut.administrator + edi.bhCarveOut.twoHopRequired (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified (3 fields). Neither 101 CMR 358 (a rate regulation that explicitly disclaims being an authorization: "101 CMR 358.00 is not authorization for or approval of the services") nor the Carelon/MBHP performance spec states a blanket ABA PA requirement. The six-administrator carve-out roster and the two-hop flag are editorial synthesis of the individual MA plan guides and are absent from the cited MassHealth 270/271 companion guide. paRequired downgrade is scoped to the \'verified\' baseline callers (masshealth, mbhp); \'inferred\' MCO callers unchanged.',
+        sourceUrl: 'https://www.mass.gov/doc/101-cmr-35800-rates-for-applied-behavior-analysis/download',
+      },
+      {
+        slug: 'mbhp-massachusetts',
+        field: 'codeGrid.paRequired (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified. Same blanket-PA sourcing gap as masshealth-medicaid (shared stateBaselineEntry factory) — the cited 101 CMR 358 and Carelon/MBHP performance spec do not state a universal ABA PA requirement.',
+        sourceUrl: 'https://www.mass.gov/doc/101-cmr-35800-rates-for-applied-behavior-analysis/download',
+      },
+      {
+        slug: 'wellsense-massachusetts',
+        field: 'edi.bhCarveOut.administrator (fieldStatus)',
+        change:
+          'DOWNGRADED verified -> unverified. The "in-house (WellSense) since 1/1/2026" claim is TRUE but is absent from all three cited sources and is contradicted by the cited WellSense EDI Companion Guide (Mar 2024, still routes BH to Beacon Health Strategies). verifyVia now points to WellSense\'s own BH provider page (the insourcing source, previously uncited).',
+        sourceUrl: 'https://www.wellsense.org/providers/behavioral-health',
+      },
+      {
+        slug: 'carveouts.ts (unitedhealthcare / FL commercial + OPTUM_PROVIDER_EXPRESS_EDI source note)',
+        field: 'administratorPayerId note + shared source note',
+        change:
+          'DOWNGRADED verified -> inferred. The cited Optum/Provider Express page (abaCAMediCal12.html), re-read in full, is a North Carolina RBI-BHT orientation page and does NOT contain "The Optum payer ID is 87726" (a fabricated verbatim quote). 87726 is Optum\'s real ID but is document-backed only in the NM (Turquoise Care) and NE (Heritage Health) Medicaid QRGs, so FL-commercial 87726 is inferred cross-LOB, not verified from that page. Fixed the shared source note (root of the misattribution) and the FL commercial row.',
+        sourceUrl: 'https://public.providerexpress.com/content/ope-provexpr/us/en/clinical-resources/autismABA2/abaCAMediCal12.html',
+      },
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];
