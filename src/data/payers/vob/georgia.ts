@@ -36,7 +36,7 @@
      no GA-specific override could be confirmed.
    ================================================================ */
 import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, StcMap, VobContact } from './types.js';
-import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, anthemFamilyStc, inheritFamilyStc } from './stc-defaults.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc, CAQH_CORE_STC_VOCAB } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -111,6 +111,33 @@ const AETNA_CPB0554 = src(
 const AETNA_CPB0648 = src(
   'https://www.aetna.com/cpb/medical/data/600_699/0648.html',
   "Aetna CPB 0648 (Autism Spectrum Disorders) — 97151-97158 listed as covered if selection criteria are met (0362T/0373T under \"other CPT codes related to the CPB\"); no unit caps, POS codes, telehealth modifiers, or licensure-tier modifiers given. No separate Aetna ABA billing/reimbursement policy could be located (the one candidate URL from secondary sources 404s)."
+);
+
+/* Layer 1/2 EDI routing sources added 2026-07-23 (GA/NC wedge hardening pass).
+   Optum/Change Healthcare list URLs verified fetchable at the o4-dam paths below
+   (the older optum4/open_source paths 404 this pass); rows extracted directly. */
+const OPTUM_RTE_LIST = src(
+  'https://business.optum.com/content/dam/o4-dam/resources/pdfs/white-papers/real-time-eligibility-payer-list.pdf',
+  'Optum/Change Healthcare Real-Time Eligibility (270/271) payer list, "Optum Real Time Eligibility Payer List," Updated 01/16/2025 — the authoritative Change Healthcare list for 270/271 eligibility routing. Georgia Medicaid row (verbatim): "Georgia Medicaid  GAMCD  GA." Neither SKGA0 nor 12K05 (nor "Carelon"/"Beacon") appears anywhere in this eligibility list.'
+);
+const OPTUM_INSTITUTIONAL_LIST = src(
+  'https://www.optum.com/content/dam/o4-dam/resources/pdfs/guides/institutional-claims-payer-list.pdf',
+  'Optum/Change Healthcare Institutional Claims (837I) payer list — row (verbatim): "Medicaid of Georgia   ** 12K05 ... GA MEDICAID." 12K05 is Change Healthcare\'s INSTITUTIONAL-claims payer ID for Georgia Medicaid, NOT its eligibility ID (professional/institutional and eligibility use different codes on the Optum lists).',
+  true
+);
+const OPTUM_ERA_LIST = src(
+  'https://business.optum.com/content/dam/o4-dam/resources/pdfs/white-papers/electronic-remittance-advice-payer-list.pdf',
+  'Optum/Change Healthcare Electronic Remittance Advice (835/ERA) payer list — carries two Carelon/Beacon entries: "Beacon Health Options (837I & 837P)" mapped to payer ID BHOVO (the 837 claims ID), and "Carelon Behavioral Health" mapped to payer ID CHCBH (the ERA-835 ID). Neither BHOVO nor CHCBH appears on Optum\'s real-time eligibility list.'
+);
+const CARELON_270_271_CG = src(
+  'https://www.carelonbehavioralhealth.com/content/dam/digital/carelon/cbh-assets/documents/global/guides/270-271-companion-guide.pdf',
+  'Carelon Behavioral Health 270/271 Companion Guide, January 2024 (Version 1.0), ASC X12N 270/271 — Loop 2100A Information Source NM108="PI" Payer Identification, NM109 "Use \'BEACON963116116\'": the payer ID for a 270 eligibility inquiry sent directly to Carelon\'s EDI gateway. States verbatim "Carelon treats all inquiries as Service Type Code 30" and the 271 minimum response "is 1-Active Coverage or 6-[Inactive]" — the direct Carelon eligibility feed returns only STC 30 active/inactive status, no service-level cost-share.',
+  true
+);
+const ANTHEM_RT_COMPANION_GUIDE = src(
+  'https://www.anthem.com/content/dam/digital/docs/provider/commercial/general/EDI_CE_NE_W_VA_00016.pdf',
+  'Anthem/Elevance EDI 270/271 Companion Guide (real-time), Release AV-3, January 2021, ASC X12N 005010X279A1 — cover states "In Georgia: Blue Cross Blue Shield Healthcare Plan of Georgia, Inc." Its "Individual Service Types Supported" table ("Anthem will respond with specific eligibility and benefit information when an inquiry is submitted with one of the following service type codes") lists MH (Mental Health) as a supported service-type-specific response (returning MH plus CE/CF/CG/CH provider-setting variants); MH is also bundled inside the generic "30 Health Benefit Plan Coverage" summary. No A4-A8 codes appear anywhere in the guide (regex-checked); the guide does not enumerate copay/coinsurance/deductible amounts (deferred to the X12 TR3).',
+  true
 );
 
 /* -------------------- codeGrid factories -------------------- */
@@ -333,7 +360,7 @@ function aetnaEntry(): CodeGridEntry {
 /* ==================== georgia-medicaid ==================== */
 
 const georgiaMedicaidEdi: EdiRouting = {
-  payerId: { pverify: '00100', availity: '77034', changeHealthcare: 'unverified' },
+  payerId: { pverify: '00100', availity: '77034', changeHealthcare: 'GAMCD' },
   supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: {
@@ -350,7 +377,7 @@ const georgiaMedicaidEdi: EdiRouting = {
   fieldStatus: {
     'payerId.pverify': 'verified',
     'payerId.availity': 'inferred',
-    'payerId.changeHealthcare': 'unverified',
+    'payerId.changeHealthcare': 'verified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
@@ -362,15 +389,15 @@ const georgiaMedicaidEdi: EdiRouting = {
     'payerId.availity':
       'QA re-check (2026-07-23): the cited Availity list carries an "As of 08/08/2012" footer — 77034=GAMEDICAID is confirmed present in that snapshot, but downgraded from verified to inferred pending reconfirmation against a current Availity export (same treatment already applied to aetna-florida for the identical staleness finding).',
     'payerId.changeHealthcare':
-      'Optum/Change Healthcare payer finder — two conflicting IDs surfaced (SKGA0, 12K05) and neither was resolved to a single canonical ID this pass.',
+      'Resolved this pass: Change Healthcare\'s Real-Time Eligibility (270/271) list shows "Georgia Medicaid  GAMCD  GA" — GAMCD is the ELIGIBILITY payer ID. The two previously-conflicting candidates are transaction- or vendor-specific, not eligibility IDs: 12K05 is Change Healthcare\'s INSTITUTIONAL-claims (837I) payer ID for "Medicaid of Georgia" (Optum institutional list), and SKGA0 is a DIFFERENT clearinghouse\'s (claim.md) primary code for GA Medicaid, not an Optum/Change Healthcare value. Professional-claims (837P) also route on GAMCD.',
     supportsRealtime:
       'GAMMIS 5010 270-271 Companion Guide v2.19 — confirmed to exist on the GAMMIS EDI portal but not retrievable this pass (interactive-only, static mirror 403s).',
     'medicaid271Notes.mcoSegmentLocation':
-      'Same companion guide — obtain via the GAMMIS provider portal login or the DCH EDI helpdesk; the static dch.georgia.gov mirror used for other companion guides returns 403 for this document.',
-    'medicaid271Notes.mcoCarrierCodes': 'Same companion guide.',
-    'medicaid271Notes.eligibilitySpanGranularity': 'Same companion guide.',
+      'GAMMIS 5010 270-271 Companion Guide v2.19 (released 2026-06-16), confirmed present on the GAMMIS portal "Companion Guides and Manuals" listing but published ONLY behind an interactive ASP.NET __doPostBack link (no static URL). Non-portal mirror sweep this pass (REQ-001): the DCH /document/document/<slug>/download path DOES serve other GAMMIS guides (the 837I encounter guide fetched cleanly there) but has NO 270/271 entry (404); the DCH /sites/dch.georgia.gov/files/*.pdf static path is WAF-blocked (403) for all GAMMIS PDFs; no search-indexed static copy exists on dch/mmis.georgia.gov, Gainwell, or Conduent. Most precise next step: render the tabId/45 portal postback with a headless browser to capture the file stream, OR request the "GAMMIS 5010 270-271 Companion Guide v2.19" PDF from Georgia Medicaid EDI Services (Gainwell) by email. REQ-001 remains open — do NOT fabricate this field.',
+    'medicaid271Notes.mcoCarrierCodes': 'Same companion guide / same blocker as mcoSegmentLocation (REQ-001).',
+    'medicaid271Notes.eligibilitySpanGranularity': 'Same companion guide / same blocker as mcoSegmentLocation (REQ-001).',
   },
-  sources: [GAMMIS_COMPANION_GUIDE_INDEX, PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
+  sources: [GAMMIS_COMPANION_GUIDE_INDEX, PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, OPTUM_RTE_LIST, OPTUM_INSTITUTIONAL_LIST],
 };
 
 const georgiaMedicaidCodeGrid: Record<string, CodeGridEntry> = {
@@ -526,7 +553,7 @@ const anthemEdi: EdiRouting = {
   supportsRealtime: 'unverified',
   bhCarveOut: {
     administrator: 'Carelon Behavioral Health',
-    administratorPayerId: 'unverified',
+    administratorPayerId: 'BEACON963116116',
     abaRidesOn: 'unverified',
     twoHopRequired: 'unverified',
   },
@@ -537,7 +564,7 @@ const anthemEdi: EdiRouting = {
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'inferred',
-    'bhCarveOut.administratorPayerId': 'unverified',
+    'bhCarveOut.administratorPayerId': 'verified',
     'bhCarveOut.abaRidesOn': 'unverified',
     'bhCarveOut.twoHopRequired': 'unverified',
   },
@@ -546,11 +573,13 @@ const anthemEdi: EdiRouting = {
     'payerId.changeHealthcare': 'Optum/Change Healthcare institutional payer list shows two candidates for Anthem GA (00101 and 00601), not resolved to one.',
     supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
     'bhCarveOut.administratorPayerId':
-      "Anthem BCBS Georgia provider services — confirm whether ABA claims route to Carelon Behavioral Health (payer ID BHOVO per Availity / CHCBH per Optum's ERA list) or bill directly under Anthem's own medical payer ID (00601). The Anthem ABA Provider Resource Guide itself describes standard CMS-1500 billing with no carve-out named.",
-    'bhCarveOut.abaRidesOn': 'Same as administratorPayerId.',
-    'bhCarveOut.twoHopRequired': 'Same as administratorPayerId.',
+      "Resolved to the eligibility/270 second-hop ID: a 270 sent directly to Carelon's EDI gateway uses payer ID BEACON963116116 (Carelon's own 270/271 Companion Guide, Loop 2100A NM109 \"Use 'BEACON963116116'\"). The two IDs previously in conflict are Carelon's CLAIMS/ERA clearinghouse IDs, not eligibility IDs: BHOVO is the 837 claims ID (Optum ERA list annotates \"Beacon Health Options (837I & 837P)\" → BHOVO) and CHCBH is the ERA-835 ID (Optum ERA list \"Carelon Behavioral Health\" → CHCBH). Neither BHOVO nor CHCBH appears on Optum's real-time eligibility list. NOTE: the direct Carelon eligibility feed returns only STC 30 active/inactive per Carelon's own guide — ABA cost-share detail comes from the Anthem MEDICAL 271 (MH bucket), not this feed.",
+    'bhCarveOut.abaRidesOn':
+      "Still unverified — no fetched primary source states whether Anthem GA COMMERCIAL ABA is billed to Carelon (BH carve-out, claims payer ID BHOVO) or under Anthem's own medical payer ID (00601). Structural evidence points to a BH carve-out (Carelon holds its own distinct claims payer ID and Anthem's BH quick-reference guide routes behavioral-provider services to Carelon), but some Anthem plans administer ABA on the medical benefit while Carelon only performs authorizations — confirm per plan/group via Anthem GA provider services. The Anthem ABA Provider Resource Guide describes standard CMS-1500 billing with no payer ID or carve-out named.",
+    'bhCarveOut.twoHopRequired':
+      "Still unverified as a workflow requirement. Primary-source mechanics: a clearinghouse 270 for an Anthem GA member routes to Anthem's OWN eligibility payer ID (Optum lists GABLS / 10032 for Anthem GA) — Carelon has NO clearinghouse real-time-eligibility payer ID, so there is no second clearinghouse hop available. A second hop is possible only via a direct-to-Carelon 270 (BEACON963116116), which returns just STC 30 active/inactive. Whether the VOB workflow needs that second hop hinges on abaRidesOn above: if ABA cost-share rides Anthem medical, a single hop suffices.",
   },
-  sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, ANTHEM_ABA_GUIDE],
+  sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, ANTHEM_ABA_GUIDE, CARELON_270_271_CG, OPTUM_ERA_LIST, OPTUM_RTE_LIST],
 };
 
 const anthemCodeGrid: Record<string, CodeGridEntry> = {
@@ -930,6 +959,44 @@ const unitedhealthcareContact: VobContact = {
   sources: [OPTUM_PROVIDER_EXPRESS_CONTACT_US],
 };
 
+/* anthem-bcbs-georgia STC map — resolved this pass from Anthem/Elevance's OWN
+   published 270/271 companion guide (real-time, Release AV-3), whose cover
+   explicitly names Georgia ("Blue Cross Blue Shield Healthcare Plan of Georgia,
+   Inc."). Overrides the anthem family default (which ships fully 'unverified')
+   because a GA-inclusive Anthem source was located. deductibleAppliesToAba,
+   costShareType, and copayUnit remain 'plan-dependent' per docs/vob-build.md —
+   the companion guide is an EDI transaction-format document, not a plan-benefit
+   document, so those values are set by the member's specific plan. */
+const anthemGeorgiaStc: StcMap = {
+  abaBenefitBucket: 'MH',
+  deductibleAppliesToAba: 'plan-dependent',
+  costShareType: 'plan-dependent',
+  copayUnit: 'plan-dependent',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'medium',
+  fieldStatus: {
+    abaBenefitBucket: 'verified',
+    deductibleAppliesToAba: 'plan-dependent',
+    costShareType: 'plan-dependent',
+    copayUnit: 'plan-dependent',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'inferred',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      "Anthem/Elevance's own real-time EDI 270/271 Companion Guide (Release AV-3, GA-inclusive — cover names \"Blue Cross Blue Shield Healthcare Plan of Georgia, Inc.\") lists MH (Mental Health) in its \"Individual Service Types Supported\" table as a service-type-specific response; ABA/autism has no dedicated STC (CAQH CORE), so ABA cost-share rides the MH bucket. No A4-A8 codes appear in the guide. CAVEAT: if the 270 is addressed to the Carelon carve-out gateway rather than Anthem's medical payer ID, Carelon's own companion guide states it \"treats all inquiries as Service Type Code 30\" and returns only active/inactive — so MH-level cost-share comes back from the Anthem MEDICAL 271, not the Carelon feed.",
+    quality271Score:
+      "Seeded 'medium' (inferred from companion-guide structure): the guide commits to returning \"specific eligibility and benefit information\" for supported service-type codes and distinguishes MH from the generic \"30 Health Benefit Plan Coverage\" summary bucket, so MH is a genuine service-level response — but it does NOT enumerate copay/coinsurance/deductible amounts (deferred to the X12 TR3), short of the explicit financial-detail commitment that earns Cigna/UHC a 'high'.",
+    deductibleAppliesToAba:
+      'Plan-dependent — the companion guide is an EDI transaction-format document, not a plan-benefit document; whether the deductible applies to ABA is set by the member\'s specific plan. Confirm via plan summary or Anthem GA provider services.',
+    copayUnit:
+      'Plan-dependent — not addressed by the companion guide; ABA bills multiple sessions/day, so per-visit vs per-day materially changes the family\'s number. Confirm via plan summary.',
+    costShareType: 'Plan-dependent — copay (EB*C) and coinsurance (EB*A) are both structurally supported; which applies is plan-specific.',
+    oopMaxApplies: 'Not addressed by the companion guide — confirm via plan summary or provider services.',
+  },
+  sources: [CAQH_CORE_STC_VOCAB, ANTHEM_RT_COMPANION_GUIDE, CARELON_270_271_CG],
+};
+
 /* ==================== export ==================== */
 
 export const georgiaVob: Record<string, VobExtension> = {
@@ -940,7 +1007,7 @@ export const georgiaVob: Record<string, VobExtension> = {
   'anthem-bcbs-georgia': {
     edi: anthemEdi,
     codeGrid: anthemCodeGrid,
-    stcMap: inheritFamilyStc(anthemFamilyStc, 'Inherited from the Anthem/Elevance family default (docs/vob-build.md Layer 2) — no Georgia-specific 270/271 STC document found.'),
+    stcMap: anthemGeorgiaStc,
     vobContact: anthemContact,
     lastUpdated: ACCESS_DATE,
   },

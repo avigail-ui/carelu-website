@@ -1658,4 +1658,56 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'GA/NC Layer 1/2 hardening: 5 fields verified of 19 targeted (wedge-market mechanical-processing blockers). Georgia Medicaid Change Healthcare eligibility ID resolved (GAMCD); Anthem-GA Carelon second-hop payer ID resolved (BEACON963116116); Anthem-GA 271 service-type-code bucket resolved (MH) from Anthem\'s own GA-inclusive companion guide; two NC Standard-Plan clearinghouse payer IDs confirmed (Healthy Blue pVerify 00700, Carolina Complete Health Availity 68069). Remaining targets left honestly unverified with refined verifyVia — GA GAMMIS 270/271 companion guide is portal-only (REQ-001 still open, not fabricated); Anthem abaRidesOn/twoHopRequired and Aetna-GA STC have no fetchable primary source.',
+    guides: ['georgia-medicaid', 'anthem-bcbs-georgia', 'healthy-blue-north-carolina', 'carolina-complete-health'],
+    details: [
+      {
+        slug: 'georgia-medicaid',
+        field: 'edi.payerId.changeHealthcare',
+        change:
+          'Resolved the SKGA0-vs-12K05 conflict: GAMCD is Change Healthcare\'s 270/271 ELIGIBILITY payer ID (Optum Real-Time Eligibility list, row "Georgia Medicaid  GAMCD  GA"). 12K05 is Change Healthcare\'s 837I INSTITUTIONAL-claims ID ("Medicaid of Georgia  12K05"); SKGA0 is a different clearinghouse\'s (claim.md) primary code, not an Optum value. Professional 837P also routes on GAMCD. Set changeHealthcare=GAMCD, unverified→verified.',
+        sourceUrl: 'https://business.optum.com/content/dam/o4-dam/resources/pdfs/white-papers/real-time-eligibility-payer-list.pdf',
+      },
+      {
+        slug: 'anthem-bcbs-georgia',
+        field: 'edi.bhCarveOut.administratorPayerId',
+        change:
+          'Resolved the Carelon second-hop payer ID: BEACON963116116 is the payer ID for a 270 sent directly to Carelon\'s EDI gateway (Carelon 270/271 Companion Guide, Jan 2024, Loop 2100A NM109). BHOVO is Carelon\'s 837 claims ID and CHCBH its ERA-835 ID (Optum ERA list) — neither is an eligibility ID, resolving the "BHOVO vs CHCBH" question. Set administratorPayerId=BEACON963116116, unverified→verified. abaRidesOn and twoHopRequired remain unverified (no fetched primary source states GA-commercial ABA medical-vs-BH routing) with sharpened verifyVia notes.',
+        sourceUrl: 'https://www.carelonbehavioralhealth.com/content/dam/digital/carelon/cbh-assets/documents/global/guides/270-271-companion-guide.pdf',
+      },
+      {
+        slug: 'anthem-bcbs-georgia',
+        field: 'stcMap.abaBenefitBucket',
+        change:
+          'Replaced the inherited Anthem family default (fully unverified) with a GA-specific StcMap sourced from Anthem/Elevance\'s own real-time 270/271 companion guide, whose cover names "Blue Cross Blue Shield Healthcare Plan of Georgia, Inc." Its "Individual Service Types Supported" table lists MH (no A4-A8), so abaBenefitBucket=MH (verified). quality271Score seeded medium (inferred — MH is a service-level response but the guide does not enumerate cost-share amounts). deductibleAppliesToAba/costShareType/copayUnit set plan-dependent. Note: the Carelon carve-out eligibility feed collapses all inquiries to STC 30 (active/inactive only).',
+        sourceUrl: 'https://www.anthem.com/content/dam/digital/docs/provider/commercial/general/EDI_CE_NE_W_VA_00016.pdf',
+      },
+      {
+        slug: 'healthy-blue-north-carolina',
+        field: 'edi.payerId.pverify',
+        change:
+          'Confirmed pVerify eligibility ID 00700 ("00700 HEALTHY BLUE NORTH CAROLINA," Eligibility=Yes) in pVerify\'s March 2026 list — distinct by design from Availity 00602 and Optum RTE 14422. Upgraded unverified→verified.',
+        sourceUrl: 'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+      },
+      {
+        slug: 'carolina-complete-health',
+        field: 'edi.payerId.availity',
+        change:
+          'Confirmed Availity payer ID 68069 via CCH\'s own Electronic Claim Submission Provider Guide ("CCH\'s preferred clearinghouse is Availity... Payer ID 68069"). Upgraded unverified→verified. Remaining NC Standard-Plan gaps (AmeriHealth Caritas pVerify has two unreconciled entries 25148/02145; UHC Community Plan NC and WellCare NC have no NC-specific pVerify/Availity eligibility ID) confirmed still unresolvable at primary sources this pass; left unverified.',
+        sourceUrl: 'https://network.carolinacompletehealth.com/content/dam/centene/carolinacompletehealth/pdfs/Electronic-Claim-Submission-Provider-Guide.pdf',
+      },
+      {
+        slug: 'georgia-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'REQ-001 remains OPEN, not fabricated. Non-portal mirror sweep this pass confirmed the GAMMIS 5010 270-271 Companion Guide v2.19 is published only behind the GAMMIS portal\'s interactive ASP.NET __doPostBack link: the DCH /document/document/<slug>/download path serves other GAMMIS guides but has no 270/271 entry (404); the DCH /sites/.../files/*.pdf static path is WAF-blocked (403); no static copy is indexed on dch/mmis.georgia.gov, Gainwell, or Conduent. verifyVia refined to the most precise next step (headless-browser portal-postback render, or request the PDF from Gainwell EDI Services).',
+        sourceUrl: 'https://www.mmis.georgia.gov/portal/PubAccess.EDI/Companion%20Guides/tabId/45/Default.aspx',
+      },
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];

@@ -154,6 +154,10 @@ const CCH_MERGER_PAGE = src(
   'https://network.carolinacompletehealth.com/merger.html',
   'Carolina Complete Health WellCare-merger resources page — confirms the unified payer ID (68069, effective 4/1/2026) via Availity/CCH portal/EDI/mail; legacy WellCare-only payer IDs (PCS 23937, HHCS 57538) remain required for pre-4/1/2026 dates of service, with an explicit warning that submitting pre-merger WellCare claims under the CCH ID triggers a "Mbr not valid on DOS" rejection. Historical WellCare claims access preserved 2 years post-merger; active authorizations carry over automatically.'
 );
+const CCH_EDI_GUIDE = src(
+  'https://network.carolinacompletehealth.com/content/dam/centene/carolinacompletehealth/pdfs/Electronic-Claim-Submission-Provider-Guide.pdf',
+  "Carolina Complete Health Electronic Claim Submission Provider Guide — states verbatim \"CCH's preferred clearinghouse is Availity... Payer ID 68069,\" confirming 68069 as CCH's Availity/EDI payer ID (the same unified code that covers legacy WellCare of NC members post-4/1/2026 merger). Claims-context confirmation; CCH uses the single 68069 code across transactions on the Availity connection."
+);
 const NCDHHS_MERGER_PLAYBOOK = src(
   'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026',
   'NC Medicaid Provider Playbook — official notice of the WellCare of North Carolina / Carolina Complete Health merger effective 4/1/2026; points to the CCH merger page above for claims/billing mechanics rather than stating them itself.'
@@ -363,7 +367,7 @@ const healthyBlueEdi: EdiRouting = {
     twoHopRequired: false,
   },
   fieldStatus: {
-    'payerId.pverify': 'unverified',
+    'payerId.pverify': 'verified',
     'payerId.availity': 'verified',
     'payerId.changeHealthcare': 'verified',
     supports270271: 'verified',
@@ -372,7 +376,7 @@ const healthyBlueEdi: EdiRouting = {
   },
   verifyVia: {
     'payerId.pverify':
-      "pVerify lists 00700, a THIRD number distinct from both Availity's 00602 and Optum's RTE code 14422 — not reconciled against either this pass.",
+      "Confirmed this pass: pVerify's March 2026 payer list carries \"00700 HEALTHY BLUE NORTH CAROLINA\" with Eligibility=Yes — 00700 is pVerify's own eligibility code, distinct by design from Availity's 00602 and Optum's RTE code 14422 (each clearinghouse assigns its own payer ID for this plan).",
     'payerId.changeHealthcare':
       "Optum's Professional Claims list shows 00602 (matching Availity/the plan's own provider manual), but its separate Real-Time Eligibility list shows a DIFFERENT code, 14422, for the same payer — use 14422 for 270/271 eligibility checks, 00602 for claims.",
     supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for this payer ID.',
@@ -510,7 +514,7 @@ const carolinaCompleteHealthRates: RateTable = {
 };
 
 const carolinaCompleteHealthEdi: EdiRouting = {
-  payerId: { pverify: '002462', availity: 'unverified', changeHealthcare: '68069' },
+  payerId: { pverify: '002462', availity: '68069', changeHealthcare: '68069' },
   supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: {
@@ -521,19 +525,19 @@ const carolinaCompleteHealthEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'unverified',
+    'payerId.availity': 'verified',
     'payerId.changeHealthcare': 'verified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'inferred',
   },
   verifyVia: {
-    'payerId.availity': 'No Availity-specific confirmation found beyond the plan\'s own stated "EDI Payor ID 68069"; confirm directly via Availity onboarding.',
+    'payerId.availity': "Confirmed via CCH's own Electronic Claim Submission Provider Guide: \"CCH's preferred clearinghouse is Availity... Payer ID 68069.\" Claims-context confirmation; CCH uses the single 68069 code across transactions on the Availity connection.",
     supportsRealtime: 'Confirm real-time vs. batch via Availity/Optum onboarding for this payer ID.',
     'bhCarveOut.administrator':
       'No BH carve-out administrator is named for RB-BHT in CCH\'s behavioral-health provider materials — inferred as none absent evidence of a separate administrator; confirm via provider services (833) 552-3876.',
   },
-  sources: [CCH_BEHAVIORAL_HEALTH_PAGE, CCH_MERGER_PAGE, PVERIFY_PAYER_LIST, OPTUM_RTE_LIST, OPTUM_PROFESSIONAL_CLAIMS_LIST,
+  sources: [CCH_BEHAVIORAL_HEALTH_PAGE, CCH_MERGER_PAGE, CCH_EDI_GUIDE, PVERIFY_PAYER_LIST, OPTUM_RTE_LIST, OPTUM_PROFESSIONAL_CLAIMS_LIST,
     src(
       'https://network.carolinacompletehealth.com/merger.html',
       'Confirms EDI Payor ID 68069 effective statewide 4/1/2026 (same code CCH already used pre-merger, now also covering legacy WellCare of NC members going forward); legacy WellCare-only codes PCS 23937 / HHCS 57538 remain required for dates of service before 4/1/2026 only.'
