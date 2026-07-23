@@ -1038,6 +1038,184 @@ export const texasPayers: Record<string, PayerConfig> = {
     ],
   },
 
+  'baylor-scott-white-texas': {
+    slug: 'baylor-scott-white-texas',
+    cardDesc: 'RightCare/MRSA Central — plan is WINDING DOWN, exits Texas Medicaid 8/31/2026 (regulatory approval pending).',
+    assessmentPA: 'Required — 97151 on RightCare\'s own Medicaid PA code list (PA required since 1/3/2020); PA process unaffected during the wind-down',
+    treatmentPA: 'Required — 97153, 97154, 97155, 97156, 97158, 99366 all PA-required; defers to TMPPM criteria per Medical Coverage Policy 206',
+    dxRequired: 'Yes — ASD, per TMPPM (Medical Coverage Policy 206 defers to TMPPM for Medicaid; own criteria apply only where TMPPM is silent)',
+    payer: 'RightCare from Scott and White Health Plan (dba Baylor Scott & White Health Plan)',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · RightCare (Baylor Scott & White)',
+    h1: 'RightCare (Baylor Scott & White) ABA coverage — plan is winding down.',
+    metaTitle: 'RightCare / Baylor Scott & White (TX Medicaid) ABA Coverage — Plan Exiting 2026 | Carelu',
+    metaDescription:
+      'RightCare from Scott and White Health Plan (MRSA Central STAR Medicaid) is exiting Texas Medicaid managed care August 31, 2026. What that means for ABA prior authorization, claims deadlines, and transition planning — plus the plan\'s ABA policy while it remains active.',
+    intro: [
+      'Read this first: RightCare — Baylor Scott & White Health Plan\'s STAR Medicaid product for the Central Texas Medicaid Rural Service Area (MRSA Central) — is exiting the Texas Medicaid managed care program effective August 31, 2026, subject to regulatory approval. TMHP\'s own announcement and the plan\'s own site both confirm it. Its sister brand, FirstCare Health Plans (MRSA West/Lubbock), is exiting on the same date. For any family newly presenting with a RightCare STAR card, factor the wind-down into onboarding — a family\'s Medicaid managed-care assignment is likely to change soon regardless of what you do. For active RightCare cases, the plan\'s guidance is that prior-authorization processes remain unaffected during the transition, so keep following the process below through the exit date.',
+    ],
+    atGlance: [
+      { label: 'Status', value: 'EXITING Texas Medicaid — last date of service accepted 8/31/2026 (regulatory approval pending)' },
+      { label: 'Claims deadline', value: 'Providers have until 8/31/2028 to submit claims for DOS through 8/31/2026' },
+      { label: 'Service area', value: 'MRSA Central — 30 counties per RightCare\'s own network materials (see below)' },
+      { label: 'ABA clinical rules', value: 'Medical Coverage Policy 206 (Autism Spectrum Disorder) — defers to TMPPM for Medicaid' },
+      { label: 'PA-required ABA codes', value: '97151, 97153, 97154, 97155, 97156, 97158, 99366 — matches the TMHP statewide code set' },
+      { label: 'BH administration', value: 'In-house — "RightCare Behavioral Health Management," not a third-party carve-out' },
+      { label: 'Rates', value: 'Not separately published — defers to the TMHP Autism Services fee schedule' },
+    ],
+    sections: [
+      {
+        h2: 'The wind-down: what it means for active and new cases',
+        body: [
+          'TMHP\'s July 17, 2026 announcement states Baylor Scott & White (MRSA Central) and FirstCare Health Plans (MRSA West/Lubbock) will end participation in Texas Medicaid managed care, with the final date of service TMHP will accept being August 31, 2026; claims with a date of service on or after September 1, 2026 will be rejected, and providers have until August 31, 2028 (24 months) to submit claims for dates of service through the exit date. RightCare\'s own site carries the same notice: "Our plans end on Aug. 31, 2026, subject to regulatory approval." The announcement is explicit that prior-authorization processes remain unaffected during the transition — so continue submitting and tracking PAs normally for now — but build the plan-reassignment conversation into intake for any new RightCare family, since members will need to select a new STAR MCO before the exit date. TMHP\'s Contact Center (800-925-9126) is the right first call for transition-specific questions.',
+        ],
+        cites: [
+          { title: 'TMHP — Baylor Scott & White and FirstCare Health Plans will end participation in Texas Medicaid', url: 'https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid' },
+          { title: 'RightCare — plan homepage (exit notice)', url: 'https://rightcare.swhp.org/' },
+        ],
+      },
+      {
+        h2: 'While the plan remains active: ABA authorization',
+        body: [
+          'RightCare\'s own Medicaid/CHIP Prior Authorization Codes list (effective 7/1/2026) confirms PA-required ABA codes 97151, 97153, 97154, 97155, 97156, 97158, and 99366 — each showing a PA-requirement effective date of 1/3/2020 — with 97152 and 97157 absent from the list, matching the TMHP statewide THSteps-CCP Autism Services code set exactly. Requests submit through the RightCare Self-Service Portal or by fax to the Medical Management line. The plan\'s separate clinical policy, Medical Coverage Policy 206 ("Autism Spectrum Disorder," effective 7/1/2026), explicitly defers to the TMPPM first: "For Medicaid plans, please confirm coverage as outlined in the Texas Medicaid Provider Procedures Manual (TMPPM). If there are no applicable criteria to guide medical necessity decision making in the TMPPM, use the criteria set forth below." Note that Policy 206\'s own CPT code table (which lists 97152, 97157, 0362T, and 0373T alongside the others) is the plan\'s general/commercial-oriented table, not the operative Medicaid PA gate — the PA code list above is what actually governs a Medicaid claim, and it matches the narrower TMHP set. We could not confirm a RightCare-specific authorization-period length (e.g., a 90-day or 6-month cycle) beyond the general TMPPM baseline — treat auth-period length as inherited from the state rules and confirm any RightCare-specific timing with the plan directly.',
+        ],
+        cites: [
+          { title: 'RightCare — Texas Medicaid/CHIP Prior Authorization Codes List (eff. 7/1/2026)', url: 'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/forms/medicaid/RightCare_Authorization_List.pdf' },
+          { title: 'BSWHP Medical Coverage Policy 206 — Autism Spectrum Disorder', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf' },
+        ],
+      },
+      {
+        h2: 'Behavioral health is in-house, not carved out',
+        body: [
+          'RightCare runs behavioral health administration itself, under the branded units "RightCare Behavioral Health Management" and "RightCare Behavioral Health Disease and Case Management" (phone 1-855-395-9652, fax 1-844-436-8779) — no third-party BH vendor (no Cenpatico, Beacon, Magellan, Carelon, or Optum) appears anywhere in the plan\'s current provider manual or PA materials. That BH line is distinct from the medical Prior Authorization/Medical Management line (1-855-691-7947, fax 1-512-383-8703 or 1-800-292-1349) — we could not confirm from published materials which channel ABA codes route through specifically, since the PA list groups 97151–97158/99366 alongside general PT/OT/rehab codes; confirm the correct submission channel with RightCare before your first request. General Provider Relations runs at 1-855-TX-RIGHT (1-855-897-4448).',
+        ],
+        cites: [
+          { title: 'RightCare — 2026 Provider Manual (phone list)', url: 'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/provider-manual.pdf' },
+        ],
+      },
+      {
+        h2: 'Service area and rates',
+        body: [
+          'RightCare\'s own 2025/2026 network materials list a 30-county MRSA Central service area: Bell, Blanco, Bosque, Brazos, Burleson, Colorado, Comanche, Coryell, Erath, Falls, Fayette, Freestone, Gillespie, Gonzales, Grimes, Hamilton, Hill, Jackson, Lampasas, Lavaca, Leon, Limestone, Llano, Madison, McLennan, Milam, Mills, Robertson, San Saba, and Washington. A separate internal document from a different Texas MCO listing MRSA Central for its own STAR Kids product adds a 31st county (DeWitt) not on RightCare\'s own list — we could not resolve this discrepancy and flag DeWitt as unconfirmed for RightCare specifically rather than asserting it either way. No RightCare-specific ABA fee schedule was found; the plan\'s own provider manual states reimbursement follows the Medicaid fee schedule "when available" — meaning the TMHP statewide Autism Services fee schedule (PRCR615C) already covered in our Texas Medicaid guide is the reference point, not a RightCare-negotiated rate.',
+        ],
+        cites: [
+          { title: 'RightCare — Medicaid (STAR) Network Flyer', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Providers/Network/2025/MD-RightCare.pdf' },
+          { title: 'RightCare — 2026 Provider Manual', url: 'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/provider-manual.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Plan wind-down awareness', desc: 'RightCare exits Texas Medicaid 8/31/2026 — confirm the family\'s plan-reassignment status and don\'t build long-term authorization plans around this plan past that date.' },
+      { title: 'ASD diagnosis + TMPPM-standard documentation', desc: 'The plan defers to TMPPM criteria for Medicaid — reuse the same packet you\'d build for any Texas Medicaid MCO.' },
+      { title: 'Correct submission channel', desc: 'Confirm with RightCare whether ABA PA routes through Medical Management (1-855-691-7947) or Behavioral Health Management (1-855-395-9652) — not independently confirmed from published materials.' },
+      { title: 'County of residence', desc: 'Confirm MRSA Central coverage for the family\'s specific county, especially near the DeWitt County boundary.' },
+    ],
+    sources: [
+      { title: 'TMHP — Baylor Scott & White and FirstCare Health Plans will end participation in Texas Medicaid', url: 'https://www.tmhp.com/news/2026-07-17-baylor-scott-white-and-firstcare-health-plans-will-end-participation-texas-medicaid' },
+      { title: 'RightCare — plan homepage (exit notice)', url: 'https://rightcare.swhp.org/' },
+      { title: 'RightCare — Texas Medicaid/CHIP Prior Authorization Codes List (eff. 7/1/2026)', url: 'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/forms/medicaid/RightCare_Authorization_List.pdf' },
+      { title: 'BSWHP Medical Coverage Policy 206 — Autism Spectrum Disorder', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf' },
+      { title: 'RightCare — 2026 Provider Manual', url: 'https://rightcare.swhp.org/-/media/project/bsw/sites/rightcare/documents/provider-manual.pdf' },
+      { title: 'RightCare — Medicaid (STAR) Network Flyer', url: 'https://wadcdnstorageprod.blob.core.windows.net/bswhp/Providers/Network/2025/MD-RightCare.pdf' },
+    ],
+    faq: [
+      { q: 'Is RightCare/Baylor Scott & White still a Texas Medicaid option?', a: 'Only through August 31, 2026 — the plan is exiting Texas Medicaid managed care (regulatory approval pending), per TMHP\'s July 2026 announcement. Claims for dates of service on or after September 1, 2026 will be rejected; providers have until 8/31/2028 to submit claims for earlier dates of service.' },
+      { q: 'Does RightCare cover ABA therapy?', a: 'Yes, while active — PA-required codes 97151, 97153, 97154, 97155, 97156, 97158, and 99366, matching the statewide TMHP code set, with criteria deferring to the TMPPM. Prior-authorization processes remain unaffected during the wind-down.' },
+      { q: 'Is ABA carved out to a behavioral health vendor at RightCare?', a: 'No — RightCare administers behavioral health in-house through its own "RightCare Behavioral Health Management" unit, not a third-party vendor like Magellan or Carelon.' },
+      { q: 'What happens to my RightCare client\'s ABA authorization after the plan exits?', a: 'The family will be reassigned to a different STAR MCO before the 8/31/2026 exit date — confirm current status with TMHP\'s Contact Center (800-925-9126) or the family\'s new MCO once assigned.' },
+    ],
+  },
+
+  'dell-childrens-health-plan': {
+    slug: 'dell-childrens-health-plan',
+    cardDesc: 'Established pediatric plan (STAR since 2012), Travis SDA (8 counties); ABA delegated to Magellan BH.',
+    assessmentPA: 'Required — 97151 on the plan\'s Medicaid/CHIP PA list (Yes); route through Magellan Healthcare for BH prior auth',
+    treatmentPA: 'Required — 97153, 97154, 97155, 97156, 97158, 99366 all PA=Yes on the 6/1/2026 PA list; 97157 also listed PA=Yes (see note below)',
+    dxRequired: 'Yes — ASD diagnostic testing by a developmental pediatrician, neurologist, psychiatrist, licensed psychologist, or autism diagnosis team',
+    payer: 'Dell Children\'s Health Plan',
+    state: 'TX', kind: 'medicaid-mco', parent: 'Texas Medicaid (THSteps-CCP)',
+    pill: 'Payer Guide · Dell Children\'s Health Plan',
+    h1: 'Dell Children\'s Health Plan ABA coverage (Texas Medicaid MCO).',
+    metaTitle: 'Dell Children\'s Health Plan (TX Medicaid) ABA Coverage & Prior Auth | Carelu',
+    metaDescription:
+      'How Dell Children\'s Health Plan — the Ascension Seton-affiliated STAR/CHIP plan for the Travis service area — covers ABA: Magellan Healthcare\'s behavioral-health delegation, the plan\'s own PA list, and the GoManda autism-app member benefit.',
+    intro: [
+      'Dell Children\'s Health Plan is not a new entrant — it has administered CHIP in Central Texas since 2000 and was selected to run STAR and CHIP Perinatal in the Travis service area starting March 1, 2012, and it currently serves 40,000+ members across 8 counties. The plan is affiliated with Dell Children\'s Medical Center and Ascension Seton (its provider manual and staff correspondence run through @seton.org and @ascension.org addresses), giving it a pediatric-hospital-system orientation. For ABA specifically, the plan delegates behavioral-health prior authorization to Magellan Healthcare rather than administering it in-house, and it publishes its own current PA code list confirming ABA as a covered STAR benefit.',
+    ],
+    atGlance: [
+      { label: 'Plan history', value: 'CHIP administrator since 2000; STAR + CHIP Perinatal in Travis SDA since 3/1/2012 — an established plan, not new' },
+      { label: 'Service area', value: 'Travis SDA — Bastrop, Burnet, Caldwell, Fayette, Hays, Lee, Travis, Williamson counties' },
+      { label: 'Affiliation', value: 'Dell Children\'s Medical Center / Ascension Seton' },
+      { label: 'ABA covered?', value: 'Yes — explicitly listed for STAR; CHIP-specific coverage of ABA is not explicitly confirmed (see below)' },
+      { label: 'BH administration', value: 'Delegated to Magellan Healthcare — phone 1-800-424-1764' },
+      { label: 'Prior auth', value: 'Required — 97151, 97153–97156, 97158, 99366 (and 97157 — see note) all PA-required' },
+      { label: 'Value-added benefit', value: 'GoManda learning app (ages 2–8, autism/speech delay), free 1-year subscription with referral' },
+    ],
+    sections: [
+      {
+        h2: 'An established pediatric plan, not a startup',
+        body: [
+          'Dell Children\'s Health Plan\'s own provider manual states it plainly: "Dell Children\'s Health Plan has been an administrator of CHIP since 2000 and was selected to administer the CHIP Perinatal and STAR programs in Central Texas beginning March 1, 2012." It currently publishes actively-maintained documents dated into 2026 (a Prior Authorization list effective 6/1/2026, provider directories dated 3/2026), and independent reporting describes it as serving 40,000+ lives across 8 counties. The plan\'s email domains (@seton.org, @ascension.org) and homepage both tie it to the Seton/Ascension health system that also runs Dell Children\'s Medical Center — though we could not locate a single primary-source document stating the exact legal entity structure (e.g., a specific "Seton Health Plan d/b/a" formulation), so treat the precise corporate relationship as indicative rather than a verbatim-confirmed fact.',
+        ],
+        cites: [
+          { title: 'Dell Children\'s Health Plan — STAR Medicaid and CHIP Provider Manual (Oct 2024)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2024/11/Provider-Manual-102024_web.pdf' },
+        ],
+      },
+      {
+        h2: 'ABA coverage and prior authorization',
+        body: [
+          'The plan\'s STAR Member Handbook and provider manual both explicitly list "Applied Behavior Analysis (ABA) therapy" as a covered STAR behavioral-health service, and the member-facing behavioral-health page states ABA "is now a benefit for STAR members as a covered benefit through Texas Medicaid," requiring prior ASD diagnostic testing "by a developmental pediatrician, a neurologist, a psychiatrist, a licensed psychologist, or an autism diagnosis team." The plan\'s Prior Authorization List (effective 6/1/2026) confirms PA is required (marked "Yes") for 97151, 97153, 97154, 97155, 97156, 97158, and 99366, each cross-referenced to the TMPPM Children\'s Services Handbook. One discrepancy worth flagging rather than silently resolving: the same PA list also shows code 97157 with PA=Yes, even though 97157 is confirmed absent from Texas Medicaid\'s actual THSteps-CCP Autism Services billable code set per TMHP\'s own fee schedule and handbook — treat 97157\'s status with this plan as needing direct confirmation. Separately, the provider manual\'s STAR-covered-services list explicitly names ABA, but the CHIP-specific covered-behavioral-health-services bullet list in the same manual does not repeat ABA by name (it lists inpatient/outpatient mental health and substance-use-disorder services only) — this is genuinely ambiguous in the plan\'s own document, so confirm ABA coverage for standard CHIP (non-STAR, non-Perinatal) members directly with the plan rather than assuming either way.',
+        ],
+        cites: [
+          { title: 'Dell Children\'s Health Plan — STAR Medicaid and CHIP Provider Manual (Oct 2024)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2024/11/Provider-Manual-102024_web.pdf' },
+          { title: 'Dell Children\'s Health Plan — Behavioral Health (member page)', url: 'https://dellchildrenshealthplan.com/manage-your-health/behavioral-health/' },
+          { title: 'Dell Children\'s Health Plan — STAR/CHIP Prior Authorization List (eff. 6/1/2026)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2026/04/Dell-Childrens-Prior-Authorization-List-Final-Effective-6_1_2026.xlsx-DCHP-PA-List-2.pdf' },
+        ],
+      },
+      {
+        h2: 'Behavioral health rides on Magellan',
+        body: [
+          'Unlike some Texas MCOs that handle BH in-house, Dell Children\'s Health Plan delegates behavioral-health services — including ABA-related prior authorization and referrals — to Magellan Healthcare. The member-facing behavioral-health page tells families to "self-refer directly by calling Magellan toll-free at 1-800-424-1764," and the provider manual lists dedicated Magellan-branded forms (Behavioral Health Prior Auth Form, Initial Review Form, Concurrent Review Form, Discharge Assistance, Provider Search) accessed through the Magellan member/provider portal. The dedicated BH PA fax is (866) 354-8758, distinct from the plan\'s general medical PA fax (844-981-3329). General Provider Services runs at 1-844-781-2343; the plan\'s provider portal for eligibility, PA status, and claims is the HealthX Provider Portal.',
+        ],
+        cites: [
+          { title: 'Dell Children\'s Health Plan — Behavioral Health (member page)', url: 'https://dellchildrenshealthplan.com/manage-your-health/behavioral-health/' },
+          { title: 'Dell Children\'s Health Plan — STAR Medicaid and CHIP Provider Manual (Oct 2024)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2024/11/Provider-Manual-102024_web.pdf' },
+          { title: 'Dell Children\'s Health Plan — Manuals & Forms', url: 'https://dellchildrenshealthplan.com/for-providers/manuals-forms/' },
+        ],
+      },
+      {
+        h2: 'A pediatric-specific extra: the GoManda benefit',
+        body: [
+          'Dell Children\'s Health Plan lists a value-added benefit directly relevant to autism families: the GoManda learning app, free for one year to CHIP/STAR members ages 2 to 8 with autism or speech delay, available with a referral. It\'s not a substitute for ABA, but it\'s worth mentioning at intake as a no-cost supplement families may not know they have access to. No dedicated autism specialty clinic or autism-specific clinical program beyond the standard ABA benefit and GoManda was found in the plan\'s published materials. No plan-specific ABA fee schedule is published — the PA list\'s references point back to the TMPPM/TMHP baseline already covered in our Texas Medicaid guide.',
+        ],
+        cites: [
+          { title: 'Dell Children\'s Health Plan — Value-Added Services', url: 'https://dellchildrenshealthplan.com/for-members/value-added-services/' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'STAR vs. CHIP vs. CHIP Perinatal', desc: 'ABA is explicitly covered for STAR; CHIP-specific ABA coverage isn\'t explicitly confirmed in the plan\'s own materials — verify for CHIP-only members.' },
+      { title: 'ASD diagnostic report + diagnosing provider credentials', desc: 'The plan names specific qualifying diagnosers (developmental pediatrician, neurologist, psychiatrist, licensed psychologist, or autism diagnosis team).' },
+      { title: 'Route through Magellan for BH', desc: 'Behavioral health — including ABA — is delegated to Magellan Healthcare, not handled by the plan directly; use Magellan\'s forms and portal.' },
+      { title: 'County of residence', desc: 'Confirm coverage in the Travis SDA\'s 8 counties (Bastrop, Burnet, Caldwell, Fayette, Hays, Lee, Travis, Williamson).' },
+      { title: 'GoManda eligibility', desc: 'Ages 2–8 with autism or speech delay qualify for a free 1-year subscription with referral — flag for families as a no-cost extra.' },
+    ],
+    sources: [
+      { title: 'Dell Children\'s Health Plan — STAR Medicaid and CHIP Provider Manual (Oct 2024)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2024/11/Provider-Manual-102024_web.pdf' },
+      { title: 'Dell Children\'s Health Plan — Behavioral Health (member page)', url: 'https://dellchildrenshealthplan.com/manage-your-health/behavioral-health/' },
+      { title: 'Dell Children\'s Health Plan — STAR/CHIP Prior Authorization List (eff. 6/1/2026)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2026/04/Dell-Childrens-Prior-Authorization-List-Final-Effective-6_1_2026.xlsx-DCHP-PA-List-2.pdf' },
+      { title: 'Dell Children\'s Health Plan — Manuals & Forms', url: 'https://dellchildrenshealthplan.com/for-providers/manuals-forms/' },
+      { title: 'Dell Children\'s Health Plan — Value-Added Services', url: 'https://dellchildrenshealthplan.com/for-members/value-added-services/' },
+      { title: 'Dell Children\'s Health Plan — STAR Member Handbook (May 2023)', url: 'https://dellchildrenshealthplan.com/wp-content/uploads/2023/05/STAR-Handbook-ENG-052023_web.pdf' },
+    ],
+    faq: [
+      { q: 'Is Dell Children\'s Health Plan a new Texas Medicaid plan?', a: 'No — despite sometimes being described as newly launched, the plan\'s own provider manual confirms it has administered CHIP since 2000 and STAR/CHIP Perinatal in the Travis service area since March 1, 2012.' },
+      { q: 'Does Dell Children\'s Health Plan cover ABA therapy?', a: 'Yes for STAR members — explicitly listed as a covered behavioral-health benefit, with prior authorization required on assessment and treatment codes. CHIP-specific (non-STAR) coverage of ABA is not explicitly confirmed in the plan\'s own materials — verify directly for CHIP-only members.' },
+      { q: 'Who handles ABA prior authorization at Dell Children\'s Health Plan?', a: 'Magellan Healthcare, under delegation — call 1-800-424-1764 or use the Magellan provider portal, not the plan\'s general medical PA line.' },
+      { q: 'What areas does Dell Children\'s Health Plan cover?', a: 'The Travis service delivery area: Bastrop, Burnet, Caldwell, Fayette, Hays, Lee, Travis, and Williamson counties.' },
+    ],
+  },
+
   'aetna-texas': {
     slug: 'aetna-texas',
     family: 'aetna',

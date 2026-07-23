@@ -300,6 +300,108 @@ export const tennesseePayers: Record<string, PayerConfig> = {
     ],
   },
 
+  'tenncare-select': {
+    slug: 'tenncare-select',
+    family: 'bcbst',
+    cardDesc: 'Statewide PIHP (VSHP) — separate contract from BlueCare; SSI kids, foster youth, IDD/CHOICES. 37,095 members.',
+    assessmentPA: 'Required — shared tri-MCO universal ABA request form; submit via Availity (in-state) or Cohere (out-of-state)',
+    treatmentPA: 'Required — 26-week (6-month) authorization periods; continuation reports severity level and hours used',
+    dxRequired: 'ASD or another qualifying DSM-5-TR diagnosis — not strictly autism-only (shared TennCare baseline)',
+    payer: 'TennCare Select',
+    state: 'TN', kind: 'medicaid-mco', parent: 'TennCare',
+    pill: 'Payer Guide · TennCare Select',
+    h1: 'TennCare Select ABA coverage (TennCare\'s statewide PIHP).',
+    metaTitle: 'TennCare Select ABA Coverage & Prior Auth Guide | Carelu',
+    metaDescription:
+      'How TennCare Select — the statewide PIHP run by Volunteer State Health Plan/BlueCare Tennessee for SSI children, foster youth, and IDD/CHOICES members — administers ABA: its own state contract, 37,095-member census, shared tri-MCO clinical rules, and Select-specific phone/fax lines.',
+    intro: [
+      'TennCare Select is not a fourth TennCare MCO alongside BlueCare, UnitedHealthcare Community Plan, and Wellpoint — it\'s a separate state contract. TennCare Select operates as a Prepaid Inpatient Health Plan (PIHP) under its own agreement between the Division of TennCare and Volunteer State Health Plan, Inc. (d/b/a BlueCare Tennessee) — a distinct Edison contract ID from BlueCare\'s own MCO contract, even though both are run by the same BlueCross BlueShield of Tennessee subsidiary. Members don\'t choose TennCare Select; TennCare assigns them to it because they fall into specific categories — children receiving SSI, children in DCS (foster care) custody, enrollees in intellectual-disability HCBS waivers, and a handful of statewide safety-net groups. For ABA, the clinical rules are the same shared tri-MCO program covered in our main TennCare guide — what\'s different here is the population TennCare Select serves and the phone/fax/contact structure built around it.',
+    ],
+    atGlance: [
+      { label: 'Structure', value: 'Statewide PIHP — separate state contract from BlueCare\'s MCO contract, both run by VSHP/BCBST' },
+      { label: 'Enrollment', value: '37,095 average monthly members (CY2024, TennCare\'s CMS-submitted MCPAR) — 2.5% of TennCare' },
+      { label: 'Who\'s assigned here', value: 'SSI children, DCS custody/foster youth ("SelectKids"), IDD 1915(c)/CHOICES waiver members, out-of-state and safety-net enrollees' },
+      { label: 'TennCare Select-only programs', value: 'SelectCommunity (IDD Target Population) and Katie Beckett Part A' },
+      { label: 'ABA clinical rules', value: 'Shared tri-MCO program description — same as BlueCare, UHC, Wellpoint' },
+      { label: 'Prior auth', value: 'Required — universal ABA request form via Availity or Cohere (out-of-state)' },
+      { label: 'Provider Service Line', value: '1-800-276-1978 (distinct from BlueCare\'s 1-800-468-9736)' },
+    ],
+    sections: [
+      {
+        h2: 'A separate contract, the same clinical rules',
+        body: [
+          'The state\'s own contract text describes it plainly: "The Contractor shall operate under and market the services delivered via the prepaid Inpatient Health Plan (PIHP) as \'TennCare Select.\'" That PIHP agreement (Edison Contract ID 83332, term 1/1/2025–12/31/2027) is separate from BlueCare Tennessee\'s standard MCO contract, though both sit with Volunteer State Health Plan. BlueCare Tennessee\'s own Provider Administration Manual confirms the setup: "TennCareSelect is the State\'s self-insured TennCare Health Maintenance Organization... administered by BlueCare Tennessee... Enrollees cannot choose TennCareSelect as their TennCare MCO; TennCare members assigned to the TennCareSelect MCO must meet certain criteria and must be assigned to the TennCareSelect MCO by the Division of TennCare." For ABA specifically, the same PAM section covers both BlueCare and TennCareSelect members under one shared policy — the same CPT codes (97151–97155, 0362T, 0373T), the same RBT/BCaBA/BCBA billing structure, and the same tri-MCO baseline (26-week authorization periods, severity-level justification, no fixed annual hour cap) that governs the rest of TennCare. Practically: if a family is on TennCare Select, plan clinically exactly as you would for BlueCare — the differences that matter are contact numbers and, for a subset of members, LTSS-specific programs.',
+        ],
+        cites: [
+          { title: 'TennCare (Volunteer State Health Plan d.b.a. BlueCare) Contract Amendment #1 (Edison ID 83332)', url: 'https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/2025/05-21-25/28.%20TennCare%20(Volunteer%20State%20Health%20Plan%20d.b.a%20BlueCare)%20Amend%201%20Redacted.pdf' },
+          { title: 'BlueCare Tennessee Provider Administration Manual', url: 'https://content.bcbst.com/api/public/content/prov-bct-pam.pdf' },
+        ],
+      },
+      {
+        h2: 'Who ends up on TennCare Select',
+        body: [
+          'TennCare assigns — rather than lets members pick — enrollees who fall into defined categories: children under 21 who are SSI-eligible; children in DCS (foster care) custody and those transitioning out of custody (branded "SelectKids"); enrollees receiving services in an institution or an HCBS 1915(c) waiver for intellectual disabilities; enrollees living out-of-state; enrollees TennCare couldn\'t contact; and members of the "Integrated Health Services Delivery Model" target population for intellectual disabilities, branded "SelectCommunity" — largely 1915(c) waiver enrollees and former ICF/IID ("Arlington class") residents. TennCare Select is also the sole administrator of the Katie Beckett Program Part A (non-Medicaid-eligible-by-income children with significant disabilities up to 18). For an ABA intake team, the practical read is: TennCare Select skews toward higher-acuity, higher-support-need members — foster youth, IDD/CHOICES populations, and SSI kids — more than a random cross-section of TennCare.',
+        ],
+        cites: [
+          { title: 'BlueCare Tennessee Provider Administration Manual', url: 'https://content.bcbst.com/api/public/content/prov-bct-pam.pdf' },
+        ],
+      },
+      {
+        h2: 'Census: 37,095 members',
+        body: [
+          'TennCare\'s own Managed Care Program Annual Report (MCPAR), submitted to CMS on 6/29/2025 for reporting period CY2024, lists average monthly enrollment across TennCare\'s four managed-care products: Wellpoint Tennessee 438,735; BlueCare Tennessee 552,517; UnitedHealthcare Community Plan 439,049; and TennCare Select 37,095 — about 2.5% of statewide TennCare enrollment. That\'s the most current figure independently confirmed against a primary source; TennCare also publishes monthly enrollment spreadsheets that may carry a more current number, but those weren\'t retrievable during this review — treat 37,095 as the latest verified figure, not necessarily the latest available one.',
+        ],
+        cites: [
+          { title: 'TennCare Managed Care Program Annual Report (MCPAR), CY2024', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/2025ManagedCareProgramAnnualReport.pdf' },
+        ],
+      },
+      {
+        h2: 'Submission mechanics and TennCare Select-specific contacts',
+        body: [
+          'ABA requests use the shared tri-MCO universal request form, submitted through Availity for in-state providers or Cohere for out-of-state providers; PA questions route to (423) 535-5717, option 2. Two BCBST-hosted ABA forms — an "ABA Therapy Services Assessment Request Form" and an "Initiation and Continuation of ABA Therapy Form" (the latter confirming the 26-week/6-month certification period and a severity-level 1–3 field) — surfaced in this review, consistent with the tri-MCO baseline, but neither form\'s text explicitly labels itself TennCare Select-specific versus a general BCBST form; confirm the exact required form with BlueCare/TennCare Select provider relations before submitting. What is confirmed distinct is the contact structure: TennCare Select runs its own Member Service Line (1-800-263-5479, vs. BlueCare\'s 1-800-468-9698), Provider Service Line (1-800-276-1978, vs. 1-800-468-9736), and Prior Auth phone (1-800-711-4104, vs. BlueCare\'s 1-888-423-0131) — though the PA fax (1-800-292-5311) is shared with BlueCare. SelectKids (the foster-care population) carries its own further layer: Provider/Family Services at 1-800-451-9147 (fax 1-800-330-2842) and Member Services at 1-888-422-2963. SelectCommunity (the IDD population) has its own line, 1-800-292-8196 (fax 1-888-255-9175).',
+        ],
+        cites: [
+          { title: 'BlueCare Tennessee Provider Administration Manual (contact tables)', url: 'https://content.bcbst.com/api/public/content/prov-bct-pam.pdf' },
+          { title: 'BCBST — ABA Therapy Services Assessment Request Form', url: 'https://content.bcbst.com/api/public/content/aba_therapy_assessment_request_form.pdf' },
+          { title: 'BCBST — Initiation and Continuation of ABA Therapy Form', url: 'https://content.bcbst.com/api/public/content/aba_initiation_continuation_for_therapy.pdf' },
+        ],
+      },
+      {
+        h2: 'CHOICES, ECF CHOICES, and background-check screening',
+        body: [
+          'TennCare Select is the exclusive administrator of SelectCommunity and Katie Beckett Part A, and shares CHOICES/ECF CHOICES LTSS administration with BlueCare — the MLTSS Provider Manual states plainly that "all BlueCare/TennCare Select billing guidelines apply" for these populations. That matters for staffing: TennCare\'s Aligned Background Check Protocol (effective July 1, 2024) governs providers serving 1915(c) waiver, Katie Beckett, Employment and Community First CHOICES, and CHOICES members — criminal background checks plus registry screening (TN Abuse Registry, National/TN Sex Offender Registry, LEIE, SAM, TennCare Terminated Provider List) within 30 days before first contact, monthly SAM/LEIE/TTPL rechecks. The protocol document itself refers generically to "Managed Care Organizations" rather than naming TennCare Select, but because TennCare Select administers exactly these programs, any ABA agency serving a TennCare Select family through SelectCommunity, ECF CHOICES, or Katie Beckett falls under it — the same guidance our main TennCare guide gives: if you serve Katie Beckett or CHOICES children, run the full protocol for everyone rather than trying to split by plan.',
+        ],
+        cites: [
+          { title: 'MLTSS Provider Manual (BlueCare/TennCare Select)', url: 'https://content.bcbst.com/api/public/content/prov-mltss-manual.pdf' },
+          { title: 'TennCare Aligned Background Check Protocol (eff. July 1, 2024)', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/AlignedBackgroundCheckProtocol.pdf' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Confirm TennCare Select vs. BlueCare', desc: 'Both are run by the same BCBST/VSHP entity — check the card or portal for which contract the member is actually on; contact numbers differ.' },
+      { title: 'Program sub-type if applicable', desc: 'SelectKids (foster care), SelectCommunity (IDD/1915c), or Katie Beckett Part A each carry their own dedicated contact lines.' },
+      { title: 'Diagnostic report + doctor\'s order', desc: 'Same shared tri-MCO baseline as BlueCare — required for the assessment PA.' },
+      { title: 'LBA licensure', desc: 'Confirm the supervising/rendering analyst holds a Tennessee LBA license, per the shared TennCare program description.' },
+      { title: 'Background-check applicability', desc: 'CHOICES/ECF CHOICES/Katie Beckett members trigger TennCare\'s Aligned Background Check Protocol — confirm program sub-type at intake.' },
+    ],
+    sources: [
+      { title: 'TennCare (Volunteer State Health Plan d.b.a. BlueCare) Contract Amendment #1 (Edison ID 83332)', url: 'https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/2025/05-21-25/28.%20TennCare%20(Volunteer%20State%20Health%20Plan%20d.b.a%20BlueCare)%20Amend%201%20Redacted.pdf' },
+      { title: 'BlueCare Tennessee Provider Administration Manual', url: 'https://content.bcbst.com/api/public/content/prov-bct-pam.pdf' },
+      { title: 'TennCare Managed Care Program Annual Report (MCPAR), CY2024', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/2025ManagedCareProgramAnnualReport.pdf' },
+      { title: 'MLTSS Provider Manual (BlueCare/TennCare Select)', url: 'https://content.bcbst.com/api/public/content/prov-mltss-manual.pdf' },
+      { title: 'TennCare Aligned Background Check Protocol (eff. July 1, 2024)', url: 'https://www.tn.gov/content/dam/tn/tenncare/documents/AlignedBackgroundCheckProtocol.pdf' },
+      { title: 'BCBST — ABA Therapy Services Assessment Request Form', url: 'https://content.bcbst.com/api/public/content/aba_therapy_assessment_request_form.pdf' },
+      { title: 'BCBST — Initiation and Continuation of ABA Therapy Form', url: 'https://content.bcbst.com/api/public/content/aba_initiation_continuation_for_therapy.pdf' },
+      { title: 'Universal Request for ABA form (all 3 MCOs, Jan 2026)', url: 'https://www.provider.wellpoint.com/docs/gpp/TN_WLP_CAID_BH_RequestABA.pdf' },
+    ],
+    faq: [
+      { q: 'Is TennCare Select the same as BlueCare Tennessee?', a: 'No — they\'re separate state contracts (different Edison contract IDs) even though both are administered by Volunteer State Health Plan, a BlueCross BlueShield of Tennessee subsidiary. Members are assigned to TennCare Select by the Division of TennCare, not chosen; contact numbers and some LTSS programs differ.' },
+      { q: 'Who is on TennCare Select?', a: 'SSI-eligible children under 21, children in DCS foster-care custody ("SelectKids"), members in intellectual-disability HCBS waivers ("SelectCommunity"), Katie Beckett Part A children, and some out-of-state or safety-net enrollees — roughly 37,095 members statewide (CY2024 average).' },
+      { q: 'Does TennCare Select cover ABA therapy?', a: 'Yes — the same shared tri-MCO ABA program that governs BlueCare, UnitedHealthcare Community Plan, and Wellpoint: EPSDT members under 21, prior authorization on assessment and treatment, TN Licensed Behavior Analyst licensure, 26-week authorization periods.' },
+      { q: 'How do I submit an ABA prior authorization to TennCare Select?', a: 'The shared tri-MCO universal ABA request form, via Availity (Tennessee providers) or Cohere (out-of-state providers). TennCare Select\'s own Provider Service Line is 1-800-276-1978 and PA phone is 1-800-711-4104 — both distinct from BlueCare\'s numbers.' },
+    ],
+  },
+
   'aetna-tennessee': {
     slug: 'aetna-tennessee',
     family: 'aetna',

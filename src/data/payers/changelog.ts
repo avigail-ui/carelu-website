@@ -1463,4 +1463,18 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'guides-added',
+    summary:
+      'Four guides added, plus a Florida marketplace-distinction subsection: TennCare Select (tenncare-select) — confirmed as a legally distinct PIHP contract (Edison ID 83332) from BlueCare\'s own MCO contract, both run by Volunteer State Health Plan/BCBST, serving SSI children, DCS foster youth ("SelectKids"), and IDD/CHOICES populations ("SelectCommunity"), with a verified 37,095-member CY2024 average enrollment per TennCare\'s own CMS-submitted MCPAR; Select Health Utah (select-health-utah) — written as a dual-audience guide since SelectHealth Community Care (the Medicaid ACO) is carved out to Utah Medicaid FFS same as the other 3 ACOs, while Select Health\'s commercial book runs its own Policy #630 (whose full text returned a site error at every retrieval attempt, so specific criteria beyond the live ABA Preauthorization Form are shipped as unverified rather than guessed); Baylor Scott & White / RightCare (baylor-scott-white-texas) — a genuine finding surfaced mid-research and made the guide\'s headline: RightCare is exiting Texas Medicaid managed care entirely effective 8/31/2026 per TMHP\'s own 7/17/2026 announcement, matching the wind-down already documented for its sister brand FirstCare; and Dell Children\'s Health Plan (dell-childrens-health-plan) — corrected from this change-set\'s own working assumption that the plan was newly launched: the plan\'s own provider manual confirms it has run STAR in the Travis SDA since 3/1/2012 and CHIP since 2000, so the guide describes it as established, not new. Also added a verified subsection to the sunshine-health-florida guide clarifying that Ambetter from Sunshine Health is Centene\'s ACA Marketplace brand, not Florida Medicaid — with a genuine finding worth flagging: Florida\'s autism mandate (§ 627.6686) explicitly excludes individual-market plans by its own statutory text, so Ambetter\'s ABA coverage rests on ACA/MHPAEA rules and Centene\'s CP.BH.104 clinical policy rather than the state mandate or the AHCA Medicaid Behavior Analysis policy that governs the rest of that guide.',
+    guides: [
+      'tenncare-select',
+      'select-health-utah',
+      'baylor-scott-white-texas',
+      'dell-childrens-health-plan',
+      'sunshine-health-florida',
+    ],
+    totals: { guides: 179, states: 19 },
+  },
 ];

@@ -117,6 +117,108 @@ export const utahPayers: Record<string, PayerConfig> = {
     ],
   },
 
+  'select-health-utah': {
+    slug: 'select-health-utah',
+    cardDesc: 'Two different products under one name: Community Care (Medicaid) rides UT FFS; commercial runs its own Policy #630.',
+    assessmentPA: 'Community Care (Medicaid) members: none — routes to Utah Medicaid FFS, not Select Health. Commercial members: required — ABA Preauthorization Form, initial request',
+    treatmentPA: 'Community Care (Medicaid) members: routes to Utah Medicaid FFS. Commercial members: required — concurrent ABA Preauthorization Form; 14-day decision (Utah)',
+    dxRequired: 'Yes — ASD; Medicaid members follow Utah Medicaid\'s diagnostic-tool requirement, commercial members follow Select Health Policy #630 (confirm exact criteria with plan — current policy text not publicly retrievable at review)',
+    payer: 'Select Health (Utah)',
+    state: 'UT', kind: 'medicaid-mco', parent: 'Utah Medicaid',
+    pill: 'Payer Guide · Select Health',
+    h1: 'Select Health ABA coverage in Utah: Medicaid ACO vs. commercial.',
+    metaTitle: 'Select Health (Utah) ABA Coverage & Prior Auth Guide | Carelu',
+    metaDescription:
+      'Select Health in Utah is two different products for ABA purposes: SelectHealth Community Care (the Medicaid ACO) rides Utah Medicaid\'s FFS carve-out, while Select Health commercial plans run their own ABA policy (#630) with a dedicated preauthorization form. What intake needs to ask.',
+    intro: [
+      'A family saying "we have Select Health" in Utah could mean two structurally different things, and getting it right changes where the ABA request goes. SelectHealth Community Care is one of Utah Medicaid\'s four ACOs (alongside Health Choice Utah, Healthy U, and Molina) — and Utah Medicaid carves ABA out of every ACO to state fee-for-service, so a Community Care member\'s ABA request never touches Select Health at all; it goes straight to Utah Medicaid, exactly as our Utah Medicaid guide describes. Select Health also separately sells commercial insurance — employer group and individual/marketplace plans, branded simply "Select Health" — and for those members, Select Health runs its own ABA clinical policy, its own prior-authorization form, and its own utilization-management team. Select Health (the parent brand) is a wholly owned subsidiary of Intermountain Health. This guide covers both paths.',
+    ],
+    atGlance: [
+      { label: 'Two products, one name', value: 'SelectHealth Community Care (Medicaid ACO) vs. Select Health commercial (employer/individual)' },
+      { label: 'Community Care + ABA', value: 'Carved out to Utah Medicaid FFS — Select Health does not administer it' },
+      { label: 'Commercial + ABA', value: 'Select Health\'s own Policy #630 "Applied Behavior Analysis" (revised eff. 1/1/2026)' },
+      { label: 'Commercial prior auth', value: 'Required — ABA Preauthorization Form; 14-day decision in Utah' },
+      { label: 'Commercial submission', value: 'commercialUMintake@imail.org · fax 801-442-0825' },
+      { label: 'Parent company', value: 'Intermountain Health (Select Health is a wholly owned subsidiary)' },
+      { label: 'Utah mandate', value: 'Utah Code § 31A-22-642 — governs individual/large-group commercial plans, not small-group or Medicaid' },
+    ],
+    sections: [
+      {
+        h2: 'First question: which Select Health?',
+        body: [
+          'Select Health\'s own Medicaid Provider Summary describes SelectHealth Community Care as one of three government/managed products it runs alongside Select Health Medicare and Select Health Share, "available to eligible members living in all Utah counties." Its Provider Reference Manual separately defines a "Fee-For-Service Medicaid member" as anyone whose needed service is covered by Medicaid rather than the ACO plan — the same carve-out mechanism our Utah Medicaid guide documents for all four ACOs — and its Appendix B for Community Care states plainly that "Select Health Community Care policies typically align with State of Utah Medicaid policy." Select Health\'s own published carved-out-services list names mental-health medications, emergency transportation, long-term care, apnea monitors, and dental — it doesn\'t explicitly name ABA/autism services, so treat the FFS routing as inherited from Utah Medicaid\'s own carve-out policy (already verified in our Utah Medicaid guide) rather than a Select Health-authored statement. Either way, the operational answer for intake is the same: for a Community Care member, don\'t call Select Health for ABA — go straight to Utah Medicaid.',
+        ],
+        cites: [
+          { title: 'Select Health — Medicaid Provider Summary', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/programs/government/medicaid-provider-summary.pdf' },
+          { title: 'Select Health — Provider Reference Manual (Commercial & Government), Appendix B', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/Reference%20Manuals/prm-comm-govt.pdf' },
+          { title: 'Select Health — Medicaid Member Handbook', url: 'https://selecthealth.org/content/dam/selecthealth/Medicaid/PDFs/medicaid-handbook.pdf' },
+        ],
+      },
+      {
+        h2: 'Commercial members: Select Health\'s own ABA policy',
+        body: [
+          'For employer-group, self-funded, and individual/marketplace members, Select Health runs its own numbered medical policy — Policy #630, "Applied Behavior Analysis (ABA)" — which Select Health\'s February 2026 Policy Update Bulletin confirms was revised effective January 1, 2026 (the bulletin describes reorganized medical-necessity criteria and removal of an FEHB-plan exception, but the policy PDF itself returned a maintenance error at every attempt during this review — treat specific diagnostic or hour-based criteria as unverified until confirmed directly with Select Health). What is independently confirmed from Select Health\'s own live 2026 ABA Preauthorization Form: it distinguishes an initial request (diagnostic evaluation report required) from a concurrent/continuation request (updated treatment plan with progress data required), and Utah decisions on commercial plans are due within 14 days absent expedited review. The form also collects a detailed weekly ABA schedule (day, time, setting — office/home/other), school and other-therapy schedules, and IEP/ISP/504/ARD status — build that into your intake packet before submitting.',
+        ],
+        cites: [
+          { title: 'Select Health — Policy Update Bulletin, February 2026 (Policy 630 revision)', url: 'https://selecthealth.org/providers/policies/policy-update-bulletins/policy-update-0226' },
+          { title: 'Select Health — ABA Preauthorization Form (2026)', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf' },
+        ],
+      },
+      {
+        h2: 'Submission mechanics by line of business',
+        body: [
+          'Select Health\'s ABA Preauthorization Form routes requests by email, split cleanly by line of business: commercial (large/small employer, self-funded, individual) goes to commercialUMintake@imail.org (fax 801-442-0825); Select Health Community Care (Medicaid/CHIP) goes to medicaidUMintake@imail.org (fax 801-442-0625) — relevant only for the non-ABA services Community Care still administers, since ABA itself routes to Utah Medicaid, not this address; Select Health Medicare goes to medicareUMintake@imail.org (fax 801-442-0302), with a 14-day decision window across all states. Select Health also runs an online "Preauth & Care Plan Tool," where some requests qualify for auto-approval, and a general 24/7 preauthorization help desk at 800-442-4566. General provider support for commercial plans runs through 800-222-6358.',
+        ],
+        cites: [
+          { title: 'Select Health — ABA Preauthorization Form (2026)', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf' },
+          { title: 'Select Health — Preauthorization Forms & Reports', url: 'https://selecthealth.org/providers/preauthorization/forms-reports' },
+        ],
+      },
+      {
+        h2: 'The Utah mandate and commercial market segment',
+        body: [
+          'Utah Code § 31A-22-642 requires ASD diagnosis-and-treatment coverage in the individual and large-group markets — small-group plans are not named by the statute. Select Health\'s own ABA Preauthorization Form lists "Commercial Plans (Large/Small Employer, Self-Funded, Ind.)" as a single routing category, meaning Select Health\'s ABA intake process is unified across market segments even though the mandate\'s protections (no age limit, no hour cap for plans entered or renewed since 1/1/2020) legally apply only to individual and large-group business — small-group and self-funded ERISA plans sit outside the mandate. We found no Select Health page that discusses mandate compliance or breaks out market segment explicitly, so confirm a given member\'s market segment (individual, small-group, large-group, or self-funded) as part of benefits verification rather than assuming mandate protections apply. Also worth knowing: starting before July 1, 2027, Utah requires every health benefit plan — Select Health included — to publicly report autism-assessment wait times, PA practices, and average ABA hours/cost to the Insurance Department annually.',
+        ],
+        cites: [
+          { title: 'Utah Code § 31A-22-642 (current version, effective 5/6/2026)', url: 'https://le.utah.gov/xcode/Title31A/Chapter22/C31A-22-S642_2026050620260506.html' },
+          { title: 'Select Health — ABA Preauthorization Form (2026)', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf' },
+        ],
+      },
+      {
+        h2: 'Rates',
+        body: [
+          'No Select Health-specific ABA fee schedule (commercial or Community Care) was found published. For Community Care members, ABA rides Utah Medicaid FFS entirely, so the relevant benchmark is Utah Medicaid\'s own published PRISM rates ($19.67 per 15-minute unit on 97153; $37.51 on 97151/97155/97156, effective 7/1/2026) — not a Select Health rate at all. For commercial members, rates are contract-negotiated and live in your participating-provider agreement.',
+        ],
+        cites: [
+          { title: 'PRISM Coverage and Reimbursement Lookup (rates & PA flags)', url: 'https://health.utah.gov/stplan/lookup/CoverageLookup.php' },
+        ],
+      },
+    ],
+    collect: [
+      { title: 'Community Care vs. commercial', desc: 'The single most important question — ask which product the family is on, or check whether the card says "Community Care" (Medicaid) vs. a standard employer/individual plan.' },
+      { title: 'For Community Care members: route to Utah Medicaid', desc: 'ABA never touches Select Health for these members — collect the same documents our Utah Medicaid guide describes and submit through PRISM.' },
+      { title: 'For commercial members: market segment', desc: 'Individual/large-group (mandate applies, no hour cap since 2020) vs. small-group/self-funded (mandate doesn\'t apply) — ask for the employer and check the card.' },
+      { title: 'Diagnostic evaluation report (initial) or updated treatment plan (continuation)', desc: 'Select Health\'s commercial ABA Preauthorization Form requires one or the other depending on request type.' },
+      { title: 'Weekly ABA schedule + IEP/504 status', desc: 'The commercial preauth form asks for a full weekly schedule by setting and school-plan status — gather this before submitting.' },
+    ],
+    sources: [
+      { title: 'Select Health — Medicaid Provider Summary', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/programs/government/medicaid-provider-summary.pdf' },
+      { title: 'Select Health — Provider Reference Manual (Commercial & Government)', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/Reference%20Manuals/prm-comm-govt.pdf' },
+      { title: 'Select Health — Medicaid Member Handbook', url: 'https://selecthealth.org/content/dam/selecthealth/Medicaid/PDFs/medicaid-handbook.pdf' },
+      { title: 'Select Health — Policy Update Bulletin, February 2026 (Policy 630 revision)', url: 'https://selecthealth.org/providers/policies/policy-update-bulletins/policy-update-0226' },
+      { title: 'Select Health — ABA Preauthorization Form (2026)', url: 'https://selecthealth.org/content/dam/selecthealth/Provider/PDFs/forms/sh-aba-pre-auth-form.pdf' },
+      { title: 'Select Health — Preauthorization Forms & Reports', url: 'https://selecthealth.org/providers/preauthorization/forms-reports' },
+      { title: 'Utah Code § 31A-22-642 (current, eff. 5/6/2026)', url: 'https://le.utah.gov/xcode/Title31A/Chapter22/C31A-22-S642_2026050620260506.html' },
+      { title: 'PRISM Coverage and Reimbursement Lookup (rates & PA flags)', url: 'https://health.utah.gov/stplan/lookup/CoverageLookup.php' },
+    ],
+    faq: [
+      { q: 'Does Select Health cover ABA therapy in Utah?', a: 'Depends which Select Health. SelectHealth Community Care (the Medicaid ACO) never administers ABA — it rides Utah Medicaid\'s fee-for-service carve-out. Select Health commercial (employer/individual) plans cover ABA under the plan\'s own Policy #630, with prior authorization required.' },
+      { q: 'My client has "Select Health Community Care" — where does the ABA request go?', a: 'To Utah Medicaid directly, not to Select Health. ABA is carved out of all four Utah Medicaid ACOs (including SelectHealth Community Care) to state fee-for-service — see our Utah Medicaid guide.' },
+      { q: 'How do I submit an ABA prior authorization to Select Health commercial?', a: 'Select Health\'s ABA Preauthorization Form, emailed to commercialUMintake@imail.org (fax 801-442-0825 as backup). Decisions on Utah commercial plans are due within 14 days.' },
+      { q: 'What does Select Health pay for ABA?', a: 'No published fee schedule exists for either product. Community Care members\' ABA is paid at Utah Medicaid\'s own PRISM rates (not a Select Health rate); commercial rates are negotiated in your participating-provider agreement.' },
+    ],
+  },
+
   'aetna-utah': {
     slug: 'aetna-utah',
     family: 'aetna',
