@@ -1347,4 +1347,68 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      "VOB gap-fill: the last 9 guides without any VOB data now have it — 6 new Texas Medicaid MCO guides (Layers 1, 3, 4) and the 3 national commercial guides (Layers 1, 3; no rates, per the build spec). All 175 guides across 19 states now carry at least Layers 1+3. " +
+      'TEXAS (community-health-choice-texas, bcbs-texas-medicaid, cook-childrens-health-plan, parkland-community-health-plan, el-paso-health, firstcare-health-plans): codeGrid and rates reuse the TMHP program-wide baseline (tmppmCodeGrid/mcoUnverifiedRates) already shipped and cited for the other 8 TX MCO guides in vob/texas.ts, with plan-specific facts pulled only from each plan\'s own documents already cited in src/data/payers/texas.ts. Two genuine plan-specific contradictions of the shared "not on Texas\'s billable ABA code set" finding were confirmed and shipped as-is rather than collapsed to the state default: Parkland Community Health Plan\'s own PA Requirements list (eff. 9/1/2025) explicitly names 97152 and 97157 under "Applied Behavior Analysis" (new pchpPaListCode() override, mirroring the existing driscollPortalCode() pattern). Two behavioral-health insourcing transitions are recorded as current-state facts: BCBSTX Medicaid insourced BH from Magellan in 2024 (bhCarveOut.administrator: \'none\', with the historical Magellan reference flagged stale); Parkland insourced BH from Carelon effective 9/1/2025 (same treatment). FirstCare\'s Medicaid plans are flagged as winding down (FirstCare\'s own site: "plans end 8/31/2026, subject to regulatory approval") in edi.verifyVia and codeGrid notes. EDI payerId fields for all 6 new TX guides ship the literal \'unverified\' with verifyVia notes — no pVerify/Availity/Change Healthcare payer-list entry could be independently confirmed this pass for these 6 specific plans (as opposed to a same-named commercial affiliate or an ambiguous multi-entry match); Texas\'s already-established centralized TMHP 270/271 architecture (medicaid271Notes on texas-medicaid) still applies to all 6 as Medicaid MCOs, but a distinct clearinghouse-side payer ID per plan was not confirmed. ' +
+      "NATIONAL (new src/data/payers/vob/national.ts, spread into vob/index.ts as nationalVob): aetna, cigna, unitedhealthcare-optum ship Layers 1+3 only, no rates (\"do not attempt commercial rates\" per docs/vob-build.md). EDI payer IDs reuse the generic national pVerify/Availity/Change Healthcare codes already established (and labeled generic, not state-specific) in vob/texas.ts's commercial entries: Aetna 00001/60054, Cigna 00004/62308, UnitedHealthcare 00192/87726. bhCarveOut fields reuse vob/carveouts.ts's Layer 6 'US' rows directly: Cigna -> Evernorth Behavioral Health (62308, no second EDI hop, confirmed identical in 18 of 19 states' guides) ships verified; Aetna ships fully unverified (no BH administrator named in any of the 19 states researched); UnitedHealthcare/Optum deliberately has no national default in carveouts.ts (payer ID and administered-on side genuinely vary by state — 87726 in FL/NC vs. UHG007 in NY, unresolved against each other) and ships administratorPayerId 'unverified' rather than picking one state's value. codeGrid unitCap/posAllowed ship 'plan-dependent' (not 'unverified') for most codes — a national commercial guide spans fully-insured and self-funded/ERISA plans across every state mandate, and none of the three clinical policies (CPB 0554/0648, EN0499, Optum's ABA Supplemental Clinical Criteria + Reimbursement Policy 2022RP501A) state a universal unit/session structure, so 'plan-dependent' reflects plan variation rather than a research gap. Where a national policy DOES state a concrete figure, it ships with its own fieldStatus instead: Aetna's per-code telehealth list (97151/97153/97155/97156/97157 covered, 97152 excluded, GT/95/FR modifiers) and Cigna's \"all ABA CPT codes are covered telehealth services\" both ship verified; Optum's cluster-based max-daily-unit and modifier-tier figures (Reimbursement Policy 2022RP501A) are quoted in codeGrid notes but the formal unitCap field still ships 'plan-dependent' per the same national-variation reasoning. 99366 ships 'unverified' for all 3 national guides — none of the three source documents address interdisciplinary team-meeting billing. Cigna's codeGrid reuses the QA correction already recorded in vob/texas.ts: EN0499 does not actually state a per-code PA distinction between assessment and treatment codes despite the base guide's prose describing one, so paRequired ships 'unverified' per code rather than re-asserting the un-sourced claim.",
+    guides: [
+      'community-health-choice-texas',
+      'bcbs-texas-medicaid',
+      'cook-childrens-health-plan',
+      'parkland-community-health-plan',
+      'el-paso-health',
+      'firstcare-health-plans',
+      'aetna',
+      'cigna',
+      'unitedhealthcare-optum',
+    ],
+    details: [
+      {
+        slug: 'parkland-community-health-plan',
+        field: 'codeGrid.97152 / codeGrid.97157',
+        change:
+          "PCHP's own PA Requirements list (eff. 9/1/2025) explicitly names 97152 and 97157 under \"Applied Behavior Analysis\" — a plan-specific exception to the shared statewide \"not on Texas's billable ABA code set\" finding, shipped as its own override (pchpPaListCode()) rather than collapsed to the state default, the same treatment already given to Driscoll's 97152/97157 override.",
+        sourceUrl: 'https://providers.parklandhealthplan.com/Uploads/Public/Documents/Provider/PCHP%202025%20Prior%20Authorization%20Requirements%20v2.pdf',
+      },
+      {
+        slug: 'bcbs-texas-medicaid',
+        field: 'edi.bhCarveOut.administrator',
+        change:
+          "BCBSTX Medicaid carved Medicaid behavioral health out to Magellan as recently as mid-2023; BCBSTX announced \"insourcing\" of Medicaid behavioral health on 5/10/2024, and every current-generation document found (PA checklist rev. 4/26/2024, Sept. 2024 UM training) routes ABA to BCBSTX's own BH intake fax/Availity with no Magellan reference — shipped 'none' for the current state, with the historical Magellan relationship flagged as superseded rather than silently dropped.",
+        sourceUrl: 'https://www.bcbstx.com/provider/medicaid/education-and-reference/news/2024/05-10-2024-md-behavioral-health-aba-forms',
+      },
+      {
+        slug: 'parkland-community-health-plan',
+        field: 'edi.bhCarveOut.administrator',
+        change:
+          "PCHP transitioned behavioral health administration from Carelon Behavioral Health to direct in-house administration effective 9/1/2025 — providers who had contracted with Carelon for PCHP's BH network had to re-contract directly with PCHP. Shipped 'none' for the current state; PCHP's own 218-page provider manual (last revised Sept. 2024) still describes a Carelon relationship and is treated as materially out of date for BH/ABA per PCHP's own transition announcement.",
+        sourceUrl: 'https://parklandhealthplan.com/living-well/blog/articles/pchp-benefits-update-changes-to-behavioral-health-services/',
+      },
+      {
+        slug: 'firstcare-health-plans',
+        field: 'edi',
+        change:
+          "FirstCare's own site states its Texas Medicaid plans \"end on Aug. 31, 2026, subject to regulatory approval\" — flagged in edi.verifyVia and codeGrid notes rather than treated as a stable long-term payer relationship; confirm current enrollment/transition status before onboarding new cases.",
+        sourceUrl: 'https://www.firstcare.com/en/Individuals-and-Families/STAR-CHIP/STAR-Medicaid',
+      },
+      {
+        slug: 'unitedhealthcare-optum',
+        field: 'edi.bhCarveOut.administratorPayerId',
+        change:
+          "No national default payer ID is asserted — vob/carveouts.ts already flags 87726 (FL/NC) vs. UHG007 (NY) as an unresolved cross-file inconsistency for what both describe as the same UHC-Optum commercial arrangement; the national guide ships 'unverified' rather than picking one state's value as a default.",
+        sourceUrl: 'https://public.providerexpress.com/content/ope-provexpr/us/en/clinical-resources/autismABA2/abaCAMediCal12.html',
+      },
+      {
+        slug: 'cigna',
+        field: 'codeGrid.paRequired',
+        change:
+          "Reused the QA correction already recorded in vob/texas.ts's cigna-texas entry: EN0499, re-read in full, contains no per-code prior-authorization distinction between assessment and treatment codes, despite src/data/payers/national.ts's own prose describing one — paRequired ships 'unverified' per code at the national-guide level rather than re-asserting the un-sourced claim.",
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];

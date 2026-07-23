@@ -151,6 +151,60 @@ const WELLPOINT_TX_BH_DOC = src('https://provider.amerigroup.com/docs/gpp/TX_CAI
 const COMMUNITY_FIRST_BILLING_GUIDELINES = src('https://communityfirsthealthplans.com/community-first-providers/medicaid-providers/autism-services-billing-guidelines/', "Community First Health Plans — Autism Services Billing Guidelines, a TMPPM digest with its own HO/HN/HM crosswalk.");
 const DRISCOLL_PA_PORTAL = src('https://webapps.driscollhealthplan.com/priorauthcheck/?s=Autism+(ABA)+Services', 'Driscoll Health Plan — Prior Authorization Requirement Portal (Autism/ABA Services).');
 
+/* -------------------- gap-fill: 6 new TX MCO guides (source refs) --------------------
+   All already cited in this repo's src/data/payers/texas.ts base-guide prose for these
+   6 slugs; re-read here for VOB Layers 1/3/4 rather than freshly fetched this pass. */
+const CHC_ABA_GUIDELINE = src(
+  'https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2026/07/mrg-aba-services-guideline.pdf',
+  "Community Health Choice — Medical Review Guideline: Applied Behavioral Analysis (ABA) Services (adopted 6/2026). Names the TMPPM Children's Services Handbook §2 as governing authority; lists 97151,97153,97154,97155,97156,97158 explicitly (0362T and 99366 not mentioned); requires TSPA + CCP PA form + signed prescriber referral for the evaluation; 85%-attendance rule gates extension/recert approval; names DIR/Floortime, TEACCH, and RDI as excluded non-ABA interventions; \"Applies To\" checkboxes mark STAR and Marketplace but not STAR+PLUS."
+);
+const CHC_STAR_QRG = src('https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2021/04/STAR-QRG-3-2021.pdf', 'Community Health Choice — STAR Program Provider Quick Reference Guide (confirms Harris + Jefferson counties).');
+const CHC_STARPLUS_QRG = src('https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2024/09/STARPLUS-Quick-Reference-Guide.pdf', "Community Health Choice — STAR+PLUS Program Provider Quick Reference Guide (Jefferson County absent from this list).");
+const CHC_HHS_MANUAL = src('https://provider.communityhealthchoice.org/wp-content/uploads/sites/2/2025/10/HHS-Provider-Manual.pdf', 'Community Health Choice — HHS Provider Manual (states CHIP excludes ABA therapy).');
+
+const BCBSTX_MEDICAID_NEWS = src(
+  'https://www.bcbstx.com/provider/medicaid/education-and-reference/news/2024/05-10-2024-md-behavioral-health-aba-forms',
+  'BCBSTX — Medicaid Behavioral Health / ABA Forms Update (5/10/2024) — announces "insourcing of Behavioral Health Services for Medicaid," ending the prior Magellan carve-out (last referenced in a 7/5/2023-dated PA summary).'
+);
+const BCBSTX_ABA_CHECKLIST = src('https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/applied-behavioral-analysis-pa-requirement-checklist.pdf', 'BCBSTX — Applied Behavioral Analysis PA Requirement Checklist (rev. 4/26/2024) — routes ABA PA to BCBSTX\'s own BH intake fax (1-888-530-9809) or Availity Essentials, no Magellan reference.');
+const BCBSTX_PA_CODE_GRID = src(
+  'https://www.bcbstx.com/docs/provider/tx/provider-medicaid/um/prior-auth-proc-code-grid-06012026.pdf',
+  'BCBSTX — Texas Medicaid Benefit Prior Authorization Procedure Code List — lists 97151,97153,97154,97155,97156,97158 each as "Applied Behavioral Health (Allowable only for members 20 years of age or younger)," PA-required, eff. 1/1/2024. No 0362T or 99366 row found.'
+);
+const BCBSTX_MEDICAID_MANUAL = src('https://www.bcbstx.com/content/dam/hcsc/docs/provider/tx/provider-medicaid/education/2067877-758408-0324-TX-Medicaid-STAR-CHIP-STARKids-Provider-Manual-Handbook.pdf', 'BCBSTX — Texas Medicaid STAR, CHIP, and STAR Kids Provider Manual — no dedicated Autism Services chapter; general PA turnaround 3 business days.');
+
+const CCHP_ABA_TRAINING = src(
+  'https://www.cookchp.org/siteassets/documents/pdfs/provider-relations/applied-behavior-analysis-011525-.pdf',
+  "Cook Children's Health Plan — Applied Behavior Analysis provider training (rev. 1/15/2025) — 97151 caps 6 hrs/24 units, 30-day authorization window, HO modifier only; 97153/97154 no required modifier; 97155/97156/97158 need HO or HN; 99366 no modifier, F84.0-only, capped 2x/year, needs ≥3 licensed professionals incl. the LBA, ≥30 min; telehealth (95) allowed on 97151,97155,97156,97158,99366; 8-hr/day combined direct-treatment cap across 97153/97154/97155/97158."
+);
+const CCHP_ACUTE_PA_TRAINING = src('https://www.cookchp.org/siteassets/documents/pdfs/electronic-visit/acute-prior-authorization-including-pdn--aba-062426.pdf', "Cook Children's Health Plan — Acute Prior Authorization (Including PDN & ABA) provider training (rev. 6/24/2026) — determination letters delivered via EpicCare Link In Basket only, not faxed; fax only while portal access is pending.");
+const CCHP_PA_SEARCH = src('https://www.cookchp.org/providers/prior-authorization-search/', "Cook Children's Health Plan — Prior Authorization Search & Submission page.");
+const CCHP_CCP_FORM = src('https://www.cookchp.org/siteassets/documents/pdfs/provider-manual/comprehensive-care-program-prior-authorization-request-form-2024.pdf', "Cook Children's Health Plan — Comprehensive Care Program Prior Authorization Request Form (2024), with a dedicated ABA section.");
+
+const PCHP_PA_REQUIREMENTS = src(
+  'https://providers.parklandhealthplan.com/Uploads/Public/Documents/Provider/PCHP%202025%20Prior%20Authorization%20Requirements%20v2.pdf',
+  'Parkland Community Health Plan — Prior Authorization Requirements (eff. 9/1/2025) — states "Prior authorization is required for ABA evaluation, initial course of treatment, and subsequent re-evaluations for recertification"; code table lists 97151,97152,97153,97154,97155,97156,97157,97158,99366 under "Applied Behavior Analysis" — 0362T absent.'
+);
+const PCHP_ABA_OVERVIEW = src('https://parklandhealthplan.com/living-well/blog/articles/aba', 'Parkland Community Health Plan — ABA benefit overview (member-facing) — confirms STAR-only (CHIP excluded), ages 0-20, ASD dx within 3 years.');
+const PCHP_BH_TRANSITION = src('https://parklandhealthplan.com/living-well/blog/articles/pchp-benefits-update-changes-to-behavioral-health-services/', 'Parkland Community Health Plan — Behavioral Health Services Transition Announcement — BH insourced from Carelon effective 9/1/2025; providers had to re-contract directly with PCHP.');
+const PCHP_BH_NETWORK_PAGE = src('https://providers.parklandhealthplan.com/our-network/behavioral-health/', 'Parkland Community Health Plan — Behavioral Health network page.');
+
+const EPH_ABA_CHECKLIST = src(
+  'https://elpasohealth.com/documents/ABA-REQUEST-CHECKLIST-final-2022.pdf',
+  "El Paso Health — ABA Request Checklist (eff. 2/1/2022) — evaluation (97151, 6-hr/24-unit cap, HO only) needs signed referral + diagnostic documentation, authorization valid 60 days from requested date; 90-day extension (97155) needs attendance logs + LBA progress summary; 180-day recert (97151 again) 'does not require prior auth, will be reviewed upon submission.'"
+);
+const EPH_DOC_MEMO = src('https://www.elpasohealth.com/pdf/EPH%20-%20Documententaton%20for%20ABA%20Authorization%20_.pdf', "El Paso Health — Documentation Required for ABA Authorizations (memo, 5/15/2026) — attendance logs (child + caregiver) required with every extension/recert; <85% attendance triggers a documentation requirement.");
+const EPH_DX_MEMO = src('https://www.elpasohealth.com/pdf/EPH-PR-Comprehensive%20Diagnostic%20Evaluation%20for%20Autism%20Services.pdf', "El Paso Health — Comprehensive Diagnostic Evaluation for Autism Services (memo, 5/15/2026) — requires a validated standardized tool (ADOS, ADI-R, or CARS named); screening tools (e.g. M-CHAT-R/F) do not qualify.");
+const EPH_QRG = src('https://www.elpasohealth.com/pdf/EPH-STARCHIPSTARPLUS%20Quick%20Reference%20Guide.pdf', 'El Paso Health — STAR/CHIP/STAR+PLUS Quick Reference Guide.');
+
+const FIRSTCARE_PA_LIST = src(
+  'https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR/PA-List.pdf',
+  'FirstCare — Texas Medicaid/CHIP Notification/Prior Authorization Codes (eff. 7/1/2026) — lists 97151,97153,97154,97155,97156,97158,99366 as requiring authorization, filed under "Therapy services." 97152, 97157, 0362T, 0373T absent from this Medicaid-specific list (they appear only in FirstCare\'s separate commercial Medical Coverage Policy #206).'
+);
+const FIRSTCARE_POLICY_206 = src('https://wadcdnstorageprod.blob.core.windows.net/bswhp/Medical-Policies/206.pdf', 'FirstCare — Medical Coverage Policy #206: Autism Spectrum Disorder — explicitly defers Medicaid coverage decisions to the TMPPM; confirms the mandate\'s $36,000/yr cap does not apply to Medicaid.');
+const FIRSTCARE_PROVIDER_MANUAL = src('https://www.firstcare.com/-/media/project/bsw/sites/firstcare/documents/STAR-CHIP-Provider-Manual.pdf', 'FirstCare — 2026 STAR and CHIP Provider Manual — general PA turnaround 3 working days; submit ≥5 days before anticipated service date.');
+const FIRSTCARE_STAR_STATUS = src('https://www.firstcare.com/en/Individuals-and-Families/STAR-CHIP/STAR-Medicaid', 'FirstCare — STAR Medicaid plan-status page — states plans end 8/31/2026, subject to regulatory approval.');
+
 /* -------------------- Layer 3: TMPPM-baseline code grid -------------------- */
 /* Shared across texas-medicaid and all 8 Medicaid MCO guides — every MCO
    guide's existing prose already establishes it applies these state
@@ -323,6 +377,34 @@ function driscollPortalCode(code: string, description: string): CodeGridEntry {
       modifiers: 'verified',
     },
     sources: [DRISCOLL_PA_PORTAL],
+  };
+}
+
+/* Gap-fill: Parkland Community Health Plan's own PA Requirements list
+   (eff. 9/1/2025) explicitly names 97152 and 97157 under its "Applied
+   Behavior Analysis" PA category — the same kind of plan-specific
+   contradiction of the shared notInStateCodeSet() finding as Driscoll's
+   above, independently confirmed for Parkland only, not the other 12
+   guides sharing tmppmCodeGrid(). */
+function pchpPaListCode(code: string): CodeGridEntry {
+  return {
+    covered: `Yes, per Parkland Community Health Plan's own Prior Authorization Requirements list (eff. 9/1/2025) — contradicts the "not on Texas's billable ABA code set" finding shipped for ${code} elsewhere in this file; treat as a confirmed PCHP-specific exception, not the statewide default.`,
+    paRequired: `Required — PCHP's PA Requirements document states plainly that PA is required for ABA evaluation, initial course of treatment, and re-evaluations/recertification, and lists ${code} explicitly under "Applied Behavior Analysis."`,
+    unitCap: 'unverified — not shown on PCHP\'s PA list; the document points to a supporting-documentation appendix not independently verified this pass',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified — not shown on PCHP\'s PA list'],
+    telehealth: 'unverified — not addressed in PCHP\'s PA Requirements document',
+    modifiers: ['unverified — not shown on PCHP\'s PA list'],
+    notes: `PCHP's PA Requirements document (eff. 9/1/2025) lists ${code} under "Applied Behavior Analysis" even though ${code} does not appear anywhere in the TMPPM Children's Services Handbook §2.3 text or TMHP's "AUTISM SERVICES" static fee schedule (PRCR615C) — independently confirmed this pass. Verify current documentation requirements directly with PCHP provider services (1-888-672-2277) before assuming this applies to any other Texas Medicaid plan.`,
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [PCHP_PA_REQUIREMENTS],
   };
 }
 
@@ -811,6 +893,150 @@ function uhcTxEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
   };
 }
 
+/* ==================== gap-fill: 6 new TX MCO guides — Layer 1 (EDI) ====================
+   Payer IDs below are researched against the same public pVerify/Availity
+   payer lists already cited for the other 8 MCO guides in this file; where
+   a reliable match could not be confirmed for this specific plan (as
+   opposed to a same-named commercial affiliate or an ambiguous multi-entry
+   match), the field ships the literal 'unverified' with a verifyVia note
+   rather than a guess. */
+
+const chcEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Community Health Choice" was independently confirmed this pass — confirm via pVerify/Availity onboarding or CHC provider services (713-295-2273).',
+    'payerId.availity': 'Same as pverify.',
+    supports270271: 'Confirm via clearinghouse onboarding — CHC as a Texas Medicaid MCO rides the same centralized TMHP 270/271 feed as every other MCO in this file (see texasMedicaidEdi.medicaid271Notes), but a distinct clearinghouse-side payer ID for CHC specifically was not confirmed.',
+    'bhCarveOut.administrator': "CHC's own ABA Medical Review Guideline describes CHC's own UM machinery throughout (frequency tiers, attendance rule, named exclusions) with no external BH vendor named anywhere.",
+  },
+  sources: [CHC_ABA_GUIDELINE, CHC_HHS_MANUAL, CHC_STAR_QRG, CHC_STARPLUS_QRG],
+};
+
+const bcbstxMedicaidEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify':
+      "BCBSTX's commercial/FEP lines have well-known distinct payer IDs, but a Medicaid-line-specific pVerify/Availity entry for \"BCBSTX Medicaid\"/STAR was not independently confirmed this pass — confirm via Availity Essentials onboarding, and take care not to route a Medicaid member on the commercial BCBSTX payer ID.",
+    'payerId.availity': 'Same as pverify.',
+    supports270271: 'Confirm via clearinghouse onboarding — BCBSTX Medicaid rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'bhCarveOut.administrator':
+      "As recently as a 7/5/2023-dated PA summary, BCBSTX directed providers to Magellan for Texas Medicaid behavioral health — a carve-out. BCBSTX announced 'insourcing' of Medicaid behavioral health on 5/10/2024, and every current-generation document found (PA checklist rev. 4/26/2024, Sept. 2024 UM training) routes ABA to BCBSTX's own BH intake fax/Availity, with no Magellan reference. Shipped 'none' for the CURRENT state; if a legacy document still references Magellan, treat it as superseded per BCBSTX's own 2024 announcement.",
+  },
+  sources: [BCBSTX_MEDICAID_NEWS, BCBSTX_ABA_CHECKLIST, BCBSTX_MEDICAID_MANUAL, BCBSTX_PA_CODE_GRID],
+};
+
+const cchpEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Cook Children\'s Health Plan" was independently confirmed this pass — confirm via clearinghouse onboarding or Provider Support Services (1-888-243-3312).',
+    'payerId.availity': 'Same as pverify.',
+    supports270271: "Confirm via clearinghouse onboarding — Cook Children's Health Plan rides the same centralized TMHP 270/271 feed as every other MCO in this file.",
+    'bhCarveOut.administrator': "Cook Children's own 123-page ABA provider training and Acute PA training describe the plan's own EpicCare Link authorization pipeline throughout, with no external BH vendor named anywhere.",
+  },
+  sources: [CCHP_ABA_TRAINING, CCHP_ACUTE_PA_TRAINING, CCHP_PA_SEARCH, CCHP_CCP_FORM],
+};
+
+const pchpEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify/Availity payer-list entry for "Parkland Community Health Plan" was independently confirmed this pass — confirm via clearinghouse onboarding or PCHP provider services (1-888-672-2277).',
+    'payerId.availity': 'Same as pverify.',
+    supports270271: 'Confirm via clearinghouse onboarding — PCHP rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'bhCarveOut.administrator':
+      "PCHP transitioned behavioral health administration from Carelon Behavioral Health to direct in-house administration effective 9/1/2025 — providers who had contracted with Carelon for PCHP's BH network had to re-contract directly with PCHP. Shipped 'none' for the CURRENT state; PCHP's own 218-page provider manual (last revised Sept. 2024) still describes a Carelon relationship and is treated as materially out of date for BH/ABA per PCHP's own transition announcement.",
+  },
+  sources: [PCHP_PA_REQUIREMENTS, PCHP_BH_TRANSITION, PCHP_BH_NETWORK_PAGE, PCHP_ABA_OVERVIEW],
+};
+
+const ephEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify/Availity payer-list entry for "El Paso Health" (or its former name, "El Paso First Health Plans") was independently confirmed this pass — confirm via clearinghouse onboarding or El Paso Health provider services (915-532-3778).',
+    'payerId.availity': 'Same as pverify.',
+    supports270271: 'Confirm via clearinghouse onboarding — El Paso Health rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'bhCarveOut.administrator': "El Paso Health's own ABA Request Checklist and 2026 documentation memos describe the plan's own PA pipeline (portal, fax, phone) throughout, with no external BH vendor named anywhere.",
+  },
+  sources: [EPH_ABA_CHECKLIST, EPH_DOC_MEMO, EPH_DX_MEMO, EPH_QRG],
+};
+
+const firstcareEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'unverified', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: { administrator: 'none', administratorPayerId: '', abaRidesOn: 'medical', twoHopRequired: false },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'No pVerify/Availity payer-list entry for "FirstCare Health Plans" (Medicaid line) was independently confirmed this pass — confirm via clearinghouse onboarding. Note the plan\'s own site states its Medicaid plans end 8/31/2026, subject to regulatory approval; re-verify enrollment status before onboarding.',
+    'payerId.availity': 'Same as pverify.',
+    supports270271: 'Confirm via clearinghouse onboarding — FirstCare rides the same centralized TMHP 270/271 feed as every other MCO in this file.',
+    'bhCarveOut.administrator':
+      'FirstCare\'s Medicaid PA code list files ABA under "Therapy services," not "Behavioral health," and no external BH vendor is named for ABA specifically — but FirstCare\'s own contact tables list separate Medical PA (1-800-884-4905) and Behavioral Health PA (1-855-395-9652) lines, and which one actually processes ABA requests is not resolved in FirstCare\'s own documents. Shipped \'none\' (no third-party vendor) as inferred rather than verified, given that internal-routing ambiguity.',
+  },
+  sources: [FIRSTCARE_PA_LIST, FIRSTCARE_POLICY_206, FIRSTCARE_PROVIDER_MANUAL, FIRSTCARE_STAR_STATUS],
+};
+
 /* ==================== Layer 2 — STC interpretation maps ====================
    TMHP's own worked 271 transmission examples (TMHP_STC_SECTIONS) show the
    SAME rich MH-bundled STC set returned for "Covered Managed Care"/STAR/CHIP/
@@ -949,6 +1175,71 @@ export const texasVob: Record<string, VobExtension> = {
     edi: uhcTxCommercialEdi,
     codeGrid: uhcTxCommercialCodeGrid,
     stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Texas-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+
+  /* ==================== gap-fill: 6 new TX MCO guides ==================== */
+
+  'community-health-choice-texas': {
+    edi: chcEdi,
+    codeGrid: tmppmCodeGrid({
+      '97151': "CHC's own ABA Medical Review Guideline requires bundling a signed prescriber referral with BOTH the Texas Standard Prior Authorization Form (TSPA) and the state's CCP Prior Authorization Request Form — two forms, not one. Submit via CHC's provider portal or fax 713.295.2283 / 1.844.899.2495 (STAR); BH-specific outpatient fax 713.576.0931.",
+      '97155': "CHC's 90-day extension and 180-day recertification requests both require a child + parent/caregiver attendance log plus a BCBA(LBA)-and-parent-signed progress summary; CHC states members are 'expected to attend at least 85% of scheduled sessions' — falling below requires the ABA therapist to document why and what corrective measures were taken.",
+    }),
+    rates: mcoUnverifiedRates('Community Health Choice'),
+    stcMap: txMcoInferredStc('Community Health Choice'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'bcbs-texas-medicaid': {
+    edi: bcbstxMedicaidEdi,
+    codeGrid: tmppmCodeGrid({
+      '97151': "BCBSTX's own PA code grid (eff. 1/1/2024) confirms 97151 as PA-required, 'Allowable only for members 20 years of age or younger.' Submit to BCBSTX's BH intake fax 1-888-530-9809 or the Availity Essentials portal — NOT Magellan, which BCBSTX insourced away from in 2024.",
+      '99366': "Not found on BCBSTX's own PA code grid or provider manual — rely on the statewide TMPPM baseline rather than a BCBSTX-specific rule.",
+    }),
+    rates: mcoUnverifiedRates('Blue Cross Blue Shield of Texas (Medicaid)'),
+    stcMap: txMcoInferredStc('Blue Cross Blue Shield of Texas (Medicaid)'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'cook-childrens-health-plan': {
+    edi: cchpEdi,
+    codeGrid: tmppmCodeGrid({
+      '97151': "Cook Children's own ABA training adds a detail not stated in the statewide TMPPM baseline: the evaluation authorization carries a 30-day window. Submit through the EpicCare Link secure provider portal (fax 682-885-8402 for STAR/CHIP, or 682-303-0005 / 844-843-0005 for STAR Kids, only while portal access is pending) — determination letters are delivered via the portal only, never faxed.",
+      '99366': "Cook Children's own training restates the statewide 99366 rule in more detail: F84.0-only reimbursement, capped twice per year, requiring at least 3 licensed professionals (one the LBA) meeting a minimum of 30 minutes.",
+    }),
+    rates: mcoUnverifiedRates("Cook Children's Health Plan"),
+    stcMap: txMcoInferredStc("Cook Children's Health Plan"),
+    lastUpdated: ACCESS_DATE,
+  },
+  'parkland-community-health-plan': {
+    edi: pchpEdi,
+    codeGrid: {
+      ...tmppmCodeGrid({
+        '97151': "PCHP's own PA Requirements document (eff. 9/1/2025) states plainly PA is required for ABA evaluation, initial treatment, and re-evaluations/recertification. Submit via the BH-specific fax 214-266-2064 / 1-844-266-2064, the general PA fax 214-266-2085 / 1-844-303-1382, or PCHP's provider portal — behavioral health was insourced from Carelon effective 9/1/2025, so confirm your practice is credentialed directly with PCHP, not still routed through a Carelon-era process.",
+      }),
+      '97152': pchpPaListCode('97152'),
+      '97157': pchpPaListCode('97157'),
+    },
+    rates: mcoUnverifiedRates('Parkland Community Health Plan'),
+    stcMap: txMcoInferredStc('Parkland Community Health Plan'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'el-paso-health': {
+    edi: ephEdi,
+    codeGrid: tmppmCodeGrid({
+      '97151': "El Paso Health's ABA Request Checklist (eff. 2/1/2022) caps the evaluation at 6 hrs/24 units (HO only) with the resulting authorization valid 60 days from the requested evaluation date; a 2026 memo additionally requires a validated standardized diagnostic tool (ADOS, ADI-R, or CARS named) — screening tools like the M-CHAT-R/F do not qualify. Submit via the provider portal (secure.healthx.com/elpasoprovider) or fax 915-298-7866 / 1-844-298-7866. An older 2022 PA Requirements Catalog listing these codes as 'no authorization required' is stale and superseded by the current ABA Request Checklist and 2026 memos — don't cite it.",
+      '97155': "90-day extensions (billed under 97155) require attendance logs for both the child and the parent/caregiver plus an LBA progress summary; <85% attendance triggers a requirement for the LBA to document why and what corrective steps were taken (2026 memo).",
+    }),
+    rates: mcoUnverifiedRates('El Paso Health'),
+    stcMap: txMcoInferredStc('El Paso Health'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'firstcare-health-plans': {
+    edi: firstcareEdi,
+    codeGrid: tmppmCodeGrid({
+      '97151': "FirstCare's Medicaid/CHIP PA code list (eff. 7/1/2026) confirms 97151 requires authorization, filed under \"Therapy services\" rather than \"Behavioral health.\" Submit via the myFirstCare Self-Service Portal (my.firstcare.com/Web) or fax using the Texas Standard PA form. FirstCare's own site states its plans end 8/31/2026, subject to regulatory approval — confirm current enrollment/transition status before treating this as a stable long-term payer relationship.",
+    }),
+    rates: mcoUnverifiedRates('FirstCare Health Plans'),
+    stcMap: txMcoInferredStc('FirstCare Health Plans'),
     lastUpdated: ACCESS_DATE,
   },
 };
