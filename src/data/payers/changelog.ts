@@ -703,4 +703,72 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'VOB enrichment shipped for New York split A — Medicaid FFS + downstate MCOs (Layers 1, 3, and 4). new-york-medicaid gets all three layers: the eMedNY 270/271 mechanics (Loop 2120C NM1 carries the MCO name, not a numeric carrier code — no crosswalk table exists in the companion guide or the MEVS/DVS manual), the current ABA fee schedule (97151/97155/97156 $19.26, 97153 $14.45 post the 4/1/2026 phase-down, group codes 97154/97157/97158 $3.31/member), and the code grid confirming NY Medicaid FFS uses zero billing modifiers (NPI role fields differentiate LBA/CBAA/technician instead) and no per-code hour caps beyond an 8-person group-session limit. The other 7 downstate MCOs (Fidelis, UnitedHealthcare Community Plan, Anthem HealthPlus, Healthfirst, MetroPlus, EmblemHealth, Molina) get Layers 1+3. Two build-spec assumptions were corrected by direct evidence: Healthfirst and MetroPlus do NOT delegate behavioral health to an external administrator — both manage it in-house (Healthfirst\'s own manual: "Healthfirst manages the Behavioral Health services for all of its members"; MetroPlus in-sourced from Beacon Health Options 10/1/2021) — while EmblemHealth\'s Carelon Behavioral Health carve-out is confirmed for BH generally but NOT specifically confirmed for ABA (no EmblemHealth document names an ABA claims administrator). Anthem HealthPlus New York\'s own current publications contain an unresolved, quoted-verbatim contradiction over 0362T/0373T and school-setting coverage (a 2023 FAQ excludes both; a January 2026 newsletter and the June 2026 auth form both reference them as billable/allowed) — shipped as-is rather than guessed at. UnitedHealthcare Community Plan\'s own EDI documents conflict on its payer ID (NYU01 vs. 87726 across three different UHC/Optum-published lists) — also shipped unresolved. Every clearinghouse payer ID was extracted directly from the underlying pVerify/Availity/Optum PDFs; several (Anthem HealthPlus, EmblemHealth, Molina) carry multiple ambiguous candidates, flagged via verifyVia rather than resolved by guessing.',
+    guides: [
+      'new-york-medicaid',
+      'fidelis-care-new-york',
+      'unitedhealthcare-community-plan-new-york',
+      'anthem-healthplus-new-york',
+      'healthfirst-new-york',
+      'metroplus-health-new-york',
+      'emblemhealth-new-york',
+      'molina-healthcare-new-york',
+    ],
+    details: [
+      {
+        slug: 'new-york-medicaid',
+        field: 'edi.medicaid271Notes.mcoSegmentLocation',
+        change:
+          "MMC enrollment flagged by EB01='U' (Loop 2110C); the MCO's actual name is carried in Loop 2120C NM1 (NM101='Y2', NM108='PI') as free text — no numeric carrier-code-to-MCO-name table exists in the companion guide or the MEVS/DVS Provider Manual.",
+        sourceUrl: 'https://www.emedny.org/hipaa/5010/transactions/eMedNY_Transaction_Information_CAQH-CORE_CG_X12_version_5010.pdf',
+      },
+      {
+        slug: 'new-york-medicaid',
+        field: 'rates.byCode.97153',
+        change:
+          'Confirmed full phase-down history: $19.26 → $16.85/unit (eff. 10/1/2025) → $14.45/unit (eff. 4/1/2026, current) — cross-confirmed between the live fee schedule and the Aug 2025 Medicaid Update (retrieved via Wayback Machine archive since health.ny.gov 403s automated fetches).',
+        sourceUrl: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Fee_Schedule.xls',
+      },
+      {
+        slug: 'healthfirst-new-york',
+        field: 'edi.bhCarveOut.administrator',
+        change:
+          "Corrected the build-spec assumption that Healthfirst delegates BH — Healthfirst's own 3/1/2026 NY Provider Manual states verbatim \"Healthfirst manages the Behavioral Health services for all of its members,\" with zero \"Beacon\"/\"Carelon\" hits across 196 pages. Shipped as 'none — in-house', not the assumed carve-out.",
+        sourceUrl: 'https://assets.healthfirst.org/pdf_9432a72611d0176a1f6a5503a1d88d94/',
+      },
+      {
+        slug: 'metroplus-health-new-york',
+        field: 'edi.bhCarveOut.administrator',
+        change:
+          "Corrected the same build-spec assumption for MetroPlus — MetroPlus in-sourced behavioral health from Beacon Health Options effective 10/1/2021 per its own press release, confirmed by zero Beacon/Carelon hits across its 2025 Provider Manual and 2026 BH/HCBS PA grid.",
+        sourceUrl: 'https://metroplus.org/press/important-notice-to-our-applied-behavioral-analysis-aba-providers-regarding-2023-aba-benefit-changes/',
+      },
+      {
+        slug: 'emblemhealth-new-york',
+        field: 'edi.bhCarveOut',
+        change:
+          "Carelon Behavioral Health confirmed as EmblemHealth's BH administrator generally (incl. Medicaid/HARP), but abaRidesOn shipped 'unverified' rather than 'bh' — no EmblemHealth document specifically names an ABA claims administrator; the ABA benefit page enumerates no CPT codes and EmblemHealth's two master pre-authorization lists (610 + 226 pages) contain zero ABA/CPT-97xxx hits.",
+        sourceUrl: 'https://www.emblemhealth.com/content/dam/emblemhealth/pdfs/provider-manual/behavioral-health-services.pdf',
+      },
+      {
+        slug: 'anthem-healthplus-new-york',
+        field: 'codeGrid.0362T / codeGrid.0373T',
+        change:
+          "Shipped as an unresolved, quoted-verbatim conflict rather than guessed: Anthem's 2023 FAQ (still live) states \"Medicaid does not cover CPT codes 0362T and 0373T and schools as a place of service,\" while Anthem's own January 2026 newsletter lists both codes in an \"Affected CPT codes\" billable table and the June 2026 auth form references 0362T for initial-assessment requests.",
+        sourceUrl: 'https://providernews.anthem.com/new-york/articles/applied-behavior-analysis-services-faq-for-providers-13424',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-new-york',
+        field: 'edi.payerId.changeHealthcare',
+        change:
+          "Shipped as unresolved: UHC's own ERA Payer List (12/2/2024) breaks NY out as its own ID (NYU01); UHC's own Claims Payer List (5/13/2026) does not visibly list NY under the multi-state 87726 grouping; Optum's own Institutional Claims Payer List (1/30/2025) explicitly includes NY under a different 87726 grouping. Three UHC/Optum-published documents disagree — not resolved by picking one.",
+        sourceUrl: 'https://www.uhcprovider.com/content/dam/provider/docs/public/resources/edi/EDI-ERA-Payer-List-for-Affiliates-Strategic-Alliances.pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
