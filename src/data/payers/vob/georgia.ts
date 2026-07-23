@@ -35,7 +35,7 @@
      Reimbursement Policy (2022RP501A), applied here as 'inferred' since
      no GA-specific override could be confirmed.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, StcMap } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, StcMap, VobContact } from './types.js';
 import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, anthemFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
@@ -749,35 +749,220 @@ const amerigroupStc = gaUnverifiedStc('Confirm via Amerigroup GA provider servic
 const caresourceStc = gaUnverifiedStc('Confirm via CareSource GA provider services.');
 const peachStateStc = gaUnverifiedStc('Confirm via Peach State Health Plan provider services.');
 
+/* ==================== Layer 7 — vobContact ====================
+   Sourcing notes: phone/fax/hours fields below were extracted from the
+   provider quick-reference guides / manual "contact us" pages fetched this
+   pass (2026-07-23) — local PDF text extraction was used where the hosted
+   fetch tool returned only encoded/binary PDF content. Portal URLs marked
+   "reused/inferred" reuse a payer's already-cited or well-known provider
+   portal without a fresh fetch, per docs/vob-build.md Layer 7 (lower-stakes
+   than phone numbers — a wrong URL just 404s). scriptedQuestions are
+   generated from each guide's own edi/stcMap/codeGrid 'unverified' /
+   'plan-dependent' fields above — not scraped. */
+
+const GAMMIS_2023_PRESENTATION_CONTACT_PAGE = src(
+  'https://www.mmis.georgia.gov/portal/portals/0/staticcontent/public/all/notices/autism%20spectrum%20disorder%202023%20(002)%2020230209200139.pdf',
+  'Gainwell/GA DCH "Georgia Medicaid Autism Services Presentation," Feb 2023, "Contact Us" slide (p.32) — states verbatim: "Our Provider Services Contact Center (PSCC) can be reached at 800-766-4456 and is available 7 a.m. to 7 p.m. EST Monday through Friday (except state holidays) for service inquiries. Please note the Web Portal is available 24/7." Cross-confirmed by the Peach State GA Provider Integration QRG (2021), which separately lists "DXC Technology Provider Call Center at 1-800-766-4456" for the same GAMMIS centralized authorization portal.',
+  true
+);
+const GA_ASD_MANUAL_FAX = src(
+  'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download',
+  'GA DCH Part II ASD Policy Manual, 2018-01-01, §601.4 (Attestation) — states verbatim: "The attestation may be downloaded, completed, and submitted by facsimile to the Attention of DCH ABS Enrollment to 404-656-8366." Narrowly scoped to ABS provider/staff attestation-form submissions, not a general provider-services fax.',
+  true
+);
+const AMERIGROUP_GA_CONTACT_US = src(
+  'https://provider.amerigroup.com/georgia-provider/contact-us',
+  'Amerigroup Georgia provider "Contact Us" page, fetched 2026-07-23 — lists Provider Services 1-800-454-3730 (fax 1-800-964-3627) for prior authorization/notification, member eligibility, claims, behavioral health, pharmacy, and case management, Monday-Friday 7 a.m.-7 p.m.; provider portal named as Availity Essentials.'
+);
+const CARESOURCE_GA_QRG = src(
+  'https://www.caresource.com/documents/georgia-quick-reference-guide/',
+  'CareSource Georgia Quick Reference Guide (DCH Approved 7/6/2023), fetched 2026-07-23 — lists Provider Services / Utilization Management 1-855-202-1058, fax 844-676-0370, email gamedmgt@CareSource.com, and Provider Portal at providerportal.CareSource.com/GA. No hours of operation are stated in the document.',
+  true
+);
+const PEACH_STATE_GA_QRG_2021 = src(
+  'https://www.pshpgeorgia.com/content/dam/centene/peachstate/pdfs/508_PSHP-GA-Provider-QRG.pdf',
+  'Peach State Health Plan "Provider Integration Quick Reference Guide" (PSHP_041921_0083, 2021) — states verbatim: "Contact Provider Services: 1-866-874-0633 • Fax: 1-877-683-3155, Monday through Friday: 7:00am to 7:00pm." Also directs providers to the "Provider Secure Portal" at pshp.com / provider.pshpgeorgia.com. Dated 2021 — flagged stale, but no more current QRG was located this pass and the current PEACH_STATE_POLICY document (GA.CP.BH.504) itself lists the same 1-866-874-0633 number on its cover page.',
+  true
+);
+const ANTHEM_PROVIDER_CONTACT_US = src(
+  'https://www.anthem.com/provider/individual-commercial/contact-us',
+  'Anthem provider "Contact Us" page (individual & commercial), fetched 2026-07-23 — states verbatim: "Call 800-676-BLUE (2583)" for general provider services; directs most self-service (claims status, eligibility, disputes, data updates) to Availity Essentials. No Georgia-specific number, fax, or hours were shown on this page. If ABA claims carve out to Carelon Behavioral Health (unverified — see edi.bhCarveOut above), Carelon\'s own "Contact Us" page (carelonbehavioralhealth.com/providers/contact-us, fetched 2026-07-23) separately lists a National Provider Services Line at 800-397-1630, Monday-Friday 8 a.m.-8 p.m. ET, fax 866-612-7795 — not used as the primary number here since the carve-out routing itself is unconfirmed.'
+);
+const AETNA_BH_PROVIDER_MANUAL = src(
+  'https://www.aetna.com/document-library/healthcare-professionals/documents-forms/bh-provider-manual.pdf',
+  'Aetna Behavioral Health Provider Manual (national — no Georgia-specific Aetna ABA document exists, per the georgia.ts prose guide), fetched 2026-07-23 — "How to reach us": behavioral health care providers can contact staff "during normal business hours (8 AM to 5 PM, Monday through Friday)** by calling the toll-free precertification number on the member\'s ID card," with the same toll-free numbers staffed 24/7 for coverage discussions. "All other plans: call 1-888-MDAetna (TTY: 711) or 1-888-632-3862 (TTY: 711), or visit Availity.com, our provider portal." A separate fax (859-455-8650) is scoped only to provider demographic-change correspondence, not general provider services — not used as the vobContact fax field.'
+);
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/document-library/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list," effective 2024-08-01, fetched 2026-07-23 — "Questions? ... Commercial plans: 1-888-632-3862 (TTY: 711)." Confirms the same number as the BH Provider Manual for commercial-plan precertification questions.'
+);
+const CIGNA_AUTISM_GUIDE_CONTACT = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf',
+  'Cigna Autism Resource Guide (Evernorth, PCOMM-2025-225, 03/25), "Contacting us" section, fetched 2026-07-23 — "Autism Care Coordinator team ... available Monday through Friday from 8:30 a.m. to 5:00 p.m. CT at 877.279.7603" (benefits/eligibility/authorization for autism-related treatment including ABA specifically); separately, "Provider Services department ... available Monday through Friday from 7:00 a.m. to 7:00 p.m. CT at 800.926.2273" (general billing/benefits/eligibility for autism-related treatment). Portal: "Log in to the Evernorth® provider website (Provider.Evernorth.com)."'
+);
+const OPTUM_PROVIDER_EXPRESS_CONTACT_US = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum Provider Express "Contact Us" page, fetched 2026-07-23 — lists "Provider Services" 1-877-614-0484 (credentialing, recredentialing, contracting, fee schedules, network status, provider demographic changes), Monday-Friday 7 a.m.-7 p.m. CT; separately, Provider Express Secure Portal Technical Support at 1-866-209-9320, same hours. No fax number is listed on this page, and no ABA/behavioral-health-specific prior-authorization number distinct from Provider Services was found.'
+);
+
+const georgiaMedicaidContact: VobContact = {
+  providerServicesPhone: '800-766-4456',
+  hours: '7 a.m.–7 p.m. ET, Monday–Friday (except state holidays); GAMMIS web portal available 24/7',
+  portal: { name: 'GAMMIS Web Portal', url: 'https://www.mmis.georgia.gov' },
+  fax: '404-656-8366 (DCH ABS Enrollment — ASD/ABS provider attestation submissions specifically, not general provider services)',
+  scriptedQuestions: [
+    'What Change Healthcare payer ID should we use for GA Medicaid eligibility checks — pVerify lists two conflicting candidates (SKGA0 and 12K05)?',
+    'Can you confirm 77034 is still the correct Availity payer ID for GA Medicaid — our cited source is a 2012 snapshot?',
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+    'Where in the 271 response does CMO/managed-care enrollment appear (loop/segment), and what carrier codes map to which CMO?',
+    'Is CMO eligibility span reported monthly, daily, or in real time?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'Which service-type-code bucket does GAMMIS return ABA benefit detail under, and does the deductible or out-of-pocket max apply to it?',
+  ],
+  sources: [GAMMIS_2023_PRESENTATION_CONTACT_PAGE, GA_ASD_MANUAL_FAX],
+};
+
+const amerigroupContact: VobContact = {
+  providerServicesPhone: '1-800-454-3730',
+  hours: 'Monday–Friday, 7 a.m.–7 p.m.',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com/availity/web/public.elegant.login' },
+  fax: '1-800-964-3627',
+  scriptedQuestions: [
+    'Which pVerify payer ID should we use for Amerigroup GA eligibility checks — the generic 00025, or 00706 (flagged No for eligibility/claims in pVerify\'s own table)?',
+    'What is Amerigroup GA\'s correct Availity payer ID — Availity\'s list resolves 26375 to Amerigroup Fort Worth, TX, not Georgia?',
+    'What Change Healthcare payer ID do you use for Amerigroup GA eligibility checks?',
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'Which service-type-code bucket does Amerigroup GA return ABA benefit detail under, and does the deductible or out-of-pocket max apply?',
+  ],
+  sources: [AMERIGROUP_GA_CONTACT_US],
+};
+
+const caresourceContact: VobContact = {
+  providerServicesPhone: '1-855-202-1058',
+  portal: { name: 'CareSource Provider Portal', url: 'https://providerportal.caresource.com/GA' },
+  fax: '844-676-0370',
+  scriptedQuestions: [
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'Which service-type-code bucket does CareSource return ABA benefit detail under?',
+    'Does the deductible apply to ABA codes?',
+    'Does the out-of-pocket maximum apply to ABA cost share?',
+  ],
+  sources: [CARESOURCE_GA_QRG],
+};
+
+const peachStateContact: VobContact = {
+  providerServicesPhone: '1-866-874-0633',
+  hours: 'Monday–Friday, 7:00 a.m.–7:00 p.m.',
+  portal: { name: 'Peach State Provider Secure Portal', url: 'https://provider.pshpgeorgia.com' },
+  fax: '1-877-683-3155',
+  scriptedQuestions: [
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'Which service-type-code bucket does Peach State return ABA benefit detail under?',
+    'Does the deductible apply to ABA codes?',
+    'Does the out-of-pocket maximum apply to ABA cost share?',
+    'Does Peach State follow the statewide GA DCH/CMS daily unit caps for ABA codes, or does it publish its own unit-cap table?',
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+  ],
+  sources: [PEACH_STATE_GA_QRG_2021],
+};
+
+const anthemContact: VobContact = {
+  providerServicesPhone: '800-676-2583',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com/web/onboarding/availity-fr-ui/#/login' },
+  scriptedQuestions: [
+    "Does ABA route to Carelon Behavioral Health or stay on Anthem's medical claims system — and what payer ID do you use for eligibility checks?",
+    'Which pVerify payer ID is correct for this Anthem BCBS Georgia plan family — 01347 or the separately listed 00032 BCBS of Georgia?',
+    'What Change Healthcare payer ID do you use for Anthem BCBS Georgia — 00101 or 00601?',
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    "What's the current daily/session unit cap for 97151-97158, 0362T, and 0373T — the ABA Provider Resource Guide defers to \"the current CMS MUE list\" without stating the number?",
+    'Which service-type-code bucket does Anthem return ABA benefit detail under, and does the deductible apply to it?',
+  ],
+  sources: [ANTHEM_PROVIDER_CONTACT_US],
+};
+
+const aetnaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  hours: '8 a.m.–5 p.m. Monday–Friday (normal business hours); same toll-free number staffed 24/7 for coverage discussions',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    "Does ABA administer in-house at Aetna or through a separate behavioral-health carve-out — and if carved out, what's the administrator and payer ID for eligibility checks?",
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'What\'s the daily unit cap and cap period for 97153, 97155, and the rest of the ABA code set?',
+    'What form or process do you use for ABA precertification, and how often is continued treatment reviewed?',
+    'What POS codes and telehealth modifiers do you accept for ABA billing?',
+    'What licensure-tier modifiers do you require on ABA claims?',
+    'Does eligibility checking return real-time or batch-only 271 responses, and can you confirm the correct Availity/Change Healthcare payer ID (our cited list is a 2012 snapshot)?',
+  ],
+  sources: [AETNA_BH_PROVIDER_MANUAL, AETNA_BH_PRECERT_LIST],
+};
+
+const cignaContact: VobContact = {
+  providerServicesPhone: '877-279-7603',
+  hours: 'Monday–Friday, 8:30 a.m.–5:00 p.m. CT (Autism Care Coordinator team — benefits/eligibility/authorization for ABA specifically; the general Provider Services line, 800-926-2273, is staffed Monday–Friday 7 a.m.–7 p.m. CT for broader billing/benefits/eligibility questions)',
+  portal: { name: 'Evernorth Provider website', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    "Does the member's out-of-pocket maximum apply to ABA cost share?",
+    "What's the daily unit cap and cap period for 97153 and 97155, and the rest of the ABA code set — EN0499 doesn't publish coding/reimbursement mechanics?",
+    'What POS codes and telehealth modifiers (GT/95) do you accept for ABA billing?',
+    'What licensure-tier modifiers do you require on ABA claims?',
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+  ],
+  sources: [CIGNA_AUTISM_GUIDE_CONTACT],
+};
+
+const unitedhealthcareContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484',
+  hours: 'Monday–Friday, 7 a.m.–7 p.m. CT',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    "Does ABA route to Optum Behavioral Health or stay on UHC's medical payer ID (87726) — and what payer ID do you use for eligibility checks?",
+    'What Availity and Change Healthcare payer IDs should we use for UnitedHealthcare Georgia — no UHC entry appears in the Availity list we have, and neither cited source actually confirms 87726 for Change Healthcare?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    "Does the member's out-of-pocket maximum apply to ABA cost share?",
+    'What POS codes and telehealth modifiers do you accept for ABA billing?',
+    "What's the Optum ABA prior-authorization process and review cadence for continued services?",
+    'Does eligibility checking return real-time or batch-only 271 responses?',
+  ],
+  sources: [OPTUM_PROVIDER_EXPRESS_CONTACT_US],
+};
+
 /* ==================== export ==================== */
 
 export const georgiaVob: Record<string, VobExtension> = {
-  'georgia-medicaid': { edi: georgiaMedicaidEdi, codeGrid: georgiaMedicaidCodeGrid, stcMap: georgiaMedicaidStc, lastUpdated: ACCESS_DATE },
-  'amerigroup-georgia': { edi: amerigroupEdi, codeGrid: amerigroupCodeGrid, stcMap: amerigroupStc, lastUpdated: ACCESS_DATE },
-  'caresource-georgia': { edi: caresourceEdi, codeGrid: caresourceCodeGrid, stcMap: caresourceStc, lastUpdated: ACCESS_DATE },
-  'peach-state-georgia': { edi: peachStateEdi, codeGrid: peachStateCodeGrid, stcMap: peachStateStc, lastUpdated: ACCESS_DATE },
+  'georgia-medicaid': { edi: georgiaMedicaidEdi, codeGrid: georgiaMedicaidCodeGrid, stcMap: georgiaMedicaidStc, vobContact: georgiaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'amerigroup-georgia': { edi: amerigroupEdi, codeGrid: amerigroupCodeGrid, stcMap: amerigroupStc, vobContact: amerigroupContact, lastUpdated: ACCESS_DATE },
+  'caresource-georgia': { edi: caresourceEdi, codeGrid: caresourceCodeGrid, stcMap: caresourceStc, vobContact: caresourceContact, lastUpdated: ACCESS_DATE },
+  'peach-state-georgia': { edi: peachStateEdi, codeGrid: peachStateCodeGrid, stcMap: peachStateStc, vobContact: peachStateContact, lastUpdated: ACCESS_DATE },
   'anthem-bcbs-georgia': {
     edi: anthemEdi,
     codeGrid: anthemCodeGrid,
     stcMap: inheritFamilyStc(anthemFamilyStc, 'Inherited from the Anthem/Elevance family default (docs/vob-build.md Layer 2) — no Georgia-specific 270/271 STC document found.'),
+    vobContact: anthemContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-georgia': {
     edi: aetnaEdi,
     codeGrid: aetnaCodeGrid,
     stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Georgia-specific 270/271 STC document found.'),
+    vobContact: aetnaContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-georgia': {
     edi: cignaEdi,
     codeGrid: cignaCodeGrid,
     stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Georgia-specific override found.'),
+    vobContact: cignaContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-georgia': {
     edi: unitedhealthcareEdi,
     codeGrid: unitedhealthcareCodeGrid,
     stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Georgia-specific override found.'),
+    vobContact: unitedhealthcareContact,
     lastUpdated: ACCESS_DATE,
   },
 };

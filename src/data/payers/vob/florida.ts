@@ -190,7 +190,7 @@
      than independently reconfirmed this pass) — a real correction
      made during the merge, not a silent copy of the pre-merge value.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus, StcMap } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus, StcMap, VobContact } from './types.js';
 import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
@@ -1581,20 +1581,282 @@ function flMcoUnverifiedStc(planName: string): StcMap {
   };
 }
 
+/* ==================== Layer 7 — vobContact ====================
+   Contact-data sourcing notes (read before editing):
+   - Every phone/fax/ivrPath value below was read directly off a document
+     fetched THIS pass (WebFetch on the cited URL, or — where a PDF's text
+     layer didn't extract cleanly via WebFetch — a Read of the same fetched
+     PDF). Per the build brief's "never guess" rule for high-stakes contact
+     data, no number is carried over from florida.ts's prose citations
+     without an independent refetch this pass; several numbers below happen
+     to match the prose exactly (Sunshine's PA fax, Humana's IVR/fax, FCC's
+     call center/PA fax, ABHFL's BH PA line, TNFL's payer ID) because both
+     passes read the same primary source and got the same answer — genuine
+     cross-validation, not a copy.
+   - fl.acentra.com (Florida Medicaid's FFS eQSuite vendor, Acentra Health)
+     returned HTTP 503 to every WebFetch attempt this pass (homepage,
+     /behavior-analysis/, /contact-us/, and a PDF user guide all 503'd) —
+     the same automated-fetch-blocking pattern docs/vob-gaps.md documents
+     for ahca.myflorida.com's clean URLs. Acentra's own customer-service
+     phone (cited in florida.ts's prose, sourced from a prior pass) is
+     therefore NOT repeated here — it could not be independently confirmed
+     this pass. What WAS fetched this pass is FLMMIS's own (Gainwell
+     Technologies, the state's fiscal agent) provider-services line, which
+     is what's shipped for florida-medicaid; the Acentra eQSuite URL is
+     reused for `portal` only (lower-stakes per the build brief) with the
+     reuse flagged in its source note.
+   - Molina (molinahealthcare.com), Aetna commercial precert
+     (aetna.com/document-library), and Evernorth/Cigna's Provider Advocate
+     line (static.evernorth.com) were all fetched fresh this pass via
+     WebFetch/WebSearch-then-WebFetch rather than reused from any existing
+     citation, since none of florida.ts's or this file's existing
+     SourceRefs covered provider-services contact info for those four guides.
+   ================================================================ */
+
+const FLMMIS_CONTACT_PAGE = src(
+  'https://portal.flmmis.com/FLPublic/Provider_ContactUs/tabId/59/Default.aspx',
+  'FLMMIS (Gainwell Technologies, Florida Medicaid\'s fiscal agent) provider-services contact page — fetched and read this pass. States the general provider-services line 1-800-289-7799, with option 4 for the Provider Enrollment Unit and option 7 for Medicaid Secure Portal (Web Portal) access; a separate WebSearch-indexed snapshot of a sibling FLMMIS page additionally shows option 5 for password resets/general FLMMIS assistance (Mon–Fri 7am–6pm ET) but that specific page could not be independently refetched this pass, so the hours and option-5 routing are not shipped as confirmed.'
+);
+const ACENTRA_BA_PORTAL_REUSED = src(
+  'https://fl.acentra.com/behavior-analysis/',
+  'Acentra Health (eQHealth Solutions) Florida Medicaid Behavior Analysis / eQSuite page — already cited in florida.ts\'s prose sources for florida-medicaid. Reused here for `portal` ONLY (lower-stakes per the build brief); NOT independently refetched this pass — the entire fl.acentra.com domain returned HTTP 503 to WebFetch on every URL attempted this pass (homepage, this page, /contact-us/, and a PDF eQSuite user guide), matching the automated-fetch-blocking pattern docs/vob-gaps.md documents for ahca.myflorida.com. Acentra\'s own customer-service phone/fax (cited in florida.ts\'s prose from a prior pass) is therefore NOT repeated in this guide\'s providerServicesPhone/fax fields.',
+  true
+);
+const MOLINA_FL_CONTACT_PAGE = src(
+  'https://www.molinahealthcare.com/providers/fl/medicaid/contacts/contact_info.aspx',
+  'Molina Healthcare of Florida Medicaid — Provider Contacts page — fetched and read this pass. States provider services phone (855) 322-4076, Monday–Friday 8:00 a.m.–7:00 p.m.; member services (866) 472-4585; names the Molina Provider Portal (provider.molinahealthcare.com) and an Availity claims-submission page. No fax number for general provider services appears on this page.'
+);
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/document-library/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list," effective 8/1/2024 — fetched and read this pass. Page 3 states verbatim: "Commercial plans: 1-888-632-3862 (TTY: 711)" for precertification questions, and names Availity.com as the primary online submission portal (AetnaElectronicPrecert.com for EMR-integrated submission). Page 5\'s services table explicitly lists 97151-97158/0362T/0373T under "Applied behavioral analysis (ABA)" as requiring precertification — confirms this guide\'s existing paRequired finding, not newly asserted here.'
+);
+const EVERNORTH_PROVIDER_SERVICE_CENTER = src(
+  'https://static.evernorth.com/assets/evernorth/provider/resourceLibrary/behavioralResources/doingBusinessWithUs/cbhProviderServiceCenter.html',
+  'Evernorth (Cigna) Behavioral Health Provider Service Center page — fetched and read this pass. States the Provider Advocate line 1.800.926.2273, operated from Evernorth\'s National Care Center in Bloomington, MN; instructs providers to select prompt #5 for the provider menu, then choose from Claims (#1), Eligibility and benefits (#2), Authorization for IOP/PHP/Inpatient services (#3), Online services (#4), or Personal updates (#5). No fax number or specific business hours are stated on this page.'
+);
+const UHC_PROVIDER_CONTACT_PAGE = src(
+  'https://www.uhcprovider.com/en/contact-us.html',
+  'UnitedHealthcare Provider Portal — Contact Us page — fetched and read this pass. Lists general commercial provider services at 877-842-3210; Optum Behavioral Health / 24/7 behavioral health and substance-use support at 877-614-0484 (same number already confirmed for UHC Community Plan of Florida via the FL BAP QRG, consistent with Optum administering both lines of business); UnitedHealthcare Provider Portal technical support at 866-842-3278, option 1.'
+);
+
+const sunshineContact: VobContact = {
+  providerServicesPhone: '1-844-477-8313',
+  hours: 'Provider Services, Utilization Management (BA prior auth), and weekend/after-hours on-call all route through the same line, Monday–Friday 8 a.m.–8 p.m. Eastern.',
+  fax: '1-844-208-9113',
+  portal: { name: 'Sunshine Health Secure Provider Portal', url: 'https://www.sunshinehealth.com/login.html' },
+  scriptedQuestions: [
+    'What payer ID should we use for Availity and Change Healthcare 270/271 eligibility checks — 68069, or the distinct 68057 line Availity separately lists for "Florida Sunshine State Health Plan"?',
+    'Do you support real-time 270/271 eligibility checks, or is it batch only?',
+    'Does the deductible apply to ABA services?',
+    'Is the ABA cost share a copay or coinsurance?',
+    'Is the copay charged per visit or per day for ABA codes?',
+    'Does the member’s out-of-pocket maximum apply to ABA benefits?',
+    'For telehealth-delivered 97156, should claims use the GT modifier or POS 02 with no modifier — your general telehealth billing notice and your BA-specific clinical policy appear to conflict?',
+  ],
+  sources: [SUNSHINE_BA_QRG],
+};
+
+const cmsHealthPlanContact: VobContact = {
+  providerServicesPhone: '1-844-477-8313',
+  hours: 'Shared Sunshine Health machinery — same Provider Services / UM line, Monday–Friday 8 a.m.–8 p.m. Eastern (CMS Health Plan’s own determination clock runs 7 calendar days rather than Sunshine’s 5, per florida.ts prose, but the contact channel is identical).',
+  fax: '1-844-208-9113',
+  portal: { name: 'Sunshine Health Secure Provider Portal', url: 'https://www.sunshinehealth.com/login.html' },
+  scriptedQuestions: [
+    'Does CMS Health Plan use its own EDI payer ID, or does it ride on Sunshine Health’s payer ID (68069) for 270/271 eligibility checks? Do you support real-time checks?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA services, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day for ABA codes?',
+    'Does the member’s out-of-pocket maximum apply to ABA benefits?',
+    'For telehealth-delivered 97156, should claims use the GT modifier or POS 02 with no modifier?',
+  ],
+  sources: [SUNSHINE_BA_QRG],
+};
+
+const simplyContact: VobContact = {
+  providerServicesPhone: '1-800-397-1630',
+  hours: 'Carelon National Provider Service Line: Monday–Friday, 8 a.m.–8 p.m. Eastern. (Availity Client Services, a separate line, keeps the same hours: 1-800-282-4548.)',
+  fax: '1-800-370-1116',
+  portal: { name: 'Availity Essentials (claims); Carelon eServices (authorizations)', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'What payer ID should we use for Change Healthcare eligibility checks, and do you support real-time 270/271?',
+    'What EDI payer ID does Carelon Behavioral Health use for Simply ABA claims/authorizations — is it separate from Simply’s own SMPLY ID?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA services, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [SIMPLY_CARELON_TRAINING],
+};
+
+const uhcCommunityPlanContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484',
+  ivrPath: 'Provider Express Web Support Center (portal help): 1-866-209-9320. EDI/claims support: 1-800-210-8315 or ac_edi_ops@uhc.com.',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com/' },
+  scriptedQuestions: [
+    'What payer ID should we use for pVerify and Change Healthcare eligibility checks, and do you support 270/271 real-time eligibility — or is BA eligibility portal/phone-only, as your own QRG suggests?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [UHC_FL_BAP_QRG],
+};
+
+const humanaContact: VobContact = {
+  providerServicesPhone: '800-477-6931',
+  hours: 'Participating and nonparticipating providers: Monday–Friday, 8 a.m.–8 p.m. Eastern.',
+  fax: '813-321-7220',
+  ivrPath: 'Prior-authorization IVR: 800-523-0023, available 24/7 (live representatives Monday–Friday, 8 a.m.–8 p.m. Eastern).',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'What payer ID should we use for pVerify and Change Healthcare eligibility checks, and do you support 270/271 real-time eligibility on Availity ID 61101, or is it batch only?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [HUMANA_ABA_FLYER],
+};
+
+const aetnaBetterHealthFlContact: VobContact = {
+  providerServicesPhone: '1-800-441-5501',
+  hours: 'Member Services: Monday–Friday, 7:30 a.m.–7:00 p.m. Eastern. Availity technical support: Monday–Friday, 8 a.m.–8 p.m. Eastern (except holidays), 1-800-282-4548.',
+  fax: '1-844-235-1340',
+  ivrPath: 'Behavioral Health prior-auth (MMA): 1-833-365-2474 — a distinct line from Physical Health PA, 1-860-607-8056.',
+  portal: { name: 'Availity Essentials', url: 'https://availity.com/' },
+  scriptedQuestions: [
+    'What payer ID should we use for Change Healthcare eligibility checks, and do you support real-time 270/271 on payer ID 128FL?',
+    'Does BA claims routing require a payer ID distinct from 128FL, and does ABA ride on the medical benefit or a behavioral-health carve-out through BSN?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [ABHFL_QRG],
+};
+
+const molinaFlContact: VobContact = {
+  providerServicesPhone: '(855) 322-4076',
+  hours: 'Monday–Friday, 8:00 a.m.–7:00 p.m.',
+  portal: { name: 'Molina Healthcare of Florida Provider Portal', url: 'https://provider.molinahealthcare.com/provider/login' },
+  scriptedQuestions: [
+    'What payer ID should we use for Change Healthcare eligibility checks, and do you support real-time 270/271 on Availity ID 51062?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [MOLINA_FL_CONTACT_PAGE],
+};
+
+const communityCarePlanFlContact: VobContact = {
+  providerServicesPhone: '1-888-550-8800',
+  ivrPath: 'Provider Relations: 1-888-550-8800, option 2. Claims status/customer service (live interaction): 877-372-1273 — listen carefully to the voice prompts, which may answer the inquiry without needing a representative.',
+  fax: '1-855-470-4490',
+  portal: { name: 'Therapy Network of Florida Provider Web Portal (HS1)', url: 'https://asp.healthsystemone.com/hs1providers' },
+  scriptedQuestions: [
+    'Does Community Care Plan/TNFL support 270/271 eligibility checks, and what pVerify payer ID should we use (professional claims route to 65062 via Availity)?',
+    'Does ABA claims/eligibility route as a standard medical claim, or under a distinct behavioral-health bucket for TNFL?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [CCP_TNFL_BA_MANUAL],
+};
+
+const floridaCommunityCareContact: VobContact = {
+  providerServicesPhone: '1-833-322-7526',
+  fax: '305-675-6138',
+  portal: {
+    name: 'Florida Community Care Provider Portal (HealthX)',
+    url: 'https://secure.healthx.com/v3app/publicservice/loginv1/login.aspx?bc=16544617-390b-4625-9657-c7b235c09d3c&serviceid=df6f8096-64ea-498a-a657-7c7b407ae072',
+  },
+  scriptedQuestions: [
+    'Does FCC support real-time 270/271 eligibility checks, and what pVerify payer ID should we use (Availity ID FLCCR)?',
+    'Does BA claims/auth routing require a payer ID distinct from FLCCR, and does ABA ride the medical benefit or a behavioral-health carve-out via BSN?',
+    'Which service-type code do you return ABA benefit details under?',
+    'Does the deductible apply to ABA, and is the cost share a copay or coinsurance?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What’s the cap period for 0373T?',
+  ],
+  sources: [FCC_BA_PAGE],
+};
+
+const floridaMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-289-7799',
+  ivrPath: 'Option 4: Provider Enrollment Unit. Option 7: Medicaid Secure Portal (Web Portal) access.',
+  portal: { name: 'Acentra Health eQSuite (Florida Medicaid Behavior Analysis FFS authorizations)', url: 'https://fl.acentra.com/behavior-analysis/' },
+  scriptedQuestions: [
+    'What payer ID do you use for pVerify and Change Healthcare 270/271 eligibility checks for Florida Medicaid (vs. Availity’s 77027)?',
+    'Is the ABA cost share for this member a copay or coinsurance, and does the deductible apply to ABA services?',
+    'Is any copay charged per visit or per day for ABA codes?',
+    'Does the member’s out-of-pocket maximum apply to ABA benefits?',
+    'What’s the cap period for 0373T (adaptive behavior treatment with protocol modification, 2+ techs)?',
+  ],
+  sources: [FLMMIS_CONTACT_PAGE, ACENTRA_BA_PORTAL_REUSED],
+};
+
+const aetnaFlContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  portal: { name: 'Availity', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'Does ABA route to a behavioral-health carve-out administrator, or stay in-house on the medical plan — and what payer ID applies for eligibility checks?',
+    'What are the unit caps and cap periods (daily/weekly) for 97151–97158, 0362T, and 0373T under this member’s plan?',
+    'What places of service are allowed for ABA (home, office, school, telehealth), and is telehealth covered for any code?',
+    'Are there required billing modifiers (licensure tier, telehealth) for ABA codes?',
+    'Is the ABA cost share a copay or coinsurance, and does the deductible apply?',
+    'Is any copay charged per visit or per day, and does the out-of-pocket max apply to ABA?',
+    'What payer ID do you use for Availity and Change Healthcare eligibility checks, and do you support real-time 270/271?',
+  ],
+  sources: [AETNA_BH_PRECERT_LIST],
+};
+
+const cignaFlContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273',
+  ivrPath: 'Select prompt #5 for the provider menu, then: #1 Claims, #2 Eligibility and benefits, #3 Authorization for IOP/PHP/Inpatient services, #4 Online services, #5 Personal updates.',
+  portal: { name: 'Evernorth for Health Care Professionals', url: 'https://provider.evernorth.com/' },
+  scriptedQuestions: [
+    'Do you support real-time 270/271 eligibility checks on Evernorth payer ID 62308, or is it batch only?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per visit or per day?',
+    'Does the member’s out-of-pocket maximum apply to ABA benefits?',
+    'What are the unit caps and cap periods for 97151–97158, 0362T, and 0373T under this member’s plan?',
+    'What places of service are allowed, and is telehealth covered for any ABA code?',
+    'Are there required billing modifiers for ABA codes?',
+  ],
+  sources: [EVERNORTH_PROVIDER_SERVICE_CENTER],
+};
+
+const unitedhealthcareFlContact: VobContact = {
+  providerServicesPhone: '877-842-3210',
+  ivrPath: 'Optum Behavioral Health provider services / 24/7 behavioral health & substance-use support: 877-614-0484. UnitedHealthcare Provider Portal technical support: 866-842-3278, option 1.',
+  portal: { name: 'Provider Express (Optum Behavioral Health)', url: 'https://public.providerexpress.com/' },
+  scriptedQuestions: [
+    'Do you support real-time 270/271 eligibility checks on payer ID 87726, or is it batch only?',
+    'Does ABA eligibility route through payer ID 87726, or does Optum Behavioral Health use a separate ID (e.g., UHG007) for 270/271 checks?',
+    'Is the ABA cost share a copay or coinsurance for this member’s plan?',
+    'Is the copay charged per visit or per day?',
+    'Does the out-of-pocket maximum apply to ABA benefits?',
+    'What places of service are allowed for ABA, and is telehealth covered for any code?',
+  ],
+  sources: [UHC_PROVIDER_CONTACT_PAGE],
+};
+
 /* ==================== export ==================== */
 
 export const floridaVob: Record<string, VobExtension> = {
-  'florida-medicaid': { edi: floridaMedicaidEdi, codeGrid: floridaMedicaidCodeGrid, rates: floridaMedicaidRates, stcMap: floridaMedicaidStc, lastUpdated: ACCESS_DATE },
-  'sunshine-health-florida': { edi: sunshineEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('Sunshine Health'), lastUpdated: ACCESS_DATE },
-  'cms-health-plan-florida': { edi: cmsHealthPlanEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('CMS Health Plan'), lastUpdated: ACCESS_DATE },
-  'simply-healthcare-florida': { edi: simplyEdi, codeGrid: simplyCodeGrid, stcMap: flMcoUnverifiedStc('Simply Healthcare'), lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-florida': { edi: uhcCommunityPlanEdi, codeGrid: uhcCodeGrid, stcMap: flMcoUnverifiedStc('UnitedHealthcare Community Plan of Florida'), lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-florida': { edi: humanaEdi, codeGrid: humanaCodeGrid, stcMap: flMcoUnverifiedStc('Humana Healthy Horizons'), lastUpdated: ACCESS_DATE },
+  'florida-medicaid': { edi: floridaMedicaidEdi, codeGrid: floridaMedicaidCodeGrid, rates: floridaMedicaidRates, stcMap: floridaMedicaidStc, vobContact: floridaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'sunshine-health-florida': { edi: sunshineEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('Sunshine Health'), vobContact: sunshineContact, lastUpdated: ACCESS_DATE },
+  'cms-health-plan-florida': { edi: cmsHealthPlanEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('CMS Health Plan'), vobContact: cmsHealthPlanContact, lastUpdated: ACCESS_DATE },
+  'simply-healthcare-florida': { edi: simplyEdi, codeGrid: simplyCodeGrid, stcMap: flMcoUnverifiedStc('Simply Healthcare'), vobContact: simplyContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-florida': { edi: uhcCommunityPlanEdi, codeGrid: uhcCodeGrid, stcMap: flMcoUnverifiedStc('UnitedHealthcare Community Plan of Florida'), vobContact: uhcCommunityPlanContact, lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-florida': { edi: humanaEdi, codeGrid: humanaCodeGrid, stcMap: flMcoUnverifiedStc('Humana Healthy Horizons'), vobContact: humanaContact, lastUpdated: ACCESS_DATE },
   'aetna-better-health-florida': {
     edi: aetnaBetterHealthFlEdi,
     codeGrid: aetnaBetterHealthFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No ABHFL-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
     stcMap: flMcoUnverifiedStc('Aetna Better Health of Florida'),
+    vobContact: aetnaBetterHealthFlContact,
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-florida': {
@@ -1602,6 +1864,7 @@ export const floridaVob: Record<string, VobExtension> = {
     codeGrid: molinaFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No Molina-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
     stcMap: flMcoUnverifiedStc('Molina Healthcare of Florida'),
+    vobContact: molinaFlContact,
     lastUpdated: ACCESS_DATE,
   },
   'community-care-plan-florida': {
@@ -1609,6 +1872,7 @@ export const floridaVob: Record<string, VobExtension> = {
     codeGrid: communityCarePlanFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. TNFL's own BA manual defers explicitly to "the Florida BA Fee Schedule" without restating rates — this table is that state schedule, used as the reference baseline.` },
     stcMap: flMcoUnverifiedStc('Community Care Plan (Therapy Network of Florida)'),
+    vobContact: communityCarePlanFlContact,
     lastUpdated: ACCESS_DATE,
   },
   'florida-community-care': {
@@ -1616,24 +1880,28 @@ export const floridaVob: Record<string, VobExtension> = {
     codeGrid: floridaCommunityCareCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No FCC-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
     stcMap: flMcoUnverifiedStc('Florida Community Care'),
+    vobContact: floridaCommunityCareContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-florida': {
     edi: aetnaFlEdi,
     codeGrid: aetnaFlCodeGrid,
     stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Florida-specific 270/271 STC document found.'),
+    vobContact: aetnaFlContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-florida': {
     edi: cignaFlEdi,
     codeGrid: cignaFlCodeGrid,
     stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Florida-specific override found.'),
+    vobContact: cignaFlContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-florida': {
     edi: unitedhealthcareFlEdi,
     codeGrid: unitedhealthcareFlCodeGrid,
     stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Florida-specific override found.'),
+    vobContact: unitedhealthcareFlContact,
     lastUpdated: ACCESS_DATE,
   },
 };

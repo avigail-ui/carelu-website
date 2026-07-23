@@ -57,7 +57,7 @@
      already cited in the guide prose) verify them for New York
      directly.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap, VobContact } from './types.js';
 import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, bcbsFamilyStc, inheritFamilyStc, CAQH_CORE_STC_VOCAB } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';

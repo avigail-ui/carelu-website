@@ -71,7 +71,7 @@
      family, not a third-party BHO. That guide ships abaRidesOn: 'bh'
      accordingly; every other Medicaid MCO ships abaRidesOn: 'medical'.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap, VobContact } from './types.js';
 import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
@@ -1107,6 +1107,222 @@ function txMcoInferredStc(planName: string): StcMap {
   return inheritFamilyStc(texasMedicaidStc, `${planName}'s eligibility rides TMHP's own centralized 270/271 feed (Texas's architecture, confirmed by TMHP_STC_SECTIONS's worked "Covered Managed Care" example) rather than a per-MCO feed — inherited as 'inferred', not independently confirmed for this specific MCO.`);
 }
 
+/* ==================== Layer 7 — vobContact ====================
+   Sourcing notes:
+   - Every providerServicesPhone/fax/ivrPath value below was read directly
+     off a provider-services/contact-us page or provider quick-reference
+     guide fetched this pass (not carried over from memory or from a
+     WebSearch snippet alone) — several of these plans' provider manuals
+     block automated retrieval (Aetna Better Health TX, Molina TX, per the
+     prose already in texas.ts), but their standalone contact-us pages
+     were independently fetchable even when the manual PDF was not.
+   - Aetna's Texas commercial line (aetna-texas) has no ABA- or
+     Texas-specific provider phone published; the number shipped is
+     Aetna's national non-Medicare Healthcare Provider Service Center,
+     confirmed on Aetna's own contact page. Aetna's Behavioral Health
+     Precertification list PDF and ABA precert form PDF were fetched but
+     returned no readable phone/fax text — not used as a source for that
+     reason (no fabricated digits).
+   - portal entries marked "reused" below cite an already-known/well-known
+     portal URL for that payer family without a fresh fetch confirming
+     that exact URL this pass, per the build spec's lower bar for portal
+     accuracy (a wrong URL just 404s, unlike a wrong phone number).
+   - Driscoll's fax (1-866-741-5650) reuses the number already verified
+     and cited in this guide's own prose/source list (texas.ts,
+     driscoll-health-plan treatmentPA field) rather than a fresh fetch
+     finding it restated verbatim; a fresh fetch of driscollhealthplan.com
+     this pass surfaced a companion PA/referrals phone (1-877-455-1053) at
+     the same number's neighborhood, shipped as providerServicesPhone.
+   ================================================================ */
+
+const texasMedicaidContact: VobContact = {
+  providerServicesPhone: '800-925-9126',
+  hours: '7 a.m.–7 p.m. Central Time, Monday–Friday',
+  portal: { name: 'TMHP.com / TexMedConnect provider portal', url: 'https://www.tmhp.com/' },
+  ivrPath:
+    "Contact Center menu routes by topic — ask for \"Authorizations\" or \"Eligibility\"; a separate Third Party Resource (insurance verification) line runs 8 a.m.–5 p.m. CT. EDI/TexMedConnect technical issues route to the EDI Help Desk (1-888-863-3638), already cited in this guide's edi.verifyVia.",
+  scriptedQuestions: [
+    'Do you have a distinct Availity or Change Healthcare payer ID for Texas Medicaid/TMHP 270/271 eligibility checks, separate from pVerify code 00186?',
+    "Beyond the STAR/STAR Kids/CHIP program code carried in EB05, is there a fixed lookup table mapping REF02 codes to specific MCO names (e.g., Superior vs. Wellpoint), or does the MCO name only ever appear as free text?",
+    "Is the Autism Services copay or coinsurance charged per visit or per day, and does the member's out-of-pocket maximum apply to this benefit?",
+    'Are CPT codes 97152, 97157, 0362T, and 0373T billable under THSteps-CCP Autism Services at all, under a different program, or not covered?',
+    'Is there a daily or weekly unit cap for 97156 (parent/caregiver training) or 99366 (interdisciplinary team meeting)?',
+  ],
+  sources: [src('https://www.tmhp.com/contact', 'TMHP Contact page, fetched this pass — Contact Center 800-925-9126, hours 7 a.m.–7 p.m. CT Monday–Friday; lists Authorizations, Eligibility, and EDI/TexMedConnect among its menu options.')],
+};
+
+const superiorContact: VobContact = {
+  providerServicesPhone: '1-877-391-5921',
+  hours: '8 a.m.–5 p.m. Central Time, Monday–Friday (STAR Health extends to 6 p.m. CT)',
+  portal: { name: 'Superior HealthPlan Secure Provider Portal', url: 'https://www.superiorhealthplan.com/providers/login.html' },
+  ivrPath: 'One line covers CHIP, STAR, STAR Health, STAR Kids, and STAR+PLUS — no separate ABA/BH prompt found.',
+  scriptedQuestions: [
+    'Does Superior support real-time (vs. batch) 270/271 eligibility responses for payer ID 00393?',
+    "Confirm 39188 is the correct Availity payer ID for Superior's professional 270/271 eligibility specifically, distinct from the Centene-corporate entities (SHP11/FSHP11/DSHP11) also on the list.",
+    'Is the ABA copay or coinsurance charged per visit or per day, and does the plan\'s out-of-pocket maximum apply to ABA services?',
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under Superior's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [src('https://www.superiorhealthplan.com/contact-us/phone-directory.html', "Superior HealthPlan Phone Directory, fetched this pass — main Provider Services line 1-877-391-5921, 8 a.m.–5 p.m. CT Monday–Friday (STAR Health to 6 p.m. CT), covering CHIP/STAR/STAR Health/STAR Kids/STAR+PLUS.")],
+};
+
+const tchpContact: VobContact = {
+  providerServicesPhone: '832-828-1004 (toll-free 1-877-213-5508)',
+  hours: '8 a.m.–5 p.m. Central Time, Monday–Friday; after-hours/weekend/holiday calls route to an answering service with next-business-day callback',
+  portal: { name: "Texas Children's Link (EpicCare Link)", url: 'https://epiccarelink.texaschildrens.org' },
+  fax: '832-825-8750',
+  ivrPath: 'Telephone TouCHPoint automated system (832-828-1007) offers 24/7 automated eligibility, benefits, and claims-status lookup without a live rep; its own fax is 832-825-8777.',
+  scriptedQuestions: [
+    'Does TCHP support real-time (vs. batch) 270/271 eligibility for payer ID 00275?',
+    "Confirm TXCSM is the correct Availity code for TCHP's STAR Medicaid line, distinct from the separately listed TXCHLDCOMM commercial product (76048).",
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under TCHP's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [
+    src('https://www.texaschildrenshealthplan.org/providers/provider-resources/quick-reference-guide', 'TCHP Provider Quick Reference Guide page, fetched this pass — Provider Services 832-828-1004 / 1-800-731-8527, fax 832-825-8750, portal "Texas Children\'s Link" via epiccarelink.texaschildrens.org.'),
+    src('https://www.texaschildrenshealthplan.org/contact-us', 'TCHP Contact Us page, fetched this pass — Provider Services Hotline 832-828-1004 / toll-free 1-877-213-5508, hours 8 a.m.–5 p.m. CT Monday–Friday with after-hours answering service; Telephone TouCHPoint automated line 832-828-1007, fax 832-825-8777.'),
+  ],
+};
+
+const wellpointContact: VobContact = {
+  providerServicesPhone: '1-833-731-2162',
+  fax: '1-800-964-3627',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com/' },
+  scriptedQuestions: [
+    'Which Availity payer ID routes Wellpoint Texas Medicaid eligibility — one of the legacy Amerigroup regional codes (26374 Houston, 26375 Ft. Worth, 26378 Multiple States, 27518 generic), and if so which one?',
+    'Does Wellpoint support real-time (vs. batch) 270/271 eligibility for payer ID 06067?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under Wellpoint's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [src('https://www.wellpoint.com/tx/provider/state-federal/contact-us', "Wellpoint TX Provider Contact Us page, fetched this pass — Medicaid/CHIP Provider Services 1-833-731-2162, fax 1-800-964-3627; page names Availity Essentials for self-service claims/eligibility; no hours-of-operation text found on this page for this specific line (confirmed via a second targeted fetch).")],
+};
+
+const uhcCommunityContact: VobContact = {
+  providerServicesPhone: '888-887-9003',
+  hours: 'Monday–Friday, 8 a.m.–6 p.m. Central Time',
+  portal: { name: 'UnitedHealthcare Provider Portal', url: 'https://www.uhcprovider.com/' },
+  ivrPath: "Behavioral health/ABA authorizations and referrals route through this same 888-887-9003 line (Optum-administered) — do not call the medical PA line for ABA.",
+  scriptedQuestions: [
+    "Since ABA authorization routes to UHC's Optum Behavioral Health network rather than the medical PA pipeline, what EDI payer ID should be used for the BH-side eligibility check — is UHG007 correct, or does 00192 cover it?",
+    'Does the 270/271 eligibility check itself require a second EDI hop to Optum BH, or only the PA/UM step?',
+    'Does UHC support real-time (vs. batch) 270/271 eligibility for this payer ID?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under this plan's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [src('https://www.uhcprovider.com/en/health-plans-by-state/texas-health-plans/tx-comm-plan-home/tx-cp-contact-us.html', 'UHC Community Plan of Texas Contact Us page, fetched this pass — Provider Services 888-887-9003, Monday–Friday 8 a.m.–6 p.m. CST; UnitedHealthcare Provider Portal at uhcprovider.com; Optum behavioral-health court-ordered-services line 877-614-0484 listed separately (not the general ABA routing number).')],
+};
+
+const aetnaBetterHealthContact: VobContact = {
+  providerServicesPhone: '1-800-248-7767 (Bexar service area) / 1-800-306-8612 (Tarrant service area)',
+  hours: '8 a.m.–5 p.m., Monday–Friday',
+  portal: { name: 'Availity', url: 'https://apps.availity.com/' },
+  scriptedQuestions: [
+    'Confirm which payer ID routes Aetna Better Health of Texas\'s Medicaid line eligibility (000944) vs. its CHIP line (000945).',
+    'Does Aetna Better Health of Texas support real-time (vs. batch) 270/271 eligibility for this payer ID?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under this plan's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [src('https://www.aetnabetterhealth.com/texas/providers/contact-us.html', "Aetna Better Health of Texas Provider Contact Us page, fetched this pass (independently reachable even though the plan's provider-manual PDF blocks automated retrieval, per this guide's edi source notes) — STAR Bexar 1-800-248-7767, STAR Tarrant 1-800-306-8612, both 8 a.m.–5 p.m. Monday–Friday; Provider Portal & Claims via Availity (apps.availity.com).")],
+};
+
+const molinaContact: VobContact = {
+  providerServicesPhone: '(855) 322-4080',
+  hours: 'Monday–Friday, 8 a.m.–5 p.m. local time',
+  portal: { name: 'Availity Essentials (Molina Healthcare)', url: 'https://www.availity.com/molinahealthcare' },
+  ivrPath: 'After-hours Nurse Advice Line: (888) 275-8750.',
+  scriptedQuestions: [
+    'Does Molina support real-time (vs. batch) 270/271 eligibility for payer ID 00152?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under Molina's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+    "Where can we find Molina's code-level PA requirements (Behavioral Health and Medical Prior Authorization Code Matrix), and are 97151–97158 all subject to the standard TMPPM rules or does Molina apply its own overlay?",
+  ],
+  sources: [src('https://www.molinahealthcare.com/providers/tx/medicaid/resource/services.aspx', "Molina Healthcare of Texas provider services page, fetched this pass (independently reachable even though Molina's PA guide PDFs sit behind bot protection, per this guide's edi source notes) — UM Department (855) 322-4080, hours Monday–Friday 8 a.m.–5 p.m. local time; portal is Availity Essentials (www.availity.com/molinahealthcare).")],
+};
+
+const communityFirstContact: VobContact = {
+  providerServicesPhone: '1-800-434-2347',
+  hours: '8:30 a.m.–5 p.m., Monday–Friday',
+  portal: { name: 'Community First Provider Portal (HealthTrio Connect)', url: 'https://cfhpprovider.healthtrioconnect.com/' },
+  ivrPath: 'Prior-authorization-specific line: 210-358-6050 (local), same toll-free/hours as above.',
+  scriptedQuestions: [
+    'Which payer ID is correct for Community First eligibility checks — pVerify 01390 or 06106?',
+    'Does Community First support real-time (vs. batch) 270/271 eligibility?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    "Are CPT codes 97152, 97157, 0362T, and 0373T billable under Community First's Autism Services benefit?",
+    'Is there a daily/weekly unit cap for 97156 (parent/caregiver training) or 99366 (team meeting)?',
+  ],
+  sources: [
+    src('https://medicaid.communityfirsthealthplans.com/contact-us/', 'Community First Health Plans (Medicaid) Contact Us page, fetched this pass — Provider Relations 210-358-6294, STAR/CHIP toll-free 1-800-434-2347, hours 8:30 a.m.–5 p.m. Monday–Friday; Provider Portal at cfhpprovider.healthtrioconnect.com.'),
+    src('https://medicaid.communityfirsthealthplans.com/provider-prior-authorizations/', 'Community First Health Plans prior-authorization page, fetched this pass — PA assistance line 210-358-6050 local / 1-800-434-2347 toll-free, same 8:30 a.m.–5 p.m. Monday–Friday hours; portal named HealthTrio Connect.'),
+  ],
+};
+
+const driscollContact: VobContact = {
+  providerServicesPhone: '1-877-455-1053',
+  fax: '1-866-741-5650',
+  portal: { name: 'Driscoll Prior Authorization Requirement Portal (Autism/ABA Services)', url: 'https://webapps.driscollhealthplan.com/priorauthcheck/?s=Autism+(ABA)+Services' },
+  ivrPath: 'Regional Provider Services lines also exist: Hidalgo service area 1-855-425-3247, Nueces service area 1-877-324-3627.',
+  scriptedQuestions: [
+    'Which payer ID is correct — pVerify 01090 or 002472 — for Driscoll eligibility checks?',
+    "Does Driscoll's Availity STAR/STAR Kids eligibility route through the CHIP-specific code (74284/DCHCH), or is there a separate STAR/STAR Kids code?",
+    'Does Driscoll support real-time (vs. batch) 270/271 eligibility?',
+    "What's the daily/weekly unit cap and allowed POS for 97152 and 97157 — the PA portal confirms both are covered/authorization-required but doesn't show caps or POS on the entry?",
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    'Are CPT codes 0362T and 0373T billable under Driscoll\'s Autism Services benefit, and is there a daily/weekly unit cap for 97156 or 99366?',
+  ],
+  sources: [src('https://driscollhealthplan.com/for-providers/', 'Driscoll Health Plan "For Providers" page, fetched this pass — CHIP/STAR/STAR Kids prior authorization & referrals 1-877-455-1053 (also 1-866-741-5650), Hidalgo Provider Services 1-855-425-3247, Nueces Provider Services 1-877-324-3627, DHP Provider Portal at dhpproviderportal.com, PA lookup portal at driscollhealthplan.com/priorauthcheck.')],
+};
+
+const aetnaTxCommercialContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  portal: { name: 'Availity', url: 'https://apps.availity.com/' },
+  scriptedQuestions: [
+    'Does Aetna administer ABA in-house for Texas commercial members, or via a behavioral-health carve-out — and if carved out, what\'s the administrator and payer ID to use for eligibility checks?',
+    'What service-type-code bucket does Aetna return ABA benefits under, and does the deductible apply to ABA services?',
+    "Is the ABA copay or coinsurance charged per visit or per day, and does the plan's out-of-pocket maximum apply?",
+    'What are the daily/session unit caps for 97151–97158, 0362T, 0373T, and 99366 under this member\'s plan?',
+    'What POS settings (home/office/school/telehealth) and modifiers (HN/HO/HM/HP, GT/95) does Aetna require for ABA billing in Texas?',
+    'Does Aetna support real-time 270/271 eligibility for payer ID 00001, and confirm this isn\'t the Texas Health Aetna joint-venture plan (00875)?',
+  ],
+  sources: [src('https://www.aetna.com/about-us/contact-aetna.html', "Aetna Contact Aetna page, fetched this pass — Healthcare Provider Service Centers: non-Medicare 1-888-632-3862, Medicare 1-800-624-0756; no ABA- or Texas-specific provider line found (Aetna directs precertification callers to the number on the member's ID card). Hours not stated for this specific line on this page.")],
+};
+
+const cignaTxCommercialContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273',
+  ivrPath: "Select prompt #5 for providers, then: #1 Claims, #2 Eligibility and benefits, #3 Authorization (IOP/PHP/Inpatient), #4 Online services, #5 Personal updates.",
+  portal: { name: 'Cigna for Health Care Professionals (CignaforHCP)', url: 'https://cignaforhcp.cigna.com' },
+  scriptedQuestions: [
+    'Does Evernorth/Cigna require prior authorization on ABA assessment codes (97151/97152/0362T) separately from treatment codes (97153–97158), since EN0499 doesn\'t state a per-code PA distinction?',
+    'Is CPT 99366 (interdisciplinary team meeting) covered and billable under this member\'s ABA benefit?',
+    'Is the ABA copay or coinsurance charged per visit or per day?',
+    "Does the plan's out-of-pocket maximum apply to ABA services?",
+    'What are the daily/session unit caps for 97151–97158, 0362T, and 0373T under this member\'s plan?',
+    'What POS settings and modifiers (telehealth 95/GT, licensure tiers) does Cigna/Evernorth require for ABA billing?',
+    'Does Cigna support real-time (vs. batch) 270/271 eligibility for payer ID 00004?',
+  ],
+  sources: [src('https://static.evernorth.com/assets/evernorth/provider/resourceLibrary/behavioralResources/doingBusinessWithUs/cbhProviderServiceCenter.html', 'Evernorth Behavioral Health Provider Service Center page, fetched this pass — 1-800-926-2273, prompt #5 for providers with sub-options for claims/eligibility/authorization/online services/personal updates; hours and fax not stated on this page.')],
+};
+
+const uhcTxCommercialContact: VobContact = {
+  providerServicesPhone: '877-842-3210',
+  ivrPath: 'Behavioral health/substance-use line (Optum): 877-614-0484, 24/7.',
+  portal: { name: 'UnitedHealthcare Provider Portal', url: 'https://www.uhcprovider.com/' },
+  scriptedQuestions: [
+    "Since ABA is administered via Optum's two-step Provider Express authorization, what EDI payer ID routes the BH-side eligibility check, and does eligibility itself require two hops or just the PA/UM step?",
+    "Is ABA administered on the medical or behavioral-health side of this member's plan?",
+    'What POS settings are allowed for ABA codes, and is telehealth permitted for any of 97151–97158, 0362T, or 0373T?',
+    'Is the ABA copay or coinsurance charged per visit or per day?',
+    "Does the plan's out-of-pocket maximum apply to ABA services?",
+    'Is there a daily unit cap for 99366 (interdisciplinary team meeting)?',
+  ],
+  sources: [src('https://www.uhcprovider.com/en/contact-us.html', 'UHCprovider.com Contact Us page, fetched this pass — general national provider services 877-842-3210, Behavioral Health & Substance Use (Optum) 877-614-0484 (24/7), UnitedHealthcare Provider Portal at uhcprovider.com; hours not stated for the 877-842-3210 line on this page.')],
+};
+
 /* ==================== export ==================== */
 
 export const texasVob: Record<string, VobExtension> = {
@@ -1115,6 +1331,7 @@ export const texasVob: Record<string, VobExtension> = {
     codeGrid: tmppmCodeGrid(),
     rates: TX_MEDICAID_RATES,
     stcMap: texasMedicaidStc,
+    vobContact: texasMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
   'superior-healthplan-texas': {
@@ -1124,6 +1341,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Superior HealthPlan'),
     stcMap: txMcoInferredStc('Superior HealthPlan'),
+    vobContact: superiorContact,
     lastUpdated: ACCESS_DATE,
   },
   'texas-childrens-health-plan': {
@@ -1133,6 +1351,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates("Texas Children's Health Plan"),
     stcMap: txMcoInferredStc("Texas Children's Health Plan"),
+    vobContact: tchpContact,
     lastUpdated: ACCESS_DATE,
   },
   'wellpoint-texas': {
@@ -1142,6 +1361,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Wellpoint (formerly Amerigroup Texas)'),
     stcMap: txMcoInferredStc('Wellpoint'),
+    vobContact: wellpointContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-texas': {
@@ -1151,6 +1371,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('UnitedHealthcare Community Plan of Texas'),
     stcMap: txMcoInferredStc('UnitedHealthcare Community Plan of Texas'),
+    vobContact: uhcCommunityContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-better-health-texas': {
@@ -1160,6 +1381,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Aetna Better Health of Texas'),
     stcMap: txMcoInferredStc('Aetna Better Health of Texas'),
+    vobContact: aetnaBetterHealthContact,
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-texas': {
@@ -1169,6 +1391,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Molina Healthcare of Texas'),
     stcMap: txMcoInferredStc('Molina Healthcare of Texas'),
+    vobContact: molinaContact,
     lastUpdated: ACCESS_DATE,
   },
   'community-first-health-plans': {
@@ -1178,6 +1401,7 @@ export const texasVob: Record<string, VobExtension> = {
     }),
     rates: mcoUnverifiedRates('Community First Health Plans'),
     stcMap: txMcoInferredStc('Community First Health Plans'),
+    vobContact: communityFirstContact,
     lastUpdated: ACCESS_DATE,
   },
   'driscoll-health-plan': {
@@ -1191,24 +1415,28 @@ export const texasVob: Record<string, VobExtension> = {
     },
     rates: mcoUnverifiedRates('Driscoll Health Plan'),
     stcMap: txMcoInferredStc('Driscoll Health Plan'),
+    vobContact: driscollContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-texas': {
     edi: aetnaTxCommercialEdi,
     codeGrid: aetnaTxCommercialCodeGrid,
     stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Texas-specific 270/271 STC document found.'),
+    vobContact: aetnaTxCommercialContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-texas': {
     edi: cignaTxCommercialEdi,
     codeGrid: cignaTxCommercialCodeGrid,
     stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Texas-specific override found.'),
+    vobContact: cignaTxCommercialContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-texas': {
     edi: uhcTxCommercialEdi,
     codeGrid: uhcTxCommercialCodeGrid,
     stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Texas-specific override found.'),
+    vobContact: uhcTxCommercialContact,
     lastUpdated: ACCESS_DATE,
   },
 
