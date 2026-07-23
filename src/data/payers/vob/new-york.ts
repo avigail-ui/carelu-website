@@ -1589,6 +1589,317 @@ function nyMcoUnverifiedStc(planName: string): StcMap {
 
 const newYorkMedicaidStc: StcMap = nyMcoUnverifiedStc('eMedNY/NYS Medicaid');
 
+/* ==================== Layer 7 — vobContact ====================
+   Contact/channel data below is sourced from live re-fetches this pass of
+   each payer's own provider-services/contact page (WebFetch), cross-checked
+   against WebSearch results where noted. Every providerServicesPhone/fax/
+   ivrPath value was literally read off a fetched page this pass; portal
+   URLs are marked when reused/inferred from an already-cited domain rather
+   than independently re-confirmed. scriptedQuestions are generated from
+   this file's own edi/stcMap/codeGrid fields already marked unverified or
+   plan-dependent for that specific guide — not scraped. */
+
+const excellusContact: VobContact = {
+  providerServicesPhone: '1-800-920-8889',
+  ivrPath: 'Press #2 for Eligibility and Benefits (same number listed as "Medical Provider Customer Care" on the Provider FAQ page and as general Customer Care on the Contact Us page).',
+  hours: 'Mon-Thu 8:00 a.m.-5:00 p.m. ET; Fri 9:00 a.m.-5:00 p.m. ET (closed 12:00-1:00 p.m. ET weekdays)',
+  portal: { name: 'Excellus Provider Website', url: 'https://provider.excellusbcbs.com' },
+  scriptedQuestions: [
+    'Which Excellus BCBS payer ID (00465 vs. the regional sub-brand codes) should we use for ABA eligibility checks, and does Excellus support real-time 270/271 responses?',
+    'Is ABA subject to a hard per-code prior authorization, or just a general medical-necessity review "when applicable"?',
+    'What per-code daily/annual unit caps apply to 97151-97158, 0362T, and 0373T?',
+    'Are ABA codes reimbursable via telehealth, and if so, what POS code and modifier should we use?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per-visit or per-day?',
+    "Does the plan's deductible apply to ABA services?",
+  ],
+  sources: [
+    src('https://provider.excellusbcbs.com/resources/faq', 'Excellus Provider FAQ page, re-fetched this pass — confirms "Medical Provider Customer Care" at 1-800-920-8889, press #2 for Eligibility and Benefits.'),
+    src('https://provider.excellusbcbs.com/contact', 'Excellus Provider Contact Us page, re-fetched this pass — confirms the same 1-800-920-8889 number as general Customer Care, with hours Mon-Thu 8-5 ET / Fri 9-5 ET (closed noon-1 weekdays).'),
+  ],
+};
+
+const mvpContact: VobContact = {
+  providerServicesPhone: '1-800-684-9286',
+  ivrPath: 'TTY 711. Select option 1 for member eligibility, or option 3 then option 1 for claims status.',
+  hours: 'Mon-Fri 8:30 a.m.-5:00 p.m. ET',
+  portal: { name: 'Availity Essentials', url: 'https://essentials.availity.com' },
+  scriptedQuestions: [
+    "What's the daily/annual unit cap for MVP's ABA codes (97151-97158), and what's the cap period?",
+    'Is ABA telehealth currently reimbursable under MVP, given the payment policy cites an expired CMS waiver (3/31/2025) — and if so, what POS/modifier applies?',
+    'Is the cost share for ABA charged per-visit or per-day, and is it a copay or coinsurance?',
+    "Does MVP's deductible apply to ABA services?",
+    'Which STC bucket (MH/A4/A6/etc.) does MVP return ABA benefits under on a 270/271 check?',
+    'Which pVerify payer ID should be used for Medicaid Managed Care eligibility checks — is 00156 CHP-specific, or is there a separate general MMC ID?',
+  ],
+  sources: [src('https://www.mvphealthcare.com/providers/contact-us', "MVP Provider Contact Us page, fetched this pass — confirms main provider line 1-800-684-9286 (TTY 711), Mon-Fri 8:30 a.m.-5 p.m. ET, option 1 for eligibility, option 3-then-1 for claims status, and Availity Essentials as MVP's EDI/authorization portal.")],
+};
+
+const cdphpContact: VobContact = {
+  providerServicesPhone: '1-888-320-9584',
+  ivrPath: 'Behavioral Health Access Center (also reachable locally at 518-641-3600).',
+  hours: 'Mon-Fri 8:00 a.m.-6:00 p.m. ET',
+  portal: { name: 'CDPHP Secure Provider Site', url: 'https://provider.cdphp.com' },
+  scriptedQuestions: [
+    'Does ABA require prior authorization via the Behavioral Health Access Center, and if so what documentation is needed?',
+    "What are the per-code unit/hour caps and cap periods for 97151-97158, given CDPHP states \"not subject to a maximum benefit\" but defers specifics to the secure portal?",
+    "Are 0362T and 0373T covered — they don't appear in the POAM's named ABA code list (97151-97158 only)?",
+    'Is ABA billable via telehealth, and if so what POS code/modifier?',
+    'What billing modifiers, if any, does CDPHP require for BCBA vs. RBT-delivered ABA services?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day?',
+    "Does CDPHP's deductible apply to ABA services, and which STC bucket does CDPHP return ABA benefits under on a 270/271 check?",
+  ],
+  sources: [
+    src('https://www.cdphp.com/customer-support/call-cdphp/providers', 'CDPHP Provider Customer Support page, fetched this pass — confirms the Behavioral Health Access Center at 1-888-320-9584, Mon-Fri 8 a.m.-6 p.m.'),
+    src('https://www.cdphp.com/providers', "CDPHP Providers landing page, fetched this pass — confirms the \"Secure Provider Site\" at provider.cdphp.com for claims status, patient eligibility, and related lookups."),
+  ],
+};
+
+const independentHealthContact: VobContact = {
+  providerServicesPhone: '1-855-481-7038',
+  ivrPath: 'Listed as "Authorizations, Referrals or Clinical Matters" (Provider Relations/Contracting uses a separate line, 1-844-265-7592).',
+  portal: { name: 'Independent Health (myIH)', url: 'https://www.myih.com' },
+  scriptedQuestions: [
+    "Does ABA route through Carelon Behavioral Health or bill directly to Independent Health's own payer ID (00436) — what payer ID should we use for eligibility/claims?",
+    'Is prior authorization required for ABA codes, and if so what is the process?',
+    'What are the per-code unit/hour caps and cap period for ABA services?',
+    'Is ABA billable via telehealth, and if so what modifier/POS applies?',
+    'What billing modifiers does Independent Health require for LBA vs. CBAA-delivered services?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day, and does the deductible apply?',
+    'Does Independent Health support real-time 270/271 eligibility responses for payer ID 00436?',
+  ],
+  sources: [
+    src(
+      'https://www.independenthealth.com/providers/policies-and-guidelies/behavioral-health-for-state-products',
+      'Independent Health Behavioral Health for State Products page, fetched this pass — confirms Authorizations/Referrals/Clinical Matters line 1-855-481-7038, Provider Relations/Contracting 1-844-265-7592, Claims 1-888-249-0478, and the myih.com provider portal.'
+    ),
+  ],
+};
+
+const highmarkContact: VobContact = {
+  providerServicesPhone: '1-866-231-0847',
+  fax: '1-800-964-3627',
+  ivrPath: 'TTY 711. General line for provider questions, claims issues, behavioral health inquiries, and prior authorization requests.',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com' },
+  scriptedQuestions: [
+    "Does ABA authorization/claims route through Wellpoint Partnership Plan or Carelon Behavioral Health — which entity's payer ID should we use?",
+    'Is the 2020/2022 telehealth bulletin (POS 02, modifier 95 or GT for 97151/97153/97155-97157) still current, and does telehealth apply to 97152, 97154, 97158, 0362T, or 0373T?',
+    'Beyond the $45,000/calendar-year benefit maximum, are there per-code daily/session unit caps for ABA services?',
+    'What POS settings (beyond telehealth) are allowed for ABA codes?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day?',
+    "Does the deductible apply to ABA services, and which STC bucket does Highmark WNY return benefits under on a 270/271 check?",
+    'Does Highmark WNY support real-time 270/271 eligibility checks for payer ID 01357?',
+  ],
+  sources: [
+    src('https://providerpublic.mybcbswny.com/western-new-york-provider/contact-us', 'Highmark BCBS Western New York Provider Contact Us page, fetched this pass — confirms 1-866-231-0847 / fax 1-800-964-3627 / TTY 711 for provider questions, claims, behavioral health, and prior authorization.'),
+    src('https://providerpublic.mybcbswny.com/western-new-york-provider/home', 'Highmark WNY Provider home page, fetched this pass — confirms Availity Essentials as the provider portal for eligibility, benefits, authorizations, and claims status.'),
+  ],
+};
+
+const aetnaNyContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  ivrPath: 'Non-Medicare (commercial) provider line — select the precertification prompt for ABA precert (form GR-69017-4).',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Does Aetna administer ABA/behavioral health in-house, or through a separate BH carve-out vendor — and if a carve-out, what is the payer ID?',
+    'What per-code daily/unit caps apply to 97151-97158, 0362T, and 0373T?',
+    'Is ABA billable via telehealth, and if so what modifier/POS code applies?',
+    'What billing modifiers (e.g., licensure-tier codes) does Aetna require for ABA claims?',
+    'Is the ABA cost share a copay or coinsurance, and is it charged per-visit or per-day?',
+    'Does the deductible apply to ABA services, and does the out-of-pocket maximum apply?',
+    'Which STC bucket does Aetna return ABA benefits under on a 270/271 eligibility check?',
+  ],
+  sources: [
+    src('https://www.aetna.com/about-us/contact-aetna.html', 'Aetna Contact Us page, fetched this pass — confirms non-Medicare provider/precertification line 1-888-632-3862 (select precertification prompt); behavioral-health-specific lines route by the member ID card rather than a single published number.'),
+  ],
+};
+
+const cignaNyContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273',
+  ivrPath: 'Select prompt #5 for providers, then choose from claims, eligibility, authorization, online services, or personal updates.',
+  scriptedQuestions: [
+    "Does ABA route through Evernorth/Cigna Behavioral Health at payer ID 62308, or the separate \"Cigna Behavioral Health\" clearinghouse entry — does that affect eligibility routing?",
+    'Is the ABA cost share a copay or coinsurance for this specific plan (the family default is plan-dependent)?',
+    'Is the copay/coinsurance for ABA charged per-visit or per-day?',
+    "Does the plan's out-of-pocket maximum apply to ABA services?",
+    'What are the per-code daily/annual unit caps for 97151-97158, 0362T, and 0373T?',
+    'Is ABA billable via telehealth, and if so what POS code/modifier applies?',
+    'What billing modifiers does Cigna require for ABA claims in New York?',
+  ],
+  sources: [
+    src(
+      'https://static.evernorth.com/assets/evernorth/provider/resourceLibrary/behavioralResources/doingBusinessWithUs/cbhProviderServiceCenter.html',
+      'Evernorth Behavioral Health Provider Service Center page, fetched this pass — confirms 1.800.926.2273, select prompt #5 for providers, then choose among claims/eligibility/authorization/online services/personal updates; Provider Advocates staffed from Evernorth\'s National Care Center (Bloomington, MN). No portal URL or hours published on this page.'
+    ),
+  ],
+};
+
+const uhcNyContact: VobContact = {
+  providerServicesPhone: '877-842-3210',
+  ivrPath: 'General commercial provider services line. For behavioral health/substance-use benefits specifically, call Optum Behavioral Health at 877-614-0484 (24/7).',
+  portal: { name: 'UHCprovider.com', url: 'https://www.uhcprovider.com' },
+  scriptedQuestions: [
+    "Does ABA ride on UHC's medical payer ID (87726) or the Optum Behavioral Health carve-out (UHG007) for eligibility/claims routing — is a two-hop check required?",
+    'Are the national Optum unit caps (e.g., 32 units/day for 97151/97153) and modifiers (HN/HO/HP) confirmed for New York specifically, or is there a state override?',
+    'What POS settings are allowed for ABA codes beyond what is published nationally?',
+    'Is ABA billable via telehealth under this specific plan, and if so what modifier/POS code?',
+    'Is the ABA cost share a copay or coinsurance for this plan (the family default is plan-dependent)?',
+    'Is the copay/coinsurance charged per-visit or per-day?',
+    "Does the plan's out-of-pocket maximum apply to ABA services?",
+  ],
+  sources: [
+    src('https://www.uhcprovider.com/en/contact-us.html', 'UHCprovider.com Contact Us page, fetched this pass — "Frequently requested contacts" section confirms 877-842-3210 for general commercial provider services and 877-614-0484 for 24/7 Optum Behavioral Health/substance-use support.'),
+  ],
+};
+
+const newYorkMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-343-9000',
+  ivrPath: 'eMedNY Call Center — separate queues for non-pharmacy billing/claims/provider enrollment vs. eligibility/POS/DVS/pharmacy claims (see hours).',
+  hours:
+    'Non-pharmacy billing, claims, provider enrollment: Mon-Fri 7:30 a.m.-6:00 p.m. ET (excl. holidays). Eligibility, POS, DVS, pharmacy claims: Mon-Fri 7:00 a.m.-10:00 p.m. ET (excl. holidays), 8:30 a.m.-5:30 p.m. ET holidays/weekends.',
+  portal: { name: 'ePACES', url: 'https://epaces.emedny.org' },
+  scriptedQuestions: [
+    'Are CPT codes 0362T, 0373T, or 99366 billable under NY Medicaid FFS — they are absent from the published fee schedule and policy manual?',
+    'Is ABA service delivery itself (not just LBA supervision) billable via telehealth under FFS Medicaid, and if so what code/modifier applies?',
+    'What is the correct payer ID for Change Healthcare/Availity EDI routing, since no statewide FFS entry was found in either clearinghouse\'s public list?',
+    'Is there a numeric carrier-code-to-MCO crosswalk for parsing which MCO a Medicaid member is enrolled in from the 271 response, or does it always return the MCO name as free text?',
+    'What granularity does eligibility span cover on a 271 check — is it strictly the current calendar month, and how are the EB06 time-period-qualifier codes (26/27/29/34) defined?',
+    'Which STC/service-type-code bucket does eMedNY return ABA benefit information under?',
+    'Is there any defined cap period for 97151/97152/97153/97155/97156/97157, given no hour cap is published?',
+  ],
+  sources: [
+    src('https://www.emedny.org/contacts/emedny.aspx', 'eMedNY Contacts page, fetched this pass — confirms Call Center 1-800-343-9000 with the two-tier hours above (health.ny.gov itself 403s automated fetches, per docs/vob-gaps.md; eMedNY.org was fetchable directly).'),
+    src('https://www.emedny.org/', 'eMedNY homepage, fetched this pass — confirms ePACES (epaces.emedny.org) as the provider self-service portal for electronic transactions, alongside eXchange and the Provider Enrollment/PSP portals.'),
+  ],
+};
+
+const fidelisContact: VobContact = {
+  providerServicesPhone: '1-888-343-3547',
+  ivrPath: '1-888-FIDELIS. TTY 711.',
+  portal: { name: 'Fidelis Care Provider Portal', url: 'https://providers.fideliscare.org' },
+  scriptedQuestions: [
+    "Does ABA/BH claims routing use Fidelis's own medical payer ID (11315), or a separate Centene-affiliated behavioral-health vendor?",
+    'Is there an enforceable hourly ceiling for Comprehensive (30-40 hrs/wk) vs. Focused (10-25 hrs/wk) ABA, or is intensity purely individualized?',
+    'What POS settings are allowed for ABA (school is excluded since 9/1/2023) — home, office, community, other?',
+    'Is ABA billable via telehealth, and if so what code/modifier applies?',
+    'What billing modifiers does Fidelis require for ABA claims?',
+    "Which STC bucket does Fidelis's 271 response return ABA benefit detail under, and is the cost share a copay or coinsurance?",
+    'Is the ABA copay/coinsurance charged per-visit or per-day, and does the deductible apply?',
+  ],
+  sources: [src('https://www.fideliscare.org/Provider/Contact-Provider-Relations', 'Fidelis Care Contact Provider Relations page, fetched this pass — confirms 1-888-FIDELIS (1-888-343-3547), TTY 711, and the providers.fideliscare.org provider portal; no dedicated ABA fax or published hours found on this page.')],
+};
+
+const uhcCommunityPlanContact: VobContact = {
+  providerServicesPhone: '866-362-3368',
+  ivrPath: '24/7 chat available via the provider portal; behavioral health providers are separately directed to enroll/verify through Provider Express (providerexpress.com) for Community Plan Behavioral Health.',
+  portal: { name: 'UnitedHealthcare Provider Portal', url: 'https://secure.uhcprovider.com' },
+  scriptedQuestions: [
+    "What is the correct clearinghouse payer ID for UnitedHealthcare Community Plan of NY eligibility checks — UHC's own documents conflict (NYU01 vs. 87726)?",
+    'Does ABA/BH claims routing use United Behavioral Health of NY (Optum BH) with a payer ID separate from the medical ID, and is a two-hop eligibility check required?',
+    'Are CPT codes 0362T and 0373T covered under this plan — neither appears in the Optum NY Medicaid ABA billing table or the State Mandates document?',
+    'What is the cap period and daily/weekly unit structure for ABA codes beyond the 8-individual group-session cap on 97158?',
+    'What POS settings are allowed for ABA services beyond the telehealth POS-02 instruction?',
+    'Is 97158 (group treatment with protocol modification) eligible for telehealth like the other ABA codes?',
+    "Which STC bucket does this plan return ABA benefit detail under, and does the plan's deductible apply to ABA?",
+  ],
+  sources: [
+    src(
+      'https://www.uhcprovider.com/en/health-plans-by-state/new-york-health-plans/ny-comm-plan-home.html',
+      'UnitedHealthcare Community Plan of New York provider page, fetched this pass — confirms 866-362-3368 and 24/7 chat via the provider portal (secure.uhcprovider.com); behavioral health routes to Community Plan Behavioral Health via Provider Express enrollment, with no separate BH phone published on this page.'
+    ),
+  ],
+};
+
+const anthemHealthPlusContact: VobContact = {
+  providerServicesPhone: '800-450-8753',
+  fax: '800-964-3627',
+  hours: 'Mon-Fri 9:00 a.m.-5:00 p.m.',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com' },
+  scriptedQuestions: [
+    'Are CPT codes 0362T and 0373T covered under Medicaid — the 2023 FAQ says no, but the 2026 provider-newsletter and treatment-plan-form materials suggest otherwise?',
+    'Does Anthem/Elevance administer ABA/BH in-house, or route through Carelon Behavioral Health — what payer ID applies?',
+    "What is the numeric hour/unit cap for ABA codes now that Anthem moved to a weekly-approved-units cap structure (eff. 1/1/2026)?",
+    'Is ABA billable via telehealth, and if so what modifier/POS code should be used on the claim?',
+    'What billing modifiers does Anthem require for ABA claims?',
+    'Which pVerify payer ID applies specifically to Anthem HealthPlus (Empire BCBS HealthPlus), given three ambiguous candidate entries?',
+    "Which STC bucket does Anthem return ABA benefit detail under, and does the plan's deductible apply to ABA?",
+  ],
+  sources: [src('https://providers.anthem.com/new-york-provider/contact-us', 'Anthem New York Provider Contact Us page, fetched this pass — confirms Anthem Provider Services 800-450-8753, fax 800-964-3627, hours Mon-Fri 9 a.m.-5 p.m., and Availity Essentials as the 24/7 portal for claims/prior authorization.')],
+};
+
+const healthfirstContact: VobContact = {
+  providerServicesPhone: '1-888-801-1660',
+  hours: 'Mon-Fri 8:30 a.m.-5:30 p.m.',
+  portal: { name: 'Healthfirst for Providers (Availity Essentials for authorization submission)', url: 'https://hfproviders.org' },
+  scriptedQuestions: [
+    'What does the updated ABA authorization policy (effective 10/7/2026, announced 7/7/2026) actually change — can the full text be sent in advance?',
+    "Are CPT codes 0362T and 0373T covered — they don't appear on the 2026 Prior Authorization Code List?",
+    'What are the per-code daily/annual unit caps for ABA services?',
+    'What POS settings are allowed for ABA service delivery itself (not just LBA supervision)?',
+    'Is ABA billable via telehealth for service delivery, or only for supervision?',
+    'What billing modifiers does Healthfirst require for ABA claims?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day, and does the deductible apply?',
+  ],
+  sources: [
+    src(
+      'https://hfproviders.org/resource-posts/prior-auth-through-availity',
+      'Healthfirst for Providers page, fetched this pass — confirms Provider Services 1-888-801-1660, Mon-Fri 8:30 a.m.-5:30 p.m., and Availity Essentials as the required channel for authorization/referral submission (the legacy hfproviderportal.org Online Authorization Tool retired 5/15/2025).'
+    ),
+  ],
+};
+
+const metroplusContact: VobContact = {
+  providerServicesPhone: '1-800-303-9626',
+  hours: 'Mon-Fri 8:00 a.m.-6:00 p.m. ET',
+  portal: { name: 'MetroPlusHealth Provider Portal', url: 'https://providers.metroplus.org' },
+  scriptedQuestions: [
+    'Does the 680-hour/calendar-year ABA cap (stated for Child Health Plus) also apply to core Medicaid Managed Care members, or is there no cap on that line?',
+    'Is prior authorization required per individual ABA CPT code, or just at the category level?',
+    "What POS settings are allowed for ABA, given the plan's coding crosswalk excludes ABA (APG-reimbursed) from its standard tables?",
+    'Is ABA billable via telehealth, and if so what code/modifier applies?',
+    'What billing modifiers does MetroPlus require for ABA claims?',
+    'Which STC bucket does MetroPlus return ABA benefit detail under, and is the cost share a copay or coinsurance?',
+    'Does MetroPlus support real-time 270/271 eligibility responses for payer ID 00659?',
+  ],
+  sources: [src('https://metroplus.org/providers/join-our-network/contact-us/', 'MetroPlusHealth Provider Contact Us page, fetched this pass — confirms Provider Services 1-800-303-9626, Mon-Fri 8 a.m.-6 p.m. ET, and providers.metroplus.org as the provider portal.')],
+};
+
+const emblemhealthContact: VobContact = {
+  providerServicesPhone: '800-397-1630',
+  ivrPath: 'General EmblemHealth line. For behavioral health specifically (incl. ABA), call Carelon Behavioral Health directly at 888-447-2526.',
+  portal: { name: 'Carelon Behavioral Health Provider Portal', url: 'https://plan.carelonbehavioralhealth.com' },
+  scriptedQuestions: [
+    'Which EmblemHealth entity (GHI, HIP, or EmblemHealth Insurance Co.) underwrites this Medicaid line, and what is the correct payer ID for eligibility/claims?',
+    "Does ABA specifically route through Carelon Behavioral Health, or does EmblemHealth adjudicate it directly — what is Carelon's payer ID if applicable?",
+    'Is prior authorization required for ABA, since no ABA-specific PA statement was found on either of EmblemHealth\'s published pre-authorization lists?',
+    'What are the per-code daily/annual unit caps for 97151-97158, 0362T, and 0373T?',
+    'What POS settings are allowed for ABA services, and is telehealth reimbursable?',
+    'What billing modifiers does EmblemHealth require for ABA claims?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day, and does the deductible apply?',
+  ],
+  sources: [
+    src(
+      'https://www.emblemhealth.com/content/dam/emblemhealth/pdfs/provider-manual/behavioral-health-services.pdf',
+      'EmblemHealth Provider Manual Ch. 26 Behavioral Health Services, re-fetched this pass — confirms Carelon Behavioral Health at 888-447-2526 (provider directory: plan.carelonbehavioralhealth.com) and EmblemHealth\'s own general line 800-397-1630; neither number is labeled ABA-specific.'
+    ),
+  ],
+};
+
+const molinaContact: VobContact = {
+  providerServicesPhone: '(877) 872-4716',
+  fax: '(844) 879-4509 (Main); (866) 879-4742 (UM/prior authorization)',
+  portal: { name: 'Molina Provider Portal', url: 'https://provider.molinahealthcare.com' },
+  scriptedQuestions: [
+    'Is prior authorization required for 97154, 97156, 97157, 97158, 0362T, and 0373T — the 2021 provider notice only named 97151/97152/97153/97155?',
+    'What are the per-code daily/annual unit caps for ABA services?',
+    'What POS settings are allowed for ABA, and is telehealth reimbursable?',
+    'What billing modifiers does Molina require for ABA claims?',
+    'Which pVerify/Availity/clearinghouse payer ID is currently live for eligibility checks — legacy Affinity Health Plan branding or the newer Molina/Total Care NY branding?',
+    'Is the ABA cost share a copay or coinsurance, charged per-visit or per-day, and does the deductible apply?',
+    'Does Molina support real-time 270/271 eligibility checks for this payer ID?',
+  ],
+  sources: [src('https://www.molinahealthcare.com/providers/ny/medicaid/contacts/contact_info.aspx', 'Molina Healthcare of New York Provider Contact Info page, fetched this pass — confirms Provider Services (877) 872-4716, Main Fax (844) 879-4509, UM Fax (866) 879-4742, and provider.molinahealthcare.com as the provider portal.')],
+};
+
 /* ==================== export ==================== */
 
 export const newYorkVob: Record<string, VobExtension> = {
