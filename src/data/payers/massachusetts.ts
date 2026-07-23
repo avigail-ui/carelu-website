@@ -15,7 +15,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
     metaDescription:
       'How MassHealth covers ABA under EPSDT — the six behavioral-health administrators (MBHP, Carelon, Tufts, Optum), the Massachusetts Standard ABA PA Form, 101 CMR 358 rates and the 2026 rate freeze, the 1:10 supervision audit, and the new Down syndrome pathway.',
     intro: [
-      'MassHealth covers ABA for members under 21 through the EPSDT benefit — with no annual or lifetime dollar or unit caps — and administers it entirely through managed care. There is no fee-for-service ABA front door: MassHealth sets the rates (101 CMR 358) and the benefit is authorized by six behavioral-health administrators across the plan landscape — MBHP (a Carelon company), Carelon itself for the WellSense and Fallon plans, Tufts Health Together\'s internal UM, and Optum for Mass General Brigham Health Plan. Which administrator a family\'s plan routes to is the first fact intake needs, because it decides the form, the portal, and — as of 2026 — how hard the state\'s 1:10 supervision-ratio audit lands on your claims.',
+      'MassHealth covers ABA for members under 21 through the EPSDT benefit — with no annual or lifetime dollar or unit caps — and administers it entirely through managed care. There is no fee-for-service ABA front door: MassHealth sets the rates (101 CMR 358) and the benefit is authorized by several behavioral-health administrators across the plan landscape — MBHP (a Carelon company), Carelon itself for Fallon\'s plans, WellSense\'s own in-house BH team (since it insourced from Carelon effective January 1, 2026), Tufts Health Together\'s internal UM, and Optum for Mass General Brigham Health Plan. Which administrator a family\'s plan routes to is the first fact intake needs, because it decides the form, the portal, and — as of 2026 — how hard the state\'s 1:10 supervision-ratio audit lands on your claims.',
     ],
     atGlance: [
       { label: 'Covers ABA?', value: 'Yes — under 21 (Standard/CommonHealth) via EPSDT; under 19 on Family Assistance' },
@@ -23,7 +23,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       { label: 'Prior auth', value: 'Required for all ABA services/hours/units — assessment and treatment alike' },
       { label: 'Auth periods', value: 'Up to 6 months (standard form); initial-evaluation requests may cover 3 months' },
       { label: 'Rates (per 15 min)', value: '97153 $16.37 · 97151/97155/97156 $30.73 · 97154 $13.91 (101 CMR 358)' },
-      { label: 'Administered by', value: 'Six BH administrators: MBHP, Carelon (WellSense/Fallon), Tufts internal UM, Optum (MGB), plus Fallon & HNE as plans' },
+      { label: 'Administered by', value: 'MBHP, Carelon (Fallon), WellSense in-house (since 1/1/2026, was Carelon), Tufts internal UM, Optum (MGB)' },
       { label: 'Supervision watch', value: 'CY2024 audit enforces a 1:10 97155:97153 floor — recoupment letters issued Feb–Mar 2026' },
       { label: 'Staff screening', value: 'RBT not required (3 BT pathways); plan-level BRC + 262 CMR 8.04 employer checks — no blanket state CORI mandate' },
     ],
@@ -42,7 +42,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       {
         h2: 'Six administrators, one benefit',
         body: [
-          'MassHealth managed care is a lattice of 15 Accountable Care Partnership Plans, 2 Primary Care ACOs, 2 MCOs, and the PCC Plan (roster per the April 2023 state deck; the current lineup — including Steward Health Choice\'s status after Steward\'s collapse — should be re-verified). What matters operationally is who authorizes ABA: PCC Plan, Primary Care ACO, and Health New England BeHealthy members route to MBHP; WellSense\'s plans and Fallon\'s ACPPs route to Carelon; Tufts Health Together runs its own internal UM; and Mass General Brigham Health Plan routes to Optum. Nearly all of them use the multi-payer Massachusetts Standard ABA PA Form — request types for initial evaluation, initial services, continued services, and amendments, completed by the LABA rendering or supervising services, with continued authorizations capped at 6 months. The one defector: as of October 2025, Tufts Health Together uses Point32Health\'s own updated ABA PA form instead of the state standard form — so "which plan?" also decides "which form?".',
+          'MassHealth managed care is a lattice of 15 Accountable Care Partnership Plans, 2 Primary Care ACOs, 2 MCOs, and the PCC Plan (roster per the April 2023 state deck; the current lineup — including Steward Health Choice\'s status after Steward\'s collapse, and the Tufts Health Together MCO\'s discontinuation effective 1/1/2026 — should be re-verified). What matters operationally is who authorizes ABA: PCC Plan, Primary Care ACO, and Health New England BeHealthy members route to MBHP; Fallon\'s ACPPs route to Carelon; WellSense\'s plans (Essential MCO + 8 ACPPs) administer ABA in-house as of January 1, 2026, having insourced from Carelon; Tufts Health Together runs its own internal UM; and Mass General Brigham Health Plan routes to Optum. Nearly all of them use the multi-payer Massachusetts Standard ABA PA Form — request types for initial evaluation, initial services, continued services, and amendments, completed by the LABA rendering or supervising services, with continued authorizations capped at 6 months. The one defector: as of October 2025, Tufts Health Together uses Point32Health\'s own updated ABA PA form instead of the state standard form — so "which plan?" also decides "which form?".',
         ],
         cites: [
           { title: 'MassHealth Managed Care Options — plan/BH-vendor map (April 2023)', url: 'https://abh.memberclicks.net/assets/docs/KeepingCoverage/2023%20MassHealth%20Accountable%20and%20Managed%20Care%20Options%20031723.pdf' },
@@ -87,7 +87,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       },
     ],
     collect: [
-      { title: 'Plan → BH administrator', desc: 'PCC/ACO/HNE → MBHP; WellSense/Fallon → Carelon; Tufts Together → Point32 internal; MGB → Optum. It decides the form and portal.' },
+      { title: 'Plan → BH administrator', desc: 'PCC/ACO/HNE → MBHP; Fallon → Carelon; WellSense → in-house (since 1/1/2026, previously Carelon); Tufts Together → Point32 internal; MGB → Optum. It decides the form and portal.' },
       { title: 'Diagnosis + diagnostic report', desc: 'Comprehensive DSM-aligned ASD evaluation by a qualified licensed diagnostician — or, from 1/1/2026, genetic-testing confirmation of Down syndrome.' },
       { title: 'MassHealth plan type + age', desc: 'Standard/CommonHealth covers under 21; Family Assistance under 19 — the EPSDT clock differs.' },
       { title: 'LABA on the case', desc: 'The standard PA form is completed by the LABA rendering or supervising services — name one before submission.' },
@@ -183,7 +183,7 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
 
   'wellsense-massachusetts': {
     slug: 'wellsense-massachusetts',
-    cardDesc: 'Largest ACPP footprint (8 of 15) + Essential MCO; Carelon UM, hosts the standard form.',
+    cardDesc: 'Largest ACPP footprint (8 of 15) + Essential MCO; insourced BH from Carelon 1/1/2026, hosts the standard form.',
     assessmentPA: 'Required — "Request for initial evaluation" on the standard form with the comprehensive diagnostic assessment attached; initial requests cover a 3-month timeframe',
     treatmentPA: 'Required — continued services in 6-month timeframes; submit pages 1–7 of the standard form (portal or fax 857-264-2673)',
     dxRequired: 'Yes — ASD via comprehensive DSM-aligned assessment; the plan\'s form also carries the 1/1/2026 Down syndrome pathway',
@@ -193,14 +193,14 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
     h1: 'WellSense Health Plan ABA coverage (MassHealth MCO + ACPPs).',
     metaTitle: 'WellSense Health Plan (MassHealth) ABA Coverage & Prior Auth | Carelu',
     metaDescription:
-      'How WellSense (formerly BMC HealthNet) administers MassHealth ABA across its Essential MCO and eight ACPPs — Carelon behavioral-health UM, the Massachusetts Standard ABA PA Form it hosts, 3-month initial and 6-month continued authorizations.',
+      'How WellSense (formerly BMC HealthNet) administers MassHealth ABA across its Essential MCO and eight ACPPs — in-house behavioral-health UM as of January 1, 2026 (insourced from Carelon), the Massachusetts Standard ABA PA Form it hosts, 3-month initial and 6-month continued authorizations.',
     intro: [
-      'WellSense Health Plan (formerly BMC HealthNet) carries the largest ACPP footprint in Massachusetts — eight of the fifteen Accountable Care Partnership Plans, from Boston ACO to Southcoast — plus the WellSense Essential MCO. That makes it, alongside MBHP, one of the two highest-volume MassHealth ABA payers. Clinically it is the state baseline: behavioral health runs through Carelon, requests ride the Massachusetts Standard ABA PA Form (WellSense hosts the current version), and no plan-specific caps exist. The plan-specific layer is mechanics: portal, fax, and the 3-month initial / 6-month continued cadence spelled out on its form.',
+      'WellSense Health Plan (formerly BMC HealthNet) carries the largest ACPP footprint in Massachusetts — eight of the fifteen Accountable Care Partnership Plans, from Boston ACO to Southcoast — plus the WellSense Essential MCO. That makes it, alongside MBHP, one of the two highest-volume MassHealth ABA payers. Effective January 1, 2026, WellSense brought behavioral-health administration in-house for all its Massachusetts products (Medicaid, Medicare, and ACA), ending its prior arrangement with Carelon — claims for BH services rendered on or after that date go directly to WellSense, not Carelon (Carelon continues to run off inpatient admissions that began before 1/1/2026 through discharge or 3/31/2026, whichever comes first). Requests still ride the Massachusetts Standard ABA PA Form (WellSense hosts the current version), and no plan-specific caps exist. The plan-specific layer is mechanics: portal, fax, and the 3-month initial / 6-month continued cadence spelled out on its form.',
     ],
     atGlance: [
       { label: 'Plan type', value: 'MassHealth MCO (WellSense Essential) + 8 ACPPs' },
       { label: 'Clinical rules', value: 'State baseline — standard form + InterQual criteria + BH performance specs' },
-      { label: 'BH administrator', value: 'Carelon Behavioral Health' },
+      { label: 'BH administrator', value: 'In-house (WellSense) as of 1/1/2026 — insourced from Carelon' },
       { label: 'Prior auth', value: 'Required — initial requests 3 months; continued services 6 months' },
       { label: 'Submission', value: 'HealthTrio Connect portal; ABA PA fax 857-264-2673' },
       { label: 'Hour caps', value: 'None published — medical necessity based' },
@@ -209,17 +209,18 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       {
         h2: 'How WellSense runs ABA authorization',
         body: [
-          'ABA for WellSense\'s MassHealth plans is authorized by Carelon Behavioral Health on the Massachusetts Standard ABA PA Form — WellSense hosts the current MassHealth version (updated March 12, 2026), which already includes the Down syndrome pathway effective January 1, 2026 and doubles for its Clarity commercial product. Initial-evaluation requests check the dedicated box and attach the comprehensive diagnostic evaluation, with initial requests covering a 3-month timeframe; continued-services requests come in 6-month timeframes, submitting pages 1–7 of the form. Channels: the HealthTrio Connect portal, or ABA PA fax 857-264-2673. One paper-trail note: WellSense\'s medical PA matrix (effective 7/1/2026) doesn\'t list ABA codes at all — that\'s not an exemption; behavioral services route through the BH performance specs and the Carelon process instead.',
+          'As of January 1, 2026, ABA for WellSense\'s MassHealth plans is authorized by WellSense\'s own in-house behavioral-health team, not Carelon — WellSense assumed BH administration for all Massachusetts products on that date (claims for dates of service before 1/1/2026 still route to Carelon for run-off). Requests still use the Massachusetts Standard ABA PA Form — WellSense hosts the current version (updated March 12, 2026), which already includes the Down syndrome pathway effective January 1, 2026 and doubles for its Clarity commercial product. Initial-evaluation requests check the dedicated box and attach the comprehensive diagnostic evaluation, with initial requests covering a 3-month timeframe; continued-services requests come in 6-month timeframes, submitting pages 1–7 of the form. Channels: the HealthTrio Connect portal, or ABA PA fax 857-264-2673 — confirm current fax/portal routing reflects the in-house team post-insourcing rather than legacy Carelon contacts. One paper-trail note: WellSense\'s medical PA matrix (effective 7/1/2026) doesn\'t list ABA codes at all — that\'s not an exemption; behavioral services route through the BH performance specs instead.',
         ],
         cites: [
           { title: 'WellSense ABA PA Form (MassHealth, upd. 3/12/2026)', url: 'https://www.wellsense.org/hubfs/Forms/Provider_Forms/Applied_Behavioral_Analysis_Prior_Authorization_Form_MassHealth.pdf' },
           { title: 'WellSense Prior Authorization Matrix (eff. 7/1/2026)', url: 'https://www.wellsense.org/hubfs/Provider/Prior%20Authorization/MA_Prior_Auth_Matrix.pdf' },
+          { title: 'WellSense — Behavioral health insourcing FAQs', url: 'https://www.wellsense.org/providers/behavioral-health-insourcing/faqs' },
         ],
       },
       {
         h2: 'What the footprint means for intake',
         body: [
-          'A family may name their ACO — Boston Children\'s ACO, Mercy, Signature, Tufts Medicine Care Alliance — without ever saying "WellSense," so intake should map ACPP names to the WellSense/Carelon flow rather than treating each as a separate payer. All eight ACPPs plus the Essential MCO run the same ABA machinery. And because WellSense sits in the Carelon UM universe, the 2026 statewide supervision-ratio enforcement applies here as everywhere: keep 97155 supervision at or above 1:10 against 97153 direct-treatment hours.',
+          'A family may name their ACO — Boston Children\'s ACO, Mercy, Signature, Tufts Medicine Care Alliance — without ever saying "WellSense," so intake should map ACPP names to the WellSense flow rather than treating each as a separate payer. All eight ACPPs plus the Essential MCO run the same ABA machinery. Since the 1/1/2026 insourcing, that machinery is WellSense\'s own UM rather than Carelon\'s — but the 2026 statewide supervision-ratio enforcement still applies here as everywhere: keep 97155 supervision at or above 1:10 against 97153 direct-treatment hours.',
         ],
         cites: [
           { title: 'MassHealth Managed Care Options — plan/BH-vendor map (April 2023)', url: 'https://abh.memberclicks.net/assets/docs/KeepingCoverage/2023%20MassHealth%20Accountable%20and%20Managed%20Care%20Options%20031723.pdf' },
@@ -234,12 +235,13 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       { title: 'Timeline expectations', desc: 'Initial authorizations cover 3 months; continued run 6 — plan reassessment touchpoints accordingly.' },
     ],
     sources: [
+      { title: 'WellSense — Behavioral health insourcing FAQs', url: 'https://www.wellsense.org/providers/behavioral-health-insourcing/faqs' },
       { title: 'WellSense ABA PA Form (MassHealth, upd. 3/12/2026)', url: 'https://www.wellsense.org/hubfs/Forms/Provider_Forms/Applied_Behavioral_Analysis_Prior_Authorization_Form_MassHealth.pdf' },
       { title: 'WellSense Prior Authorization Matrix (eff. 7/1/2026)', url: 'https://www.wellsense.org/hubfs/Provider/Prior%20Authorization/MA_Prior_Auth_Matrix.pdf' },
       { title: 'MassHealth Managed Care Options — plan/BH-vendor map (April 2023)', url: 'https://abh.memberclicks.net/assets/docs/KeepingCoverage/2023%20MassHealth%20Accountable%20and%20Managed%20Care%20Options%20031723.pdf' },
     ],
     faq: [
-      { q: 'Does WellSense cover ABA therapy?', a: 'Yes — across the WellSense Essential MCO and its eight MassHealth ACPPs, on the state-baseline benefit: EPSDT under 21, no caps, PA on all services via Carelon Behavioral Health and the Massachusetts Standard ABA PA Form.' },
+      { q: 'Does WellSense cover ABA therapy?', a: 'Yes — across the WellSense Essential MCO and its eight MassHealth ACPPs, on the state-baseline benefit: EPSDT under 21, no caps, PA on all services via the Massachusetts Standard ABA PA Form. Behavioral health, including ABA, has been administered in-house by WellSense since January 1, 2026 (previously Carelon).' },
       { q: 'How do I submit an ABA authorization to WellSense?', a: 'Via the HealthTrio Connect portal or ABA PA fax 857-264-2673, using the standard form — initial-evaluation requests attach the diagnostic evaluation and cover 3 months; continued services submit pages 1–7 in 6-month timeframes.' },
       { q: 'Why isn\'t ABA on WellSense\'s prior-authorization matrix?', a: 'Because the matrix covers medical services — ABA routes through the behavioral-health performance specifications and the Carelon process. PA is still required for all ABA services.' },
     ],
@@ -247,22 +249,23 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
 
   'tufts-health-together': {
     slug: 'tufts-health-together',
-    cardDesc: 'The defector: Point32\'s own PA form (not the state form), InterQual SmartSheets, accreditation gate.',
+    cardDesc: 'MCO product discontinued 1/1/2026 — only its 2 ACPPs (w/ Cambridge Health Alliance, w/ UMass Memorial) remain.',
     assessmentPA: 'Required — via Point32Health UM on the plan\'s own updated ABA PA form (not the MA standard form)',
     treatmentPA: 'Required — Point32Health\'s own ABA PA form, submitted electronically with the form uploaded, or fax 888-977-0776',
     dxRequired: 'Yes — ASD; covers sole-diagnosis Down syndrome effective 1/1/2026 (incl. Tufts Health Together)',
     payer: 'Tufts Health Together (Point32Health)',
     state: 'MA', kind: 'medicaid-mco', parent: 'MassHealth',
     pill: 'Payer Guide · Tufts Health Together',
-    h1: 'Tufts Health Together ABA coverage (MassHealth MCO).',
+    h1: 'Tufts Health Together ABA coverage (ACPPs only, since the 1/1/2026 MCO discontinuation).',
     metaTitle: 'Tufts Health Together (MassHealth) ABA Coverage & Prior Auth | Carelu',
     metaDescription:
       'How Tufts Health Together (Point32Health) administers MassHealth ABA — the only plan family with self-managed behavioral health: its own ABA PA form instead of the state standard form, InterQual SmartSheets, a new medical-necessity guideline effective 1/1/2026, and an ABA accreditation requirement.',
     intro: [
-      'Tufts Health Together — Point32Health\'s MassHealth MCO, plus two ACPPs with Cambridge Health Alliance and UMass Memorial Health — is the only MassHealth plan family that self-manages behavioral health. No Carelon, no Optum: Point32Health\'s internal UM reviews ABA against its own medical-necessity guideline using InterQual criteria and SmartSheets. The operational headline for intake: as of the October 2025 update, Tufts Health Together members use Point32Health\'s own updated ABA PA form, not the Massachusetts standard form every other administrator takes. Same no-cap MassHealth benefit — distinct machinery.',
+      'Effective January 1, 2026, MassHealth discontinued the Tufts Health Together Managed Care Organization (MCO) product (All Provider Bulletin 410); members previously enrolled in the MCO were reassigned, where possible, to the health plan participating with their existing PCP. Tufts Health Together now exists only as two Accountable Care Partnership Plans — with Cambridge Health Alliance and with UMass Memorial Health — which remain active and are the only Tufts Health Together products for intake to route to. Tufts Health Together is (and remains) the only MassHealth plan family that self-manages behavioral health: no Carelon, no Optum — Point32Health\'s internal UM reviews ABA against its own medical-necessity guideline using InterQual criteria and SmartSheets, on Point32Health\'s own ABA PA form rather than the Massachusetts standard form every other administrator takes.',
     ],
     atGlance: [
-      { label: 'Plan type', value: 'MassHealth MCO + 2 ACPPs (Cambridge Health Alliance, UMass Memorial)' },
+      { label: 'Plan status', value: 'MCO product discontinued 1/1/2026 — only the 2 ACPPs (Cambridge Health Alliance, UMass Memorial) are active' },
+      { label: 'Plan type', value: '2 ACPPs only: with Cambridge Health Alliance, with UMass Memorial Health' },
       { label: 'BH administrator', value: 'Internal — Point32Health UM (no external BH vendor)' },
       { label: 'PA form', value: 'Point32Health\'s OWN ABA PA form — NOT the MA standard form (as of Oct 2025)' },
       { label: 'Clinical criteria', value: 'Point32Health ABA MNG; InterQual + SmartSheets; new MNG effective 1/1/2026' },
@@ -277,6 +280,8 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
         ],
         cites: [
           { title: 'Point32Health — ABA policy and coverage updates (Oct 2025)', url: 'https://www.point32health.org/provider/applied-behavioral-analysis-policy-and-coverage-updates-102025' },
+          { title: 'MassHealth — All Provider Bulletin 410: Changes to MassHealth\'s ACOs on January 1, 2026', url: 'https://www.mass.gov/doc/all-provider-bulletin-410-changes-to-masshealths-accountable-care-organizations-on-january-1-2026/download' },
+          { title: 'Point32Health — Reminder: Tufts Health Together MCO discontinuing as of Jan. 1', url: 'https://www.point32health.org/provider/reminder-tufts-health-together-mco-discontinuing-jan-1-112025' },
         ],
       },
       {
@@ -291,18 +296,22 @@ export const massachusettsPayers: Record<string, PayerConfig> = {
       },
     ],
     collect: [
+      { title: 'MCO vs. ACPP', desc: 'The Tufts Health Together MCO no longer exists (discontinued 1/1/2026) — confirm the family is on one of the two active ACPPs, not a stale MCO card.' },
       { title: 'The RIGHT form', desc: 'Tufts Health Together takes Point32Health\'s own ABA PA form — not the MA standard form. Flag it in your intake workflow.' },
       { title: 'ACPP mapping', desc: 'Cambridge Health Alliance and UMass Memorial ACPP members are Tufts Together — route to Point32, not Carelon.' },
       { title: 'Diagnostic evaluation', desc: 'ASD assessment — or the Down syndrome pathway from 1/1/2026, which Point32 confirms includes this plan.' },
       { title: 'Accreditation status', desc: 'Point32\'s ABA accreditation requirement is a network gate — check where your organization stands before quoting start dates.' },
     ],
     sources: [
+      { title: 'MassHealth — All Provider Bulletin 410: Changes to MassHealth\'s ACOs on January 1, 2026', url: 'https://www.mass.gov/doc/all-provider-bulletin-410-changes-to-masshealths-accountable-care-organizations-on-january-1-2026/download' },
+      { title: 'Point32Health — Reminder: Tufts Health Together MCO discontinuing as of Jan. 1', url: 'https://www.point32health.org/provider/reminder-tufts-health-together-mco-discontinuing-jan-1-112025' },
       { title: 'Point32Health — ABA policy and coverage updates (Oct 2025)', url: 'https://www.point32health.org/provider/applied-behavioral-analysis-policy-and-coverage-updates-102025' },
       { title: 'Tufts Health Together ABA Medical Necessity Guideline (PDF)', url: 'https://www.point32health.org/provider/wp-content/uploads/sites/2/2024/11/ABA-THP-Together.MNG_.pdf' },
       { title: 'MassHealth Managed Care Options — plan/BH-vendor map (April 2023)', url: 'https://abh.memberclicks.net/assets/docs/KeepingCoverage/2023%20MassHealth%20Accountable%20and%20Managed%20Care%20Options%20031723.pdf' },
     ],
     faq: [
-      { q: 'Does Tufts Health Together cover ABA?', a: 'Yes — the MassHealth EPSDT benefit with no published hour caps, reviewed by Point32Health\'s internal UM against its own medical-necessity guideline (InterQual + SmartSheets; new MNG effective 1/1/2026).' },
+      { q: 'Is the Tufts Health Together MCO still active?', a: 'No — MassHealth discontinued the Tufts Health Together MCO product effective January 1, 2026 (All Provider Bulletin 410). Only the two ACPPs, with Cambridge Health Alliance and with UMass Memorial Health, remain active.' },
+      { q: 'Does Tufts Health Together cover ABA?', a: 'Yes, through its two active ACPPs — the MassHealth EPSDT benefit with no published hour caps, reviewed by Point32Health\'s internal UM against its own medical-necessity guideline (InterQual + SmartSheets; new MNG effective 1/1/2026).' },
       { q: 'Does Tufts Health Together use the Massachusetts standard ABA form?', a: 'No — as of the October 2025 update, members use Point32Health\'s own updated ABA PA form, submitted electronically with the form uploaded or faxed to 888-977-0776. It\'s the one MassHealth plan family where the standard form doesn\'t apply.' },
       { q: 'What is Point32Health\'s ABA accreditation requirement?', a: 'A rolling network-participation requirement that ABA providers hold accreditation from a nationally recognized ABA accrediting body, across Harvard Pilgrim and Tufts Health Plan products — treat it as a contracting prerequisite.' },
     ],

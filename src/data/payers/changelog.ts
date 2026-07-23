@@ -107,4 +107,82 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      'Directory corrections from MCO census (docs/vob-gaps.md), each independently re-verified against its primary source before applying: NC WellCare-into-Carolina-Complete-Health merger, IN MDwise exit, MA Tufts Health Together MCO discontinuation + WellSense BH insourcing, AZ Health Choice rebrand, and an NY Molina/Affinity co-brand note. No guide was deleted and no slug was changed.',
+    guides: [
+      'wellcare-north-carolina',
+      'carolina-complete-health',
+      'mdwise-indiana',
+      'unitedhealthcare-community-plan-indiana',
+      'tufts-health-together',
+      'wellsense-massachusetts',
+      'health-choice-arizona',
+      'molina-healthcare-new-york',
+    ],
+    details: [
+      {
+        slug: 'wellcare-north-carolina',
+        field: 'cardDesc / intro / atGlance / faq',
+        change:
+          'WellCare of North Carolina merged into Carolina Complete Health effective 4/1/2026. Guide kept (not deleted) with an unmistakable merged-status note and a pointer to the Carolina Complete Health guide.',
+        sourceUrl:
+          'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026',
+      },
+      {
+        slug: 'carolina-complete-health',
+        field: 'cardDesc / atGlance.Footprint / sections / collect / faq',
+        change:
+          'Service-area claim updated from a regional footprint (formerly described as \'regions 3–5\') to statewide, reflecting the 4/1/2026 WellCare merger.',
+        sourceUrl:
+          'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026',
+      },
+      {
+        slug: 'mdwise-indiana',
+        field: 'cardDesc / intro / atGlance / sections / collect / faq',
+        change:
+          'MDwise ended as an MCE for HIP and Hoosier Healthwise effective 1/1/2026; members reassigned to Anthem, CareSource, or MHS. Guide kept (not deleted) with a status note.',
+        sourceUrl: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-indiana',
+        field: 'cardDesc / h1 / intro / atGlance.Plan type / sections / collect / faq',
+        change:
+          'Scope confirmed and made explicit: UnitedHealthcare Community Plan of Indiana serves Hoosier Care Connect and PathWays for Aging only — confirmed via FSSA\'s own managed-care plan roster that UHC does not administer HIP or Hoosier Healthwise in Indiana.',
+        sourceUrl: 'https://www.in.gov/medicaid/partners/medicaid-partners/managed-care-health-plans/',
+      },
+      {
+        slug: 'tufts-health-together',
+        field: 'cardDesc / h1 / intro / atGlance / sections / collect / sources / faq',
+        change:
+          'Tufts Health Together MCO product discontinued effective 1/1/2026; only its two ACPPs (with Cambridge Health Alliance, with UMass Memorial Health) remain active. Guide updated to an ACPP-only structure.',
+        sourceUrl:
+          'https://www.mass.gov/doc/all-provider-bulletin-410-changes-to-masshealths-accountable-care-organizations-on-january-1-2026/download',
+      },
+      {
+        slug: 'wellsense-massachusetts',
+        field: 'cardDesc / intro / atGlance.BH administrator / sections / sources / faq',
+        change:
+          'WellSense\'s behavioral-health administration (including ABA) moved from Carelon to in-house effective 1/1/2026.',
+        sourceUrl: 'https://www.wellsense.org/providers/behavioral-health-insourcing/faqs',
+      },
+      {
+        slug: 'health-choice-arizona',
+        field: 'payer / pill / h1 / metaTitle / metaDescription / intro / atGlance / sources / faq',
+        change:
+          '"Health Choice Arizona" display name updated to "Blue Cross Blue Shield of Arizona Health Choice" per AHCCCS\'s current official health plan list; slug (health-choice-arizona) unchanged, coverage/mechanics unaffected. Cross-references in the Arizona state guide updated to match.',
+        sourceUrl: 'https://azahcccs.gov/Members/Downloads/Resources/ENGLISH_HealthPlanList.pdf',
+      },
+      {
+        slug: 'molina-healthcare-new-york',
+        field: 'intro / sources / faq',
+        change:
+          'Added a one-line note that "Affinity by Molina Healthcare" remains an actively-marketed downstate Medicaid Managed Care co-brand, not purely legacy Affinity branding.',
+        sourceUrl: 'https://www.molinahealthcare.com/members/ny/hp/affinity/medicaid/overvw/overvw.aspx',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];

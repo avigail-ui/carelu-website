@@ -78,7 +78,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       },
     ],
     collect: [
-      { title: 'Member ID & managed-care plan', desc: 'Anthem, MHS, CareSource, MDwise, or UHC (Hoosier Care Connect) — the plan decides the PA process and forms.' },
+      { title: 'Member ID & managed-care plan', desc: 'Anthem, MHS, CareSource, or UHC (Hoosier Care Connect/PathWays) — the plan decides the PA process and forms. MDwise ended as an HIP/Hoosier Healthwise MCE 1/1/2026; former MDwise members now carry one of the other three.' },
       { title: 'Age / date of birth', desc: 'No ABA for 21+ from October 2026 — confirm eligibility and runway up front.' },
       { title: 'CDE + physician referral', desc: 'The comprehensive diagnostic evaluation (HSPP/physician/APRN/PA), its date (1-year freshness rule), and the referral.' },
       { title: 'Prior ABA history', desc: 'The 4,000-hour lifetime allocation makes prior comprehensive-ABA hours a coverage question, not just a clinical one.' },
@@ -294,7 +294,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
   'mdwise-indiana': {
     slug: 'mdwise-indiana',
     family: 'mdwise',
-    cardDesc: 'Fully defers to IHCP criteria; delivery-system contacts model, 90-day claim filing.',
+    cardDesc: 'ENDED as an HIP/Hoosier Healthwise MCE effective 1/1/2026 — members reassigned to Anthem, CareSource, or MHS.',
     assessmentPA: 'Required — all ABA codes PA-required (97151–97158, 0362T, 0373T) per the BH Reference Guide',
     treatmentPA: 'Required — IHCP 6-month max applies; OTR to medical management via the member\'s delivery system',
     dxRequired: 'Yes \u2014 ASD with a comprehensive diagnostic evaluation (CDE) + physician referral',
@@ -306,16 +306,15 @@ export const indianaPayers: Record<string, PayerConfig> = {
     metaDescription:
       'How MDwise administers Indiana Medicaid ABA — full deference to IHCP criteria, PA on every ABA code, the delivery-system contact model, and the filing limits that matter to billing.',
     intro: [
-      'MDwise — a McLaren company serving Hoosier Healthwise and HIP — publishes no ABA clinical policy of its own: its Behavioral Health Reference Guide simply lists every ABA code as prior-authorization-required and points to IHCP criteria. What\'s genuinely MDwise-specific is structural: a delivery-system model where PA and claims contacts vary, which makes the plan\'s Quick Contact Guide the first stop on every case.',
+      'FSSA ended MDwise\'s participation as a managed care entity for Indiana Medicaid\'s Healthy Indiana Plan (HIP) and Hoosier Healthwise programs effective January 1, 2026 — following a performance review that found MDwise "both the most expensive and the lowest in quality" of the four legacy plans. MDwise members were required to choose a new plan (Anthem, CareSource, or MHS) during a Nov. 1 – Dec. 15, 2025 open-enrollment window, with automatic assignment plus a 90-day plan-change grace period for anyone who didn\'t choose. MDwise — a McLaren company — publishes no ABA clinical policy of its own: its Behavioral Health Reference Guide simply lists every ABA code as prior-authorization-required and points to IHCP criteria. The rest of this guide is kept for historical/reference purposes; for current Indiana Medicaid ABA authorization, use the Anthem, CareSource, or MHS guides.',
     ],
     atGlance: [
-      { label: 'Plan type', value: 'IHCP MCE (Hoosier Healthwise, HIP; McLaren)' },
-      { label: 'Clinical rules', value: 'IHCP criteria — no MDwise ABA policy exists' },
-      { label: 'Prior auth', value: 'Required for every ABA code, both HHW and HIP' },
-      { label: 'Contacts', value: 'Vary by program/delivery system — MDwise.org/quickcontact' },
-      { label: 'Out-of-network', value: 'PA required for ALL services from non-contracted providers' },
-      { label: 'Claim filing', value: '90 days contracted / 180 days non-contracted' },
-      { label: 'Diagnosis recency', value: 'State rule: CDE >1 year old needs an updated statement of need' },
+      { label: 'Plan status', value: 'ENDED as an HIP/Hoosier Healthwise MCE effective January 1, 2026 — members reassigned to Anthem, CareSource, or MHS' },
+      { label: 'Plan type (historical)', value: 'IHCP MCE (Hoosier Healthwise, HIP; McLaren)' },
+      { label: 'Clinical rules (historical)', value: 'IHCP criteria — no MDwise ABA policy exists' },
+      { label: 'Prior auth (historical)', value: 'Required for every ABA code, both HHW and HIP' },
+      { label: 'Out-of-network (historical)', value: 'PA required for ALL services from non-contracted providers' },
+      { label: 'Claim filing (historical)', value: '90 days contracted / 180 days non-contracted' },
     ],
     sections: [
       {
@@ -324,46 +323,47 @@ export const indianaPayers: Record<string, PayerConfig> = {
           'The Behavioral Health Reference Guide lists ABA codes 97151–97158, 0362T, and 0373T as PA-required across both Hoosier Healthwise and HIP, with treatment requests routed to the medical management department for the member\'s delivery system. There\'s no MDwise-specific ABA form — the IHCP universal PA form plus an outpatient treatment request does the work. Because the historical delivery-system structure means the right PA phone and fax vary, run eligibility first and pull the correct contacts from the Quick Contact Guide at MDwise.org/quickcontact rather than reusing last case\'s numbers. Out-of-network providers need PA for every service, and claim filing runs 90 days for contracted providers (180 non-contracted).',
         ],
         cites: [
-          { title: 'MDwise — Behavioral Health Reference Guide', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
+          { title: 'MDwise — Behavioral Health Reference Guide (historical)', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
+          { title: 'FSSA — Announces End of MDwise Participation in Indiana Medicaid Programs (11/12/2025)', url: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf' },
         ],
       },
     ],
     collect: [
-      { title: 'Program + delivery system', desc: 'HHW vs. HIP and the member\'s delivery system decide which PA contacts apply — check eligibility first.' },
-      { title: 'IHCP clinical package', desc: 'CDE, physician referral, behavior assessment with Vineland/BASC — state criteria govern.' },
-      { title: 'Network status', desc: 'Out-of-network means PA on everything; confirm contracting before promising start dates.' },
-      { title: 'Age + lifetime-allocation status', desc: 'The 2026 state rules (under-21, 4,000-hour cap) apply to MDwise members.' },
+      { title: 'Redirect to new MCE', desc: 'MDwise no longer serves HIP/Hoosier Healthwise as of 1/1/2026 — confirm which of Anthem, CareSource, or MHS the member was reassigned to, and use that guide.' },
+      { title: 'IHCP clinical package', desc: 'CDE, physician referral, behavior assessment with Vineland/BASC — state criteria govern regardless of MCE.' },
+      { title: 'Continuity of care', desc: 'FSSA states existing authorizations/treatments are honored through a transition period — verify current status with the new plan.' },
     ],
     sources: [
-      { title: 'MDwise — Behavioral Health Reference Guide', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
+      { title: 'FSSA — Announces End of MDwise Participation in Indiana Medicaid Programs (11/12/2025)', url: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf' },
+      { title: 'MDwise — Behavioral Health Reference Guide (historical)', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
       { title: 'IHCP Bulletin BT202627 — ABA policy updates', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
     ],
     faq: [
-      { q: 'Does MDwise cover ABA therapy?', a: 'Yes — MDwise administers the IHCP ABA benefit for Hoosier Healthwise and HIP members, with prior authorization required on every ABA code and clinical criteria set entirely by state policy.' },
-      { q: 'Where do I send an MDwise ABA authorization?', a: 'To the medical management department for the member\'s delivery system, using the IHCP universal PA form — get the correct phone/fax from the Quick Contact Guide at MDwise.org/quickcontact after running eligibility.' },
-      { q: 'What are MDwise\'s claim filing limits?', a: '90 days for contracted providers, 180 days for non-contracted — tight enough that intake-to-billing handoff speed matters.' },
+      { q: 'Does MDwise still cover ABA therapy in Indiana?', a: 'No — FSSA ended MDwise\'s participation as an MCE for HIP and Hoosier Healthwise effective January 1, 2026. Members were reassigned to Anthem, CareSource, or MHS; use those guides for current ABA authorization.' },
+      { q: 'What happened to MDwise members?', a: 'They chose a new plan (Anthem, CareSource, or MHS) during a Nov. 1 – Dec. 15, 2025 open-enrollment window, or were auto-assigned with a 90-day window to switch after January 1, 2026. FSSA states coverage and existing authorizations continue through the transition.' },
+      { q: 'Why did Indiana end MDwise\'s Medicaid contract?', a: 'FSSA\'s review found MDwise was "both the most expensive and the lowest in quality" of the four legacy plans; federal rules require at least three plans, which the state still meets with Anthem, CareSource, and MHS.' },
     ],
   },
 
   'unitedhealthcare-community-plan-indiana': {
     slug: 'unitedhealthcare-community-plan-indiana',
     family: 'unitedhealthcare',
-    cardDesc: 'Hoosier Care Connect ABA via the Optum carve-out: separate network, Provider Express, 7-day decisions.',
+    cardDesc: 'Hoosier Care Connect + PathWays for Aging ABA via the Optum carve-out — not HIP/Hoosier Healthwise.',
     assessmentPA: 'Required — via Optum: ABA Treatment Request Form through Provider Express, phone (877) 610-9785, or fax (844) 897-6514',
     treatmentPA: 'Required — non-urgent decisions within 7 calendar days (max 14); urgent 48 hrs; concurrent 1 business day',
     dxRequired: 'Yes \u2014 ASD with a comprehensive diagnostic evaluation (CDE) + physician referral',
     payer: 'UnitedHealthcare Community Plan of Indiana',
     state: 'IN', kind: 'medicaid-mco', parent: 'Indiana Medicaid (IHCP)',
     pill: 'Payer Guide · UHC Community Plan (IN)',
-    h1: 'UnitedHealthcare Community Plan of Indiana ABA coverage (Hoosier Care Connect).',
+    h1: 'UnitedHealthcare Community Plan of Indiana ABA coverage (Hoosier Care Connect + PathWays for Aging).',
     metaTitle: 'UHC Community Plan Indiana (Hoosier Care Connect) ABA Coverage & Prior Auth | Carelu',
     metaDescription:
       'How UnitedHealthcare Community Plan administers Indiana Medicaid ABA for Hoosier Care Connect — the Optum behavioral-health carve-out, separate ABA network credentialing, the ABA Treatment Request Form, and decision timelines.',
     intro: [
-      'UnitedHealthcare Community Plan serves Hoosier Care Connect — Indiana\'s plan for aged, blind, and disabled members and children in foster care — and runs ABA through an Optum Behavioral Health carve-out. Clinical criteria default to Indiana Medicaid policy (state rules sit atop UHC\'s stated hierarchy, with InterQual as backstop); the operational reality is that ABA lives on Optum\'s rails: a separate provider network, Provider Express submission, and Optum\'s ABA Treatment Request Form. Given the population it serves, expect a higher share of complex cases at intake.',
+      'UnitedHealthcare Community Plan of Indiana is scoped to Hoosier Care Connect — Indiana\'s plan for aged, blind, and disabled members and children in foster care — and PathWays for Aging, for members 60+ and dual-eligible adults; per FSSA\'s own managed-care plan roster, UHC does NOT serve HIP or Hoosier Healthwise in Indiana, unlike Anthem, CareSource, and MHS. ABA runs through an Optum Behavioral Health carve-out. Clinical criteria default to Indiana Medicaid policy (state rules sit atop UHC\'s stated hierarchy, with InterQual as backstop); the operational reality is that ABA lives on Optum\'s rails: a separate provider network, Provider Express submission, and Optum\'s ABA Treatment Request Form. Given the population it serves, expect a higher share of complex cases at intake — though PathWays for Aging skews toward an adult/dual-eligible population less likely to need pediatric ABA.',
     ],
     atGlance: [
-      { label: 'Plan type', value: 'IHCP MCE — Hoosier Care Connect (aged/blind/disabled + foster care)' },
+      { label: 'Plan type', value: 'IHCP MCE — Hoosier Care Connect + PathWays for Aging ONLY (not HIP/Hoosier Healthwise)' },
       { label: 'Clinical rules', value: 'Indiana Medicaid policy first, then UHC policy, then InterQual' },
       { label: 'ABA network', value: 'Optum-managed — credentialed separately from UHC medical' },
       { label: 'Prior auth', value: 'Required — ABA Treatment Request Form via Provider Express' },
@@ -381,10 +381,12 @@ export const indianaPayers: Record<string, PayerConfig> = {
         cites: [
           { title: 'UHC Community Plan — IHCP Works 2024 Prior Authorization seminar deck', url: 'https://www.in.gov/medicaid/providers/files/IHCP-Works-2024-UHC-Prior-Authorization.pdf' },
           { title: 'UHC Community Plan of Indiana — prior authorization page', url: 'https://www.uhcprovider.com/en/health-plans-by-state/indiana-health-plans/in-comm-plan-home/in-cp-prior-auth.html' },
+          { title: 'FSSA — Indiana Medicaid managed care health plans (program-by-MCE roster)', url: 'https://www.in.gov/medicaid/partners/medicaid-partners/managed-care-health-plans/' },
         ],
       },
     ],
     collect: [
+      { title: 'Program confirmation', desc: 'Confirm the member is on Hoosier Care Connect or PathWays for Aging — UHC does not administer HIP or Hoosier Healthwise in Indiana.' },
       { title: 'Optum network status', desc: 'ABA requires Optum credentialing, separate from UHC medical — confirm before quoting start dates.' },
       { title: 'IHCP clinical package', desc: 'CDE, physician referral, behavior assessment — state criteria govern the request.' },
       { title: 'Guardianship / placement details', desc: 'Foster-care members bring consent and guardianship questions standard intake misses.' },
@@ -396,7 +398,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { title: 'IHCP Bulletin BT202627 — ABA policy updates', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
     ],
     faq: [
-      { q: 'Does UnitedHealthcare Community Plan of Indiana cover ABA?', a: 'Yes — for Hoosier Care Connect members, administered through an Optum Behavioral Health carve-out under Indiana Medicaid clinical criteria, with PA on all ABA via Optum\'s ABA Treatment Request Form.' },
+      { q: 'Does UnitedHealthcare Community Plan of Indiana cover ABA?', a: 'Yes — for Hoosier Care Connect and PathWays for Aging members, administered through an Optum Behavioral Health carve-out under Indiana Medicaid clinical criteria, with PA on all ABA via Optum\'s ABA Treatment Request Form. UHC does not serve HIP or Hoosier Healthwise members in Indiana — those route to Anthem, CareSource, or MHS.' },
       { q: 'How fast does UHC/Optum decide Indiana ABA authorizations?', a: 'Published timelines: non-urgent pre-service within 7 calendar days (14 max), urgent within 48 hours, concurrent reviews within 1 business day.' },
       { q: 'Do I need separate credentialing for UHC Indiana ABA?', a: 'Yes — the ABA network is Optum-managed and credentialed separately from UHC medical, and providers must also be enrolled with Indiana Medicaid first.' },
     ],

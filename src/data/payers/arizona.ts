@@ -31,7 +31,7 @@ export const arizonaPayers: Record<string, PayerConfig> = {
       {
         h2: 'Two front doors: ACC plans vs. DDD',
         body: [
-          'AMPM 320-S applies across every AHCCCS delivery system — ACC, ALTCS, DES/DDD, DCS/CMDP, the RBHA contracts, and fee-for-service tribal programs — but the operational path splits in two. Most children get ABA through their ACC plan: Arizona Complete Health-Complete Care Plan, Banner-University Family Care, Health Choice Arizona, Mercy Care, Molina Healthcare, or UnitedHealthcare Community Plan (Care1st no longer exists — it merged into Arizona Complete Health, with northern-county members transferred in 2024). Children who are ALTCS-eligible through the Division of Developmental Disabilities — autism is a DDD qualifying-condition category — instead get physical and behavioral health including ABA through one of two statewide DDD Health Plans, Mercy Care DD or UHCCP DD. Over age 3, ALTCS approval is the gate to DDD-funded services. The intake question that routes everything: which card does the family hold, an ACC plan card or a DDD Health Plan card?',
+          'AMPM 320-S applies across every AHCCCS delivery system — ACC, ALTCS, DES/DDD, DCS/CMDP, the RBHA contracts, and fee-for-service tribal programs — but the operational path splits in two. Most children get ABA through their ACC plan: Arizona Complete Health-Complete Care Plan, Banner-University Family Care, Blue Cross Blue Shield of Arizona Health Choice, Mercy Care, Molina Healthcare, or UnitedHealthcare Community Plan (Care1st no longer exists — it merged into Arizona Complete Health, with northern-county members transferred in 2024). Children who are ALTCS-eligible through the Division of Developmental Disabilities — autism is a DDD qualifying-condition category — instead get physical and behavioral health including ABA through one of two statewide DDD Health Plans, Mercy Care DD or UHCCP DD. Over age 3, ALTCS approval is the gate to DDD-funded services. The intake question that routes everything: which card does the family hold, an ACC plan card or a DDD Health Plan card?',
         ],
         cites: [
           { title: 'AMPM 320-S — Behavior Analysis Services (AHCCCS)', url: 'https://www.azahcccs.gov/shared/Downloads/MedicalPolicyManual/300/320S.pdf' },
@@ -116,7 +116,7 @@ export const arizonaPayers: Record<string, PayerConfig> = {
       { q: 'Does AHCCCS cover ABA therapy?', a: 'Yes — under AMPM 320-S, for members with autism spectrum disorder and/or other diagnoses as justified by medical necessity. Coverage runs through the member\'s ACC plan, or through a DDD Health Plan (Mercy Care DD or UHCCP DD) for ALTCS-DD members.' },
       { q: 'Does Arizona Medicaid require an autism diagnosis for ABA?', a: 'No — AMPM 320-S explicitly covers "other diagnoses as justified by medical necessity," and Optum\'s Arizona orientation states verbatim that an ASD diagnosis is not required for AHCCCS members. A qualified Behavioral Health Professional must still recommend the service based on assessment.' },
       { q: 'What does AHCCCS pay for ABA?', a: 'Fixed, credential-tiered rates since 11/1/2023: 97153 pays $17.91 (HM) / $21.32 (HN) / $23.69 (HO/HP) per 15-minute unit, with home delivery about 10% higher. The codes live on the physician fee schedule, not the behavioral-health outpatient one, and 97156 wasn\'t in the 2023 rate notice — look it up directly.' },
-      { q: 'Which plans run AHCCCS ABA?', a: 'Six ACC plans — Arizona Complete Health, Banner-University Family Care, Health Choice Arizona, Mercy Care, Molina, and UnitedHealthcare Community Plan — plus the two statewide DDD Health Plans (Mercy Care DD and UHCCP DD) for ALTCS-DD members. Prior-auth mechanics are plan-specific.' },
+      { q: 'Which plans run AHCCCS ABA?', a: 'Six ACC plans — Arizona Complete Health, Banner-University Family Care, Blue Cross Blue Shield of Arizona Health Choice, Mercy Care, Molina, and UnitedHealthcare Community Plan — plus the two statewide DDD Health Plans (Mercy Care DD and UHCCP DD) for ALTCS-DD members. Prior-auth mechanics are plan-specific.' },
     ],
   },
 
@@ -379,19 +379,20 @@ export const arizonaPayers: Record<string, PayerConfig> = {
   'health-choice-arizona': {
     slug: 'health-choice-arizona',
     family: 'bcbs',
-    cardDesc: 'BCBSAZ\'s Medicaid plan; grid-driven PA, no published ABA policy — check the current PA grid.',
+    cardDesc: 'Now officially "Blue Cross Blue Shield of Arizona Health Choice"; grid-driven PA, no published ABA policy.',
     dxRequired: 'No distinct plan policy published — AMPM 320-S baseline applies (autism dx not strictly required)',
-    payer: 'Health Choice Arizona',
+    payer: 'Blue Cross Blue Shield of Arizona Health Choice',
     state: 'AZ', kind: 'medicaid-mco', parent: 'AHCCCS (Arizona Medicaid)',
-    pill: 'Payer Guide · Health Choice Arizona',
-    h1: 'Health Choice Arizona ABA coverage (AHCCCS plan).',
-    metaTitle: 'Health Choice Arizona (AHCCCS) ABA Coverage & Prior Auth | Carelu',
+    pill: 'Payer Guide · BCBSAZ Health Choice',
+    h1: 'Blue Cross Blue Shield of Arizona Health Choice ABA coverage (AHCCCS plan).',
+    metaTitle: 'BCBSAZ Health Choice (AHCCCS, formerly Health Choice Arizona) ABA Coverage | Carelu',
     metaDescription:
-      'How Health Choice Arizona (Blue Cross Blue Shield of Arizona) handles AHCCCS ABA — the AMPM 320-S state baseline, the frequently-updated PA grids that answer the code-level questions, and the northern-Arizona footprint.',
+      'How Blue Cross Blue Shield of Arizona Health Choice (formerly branded "Health Choice Arizona") handles AHCCCS ABA — the AMPM 320-S state baseline, the frequently-updated PA grids that answer the code-level questions, and the northern-Arizona footprint.',
     intro: [
-      'Health Choice Arizona is Blue Cross Blue Shield of Arizona\'s Medicaid vehicle, with its strongest presence in northern Arizona (Apache, Coconino, Mohave, Navajo, Yavapai) plus Maricopa, Gila, and Pinal — post-Care1st-merger, it competes mainly with Arizona Complete Health in the north. It publishes no distinct ABA clinical policy; its operational tool is the PA grid, updated frequently (versions have shipped effective 1/2024 through 5/2026). That makes the current grid, not a policy PDF, the document that answers the 9715x questions for this plan.',
+      'Blue Cross Blue Shield of Arizona\'s Medicaid vehicle is officially branded "Blue Cross Blue Shield of Arizona Health Choice" — AHCCCS\'s own current health plan list (revised 6/30/2026) uses this full name, not the older "Health Choice Arizona" branding this guide previously used; the coverage and mechanics below are unaffected by the naming update. Its strongest presence is in northern Arizona (Apache, Coconino, Mohave, Navajo, Yavapai) plus Maricopa, Gila, and Pinal — post-Care1st-merger, it competes mainly with Arizona Complete Health in the north. It publishes no distinct ABA clinical policy; its operational tool is the PA grid, updated frequently (versions have shipped effective 1/2024 through 5/2026). That makes the current grid, not a policy PDF, the document that answers the 9715x questions for this plan.',
     ],
     atGlance: [
+      { label: 'Plan name', value: 'Blue Cross Blue Shield of Arizona Health Choice (formerly "Health Choice Arizona")' },
       { label: 'Plan type', value: 'ACC — northern GSA counties + Maricopa, Gila, Pinal (BCBSAZ)' },
       { label: 'Clinical rules', value: 'No distinct published ABA policy — AMPM 320-S baseline' },
       { label: 'PA source of truth', value: 'The current PA grid on healthchoiceaz.com — updated several times a year' },
@@ -427,14 +428,14 @@ export const arizonaPayers: Record<string, PayerConfig> = {
       { title: 'Portal access', desc: 'providerportal.healthchoiceaz.com for submissions; PA phone and fax as fallback.' },
     ],
     sources: [
+      { title: 'AHCCCS — Available Health Plans list (lists "Blue Cross Blue Shield of Arizona Health Choice")', url: 'https://www.azahcccs.gov/Members/Downloads/Resources/ENGLISH_HealthPlanList.pdf' },
       { title: 'Health Choice Arizona — PA guidelines (grids)', url: 'https://www.healthchoiceaz.com/providers/pa-guidelines' },
       { title: 'AMPM 320-S — Behavior Analysis Services (AHCCCS)', url: 'https://www.azahcccs.gov/shared/Downloads/MedicalPolicyManual/300/320S.pdf' },
-      { title: 'AHCCCS — Available Health Plans list', url: 'https://www.azahcccs.gov/Members/Downloads/Resources/ENGLISH_HealthPlanList.pdf' },
     ],
     faq: [
-      { q: 'Does Health Choice Arizona cover ABA?', a: 'Yes — as an AHCCCS ACC plan, on the AMPM 320-S baseline. It publishes no distinct ABA clinical policy; PA requirements live in its frequently-updated PA grids.' },
-      { q: 'Does Health Choice require PA for ABA codes?', a: 'Not published as a standing rule — check the current PA grid rows for 97151–97158 on healthchoiceaz.com, or call the PA line at 1-800-322-8670. Grids have revised at least seven times since early 2024.' },
-      { q: 'Is Health Choice part of Blue Cross Blue Shield?', a: 'Yes — Health Choice Arizona is Blue Cross Blue Shield of Arizona\'s AHCCCS Medicaid plan.' },
+      { q: 'Does Blue Cross Blue Shield of Arizona Health Choice cover ABA?', a: 'Yes — as an AHCCCS ACC plan, on the AMPM 320-S baseline. It publishes no distinct ABA clinical policy; PA requirements live in its frequently-updated PA grids.' },
+      { q: 'Does BCBSAZ Health Choice require PA for ABA codes?', a: 'Not published as a standing rule — check the current PA grid rows for 97151–97158 on healthchoiceaz.com, or call the PA line at 1-800-322-8670. Grids have revised at least seven times since early 2024.' },
+      { q: 'Is Health Choice Arizona now Blue Cross Blue Shield of Arizona Health Choice?', a: 'Yes — AHCCCS\'s official health plan roster (revised 6/30/2026) lists it as "Blue Cross Blue Shield of Arizona Health Choice." It has been a BCBSAZ subsidiary since BCBSAZ acquired Steward Health Choice Arizona; the plan\'s AHCCCS contract, coverage, and mechanics are unchanged by the naming update.' },
     ],
   },
 

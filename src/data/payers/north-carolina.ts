@@ -236,7 +236,7 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
   'carolina-complete-health': {
     slug: 'carolina-complete-health',
     family: 'centene',
-    cardDesc: 'Explicit CCP 8F deference + an ABA treatment-request checklist; regions 3–5 footprint.',
+    cardDesc: 'Explicit CCP 8F deference + an ABA treatment-request checklist; statewide since 4/1/2026 (absorbed WellCare NC).',
     assessmentPA: 'Required — per CCP 8F, before rendering any RB-BHT service including assessment',
     treatmentPA: 'Required — submit with the ABA outpatient treatment request checklist via the provider portal',
     dxRequired: 'Yes \u2014 ASD via a validated diagnostic tool; under-3s may start on a provisional diagnosis',
@@ -246,42 +246,44 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
     h1: 'Carolina Complete Health ABA coverage (Standard Plan).',
     metaTitle: 'Carolina Complete Health (NC Medicaid) ABA / RB-BHT Coverage | Carelu',
     metaDescription:
-      'How Carolina Complete Health administers NC Medicaid RB-BHT (ABA) — explicit deference to Clinical Coverage Policy 8F, the ABA outpatient treatment request checklist, portal submission, and its regional footprint.',
+      'How Carolina Complete Health administers NC Medicaid RB-BHT (ABA) — explicit deference to Clinical Coverage Policy 8F, the ABA outpatient treatment request checklist, portal submission, and its statewide footprint since absorbing WellCare of North Carolina.',
     intro: [
-      'Carolina Complete Health — the physician-led Centene joint venture — administers RB-BHT with the cleanest policy posture of the Standard Plans: its behavioral-health page states outright that clinical requirements are detailed in Policy 8F on the state\'s Medicaid website. The plan\'s own contribution is operational: an ABA Outpatient Treatment Request Checklist that structures submissions, and a regional footprint worth checking before intake.',
+      'Carolina Complete Health — the physician-led Centene joint venture — administers RB-BHT with the cleanest policy posture of the Standard Plans: its behavioral-health page states outright that clinical requirements are detailed in Policy 8F on the state\'s Medicaid website. The plan\'s own contribution is operational: an ABA Outpatient Treatment Request Checklist that structures submissions. As of April 1, 2026, WellCare of North Carolina merged into Carolina Complete Health, extending the plan from its prior regional footprint to statewide availability — see the WellCare of North Carolina guide for the merger detail and the transition path for existing WellCare members.',
     ],
     atGlance: [
       { label: 'Plan type', value: 'NC Medicaid Standard Plan (Centene JV, physician-led)' },
       { label: 'Clinical rules', value: 'Explicit deference to CCP 8F' },
       { label: 'Prior auth', value: 'Required per 8F; ABA treatment-request checklist published' },
       { label: 'Portal', value: 'provider.carolinacompletehealth.com' },
-      { label: 'Footprint', value: 'Operates in select NC regions — verify the member\'s county' },
+      { label: 'Footprint', value: 'Statewide as of 4/1/2026 — absorbed WellCare of North Carolina' },
       { label: 'Rates', value: '≥100% of the NC Medicaid fee schedule (state floor)' },
     ],
     sections: [
       {
         h2: 'How CCH administers RB-BHT',
         body: [
-          'Clinically, everything is CCP 8F: PA before rendering any RB-BHT service (assessment included), 180-day authorization cycles, LQASP treatment-plan reviews. Requests go through the provider portal accompanied by the plan\'s ABA Outpatient Treatment Request Checklist — using it as your internal submission template removes back-and-forth. Behavioral health is integrated in-house (clinical training questions go to BH_training@centene.com), and provider services runs at (833) 552-3876, Monday–Saturday 7am–6pm. Note that CCH operates in select NC regions rather than statewide, so verify the member\'s county during eligibility; note also that Partners Health Management\'s Tailored Plan documentation cross-references CCH policies, reflecting shared Centene infrastructure.',
+          'Clinically, everything is CCP 8F: PA before rendering any RB-BHT service (assessment included), 180-day authorization cycles, LQASP treatment-plan reviews. Requests go through the provider portal accompanied by the plan\'s ABA Outpatient Treatment Request Checklist — using it as your internal submission template removes back-and-forth. Behavioral health is integrated in-house (clinical training questions go to BH_training@centene.com), and provider services runs at (833) 552-3876, Monday–Saturday 7am–6pm. Carolina Complete Health became a statewide Standard Plan effective April 1, 2026, when WellCare of North Carolina merged into it — so eligibility should no longer be screened by county for this plan. Note also that Partners Health Management\'s Tailored Plan documentation cross-references CCH policies, reflecting shared Centene infrastructure.',
         ],
         cites: [
           { title: 'Carolina Complete Health — behavioral health provider page', url: 'https://network.carolinacompletehealth.com/resources/behavioral-health.html' },
           { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
+          { title: 'NC Medicaid — WellCare NC and Carolina Complete Health merge April 1, 2026 (Provider Playbook)', url: 'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026' },
         ],
       },
     ],
     collect: [
-      { title: 'Member county / region', desc: 'CCH isn\'t statewide — confirm the member\'s county maps to its service regions.' },
+      { title: 'Member plan history', desc: 'Members transitioning from WellCare of North Carolina land here after the 4/1/2026 merger — confirm which card/ID the family currently holds.' },
       { title: 'ASD diagnosis + validated tool', desc: 'Per CCP 8F, with the MD/DO/LP service order.' },
       { title: 'Checklist items', desc: 'Build intake to pre-fill the plan\'s ABA treatment-request checklist.' },
     ],
     sources: [
       { title: 'Carolina Complete Health — behavioral health page (8F deference, checklist)', url: 'https://network.carolinacompletehealth.com/resources/behavioral-health.html' },
       { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
+      { title: 'NC Medicaid — WellCare NC and Carolina Complete Health merge April 1, 2026 (Provider Playbook)', url: 'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026' },
     ],
     faq: [
       { q: 'Does Carolina Complete Health cover ABA therapy?', a: 'Yes — RB-BHT per NC Clinical Coverage Policy 8F, which the plan defers to explicitly. PA is required before any RB-BHT service, submitted through the provider portal with the plan\'s ABA treatment-request checklist.' },
-      { q: 'Is Carolina Complete Health available statewide?', a: 'No — it operates in select NC regions. Verify the member\'s county during eligibility before planning intake.' },
+      { q: 'Is Carolina Complete Health available statewide?', a: 'Yes, as of April 1, 2026 — it absorbed WellCare of North Carolina and now operates statewide as a Standard Plan, rather than the smaller regional footprint it held before the merger.' },
     ],
   },
 
@@ -344,27 +346,27 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
   'wellcare-north-carolina': {
     slug: 'wellcare-north-carolina',
     family: 'centene',
-    cardDesc: 'Branded policy WNC.CP.109 that restates 8F; auth-list driven PA, telehealth via WNC.CP.193.',
+    cardDesc: 'MERGED into Carolina Complete Health effective 4/1/2026 — no longer a standalone Standard Plan.',
     assessmentPA: 'Required — per CCP 8F baseline; confirm code-level PA in WellCare\'s Authorization Lookup Tool',
     treatmentPA: 'Required — WNC.CP.109 restates 8F: LQASP plan, review ≥ every 6 months',
     dxRequired: 'Yes \u2014 ASD via a validated diagnostic tool; under-3s may start on a provisional diagnosis',
     payer: 'WellCare of North Carolina',
     state: 'NC', kind: 'medicaid-mco', parent: 'North Carolina Medicaid',
     pill: 'Payer Guide · WellCare (NC)',
-    h1: 'WellCare of North Carolina ABA coverage (Standard Plan).',
-    metaTitle: 'WellCare NC (Medicaid Standard Plan) ABA / RB-BHT Coverage | Carelu',
+    h1: 'WellCare of North Carolina: merged into Carolina Complete Health (4/1/2026).',
+    metaTitle: 'WellCare NC → Carolina Complete Health Merger (4/1/2026) | Carelu',
     metaDescription:
-      'How WellCare of North Carolina administers RB-BHT (ABA) — clinical policy WNC.CP.109 restating CCP 8F with a state-precedence clause, the Authorization Lookup Tool workflow, and telehealth rules under WNC.CP.193.',
+      'WellCare of North Carolina merged into Carolina Complete Health effective April 1, 2026, and is no longer a standalone NC Medicaid Standard Plan. What changed, where WellCare members go now, and the plan\'s prior RB-BHT policy (WNC.CP.109) for reference.',
     intro: [
-      'WellCare of North Carolina (Centene) is the one Standard Plan with a branded ABA clinical policy — WNC.CP.109, "Research-Based Behavioral Health Treatment for ASD" (last reviewed May 2025). Read it closely, though, and it\'s a near-verbatim restatement of CCP 8F with an explicit clause that state Medicaid coverage provisions take precedence wherever they conflict. So the state guide covers the clinical substance; this guide covers WellCare\'s tooling.',
+      'WellCare of North Carolina merged into Carolina Complete Health effective April 1, 2026 — it no longer exists as a standalone NC Medicaid Standard Plan. Members who previously carried a WellCare of NC card are now served by Carolina Complete Health; see that guide for current authorization mechanics and the plan\'s (now statewide) footprint. This page is kept for reference and for anyone still searching by the WellCare name — the clinical policy history below (WNC.CP.109, a near-verbatim restatement of CCP 8F) reflects how the plan operated before the merger.',
     ],
     atGlance: [
-      { label: 'Plan type', value: 'NC Medicaid Standard Plan (Centene)' },
-      { label: 'Clinical rules', value: 'WNC.CP.109 — restates CCP 8F; state rules take precedence' },
-      { label: 'Prior auth', value: 'Code-level PA via the Authorization Lookup Tool + BH auth list' },
-      { label: 'Telehealth', value: 'Governed by separate policy WNC.CP.193' },
-      { label: 'Portal', value: 'WellCare of NC provider portal (wellcarenc.com)' },
-      { label: 'Rates', value: '≥100% of the NC Medicaid fee schedule (state floor)' },
+      { label: 'Plan status', value: 'MERGED into Carolina Complete Health effective April 1, 2026 — go to the Carolina Complete Health guide' },
+      { label: 'Plan type (historical)', value: 'NC Medicaid Standard Plan (Centene)' },
+      { label: 'Clinical rules (historical)', value: 'WNC.CP.109 — restated CCP 8F; state rules took precedence' },
+      { label: 'Prior auth (historical)', value: 'Code-level PA via the Authorization Lookup Tool + BH auth list' },
+      { label: 'Telehealth (historical)', value: 'Governed by separate policy WNC.CP.193' },
+      { label: 'Rates (historical)', value: '≥100% of the NC Medicaid fee schedule (state floor)' },
     ],
     sections: [
       {
@@ -375,21 +377,23 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
         cites: [
           { title: 'WellCare NC — WNC.CP.109 RB-BHT clinical policy', url: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf' },
           { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
+          { title: 'NC Medicaid — WellCare NC and Carolina Complete Health merge April 1, 2026 (Provider Playbook)', url: 'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026' },
         ],
       },
     ],
     collect: [
-      { title: 'Code-level PA check', desc: 'The Authorization Lookup Tool is the source of truth — check it each auth cycle, not once.' },
-      { title: 'ASD diagnosis + validated tool', desc: 'Per 8F/WNC.CP.109; provisional-dx path documented for under-3s.' },
-      { title: 'Telehealth justification', desc: 'Telephonic parent training needs a documented caregiver barrier under WNC.CP.193.' },
+      { title: 'Redirect to Carolina Complete Health', desc: 'WellCare of NC no longer exists as a standalone plan — route WellCare-branded inquiries to the Carolina Complete Health guide and workflow.' },
+      { title: 'Code-level PA check (historical)', desc: 'The Authorization Lookup Tool was the source of truth for WellCare NC — no longer applicable post-merger.' },
+      { title: 'ASD diagnosis + validated tool', desc: 'Per 8F; provisional-dx path documented for under-3s. This requirement carries over to Carolina Complete Health.' },
     ],
     sources: [
-      { title: 'WellCare NC — WNC.CP.109 RB-BHT clinical policy', url: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf' },
+      { title: 'NC Medicaid — WellCare NC and Carolina Complete Health merge April 1, 2026 (Provider Playbook)', url: 'https://medicaid.ncdhhs.gov/providers/provider-playbook-medicaid-managed-care/trending-topics/wellcare-north-carolina-and-carolina-complete-health-merge-april-1-2026' },
+      { title: 'WellCare NC — WNC.CP.109 RB-BHT clinical policy (historical)', url: 'https://www.policies-wellcare.com/content/dam/centene/wellcare/nc/policies/clinical-policies/WNC.CP.109.pdf' },
       { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
     ],
     faq: [
-      { q: 'Does WellCare of NC cover ABA therapy?', a: 'Yes — under clinical policy WNC.CP.109, which restates NC\'s CCP 8F (and explicitly yields to state rules on any conflict). PA requirements are managed code-by-code through WellCare\'s Authorization Lookup Tool.' },
-      { q: 'Does WellCare NC cover ABA parent training by phone?', a: 'Only under its telehealth policy WNC.CP.193, when a documented caregiver health or access barrier exists — and NC\'s August 2026 HB 696 rules restrict ABA telehealth further.' },
+      { q: 'Does WellCare of North Carolina still exist?', a: 'No — WellCare of North Carolina merged into Carolina Complete Health effective April 1, 2026, and is no longer a standalone NC Medicaid Standard Plan. Members and providers should use the Carolina Complete Health guide going forward.' },
+      { q: 'What happened to WellCare NC members after the merger?', a: 'They are now served by Carolina Complete Health, which expanded from its prior regional footprint to a statewide Standard Plan as part of the merger.' },
     ],
   },
 

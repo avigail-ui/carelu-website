@@ -508,7 +508,7 @@ export const newYorkPayers: Record<string, PayerConfig> = {
     metaDescription:
       'How Molina Healthcare of New York (formerly Affinity) handles NY Medicaid ABA — in-house UM with LBA reviewers since the September 2021 eviCore transition, the stale-info traps that transition left behind, and what to verify per case.',
     intro: [
-      'Molina Healthcare of New York — the plan formerly branded Affinity, including the TotalCare ("TONY") plan code — runs its ABA utilization management in-house, with LBA care-review clinicians evaluating assessments and treatment plans for medical necessity. The history matters operationally: ABA UM moved from eviCore to Molina effective September 1, 2021, with PA code changes following that October, and stale eviCore-era instructions still circulate. Molina\'s bulletin trail indicates ABA is PA-based, but the current process specifics aren\'t published in materials we could verify — so this guide covers the verified structure and the exact questions to close in the portal.',
+      'Molina Healthcare of New York — the plan formerly branded Affinity, including the TotalCare ("TONY") plan code — runs its ABA utilization management in-house, with LBA care-review clinicians evaluating assessments and treatment plans for medical necessity. The history matters operationally: ABA UM moved from eviCore to Molina effective September 1, 2021, with PA code changes following that October, and stale eviCore-era instructions still circulate. One nuance worth knowing at intake: "Affinity" isn\'t purely legacy branding — Molina still actively markets a co-branded "Affinity by Molina Healthcare" Medicaid Managed Care product for downstate members (Bronx, Brooklyn, Manhattan, Nassau, Orange, Queens, Rockland, Staten Island, Suffolk, Westchester), per Molina\'s own site, so a family naming "Affinity" may be describing a currently-valid downstate product rather than an outdated card. Molina\'s bulletin trail indicates ABA is PA-based, but the current process specifics aren\'t published in materials we could verify — so this guide covers the verified structure and the exact questions to close in the portal.',
     ],
     atGlance: [
       { label: 'Plan type', value: 'Mainstream MMC (formerly Affinity; incl. TotalCare "TONY" plan code)' },
@@ -550,11 +550,12 @@ export const newYorkPayers: Record<string, PayerConfig> = {
       { title: 'Molina NY provider notice — ABA prior authorization changes', url: 'https://www.molinahealthcare.com/providers/ny/medicaid/comm/-/media/Molina/PublicWebsite/PDF/Providers/ny/medicaid/Prior%20Authorization%20Update_Provider_Notice_for_ABA' },
       { title: 'Molina NY Medicaid bulletins index', url: 'https://www.molinahealthcare.com/providers/ny/medicaid/comm/bulletin.aspx' },
       { title: 'eMedNY ABA Provider Policy Manual (state baseline)', url: 'https://www.emedny.org/ProviderManuals/ABA/PDFS/ABA_Policy.pdf' },
+      { title: 'Molina Healthcare — Affinity by Molina Healthcare (NY Medicaid Managed Care) overview', url: 'https://www.molinahealthcare.com/members/ny/hp/affinity/medicaid/overvw/overvw.aspx' },
     ],
     faq: [
       { q: 'Does Molina Healthcare of New York cover ABA?', a: 'Yes — it carries the NY Medicaid ABA carve-in, with assessments and treatment plans reviewed in-house by Molina\'s ABA care-review clinicians (including LBA reviewers). Its bulletin trail indicates PA-based authorization; confirm current specifics per case.' },
       { q: 'Do I still submit Molina NY ABA requests through eviCore?', a: 'No — eviCore hasn\'t handled Molina NY ABA since September 1, 2021. UM is in-house; route requests through Molina\'s portal/Availity and treat any eviCore-referencing instructions as stale.' },
-      { q: 'Is Molina the same as Affinity in New York?', a: 'Yes — Molina acquired and rebranded Affinity (including the TotalCare "TONY" plan code). Verify plan identity on any inquiry carrying the old branding.' },
+      { q: 'Is Molina the same as Affinity in New York?', a: 'Yes — Molina acquired Affinity, and most Affinity branding is legacy card art now covered by Molina. But note: Molina still actively operates a co-branded "Affinity by Molina Healthcare" Medicaid Managed Care product for downstate members, so "Affinity" can also be a currently-valid plan name, not only an old card — verify plan identity either way on any inquiry.' },
     ],
   },
 
