@@ -551,4 +551,80 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 169, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'correction',
+    summary:
+      'QA spot-check GA+NC: 47 fields checked, 32 confirmed, 4 corrected, 11 downgraded.',
+    guides: [
+      'georgia-medicaid',
+      'amerigroup-georgia',
+      'aetna-georgia',
+      'unitedhealthcare-georgia',
+      'north-carolina-medicaid',
+      'aetna-north-carolina',
+      'unitedhealthcare-community-plan-north-carolina',
+    ],
+    details: [
+      {
+        slug: 'georgia-medicaid',
+        field: 'codeGrid.*.telehealth',
+        change:
+          'Re-opened all three cited sources (DCH 2023 presentation, DCH Oct-2025 telehealth guidance, DCH ASD Policy Manual, all direct PDF extraction) — none contains the claim that a telehealth rendering provider "must be located in Georgia or within 50 miles of the state border." Removed that clause from all 10 codes\' telehealth field; the GT-modifier/POS-02-or-10 mechanics that remain ARE confirmed verbatim in §605/§614.',
+        sourceUrl: 'https://setrc.us/wp-content/uploads/2025/11/Telehealth-Guidance-Q4-October-2025.pdf',
+      },
+      {
+        slug: 'amerigroup-georgia',
+        field: 'edi.payerId.availity / edi.payerId.changeHealthcare',
+        change:
+          'Availity\'s own payer list (row-level PDF extraction) resolves payer ID 26375 to "Amerigroup - Ft. Worth" — a Texas entity, not Georgia. No GA-specific Amerigroup ID appears in the list under any code. Downgraded both fields to \'unverified\' rather than propagate the wrong ID.',
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+      {
+        slug: 'georgia-medicaid / aetna-georgia',
+        field: 'edi.payerId.availity',
+        change:
+          'The cited Availity list carries an "As of 08/08/2012" footer on every page (same document already flagged stale for aetna-florida in an earlier correction pass, but missed here). 77034 (GA Medicaid) and 60054 (Aetna) are both confirmed present in that 2012 snapshot, but downgraded from \'verified\' to \'inferred\' pending reconfirmation against a current export, matching the aetna-florida precedent.',
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+      {
+        slug: 'aetna-georgia / aetna-north-carolina',
+        field: 'codeGrid.*.paRequired',
+        change:
+          'Precertification form "GR-69017-4," cited across all 10 codes in both states, does not appear in either Aetna CPB 0554 or CPB 0648 (both fetched and full-text-checked) — the two CPBs are medical-necessity policies with no precertification-process content at all. Removed the form number and downgraded paRequired to \'unverified\'; the general "covered if criteria are met" fact (CPB 0648) remains verified.',
+        sourceUrl: 'https://www.aetna.com/cpb/medical/data/600_699/0648.html',
+      },
+      {
+        slug: 'unitedhealthcare-georgia',
+        field: 'codeGrid.*.paRequired / edi.payerId.changeHealthcare',
+        change:
+          'Neither cited Optum document (ABA Supplemental Clinical Criteria; national ABA Reimbursement Policy 2022RP501A, both fetched and full-text-checked) mentions a "two-step" assessment-then-treatment authorization flow or a 4-6 month review cadence — removed and downgraded to \'unverified\'. Separately, changeHealthcare payer ID 87726 is not in either cited source (pVerify\'s own list has no "87726" line, only a distinct "UHG007" entry) — downgraded to \'unverified\'. Unit-cap and modifier figures on the same codeGrid entries WERE independently confirmed verbatim against the Optum Reimbursement Policy.',
+        sourceUrl: 'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'edi.medicaid271Notes.mcoCarrierCodes',
+        change:
+          'Carrier code "MCCFS" ("Children & Families Specialty Plan") does not appear anywhere in the NCTracks 270/271 Companion Guide\'s Appendix A plan-coverage-description table (confirmed by direct retrieval and full-text extraction) — removed. The other 11 carrier codes in the map were individually checked and all match the source\'s Appendix A table.',
+        sourceUrl:
+          'https://www.nctracks.nc.gov/content/dam/jcr:b987d9f5-d230-4c81-b78b-05780eb0bbaf/270_271%20Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20(7).pdf',
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'codeGrid.*.paRequired',
+        change:
+          'Citation corrected: CCP 8F\'s Prior Approval requirement is in §5.0-5.2, not "Section 6.0" (which is actually "Provider(s) Eligible to Bill," an unrelated section) — confirmed by direct retrieval and full-text extraction of the policy.',
+        sourceUrl: 'https://medicaid.ncdhhs.gov/documents/files/8f/open',
+      },
+      {
+        slug: 'unitedhealthcare-community-plan-north-carolina',
+        field: 'codeGrid.*.paRequired',
+        change:
+          'The cited NC ABA Program Quick Reference Guide (fetched and full-text-checked) states only that all autism services require prior authorization via one Treatment Authorization Request Form — it does not describe a "two-step" separate assessment-then-treatment authorization flow as previously shipped. Corrected the text to match the source; the general "PA required" fact stays verified.',
+        sourceUrl:
+          'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/ncaba/ncABA-QRG.pdf',
+      },
+    ],
+    totals: { guides: 169, states: 19 },
+  },
 ];

@@ -174,7 +174,7 @@ function ncMedicaidCoveredEntry(code: string, assessmentCode: boolean): CodeGrid
     (assessmentCode ? '' : ' 97156/97157 additionally show KX (audio-only/telephonic) under documented caregiver-access-barrier criteria in the same two sources.');
   return {
     covered: `Yes (${code})`,
-    paRequired: 'Required — PA required for ALL RB-BHT services, assessment included (CCP 8F Attachment A / Section 6.0)',
+    paRequired: 'Required — PA required for ALL RB-BHT services, assessment included (CCP 8F §5.0-5.2, Prior Approval)',
     unitCap: 'unverified',
     capPeriod: 'unverified',
     posAllowed: ['unverified'],
@@ -265,7 +265,6 @@ const northCarolinaMedicaidEdi: EdiRouting = {
     mcoCarrierCodes: {
       MCSTD: 'Medicaid Managed Care - Standard Plan',
       MCCRV: 'Medicaid Managed Care - Carve-out',
-      MCCFS: 'Children & Families Specialty Plan',
       TPMC: 'Tailored Plan',
       TPHC: 'Health Choice Tailored Plan',
       TPINV: 'Innovations Tailored Plan',
@@ -543,7 +542,7 @@ function uhcNcEntry(code: string): CodeGridEntry {
   return {
     covered: `Yes (${code})`,
     paRequired:
-      "Required — a two-step Optum authorization flow: a SEPARATE authorization for the ABA assessment, then a second for treatment (per the NC ABA Program Quick Reference Guide). This is a utilization-management sequence, not a claims-routing difference — both authorizations and claims run through the same Optum/UHC payer ID.",
+      "Required — all autism/ABA services require prior authorization, submitted via the Treatment Authorization Request Form online at providerexpress.com (per the NC ABA Program Quick Reference Guide). Both authorizations and claims run through the same Optum/UHC payer ID.",
     unitCap: 'unverified',
     capPeriod: 'unverified',
     posAllowed: ['unverified'],
@@ -552,7 +551,7 @@ function uhcNcEntry(code: string): CodeGridEntry {
       'unverified — Optum\'s national ABA Modifier FAQ (HN/HO/HM/HP credential tiers) is explicitly scoped to "commercial members only" (BH4167b) and is NOT confirmed to apply to NC Medicaid claims; not applied here absent a Medicaid-specific document.',
     ],
     notes:
-      'Claims (including the Optum BH carve-out) route on the SAME payer ID as medical (87726) — confirmed, no second EDI hop for claims. Verify via: Provider Express / (866) 209-9320.',
+      'Claims (including the Optum BH carve-out) route on the SAME payer ID as medical (87726) — confirmed, no second EDI hop for claims. QA re-check (2026-07-23): the previously shipped claim of a "two-step" flow — separate authorizations for assessment vs. treatment — does not appear in the QRG; the document states only that all services require PA via one Treatment Authorization Request Form. Verify via: Provider Express / (866) 209-9320.',
     fieldStatus: {
       covered: 'verified',
       paRequired: 'verified',
@@ -942,17 +941,17 @@ function cignaEntryNC(paRequired: string): CodeGridEntry {
 function aetnaEntryNC(): CodeGridEntry {
   return {
     covered: 'Yes',
-    paRequired: 'Required — precertification (form GR-69017-4)',
+    paRequired: 'Required — precertification (specific form number not confirmed in either cited CPB)',
     unitCap: 'unverified',
     capPeriod: 'unverified',
     posAllowed: ['unverified'],
     telehealth: 'unverified',
     modifiers: ['unverified'],
     notes:
-      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass (same finding as the Georgia build).',
+      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass (same finding as the Georgia build). QA re-check (2026-07-23): form "GR-69017-4," previously cited here, does not appear in either CPB 0554 or CPB 0648 — removed pending a source that actually states it.',
     fieldStatus: {
       covered: 'verified',
-      paRequired: 'verified',
+      paRequired: 'unverified',
       unitCap: 'unverified',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -1347,16 +1346,19 @@ const aetnaEdiNC: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'verified',
-    'payerId.changeHealthcare': 'verified',
+    'payerId.availity': 'inferred',
+    'payerId.changeHealthcare': 'inferred',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'unverified',
   },
   verifyVia: {
+    'payerId.availity':
+      'QA re-check (2026-07-23): AVAILITY_PAYER_LIST_NCB\'s own sourcing note already discloses this list is dated 2012 (an "As of 08/08/2012" footer, confirmed by direct retrieval) and should not be treated as a source of current payer IDs — downgraded from verified to inferred to match that disclosure (60054=AETNA is present in the 2012 snapshot, but not reconfirmed current).',
+    'payerId.changeHealthcare': 'Same staleness finding as payerId.availity — this value was carried over from the same 2012 Availity snapshot.',
     supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
     'bhCarveOut.administrator':
-      'Not researched to a primary source this pass (same gap as the Georgia build) — confirm via Aetna provider services or the ABA precertification form (GR-69017-4) whether Aetna administers ABA in-house or via a separate behavioral-health carve-out for North Carolina.',
+      'Not researched to a primary source this pass (same gap as the Georgia build) — confirm via Aetna provider services or the ABA precertification process whether Aetna administers ABA in-house or via a separate behavioral-health carve-out for North Carolina.',
   },
   sources: [PVERIFY_PAYER_LIST_NCB, AVAILITY_PAYER_LIST_NCB],
 };

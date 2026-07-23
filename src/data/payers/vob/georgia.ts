@@ -55,7 +55,8 @@ const PVERIFY_PAYER_LIST = src(
 );
 const AVAILITY_PAYER_LIST = src(
   'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
-  "Availity Essentials public payer list (837/270-271 payer IDs)."
+  'Availity Essentials public payer list (837/270-271 payer IDs) — QA re-check (2026-07-23): the fetchable copy itself carries an "As of 08/08/2012" footer on every page (same document/finding already applied to aetna-florida). Row-level extraction confirms 77034=GAMEDICAID, 26375=Amerigroup - Ft. Worth (TX, NOT Georgia), 60054=AETNA, 87726=UNITEDHEALTHCARE, 62308=CIGNA, 00601=ANTHEM as of that 2012 snapshot.',
+  true
 );
 const DCH_ASD_MANUAL = src(
   'https://medicaid.georgia.gov/document/publication/asd-policy-manual/download',
@@ -125,7 +126,7 @@ function gaMedicaidEntry(unitCap: number, notes?: string, extraSources?: SourceR
       'telehealth (POS 02 patient not at home, or POS 10 patient at home)',
     ],
     telehealth:
-      "Yes — GT modifier, POS 02 or 10 per DCH's Oct 2025 telehealth guidance §614; rendering provider must be located in Georgia or within 50 miles of the state border (per the ASD Policy Manual).",
+      "Yes — GT modifier, POS 02 or 10 per DCH's Oct 2025 telehealth guidance §605/§614.",
     modifiers: ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'GT', '93 (audio-only)'],
     notes,
     fieldStatus: {
@@ -285,18 +286,17 @@ function cignaEntry(paRequired: string): CodeGridEntry {
 function uhcEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
   return {
     covered: 'Yes',
-    paRequired:
-      'Required — two-step Optum authorization (assessment, then treatment); continued-service review every 4–6 months',
+    paRequired: 'Required — Optum ABA prior authorization (specific process/review cadence not confirmed in either cited source)',
     unitCap,
     capPeriod: 'day',
     posAllowed: ['unverified'],
     telehealth: 'unverified',
     modifiers,
     notes:
-      "Unit caps and modifiers sourced from Optum's national ABA Reimbursement Policy (2022RP501A) — the GA-specific Supplemental Clinical Criteria contains no CPT codes at all; applied here absent a confirmed GA-specific override. Verify via: Provider Express / UHC provider services.",
+      "Unit caps and modifiers sourced from Optum's national ABA Reimbursement Policy (2022RP501A) — the GA-specific Supplemental Clinical Criteria contains no CPT codes at all; applied here absent a confirmed GA-specific override. QA re-check (2026-07-23): the previously shipped \"two-step authorization (assessment, then treatment); continued-service review every 4-6 months\" language does not appear in either OPTUM_SCC or the Reimbursement Policy — removed pending a source that actually states it. Verify via: Provider Express / UHC provider services.",
     fieldStatus: {
       covered: 'inferred',
-      paRequired: 'verified',
+      paRequired: 'unverified',
       unitCap: 'inferred',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -309,17 +309,17 @@ function uhcEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
 function aetnaEntry(): CodeGridEntry {
   return {
     covered: 'Yes',
-    paRequired: 'Required — precertification (form GR-69017-4)',
+    paRequired: 'Required — precertification (specific form number not confirmed in either cited CPB)',
     unitCap: 'unverified',
     capPeriod: 'unverified',
     posAllowed: ['unverified'],
     telehealth: 'unverified',
     modifiers: ['unverified'],
     notes:
-      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass.',
+      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass. QA re-check (2026-07-23): form "GR-69017-4," previously cited here, does not appear in either CPB 0554 or CPB 0648 — removed pending a source that actually states it.',
     fieldStatus: {
       covered: 'verified',
-      paRequired: 'verified',
+      paRequired: 'unverified',
       unitCap: 'unverified',
       posAllowed: 'unverified',
       telehealth: 'unverified',
@@ -348,7 +348,7 @@ const georgiaMedicaidEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'verified',
+    'payerId.availity': 'inferred',
     'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
@@ -358,6 +358,8 @@ const georgiaMedicaidEdi: EdiRouting = {
     'medicaid271Notes.eligibilitySpanGranularity': 'unverified',
   },
   verifyVia: {
+    'payerId.availity':
+      'QA re-check (2026-07-23): the cited Availity list carries an "As of 08/08/2012" footer — 77034=GAMEDICAID is confirmed present in that snapshot, but downgraded from verified to inferred pending reconfirmation against a current Availity export (same treatment already applied to aetna-florida for the identical staleness finding).',
     'payerId.changeHealthcare':
       'Optum/Change Healthcare payer finder — two conflicting IDs surfaced (SKGA0, 12K05) and neither was resolved to a single canonical ID this pass.',
     supportsRealtime:
@@ -393,7 +395,7 @@ const georgiaMedicaidCodeGrid: Record<string, CodeGridEntry> = {
 /* ==================== amerigroup-georgia ==================== */
 
 const amerigroupEdi: EdiRouting = {
-  payerId: { pverify: '00025', availity: '26375', changeHealthcare: '26375' },
+  payerId: { pverify: '00025', availity: 'unverified', changeHealthcare: 'unverified' },
   supports270271: true,
   supportsRealtime: 'unverified',
   bhCarveOut: {
@@ -404,8 +406,8 @@ const amerigroupEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'verified',
-    'payerId.changeHealthcare': 'verified',
+    'payerId.availity': 'unverified',
+    'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'verified',
@@ -413,6 +415,10 @@ const amerigroupEdi: EdiRouting = {
   verifyVia: {
     'payerId.pverify':
       "pVerify lists a generic \"00025 AMERIGROUP\" (Elig: Y) plus a separate GA-inclusive entry \"00706 AMERIGROUP (IA,DC,MD,FL,GA,WA,TN,TX,NM)\" flagged Elig/Claim: No in pVerify's own table — confirm which code pVerify actually routes GA eligibility checks through before automating on 00025.",
+    'payerId.availity':
+      "QA re-check (2026-07-23): Availity's own list resolves 26375 to \"Amerigroup - Ft. Worth\" (Texas), not Georgia — confirmed by direct retrieval and row-level extraction of the source PDF. The list's only GA-relevant Amerigroup line is a generic, non-state-tagged \"27518 AMERIGROUP\" entry. Confirm the correct GA-specific Availity ID directly with Availity onboarding before automating.",
+    'payerId.changeHealthcare':
+      'QA re-check (2026-07-23): no Change Healthcare-specific source was ever cited for this value — it had been copied from the (incorrect) Availity figure. Confirm via Optum/Change Healthcare payer finder.',
     supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
   },
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
@@ -576,16 +582,19 @@ const aetnaEdi: EdiRouting = {
   },
   fieldStatus: {
     'payerId.pverify': 'verified',
-    'payerId.availity': 'verified',
-    'payerId.changeHealthcare': 'verified',
+    'payerId.availity': 'inferred',
+    'payerId.changeHealthcare': 'inferred',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'unverified',
   },
   verifyVia: {
+    'payerId.availity':
+      'QA re-check (2026-07-23): the cited Availity list carries an "As of 08/08/2012" footer — 60054=AETNA is confirmed present in that snapshot, but downgraded from verified to inferred pending reconfirmation against a current Availity export (same treatment already applied to aetna-florida for the identical staleness finding).',
+    'payerId.changeHealthcare': 'Same staleness finding as payerId.availity — this value was carried over from the same 2012 Availity snapshot.',
     supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
     'bhCarveOut.administrator':
-      'Not researched to a primary source this pass — confirm via Aetna provider services or the ABA precertification form (GR-69017-4) whether Aetna administers ABA in-house or via a separate behavioral-health carve-out for Georgia.',
+      'Not researched to a primary source this pass — confirm via Aetna provider services or the ABA precertification process whether Aetna administers ABA in-house or via a separate behavioral-health carve-out for Georgia.',
   },
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
 };
@@ -667,7 +676,7 @@ const unitedhealthcareEdi: EdiRouting = {
   fieldStatus: {
     'payerId.pverify': 'verified',
     'payerId.availity': 'unverified',
-    'payerId.changeHealthcare': 'verified',
+    'payerId.changeHealthcare': 'unverified',
     supports270271: 'verified',
     supportsRealtime: 'unverified',
     'bhCarveOut.administrator': 'inferred',
@@ -677,6 +686,8 @@ const unitedhealthcareEdi: EdiRouting = {
   },
   verifyVia: {
     'payerId.availity': 'No UnitedHealthcare entry of any kind appears in the fetched Availity 837 payer list — confirm directly with Availity onboarding.',
+    'payerId.changeHealthcare':
+      "QA re-check (2026-07-23): neither cited source (pVerify list, Optum ABA Supplemental Clinical Criteria) actually contains this payer ID — pVerify's own list has no \"87726\" line at all, only a distinct \"UHG007 United Healthcare - Optum Behavioral Solutions\" entry, and the Optum SCC document contains zero payer IDs. Confirm directly via Provider Express / UHC provider services before automating on 87726.",
     supportsRealtime: 'Confirm real-time vs. batch via pVerify/Availity onboarding for this payer ID.',
     'bhCarveOut.administratorPayerId':
       "Provider Express / UHC provider services — UHC's own EDI payer list shows GA Community Plan behavioral claims routing on the same 87726 used for medical, but pVerify separately lists a distinct \"UHG007 United Healthcare - Optum Behavioral Solutions\" code; not resolved which applies for commercial GA ABA specifically.",
