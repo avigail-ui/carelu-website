@@ -941,4 +941,89 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Virginia + New Jersey VOB enrichment shipped (docs/vob-build.md): Layer 1 (EDI routing crosswalk), Layer 3 (code-level coverage grid for 97151–97158, 0362T, 0373T), and Layer 4 (Medicaid rate tables, Medicaid lines only) for all 18 VA + NJ guides (vob/virginia.ts, vob/new-jersey.ts). VIRGINIA: read the DMAS/MES 270/271 companion guide (v2.2, 7/1/2026) in full — it does NOT carry the Cardinal Care MCO in any documented 271 segment (2120C NM1 is Third-Party-Liability/commercial; MSG/2110C carries a 3-digit aid-category code, not an MCO name; no carrier→MCO map is published), so virginia-medicaid.medicaid271Notes documents what IS specified (date-level query, real-time + batch, v2.2 DTP01=458 renewal date) and marks the MCO-name placement unverified with a DMAS MES EDI-support verifyVia; flagged that the guide still names Conduent (not Acentra) as EDI fiscal agent — Acentra runs the separate FFS service-authorization Atrezzo portal. Confirmed the full DMAS licensure-tiered ABA fee schedule directly from the live DMAS CPT fee-file CSVs (cptmedical4.csv / cptmedical1.csv), all 10 codes eff. 12/1/2021 still current (97153 $15.00 tech / $23.48 LABA-HN / $39.40 LMHP-TF / $46.63 LBA-HO confirmed exactly, plus the previously-unenumerated group/team codes 97154/97157/97158/0362T/0373T) — and confirmed the physician-fee-row trap (generic REGULAR & CSB IP rows at a few dollars are NOT the ABA rates); the VirginiaABA billing-guidance PDF is a DRAFT with no dollar amounts, cited for modifier logic only. Preserved Humana Healthy Horizons\' genuine 0362T PA quirk (PA-required, deviating from the DMAS assessment-code baseline) and Anthem HealthKeepers Plus\' published code/modifier/POS grid (GT telehealth on 97151/97153/97155/97156; school POS 03 on 97151/97155/97156). cigna-virginia intentionally ships NO PA panel: EN0499 excludes VA fully-insured business, so its codeGrid is plan-dependent/exclusion-honest rather than inventing PA verdicts. NEW JERSEY: read the NJMMIS/Gainwell 5010 270/271 companion guide (Dec 2022) in full — MCO enrollment surfaces in Loop 2110C (EB04=HM; REF01=18 → REF02 3-digit plan code, REF03 plan name) and Loop 2120C (NM101=PRP → NM103 MCO name/PER phone), the pre-selection FFS window is the documented basis for the no-PA-pending-enrollment fast-start, eligibility is real-time with a monthly guarantee; the 3-digit-code→MCO-name crosswalk is NOT in the guide (Appendix 3 lists only eligibility categories) so mcoCarrierCodes ships empty with a verifyVia. NJ FFS rates: 97153 $15.00 (raised from $11.20 eff 2/1/2022), 97155 $21.25, 97156 $25.00 confirmed CURRENT (NJMMIS Procedure Master Listing CY2026 Q2 via ProviderSpark); the remaining codes carry launch-era values from the Aetna Better Health NJ 2020 rate sheet (which reproduces the state MUE daily-unit table verbatim) with an unverified-as-current flag + a portal-download verifyVia. Corrected two carve-out assumptions from EDI research: Wellpoint\'s Carelon relationship is utilization-management ONLY (BH/ABA claims ride WLPNT via Availity; abaRidesOn=medical), and UHC Community Plan / UHC commercial use Optum for the BH network but claims ride the medical payer ID (87726) — both recorded abaRidesOn=medical, not bh. cigna-new-jersey (unlike cigna-virginia) ships a real EN0499 PA panel (no PA on 97151/97152/0362T; treatment PA required) since NJ has no carve-out. Verified payer IDs across all 18 guides against pVerify (Mar 2026) and the Optum/Change Healthcare professional-claims list; Availity IDs read only from the stale 2012 public snapshot ship inferred/unverified pending a current export.',
+    guides: [
+      'virginia-medicaid',
+      'aetna-better-health-virginia',
+      'anthem-healthkeepers-plus',
+      'humana-healthy-horizons-virginia',
+      'sentara-community-plan',
+      'unitedhealthcare-community-plan-virginia',
+      'aetna-virginia',
+      'cigna-virginia',
+      'unitedhealthcare-virginia',
+      'new-jersey-medicaid',
+      'horizon-nj-health',
+      'aetna-better-health-new-jersey',
+      'fidelis-care-new-jersey',
+      'unitedhealthcare-community-plan-new-jersey',
+      'wellpoint-new-jersey',
+      'aetna-new-jersey',
+      'cigna-new-jersey',
+      'unitedhealthcare-new-jersey',
+    ],
+    details: [
+      {
+        slug: 'virginia-medicaid',
+        field: 'rates.byCode',
+        change:
+          'Full DMAS licensure-tiered ABA fee schedule confirmed directly from the live DMAS CPT fee-file CSVs (all 10 codes, eff. 12/1/2021, still current): 97153 $15.00 tech / $23.48 LABA (HN) / $39.40 LMHP (TF) / $46.63 LBA (HO); QHP codes 97151/97155/97156 at $23.48/$39.40/$46.63; group/team codes 97154/97157/97158/0362T/0373T supplied at their distinct rates. Physician-fee-row trap confirmed and excluded.',
+        sourceUrl: 'https://www.dmas.virginia.gov/media/cptcodes/cptmedical4.csv',
+      },
+      {
+        slug: 'virginia-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'DMAS/MES 270/271 companion guide (v2.2, 7/1/2026) read in full: does NOT document a segment carrying the Cardinal Care MCO (2120C NM1 = TPL/commercial; MSG/2110C = 3-digit aid-category code); no carrier→MCO map published. Documented what IS specified (date-level query DTP01=291/472, real-time + batch, v2.2 adds DTP01=458 renewal date) and marked MCO placement unverified. Guide still names Conduent (not Acentra) as EDI fiscal agent — Acentra runs the separate FFS Atrezzo SA portal.',
+        sourceUrl: 'https://vamedicaid.dmas.virginia.gov/sites/default/files/2026-07/MES%20EDI%20270-271%20Companion%20Guide_R100_20220509-PK%202.pdf',
+      },
+      {
+        slug: 'humana-healthy-horizons-virginia',
+        field: 'codeGrid.0362T',
+        change:
+          "Preserved Humana's genuine deviation from the DMAS assessment-code baseline: its VA PA list (eff. 7/1/2025) flags 0362T as PA-required while 97151/97152 stay PA-free — carried honestly (PA-required) rather than normalized to the state rule.",
+        sourceUrl: 'https://assets.humana.com/is/content/humana/VA%20Medicaid%20PALpdf',
+      },
+      {
+        slug: 'cigna-virginia',
+        field: 'codeGrid',
+        change:
+          'No PA panel by design: the current EN0499 (eff. 5/15/2026) states verbatim that Virginia fully-insured business is not subject to the policy, so every codeGrid field ships plan-dependent/exclusion-honest (funding type first on a live benefits check) rather than inventing PA verdicts. EDI IDs (Evernorth 62308 pass-through) still provided.',
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+      {
+        slug: 'new-jersey-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'NJMMIS/Gainwell 5010 270/271 companion guide (Dec 2022) read in full: MCO enrollment in Loop 2110C (EB04=HM; REF01=18 → REF02 3-digit plan code, REF03 plan name) and Loop 2120C (NM101=PRP → NM103 MCO name/PER phone); pre-selection FFS window is the documented basis for the no-PA-pending-enrollment fast-start; real-time with a monthly guarantee. The 3-digit-code→MCO-name crosswalk is NOT in the guide (Appendix 3 = eligibility categories only) — mcoCarrierCodes ships empty with a verifyVia.',
+        sourceUrl: 'https://test.njmmis.com/downloadDocuments/5010_270-271_HIPAACompanionGuide.pdf',
+      },
+      {
+        slug: 'new-jersey-medicaid',
+        field: 'rates.byCode',
+        change:
+          'NJ FFS ABA rates: 97153 $15.00 (raised from $11.20 eff 2/1/2022), 97155 $21.25, 97156 $25.00 confirmed current (NJMMIS Procedure Master Listing CY2026 Q2). Remaining codes carry launch-era values from the Aetna Better Health NJ 2020 sheet (which reproduces the state daily-unit MUE table verbatim) with an unverified-as-current flag; the primary CY2026 listing is a portal download.',
+        sourceUrl: 'https://www.providerspark.com/for-providers/medicaid-rates/new-jersey/',
+      },
+      {
+        slug: 'wellpoint-new-jersey',
+        field: 'edi.bhCarveOut',
+        change:
+          'Corrected from an assumed Carelon claims carve-out: Carelon Behavioral Health provides utilization-management ONLY for Wellpoint NJ — BH/ABA claims still submit to WLPNT via Availity (no separate Carelon claims payer ID); abaRidesOn=medical. Change Healthcare uses the legacy Amerigroup-NJ line 28806 (270/271=N there), so the Availity/WLPNT path is preferred for eligibility.',
+        sourceUrl: 'https://www.provider.wellpoint.com/new-jersey-provider/claims/electronic-data-interchange',
+      },
+      {
+        slug: 'cigna-new-jersey',
+        field: 'codeGrid',
+        change:
+          "Unlike cigna-virginia, EN0499 APPLIES to NJ (no state carve-out): shipped a real PA panel — no PA on assessment codes 97151/97152/0362T, treatment PA required with the ABA PA form. EN0499 clarified as Evernorth's coverage-policy number, not a payer ID; claims route on 62308.",
+        sourceUrl: 'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
