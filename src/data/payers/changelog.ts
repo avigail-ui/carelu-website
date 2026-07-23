@@ -771,4 +771,11 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Layer 6 carve-out map populated: 110 rows across 19 states (plus 1 confirmed national-default row for Cigna/Evernorth). Extracted and structured from provider-manual facts already cited in src/data/payers/<state>.ts and the shipped vob/{georgia,north-carolina,florida,texas,new-york}.ts edi.bhCarveOut objects — no new primary-source research introduced. Covers: Cigna->Evernorth (62308, national default, with the Virginia fully-insured exception carved out separately); Anthem/Elevance->Carelon Behavioral Health (confirmed full carve-out for Simply Healthcare FL and Wellpoint NJ, inferred for Anthem BCBS GA, explicit no-carve-out for Healthy Blue NC and Wellpoint TX, and flagged as an unconfirmed gap for OH/TN/VA Anthem Medicaid plans); UnitedHealthcare->Optum Behavioral Health per state and line of business (verified payer ID 87726 for FL/NC, explicit BH-side carve-out with no medical-PA listing for TX Medicaid, UHG007 for NY commercial — flagged as an unresolved cross-file inconsistency against the 87726 figure, not silently reconciled); Maryland Medicaid -> Carelon BHASO (one statewide row covering all nine HealthChoice MCOs); the six MassHealth BH administrators (MBHP/Carelon for PCC+ACO+HNE, Carelon for Fallon, in-house for WellSense since 1/1/2026, internal UM for Tufts Health Together, Optum for Mass General Brigham Health Plan); Florida\'s TNFL full delegation (Community Care Plan) and the BSN network-credentialing-only pattern (Aetna Better Health FL, Florida Community Care); Colorado/Missouri/Utah statewide Medicaid FFS carve-outs (ABA removed from all MCOs regardless of carrier); New York\'s upstate/downstate MCOs (mostly in-house, cross-checked against vob/new-york.ts with no new contradictions beyond the payer-ID flag above); Ohio\'s OhioRISE reverse-carve-out (ABA explicitly excluded from the BH specialty plan). 57 of 110 rows carry an unverified administratorPayerId with a verifyVia note rather than a guessed value, per the never-guess rule.',
+    totals: { guides: 175, states: 19 },
+  },
 ];
