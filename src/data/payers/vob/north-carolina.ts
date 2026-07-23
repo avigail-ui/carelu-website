@@ -61,7 +61,8 @@
      that pre-4/1/2026 WellCare claims submitted to CCH's ID reject
      with "Mbr not valid on DOS."
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -74,6 +75,10 @@ function src(url: string, note?: string, staleRisk?: boolean): SourceRef {
 const NCTRACKS_270_271_CG = src(
   'https://www.nctracks.nc.gov/content/dam/jcr:b987d9f5-d230-4c81-b78b-05780eb0bbaf/270_271%20Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20(7).pdf',
   'NCTracks Companion Guide, Health Care Eligibility Benefit Inquiry and Response (270/271) ASC X12N005010X279A1, version dated April 2025 — read in full. 2110C EB loop (EB05, Appendix A) carries managed-care PLAN-TYPE codes (Standard/Tailored/Carve-out/Health Choice variants); the specific MCO name/contact comes back dynamically in the 2120C NM1/PER loop, not from a fixed carrier-code table. Designed as a real-time, CAQH-CORE-compliant exchange (§1.2); eligibility inquiries may span up to 36 months history in 1-12 month segments, with Medicaid (DHB) allowing lookahead through the end of the next month.'
+);
+const NCTRACKS_DMH_EXCLUSION = src(
+  'https://www.nctracks.nc.gov/content/dam/jcr:b987d9f5-d230-4c81-b78b-05780eb0bbaf/270_271%20Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20(7).pdf',
+  'Same NCTracks Companion Guide URL as NCTRACKS_270_271_CG, re-read for its behavioral-health/STC content this pass — the currently-served copy is dated September 2023 per its own footer, not April 2025 as originally cited; flagged, not corrected, since the original citation may reflect a since-superseded version. §7.2 "Eligibility Returned" states verbatim: "Division of Mental Health (DMH) information is not returned. That information is available through the Local Managing Entity (LME)." §7.5 repeats: "Eligibility information is not returned for benefit plans that are covered by DMH." NC Medicaid RB-BHT/ABA sits within DMH\'s purview for the Tailored Plan / LME-MCO population specifically (Alliance, Trillium, Vaya, Partners) — this is a state-architecture fact, not a guess: NCTracks\' own 271 explicitly excludes it and names the LME as the correct source.'
 );
 const PVERIFY_PAYER_LIST = src(
   'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
@@ -1456,6 +1461,89 @@ const unitedhealthcareCodeGridNC: Record<string, CodeGridEntry> = {
   '0373T': uhcEntryNC('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   NCTracks explicitly and verifiably does NOT return DMH (behavioral health,
+   which RB-BHT/ABA falls under for the LME-MCO population) in its 271 —
+   §7.2/§7.5 of NCTRACKS_DMH_EXCLUSION state this outright and name the LME as
+   the correct source instead. That is itself the verified fact for
+   north-carolina-medicaid: quality271Score ships 'low' (verified-absent, not
+   a guess) rather than 'unverified'. Standard Plan MCOs administer RB-BHT
+   in-house (no statewide carve-out, per docs/vob-build.md-adjacent NC prose
+   already in this file) and run their own EDI systems separate from
+   NCTracks — no MCO-specific 270/271 STC document was located, so those ship
+   'unverified'. The 4 Tailored Plans (Alliance, Trillium, Vaya, Partners) are
+   themselves the LME-MCOs NCTracks defers DMH/BH eligibility to — noted in
+   verifyVia as useful context — but no plan-specific STC document was found
+   for them either, so they also ship 'unverified' rather than inferred. */
+
+const northCarolinaMedicaidStc: StcMap = {
+  abaBenefitBucket: 'unverified',
+  deductibleAppliesToAba: 'unverified',
+  costShareType: 'unverified',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'low',
+  fieldStatus: {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'verified',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      'NCTracks explicitly excludes DMH (behavioral health) benefit information from its 271 response and names the Local Managing Entity (LME) as the correct source (NCTRACKS_DMH_EXCLUSION §7.2/§7.5) — for NC Medicaid Direct FFS members, no STC bucket in the NCTracks 271 carries ABA benefit detail at all. Confirm eligibility via the member\'s assigned LME-MCO directly.',
+  },
+  sources: [NCTRACKS_DMH_EXCLUSION],
+};
+
+function ncStandardPlanUnverifiedStc(planName: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `${planName} administers RB-BHT/ABA in-house (no statewide carve-out) and runs its own EDI system separate from NCTracks, which itself excludes behavioral-health info from its 271 (NCTRACKS_DMH_EXCLUSION). No ${planName}-specific 270/271 STC document was located. Confirm via ${planName}'s own EDI/provider services.`,
+    },
+    sources: [NCTRACKS_DMH_EXCLUSION],
+  };
+}
+
+function ncTailoredPlanUnverifiedStc(planName: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `${planName} is the LME-MCO NCTracks itself defers DMH/behavioral-health eligibility to for its region (NCTRACKS_DMH_EXCLUSION §7.2) — it is the correct source of truth for RB-BHT/ABA, but no ${planName}-specific 270/271 STC document was located to confirm which bucket/fields it populates. Confirm via ${planName}'s own EDI/provider services.`,
+    },
+    sources: [NCTRACKS_DMH_EXCLUSION],
+  };
+}
+
 /* ==================== export ====================
    SPLIT A (NC Medicaid Direct + 5 Standard Plans) and SPLIT B
    (4 Tailored Plans + 3 commercial) landed concurrently from two
@@ -1470,44 +1558,89 @@ export const northCarolinaVob: Record<string, VobExtension> = {
     edi: northCarolinaMedicaidEdi,
     codeGrid: northCarolinaMedicaidCodeGrid,
     rates: northCarolinaMedicaidRates,
+    stcMap: northCarolinaMedicaidStc,
     lastUpdated: ACCESS_DATE,
   },
   'healthy-blue-north-carolina': {
     edi: healthyBlueEdi,
     codeGrid: healthyBlueCodeGrid,
     rates: healthyBlueRates,
+    stcMap: ncStandardPlanUnverifiedStc('Healthy Blue'),
     lastUpdated: ACCESS_DATE,
   },
   'amerihealth-caritas-north-carolina': {
     edi: amerihealthEdi,
     codeGrid: amerihealthCodeGrid,
     rates: amerihealthRates,
+    stcMap: ncStandardPlanUnverifiedStc('AmeriHealth Caritas North Carolina'),
     lastUpdated: ACCESS_DATE,
   },
   'carolina-complete-health': {
     edi: carolinaCompleteHealthEdi,
     codeGrid: carolinaCompleteHealthCodeGrid,
     rates: carolinaCompleteHealthRates,
+    stcMap: ncStandardPlanUnverifiedStc('Carolina Complete Health'),
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-north-carolina': {
     edi: unitedhealthcareCommunityPlanEdi,
     codeGrid: unitedhealthcareCommunityPlanCodeGrid,
     rates: unitedhealthcareCommunityPlanRates,
+    stcMap: ncStandardPlanUnverifiedStc('UnitedHealthcare Community Plan of North Carolina'),
     lastUpdated: ACCESS_DATE,
   },
   'wellcare-north-carolina': {
     edi: wellcareEdi,
     codeGrid: wellcareCodeGrid,
     rates: wellcareRates,
+    stcMap: ncStandardPlanUnverifiedStc('WellCare of North Carolina'),
     lastUpdated: ACCESS_DATE,
   },
   // ---- SPLIT B: Tailored Plans + commercial ----
-  'alliance-health-north-carolina': { edi: allianceEdi, codeGrid: allianceCodeGrid(), rates: allianceRates, lastUpdated: ACCESS_DATE },
-  'trillium-health-resources': { edi: trilliumEdi, codeGrid: trilliumCodeGrid(), rates: trilliumRates, lastUpdated: ACCESS_DATE },
-  'vaya-health': { edi: vayaEdi, codeGrid: vayaCodeGrid(), rates: vayaRates, lastUpdated: ACCESS_DATE },
-  'partners-health-management': { edi: partnersEdi, codeGrid: partnersCodeGrid(), rates: partnersRates, lastUpdated: ACCESS_DATE },
-  'aetna-north-carolina': { edi: aetnaEdiNC, codeGrid: aetnaCodeGridNC, lastUpdated: ACCESS_DATE },
-  'cigna-north-carolina': { edi: cignaEdiNC, codeGrid: cignaCodeGridNC, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-north-carolina': { edi: unitedhealthcareEdiNC, codeGrid: unitedhealthcareCodeGridNC, lastUpdated: ACCESS_DATE },
+  'alliance-health-north-carolina': {
+    edi: allianceEdi,
+    codeGrid: allianceCodeGrid(),
+    rates: allianceRates,
+    stcMap: ncTailoredPlanUnverifiedStc('Alliance Health'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'trillium-health-resources': {
+    edi: trilliumEdi,
+    codeGrid: trilliumCodeGrid(),
+    rates: trilliumRates,
+    stcMap: ncTailoredPlanUnverifiedStc('Trillium Health Resources'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'vaya-health': {
+    edi: vayaEdi,
+    codeGrid: vayaCodeGrid(),
+    rates: vayaRates,
+    stcMap: ncTailoredPlanUnverifiedStc('Vaya Health'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'partners-health-management': {
+    edi: partnersEdi,
+    codeGrid: partnersCodeGrid(),
+    rates: partnersRates,
+    stcMap: ncTailoredPlanUnverifiedStc('Partners Health Management'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'aetna-north-carolina': {
+    edi: aetnaEdiNC,
+    codeGrid: aetnaCodeGridNC,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no North Carolina-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-north-carolina': {
+    edi: cignaEdiNC,
+    codeGrid: cignaCodeGridNC,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no North Carolina-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-north-carolina': {
+    edi: unitedhealthcareEdiNC,
+    codeGrid: unitedhealthcareCodeGridNC,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no North Carolina-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
 };

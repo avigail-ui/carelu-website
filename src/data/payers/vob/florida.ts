@@ -190,7 +190,8 @@
      than independently reconfirmed this pass) — a real correction
      made during the merge, not a silent copy of the pre-merge value.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -208,6 +209,11 @@ const FLMMIS_270_271_CG = src(
 const FLMMIS_CG_INDEX = src(
   'https://portal.flmmis.com/FLPublic/Provider_ProviderServices/Provider_EDI/Provider_EDI_CompanionGuides/tabId/62/Default.aspx',
   'FLMMIS companion guide index page listing all current EDI companion guides and versions.'
+);
+const FLMMIS_STC_APPENDIX = src(
+  'https://portal.flmmis.com/FLPublic/Portals/0/StaticContent/Public/COMPANION%20GUIDES/FMMIS_5010_270_271_Companion%20Guide_v4_0_04272023.pdf',
+  'Same FLMMIS 270/271 Companion Guide v4.0 as FLMMIS_270_271_CG, re-read for its service-type-code (STC) content this pass. Appendix A.6 "CORE-Required Service Codes" lists MH (Mental Health) among the 13 codes Florida Medicaid must return recipient financial info for on a GENERIC 271 response (alongside 1, 30, 33, 35, 47, 48, 50, 86, 88, 98, AL, UC); Appendix A.7 "Valid Explicit Inquiry Codes" separately lists A6 (Psychotherapy), A7/A8 (Psychiatric In/Outpatient), AI (Substance Abuse) as explicit-inquiry-only. The worked 271 transmission example (Appendix A.4) shows real EB segments bundling MH with the other CORE-required codes for both coinsurance ("EB*A*IND*1^33^47^48^56^86^88^98^MH^UC*****0.00") and copayment ("EB*B*IND*1^86^88^MH^UC****0.00"); the deductible segment in the same example ("EB*C*IND*30**FP...*25*0.00") is tied only to STC 30, never to MH.',
+  true
 );
 const AHCA_FEE_SCHEDULE_2025 = src(
   'https://ahca.myflorida.com/content/download/26138/file/2025%20Behavior%20Analysis%20Fee%20Schedule.pdf',
@@ -1520,40 +1526,114 @@ const unitedhealthcareFlCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcFlCodeEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   Florida Medicaid's own 271 richness is directly confirmed (FLMMIS_STC_APPENDIX):
+   MH is a CORE-required generic code with real coinsurance/copay detail in the
+   guide's own worked example. The 8 Medicaid MCOs below run their own EDI payer
+   IDs (Layer 1) rather than the FLMMIS feed, so that richness does NOT transfer
+   automatically — each ships 'unverified' with a verifyVia note contrasting it
+   against the confirmed state baseline, per the "never guess" rule. */
+
+const floridaMedicaidStc: StcMap = {
+  abaBenefitBucket: 'MH',
+  deductibleAppliesToAba: 'unverified',
+  costShareType: 'plan-dependent',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'high',
+  fieldStatus: {
+    abaBenefitBucket: 'verified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'verified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'verified',
+  },
+  verifyVia: {
+    deductibleAppliesToAba:
+      "The guide's own worked 271 example ties the deductible EB segment (EB*C) only to STC 30, never bundling MH into it the way the coinsurance/copay segments do — suggestive of 'no', but only one example was reviewed; confirm via Florida Medicaid provider services before relying on it.",
+    copayUnit: 'Not addressed by the companion guide (an EDI/transaction-format document) — confirm via the AHCA BA Coverage Policy or provider services.',
+    oopMaxApplies: 'Not addressed by the companion guide — confirm via the AHCA BA Coverage Policy or provider services.',
+  },
+  sources: [FLMMIS_STC_APPENDIX],
+};
+
+function flMcoUnverifiedStc(planName: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `${planName} runs its own EDI payer ID (Layer 1) rather than the FLMMIS feed — Florida Medicaid's own confirmed richness (MH is CORE-required with real coinsurance/copay detail, FLMMIS_STC_APPENDIX) does not transfer automatically. Confirm via ${planName}'s own EDI/provider services.`,
+    },
+    sources: [FLMMIS_STC_APPENDIX],
+  };
+}
+
 /* ==================== export ==================== */
 
 export const floridaVob: Record<string, VobExtension> = {
-  'florida-medicaid': { edi: floridaMedicaidEdi, codeGrid: floridaMedicaidCodeGrid, rates: floridaMedicaidRates, lastUpdated: ACCESS_DATE },
-  'sunshine-health-florida': { edi: sunshineEdi, codeGrid: sunshineCodeGrid, lastUpdated: ACCESS_DATE },
-  'cms-health-plan-florida': { edi: cmsHealthPlanEdi, codeGrid: sunshineCodeGrid, lastUpdated: ACCESS_DATE },
-  'simply-healthcare-florida': { edi: simplyEdi, codeGrid: simplyCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-florida': { edi: uhcCommunityPlanEdi, codeGrid: uhcCodeGrid, lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-florida': { edi: humanaEdi, codeGrid: humanaCodeGrid, lastUpdated: ACCESS_DATE },
+  'florida-medicaid': { edi: floridaMedicaidEdi, codeGrid: floridaMedicaidCodeGrid, rates: floridaMedicaidRates, stcMap: floridaMedicaidStc, lastUpdated: ACCESS_DATE },
+  'sunshine-health-florida': { edi: sunshineEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('Sunshine Health'), lastUpdated: ACCESS_DATE },
+  'cms-health-plan-florida': { edi: cmsHealthPlanEdi, codeGrid: sunshineCodeGrid, stcMap: flMcoUnverifiedStc('CMS Health Plan'), lastUpdated: ACCESS_DATE },
+  'simply-healthcare-florida': { edi: simplyEdi, codeGrid: simplyCodeGrid, stcMap: flMcoUnverifiedStc('Simply Healthcare'), lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-florida': { edi: uhcCommunityPlanEdi, codeGrid: uhcCodeGrid, stcMap: flMcoUnverifiedStc('UnitedHealthcare Community Plan of Florida'), lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-florida': { edi: humanaEdi, codeGrid: humanaCodeGrid, stcMap: flMcoUnverifiedStc('Humana Healthy Horizons'), lastUpdated: ACCESS_DATE },
   'aetna-better-health-florida': {
     edi: aetnaBetterHealthFlEdi,
     codeGrid: aetnaBetterHealthFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No ABHFL-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    stcMap: flMcoUnverifiedStc('Aetna Better Health of Florida'),
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-florida': {
     edi: molinaFlEdi,
     codeGrid: molinaFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No Molina-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    stcMap: flMcoUnverifiedStc('Molina Healthcare of Florida'),
     lastUpdated: ACCESS_DATE,
   },
   'community-care-plan-florida': {
     edi: communityCarePlanFlEdi,
     codeGrid: communityCarePlanFlCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. TNFL's own BA manual defers explicitly to "the Florida BA Fee Schedule" without restating rates — this table is that state schedule, used as the reference baseline.` },
+    stcMap: flMcoUnverifiedStc('Community Care Plan (Therapy Network of Florida)'),
     lastUpdated: ACCESS_DATE,
   },
   'florida-community-care': {
     edi: floridaCommunityCareEdi,
     codeGrid: floridaCommunityCareCodeGrid,
     rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No FCC-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    stcMap: flMcoUnverifiedStc('Florida Community Care'),
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-florida': { edi: aetnaFlEdi, codeGrid: aetnaFlCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-florida': { edi: cignaFlEdi, codeGrid: cignaFlCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-florida': { edi: unitedhealthcareFlEdi, codeGrid: unitedhealthcareFlCodeGrid, lastUpdated: ACCESS_DATE },
+  'aetna-florida': {
+    edi: aetnaFlEdi,
+    codeGrid: aetnaFlCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Florida-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-florida': {
+    edi: cignaFlEdi,
+    codeGrid: cignaFlCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Florida-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-florida': {
+    edi: unitedhealthcareFlEdi,
+    codeGrid: unitedhealthcareFlCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Florida-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
 };

@@ -71,7 +71,8 @@
      family, not a third-party BHO. That guide ships abaRidesOn: 'bh'
      accordingly; every other Medicaid MCO ships abaRidesOn: 'medical'.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -84,6 +85,11 @@ function src(url: string, note?: string, staleRisk?: boolean): SourceRef {
 const COMPANION_GUIDE_270_271 = src(
   'https://www.tmhp.com/sites/default/files/file-library/edi/D00026_270_271_Medicaid_CHIP_Eligibility_Companion_Guide.pdf',
   'Texas Medicaid & CHIP 270/271 HIPAA Transaction Standard Companion Guide, dated November 2024 (§1.2: "batch and real-time mode"; §6.1 ISA08 Interchange Receiver ID = 617591011TIELP; 2110C EB/REF and 2120C loop tables; Appendix 11.1 Managed Care Program Codes). Directly retrievable from tmhp.com — unlike hhs.texas.gov, not bot-blocked.'
+);
+const TMHP_STC_SECTIONS = src(
+  'https://www.tmhp.com/sites/default/files/file-library/edi/D00026_270_271_Medicaid_CHIP_Eligibility_Companion_Guide.pdf',
+  'Same companion guide as COMPANION_GUIDE_270_271, re-read for its service-type-code (STC) content this pass. §10.1 (2110C EQ01) and §10.2 (2110C EB03) both list an explicit supported-code set including MH, A6, A7, A8, AI (behavioral-health codes) alongside AD/AE/AF (OT/PT/speech) — "Texas Medicaid does not support service type codes other than those listed." §11.3\'s worked 270/271 transmission examples show real EB*A (coinsurance) and EB*B (copayment) segments bundling MH together with "1|30|33|35|47|48|50|75|86|88|98|AL|AM|UC" for BOTH the Medicaid-Direct and "Covered Managed Care"/STAR/CHIP/CSHCN EB segments — i.e., the SAME rich behavioral-health-inclusive STC bundle is returned for managed-care (MCO) members through this one state-run feed, not just Medicaid-Direct FFS. By contrast, the deductible segments (EB*C, both "Beginning" §23 and "Remaining" §29) are tied ONLY to STC 30 in every example, never bundled with MH.',
+  true
 );
 const TMPPM_HANDBOOK = src(
   'https://www.tmhp.com/sites/default/files/microsites/provider-manuals/tmppm/html/TMPPM/2_04_Childrens_Services/2_04_Childrens_Services.htm',
@@ -805,6 +811,42 @@ function uhcTxEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
   };
 }
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   TMHP's own worked 271 transmission examples (TMHP_STC_SECTIONS) show the
+   SAME rich MH-bundled STC set returned for "Covered Managed Care"/STAR/CHIP/
+   CSHCN EB segments as for Medicaid-Direct — Texas's centralized TMHP EDI
+   architecture means MCO members' eligibility rides the SAME state feed, not
+   a per-MCO one (unlike Florida/Georgia). All 8 MCO guides below therefore
+   inherit the state pattern as 'inferred' rather than shipping fully
+   'unverified' — still not 'verified' per-MCO, since no MCO-specific document
+   confirms it independently. */
+
+const texasMedicaidStc: StcMap = {
+  abaBenefitBucket: 'MH',
+  deductibleAppliesToAba: 'no',
+  costShareType: 'plan-dependent',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'high',
+  fieldStatus: {
+    abaBenefitBucket: 'verified',
+    deductibleAppliesToAba: 'verified',
+    costShareType: 'verified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'verified',
+  },
+  verifyVia: {
+    copayUnit: 'Not addressed by the companion guide (an EDI/transaction-format document) — confirm via provider services.',
+    oopMaxApplies: 'Not addressed by the companion guide — confirm via provider services.',
+  },
+  sources: [TMHP_STC_SECTIONS],
+};
+
+function txMcoInferredStc(planName: string): StcMap {
+  return inheritFamilyStc(texasMedicaidStc, `${planName}'s eligibility rides TMHP's own centralized 270/271 feed (Texas's architecture, confirmed by TMHP_STC_SECTIONS's worked "Covered Managed Care" example) rather than a per-MCO feed — inherited as 'inferred', not independently confirmed for this specific MCO.`);
+}
+
 /* ==================== export ==================== */
 
 export const texasVob: Record<string, VobExtension> = {
@@ -812,6 +854,7 @@ export const texasVob: Record<string, VobExtension> = {
     edi: texasMedicaidEdi,
     codeGrid: tmppmCodeGrid(),
     rates: TX_MEDICAID_RATES,
+    stcMap: texasMedicaidStc,
     lastUpdated: ACCESS_DATE,
   },
   'superior-healthplan-texas': {
@@ -820,6 +863,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Submit via Superior's provider portal; verify code-level PA status on Superior's Prior Authorization Requirements page (superiorhealthplan.com) — Superior's 1/1/2026 PA-removal list did not touch any ABA codes.",
     }),
     rates: mcoUnverifiedRates('Superior HealthPlan'),
+    stcMap: txMcoInferredStc('Superior HealthPlan'),
     lastUpdated: ACCESS_DATE,
   },
   'texas-childrens-health-plan': {
@@ -828,6 +872,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "TCHP's Guideline #11281 v3 restates this requirement nearly verbatim; submit to the UM Department via the electronic authorization portal, fax, phone, or mail.",
     }),
     rates: mcoUnverifiedRates("Texas Children's Health Plan"),
+    stcMap: txMcoInferredStc("Texas Children's Health Plan"),
     lastUpdated: ACCESS_DATE,
   },
   'wellpoint-texas': {
@@ -836,6 +881,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Wellpoint accepts its own ASD Treatment Plan Request Form OR the state CCP PA form; submit via Availity Essentials, phone, or fax.",
     }),
     rates: mcoUnverifiedRates('Wellpoint (formerly Amerigroup Texas)'),
+    stcMap: txMcoInferredStc('Wellpoint'),
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-texas': {
@@ -844,6 +890,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Routes through UHC's designated behavioral health network (Optum), phone 888-887-9003 — NOT the medical PA pipeline, even though the clinical criteria are the unchanged TMPPM baseline.",
     }),
     rates: mcoUnverifiedRates('UnitedHealthcare Community Plan of Texas'),
+    stcMap: txMcoInferredStc('UnitedHealthcare Community Plan of Texas'),
     lastUpdated: ACCESS_DATE,
   },
   'aetna-better-health-texas': {
@@ -852,6 +899,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Aetna Better Health of Texas's plan-specific submission mechanics (form, portal, UM fax/phone) are not publicly verifiable — its provider manual and PA pages return errors to automated retrieval. Confirm directly with provider relations before first submission.",
     }),
     rates: mcoUnverifiedRates('Aetna Better Health of Texas'),
+    stcMap: txMcoInferredStc('Aetna Better Health of Texas'),
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-texas': {
@@ -860,6 +908,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Molina directs providers to its Behavioral Health and Medical Prior Authorization Code Matrix / Look-Up Tool for code-level PA handling — its PA guide PDFs sit behind bot protection and were not independently verified this pass.",
     }),
     rates: mcoUnverifiedRates('Molina Healthcare of Texas'),
+    stcMap: txMcoInferredStc('Molina Healthcare of Texas'),
     lastUpdated: ACCESS_DATE,
   },
   'community-first-health-plans': {
@@ -868,6 +917,7 @@ export const texasVob: Record<string, VobExtension> = {
       '97151': "Community First's own Autism Services Billing Guidelines page restates this requirement directly, plus a published HO/HN/HM modifier crosswalk and concurrent-billing rules — one of the clearest MCO-published TMPPM digests in Texas.",
     }),
     rates: mcoUnverifiedRates('Community First Health Plans'),
+    stcMap: txMcoInferredStc('Community First Health Plans'),
     lastUpdated: ACCESS_DATE,
   },
   'driscoll-health-plan': {
@@ -880,21 +930,25 @@ export const texasVob: Record<string, VobExtension> = {
       '97157': driscollPortalCode('97157', 'PR Multiple Fam Group Bhv Tx Gdn Phys/QHP, EA 15 Min'),
     },
     rates: mcoUnverifiedRates('Driscoll Health Plan'),
+    stcMap: txMcoInferredStc('Driscoll Health Plan'),
     lastUpdated: ACCESS_DATE,
   },
   'aetna-texas': {
     edi: aetnaTxCommercialEdi,
     codeGrid: aetnaTxCommercialCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Texas-specific 270/271 STC document found.'),
     lastUpdated: ACCESS_DATE,
   },
   'cigna-texas': {
     edi: cignaTxCommercialEdi,
     codeGrid: cignaTxCommercialCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Texas-specific override found.'),
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-texas': {
     edi: uhcTxCommercialEdi,
     codeGrid: uhcTxCommercialCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Texas-specific override found.'),
     lastUpdated: ACCESS_DATE,
   },
 };

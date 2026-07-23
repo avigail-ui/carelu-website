@@ -35,7 +35,8 @@
      Reimbursement Policy (2022RP501A), applied here as 'inferred' since
      no GA-specific override could be confirmed.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, anthemFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -710,15 +711,73 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   GAMMIS's 270/271 Companion Guide content (which STCs it populates) is the
+   SAME document whose retrieval blocker is already documented above
+   (GAMMIS_COMPANION_GUIDE_INDEX) — an interactive ASP.NET postback link, not
+   a static URL. Its service-type-code support table could not be retrieved
+   this pass either, so georgia-medicaid and its 3 CMOs (which run their own
+   PA/eligibility but have no independently published 270/271 STC table of
+   their own) ship fully 'unverified' rather than guessed from another
+   state's pattern. */
+
+function gaUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `GAMMIS 5010 270-271 Companion Guide v2.19 is confirmed to exist but its service-type-code support table is not retrievable via automated means (same ASP.NET-postback blocker documented for medicaid271Notes). ${phoneNote}`,
+    },
+    sources: [GAMMIS_COMPANION_GUIDE_INDEX],
+  };
+}
+
+const georgiaMedicaidStc = gaUnverifiedStc('Confirm via GAMMIS provider services or the Gainwell EDI help desk.');
+const amerigroupStc = gaUnverifiedStc('Confirm via Amerigroup GA provider services.');
+const caresourceStc = gaUnverifiedStc('Confirm via CareSource GA provider services.');
+const peachStateStc = gaUnverifiedStc('Confirm via Peach State Health Plan provider services.');
+
 /* ==================== export ==================== */
 
 export const georgiaVob: Record<string, VobExtension> = {
-  'georgia-medicaid': { edi: georgiaMedicaidEdi, codeGrid: georgiaMedicaidCodeGrid, lastUpdated: ACCESS_DATE },
-  'amerigroup-georgia': { edi: amerigroupEdi, codeGrid: amerigroupCodeGrid, lastUpdated: ACCESS_DATE },
-  'caresource-georgia': { edi: caresourceEdi, codeGrid: caresourceCodeGrid, lastUpdated: ACCESS_DATE },
-  'peach-state-georgia': { edi: peachStateEdi, codeGrid: peachStateCodeGrid, lastUpdated: ACCESS_DATE },
-  'anthem-bcbs-georgia': { edi: anthemEdi, codeGrid: anthemCodeGrid, lastUpdated: ACCESS_DATE },
-  'aetna-georgia': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-georgia': { edi: cignaEdi, codeGrid: cignaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-georgia': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, lastUpdated: ACCESS_DATE },
+  'georgia-medicaid': { edi: georgiaMedicaidEdi, codeGrid: georgiaMedicaidCodeGrid, stcMap: georgiaMedicaidStc, lastUpdated: ACCESS_DATE },
+  'amerigroup-georgia': { edi: amerigroupEdi, codeGrid: amerigroupCodeGrid, stcMap: amerigroupStc, lastUpdated: ACCESS_DATE },
+  'caresource-georgia': { edi: caresourceEdi, codeGrid: caresourceCodeGrid, stcMap: caresourceStc, lastUpdated: ACCESS_DATE },
+  'peach-state-georgia': { edi: peachStateEdi, codeGrid: peachStateCodeGrid, stcMap: peachStateStc, lastUpdated: ACCESS_DATE },
+  'anthem-bcbs-georgia': {
+    edi: anthemEdi,
+    codeGrid: anthemCodeGrid,
+    stcMap: inheritFamilyStc(anthemFamilyStc, 'Inherited from the Anthem/Elevance family default (docs/vob-build.md Layer 2) — no Georgia-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'aetna-georgia': {
+    edi: aetnaEdi,
+    codeGrid: aetnaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Georgia-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-georgia': {
+    edi: cignaEdi,
+    codeGrid: cignaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Georgia-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-georgia': {
+    edi: unitedhealthcareEdi,
+    codeGrid: unitedhealthcareCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Georgia-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
 };

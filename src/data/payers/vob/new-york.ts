@@ -57,7 +57,8 @@
      already cited in the guide prose) verify them for New York
      directly.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, bcbsFamilyStc, inheritFamilyStc, CAQH_CORE_STC_VOCAB } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -680,7 +681,6 @@ const uhcNyCodeGrid: Record<string, CodeGridEntry> = {
   '0362T': uhcNyEntry('16 units/day (≤4 hrs)', []),
   '0373T': uhcNyEntry('32 units/day (≤8 hrs)', []),
 };
-
 
 /* ================================================================
    SPLIT A — new-york-medicaid + downstate MCOs (Layers 1+3+4).
@@ -1553,24 +1553,85 @@ const molinaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': molinaEntry(false),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   No plan-specific 270/271 companion guide was located for any of the 5
+   upstate MCOs, nor for new-york-medicaid's own STC/service-type-code
+   support (EMEDNY_COMPANION_GUIDE was read for its MMC-enrollment/loop
+   mechanics, not specifically re-checked for its STC table this pass), nor
+   for any of the 7 downstate MCOs. Excellus and Highmark (independent BCBS
+   licensees) inherit the BCBS family default (itself 'unverified' — no BCBS
+   Association reference guide or either plan's own companion guide was
+   locatable); MVP, CDPHP, Independent Health, and the 8 split-A guides are
+   not BCBS-affiliated and ship a standalone unverified map. */
+
+function nyMcoUnverifiedStc(planName: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `No ${planName}-specific 270/271 companion guide with a service-type-code support table was located publicly this pass. Confirm via ${planName}'s own EDI/provider services.`,
+    },
+    sources: [CAQH_CORE_STC_VOCAB],
+  };
+}
+
+const newYorkMedicaidStc: StcMap = nyMcoUnverifiedStc('eMedNY/NYS Medicaid');
+
 /* ==================== export ==================== */
 
 export const newYorkVob: Record<string, VobExtension> = {
-  'excellus-bcbs-new-york': { edi: excellusEdi, codeGrid: excellusCodeGrid, lastUpdated: ACCESS_DATE },
-  'mvp-health-plan-new-york': { edi: mvpEdi, codeGrid: mvpCodeGrid, lastUpdated: ACCESS_DATE },
-  'cdphp-new-york': { edi: cdphpEdi, codeGrid: cdphpCodeGrid, lastUpdated: ACCESS_DATE },
-  'independent-health-new-york': { edi: independentHealthEdi, codeGrid: independentHealthCodeGrid, lastUpdated: ACCESS_DATE },
-  'highmark-western-new-york': { edi: highmarkWnyEdi, codeGrid: highmarkCodeGrid, lastUpdated: ACCESS_DATE },
-  'aetna-new-york': { edi: aetnaNyEdi, codeGrid: aetnaNyCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-new-york': { edi: cignaNyEdi, codeGrid: cignaNyCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-new-york': { edi: uhcNyEdi, codeGrid: uhcNyCodeGrid, lastUpdated: ACCESS_DATE },
+  'excellus-bcbs-new-york': {
+    edi: excellusEdi,
+    codeGrid: excellusCodeGrid,
+    stcMap: inheritFamilyStc(bcbsFamilyStc, 'Inherited from the independent-BCBS-licensee family default (docs/vob-build.md Layer 2) — no Excellus-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'mvp-health-plan-new-york': { edi: mvpEdi, codeGrid: mvpCodeGrid, stcMap: nyMcoUnverifiedStc('MVP Health Plan'), lastUpdated: ACCESS_DATE },
+  'cdphp-new-york': { edi: cdphpEdi, codeGrid: cdphpCodeGrid, stcMap: nyMcoUnverifiedStc('CDPHP'), lastUpdated: ACCESS_DATE },
+  'independent-health-new-york': { edi: independentHealthEdi, codeGrid: independentHealthCodeGrid, stcMap: nyMcoUnverifiedStc('Independent Health'), lastUpdated: ACCESS_DATE },
+  'highmark-western-new-york': {
+    edi: highmarkWnyEdi,
+    codeGrid: highmarkCodeGrid,
+    stcMap: inheritFamilyStc(bcbsFamilyStc, 'Inherited from the independent-BCBS-licensee family default (docs/vob-build.md Layer 2) — no Highmark WNY-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'aetna-new-york': {
+    edi: aetnaNyEdi,
+    codeGrid: aetnaNyCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no New York-specific 270/271 STC document found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-new-york': {
+    edi: cignaNyEdi,
+    codeGrid: cignaNyCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no New York-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-new-york': {
+    edi: uhcNyEdi,
+    codeGrid: uhcNyCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no New York-specific override found.'),
+    lastUpdated: ACCESS_DATE,
+  },
 
-  'new-york-medicaid': { edi: newYorkMedicaidEdi, codeGrid: newYorkMedicaidCodeGrid, rates: newYorkMedicaidRates, lastUpdated: ACCESS_DATE },
-  'fidelis-care-new-york': { edi: fidelisEdi, codeGrid: fidelisCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-new-york': { edi: uhcCommunityPlanEdi, codeGrid: uhcCommunityPlanCodeGrid, lastUpdated: ACCESS_DATE },
-  'anthem-healthplus-new-york': { edi: anthemHealthPlusEdi, codeGrid: anthemHealthPlusCodeGrid, lastUpdated: ACCESS_DATE },
-  'healthfirst-new-york': { edi: healthfirstEdi, codeGrid: healthfirstCodeGrid, lastUpdated: ACCESS_DATE },
-  'metroplus-health-new-york': { edi: metroplusEdi, codeGrid: metroplusCodeGrid, lastUpdated: ACCESS_DATE },
-  'emblemhealth-new-york': { edi: emblemhealthEdi, codeGrid: emblemhealthCodeGrid, lastUpdated: ACCESS_DATE },
-  'molina-healthcare-new-york': { edi: molinaEdi, codeGrid: molinaCodeGrid, lastUpdated: ACCESS_DATE },
+  'new-york-medicaid': { edi: newYorkMedicaidEdi, codeGrid: newYorkMedicaidCodeGrid, rates: newYorkMedicaidRates, stcMap: newYorkMedicaidStc, lastUpdated: ACCESS_DATE },
+  'fidelis-care-new-york': { edi: fidelisEdi, codeGrid: fidelisCodeGrid, stcMap: nyMcoUnverifiedStc('Fidelis Care'), lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-new-york': { edi: uhcCommunityPlanEdi, codeGrid: uhcCommunityPlanCodeGrid, stcMap: nyMcoUnverifiedStc('UnitedHealthcare Community Plan of New York'), lastUpdated: ACCESS_DATE },
+  'anthem-healthplus-new-york': { edi: anthemHealthPlusEdi, codeGrid: anthemHealthPlusCodeGrid, stcMap: nyMcoUnverifiedStc('Anthem HealthPlus'), lastUpdated: ACCESS_DATE },
+  'healthfirst-new-york': { edi: healthfirstEdi, codeGrid: healthfirstCodeGrid, stcMap: nyMcoUnverifiedStc('Healthfirst'), lastUpdated: ACCESS_DATE },
+  'metroplus-health-new-york': { edi: metroplusEdi, codeGrid: metroplusCodeGrid, stcMap: nyMcoUnverifiedStc('MetroPlus Health'), lastUpdated: ACCESS_DATE },
+  'emblemhealth-new-york': { edi: emblemhealthEdi, codeGrid: emblemhealthCodeGrid, stcMap: nyMcoUnverifiedStc('EmblemHealth'), lastUpdated: ACCESS_DATE },
+  'molina-healthcare-new-york': { edi: molinaEdi, codeGrid: molinaCodeGrid, stcMap: nyMcoUnverifiedStc('Molina Healthcare of New York'), lastUpdated: ACCESS_DATE },
 };

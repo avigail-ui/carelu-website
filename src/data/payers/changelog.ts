@@ -775,6 +775,53 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     date: '2026-07-23',
     type: 'vob-enrichment',
     summary:
+      'Layer 2 STC maps: family defaults + attached to 62 enriched guides',
+    guides: [
+      'georgia-medicaid', 'amerigroup-georgia', 'caresource-georgia', 'peach-state-georgia', 'anthem-bcbs-georgia', 'aetna-georgia', 'cigna-georgia', 'unitedhealthcare-georgia',
+      'florida-medicaid', 'sunshine-health-florida', 'cms-health-plan-florida', 'simply-healthcare-florida', 'unitedhealthcare-community-plan-florida', 'humana-healthy-horizons-florida', 'aetna-better-health-florida', 'molina-healthcare-florida', 'community-care-plan-florida', 'florida-community-care', 'aetna-florida', 'cigna-florida', 'unitedhealthcare-florida',
+      'north-carolina-medicaid', 'healthy-blue-north-carolina', 'amerihealth-caritas-north-carolina', 'carolina-complete-health', 'unitedhealthcare-community-plan-north-carolina', 'wellcare-north-carolina', 'alliance-health-north-carolina', 'trillium-health-resources', 'vaya-health', 'partners-health-management', 'aetna-north-carolina', 'cigna-north-carolina', 'unitedhealthcare-north-carolina',
+      'texas-medicaid', 'superior-healthplan-texas', 'texas-childrens-health-plan', 'wellpoint-texas', 'unitedhealthcare-community-plan-texas', 'aetna-better-health-texas', 'molina-healthcare-texas', 'community-first-health-plans', 'driscoll-health-plan', 'aetna-texas', 'cigna-texas', 'unitedhealthcare-texas',
+      'excellus-bcbs-new-york', 'mvp-health-plan-new-york', 'cdphp-new-york', 'independent-health-new-york', 'highmark-western-new-york', 'aetna-new-york', 'cigna-new-york', 'unitedhealthcare-new-york',
+      'new-york-medicaid', 'fidelis-care-new-york', 'unitedhealthcare-community-plan-new-york', 'anthem-healthplus-new-york', 'healthfirst-new-york', 'metroplus-health-new-york', 'emblemhealth-new-york', 'molina-healthcare-new-york',
+    ],
+    details: [
+      {
+        slug: '_family-defaults',
+        field: 'vob/stc-defaults.ts',
+        change:
+          "Layer 2 (docs/vob-build.md): built family-level StcMap defaults for the 5 major commercial carriers from each family's own published 270/271 companion guide, with the public X12 STC vocabulary (CAQH CORE Eligibility & Benefits Data Content Rule vEB.2.0, Appendix 5.1) as the shared reference — notably, that rule documents MH/A4-A8/AI/AJ/AK as CAQH-CORE 'discretionary' specifically for behavioral-health privacy reasons, which is the primary-source explanation for why ABA cost-share detail is often thin on the wire even when a payer 'supports' the code. Cigna (Companion Guide v2.3, Aug 2024) and UnitedHealthcare (v9.0, Feb 2025) both fetched and read in full: both explicitly support MH/A4-A8/AI/AJ/AK with real financial detail (quality271Score 'high'); Cigna's guide additionally documents an MH-specific limitation (remaining deductible/benefit amounts withheld for Mental Health/Pharmacy/Vision plans) and a distinct 'Cigna Behavioral Health' response entity for MH-flavored requests. Aetna, Anthem/Elevance, and the independent-BCBS-licensee family default all ship honestly 'unverified': no commercial-line 270/271 companion guide with an STC table could be located publicly for any of the three (only an unrelated Aetna Medicare Supplement product's guide was found) — Availity Payer Spaces, where this documentation likely lives, requires authenticated access this pass did not have.",
+      },
+      {
+        slug: 'florida-medicaid',
+        field: 'stcMap',
+        change:
+          "Confirmed via the FLMMIS 270/271 Companion Guide (v4.0, already cited in this corpus for Layer 1): MH is one of 13 CORE-required generic-inquiry service codes (Appendix A.6), and the guide's own worked 271 example bundles MH with coinsurance and copayment segments — abaBenefitBucket 'MH', quality271Score 'high'. The same example ties the deductible segment only to STC 30, never MH — noted via verifyVia rather than asserted as 'no' from a single example.",
+      },
+      {
+        slug: 'texas-medicaid',
+        field: 'stcMap',
+        change:
+          "Confirmed via the TMHP 270/271 Companion Guide (Nov 2024, already cited for Layer 1): §10.1/§10.2 explicitly list MH among the state's supported STC set, and the worked transmission examples repeat the identical MH-bundled coinsurance/copay pattern for BOTH Medicaid-Direct AND 'Covered Managed Care'/STAR/CHIP/CSHCN segments — meaning Texas's centralized TMHP EDI architecture returns the same rich behavioral-health-inclusive detail for MCO members as for FFS. On that basis, all 8 TX Medicaid MCO guides inherit texas-medicaid's stcMap as 'inferred' rather than shipping fully 'unverified', a treatment not applied to any other state's MCOs in this build. Deductible segments are, as in Florida, tied only to STC 30 across every example — here confirmed as 'no' rather than left unverified, since the pattern repeats consistently.",
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'stcMap',
+        change:
+          "The NCTracks 270/271 Companion Guide (already cited for Layer 1) states outright, twice (§7.2, §7.5): \"Division of Mental Health (DMH) information is not returned. That information is available through the Local Managing Entity (LME).\" Since NC's RB-BHT/ABA benefit sits within DMH's purview for the LME-MCO population, this is a verified-ABSENT finding, not a gap — quality271Score ships 'low' with fieldStatus 'verified' on that specific field. The 4 Tailored Plans (Alliance, Trillium, Vaya, Partners) are the LME-MCOs this exclusion points to; each guide's verifyVia notes that context even though no plan-specific STC document was found to confirm what they themselves return.",
+      },
+      {
+        slug: '_new-york-split-a',
+        field: 'stcMap',
+        change:
+          "This build's own new-york.ts split was rebased against a concurrent session's New York split A (new-york-medicaid + 7 downstate MCOs), which landed after this build's stcMap work began. Rather than ship the 8 newly-arrived guides without Layer 2 coverage, all 8 were given stcMap on merge (bringing the total from 54 to 62): new-york-medicaid ships 'unverified' (eMedNY's companion guide was read for MMC-enrollment mechanics by the concurrent session, not specifically re-checked for its own STC/service-type-code support table this pass) and the 7 downstate MCOs (Fidelis, UnitedHealthcare Community Plan, Anthem HealthPlus, Healthfirst, MetroPlus, EmblemHealth, Molina) each ship 'unverified' with a plan-specific verifyVia, consistent with every other state's Medicaid-MCO treatment in this build.",
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
       'Layer 6 carve-out map populated: 111 rows across 19 states (plus 1 confirmed national-default row for Cigna/Evernorth). Extracted and structured from provider-manual facts already cited in src/data/payers/<state>.ts and the shipped vob/{georgia,north-carolina,florida,texas,new-york}.ts edi.bhCarveOut objects — no new primary-source research introduced. Covers: Cigna->Evernorth (62308, national default, with the Virginia fully-insured exception carved out separately); Anthem/Elevance->Carelon Behavioral Health (confirmed full carve-out for Simply Healthcare FL and Wellpoint NJ, inferred for Anthem BCBS GA, explicit no-carve-out for Healthy Blue NC and Wellpoint TX, and flagged as an unconfirmed gap for OH/TN/VA Anthem Medicaid plans); UnitedHealthcare->Optum Behavioral Health per state and line of business (verified payer ID 87726 for FL/NC, explicit BH-side carve-out for both NY and TX Medicaid Community Plans, UHG007 for NY commercial — flagged as an unresolved cross-file inconsistency against the 87726 figure, not silently reconciled, alongside the NY Medicaid Community Plan\'s own NYU01-vs-87726 conflict already documented in vob/new-york.ts); Maryland Medicaid -> Carelon BHASO (one statewide row covering all nine HealthChoice MCOs); the six MassHealth BH administrators (MBHP/Carelon for PCC+ACO+HNE, Carelon for Fallon, in-house for WellSense since 1/1/2026, internal UM for Tufts Health Together, Optum for Mass General Brigham Health Plan); Florida\'s TNFL full delegation (Community Care Plan) and the BSN network-credentialing-only pattern (Aetna Better Health FL, Florida Community Care); Colorado/Missouri/Utah statewide Medicaid FFS carve-outs (ABA removed from all MCOs regardless of carrier); New York\'s upstate/downstate MCOs, reconciled against the vob/new-york.ts Layers 1+3 data that shipped in a parallel session while this work was in progress (Healthfirst and MetroPlus corrected from "unverified" to verified in-house/in-sourced-from-Beacon facts; EmblemHealth\'s Carelon administrator upgraded from inferred to verified with abaRidesOn still unverified; Fidelis downgraded from an assumed "none" to "unverified" per the shipped guide\'s more conservative treatment) — one contradiction found and flagged rather than silently resolved: this build\'s own NY research read named eviCore (ended 9/1/2021) as Molina NY\'s prior BH vendor, while the freshly-shipped vob fact names Beacon Health Options (ended 1/1/2022); Ohio\'s OhioRISE reverse-carve-out (ABA explicitly excluded from the BH specialty plan). 55 of 111 rows carry an unverified administratorPayerId with a verifyVia note rather than a guessed value, per the never-guess rule.',
     totals: { guides: 175, states: 19 },
   },
