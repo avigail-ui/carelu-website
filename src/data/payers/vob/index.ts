@@ -12,6 +12,8 @@ import { northCarolinaVob } from './north-carolina.js';
 import { floridaVob } from './florida.js';
 import { texasVob } from './texas.js';
 import { newYorkVob } from './new-york.js';
+import { coloradoVob } from './colorado.js';
+import { utahVob } from './utah.js';
 
 export const vob: Record<string, VobExtension> = {
   ...georgiaVob,
@@ -19,5 +21,7 @@ export const vob: Record<string, VobExtension> = {
   ...floridaVob,
   ...texasVob,
   ...newYorkVob,
+  ...coloradoVob,
+  ...utahVob,
   // ... as further states are delivered
 };

@@ -825,4 +825,51 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
       'Layer 6 carve-out map populated: 111 rows across 19 states (plus 1 confirmed national-default row for Cigna/Evernorth). Extracted and structured from provider-manual facts already cited in src/data/payers/<state>.ts and the shipped vob/{georgia,north-carolina,florida,texas,new-york}.ts edi.bhCarveOut objects — no new primary-source research introduced. Covers: Cigna->Evernorth (62308, national default, with the Virginia fully-insured exception carved out separately); Anthem/Elevance->Carelon Behavioral Health (confirmed full carve-out for Simply Healthcare FL and Wellpoint NJ, inferred for Anthem BCBS GA, explicit no-carve-out for Healthy Blue NC and Wellpoint TX, and flagged as an unconfirmed gap for OH/TN/VA Anthem Medicaid plans); UnitedHealthcare->Optum Behavioral Health per state and line of business (verified payer ID 87726 for FL/NC, explicit BH-side carve-out for both NY and TX Medicaid Community Plans, UHG007 for NY commercial — flagged as an unresolved cross-file inconsistency against the 87726 figure, not silently reconciled, alongside the NY Medicaid Community Plan\'s own NYU01-vs-87726 conflict already documented in vob/new-york.ts); Maryland Medicaid -> Carelon BHASO (one statewide row covering all nine HealthChoice MCOs); the six MassHealth BH administrators (MBHP/Carelon for PCC+ACO+HNE, Carelon for Fallon, in-house for WellSense since 1/1/2026, internal UM for Tufts Health Together, Optum for Mass General Brigham Health Plan); Florida\'s TNFL full delegation (Community Care Plan) and the BSN network-credentialing-only pattern (Aetna Better Health FL, Florida Community Care); Colorado/Missouri/Utah statewide Medicaid FFS carve-outs (ABA removed from all MCOs regardless of carrier); New York\'s upstate/downstate MCOs, reconciled against the vob/new-york.ts Layers 1+3 data that shipped in a parallel session while this work was in progress (Healthfirst and MetroPlus corrected from "unverified" to verified in-house/in-sourced-from-Beacon facts; EmblemHealth\'s Carelon administrator upgraded from inferred to verified with abaRidesOn still unverified; Fidelis downgraded from an assumed "none" to "unverified" per the shipped guide\'s more conservative treatment) — one contradiction found and flagged rather than silently resolved: this build\'s own NY research read named eviCore (ended 9/1/2021) as Molina NY\'s prior BH vendor, while the freshly-shipped vob fact names Beacon Health Options (ended 1/1/2022); Ohio\'s OhioRISE reverse-carve-out (ABA explicitly excluded from the BH specialty plan). 55 of 111 rows carry an unverified administratorPayerId with a verifyVia note rather than a guessed value, per the never-guess rule.',
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'Colorado + Utah VOB enrichment shipped: Layer 1 (EDI routing crosswalk), Layer 3 (code-level coverage grid) and Layer 4 (Medicaid rate tables — Medicaid only) populated for all 8 CO+UT guides (colorado-medicaid, aetna/cigna/unitedhealthcare-colorado; utah-medicaid, aetna/cigna/unitedhealthcare-utah). Both states run ABA as a statewide fee-for-service carve-out, so the Medicaid guides ship bhCarveOut \'none\' (ABA rides the medical FFS line) and both 271s were confirmed to carry NO ABA-carve-out flag — the carve-out is applied from policy, not read off the wire. Colorado: the interChange (Gainwell) 270/271 companion guide (Mar 2024 v2.2) was retrieved via Wayback despite hcpf.colorado.gov 403ing every live fetch — RAE/ACC attribution rides loop 2110C/MSG + 2120C with no carrier-code table; the PBT allowable-code set is the reduced 97151/97151-TJ/97153/97154/97155/97158 (97152, 97156, 97157, 0362T, 0373T CONFIRMED absent from two fetched sources — 97156 parent-training is not billable in Colorado). Utah: the PRISM 270/271 companion guide (SFY25) and the live PRISM PAC-166 fee CSV (eff. 7/1/2026) were both retrieved — MCO shows by organization name in loop 2120C / EB01="3" capitated; 97151 needs no PA (1/26wks); rates confirmed 97153 $19.67, 97151/97155/97156/H0032 $37.51, 97154 $13.91, with 97157/97158 flagged Covered but priced $0.00 (non-reimbursing), and 97152/0362T/0373T Not Covered. RATE WATCHLIST: Colorado\'s 10/1/2025 PBT cuts stand (the FY25-26 1.6% bump was repealed, not restored) and a further -2.0% + "pediatric behavioral rate reset" is approved for 7/1/2026 — the 7/1/2026 CO fee schedule could not be located, so the shipped CO rates (incl. corrected 97151 flat $866.88) are the last confirmed 10/1/2025 set. The commercial six inherit the same national policies/payer IDs as every other state (Cigna/Evernorth confirmed same-payer-ID 62308 pass-through; Aetna and UHC BH-carve-out routing remain unresolved pending provider-services confirmation).',
+    guides: [
+      'colorado-medicaid',
+      'aetna-colorado',
+      'cigna-colorado',
+      'unitedhealthcare-colorado',
+      'utah-medicaid',
+      'aetna-utah',
+      'cigna-utah',
+      'unitedhealthcare-utah',
+    ],
+    details: [
+      {
+        slug: 'colorado-medicaid',
+        field: 'rates.byCode.97151 + rates.source',
+        change:
+          'Corrected the 97151 flat-assessment rate: $882.78 was the 7/1/2025 amount; it dropped to $866.88 for DOS on/after 10/1/2025 (= 32 units x $27.09/unit at an 8-hr increment), per the retrieved Bulletins B2500528/B2500530. WATCHLIST added: a further -2.0% + pediatric-behavioral rate reset is approved for 7/1/2026 (FY2026-27, HB26-1410); the 7/1/2026 fee schedule could not be located, so the shipped values are the last confirmed 10/1/2025 set.',
+        sourceUrl: 'https://web.archive.org/web/20260114194341/https://hcpf.colorado.gov/sites/hcpf/files/Health%20First%20Colorado%20Provider%20Bulletin%20B2500530.pdf',
+      },
+      {
+        slug: 'colorado-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'Populated verified from the retrieved interChange 270/271 Companion Guide (Mar 2024 v2.2, via Wayback): ACC/RAE attribution rides loop 2110C/MSG (MCSTARTRSN$, MCD$) + loop 2120C (NPI/name); there is NO carrier-code->RAE table and NO ABA/PBT carve-out flag on the 271. Availity ID left unverified — the only fetchable Availity list is a 2012 relic predating Colorado\'s 2017 interChange migration.',
+        sourceUrl: 'https://web.archive.org/web/20250211050831/https://hcpf.colorado.gov/sites/hcpf/files/CO_EDI_v5010%20X12_270_271_CompanionGuide%20-%2003062024.pdf',
+      },
+      {
+        slug: 'utah-medicaid',
+        field: 'edi.medicaid271Notes + rates',
+        change:
+          'Populated verified from the retrieved PRISM 270/271 Companion Guide (SFY25) and the live PRISM PAC-166 fee CSV (eff. 7/1/2026): MCO reported by organization name in loop 2120C, capitated flagged EB01="3", real-time <=20s, no procedure-level eligibility (no ABA carve-out flag on the 271). Rates confirmed 97153 $19.67, 97151/97155/97156/H0032 $37.51, 97154 $13.91; 97157/97158 flagged Covered but priced $0.00 (non-reimbursing since 7/1/2022); 97152/0362T/0373T Not Covered.',
+        sourceUrl: 'https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/EE-Health%20Care%20Eligibility%20Benefit%20Inquiry%20and%20Response%20Companion%20(270,%20271)%20SFY25.pdf',
+      },
+      {
+        slug: 'aetna-colorado / unitedhealthcare-colorado / aetna-utah / unitedhealthcare-utah',
+        field: 'edi.bhCarveOut',
+        change:
+          'Shipped unverified rather than guessed: Aetna ABA administration (in-house vs BH carve-out) was not researched to a primary source; UHC/Optum ABA routing is unresolved — pVerify lists a distinct "UHG007 United Healthcare - Optum Behavioral Solutions" alongside the "00192 United Healthcare" medical entry, and whether commercial ABA rides 87726 (medical) or routes to Optum was not confirmed.',
+        sourceUrl: 'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
