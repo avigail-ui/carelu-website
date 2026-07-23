@@ -305,4 +305,63 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      'FL VOB enrichment SPLIT A shipped (docs/vob-build.md): Layer 1 (EDI crosswalk) + Layer 3 (code-level coverage grid) for 6 guides, plus Layer 4 (Medicaid rate table) for florida-medicaid. The FLMMIS 270/271 Companion Guide (v4.0, 2023-04-27) was retrieved and read in full — unlike Georgia\'s, it is a fetchable static PDF — confirming Florida\'s canonical X12 payer ID (77027) and that managed-care enrollment in the 271 has NO fixed carrier-code table (Loop 2110C "Managed Care" repetition, MCO identity as free text in nested Loop 2120C NM103); that absence is shipped as a verified fact, not an unfilled gap. The current AHCA Behavior Analysis fee schedule was retrieved directly for both 2025 and 2026 (rates identical) and surfaced a real finding, cross-confirmed by three independent primary sources (AHCA\'s fee schedule, Sunshine Health\'s own FL.CP.BH.500 coding table, and Humana\'s Florida Medicaid PA list): CPT 97157 does not appear on any of them and ships as covered:\'No\' rather than assumed-covered. Florida also confirmed a genuine coding quirk opposite Georgia\'s pattern: only 97156 (family/caregiver training) has a stated telehealth allowance anywhere in state or plan documentation (GT modifier, 2 hrs/week cap, Rule 59G-1.057) — every other code ships telehealth:\'No\' by verified policy design. None of the 4 MCOs in this split publish a full code-level unit-cap/POS/telehealth table of their own, so each MCO codeGrid inherits the AHCA statewide baseline as \'inferred\' (per the coverage policy\'s plan-compliance clause, §1.2) and upgrades specific fields to \'verified\' only where that plan\'s own document independently confirms them — Sunshine\'s FL.CP.BH.500 clinical policy confirms the most; Simply/Carelon\'s and UHC/Optum\'s FL-specific QRGs confirm almost none. Sunshine Health\'s previously-unconfirmed BA network-enrollment pause (flagged as an unverified industry blog report in the shipped florida.ts prose) is now CONFIRMED from Sunshine\'s own newsroom: effective 2025-10-01 in all AHCA regions except A and B, partially lifted in Regions E and F starting 2026-03-01. Humana\'s non-par reimbursement, previously vague ("a percentage of..."), now has an exact figure from Humana\'s own PA form: 80% of the Florida Medicaid fee schedule absent a controlling legal requirement or Letter of Agreement. "TNFL" (Therapy Network of Florida) was investigated per the build brief and confirmed to administer BA for Community Care Plan, a Florida MMA plan OUTSIDE this split\'s 6 guides — none of the 5 MCO/state guides shipped here delegate to TNFL.',
+    guides: [
+      'florida-medicaid',
+      'sunshine-health-florida',
+      'cms-health-plan-florida',
+      'simply-healthcare-florida',
+      'unitedhealthcare-community-plan-florida',
+      'humana-healthy-horizons-florida',
+    ],
+    details: [
+      {
+        slug: 'florida-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          'FLMMIS 270/271 Companion Guide v4.0 (2023-04-27) retrieved and read in full: payer ID 77027; MCO enrollment surfaces in Loop 2110C\'s "Eleventh Repetition – Managed Care" with the MCO name as free text in nested Loop 2120C (NM103) — no fixed carrier-code table exists, shipped as a verified fact. Eligibility spans use DTP qualifier 307 in RD8 (date-range) format.',
+        sourceUrl: 'https://portal.flmmis.com/FLPublic/Portals/0/StaticContent/Public/COMPANION%20GUIDES/FMMIS_5010_270_271_Companion%20Guide_v4_0_04272023.pdf',
+      },
+      {
+        slug: 'florida-medicaid',
+        field: 'codeGrid.97157 / rates.byCode.97157',
+        change:
+          'CPT 97157 is absent from both the 2025 and 2026 AHCA Behavior Analysis fee schedules and not listed among covered service categories in the Dec 2024 coverage policy §4.2.2 — cross-confirmed absent from Sunshine Health\'s own coding table and Humana\'s FL PAL too. Shipped covered:\'No\' with fieldStatus \'verified\' (verified-absent across 3 independent sources), not an unfilled gap.',
+        sourceUrl: 'https://ahca.myflorida.com/content/download/26138/file/2025%20Behavior%20Analysis%20Fee%20Schedule.pdf',
+      },
+      {
+        slug: 'florida-medicaid',
+        field: 'codeGrid.97156.telehealth',
+        change:
+          'Only 97156 (family/caregiver training) has a confirmed telehealth allowance in Florida Medicaid BA — GT modifier, capped at 2 hrs/week, per Rule 59G-1.057, F.A.C. Every other code ships telehealth:\'No\' by verified policy design, the opposite pattern from Georgia (which allows telehealth broadly via POS 02/10 on every code).',
+        sourceUrl: 'https://www.flrules.org/gateway/readRefFile.asp?refId=17525&filename=Florida%20Medicaid%20Behavior%20Analysis%20Services%20Coverage%20Policy.pdf',
+      },
+      {
+        slug: 'sunshine-health-florida',
+        field: 'codeGrid.97153.notes (network pause)',
+        change:
+          'Sunshine\'s BA network-enrollment pause — previously only sourced to an unverified industry blog — is now confirmed from Sunshine\'s own newsroom: effective 2025-10-01 in all AHCA regions except A and B, partially lifted in Regions E and F starting 2026-03-01.',
+        sourceUrl: 'https://www.sunshinehealth.com/newsroom/aba-pause.html',
+      },
+      {
+        slug: 'simply-healthcare-florida',
+        field: 'edi.bhCarveOut',
+        change:
+          'Confirmed Carelon Behavioral Health handles BOTH authorizations AND claims for Simply\'s BA benefit (abaRidesOn:\'bh\', twoHopRequired:true) — distinct from UHC Community Plan/Optum, where Optum manages UM but claims still bill under UHC\'s own payer ID 87726 (abaRidesOn:\'medical\', twoHopRequired:false). No Florida-specific Carelon EDI payer ID could be confirmed; a commonly-cited "BHOVO" code could not be verified against any primary Carelon source.',
+        sourceUrl: 'https://provider.simplyhealthcareplans.com/docs/gpp/FLFL_SIMPLY_CarelonBehavioralAnalysisTrainingRes.pdf?v=202503041513',
+      },
+      {
+        slug: 'humana-healthy-horizons-florida',
+        field: 'codeGrid (non-par rate)',
+        change:
+          'Non-par reimbursement is 80% of the Florida Medicaid fee schedule absent a controlling legal requirement or Letter of Agreement (Humana\'s own MCD 466 PA form, p.3) — replaces the previously vague "a percentage of..." language with an exact figure.',
+        sourceUrl: 'https://assets.humana.com/is/content/humana/ABA_PA_Formpdf',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];
