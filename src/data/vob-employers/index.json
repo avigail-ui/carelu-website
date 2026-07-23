@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "layer": "vob-enrichment-layer-5",
+    "description": "Employer funding-type dataset (mandate-protected fully-insured vs. plan-document-governed self-funded), built from DOL Form 5500 public filings, per docs/vob-build.md Layer 5.",
+    "filingYear": 2024,
+    "source": "DOL/EBSA EFAST2 Form 5500 + Schedule A bulk datasets, plan year 2024",
+    "sourceUrls": [
+      "https://www.askebsa.dol.gov/FOIA Files/2024/Latest/F_5500_2024_Latest.zip",
+      "https://www.askebsa.dol.gov/FOIA Files/2024/Latest/F_SCH_A_2024_Latest.zip"
+    ],
+    "rowCount": 54141,
+    "totalHealthWelfarePlansBeforeSizeBudget": 66872,
+    "minParticipantsFilter": 125,
+    "fundingBreakdown": {
+      "fully-insured": 13543,
+      "mixed": 38013,
+      "self-funded": 2585
+    },
+    "limits": [
+      "Employers with fewer than ~100 participants are largely exempt from Form 5500 filing entirely; absence of a match MUST resolve to funding 'unknown', NEVER 'fully-insured'.",
+      "Church plans and government (federal/state/municipal) plans do not file Form 5500 at all (ERISA 4(b) exemptions) and will never appear in this dataset regardless of size.",
+      "This build additionally drops filed plans below the --min-participants threshold to stay under the repo's size budget; those are almost entirely small filers whose absence already resolves to 'unknown' by the rule above.",
+      "'mixed' funding means the filing marked more than one of insurance/general-assets/trust (or trust alone) on Form 5500 Part II Line 9a/9b -- the raw indicator codes are preserved per-row in a `raw` field.",
+      "Carrier names come from Schedule A (insurance contracts) and are only present for filings that attached one; self-funded plans typically have none.",
+      "Sponsor name matching is normalized-exact/contains, not deduped across a sponsor's multiple plans (e.g. medical vs. dental may file as separate rows) -- callers should expect and handle multiple rows per employer."
+    ],
+    "governmentPlanNotes": [
+      {
+        "state": "GA",
+        "plan": "State Health Benefit Plan (SHBP)",
+        "administeredBy": "Georgia Dept. of Community Health"
+      },
+      {
+        "state": "NC",
+        "plan": "State Health Plan for Teachers and State Employees",
+        "administeredBy": "NC State Treasurer"
+      },
+      {
+        "state": "FL",
+        "plan": "State Group Insurance Program",
+        "administeredBy": "FL Dept. of Management Services"
+      },
+      {
+        "state": "TX",
+        "plan": "Employees Retirement System of Texas (ERS) Group Benefits Program / Teacher Retirement System (TRS-ActiveCare)",
+        "administeredBy": "ERS / TRS"
+      },
+      {
+        "state": "NY",
+        "plan": "New York State Health Insurance Program (NYSHIP)",
+        "administeredBy": "NYS Dept. of Civil Service"
+      },
+      {
+        "state": "OH",
+        "plan": "State of Ohio employee health plan / Ohio Public Employees Retirement System",
+        "administeredBy": "Ohio DAS"
+      },
+      {
+        "state": "VA",
+        "plan": "The Local Choice / State employee health benefits program",
+        "administeredBy": "Virginia DHRM"
+      },
+      {
+        "state": "NJ",
+        "plan": "State Health Benefits Program (SHBP) / School Employees' Health Benefits Program (SEHBP)",
+        "administeredBy": "NJ Div. of Pensions and Benefits"
+      },
+      {
+        "state": "MD",
+        "plan": "State Employee and Retiree Health and Welfare Benefits Program",
+        "administeredBy": "MD Dept. of Budget and Management"
+      },
+      {
+        "state": "MA",
+        "plan": "Group Insurance Commission (GIC)",
+        "administeredBy": "MA GIC"
+      },
+      {
+        "state": "MO",
+        "plan": "Missouri Consolidated Health Care Plan (MCHCP)",
+        "administeredBy": "MCHCP"
+      },
+      {
+        "state": "TN",
+        "plan": "State of Tennessee Group Insurance Program",
+        "administeredBy": "TN Dept. of Finance and Administration"
+      },
+      {
+        "state": "IN",
+        "plan": "State Personnel Department health plan",
+        "administeredBy": "Indiana SPD"
+      },
+      {
+        "state": "KS",
+        "plan": "State Employee Health Plan (SEHP)",
+        "administeredBy": "Kansas State Employees Health Care Commission"
+      },
+      {
+        "state": "NE",
+        "plan": "State of Nebraska employee health plan",
+        "administeredBy": "NE Dept. of Administrative Services"
+      },
+      {
+        "state": "AZ",
+        "plan": "Arizona Dept. of Administration Benefit Options",
+        "administeredBy": "AZ DOA"
+      },
+      {
+        "state": "CO",
+        "plan": "State of Colorado employee health plan (PEBC)",
+        "administeredBy": "CO Dept. of Personnel & Administration"
+      },
+      {
+        "state": "UT",
+        "plan": "Public Employees Health Program (PEHP)",
+        "administeredBy": "PEHP Utah"
+      },
+      {
+        "state": "NM",
+        "plan": "New Mexico Public Schools Insurance Authority / Risk Management Division",
+        "administeredBy": "NM RMD / NMPSIA"
+      }
+    ]
+  },
+  "shards": [
+    {
+      "key": "a-c",
+      "file": "employers-a-c.json",
+      "count": 12900,
+      "bytes": 4440361
+    },
+    {
+      "key": "d-f",
+      "file": "employers-d-f.json",
+      "count": 5753,
+      "bytes": 1962319
+    },
+    {
+      "key": "g-i",
+      "file": "employers-g-i.json",
+      "count": 5881,
+      "bytes": 2014057
+    },
+    {
+      "key": "j-l",
+      "file": "employers-j-l.json",
+      "count": 4048,
+      "bytes": 1382703
+    },
+    {
+      "key": "m-o",
+      "file": "employers-m-o.json",
+      "count": 6648,
+      "bytes": 2270051
+    },
+    {
+      "key": "p-r",
+      "file": "employers-p-r.json",
+      "count": 5443,
+      "bytes": 1851549
+    },
+    {
+      "key": "s-t",
+      "file": "employers-s-t.json",
+      "count": 8902,
+      "bytes": 3045106
+    },
+    {
+      "key": "u-z",
+      "file": "employers-u-z.json",
+      "count": 4420,
+      "bytes": 1532514
+    },
+    {
+      "key": "0-9-other",
+      "file": "employers-0-9-other.json",
+      "count": 146,
+      "bytes": 50308
+    }
+  ]
+}

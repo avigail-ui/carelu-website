@@ -1,5 +1,10 @@
 {
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
-  ]
+  ],
+  "functions": {
+    "api/employers.ts": {
+      "includeFiles": "src/data/vob-employers/**"
+    }
+  }
 }
