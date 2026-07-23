@@ -415,4 +415,64 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 164, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      "FL split B shipped, merged into split A's florida.ts (docs/vob-build.md): Layer 1 (EDI routing crosswalk), Layer 3 (code-level coverage grid), and Layer 4 (Medicaid rate table; none for the 3 commercial guides, per spec) for 7 guides — Aetna Better Health of Florida, Molina Healthcare of Florida, Community Care Plan, Florida Community Care, and the Aetna/Cigna/UnitedHealthcare Florida commercial guides. Split B's own first-pass code grid (built from a PDF-text-extraction read of the AHCA coverage policy plus a secondary fee-schedule tracker, since AHCA's fee-schedule PDF 403s a default WebFetch User-Agent) was superseded during the merge: split A independently retrieved the ACTUAL AHCA fee-schedule PDFs (browser-spoofed request) and three MCOs' own coding documents, a materially stronger primary-source base for the identical statewide facts — per \"accuracy beats completeness,\" split B's four Medicaid MMA guides were rebuilt on split A's FL_CODE_FACTS/mcoEntry() infrastructure rather than kept on a parallel, weaker-sourced grid. Read Aetna Better Health of Florida's own Quick Reference Guide directly, confirming EDI payer ID 128FL (an upgrade over guessing past florida.ts's access-blocked-site caveat) and a Behavioral Health-specific PA phone line (1-833-365-2474) not previously documented. Read Community Care Plan's Therapy Network of Florida Behavior Analysis Provider Manual in full, confirming its EDI payer IDs (65062 professional / 12k89 institutional) verbatim, upgraded into the shared mcoEntry() confirmed-fields mechanism. Read Florida Community Care's own BA services page directly, surfacing a previously-undocumented fact: Behavioral Services Network (BSN) is FCC's behavioral-health network partner for credentialing (as it also is for Aetna Better Health of Florida) even though FCC's own Utilization Department still adjudicates BA prior authorizations in-house. Confirmed UnitedHealthcare/Optum's national COMMERCIAL claims payer ID (87726) directly from Optum's own Provider Express EDI page, upgrading Georgia's unverified Availity ID and unverified BH administratorPayerId/abaRidesOn for the same carrier family to verified, matching the identical finding already shipped for UnitedHealthcare Community Plan of North Carolina. Cigna/Evernorth's same-payer-ID pass-through (62308) is confirmed via the same national Autism Resource Guide already cited in Georgia. Aetna's commercial BH administration remains unverified: its own June 2022 OfficeLink Updates ABA claims page names no claims administrator — an absence of evidence, not confirmation. A cross-split correction surfaced during the merge: the shared Availity payer-list PDF both splits read carries an \"As of 08/08/2012\" footer on every page — split A had already flagged this (AVAILITY_PAYER_LIST_STALE); split B's aetna-florida commercial entry is corrected accordingly (payerId.availity/changeHealthcare downgraded 'verified' → 'inferred', since 60054 is a long-standing national ID rather than independently reconfirmed this pass).",
+    guides: [
+      'aetna-better-health-florida',
+      'molina-healthcare-florida',
+      'community-care-plan-florida',
+      'florida-community-care',
+      'aetna-florida',
+      'cigna-florida',
+      'unitedhealthcare-florida',
+    ],
+    details: [
+      {
+        slug: 'aetna-better-health-florida',
+        field: 'edi.payerId',
+        change:
+          "ABHFL's own Quick Reference Guide (Rev. 11/2024) confirms EDI/EFT payer ID 128FL and Real Time (270/271) payer ID ABHFL via its Office Ally enrollment section; also surfaces a distinct Behavioral Health PA phone line (1-833-365-2474) not previously documented.",
+        sourceUrl: 'https://www.aetnabetterhealth.com/content/dam/aetna/medicaid/florida/provider/pdf/abhfl_quick_reference_guide.pdf',
+      },
+      {
+        slug: 'florida-community-care',
+        field: 'edi.bhCarveOut',
+        change:
+          "FCC's own BA services page names Behavioral Services Network (BSN) as its behavioral-health network partner (register at providers.bsnnet.com/auth/register) — a fact absent from florida.ts's existing FCC prose, which describes BA authorization as fully in-house. Captured as a credentialing-only carve-out: BA prior authorization itself still runs through FCC's own Utilization Department, not BSN.",
+        sourceUrl: 'https://fcchealthplan.com/ba-services/',
+      },
+      {
+        slug: 'community-care-plan-florida',
+        field: 'edi.payerId / codeGrid',
+        change:
+          'Read Therapy Network of Florida\'s own Behavior Analysis Provider Manual for Community Care Plan in full: confirms EDI payer ID verbatim ("Our Payer ID is 65062 for professional claims and 12k89 for institutional claims"), the group-size-6 cap, and the 40-hrs/week aggregate threshold directly rather than by state-pattern inference alone.',
+        sourceUrl: 'https://www.therapynetwork.com/state_links/ba/manuals/Community-Care-Plan-Behavior-Analysis-Provider-Manual.pdf',
+      },
+      {
+        slug: 'unitedhealthcare-florida',
+        field: 'edi.payerId / edi.bhCarveOut',
+        change:
+          'Confirmed directly from Optum Provider Express\'s own EDI page ("The Optum payer ID is 87726") that UnitedHealthcare, Optum, and United Behavioral Health claims — including ABA — all route on 87726, no second EDI hop. Upgrades Georgia\'s unverified Availity ID and unverified BH administratorPayerId/abaRidesOn for the same carrier family; matches the identical finding already shipped for UnitedHealthcare Community Plan of North Carolina.',
+        sourceUrl: 'https://public.providerexpress.com/content/ope-provexpr/us/en/admin-resources/claim-tips/electronic-claim-submission-and-electronic-data-interchange.html',
+      },
+      {
+        slug: 'aetna-florida',
+        field: 'edi.payerId',
+        change:
+          "Corrected during merge with split A: the Availity payer-list PDF (same URL used across both FL splits and vob/georgia.ts) carries an \"As of 08/08/2012\" footer on every page. payerId.availity and payerId.changeHealthcare downgraded from 'verified' to 'inferred' — 60054 remains Aetna's long-standing national payer ID, but is no longer claimed as independently reconfirmed against a current Availity export this pass.",
+        sourceUrl: 'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
+      },
+      {
+        slug: 'aetna-florida',
+        field: 'edi.bhCarveOut',
+        change:
+          'Checked Aetna\'s own June 2022 OfficeLink Updates "Applied behavior analysis (ABA) treatment and claims" page directly — it names no claims administrator, in-house or third-party. Shipped unverified (absence of evidence is not confirmation of in-house administration), matching Georgia\'s treatment of the same carrier.',
+        sourceUrl: 'https://www.aetna.com/health-care-professionals/newsletters-news/office-link-updates-june-2022/behavioral-health-updates/applied-behavior-analysis-treatment-and-claims.html',
+      },
+    ],
+    totals: { guides: 164, states: 19 },
+  },
 ];

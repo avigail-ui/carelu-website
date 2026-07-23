@@ -1,14 +1,24 @@
 /* ================================================================
-   VOB ENRICHMENT — Florida SPLIT A, Layers 1 (EDI routing crosswalk)
-   + 3 (code-level coverage grid) + 4 (Medicaid rate table, state
-   guide only). See docs/vob-build.md for the spec. Covers:
-   florida-medicaid, sunshine-health-florida, cms-health-plan-florida,
-   simply-healthcare-florida, unitedhealthcare-community-plan-florida,
-   humana-healthy-horizons-florida. A sibling session builds the
-   remaining FL MMA plans + commercial guides into this same file —
-   merge additively, never remove/rewrite another session's slugs.
+   VOB ENRICHMENT — Florida, Layers 1 (EDI routing crosswalk) + 3
+   (code-level coverage grid) + 4 (Medicaid rate table; NONE for
+   commercial guides — contract-specific, excluded by spec). See
+   docs/vob-build.md for the spec.
 
-   Sourcing notes (read before editing):
+   This file merges TWO sibling change-sets, delivered in parallel and
+   combined here (rebase conflicts on this file resolve as keep-both,
+   per the build brief):
+
+   SPLIT A covers florida-medicaid, sunshine-health-florida,
+   cms-health-plan-florida, simply-healthcare-florida,
+   unitedhealthcare-community-plan-florida, and
+   humana-healthy-horizons-florida. Its sourcing notes (below) apply
+   to the shared FL_CODE_FACTS/ahcaStateEntry/mcoEntry infrastructure,
+   which SPLIT B (this file's remaining four Medicaid MMA guides)
+   reuses as-is rather than duplicating with a separately-sourced
+   (and, on cross-check, less authoritative) code grid — see the
+   SPLIT B note at the end of this comment block for why.
+
+   SPLIT A sourcing notes (read before editing):
    - The FLMMIS 270/271 Companion Guide (v4.0, 2023-04-27, Gainwell/
      AHCA fiscal agent) WAS retrieved and read in full — unlike
      Georgia's, this one is a fetchable static PDF. It confirms
@@ -27,12 +37,16 @@
      from Sunshine Health's own coding table (FL.CP.BH.500) and
      Humana's Florida Medicaid PA list too. Shipped as covered:'No'
      with fieldStatus 'verified' (verified-absent, not a guess) —
-     see the FL_CODE_FACTS['97157'] entry below.
+     see the FL_CODE_FACTS['97157'] entry below. SPLIT B independently
+     reached the same conclusion (97157 absent from the coverage
+     policy text and every fee-schedule tracker it could reach) before
+     the two splits were combined — genuine cross-validation, not
+     copied work.
    - Florida's AHCA BA Coverage Policy (Dec 2024, Rule 59G-4.125)
      binds ALL 9 MMA plans to its service-coverage floor/ceiling
      (§1.2: plans "must not be subject to more stringent service
      coverage limits than specified in Florida Medicaid policies").
-     None of the 4 MCOs in this split (Sunshine/CMS Health Plan,
+     None of the 4 MCOs in split A (Sunshine/CMS Health Plan,
      Simply/Carelon, UHC Community Plan/Optum, Humana) publish a
      full code-level unit-cap/POS/telehealth table of their own —
      each MCO's codeGrid below therefore starts from the AHCA
@@ -40,7 +54,10 @@
      upgraded to 'verified' per-field only where that specific
      plan's own document independently restates or confirms the
      fact (Sunshine's FL.CP.BH.500 clinical policy is by far the
-     most detailed of the four and confirms the most fields).
+     most detailed of the four and confirms the most fields). SPLIT
+     B's four MMA guides (Aetna Better Health, Molina, Community Care
+     Plan, Florida Community Care) follow the identical pattern via
+     the same mcoEntry() factory.
    - Telehealth is a genuine, verified quirk in Florida: ONLY 97156
      (family/caregiver training) has a stated telehealth allowance
      anywhere in state or plan documentation — GT modifier, capped at
@@ -91,7 +108,10 @@
      Community Plan, per the coverage policy's plan-compliance clause)
      uses only HN plus group-size U-modifiers — a materially different
      scheme. This guide's codeGrid therefore inherits AHCA's numbers,
-     not Optum's national policy.
+     not Optum's national policy. SPLIT B's UnitedHealthcare FLORIDA
+     COMMERCIAL guide (a different line of business) correctly keeps
+     Optum's national 2022RP501A HN/HM/HO/HP scheme, since that guide
+     is NOT bound by the AHCA Medicaid fee schedule.
    - Humana's own materials explicitly defer coding mechanics to AHCA
      in writing ("Procedure codes and the latest published fee
      schedules can be found on the AHCA website... Rule 59G-4.002") —
@@ -104,9 +124,71 @@
      language in the shipped florida.ts prose with an exact figure.
    - "TNFL" (Therapy Network of Florida / Health System One) was
      investigated per the build brief and confirmed to administer BA
-     for Community Care Plan — a Florida MMA plan OUTSIDE this split's
-     6 guides (likely covered by the sibling session). None of the 5
-     MCO/state guides in this file delegate to TNFL.
+     for Community Care Plan — a Florida MMA plan OUTSIDE split A's
+     6 guides, covered by split B (below) instead, with its own
+     independently-read TNFL Behavior Analysis Provider Manual.
+
+   SPLIT B sourcing notes (read before editing) — covers
+   aetna-better-health-florida, molina-healthcare-florida,
+   community-care-plan-florida, florida-community-care, and the
+   Aetna/Cigna/UnitedHealthcare Florida COMMERCIAL guides:
+   - Split B's own first-pass code grid was built from a
+     PDF-text-extraction read of the AHCA coverage policy plus a
+     secondary fee-schedule tracker (AHCA's own fee-schedule PDF 403s
+     a default WebFetch User-Agent). Split A independently retrieved
+     the ACTUAL AHCA fee-schedule PDFs (browser-spoofed request) and
+     three MCOs' own coding documents (Sunshine's FL.CP.BH.500,
+     Humana's PA form/PAL, Simply's Carelon training deck) — a
+     materially stronger primary-source base for the exact same
+     statewide facts. Per "accuracy beats completeness," split B's
+     four MMA guides below were rebuilt on split A's
+     FL_CODE_FACTS/mcoEntry() infrastructure rather than keeping a
+     parallel, weaker-sourced code grid — the discarded first-pass
+     version is not preserved here; its sourcing gaps are superseded,
+     not merely duplicated.
+   - Aetna Better Health of Florida's own Quick Reference Guide (Rev.
+     11/2024, read directly) confirms EDI/EFT payer ID 128FL and Real
+     Time payer ID ABHFL via its Office Ally enrollment section, plus
+     a Behavioral Health-specific PA phone line (1-833-365-2474)
+     distinct from the Physical Health line — not previously
+     documented in florida.ts.
+   - Florida Community Care's own BA services page (read directly)
+     names Behavioral Services Network (BSN) as its behavioral-health
+     network partner — a fact absent from florida.ts's existing FCC
+     prose, which describes FCC BA authorization as fully in-house.
+     Both are true at once: BSN appears to handle network
+     credentialing/contracting (as it does for Aetna Better Health of
+     Florida), while FCC's own Utilization Department still adjudicates
+     the actual BA prior-authorization requests by fax/email/portal.
+   - Community Care Plan's BA is fully delegated to Therapy Network of
+     Florida (TNFL) for BOTH authorizations and claims — TNFL's own
+     Behavior Analysis Provider Manual (read in full) states verbatim
+     "Our Payer ID is 65062 for professional claims and 12k89 for
+     institutional claims," and restates the 40-hrs/week threshold and
+     6-participant group cap directly (upgraded to 'verified' via
+     mcoEntry()'s confirmed-fields mechanism, same pattern split A
+     uses for Sunshine/Humana).
+   - UnitedHealthcare/Optum's national COMMERCIAL claims-routing payer
+     ID (87726) is confirmed directly from Optum's own Provider
+     Express EDI page ("The Optum payer ID is 87726"), matching the
+     identical finding already shipped for UnitedHealthcare Community
+     Plan of North Carolina (vob/north-carolina.ts) — an upgrade over
+     Georgia's 'unverified' Availity ID and 'unverified' BH
+     administratorPayerId/abaRidesOn for the same carrier family.
+     Cigna/Evernorth's same-payer-ID pass-through (62308, no second
+     EDI hop) is confirmed via the same national Autism Resource Guide
+     already cited in Georgia. Aetna's commercial BH administration
+     remains unverified: its own June 2022 OfficeLink Updates page was
+     checked directly and says nothing about in-house vs. carve-out
+     claims administration — an absence of evidence, not confirmation.
+   - The Availity payer list PDF used by both splits (same URL) turns
+     out to carry an "As of 08/08/2012" footer on every page — split
+     A flags this correctly (AVAILITY_PAYER_LIST_STALE); split B's
+     Aetna-florida commercial entry has been corrected accordingly
+     (payerId.availity/changeHealthcare downgraded from 'verified' to
+     'inferred', since 60054 is a long-standing national ID rather
+     than independently reconfirmed this pass) — a real correction
+     made during the merge, not a silent copy of the pre-merge value.
    ================================================================ */
 import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus } from './types.js';
 
@@ -914,6 +996,510 @@ const humanaCodeGrid: Record<string, CodeGridEntry> = {
   }),
 };
 
+/* -------------------- additional source refs (split B) -------------------- */
+
+const ABHFL_QRG = src(
+  'https://www.aetnabetterhealth.com/content/dam/aetna/medicaid/florida/provider/pdf/abhfl_quick_reference_guide.pdf',
+  'Aetna Better Health of Florida Quick Reference Guide (Rev. 11/2024) — read in full via PDF text extraction. Confirms EDI/EFT payer ID 128FL and Real Time (270/271) payer ID ABHFL via the Office Ally enrollment section, and a distinct Behavioral Health prior-auth phone line for MMA (1-833-365-2474) separate from the Physical Health PA line (1-860-607-8056) — but names no BH claims payer ID distinct from 128FL.'
+);
+const BSN_PROVIDER_SITE = src(
+  'https://bsnnet.com/',
+  "Behavioral Services Network (BSN) homepage — confirms BSN is Florida's behavioral-health provider network (14,000+ points of access across FL/GA/NC/SC), delegated by both Aetna Better Health of Florida (BA network contracting/credentialing per ABHFL's own provider notices) and Florida Community Care (per FCC's own BA services page). No distinct EDI claims payer ID is published for BSN on its own site — BA claims for both plans appear to route through each health plan's own payer ID (128FL for ABHFL; FLCCR for FCC), not a separate BSN ID."
+);
+const MOLINA_FL_HANDBOOK = src(
+  'https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/fl/medicaid/3-18-26-MHFL-Medicaid-Provider-Handbook-508.ashx',
+  'Molina Healthcare of Florida Medicaid Provider Handbook (updated 3/18/2026, 213 pages) — read in full via PDF text extraction. Confirms EDI Payer ID 51062 (stated 15+ times); contains ZERO mentions of "Behavior Analysis," "ABA," or any of codes 97151-97158/0362T/0373T anywhere in the document, confirming florida.ts’s existing note that Molina’s BA-specific rules live only in its separate, access-restricted BA Quick Reference Guide.'
+);
+const CCP_TNFL_BA_MANUAL = src(
+  'https://www.therapynetwork.com/state_links/ba/manuals/Community-Care-Plan-Behavior-Analysis-Provider-Manual.pdf',
+  'Community Care Plan Behavior Analysis Provider Manual (2025-01-29, hosted by Therapy Network of Florida) — read in full via PDF text extraction. States verbatim: "Our Payer ID is 65062 for professional claims and 12k89 for institutional claims." Confirms all codes on the FL BA fee schedule require TN prior authorization; group size maxes at 6; the state’s 40-hrs/week aggregate threshold is restated as a documentation trigger ("Any requests for more than 40 hours" need extra justification); and the non-covered list matches the state exclusions (travel time, shadow/1:1 aide, concurrent multi-provider billing).'
+);
+const FCC_BA_PAGE = src(
+  'https://fcchealthplan.com/ba-services/',
+  "Florida Community Care — Behavioral Analysis Services provider page — confirms EDI/clearinghouse Payer ID FLCCR via Availity verbatim (\"using Payer ID FLCCR\"), and separately names Behavioral Services Network (BSN) as FCC's behavioral-health network partner (providers register at providers.bsnnet.com/auth/register) — distinct from the FCC in-house Utilization Department that actually adjudicates BA prior authorizations by fax/email/portal. No code-level billing table is published on this page."
+);
+const OPTUM_PROVIDER_EXPRESS_EDI = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/admin-resources/claim-tips/electronic-claim-submission-and-electronic-data-interchange.html',
+  'Optum Provider Express — Electronic Claim Submission & EDI page — states verbatim "The Optum payer ID is 87726." Confirms UnitedHealthcare, Optum, and United Behavioral Health (the legacy name behind Optum Behavioral Health) claims — including behavioral health — route on this same ID, matching Availity’s master payer list entry for UnitedHealthcare (87726) and the identical finding already shipped for UnitedHealthcare Community Plan of North Carolina in vob/north-carolina.ts.'
+);
+const CIGNA_AUTISM_RESOURCE_GUIDE = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf',
+  'Cigna Autism Resource Guide, Mar 2025 — a national document with no Florida-specific carve-out — states verbatim: "Use Evernorth payer ID 62308," confirming ABA/autism claims use the SAME payer ID as Cigna medical claims nationwide (no second EDI hop). Same document already cited for this fact in vob/georgia.ts.'
+);
+const CIGNA_EN0499 = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/en_mm_0499_coveragepositioncriteria_intensive_behavioral_interventions.pdf',
+  'Evernorth/Cigna EN0499, effective 2026-05-15 — national clinical-necessity policy; no PA on assessment codes 97151/97152/0362T, PA required for treatment codes; contains no unit caps, POS codes, telehealth modifiers, or licensure-tier modifiers.'
+);
+const AETNA_CPB0554 = src(
+  'https://www.aetna.com/cpb/medical/data/500_599/0554.html',
+  'Aetna CPB 0554 — scoped to Down syndrome/non-ASD indications; 97151-97158 appear only under "not covered for indications listed in this CPB." Cross-references CPB 0648 for actual ASD coverage.'
+);
+const AETNA_CPB0648 = src(
+  'https://www.aetna.com/cpb/medical/data/600_699/0648.html',
+  'Aetna CPB 0648 (Autism Spectrum Disorders) — 97151-97158 listed as covered if selection criteria are met (0362T/0373T under "other CPT codes related to the CPB"); no unit caps, POS codes, telehealth modifiers, or licensure-tier modifiers given.'
+);
+const AETNA_ABA_CLAIMS_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/newsletters-news/office-link-updates-june-2022/behavioral-health-updates/applied-behavior-analysis-treatment-and-claims.html',
+  "Aetna OfficeLink Updates (June 2022), \"Applied behavior analysis (ABA) treatment and claims\" — read directly. Describes only the ABA Medical Necessity Guide's purpose; contains no statement of whether ABA claims are administered in-house or via a third-party behavioral-health carve-out, and names no claims administrator. Absence of a named carve-out here is not confirmation of in-house administration."
+);
+const OPTUM_SCC = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf',
+  'Optum ABA Supplemental Clinical Criteria, Policy BH803ABASCC082025, annual review 04/2026 — contains zero CPT codes (ICD-10 F84.0 only); points to a separate Optum ABA Reimbursement Policy for coding detail.'
+);
+const OPTUM_REIMBURSEMENT_POLICY = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
+  "Optum ABA Reimbursement Policy 2022RP501A — a NATIONAL commercial policy, not FL-specific. Max-daily-units and HN/HM/HO/HP modifier tiers per code; no POS or telehealth modifier given. Applied here as 'inferred' absent a confirmed FL-specific override, same treatment as vob/georgia.ts."
+);
+const PVERIFY_PAYER_LIST = src(
+  'https://pverify.com/wp-content/uploads/2026/03/pVerifyPayers_All-Payers-List-3-2026.pdf',
+  'pVerify public payer list, dated March 2026 — read via PDF text extraction (a different snapshot than PVERIFY_PAYER_LIST_FL above, dated June 2026; both cited where each was the document actually read). Confirms: 00980 Aetna Better Health (FL), 00300 Molina Healthcare of Florida, 00004 Cigna, 00510 Cigna Behavioral, 00001 Aetna, 00192 United Healthcare, UHG007 United Healthcare - Optum Behavioral Solutions. No entry found under "Community Care Plan," "Florida Community Care," "Therapy Network," or "Behavioral Services Network"/"BSN."'
+);
+
+/* ==================== aetna-better-health-florida ==================== */
+
+const aetnaBetterHealthFlEdi: EdiRouting = {
+  payerId: { pverify: '00980', availity: '128FL', changeHealthcare: 'unverified' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Behavioral Services Network (BSN) — BA network contracting/credentialing delegate only',
+    administratorPayerId: '128FL (same as ABHFL medical — BSN publishes no distinct EDI/claims payer ID of its own)',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.changeHealthcare': 'Optum/Change Healthcare payer directory — not checked this pass.',
+    supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for payer ID 128FL.',
+    'bhCarveOut.administratorPayerId':
+      "Confirm directly with ABHFL provider services or BSN (info@bsnnet.com, 305-907-7470) whether BA claims specifically require a routing marker distinct from the standard 128FL EDI ID — neither BSN's site nor the ABHFL Quick Reference Guide states one exists, but this is an absence of evidence, not confirmation.",
+    'bhCarveOut.abaRidesOn': 'Same as administratorPayerId.',
+    'bhCarveOut.twoHopRequired': 'Same as administratorPayerId.',
+  },
+  sources: [PVERIFY_PAYER_LIST, ABHFL_QRG, BSN_PROVIDER_SITE],
+};
+
+const aetnaBetterHealthFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': mcoEntry('97151', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97152': mcoEntry('97152', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '0362T': mcoEntry('0362T', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97153': mcoEntry('97153', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97154': mcoEntry('97154', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97155': mcoEntry('97155', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97156': mcoEntry('97156', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '97157': mcoEntry('97157', {
+    planName: 'Aetna Better Health of Florida',
+    confirmed: ['covered'],
+    extraNote: 'ABHFL publishes no BA code-level table of its own — the state-verified absence applies here by the same plan-compliance clause as every other MMA plan.',
+    extraSources: [],
+  }),
+  '97158': mcoEntry('97158', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+  '0373T': mcoEntry('0373T', { planName: 'Aetna Better Health of Florida', confirmed: ['covered', 'paRequired'], extraSources: [ABHFL_QRG] }),
+};
+
+/* ==================== molina-healthcare-florida ==================== */
+
+const molinaFlEdi: EdiRouting = {
+  payerId: { pverify: '00300', availity: '51062', changeHealthcare: 'unverified' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'none',
+    administratorPayerId: '',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+  },
+  verifyVia: {
+    'payerId.changeHealthcare': 'Optum/Change Healthcare payer directory — not checked this pass.',
+    supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for payer ID 51062.',
+  },
+  sources: [PVERIFY_PAYER_LIST, MOLINA_FL_HANDBOOK],
+};
+
+const molinaFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': mcoEntry('97151', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97152': mcoEntry('97152', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '0362T': mcoEntry('0362T', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97153': mcoEntry('97153', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97154': mcoEntry('97154', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97155': mcoEntry('97155', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97156': mcoEntry('97156', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '97157': mcoEntry('97157', {
+    planName: 'Molina Healthcare of Florida',
+    confirmed: ['covered'],
+    extraNote:
+      "Molina's own 213-page Medicaid Provider Handbook contains zero mentions of Behavior Analysis or any BA code — BA-specific rules live only in Molina's separate, access-restricted BA Quick Reference Guide, not reviewed this pass.",
+    extraSources: [MOLINA_FL_HANDBOOK],
+  }),
+  '97158': mcoEntry('97158', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+  '0373T': mcoEntry('0373T', { planName: 'Molina Healthcare of Florida', confirmed: ['covered', 'paRequired'], extraSources: [MOLINA_FL_HANDBOOK] }),
+};
+
+/* ==================== community-care-plan-florida ==================== */
+
+const communityCarePlanFlEdi: EdiRouting = {
+  payerId: {
+    pverify: 'unverified',
+    availity: '65062 (professional) / 12k89 (institutional) — Therapy Network of Florida, not Community Care Plan directly',
+    changeHealthcare: 'unverified',
+  },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Therapy Network of Florida (TNFL) — full delegation of BOTH authorizations and claims for BA',
+    administratorPayerId: '65062 (professional) / 12k89 (institutional)',
+    abaRidesOn: 'medical',
+    twoHopRequired: true,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'verified',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'verified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Not found under "Therapy Network," "TNFL," or "Community Care Plan" in either pVerify payer list checked this pass — confirm directly with pVerify onboarding.',
+    supports270271: "TNFL's own BA manual documents claims (837) submission in detail but does not confirm 270/271 real-time eligibility support specifically — confirm via Availity onboarding.",
+    'bhCarveOut.abaRidesOn':
+      "TNFL's manual treats BA claims as standard professional/institutional (837P/837I) claims, not a distinct behavioral-health service-type bucket — inferred as 'medical' rather than confirmed verbatim.",
+  },
+  sources: [CCP_TNFL_BA_MANUAL],
+};
+
+const communityCarePlanFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': mcoEntry('97151', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired'],
+    extraNote: "TNFL's own BA Provider Manual confirms every code on the FL BA fee schedule requires TN prior authorization directly, not just by state-pattern inference.",
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97152': mcoEntry('97152', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired'],
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '0362T': mcoEntry('0362T', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired'],
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97153': mcoEntry('97153', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired', 'unitCap'],
+    extraNote: "TNFL's manual restates the 40-hrs/week aggregate threshold as a documentation trigger (\"Any requests for more than 40 hours\" need extra justification) directly, not just by state-pattern inference.",
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97154': mcoEntry('97154', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired', 'unitCap'],
+    extraNote: "TNFL's manual restates the 6-participant group-size cap directly.",
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97155': mcoEntry('97155', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired', 'unitCap'],
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97156': mcoEntry('97156', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired'],
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '97157': mcoEntry('97157', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered'],
+    extraNote: "TNFL's manual does not separately confirm this absence — inherits the statewide finding (absent from both AHCA fee schedules and the coverage policy).",
+    extraSources: [],
+  }),
+  '97158': mcoEntry('97158', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired', 'unitCap'],
+    extraNote: "TNFL's manual restates the 6-participant group-size cap directly.",
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+  '0373T': mcoEntry('0373T', {
+    planName: 'Community Care Plan (via Therapy Network of Florida)',
+    confirmed: ['covered', 'paRequired'],
+    extraSources: [CCP_TNFL_BA_MANUAL],
+  }),
+};
+
+/* ==================== florida-community-care ==================== */
+
+const floridaCommunityCareEdi: EdiRouting = {
+  payerId: { pverify: 'unverified', availity: 'FLCCR', changeHealthcare: 'unverified' },
+  supports270271: 'unverified',
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Behavioral Services Network (BSN) — network credentialing/contracting partner only',
+    administratorPayerId: "FLCCR (same as FCC medical — BSN publishes no distinct EDI/claims payer ID; BA prior authorization itself runs through FCC's own in-house Utilization Department, not BSN)",
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'unverified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'unverified',
+    supports270271: 'unverified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'inferred',
+    'bhCarveOut.abaRidesOn': 'inferred',
+    'bhCarveOut.twoHopRequired': 'inferred',
+  },
+  verifyVia: {
+    'payerId.pverify': 'Not found under "Florida Community Care" or "FLCCR" in either pVerify payer list checked this pass — confirm directly with pVerify onboarding.',
+    supports270271: "FCC's own BA services page confirms claims routing (FLCCR via Availity) but does not confirm 270/271 real-time eligibility support specifically.",
+    'bhCarveOut.administratorPayerId':
+      "Confirm directly with FCC's Utilization Department (FCCUMDepartment@FCCHealthPlan.com, 1-833-322-7526) or BSN whether BA claims specifically require routing distinct from FLCCR — neither source states one exists, but this is an absence of evidence, not confirmation.",
+    'bhCarveOut.abaRidesOn': 'Same as administratorPayerId.',
+    'bhCarveOut.twoHopRequired': 'Same as administratorPayerId.',
+  },
+  sources: [FCC_BA_PAGE, BSN_PROVIDER_SITE],
+};
+
+const floridaCommunityCareCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': mcoEntry('97151', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97152': mcoEntry('97152', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '0362T': mcoEntry('0362T', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97153': mcoEntry('97153', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97154': mcoEntry('97154', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97155': mcoEntry('97155', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97156': mcoEntry('97156', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '97157': mcoEntry('97157', {
+    planName: 'Florida Community Care',
+    confirmed: ['covered'],
+    extraNote: "FCC's BA services page publishes no code-level table of its own — the state-verified absence applies here by the same plan-compliance clause as every other MMA plan.",
+    extraSources: [],
+  }),
+  '97158': mcoEntry('97158', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+  '0373T': mcoEntry('0373T', { planName: 'Florida Community Care', confirmed: ['covered', 'paRequired'], extraSources: [FCC_BA_PAGE] }),
+};
+
+/* ==================== aetna-florida (commercial) ==================== */
+
+const aetnaFlEdi: EdiRouting = {
+  payerId: { pverify: '00001', availity: '60054', changeHealthcare: '60054' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'unverified',
+    administratorPayerId: 'unverified',
+    abaRidesOn: 'unverified',
+    twoHopRequired: 'unverified',
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'inferred',
+    'payerId.changeHealthcare': 'inferred',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'unverified',
+  },
+  verifyVia: {
+    'payerId.pverify': 'National Aetna payer ID, not FL-specific — same ID already verified for vob/georgia.ts via the same pVerify master list.',
+    'payerId.availity':
+      "The Availity payer list PDF checked this pass carries an \"As of 08/08/2012\" footer on every page — a stale snapshot, not confirmed current. 60054 is Aetna's long-standing national payer ID (also used unchanged in vob/georgia.ts), so it ships 'inferred' rather than 'verified' pending a current Availity onboarding check.",
+    'payerId.changeHealthcare': 'Not independently checked against a current Change Healthcare payer directory this pass — same caveat as payerId.availity.',
+    supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for payer ID 60054.',
+    'bhCarveOut.administrator':
+      "Checked Aetna's own June 2022 OfficeLink Updates \"Applied behavior analysis (ABA) treatment and claims\" page directly — it describes only the ABA Medical Necessity Guide and names no claims administrator, in-house or third-party. A broader search found no named ABA/BH carve-out vendor for Aetna commercial nationally (unlike Cigna/Evernorth or UHC/Optum) — but absence of a named carve-out is not confirmation of in-house administration. Confirm via Aetna provider services or the national BH Provider Manual.",
+  },
+  sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST_STALE, AETNA_ABA_CLAIMS_PAGE],
+};
+
+function aetnaFlCodeEntry(): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired: 'Required — precertification (form GR-69017-4)',
+    unitCap: 'unverified',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers: ['unverified'],
+    notes:
+      'Verify via: Aetna provider services / precertification — CPB 0554 & 0648 are medical-necessity policies only; no ABA coding/reimbursement policy could be located this pass (same finding as vob/georgia.ts).',
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [AETNA_CPB0554, AETNA_CPB0648],
+  };
+}
+
+const aetnaFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': aetnaFlCodeEntry(),
+  '97152': aetnaFlCodeEntry(),
+  '97153': aetnaFlCodeEntry(),
+  '97154': aetnaFlCodeEntry(),
+  '97155': aetnaFlCodeEntry(),
+  '97156': aetnaFlCodeEntry(),
+  '97157': aetnaFlCodeEntry(),
+  '97158': aetnaFlCodeEntry(),
+  '0362T': aetnaFlCodeEntry(),
+  '0373T': aetnaFlCodeEntry(),
+};
+
+/* ==================== cigna-florida (commercial) ==================== */
+
+const cignaFlEdi: EdiRouting = {
+  payerId: { pverify: '00004', availity: '62308', changeHealthcare: '62308' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Evernorth Behavioral Health',
+    administratorPayerId: '62308',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'verified',
+    'bhCarveOut.abaRidesOn': 'verified',
+    'bhCarveOut.twoHopRequired': 'verified',
+  },
+  verifyVia: {
+    supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for payer ID 62308.',
+  },
+  sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST_STALE, CIGNA_AUTISM_RESOURCE_GUIDE],
+};
+
+function cignaFlCodeEntry(paRequired: string): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired,
+    unitCap: 'unverified',
+    capPeriod: 'unverified',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers: ['unverified'],
+    notes:
+      'Verify via: Cigna/Evernorth provider services — EN0499 is a medical-necessity policy only; no coding/reimbursement mechanics are published in it (same finding as vob/georgia.ts).',
+    fieldStatus: {
+      covered: 'verified',
+      paRequired: 'verified',
+      unitCap: 'unverified',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'unverified',
+    },
+    sources: [CIGNA_EN0499],
+  };
+}
+
+const cignaFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': cignaFlCodeEntry('Not required (per EN0499)'),
+  '97152': cignaFlCodeEntry('Not required (per EN0499)'),
+  '97153': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97154': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97155': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97156': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97157': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '97158': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+  '0362T': cignaFlCodeEntry('Not required (per EN0499)'),
+  '0373T': cignaFlCodeEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+};
+
+/* ==================== unitedhealthcare-florida (commercial) ==================== */
+
+const unitedhealthcareFlEdi: EdiRouting = {
+  payerId: { pverify: '00192', availity: '87726', changeHealthcare: '87726' },
+  supports270271: true,
+  supportsRealtime: 'unverified',
+  bhCarveOut: {
+    administrator: 'Optum Behavioral Health',
+    administratorPayerId: '87726',
+    abaRidesOn: 'medical',
+    twoHopRequired: false,
+  },
+  fieldStatus: {
+    'payerId.pverify': 'verified',
+    'payerId.availity': 'verified',
+    'payerId.changeHealthcare': 'verified',
+    supports270271: 'verified',
+    supportsRealtime: 'unverified',
+    'bhCarveOut.administrator': 'verified',
+    'bhCarveOut.administratorPayerId': 'verified',
+    'bhCarveOut.abaRidesOn': 'verified',
+    'bhCarveOut.twoHopRequired': 'verified',
+  },
+  verifyVia: {
+    supportsRealtime: 'Confirm real-time vs. batch via Availity onboarding for payer ID 87726.',
+    'bhCarveOut.administratorPayerId':
+      "pVerify separately lists a distinct \"UHG007 United Healthcare - Optum Behavioral Solutions\" code (this file's PVERIFY_PAYER_LIST, March 2026 snapshot) — this may be used for real-time 270/271 eligibility specifically even though claims settle on 87726 (confirmed directly via Optum's own Provider Express EDI page); confirm which ID a live eligibility check actually returns before automating on 87726 alone.",
+  },
+  sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST_STALE, OPTUM_PROVIDER_EXPRESS_EDI, OPTUM_SCC],
+};
+
+function uhcFlCodeEntry(unitCap: string, modifiers: string[]): CodeGridEntry {
+  return {
+    covered: 'Yes',
+    paRequired:
+      'Required — two-step Optum authorization (assessment, then treatment); continued-service review every 4–6 months',
+    unitCap,
+    capPeriod: 'day',
+    posAllowed: ['unverified'],
+    telehealth: 'unverified',
+    modifiers,
+    notes:
+      "Unit caps and modifiers sourced from Optum's national ABA Reimbursement Policy (2022RP501A) — the FL-specific Supplemental Clinical Criteria contains no CPT codes at all; applied here absent a confirmed FL-specific override (same finding as vob/georgia.ts). Verify via: Provider Express / UHC provider services.",
+    fieldStatus: {
+      covered: 'inferred',
+      paRequired: 'verified',
+      unitCap: 'inferred',
+      posAllowed: 'unverified',
+      telehealth: 'unverified',
+      modifiers: 'inferred',
+    },
+    sources: [OPTUM_SCC, OPTUM_REIMBURSEMENT_POLICY],
+  };
+}
+
+const unitedhealthcareFlCodeGrid: Record<string, CodeGridEntry> = {
+  '97151': uhcFlCodeEntry('32 units/day (≤8 hrs)', ['HN', 'HO', 'HP']),
+  '97152': uhcFlCodeEntry('16 units/day (≤4 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97153': uhcFlCodeEntry('32 units/day (≤8 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97154': uhcFlCodeEntry('18 units/day (≤4.5 hrs)', ['HN', 'HM', 'HO', 'HP']),
+  '97155': uhcFlCodeEntry('24 units/day (≤6 hrs)', ['HN', 'HO', 'HP']),
+  '97156': uhcFlCodeEntry('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '97157': uhcFlCodeEntry('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '97158': uhcFlCodeEntry('16 units/day (≤4 hrs)', ['HN', 'HO', 'HP']),
+  '0362T': uhcFlCodeEntry('16 units/day (≤4 hrs)', []),
+  '0373T': uhcFlCodeEntry('32 units/day (≤8 hrs)', []),
+};
+
 /* ==================== export ==================== */
 
 export const floridaVob: Record<string, VobExtension> = {
@@ -923,4 +1509,31 @@ export const floridaVob: Record<string, VobExtension> = {
   'simply-healthcare-florida': { edi: simplyEdi, codeGrid: simplyCodeGrid, lastUpdated: ACCESS_DATE },
   'unitedhealthcare-community-plan-florida': { edi: uhcCommunityPlanEdi, codeGrid: uhcCodeGrid, lastUpdated: ACCESS_DATE },
   'humana-healthy-horizons-florida': { edi: humanaEdi, codeGrid: humanaCodeGrid, lastUpdated: ACCESS_DATE },
+  'aetna-better-health-florida': {
+    edi: aetnaBetterHealthFlEdi,
+    codeGrid: aetnaBetterHealthFlCodeGrid,
+    rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No ABHFL-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    lastUpdated: ACCESS_DATE,
+  },
+  'molina-healthcare-florida': {
+    edi: molinaFlEdi,
+    codeGrid: molinaFlCodeGrid,
+    rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No Molina-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    lastUpdated: ACCESS_DATE,
+  },
+  'community-care-plan-florida': {
+    edi: communityCarePlanFlEdi,
+    codeGrid: communityCarePlanFlCodeGrid,
+    rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. TNFL's own BA manual defers explicitly to "the Florida BA Fee Schedule" without restating rates — this table is that state schedule, used as the reference baseline.` },
+    lastUpdated: ACCESS_DATE,
+  },
+  'florida-community-care': {
+    edi: floridaCommunityCareEdi,
+    codeGrid: floridaCommunityCareCodeGrid,
+    rates: { ...floridaMedicaidRates, source: `${floridaMedicaidRates.source}. No FCC-specific rate schedule is publicly posted — MCOs must not impose limits more stringent than this state schedule, which serves as the reference baseline (AHCA BA Coverage Policy §1.2).` },
+    lastUpdated: ACCESS_DATE,
+  },
+  'aetna-florida': { edi: aetnaFlEdi, codeGrid: aetnaFlCodeGrid, lastUpdated: ACCESS_DATE },
+  'cigna-florida': { edi: cignaFlEdi, codeGrid: cignaFlCodeGrid, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-florida': { edi: unitedhealthcareFlEdi, codeGrid: unitedhealthcareFlCodeGrid, lastUpdated: ACCESS_DATE },
 };
