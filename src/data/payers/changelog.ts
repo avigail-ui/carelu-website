@@ -1188,4 +1188,78 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 175, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      "Massachusetts + Maryland VOB enrichment shipped: Layers 1 (EDI routing crosswalk), 3 (code-level coverage grid, 97151-97158/0362T/0373T), and 4 (Medicaid rate tables) populated for all 10 MA guides (masshealth-massachusetts-medicaid, mbhp, wellsense, tufts-health-together, fallon, health-new-england, mass-general-brigham-health-plan, aetna/cigna/unitedhealthcare-massachusetts) and all 4 MD guides (maryland-medicaid, aetna/cigna/unitedhealthcare-maryland). MASSACHUSETTS: the MassHealth 270/271 companion guide (Nov 2023) confirms managed-care enrollment rides Loop 2110C (EB01=L/MC/D, EB05 returns the plan name as free text — NO numeric carrier-code table exists, unlike the coded 2120C tables some other states publish). 101 CMR 358.03's official fee schedule was retrieved in full: it prices exactly 7 codes (97151/97155/97156=$30.73, 97153=$16.37, 97154=$13.91, 97157=$26.12, H0031-U2=$30.73) and CONFIRMS 97152/97158/0362T/0373T absent from the schedule (individual-consideration pricing per 358.03(4)(b), not a retrieval gap). The Carelon/MBHP ABA Performance Specification (updated 2/15/2026) confirms a group-session cap (4.5 hrs/day, 2-8 members) but NO per-code unit caps, POS codes, or telehealth modifiers anywhere — shipped as a confirmed absence. WellSense's own EDI companion guide (Mar 2024) is flagged as out-of-date on BH-carve-out routing since WellSense insourced ABA administration from Carelon 1/1/2026; Mass General Brigham Health Plan's Optum BH payer ID (87726) is confirmed to be the SAME number as UnitedHealthcare's national medical payer ID, an unresolved routing ambiguity flagged rather than silently resolved. MARYLAND: the single most load-bearing finding — Maryland's own 270/271 companion guide (2013, the only version published) contains ZERO references to \"BHASO,\" \"Carelon,\" \"Beacon,\" or any behavioral-health administrator anywhere in its 22 pages; a plain 270/271 against Maryland Medicaid's MMIS does NOT surface the ABA carve-out, so hop-2 routing to Carelon has to be hard-coded business logic, not detected from the wire. Carelon became Maryland's BHASO only recently (1/1/2025, succeeding Optum) — MDH's own Provider Transmittal PT 54-25 names the Carelon submitter ID as BHOMD (superseding Optum-era OMDBH), independently corroborated by Claim.MD's payer registry; shipped as 'inferred' rather than 'verified' for ABA specifically since no ABA-named transmittal citing BHOMD was found. The MD ABA fee schedule's two remaining rate gaps (97154, 97158) were filled directly from the manual's pp.15-16 table ($10.45/$8.36/$6.96 tiered per-participant for 97154; $10.45 for 97158), and Maryland's telehealth eligibility rule (GT modifier limited to direct supervision, parent training, group parent training) is shipped as a confirmed negative for all other codes, not an omission. pVerify's payer-list page returned a Cloudflare bot-block on direct retrieval for Maryland this pass — every pVerify-sourced field for the 4 MD guides ships 'unverified' rather than from an unconfirmed scrape.",
+    guides: [
+      'masshealth-massachusetts-medicaid',
+      'mbhp-massachusetts',
+      'wellsense-massachusetts',
+      'tufts-health-together',
+      'fallon-health-massachusetts',
+      'health-new-england-massachusetts',
+      'mass-general-brigham-health-plan',
+      'aetna-massachusetts',
+      'cigna-massachusetts',
+      'unitedhealthcare-massachusetts',
+      'maryland-medicaid',
+      'aetna-maryland',
+      'cigna-maryland',
+      'unitedhealthcare-maryland',
+    ],
+    details: [
+      {
+        slug: 'masshealth-massachusetts-medicaid',
+        field: 'rates',
+        change:
+          "101 CMR 358.03(3) fee schedule retrieved in full: 97151/97155/97156=$30.73, 97153=$16.37, 97154=$13.91, 97157=$26.12, H0031-U2=$30.73 (eff. 10/1/2024). 97152, 97158, 0362T, 0373T confirmed ABSENT from the published schedule — reimbursed by individual consideration per 358.03(4)(b); no bulletin naming an applied rate for these four was found.",
+        sourceUrl: 'https://www.mass.gov/doc/rates-for-applied-behavior-analysis-effective-october-1-2024-0/download',
+      },
+      {
+        slug: 'masshealth-massachusetts-medicaid',
+        field: 'edi.medicaid271Notes',
+        change:
+          "MassHealth's 270/271 companion guide (Nov 2023) confirms Loop 2110C EB01=L(PCC)/MC(MCO,ACO,ICO,CP,SCO,PACE)/D(Community Partner), EB03=30, EB05 returns the plan name as free text with no numeric carrier-code table. Both real-time (single-patient) and batch supported given a Trading Partner Agreement on file.",
+        sourceUrl: 'https://www.mass.gov/doc/masshealth-standard-companion-guide-health-care-eligibilitybenefit-inquiry-and-information-response-270271-0/download',
+      },
+      {
+        slug: 'wellsense-massachusetts',
+        field: 'edi.bhCarveOut',
+        change:
+          "WellSense's own EDI Claims Companion Guide (Mar 2024) still names Beacon Health Strategies for BH claims routing — flagged as OUT OF DATE against the main guide's already-verified fact that WellSense insourced BH administration from Carelon effective 1/1/2026. administratorPayerId and abaRidesOn ship 'inferred', not 'verified', pending a post-insourcing WellSense EDI document.",
+        sourceUrl: 'https://www.wellsense.org/hubfs/Provider/Documents%20and%20Forms/Claims%20Resources/EDI_Claims_Companion_Guide_for_5010.pdf',
+      },
+      {
+        slug: 'mass-general-brigham-health-plan',
+        field: 'edi.bhCarveOut.administratorPayerId',
+        change:
+          "MGB's own claims page confirms BH claims route to Optum, payer ID 87726 — the SAME number as UnitedHealthcare's national medical payer ID per UHC's own 5/13/2026 payer list. How a clearinghouse distinguishes MGB's medical vs. Optum BH claims when the ID is shared was not confirmed this pass; shipped as an open verifyVia flag rather than silently resolved.",
+        sourceUrl: 'https://massgeneralbrighamhealthplan.org/providers/claims',
+      },
+      {
+        slug: 'maryland-medicaid',
+        field: 'edi.bhCarveOut',
+        change:
+          "CRITICAL FINDING: Maryland's own 270/271 companion guide (2013, the only version hosted) contains zero references to BHASO/Carelon/Beacon/ValueOptions anywhere in 22 pages — a plain 270/271 against MD Medicaid's MMIS does NOT surface the ABA carve-out; hop-2 routing to Carelon is not wire-discoverable and must be hard-coded. MDH Provider Transmittal PT 54-25 (Dec 16, 2024) confirms Carelon became the BHASO 1/1/2025 (succeeding Optum) with submitter ID BHOMD (formerly OMDBH) — corroborated by Claim.MD's payer registry, but not confirmed ABA-specific by name (shipped 'inferred').",
+        sourceUrl: 'https://health.maryland.gov/iac/HIPAA/pdf/Companion%20Guide_270n271_EligibiltyInquirynResponse.pdf',
+      },
+      {
+        slug: 'maryland-medicaid',
+        field: 'rates.byCode.97154 / rates.byCode.97158',
+        change:
+          "Filled the two rate gaps left in the main guide's prose directly from the MDH ABA Provider Manual (eff. 2/1/2026) fee schedule, pp.15-16: 97154 = $10.45 (psych/BCBA-D/BCBA, per participant) / $8.36 (BCaBA) / $6.96 (RBT/BT), daily max 16 units, group limited to 2-8 participants; 97158 = $10.45 (psych/BCBA-D/BCBA tier), daily max 10 units, group limited to 2-8 participants.",
+        sourceUrl: 'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf',
+      },
+      {
+        slug: 'maryland-medicaid',
+        field: 'codeGrid.*.telehealth',
+        change:
+          "Maryland's telehealth eligibility (GT modifier) is confirmed limited to direct BCaBA/RBT/BT supervision, parent training, and group parent training (97155, 97156, 97157) — shipped as a confirmed NEGATIVE for all other codes (97151, 97152, 97153, 97154, 97158, 0362T, 0373T), not an omission or an inferred gap.",
+        sourceUrl: 'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf',
+      },
+    ],
+    totals: { guides: 175, states: 19 },
+  },
 ];
