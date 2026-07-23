@@ -24,6 +24,7 @@ import { errorResponse, jsonResponse, sha256 } from './payers/_shared.js';
    ================================================================ */
 
 type Funding = 'self-funded' | 'fully-insured' | 'mixed' | 'unknown';
+type MedicalFunding = 'fully-insured' | 'self-funded' | 'ambiguous' | 'unknown';
 
 interface EmployerRow {
   sponsorNameNormalized: string;
@@ -35,6 +36,13 @@ interface EmployerRow {
   source: string;
   filingYear: number;
   raw?: string[];
+  // Medical-line disambiguation (docs/vob-build.md Layer 5 fix): which line
+  // of business the filing's Schedule A rows actually insure, so a `funding`
+  // of 'mixed' (medical + dental + life etc. on one filing) resolves to a
+  // specific medical-benefit read instead of degrading to 'unknown'.
+  medicalFunding: MedicalFunding;
+  medicalCarriers?: string[];
+  stopLoss?: boolean;
 }
 
 interface DatasetIndex {
@@ -69,12 +77,21 @@ function normalize(raw: string): string {
 const MATCH_RESOLUTION =
   'Matched Form 5500 filing(s) for this employer name — use the funding value on the matched row(s). ' +
   'An employer with multiple plans (e.g. self-funded medical + fully-insured dental/vision) can legitimately ' +
-  'have rows that disagree; prefer the row for the benefit line being verified.';
+  'have rows that disagree; prefer the row for the benefit line being verified. For the MEDICAL benefit ' +
+  "specifically, prefer `medicalFunding` over `funding`: `funding` is the plan-level Form 5500 Part II read " +
+  "and lands on 'mixed' whenever one filing wraps medical + dental + life etc. under the same funding-" +
+  "arrangement checkboxes, while `medicalFunding` is derived from which Schedule A row actually insures the " +
+  "medical line — 'fully-insured' names the carrier(s) in `medicalCarriers`; 'self-funded' means every " +
+  'Schedule A on the filing is either an administrative-services-only (ASO) health contract with no premium ' +
+  "reported or a purely ancillary line (dental/vision/life/disability/stop-loss), so the medical benefit " +
+  "itself is paid from general assets (`stopLoss: true` when a stop-loss Schedule A is present); 'ambiguous' " +
+  'means a carrier on the filing could not be classified as medical or ancillary from the checkboxes or the ' +
+  "name/text rule list, and its name is preserved in `medicalCarriers` rather than guessed either way.";
 
 const NO_MATCH_RESOLUTION =
   "No Form 5500 filing matched this employer name. Absence of a match is NOT evidence of fully-insured " +
   'status — employers under ~100 participants are largely exempt from filing, and church/government plans ' +
-  "never file at all. Resolve funding as 'unknown' and route to a scripted VOB call.";
+  "never file at all. Resolve both funding and medicalFunding as 'unknown' and route to a scripted VOB call.";
 
 export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url);

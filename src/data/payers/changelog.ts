@@ -1477,4 +1477,32 @@ export const PAYER_CHANGELOG: PayerChangeEntry[] = [
     ],
     totals: { guides: 179, states: 19 },
   },
+  {
+    date: '2026-07-23',
+    type: 'vob-enrichment',
+    summary:
+      "Layer 5 fix: medical-line disambiguation from Schedule A. The plan-level `funding` field lands on " +
+      "'mixed' whenever one Form 5500 filing wraps medical + dental + life etc. under the same Part II " +
+      "funding-arrangement checkboxes — 70.2% of employer rows (38,013/54,141) were landing there and " +
+      "degrading to 'unknown' downstream. Added `medicalFunding` ('fully-insured' | 'self-funded' | " +
+      "'ambiguous' | 'unknown'), `medicalCarriers`, and `stopLoss` to every row, derived per Schedule A row " +
+      "joined on ACK_ID: a health-benefit checkbox with a reported premium names the medical carrier as " +
+      "fully-insured; a health checkbox with no premium is an administrative-services-only (ASO) contract " +
+      "on a self-funded plan; a checkbox-less row is matched against a documented carrier-name / free-text " +
+      'rule list (DENTAL, VISION, VSP, DELTA DENTAL, LIFE INSURANCE, DISABILITY, STOP LOSS, AD&D, EAP, ' +
+      "CRITICAL ILLNESS, etc. — full lists in scripts/vob/build_employers.py) for ancillary lines; anything " +
+      "left over resolves to 'ambiguous' with the carrier name preserved, never guessed. Re-ran against the " +
+      'same DOL/EBSA EFAST2 Form 5500 + Schedule A plan-year-2024 bulk datasets (54,141 rows, >=125 ' +
+      "participants, 19.88MB — unchanged from the prior Layer 5 build). New distribution: 6,083 (11.2%) " +
+      "fully-insured, 44,921 (83.0%) self-funded, 2,673 (4.9%) ambiguous, 464 (0.9%) unknown — the " +
+      "unresolvable 'mixed'/ambiguous share collapsed from 70.2% to 5.8%. `funding` is unchanged for " +
+      'compatibility; GET /api/employers now returns the new fields per row and the `resolution` field ' +
+      'explains when to prefer `medicalFunding` over `funding` for the medical benefit specifically. ' +
+      'Spot-checked: WALMART and HOME DEPOT mainland plans self-funded (medicalFunding matches), with a ' +
+      'Puerto Rico subsidiary plan on each correctly split out as fully-insured (Aetna / Triple-S Salud); ' +
+      "DELTA AIR LINES mainland plans self-funded; SAINT FRANCIS UNIVERSITY (327 participants, UPMC Health " +
+      "Plan) and SAMSONITE (1,341 participants, Blue Cross Blue Shield of Massachusetts) as fully-insured " +
+      'small-mid examples.',
+    totals: { guides: 179, states: 19 },
+  },
 ];
