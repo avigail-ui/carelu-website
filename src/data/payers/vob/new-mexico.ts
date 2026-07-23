@@ -1,6 +1,7 @@
 /* ================================================================
    VOB ENRICHMENT — New Mexico, Layers 1 (EDI routing crosswalk) +
-   3 (code-level coverage grid) + 4 (Medicaid rate tables).
+   3 (code-level coverage grid) + 4 (Medicaid rate tables) + 7
+   (contact & channel layer).
    See docs/vob-build.md for the spec.
 
    Sourcing notes (read before editing):
@@ -47,8 +48,24 @@
      HCA launched "Turquoise Claims," a single-point-of-entry for
      Medicaid claims, 3/23/2026 (legacy payor/segment IDs denied after
      6/15/2026) — captured on new-mexico-medicaid.
+   - Layer 7 (contact & channel): phone/fax/portal facts are mined from
+     this file's own sourced notes plus direct re-fetches of the same
+     documents (the Cigna Evernorth autism resource guide, the Optum NM
+     Turquoise Care QRG, the Presbyterian provider-authorizations page,
+     the BCBSNM Medicaid Provider Reference Manual, the HCA Third-Party
+     Assessor page, the Molina NM provider contact page, and the Aetna
+     ABA precert form GR-69017-4). BCBSNM's ABA Clinical Service Request
+     Form prints a phone/fax (800-851-7498 / 877-361-7659) that the guide
+     prose already flags as commercial/FEP-context — NOT reused here for
+     the Medicaid guide; the Medicaid PRM's own Behavioral Health
+     preauthorization line/fax is used instead. Where no primary source
+     surfaced a verifiable number (both commercial UnitedHealthcare
+     guides' precert lines), providerServicesPhone/fax are omitted
+     rather than guessed. scriptedQuestions are generated per guide from
+     that guide's own unverified/plan-dependent edi + codeGrid fields —
+     never padded, never asking about anything already verified.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -491,6 +508,143 @@ const uhcNmEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
 };
 
+/* -------------------- Layer 7: contact & channel sources -------------------- */
+
+const HCA_TPA = src(
+  'https://www.hca.nm.gov/new-mexico-medicaid-third-party-assessor/',
+  'HCA — New Mexico Medicaid Third Party Assessor page. Comagine Health is the state\'s TPA for FFS utilization review/prior authorization (behavioral health included); phone 1-866-962-2180, Monday through Friday 8:00 a.m. to 5:00 p.m. MT; portal at comagine.org/program/new-mexico-medicaid.'
+);
+const BCBSNM_MEDICAID_PRM = src(
+  'https://www.bcbsnm.com/docs/provider/nm/medicaid-prm.pdf',
+  'BCBSNM Medicaid (Turquoise Care) Provider Reference Manual. Managed Care Plan Contacts List: BCBSNM Medicaid program / Behavioral Health preauthorization line 1-877-232-5518 (also cited as Utilization Management — Preauthorization and Out-of-Network Referrals); Preauthorization Fax — Behavioral Health 888-530-9809 (outpatient service requests only); Provider Customer Service (claims, benefits) 1-800-693-0663; Eligibility & Benefit IVR 1-888-349-3706 (Mon–Fri 5 a.m.–10:30 p.m. MT, Sat 5 a.m.–2:30 p.m. MT); Availity self-service portal (1-800-282-4548). NOTE: this manual\'s numbers are the Medicaid/Turquoise Care lines — distinct from, and more reliable for Medicaid members than, the ABA Clinical Service Request Form\'s printed commercial/FEP phone/fax.'
+);
+const PHS_AUTHORIZATIONS = src(
+  'https://www.phs.org/providers/authorizations',
+  'Presbyterian Health Plan — Authorizations for Providers page. Prior Authorization/Utilization Management assistance at 505-923-5757 or 1-888-923-5757 (available during and after normal business hours); Turquoise Care behavioral health/ABA authorization fax (505) 843-3019; myPRES provider portal (mypres.phs.org) plus an online Turquoise Care PA submission portal (sso2.phs.org).'
+);
+const MOLINA_NM_CONTACT = src(
+  'https://www.molinahealthcare.com/providers/nm/medicaid/contacts/contact_info.aspx',
+  'Molina Healthcare of New Mexico — Provider Contact Us page. Provider Services (855) 322-4078 (TTY 711), Monday through Friday 8:00 a.m. to 5:00 p.m. MT; references the Availity Essentials provider portal for prior-authorization lookup tools. No Molina-specific ABA/behavioral-health fax published.'
+);
+const AETNA_ABA_PRECERT_FORM = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/pharmacy-insurance/healthcare-professional/documents/outpatient-behavioral-health-BH-ABA-assessment-precert.pdf',
+  'Aetna GR-69017-4 (7-26) — Outpatient Behavioral Health (BH) ABA Treatment Request: Required Information for Precertification. States to submit precertification via the Availity provider portal (Availity.com/aetnaproviders) or call the Precertification Department at 1-800-424-4047 (TTY 711); a separate FaxHub (833-596-0339) accepts supporting clinical information only, not new precert requests.'
+);
+const OPTUM_ABA_SCC = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/abaSCC.pdf',
+  'Optum ABA Supplemental Clinical Criteria (BH803ABASCC, annual review 08/2025, interim review 04/2026), hosted on the Provider Express portal (public.providerexpress.com). Confirms PA is required for ABA unless otherwise specified/mandated; contains no NM-specific coding mechanics and no provider-services phone/fax — commercial members verify via Provider Express / the number on the member\'s ID card.'
+);
+
+/* -------------------- Layer 7: vobContact objects -------------------- */
+
+const newMexicoMedicaidContact: VobContact = {
+  providerServicesPhone: '1-866-962-2180',
+  hours: 'Mon–Fri 8:00 a.m.–5:00 p.m. MT (Comagine Health, the state\'s Third-Party Assessor)',
+  portal: { name: 'Comagine Health (NM Medicaid Third-Party Assessor)', url: 'https://comagine.org/program/new-mexico-medicaid' },
+  scriptedQuestions: [
+    'Which Turquoise Care MCO (or FFS) is this member enrolled with — call routing differs by plan.',
+    'Since HCA\'s "Turquoise Claims" cutover (legacy payor/segment IDs denied after 6/15/2026), what is the current EDI payer ID for eligibility and claims?',
+    'Which loop/segment in the 271 response carries the member\'s assigned Turquoise Care MCO?',
+    'Is there a published per-code daily/weekly unit cap for ABA, or only the program-level hour ranges (comprehensive 30–40 hrs/wk, focused 10–25)?',
+    'Are ABA-specific telehealth POS codes or modifiers used for Medicaid FFS billing?',
+  ],
+  sources: [HCA_TPA],
+};
+
+const bcbsNmContact: VobContact = {
+  providerServicesPhone: '1-877-232-5518',
+  fax: '888-530-9809 (Behavioral Health preauthorization — outpatient service requests only)',
+  ivrPath: 'Eligibility & Benefit IVR: 1-888-349-3706 (self-service eligibility/benefits lookup)',
+  hours: 'IVR: Mon–Fri 5:00 a.m.–10:30 p.m. MT, Sat 5:00 a.m.–2:30 p.m. MT',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Confirm whether BCBSNM supports real-time 270/271 eligibility for Turquoise Care, or only batch.',
+    'The BCBSNM ABA Clinical Service Request Form header prints 800-851-7498 / fax 877-361-7659 — please confirm the correct Turquoise Care (Medicaid) routing number, since that header is commercial/FEP.',
+    'Is there a published per-code daily unit cap for ABA, or only the state\'s program-level hour ranges?',
+    'Are ABA-specific telehealth POS codes or modifiers used for Turquoise Care billing?',
+    'What is the current Availity/Change Healthcare payer ID for BCBSNM Medicaid claims?',
+  ],
+  sources: [BCBSNM_MEDICAID_PRM],
+};
+
+const presbyterianNmContact: VobContact = {
+  providerServicesPhone: '505-923-5757 (or 1-888-923-5757 toll-free)',
+  fax: '(505) 843-3019 (Turquoise Care behavioral health/ABA authorization fax)',
+  hours: 'Available during and after normal business hours (per phs.org)',
+  portal: { name: 'myPRES', url: 'https://mypres.phs.org/' },
+  scriptedQuestions: [
+    'Confirm Turquoise Care (Medicaid) behavioral health/ABA authorizations are handled in-house — not routed to Magellan (which is Presbyterian\'s Medicare/commercial BH vendor only).',
+    'Confirm whether Presbyterian supports real-time 270/271 eligibility checks.',
+    'Is there a published per-code daily unit cap for ABA beyond the state\'s weekly-hour ranges?',
+    'Are ABA-specific telehealth POS codes or modifiers used for Presbyterian Turquoise Care billing?',
+  ],
+  sources: [PHS_AUTHORIZATIONS],
+};
+
+const molinaNmContact: VobContact = {
+  providerServicesPhone: '(855) 322-4078',
+  hours: 'Mon–Fri 8:00 a.m.–5:00 p.m. MT',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Which ABA codes currently require prior authorization under Molina\'s Turquoise Care plan — does the state baseline (PA only on 97153 & 0373T) apply, or does Molina run its own list?',
+    'Confirm whether Molina supports real-time 270/271 eligibility verification.',
+    'What is the current Availity/Change Healthcare payer ID for Molina NM Medicaid claims?',
+    'Are ABA-specific telehealth POS codes or modifiers used for Molina Turquoise Care billing?',
+    'Is there a published per-code daily unit cap, or only the state\'s program-level weekly-hour guidance?',
+  ],
+  sources: [MOLINA_NM_CONTACT],
+};
+
+const uhcCommunityNmContact: VobContact = {
+  providerServicesPhone: '1-888-702-2202',
+  fax: '1-888-541-6691 (Treatment Authorization Request Form — 97153/0373T PA)',
+  portal: { name: 'Provider Express (One Healthcare ID) / uhcprovider.com', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Please confirm the correct claims payer ID for UHC Community Plan of New Mexico ABA billing — the plan\'s own QRG says 87726, but UHC\'s current affiliate claims payer list says 87748.',
+    'Please confirm the correct Electronic Remittance Advice (ERA) payer ID — the QRG says 86047, which UHC\'s national list maps to New Jersey, not New Mexico.',
+    'Is there a published per-code daily/weekly unit cap for ABA beyond the state\'s program-level hour ranges?',
+    'Are ABA-specific telehealth POS codes or modifiers used for UHC Community Plan billing?',
+  ],
+  sources: [OPTUM_NM_QRG],
+};
+
+const aetnaNmContact: VobContact = {
+  providerServicesPhone: '1-800-424-4047',
+  fax: '833-596-0339 (FaxHub — supporting clinical information only, not new precert requests)',
+  portal: { name: 'Availity', url: 'https://availity.com/aetnaproviders' },
+  scriptedQuestions: [
+    'Confirm whether this member\'s plan is fully insured (NM mandate NMSA § 59A-22-49 applies) or self-funded ERISA (mandate exempt).',
+    'What are the specific unit caps, POS restrictions, and telehealth modifier requirements for ABA codes under this member\'s plan?',
+    'Confirm whether Aetna supports real-time 270/271 eligibility for this plan.',
+    'Is a separate BH carve-out vendor involved for this plan, or does Aetna administer ABA in-house?',
+  ],
+  sources: [AETNA_ABA_PRECERT_FORM],
+};
+
+const cignaNmContact: VobContact = {
+  providerServicesPhone: '800.926.2273',
+  ivrPath: 'Autism Care Coordinator team (nonclinical): 877.279.7603 — patient benefits/eligibility, authorization status, and ABA-specific questions',
+  hours: 'Provider Services: Mon–Fri 7:00 a.m.–7:00 p.m. CT; Autism Care Coordinator team: Mon–Fri 8:30 a.m.–5:00 p.m. CT',
+  portal: { name: 'Evernorth Provider (Provider.Evernorth.com)', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'Confirm whether this member\'s plan is fully insured (NM mandate applies) or self-funded ERISA (mandate exempt).',
+    'What are the specific unit caps, POS restrictions, and telehealth modifier requirements for ABA codes under this member\'s plan?',
+    'Confirm whether Cigna/Evernorth supports real-time 270/271 eligibility for this plan.',
+  ],
+  sources: [CIGNA_AUTISM_GUIDE],
+};
+
+const uhcNmContact: VobContact = {
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Confirm whether this member\'s plan is fully insured (NM mandate applies) or self-funded ERISA (mandate exempt).',
+    'What are the specific unit caps, POS restrictions, and telehealth modifier requirements for ABA codes under this member\'s plan?',
+    'Confirm the claims payer ID for this member\'s ABA benefit, and whether it differs from the standard UHC medical ID (87726).',
+    'Confirm whether real-time 270/271 eligibility is supported for this plan.',
+  ],
+  sources: [OPTUM_ABA_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const newMexicoVob: Record<string, VobExtension> = {
@@ -498,45 +652,53 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: newMexicoMedicaidEdi,
     codeGrid: nmMedicaidGrid(),
     rates: NM_MEDICAID_RATES,
+    vobContact: newMexicoMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
   'blue-cross-blue-shield-new-mexico': {
     edi: bcbsNmEdi,
     codeGrid: nmMedicaidGrid('State baseline via the shared Turquoise Care Level of Care Guidelines (defer to NMAC 8.321.2). BCBSNM treatment requests use the ABA Clinical Service Request Form (≥2 weeks / within 30 days before start).'),
     rates: nmMcoFloorRates('BCBSNM'),
+    vobContact: bcbsNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'presbyterian-health-plan-new-mexico': {
     edi: presbyterianNmEdi,
     codeGrid: nmMedicaidGrid('State baseline; Presbyterian treatment requests use its own Stage 3 ABA Clinical Review Form (fax (505) 843-3019 or the Turquoise Care portal — NOT Magellan for Medicaid).'),
     rates: nmMcoFloorRates('Presbyterian Health Plan'),
+    vobContact: presbyterianNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-new-mexico': {
     edi: molinaNmEdi,
     codeGrid: nmMedicaidGrid('State baseline; Molina publishes no NM-specific ABA policy — submit PAs via Availity Essentials and confirm code-level PA in the portal per case.'),
     rates: nmMcoFloorRates('Molina Healthcare of New Mexico'),
+    vobContact: molinaNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-new-mexico': {
     edi: uhcCommunityNmEdi,
     codeGrid: nmMedicaidGrid('Optum-administered; the NM Turquoise Care QRG confirms the state PA surface exactly — only 97153 & 0373T require PA; submit on the NM Uniform PA Form via Provider Express or fax 1-888-541-6691.'),
     rates: nmMcoFloorRates('UnitedHealthcare Community Plan of New Mexico'),
+    vobContact: uhcCommunityNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-new-mexico': {
     edi: aetnaNmEdi,
     codeGrid: commercialGrid(nmAetnaEntry),
+    vobContact: aetnaNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-new-mexico': {
     edi: cignaNmEdi,
     codeGrid: cignaCommercialGrid(),
+    vobContact: cignaNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-new-mexico': {
     edi: uhcNmEdi,
     codeGrid: commercialGrid(() => nmUhcCommercialEntry('Required — Optum two-step (assessment auth, then treatment auth); reviews every 4–6 months')),
+    vobContact: uhcNmContact,
     lastUpdated: ACCESS_DATE,
   },
 };

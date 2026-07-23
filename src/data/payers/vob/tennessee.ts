@@ -112,7 +112,7 @@
      for the healthy-blue-north-carolina carveout row), not upgraded to
      a fully 'verified' none.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -201,6 +201,23 @@ const UHC_TN_LOC_GUIDELINES = src(
 const CSG_SOUTH_COMPARISON = src(
   'https://csgsouth.org/wp-content/uploads/HSPS-Converted-IR__Comparison-of-Medicaid-Reimbursement-for-ABA-Individual-Services.pdf',
   'CSG South, "Comparison of Medicaid Reimbursement for ABA Individual Services," Feb 2026 — every Tennessee cell is blank; already cited in tennessee.ts\'s "Rates: negotiated, not published" section as the reason TennCare publishes no statewide/MCO ABA fee schedule.'
+);
+
+/* -------------------- Layer 7 contact-layer source refs (fetched this pass) -------------------- */
+
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list for Aetna," effective 8/1/2024 (fetched, downloaded, and text-extracted in full this pass). Its own precertification table explicitly lists "3. Applied behavioral analysis (ABA)" against CPT codes 97151, 97152, 97153, 97154, 97155, 97156, 97157, 97158, 0362T, 0373T. States verbatim: "If you have any questions about submitting a request or about our precertification process, call us: Commercial plans: 1-888-632-3862 (TTY: 711); Medicare plans: 1-800-624-0756 (TTY: 711)" and directs submission via the Availity provider portal (Availity.com) or AetnaElectronicPrecert.com.',
+  true
+);
+const CIGNA_EBH_ADMIN_GUIDE = src(
+  'https://static.cigna.com/assets/chcp/pdf/resourceLibrary/behavioral/ebh-provider-admin-guide.pdf',
+  'Evernorth Behavioral Administrative Guidelines, PCOMM-2021-1080 (8/21; fetched, downloaded, and text-extracted in full this pass, 114 pages). Its own "Important contact information" table states verbatim, under "Perform telephone transactions" (eligibility/coverage verification, claim status, "Request precertification for services"): "Phone: 800.926.2273"; the online-transactions row directs providers to Provider.Evernorth.com. Also separately confirms a dedicated "Autism clinics" contracting workflow exists (distinct TIN/location grouping for autism-provider clinics).',
+  true
+);
+const PROVIDER_EXPRESS_SUPPORT_PAGE = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/about-us/provider-express-support.html',
+  'Provider Express (Optum) Support page, fetched directly this pass — states verbatim "1 866-209-9320 (toll-free)" as the Provider Express Support Center phone, with hours "8 a.m. to 8 p.m. Eastern time"; also notes live chat available 8 a.m.-5 p.m. Central time through the same site. A live, continuously-maintained support page rather than a dated PDF snapshot, so not flagged staleRisk.'
 );
 
 /* -------------------- shared tri-MCO codeGrid factory (Layer 3) -------------------- */
@@ -780,6 +797,104 @@ const blueCareRates = tnNoRatesTable('BlueCare Tennessee');
 const uhcCommunityPlanRates = tnNoRatesTable('UnitedHealthcare Community Plan of Tennessee');
 const wellpointRates = tnNoRatesTable('Wellpoint Tennessee');
 
+/* -------------------- Layer 7 — contact & channel layer --------------------
+   Part 1 (phone/fax/hours/portal) is scraped from the same primary sources
+   already cited above in this file (mined first) plus a handful of newly
+   fetched national/EDI-vendor contact pages for the three commercial guides
+   and the TennCare umbrella guide. Part 2 (scriptedQuestions) is generated
+   from whatever THIS guide's own edi/codeGrid/rates layers mark unverified
+   or plan-dependent — never padded to a round number. -------------------- */
+
+const tenncareMedicaidContact: VobContact = {
+  providerServicesPhone:
+    '(800) 852-2683 — TennCare Provider Services, per the state\'s own EDI Front Matter (that line is stated there specifically for PDMS registration/portal-access questions; ABA benefit administration itself is 100% delegated to the member\'s MCO — use the BlueCare / UnitedHealthcare Community Plan / Wellpoint guide\'s own number for benefit or PA questions)',
+  scriptedQuestions: [
+    'Which of the three TennCare MCOs — BlueCare, UnitedHealthcare Community Plan, or Wellpoint — is this member currently enrolled with for ABA services?',
+    'Does this member\'s specific MCO cover 0362T and 0373T, or only the shared tri-MCO code set (97151-97158)?',
+    'What is the negotiated per-unit rate for 97151-97158 (and 0362T/0373T where covered) under this member\'s MCO provider contract, since TennCare publishes no statewide ABA fee schedule?',
+    'Can you confirm which loop/segment carries this member\'s MCO enrollment on the 271 response, or should we route this eligibility question to the assigned MCO directly?',
+  ],
+  sources: [TENNCARE_EDI_FRONT_MATTER],
+};
+
+const blueCareContact: VobContact = {
+  providerServicesPhone:
+    '1-800-924-7141 — BlueCare Tennessee Provider Service Line, also listed as the Prior Authorization (Medical and Behavioral Health) phone number in the Provider Administration Manual\'s own "Contact Us" table',
+  ivrPath: '(423) 535-5717, option 2 — reaches BlueCare\'s in-house behavioral health/UM team (BHABA@bcbst.com) for ABA-specific PA questions',
+  fax: '1-800-292-5311 (BlueCare/TennCareSelect prior-authorization fax; CoverKids uses a separate fax, 1-800-851-2491)',
+  portal: { name: 'BlueCare online provider tool (bluecare.bcbst.com) / Availity', url: 'https://bluecare.bcbst.com' },
+  scriptedQuestions: [
+    'Is 0362T (or 0373T) on BlueCare\'s current Telehealth Approved Code List, and is there a published unit cap for either code?',
+    'What modifier, if any, does BlueCare want on 0362T/0373T claims — its own code table gives a CPT description but no modifier for these two codes?',
+    'Can eligibility/benefits for this member be checked in real time through a clearinghouse, or only via Availity\'s standard batch process?',
+  ],
+  sources: [BLUECARE_PAM, TN_UNIVERSAL_REQUEST_FORM],
+};
+
+const uhcCommunityPlanContact: VobContact = {
+  providerServicesPhone:
+    '(800) 690-1606 — the dedicated ABA authorization line, per the Tri-MCO ABA Overview of Updates ("For authorization requests, questions or submission, please contact: 800-690-1606"); UnitedHealthcare Community Plan of TN\'s general Provider Services line is (877) 222-6720, per the Universal Request form\'s "Additional MCO Contact Information" table',
+  fax: '(877) 217-6068',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Is ABA administered directly by UnitedHealthcare Community Plan, or through a separate behavioral health vendor like Optum — and if a vendor, is there a second EDI hop for eligibility/benefits?',
+    'Does this member\'s plan cover 0362T and 0373T in addition to the shared tri-MCO 97151-97158 code set?',
+    'Can eligibility be checked in real time, or only via batch, for this payer ID?',
+  ],
+  sources: [TN_OVERVIEW_UPDATES, TN_UNIVERSAL_REQUEST_FORM],
+};
+
+const wellpointContact: VobContact = {
+  providerServicesPhone:
+    '(833) 731-2154 — Wellpoint Tennessee Provider Services (Medicaid line), confirmed on both Wellpoint\'s own ABA provider page and the Universal Request form\'s MCO contact table',
+  fax: '(866) 920-6006 or (888) 881-6309',
+  portal: { name: 'Availity (Interactive Care Reviewer)', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Is ABA administered directly by Wellpoint, or delegated to an outside behavioral health vendor?',
+    'Does this member\'s plan cover 0362T and 0373T in addition to the shared tri-MCO 97151-97158 code set?',
+    'Can eligibility for this member be checked in real time through Availity, or does it require a batch request?',
+  ],
+  sources: [WELLPOINT_TN_EDI_PAGE, TN_UNIVERSAL_REQUEST_FORM, TN_OVERVIEW_UPDATES],
+};
+
+const aetnaContact: VobContact = {
+  providerServicesPhone:
+    '1-888-632-3862 (commercial plans; TTY 711) — Aetna\'s Precertification Department, per Aetna\'s own participating-provider behavioral health precertification list, which explicitly lists ABA codes 97151-97158, 0362T, and 0373T as requiring precertification',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'What is the exact precertification form and submission process for ABA under this member\'s specific plan?',
+    'Is there a numeric unit or hour cap for ABA codes, and what is the authorization period?',
+    'What place-of-service codes and modifiers are required when billing 97151-97158 and 0362T/0373T?',
+    'Is telehealth allowed for any ABA codes under this plan, and if so what modifier/POS applies?',
+    'Is ABA administered on the medical side, or carved out to a separate behavioral health vendor?',
+  ],
+  sources: [AETNA_BH_PRECERT_LIST],
+};
+
+const cignaContact: VobContact = {
+  providerServicesPhone: '800.926.2273 — Cigna/Evernorth Provider Services, per Evernorth\'s own Behavioral Administrative Guidelines (used for eligibility/coverage verification, claim status, and "request precertification for services")',
+  portal: { name: 'Provider.Evernorth.com / CignaforHCP.com', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'Is there a numeric unit or hour cap for ABA codes, and what is the authorization period?',
+    'What place-of-service codes and modifiers should be used when billing 97151-97158 and 0362T/0373T?',
+    'Is telehealth allowed for any ABA codes under this plan?',
+  ],
+  sources: [CIGNA_EBH_ADMIN_GUIDE],
+};
+
+const unitedhealthcareContact: VobContact = {
+  providerServicesPhone: '1-866-209-9320 — Provider Express Support Center (toll-free)',
+  hours: '8 a.m.-8 p.m. Eastern time (phone); live chat also available 8 a.m.-5 p.m. Central time via Provider Express',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Does this plan apply Optum\'s national daily unit caps and HN/HM/HO/HP modifier tiers as published (e.g., 32 units/day on 97151/97153), or does it carry a plan-specific override?',
+    'What is the actual prior-authorization review cadence and utilization threshold for continued ABA services under this member\'s plan?',
+    'What place-of-service codes apply for in-clinic vs. home vs. telehealth ABA sessions?',
+    'Is telehealth allowed for any ABA codes, and under what conditions?',
+  ],
+  sources: [PROVIDER_EXPRESS_SUPPORT_PAGE, OPTUM_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const tennesseeVob: Record<string, VobExtension> = {
@@ -787,27 +902,36 @@ export const tennesseeVob: Record<string, VobExtension> = {
     edi: tenncareMedicaidEdi,
     codeGrid: tenncareMedicaidCodeGrid,
     rates: tenncareMedicaidRates,
+    vobContact: tenncareMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
   'bluecare-tennessee': {
     edi: blueCareEdi,
     codeGrid: blueCareCodeGrid,
     rates: blueCareRates,
+    vobContact: blueCareContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-tennessee': {
     edi: uhcCommunityPlanEdi,
     codeGrid: uhcCommunityPlanCodeGrid,
     rates: uhcCommunityPlanRates,
+    vobContact: uhcCommunityPlanContact,
     lastUpdated: ACCESS_DATE,
   },
   'wellpoint-tennessee': {
     edi: wellpointEdi,
     codeGrid: wellpointCodeGrid,
     rates: wellpointRates,
+    vobContact: wellpointContact,
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-tennessee': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-tennessee': { edi: cignaEdi, codeGrid: cignaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-tennessee': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, lastUpdated: ACCESS_DATE },
+  'aetna-tennessee': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
+  'cigna-tennessee': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-tennessee': {
+    edi: unitedhealthcareEdi,
+    codeGrid: unitedhealthcareCodeGrid,
+    vobContact: unitedhealthcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

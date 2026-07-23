@@ -1,7 +1,7 @@
 /* ================================================================
    VOB ENRICHMENT — Nebraska, Layers 1 (EDI routing crosswalk) + 3
-   (code-level coverage grid) + 4 (Medicaid rate tables). See
-   docs/vob-build.md for the spec.
+   (code-level coverage grid) + 4 (Medicaid rate tables) + 7 (contact
+   & channel layer). See docs/vob-build.md for the spec.
 
    Sourcing notes (read before editing):
    - Provider Bulletin 25-14 and the MHSUD fee schedule are PDFs/XLSX
@@ -90,7 +90,7 @@
      documents georgia.ts already extracted, exactly as the build
      brief invited for shared national payer IDs.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, FieldStatus } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, FieldStatus } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -193,6 +193,46 @@ const AETNA_CPB0648 = src(
 const NE_MANDATE = src(
   'https://nebraskalegislature.gov/laws/statutes.php?statute=44-7,106',
   'Neb. Rev. Stat. § 44-7,106 (LB 254, eff. 1/1/2015) — requires coverage of ASD screening/diagnosis/treatment under 21 for state-regulated plans, with behavioral health treatment including ABA capped at 25 hrs/week; a benefits-layer cap distinct from any single CPT code\'s unit cap, and exempt for non-grandfathered individual/small-group ACA plans and self-funded ERISA plans.'
+);
+
+/* -------------------- Layer 7: contact & channel sources -------------------- */
+/* Cheapest-first per docs/vob-build.md: several shared sources above
+   (OPTUM_QRG, MOLINA_PA_PAGE, NTC_FORMS_PAGE, AVAILITY_LIST) already had a
+   phone/fax/portal fact sitting verbatim in their notes and are reused
+   as-is in vobContact.sources below without a new const. The sources
+   below were fetched this pass specifically to fill contact-layer gaps
+   those notes didn't cover (portal URLs, provider-services phone lines,
+   hours) — each is a direct read of a primary document/live page, not a
+   secondhand search-result summary. */
+
+const OPTUM_NE_QRG_CONTACT = src(
+  'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/autismABA/neaba/neNEMedicaidQRG.pdf',
+  'Same NE Heritage Health Medicaid ABA QRG as OPTUM_QRG, re-read for its Layer 7 contact content — direct read confirms verbatim: "Verifying benefits/eligibility by calling the Behavioral Health number located on the back of the member\'s ID card or contacting Nebraska Medicaid Eligibility System (NMES) line at 1-800-642-6092"; prior-auth submission "Online at https://optumpeeraccess.secure.force.com/ABAtreatment/ Or via fax at 1-855-268-9392"; "Claims status can be obtained by calling Customer Service Center: 1-866-331-2243 Or through the Web portal at providerexpress.com."'
+);
+const NE_ELIGIBILITY_VERIFICATION_PAGE = src(
+  'https://dhhs.ne.gov/Pages/Medicaid-Provider-Client-Eligibility-Verification.aspx',
+  'DHHS "Client Eligibility Verification" page (live) — direct read confirms Medicaid claims customer service phone "(877) 255-3092 or (402) 471-9128" and points providers to the NMES voice-response line and an online eligibility-verification option; the separate ABA-specific "Applied Behavior Analysis Facts" page names no phone at all, only DHHS.MedicaidMHSU@nebraska.gov.'
+);
+const NE_NMES_INSTRUCTIONS = src(
+  'https://dhhs.ne.gov/Documents/471-000-124.pdf',
+  'Nebraska Medicaid manual 471-000-124, "Instructions for Using the Nebraska Medicaid Eligibility System (NMES)" (rev. 5/15/2024) — direct read confirms NMES is "operational 24 hours a day, seven days a week"; access numbers "Lincoln Area 402-471-9580 / Outside Lincoln 800-642-6092" (the same 800 number independently found in Optum\'s NE Heritage Health QRG, cross-checked here); states explicitly that NMES does NOT supply prior-authorization or service-coverage information — eligibility only.',
+  true
+);
+const NTC_CONTACT_PAGE = src(
+  'https://www.nebraskatotalcare.com/contact-us.html',
+  'Nebraska Total Care "Contact Us" page (live) — direct read confirms verbatim: "Provider Services can answer questions about Nebraska Total Care at 1-844-385-2192 TTY: 711. We are available Monday to Friday, 7 a.m. to 6 p.m., Central" (distinct from member services, same number, Mon-Fri 8 a.m.-5 p.m. Central).'
+);
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list" (eff. 8/1/2024) — direct read confirms verbatim: "Questions? If you have any questions about submitting a request or about our precertification process, call us: Commercial plans: 1-888-632-3862 (TTY: 711)"; also: "You can submit most requests through our Availity® provider portal. Go to Availity.com to start a request." National document; no Nebraska-specific line found.'
+);
+const CIGNA_CONTACT = src(
+  'https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/autism-resource-guide.pdf',
+  'Same Cigna Autism Resource Guide as CIGNA_AUTISM_GUIDE, re-read for its "Contacting us" section — direct read confirms verbatim: "The Autism Care Coordinator team...is available Monday through Friday from 8:30 a.m. to 5:00 p.m. CT at 877.279.7603" for ABA-specific benefits/eligibility/authorization questions; "The Provider Services department handles questions regarding billing, benefits, and eligibility for autism-related treatment...available Monday through Friday from 7:00 a.m. to 7:00 p.m. CT at 800.926.2273"; provider website Provider.Evernorth.com.'
+);
+const PROVIDER_EXPRESS_CONTACT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum Provider Express "Contact Us" page (live) — direct read confirms verbatim: "1-877-614-0484, Monday-Friday, 7 a.m.-7 p.m. CT" as the general provider services line, and "1-866-209-9320, 7 a.m.-7 p.m. CT, Monday-Friday" for secure-portal technical support. National page, no Nebraska-specific line found — the same national portal Optum\'s NE Heritage Health Medicaid QRG (OPTUM_QRG/OPTUM_NE_QRG_CONTACT) separately confirms for the Medicaid line of business, applied here to the commercial book absent a confirmed NE-specific override.'
 );
 
 /* -------------------- Layer 4: Medicaid rate table -------------------- */
@@ -933,19 +973,156 @@ const unitedhealthcareNebraskaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcNeCommercialEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 7: vobContact per guide ==================== */
+
+const nebraskaMedicaidContact: VobContact = {
+  providerServicesPhone: '800-642-6092 (Nebraska Medicaid Eligibility System, NMES — automated voice-response eligibility line; Lincoln area: 402-471-9580)',
+  ivrPath:
+    'NMES: enter the billing NPI, the recipient\'s 11-digit Medicaid number, and date of service (each followed by #) — confirms eligibility, managed-care enrollment, private insurance, Medicare, and lock-in status only; does NOT return prior-authorization or service-coverage detail.',
+  hours: 'NMES: 24 hours a day, 7 days a week. Medicaid Inquiry Line for other questions: 877-255-3092 (Lincoln: 402-471-9128).',
+  portal: {
+    name: 'Nebraska Medicaid Provider Client Eligibility Verification',
+    url: 'https://dhhs.ne.gov/Pages/Medicaid-Provider-Client-Eligibility-Verification.aspx',
+  },
+  scriptedQuestions: [
+    'Do the assessment codes 97151/97152 require their own standalone prior-authorization submission, or are they always bundled with the initial treatment PA request?',
+    'For this member, is the weekly cap on direct ABA service hours (97153/97154/97155) 20 hours or 30 hours per week?',
+    'Is there a specific unit or monthly cap on 97156 (family adaptive behavior treatment guidance), beyond the caregiver-participation-hour guidance?',
+    'Does this eligibility response reflect real-time enrollment, or could it lag behind a recent Medicaid managed-care plan change?',
+    'Can you confirm ABA benefits are administered directly by Nebraska Medicaid fee-for-service rather than through a separate behavioral health vendor?',
+  ],
+  sources: [NE_ELIGIBILITY_VERIFICATION_PAGE, NE_NMES_INSTRUCTIONS, OPTUM_NE_QRG_CONTACT],
+};
+
+const nebraskaTotalCareContact: VobContact = {
+  providerServicesPhone: '1-844-385-2192 (TTY: 711)',
+  hours: 'Monday to Friday, 7 a.m. to 6 p.m. Central (provider services).',
+  portal: { name: 'Nebraska Total Care Secure Provider Portal', url: 'https://provider.nebraskatotalcare.com' },
+  fax: '866-593-1955 (ABA Form / Outpatient Treatment Request submission)',
+  scriptedQuestions: [
+    'Do the assessment codes 97151/97152 require a standalone prior authorization, or are they always bundled into the Outpatient Treatment Request package?',
+    'For this member, is the weekly cap on direct ABA service hours (97153/97154/97155) 20 hours or 30 hours per week?',
+    'For group adaptive treatment (97154/97158), does Nebraska Total Care apply its own 2-8 participant group size or the state MSD\'s 2-5 ratio for this member\'s authorization?',
+    'Is there a specific unit or monthly cap on 97156 (family training) for this member?',
+  ],
+  sources: [NTC_CONTACT_PAGE, NTC_FORMS_PAGE, NTC_POLICY],
+};
+
+const molinaHealthcareNebraskaContact: VobContact = {
+  providerServicesPhone: '(844) 782-2678',
+  fax: '(833) 832-1015',
+  portal: { name: 'Availity Essentials (Molina Healthcare of Nebraska)', url: 'https://www.availity.com/molinahealthcare' },
+  scriptedQuestions: [
+    'Do the ABA assessment codes (97151/97152) require prior authorization for this member, and if so, through which channel?',
+    'Is prior authorization required for the ongoing ABA treatment codes (97153-97158), and what is the current quarterly PA code list?',
+    'For this member, is the weekly direct-service-hour cap 20 hours or 30 hours per week?',
+    'Can you confirm whether ABA benefits are managed directly by Molina or through a separate behavioral health vendor?',
+  ],
+  sources: [MOLINA_PA_PAGE],
+};
+
+const unitedhealthcareCommunityPlanNebraskaContact: VobContact = {
+  providerServicesPhone: '1-866-331-2243 (Customer Service Center)',
+  ivrPath:
+    'For automated statewide Medicaid eligibility, call NMES at 1-800-642-6092. For benefits specific to this plan, verify online at Provider Express or call the Behavioral Health number on the back of the member\'s ID card. Treatment Authorization Requests submit online via Optum PEER Access (optumpeeraccess.secure.force.com/ABAtreatment) or fax.',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  fax: '1-855-268-9392 (Treatment Authorization Request)',
+  scriptedQuestions: [
+    'Does ABA ride on the medical benefit or the behavioral-health benefit for this member\'s eligibility response?',
+    'Is a second authorization/EDI hop required beyond the 87726 payer ID for ABA claims, or does everything route through the same ID?',
+    'Does this payer support real-time (vs. batch) 270/271 eligibility responses?',
+  ],
+  sources: [OPTUM_NE_QRG_CONTACT, OPTUM_QRG],
+};
+
+const aetnaNebraskaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862 (TTY: 711) — commercial-plan precertification questions line',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Does this member\'s plan require prior authorization/precertification for ABA codes 97151-97158, and is there a specific precert form number to use?',
+    'What is the daily and weekly unit cap for ABA treatment codes under this member\'s plan?',
+    'Which places of service are allowed for ABA (home, office, school, telehealth)?',
+    'Is telehealth allowed for any ABA codes under this plan, and if so, which modifier and POS code should be used?',
+    'Does Aetna administer behavioral health/ABA benefits directly, or through a separate behavioral health vendor, for this plan?',
+  ],
+  sources: [AETNA_BH_PRECERT_LIST, AVAILITY_LIST],
+};
+
+const cignaNebraskaContact: VobContact = {
+  providerServicesPhone: '800.926.2273 (Provider Services — billing, benefits, eligibility)',
+  ivrPath:
+    'For ABA-specific benefits, eligibility, and authorization questions, call the Autism Care Coordinator team at 877.279.7603 instead of general Provider Services.',
+  hours: 'Provider Services: Monday-Friday, 7 a.m.-7 p.m. CT. Autism Care Coordinator team (877.279.7603): Monday-Friday, 8:30 a.m.-5 p.m. CT.',
+  portal: { name: 'Evernorth Provider Portal', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'What is the daily/weekly unit cap for ABA treatment codes under this specific plan?',
+    'Which places of service are approved for ABA services (home, clinic, school, telehealth)?',
+    'Which telehealth modifier and POS code should be used when billing ABA via telehealth for this plan?',
+    'Are there licensure-tier billing modifiers required (e.g., for BCBA- vs. technician-delivered codes) under this plan?',
+  ],
+  sources: [CIGNA_CONTACT, CIGNA_AUTISM_GUIDE],
+};
+
+const unitedhealthcareNebraskaContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484',
+  hours: 'Monday-Friday, 7 a.m.-7 p.m. CT',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Can you confirm the daily/weekly unit caps for each ABA code for this specific plan, versus Optum\'s national default?',
+    'Which places of service are allowed, and is telehealth permitted for any ABA codes under this plan?',
+    'Does ABA ride on the medical or the behavioral-health benefit for eligibility purposes, and is a second EDI hop required beyond the primary UHC payer ID?',
+    'Can you confirm the correct EDI payer ID for Availity/Change Healthcare submissions for this specific commercial plan?',
+  ],
+  sources: [PROVIDER_EXPRESS_CONTACT, OPTUM_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const nebraskaVob: Record<string, VobExtension> = {
-  'nebraska-medicaid': { edi: nebraskaMedicaidEdi, codeGrid: NE_STATE_CODEGRID, rates: neRateTable(false), lastUpdated: ACCESS_DATE },
-  'nebraska-total-care': { edi: nebraskaTotalCareEdi, codeGrid: nebraskaTotalCareCodeGrid, rates: neRateTable(true), lastUpdated: ACCESS_DATE },
-  'molina-healthcare-nebraska': { edi: molinaHealthcareNebraskaEdi, codeGrid: molinaHealthcareNebraskaCodeGrid, rates: neRateTable(true), lastUpdated: ACCESS_DATE },
+  'nebraska-medicaid': {
+    edi: nebraskaMedicaidEdi,
+    codeGrid: NE_STATE_CODEGRID,
+    rates: neRateTable(false),
+    vobContact: nebraskaMedicaidContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'nebraska-total-care': {
+    edi: nebraskaTotalCareEdi,
+    codeGrid: nebraskaTotalCareCodeGrid,
+    rates: neRateTable(true),
+    vobContact: nebraskaTotalCareContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'molina-healthcare-nebraska': {
+    edi: molinaHealthcareNebraskaEdi,
+    codeGrid: molinaHealthcareNebraskaCodeGrid,
+    rates: neRateTable(true),
+    vobContact: molinaHealthcareNebraskaContact,
+    lastUpdated: ACCESS_DATE,
+  },
   'unitedhealthcare-community-plan-nebraska': {
     edi: unitedhealthcareCommunityPlanNebraskaEdi,
     codeGrid: unitedhealthcareCommunityPlanNebraskaCodeGrid,
     rates: neRateTable(true),
+    vobContact: unitedhealthcareCommunityPlanNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-nebraska': { edi: aetnaNebraskaEdi, codeGrid: aetnaNebraskaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-nebraska': { edi: cignaNebraskaEdi, codeGrid: cignaNebraskaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-nebraska': { edi: unitedhealthcareNebraskaEdi, codeGrid: unitedhealthcareNebraskaCodeGrid, lastUpdated: ACCESS_DATE },
+  'aetna-nebraska': {
+    edi: aetnaNebraskaEdi,
+    codeGrid: aetnaNebraskaCodeGrid,
+    vobContact: aetnaNebraskaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-nebraska': {
+    edi: cignaNebraskaEdi,
+    codeGrid: cignaNebraskaCodeGrid,
+    vobContact: cignaNebraskaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-nebraska': {
+    edi: unitedhealthcareNebraskaEdi,
+    codeGrid: unitedhealthcareNebraskaCodeGrid,
+    vobContact: unitedhealthcareNebraskaContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

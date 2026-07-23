@@ -64,7 +64,7 @@
      Optum SCC/2022RP501A) as in the Georgia build, with Ohio's autism
      mandate (R.C. 3923.84) noted.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -181,6 +181,43 @@ const OPTUM_STATE_MANDATES = src(
 const OHIO_MANDATE = src(
   'https://codes.findlaw.com/oh/title-xxxix-insurance/oh-rev-code-sect-3923-84/',
   'Ohio Rev. Code § 3923.84 — autism mandate (HB 463, 2017): service FLOORS for insureds under age 14 (>=20 hrs/wk clinical therapeutic intervention, ABA-inclusive), COBA-supervised delivery; self-funded ERISA plans exempt by preemption. Applies to fully-insured plans only.'
+);
+
+/* -------------------- Layer 7: contact-layer source refs -------------------- */
+/* Fetched this pass specifically to fill vobContact gaps; phone/fax numbers
+   below were each personally read on the cited live page (not carried over
+   from a WebSearch summary) per the build spec\'s never-guess rule. */
+const ODM_PNM_CONTACT = src(
+  'https://ohpnm.omes.maximus.com/OH_PNM_PROD/Process/ContactUs.aspx',
+  "ODM's PNM (Provider Network Management) module Contact Us page — lists \"ODM Provider Assistance and Enrollment: 1-800-686-1516\" alongside separate waiver/DODD/ODA/OMHAS lines; no hours of operation posted on the page itself."
+);
+const CARESOURCE_PROVIDER_PORTAL = src(
+  'https://providerportal.caresource.com/',
+  "CareSource Provider Portal login page (providerportal.caresource.com) — confirmed as the provider-facing portal (distinct from the member portal); Ohio-specific login lands at providerportal.caresource.com/OH/User/Login.aspx."
+);
+const BUCKEYE_PROVIDER_PORTAL = src(
+  'https://www.buckeyehealthplan.com/login.html',
+  "Buckeye Health Plan login page — confirms a distinct contracted-provider \"Provider Portal\" (provider.buckeyehealthplan.com) separate from the member login, for eligibility/claims/prior-auth."
+);
+const UHC_COMMUNITY_OH_CONTACT = src(
+  'https://www.uhcprovider.com/en/health-plans-by-state/ohio-health-plans/oh-comm-plan-home.html',
+  'UHCprovider.com — Ohio health plans page for UnitedHealthcare Community Plan of Ohio: provider call center (800) 600-9007, hours Mon-Fri 8 a.m.-5 p.m.; directs providers to the UnitedHealthcare Provider Portal at secure.uhcprovider.com.'
+);
+const AETNA_PRECERT_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/precertification.html',
+  'Aetna — Precertification (health-care-professionals) page: "You can submit most requests through the Availity® provider portal" for EDI/phone/portal precertification submission; no direct provider-services phone number published on this page itself (member ID card is the stated fallback for phone submission).'
+);
+const CIGNA_PRECERT_PAGE = src(
+  'https://www.cigna.com/health-care-providers/coverage-and-claims/precertification',
+  'Cigna Healthcare — Precertification page: general precertification requests 1 (800) 882-4462; precertification intake-form fax 1 (866) 873-8279; behavioral-health inpatient/PHP precertification 1 (800) 926-2273; provider portal CignaforHCP.com.'
+);
+const UHC_CONTACT_PAGE = src(
+  'https://www.uhcprovider.com/en/contact-us.html',
+  'UHCprovider.com — Contact Us page: general UHC Provider Services (877) 842-3210 for commercial claims status, phone-submitted prior authorization, and peer-to-peer scheduling; portal secure.uhcprovider.com; 24/7 portal tech support (866) 842-3278 option 1.'
+);
+const AMERIHEALTH_NAVINET = src(
+  'https://navinet.navimedix.com/',
+  "NaviNet provider-portal sign-in (navinet.navimedix.com) — live sign-in flow redirecting to NaviNet's identity provider, confirming the portal AmeriHealth Caritas Ohio's BH PA page names (\"Jiva via NaviNet\") is still in service."
 );
 
 /* CMS NCCI MUE daily-unit ceilings, enumerated verbatim in CareSource
@@ -800,18 +837,167 @@ const uhcOhioCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcOhEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* -------------------- Layer 7: contact & channel layer -------------------- */
+
+const ohioMedicaidContact: VobContact = {
+  providerServicesPhone: '(800) 686-1516',
+  hours: 'Not posted on the PNM contact page — confirm at time of call',
+  portal: { name: 'ODM PNM (Provider Network Management) Module', url: 'https://ohpnm.omes.maximus.com/OH_PNM_PROD/Account/Login.aspx' },
+  scriptedQuestions: [
+    'For members under 21, is PA still required on assessment codes 97151/97152/0362T, or has the 5160-34-03 rewrite\'s assessment-PA exemption (up to 10 hrs/180 days) taken effect yet?',
+    'What place-of-service settings (home, school, clinic, telehealth) are currently approved for ABA billing?',
+    'Is telehealth allowed for any ABA code, and if so which codes and under what modifier?',
+    'Do ABA claims need a practitioner-tier billing modifier (Independent COBA/BCBA/BCBA-D vs. BCaBA vs. RBT), or is tier reflected some other way on the claim?',
+    'This member shows OhioRISE enrollment on the eligibility response — can you confirm ABA claims should route to their underlying medical MCO (or FFS), not OhioRISE?',
+  ],
+  sources: [ODM_PNM_CONTACT],
+};
+
+const caresourceContact: VobContact = {
+  providerServicesPhone: '(800) 488-0134',
+  portal: { name: 'CareSource Provider Portal', url: 'https://providerportal.caresource.com/OH/User/Login.aspx' },
+  scriptedQuestions: [
+    'What POS code should we use for home-based vs. clinic-based ABA sessions?',
+    'Is there a specific telehealth modifier (e.g., GT/95) required when billing parent-training/supervision or 1:1 ABA delivered via telehealth?',
+  ],
+  sources: [CARESOURCE_MM0028, CARESOURCE_PROVIDER_PORTAL],
+};
+
+const buckeyeContact: VobContact = {
+  providerServicesPhone: '(800) 224-1991',
+  fax: '(866) 694-3649',
+  portal: { name: 'Buckeye Provider Portal', url: 'https://provider.buckeyehealthplan.com' },
+  scriptedQuestions: [
+    'Can you confirm whether assessment codes 97151/97152 are currently PA-exempt for in-network providers per the current PA list/pre-auth tool — CP.BH.104 itself doesn\'t state this waiver?',
+    'Do you enforce a per-code daily unit cap on top of CP.BH.104\'s aggregate hour limits (<=6 hrs/day, <=30 hrs/wk)?',
+    'What POS code should be used when billing a telehealth ABA session?',
+  ],
+  sources: [BUCKEYE_PA_FORM, BUCKEYE_PROVIDER_PORTAL],
+};
+
+const molinaContact: VobContact = {
+  // No providerServicesPhone/fax shipped: MOLINA_OH_PA_PAGE's own BH auth-line
+  // number (855) 322-4081 is hedged ("confirm current number in the portal"),
+  // not a document Molina states as current — per the never-guess rule this
+  // ships as a scripted question, not a phone field.
+  portal: { name: 'Availity Essentials (PA submission mandatory since 1/1/2026)', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Can you confirm the current behavioral-health prior-authorization phone line — the number on your public PA page carries its own "confirm in the portal" caveat?',
+    'What POS codes are approved for ABA billing (home, school, clinic, telehealth)?',
+    'Is telehealth allowed for any ABA code, and if so is a GT/95 modifier required?',
+    'Do you require a licensure-tier billing modifier (RBT vs. BCBA/BCBA-D)?',
+  ],
+  sources: [MOLINA_OH_PA_PAGE],
+};
+
+const anthemOhioContact: VobContact = {
+  // No providerServicesPhone shipped: the Anthem OH Medicaid contact-us page
+  // surfaces only member-services numbers, and the cited GPP/Carelon PDFs
+  // resolved to unreadable embedded-font assets this pass (consistent with
+  // the file's existing ANTHEM_CUMG/ANTHEM_MANUAL finding) — no provider
+  // phone was personally read in a legible document this pass.
+  portal: { name: 'Availity Essentials / Interactive Care Reviewer', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Is prior authorization the same process for assessment codes (97151/97152/0362T) as for treatment codes, or is there a separate assessment pathway?',
+    'What POS codes are approved for ABA (home, school, clinic, telehealth)?',
+    'Is telehealth allowed for ABA services, and what modifier/POS number applies?',
+    'Is there a per-code daily unit cap beyond CG-BEH-02\'s general <=40 hrs/wk treatment guideline?',
+  ],
+  sources: [ANTHEM_MANUAL],
+};
+
+const uhcCommunityContact: VobContact = {
+  providerServicesPhone: '(800) 600-9007',
+  hours: 'Mon-Fri, 8 a.m.-5 p.m.',
+  portal: { name: 'UnitedHealthcare Provider Portal', url: 'https://secure.uhcprovider.com/' },
+  scriptedQuestions: [
+    'What POS code should be used for a telehealth ABA session?',
+    'Is a specific modifier required when ABA is delivered via telehealth?',
+    'Is there a numeric daily/weekly unit cap on treatment codes, or is it fully individualized against authorized hours?',
+    'Do you require a licensure-tier billing modifier (HN/HO/HM/HP)?',
+  ],
+  sources: [UHC_COMMUNITY_OH_CONTACT],
+};
+
+const amerihealthContact: VobContact = {
+  providerServicesPhone: '(833) 735-7700',
+  fax: '(833) 329-6411',
+  portal: { name: 'NaviNet (Jiva UM)', url: 'https://navinet.navimedix.com/' },
+  scriptedQuestions: [
+    'What POS codes are accepted for ABA billing (home, clinic, school, telehealth)?',
+    'Is telehealth approved for any ABA code, and if so what modifier is required?',
+    'Do you require a licensure-tier billing modifier for RBT- vs. BCBA-delivered codes?',
+  ],
+  sources: [AMERIHEALTH_BH_PAGE, AMERIHEALTH_NAVINET],
+};
+
+const humanaContact: VobContact = {
+  providerServicesPhone: '(877) 856-5707',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'What POS codes are approved for ABA (home, school, clinic, telehealth)?',
+    'Is telehealth allowed for any ABA code, and what modifier/POS number applies?',
+    'Since every ABA code including assessments requires prior authorization here, what\'s the current turnaround time for a decision?',
+    'Do you require a licensure-tier billing modifier?',
+  ],
+  sources: [HUMANA_OH_PAL],
+};
+
+const aetnaOhioContact: VobContact = {
+  // No providerServicesPhone/fax shipped: every Aetna PDF fetched this pass
+  // (BH precert list, BH provider manual) resolved to unreadable
+  // embedded-font/binary content, and the HTML precert/contact-us pages
+  // publish no phone number (member ID card is the stated fallback) — no
+  // number was personally read in a legible document.
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'What is the precertification process/form for ABA codes 97151-97158, 0362T, and 0373T?',
+    'What is the daily or weekly unit cap for each ABA code?',
+    'What POS codes and telehealth modifiers are accepted for ABA?',
+    'Do you require a licensure-tier modifier (HN/HO/HM/HP) on ABA claims?',
+    `Is this member's plan fully-insured or self-funded? ${OHIO_MANDATE_NOTE}`,
+  ],
+  sources: [AETNA_PRECERT_PAGE],
+};
+
+const cignaOhioContact: VobContact = {
+  providerServicesPhone: '(800) 882-4462',
+  fax: '(866) 873-8279',
+  portal: { name: 'CignaforHCP', url: 'https://cignaforhcp.cigna.com' },
+  scriptedQuestions: [
+    'Does ABA require prior authorization on this specific plan, and what is the process?',
+    'What are the daily or weekly unit caps for each ABA code?',
+    'What POS codes and telehealth modifiers are accepted for ABA?',
+    'Do you require a licensure-tier billing modifier?',
+    `Is this member's plan fully-insured or self-funded? ${OHIO_MANDATE_NOTE}`,
+  ],
+  sources: [CIGNA_PRECERT_PAGE],
+};
+
+const uhcOhioContact: VobContact = {
+  providerServicesPhone: '(877) 842-3210',
+  portal: { name: 'UnitedHealthcare Provider Portal / Provider Express', url: 'https://secure.uhcprovider.com/' },
+  scriptedQuestions: [
+    'What is the current review cadence/process for an Optum ABA prior-authorization request?',
+    'What POS code and modifier should be used for a telehealth ABA session?',
+    'Do the national unit caps and HN/HM/HO/HP modifier tiers in Optum\'s ABA Reimbursement Policy (2022RP501A) apply as published for this Ohio plan?',
+    `Is this member's plan fully-insured or self-funded? ${OHIO_MANDATE_NOTE}`,
+  ],
+  sources: [UHC_CONTACT_PAGE],
+};
+
 /* ==================== export ==================== */
 
 export const ohioVob: Record<string, VobExtension> = {
-  'ohio-medicaid': { edi: ohioMedicaidEdi, codeGrid: buildGrid(ohioMedicaidEntry), rates: OHIO_MEDICAID_RATES, lastUpdated: ACCESS_DATE },
-  'caresource-ohio': { edi: caresourceEdi, codeGrid: buildGrid(careSourceEntry), rates: ohioMcoUnverifiedRates('CareSource Ohio'), lastUpdated: ACCESS_DATE },
-  'buckeye-health-plan': { edi: buckeyeEdi, codeGrid: buildGrid(buckeyeEntry), rates: ohioMcoUnverifiedRates('Buckeye Health Plan'), lastUpdated: ACCESS_DATE },
-  'molina-healthcare-ohio': { edi: molinaEdi, codeGrid: buildGrid(molinaEntry), rates: ohioMcoUnverifiedRates('Molina Healthcare of Ohio'), lastUpdated: ACCESS_DATE },
-  'anthem-ohio-medicaid': { edi: anthemOhioEdi, codeGrid: buildGrid(anthemEntry), rates: ohioMcoUnverifiedRates('Anthem BCBS Ohio Medicaid'), lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-ohio': { edi: uhcCommunityEdi, codeGrid: buildGrid(uhcCommunityEntry), rates: ohioMcoUnverifiedRates('UnitedHealthcare Community Plan of Ohio'), lastUpdated: ACCESS_DATE },
-  'amerihealth-caritas-ohio': { edi: amerihealthEdi, codeGrid: buildGrid(amerihealthEntry), rates: ohioMcoUnverifiedRates('AmeriHealth Caritas Ohio'), lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-ohio': { edi: humanaOhioEdi, codeGrid: buildGrid(humanaEntry), rates: ohioMcoUnverifiedRates('Humana Healthy Horizons in Ohio'), lastUpdated: ACCESS_DATE },
-  'aetna-ohio': { edi: aetnaOhioEdi, codeGrid: aetnaOhioCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-ohio': { edi: cignaOhioEdi, codeGrid: cignaOhioCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-ohio': { edi: uhcOhioEdi, codeGrid: uhcOhioCodeGrid, lastUpdated: ACCESS_DATE },
+  'ohio-medicaid': { edi: ohioMedicaidEdi, codeGrid: buildGrid(ohioMedicaidEntry), rates: OHIO_MEDICAID_RATES, vobContact: ohioMedicaidContact, lastUpdated: ACCESS_DATE },
+  'caresource-ohio': { edi: caresourceEdi, codeGrid: buildGrid(careSourceEntry), rates: ohioMcoUnverifiedRates('CareSource Ohio'), vobContact: caresourceContact, lastUpdated: ACCESS_DATE },
+  'buckeye-health-plan': { edi: buckeyeEdi, codeGrid: buildGrid(buckeyeEntry), rates: ohioMcoUnverifiedRates('Buckeye Health Plan'), vobContact: buckeyeContact, lastUpdated: ACCESS_DATE },
+  'molina-healthcare-ohio': { edi: molinaEdi, codeGrid: buildGrid(molinaEntry), rates: ohioMcoUnverifiedRates('Molina Healthcare of Ohio'), vobContact: molinaContact, lastUpdated: ACCESS_DATE },
+  'anthem-ohio-medicaid': { edi: anthemOhioEdi, codeGrid: buildGrid(anthemEntry), rates: ohioMcoUnverifiedRates('Anthem BCBS Ohio Medicaid'), vobContact: anthemOhioContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-ohio': { edi: uhcCommunityEdi, codeGrid: buildGrid(uhcCommunityEntry), rates: ohioMcoUnverifiedRates('UnitedHealthcare Community Plan of Ohio'), vobContact: uhcCommunityContact, lastUpdated: ACCESS_DATE },
+  'amerihealth-caritas-ohio': { edi: amerihealthEdi, codeGrid: buildGrid(amerihealthEntry), rates: ohioMcoUnverifiedRates('AmeriHealth Caritas Ohio'), vobContact: amerihealthContact, lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-ohio': { edi: humanaOhioEdi, codeGrid: buildGrid(humanaEntry), rates: ohioMcoUnverifiedRates('Humana Healthy Horizons in Ohio'), vobContact: humanaContact, lastUpdated: ACCESS_DATE },
+  'aetna-ohio': { edi: aetnaOhioEdi, codeGrid: aetnaOhioCodeGrid, vobContact: aetnaOhioContact, lastUpdated: ACCESS_DATE },
+  'cigna-ohio': { edi: cignaOhioEdi, codeGrid: cignaOhioCodeGrid, vobContact: cignaOhioContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-ohio': { edi: uhcOhioEdi, codeGrid: uhcOhioCodeGrid, vobContact: uhcOhioContact, lastUpdated: ACCESS_DATE },
 };

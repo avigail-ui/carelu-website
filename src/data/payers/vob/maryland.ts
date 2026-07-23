@@ -50,7 +50,7 @@
      Policy) already verified in vob/georgia.ts — legitimately the
      same documents, not duplicated research.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -127,6 +127,29 @@ const OPTUM_STATE_MANDATES_MD = src(
 const MD_ABA_MANUAL = src(
   'https://health.maryland.gov/mmcp/epsdt/ABA/Documents/ABA%20Provider%20Manual%202_1_26%20(2).pdf',
   'MDH ABA Provider Manual, effective 2026-02-01, pp.15-16 (fee schedule) and pp.4/14 (billing/contact). Full-text search this pass confirmed: no "EDI," "companion guide," "270," "271," or "payer ID" appear anywhere in this 16-page manual — Carelon is the named EDI/billing contact (800-888-1965) but no clearinghouse payer ID is stated in it. Confirms CMS-1500 paper / CMS 837P electronic billing format.'
+);
+
+/* -------------------- Layer 7: contact & channel sources -------------------- */
+
+const CARELON_MD_PROVIDER_CONTACT = src(
+  'https://maryland.carelonbh.com/provider/',
+  'Carelon Behavioral Health of Maryland provider page — states "1-800-888-1965" is the primary contact number for "provider customer service and all inquiries (emergent, urgent, and routine calls)," and that "Carelon provides clinical staff coverage 24 hours a day, seven days a week, 365 days a year to respond to all participant and provider calls." Cross-confirms the same 1-800-888-1965 number the ABA Provider Manual gives for billing/precertification/registration questions; also lists Provider.relations.MD@carelon.com for provider-relations/alerts.'
+);
+const CARELON_MD_PROVIDERCONNECT_PORTAL = src(
+  'https://maryland.carelonbh.com/behavioral-health-providers/',
+  'Carelon Behavioral Health of Maryland provider-resources page — names the portal "ProviderConnect," described as "Carelon\'s secure, password-protected portal where participating providers conduct certain online activities directly with Carelon 24 hours a day, seven days a week," with login URL https://providerportal.carelonbehavioralhealth.com/index.html#/login.'
+);
+const AETNA_BH_ABA_PRECERT_FORM = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/pharmacy-insurance/healthcare-professional/documents/outpatient-behavioral-health-BH-ABA-assessment-precert.pdf',
+  'Aetna "Outpatient Behavioral Health (BH) — ABA Treatment Request" form, GR-69017-4 (7-26) — states verbatim "Don\'t use this form for Maryland and Massachusetts," so this document\'s national Precertification Department phone (1-800-424-4047), misdirected-fax numbers (1-800-624-0756 / 1-888-632-3862), and clinical-fax line (833-596-0339) are confirmed NOT to apply to Maryland and ship omitted rather than reused here. Does confirm Aetna\'s general national provider portal is Availity ("Just use our provider portal on Availity. Register today at Availity.com/aetnaproviders") — that portal statement precedes the Maryland/Massachusetts exclusion and is not itself scoped out by it.'
+);
+const UHC_PROVIDER_EXPRESS_CONTACT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum Provider Express "Contact Us" page — the only published phone numbers are 1-877-614-0484 ("Credentialing and recredentialing, Contracting and fee schedules, Network status, Provider demographic changes," Mon–Fri 7 a.m.–7 p.m. CT) and 1-866-209-9320 (Provider Express portal technical support only, same hours); no dedicated ABA/behavioral-health benefits-verification or prior-authorization phone number is published on this page.'
+);
+const UHC_PROVIDER_EXPRESS_PRIOR_AUTH = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/admin-resources/prior-auth-info.html',
+  "Optum Provider Express \"Prior Authorization and Notification Information\" page — directs providers to the secure Provider Express portal (or the number on the member's ID card) for eligibility/PA verification; confirms no dedicated ABA/behavioral-health phone number is published here either."
 );
 
 /* -------------------- Layer 4: Maryland Medicaid ABA rates -------------------- */
@@ -327,6 +350,21 @@ const marylandMedicaidCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': mdMedicaidEntry('0373T', '24 units/day', 'Extra-technician/intensifying protocol.'),
 };
 
+const marylandMedicaidVobContact: VobContact = {
+  providerServicesPhone: '1-800-888-1965',
+  ivrPath: 'Option 1, then Option 4 — ABA department (per the ABA Provider Manual\'s Carelon Call Center menu; the manual quotes this path in its Sentinel Event reporting section, but it\'s the same general Carelon Call Center number given elsewhere in the manual for billing/precertification/registration).',
+  hours: 'Weekdays 8 a.m.–5 p.m. (Carelon Call Center, per the ABA Provider Manual); Carelon\'s own Maryland provider page separately describes 24/7 clinical staff coverage for participant/provider calls generally.',
+  portal: { name: 'Carelon ProviderConnect', url: 'https://providerportal.carelonbehavioralhealth.com/index.html#/login' },
+  scriptedQuestions: [
+    "What is the exact daily unit cap for 97152, since the fee schedule gives a rate ($19.17) but the manual doesn't state an explicit daily cap for this code?",
+    'Is the Carelon/BHOMD eligibility and benefits hop for ABA claims processed in real time, or batch/next-day only?',
+    'Does the BHOMD submitter ID apply to ABA claims specifically, or is that ID only confirmed for the Health Homes program?',
+    'What modifier, if any, should be appended to indicate rendering-provider credential tier (BCBA vs. BCaBA vs. RBT/BT) if a claim denies on that basis?',
+    'Which clearinghouse payer ID should our EDI vendor use for Maryland Medicaid 270/271 eligibility inquiries (pVerify, Availity, or Change Healthcare)?',
+  ],
+  sources: [MD_ABA_MANUAL, CARELON_MD_PROVIDER_CONTACT, CARELON_MD_PROVIDERCONNECT_PORTAL],
+};
+
 /* ==================== aetna-maryland ==================== */
 
 const aetnaMdEdi: EdiRouting = {
@@ -366,6 +404,19 @@ const aetnaMdCodeGrid: Record<string, CodeGridEntry> = {
   '97158': aetnaEntry(),
   '0362T': aetnaEntry(),
   '0373T': aetnaEntry(),
+};
+
+const aetnaMdVobContact: VobContact = {
+  portal: { name: 'Availity Essentials (Aetna provider portal)', url: 'https://www.availity.com/aetnaproviders' },
+  scriptedQuestions: [
+    'What are the daily or weekly unit caps for ABA codes 97151–97158, 0362T, and 0373T under this member\'s plan?',
+    'Which places of service (home, office, school, telehealth) are authorized for ABA under this plan?',
+    'Is telehealth (GT or 95 modifier) allowed for any ABA codes, and if so which ones?',
+    'Are licensure-tier billing modifiers (HN/HO/HM/HP) required to distinguish BCBA vs. RBT/BT rendering providers?',
+    'Does Aetna administer ABA benefits in-house or through a separate behavioral-health carve-out administrator for this Maryland plan?',
+    "Since Aetna's national ABA precertification form (GR-69017-4) explicitly excludes Maryland, what is the correct Maryland-specific precertification process or form, and what phone/fax should we use?",
+  ],
+  sources: [AETNA_BH_ABA_PRECERT_FORM],
 };
 
 /* ==================== cigna-maryland ==================== */
@@ -408,6 +459,19 @@ const cignaMdCodeGrid: Record<string, CodeGridEntry> = {
   '97158': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '0362T': cignaEntry('Not required (per EN0499)'),
   '0373T': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+};
+
+const cignaMdVobContact: VobContact = {
+  providerServicesPhone: '877.279.7603',
+  hours: 'Monday–Friday, 8:30 a.m.–5:00 p.m. CT (Autism Care Coordinator team — benefits, eligibility, and authorization questions). A separate Provider Services department at 800.926.2273 handles billing/demographic questions, Monday–Friday 7:00 a.m.–7:00 p.m. CT.',
+  portal: { name: 'Evernorth provider website (Procedure Code Benefit Tool)', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    "What are the daily or weekly unit caps for this member's plan across the ABA code set (97151–97158, 0362T, 0373T)?",
+    'Which places of service (home, office, school, telehealth) are authorized under this plan?',
+    'Are telehealth modifiers (GT or 95) accepted for any ABA codes, and if so which ones?',
+    'Are licensure-tier billing modifiers required to distinguish BCBA vs. BCaBA vs. RBT/BT rendering providers?',
+  ],
+  sources: [CIGNA_AUTISM_GUIDE],
 };
 
 /* ==================== unitedhealthcare-maryland ==================== */
@@ -457,11 +521,35 @@ const unitedhealthcareMdCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (≤8 hrs)', []),
 };
 
+const unitedhealthcareMdVobContact: VobContact = {
+  portal: { name: 'Provider Express', url: 'https://www.providerexpress.com' },
+  scriptedQuestions: [
+    'Which places of service (home, office, school, telehealth) are authorized for ABA under this plan?',
+    'Is telehealth allowed for any ABA codes, and which modifier (GT or 95) applies?',
+    'Since UHC medical claims and Optum Behavioral Health share the same payer ID (87726), how should our clearinghouse distinguish ABA/behavioral claims from medical claims for routing?',
+    'Is a two-hop authorization/eligibility process required between UHC and Optum Behavioral Health for ABA, or is it handled directly on one system?',
+    "Can you confirm the current daily unit caps per code (97151–97158, 0362T, 0373T) for this specific plan, since Optum's national reimbursement policy is being used as a proxy?",
+    'What is the direct phone number for ABA benefits and prior-authorization verification, since none is published on Provider Express?',
+  ],
+  sources: [UHC_PROVIDER_EXPRESS_CONTACT, UHC_PROVIDER_EXPRESS_PRIOR_AUTH],
+};
+
 /* ==================== export ==================== */
 
 export const marylandVob: Record<string, VobExtension> = {
-  'maryland-medicaid': { edi: marylandMedicaidEdi, codeGrid: marylandMedicaidCodeGrid, rates: marylandMedicaidRates, lastUpdated: ACCESS_DATE },
-  'aetna-maryland': { edi: aetnaMdEdi, codeGrid: aetnaMdCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-maryland': { edi: cignaMdEdi, codeGrid: cignaMdCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-maryland': { edi: unitedhealthcareMdEdi, codeGrid: unitedhealthcareMdCodeGrid, lastUpdated: ACCESS_DATE },
+  'maryland-medicaid': {
+    edi: marylandMedicaidEdi,
+    codeGrid: marylandMedicaidCodeGrid,
+    rates: marylandMedicaidRates,
+    vobContact: marylandMedicaidVobContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'aetna-maryland': { edi: aetnaMdEdi, codeGrid: aetnaMdCodeGrid, vobContact: aetnaMdVobContact, lastUpdated: ACCESS_DATE },
+  'cigna-maryland': { edi: cignaMdEdi, codeGrid: cignaMdCodeGrid, vobContact: cignaMdVobContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-maryland': {
+    edi: unitedhealthcareMdEdi,
+    codeGrid: unitedhealthcareMdCodeGrid,
+    vobContact: unitedhealthcareMdVobContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

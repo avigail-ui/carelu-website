@@ -62,7 +62,7 @@
      entries (re-confirmed by direct re-fetch this pass, access date
      below), not a guess carried over from another state.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -144,6 +144,41 @@ const OPTUM_SCC = src(
 const OPTUM_REIMBURSEMENT_POLICY = src(
   'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
   "Optum national ABA Reimbursement Policy (2022RP501A) — max-daily-units and HN/HM/HO/HP modifier tiers per code; not Indiana-specific, applied here as 'inferred' absent a confirmed Indiana override."
+);
+
+/* -------------------- Layer 7: contact & channel sources -------------------- */
+/* Fetched/re-fetched this pass specifically to populate vobContact. Phone/fax numbers
+   below were read directly out of these documents (not carried over from a search
+   snippet) — see per-guide vobContact.sources for which of these backs which guide. */
+const IHCP_QRG_CONTACT = src(
+  'https://www.in.gov/medicaid/providers/files/quick-reference.pdf',
+  'IHCP Quick Reference Guide – Contact Information, Version 14.1, May 2026 — FFS Provider Customer Assistance 800-457-4584; IHCP Provider Healthcare Portal at portal.indianamedicaid.com; per-MCE Managed Care contact page (by line of business) gives Anthem Provider Services 844-533-1995 (HIP) / 844-284-1798 (Hoosier Care Connect) / 866-408-6132 (Hoosier Healthwise) / 833-569-4739 (PathWays), fax by service (Physical Health 866-406-2803, BH Inpatient 877-434-7578, BH Outpatient 866-877-5229); CareSource Provider Services 844-607-2831, PA fax 844-432-8924; MHS Provider Services 877-647-4848, PA fax 866-912-4245 (Physical), 844-288-2591 (BH Inpatient), 866-694-3649 (BH Outpatient); UnitedHealthcare Community Plan Provider Services 877-610-9785, PA fax 844-897-6514, electronic payer ID 87726. MDwise listed with only an email (providerservices@mdwise.org), no phone — consistent with its post-exit residual listing.'
+);
+const MHS_PROVIDER_QRG_2019 = src(
+  'https://www.mhsindiana.com/content/dam/centene/mhsindiana/medicaid/pdfs/Provider-QRG.pdf',
+  "MHS \"PROVIDER Quick Reference Guide,\" effective June 1, 2019 — 877-647-4848 (TTY/TDD 1-800-743-3333), mhsindiana.com; GENERAL OFFICE HOURS 8 a.m.–5 p.m. EST (closed holidays); MEMBER/PROVIDER SERVICES 8 a.m.–8 p.m.; REFERRALS AND AUTHORIZATIONS 8 a.m.–5 p.m. (closed 12–1 p.m.); Secure Provider Portal at mhsindiana.com/login; fax numbers: Network Management 866-912-4244, Medical Appeals 866-714-7993, Case Management 866-694-3653, Referrals/Authorizations 866-912-4245. This is the newest MHS-published quick-reference PDF located this pass; dated 2019, so downgraded with staleRisk pending a current MHS-branded refresh (the main phone/referral-fax numbers are cross-confirmed current via IHCP_QRG_CONTACT above).",
+  true
+);
+const MDWISE_QUICK_CONTACT_GUIDE = src(
+  'https://www.mdwise.org/Uploads/Public/Documents/MDwise/MDwise-Quick-Contact-Guide.pdf',
+  'MDwise "Provider Quick Contact Guide" (doc code DR-07-2025-17415/HHW-HIPP1005, dated 7/25, i.e. pre-dating the 1/1/2026 MCE exit) — MDwise Provider Services phone (local) 1-317-630-2831; Provider Customer Service Unit (PCSU) 1-833-654-9192, fax 1-463-426-5854; myMDwise Provider Portal at mdwise.org/for-providers/mymdwise-provider-portal; general/member customer service 1-800-356-1204. Retained for historical reference only — MDwise ended as an Indiana Medicaid MCE effective 1/1/2026 (see FSSA_MDWISE_EXIT); do not use these numbers to route a live 2026+ eligibility check.'
+);
+const UHC_IN_COMM_PLAN_CONTACT = src(
+  'https://www.uhcprovider.com/en/health-plans-by-state/indiana-health-plans/in-comm-plan-home.html',
+  'UHCprovider.com — UnitedHealthcare Community Plan of Indiana contact page — Provider Services (claims, prior auth, eligibility) 877-610-9785, available 8 a.m.–8 p.m. ET Monday–Friday; Optum Behavioral Health 800-888-2998 (toll-free), fax 844-897-6514, providerexpress.com; a dedicated "Provider Advocate - Indiana Autism/ABA Network Management" line is listed separately: 715-833-6538, fax 855-572-3643, territory "All ABA providers" — the most directly on-point contact found for an ABA-specific call on this guide.'
+);
+const UHC_NATIONAL_CONTACT_US = src(
+  'https://www.uhcprovider.com/en/contact-us.html',
+  'UHCprovider.com national Contact Us page — General provider assistance / Provider Services 877-842-3210 (not Indiana-specific — no separate Indiana commercial line found, distinct from the Indiana-specific Community Plan Medicaid number above); "24/7 behavioral health and substance use support line" 877-614-0484 (Optum); Behavioral health routes to Optum Provider Express or the same 877-614-0484 line.'
+);
+const AETNA_BH_PRECERT_LIST = src(
+  'https://www.aetna.com/document-library/healthcare-professionals/documents-forms/bh_precert_list.pdf',
+  'Aetna "Participating provider behavioral health precertification list," effective/last updated August 1, 2024 — Applied Behavioral Analysis (ABA) is listed among the behavioral health services requiring precertification; questions routed to Commercial plans 1-888-632-3862 (TTY 711); submission via the Availity® provider portal (Availity.com) or AetnaElectronicPrecert.com. Also states verbatim: "precertification programs don\'t apply to fully insured members in Indiana" — a general Aetna precert-program carve-out for Indiana, not ABA-specific, surfaced here as a call-script flag rather than used to alter the codeGrid paRequired value above. Document is ~24 months old at this access date; staleRisk flagged.',
+  true
+);
+const CIGNA_CONTACT_US = src(
+  'https://static.cigna.com/assets/chcp/resourceLibrary/medicalResourcesList/medicalCommunication/medicalContactUs.html',
+  'CHCP (Cigna for Health Care Professionals) "Contact Us" resource page — Provider Services 800.88Cigna (882.4462), CignaforHCP.com; separately lists "Other Important Contacts: Evernorth Behavioral Health, Phone: 800.926.2273, Website: Provider.Evernorth.com" — the correct routing for ABA-specific calls given Evernorth\'s administrator role confirmed elsewhere in this file.'
 );
 
 /* -------------------- Layer 4: shared IN Medicaid rate table -------------------- */
@@ -728,16 +763,135 @@ const unitedhealthcareIndianaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcCommercialEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 7: vobContact ====================
+   Contact fields (phone/fax/hours/portal) are scraped from primary provider-
+   facing documents — reused from this file's own Layer 1/3/4 sources where a
+   number/URL was already quoted verbatim in a src() note, supplemented by new
+   fetches this pass (consts above) for gaps. scriptedQuestions are generated,
+   not scraped: each targets a field this guide's OWN edi/codeGrid marks
+   unverified/plan-dependent — never a fact already verified above. */
+
+const indianaMedicaidContact: VobContact = {
+  providerServicesPhone: '800-457-4584 (IHCP Provider Customer Assistance, Gainwell Technologies)',
+  portal: { name: 'IHCP Provider Healthcare Portal', url: 'https://portal.indianamedicaid.com' },
+  scriptedQuestions: [
+    'Which service location(s) — home, clinic, school, telehealth — are authorized on this member\'s approved ABA PA? (IHCP publishes no per-code POS list.)',
+    'Does this member\'s 270/271 route through a Change Healthcare payer ID, or only pVerify/Availity? (unconfirmed for IHCP)',
+    'If the member is on comprehensive ABA (modifier UA), how many hours/units remain of the 4,000-hour lifetime allocation?',
+  ],
+  sources: [IHCP_QRG_CONTACT],
+};
+
+const anthemInMedicaidContact: VobContact = {
+  providerServicesPhone:
+    'Varies by line of business — HIP: 844-533-1995 / Hoosier Care Connect: 844-284-1798 / Hoosier Healthwise: 866-408-6132 / PathWays: 833-569-4739 (Anthem Indiana Medicaid Provider Services)',
+  fax: 'Physical Health (Inpatient & Outpatient): 866-406-2803 / Behavioral Health Inpatient: 877-434-7578 / Behavioral Health Outpatient: 866-877-5229',
+  portal: { name: 'Availity Essentials', url: 'https://Availity.com' },
+  scriptedQuestions: [
+    'Which of the four Anthem Indiana Medicaid lines of business (HIP, Hoosier Healthwise, Hoosier Care Connect, PathWays) is the member enrolled in? Provider Services routes to a different phone number for each.',
+    'Does Availity support real-time (interactive) 270/271 for this member\'s plan, or only batch?',
+    'What are the per-code unit caps, POS, and modifier requirements for this member\'s ABA authorization? (Anthem\'s UM guideline doesn\'t restate IHCP\'s statewide code-level table.)',
+    'Has pVerify\'s flagged "00709 Eligibility=No/Claim=No" status changed, or should this check route through Availity instead?',
+  ],
+  sources: [IHCP_QRG_CONTACT, ANTHEM_IN_MEDICAID_UM_GUIDELINE],
+};
+
+const mhsIndianaContact: VobContact = {
+  providerServicesPhone: '877-647-4848 (MHS Provider Services; TTY/TDD 1-800-743-3333)',
+  hours:
+    'General office 8 a.m.–5 p.m. ET, closed holidays; Member & Provider Services 8 a.m.–8 p.m.; Referrals & Authorizations 8 a.m.–5 p.m. (closed 12–1 p.m.)',
+  portal: { name: 'MHS Secure Provider Portal', url: 'https://www.mhsindiana.com/login' },
+  fax: 'Physical Health Referrals/PA: 866-912-4245 / Behavioral Health Inpatient: 844-288-2591 / Behavioral Health Outpatient: 866-694-3649',
+  scriptedQuestions: [
+    'Does MHS\'s payer ID (00379) support real-time 270/271, or only batch — and is there a distinct Availity or Change Healthcare ID?',
+    'What are the per-code unit caps, POS, and modifier requirements for this member\'s ABA authorization? (MHS\'s OTR form defers to IHCP criteria without its own table.)',
+    'Does MHS route ABA claims through a named BH administrator, or directly under IHCP medical claims, for this member\'s plan?',
+  ],
+  sources: [IHCP_QRG_CONTACT, MHS_PROVIDER_QRG_2019, MHS_OTR_FORM],
+};
+
+const caresourceIndianaContact: VobContact = {
+  providerServicesPhone: '844-607-2831 (CareSource Indiana Medicaid Provider Services / Prior Authorization)',
+  fax: '844-432-8924 (CareSource general/PA fax)',
+  portal: { name: 'CareSource Provider Portal', url: 'https://providerportal.caresource.com/IN' },
+  scriptedQuestions: [
+    'Does CareSource\'s Indiana Medicaid payer ID support real-time 270/271, and is there a distinct Change Healthcare ID?',
+    'What are the per-code unit caps, POS, and modifier requirements for this member\'s ABA authorization? (CareSource\'s PA page defers to IHCP criteria without its own table.)',
+    'Does CareSource administer ABA directly or via a named BH administrator for this member\'s plan?',
+  ],
+  sources: [CARESOURCE_IN_PA_PAGE, IHCP_QRG_CONTACT],
+};
+
+const mdwiseIndianaContact: VobContact = {
+  providerServicesPhone:
+    '1-833-654-9192 (MDwise Provider Customer Service Unit) — HISTORICAL ONLY: MDwise ended as an Indiana Medicaid MCE effective 1/1/2026; do not use to route a live 2026+ eligibility check',
+  fax: '1-463-426-5854 (historical Provider Customer Service Unit fax)',
+  portal: { name: 'myMDwise Provider Portal (historical)', url: 'https://www.mdwise.org/for-providers/mymdwise-provider-portal' },
+  scriptedQuestions: [
+    'If a member\'s ID card still shows MDwise, confirm their reassigned MCE (Anthem, CareSource, or MHS) before proceeding — MDwise ended as an Indiana Medicaid MCE effective 1/1/2026.',
+  ],
+  sources: [MDWISE_QUICK_CONTACT_GUIDE, FSSA_MDWISE_EXIT, MDWISE_BH_REFERENCE_GUIDE],
+};
+
+const uhcCommunityPlanIndianaContact: VobContact = {
+  providerServicesPhone: '877-610-9785 (UnitedHealthcare Community Plan of Indiana Provider Services)',
+  hours: '8 a.m.–8 p.m. Eastern Time, Monday–Friday',
+  ivrPath:
+    'For ABA-specific issues, ask to be routed to Optum Behavioral Health (800-888-2998) or the Indiana Autism/ABA Network Management Provider Advocate (715-833-6538) rather than general medical Provider Services.',
+  fax: '844-897-6514 (Optum Behavioral Health / prior authorization fax)',
+  portal: { name: 'Provider Express (Optum Behavioral Health)', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'What is the correct pVerify/Availity payer ID for Indiana Community Plan 270/271 eligibility checks? (No Indiana-specific ID confirmed yet.)',
+    'Do ABA claims route on Optum\'s own BH payer ID, or the shared UHC medical ID (87726)?',
+    'What are the per-code unit caps, POS, and modifier requirements for this member\'s ABA authorization? (Only the statewide IHCP pattern is on file, not a UHC/Optum-specific table.)',
+  ],
+  sources: [UHC_IN_COMM_PLAN_CONTACT],
+};
+
+const aetnaIndianaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862 (Aetna commercial precertification / Provider Services, TTY 711)',
+  portal: { name: 'Availity Essentials', url: 'https://Availity.com' },
+  scriptedQuestions: [
+    'Does Aetna administer ABA in-house or via a behavioral-health carve-out for this member\'s Indiana commercial plan?',
+    'What are the per-code unit caps, POS, telehealth allowance, and licensure-tier modifiers for ABA codes? (No Indiana-specific coding table is published.)',
+    'Is precertification actually required for this member? Aetna\'s national BH precertification list states its precertification programs don\'t apply to fully insured members in Indiana — confirm the member\'s funding type (fully insured vs. self-funded) before assuming PA applies.',
+  ],
+  sources: [AETNA_BH_PRECERT_LIST],
+};
+
+const cignaIndianaContact: VobContact = {
+  providerServicesPhone:
+    '800-882-4462 (Cigna Provider Services, general) / 800-926-2273 (Evernorth Behavioral Health — route ABA-specific calls here)',
+  portal: { name: 'CignaforHCP / Provider.Evernorth.com', url: 'https://cignaforhcp.cigna.com' },
+  scriptedQuestions: [
+    'Does Cigna/Evernorth support real-time (interactive) 270/271 for this payer ID, or only batch?',
+    'What are the per-code unit caps, POS, telehealth allowance, and modifier requirements for ABA codes? (EN0499 is a national medical-necessity policy only — no coding/reimbursement mechanics published.)',
+  ],
+  sources: [CIGNA_CONTACT_US, CIGNA_AUTISM_RESOURCE_GUIDE],
+};
+
+const unitedhealthcareIndianaContact: VobContact = {
+  providerServicesPhone: '877-842-3210 (UnitedHealthcare commercial Provider Services — national line; no Indiana-specific override located)',
+  ivrPath: 'For ABA/behavioral health, ask for the 24/7 behavioral health and substance use support line (877-614-0484, Optum) or Provider Express instead of general medical Provider Services.',
+  portal: { name: 'UnitedHealthcare Provider Portal / Provider Express', url: 'https://www.uhcprovider.com' },
+  scriptedQuestions: [
+    'Do ABA claims route on a distinct Optum Behavioral Health payer ID, or the shared UHC medical ID (87726), for this member\'s plan?',
+    'What is the telehealth allowance and what POS codes apply to ABA services? (Neither is published in Optum\'s national reimbursement policy for Indiana specifically.)',
+    'Is a two-hop EDI routing (medical → BH) required for this member\'s eligibility check?',
+  ],
+  sources: [UHC_NATIONAL_CONTACT_US, OPTUM_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const indianaVob: Record<string, VobExtension> = {
-  'indiana-medicaid': { edi: indianaMedicaidEdi, codeGrid: indianaMedicaidCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'anthem-indiana-medicaid': { edi: anthemInMedicaidEdi, codeGrid: anthemInMedicaidCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'mhs-indiana': { edi: mhsIndianaEdi, codeGrid: mhsIndianaCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'caresource-indiana': { edi: caresourceIndianaEdi, codeGrid: caresourceIndianaCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'mdwise-indiana': { edi: mdwiseIndianaEdi, codeGrid: mdwiseIndianaCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-indiana': { edi: uhcCommunityPlanIndianaEdi, codeGrid: uhcCommunityPlanIndianaCodeGrid, rates: indianaMedicaidRates(), lastUpdated: ACCESS_DATE },
-  'aetna-indiana': { edi: aetnaIndianaEdi, codeGrid: aetnaIndianaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-indiana': { edi: cignaIndianaEdi, codeGrid: cignaIndianaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-indiana': { edi: unitedhealthcareIndianaEdi, codeGrid: unitedhealthcareIndianaCodeGrid, lastUpdated: ACCESS_DATE },
+  'indiana-medicaid': { edi: indianaMedicaidEdi, codeGrid: indianaMedicaidCodeGrid, rates: indianaMedicaidRates(), vobContact: indianaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'anthem-indiana-medicaid': { edi: anthemInMedicaidEdi, codeGrid: anthemInMedicaidCodeGrid, rates: indianaMedicaidRates(), vobContact: anthemInMedicaidContact, lastUpdated: ACCESS_DATE },
+  'mhs-indiana': { edi: mhsIndianaEdi, codeGrid: mhsIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: mhsIndianaContact, lastUpdated: ACCESS_DATE },
+  'caresource-indiana': { edi: caresourceIndianaEdi, codeGrid: caresourceIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: caresourceIndianaContact, lastUpdated: ACCESS_DATE },
+  'mdwise-indiana': { edi: mdwiseIndianaEdi, codeGrid: mdwiseIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: mdwiseIndianaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-indiana': { edi: uhcCommunityPlanIndianaEdi, codeGrid: uhcCommunityPlanIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: uhcCommunityPlanIndianaContact, lastUpdated: ACCESS_DATE },
+  'aetna-indiana': { edi: aetnaIndianaEdi, codeGrid: aetnaIndianaCodeGrid, vobContact: aetnaIndianaContact, lastUpdated: ACCESS_DATE },
+  'cigna-indiana': { edi: cignaIndianaEdi, codeGrid: cignaIndianaCodeGrid, vobContact: cignaIndianaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-indiana': { edi: unitedhealthcareIndianaEdi, codeGrid: unitedhealthcareIndianaCodeGrid, vobContact: unitedhealthcareIndianaContact, lastUpdated: ACCESS_DATE },
 };

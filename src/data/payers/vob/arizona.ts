@@ -43,7 +43,7 @@
      rides the ACC/DDD contractor's own medical payer ID — no separate
      RBHA/BH carve-out payer, no two-hop for standard members.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -580,20 +580,209 @@ const uhcAzEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
 };
 
+/* -------------------- Layer 7: contact & channel source refs -------------------- */
+/* Sourcing notes: (a) several vobContact facts below are lifted verbatim from the
+   Layer 1/3 source notes already cited above (Molina fax/phone, Health Choice PA
+   line, UHC AZ orientation's Optum fax/portal, Cigna Autism Resource Guide's
+   Provider Services/Autism Care Coordinator lines) — no new fetch needed for
+   those. (b) For gaps (AHCCCS, AzCH, Banner, Health Choice hours/portal, Mercy
+   Care portal, Aetna) this pass fetched each payer's own provider "contact us" /
+   quick-reference page directly. Where no verifiable phone/fax turned up after
+   both passes (Mercy Care phone, AzCH portal URL, Banner portal URL, arizona-ddd's
+   own line, Aetna's AZ-specific precert line), the field is omitted rather than
+   guessed — Aetna and Mercy Care DDD/ACC members are routed by "the number on the
+   ID card," which is not a single verifiable number for the directory. */
+const AHCCCS_CONTACTS_PAGE = src(
+  'https://www.azahcccs.gov/shared/AHCCCScontacts.html',
+  'AHCCCS Contacts page — AHCCCS Provider Services 602-417-7670 (toll-free 1-800-794-6862), calls answered Mon–Fri 8 a.m.–5 p.m.; AVA virtual assistant 24/7 at chat.azahcccs.gov; online “AHCCCS Solutions Center” portal at servicenow.azahcccs.gov/gsp.'
+);
+const AZCH_CONTACT_US = src(
+  'https://www.azcompletehealth.com/contact-us.html',
+  'Arizona Complete Health Contact Us page — confirms Provider Customer Service 1-866-796-0542 (distinct from ACC/RBHA Complete Care Member Services 1-888-788-4408 and the Nurse Triage Line 1-866-534-5963); references a Secure Provider Portal but does not print its URL on this page.'
+);
+const BANNER_PROVIDER_CONTACT = src(
+  'https://www.bannerhealth.com/bhpprovider/about/contact',
+  'Banner Health Plans (bhpprovider) Provider Experience Center contact page — Banner–University Family Care/ACC Customer Care Center 800-582-8686 (TTY 711), Mon–Fri 7:30 a.m.–5:00 p.m. (after-hours calls transfer to an answering service); Grievance & Appeals fax 866-465-8340; a Provider Portal is referenced in navigation but its URL is not printed on this page.'
+);
+const AZBLUE_PA_GUIDELINES_FETCHED = src(
+  'https://azblue.com/medicaid/providers/pa-guidelines/',
+  'BCBSAZ Health Choice Arizona PA guidelines page (redirect target of healthchoiceaz.com/providers/pa-guidelines, already cited on the codeGrid) — confirms Provider Services/PA line 1-800-322-8670 and Medical PA fax 1-877-422-8120.'
+);
+const HEALTHCHOICEAZ_PORTAL_CONTACT = src(
+  'https://providerportal.healthchoiceaz.com/Home/Contact',
+  'Health Choice Arizona Provider Portal contact page — Health Choice Arizona/Pathway phone 1-800-322-8670 (also (480) 968-6866), Portal Support (480) 760-4651, hours Mon–Fri 8:00 a.m.–5:00 p.m. (except holidays).'
+);
+const MOLINA_AZ_PA_GUIDE_CONTACT = src(
+  'https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/az/Forms/MHAZ-Prior-Auth-and-Pre-Service-Review-Guide-508.pdf',
+  'Molina Healthcare of Arizona Prior Auth and Pre-Service Review Guide, “Important MCC contact information” page — Prior authorizations incl. behavioral health (800) 424-5891, outpatient fax (888) 656-7501, inpatient fax (888) 656-2201, Provider Customer Service (800) 424-5891; MCC provider portal at www.availity.com/molinacompletecare. (Same document already cited on the codeGrid; this note captures its contact page specifically.)'
+);
+const AETNA_PRECERT_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/precertification.html',
+  'Aetna Precertification — Health Care Professionals page: precertification is submitted via EDI, the Availity secure provider portal, or by calling the number on the member’s ID card; no standalone AZ/ABA precertification phone line is published.'
+);
+
+const AHCCCS_DDD_GRID_QUESTIONS = [
+  'Is there a daily or weekly unit cap on 97153–97155 treatment codes, and over what period?',
+  'Is telehealth allowed for ABA codes, and does it need a specific POS or modifier?',
+  'What POS codes (home, clinic, school, community) do you actually accept on ABA claims?',
+];
+
+const ahcccsContact: VobContact = {
+  providerServicesPhone: '602-417-7670 (toll-free 1-800-794-6862)',
+  hours: 'Monday–Friday, 8:00 a.m.–5:00 p.m.',
+  portal: { name: 'AHCCCS Solutions Center', url: 'https://servicenow.azahcccs.gov/gsp' },
+  ivrPath: 'AVA virtual assistant available 24/7 at chat.azahcccs.gov for eligibility/enrollment questions outside call-center hours.',
+  scriptedQuestions: [
+    'Which AHCCCS-contracted plan is the member enrolled in — ACC or DDD — so I route the PA to the right plan?',
+    ...AHCCCS_DDD_GRID_QUESTIONS,
+    'What’s the current rate for 97156 and 97157 — are they still paid “By Report”?',
+    'Are 0362T and 0373T covered and separately reimbursed for this member, since neither is on the ABA fee schedule?',
+  ],
+  sources: [AHCCCS_CONTACTS_PAGE],
+};
+
+const mercyCareContact: VobContact = {
+  portal: { name: 'Mercy Care Availity Provider Portal', url: 'https://www.mercycareaz.org/providers/portal.html' },
+  scriptedQuestions: [
+    'Is there a daily or weekly unit cap for 97153–97155, and what capPeriod applies?',
+    'Is telehealth allowed for ABA treatment codes, and if so what POS or modifier should I use?',
+    'What POS codes (home, clinic, school, community) does Mercy Care actually accept on ABA claims?',
+    'What’s the current authorized rate for 97156/97157, since they’re “By Report” at the state level?',
+  ],
+  sources: [MERCY_CARE_ABA],
+};
+
+const uhcCommunityAzContact: VobContact = {
+  providerServicesPhone: '1-800-445-1638 (Optum Claims Customer Service Line)',
+  fax: '1-888-541-6691 (Optum ABA prior-authorization fax)',
+  hours: 'Provider Express Support Center: 7:00 a.m.–9:00 p.m. CT',
+  portal: { name: 'Optum Provider Express (ABA prior authorization)', url: 'https://www.providerexpress.com' },
+  ivrPath: 'Verify member eligibility via the number on the back of the member’s ID card or through Provider Express/UHCprovider.com; all ABA codes require PA except 97151/97152 — submit online via the ABA Treatment Form or fax 1-888-541-6691.',
+  scriptedQuestions: [
+    'Is there a daily or weekly unit cap for 97153–97155 treatment codes?',
+    'Does telehealth require a specific modifier (GT/95) for ABA codes under this member’s ACC/DD plan?',
+    'What POS codes are accepted for home vs. clinic ABA sessions?',
+    'What’s the current rate for 97156/97157, since AHCCCS lists them “By Report”?',
+  ],
+  sources: [UHC_AZ_ORIENT],
+};
+
+const azchContact: VobContact = {
+  providerServicesPhone: '1-866-796-0542 (Provider Customer Service)',
+  scriptedQuestions: [
+    'Does 97151/97152 need prior auth for this member, or does that depend on the current PA lookup-tool row?',
+    'Is there an hour-band cap (e.g., focused 10–25, comprehensive 30–40) that applies to this member specifically?',
+    'Is telehealth allowed for ABA codes, and does it need a particular modifier?',
+    'What POS codes (home, school, community) do you accept for ABA billing?',
+  ],
+  sources: [AZCH_CONTACT_US],
+};
+
+const bannerContact: VobContact = {
+  providerServicesPhone: '800-582-8686 (TTY 711)',
+  fax: '866-465-8340 (Grievance & Appeals fax)',
+  hours: 'Monday–Friday, 7:30 a.m.–5:00 p.m. (after hours route to an answering service)',
+  scriptedQuestions: [
+    'Does 97151/97152 require prior authorization for this member, since Banner hasn’t published a standing PA rule?',
+    'What’s the current PA requirement and turnaround for 97153–97158, 0362T, and 0373T?',
+    'Is there a unit or hour cap per day or week for ABA treatment codes?',
+    'Is telehealth allowed for ABA, and does it require a specific POS or modifier?',
+  ],
+  sources: [BANNER_PROVIDER_CONTACT],
+};
+
+const healthChoiceContact: VobContact = {
+  providerServicesPhone: '1-800-322-8670',
+  fax: '1-877-422-8120 (Medical PA fax)',
+  hours: 'Monday–Friday, 8:00 a.m.–5:00 p.m. (except holidays)',
+  portal: { name: 'Health Choice Arizona Provider Portal', url: 'https://providerportal.healthchoiceaz.com' },
+  scriptedQuestions: [
+    'Per the current PA-Guidelines grid, does 97151/97152 need prior authorization for this member?',
+    'What’s the current unit/hour cap for 97153–97155 on the PA grid?',
+    'Is telehealth allowed for ABA codes, and what modifier is required?',
+    'What POS codes do you accept for home vs. clinic ABA visits?',
+  ],
+  sources: [AZBLUE_PA_GUIDELINES_FETCHED, HEALTHCHOICEAZ_PORTAL_CONTACT],
+};
+
+const molinaAzContact: VobContact = {
+  providerServicesPhone: '(800) 424-5891 (Provider Customer Service; also prior authorizations incl. behavioral health)',
+  fax: '(888) 656-7501 outpatient / (888) 656-2201 inpatient',
+  portal: { name: 'Availity (Molina Complete Care of AZ Provider Portal)', url: 'https://www.availity.com/molinacompletecare' },
+  scriptedQuestions: [
+    'Does 97151/97152 need prior authorization for this member, since Molina hasn’t published a standing ABA rule?',
+    'What’s the current unit/hour cap for 97153–97158, 0362T, and 0373T?',
+    'Is telehealth allowed for ABA codes, and what modifier is required?',
+    'What POS codes do you accept for ABA billing?',
+  ],
+  sources: [MOLINA_AZ_PA_GUIDE_CONTACT],
+};
+
+const dddContact: VobContact = {
+  ivrPath: 'Ask which DDD Health Plan the member is enrolled in — Mercy Care DD or UHCCP DD — first; routing, the PA form, and the phone/fax used all depend on that answer (see mercy-care-arizona / unitedhealthcare-community-plan-arizona contacts).',
+  scriptedQuestions: [
+    'Which DDD Health Plan is the member enrolled in — Mercy Care DD or UHCCP DD?',
+    ...AHCCCS_DDD_GRID_QUESTIONS,
+  ],
+  sources: [DES_DDD_HEALTH_PLANS],
+};
+
+const aetnaAzContact: VobContact = {
+  portal: { name: 'Availity (Aetna secure provider portal)', url: 'https://www.availity.com' },
+  ivrPath: 'Precertification is verified via the number on the member’s ID card or submitted through the Availity provider portal — no single AZ-commercial ABA precertification line is published by Aetna.',
+  scriptedQuestions: [
+    'What POS codes does Aetna accept for ABA sessions (home, clinic, school, community)?',
+    'Is telehealth allowed for ABA codes, and does it require a specific modifier (GT/95)?',
+    'Is there a unit or hour cap per day or week for treatment codes, and over what period?',
+    'What credential-tier modifiers does Aetna require on ABA claims?',
+  ],
+  sources: [AETNA_PRECERT_PAGE],
+};
+
+const cignaAzContact: VobContact = {
+  providerServicesPhone: '800.926.2273 (Provider Services — billing/benefits/eligibility)',
+  hours: 'Monday–Friday, 7:00 a.m.–7:00 p.m. CT (Provider Services); Autism Care Coordinator team Mon–Fri 8:30 a.m.–5:00 p.m. CT',
+  portal: { name: 'Evernorth Provider Portal', url: 'https://provider.evernorth.com' },
+  ivrPath: 'For ABA-specific eligibility, benefits, and prior-auth questions, ask for the Autism Care Coordinator team directly at 877.279.7603 (nonclinical) rather than general Provider Services.',
+  scriptedQuestions: [
+    'What POS codes does Evernorth accept for ABA (home, clinic, school, telehealth)?',
+    'Is telehealth allowed for ABA codes, and does it require a specific modifier?',
+    'Is there a unit or hour cap per day or week, and what capPeriod applies?',
+    'What credential-tier modifiers does Evernorth require on ABA claims?',
+  ],
+  sources: [CIGNA_AUTISM_GUIDE],
+};
+
+const uhcAzContact: VobContact = {
+  providerServicesPhone: '1-866-209-9320 (Optum Provider Express Support Center — shared portal help desk, not an AZ-commercial-specific line)',
+  hours: '7:00 a.m.–9:00 p.m. CT',
+  portal: { name: 'Optum Provider Express', url: 'https://www.providerexpress.com' },
+  ivrPath: 'For member-specific eligibility/PA, call the number on the member’s ID card or use Provider Express; no dedicated AZ-commercial ABA line is separately published.',
+  scriptedQuestions: [
+    'What POS codes does Optum accept for ABA sessions (home, clinic, school, community)?',
+    'Is telehealth allowed for ABA codes, and does it require a specific modifier?',
+    'Is there a unit or hour cap per day or week for treatment codes, and over what period?',
+    'What credential-tier modifiers does Optum require on ABA claims?',
+  ],
+  sources: [UHC_AZ_ORIENT],
+};
+
 /* ==================== export ==================== */
 
 export const arizonaVob: Record<string, VobExtension> = {
-  'arizona-ahcccs': { edi: ahcccsEdi, codeGrid: ahcccsGrid(), rates: AZ_AHCCCS_RATES, lastUpdated: ACCESS_DATE },
+  'arizona-ahcccs': { edi: ahcccsEdi, codeGrid: ahcccsGrid(), rates: AZ_AHCCCS_RATES, vobContact: ahcccsContact, lastUpdated: ACCESS_DATE },
   'mercy-care-arizona': {
     edi: mercyCareEdi,
     codeGrid: mercyUhcGrid('6-month authorization periods; 0362T/0373T are required billing codes.', MERCY_CARE_ABA),
     rates: azBenchmarkRates('Mercy Care'),
+    vobContact: mercyCareContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-community-plan-arizona': {
     edi: uhcCommunityAzEdi,
     codeGrid: mercyUhcGrid('Optum-run; treatment via the Provider Express ABA Treatment Form or fax 1-888-541-6691; 90-day filing deadline.', UHC_AZ_ORIENT),
     rates: azBenchmarkRates('UnitedHealthcare Community Plan of Arizona'),
+    vobContact: uhcCommunityAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'arizona-complete-health': {
@@ -615,24 +804,28 @@ export const arizonaVob: Record<string, VobExtension> = {
       return grid;
     })(),
     rates: azBenchmarkRates('Arizona Complete Health'),
+    vobContact: azchContact,
     lastUpdated: ACCESS_DATE,
   },
   'banner-university-family-care': {
     edi: bannerEdi,
     codeGrid: azUnpublishedGrid('Banner publishes an ABA Prior Authorization Form (treatment PA exists) but no clinical policy, assessment-PA rule, or durations — pull the current form from bannerhealth.com/bhpprovider.', src('https://www.bannerhealth.com/bhpprovider/resources/bh/materials', 'Banner Health Plans behavioral-health materials — lists the ABA Prior Authorization Form; no clinical policy/assessment-PA rule published.')),
     rates: azBenchmarkRates('Banner-University Family Care'),
+    vobContact: bannerContact,
     lastUpdated: ACCESS_DATE,
   },
   'health-choice-arizona': {
     edi: healthChoiceEdi,
     codeGrid: azUnpublishedGrid('Blue Cross Blue Shield of Arizona Health Choice runs PA from frequently-updated PA-Guidelines grids (≥7 versions Jan 2024–May 2026), not a published ABA policy — pull the current grid rows for 97151–97158 from healthchoiceaz.com (PA line 1-800-322-8670 / fax 480-760-4732).', src('https://www.healthchoiceaz.com/providers/pa-guidelines', 'Health Choice Arizona PA guidelines (grids) — the code-level PA source of truth; grids revise several times a year.')),
     rates: azBenchmarkRates('Blue Cross Blue Shield of Arizona Health Choice'),
+    vobContact: healthChoiceContact,
     lastUpdated: ACCESS_DATE,
   },
   'molina-healthcare-arizona': {
     edi: molinaAzEdi,
     codeGrid: azUnpublishedGrid('Molina publishes no distinct AZ ABA policy — its Prior Auth and Pre-Service Review Guide (Healthcare Services (844) 782-2678 / fax (833) 832-1015; Availity Essentials) is the operational front door; verify the ABA code rows before booking.', src('https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/az/Forms/MHAZ-Prior-Auth-and-Pre-Service-Review-Guide-508.pdf', 'Molina Healthcare of Arizona Prior Auth and Pre-Service Review Guide — the operational PA reference; no standing ABA rule published.')),
     rates: azBenchmarkRates('Molina Healthcare of Arizona'),
+    vobContact: molinaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'arizona-ddd': {
@@ -654,21 +847,25 @@ export const arizonaVob: Record<string, VobExtension> = {
       return grid;
     })(),
     rates: azBenchmarkRates('the member\'s DDD Health Plan (Mercy Care DD / UHCCP DD)'),
+    vobContact: dddContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-arizona': {
     edi: aetnaAzEdi,
     codeGrid: azCommercialGrid(azAetnaEntry, 'Required — precertification (assessment and treatment), per national CPB 0554/0648; ASD only.'),
+    vobContact: aetnaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-arizona': {
     edi: cignaAzEdi,
     codeGrid: azCommercialGrid(azCignaEntry, 'Required — assessment + treatment plan with the ABA PA form (EN0499)', 'Not required (per EN0499)', ['97151', '97152', '0362T']),
+    vobContact: cignaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-arizona': {
     edi: uhcAzEdi,
     codeGrid: azCommercialGrid(azUhcEntry, 'Required — Optum two-step (assessment auth, then treatment auth); reviews every 4–6 months'),
+    vobContact: uhcAzContact,
     lastUpdated: ACCESS_DATE,
   },
 };

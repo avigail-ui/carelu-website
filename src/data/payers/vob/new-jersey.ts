@@ -56,7 +56,7 @@
      BH network/authorizations but claims ride the medical payer ID
      (87726). Both are recorded as abaRidesOn='medical', not 'bh'.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -152,6 +152,22 @@ const AVAILITY_PAYER_LIST = src(
   'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
   'Availity Essentials public payer list — the fetchable copy carries an "As of 08/08/2012" footer; any ID read from it is treated as inferred/unverified pending a current Availity export.',
   true
+);
+const AETNA_BH_NJ_PORTAL = src(
+  'https://www.aetnabetterhealth.com/newjersey/providers/portal.html',
+  'Aetna Better Health of NJ — provider portal page, read in full: "The Availity Provider Portal gives you the info, tools and resources you need..."; lists primary provider support 1-855-232-3596 (TTY 711), Mon-Fri 8am-5pm, and a 24/7 general contact line at the same number; Availity registration support 1-800-282-4548.'
+);
+const EVERNORTH_BH_PROVIDER_SVC = src(
+  'https://static.evernorth.com/assets/evernorth/provider/resourceLibrary/behavioralResources/doingBusinessWithUs/cbhProviderServiceCenter.html',
+  'Evernorth (Cigna) Behavioral Health Provider Service Center page, read in full: main line 1.800.926.2273, staffed by Provider Advocates at the National Care Center (Bloomington, MN) — callers select prompt #5 for providers, then choose among claims / eligibility / authorization / online-services / personal-updates options.'
+);
+const EVERNORTH_PROVIDER_PORTAL = src(
+  'https://provider.evernorth.com/app/login',
+  'Evernorth Provider portal login page — the online portal for Evernorth/Cigna behavioral-health claims, eligibility, and authorization status.'
+);
+const UHC_PROVIDER_CONTACT = src(
+  'https://www.uhcprovider.com/en/contact-us.html',
+  'UnitedHealthcare Provider Services contact page, read in full: behavioral health / Optum support line 877-614-0484, described as a "24/7 behavioral health and substance use support line"; general commercial provider services 877-842-3210; provider-portal technical support 866-842-3278 opt. 1.'
 );
 
 /* ==================== Layer 4 — NJ FamilyCare FFS rate table ==================== */
@@ -706,16 +722,152 @@ const uhcNjCommercialCodeGrid: Record<string, CodeGridEntry> = Object.fromEntrie
   Object.keys(NJ_DAILY_UNITS).map((c) => [c, uhcNjCommercialEntry()])
 );
 
+/* ==================== Layer 7 — contact & channel layer ====================
+   Contact facts are sourced two ways: (a) mined verbatim from notes on
+   source refs already used elsewhere in this file (fax/phone numbers the
+   prior sourcing pass already read and quoted); (b) the DMAHS BH Integration
+   Points of Contact V3.1 PDF (DMAHS_BH_CONTACTS, already cited in the EDI
+   layer), fetched in full for this pass — it carries a per-MCO "ABA Contact"
+   / "Provider Services" / fax block that supersedes the older, thinner notes
+   (e.g. it shows Horizon has migrated its UM/claims workflow onto Availity,
+   not the 2020-era NaviNet tool cited in HORIZON_ABA_OVERVIEW). Commercial
+   guides required fresh fetches of each carrier's own national provider-
+   services contact page; Aetna's own precertification page states precert
+   phone numbers are printed on the member's ID card rather than published
+   as one universal number, so aetna-new-jersey ships with NO
+   providerServicesPhone — a verified absence, not an oversight.
+   scriptedQuestions are generated from what THIS guide's own edi/codeGrid/
+   rates layers mark unverified/plan-dependent/inferred — never scraped. */
+
+const njMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-776-6334',
+  ivrPath:
+    'Gainwell Technologies Provider Services (general FFS line). For ABA/DIR-specific questions, DMAHS runs a dedicated Autism Line: 609-588-8522 (MAHS.ASDinquiries@dhs.nj.gov).',
+  portal: { name: 'NJMMIS', url: 'https://www.njmmis.com' },
+  scriptedQuestions: [
+    'Which of the 5 MCOs (or FFS) is this member enrolled in, and what is the 3-digit Managed Care Plan Code shown in their eligibility response? (our companion guide has no code-to-MCO crosswalk)',
+    'Can you confirm today\'s per-15-minute rate for 97151, 97152, 97154, 97157, 97158, 0362T, and 0373T? (our reference for these 7 codes is the 2020 launch schedule, not the current CY2026 listing)',
+    'Is the member still in the FFS pending-MCO-enrollment window (no PA required), or already enrolled with an MCO (assessment + treatment PA)?',
+  ],
+  sources: [DMAHS_BH_CONTACTS, NJMMIS_270271_CG],
+};
+
+const horizonContact: VobContact = {
+  providerServicesPhone: '1-800-682-9091',
+  ivrPath:
+    'Prior-auth progress requests and continued-stay requests: 800-626-2212 (or via Availity). Claims Contact line above is 1-800-682-9091 (email BHMedicaid_@horizonblue.com).',
+  portal: { name: 'Availity Essentials', url: 'https://apps.availity.com/web/onboarding/availity-fr-ui/#/login' },
+  fax: '732-938-1444',
+  scriptedQuestions: [
+    'Are the January 2026 medical-policy changes to PA / medical-necessity review criteria already in effect for this member\'s plan?',
+    'What is today\'s paid rate for the ABA codes — Horizon aligned BH fees to the state\'s 3/1/2024 rate increase, but we don\'t have it broken out by code?',
+    'Which places of service are approved under this member\'s authorization (home, office, school, community, telehealth)?',
+    'Is eligibility checking real-time or batch through your clearinghouse?',
+  ],
+  sources: [DMAHS_BH_CONTACTS, HORIZON_ABA_OVERVIEW],
+};
+
+const aetnaBetterHealthNjContact: VobContact = {
+  providerServicesPhone: '1-855-232-3596',
+  ivrPath: 'Press * for healthcare provider. Also serves as Availity registration support routing.',
+  hours: 'Mon-Fri 8am-5pm (general contact line also answers 24/7 per the Aetna Better Health NJ portal page)',
+  portal: { name: 'Availity Essentials', url: 'https://www.aetnabetterhealth.com/newjersey/providers/portal.html' },
+  fax: '844-404-3972',
+  scriptedQuestions: [
+    'Can you confirm the current contracted rate for 97153 — our reference (Aetna\'s 2020 sheet) still shows $11.20, but the state raised the FFS rate to $15.00 in 2022?',
+    'What are today\'s rates for 97151, 97152, 97154, 97157, 97158, 0362T, and 0373T?',
+    'Which places of service are approved under this member\'s ABA authorization?',
+  ],
+  sources: [DMAHS_BH_CONTACTS, AETNA_BH_NJ_PORTAL, AETNA_NJ_RATE_SHEET],
+};
+
+const fidelisContact: VobContact = {
+  fax: '888-339-2677',
+  portal: { name: 'Fidelis Care Provider Portal', url: 'https://provider.fideliscarenj.com' },
+  scriptedQuestions: [
+    'Does Fidelis enforce the state\'s suggested daily unit limits as hard claim edits, or does it apply different unit caps?',
+    'Is there a distinct BH/ABA carve-out administrator, or does ABA process through Fidelis\'s standard Centene/WellCare BH structure?',
+    'Is eligibility checking real-time or batch through your clearinghouse?',
+  ],
+  sources: [DMAHS_BH_CONTACTS, FIDELIS_NJ_AUTH],
+};
+
+const uhcCpNjContact: VobContact = {
+  providerServicesPhone: '1-888-362-3368',
+  ivrPath: 'Enter TIN # → select option 3 (intake) → enter member ID/DOB → select "Mental Health."',
+  portal: { name: 'Provider Express', url: 'https://www.providerexpress.com' },
+  scriptedQuestions: [
+    'Does Optum apply any unit or hour caps beyond the state\'s daily MUE table for this member?',
+    'Is eligibility checking real-time or batch?',
+    'Can you confirm the correct pVerify payer code for this NJ Community Plan line? (our mapping is inferred, not payer-confirmed)',
+  ],
+  sources: [DMAHS_BH_CONTACTS, OPTUM_ABA_STATE_MANDATES],
+};
+
+const wellpointContact: VobContact = {
+  providerServicesPhone: '1-800-454-3730',
+  hours: 'Carelon National Provider Services Line (contracting, 800-397-1630): Mon-Fri 8am-8pm ET',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  fax: '844-442-8007',
+  scriptedQuestions: [
+    'Does Wellpoint enforce the state\'s daily MUE unit limits as claim edits, or apply different caps?',
+    'Is eligibility checking real-time or batch through Availity?',
+    'Is ABA network contracting still routed through Carelon Behavioral Health, or has that changed?',
+  ],
+  sources: [DMAHS_BH_CONTACTS, WELLPOINT_NJ_EDI],
+};
+
+const aetnaNjCommercialContact: VobContact = {
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'What is the member\'s plan funding type — fully-insured (P.L. 2009, c.115 mandate applies) or self-funded (ERISA, mandate-exempt)?',
+    'Are there unit or hour caps on ABA codes for this member\'s specific plan?',
+    'Which places of service (home/office/school/telehealth) are approved for this member\'s authorization?',
+    'Are there modifier requirements (licensure tier, telehealth) for billing?',
+    'Is eligibility checking real-time or batch?',
+  ],
+  sources: [AVAILITY_PAYER_LIST],
+};
+// Note: Aetna's own precertification page states precert numbers are printed
+// on the member's ID card, not published as one universal line — so no
+// providerServicesPhone/fax is included here (a verified absence).
+
+const cignaNjContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273',
+  ivrPath: 'Select prompt #5 for providers, then choose among claims / eligibility / authorization / online services / personal updates.',
+  portal: { name: 'Evernorth Provider Portal', url: 'https://provider.evernorth.com/app/login' },
+  scriptedQuestions: [
+    'What is the member\'s plan funding type — fully-insured (P.L. 2009, c.115 mandate applies) or self-funded (ERISA)?',
+    'Are there unit or hour caps on the treatment codes (97153-97158, 0373T) for this member\'s plan?',
+    'Which places of service are approved, and is telehealth allowed for this member?',
+    'Is eligibility checking real-time or batch through your clearinghouse?',
+  ],
+  sources: [EVERNORTH_BH_PROVIDER_SVC, EVERNORTH_PROVIDER_PORTAL],
+};
+
+const uhcNjCommercialContact: VobContact = {
+  providerServicesPhone: '877-614-0484',
+  hours: '24/7 (per UHC provider services contact page)',
+  portal: { name: 'Provider Express', url: 'https://www.providerexpress.com' },
+  scriptedQuestions: [
+    'What is the member\'s plan funding type — fully-insured or self-funded?',
+    'Are there unit or hour caps on ABA codes under the Supplemental Clinical Criteria for this plan?',
+    'Which places of service and telehealth options are approved?',
+    'Is eligibility checking real-time or batch?',
+  ],
+  sources: [UHC_PROVIDER_CONTACT, OPTUM_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const newJerseyVob: Record<string, VobExtension> = {
-  'new-jersey-medicaid': { edi: newJerseyMedicaidEdi, codeGrid: njBaselineGrid([NJMMIS_ABA_PACKET]), rates: newJerseyMedicaidRates, lastUpdated: ACCESS_DATE },
-  'horizon-nj-health': { edi: horizonEdi, codeGrid: horizonCodeGrid, rates: mcoBaselineRates('Horizon NJ Health', 'Horizon aligned BH fees to the DMAHS rate increase for DOS on/after 3/1/2024, but the specific ABA amounts are unverified'), lastUpdated: ACCESS_DATE },
-  'aetna-better-health-new-jersey': { edi: aetnaBetterHealthNjEdi, codeGrid: aetnaBetterHealthNjCodeGrid, rates: aetnaNjRates, lastUpdated: ACCESS_DATE },
-  'fidelis-care-new-jersey': { edi: fidelisEdi, codeGrid: fidelisCodeGrid, rates: mcoBaselineRates('Fidelis Care NJ'), lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-new-jersey': { edi: uhcCpNjEdi, codeGrid: uhcCpNjCodeGrid, rates: mcoBaselineRates('UnitedHealthcare Community Plan NJ'), lastUpdated: ACCESS_DATE },
-  'wellpoint-new-jersey': { edi: wellpointEdi, codeGrid: wellpointCodeGrid, rates: mcoBaselineRates('Wellpoint NJ'), lastUpdated: ACCESS_DATE },
-  'aetna-new-jersey': { edi: aetnaNjCommercialEdi, codeGrid: aetnaNjCommercialCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-new-jersey': { edi: cignaNjEdi, codeGrid: cignaNjCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-new-jersey': { edi: uhcNjCommercialEdi, codeGrid: uhcNjCommercialCodeGrid, lastUpdated: ACCESS_DATE },
+  'new-jersey-medicaid': { edi: newJerseyMedicaidEdi, codeGrid: njBaselineGrid([NJMMIS_ABA_PACKET]), rates: newJerseyMedicaidRates, vobContact: njMedicaidContact, lastUpdated: ACCESS_DATE },
+  'horizon-nj-health': { edi: horizonEdi, codeGrid: horizonCodeGrid, rates: mcoBaselineRates('Horizon NJ Health', 'Horizon aligned BH fees to the DMAHS rate increase for DOS on/after 3/1/2024, but the specific ABA amounts are unverified'), vobContact: horizonContact, lastUpdated: ACCESS_DATE },
+  'aetna-better-health-new-jersey': { edi: aetnaBetterHealthNjEdi, codeGrid: aetnaBetterHealthNjCodeGrid, rates: aetnaNjRates, vobContact: aetnaBetterHealthNjContact, lastUpdated: ACCESS_DATE },
+  'fidelis-care-new-jersey': { edi: fidelisEdi, codeGrid: fidelisCodeGrid, rates: mcoBaselineRates('Fidelis Care NJ'), vobContact: fidelisContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-new-jersey': { edi: uhcCpNjEdi, codeGrid: uhcCpNjCodeGrid, rates: mcoBaselineRates('UnitedHealthcare Community Plan NJ'), vobContact: uhcCpNjContact, lastUpdated: ACCESS_DATE },
+  'wellpoint-new-jersey': { edi: wellpointEdi, codeGrid: wellpointCodeGrid, rates: mcoBaselineRates('Wellpoint NJ'), vobContact: wellpointContact, lastUpdated: ACCESS_DATE },
+  'aetna-new-jersey': { edi: aetnaNjCommercialEdi, codeGrid: aetnaNjCommercialCodeGrid, vobContact: aetnaNjCommercialContact, lastUpdated: ACCESS_DATE },
+  'cigna-new-jersey': { edi: cignaNjEdi, codeGrid: cignaNjCodeGrid, vobContact: cignaNjContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-new-jersey': { edi: uhcNjCommercialEdi, codeGrid: uhcNjCommercialCodeGrid, vobContact: uhcNjCommercialContact, lastUpdated: ACCESS_DATE },
 };

@@ -46,7 +46,7 @@
      business, so its codeGrid reflects that exclusion honestly rather
      than inventing PA verdicts. See its codeGrid notes.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -153,6 +153,51 @@ const AVAILITY_PAYER_LIST = src(
   'https://essentials.availity.com/availity/documents/payer_list_wShortNames.pdf',
   'Availity Essentials public payer list — the fetchable copy carries an "As of 08/08/2012" footer on every page (same staleness finding applied across this directory); any ID read from it is treated as inferred/unverified pending a current Availity export.',
   true
+);
+
+/* -------------------- Layer 7 (contact & channel) source refs --------------
+   Fetched from the same domains already cited above, plus a handful of
+   payer contact-us pages, specifically for provider-services phone/fax/
+   portal/hours facts — the codeGrid/edi sources above didn't quote these. */
+const DMAS_PROVIDER_CONTACT = src(
+  'https://www.dmas.virginia.gov/for-providers/service-authorization/',
+  'DMAS service-authorization page, provider-contact section: general DMAS Provider Services 1-800-552-8627 (in-state long distance) or (804) 786-6273 (local/out-of-state); Acentra Health service-authorization line 1-888-827-2884 (1-888-VAPAUTH), fax 1-877-OKBYFAX (652-9329); Acentra\'s Atrezzo portal is at https://portal.kepro.com/Login/Login and is available 24/7 for SA submission (phone-support hours for the general DMAS line are not published on this page).'
+);
+const AETNA_BH_VA_CONTACT = src(
+  'https://www.aetnabetterhealth.com/virginia/providers/index.html',
+  'Aetna Better Health of Virginia — provider home page: Provider Services 1-800-279-1878 (TTY: 711), Monday-Friday 8 AM-6 PM; provider portal is Availity (apps.availity.com).'
+);
+const ANTHEM_VA_CONTACT = src(
+  'https://providers.anthem.com/virginia-provider/contact-us',
+  'Anthem HealthKeepers Plus (VA Medicaid) — Contact Us page: Provider Services 800-901-0020 (TTY/TDD: 711); provider portal is Availity Essentials (availity.com); page also references a 24/7 NurseLine — a separate line whose own phone hours are not published on this page.'
+);
+const HUMANA_VA_CONTACT = src(
+  'https://provider.humana.com/medicaid/virginia-medicaid/contact-us',
+  'Humana Healthy Horizons in Virginia — provider Contact Us page: Provider Services 844-881-4482, Monday-Friday 7 a.m.-7 p.m. Eastern time.'
+);
+const SENTARA_VA_CONTACT = src(
+  'https://www.sentarahealthplans.com/en/providers/contact-us',
+  'Sentara Health Plans — provider Contact Us page: Medicaid Provider Services 757-552-7474 or 1-800-229-8822, 8 a.m.-6 p.m. Monday-Friday; Behavioral Health Provider Services 757-552-7174 or 1-800-648-8420 (same Medicaid hours); fax 757-552-7499 (behavioral health) / 757-552-7316 (general); provider portal is Availity (www.Availity.com).'
+);
+const UHC_PROVIDER_CONTACT = src(
+  'https://www.uhcprovider.com/en/contact-us.html',
+  'UHCprovider.com — Contact Us page: general Provider Services 877-842-3210 (24/7 chat also available in the UnitedHealthcare Provider Portal); behavioral health routes to Optum Provider Express, or call 877-614-0484 directly.'
+);
+const OPTUM_PROVIDER_EXPRESS_HOME = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en.html',
+  'Optum Provider Express home page — confirms Provider Express as the live behavioral-health provider portal (clinical + administrative resources); no phone number or hours published on the home page itself.'
+);
+const AETNA_PROVIDER_SERVICE_CENTER = src(
+  'https://www.aetna.com/about-us/contact-aetna.html',
+  'Aetna — Contact Us page: Provider Service Center 1-888-632-3862 (TTY: 711) for non-Medicare plans (individual & family / commercial), handling benefits, claims, appeals, and precertification (select the precertification prompt); line-specific hours not published on this page.'
+);
+const AETNA_AVAILITY_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/availity.html',
+  'Aetna — Availity provider-portal page: confirms Availity (apps.availity.com) as Aetna\'s provider portal; Availity Client Services line 1-800-282-4548, Monday-Friday 8 AM-8 PM ET, is for Availity portal support, not Aetna claims/precert.'
+);
+const CIGNA_PROVIDER_SERVICES_CONTACT = src(
+  'https://www.cigna.com/health-care-providers/credentialing',
+  'Cigna Healthcare — provider credentialing/contact page: general Provider Services 1-800-88CIGNA (882-4462); behavioral health provider services 1-800-926-2273; provider portal is CignaforHCP (cignaforhcp.cigna.com/app/login).'
 );
 
 /* ==================== Layer 4 — DMAS rate table (shared) ==================== */
@@ -764,16 +809,136 @@ const uhcVaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcVaCommercialEntry(),
 };
 
+/* ==================== Layer 7 — contact & channel layer ====================
+   scriptedQuestions are generated (not scraped): each list targets only what
+   THIS guide's own edi/codeGrid/rates layers ship unverified/plan-dependent,
+   phrased the way an intake coordinator would ask them on a live call. */
+
+const virginiaMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-552-8627 (in-state) or (804) 786-6273 (local/out-of-state)',
+  ivrPath:
+    'General DMAS provider line above is for eligibility/enrollment questions. ABA service-authorization requests and status route through Acentra Health\'s Atrezzo line, 1-888-827-2884 (1-888-VAPAUTH) — not the general DMAS number.',
+  hours: 'Acentra\'s Atrezzo portal accepts SA submissions 24/7; phone-support hours for the general DMAS Provider Services line are not published in the cited source.',
+  portal: { name: 'Acentra Health Atrezzo (DMAS service-authorization portal)', url: 'https://portal.kepro.com/Login/Login' },
+  fax: '1-877-OKBYFAX (652-9329) — Acentra Health service-authorization fax',
+  scriptedQuestions: [
+    'Which Cardinal Care MCO is this member enrolled in right now? Our eligibility read can\'t reliably map that off the FFS 271.',
+    'Is this member\'s ABA benefit currently running through FFS Medicaid, or have they transitioned to one of the five Cardinal Care MCOs?',
+    'What places of service are approved under the current authorization — home, school, community?',
+    'Can you read me the aid-category / benefit-plan code shown for this member so we can confirm plan assignment?',
+  ],
+  sources: [DMAS_PROVIDER_CONTACT, DMAS_SA_ACENTRA],
+};
+
+const aetnaBetterHealthVaContact: VobContact = {
+  providerServicesPhone: '1-800-279-1878 (TTY: 711)',
+  hours: 'Monday-Friday, 8 AM-6 PM',
+  portal: { name: 'Availity', url: 'https://apps.availity.com/availity/web/public.elegant.login' },
+  fax: '(833) 757-1583 — behavioral health/ABA prior-authorization fax',
+  scriptedQuestions: [
+    'What places of service are approved under this member\'s authorization — home, school, community, or telehealth?',
+    'Does Aetna Better Health of Virginia reimburse these ABA codes at the DMAS fee-schedule rate, or is there a different contracted rate?',
+  ],
+  sources: [AETNA_BH_VA_CONTACT, AETNA_VA_ABA_DECK],
+};
+
+const anthemHkpContact: VobContact = {
+  providerServicesPhone: '800-901-0020 (TTY/TDD: 711)',
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'For codes other than 97151, 97153, 97155, and 97156, is telehealth reimbursed, or is in-person required?',
+    'Does Anthem HealthKeepers Plus pay these ABA codes at the DMAS fee-schedule rate, or is there a plan-specific rate?',
+  ],
+  sources: [ANTHEM_VA_CONTACT, ANTHEM_VA_ABA_GRID],
+};
+
+const humanaVaContact: VobContact = {
+  providerServicesPhone: '844-881-4482',
+  hours: 'Monday-Friday, 7 a.m.-7 p.m. Eastern time',
+  portal: { name: 'Humana provider portal', url: 'https://provider.humana.com/medicaid/virginia-medicaid' },
+  scriptedQuestions: [
+    'Can you confirm prior authorization is on file for 0362T before we schedule? Humana requires PA on this code even though the state baseline doesn\'t.',
+    'What places of service are approved under this member\'s authorization — home, school, community, or telehealth?',
+    'Does Humana Healthy Horizons pay these ABA codes at the DMAS fee-schedule rate, or is there a plan-specific rate?',
+  ],
+  sources: [HUMANA_VA_CONTACT, HUMANA_VA_PAL],
+};
+
+const sentaraContact: VobContact = {
+  providerServicesPhone: '757-552-7174 or 1-800-648-8420 (Behavioral Health Provider Services)',
+  hours: '8 a.m.-6 p.m. Monday-Friday (Medicaid line)',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  fax: '757-552-7499 (Behavioral Health)',
+  scriptedQuestions: [
+    'What places of service are approved under this member\'s authorization — home, school, community, or telehealth?',
+    'Does Sentara Community Plan pay these ABA codes at the DMAS fee-schedule rate, or is there a plan-specific contracted rate?',
+  ],
+  sources: [SENTARA_VA_CONTACT, SENTARA_VA_SA_FORM],
+};
+
+const uhcCpVaContact: VobContact = {
+  providerServicesPhone: '877-842-3210',
+  ivrPath:
+    'General UHC Provider Services line above; ABA/behavioral-health authorization and benefits are Optum-administered — ask for Optum Behavioral Health / Provider Express, or call 877-614-0484 directly.',
+  portal: { name: 'Optum Provider Express', url: 'https://public.providerexpress.com/content/ope-provexpr/us/en.html' },
+  scriptedQuestions: [
+    'What places of service are approved under this member\'s authorization — home, school, community, or telehealth?',
+    'Does UnitedHealthcare Community Plan pay these ABA codes at the DMAS fee-schedule rate, or is there a plan-specific contracted rate?',
+  ],
+  sources: [UHC_PROVIDER_CONTACT, UHC_VA_MANUAL, OPTUM_PROVIDER_EXPRESS_HOME],
+};
+
+const aetnaVaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862 (TTY: 711) — Aetna Provider Service Center',
+  ivrPath: 'Select the precertification prompt for ABA/behavioral-health authorization; the member\'s ID card may list a plan-specific number instead.',
+  portal: { name: 'Availity', url: 'https://apps.availity.com/availity/web/public.elegant.login' },
+  scriptedQuestions: [
+    'Is this member\'s plan fully insured or self-funded (ERISA)? The Virginia ABA mandate (Va. Code § 38.2-3418.17) only applies to fully-insured plans.',
+    'Are there unit caps or annual/lifetime dollar limits on ABA services under this specific plan?',
+    'Which places of service are authorized — home, clinic, school, telehealth?',
+    'Is telehealth (GT/95) reimbursed for ABA codes, and if so which ones?',
+    'Are licensure-tier modifiers (BCBA vs RBT) required for reimbursement under this plan?',
+  ],
+  sources: [AETNA_PROVIDER_SERVICE_CENTER, AETNA_AVAILITY_PAGE, AETNA_CPB0554, AETNA_CPB0648],
+};
+
+const cignaVaContact: VobContact = {
+  providerServicesPhone: '1-800-926-2273 — Evernorth/Cigna Behavioral Health provider services (general Cigna provider line: 1-800-88CIGNA / 882-4462)',
+  portal: { name: 'CignaforHCP', url: 'https://cignaforhcp.cigna.com/app/login' },
+  scriptedQuestions: [
+    'Is this member\'s Cigna plan fully insured or self-funded (ASO)? Fully-insured Virginia plans aren\'t subject to EN0499 — coverage runs off the plan document and the state mandate instead.',
+    'Since there\'s no published PA panel for this plan type, is prior authorization required for ABA, and through what process?',
+    'What unit caps or session limits apply to 97153 and the other treatment codes under this plan?',
+    'Which places of service and telehealth modifiers are covered?',
+    'Are licensure-tier billing requirements (BCBA/RBT) in place under this plan?',
+  ],
+  sources: [CIGNA_PROVIDER_SERVICES_CONTACT, CIGNA_EN0499],
+};
+
+const uhcVaContact: VobContact = {
+  providerServicesPhone: '877-842-3210',
+  ivrPath: 'ABA/behavioral-health benefits and authorization are Optum-administered — ask for Optum Behavioral Health / Provider Express, or call 877-614-0484 directly.',
+  portal: { name: 'Optum Provider Express', url: 'https://public.providerexpress.com/content/ope-provexpr/us/en.html' },
+  scriptedQuestions: [
+    'Is this member\'s plan fully insured or self-funded (ERISA)? Optum\'s ABA State Mandates criteria apply only to Virginia fully-insured HMO/insurance plans.',
+    'What unit caps or session limits apply to 97153 and related treatment codes under this plan?',
+    'Which places of service (home, clinic, school, telehealth) are authorized?',
+    'Are licensure-tier modifiers (BCBA/RBT) required for reimbursement?',
+    'How often are continued-service reviews required — every 4-6 months, or plan-specific?',
+  ],
+  sources: [UHC_PROVIDER_CONTACT, OPTUM_SCC, OPTUM_ABA_STATE_MANDATES, OPTUM_PROVIDER_EXPRESS_HOME],
+};
+
 /* ==================== export ==================== */
 
 export const virginiaVob: Record<string, VobExtension> = {
-  'virginia-medicaid': { edi: virginiaMedicaidEdi, codeGrid: dmasCodeGrid(), rates: virginiaMedicaidRates, lastUpdated: ACCESS_DATE },
-  'aetna-better-health-virginia': { edi: aetnaBetterHealthVaEdi, codeGrid: aetnaBetterHealthVaCodeGrid, rates: mcoRates('Aetna Better Health of Virginia'), lastUpdated: ACCESS_DATE },
-  'anthem-healthkeepers-plus': { edi: anthemHkpEdi, codeGrid: anthemHkpCodeGrid, rates: mcoRates('Anthem HealthKeepers Plus'), lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-virginia': { edi: humanaVaEdi, codeGrid: humanaVaCodeGrid, rates: mcoRates('Humana Healthy Horizons in Virginia'), lastUpdated: ACCESS_DATE },
-  'sentara-community-plan': { edi: sentaraEdi, codeGrid: sentaraCodeGrid, rates: mcoRates('Sentara Community Plan'), lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-virginia': { edi: uhcCpVaEdi, codeGrid: uhcCpVaCodeGrid, rates: mcoRates('UnitedHealthcare Community Plan of Virginia'), lastUpdated: ACCESS_DATE },
-  'aetna-virginia': { edi: aetnaVaEdi, codeGrid: aetnaVaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-virginia': { edi: cignaVaEdi, codeGrid: cignaVaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-virginia': { edi: uhcVaEdi, codeGrid: uhcVaCodeGrid, lastUpdated: ACCESS_DATE },
+  'virginia-medicaid': { edi: virginiaMedicaidEdi, codeGrid: dmasCodeGrid(), rates: virginiaMedicaidRates, vobContact: virginiaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-better-health-virginia': { edi: aetnaBetterHealthVaEdi, codeGrid: aetnaBetterHealthVaCodeGrid, rates: mcoRates('Aetna Better Health of Virginia'), vobContact: aetnaBetterHealthVaContact, lastUpdated: ACCESS_DATE },
+  'anthem-healthkeepers-plus': { edi: anthemHkpEdi, codeGrid: anthemHkpCodeGrid, rates: mcoRates('Anthem HealthKeepers Plus'), vobContact: anthemHkpContact, lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-virginia': { edi: humanaVaEdi, codeGrid: humanaVaCodeGrid, rates: mcoRates('Humana Healthy Horizons in Virginia'), vobContact: humanaVaContact, lastUpdated: ACCESS_DATE },
+  'sentara-community-plan': { edi: sentaraEdi, codeGrid: sentaraCodeGrid, rates: mcoRates('Sentara Community Plan'), vobContact: sentaraContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-virginia': { edi: uhcCpVaEdi, codeGrid: uhcCpVaCodeGrid, rates: mcoRates('UnitedHealthcare Community Plan of Virginia'), vobContact: uhcCpVaContact, lastUpdated: ACCESS_DATE },
+  'aetna-virginia': { edi: aetnaVaEdi, codeGrid: aetnaVaCodeGrid, vobContact: aetnaVaContact, lastUpdated: ACCESS_DATE },
+  'cigna-virginia': { edi: cignaVaEdi, codeGrid: cignaVaCodeGrid, vobContact: cignaVaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-virginia': { edi: uhcVaEdi, codeGrid: uhcVaCodeGrid, vobContact: uhcVaContact, lastUpdated: ACCESS_DATE },
 };

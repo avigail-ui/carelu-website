@@ -46,7 +46,7 @@
      mandate (RSMo 376.1224: the $40k/yr ABA cap through age 18, applying
      to fully-insured plans only) is noted where relevant.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -118,6 +118,26 @@ const OPTUM_STATE_MANDATES = src(
 const RSMO_376_1224 = src(
   'https://revisor.mo.gov/main/OneSection.aspx?section=376.1224',
   'RSMo § 376.1224 — Missouri autism mandate: $40,000/yr ABA cap through age 18 (statutory base, CPI-indexed, exceedable with plan approval), 6-month review cadence, Chapter 337-licensed supervision. Applies to fully-insured plans only; self-funded private ERISA plans are federally preempted.'
+);
+
+/* -------------------- Layer 7 sources (vobContact) -------------------- */
+
+const MYDSS_HOT_TIP = src(
+  'https://mydss.mo.gov/mhd/hot-tips/updated-precertification-forms-bh-services-and-aba',
+  "MO HealthNet 'Updated Precertification Forms for BH Services and ABA' hot-tip page — states verbatim providers can \"either print and wet-sign or insert their e-signature before faxing to the Behavioral Health Services Help Desk at (573) 635-6516,\" confirming the fax number already carried in this file's ABA precert prose. Forms live on the MO HealthNet Provider Forms page; refers out to the Behavioral Health Services Provider Manual for full process."
+);
+const MYDSS_BH_SERVICES_PAGE = src(
+  'https://mydss.mo.gov/mhd/behavioral-health-services',
+  'MO HealthNet Behavioral Health Services landing page — lists MHD.BehavioralHealth@dss.mo.gov for BH Services questions, TDD/TTY 800-735-2966 (Relay Missouri 711), and names/links the two provider portals: eMOMED (https://www.emomed.com/portal/wps/portal/eMOMED/login) and CyberAccess (https://www.cyberaccessonline.net/CyberAccess/Login.aspx). References the Applied Behavior Analysis Request for Precertification form (2575-045); no dedicated ABA phone/fax beyond the BH Services Help Desk fax already cited.'
+);
+const AETNA_QUICK_REF_GUIDE = src(
+  'https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/PDF%20Manual/Section%20VI/Aetna%20Quick%20Reference%20Guide%20May%202020.pdf',
+  "Aetna 'At a glance' quick reference guide for health care professionals (form 83.03.830.1 L, 5/20), reproduced on a Maryland state health department billing-manual page — Missouri is listed under the guide's 'Mid-America region.' Contact Us table (p.10) + Provider Service Center section (p.11): Provider Service Center 1-800-624-0756 (HMO-based & all Aetna Medicare Advantage plans) or 1-888-632-3862 / 1-888-MD-AETNA (all other plans); self-service phone options include verifying patient coverage/benefits and getting medical precertification information. The same Contact Us table lists 'Behavioral health and substance use disorders — Provider services: Refer to the member ID card' — no single published BH/ABA line. Portal: Availity.com (Availity.com/aetnaproviders); registration/login help 1-800-AVAILITY (1-800-282-4548), Mon-Fri 8 AM-7 PM ET.",
+  true
+);
+const OPTUM_CONTACT_US = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  "Optum Provider Express 'Contact Us' page — Provider Services 1-877-614-0484 (Mon-Fri 7 AM-7 PM CT) covers credentialing/recredentialing, contracting/fee schedules, network status, and provider demographic changes; it does NOT cover member eligibility/benefits. The page directs member-specific eligibility, benefits, and authorization inquiries to \"the number on the back of the member's ID card\" — no separate universal ABA/behavioral-benefits line is published. Names the 'Provider Express secure portal' as the provider website."
 );
 
 /* ==================== missouri-medicaid (Layers 1 + 3 + 4) ==================== */
@@ -228,6 +248,22 @@ const MO_MEDICAID_RATES: RateTable = {
   sources: [MO_FEE_SCHEDULE, MO_BHSM],
 };
 
+/* Layer 7 — MO HealthNet contact & channel layer. Mined from this file's own
+   sourcing plus two mydss.mo.gov pages fetched this pass: no general MHD
+   provider-services phone number was found anywhere (only a fax, an email
+   alias, and a TDD/TTY relay line), so providerServicesPhone ships omitted
+   rather than guessed. */
+
+const missouriMedicaidContact: VobContact = {
+  fax: '(573) 635-6516 — MHD Behavioral Health Services Help Desk; fax (or e-signed fax) the Applied Behavior Analysis Request for Precertification form (2575-045) here.',
+  portal: { name: 'eMOMED (MO HealthNet Provider Portal)', url: 'https://www.emomed.com' },
+  scriptedQuestions: [
+    "Can you confirm this member's current MO HealthNet eligibility span and that ABA benefits bill fee-for-service regardless of any managed-care plan (Healthy Blue, Home State Health, UnitedHealthcare Community Plan, Show Me Healthy Kids) shown on the 271?",
+    'Is there an active ABA precertification on file for this member, and if so, what is the expiration date (precerts run up to 6 months)?',
+  ],
+  sources: [MO_BHSM, MYDSS_HOT_TIP, MYDSS_BH_SERVICES_PAGE],
+};
+
 /* ==================== commercial guides (Layers 1 + 3 only) ==================== */
 /* Same national carriers as the Georgia commercial guides; national
    clinical policies publish no coding/reimbursement mechanics, so those
@@ -303,6 +339,28 @@ const aetnaMissouriCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': aetnaMoEntry(),
 };
 
+/* Layer 7 — Aetna contact & channel layer. Source is Aetna's own quick
+   reference guide (May 2020, staleRisk — reconfirm before relying on the
+   numbers), which places Missouri in its 'Mid-America region' and states
+   plainly that behavioral-health provider services has no universal line
+   ("refer to the member ID card"); the numbers below are the general
+   medical Provider Service Center, which the guide's own self-service list
+   ties to precertification and benefits verification. */
+
+const aetnaMissouriContact: VobContact = {
+  providerServicesPhone:
+    "1-800-624-0756 (HMO-based & Aetna Medicare Advantage plans) or 1-888-632-3862 / 1-888-MD-AETNA (all other plans) — Aetna Provider Service Center; self-service options include verifying patient coverage/benefits and getting medical precertification information. Behavioral-health-specific provider services routes to the number on the member's ID card — no separate universal BH/ABA line is published.",
+  portal: { name: 'Availity (Aetna Payer Space)', url: 'https://www.availity.com/aetnaproviders' },
+  scriptedQuestions: [
+    "Is ABA billed on Aetna's standard medical payer ID, or does a separate behavioral-health administrator/payer ID handle ABA claims for this member's plan?",
+    'Does this group support real-time (vs. batch) 270/271 eligibility responses?',
+    'What is the ABA precertification process and form for this plan, and what are the daily/session unit caps per code (97151-97158, 0362T, 0373T)?',
+    "Which places of service (home, school, clinic, telehealth) are approved for this member's ABA benefit, and what billing modifiers are required for out-of-clinic delivery?",
+    'Is this a fully-insured Missouri plan subject to the RSMo 376.1224 $40,000/year ABA cap, or a self-funded ERISA plan exempt from the state mandate — and if capped, what is the current adjusted annual maximum?',
+  ],
+  sources: [AETNA_QUICK_REF_GUIDE],
+};
+
 /* ---- cigna-missouri ---- */
 
 const cignaMissouriEdi: EdiRouting = {
@@ -366,6 +424,29 @@ const cignaMissouriCodeGrid: Record<string, CodeGridEntry> = {
   '97158': cignaMoEntry(),
   '0362T': cignaMoEntry(),
   '0373T': cignaMoEntry(),
+};
+
+/* Layer 7 — Cigna/Evernorth contact & channel layer. Mined from the same
+   Autism Resource Guide (March 2025) already cited for this guide's EDI
+   sourcing — its 'Contacting us' section (p.3, p.7-9) names two dedicated
+   lines and the provider portal in full. */
+
+const cignaMissouriContact: VobContact = {
+  providerServicesPhone:
+    '877-279-7603 (Evernorth Autism Care Coordinator team — nonclinical; patient benefits/eligibility, authorization info, and ABA-specific questions) or 800-926-2273 (Evernorth Provider Services — billing, benefits, and eligibility for autism-related treatment)',
+  hours: 'Autism Care Coordinator team: Mon-Fri 8:30 AM-5:00 PM CT. Provider Services: Mon-Fri 7:00 AM-7:00 PM CT.',
+  portal: {
+    name: 'Evernorth provider website — Procedure Code Benefit Tool (real-time eligibility/benefit check) and Coverage Confirmation Grid (secure-email benefit verification, 1-business-day turnaround)',
+    url: 'https://provider.evernorth.com',
+  },
+  scriptedQuestions: [
+    'Does this plan require prior authorization for ABA treatment codes (97153-97158), or only for the initial assessment codes (97151/97152/0362T)?',
+    'What are the daily/session unit caps for ABA treatment codes under this specific plan?',
+    'Which places of service (home, school, clinic, telehealth) are approved for this member\'s ABA benefit, and are modifiers required for services delivered outside the clinic?',
+    'Is this a fully-insured Missouri plan subject to the RSMo 376.1224 $40,000/year ABA cap, or a self-funded ERISA plan exempt from the state mandate — and if capped, what is the current adjusted annual maximum?',
+    'Does this payer ID support real-time (vs. batch) 270/271 eligibility responses for this group?',
+  ],
+  sources: [CIGNA_AUTISM_RESOURCE_GUIDE],
 };
 
 /* ---- unitedhealthcare-missouri ---- */
@@ -434,6 +515,29 @@ const uhcMissouriCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcMoEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* Layer 7 — Optum/UHC contact & channel layer. Provider Express's own
+   Contact Us page draws a hard line this file preserves: the published
+   Provider Services number is for credentialing/contracting/network, NOT
+   member eligibility or ABA authorization — those calls route to the
+   number on the member's ID card, which is why no single ABA benefits
+   line is claimed here. */
+
+const uhcMissouriContact: VobContact = {
+  providerServicesPhone:
+    "1-877-614-0484 (Optum Provider Express Provider Services, Mon-Fri 7 AM-7 PM CT — credentialing/recredentialing, contracting/fee schedules, network status, provider demographic changes; NOT member eligibility). Member-specific eligibility/benefits/ABA-authorization calls route to the number on the back of the member's ID card — Optum publishes no separate universal ABA benefits line.",
+  hours: '1-877-614-0484 line: Mon-Fri 7 AM-7 PM CT.',
+  portal: { name: 'Provider Express secure portal', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    "Which places of service (home, school, clinic, telehealth) are approved for this member's ABA benefit, and are billing modifiers required for out-of-clinic delivery?",
+    'Does telehealth apply to any ABA codes for this specific plan, and if so, is a GT/95 modifier required?',
+    'What is the Optum ABA prior-authorization process and review cadence for this member (submission via Provider Express, turnaround time, re-authorization period)?',
+    "Can you confirm the daily/session unit caps per ABA code for this member's specific plan? (Our defaults come from Optum's national ABA reimbursement policy, not a Missouri-specific document.)",
+    'Does this payer ID support real-time (vs. batch) 270/271 eligibility responses for this group?',
+    'Is this a fully-insured Missouri plan subject to the RSMo 376.1224 $40,000/year ABA cap, or self-funded/ERISA-exempt?',
+  ],
+  sources: [OPTUM_CONTACT_US],
+};
+
 /* ==================== export ==================== */
 
 export const missouriVob: Record<string, VobExtension> = {
@@ -441,9 +545,25 @@ export const missouriVob: Record<string, VobExtension> = {
     edi: missouriMedicaidEdi,
     codeGrid: missouriMedicaidCodeGrid,
     rates: MO_MEDICAID_RATES,
+    vobContact: missouriMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-missouri': { edi: aetnaMissouriEdi, codeGrid: aetnaMissouriCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-missouri': { edi: cignaMissouriEdi, codeGrid: cignaMissouriCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-missouri': { edi: uhcMissouriEdi, codeGrid: uhcMissouriCodeGrid, lastUpdated: ACCESS_DATE },
+  'aetna-missouri': {
+    edi: aetnaMissouriEdi,
+    codeGrid: aetnaMissouriCodeGrid,
+    vobContact: aetnaMissouriContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-missouri': {
+    edi: cignaMissouriEdi,
+    codeGrid: cignaMissouriCodeGrid,
+    vobContact: cignaMissouriContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-missouri': {
+    edi: uhcMissouriEdi,
+    codeGrid: uhcMissouriCodeGrid,
+    vobContact: uhcMissouriContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

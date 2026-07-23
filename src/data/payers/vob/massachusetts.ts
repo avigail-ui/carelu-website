@@ -83,7 +83,7 @@
      Massachusetts-specific override of their coding/reimbursement
      mechanics was found for any of the three.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -772,17 +772,255 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* -------------------- Layer 7: contact & channel sources --------------------
+   Sourcing notes for this layer (read before editing):
+   - MBHP/Fallon/HNE: the Carelon/Beacon "Behavioral Health Policy and
+     Procedure Manual for Providers | Fallon Health" (same document already
+     cited above as FALLON_CARELON_MANUAL, re-fetched and read in full this
+     pass) states, in section 1.7/3.1: a National Provider Service Line at
+     800-397-1630 (8 a.m.-8 p.m. ET, Mon-Fri) for contracting/credentialing,
+     and a Beacon Member Services number (888-421-8861) used throughout the
+     document for member eligibility/authorization/claims-status checks and
+     complaints. A Claims Hotline (888-249-0478) and an eServices portal
+     (beaconhealthoptions.com) are also confirmed. No general correspondence
+     fax was found (only an Adverse Incident Report fax, 877-335-5452 -
+     deliberately NOT reused here as a general fax since that would misdirect
+     routine correspondence). This is a Carelon/Beacon-wide contact set, not
+     Fallon-specific, so it is reused for MBHP and HNE (whose ABA
+     administrator is also MBHP/Carelon per this file's already-verified
+     facts).
+   - MassHealth: mass.gov's own "Eligibility Verification System (EVS)
+     Overview" page (fetched and read in full this pass) confirms MassHealth
+     Customer Service for Providers - Main (800) 841-2900, Mon-Fri 8 a.m.-5
+     p.m., TTY/TDD 711, fax (617) 988-8910, and the EVS/POSC portal. This
+     independently cross-validates the AVR number (800-554-0042) already
+     found in the Carelon/Beacon Fallon manual.
+   - Aetna: Aetna's own "Support system: Behavioral Health Provider Manual"
+     (cover-dated 8/22, ~46 months old at access date, staleRisk: true;
+     fetched and read in full this pass) confirms ABA requires
+     precertification by calling the number on the member's ID card; states
+     HMO/Medicare Advantage plans call 1-800-624-0756, all other plans call
+     1-888-632-3862 (1-888-MDAetna); Provider Service Center hours 8 a.m.-5
+     p.m.; Availity.com is the provider portal. No general correspondence fax
+     was found (only a tax-ID-change fax, 859-455-8650 - not reused here as a
+     general fax for the same reason as above).
+   - Cigna: reuses CIGNA_AUTISM_GUIDE (already cited above), which - read in
+     full this pass - contains a dedicated "Contacting us" section: Autism
+     Care Coordinator team at 877-279-7603 (Mon-Fri 8:30 a.m.-5 p.m. CT) for
+     ABA eligibility/benefits/authorization, and a Provider Services
+     department at 800-926-2273 (Mon-Fri 7 a.m.-7 p.m. CT) for billing;
+     portal Provider.Evernorth.com.
+   - UnitedHealthcare/Optum: Provider Express's own "Contact Us" page
+     (fetched and read in full this pass) gives a Provider Services line
+     (877-614-0484, Mon-Fri 7 a.m.-7 p.m. CT) for credentialing/contracting/
+     network status - NOT eligibility or ABA precert specifically - and
+     states explicitly: "Call the number on the back of the member's ID card
+     for plan-related inquiries," meaning there is no single national
+     eligibility/precert line; portal Providerexpress.com.
+   - Mass General Brigham Health Plan: MGB's own claims page (already cited
+     above as MGB_CLAIMS_PAGE, re-fetched this pass) states a general
+     Provider Services number (855-444-4647), a provider portal
+     (provider.massgeneralbrighamhealthplan.org), and - critically for
+     ABA/BH specifically - that behavioral health claims route to Optum at
+     844-451-3518 (HMO/PPO) or 866-262-8067 (Medicare); no Medicaid-specific
+     line was distinguished on the page, flagged in the entry below.
+   - WellSense: WellSense's own current "Massachusetts Provider Quick
+     Reference Guide" (no version/date stamp visible, fetched and read in
+     full this pass) gives a Provider Service Center (888-566-0008) and,
+     separately, "Behavioral Health Services: Call Carelon Behavioral Health,
+     LLC at 866-444-5155" plus a prior-auth fax (617-951-3464) and the
+     HealthTrio provider portal. IMPORTANT: this current guide STILL lists
+     Carelon as the BH/ABA contact, which sits in tension with this file's
+     already-verified fact that WellSense insourced BH administration
+     in-house effective 1/1/2026 - flagged as a scripted question below
+     rather than silently resolved either way.
+   ================================================================ */
+
+const BEACON_FALLON_MANUAL_CONTACT = src(
+  'https://www.carelonbehavioralhealth.com/content/dam/digital/carelon/cbh-assets/documents/ma/behavioral-health-policy-and-procedure-manual-for-providers-fallon.pdf',
+  'Carelon/Beacon "Behavioral Health Policy and Procedure Manual for Providers | Fallon Health" (Sept. 2021 revision date, stale). Section 3.1: National Provider Service Line 800-397-1630, 8 a.m.-8 p.m. ET Mon-Fri, for contracting/credentialing/provider relations. Section 1.7: "Call Beacon at 888.421.8861 to check member eligibility, number of visits available and applicable co-payments, confirm authorization, and get claims status." Section 8: Claims Hotline 888-249-0478 (Mon-Fri, hours as printed in the document). eServices portal at beaconhealthoptions.com. This is a Carelon/Beacon-wide (not Fallon-specific) contact set, reused for MBHP and HNE per this file\'s already-verified BH-administrator facts.',
+  true
+);
+const MASSHEALTH_EVS_CONTACT = src(
+  'https://www.mass.gov/info-details/eligibility-verification-system-overview',
+  'Mass.gov "Eligibility Verification System (EVS) Overview" page (live, no staleness). MassHealth Customer Service for Providers - Main: (800) 841-2900, "Open Monday-Friday 8 a.m.-5 p.m."; TTY/TDD: 711; Fax: (617) 988-8910; email provider@masshealthquestions.com. EVS itself is described as available 24/7 via the Provider Online Service Center (POSC) or the Automated Voice Response (AVR) line - independently cross-validating the AVR number (800-554-0042) already found in BEACON_FALLON_MANUAL_CONTACT.'
+);
+const AETNA_BH_PROVIDER_MANUAL = src(
+  'https://www.aetna.com/document-library/healthcare-professionals/documents-forms/bh-provider-manual.pdf',
+  'Aetna "Support system: Behavioral Health Provider Manual," cover-dated 8/22 (~46 months old at access date, staleRisk: true). States: "Applied behavior analysis (ABA) services require precertification. To get ABA services precertified, call the number on the member\'s Aetna ID card and speak to a Member Services representative." Provider Service Center hours 8 a.m.-5 p.m.; HMO/Medicare Advantage plans call 1-800-624-0756 (TTY 711); "all other plans" call 1-888-632-3862 / 1-888-MDAetna (TTY 711); provider portal is Availity.com. No general correspondence fax found in this document (only a tax-ID-change fax, 859-455-8650, not reused here as a general fax).',
+  true
+);
+const PROVIDER_EXPRESS_CONTACT_PAGE = src(
+  'https://www.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum Provider Express "Contact Us" live page (fetched and grepped for phone numbers directly, no staleness marker). "Provider Services" line 877-614-0484 (Mon-Fri, 7 a.m.-7 p.m. CT) is for credentialing/contracting/network-status/demographic questions only. States verbatim under "Member-Related Inquiries": "Call the number on the back of the member\'s ID card for plan-related inquiries" - confirming there is no single national Optum BH eligibility/ABA-precert phone line; benefits/eligibility are otherwise checked via the Provider Express secure portal.'
+);
+const MGB_PROVIDER_CONTACT = src(
+  'https://massgeneralbrighamhealthplan.org/providers/claims',
+  "Mass General Brigham Health Plan's own claims page (same URL already cited above as MGB_CLAIMS_PAGE, re-fetched and read in full this pass). Provider Services phone 855-444-4647; provider portal at provider.massgeneralbrighamhealthplan.org (24/7 for claims/eligibility per the page). Behavioral health claims specifically route to Optum: 844-451-3518 (HMO/PPO plans) or 866-262-8067 (Medicare plans) - the page does not separately distinguish a Medicaid/ACO line."
+);
+const TUFTS_CONTACT_US_PAGE = src(
+  'https://www.point32health.org/provider/contact-us',
+  'Point32Health "Contact us" live page for providers (fetched and grepped for phone numbers directly, no staleness marker). States verbatim: "Servicing inquiries for Tufts Health Direct, Tufts Health RITogether, Tufts Health One Care, and Tufts Health Together - MassHealth MCO Plan and Accountable Care Partnership Plans[:] Massachusetts Phone: 888-257-1985[,] Hours: Monday-Friday, 8 a.m.-5 p.m." Also lists a distinct "Tufts Health Plan portal" (providers.tufts-health.com) among Point32Health\'s secure portals; no fax number found on the page.'
+);
+const WELLSENSE_MA_QRG = src(
+  'https://www.wellsense.org/hubfs/Provider/Training/Quick_Reference_Guide_MA.pdf?hsLang=en',
+  'WellSense "Massachusetts Provider Quick Reference Guide" (no version/date stamp visible on the document; fetched and read in full this pass, presumed current). Provider Service Center: 888-566-0008. Prior Authorization Department fax: 617-951-3464. "Behavioral Health Services: Call Carelon Behavioral Health, LLC at 866-444-5155" (also listed with sub-lines: MassHealth 888-217-3501, Clarity plans 877-957-5600, Senior Care Options 855-833-8125). Provider portal: HealthTrio, accessed via wellsense.org. IMPORTANT: this current guide still lists Carelon as the BH/ABA contact, which is in tension with this file\'s already-verified fact that WellSense insourced BH administration in-house effective 1/1/2026 - not resolved here, flagged as a scripted question instead.'
+);
+
+/* -------------------- Layer 7: vobContact objects -------------------- */
+
+const massHealthMedicaidContact: VobContact = {
+  providerServicesPhone: '1-800-841-2900',
+  hours: 'Monday-Friday, 8:00 a.m.-5:00 p.m. ET (MassHealth Customer Service for Providers); the Eligibility Verification System itself is available 24/7',
+  ivrPath:
+    "Automated Voice Response (AVR) eligibility line: 1-800-554-0042 (24/7) - independently confirmed by both mass.gov's EVS overview page and the Carelon/Beacon Fallon manual. For a live representative, call the main number above. TTY/TDD: 711.",
+  portal: { name: 'MassHealth Provider Online Service Center (POSC) / Eligibility Verification System (EVS)', url: 'https://newmmis-portal.ehs.state.ma.us/EHSProviderPortal/providerLanding/providerLanding.jsf' },
+  fax: '617-988-8910',
+  scriptedQuestions: [
+    'Which of the six BH administrators (MBHP/Carelon, Fallon/Carelon, WellSense in-house, Point32Health/Tufts internal UM, or Optum for Mass General Brigham Health Plan) manages this member\'s specific MassHealth plan?',
+    'Since the 271 returns the enrolled plan name as free text rather than a numeric MCO code, can you confirm the exact plan name this member is enrolled in?',
+    'For codes 97152, 97158, 0362T, and 0373T - since none of them appear in the published 101 CMR 358.03 fee schedule - what individual-consideration rate applies for this member\'s claims?',
+    'Are there any per-code unit caps beyond the published group-code caps (97154/97157) that apply to this member?',
+    'What billing modifiers, if any, does this plan require on ABA claims?',
+  ],
+  sources: [MASSHEALTH_EVS_CONTACT, BEACON_FALLON_MANUAL_CONTACT],
+};
+
+const mbhpContact: VobContact = {
+  providerServicesPhone: '1-800-397-1630',
+  hours: '8:00 a.m.-8:00 p.m. ET, Monday-Friday (National Provider Service Line)',
+  ivrPath:
+    'For member eligibility, authorization confirmation, visit counts, and claims status specifically, Beacon\'s manual directs providers to 1-888-421-8861 (also usable for complaints; TTY 711). Claims Hotline: 1-888-249-0478.',
+  portal: { name: 'Beacon/Carelon eServices', url: 'https://www.beaconhealthoptions.com' },
+  scriptedQuestions: [
+    'Does MBHP support real-time (single-inquiry) 270/271 eligibility checks, or only batch submission?',
+    'Are there any per-code daily or weekly unit caps beyond the published group-code (97154) cap?',
+    'What billing modifiers does MBHP require on ABA claims (licensure tier, telehealth, or otherwise)?',
+  ],
+  sources: [BEACON_FALLON_MANUAL_CONTACT, CLAIM_MD_CARELON, STEDI_CARELON],
+};
+
+const fallonContact: VobContact = {
+  providerServicesPhone: '1-800-397-1630',
+  hours: '8:00 a.m.-8:00 p.m. ET, Monday-Friday (National Provider Service Line, shared across Carelon/Beacon\'s health-plan clients including Fallon)',
+  ivrPath:
+    'For member eligibility, authorization confirmation, and claims status specifically, call 1-888-421-8861 (Beacon Member Services). For Fallon Health\'s own (non-BH) medical/administrative line, the manual separately lists 1-800-868-5200.',
+  portal: { name: 'Beacon/Carelon eServices', url: 'https://www.beaconhealthoptions.com' },
+  scriptedQuestions: [
+    "What is Carelon/Beacon's actual numeric EDI/Emdeon payer ID for Fallon Health claims (Fallon's own provider manual confirms the process but doesn't print the number)?",
+    'Does Fallon support real-time single-patient 270/271 eligibility checks, or only batch?',
+    'Are there any Fallon-specific per-code unit caps or billing modifiers that differ from the statewide Carelon/MBHP baseline?',
+  ],
+  sources: [BEACON_FALLON_MANUAL_CONTACT, FALLON_CARELON_MANUAL, CLAIM_MD_CARELON],
+};
+
+const hneContact: VobContact = {
+  providerServicesPhone: '1-800-397-1630',
+  hours: '8:00 a.m.-8:00 p.m. ET, Monday-Friday (National Provider Service Line - HNE\'s ABA authorization routes to MBHP/Carelon per this file\'s already-verified facts)',
+  ivrPath: 'For member eligibility, authorization confirmation, and claims status specifically, call 1-888-421-8861 (Beacon Member Services).',
+  portal: { name: 'Beacon/Carelon eServices', url: 'https://www.beaconhealthoptions.com' },
+  scriptedQuestions: [
+    "Can you confirm HNE's current Availity payer ID (the one on file is sourced from a 2012 list)?",
+    'Does HNE / BeHealthy Partnership support real-time 270/271 eligibility checks?',
+    'Are there HNE-specific per-code unit caps, POS restrictions, or billing modifiers that differ from the statewide MBHP baseline?',
+  ],
+  sources: [BEACON_FALLON_MANUAL_CONTACT],
+};
+
+const wellsenseContact: VobContact = {
+  providerServicesPhone: '1-866-444-5155',
+  ivrPath:
+    'This is Carelon Behavioral Health\'s line, per WellSense\'s current MA Provider Quick Reference Guide ("Behavioral Health Services: Call Carelon Behavioral Health, LLC"). For general (non-BH) provider services, call 1-888-566-0008. This QRG still listing Carelon is in tension with the 1/1/2026 in-house BH insourcing already noted in this guide\'s edi layer - confirm current BH routing before relying on either number.',
+  portal: { name: 'WellSense Provider Portal (HealthTrio)', url: 'https://www.wellsense.org' },
+  fax: '617-951-3464',
+  scriptedQuestions: [
+    'Is ABA/behavioral health currently administered by Carelon Behavioral Health, or has WellSense fully insourced this function as previously indicated for 1/1/2026?',
+    'Does ABA billing currently ride on the medical side (payer ID 13337) or through a separate BH hop?',
+    "What is WellSense's current pVerify payer ID (the file on hand only has the legacy 'Boston Medical Center Healthnet Plan' listing)?",
+    'Are there WellSense-specific per-code unit caps, POS rules, or billing modifiers for ABA codes 97151-97158/0362T/0373T?',
+  ],
+  sources: [WELLSENSE_MA_QRG, WELLSENSE_EDI_CG],
+};
+
+const tuftsContact: VobContact = {
+  providerServicesPhone: '1-888-257-1985',
+  hours: 'Monday-Friday, 8:00 a.m.-5:00 p.m. (Tufts Health Direct, Tufts Health RITogether, Tufts Health One Care, and Tufts Health Together - MassHealth MCO Plan and Accountable Care Partnership Plans, per Point32Health\'s own contact-us page)',
+  portal: { name: 'Tufts Health Plan Provider Portal', url: 'https://providers.tufts-health.com/thp/portal/providers/login/' },
+  scriptedQuestions: [
+    "What is Tufts Health Together's pVerify payer ID for real-time eligibility checks?",
+    'Does Tufts Health Together support standard clearinghouse real-time 270/271, or only the CAQH CORE connection described in its 2017 companion guide?',
+    "What are the per-code daily/weekly unit caps for ABA codes 97151-97158/0362T/0373T under Tufts's own InterQual-based medical necessity guideline?",
+    'What POS codes and telehealth billing modifiers does Tufts require for ABA?',
+  ],
+  sources: [TUFTS_CONTACT_US_PAGE, TUFTS_270_271_CG],
+};
+
+const mgbContact: VobContact = {
+  providerServicesPhone: '1-855-444-4647',
+  ivrPath:
+    'Behavioral health/ABA claims route to Optum specifically: 844-451-3518 (HMO/PPO members) or 866-262-8067 (Medicare members), per MGB\'s own claims page - no Medicaid/ACO-specific BH line was distinguished on that page, so confirm which applies for this MassHealth member before calling.',
+  portal: { name: 'MGB Health Plan Provider Portal', url: 'https://provider.massgeneralbrighamhealthplan.org/' },
+  scriptedQuestions: [
+    "Since MGB's medical claims and Optum BH claims share payer ID 87726, how does the clearinghouse route BH/ABA claims specifically - is a distinct submitter ID or taxonomy code required?",
+    "Do MGB's ABA unit caps and modifiers match Optum's national reimbursement policy, or does MGB have a plan-specific override?",
+    'For Early Intervention (under-3) MassHealth members, does the 30 hr/week ABA cap and 1:10 supervision ratio apply through MGB the same way it does through MBHP?',
+  ],
+  sources: [MGB_PROVIDER_CONTACT, MGB_CLAIMS_PAGE],
+};
+
+const aetnaContact: VobContact = {
+  providerServicesPhone: '1-888-632-3862',
+  hours: '8:00 a.m.-5:00 p.m., Monday-Friday (Provider Service Center); Aetna Behavioral Health staff available 24/7 for utilization-management discussions via the same numbers',
+  ivrPath:
+    "1-888-632-3862 (1-888-MDAetna) is for \"all other plans\" per Aetna's Behavioral Health Provider Manual; HMO-based and Aetna Medicare Advantage plans instead call 1-800-624-0756. ABA precertification itself is requested by calling the number on the member's own ID card and asking for a Member Services representative - confirm which plan-specific number applies before calling.",
+  portal: { name: 'Availity Essentials (Aetna provider portal)', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Does Aetna administer ABA in-house or through a separate behavioral-health carve-out vendor for this member\'s Massachusetts plan?',
+    'What are the per-code daily/weekly unit caps for ABA codes 97151-97158/0362T/0373T?',
+    'What POS codes and telehealth modifiers does Aetna require for ABA billing?',
+    'What licensure-tier billing modifiers, if any, does Aetna require on ABA claims?',
+  ],
+  sources: [AETNA_BH_PROVIDER_MANUAL],
+};
+
+const cignaContact: VobContact = {
+  providerServicesPhone: '1-877-279-7603',
+  hours: 'Monday-Friday, 8:30 a.m.-5:00 p.m. CT (Autism Care Coordinator team, dedicated to ABA eligibility/benefits/authorization); the general Provider Services department (1-800-926-2273) is available Monday-Friday, 7:00 a.m.-7:00 p.m. CT for billing questions',
+  portal: { name: 'Evernorth Provider Portal', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'What are Evernorth\'s per-code daily/weekly unit caps for ABA codes 97153-97158/0373T?',
+    'What POS codes and telehealth billing modifiers does Evernorth require for ABA?',
+    "Which pVerify payer ID applies to Cigna ABA claims specifically - 00004, or the separate 'Cigna Behavioral' 00510 listing?",
+  ],
+  sources: [CIGNA_AUTISM_GUIDE],
+};
+
+const unitedhealthcareContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484',
+  hours: 'Monday-Friday, 7:00 a.m.-7:00 p.m. CT',
+  ivrPath:
+    "This Provider Express \"Provider Services\" line handles credentialing/contracting/network-status questions, NOT eligibility or ABA precertification specifically. Provider Express's own contact page states: \"Call the number on the back of the member's ID card for plan-related inquiries\" - there is no single national Optum BH eligibility/precert line; check eligibility via the Provider Express portal or the member-specific ID card number.",
+  portal: { name: 'Provider Express (Optum Behavioral Health provider portal)', url: 'https://www.providerexpress.com' },
+  scriptedQuestions: [
+    "Does ABA ride on UHC's medical claims or a distinct Optum BH hop for this specific Massachusetts plan, given the shared payer ID 87726?",
+    "What is UHC's current pVerify payer ID (not found in this session's query)?",
+    "Do UHC's ABA unit caps and modifiers match Optum's national reimbursement policy, or is there a Massachusetts-specific override?",
+    'What POS codes and telehealth billing modifiers does UHC/Optum require for ABA in Massachusetts?',
+  ],
+  sources: [PROVIDER_EXPRESS_CONTACT_PAGE, UHC_PAYER_LIST_2026, OPTUM_REIMBURSEMENT_POLICY],
+};
+
 /* ==================== export ==================== */
 
 export const massachusettsVob: Record<string, VobExtension> = {
-  'masshealth-massachusetts-medicaid': { edi: massHealthMedicaidEdi, codeGrid: massHealthMedicaidCodeGrid, rates: massHealthRates, lastUpdated: ACCESS_DATE },
-  'mbhp-massachusetts': { edi: mbhpEdi, codeGrid: mbhpCodeGrid, lastUpdated: ACCESS_DATE },
-  'fallon-health-massachusetts': { edi: fallonEdi, codeGrid: fallonCodeGrid, lastUpdated: ACCESS_DATE },
-  'health-new-england-massachusetts': { edi: hneEdi, codeGrid: hneCodeGrid, lastUpdated: ACCESS_DATE },
-  'wellsense-massachusetts': { edi: wellsenseEdi, codeGrid: wellsenseCodeGrid, lastUpdated: ACCESS_DATE },
-  'tufts-health-together': { edi: tuftsEdi, codeGrid: tuftsCodeGrid, lastUpdated: ACCESS_DATE },
-  'mass-general-brigham-health-plan': { edi: mgbEdi, codeGrid: mgbCodeGrid, lastUpdated: ACCESS_DATE },
-  'aetna-massachusetts': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-massachusetts': { edi: cignaEdi, codeGrid: cignaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-massachusetts': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, lastUpdated: ACCESS_DATE },
+  'masshealth-massachusetts-medicaid': { edi: massHealthMedicaidEdi, codeGrid: massHealthMedicaidCodeGrid, rates: massHealthRates, vobContact: massHealthMedicaidContact, lastUpdated: ACCESS_DATE },
+  'mbhp-massachusetts': { edi: mbhpEdi, codeGrid: mbhpCodeGrid, vobContact: mbhpContact, lastUpdated: ACCESS_DATE },
+  'fallon-health-massachusetts': { edi: fallonEdi, codeGrid: fallonCodeGrid, vobContact: fallonContact, lastUpdated: ACCESS_DATE },
+  'health-new-england-massachusetts': { edi: hneEdi, codeGrid: hneCodeGrid, vobContact: hneContact, lastUpdated: ACCESS_DATE },
+  'wellsense-massachusetts': { edi: wellsenseEdi, codeGrid: wellsenseCodeGrid, vobContact: wellsenseContact, lastUpdated: ACCESS_DATE },
+  'tufts-health-together': { edi: tuftsEdi, codeGrid: tuftsCodeGrid, vobContact: tuftsContact, lastUpdated: ACCESS_DATE },
+  'mass-general-brigham-health-plan': { edi: mgbEdi, codeGrid: mgbCodeGrid, vobContact: mgbContact, lastUpdated: ACCESS_DATE },
+  'aetna-massachusetts': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
+  'cigna-massachusetts': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-massachusetts': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
 };

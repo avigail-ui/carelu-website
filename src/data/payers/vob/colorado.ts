@@ -43,7 +43,7 @@
      10-16-104(1.4) mandate layer, which lives in the prose guide, not
      in these VOB layers.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -112,6 +112,34 @@ const OPTUM_SCC = src(
 const OPTUM_REIMBURSEMENT_POLICY = src(
   'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
   "Optum ABA Reimbursement Policy 2022RP501A — a NATIONAL commercial policy, not Colorado-specific. Max-daily-units and HN/HM/HO/HP modifier tiers per code; no POS or telehealth modifier given. Applied to the Colorado guide as 'inferred' absent a confirmed Colorado-specific override."
+);
+
+/* -------------------- Layer 7 (vobContact) source refs -------------------- */
+/* hcpf.colorado.gov 403s PDF fetches (see header note) but this HTML page did
+   not — fetched live this pass. */
+const HCPF_PAR_CONTACT_PAGE = src(
+  'https://hcpf.colorado.gov/par',
+  'HCPF "Colorado Prior Authorization Request Program (ColoradoPAR)" page — fetched live this pass (unlike the hcpf.colorado.gov PDFs cited elsewhere in this file, this HTML page did not 403). Its Contact Information table states verbatim: "Acentra Customer Service Line (720) 689-6340" and "Acentra Provider Fax Line (800) 922-3508 (toll free)"; registration for Acentra\'s provider portal, Atrezzo, runs through coproviderregistration@acentra.com. Acentra is the same UM vendor that runs all PBT/ABA PARs per the PBT Billing Manual.'
+);
+const ACENTRA_ATREZZO_HELP_CONTACT = src(
+  'https://atrezzohelp.acentra.com/help-contact/',
+  'Acentra Health "Atrezzo Help — Contact" state-by-state directory — fetched this pass; row-level: "Colorado PAR Phone: 720.689.6340 Email: COproviderissue@acentra.com URL: hcpf.colorado.gov/par" — corroborates the HCPF PAR page\'s Acentra Customer Service Line number. No fax is listed for Colorado on this directory (unlike some other states there).'
+);
+const AETNA_ABA_PRECERT_FORM = src(
+  'https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/pharmacy-insurance/healthcare-professional/documents/outpatient-behavioral-health-BH-ABA-assessment-precert.pdf',
+  'Aetna "Outpatient Behavioral Health (BH) – ABA Treatment Request" precertification form — fetched and parsed this pass. States verbatim: "If you are not utilizing availity you must call our precertification department... call us at 1-800-624-0756 (TTY: 711) or 1-888-632-3862 (TTY: 711)"; for questions about completing the form itself, "call us at 1-800-424-4047 (TTY: 711)"; clinical-documentation fax goes to "FaxHub: 833 596-0339" ("for clinical information only").'
+);
+const AETNA_PRECERT_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/precertification.html',
+  'Aetna "Precertification" page for health care professionals — fetched this pass; confirms submission channels are EDI, the Availity secure provider portal, or phone using the number on the member\'s ID card; no single universal phone number is published on this page itself (the ABA-specific precert form is what backs the phone numbers here).'
+);
+const PROVIDER_EXPRESS_CONTACT_US = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum Provider Express "Contact Us" page — fetched and parsed this pass. States verbatim: "Provider Services * For questions about: Credentialing and recredentialing... Contracting and fee schedules... Network status... Provider demographic changes... You may also call 1-877-614-0484, Monday–Friday, 7 a.m.–7 p.m. CT"; "Provider Express Secure Portal Technical Support... You may also call 1-866-209-9320, 7 a.m. – 7 p.m. CT, Monday – Friday"; "Member-Related Inquiries: Call the number on the back of the member\'s ID card." No ABA-specific phone line is broken out from general Provider Services.'
+);
+const PROVIDER_EXPRESS_CO_CONTACT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us/nmContacts/co.html',
+  'Optum Provider Express Colorado state-specific contact page — fetched this pass; contains no distinct Colorado phone number, directing providers instead to the member\'s ID card and the Provider Express secure portal login for network-management questions.'
 );
 
 /* -------------------- Colorado Medicaid (PBT FFS) codeGrid -------------------- */
@@ -468,11 +496,100 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (<=8 hrs)', []),
 };
 
+/* ==================== vobContact (Layer 7) ==================== */
+
+/* colorado-medicaid: phone/fax verified live this pass on hcpf.colorado.gov/par
+   (an HTML page — unlike the PDFs cited elsewhere in this file, it did not
+   403) and corroborated on Acentra's own Atrezzo help-contact directory. The
+   Atrezzo/ColoradoPAR.com portal name is the same one already verified in the
+   PBT Billing Manual note above. scriptedQuestions target this guide's own
+   'unverified' fields: telehealth mechanics (unverified on every PBT code),
+   per-PAR unit caps for 97153/154/155/158 ('inferred', not a published fixed
+   cap), the 7/1/2026 HB26-1410 rate-reset watchlist item, and supportsRealtime
+   (unverified in edi). */
+const coloradoMedicaidContact: VobContact = {
+  providerServicesPhone: '(720) 689-6340 — Acentra Customer Service Line (ColoradoPAR UM/PAR questions, which includes PBT/ABA)',
+  fax: '(800) 922-3508 — Acentra Provider Fax Line (toll-free)',
+  portal: { name: 'Atrezzo (Acentra provider portal, via ColoradoPAR.com)', url: 'https://coloradopar.com' },
+  scriptedQuestions: [
+    'Will telehealth be authorized for this child\'s PBT services, and if so what POS setting and modifier should we bill?',
+    'What per-PAR unit or hour caps did this member\'s approved authorization set for 97153, 97154, 97155, and 97158?',
+    'Are the rates you\'re quoting the post-10/1/2025 fee schedule, or has the 7/1/2026 rate reset under HB26-1410 already taken effect for this date of service?',
+    'Does this practice\'s EDI setup return eligibility in real time, or should we expect the batch turnaround the companion guide describes ("within 30 minutes or less")?',
+  ],
+  sources: [CO_PBT_BILLING_MANUAL, HCPF_PAR_CONTACT_PAGE, ACENTRA_ATREZZO_HELP_CONTACT],
+};
+
+/* aetna-colorado: phone/fax verified this pass directly from Aetna's own ABA
+   precertification form (not the CPBs, which carry no contact info at all).
+   scriptedQuestions target this guide's own 'unverified' codeGrid/edi fields:
+   paRequired nuance by code, unitCap, posAllowed, telehealth, modifiers (all
+   'unverified' on every aetnaEntry()), and bhCarveOut.administrator
+   ('unverified' in edi). */
+const aetnaContact: VobContact = {
+  providerServicesPhone: '1-800-624-0756 (TTY: 711) — Aetna Precertification Department for ABA/behavioral health precert requests (alt: 1-888-632-3862, TTY: 711)',
+  ivrPath: 'Submit via Availity when possible. If not using Availity, call the Precertification Department directly at the number above. For questions about completing the ABA Treatment Request form itself (not a coverage decision), call 1-800-424-4047 (TTY: 711) instead.',
+  fax: '833-596-0339 (FaxHub — clinical documentation supporting an ABA precert only, per Aetna\'s form: "for clinical information only")',
+  portal: { name: 'Availity', url: 'https://www.availity.com' },
+  scriptedQuestions: [
+    'Is precertification required for the ABA assessment codes (97151/97152), or only once treatment begins?',
+    'What are the daily/session unit caps for 97153, 97154, and 97155 under this member\'s plan?',
+    'Which places of service are approved for ABA — home, clinic, school, telehealth — and are POS-specific modifiers required?',
+    'Is telehealth covered for any ABA codes, and if so which modifier (GT/95) should we bill?',
+    'Does Aetna administer this member\'s ABA benefit directly, or is it carved out to a separate behavioral health vendor?',
+  ],
+  sources: [AETNA_ABA_PRECERT_FORM, AETNA_PRECERT_PAGE],
+};
+
+/* cigna-colorado: both numbers and the portal are mined straight out of the
+   Autism Resource Guide already cited on this guide's edi/codeGrid (no new
+   fetch needed for the reuse case, though we re-parsed the same PDF text this
+   pass to pull the numbers verbatim). scriptedQuestions target this guide's
+   own 'unverified' codeGrid fields — unitCap, posAllowed, telehealth,
+   modifiers are 'unverified' on every cignaEntry(); paRequired/covered are
+   already 'verified' so they're deliberately NOT asked about. */
+const cignaContact: VobContact = {
+  providerServicesPhone: '800.926.2273 — Evernorth Provider Services (billing, benefits, eligibility questions), Mon–Fri 7:00 a.m.–7:00 p.m. CT',
+  ivrPath: 'For ABA-specific benefits, eligibility, and authorization questions, ask for the Autism Care Coordinator team (877.279.7603) instead of general Provider Services — it\'s Evernorth\'s dedicated non-clinical ABA line.',
+  hours: 'Provider Services: Mon–Fri 7:00 a.m.–7:00 p.m. CT. Autism Care Coordinator team (877.279.7603): Mon–Fri 8:30 a.m.–5:00 p.m. CT.',
+  portal: { name: 'Evernorth Provider Portal', url: 'https://provider.evernorth.com' },
+  scriptedQuestions: [
+    'What are the daily/session unit caps for 97153, 97154, 97155, 97156, 97157, 97158, and 0373T under this plan?',
+    'Which places of service are approved for ABA — home, clinic, school, telehealth?',
+    'Is telehealth allowed for any ABA codes, and if so which modifier should we bill?',
+    'Are credential-tier billing modifiers required (e.g., BCBA vs. RBT) for any of these codes?',
+  ],
+  sources: [CIGNA_AUTISM_RESOURCE_GUIDE],
+};
+
+/* unitedhealthcare-colorado: numbers verified this pass on Provider Express's
+   own Contact Us page; the Colorado state-specific contact page was checked
+   too and carries no distinct number. scriptedQuestions target this guide's
+   own 'unverified' fields: posAllowed/telehealth (unverified on every
+   uhcEntry()) plus bhCarveOut.administratorPayerId/abaRidesOn/
+   twoHopRequired and supportsRealtime (all 'unverified' in edi). unitCap and
+   modifiers are 'inferred' from a national policy, not 'unverified', so
+   they're deliberately not re-asked here. */
+const unitedhealthcareContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484 — Provider Express Network Management/Provider Services (credentialing, contracting, network status), Mon–Fri 7 a.m.–7 p.m. CT',
+  ivrPath: 'Colorado has no state-specific Optum Behavioral Health phone line published — the Provider Express Colorado contact page routes back to the member\'s ID card and the secure portal login rather than a distinct number.',
+  hours: 'Mon–Fri 7 a.m.–7 p.m. CT (Provider Services); Provider Express technical support (1-866-209-9320) shares the same hours.',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com' },
+  scriptedQuestions: [
+    'Which places of service are authorized for ABA under this plan — home, clinic, school, telehealth?',
+    'Is telehealth covered for any ABA codes, and if so which modifier should we bill?',
+    'Does this member\'s ABA benefit ride the medical payer ID (00192/87726), or route to a separate Optum Behavioral Health payer ID?',
+    'Is a second authorization hop required between the medical plan and Optum Behavioral Health, or does one authorization cover both?',
+    'Can eligibility be checked in real time through your 270/271 feed, or is it processed in batch?',
+  ],
+  sources: [PROVIDER_EXPRESS_CONTACT_US, PROVIDER_EXPRESS_CO_CONTACT],
+};
+
 /* ==================== export ==================== */
 
 export const coloradoVob: Record<string, VobExtension> = {
-  'colorado-medicaid': { edi: coloradoMedicaidEdi, codeGrid: coloradoMedicaidCodeGrid, rates: coloradoMedicaidRates, lastUpdated: ACCESS_DATE },
-  'aetna-colorado': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-colorado': { edi: cignaEdi, codeGrid: cignaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-colorado': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, lastUpdated: ACCESS_DATE },
+  'colorado-medicaid': { edi: coloradoMedicaidEdi, codeGrid: coloradoMedicaidCodeGrid, rates: coloradoMedicaidRates, vobContact: coloradoMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-colorado': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
+  'cigna-colorado': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-colorado': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
 };

@@ -43,7 +43,7 @@
      small group), which lives in the prose guide, not in these VOB
      layers.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -116,6 +116,37 @@ const OPTUM_SCC = src(
 const OPTUM_REIMBURSEMENT_POLICY = src(
   'https://public.providerexpress.com/content/dam/ope-provexpr/us/pdfs/clinResourcesMain/guidelines/reimbPolicies/abaReimburs2020s.pdf',
   "Optum ABA Reimbursement Policy 2022RP501A — a NATIONAL commercial policy, not Utah-specific. Max-daily-units and HN/HM/HO/HP modifier tiers per code; no POS or telehealth modifier given. Applied to the Utah guide as 'inferred' absent a confirmed Utah-specific override."
+);
+
+/* -------------------- Layer 7 vobContact source refs -------------------- */
+
+const UT_MEDICAID_CONTACT_PROVIDERS = src(
+  'https://medicaid.utah.gov/contact-information-providers/',
+  'Utah Medicaid "Contact Information for Providers" page — fetched this pass. Prior Authorization line: "(801) 538-6155" (Salt Lake City area / all other states), toll-free "(800) 662-9651" (UT, ID, WY, CO, NM, AZ, NV); hours "Monday, Wednesday, Thursday, Friday 8am-5pm; Tuesday 11am-5pm"; phone-menu path "option 3, 3, then appropriate program." Also lists a general claims-inquiry line (800) 662-9651 (ANSI 276/277), an eligibility line 1-866-435-7414, and a general-inquiries line 1-866-608-9422 — none of these are ABA/ASD-program-specific, and no fax number is published on this page.'
+);
+const UT_PRISM_PORTAL_ACCESS = src(
+  'https://medicaid.utah.gov/accessing-prism/',
+  'Utah Medicaid "Accessing PRISM" page — fetched this pass; confirms the live PRISM provider portal URL is "https://prism.health.utah.gov/" (MFA required since 4/1/2021). Re-enrollment requests: "(801) 538-6155, or toll-free 1-800-662-9651"; general inquiries 1-866-608-9422; eligibility questions 1-866-435-7414.'
+);
+const AETNA_PRECERT_PAGE = src(
+  'https://www.aetna.com/health-care-professionals/precertification.html',
+  'Aetna "Precertification" page for health care professionals — fetched this pass. States precertification may be submitted "by electronic data interchange (EDI), through our secure provider website or by phone, using the number on the member\'s ID card," and links the Availity provider portal under "For Aetna providers." No fixed provider-services phone/fax number or published hours exist on this page — the phone channel is deliberately member-ID-card-specific (varies by plan), so providerServicesPhone is not populated for Aetna here.'
+);
+const CIGNA_PRECERT_PAGE = src(
+  'https://www.cigna.com/health-care-providers/coverage-and-claims/precertification',
+  'Cigna "Precertifications and Prior Authorizations" page — fetched this pass. Behavioral health precertification line: "1 (800) 926-2273" (listed for inpatient/partial-hospitalization programs; general medical precert is a separate "1 (800) 882-4462" / fax "1 (866) 873-8279," not behavioral-specific, so not carried into this guide as an ABA fax number).'
+);
+const EVERNORTH_BH_PROVIDER_SERVICES = src(
+  'https://static.evernorth.com/assets/evernorth/provider/resourceLibrary/behavioralResources/doingBusinessWithUs/cbhProviderServiceCenter.html',
+  'Evernorth Behavioral Health "Provider Service Center" page — fetched this pass; independently confirms the same Provider Advocate team line, "1.800.926.2273" (National Care Center, Bloomington MN), as the behavioral-health provider-services number. No fax number or specific hours are published on this page.'
+);
+const CIGNA_FOR_HCP_PORTAL = src(
+  'https://www.cigna.com/health-care-providers/cigna-for-hcp-online-portal-features',
+  'Cigna "CignaforHCP Online Portal Features" page — fetched this pass; confirms the provider-portal login URL as "https://cignaforhcp.cigna.com/app/login" ("Log in to CignaforHCP").'
+);
+const OPTUM_PROVIDER_EXPRESS_CONTACT = src(
+  'https://public.providerexpress.com/content/ope-provexpr/us/en/contact-us.html',
+  'Optum "Provider Express — Contact Us" page — fetched this pass. Provider Services: "1-877-614-0484," Mon-Fri 7am-7pm CT (scope: credentialing, contracting, network status, provider demographics — not itself an ABA/PA line). Provider Express secure-portal technical support: "1-866-209-9320," same hours. No dedicated ABA/behavioral-health prior-authorization phone or fax number is published on this page; PA is submitted via the Provider Express secure portal or the number on the member\'s ID card.'
 );
 
 /* -------------------- Utah Medicaid (ASD FFS) codeGrid -------------------- */
@@ -314,6 +345,17 @@ const utahMedicaidEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST, UT_PRISM_COMPANION_GUIDE, UT_PRISM_FEE_CSV, UT_ASD_MANUAL_ARCHIVE],
 };
 
+const utahMedicaidContact: VobContact = {
+  providerServicesPhone: '(801) 538-6155 (toll-free 1-800-662-9651 from UT/ID/WY/CO/NM/AZ/NV)',
+  hours: 'Mon, Wed, Thu, Fri 8:00am-5:00pm MT; Tue 11:00am-5:00pm MT',
+  ivrPath: 'Phone menu: option 3, then 3, then select the appropriate program (per the Prior Authorization line on the provider contact page).',
+  portal: { name: 'PRISM', url: 'https://prism.health.utah.gov/' },
+  scriptedQuestions: [
+    'Can the initial 97151 behavior-identification assessment be delivered via telehealth, or does it require an in-person visit?',
+  ],
+  sources: [UT_MEDICAID_CONTACT_PROVIDERS, UT_PRISM_PORTAL_ACCESS],
+};
+
 /* -------------------- commercial codeGrid factories (national policy) -------------------- */
 
 function aetnaEntry(): CodeGridEntry {
@@ -429,6 +471,19 @@ const aetnaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': aetnaEntry(),
 };
 
+const aetnaContact: VobContact = {
+  portal: { name: 'Availity Essentials', url: 'https://www.availity.com/' },
+  scriptedQuestions: [
+    'Does this ABA claim require precertification, and if so what form or process do you use for it?',
+    'Are there daily, weekly, or annual unit/hour caps on the treatment codes (97153-97158)?',
+    'What place-of-service settings are allowed for ABA — home, clinic, school, telehealth?',
+    'Is telehealth allowed for any of the ABA codes, and if so which ones?',
+    'Does Aetna administer ABA/behavioral health benefits in-house, or through a separate behavioral-health carve-out for this plan?',
+    'Are licensure-tier modifiers (e.g., HN/HO/HM/HP) required on claims, and if so which apply to which codes?',
+  ],
+  sources: [AETNA_PRECERT_PAGE, AVAILITY_PAYER_LIST],
+};
+
 /* ==================== cigna-utah (commercial) ==================== */
 
 const cignaEdi: EdiRouting = {
@@ -469,6 +524,18 @@ const cignaCodeGrid: Record<string, CodeGridEntry> = {
   '97158': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
   '0362T': cignaEntry('Not required (per EN0499)', 'unverified', ' QA verify (2026-07-23): EN0499 as fetched publishes only medical-necessity criteria and contains no \'prior authorization\'/\'precertification\' language and no statement exempting assessment codes from PA, so this \'Not required\' value is downgraded from verified to unverified pending confirmation via Cigna/Evernorth precertification lists.'),
   '0373T': cignaEntry('Required — assessment + treatment plan with the ABA PA form (EN0499)'),
+};
+
+const cignaContact: VobContact = {
+  providerServicesPhone: '1 (800) 926-2273 (Evernorth Behavioral Health Provider Advocate team / National Care Center)',
+  portal: { name: 'CignaforHCP', url: 'https://cignaforhcp.cigna.com/app/login' },
+  scriptedQuestions: [
+    'Are there unit or hour caps on the treatment codes (97153-97158), and if so what are they?',
+    'What place-of-service settings are allowed for ABA — home, clinic, school, telehealth?',
+    'Is telehealth allowed for any of the ABA codes, and if so which ones?',
+    'Are licensure-tier modifiers required on claims, and if so which apply to which codes?',
+  ],
+  sources: [EVERNORTH_BH_PROVIDER_SERVICES, CIGNA_PRECERT_PAGE, CIGNA_FOR_HCP_PORTAL],
 };
 
 /* ==================== unitedhealthcare-utah (commercial) ==================== */
@@ -520,11 +587,26 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (<=8 hrs)', []),
 };
 
+const unitedhealthcareContact: VobContact = {
+  providerServicesPhone: '1-877-614-0484 (Provider Services — credentialing, contracting, network status, provider demographics)',
+  hours: 'Mon-Fri 7:00am-7:00pm CT',
+  ivrPath: 'This line covers credentialing/contracting/demographics, not ABA authorization status directly; for PA status use the Provider Express portal or the number on the back of the member\'s ID card (portal technical support: 1-866-209-9320, same hours).',
+  portal: { name: 'Provider Express', url: 'https://public.providerexpress.com/' },
+  scriptedQuestions: [
+    'Does ABA route through Optum Behavioral Health, or directly through UnitedHealthcare medical benefits for this plan?',
+    'What place-of-service settings are allowed for ABA billing — home, clinic, school, telehealth?',
+    'Is telehealth allowed for any of the ABA codes, and if so which ones?',
+    'Do the published daily unit caps apply to this specific plan, or are they plan-dependent?',
+    'Which credential-tier modifiers (HN/HM/HO/HP) does this plan require, and do they match the standard national tiers?',
+  ],
+  sources: [OPTUM_PROVIDER_EXPRESS_CONTACT, OPTUM_SCC],
+};
+
 /* ==================== export ==================== */
 
 export const utahVob: Record<string, VobExtension> = {
-  'utah-medicaid': { edi: utahMedicaidEdi, codeGrid: utahMedicaidCodeGrid, rates: utahMedicaidRates, lastUpdated: ACCESS_DATE },
-  'aetna-utah': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, lastUpdated: ACCESS_DATE },
-  'cigna-utah': { edi: cignaEdi, codeGrid: cignaCodeGrid, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-utah': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, lastUpdated: ACCESS_DATE },
+  'utah-medicaid': { edi: utahMedicaidEdi, codeGrid: utahMedicaidCodeGrid, rates: utahMedicaidRates, vobContact: utahMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-utah': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
+  'cigna-utah': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-utah': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
 };
