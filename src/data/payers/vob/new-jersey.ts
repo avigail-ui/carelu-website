@@ -56,7 +56,8 @@
      BH network/authorizations but claims ride the medical payer ID
      (87726). Both are recorded as abaRidesOn='medical', not 'bh'.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -722,6 +723,74 @@ const uhcNjCommercialCodeGrid: Record<string, CodeGridEntry> = Object.fromEntrie
   Object.keys(NJ_DAILY_UNITS).map((c) => [c, uhcNjCommercialEntry()])
 );
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The NJMMIS 5010 270/271 Companion Guide (NJMMIS_270271_CG, already read in
+   full above for Layer 1 / medicaid271Notes) documents managed-care
+   enrollment loops/segments in detail but does NOT publish a service-type-
+   code (STC) support table — it never states which STCs NJMMIS returns or
+   whether ABA-relevant cost-share detail (deductible/copay/coinsurance) is
+   populated on the wire. No independent NJ Medicaid 270/271 STC document
+   was located this pass. new-jersey-medicaid and its 5 MCOs (Horizon,
+   Aetna Better Health, Fidelis, UHC Community Plan, Wellpoint — all NJ
+   FamilyCare Medicaid managed-care lines, NOT the commercial book of
+   business the national aetna/anthem/uhc family defaults represent) run
+   their own PA/eligibility per the EDI sections above but have no
+   independently published 270/271 STC table of their own, so they ship
+   fully 'unverified' rather than guessed from another state's pattern or
+   borrowed from a commercial family default. The separate Layer-0 prose
+   file (src/data/payers/new-jersey.ts) documents the EPSDT benefit design
+   in detail (MCO authorization workflow, daily unit limits, FFS rates) but
+   contains no statement of EPSDT member cost-share ($0 or otherwise) — so
+   deductibleAppliesToAba ships 'unverified', not inferred, here too. */
+
+function njUnverifiedStc(verifyNote: string, extraSources: SourceRef[] = []): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The NJMMIS 5010 270/271 Companion Guide (read in full for Layer 1) documents managed-care enrollment loops but publishes no service-type-code support table. ${verifyNote}`,
+    },
+    sources: [NJMMIS_270271_CG, ...extraSources],
+  };
+}
+
+const newJerseyMedicaidStc = njUnverifiedStc(
+  'Confirm via Gainwell Technologies Provider Services (1-800-776-6334) or the DMAHS Autism Line (609-588-8522).',
+  [DMAHS_BH_CONTACTS]
+);
+const horizonStc = njUnverifiedStc(
+  'Confirm via Horizon NJ Health Provider Services (1-800-682-9091) or Availity Essentials.',
+  [DMAHS_BH_CONTACTS]
+);
+const aetnaBetterHealthNjStc = njUnverifiedStc(
+  'Confirm via Aetna Better Health of NJ Provider Services (1-855-232-3596) or Availity Essentials.',
+  [DMAHS_BH_CONTACTS]
+);
+const fidelisStc = njUnverifiedStc(
+  'Confirm via the Fidelis Care Provider Portal (provider.fideliscarenj.com) or fax (888) 339-2677.',
+  [DMAHS_BH_CONTACTS]
+);
+const uhcCpNjStc = njUnverifiedStc(
+  'Confirm via Provider Express (1-888-362-3368) or Optum Behavioral Health.',
+  [DMAHS_BH_CONTACTS]
+);
+const wellpointStc = njUnverifiedStc(
+  'Confirm via Wellpoint NJ Provider Services (1-800-454-3730) or Availity Essentials.',
+  [DMAHS_BH_CONTACTS]
+);
+
 /* ==================== Layer 7 — contact & channel layer ====================
    Contact facts are sourced two ways: (a) mined verbatim from notes on
    source refs already used elsewhere in this file (fax/phone numbers the
@@ -861,13 +930,13 @@ const uhcNjCommercialContact: VobContact = {
 /* ==================== export ==================== */
 
 export const newJerseyVob: Record<string, VobExtension> = {
-  'new-jersey-medicaid': { edi: newJerseyMedicaidEdi, codeGrid: njBaselineGrid([NJMMIS_ABA_PACKET]), rates: newJerseyMedicaidRates, vobContact: njMedicaidContact, lastUpdated: ACCESS_DATE },
-  'horizon-nj-health': { edi: horizonEdi, codeGrid: horizonCodeGrid, rates: mcoBaselineRates('Horizon NJ Health', 'Horizon aligned BH fees to the DMAHS rate increase for DOS on/after 3/1/2024, but the specific ABA amounts are unverified'), vobContact: horizonContact, lastUpdated: ACCESS_DATE },
-  'aetna-better-health-new-jersey': { edi: aetnaBetterHealthNjEdi, codeGrid: aetnaBetterHealthNjCodeGrid, rates: aetnaNjRates, vobContact: aetnaBetterHealthNjContact, lastUpdated: ACCESS_DATE },
-  'fidelis-care-new-jersey': { edi: fidelisEdi, codeGrid: fidelisCodeGrid, rates: mcoBaselineRates('Fidelis Care NJ'), vobContact: fidelisContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-new-jersey': { edi: uhcCpNjEdi, codeGrid: uhcCpNjCodeGrid, rates: mcoBaselineRates('UnitedHealthcare Community Plan NJ'), vobContact: uhcCpNjContact, lastUpdated: ACCESS_DATE },
-  'wellpoint-new-jersey': { edi: wellpointEdi, codeGrid: wellpointCodeGrid, rates: mcoBaselineRates('Wellpoint NJ'), vobContact: wellpointContact, lastUpdated: ACCESS_DATE },
-  'aetna-new-jersey': { edi: aetnaNjCommercialEdi, codeGrid: aetnaNjCommercialCodeGrid, vobContact: aetnaNjCommercialContact, lastUpdated: ACCESS_DATE },
-  'cigna-new-jersey': { edi: cignaNjEdi, codeGrid: cignaNjCodeGrid, vobContact: cignaNjContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-new-jersey': { edi: uhcNjCommercialEdi, codeGrid: uhcNjCommercialCodeGrid, vobContact: uhcNjCommercialContact, lastUpdated: ACCESS_DATE },
+  'new-jersey-medicaid': { edi: newJerseyMedicaidEdi, stcMap: newJerseyMedicaidStc, codeGrid: njBaselineGrid([NJMMIS_ABA_PACKET]), rates: newJerseyMedicaidRates, vobContact: njMedicaidContact, lastUpdated: ACCESS_DATE },
+  'horizon-nj-health': { edi: horizonEdi, stcMap: horizonStc, codeGrid: horizonCodeGrid, rates: mcoBaselineRates('Horizon NJ Health', 'Horizon aligned BH fees to the DMAHS rate increase for DOS on/after 3/1/2024, but the specific ABA amounts are unverified'), vobContact: horizonContact, lastUpdated: ACCESS_DATE },
+  'aetna-better-health-new-jersey': { edi: aetnaBetterHealthNjEdi, stcMap: aetnaBetterHealthNjStc, codeGrid: aetnaBetterHealthNjCodeGrid, rates: aetnaNjRates, vobContact: aetnaBetterHealthNjContact, lastUpdated: ACCESS_DATE },
+  'fidelis-care-new-jersey': { edi: fidelisEdi, stcMap: fidelisStc, codeGrid: fidelisCodeGrid, rates: mcoBaselineRates('Fidelis Care NJ'), vobContact: fidelisContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-new-jersey': { edi: uhcCpNjEdi, stcMap: uhcCpNjStc, codeGrid: uhcCpNjCodeGrid, rates: mcoBaselineRates('UnitedHealthcare Community Plan NJ'), vobContact: uhcCpNjContact, lastUpdated: ACCESS_DATE },
+  'wellpoint-new-jersey': { edi: wellpointEdi, stcMap: wellpointStc, codeGrid: wellpointCodeGrid, rates: mcoBaselineRates('Wellpoint NJ'), vobContact: wellpointContact, lastUpdated: ACCESS_DATE },
+  'aetna-new-jersey': { edi: aetnaNjCommercialEdi, stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no New Jersey-specific 270/271 STC document found.'), codeGrid: aetnaNjCommercialCodeGrid, vobContact: aetnaNjCommercialContact, lastUpdated: ACCESS_DATE },
+  'cigna-new-jersey': { edi: cignaNjEdi, stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no New Jersey-specific override found.'), codeGrid: cignaNjCodeGrid, vobContact: cignaNjContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-new-jersey': { edi: uhcNjCommercialEdi, stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no New Jersey-specific override found.'), codeGrid: uhcNjCommercialCodeGrid, vobContact: uhcNjCommercialContact, lastUpdated: ACCESS_DATE },
 };

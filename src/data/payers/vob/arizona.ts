@@ -43,7 +43,8 @@
      rides the ACC/DDD contractor's own medical payer ID — no separate
      RBHA/BH carve-out payer, no two-hop for standard members.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -580,6 +581,60 @@ const uhcAzEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The AHCCCS 270/271 Standard Companion Guide (AHCCCS_COMPANION_GUIDE,
+   already fetched and read in full for Layer 1 above) documents the
+   MCO-ENROLLMENT segment (2110C/2120C: EB*3*IND*30*HM*<plan code>, REF*6P/M7,
+   the NM1*Y2 loop) in exhaustive detail, but nowhere publishes a
+   service-type-code SUPPORT table or a worked benefit-detail (copay/
+   coinsurance/deductible) example the way Cigna's and UHC's national
+   companion guides do (see stc-defaults.ts) — it is an EDI-routing/
+   eligibility-span document, not a benefits/STC document. No independent
+   AHCCCS benefits-STC companion guide, and no MCO-specific 270/271 STC
+   support table, was located this pass for any of the 6 ACC/DDD contractors
+   (Mercy Care, UHC Community Plan, AzCH, Banner-UFC, Health Choice, Molina)
+   or for arizona-ddd (which itself rides the chosen DDD Health Plan's own
+   271, per the medicaid271Notes above). Per docs/vob-build.md's "never
+   guess" rule, arizona-ahcccs and all 7 Medicaid-side guides ship fully
+   'unverified' STC maps — critically, NOT the uhcFamilyStc default, even
+   though UnitedHealthcare Community Plan of Arizona shares a parent with the
+   national UnitedHealthcare commercial family: uhcFamilyStc documents UHC's
+   COMMERCIAL 270/271 feed and STC support table, which is a different book
+   of business (and a different EDI payer ID — 87726 vs. AZ Medicaid's 03432)
+   than the Community Plan's AHCCCS-integrated Medicaid line. */
+
+function azMedicaidUnverifiedStc(verifyNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The AHCCCS 270/271 Standard Companion Guide v4.0 (Sept 2022) documents the MCO-enrollment segment in detail but not a service-type-code support/benefit table, and no independent AHCCCS or plan-specific STC document was located this pass. ${verifyNote}`,
+    },
+    sources: [AHCCCS_COMPANION_GUIDE],
+  };
+}
+
+const ahcccsStc = azMedicaidUnverifiedStc('Confirm via AHCCCS Provider Services (602-417-7670 / toll-free 1-800-794-6862) or the AHCCCS Solutions Center portal.');
+const mercyCareStc = azMedicaidUnverifiedStc('Confirm via the Mercy Care Availity Provider Portal.');
+const uhcCommunityAzStc = azMedicaidUnverifiedStc('Confirm via Optum Provider Express (1-800-445-1638 Optum Claims Customer Service Line; Support Center 7:00 a.m.–9:00 p.m. CT).');
+const azchStc = azMedicaidUnverifiedStc('Confirm via Arizona Complete Health Provider Customer Service (1-866-796-0542).');
+const bannerStc = azMedicaidUnverifiedStc('Confirm via the Banner–University Family Care/ACC Customer Care Center (800-582-8686).');
+const healthChoiceStc = azMedicaidUnverifiedStc('Confirm via Health Choice Arizona Provider Services (1-800-322-8670).');
+const molinaAzStc = azMedicaidUnverifiedStc('Confirm via Molina Healthcare of Arizona Provider Customer Service ((800) 424-5891).');
+const dddStc = azMedicaidUnverifiedStc('Confirm via the member\'s DDD Health Plan — Mercy Care DD or UHCCP DD (see those guides\' vobContact); DDD itself has no standalone EDI/benefits feed.');
+
 /* -------------------- Layer 7: contact & channel source refs -------------------- */
 /* Sourcing notes: (a) several vobContact facts below are lifted verbatim from the
    Layer 1/3 source notes already cited above (Molina fax/phone, Health Choice PA
@@ -770,10 +825,11 @@ const uhcAzContact: VobContact = {
 /* ==================== export ==================== */
 
 export const arizonaVob: Record<string, VobExtension> = {
-  'arizona-ahcccs': { edi: ahcccsEdi, codeGrid: ahcccsGrid(), rates: AZ_AHCCCS_RATES, vobContact: ahcccsContact, lastUpdated: ACCESS_DATE },
+  'arizona-ahcccs': { edi: ahcccsEdi, codeGrid: ahcccsGrid(), stcMap: ahcccsStc, rates: AZ_AHCCCS_RATES, vobContact: ahcccsContact, lastUpdated: ACCESS_DATE },
   'mercy-care-arizona': {
     edi: mercyCareEdi,
     codeGrid: mercyUhcGrid('6-month authorization periods; 0362T/0373T are required billing codes.', MERCY_CARE_ABA),
+    stcMap: mercyCareStc,
     rates: azBenchmarkRates('Mercy Care'),
     vobContact: mercyCareContact,
     lastUpdated: ACCESS_DATE,
@@ -781,12 +837,14 @@ export const arizonaVob: Record<string, VobExtension> = {
   'unitedhealthcare-community-plan-arizona': {
     edi: uhcCommunityAzEdi,
     codeGrid: mercyUhcGrid('Optum-run; treatment via the Provider Express ABA Treatment Form or fax 1-888-541-6691; 90-day filing deadline.', UHC_AZ_ORIENT),
+    stcMap: uhcCommunityAzStc,
     rates: azBenchmarkRates('UnitedHealthcare Community Plan of Arizona'),
     vobContact: uhcCommunityAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'arizona-complete-health': {
     edi: azchEdi,
+    stcMap: azchStc,
     codeGrid: (() => {
       const grid: Record<string, CodeGridEntry> = {};
       for (const c of ['97151', '97152', '97153', '97154', '97155', '97156', '97157', '97158', '0362T', '0373T']) {
@@ -810,6 +868,7 @@ export const arizonaVob: Record<string, VobExtension> = {
   'banner-university-family-care': {
     edi: bannerEdi,
     codeGrid: azUnpublishedGrid('Banner publishes an ABA Prior Authorization Form (treatment PA exists) but no clinical policy, assessment-PA rule, or durations — pull the current form from bannerhealth.com/bhpprovider.', src('https://www.bannerhealth.com/bhpprovider/resources/bh/materials', 'Banner Health Plans behavioral-health materials — lists the ABA Prior Authorization Form; no clinical policy/assessment-PA rule published.')),
+    stcMap: bannerStc,
     rates: azBenchmarkRates('Banner-University Family Care'),
     vobContact: bannerContact,
     lastUpdated: ACCESS_DATE,
@@ -817,6 +876,7 @@ export const arizonaVob: Record<string, VobExtension> = {
   'health-choice-arizona': {
     edi: healthChoiceEdi,
     codeGrid: azUnpublishedGrid('Blue Cross Blue Shield of Arizona Health Choice runs PA from frequently-updated PA-Guidelines grids (≥7 versions Jan 2024–May 2026), not a published ABA policy — pull the current grid rows for 97151–97158 from healthchoiceaz.com (PA line 1-800-322-8670 / fax 480-760-4732).', src('https://www.healthchoiceaz.com/providers/pa-guidelines', 'Health Choice Arizona PA guidelines (grids) — the code-level PA source of truth; grids revise several times a year.')),
+    stcMap: healthChoiceStc,
     rates: azBenchmarkRates('Blue Cross Blue Shield of Arizona Health Choice'),
     vobContact: healthChoiceContact,
     lastUpdated: ACCESS_DATE,
@@ -824,12 +884,14 @@ export const arizonaVob: Record<string, VobExtension> = {
   'molina-healthcare-arizona': {
     edi: molinaAzEdi,
     codeGrid: azUnpublishedGrid('Molina publishes no distinct AZ ABA policy — its Prior Auth and Pre-Service Review Guide (Healthcare Services (844) 782-2678 / fax (833) 832-1015; Availity Essentials) is the operational front door; verify the ABA code rows before booking.', src('https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/az/Forms/MHAZ-Prior-Auth-and-Pre-Service-Review-Guide-508.pdf', 'Molina Healthcare of Arizona Prior Auth and Pre-Service Review Guide — the operational PA reference; no standing ABA rule published.')),
+    stcMap: molinaAzStc,
     rates: azBenchmarkRates('Molina Healthcare of Arizona'),
     vobContact: molinaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'arizona-ddd': {
     edi: dddEdi,
+    stcMap: dddStc,
     codeGrid: (() => {
       const grid: Record<string, CodeGridEntry> = {};
       for (const c of ['97151', '97152', '97153', '97154', '97155', '97156', '97157', '97158', '0362T', '0373T']) {
@@ -853,18 +915,21 @@ export const arizonaVob: Record<string, VobExtension> = {
   'aetna-arizona': {
     edi: aetnaAzEdi,
     codeGrid: azCommercialGrid(azAetnaEntry, 'Required — precertification (assessment and treatment), per national CPB 0554/0648; ASD only.'),
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Arizona-specific 270/271 STC document found.'),
     vobContact: aetnaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-arizona': {
     edi: cignaAzEdi,
     codeGrid: azCommercialGrid(azCignaEntry, 'Required — assessment + treatment plan with the ABA PA form (EN0499)', 'Not required (per EN0499)', ['97151', '97152', '0362T']),
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Arizona-specific override found.'),
     vobContact: cignaAzContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-arizona': {
     edi: uhcAzEdi,
     codeGrid: azCommercialGrid(azUhcEntry, 'Required — Optum two-step (assessment auth, then treatment auth); reviews every 4–6 months'),
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Arizona-specific override found.'),
     vobContact: uhcAzContact,
     lastUpdated: ACCESS_DATE,
   },

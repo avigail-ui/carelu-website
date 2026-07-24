@@ -44,6 +44,7 @@
      than being flattened to 'plan-dependent'.
    ================================================================ */
 import type { VobExtension, EdiRouting, CodeGridEntry, SourceRef, VobContact } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -389,18 +390,25 @@ export const nationalVob: Record<string, VobExtension> = {
   aetna: {
     edi: aetnaEdi,
     codeGrid: aetnaCodeGrid,
+    // This IS the Aetna family default guide (docs/vob-build.md Layer 2,
+    // src/data/payers/vob/stc-defaults.ts) — shipped directly, not via
+    // inheritFamilyStc, since that helper exists to flag a STATE guide
+    // borrowing the national pattern, not the national pattern itself.
+    stcMap: aetnaFamilyStc,
     vobContact: aetnaContact,
     lastUpdated: ACCESS_DATE,
   },
   cigna: {
     edi: cignaEdi,
     codeGrid: cignaCodeGrid,
+    stcMap: cignaFamilyStc,
     vobContact: cignaContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-optum': {
     edi: unitedhealthcareOptumEdi,
     codeGrid: unitedhealthcareOptumCodeGrid,
+    stcMap: uhcFamilyStc,
     vobContact: unitedhealthcareOptumContact,
     lastUpdated: ACCESS_DATE,
   },

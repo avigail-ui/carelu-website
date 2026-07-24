@@ -65,7 +65,8 @@
      that guide's own unverified/plan-dependent edi + codeGrid fields —
      never padded, never asking about anything already verified.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -508,6 +509,55 @@ const uhcNmEdi: EdiRouting = {
   sources: [PVERIFY_PAYER_LIST, AVAILITY_PAYER_LIST],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   NM Medicaid: the same retrieval blockers already documented for Layer 1
+   (newMexicoMedicaidEdi above) apply here — the NM MMIS provider portal
+   (nmmedicaid.portal.conduent.com) is Incapsula-blocked, and NM's 270/271
+   routes through the generic, payer-agnostic Conduent Eligibility Gateway
+   (CONDUENT_COMPANION_GUIDE is an "All Payers" envelope doc with no
+   NM-specific or Medicaid-specific service-type-code support table). No
+   Turquoise Care MCO publishes an independent 270/271 companion guide of
+   its own, and this file's own Layer-0 prose (src/data/payers/new-mexico.ts)
+   was checked directly and contains no cited EPSDT/cost-share-amount fact
+   (only a generic "the only reliable answer on limits and cost-sharing"
+   pointer to live benefits verification) — so nothing here can be lifted
+   to a verified deductible/cost-share field. new-mexico-medicaid and its 4
+   Turquoise Care MCOs therefore ship fully 'unverified', reusing each
+   guide's own already-cited Layer 7 phone/portal as the verifyVia contact
+   rather than inventing one. */
+
+function nmMedicaidUnverifiedStc(phoneNote: string, extraSources: SourceRef[] = []): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `NM's 270/271 traffic routes through the generic Conduent Eligibility Gateway (CONDUENT_COMPANION_GUIDE, an "All Payers" envelope doc with no NM- or Medicaid-specific service-type-code support table); the NM MMIS provider portal is Incapsula-blocked, and no Turquoise Care MCO publishes its own 270/271 companion guide. ${phoneNote}`,
+    },
+    sources: [CONDUENT_MEDICAID_PAYER_GUIDE, CONDUENT_COMPANION_GUIDE, ...extraSources],
+  };
+}
+
+const newMexicoMedicaidStc = nmMedicaidUnverifiedStc('Confirm via the NM Medicaid Third-Party Assessor (Comagine Health, 1-866-962-2180) — see this guide\'s own vobContact.');
+const bcbsNmStc = nmMedicaidUnverifiedStc('Confirm via BCBSNM Provider Customer Service (1-877-232-5518) or the Eligibility & Benefit IVR (1-888-349-3706) — see this guide\'s own vobContact.');
+const presbyterianNmStc = nmMedicaidUnverifiedStc('Confirm via Presbyterian Prior Authorization/Utilization Management (505-923-5757 / 1-888-923-5757) — see this guide\'s own vobContact.');
+const molinaNmStc = nmMedicaidUnverifiedStc('Confirm via Molina NM Provider Services ((855) 322-4078) — see this guide\'s own vobContact.');
+const uhcCommunityNmStc = nmMedicaidUnverifiedStc(
+  'Confirm via UHC Community Plan of NM Provider Services (1-888-702-2202) or Provider Express — see this guide\'s own vobContact.',
+  [OPTUM_NM_QRG]
+);
+
 /* -------------------- Layer 7: contact & channel sources -------------------- */
 
 const HCA_TPA = src(
@@ -652,6 +702,7 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: newMexicoMedicaidEdi,
     codeGrid: nmMedicaidGrid(),
     rates: NM_MEDICAID_RATES,
+    stcMap: newMexicoMedicaidStc,
     vobContact: newMexicoMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -659,6 +710,7 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: bcbsNmEdi,
     codeGrid: nmMedicaidGrid('State baseline via the shared Turquoise Care Level of Care Guidelines (defer to NMAC 8.321.2). BCBSNM treatment requests use the ABA Clinical Service Request Form (≥2 weeks / within 30 days before start).'),
     rates: nmMcoFloorRates('BCBSNM'),
+    stcMap: bcbsNmStc,
     vobContact: bcbsNmContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -666,6 +718,7 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: presbyterianNmEdi,
     codeGrid: nmMedicaidGrid('State baseline; Presbyterian treatment requests use its own Stage 3 ABA Clinical Review Form (fax (505) 843-3019 or the Turquoise Care portal — NOT Magellan for Medicaid).'),
     rates: nmMcoFloorRates('Presbyterian Health Plan'),
+    stcMap: presbyterianNmStc,
     vobContact: presbyterianNmContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -673,6 +726,7 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: molinaNmEdi,
     codeGrid: nmMedicaidGrid('State baseline; Molina publishes no NM-specific ABA policy — submit PAs via Availity Essentials and confirm code-level PA in the portal per case.'),
     rates: nmMcoFloorRates('Molina Healthcare of New Mexico'),
+    stcMap: molinaNmStc,
     vobContact: molinaNmContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -680,24 +734,28 @@ export const newMexicoVob: Record<string, VobExtension> = {
     edi: uhcCommunityNmEdi,
     codeGrid: nmMedicaidGrid('Optum-administered; the NM Turquoise Care QRG confirms the state PA surface exactly — only 97153 & 0373T require PA; submit on the NM Uniform PA Form via Provider Express or fax 1-888-541-6691.'),
     rates: nmMcoFloorRates('UnitedHealthcare Community Plan of New Mexico'),
+    stcMap: uhcCommunityNmStc,
     vobContact: uhcCommunityNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-new-mexico': {
     edi: aetnaNmEdi,
     codeGrid: commercialGrid(nmAetnaEntry),
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no New Mexico-specific 270/271 STC document found.'),
     vobContact: aetnaNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-new-mexico': {
     edi: cignaNmEdi,
     codeGrid: cignaCommercialGrid(),
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no New Mexico-specific override found.'),
     vobContact: cignaNmContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-new-mexico': {
     edi: uhcNmEdi,
     codeGrid: commercialGrid(() => nmUhcCommercialEntry('Required — Optum two-step (assessment auth, then treatment auth); reviews every 4–6 months')),
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no New Mexico-specific override found.'),
     vobContact: uhcNmContact,
     lastUpdated: ACCESS_DATE,
   },

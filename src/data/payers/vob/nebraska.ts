@@ -90,7 +90,8 @@
      documents georgia.ts already extracted, exactly as the build
      brief invited for shared national payer IDs.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, FieldStatus } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, FieldStatus, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -973,6 +974,55 @@ const unitedhealthcareNebraskaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcNeCommercialEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The NE MMIS 270/271 Companion Guide (COMPANION_GUIDE, above) was retrieved
+   successfully and read in full — unlike Georgia's inaccessible GAMMIS guide,
+   this one directly answers Layer 1's loop/segment questions. But its content
+   is limited to structural EDI mapping (loop 2120C NM1 for MCO/PCP name, loop
+   2100C DTP for managed-care coverage-span flags) and real-time/batch
+   transaction timing; it contains no service-type-code support table (no
+   statement of which STCs Nebraska Medicaid populates with financial detail,
+   unlike Cigna's/UHC's own companion guides in stc-defaults.ts). No
+   independent 270/271 STC document was located for Nebraska Medicaid itself,
+   and none of the three Heritage Health MCOs (Nebraska Total Care, Molina
+   Healthcare of Nebraska, UnitedHealthcare Community Plan of Nebraska) —
+   whose own cited documents above (NTC_POLICY, MOLINA_PA_PAGE, OPTUM_QRG) are
+   PA/clinical-policy documents, not EDI/companion-guide documents — publish
+   one either. nebraska-medicaid and its 3 MCOs therefore ship fully
+   'unverified' StcMaps rather than guessed values, per docs/vob-build.md's
+   "never guess" rule. (Separately checked per this pass's brief: the non-VOB
+   src/data/payers/nebraska.ts prose file documents EPSDT as ABA's coverage
+   basis for members under 21, but states no $0-cost-share fact with a
+   citation — nothing to promote to 'verified' here.) */
+
+function neMedicaidUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The NE MMIS 270/271 Companion Guide (dhhs.ne.gov, printed effective 3/9/2015) was retrieved and read in full but documents no service-type-code support table — its content is limited to loop/segment structure (MCO/PCP name, managed-care coverage-span flags) and real-time/batch transaction timing, not which STCs carry ABA financial detail. No Nebraska Medicaid-specific or MCO-specific 270/271 STC document was located this pass. ${phoneNote}`,
+    },
+    sources: [COMPANION_GUIDE],
+  };
+}
+
+const nebraskaMedicaidStc = neMedicaidUnverifiedStc('Confirm via the Medicaid Inquiry Line (877-255-3092 / Lincoln 402-471-9128) or NMES (1-800-642-6092).');
+const nebraskaTotalCareStc = neMedicaidUnverifiedStc('Confirm via Nebraska Total Care Provider Services (1-844-385-2192).');
+const molinaHealthcareNebraskaStc = neMedicaidUnverifiedStc('Confirm via Molina Healthcare of Nebraska Provider Services ((844) 782-2678).');
+const unitedhealthcareCommunityPlanNebraskaStc = neMedicaidUnverifiedStc('Confirm via Provider Express or the Optum Customer Service Center (1-866-331-2243).');
+
 /* ==================== Layer 7: vobContact per guide ==================== */
 
 const nebraskaMedicaidContact: VobContact = {
@@ -1083,6 +1133,7 @@ export const nebraskaVob: Record<string, VobExtension> = {
     edi: nebraskaMedicaidEdi,
     codeGrid: NE_STATE_CODEGRID,
     rates: neRateTable(false),
+    stcMap: nebraskaMedicaidStc,
     vobContact: nebraskaMedicaidContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -1090,6 +1141,7 @@ export const nebraskaVob: Record<string, VobExtension> = {
     edi: nebraskaTotalCareEdi,
     codeGrid: nebraskaTotalCareCodeGrid,
     rates: neRateTable(true),
+    stcMap: nebraskaTotalCareStc,
     vobContact: nebraskaTotalCareContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -1097,6 +1149,7 @@ export const nebraskaVob: Record<string, VobExtension> = {
     edi: molinaHealthcareNebraskaEdi,
     codeGrid: molinaHealthcareNebraskaCodeGrid,
     rates: neRateTable(true),
+    stcMap: molinaHealthcareNebraskaStc,
     vobContact: molinaHealthcareNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },
@@ -1104,24 +1157,28 @@ export const nebraskaVob: Record<string, VobExtension> = {
     edi: unitedhealthcareCommunityPlanNebraskaEdi,
     codeGrid: unitedhealthcareCommunityPlanNebraskaCodeGrid,
     rates: neRateTable(true),
+    stcMap: unitedhealthcareCommunityPlanNebraskaStc,
     vobContact: unitedhealthcareCommunityPlanNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },
   'aetna-nebraska': {
     edi: aetnaNebraskaEdi,
     codeGrid: aetnaNebraskaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Nebraska-specific 270/271 STC document found.'),
     vobContact: aetnaNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-nebraska': {
     edi: cignaNebraskaEdi,
     codeGrid: cignaNebraskaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Nebraska-specific override found.'),
     vobContact: cignaNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-nebraska': {
     edi: unitedhealthcareNebraskaEdi,
     codeGrid: unitedhealthcareNebraskaCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Nebraska-specific override found.'),
     vobContact: unitedhealthcareNebraskaContact,
     lastUpdated: ACCESS_DATE,
   },

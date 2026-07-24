@@ -62,7 +62,8 @@
      entries (re-confirmed by direct re-fetch this pass, access date
      below), not a guess carried over from another state.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -764,6 +765,57 @@ const unitedhealthcareIndianaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcCommercialEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The IHCP 270/271 Companion Guide (IHCP_COMPANION_GUIDE above) was, unlike
+   Georgia's GAMMIS equivalent, successfully retrieved and parsed in full this
+   pass — but the sections read (§4.1/§4.3 transaction support, §7.4.5 Managed
+   Care loop/segment) do not include a service-type-code (STC) support table
+   analogous to Cigna's §7.1.1 or UHC's §6.2 (see stc-defaults.ts). No such
+   table was located anywhere in IHCP's public EDI documentation this pass,
+   and none of the five MCE guides (Anthem, MHS, CareSource, MDwise, UHC
+   Community Plan) publishes its own 270/271 STC table independent of IHCP's
+   feed. Per the "never guess" rule, indiana-medicaid and all five MCEs ship
+   fully 'unverified' rather than inferred from a national commercial family
+   pattern — Medicaid managed care is a distinct book of business from the
+   commercial families in stc-defaults.ts and must not borrow their values
+   (per this task's classification: anthem-indiana-medicaid and
+   unitedhealthcare-community-plan-indiana are Medicaid lines, not the
+   commercial anthemFamilyStc/uhcFamilyStc). indiana.ts's own Layer-0 prose
+   file (src/data/payers/indiana.ts) documents the 2026 EPSDT-only shift but
+   does not state a $0 EPSDT cost-share figure with a citation, so
+   deductibleAppliesToAba is left 'unverified' rather than inferred from the
+   general federal EPSDT cost-sharing bar. */
+
+function inMedicaidUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The IHCP 270/271 Companion Guide (Version 4.2) was retrieved and parsed in full this pass but does not include a service-type-code support table for behavioral health/ABA analogous to the national commercial companion guides. ${phoneNote}`,
+    },
+    sources: [IHCP_COMPANION_GUIDE],
+  };
+}
+
+const indianaMedicaidStc = inMedicaidUnverifiedStc('Confirm via IHCP Provider Customer Assistance (800-457-4584) or the Gainwell EDI help desk (INXIXTradingPartner@gainwelltechnologies.com).');
+const anthemInMedicaidStc = inMedicaidUnverifiedStc('Confirm via Anthem Indiana Medicaid Provider Services (844-533-1995 HIP / 866-408-6132 Hoosier Healthwise / 844-284-1798 Hoosier Care Connect / 833-569-4739 PathWays).');
+const mhsIndianaStc = inMedicaidUnverifiedStc('Confirm via MHS Provider Services (877-647-4848).');
+const caresourceIndianaStc = inMedicaidUnverifiedStc('Confirm via CareSource Indiana Medicaid Provider Services (844-607-2831).');
+const mdwiseIndianaStc = inMedicaidUnverifiedStc('HISTORICAL ONLY — MDwise ended as an Indiana Medicaid MCE effective 1/1/2026; do not use to route a live eligibility check. Confirm the member\'s reassigned MCE (Anthem, CareSource, or MHS) instead.');
+const uhcCommunityPlanIndianaStc = inMedicaidUnverifiedStc('Confirm via Optum Behavioral Health (800-888-2998) or the Indiana Autism/ABA Network Management Provider Advocate (715-833-6538) — ABA is carved to Optum for this plan per edi.bhCarveOut above, so a Medicaid-line STC table (if one exists) would sit with Optum, not UHC medical.');
+
 /* ==================== Layer 7: vobContact ====================
    Contact fields (phone/fax/hours/portal) are scraped from primary provider-
    facing documents — reused from this file's own Layer 1/3/4 sources where a
@@ -886,13 +938,13 @@ const unitedhealthcareIndianaContact: VobContact = {
 /* ==================== export ==================== */
 
 export const indianaVob: Record<string, VobExtension> = {
-  'indiana-medicaid': { edi: indianaMedicaidEdi, codeGrid: indianaMedicaidCodeGrid, rates: indianaMedicaidRates(), vobContact: indianaMedicaidContact, lastUpdated: ACCESS_DATE },
-  'anthem-indiana-medicaid': { edi: anthemInMedicaidEdi, codeGrid: anthemInMedicaidCodeGrid, rates: indianaMedicaidRates(), vobContact: anthemInMedicaidContact, lastUpdated: ACCESS_DATE },
-  'mhs-indiana': { edi: mhsIndianaEdi, codeGrid: mhsIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: mhsIndianaContact, lastUpdated: ACCESS_DATE },
-  'caresource-indiana': { edi: caresourceIndianaEdi, codeGrid: caresourceIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: caresourceIndianaContact, lastUpdated: ACCESS_DATE },
-  'mdwise-indiana': { edi: mdwiseIndianaEdi, codeGrid: mdwiseIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: mdwiseIndianaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-indiana': { edi: uhcCommunityPlanIndianaEdi, codeGrid: uhcCommunityPlanIndianaCodeGrid, rates: indianaMedicaidRates(), vobContact: uhcCommunityPlanIndianaContact, lastUpdated: ACCESS_DATE },
-  'aetna-indiana': { edi: aetnaIndianaEdi, codeGrid: aetnaIndianaCodeGrid, vobContact: aetnaIndianaContact, lastUpdated: ACCESS_DATE },
-  'cigna-indiana': { edi: cignaIndianaEdi, codeGrid: cignaIndianaCodeGrid, vobContact: cignaIndianaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-indiana': { edi: unitedhealthcareIndianaEdi, codeGrid: unitedhealthcareIndianaCodeGrid, vobContact: unitedhealthcareIndianaContact, lastUpdated: ACCESS_DATE },
+  'indiana-medicaid': { edi: indianaMedicaidEdi, codeGrid: indianaMedicaidCodeGrid, stcMap: indianaMedicaidStc, rates: indianaMedicaidRates(), vobContact: indianaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'anthem-indiana-medicaid': { edi: anthemInMedicaidEdi, codeGrid: anthemInMedicaidCodeGrid, stcMap: anthemInMedicaidStc, rates: indianaMedicaidRates(), vobContact: anthemInMedicaidContact, lastUpdated: ACCESS_DATE },
+  'mhs-indiana': { edi: mhsIndianaEdi, codeGrid: mhsIndianaCodeGrid, stcMap: mhsIndianaStc, rates: indianaMedicaidRates(), vobContact: mhsIndianaContact, lastUpdated: ACCESS_DATE },
+  'caresource-indiana': { edi: caresourceIndianaEdi, codeGrid: caresourceIndianaCodeGrid, stcMap: caresourceIndianaStc, rates: indianaMedicaidRates(), vobContact: caresourceIndianaContact, lastUpdated: ACCESS_DATE },
+  'mdwise-indiana': { edi: mdwiseIndianaEdi, codeGrid: mdwiseIndianaCodeGrid, stcMap: mdwiseIndianaStc, rates: indianaMedicaidRates(), vobContact: mdwiseIndianaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-indiana': { edi: uhcCommunityPlanIndianaEdi, codeGrid: uhcCommunityPlanIndianaCodeGrid, stcMap: uhcCommunityPlanIndianaStc, rates: indianaMedicaidRates(), vobContact: uhcCommunityPlanIndianaContact, lastUpdated: ACCESS_DATE },
+  'aetna-indiana': { edi: aetnaIndianaEdi, codeGrid: aetnaIndianaCodeGrid, stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Indiana-specific 270/271 STC document found.'), vobContact: aetnaIndianaContact, lastUpdated: ACCESS_DATE },
+  'cigna-indiana': { edi: cignaIndianaEdi, codeGrid: cignaIndianaCodeGrid, stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Indiana-specific override found.'), vobContact: cignaIndianaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-indiana': { edi: unitedhealthcareIndianaEdi, codeGrid: unitedhealthcareIndianaCodeGrid, stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Indiana-specific override found.'), vobContact: unitedhealthcareIndianaContact, lastUpdated: ACCESS_DATE },
 };

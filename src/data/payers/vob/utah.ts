@@ -43,7 +43,8 @@
      small group), which lives in the prose guide, not in these VOB
      layers.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact, StcMap } from './types.js';
+import { CAQH_CORE_STC_VOCAB, aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -740,17 +741,100 @@ const selectHealthUtahContact: VobContact = {
   sources: [SELECTHEALTH_PREAUTH_FORMS_PAGE, SELECTHEALTH_ABA_PREAUTH_FORM],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   utah-medicaid's own 270/271 companion guide (UT_PRISM_COMPANION_GUIDE,
+   already cited above in utahMedicaidEdi.medicaid271Notes and fetched/text-
+   extracted this pass) states plainly that Utah Medicaid "does not return
+   eligibility at the procedure code level" and defaults to the generic STC
+   "30" bucket — a real, guide-specific fact, not an inferred family pattern.
+   That single fact (abaBenefitBucket + quality271Score) ships 'verified';
+   nothing in that companion guide (an EDI/transaction-format document) or
+   elsewhere in this file's sources addresses member cost-sharing mechanics
+   (deductible/copay/coinsurance/OOP-max) for ABA specifically, so those
+   fields ship honestly 'unverified' rather than assumed from general
+   Medicaid cost-sharing norms. (Checked src/data/payers/utah.ts for a
+   documented EPSDT/cost-share figure per docs/vob-build.md's guidance —
+   the only related fact there is that Utah's ASD benefit is not an
+   EPSDT child-only benefit; no $0/cost-share amount is stated, so nothing
+   is carried forward.)
+
+   select-health-utah (SelectHealth Community Care, Utah Medicaid's largest
+   MCO) inherits utah-medicaid's own stcMap rather than shipping a fresh
+   unverified map or the commercial family defaults: this guide's own
+   edi.bhCarveOut.administrator and verifyVia notes above already document
+   that ABA is carved out of Select Health entirely to Utah Medicaid FFS —
+   Select Health does not adjudicate ABA for Community Care members at all,
+   and an eligibility check for those members should route to utah-medicaid's
+   own entry (pVerify 01324), not Select Health's payer ID. That is an even
+   more centralized arrangement than Texas's shared-TMHP-feed MCO pattern
+   (see texas.ts txMcoInferredStc), so the same inheritFamilyStc mechanism
+   applies here, keyed off utahMedicaidStc instead of a commercial family
+   default. */
+
+const utahMedicaidStc: StcMap = {
+  abaBenefitBucket: '30',
+  deductibleAppliesToAba: 'unverified',
+  costShareType: 'unverified',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'low',
+  fieldStatus: {
+    abaBenefitBucket: 'verified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'verified',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      'Utah Medicaid\'s own 270/271 companion guide (UT_PRISM_COMPANION_GUIDE, already cited in this guide\'s edi.medicaid271Notes) states plainly that Utah Medicaid "does not return eligibility at the procedure code level" and defaults to the generic STC "30" (Health Benefit Plan Coverage) bucket — ABA-specific cost-share detail is NOT surfaced on the wire; the FFS carve-out is applied from policy knowledge, not read off the 271.',
+    deductibleAppliesToAba:
+      "Not addressed by the companion guide (an EDI/transaction-format document); no Utah Medicaid member cost-sharing/EPSDT document confirming a specific figure was located in src/data/payers/utah.ts or elsewhere in this pass's corpus. Confirm via Utah Medicaid provider services.",
+    costShareType: 'Same gap as deductibleAppliesToAba — confirm via Utah Medicaid provider services.',
+    copayUnit: 'Not addressed by the companion guide — confirm via Utah Medicaid provider services.',
+    oopMaxApplies: 'Not addressed by the companion guide — confirm via Utah Medicaid provider services.',
+    quality271Score:
+      "Seeded 'low': the companion guide's own default-to-STC-30, no-procedure-level-detail statement means a real 271 for an ABA member returns only generic plan-active/inactive information, not service-level financial detail.",
+  },
+  sources: [CAQH_CORE_STC_VOCAB, UT_PRISM_COMPANION_GUIDE],
+};
+
+const selectHealthUtahStc: StcMap = inheritFamilyStc(
+  utahMedicaidStc,
+  "Select Health Community Care (Utah Medicaid's largest MCO) carves ABA out entirely to Utah Medicaid FFS — this guide's own edi.bhCarveOut.administrator and verifyVia already document that Select Health does not administer or adjudicate ABA for Community Care members at all, and warn against using Select Health's own payer ID for an ABA eligibility check (route to utah-medicaid's pVerify 01324 instead). Inherited from utah-medicaid's own stcMap as 'inferred', not independently confirmed for Select Health specifically. Select Health's commercial line instead runs its own Policy #630 (see this guide's codeGrid), whose STC treatment is not addressed by any 270/271 companion guide located this pass.",
+);
+
 /* ==================== export ==================== */
 
 export const utahVob: Record<string, VobExtension> = {
-  'utah-medicaid': { edi: utahMedicaidEdi, codeGrid: utahMedicaidCodeGrid, rates: utahMedicaidRates, vobContact: utahMedicaidContact, lastUpdated: ACCESS_DATE },
-  'aetna-utah': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
-  'cigna-utah': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-utah': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
+  'utah-medicaid': { edi: utahMedicaidEdi, codeGrid: utahMedicaidCodeGrid, rates: utahMedicaidRates, stcMap: utahMedicaidStc, vobContact: utahMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-utah': {
+    edi: aetnaEdi,
+    codeGrid: aetnaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Utah-specific 270/271 STC document found.'),
+    vobContact: aetnaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-utah': {
+    edi: cignaEdi,
+    codeGrid: cignaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — no Utah-specific 270/271 STC document found.'),
+    vobContact: cignaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-utah': {
+    edi: unitedhealthcareEdi,
+    codeGrid: unitedhealthcareCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — no Utah-specific 270/271 STC document found.'),
+    vobContact: unitedhealthcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
   'select-health-utah': {
     edi: selectHealthUtahEdi,
     codeGrid: selectHealthUtahCodeGrid,
     rates: selectHealthUtahRates,
+    stcMap: selectHealthUtahStc,
     vobContact: selectHealthUtahContact,
     lastUpdated: ACCESS_DATE,
   },

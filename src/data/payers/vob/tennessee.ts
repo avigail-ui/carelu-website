@@ -112,7 +112,8 @@
      for the healthy-blue-north-carolina carveout row), not upgraded to
      a fully 'verified' none.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -994,12 +995,66 @@ const tenncareSelectContact: VobContact = {
   sources: [TENNCARE_SELECT_CONTRACT, BLUECARE_PAM],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   TennCare's own EDI Front Matter (V8.0, Feb 2026 — TENNCARE_EDI_FRONT_MATTER,
+   already cited above for Layer 1) confirms 270/271 is a state-run
+   transaction but explicitly states the document that would carry the
+   service-type-code support table — the actual TennCare Companion Guide
+   (TCCG) — is "available to registered Trading Partners upon request," not a
+   public download. No MCO (BlueCare, UnitedHealthcare Community Plan,
+   Wellpoint, TennCare Select) publishes its own independent 270/271 STC
+   table either. This is the same confirmed-gap shape as georgia.ts's
+   gaUnverifiedStc (GAMMIS's companion guide exists but its STC table isn't
+   retrievable) — not a placeholder to fill, a documented blocker. All five
+   TennCare-side guides therefore ship fully 'unverified' StcMaps, each with
+   a plan-specific verifyVia phone number reused from that guide's own
+   vobContact (not invented). src/data/payers/tennessee.ts's EPSDT prose
+   (checked this pass) states ABA is covered with no annual benefit/hour cap
+   but never states a $0 cost-share/deductible figure with a citation, so
+   deductibleAppliesToAba is NOT set to 'no' here — an honest 'unverified'
+   per the "never guess" rule, not an inference from EPSDT's general
+   medical-necessity mandate. */
+
+function tnUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `TennCare's public EDI Front Matter confirms 270/271 exists as a direct state-run transaction but states the TennCare Companion Guide (TCCG) — the document that would carry the service-type-code support table — is available to registered Trading Partners only upon request (EDI.TennCare@tn.gov), not a public download; no MCO publishes an independent STC table of its own. ${phoneNote}`,
+    },
+    sources: [TENNCARE_EDI_FRONT_MATTER],
+  };
+}
+
+const tenncareMedicaidStc = tnUnverifiedStc(
+  "Confirm via TennCare Provider Services, (800) 852-2683, or by requesting the TCCG from EDI.TennCare@tn.gov — though ABA benefit administration itself is 100% delegated to the member's MCO."
+);
+const blueCareStc = tnUnverifiedStc("Confirm via BlueCare Tennessee Provider Service Line, 1-800-924-7141.");
+const uhcCommunityPlanStc = tnUnverifiedStc(
+  "Confirm via UnitedHealthcare Community Plan of TN's dedicated ABA authorization line, (800) 690-1606, or its general Provider Services line, (877) 222-6720."
+);
+const wellpointStc = tnUnverifiedStc("Confirm via Wellpoint Tennessee Provider Services (Medicaid line), (833) 731-2154.");
+const tenncareSelectStc = tnUnverifiedStc("Confirm via TennCare Select Provider Service Line, 1-800-276-1978.");
+
 /* ==================== export ==================== */
 
 export const tennesseeVob: Record<string, VobExtension> = {
   'tenncare-tennessee-medicaid': {
     edi: tenncareMedicaidEdi,
     codeGrid: tenncareMedicaidCodeGrid,
+    stcMap: tenncareMedicaidStc,
     rates: tenncareMedicaidRates,
     vobContact: tenncareMedicaidContact,
     lastUpdated: ACCESS_DATE,
@@ -1007,6 +1062,7 @@ export const tennesseeVob: Record<string, VobExtension> = {
   'bluecare-tennessee': {
     edi: blueCareEdi,
     codeGrid: blueCareCodeGrid,
+    stcMap: blueCareStc,
     rates: blueCareRates,
     vobContact: blueCareContact,
     lastUpdated: ACCESS_DATE,
@@ -1014,6 +1070,7 @@ export const tennesseeVob: Record<string, VobExtension> = {
   'unitedhealthcare-community-plan-tennessee': {
     edi: uhcCommunityPlanEdi,
     codeGrid: uhcCommunityPlanCodeGrid,
+    stcMap: uhcCommunityPlanStc,
     rates: uhcCommunityPlanRates,
     vobContact: uhcCommunityPlanContact,
     lastUpdated: ACCESS_DATE,
@@ -1021,21 +1078,36 @@ export const tennesseeVob: Record<string, VobExtension> = {
   'wellpoint-tennessee': {
     edi: wellpointEdi,
     codeGrid: wellpointCodeGrid,
+    stcMap: wellpointStc,
     rates: wellpointRates,
     vobContact: wellpointContact,
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-tennessee': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
-  'cigna-tennessee': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'aetna-tennessee': {
+    edi: aetnaEdi,
+    codeGrid: aetnaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Tennessee-specific 270/271 STC document found.'),
+    vobContact: aetnaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-tennessee': {
+    edi: cignaEdi,
+    codeGrid: cignaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Tennessee-specific override found.'),
+    vobContact: cignaContact,
+    lastUpdated: ACCESS_DATE,
+  },
   'unitedhealthcare-tennessee': {
     edi: unitedhealthcareEdi,
     codeGrid: unitedhealthcareCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Tennessee-specific override found.'),
     vobContact: unitedhealthcareContact,
     lastUpdated: ACCESS_DATE,
   },
   'tenncare-select': {
     edi: tenncareSelectEdi,
     codeGrid: tenncareSelectCodeGrid,
+    stcMap: tenncareSelectStc,
     rates: tenncareSelectRates,
     vobContact: tenncareSelectContact,
     lastUpdated: ACCESS_DATE,

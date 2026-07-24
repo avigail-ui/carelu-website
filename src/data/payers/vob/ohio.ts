@@ -64,7 +64,8 @@
      Optum SCC/2022RP501A) as in the Georgia build, with Ohio's autism
      mandate (R.C. 3923.84) noted.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { inheritFamilyStc, aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, CAQH_CORE_STC_VOCAB } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -986,18 +987,81 @@ const uhcOhioContact: VobContact = {
   sources: [UHC_CONTACT_PAGE],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The ODM/Gainwell 5010 270/271 Companion Guide v13.0 (already fetched and
+   cited above for medicaid271Notes' MCO-enrollment mechanics) documents
+   Loop/segment mechanics for MCO enrollment (§6-7) but its service-type-code
+   (STC) support table — which STCs (30, MH, A4-A8, etc.) the ODM 271 feed
+   actually populates with financial detail — was not extracted this pass.
+   None of the 7 MCOs' own cited sources (PA pages, clinical policies, the
+   Carelon Anthem QRG) address STC support either. Per the "never guess"
+   rule, ohio-medicaid and its 7 MCOs (which run their own PA/eligibility
+   but publish no independently confirmed 270/271 STC support table) ship
+   fully 'unverified' rather than inferred from the ODM companion guide's
+   unrelated MCO-segment content or from another state's pattern. */
+
+function ohioMedicaidUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The ODM/Gainwell 5010 270/271 Companion Guide v13.0 documents MCO-enrollment loop/segment mechanics but not its service-type-code support table, and no per-MCO 270/271 STC document was located. ${phoneNote}`,
+    },
+    sources: [CAQH_CORE_STC_VOCAB, ODM_COMPANION_GUIDE],
+  };
+}
+
+const ohioMedicaidStc = ohioMedicaidUnverifiedStc('Confirm via ODM PNM provider services, (800) 686-1516.');
+const caresourceOhioStc = ohioMedicaidUnverifiedStc('Confirm via CareSource Ohio provider services, (800) 488-0134.');
+const buckeyeStc = ohioMedicaidUnverifiedStc('Confirm via Buckeye Health Plan provider services, (800) 224-1991.');
+const molinaOhioStc = ohioMedicaidUnverifiedStc('Confirm via Molina Healthcare of Ohio provider services through Availity Essentials.');
+const anthemOhioMedicaidStc = ohioMedicaidUnverifiedStc('Confirm via Anthem OH Medicaid provider services through Availity Essentials / Interactive Care Reviewer.');
+const uhcCommunityOhioStc = ohioMedicaidUnverifiedStc('Confirm via UnitedHealthcare Community Plan of Ohio provider services, (800) 600-9007.');
+const amerihealthOhioStc = ohioMedicaidUnverifiedStc('Confirm via AmeriHealth Caritas Ohio provider services, (833) 735-7700.');
+const humanaOhioStc = ohioMedicaidUnverifiedStc('Confirm via Humana Healthy Horizons in Ohio provider services, (877) 856-5707.');
+
 /* ==================== export ==================== */
 
 export const ohioVob: Record<string, VobExtension> = {
-  'ohio-medicaid': { edi: ohioMedicaidEdi, codeGrid: buildGrid(ohioMedicaidEntry), rates: OHIO_MEDICAID_RATES, vobContact: ohioMedicaidContact, lastUpdated: ACCESS_DATE },
-  'caresource-ohio': { edi: caresourceEdi, codeGrid: buildGrid(careSourceEntry), rates: ohioMcoUnverifiedRates('CareSource Ohio'), vobContact: caresourceContact, lastUpdated: ACCESS_DATE },
-  'buckeye-health-plan': { edi: buckeyeEdi, codeGrid: buildGrid(buckeyeEntry), rates: ohioMcoUnverifiedRates('Buckeye Health Plan'), vobContact: buckeyeContact, lastUpdated: ACCESS_DATE },
-  'molina-healthcare-ohio': { edi: molinaEdi, codeGrid: buildGrid(molinaEntry), rates: ohioMcoUnverifiedRates('Molina Healthcare of Ohio'), vobContact: molinaContact, lastUpdated: ACCESS_DATE },
-  'anthem-ohio-medicaid': { edi: anthemOhioEdi, codeGrid: buildGrid(anthemEntry), rates: ohioMcoUnverifiedRates('Anthem BCBS Ohio Medicaid'), vobContact: anthemOhioContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-ohio': { edi: uhcCommunityEdi, codeGrid: buildGrid(uhcCommunityEntry), rates: ohioMcoUnverifiedRates('UnitedHealthcare Community Plan of Ohio'), vobContact: uhcCommunityContact, lastUpdated: ACCESS_DATE },
-  'amerihealth-caritas-ohio': { edi: amerihealthEdi, codeGrid: buildGrid(amerihealthEntry), rates: ohioMcoUnverifiedRates('AmeriHealth Caritas Ohio'), vobContact: amerihealthContact, lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-ohio': { edi: humanaOhioEdi, codeGrid: buildGrid(humanaEntry), rates: ohioMcoUnverifiedRates('Humana Healthy Horizons in Ohio'), vobContact: humanaContact, lastUpdated: ACCESS_DATE },
-  'aetna-ohio': { edi: aetnaOhioEdi, codeGrid: aetnaOhioCodeGrid, vobContact: aetnaOhioContact, lastUpdated: ACCESS_DATE },
-  'cigna-ohio': { edi: cignaOhioEdi, codeGrid: cignaOhioCodeGrid, vobContact: cignaOhioContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-ohio': { edi: uhcOhioEdi, codeGrid: uhcOhioCodeGrid, vobContact: uhcOhioContact, lastUpdated: ACCESS_DATE },
+  'ohio-medicaid': { edi: ohioMedicaidEdi, codeGrid: buildGrid(ohioMedicaidEntry), rates: OHIO_MEDICAID_RATES, stcMap: ohioMedicaidStc, vobContact: ohioMedicaidContact, lastUpdated: ACCESS_DATE },
+  'caresource-ohio': { edi: caresourceEdi, codeGrid: buildGrid(careSourceEntry), rates: ohioMcoUnverifiedRates('CareSource Ohio'), stcMap: caresourceOhioStc, vobContact: caresourceContact, lastUpdated: ACCESS_DATE },
+  'buckeye-health-plan': { edi: buckeyeEdi, codeGrid: buildGrid(buckeyeEntry), rates: ohioMcoUnverifiedRates('Buckeye Health Plan'), stcMap: buckeyeStc, vobContact: buckeyeContact, lastUpdated: ACCESS_DATE },
+  'molina-healthcare-ohio': { edi: molinaEdi, codeGrid: buildGrid(molinaEntry), rates: ohioMcoUnverifiedRates('Molina Healthcare of Ohio'), stcMap: molinaOhioStc, vobContact: molinaContact, lastUpdated: ACCESS_DATE },
+  'anthem-ohio-medicaid': { edi: anthemOhioEdi, codeGrid: buildGrid(anthemEntry), rates: ohioMcoUnverifiedRates('Anthem BCBS Ohio Medicaid'), stcMap: anthemOhioMedicaidStc, vobContact: anthemOhioContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-ohio': { edi: uhcCommunityEdi, codeGrid: buildGrid(uhcCommunityEntry), rates: ohioMcoUnverifiedRates('UnitedHealthcare Community Plan of Ohio'), stcMap: uhcCommunityOhioStc, vobContact: uhcCommunityContact, lastUpdated: ACCESS_DATE },
+  'amerihealth-caritas-ohio': { edi: amerihealthEdi, codeGrid: buildGrid(amerihealthEntry), rates: ohioMcoUnverifiedRates('AmeriHealth Caritas Ohio'), stcMap: amerihealthOhioStc, vobContact: amerihealthContact, lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-ohio': { edi: humanaOhioEdi, codeGrid: buildGrid(humanaEntry), rates: ohioMcoUnverifiedRates('Humana Healthy Horizons in Ohio'), stcMap: humanaOhioStc, vobContact: humanaContact, lastUpdated: ACCESS_DATE },
+  'aetna-ohio': {
+    edi: aetnaOhioEdi,
+    codeGrid: aetnaOhioCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Ohio-specific 270/271 STC document found.'),
+    vobContact: aetnaOhioContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-ohio': {
+    edi: cignaOhioEdi,
+    codeGrid: cignaOhioCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Ohio-specific override found.'),
+    vobContact: cignaOhioContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-ohio': {
+    edi: uhcOhioEdi,
+    codeGrid: uhcOhioCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Ohio-specific override found.'),
+    vobContact: uhcOhioContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

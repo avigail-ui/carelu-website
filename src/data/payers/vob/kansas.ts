@@ -51,7 +51,8 @@
      from georgia.ts/indiana.ts: the SAME national pVerify/Availity
      entries, re-confirmed by direct re-fetch this pass.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -691,14 +692,88 @@ const unitedhealthcareKansasVobContact: VobContact = {
   sources: [OPTUM_SCC, UHC_PROVIDER_CONTACT_PAGE],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   kansas-medicaid + its 3 KanCare MCOs: the KMAP 270/271 Standard Companion
+   Guide (Version 6.0, May 2, 2017 — KMAP_COMPANION_GUIDE above) documents the
+   managed-care segment location (Loop 2110C/EB03=30, see edi section) but
+   publishes no service-type-code (STC) support table — which STCs KMAP
+   actually populates with financial detail for ABA-relevant benefit buckets
+   (30/MH/A4/A6) is not stated anywhere in the retrieved document, and the
+   interactive fee-schedule/EDI portal redirects to the same OAM/SSO wall
+   documented elsewhere in this file. None of the 3 MCOs (Sunflower, UHC
+   Community Plan, Healthy Blue) publish their own 270/271 companion guide
+   or STC table either. Per the "never guess" rule and consistent with the
+   same gap already documented for georgia-medicaid/its CMOs (georgia.ts) and
+   colorado-medicaid (colorado.ts), this ships fully 'unverified' for all 4
+   Medicaid-line guides. Kansas EPSDT/CCTS/IIS benefits are plausibly $0
+   member cost-share (as is typical for EPSDT programs nationally, and per
+   docs/vob-build.md Layer 2's instruction to check src/data/payers/kansas.ts
+   first) — but that file's own prose and cites document only the COMMERCIAL
+   K.S.A. 40-2,194 mandate's premium/hour-cap mechanics, not a Medicaid
+   EPSDT/CCTS/IIS cost-share figure, so deductibleAppliesToAba/costShareType
+   stay honestly unverified rather than assumed. */
+
+function kansasMedicaidUnverifiedStc(guideSourceNote: string, phoneNote: string, extraSources: SourceRef[] = []): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `${guideSourceNote} ${phoneNote}`,
+    },
+    sources: [KMAP_COMPANION_GUIDE, ...extraSources],
+  };
+}
+
+const kansasMedicaidStc = kansasMedicaidUnverifiedStc(
+  'The KMAP 270/271 Standard Companion Guide (Version 6.0, May 2, 2017) documents the managed-care segment location but publishes no STC support table, and the KMAP interactive fee-schedule/EDI portal redirects to an SSO wall that blocked further research this pass.',
+  'Confirm via the KMAP Provider Service Number, 1-800-933-6593, option 8.'
+);
+
+const sunflowerKansasStc = kansasMedicaidUnverifiedStc(
+  "Neither the KMAP companion guide nor Sunflower's own KS.CP.01 clinical policy or Provider Quick Reference Guide documents a service-type-code (STC) support table or member cost-share mechanics for ABA/CCTS/IIS.",
+  'Confirm via Sunflower Provider Relations/Customer Service, 1-877-644-4623 (TTY 711).',
+  [SUNFLOWER_KS_CP01, SUNFLOWER_KS_QRG]
+);
+
+const uhcCommunityPlanKansasStc = kansasMedicaidUnverifiedStc(
+  "Neither the KMAP companion guide, Optum's ABA State Mandates supplemental criteria for Kansas Medicaid, nor the UHC/Optum 'Getting started: KanCare members diagnosed with ASD' guide documents a service-type-code (STC) support table — whether Optum returns populated MH-flavor financial detail on this feed for the carved-out KanCare ABA benefit, versus a referral/vendor-lookup stub, is the same open question already flagged for the edi.bhCarveOut fields above.",
+  'Confirm via Optum Behavioral Health, 1-877-614-0484 (ask for the Kansas ABA Network Manager).',
+  [OPTUM_KS_MEDICAID_CRITERIA, UHC_KS_GETTING_STARTED]
+);
+
+const healthyBlueKansasStc = kansasMedicaidUnverifiedStc(
+  'Healthy Blue Kansas publishes the least ABA-specific/EDI-specific detail of the three KanCare MCOs (per kansas.ts guide prose) — no companion guide, clinical policy, or PA page reviewed this pass documents a service-type-code (STC) support table or member cost-share mechanics for ABA/CCTS/IIS.',
+  "Confirm via Healthy Blue Kansas's ABA line, 1-877-563-9347 (a fresh re-fetch this pass did not reproduce this number — verify it's still current), or Availity.",
+  [HEALTHY_BLUE_KS_PA_PAGE]
+);
+
+/* kansas commercial guides (aetna/cigna/unitedhealthcare): no Kansas-specific
+   270/271 STC document was located for any of the three — each inherits its
+   national payer-family default from stc-defaults.ts. */
+const aetnaKansasStc = inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Kansas-specific 270/271 STC document found.');
+const cignaKansasStc = inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Kansas-specific override found.');
+const unitedhealthcareKansasStc = inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Kansas-specific override found.');
+
 /* ==================== export ==================== */
 
 export const kansasVob: Record<string, VobExtension> = {
-  'kansas-medicaid': { edi: kansasMedicaidEdi, codeGrid: kansasMedicaidCodeGrid, rates: kansasMedicaidRates(), vobContact: kansasMedicaidVobContact, lastUpdated: ACCESS_DATE },
-  'sunflower-health-plan-kansas': { edi: sunflowerKansasEdi, codeGrid: sunflowerKansasCodeGrid, rates: kansasMedicaidRates(), vobContact: sunflowerKansasVobContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-kansas': { edi: uhcCommunityPlanKansasEdi, codeGrid: uhcCommunityPlanKansasCodeGrid, rates: kansasMedicaidRates(), vobContact: uhcCommunityPlanKansasVobContact, lastUpdated: ACCESS_DATE },
-  'healthy-blue-kansas': { edi: healthyBlueKansasEdi, codeGrid: healthyBlueKansasCodeGrid, rates: kansasMedicaidRates(), vobContact: healthyBlueKansasVobContact, lastUpdated: ACCESS_DATE },
-  'aetna-kansas': { edi: aetnaKansasEdi, codeGrid: aetnaKansasCodeGrid, vobContact: aetnaKansasVobContact, lastUpdated: ACCESS_DATE },
-  'cigna-kansas': { edi: cignaKansasEdi, codeGrid: cignaKansasCodeGrid, vobContact: cignaKansasVobContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-kansas': { edi: unitedhealthcareKansasEdi, codeGrid: unitedhealthcareKansasCodeGrid, vobContact: unitedhealthcareKansasVobContact, lastUpdated: ACCESS_DATE },
+  'kansas-medicaid': { edi: kansasMedicaidEdi, codeGrid: kansasMedicaidCodeGrid, stcMap: kansasMedicaidStc, rates: kansasMedicaidRates(), vobContact: kansasMedicaidVobContact, lastUpdated: ACCESS_DATE },
+  'sunflower-health-plan-kansas': { edi: sunflowerKansasEdi, codeGrid: sunflowerKansasCodeGrid, stcMap: sunflowerKansasStc, rates: kansasMedicaidRates(), vobContact: sunflowerKansasVobContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-kansas': { edi: uhcCommunityPlanKansasEdi, codeGrid: uhcCommunityPlanKansasCodeGrid, stcMap: uhcCommunityPlanKansasStc, rates: kansasMedicaidRates(), vobContact: uhcCommunityPlanKansasVobContact, lastUpdated: ACCESS_DATE },
+  'healthy-blue-kansas': { edi: healthyBlueKansasEdi, codeGrid: healthyBlueKansasCodeGrid, stcMap: healthyBlueKansasStc, rates: kansasMedicaidRates(), vobContact: healthyBlueKansasVobContact, lastUpdated: ACCESS_DATE },
+  'aetna-kansas': { edi: aetnaKansasEdi, codeGrid: aetnaKansasCodeGrid, stcMap: aetnaKansasStc, vobContact: aetnaKansasVobContact, lastUpdated: ACCESS_DATE },
+  'cigna-kansas': { edi: cignaKansasEdi, codeGrid: cignaKansasCodeGrid, stcMap: cignaKansasStc, vobContact: cignaKansasVobContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-kansas': { edi: unitedhealthcareKansasEdi, codeGrid: unitedhealthcareKansasCodeGrid, stcMap: unitedhealthcareKansasStc, vobContact: unitedhealthcareKansasVobContact, lastUpdated: ACCESS_DATE },
 };

@@ -46,7 +46,8 @@
      mandate (RSMo 376.1224: the $40k/yr ABA cap through age 18, applying
      to fully-insured plans only) is noted where relevant.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, SourceRef, VobContact, StcMap } from './types.js';
+import { aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -246,6 +247,44 @@ const MO_MEDICAID_RATES: RateTable = {
     '0373T': { rate: 'Modifier-tiered — see modifierTiers (max 32 units/day; eff 7/1/2022)', unit: '15min', modifierTiers: { HO: '$25.26 (behavior analyst/psychologist)', 'U8+HO': '$27.46 (in-home)' } },
   },
   sources: [MO_FEE_SCHEDULE, MO_BHSM],
+};
+
+/* Layer 2 — MO HealthNet STC interpretation map. The eMOMED 5010 270/271
+   Companion Guide (Dec 2023, MO_COMPANION_GUIDE above) was fetched and read
+   in full for this build's EDI-routing work — its Tables 9-10 document loop/
+   segment mechanics (managed-care flags, eligibility date spans) but contain
+   no service-type-code support table (which STCs MO HealthNet actually
+   populates with financial detail on the wire). No separate MO HealthNet
+   270/271 STC/benefit-response reference was located either. Per
+   docs/vob-build.md's "never guess" rule this ships fully 'unverified'
+   rather than assumed from another state's Medicaid pattern (same treatment
+   as georgia-medicaid's gaUnverifiedStc). */
+
+const missouriMedicaidStc: StcMap = {
+  abaBenefitBucket: 'unverified',
+  deductibleAppliesToAba: 'unverified',
+  costShareType: 'unverified',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'unverified',
+  fieldStatus: {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      'The eMOMED 5010 270/271 Companion Guide (Dec 2023) documents managed-care/eligibility loop-segment mechanics but publishes no service-type-code support table, so which STC bucket carries ABA cost-share detail (and whether MO HealthNet populates financial detail on the 271 at all) is unconfirmed. Confirm via the MHD Behavioral Health Services Help Desk, fax (573) 635-6516, or the eMOMED provider portal.',
+    deductibleAppliesToAba: 'Same gap as abaBenefitBucket — MO HealthNet has no member cost-sharing structure documented in this corpus\'s cited sources; confirm via MHD Behavioral Health Services or eMOMED.',
+    costShareType: 'Same gap as abaBenefitBucket.',
+    copayUnit: 'Same gap as abaBenefitBucket.',
+    oopMaxApplies: 'Same gap as abaBenefitBucket.',
+    quality271Score: 'Same gap as abaBenefitBucket.',
+  },
+  sources: [MO_COMPANION_GUIDE],
 };
 
 /* Layer 7 — MO HealthNet contact & channel layer. Mined from this file's own
@@ -544,6 +583,7 @@ export const missouriVob: Record<string, VobExtension> = {
   'missouri-medicaid': {
     edi: missouriMedicaidEdi,
     codeGrid: missouriMedicaidCodeGrid,
+    stcMap: missouriMedicaidStc,
     rates: MO_MEDICAID_RATES,
     vobContact: missouriMedicaidContact,
     lastUpdated: ACCESS_DATE,
@@ -551,18 +591,21 @@ export const missouriVob: Record<string, VobExtension> = {
   'aetna-missouri': {
     edi: aetnaMissouriEdi,
     codeGrid: aetnaMissouriCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Missouri-specific 270/271 STC document found.'),
     vobContact: aetnaMissouriContact,
     lastUpdated: ACCESS_DATE,
   },
   'cigna-missouri': {
     edi: cignaMissouriEdi,
     codeGrid: cignaMissouriCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Missouri-specific override found.'),
     vobContact: cignaMissouriContact,
     lastUpdated: ACCESS_DATE,
   },
   'unitedhealthcare-missouri': {
     edi: uhcMissouriEdi,
     codeGrid: uhcMissouriCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Missouri-specific override found.'),
     vobContact: uhcMissouriContact,
     lastUpdated: ACCESS_DATE,
   },

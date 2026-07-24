@@ -50,7 +50,8 @@
      Policy) already verified in vob/georgia.ts — legitimately the
      same documents, not duplicated research.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { CAQH_CORE_STC_VOCAB, aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -534,6 +535,53 @@ const unitedhealthcareMdVobContact: VobContact = {
   sources: [UHC_PROVIDER_EXPRESS_CONTACT, UHC_PROVIDER_EXPRESS_PRIOR_AUTH],
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   maryland-medicaid: Carelon Behavioral Health is the CONFIRMED BHASO
+   administrator for MD Medicaid ABA (edi.bhCarveOut above, administrator/
+   abaRidesOn 'verified'). Carelon's own national 270/271 companion guide
+   (CARELON_NATIONAL_270271_CG, already cited in marylandMedicaidEdi.sources
+   above) states verbatim "Carelon treats all inquiries as Service Type Code
+   30" and that the 271 minimum response "is 1-Active Coverage or 6-
+   [Inactive]" on its direct EDI gateway — no service-level cost-share detail
+   at all. That guide is generic/national (no Maryland-specific variant was
+   located, the same caveat already logged for supportsRealtime in
+   marylandMedicaidEdi above), so applying it to the confirmed BHOMD/Carelon
+   hop is 'inferred,' not 'verified.' The MDH ABA Provider Manual separately
+   states Maryland is "a payment-in-full program: providers may not
+   balance-bill participants for covered or denied services" — i.e., $0
+   member cost-share for EPSDT ABA — the primary-source basis for
+   deductibleAppliesToAba:'no' and oopMaxApplies:false below. costShareType/
+   copayUnit ship 'unverified' rather than forced into copay/coinsurance:
+   the StcMap enum has no 'none' value, and neither option accurately
+   describes a $0-cost-share program. (src/data/payers/maryland.ts, the
+   Layer-0 prose file, was checked for an explicit "$0"/EPSDT-cost-share
+   citation and has none beyond this same payment-in-full/no-balance-billing
+   statement — reused here, not duplicated research.) */
+const marylandMedicaidStc: StcMap = {
+  abaBenefitBucket: '30',
+  deductibleAppliesToAba: 'no',
+  costShareType: 'unverified',
+  copayUnit: 'unverified',
+  oopMaxApplies: false,
+  quality271Score: 'low',
+  fieldStatus: {
+    abaBenefitBucket: 'inferred',
+    deductibleAppliesToAba: 'verified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'inferred',
+    quality271Score: 'inferred',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      "Carelon's national 270/271 companion guide (no Maryland-specific variant located) states its direct EDI gateway treats all inquiries as STC 30 and returns only active/inactive status — applied to the confirmed BHOMD/Carelon hop as 'inferred,' the same caveat already logged for supportsRealtime in edi.bhCarveOut above. Confirm directly with Carelon provider services (800-888-1965) or ProviderConnect onboarding.",
+    costShareType:
+      "MDH's ABA Provider Manual confirms Maryland is a payment-in-full program with no participant balance-billing (effectively $0 member cost-share), but the StcMap schema's costShareType enum (copay/coinsurance/plan-dependent/unverified) has no 'none' value to represent that — ships 'unverified' rather than a false copay/coinsurance selection. Confirm via Carelon provider services (800-888-1965) if a VOB tool needs a literal value here.",
+    copayUnit: 'Same schema gap as costShareType — moot at $0 cost-share, but no enum value represents that. Confirm via Carelon provider services if needed.',
+  },
+  sources: [CAQH_CORE_STC_VOCAB, CARELON_NATIONAL_270271_CG, MD_ABA_MANUAL],
+};
+
 /* ==================== export ==================== */
 
 export const marylandVob: Record<string, VobExtension> = {
@@ -541,14 +589,28 @@ export const marylandVob: Record<string, VobExtension> = {
     edi: marylandMedicaidEdi,
     codeGrid: marylandMedicaidCodeGrid,
     rates: marylandMedicaidRates,
+    stcMap: marylandMedicaidStc,
     vobContact: marylandMedicaidVobContact,
     lastUpdated: ACCESS_DATE,
   },
-  'aetna-maryland': { edi: aetnaMdEdi, codeGrid: aetnaMdCodeGrid, vobContact: aetnaMdVobContact, lastUpdated: ACCESS_DATE },
-  'cigna-maryland': { edi: cignaMdEdi, codeGrid: cignaMdCodeGrid, vobContact: cignaMdVobContact, lastUpdated: ACCESS_DATE },
+  'aetna-maryland': {
+    edi: aetnaMdEdi,
+    codeGrid: aetnaMdCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Maryland-specific 270/271 STC document found.'),
+    vobContact: aetnaMdVobContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-maryland': {
+    edi: cignaMdEdi,
+    codeGrid: cignaMdCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Maryland-specific override found.'),
+    vobContact: cignaMdVobContact,
+    lastUpdated: ACCESS_DATE,
+  },
   'unitedhealthcare-maryland': {
     edi: unitedhealthcareMdEdi,
     codeGrid: unitedhealthcareMdCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Maryland-specific override found.'),
     vobContact: unitedhealthcareMdVobContact,
     lastUpdated: ACCESS_DATE,
   },

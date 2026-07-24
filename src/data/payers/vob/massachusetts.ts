@@ -83,7 +83,8 @@
      Massachusetts-specific override of their coding/reimbursement
      mechanics was found for any of the three.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -784,6 +785,59 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (≤8 hrs)', []),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The MassHealth Standard Companion Guide (MASSHEALTH_270_271_CG, cited
+   above) documents Loop 2110C's managed-care plan-enrollment structure
+   (EB01/EB03/EB05) in detail but contains no service-type-code SUPPORT
+   TABLE — no listing of which STCs (30, MH, A4-A8, etc.) the 271 actually
+   returns financial detail for, and no statement on deductible/copay/
+   coinsurance treatment for ABA-flavored codes. None of the other
+   plan-specific EDI/claims documents already cited in this file
+   (WELLSENSE_EDI_CG, TUFTS_270_271_CG, MGB_CLAIMS_PAGE, the Carelon/Beacon
+   Fallon manual, or the Carelon national 270-271 guide) address STC support
+   or cost-share treatment either — all are EDI-transaction/claims-routing
+   documents, not STC/benefit-detail documents. masshealth-massachusetts-
+   medicaid and its six Medicaid-side guides (MBHP + the 5 ACO/MCO plans)
+   therefore ship fully 'unverified' rather than guessed from another
+   state's or family's pattern (docs/vob-build.md ground rule 3).
+   src/data/payers/massachusetts.ts (the Layer-0 prose file) was checked for
+   a cited EPSDT cost-share primary source (grepped for "EPSDT", "$0",
+   "cost share", "deductible", "copay") — it documents EPSDT covers ABA with
+   no dollar/unit-of-service CAPS, but no source there states a $0 member
+   cost-share/deductible figure, so deductibleAppliesToAba is NOT upgraded
+   to 'no' for any of these seven guides; it remains honestly 'unverified'. */
+
+function maMedicaidUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The MassHealth 270/271 companion guide documents managed-care plan-enrollment structure (Loop 2110C) but no service-type-code support table or ABA-specific cost-share detail. ${phoneNote}`,
+    },
+    sources: [MASSHEALTH_270_271_CG],
+  };
+}
+
+const massHealthMedicaidStc = maMedicaidUnverifiedStc('Confirm via MassHealth Customer Service for Providers, 1-800-841-2900.');
+const mbhpStc = maMedicaidUnverifiedStc('Confirm via Beacon/Carelon Member Services, 1-888-421-8861.');
+const fallonStc = maMedicaidUnverifiedStc("Confirm via Beacon/Carelon Member Services, 1-888-421-8861 (Fallon's ABA administrator).");
+const hneStc = maMedicaidUnverifiedStc("Confirm via Beacon/Carelon Member Services, 1-888-421-8861 (HNE BeHealthy Partnership's ABA administrator).");
+const wellsenseStc = maMedicaidUnverifiedStc('Confirm via WellSense Provider Service Center, 1-888-566-0008.');
+const tuftsStc = maMedicaidUnverifiedStc('Confirm via Point32Health provider services, 1-888-257-1985.');
+const mgbStc = maMedicaidUnverifiedStc('Confirm via Mass General Brigham Health Plan Provider Services, 1-855-444-4647, or Optum BH at 844-451-3518 (HMO/PPO) / 866-262-8067 (Medicare).');
+
 /* -------------------- Layer 7: contact & channel sources --------------------
    Sourcing notes for this layer (read before editing):
    - MBHP/Fallon/HNE: the Carelon/Beacon "Behavioral Health Policy and
@@ -1025,14 +1079,32 @@ const unitedhealthcareContact: VobContact = {
 /* ==================== export ==================== */
 
 export const massachusettsVob: Record<string, VobExtension> = {
-  'masshealth-massachusetts-medicaid': { edi: massHealthMedicaidEdi, codeGrid: massHealthMedicaidCodeGrid, rates: massHealthRates, vobContact: massHealthMedicaidContact, lastUpdated: ACCESS_DATE },
-  'mbhp-massachusetts': { edi: mbhpEdi, codeGrid: mbhpCodeGrid, vobContact: mbhpContact, lastUpdated: ACCESS_DATE },
-  'fallon-health-massachusetts': { edi: fallonEdi, codeGrid: fallonCodeGrid, vobContact: fallonContact, lastUpdated: ACCESS_DATE },
-  'health-new-england-massachusetts': { edi: hneEdi, codeGrid: hneCodeGrid, vobContact: hneContact, lastUpdated: ACCESS_DATE },
-  'wellsense-massachusetts': { edi: wellsenseEdi, codeGrid: wellsenseCodeGrid, vobContact: wellsenseContact, lastUpdated: ACCESS_DATE },
-  'tufts-health-together': { edi: tuftsEdi, codeGrid: tuftsCodeGrid, vobContact: tuftsContact, lastUpdated: ACCESS_DATE },
-  'mass-general-brigham-health-plan': { edi: mgbEdi, codeGrid: mgbCodeGrid, vobContact: mgbContact, lastUpdated: ACCESS_DATE },
-  'aetna-massachusetts': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
-  'cigna-massachusetts': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-massachusetts': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
+  'masshealth-massachusetts-medicaid': { edi: massHealthMedicaidEdi, codeGrid: massHealthMedicaidCodeGrid, rates: massHealthRates, stcMap: massHealthMedicaidStc, vobContact: massHealthMedicaidContact, lastUpdated: ACCESS_DATE },
+  'mbhp-massachusetts': { edi: mbhpEdi, codeGrid: mbhpCodeGrid, stcMap: mbhpStc, vobContact: mbhpContact, lastUpdated: ACCESS_DATE },
+  'fallon-health-massachusetts': { edi: fallonEdi, codeGrid: fallonCodeGrid, stcMap: fallonStc, vobContact: fallonContact, lastUpdated: ACCESS_DATE },
+  'health-new-england-massachusetts': { edi: hneEdi, codeGrid: hneCodeGrid, stcMap: hneStc, vobContact: hneContact, lastUpdated: ACCESS_DATE },
+  'wellsense-massachusetts': { edi: wellsenseEdi, codeGrid: wellsenseCodeGrid, stcMap: wellsenseStc, vobContact: wellsenseContact, lastUpdated: ACCESS_DATE },
+  'tufts-health-together': { edi: tuftsEdi, codeGrid: tuftsCodeGrid, stcMap: tuftsStc, vobContact: tuftsContact, lastUpdated: ACCESS_DATE },
+  'mass-general-brigham-health-plan': { edi: mgbEdi, codeGrid: mgbCodeGrid, stcMap: mgbStc, vobContact: mgbContact, lastUpdated: ACCESS_DATE },
+  'aetna-massachusetts': {
+    edi: aetnaEdi,
+    codeGrid: aetnaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Massachusetts-specific 270/271 STC document found.'),
+    vobContact: aetnaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-massachusetts': {
+    edi: cignaEdi,
+    codeGrid: cignaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Massachusetts-specific override found.'),
+    vobContact: cignaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-massachusetts': {
+    edi: unitedhealthcareEdi,
+    codeGrid: unitedhealthcareCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Massachusetts-specific override found.'),
+    vobContact: unitedhealthcareContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

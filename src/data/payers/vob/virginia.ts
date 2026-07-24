@@ -46,7 +46,8 @@
      business, so its codeGrid reflects that exclusion honestly rather
      than inventing PA verdicts. See its codeGrid notes.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { CAQH_CORE_STC_VOCAB, inheritFamilyStc, aetnaFamilyStc, cignaFamilyStc, uhcFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -810,6 +811,65 @@ const uhcVaCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcVaCommercialEntry(),
 };
 
+/* ==================== Layer 2 — STC interpretation maps ====================
+   The Commonwealth's MES 270/271 companion guide (VA_MES_270271_CG) was
+   fetched and read in full for Layer 1 above — but per its own content
+   summarized in virginiaMedicaidEdi.medicaid271Notes, it documents where
+   MCO/aid-category information appears and the real-time/batch eligibility
+   mechanics, NOT a service-type-code (STC) support table of the kind
+   Cigna's and UHC's national companion guides publish (which STCs the feed
+   populates with copay/coinsurance/deductible detail is simply not stated
+   anywhere in it). No DMAS- or MCO-specific STC table was located this pass
+   for any other reason either. virginia-medicaid and its 5 Cardinal Care
+   MCOs — which run DMAS's FFS service-authorization criteria/forms and have
+   no independently published 270/271 STC documentation of their own — ship
+   fully 'unverified' rather than guessed from another state's pattern or
+   from the national commercial family defaults (aetna/anthem/uhcFamilyStc
+   represent COMMERCIAL books of business, not this Medicaid managed-care
+   line, and must not be borrowed here even where a parent brand matches). */
+
+function vaMedicaidUnverifiedStc(phoneNote: string): StcMap {
+  return {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+    fieldStatus: {
+      abaBenefitBucket: 'unverified',
+      deductibleAppliesToAba: 'unverified',
+      costShareType: 'unverified',
+      copayUnit: 'unverified',
+      oopMaxApplies: 'unverified',
+      quality271Score: 'unverified',
+    },
+    verifyVia: {
+      abaBenefitBucket: `The Commonwealth's MES 270/271 companion guide (v2.2, read in full for Layer 1) documents MCO-segment location and eligibility-span mechanics but publishes no service-type-code support table — which STCs the feed populates with financial detail is not stated anywhere in it. ${phoneNote}`,
+    },
+    sources: [CAQH_CORE_STC_VOCAB, VA_MES_270271_CG],
+  };
+}
+
+const virginiaMedicaidStc = vaMedicaidUnverifiedStc(
+  "Confirm via DMAS MES EDI support (MESEDISupport@dmas.virginia.gov) or the general DMAS Provider Services line, 1-800-552-8627."
+);
+const aetnaBetterHealthVaStc = vaMedicaidUnverifiedStc(
+  'Confirm via Aetna Better Health of Virginia Provider Services, 1-800-279-1878 (TTY: 711).'
+);
+const anthemHkpStc = vaMedicaidUnverifiedStc(
+  'Confirm via Anthem HealthKeepers Plus Provider Services, 800-901-0020 (TTY/TDD: 711).'
+);
+const humanaVaStc = vaMedicaidUnverifiedStc(
+  'Confirm via Humana Healthy Horizons in Virginia Provider Services, 844-881-4482.'
+);
+const sentaraStc = vaMedicaidUnverifiedStc(
+  'Confirm via Sentara Community Plan Behavioral Health Provider Services, 757-552-7174 or 1-800-648-8420.'
+);
+const uhcCpVaStc = vaMedicaidUnverifiedStc(
+  'Confirm via UnitedHealthcare Community Plan of Virginia Provider Services, 877-842-3210, or Optum Behavioral Health, 877-614-0484.'
+);
+
 /* ==================== Layer 7 — contact & channel layer ====================
    scriptedQuestions are generated (not scraped): each list targets only what
    THIS guide's own edi/codeGrid/rates layers ship unverified/plan-dependent,
@@ -933,13 +993,31 @@ const uhcVaContact: VobContact = {
 /* ==================== export ==================== */
 
 export const virginiaVob: Record<string, VobExtension> = {
-  'virginia-medicaid': { edi: virginiaMedicaidEdi, codeGrid: dmasCodeGrid(), rates: virginiaMedicaidRates, vobContact: virginiaMedicaidContact, lastUpdated: ACCESS_DATE },
-  'aetna-better-health-virginia': { edi: aetnaBetterHealthVaEdi, codeGrid: aetnaBetterHealthVaCodeGrid, rates: mcoRates('Aetna Better Health of Virginia'), vobContact: aetnaBetterHealthVaContact, lastUpdated: ACCESS_DATE },
-  'anthem-healthkeepers-plus': { edi: anthemHkpEdi, codeGrid: anthemHkpCodeGrid, rates: mcoRates('Anthem HealthKeepers Plus'), vobContact: anthemHkpContact, lastUpdated: ACCESS_DATE },
-  'humana-healthy-horizons-virginia': { edi: humanaVaEdi, codeGrid: humanaVaCodeGrid, rates: mcoRates('Humana Healthy Horizons in Virginia'), vobContact: humanaVaContact, lastUpdated: ACCESS_DATE },
-  'sentara-community-plan': { edi: sentaraEdi, codeGrid: sentaraCodeGrid, rates: mcoRates('Sentara Community Plan'), vobContact: sentaraContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-community-plan-virginia': { edi: uhcCpVaEdi, codeGrid: uhcCpVaCodeGrid, rates: mcoRates('UnitedHealthcare Community Plan of Virginia'), vobContact: uhcCpVaContact, lastUpdated: ACCESS_DATE },
-  'aetna-virginia': { edi: aetnaVaEdi, codeGrid: aetnaVaCodeGrid, vobContact: aetnaVaContact, lastUpdated: ACCESS_DATE },
-  'cigna-virginia': { edi: cignaVaEdi, codeGrid: cignaVaCodeGrid, vobContact: cignaVaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-virginia': { edi: uhcVaEdi, codeGrid: uhcVaCodeGrid, vobContact: uhcVaContact, lastUpdated: ACCESS_DATE },
+  'virginia-medicaid': { edi: virginiaMedicaidEdi, codeGrid: dmasCodeGrid(), stcMap: virginiaMedicaidStc, rates: virginiaMedicaidRates, vobContact: virginiaMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-better-health-virginia': { edi: aetnaBetterHealthVaEdi, codeGrid: aetnaBetterHealthVaCodeGrid, stcMap: aetnaBetterHealthVaStc, rates: mcoRates('Aetna Better Health of Virginia'), vobContact: aetnaBetterHealthVaContact, lastUpdated: ACCESS_DATE },
+  'anthem-healthkeepers-plus': { edi: anthemHkpEdi, codeGrid: anthemHkpCodeGrid, stcMap: anthemHkpStc, rates: mcoRates('Anthem HealthKeepers Plus'), vobContact: anthemHkpContact, lastUpdated: ACCESS_DATE },
+  'humana-healthy-horizons-virginia': { edi: humanaVaEdi, codeGrid: humanaVaCodeGrid, stcMap: humanaVaStc, rates: mcoRates('Humana Healthy Horizons in Virginia'), vobContact: humanaVaContact, lastUpdated: ACCESS_DATE },
+  'sentara-community-plan': { edi: sentaraEdi, codeGrid: sentaraCodeGrid, stcMap: sentaraStc, rates: mcoRates('Sentara Community Plan'), vobContact: sentaraContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-community-plan-virginia': { edi: uhcCpVaEdi, codeGrid: uhcCpVaCodeGrid, stcMap: uhcCpVaStc, rates: mcoRates('UnitedHealthcare Community Plan of Virginia'), vobContact: uhcCpVaContact, lastUpdated: ACCESS_DATE },
+  'aetna-virginia': {
+    edi: aetnaVaEdi,
+    codeGrid: aetnaVaCodeGrid,
+    stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Virginia-specific 270/271 STC document found.'),
+    vobContact: aetnaVaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'cigna-virginia': {
+    edi: cignaVaEdi,
+    codeGrid: cignaVaCodeGrid,
+    stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Virginia-specific override found.'),
+    vobContact: cignaVaContact,
+    lastUpdated: ACCESS_DATE,
+  },
+  'unitedhealthcare-virginia': {
+    edi: uhcVaEdi,
+    codeGrid: uhcVaCodeGrid,
+    stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Virginia-specific override found.'),
+    vobContact: uhcVaContact,
+    lastUpdated: ACCESS_DATE,
+  },
 };

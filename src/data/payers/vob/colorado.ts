@@ -43,7 +43,8 @@
      10-16-104(1.4) mandate layer, which lives in the prose guide, not
      in these VOB layers.
    ================================================================ */
-import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef } from './types.js';
+import type { VobExtension, EdiRouting, CodeGridEntry, RateTable, VobContact, SourceRef, StcMap } from './types.js';
+import { cignaFamilyStc, uhcFamilyStc, aetnaFamilyStc, inheritFamilyStc } from './stc-defaults.js';
 
 const ACCESS_DATE = '2026-07-23';
 
@@ -496,6 +497,44 @@ const unitedhealthcareCodeGrid: Record<string, CodeGridEntry> = {
   '0373T': uhcEntry('32 units/day (<=8 hrs)', []),
 };
 
+/* ==================== Layer 2 — service-type-code interpretation map ====================
+   colorado-medicaid: the retrieved Colorado interChange 270/271 Companion
+   Guide (Gainwell, March 2024 v2.2 — CO_INTERCHANGE_COMPANION_GUIDE above)
+   documents the MCO/RAE segment location (medicaid271Notes) but its
+   service-type-code (STC) support table for ABA-relevant benefit buckets
+   (30/MH/A4/A6 etc.) was not captured from the pages retrieved this pass,
+   and hcpf.colorado.gov 403s automated fetches of the PBT Billing
+   Manual/fee-schedule PDFs that might otherwise corroborate a member
+   cost-share answer. Per the "never guess" rule this ships fully
+   'unverified', the same treatment already given to
+   medicaid271Notes.mcoCarrierCodes in the edi section above. Colorado's
+   Medicaid EPSDT/PBT benefit is plausibly $0 cost-share to the member (as
+   is typical for EPSDT programs nationally), but no primary Colorado-
+   specific source stating that figure was located in
+   src/data/payers/colorado.ts or any source cited in this file — left
+   unverified rather than assumed. */
+const coloradoMedicaidStc: StcMap = {
+  abaBenefitBucket: 'unverified',
+  deductibleAppliesToAba: 'unverified',
+  costShareType: 'unverified',
+  copayUnit: 'unverified',
+  oopMaxApplies: 'unverified',
+  quality271Score: 'unverified',
+  fieldStatus: {
+    abaBenefitBucket: 'unverified',
+    deductibleAppliesToAba: 'unverified',
+    costShareType: 'unverified',
+    copayUnit: 'unverified',
+    oopMaxApplies: 'unverified',
+    quality271Score: 'unverified',
+  },
+  verifyVia: {
+    abaBenefitBucket:
+      "The retrieved Colorado interChange 270/271 Companion Guide (Gainwell, March 2024 v2.2) documents MCO/RAE segment location but no service-type-code support table for ABA-relevant benefit buckets was captured from it this pass, and hcpf.colorado.gov 403s automated fetches of the PBT Billing Manual/fee-schedule PDFs that might otherwise confirm member cost-share. Confirm via the Colorado interChange (Gainwell) EDI help desk, HCPF provider services, or ColoradoPAR.com (Acentra).",
+  },
+  sources: [CO_INTERCHANGE_COMPANION_GUIDE],
+};
+
 /* ==================== vobContact (Layer 7) ==================== */
 
 /* colorado-medicaid: phone/fax verified live this pass on hcpf.colorado.gov/par
@@ -588,8 +627,8 @@ const unitedhealthcareContact: VobContact = {
 /* ==================== export ==================== */
 
 export const coloradoVob: Record<string, VobExtension> = {
-  'colorado-medicaid': { edi: coloradoMedicaidEdi, codeGrid: coloradoMedicaidCodeGrid, rates: coloradoMedicaidRates, vobContact: coloradoMedicaidContact, lastUpdated: ACCESS_DATE },
-  'aetna-colorado': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
-  'cigna-colorado': { edi: cignaEdi, codeGrid: cignaCodeGrid, vobContact: cignaContact, lastUpdated: ACCESS_DATE },
-  'unitedhealthcare-colorado': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
+  'colorado-medicaid': { edi: coloradoMedicaidEdi, codeGrid: coloradoMedicaidCodeGrid, rates: coloradoMedicaidRates, stcMap: coloradoMedicaidStc, vobContact: coloradoMedicaidContact, lastUpdated: ACCESS_DATE },
+  'aetna-colorado': { edi: aetnaEdi, codeGrid: aetnaCodeGrid, stcMap: inheritFamilyStc(aetnaFamilyStc, 'Inherited from the Aetna family default (docs/vob-build.md Layer 2) — no Colorado-specific 270/271 STC document found.'), vobContact: aetnaContact, lastUpdated: ACCESS_DATE },
+  'cigna-colorado': { edi: cignaEdi, codeGrid: cignaCodeGrid, stcMap: inheritFamilyStc(cignaFamilyStc, 'Inherited from the Cigna/Evernorth family default (docs/vob-build.md Layer 2) — national companion guide, no Colorado-specific override found.'), vobContact: cignaContact, lastUpdated: ACCESS_DATE },
+  'unitedhealthcare-colorado': { edi: unitedhealthcareEdi, codeGrid: unitedhealthcareCodeGrid, stcMap: inheritFamilyStc(uhcFamilyStc, 'Inherited from the UnitedHealthcare/Optum family default (docs/vob-build.md Layer 2) — national companion guide, no Colorado-specific override found.'), vobContact: unitedhealthcareContact, lastUpdated: ACCESS_DATE },
 };
