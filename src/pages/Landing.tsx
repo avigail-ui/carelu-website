@@ -3394,7 +3394,8 @@ function CtaFooter() {
             </span>
           </div>
           <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'center' }}>
-            <a href="#" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
+            <a href="/privacy" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Privacy Policy</a>
+            <a href="/cookies" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Cookie Policy</a>
             <a href="/terms" style={{ fontSize: 12, color: 'rgba(250,248,243,0.7)', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.18)' }}>Terms</a>
             <button
               onClick={() => window.careluOpenCookiePrefs?.()}

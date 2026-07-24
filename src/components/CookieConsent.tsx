@@ -105,7 +105,7 @@ export default function CookieConsent() {
               <p style={{ margin: 0, fontFamily: 'var(--font-body)', fontSize: 13, lineHeight: 1.5, color: INK_SOFT }}>
                 We use cookies to run our site, analyze traffic, and improve our marketing.
                 By clicking “Accept all,” you consent to our use of cookies. Read our{' '}
-                <a href="/terms" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'underline' }}>Cookie&nbsp;Policy</a>.
+                <a href="/cookies" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'underline' }}>Cookie&nbsp;Policy</a>.
               </p>
             </div>
             <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -149,7 +149,7 @@ export default function CookieConsent() {
             <p style={{ margin: '10px 0 4px', fontFamily: 'var(--font-body)', fontSize: 13.5, lineHeight: 1.6, color: INK_SOFT }}>
               We use cookies to help you navigate efficiently and perform certain functions.
               Choose which categories you consent to below. See our{' '}
-              <a href="/terms" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'underline' }}>Cookie&nbsp;Policy</a>.
+              <a href="/cookies" style={{ color: GREEN_DK, fontWeight: 600, textDecoration: 'underline' }}>Cookie&nbsp;Policy</a>.
             </p>
 
             <div style={{ margin: '18px 0 4px' }}>
