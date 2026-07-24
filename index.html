@@ -136,6 +136,14 @@
       gtag('js', new Date());
       gtag('config', 'AW-17268711903');
     </script>
+
+    <!-- Snitcher (Radar) — B2B visitor identification. waitForConsent:true, so
+         before consent it only keeps data for the current visit; once Marketing
+         consent is granted the cookie banner calls Monaco.giveCookieConsent()
+         (src/components/CookieConsent.tsx) to persist across sessions. -->
+    <script>
+      !function(e){"use strict";var a=e&&e.namespace;if(a&&e.profileId&&e.cdn){var r=window[a];if(r&&Array.isArray(r)||(r=window[a]=[]),!r.initialized&&!r._loaded)if(r._loaded)console&&console.warn("[Radar] Duplicate initialization attempted");else{r._loaded=!0;["track","page","identify","group","alias","ready","debug","on","off","once","trackClick","trackSubmit","trackLink","trackForm","pageview","screen","reset","register","setAnonymousId","addSourceMiddleware","addIntegrationMiddleware","addDestinationMiddleware"].forEach((function(e){var i;r[e]=(i=e,function(){var e=window[a];if(e.initialized)return e[i].apply(e,arguments);var r=[].slice.call(arguments);return r.unshift(i),e.push(r),e})})),r.bootstrap=function(){var a=document.createElement("script");a.async=!0,a.type="text/javascript",a.id="__radar__",a.dataset.settings=JSON.stringify(e),a.src="https://"+e.cdn+"/releases/latest/radar.min.js";var r=document.scripts[0];r.parentNode.insertBefore(a,r)},r.bootstrap()}}else"undefined"!=typeof console&&console.error("[Radar] Configuration incomplete")}({"cdn":"cdn.snitcher.com","apiEndpoint":"radar.snitcher.com","profileId":"rovGMMdRGvF","namespace":"Monaco","waitForConsent":true});
+    </script>
   </head>
   <body>
     <div id="root"></div>

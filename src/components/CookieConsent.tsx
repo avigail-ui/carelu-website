@@ -31,6 +31,7 @@ declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
     careluOpenCookiePrefs?: () => void;
+    Monaco?: { ready?: (cb: () => void) => void; giveCookieConsent?: () => void };
   }
 }
 
@@ -41,6 +42,11 @@ function applyConsent(categories: Categories) {
     ad_personalization: categories.marketing ? 'granted' : 'denied',
     analytics_storage: categories.analytics ? 'granted' : 'denied',
   });
+  // Snitcher (Radar) runs with waitForConsent — persist its storage only once
+  // the visitor accepts Marketing cookies. ready() queues until the SDK loads.
+  if (categories.marketing) {
+    window.Monaco?.ready?.(() => window.Monaco?.giveCookieConsent?.());
+  }
 }
 
 export default function CookieConsent() {
