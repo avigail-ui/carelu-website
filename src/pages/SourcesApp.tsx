@@ -376,20 +376,21 @@ function FulfilledRow({ req, cardRef, highlighted }: { req: SourceRequest; cardR
 /* ---- login --------------------------------------------------------- */
 
 function LoginScreen({ onSuccess, onNotConfigured }: { onSuccess: () => void; onNotConfigured: (msg: string) => void }) {
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!password || busy) return;
+    if (!username || !password || busy) return;
     setBusy(true);
     setError('');
     try {
       const res = await fetch('/api/sources/login', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ username, password }),
       });
       if (res.ok) {
         onSuccess();
@@ -400,7 +401,7 @@ function LoginScreen({ onSuccess, onNotConfigured }: { onSuccess: () => void; on
         onNotConfigured(body.error ?? 'The sources app is not configured yet.');
         return;
       }
-      setError(res.status === 401 ? 'Incorrect password.' : 'Something went wrong. Try again.');
+      setError(res.status === 401 ? 'Incorrect username or password.' : 'Something went wrong. Try again.');
     } catch {
       setError('Network error. Try again.');
     } finally {
@@ -413,13 +414,32 @@ function LoginScreen({ onSuccess, onNotConfigured }: { onSuccess: () => void; on
       <form onSubmit={submit} style={{ width: '100%', maxWidth: 400, background: '#fff', borderRadius: 20, padding: 'clamp(28px, 4vw, 40px)', boxShadow: '0 12px 48px rgba(0,0,0,0.08)' }}>
         <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 26, width: 'auto', display: 'block', margin: '0 auto 22px', opacity: 0.9 }} />
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 400, color: INK, textAlign: 'center', margin: '0 0 6px', letterSpacing: '-0.01em' }}>Source Documents</h1>
-        <p style={{ fontSize: 13.5, color: MUTE, textAlign: 'center', margin: '0 0 24px', lineHeight: 1.5 }}>Enter the team password to upload payer-source documents.</p>
+        <p style={{ fontSize: 13.5, color: MUTE, textAlign: 'center', margin: '0 0 24px', lineHeight: 1.5 }}>Sign in to upload payer-source documents.</p>
+        <input
+          type="text"
+          value={username}
+          autoFocus
+          autoComplete="username"
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Username"
+          style={{
+            width: '100%',
+            boxSizing: 'border-box',
+            fontFamily: 'var(--font-body)',
+            fontSize: 15,
+            padding: '13px 16px',
+            borderRadius: 12,
+            border: '1px solid rgba(43,42,38,0.18)',
+            outline: 'none',
+            marginBottom: 12,
+          }}
+        />
         <input
           type="password"
           value={password}
-          autoFocus
+          autoComplete="current-password"
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Team password"
+          placeholder="Password"
           style={{
             width: '100%',
             boxSizing: 'border-box',
