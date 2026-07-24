@@ -9,7 +9,7 @@ import { json, requireConfig, isResponse, passwordMatches, signToken, sessionCoo
    ================================================================ */
 
 export async function POST(request: Request): Promise<Response> {
-  const cfg = requireConfig();
+  const cfg = requireConfig('auth');
   if (isResponse(cfg)) return cfg;
 
   let body: { username?: unknown; password?: unknown };

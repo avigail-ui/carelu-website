@@ -47,12 +47,16 @@ export interface SourcesConfig {
 }
 
 // The env vars the operator must set in Vercel. Named here (only) so the
-// 503 message can point at the exact missing one.
-const REQUIRED_VARS = ['SOURCES_PASSWORD', 'SOURCES_SESSION_SECRET', 'GH_SOURCES_TOKEN'] as const;
+// 503 message can point at the exact missing one. Login/logout need only the
+// auth vars — GH_SOURCES_TOKEN gates the data endpoints, so the team can sign
+// in (and see the setup notice) before the GitHub token is configured.
+const AUTH_VARS = ['SOURCES_PASSWORD', 'SOURCES_SESSION_SECRET'] as const;
+const REQUIRED_VARS = [...AUTH_VARS, 'GH_SOURCES_TOKEN'] as const;
 
 // Returns the resolved config, or a 503 Response naming the first missing var.
-export function requireConfig(): SourcesConfig | Response {
-  for (const name of REQUIRED_VARS) {
+export function requireConfig(scope: 'auth' | 'full' = 'full'): SourcesConfig | Response {
+  const vars = scope === 'auth' ? AUTH_VARS : REQUIRED_VARS;
+  for (const name of vars) {
     if (!process.env[name]) {
       return json({ error: `sources app not configured (missing ${name})`, notConfigured: true }, 503);
     }
@@ -60,7 +64,7 @@ export function requireConfig(): SourcesConfig | Response {
   return {
     password: process.env.SOURCES_PASSWORD as string,
     secret: process.env.SOURCES_SESSION_SECRET as string,
-    token: process.env.GH_SOURCES_TOKEN as string,
+    token: (process.env.GH_SOURCES_TOKEN as string) ?? '',
   };
 }
 
