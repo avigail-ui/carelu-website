@@ -12,7 +12,7 @@ import { useSeo } from '../hooks/useSeo';
 const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const MUTED = 'rgba(43,42,38,0.72)';
-const UPDATED = 'July 24, 2026';
+const UPDATED = 'July 31, 2026';
 
 function H2({ id, children }: { id?: string; children: React.ReactNode }) {
   return (
@@ -62,6 +62,9 @@ export default function PrivacyPolicy() {
           provider &mdash; including any Protected Health Information (PHI) &mdash; is governed by our{' '}
           <a href="/terms" style={{ color: '#2e5a26', fontWeight: 600 }}>Terms of Service</a> and, where applicable, a
           signed Business Associate Agreement (BAA), not by this Site policy. We do not collect PHI through this Site.
+          One exception: our handling of data from email accounts a provider connects to the Carelu product (Google or
+          Microsoft) is described in <a href="#connected-email" style={{ color: '#2e5a26', fontWeight: 600 }}>Connected
+          email accounts</a> below.
         </P>
 
         <H2>Information we collect</H2>
@@ -100,6 +103,47 @@ export default function PrivacyPolicy() {
           Some advertising and analytics cookies may constitute a &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of personal
           information under certain U.S. state privacy laws. You control these through the cookie banner and the
           <B> Cookie preferences</B> link in the footer.
+        </P>
+
+        <H2 id="connected-email">Connected email accounts (Google and Microsoft)</H2>
+        <P>
+          Providers using the Carelu product may connect a Google (Gmail) or Microsoft (Outlook) email account. With the
+          account holder&rsquo;s permission, Carelu accesses that mailbox only to provide user-facing features the
+          provider has enabled &mdash; such as sending intake follow-up emails from the provider&rsquo;s address, reading
+          replies from families so they appear in the provider&rsquo;s Carelu inbox, and organizing those messages (for
+          example, marking them as read or labeled once handled). Providers can disconnect a mailbox at any time from
+          their Carelu settings, which revokes our access; previously synced data is deleted on request.
+        </P>
+        <P>
+          Carelu&rsquo;s use and transfer of information received from Google APIs adheres to the{' '}
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer"
+            style={{ color: '#2e5a26', fontWeight: 600 }}>Google API Services User Data Policy</a>, including the{' '}
+          <B>Limited Use</B> requirements. Specifically:
+        </P>
+        <ul style={{ margin: '0 0 14px', paddingLeft: 22 }}>
+          <LI>we only use Google user data to provide and improve the user-facing mailbox features described above;</LI>
+          <LI>we do not transfer Google user data to third parties except as necessary to provide these features, to
+            comply with applicable law, or as part of a merger or acquisition with notice;</LI>
+          <LI>we do not use Google user data for advertising;</LI>
+          <LI>we do not allow humans to read Google user data unless we have the account holder&rsquo;s affirmative
+            agreement, it is necessary for security or compliance purposes, or the data has been aggregated and
+            anonymized; and</LI>
+          <LI>we do not use Google Workspace or Gmail data to develop, improve, or train generalized artificial
+            intelligence or machine-learning models.</LI>
+        </ul>
+        <P>
+          Microsoft account data accessed through Microsoft Graph is handled under the same restrictions. OAuth tokens
+          for connected accounts are stored encrypted and are never shared.
+        </P>
+
+        <H2>SMS / text messaging</H2>
+        <P>
+          Families may receive text messages from a provider via Carelu only after providing consent &mdash; for example,
+          by submitting a form or chat conversation that discloses SMS follow-up, or by texting in first. Message
+          frequency varies; message and data rates may apply. Reply <B>STOP</B> to opt out at any time and <B>HELP</B>{' '}
+          for help. <B>No mobile opt-in data is shared with third parties or affiliates for marketing or promotional
+          purposes.</B> Text messaging originator opt-in data and consent are not shared with any third parties, except
+          as necessary to deliver the messages (e.g., our SMS carrier partners) or as required by law.
         </P>
 
         <H2>Cookies and your choices</H2>
