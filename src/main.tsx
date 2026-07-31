@@ -14,6 +14,8 @@ import SolutionsPage from './pages/SolutionsPage'
 import TermsPage from './pages/TermsPage'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CookiePolicy from './pages/CookiePolicy'
+import LeadTrapPrivacy from './pages/LeadTrapPrivacy'
+import LeadTrapTerms from './pages/LeadTrapTerms'
 import Company from './pages/Company'
 import CareluCompany from './pages/CareluCompany'
 import CookieConsent from './components/CookieConsent'
@@ -86,8 +88,8 @@ createRoot(document.getElementById('root')!).render(
         ))}
         {/* legacy /compare URLs 301 into integrations */}
         <Route path="/compare/:slug" element={<CompareRedirect />} />
-        <Route path="/terms" element={<TermsPage />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={isCareluDomain ? <TermsPage /> : <LeadTrapTerms />} />
+        <Route path="/privacy" element={isCareluDomain ? <PrivacyPolicy /> : <LeadTrapPrivacy />} />
         <Route path="/cookies" element={<CookiePolicy />} />
         <Route path="/brand" element={<BrandProposal />} />
         {/* --- V2 sandbox routes --- */}
@@ -95,7 +97,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/v2/carelu" element={<LandingV2 />} />
         <Route path="/v2/company" element={<CompanyV2 />} />
       </Routes>
-      <CookieConsent />
+      {isCareluDomain && <CookieConsent />}
     </BrowserRouter>
   </StrictMode>,
 )

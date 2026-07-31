@@ -1,32 +1,34 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSeo } from '../hooks/useSeo';
 
 const accent = '#3a8ab0';
 
-/* Outlined "Explore →" pill that inverts on hover */
-function Pill({ to, label, light }: { to: string; label: string; light: boolean }) {
+/* Outlined "Explore →" pill that inverts on hover. `external` renders a plain
+   <a> (used for the Carelu card, which points at the product site carelu.com). */
+function Pill({ to, label, light, external }: { to: string; label: string; light: boolean; external?: boolean }) {
   const [h, setH] = useState(false);
   const base = light ? '#fff' : accent;
-  return (
-    <Link
-      to={to}
-      onMouseEnter={() => setH(true)}
-      onMouseLeave={() => setH(false)}
-      style={{
-        flexShrink: 0, textDecoration: 'none', whiteSpace: 'nowrap',
-        display: 'inline-flex', alignItems: 'center', gap: 8,
-        fontSize: 14, fontWeight: 600,
-        padding: '11px 20px', borderRadius: 100,
-        border: `1px solid ${h ? base : (light ? 'rgba(255,255,255,0.55)' : 'rgba(58,138,176,0.55)')}`,
-        background: h ? base : 'transparent',
-        color: h ? (light ? '#1A2E1F' : '#0a0a0c') : (light ? '#fff' : '#cfe6f2'),
-        transition: 'all 0.25s cubic-bezier(0.16,1,0.3,1)',
-      }}
-    >
+  const style = {
+    flexShrink: 0, textDecoration: 'none', whiteSpace: 'nowrap',
+    display: 'inline-flex', alignItems: 'center', gap: 8,
+    fontSize: 14, fontWeight: 600,
+    padding: '11px 20px', borderRadius: 100,
+    border: `1px solid ${h ? base : (light ? 'rgba(255,255,255,0.55)' : 'rgba(58,138,176,0.55)')}`,
+    background: h ? base : 'transparent',
+    color: h ? (light ? '#1A2E1F' : '#0a0a0c') : (light ? '#fff' : '#cfe6f2'),
+    transition: 'all 0.25s cubic-bezier(0.16,1,0.3,1)',
+  } as const;
+  const inner = (
+    <>
       {label}
       <span style={{ display: 'inline-block', transform: h ? 'translateX(4px)' : 'none', transition: 'transform 0.25s' }}>→</span>
-    </Link>
+    </>
   );
+  const handlers = { onMouseEnter: () => setH(true), onMouseLeave: () => setH(false) };
+  return external
+    ? <a href={to} {...handlers} style={style}>{inner}</a>
+    : <Link to={to} {...handlers} style={style}>{inner}</Link>;
 }
 
 /* ----- product mock: Carelu intake chat (light) ----- */
@@ -101,6 +103,11 @@ function SuiteMock() {
 }
 
 export default function Gateway() {
+  useSeo({
+    title: 'LeadTrap — Agentic infrastructure for growth',
+    description: 'LeadTrap builds vertical AI front offices that capture, qualify, and complete every inquiry — for the industries that run on intake. Maker of Carelu, AI intake for ABA and behavioral health.',
+    canonical: 'https://leadtrap.com/',
+  });
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0c', color: '#fff', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse 55% 40% at 50% 16%, rgba(58,138,176,0.10), transparent 70%)' }} />
@@ -144,7 +151,7 @@ export default function Gateway() {
                   Captures, qualifies, and completes every family's intake across every channel — built to never miss a lead.
                 </p>
               </div>
-              <Pill to="/carelu" label="Explore Carelu" light />
+              <Pill to="https://carelu.com" label="Explore Carelu" light external />
             </div>
             <div style={{ marginTop: 'auto', paddingTop: 28 }}>
               <CareluMock />

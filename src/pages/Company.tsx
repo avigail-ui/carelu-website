@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom';
+import { useSeo } from '../hooks/useSeo';
 
 const accent = '#3a8ab0';
 const W = { maxWidth: 820, margin: '0 auto', padding: '0 28px' };
 
 export default function Company() {
+  useSeo({
+    title: 'LeadTrap — The AI front office for service businesses',
+    description: 'LeadTrap builds the AI front office that captures every lead, qualifies it, and carries it to a complete record — the company behind Carelu.',
+    canonical: 'https://leadtrap.com/company',
+  });
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0c', color: '#fff', overflow: 'hidden' }}>
-      <header style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '26px 28px' }}>
+      <header style={{ maxWidth: 1320, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 32px' }}>
         <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <img src="/logo.jpeg" alt="" style={{ height: 28, width: 28, borderRadius: 7 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 19, color: '#fff', letterSpacing: '-0.02em' }}>LeadTrap</span>
         </Link>
-        <Link to="/carelu" style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Carelu →</Link>
+        <a href="https://carelu.com" style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Carelu →</a>
       </header>
 
       <main style={{ ...W, paddingTop: 'clamp(56px, 11vw, 130px)', paddingBottom: 120 }}>
