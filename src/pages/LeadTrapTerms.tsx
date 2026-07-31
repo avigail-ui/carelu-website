@@ -1,24 +1,28 @@
 import { Link } from 'react-router-dom';
 import { useSeo } from '../hooks/useSeo';
+import { careluRevealed } from '../lib/careluReveal';
 
 /* ================================================================
    TERMS OF SERVICE — LeadTrap, Inc. (leadtrap.com)
    Product-level terms for the LeadTrap platform. Served on the
    leadtrap.com host; carelu.com serves TermsPage.tsx.
+   Branding mirrors the LeadTrap homepage: dark #0a0a0c ground,
+   DM Sans (var(--font-body)), teal accent.
    Draft — have counsel review before treating as authoritative.
    ================================================================ */
 
-const INK = '#1A1A1A';
-const BONE = '#FAF8F3';
-const MUTED = 'rgba(43,42,38,0.72)';
+const BG = '#0a0a0c';
+const accent = '#3a8ab0';
+const MUTED = 'rgba(255,255,255,0.6)';
+const FAINT = 'rgba(255,255,255,0.4)';
+const BORDER = 'rgba(255,255,255,0.1)';
 const EFFECTIVE = 'July 31, 2026';
-const accent = '#2f6f8f';
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
     <h2 style={{
-      fontFamily: 'var(--font-display)', fontSize: 25, fontWeight: 400,
-      color: INK, letterSpacing: '-0.02em', margin: '42px 0 14px',
+      fontFamily: 'var(--font-body)', fontSize: 21, fontWeight: 600,
+      color: '#fff', letterSpacing: '-0.02em', margin: '44px 0 14px',
     }}>{children}</h2>
   );
 }
@@ -28,33 +32,37 @@ function P({ children }: { children: React.ReactNode }) {
 const link = { color: accent, fontWeight: 600, textDecoration: 'none' };
 
 export default function LeadTrapTerms() {
+  const revealed = careluRevealed();
   useSeo({
     title: 'Terms of Service — LeadTrap',
     description: 'The terms governing access to and use of the LeadTrap platform, websites, and related chat, phone, SMS, and email services.',
     canonical: 'https://leadtrap.com/terms',
   });
   return (
-    <div style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
-      <header style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '22px clamp(20px, 5vw, 40px)' }}>
+    <div style={{ background: BG, color: '#fff', minHeight: '100vh' }}>
+      <header style={{ maxWidth: 1320, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 32px' }}>
         <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src="/logo.jpeg" alt="" style={{ height: 26, width: 26, borderRadius: 6 }} />
-          <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 18, color: INK, letterSpacing: '-0.02em' }}>LeadTrap</span>
+          <img src="/logo.jpeg" alt="" style={{ height: 28, width: 28, borderRadius: 7 }} />
+          <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 19, color: '#fff', letterSpacing: '-0.02em' }}>LeadTrap</span>
         </Link>
+        {revealed && <a href="https://carelu.com" style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Carelu →</a>}
       </header>
 
-      <main style={{ maxWidth: 760, margin: '0 auto', padding: 'clamp(40px, 6vw, 70px) clamp(20px, 5vw, 40px) 90px' }}>
-        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4.5vw, 54px)', fontWeight: 400, color: INK, letterSpacing: '-0.025em', lineHeight: 1.1, margin: 0 }}>
+      <main style={{ maxWidth: 760, margin: '0 auto', padding: 'clamp(40px, 6vw, 72px) clamp(20px, 5vw, 40px) 90px' }}>
+        <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: accent }}>Legal</span>
+        <h1 style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(34px, 4.4vw, 52px)', fontWeight: 600, color: '#fff', letterSpacing: '-0.03em', lineHeight: 1.08, margin: '14px 0 0' }}>
           Terms of Service
         </h1>
-        <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.55)', margin: '14px 0 0' }}>
-          LeadTrap, Inc. dba Carelu &middot; Effective date: {EFFECTIVE}
+        <p style={{ fontSize: 14, color: FAINT, margin: '16px 0 0' }}>
+          LeadTrap, Inc.{revealed ? ' dba Carelu' : ''} · Effective date: {EFFECTIVE}
         </p>
-        <div style={{ height: 1, background: 'rgba(43,42,38,0.12)', margin: '36px 0 8px' }} />
+        <div style={{ height: 1, background: BORDER, margin: '36px 0 8px' }} />
 
         <P>
           These Terms of Service (&ldquo;Terms&rdquo;) govern access to and use of the LeadTrap platform, websites, and
-          related services (the &ldquo;Services&rdquo;) provided by LeadTrap, Inc., a Delaware corporation doing business
-          as Carelu (&ldquo;LeadTrap&rdquo;). By using the Services you agree to these Terms.
+          related services (the &ldquo;Services&rdquo;) provided by LeadTrap, Inc., a Delaware
+          corporation{revealed ? ' doing business as Carelu' : ''} (&ldquo;LeadTrap&rdquo;). By using the Services you
+          agree to these Terms.
         </P>
 
         <H2>1. The Services</H2>
@@ -125,12 +133,12 @@ export default function LeadTrapTerms() {
           Ave, STE 62431, New York, NY 10016.</P>
       </main>
 
-      <footer style={{ borderTop: '1px solid rgba(43,42,38,0.08)', padding: '28px 0' }}>
+      <footer style={{ borderTop: `1px solid ${BORDER}`, padding: '28px 0' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 clamp(20px, 5vw, 40px)', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <Link to="/" style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 15, color: INK, textDecoration: 'none' }}>LeadTrap</Link>
-          <span style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
-            <a href="/privacy" style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.6)', textDecoration: 'none' }}>Privacy</a>
-            <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)' }}>© {new Date().getFullYear()} LeadTrap, Inc.</span>
+          <Link to="/" style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 15, color: '#fff', textDecoration: 'none' }}>LeadTrap</Link>
+          <span style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+            <a href="/privacy" style={{ fontSize: 12.5, color: FAINT, textDecoration: 'none' }}>Privacy</a>
+            <span style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.3)' }}>© {new Date().getFullYear()} LeadTrap</span>
           </span>
         </div>
       </footer>

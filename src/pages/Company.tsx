@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useSeo } from '../hooks/useSeo';
+import { careluRevealed } from '../lib/careluReveal';
 
 const accent = '#3a8ab0';
 const W = { maxWidth: 820, margin: '0 auto', padding: '0 28px' };
 
 export default function Company() {
+  const revealed = careluRevealed();
   useSeo({
     title: 'LeadTrap — The AI front office for service businesses',
     description: 'LeadTrap builds the AI front office that captures every lead, qualifies it, and carries it to a complete record — the company behind Carelu.',
@@ -17,7 +19,7 @@ export default function Company() {
           <img src="/logo.jpeg" alt="" style={{ height: 28, width: 28, borderRadius: 7 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 19, color: '#fff', letterSpacing: '-0.02em' }}>LeadTrap</span>
         </Link>
-        <a href="https://carelu.com" style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Carelu →</a>
+        {revealed && <a href="https://carelu.com" style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Carelu →</a>}
       </header>
 
       <main style={{ ...W, paddingTop: 'clamp(56px, 11vw, 130px)', paddingBottom: 120 }}>
@@ -44,13 +46,22 @@ export default function Company() {
 
         <div style={{ marginTop: 56 }}>
           <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: accent }}>Our flagship product</span>
-          <Link to="/carelu" style={{ display: 'block', marginTop: 16, textDecoration: 'none', padding: '32px', borderRadius: 18, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 30, color: '#fff' }}>Carelu</div>
-            <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, marginTop: 10, maxWidth: 580 }}>
-              The AI intake and lead-generation system for ABA and behavioral health providers — answering every family across every channel, qualifying them on contact, and completing the intake your coordinators used to chase for weeks.
+          {revealed ? (
+            <a href="https://carelu.com" style={{ display: 'block', marginTop: 16, textDecoration: 'none', padding: '32px', borderRadius: 18, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 30, color: '#fff' }}>Carelu</div>
+              <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, marginTop: 10, maxWidth: 580 }}>
+                The AI intake and lead-generation system for ABA and behavioral health providers — answering every family across every channel, qualifying them on contact, and completing the intake your coordinators used to chase for weeks.
+              </div>
+              <div style={{ fontSize: 14, fontWeight: 500, color: accent, marginTop: 18 }}>Visit Carelu →</div>
+            </a>
+          ) : (
+            <div style={{ marginTop: 16, padding: '32px', borderRadius: 18, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontFamily: 'var(--font-body)', fontSize: 26, fontWeight: 600, color: '#fff', letterSpacing: '-0.02em' }}>Coming soon</div>
+              <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, marginTop: 10, maxWidth: 580 }}>
+                Our first vertical AI front office is in stealth. We&rsquo;ll share more soon.
+              </div>
             </div>
-            <div style={{ fontSize: 14, fontWeight: 500, color: accent, marginTop: 18 }}>Visit Carelu →</div>
-          </Link>
+          )}
         </div>
 
         <div style={{ marginTop: 72, textAlign: 'center' }}>
@@ -59,8 +70,10 @@ export default function Company() {
         </div>
       </main>
 
-      <footer style={{ textAlign: 'center', padding: '28px', fontSize: 12, color: 'rgba(255,255,255,0.3)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-        © {new Date().getFullYear()} LeadTrap
+      <footer style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 18, padding: '28px', fontSize: 12, color: 'rgba(255,255,255,0.3)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <a href="/privacy" style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}>Privacy</a>
+        <a href="/terms" style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}>Terms</a>
+        <span>© {new Date().getFullYear()} LeadTrap</span>
       </footer>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSeo } from '../hooks/useSeo';
+import { careluRevealed } from '../lib/careluReveal';
 
 const accent = '#3a8ab0';
 
@@ -102,10 +103,42 @@ function SuiteMock() {
   );
 }
 
+/* ----- stealth placeholder shown in the product card until reveal day.
+   Generic, text-free frosted panel — reveals nothing about the product. ----- */
+function StealthMock() {
+  const bar = (w: string, bg: string, align: 'flex-start' | 'flex-end') => (
+    <div style={{ height: 34, width: w, borderRadius: 12, background: bg, alignSelf: align }} />
+  );
+  return (
+    <div style={{
+      width: 'min(380px, 86%)', margin: '0 auto', background: 'rgba(255,255,255,0.92)',
+      borderRadius: '18px 18px 0 0', boxShadow: '0 -8px 60px rgba(26,46,31,0.28)',
+      border: '1px solid rgba(26,46,31,0.08)', borderBottom: 'none', overflow: 'hidden', position: 'relative',
+    }}>
+      <div style={{ filter: 'blur(7px)', opacity: 0.5, padding: '18px 16px 22px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+        <div style={{ height: 14, width: '52%', borderRadius: 8, background: '#dfe4dc' }} />
+        {bar('80%', '#EEF3EA', 'flex-start')}
+        {bar('56%', '#2C3E2D', 'flex-end')}
+        {bar('74%', '#EEF3EA', 'flex-start')}
+      </div>
+      <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <span style={{
+          fontFamily: 'var(--font-body)', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.14em',
+          textTransform: 'uppercase', color: '#1A2E1F', background: 'rgba(255,255,255,0.82)',
+          padding: '9px 15px', borderRadius: 100, border: '1px solid rgba(26,46,31,0.12)',
+        }}>Coming soon</span>
+      </div>
+    </div>
+  );
+}
+
 export default function Gateway() {
+  const revealed = careluRevealed();
   useSeo({
     title: 'LeadTrap — Agentic infrastructure for growth',
-    description: 'LeadTrap builds vertical AI front offices that capture, qualify, and complete every inquiry — for the industries that run on intake. Maker of Carelu, AI intake for ABA and behavioral health.',
+    description: revealed
+      ? 'LeadTrap builds vertical AI front offices that capture, qualify, and complete every inquiry — for the industries that run on intake. Maker of Carelu, AI intake for ABA and behavioral health.'
+      : 'LeadTrap builds vertical AI front offices that capture, qualify, and complete every inquiry — for the industries that run on intake.',
     canonical: 'https://leadtrap.com/',
   });
   return (
@@ -135,7 +168,9 @@ export default function Gateway() {
       <main style={{ position: 'relative', zIndex: 2, flex: 1, width: '100%', maxWidth: 1320, margin: '0 auto', padding: '0 20px 24px', opacity: 0, animation: 'heroIn 0.9s var(--ease-dramatic) 0.3s forwards' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 16, alignItems: 'stretch' }}>
 
-          {/* Carelu — the product (sky) */}
+          {/* The product (sky). Carelu is revealed on/after CARELU_REVEAL;
+              until then this card is a stealth "Coming soon" — no product
+              name, no link, obscured preview. */}
           <section style={{
             position: 'relative', overflow: 'hidden', borderRadius: 20, minHeight: 524,
             display: 'flex', flexDirection: 'column',
@@ -145,16 +180,27 @@ export default function Gateway() {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 20, padding: '32px 34px 0', position: 'relative', zIndex: 2 }}>
               <div style={{ maxWidth: 380 }}>
                 <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.85)' }}>The product</span>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 38, fontWeight: 400, color: '#fff', margin: '12px 0 0', lineHeight: 1 }}>Carelu</h2>
-                <div style={{ fontSize: 14.5, fontWeight: 600, color: '#fff', marginTop: 11 }}>AI intake for ABA &amp; behavioral health</div>
-                <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginTop: 9 }}>
-                  Captures, qualifies, and completes every family's intake across every channel — built to never miss a lead.
-                </p>
+                {revealed ? (
+                  <>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 38, fontWeight: 400, color: '#fff', margin: '12px 0 0', lineHeight: 1 }}>Carelu</h2>
+                    <div style={{ fontSize: 14.5, fontWeight: 600, color: '#fff', marginTop: 11 }}>AI intake for ABA &amp; behavioral health</div>
+                    <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginTop: 9 }}>
+                      Captures, qualifies, and completes every family's intake across every channel — built to never miss a lead.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <h2 style={{ fontFamily: 'var(--font-body)', fontSize: 34, fontWeight: 600, color: '#fff', margin: '12px 0 0', lineHeight: 1.05, letterSpacing: '-0.02em' }}>Coming soon</h2>
+                    <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginTop: 11 }}>
+                      Our first product is in stealth — a vertical AI front office, launching soon.
+                    </p>
+                  </>
+                )}
               </div>
-              <Pill to="https://carelu.com" label="Explore Carelu" light external />
+              {revealed && <Pill to="https://carelu.com" label="Explore Carelu" light external />}
             </div>
             <div style={{ marginTop: 'auto', paddingTop: 28 }}>
-              <CareluMock />
+              {revealed ? <CareluMock /> : <StealthMock />}
             </div>
           </section>
 
@@ -171,7 +217,9 @@ export default function Gateway() {
                 <h2 style={{ fontFamily: 'var(--font-body)', fontSize: 29, fontWeight: 700, color: '#fff', margin: '13px 0 0', lineHeight: 1.05, letterSpacing: '-0.02em' }}>LeadTrap Suite</h2>
                 <div style={{ fontSize: 14.5, fontWeight: 600, color: '#fff', marginTop: 11 }}>Vertical AI front offices</div>
                 <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, marginTop: 9 }}>
-                  The company behind Carelu — building vertical AI for every industry that lives or dies on intake.
+                  {revealed
+                    ? 'The company behind Carelu — building vertical AI for every industry that lives or dies on intake.'
+                    : 'Building vertical AI for every industry that lives or dies on intake.'}
                 </p>
               </div>
               <Pill to="/company" label="Explore LeadTrap Suite" light={false} />
@@ -184,8 +232,10 @@ export default function Gateway() {
         </div>
       </main>
 
-      <footer style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '24px', fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>
-        © {new Date().getFullYear()} LeadTrap
+      <footer style={{ position: 'relative', zIndex: 2, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 18, padding: '24px', fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>
+        <a href="/privacy" style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}>Privacy</a>
+        <a href="/terms" style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}>Terms</a>
+        <span>© {new Date().getFullYear()} LeadTrap</span>
       </footer>
     </div>
   );
