@@ -10,14 +10,14 @@
         var _ic = document.querySelector('link[rel="icon"]');
         if (_ic) { _ic.type = 'image/x-icon'; _ic.href = '/leadtrap-favicon.ico'; }
         document.title = 'LeadTrap — Agentic infrastructure for growth';
-        // The static head below is Carelu-branded (JSON-LD + OG image). It's the
-        // wrong entity on leadtrap.com and, while Carelu is in stealth, a leak —
-        // remove both once the head has parsed (useSeo sets the rest per route).
+        // The static head below is Carelu-branded (JSON-LD + OG/Twitter tags).
+        // That's the wrong entity on leadtrap.com and, while Carelu is in stealth,
+        // a leak — strip the Carelu structured data and every Carelu-branded meta
+        // once the head has parsed (useSeo re-adds LeadTrap title/desc/url/canonical).
         document.addEventListener('DOMContentLoaded', function () {
           document.querySelectorAll('script[type="application/ld+json"]').forEach(function (s) { s.remove(); });
-          ['og:image', 'og:image:type', 'og:image:width', 'og:image:height', 'og:image:alt', 'twitter:image', 'twitter:image:alt'].forEach(function (k) {
-            var m = document.querySelector('meta[property="' + k + '"], meta[name="' + k + '"]');
-            if (m) m.remove();
+          document.querySelectorAll('meta').forEach(function (m) {
+            if (/carelu/i.test(m.getAttribute('content') || '')) m.remove();
           });
         });
       }
