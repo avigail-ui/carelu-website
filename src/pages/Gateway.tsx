@@ -191,8 +191,9 @@ export default function Gateway() {
                 ) : (
                   <>
                     <h2 style={{ fontFamily: 'var(--font-body)', fontSize: 34, fontWeight: 600, color: '#fff', margin: '12px 0 0', lineHeight: 1.05, letterSpacing: '-0.02em' }}>Coming soon</h2>
-                    <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginTop: 11 }}>
-                      Our first product is in stealth — a vertical AI front office, launching soon.
+                    <div style={{ fontSize: 14.5, fontWeight: 600, color: '#fff', marginTop: 11 }}>An AI front office for behavioral health</div>
+                    <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginTop: 9 }}>
+                      In stealth: the system that meets every family the moment they reach out, completes the intake, and makes sure not one slips through. Launching soon.
                     </p>
                   </>
                 )}
