@@ -1,5 +1,15 @@
 {
   "rewrites": [
+    {
+      "source": "/privacy",
+      "has": [{ "type": "host", "value": "(www\\.)?leadtrap\\.com" }],
+      "destination": "/static/leadtrap-privacy.html"
+    },
+    {
+      "source": "/terms",
+      "has": [{ "type": "host", "value": "(www\\.)?leadtrap\\.com" }],
+      "destination": "/static/leadtrap-terms.html"
+    },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
