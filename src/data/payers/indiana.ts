@@ -26,29 +26,34 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { label: 'Rates', value: 'Published fee schedule, cut 6% (4/1/2026) then 4% more (4/1/2027)' },
       { label: 'Diagnosis recency', value: 'CDE >1 year old needs updated statement of need + current assessment' },
       { label: 'Staff screening', value: 'All ABA specialties high-risk — Indiana State Police fingerprint check before each RBT/BCaBA/BCBA enrolls' },
+      { label: 'New-agency enrollment', value: 'CMS-approved moratorium on new ABA agency enrollments/ownership changes, effective 6/6/2026 (renewable in 6-month increments) — individual RBT/BCaBA/BCBA enrollment unaffected' },
     ],
     sections: [
       {
         h2: 'Coverage & authorization',
         body: [
-          'IHCP covers ABA when medically necessary for the treatment of ASD, and all ABA services require prior authorization — for fee-for-service through Acentra Health, and through each managed-care entity\'s own process for MCE members. The clinical bar is specific: an ASD diagnosis supported by a comprehensive diagnostic evaluation (CDE) performed by a doctoral-level HSPP psychologist, physician, APRN, or PA; a physician referral; and a behavior assessment that must include the Vineland (with the Maladaptive Behavior domain), the BASC parent rating questionnaire, and an age-appropriate direct skills assessment, signed by the lead analyst and a parent. A CDE older than one year needs an updated statement of need, referral, and current behavior assessment.',
+          'IHCP covers ABA when medically necessary for the treatment of ASD, and all ABA services require prior authorization — for fee-for-service through Acentra Health, and through each managed-care entity\'s own process for MCE members. The clinical bar is specific: an ASD diagnosis supported by a comprehensive diagnostic evaluation (CDE) performed by a doctoral-level HSPP psychologist, physician, APRN, or PA; a physician referral; and a behavior assessment that must include the Vineland (with the Maladaptive Behavior domain), the BASC parent rating questionnaire, and an age-appropriate direct skills assessment, signed by the lead analyst and a parent. A CDE older than one year needs an updated statement of need, referral, and current behavior assessment. One tool-currency note: IHCP will accept either the BASC-3 Parent Rating Questionnaire or its successor, BASC-4 (public release expected ~August 23, 2026), through October 1, 2026 — after that date only BASC-4 satisfies the requirement.',
           'Each PA runs at most 6 months, up to 40 hours/week may be requested (more than 40 hours of direct therapy needs additional PA), and — since the 2026 rules — every ABA PA must include caregiver coaching (up to 18 hours per standard 6-month authorization), with a minimum of 1 hour of BCBA supervision per 8 hours of technician services.',
         ],
         cites: [
           { title: 'IHCP — Behavioral Health Services module (PROMOD00039, ABA section)', url: 'https://www.in.gov/medicaid/providers/files/modules/behavioral-health-services.pdf' },
           { title: 'IHCP Bulletin BT202562 — ABA documentation requirements (5/2025)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202562.pdf' },
           { title: 'IHCP — ABA prior authorization checklist', url: 'https://www.in.gov/medicaid/providers/files/ihcp-aba-prior-auth-checklist.pdf' },
+          { title: 'IHCP Bulletin BT2026123 — BASC-3 PRQ to BASC-4 transition (7/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2026123.pdf' },
         ],
       },
       {
         h2: 'What changed in 2026 (and 2027)',
         body: [
           'Effective April 1, 2026, IHCP covers ABA exclusively through the EPSDT benefit; members 21 and older have a transition window through September 30, 2026, and for dates of service on or after October 1, 2026, IHCP will not authorize or reimburse ABA for members 21+ — making age a first-order intake question. Also effective April 1, 2026: comprehensive ABA (16+ hours/week, billed with modifier UA) draws from a 4,000-hour (16,000-unit) lifetime allocation per member — 97155 and 97156 are excluded from the allocation, and the IHCP Portal\'s "Limit Details" panel shows usage — while targeted ABA is capped at 15 hours/week but exempt from the lifetime cap. Codes 97151, 97152, 97153, 97154, and 0373T can no longer be billed with telehealth modifier 95.',
-          'Separately, an accreditation mandate now binds every ABA group enrollment — new and existing. Currently enrolled agencies must submit documentation showing accreditation has been initiated with the Autism Commission on Quality (ACQ) or the Behavioral Health Center of Excellence (BHCOE) by August 1, 2026 (to INXIXabaenrollments@gainwelltechnologies.com or via the IHCP Portal) — a deadline that is days away as this guide is updated — and must hold active accreditation by October 1, 2027. Missing either milestone results in enrollment deactivation, not just a warning. One footnote worth reading twice: BT202646 states a previous BHCOE accreditation is accepted only "until an agency\'s reaccreditation with ACQ," so agencies choosing an accreditor should plan the reaccreditation path, not just the first credential.',
+          'Separately, an accreditation mandate now binds every ABA group enrollment — new and existing. Currently enrolled agencies must submit documentation showing accreditation has been initiated with the Autism Commission on Quality (ACQ) or the Behavioral Health Center of Excellence (BHCOE) by August 1, 2026 (to INXIXabaenrollments@gainwelltechnologies.com or via the IHCP Portal) — that deadline is today — and must hold active accreditation by October 1, 2027. Missing either milestone results in enrollment deactivation, not just a warning. IHCP reissued this deadline as a reminder in Bulletin BT2026118 (7/14/2026) with no extension and sharper enforcement language: "Failure to provide documentation will result in the enrollment being deactivated." One footnote worth reading twice: BT202646 states a previous BHCOE accreditation is accepted only "until an agency\'s reaccreditation with ACQ," so agencies choosing an accreditor should plan the reaccreditation path, not just the first credential.',
+          'A second, separate restriction landed in between: effective June 6, 2026, CMS approved a provider-enrollment moratorium on new ABA agency enrollments and changes of ownership in Indiana Medicaid (initial 6 months, renewable in 6-month increments) — new individual rendering-provider (RBT/BCaBA/BCBA) enrollment is unaffected, and already-accredited agencies can request an exception via OMPPProviderRelations@fssa.in.gov. HHS-OIG\'s own audit-report page confirms the moratorium follows an OIG finding of improperly paid Indiana ABA claims, though the IHCP bulletin itself doesn\'t name the audit. New or expanding ABA agencies should treat this moratorium, not just the accreditation deadline, as the binding constraint on growth in Indiana this year.',
         ],
         cites: [
           { title: 'IHCP Bulletin BT202627 — ABA policy & rate changes (2/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
           { title: 'IHCP Bulletin BT202646 — ABA agency accreditation requirement (3/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202646.pdf' },
+          { title: 'IHCP Bulletin BT2026118 — ABA accreditation deadline reminder (7/14/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2026118.pdf' },
+          { title: 'IHCP Bulletin BT202692 — ABA agency provider enrollment moratorium (6/4/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202692.pdf' },
         ],
       },
       {
@@ -89,6 +94,9 @@ export const indianaPayers: Record<string, PayerConfig> = {
       { title: 'IHCP — Behavioral Health Services module (PROMOD00039)', url: 'https://www.in.gov/medicaid/providers/files/modules/behavioral-health-services.pdf' },
       { title: 'IHCP Bulletin BT202562 — ABA documentation requirements', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202562.pdf' },
       { title: 'IHCP Bulletin BT202646 — ABA agency accreditation', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202646.pdf' },
+      { title: 'IHCP Bulletin BT2026118 — ABA accreditation deadline reminder (7/14/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2026118.pdf' },
+      { title: 'IHCP Bulletin BT202692 — ABA agency provider enrollment moratorium (6/4/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202692.pdf' },
+      { title: 'IHCP Bulletin BT2026123 — BASC-3 PRQ to BASC-4 transition (7/2026)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2026123.pdf' },
       { title: 'IHCP — ABA prior authorization checklist', url: 'https://www.in.gov/medicaid/providers/files/ihcp-aba-prior-auth-checklist.pdf' },
       { title: 'IHCP Bulletin BT2024194 — ABA provider enrollment & high-risk screening', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2024194.pdf' },
       { title: 'IHCP Bulletin BT202519 — ABA enrollment FAQ', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202519.pdf' },
@@ -325,6 +333,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
         cites: [
           { title: 'MDwise — Behavioral Health Reference Guide (historical)', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
           { title: 'FSSA — Announces End of MDwise Participation in Indiana Medicaid Programs (11/12/2025)', url: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf' },
+          { title: 'IHCP Bulletin BT2025157 — MDwise to end participation as a managed care health plan (11/12/2025)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2025157.pdf' },
         ],
       },
     ],
@@ -335,6 +344,7 @@ export const indianaPayers: Record<string, PayerConfig> = {
     ],
     sources: [
       { title: 'FSSA — Announces End of MDwise Participation in Indiana Medicaid Programs (11/12/2025)', url: 'https://www.in.gov/fssa/files/MDwise-Participation_FINAL-2025.pdf' },
+      { title: 'IHCP Bulletin BT2025157 — MDwise to end participation as a managed care health plan (11/12/2025)', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT2025157.pdf' },
       { title: 'MDwise — Behavioral Health Reference Guide (historical)', url: 'https://www.mdwise.org/Uploads/Public/Documents/MDwise/BH-Reference-Guide.pdf' },
       { title: 'IHCP Bulletin BT202627 — ABA policy updates', url: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202627.pdf' },
     ],

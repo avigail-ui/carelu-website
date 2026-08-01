@@ -13,7 +13,7 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
     h1: 'Nebraska Medicaid (Heritage Health) ABA coverage: the intake guide.',
     metaTitle: 'Nebraska Medicaid (Heritage Health) ABA Coverage, Rates & Prior Auth Guide | Carelu',
     metaDescription:
-      'How Nebraska Medicaid covers ABA under Heritage Health managed care — no strict autism-diagnosis requirement, the 12-month IDI recency rule, MCO prior authorization, the August 2025 rate cuts (97153 to $18.70), the 20-vs-30 hour cap conflict, and LBA licensure.',
+      'How Nebraska Medicaid covers ABA under Heritage Health managed care — no strict autism-diagnosis requirement, the 12-month IDI recency rule, MCO prior authorization, the August 2025 rate cuts (97153 to $18.70), the 20-hour weekly cap, and LBA licensure.',
     intro: [
       'Nebraska Medicaid covers ABA for members under 21 through EPSDT, under a pair of Medicaid Service Definitions (MSDs) effective February 7, 2025 — and delivers it entirely through Heritage Health managed care, so every authorization runs through one of three MCOs: Nebraska Total Care, Molina, or UnitedHealthcare Community Plan (with ABA managed by Optum). Two things make Nebraska unusual. First, an autism diagnosis is not strictly required — a developmental or intellectual disability qualifies when the ABA assessment establishes need. Second, in August 2025 DHHS cut ABA rates roughly 28–79% by code after program spend exploded from $4.6M to $85M+ in four years, making Nebraska one of the lowest-paying ABA states in the country. Both facts should shape how a practice runs intake here.',
     ],
@@ -22,7 +22,7 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
       { label: 'Diagnosis', value: 'ASD NOT strictly required — developmental or intellectual disability qualifies' },
       { label: 'Diagnosis recency', value: 'Initial Diagnostic Interview (IDI) within the previous 12 months' },
       { label: 'Prior auth', value: 'MCO-administered — assessment + treatment plan filed with the initial PA request' },
-      { label: 'Hour caps', value: '6 hrs/day; weekly cap conflicts — MSD text says 20, DHHS materials say up to 30' },
+      { label: 'Hour caps', value: '6 hrs/day, 20 hrs/week absent PA\'d justification — the treatment MSD was updated mid-2026 to state this cleanly; DHHS\'s public Facts page still shows the old "up to 30" language' },
       { label: 'Rates (per 15 min)', value: '97151 $38.16 · 97153 $18.70 · 97155 $22.72 · 97156 $26.06 (eff. 8/1/2025)' },
       { label: 'Licensure', value: 'NE LBA license mandatory for Medicaid BCBAs since 1/1/2025' },
       { label: 'Staff screening', value: 'No fingerprint tier for ABA enrollment — abuse-registry checks reach staff via the BACB\'s 180-day requirement, not a state mandate' },
@@ -51,15 +51,15 @@ export const nebraskaPayers: Record<string, PayerConfig> = {
         ],
       },
       {
-        h2: 'Authorization, and the 20-vs-30 hour question',
+        h2: 'Authorization, and the resolved 20-hour weekly cap',
         body: [
           'Prior authorization runs through the member\'s MCO. The treatment MSD requires the ABA assessment and treatment plan to be submitted with the initial prior authorization request, and Provider Bulletin 25-02 clarifies that PA duration is "based on medical necessity and therefore is variable in duration" — no fixed statewide authorization period. Separately from whatever the MCO authorizes, the treatment plan itself must be reviewed and updated at least every 90 days.',
-          'On weekly intensity, the state\'s own documents conflict. The current ABA treatment MSD text caps direct service at 6 hours per day and 20 hours per week absent PA\'d clinical justification — while DHHS\'s public ABA Facts page and PB 25-02 describe the policy as allowing up to 30 hours per week. We present both because the state does: plan requests against the 20-hour MSD text as the conservative floor, cite the DHHS 30-hour materials when clinical need justifies more, and expect hours beyond 6/day or the weekly cap to require clinical justification through PA either way.',
+          'On weekly intensity, a conflict this guide previously flagged has been resolved in the MSD\'s favor: as of this review, the current ABA treatment MSD text unambiguously caps direct service at "6 hours in a single day or a total of 20 hours per week" absent PA\'d clinical justification, with no alternate 30-hour language anywhere in the document — local reporting ties the change to Provider Bulletin 26-06 (July 2026), which this guide could not independently locate on dhhs.ne.gov and treats as secondary-sourced. DHHS\'s public-facing "ABA Facts" summary page has not caught up: it still describes the policy as allowing up to 30 hours per week, so expect that page to read stale until DHHS updates it. Plan requests against the MSD\'s 20-hour text as the governing rule, and expect hours beyond 6/day or 20/week to require clinical justification through PA.',
         ],
         cites: [
-          { title: 'ABA Medicaid Service Definition (treatment MSD)', url: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Applied%20Behavior%20Analysis.pdf' },
+          { title: 'ABA Medicaid Service Definition (treatment MSD) — current text confirms 20 hrs/week', url: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Applied%20Behavior%20Analysis.pdf' },
           { title: 'Provider Bulletin 25-02 — ABA Service Definitions (eff. Feb 7, 2025)', url: 'https://dhhs.ne.gov/Medicaid%20Provider%20Bulletins/Provider%20Bulletin%2025-02.pdf' },
-          { title: 'DHHS "Applied Behavior Analysis Facts" page', url: 'https://dhhs.ne.gov/Pages/Applied-Behavior-Analysis.aspx' },
+          { title: 'DHHS "Applied Behavior Analysis Facts" page (not yet updated to match the MSD)', url: 'https://dhhs.ne.gov/Pages/Applied-Behavior-Analysis.aspx' },
         ],
       },
       {

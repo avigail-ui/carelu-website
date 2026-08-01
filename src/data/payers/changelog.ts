@@ -17,6 +17,107 @@ export interface PayerChangeEntry {
 
 export const PAYER_CHANGELOG: PayerChangeEntry[] = [
   {
+    date: '2026-08-01',
+    type: 'policy-update',
+    summary:
+      'August 2026 monthly refresh: REQ-002 (NY DOH June 2026 enrollment report) applied — current per-plan enrollment for Excellus, MVP, CDPHP, Independent Health, and Highmark WNY. 11 previously-open document requests (REQ-003 through REQ-013) resolved via direct re-fetch and applied across 10 states. Watchlist verified against primary sources for IN, NC, OH, AZ, NE, KS, CO, MA, UT, NY, GA, FL, VA, MD: Indiana\'s 8/1/2026 accreditation deadline confirmed firm (plus a newly surfaced 6/6/2026 ABA-agency enrollment moratorium and a BASC-3→BASC-4 transition); Nebraska\'s longstanding 20-vs-30-hour MSD/DHHS conflict resolved to 20 hrs/week in the treatment MSD text itself; Colorado\'s Oct-2025 rate cut confirmed NOT restored but exempted from a new July 2026 2% cut; NC\'s CCP 8F rewrite confirmed still unpublished despite the state saying it was imminent, with firmer (not final) telehealth-supervision and out-of-state-restriction figures reported; Georgia\'s Families re-procurement confirmed still in the protest phase, contracts extended through 6/30/2027; Florida\'s Sunshine Health confirmed a new no-authorization-transfer rule; Ohio\'s core OAC 5160-34-02 citation confirmed broken at the source (cause undetermined) and flagged rather than silently kept; Utah\'s High-Risk revalidation policy reconfirmed unchanged with one adjacent broader initiative (MIB item 26-62) surfaced. Arizona, Kansas, Virginia, and Maryland confirmed unchanged. 33 states/topics checked, 2 sources still unreachable (GA GAMMIS companion guide, authoritative GA Change Healthcare payer IDs) — both remain open document requests.',
+    guides: [
+      'new-york-medicaid', 'excellus-bcbs-new-york', 'mvp-health-plan-new-york', 'cdphp-new-york', 'independent-health-new-york', 'highmark-western-new-york',
+      'indiana-medicaid', 'mdwise-indiana',
+      'nebraska-medicaid',
+      'arizona-ahcccs',
+      'colorado-medicaid', 'aetna-colorado', 'cigna-colorado', 'unitedhealthcare-colorado',
+      'north-carolina-medicaid', 'vaya-health',
+      'ohio-medicaid',
+      'utah-medicaid',
+      'sunshine-health-florida',
+      'masshealth-massachusetts-medicaid',
+      'georgia-medicaid',
+      'texas-medicaid',
+      'missouri-medicaid',
+      'new-mexico-medicaid',
+      'new-jersey-medicaid',
+      'tenncare-tennessee-medicaid', 'tenncare-select',
+    ],
+    details: [
+      {
+        slug: 'excellus-bcbs-new-york',
+        field: 'intro (enrollment figure)',
+        change: 'REQ-002: 182,280 → 182,403 members, re-cited to the June 2026 NY DOH enrollment report (from a stale Jan 2025 report).',
+        sourceUrl: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2026/docs/en06_26.pdf',
+      },
+      {
+        slug: 'mvp-health-plan-new-york',
+        field: 'intro (enrollment figure)',
+        change: 'REQ-002: 162,046 → 167,506 members, re-cited to the June 2026 report.',
+        sourceUrl: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2026/docs/en06_26.pdf',
+      },
+      {
+        slug: 'cdphp-new-york, independent-health-new-york, highmark-western-new-york',
+        field: 'intro (enrollment figure, newly added)',
+        change: 'REQ-002: current June 2026 enrollment added — CDPHP 82,141; Independent Health 61,649 (Erie County only, confirmed no Monroe County rows); Highmark WNY 46,298.',
+        sourceUrl: 'https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/2026/docs/en06_26.pdf',
+      },
+      {
+        slug: 'indiana-medicaid',
+        field: 'sections (accreditation, enrollment moratorium, BASC transition)',
+        change:
+          'IHCP Bulletin BT2026118 (7/14/2026) confirms the 8/1/2026 accreditation deadline stands with no extension. New fact: CMS-approved moratorium on new ABA agency enrollments/ownership changes effective 6/6/2026 (BT202692), tied to an HHS-OIG finding of ~$56M in improper Indiana ABA payments. New fact: BASC-3 PRQ accepted alongside its successor BASC-4 only through 10/1/2026 (BT2026123).',
+        sourceUrl: 'https://www.in.gov/medicaid/providers/files/bulletins/BT202692.pdf',
+      },
+      {
+        slug: 'nebraska-medicaid',
+        field: 'sections (weekly hour cap)',
+        change:
+          'Resolved the previously-flagged 20-vs-30-hour MSD-vs-DHHS-materials conflict: the current treatment MSD text now unambiguously states a 20-hour/week cap, with no alternate 30-hour language — local reporting ties this to Provider Bulletin 26-06 (unconfirmed at primary source). DHHS\'s public "ABA Facts" page has not been updated to match and still shows "up to 30."',
+        sourceUrl: 'https://dhhs.ne.gov/Behavioral%20Health%20Service%20Definitions/Applied%20Behavior%20Analysis.pdf',
+      },
+      {
+        slug: 'colorado-medicaid',
+        field: 'sections (rates)',
+        change:
+          'Confirmed the Oct 2025 PBT rate cut has NOT been restored (July 2026 fee schedule identical to Jan/Apr 2026), but PBT is explicitly exempted from a new 2.0% across-the-board Health First Colorado rate cut effective 7/1/2026 under HB 26-1410.',
+        sourceUrl: 'https://hcpf.colorado.gov/provider-news',
+      },
+      {
+        slug: 'north-carolina-medicaid',
+        field: 'sections (HB 696 / CCP 8F status)',
+        change:
+          'CCP 8F rewrite confirmed still unpublished as of 8/1/2026 (live document re-fetched directly, still pre-HB-696) despite NC Medicaid\'s 7/21/2026 post saying it was imminent. NC Health News reporting adds firmer-but-unconfirmed figures: a 20% (not 50%) telehealth supervision cap and a ~40-mile out-of-state-supervisor radius restriction.',
+        sourceUrl: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open',
+      },
+      {
+        slug: 'vaya-health',
+        field: 'sections, sources (REQ-008)',
+        change:
+          'Vaya\'s provider-document library is no longer bot-blocked. Confirmed and added specific passthrough thresholds from the plan\'s own authorization guidelines: 97151 ≤32 units/6mo and 97155 ≤1hr-per-10hrs ratio pass through on notification only; above either, a full SAR is required.',
+        sourceUrl: 'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf',
+      },
+      {
+        slug: 'georgia-medicaid',
+        field: 'sections (re-procurement status)',
+        change:
+          'Georgia Families re-procurement confirmed still in the protest phase pending a Notice of Award — DCH extended the current CMO contracts (Amerigroup, CareSource, Peach State) through June 30, 2027, with no go-live date yet for the Dec 2024 awardees (CareSource, Humana, Molina, UnitedHealthcare).',
+        sourceUrl: 'https://medicaid.georgia.gov/programs/all-programs/georgia-families/georgia-families-latest-news',
+      },
+      {
+        slug: 'sunshine-health-florida',
+        field: 'sections (authorization transfer)',
+        change:
+          'New confirmed rule (7/15/2026): Sunshine will not carry an ABA authorization over between BA providers — the new provider must file a brand-new initial authorization and its own current assessments rather than relying on the outgoing provider\'s documentation.',
+        sourceUrl: 'https://www.sunshinehealth.com/newsroom/ba-provider-change-guidance.html',
+      },
+      {
+        slug: 'ohio-medicaid',
+        field: 'sections, sources (rule citation + REQ-006)',
+        change:
+          'Flagged rather than silently kept: codes.ohio.gov\'s live page for rule 5160-34-02 (the guide\'s core citation) currently returns "Number Not Found," and the entire 5160-34 chapter is missing from the OAC Title 5160 index — cause undetermined. Separately, REQ-006 resolved: Ohio\'s 2026 MCO Health Plan Comparison found via the Ohio Medicaid Consumer Hotline mirror, confirming the 7-plan roster unchanged.',
+        sourceUrl: 'https://ohfiles.blob.core.windows.net/public/OhioMHWebsite/Documents/Ohio%20Medicaid%20Managed%20Care%20Health%20Plan%20Comparison%202026.pdf',
+      },
+    ],
+    totals: { guides: 179, states: 19 },
+  },
+  {
     date: '2026-07-20',
     type: 'initial',
     summary:

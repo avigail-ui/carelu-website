@@ -42,7 +42,7 @@ export interface PayerConfig {
   dxRequired?: string;     // is an autism diagnosis required (and how strict)?
 }
 
-export const PAYER_REVIEWED = 'July 2026';
+export const PAYER_REVIEWED = 'August 2026';
 
 // State metadata for the directory + per-state breakdowns on commercial guides.
 export interface StateMeta { code: string; name: string; mandate: string; medicaidSlug: string }

@@ -63,12 +63,14 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
       {
         h2: 'HB 696: the 2026 overhaul',
         body: [
-          'HB 696 (Session Law 2026-1, signed April 30, 2026) rewires NC Medicaid ABA — and its provisions are law as of April 30, 2026, with implementation running through a rewrite of CCP 8F that was still in draft as of July 2026 (initial comment May 15 – June 14; a second 10-day comment window closed July 20, 2026), so verify the final 8F before relying on timing. The substance: no new out-of-state BCBA/QASP-supervisor enrollments; assessments must be in-person (telehealth assessments aren\'t reimbursed absent a documented exception); paraprofessionals can\'t deliver services by telehealth except documented necessity; telehealth LQASP observation/direction is capped at 50% per beneficiary (with DHHS implementing policy reportedly tightening remote supervision to roughly 20% of therapy time); the 10% LQASP observation floor is codified; and paraprofessionals must hold RBT or ABAT certification, with a 120-day grace period for new hires. Plans above 16 hours/week originally required monthly reapproval — softened to every 3 months in the budget signed July 7, 2026.',
+          'HB 696 (Session Law 2026-1, signed April 30, 2026) rewires NC Medicaid ABA — and its provisions are law as of April 30, 2026, with implementation running through a rewrite of CCP 8F that, as of this review (8/1/2026), STILL has not been posted: we fetched the live CCP 8F PDF directly from medicaid.ncdhhs.gov and it remains the pre-HB-696 version (header still reads "Amended Date: December 1, 2020," no mention of RBT/ABAT or the 2026 session law), even though NC Medicaid\'s own 7/21/2026 blog post says a revision "has been revised... and will be posted in the coming days." Verify the final 8F before relying on timing. The substance, per the bill text: no new out-of-state BCBA/QASP-supervisor enrollments; assessments must be in-person (telehealth assessments aren\'t reimbursed absent a documented exception); paraprofessionals can\'t deliver services by telehealth except documented necessity; the 10% LQASP observation floor is codified; and paraprofessionals must hold RBT or ABAT certification, with a 120-day grace period for new hires. Plans above 16 hours/week originally required monthly reapproval — softened to every 3 months in the budget signed July 7, 2026. NC Health News reporting (7/15/2026, quoting DHHS) describes the telehealth LQASP supervision cap as firmer than earlier drafts suggested — 20%, not 50% — and the out-of-state supervisor restriction as bounded by roughly a 40-mile radius of the patient; neither figure appears in bill text or a posted CCP 8F yet, so treat both as reported-not-yet-codified pending the final policy.',
         ],
         cites: [
           { title: 'Governor\'s office — HB 696 signing (4/30/2026)', url: 'https://governor.nc.gov/news/press-releases/2026/04/30/governor-stein-takes-action-one-bill' },
           { title: 'NC Health News — new ABA Medicaid rules (7/2026)', url: 'https://www.northcarolinahealthnews.org/2026/07/15/autism-aba-therapy-medicaid-new-rules/' },
           { title: 'NCTracks — CCP 8F public-comment notice (5/2026)', url: 'https://www.nctracks.nc.gov/content/public/providers/provider-communications/2026----Announcements/Public-Comment-Notice--Policy-8F---Research-Based-Behavioral-Health-Treatment-for-Autism-Spectrum-Disorder.html' },
+          { title: 'NC Medicaid — Reminder: RB-BHT Service Delivery Requirements (7/21/2026)', url: 'https://medicaid.ncdhhs.gov/blog/2026/07/21/reminder-requirements-research-based-behavioral-health-treatment-service-delivery' },
+          { title: 'NC Medicaid — CCP 8F (live document, still pre-HB-696 as of 8/1/2026)', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
         ],
       },
       {
@@ -114,7 +116,7 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
     faq: [
       { q: 'Does North Carolina Medicaid cover ABA therapy?', a: 'Yes — as Research-Based Behavioral Health Treatment (RB-BHT) under Clinical Coverage Policy 8F, in every delivery channel (Medicaid Direct, Standard Plans, Tailored Plans, and the Children & Families Specialty Plan). All RB-BHT services require prior authorization, including the assessment.' },
       { q: 'What does NC Medicaid pay for ABA?', a: 'Published per-15-minute rates, effective 10/1/2025: 97151 $30.56, 97153 $20.81, 97155 $32.22, 97156 $23.70 — and every managed-care plan must pay at least 100% of the state fee schedule unless the provider agrees otherwise.' },
-      { q: 'What does HB 696 change for ABA providers?', a: 'In-person assessments, no new out-of-state supervisor enrollments, RBT/ABAT certification for paraprofessionals, a 50% cap on telehealth supervision, a codified 10% observation floor, and 3-month reapprovals for plans above 16 hours/week. The provisions are law as of April 30, 2026, with implementation running through a CCP 8F rewrite still pending as of July 2026 — verify the final 8F before relying on timing.' },
+      { q: 'What does HB 696 change for ABA providers?', a: 'In-person assessments, no new out-of-state supervisor enrollments (reportedly bounded by a ~40-mile radius of the patient), RBT/ABAT certification for paraprofessionals, a telehealth supervision cap reported at 20%, a codified 10% observation floor, and 3-month reapprovals for plans above 16 hours/week. The provisions are law as of April 30, 2026; implementation runs through a CCP 8F rewrite that, as of 8/1/2026, still has not been posted despite NC Medicaid saying in July it was imminent — verify the final 8F before relying on timing.' },
       { q: 'Can a young child start before a confirmed diagnosis?', a: 'For children under three, NC Medicaid accepts a provisional ASD diagnosis when services begin, with a definitive diagnosis expected within six months.' },
     ],
   },
@@ -528,7 +530,7 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
     metaDescription:
       'How Vaya Health (Vaya Total Care) administers NC Medicaid RB-BHT (ABA) in western North Carolina — CCP 8F administration through SARs to Vaya UM, and which plan documents to pull from the provider portal.',
     intro: [
-      'Vaya Health — operating the "Vaya Total Care" Tailored Plan across western North Carolina — administers RB-BHT as straight CCP 8F, with authorization running through service authorization requests (SARs) to Vaya\'s in-house UM team. A transparency note: Vaya\'s provider-document library blocks automated access, so this guide covers the verified structure and contacts, and names the two plan documents your team should download directly before relying on plan-specific details.',
+      'Vaya Health — operating the "Vaya Total Care" Tailored Plan across western North Carolina — administers RB-BHT as straight CCP 8F, with authorization running through service authorization requests (SARs) to Vaya\'s in-house UM team. Its provider-document library previously blocked automated access; as of this review its authorization guidelines are readable directly, and the code-level passthrough thresholds below are confirmed from Vaya\'s own document text rather than inferred.',
     ],
     atGlance: [
       { label: 'Plan type', value: 'NC Tailored Plan (public LME/MCO, western NC — "Vaya Total Care")' },
@@ -542,27 +544,30 @@ export const northCarolinaPayers: Record<string, PayerConfig> = {
       {
         h2: 'How Vaya administers RB-BHT',
         body: [
-          'The clinical picture is the CCP 8F baseline: PA on all services including the 97151 comprehensive assessment (which Vaya\'s guidelines designate as LQASP-billed), 180-day authorization cycles, and LQASP treatment-plan reviews. SARs submit through the provider portal and are reviewed by Vaya UM against medical necessity and the clinical coverage policy. Two documents to pull manually from providers.vayahealth.com and keep in your payer files: the "Authorization Guidelines: Medicaid RB-BHT for ASD" v2.0 (effective September 5, 2025) and the May 2025 RB-BHT guidance — both live in the plan\'s document library, which blocks automated retrieval.',
+          'The clinical picture is the CCP 8F baseline: PA on all services including the 97151 comprehensive assessment (which Vaya\'s guidelines designate as LQASP-billed), 180-day authorization cycles, and LQASP treatment-plan reviews. SARs submit through the provider portal and are reviewed by Vaya UM against medical necessity and the clinical coverage policy.',
+          'Vaya\'s "Authorization Guidelines: Medicaid RB-BHT Services for ASD" (v2.0, rev. 9/5/2025 — still current, no v2.1/2026 update found) sets specific passthrough thresholds worth building into intake: 97151 assessment requests up to 32 units per six months go through as notification-only, without a full SAR, while requests above 32 units need a complete SAR (service order, treatment plan, MD/DO/psychologist-validated ASD diagnosis). 97155 (protocol modification by a BCBA-LP) similarly passes through on notification alone up to a 1-hour-per-10-hours ratio against direct intervention (97153/97154); above that ratio it needs a full SAR for medical-necessity review. All other codes (97152, 97153, 97154, 97156, 97157) require a SAR plus FBA, treatment plan, and service order on both initial and concurrent requests. A companion document, "RB-BHT Guidance" (v1.0, rev. 5/1/2025), restates the CCP 8F service definitions and clarifies "Program Modification vs. Supervision" for 97155.',
         ],
         cites: [
           { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
-          { title: 'Vaya Health — prior authorization information (access via portal)', url: 'https://providers.vayahealth.com/authorization-information/prior-authorization/' },
+          { title: 'Vaya Health — Authorization Guidelines: Medicaid RB-BHT Services for ASD (v2.0, rev. 9/5/2025)', url: 'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf' },
+          { title: 'Vaya Health — RB-BHT Guidance (v1.0, rev. 5/1/2025)', url: 'https://providers.vayahealth.com/wp-content/uploads/2025/05/RB_BHT_Guidance_20250522.pdf' },
         ],
       },
     ],
     collect: [
       { title: 'Member county', desc: 'Vaya\'s footprint is western NC — confirm the county maps to Vaya before intake.' },
       { title: 'ASD diagnosis + validated tool', desc: 'Per CCP 8F, with the MD/DO/LP service order.' },
-      { title: 'Current Vaya guidelines', desc: 'Download the RB-BHT authorization guidelines (v2.0) from the portal and re-check quarterly.' },
+      { title: 'Unit thresholds', desc: '97151 ≤32 units/6mo and 97155 ≤1hr-per-10hrs ratio pass through on notification only — above either, a full SAR is required.' },
     ],
     sources: [
-      { title: 'Vaya Health — RB-BHT authorization guidelines v2.0 (pull manually; bot-blocked)', url: 'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf' },
+      { title: 'Vaya Health — Authorization Guidelines: Medicaid RB-BHT Services for ASD (v2.0, rev. 9/5/2025)', url: 'https://providers.vayahealth.com/wp-content/uploads/2025/09/Authorization_Guidelines_Medicaid_RB_BHT_ASD.pdf' },
+      { title: 'Vaya Health — RB-BHT Guidance (v1.0, rev. 5/1/2025)', url: 'https://providers.vayahealth.com/wp-content/uploads/2025/05/RB_BHT_Guidance_20250522.pdf' },
       { title: 'Vaya Health — prior authorization page', url: 'https://providers.vayahealth.com/authorization-information/prior-authorization/' },
       { title: 'NC Medicaid — Clinical Coverage Policy 8F', url: 'https://medicaid.ncdhhs.gov/documents/files/8f-1/open' },
     ],
     faq: [
       { q: 'Does Vaya Health cover ABA therapy?', a: 'Yes — as a Tailored Plan, Vaya administers RB-BHT under CCP 8F, with service authorization requests reviewed by its UM team ((800) 893-6246 ext. 1513, UM@vayahealth.com).' },
-      { q: 'Where are Vaya\'s ABA-specific rules?', a: 'In its "Authorization Guidelines: Medicaid RB-BHT for ASD" (v2.0, effective September 2025) and its RB-BHT guidance, both in the provider portal\'s document library — download them directly, as the library blocks automated access.' },
+      { q: 'Does every Vaya ABA request need a full SAR?', a: 'No — 97151 assessment requests up to 32 units per 6 months and 97155 up to a 1-hour-per-10-hours ratio against direct intervention pass through on notification alone. Above either threshold, a complete SAR (service order, treatment plan, validated diagnosis) is required.' },
     ],
   },
 

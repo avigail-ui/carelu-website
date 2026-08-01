@@ -31,10 +31,10 @@ export const ohioPayers: Record<string, PayerConfig> = {
         h2: 'Coverage & the state rule',
         body: [
           'OAC rule 5160-34-02 covers adaptive behavior services for the assessment and treatment of ASD, with prior authorization required for all covered ABA codes at both initial and ongoing stages and medical-necessity review at baseline and at least every six months. The ASD diagnosis must come from a documented comprehensive diagnostic evaluation by a licensed physician, psychologist, or other clinician qualified to diagnose autism, demonstrating DSM-5-TR criteria. Independent practitioners are Certified Ohio Behavior Analysts (COBA, under ORC Chapter 4783) or BACB BCBAs/BCBA-Ds, enrolled with ODM as Provider Type 19, Specialty 190; BCaBAs and RBTs work under supervision.',
-          'Watch the pending rewrite: ODM has drafted new rules 5160-34-01 through -03 that would, among other changes, require assessment PA only beyond 10 hours per 180 days and remove specific diagnostic-condition requirements. As of mid-2026 the rewrite had not been adopted — the all-PA framework still governs — but any guide or SOP built on Ohio rules should be re-checked when the chapter files.',
+          'Watch the pending rewrite: ODM has drafted new rules 5160-34-01 through -03 that would, among other changes, require assessment PA only beyond 10 hours per 180 days and remove specific diagnostic-condition requirements. As of mid-2026 the rewrite had not been adopted — the all-PA framework still governs — but any guide or SOP built on Ohio rules should be re-checked when the chapter files. One access note from this review: codes.ohio.gov\'s live page for rule 5160-34-02 currently returns "Number Not Found," and the entire 5160-34 chapter is missing from the Title 5160 master chapter index — a gap between 5160-33 and 5160-35 — while neighboring rules resolve normally. We could not determine from primary sources whether this reflects the rewrite actually filing (which would explain a renumbering) or a site indexing gap; confirm current rule status with Rules@Medicaid.Ohio.gov or JCARR before relying on the codes.ohio.gov citation below.',
         ],
         cites: [
-          { title: 'Ohio Administrative Code — rule 5160-34-02', url: 'https://codes.ohio.gov/ohio-administrative-code/rule-5160-34-02' },
+          { title: 'Ohio Administrative Code — rule 5160-34-02 (URL currently returns "Number Not Found" — verify before relying on it)', url: 'https://codes.ohio.gov/ohio-administrative-code/rule-5160-34-02' },
           { title: 'ODM — draft ABA rule package (5160-34-01/-02/-03 + fee appendix)', url: 'https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders,%20Partners/LegalandContracts/Rules/ERF188422B.pdf' },
         ],
       },
@@ -86,6 +86,7 @@ export const ohioPayers: Record<string, PayerConfig> = {
       { title: 'Ohio Administrative Code — rule 5160-34-02', url: 'https://codes.ohio.gov/ohio-administrative-code/rule-5160-34-02' },
       { title: 'ODM — ABA rule package + Appendix A fee schedule (draft filing)', url: 'https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders,%20Partners/LegalandContracts/Rules/ERF188422B.pdf' },
       { title: 'ODM — OhioRISE Mixed Services Protocol', url: 'https://dam.assets.ohio.gov/image/upload/v1743449666/managedcare.medicaid.ohio.gov/OhioRISE/OhioRISE_Mixed_Services_Protocol_20250401.pdf' },
+      { title: 'Ohio Medicaid Managed Care Health Plan Comparison (2026) — confirms current 7-plan roster', url: 'https://ohfiles.blob.core.windows.net/public/OhioMHWebsite/Documents/Ohio%20Medicaid%20Managed%20Care%20Health%20Plan%20Comparison%202026.pdf' },
       { title: 'CareSource — Ohio Medicaid ABA policy (MM-0028)', url: 'https://www.caresource.com/documents/medicaid-oh-policy-medical-mm-0028-20250701.pdf' },
       { title: 'BACB — RBT Handbook (background-check and supervision requirements)', url: 'https://www.bacb.com/rbt-handbook' },
       { title: 'Ohio Administrative Code — rule 4783-4-03 (COBA criminal records check)', url: 'https://www.law.cornell.edu/regulations/ohio/Ohio-Admin-Code-4783-4-03' },

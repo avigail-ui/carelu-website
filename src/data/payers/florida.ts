@@ -164,9 +164,11 @@ export const floridaPayers: Record<string, PayerConfig> = {
         h2: 'The VBP program — and a reported enrollment pause',
         body: [
           'Sunshine runs a value-based incentive program for BA providers with outcome-tied bonuses — worth asking about at contracting, since it\'s the only one of the nine plans with a published BA VBP. On the flip side: industry reporting describes a temporary pause, effective October 1, 2025, on enrolling new practitioners into existing BA provider groups — effectively a network moratorium at the practitioner level. We could not verify this against a Sunshine primary source (the plan\'s newsroom blocks automated access), so treat it as a flagged, unconfirmed report: if you\'re adding BCBAs or RBTs to a Sunshine-contracted group, confirm current enrollment status with your provider-relations contact before promising start dates.',
+          'A confirmed, primary-sourced rule as of July 15, 2026: Sunshine will not carry an authorization over when a member switches BA providers. The new provider must submit a brand-new initial authorization request (starting at 24 units before treatment codes are added), obtain its own current Vineland-3/BASC-3 assessments rather than relying on the prior provider\'s documentation, and file a Change of Provider Form — Sunshine explicitly states it will not accept the outgoing provider\'s paperwork to carry the case forward. Build this into any transfer-of-care intake: a family switching BA providers restarts the authorization clock, it doesn\'t transfer it.',
         ],
         cites: [
           { title: '3 Pie Squared — Sunshine Health ABA enrollment pause (industry report, unverified)', url: 'https://3piesquared.com/blog/sunshine-healths-aba-enrollment-pause-what-aba-practice-owners-need-to-know_361' },
+          { title: 'Sunshine Health — Behavior Analysis (BA) Provider Changes Require New Authorization (7/15/2026)', url: 'https://www.sunshinehealth.com/newsroom/ba-provider-change-guidance.html' },
           { title: 'Sunshine Health — BA Provider Quick Reference Guide', url: 'https://www.sunshinehealth.com/providers/Billing-manual/ba.html' },
         ],
       },
