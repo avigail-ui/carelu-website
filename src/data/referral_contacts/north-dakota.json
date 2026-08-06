@@ -1,0 +1,2547 @@
+{
+ "name": "North Dakota",
+ "slug": "north-dakota",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-dakota.csv",
+ "count": 247,
+ "emails": 2,
+ "phones": 247,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 202
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 44
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Fargo",
+   "count": 131
+  },
+  {
+   "name": "Bismarck",
+   "count": 40
+  },
+  {
+   "name": "Grand Forks",
+   "count": 23
+  },
+  {
+   "name": "Minot",
+   "count": 19
+  },
+  {
+   "name": "Dickinson",
+   "count": 7
+  },
+  {
+   "name": "Minot Afb",
+   "count": 5
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Sanford Medical Center Fargo",
+   "count": 46
+  },
+  {
+   "name": "Clinic Pharmacy Inc",
+   "count": 3
+  },
+  {
+   "name": "Grand Forks Clinic Pharmacy",
+   "count": 3
+  },
+  {
+   "name": "Innovis Health Llc",
+   "count": 2
+  },
+  {
+   "name": "Medcenter One Inc",
+   "count": 2
+  },
+  {
+   "name": "Sanford Clinic North",
+   "count": 2
+  }
+ ],
+ "rows": [
+  {
+   "name": "Zara Hussain, MD",
+   "title": "Pediatrician",
+   "org": "Innovis Health Llc",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sidney Johnk, APRN,CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Innovis Health Llc",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joan Connell, M.D",
+   "title": "Pediatrician",
+   "org": "University North Dakota",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Janes, DNP, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Kid'S Therapy Center Llc",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Dinius, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Joseph'S Hospital And Health Center",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristine Gayda, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Clinic Pharmacy Inc",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nabeel Manzar",
+   "title": "Pediatrician",
+   "org": "Clinic Pharmacy Inc",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Oksa, MD",
+   "title": "Pediatrician",
+   "org": "Medcenter One Inc",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Peterson, MD",
+   "title": "Pediatrician",
+   "org": "Medcenter One Inc",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marc Ricks, M.D",
+   "title": "Pediatrician",
+   "org": "Clinic Pharmacy Inc",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nisha Agarwal",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aileen Aldrich, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Alexis, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Waseem Altaf, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Anim, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anjali Arun, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Bellas, DO",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Benjamin-Eze, DO",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Benson, DNP, APRN, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Blaufuss, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Carver, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melanie Chihak, D.O",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Failing, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Gheen, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Grundstad, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dane Hammer, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohamed Hamza, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Heinze, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Holzer, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Horner, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jada Ingalls, D.O",
+   "title": "Child Abuse Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Johnson, APRN-CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bethany Kaemingk, M.D",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Klinkhammer, APRN, C-PNP",
+   "title": "Pediatrician",
+   "org": "Foundations Natural Medicine Pllc Dba Lagom Wellness Clinic",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Kobrinsky, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Veterans Administration Health Care",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kurt Kooyer, M.D",
+   "title": "Pediatrician",
+   "org": "Urgent Medicine Associates Llc",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Batoule Majed, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clifford Mauriello, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James McCabe, M.D",
+   "title": "Pediatrician",
+   "org": "Fargo Vamc",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Milanovich, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ron Miller, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carlos Miranda, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steffany Moen",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohamed Mohamed, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Montgomery, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic North",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Nelson, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janice Nicklay Catalan, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alonna Norberg, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic North",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chinwe Oraka, M.D., MPH",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Paschall, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ender Raghib, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Arts Clinic",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joey Rexine, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Sauer, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sadie Schmidt, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Schreier, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christen Seaman, M.D., M.P.H",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kari Solberg, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Enlift Health Medical Clinic Pllc",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Waldemar Storm, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Grant Syverson, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alex Thompson, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Thurlow, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Tinguely, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Trefz, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynae Wolf, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryan Payne, M.D",
+   "title": "Pediatrician",
+   "org": "319Th Medgrp-Grand Forks",
+   "city": "Grand Forks Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Hafner, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Grand Forks Clinic Pharmacy",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin King, M.D",
+   "title": "Pediatrician",
+   "org": "Altru Health System",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Lunn, MD",
+   "title": "Pediatrician",
+   "org": "Spectra Health",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Swank, MD",
+   "title": "Pediatrician",
+   "org": "Grand Forks Clinic Pharmacy",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Vanlooy, MD",
+   "title": "Pediatrician",
+   "org": "Grand Forks Clinic Pharmacy",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ellen Ketterling, MD",
+   "title": "Pediatrician",
+   "org": "West River Health Services",
+   "city": "Hettinger",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Ann Ranum, MD",
+   "title": "Pediatrician",
+   "org": "West River Health Services",
+   "city": "Hettinger",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Mehus, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Health Network North",
+   "city": "Mayville",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darlene Kelly, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nelson County Health System",
+   "city": "McVille",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Farber, MD",
+   "title": "Pediatrician",
+   "org": "Community Mri Services, Llc",
+   "city": "Minot Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Mattson, MD",
+   "title": "Pediatrician",
+   "org": "Trinity Hospitals",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Himadri Nath, M.D",
+   "title": "Neonatologist",
+   "org": "Trinity Health",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Koyejo Oyerinde, M.D",
+   "title": "Pediatrician",
+   "org": "First Choice Physical Therapy, Inc",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Reed-Thurston, MD",
+   "title": "Neonatologist",
+   "org": "Trinity Hospitals",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anita Martin, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Elbowoods Memorial Health Center",
+   "city": "New Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vincent Adjetey, MD",
+   "title": "Pediatrician",
+   "org": "McKenzie County Healthcare Systems Inc",
+   "city": "Watford City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Stenehjem",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "McKenzie County Healthcare Systems Inc",
+   "city": "Watford City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aubrey Decoteau, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Innovis Health, Llc",
+   "city": "West Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Stonehocker, BSN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Trinity Health",
+   "city": "Williston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathy Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Brown, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Cadwalader, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Caster, MS, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Dramko, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terry Dwelle, MD, MPHTM",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Faiza Javed, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Jeppson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Juelson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Kaminski, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacy Kern, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Kozel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Siriwan Kriengkrairut, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Parag Kumar, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Mains, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheena Mathew, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen McDonough, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Calsey Mischel, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ana Morgan-Harris, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Nelson",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kranthi Nomula, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Nordmeyer, NP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michele Pasierb, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mahesh Patel, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Reinke, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Rodrigues, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evan Rogler, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Schlag, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Seibel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Thurtle, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristie Toman, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Todd Twogood, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nneka Ugwu, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Van Ningen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Parveen Suhara Wahab, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cassaundra Walcker, APRN, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Watkins, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carla Zacher, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bismarck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian O'Hara, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dickinson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Aamoth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Saloni Agarwal, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Ajayi, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Antony, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Bakke, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nour Baltagi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Bentz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Blaufuss, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abigail Brunsvold, DNP,APRN, CPNP-AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Luis Casas, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chris Cleveland, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Clutter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Cummock, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Dahl, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jordan Doss, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalie Dvorak, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Priscilla Ellinor, RN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Woei Yeang Eng, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacob Fish, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brennan Forward, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carla Grossoli, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Gunderson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Hanson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Hemquist, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Hernandez, DO",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Hocker, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Horner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Houston, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Hutchison, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenifer Jones-Dees, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Jost, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anand Kantak, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sunita Kantak, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Kenien Erpelding, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kate Kessler, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theodore Kleiman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Knopik, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mari Knudsen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lidia Krasniewska, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Kuhn, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Kvistad, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Lewis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Lien, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Molly Linn, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kamilla Lucht, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dhilhan Marasinghe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Mausbach, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Mullally, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Mutchler, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracie Newman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Nygaard",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Osborn, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Osowski, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandni Patel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Paur, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Pavek, DNP, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristina Rauser-Foltz, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Rolling, D.O",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Schrader, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arveity Setty, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rushabh Shah, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Sharp, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christa Sieben, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Stoops, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Tillisch, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Tiongson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malachia Trout, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Ulmer, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Vilkama",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Muhammad Waqas, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Welle, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Weller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kirk Wyatt, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kalee Wysuph, APRN,CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Norbert Yoe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Jumping Eagle, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Ft. Yates",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca McLean, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Yang, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohammad Adie, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gloria Adjekum, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ambereen Alam, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sun-Mi Chae, PHD, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miltiadis Douvoyiannis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kiran Dwarakanath, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bernard Hoggarth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Miles, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thuy Nguyen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chukwuebuka Okafor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Durga Panda, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Peterson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslie Rodriguez, NP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frank Shelton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori Sondrol, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ngoc Gia Khanh Trinh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Zelewski, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Zimmerman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Grand Forks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Myra Quanrud, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jamestown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julianne Legierse, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Agnes Liem, CPNP-PC, AE-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Martinez",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Oliver, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Andreasen, NP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katharyn Burgardt, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Carver, DO",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brianna Ellingson, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Holland, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frederick Jones, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Venkata Kuppala, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Lesmann, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Duncan McCormick, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Messerly, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Friday Osuala, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Peterson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Sisa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Udekwe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Ugobi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juan Gaido, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Heifort, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Wahpeton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucy Malkasian, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wahpeton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jess Belling, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "West Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandon Meyer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "West Fargo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pirthvi Raj Giyanwani, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Williston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Grorud, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Williston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheila Ponzio, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Williston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  }
+ ]
+}

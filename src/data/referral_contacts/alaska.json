@@ -1,0 +1,2757 @@
+{
+ "name": "Alaska",
+ "slug": "alaska",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-alaska.csv",
+ "count": 268,
+ "emails": 5,
+ "phones": 267,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 218
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 45
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 5
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Anchorage",
+   "count": 171
+  },
+  {
+   "name": "Fairbanks",
+   "count": 27
+  },
+  {
+   "name": "Jber",
+   "count": 10
+  },
+  {
+   "name": "Wasilla",
+   "count": 9
+  },
+  {
+   "name": "Bethel",
+   "count": 7
+  },
+  {
+   "name": "Juneau",
+   "count": 7
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Southcentral Foundation",
+   "count": 21
+  },
+  {
+   "name": "Alaska Center For Pediatrics, Llc",
+   "count": 11
+  },
+  {
+   "name": "Alaska Native Tribal Health Consortium",
+   "count": 10
+  },
+  {
+   "name": "Anchorage Vamc",
+   "count": 7
+  },
+  {
+   "name": "The Childrens Clinic Inc",
+   "count": 6
+  },
+  {
+   "name": "Alaska Pediatric Specialties Llc",
+   "count": 5
+  }
+ ],
+ "rows": [
+  {
+   "name": "Michael Malandra, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Alaska Pediatric Specialties Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@alaskapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Moore, MD",
+   "title": "Pediatrician",
+   "org": "Allergy Asthma And Immunology Center Of Alaska Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@allergyalaska.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronda Nakoa, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Pediatric Specialties Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@alaskapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dion Roberts, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Alaska Pediatric Specialties Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@alaskapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Wittman, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Alaska Pediatric Specialties Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@alaskapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Baker, M.D",
+   "title": "Pediatrician",
+   "org": "Full Spectrum Pediatrics, Pc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paula Baker, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Asthma And Immunology Center Of Alaska Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Banks",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Barnes, ANP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Asthma And Immunology Center Of Alaska Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yekaterina Batilova, M.D",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Beals, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Beesley, MD",
+   "title": "Pediatrician",
+   "org": "Mindful Growth Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Berner, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maram Boutwell, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janice-Dani Bowman, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeff Brand, M.D",
+   "title": "Pediatrician",
+   "org": "Latouche Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Bridgman-Packer, MD",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jasmine Brock, MD",
+   "title": "Pediatrician",
+   "org": "Department Of Defense",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Brownell, M.D",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Browner, MD",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monique Child, MD",
+   "title": "Pediatrician",
+   "org": "Polar Pediatrics",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chrystal Coleman, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Latouche Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Diller, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Alaska Childrens Heart Center",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jayme Ellerbe, ANP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jodi Elliott, DO",
+   "title": "Pediatrician",
+   "org": "Bleeding Disorder Physicians Of Alaska, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Ersland, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Latouche Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Foster, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Foster, MD",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauryn Fowler, MD",
+   "title": "Pediatrician",
+   "org": "Department Of Defense",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Galloway, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Providence Health & Services - Washington",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara Gerke, M.D",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marie Gessel, M.D",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradford Gessner, MD",
+   "title": "Pediatrician",
+   "org": "Access Alaska Inc.",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shana Godfred-Cato, D.O",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Green, M.D",
+   "title": "Pediatrician",
+   "org": "Providence Anchorage Anesthesia Medical Group, P.C.",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haiden Grey, RN, MSN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Hedges",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sydney Henegan, CPNP-AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Herrick, MD",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Hessburg, MD",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Hirschfeld, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Holsopple, M.D",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services - Washington",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Irwin, MD",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Jacob, M.D",
+   "title": "Pediatrician",
+   "org": "Mary Ann Jacob, M.D., Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacob John, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Providence Health & Services - Washington",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gabrielle Karpinsky",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Providence Health & Services - Washington",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanette Legenza, MD",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacey Lettis Logan, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Lisse, DNP,APRN,CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Peak Neurology And Sleep Medicine, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Little, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Magnuson, M.D",
+   "title": "Pediatrician",
+   "org": "Jennifer L Hunt Agnp Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Marnell, DNP, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Children'S Services, Inc.",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Meyer",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jerome Nasenbeny, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Nicholas, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Noble, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Annalissa Ogena, M.D",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dwight Parker",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Pascual, DO",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori Porter, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Pratt, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Pediatric Gastroenterology Of Alaska, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Regan Ramsey, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Ray, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lance Robbins, DO",
+   "title": "Pediatrician",
+   "org": "Pediatric Specialists Of Alaska Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Sarrantonio, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Anchorage Neurosurgical Associates Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Schafer, M.D",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Semancik, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Alaska Pediatric Specialties Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosalyn Singleton, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linnea Smith, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Stange, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emma Stepp, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Tan Cadogan, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Tulip, MD",
+   "title": "Pediatrician",
+   "org": "The Childrens Clinic Inc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Voigt, CPNP, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marianne Vonhippel, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Latouche Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Walz, D.O, M.P.H",
+   "title": "Pediatrician",
+   "org": "Alaska Hospitalist Group Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Weicht, DO",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Wellmann, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Childrens Heart Center",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne White, MD- PEDIATRICS",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thad Woodard, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Center For Pediatrics, Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amie Wu, MD",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beverly Burden",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Yukon-Kuskokwim Health Corporation",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Carson-Strnad, M.D",
+   "title": "Pediatrician",
+   "org": "Yukon-Kuskokwim Health Corporation",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mien Chyi, M.D",
+   "title": "Pediatrician",
+   "org": "Yukon-Kuskokwim Health Corporation",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine McClure, M.D",
+   "title": "Pediatrician",
+   "org": "Yukon-Kuskokwim Health Corporation",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cormac Sookram, M.D",
+   "title": "Pediatrician",
+   "org": "Bethel Family Clinic",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Yeager, MD",
+   "title": "Pediatrician",
+   "org": "Bristol Bay Area Health Corporation",
+   "city": "Dillingham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Camvy Phan, DO",
+   "title": "Pediatrician",
+   "org": "354Th Medgrp-Eielson",
+   "city": "Eielson Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Soto",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "354Th Medgrp-Eielson",
+   "city": "Eielson Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "",
+   "phoneType": ""
+  },
+  {
+   "name": "Amy Vagedes",
+   "title": "Pediatrician",
+   "org": "354Th Medgrp-Eielson",
+   "city": "Eielson Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Norma Allgood, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "673D Medgrp-Jber Elmndrf-Rich",
+   "city": "Elmendorf Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Letha Archer, M.D",
+   "title": "Pediatrician",
+   "org": "Fireweed Pediatrics, Llc",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Bracamontes, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Southcentral Foundation",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Evans, APRN, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bluebell Wellness",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Macfarlane, M.D",
+   "title": "Pediatrician",
+   "org": "Fairbanks Clinic Inc",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Eiser, M.D",
+   "title": "Pediatrician",
+   "org": "Bassett Army Community Hospital/Public Health",
+   "city": "Fort Wainwright",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cathy Binder, RN / CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bassett Army Community Hospital",
+   "city": "Ft Wainwright",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Devry Garity, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Homer Medical Clinic, A Professional Corp",
+   "city": "Homer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradley Dayton, D.O",
+   "title": "Pediatrician",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Starrina Gianelloni, DO",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Huckabee, DO",
+   "title": "Pediatrician",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dewayne Lazenby, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Murphy, D.O",
+   "title": "Pediatrician",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Vassallo, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Zarobsky, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joy Neyhart, D.O",
+   "title": "Pediatrician",
+   "org": "Rainforest Pediatric Care",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Taintor, MD",
+   "title": "Pediatrician",
+   "org": "South East Alaska Regional Health Consortium",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Callum, MD",
+   "title": "Pediatrician",
+   "org": "Kenaitze Indian Tribe",
+   "city": "Kenai",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Visick, MD",
+   "title": "Pediatrician",
+   "org": "Central Peninsula General Hospital",
+   "city": "Kenai",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elisa Rosier, M.D",
+   "title": "Pediatrician",
+   "org": "Pacific Pediatrics, Llc",
+   "city": "Ketchikan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Therese Tomasoski, MD",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services - Washington",
+   "city": "Palmer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carole Buchholz",
+   "title": "Pediatrician",
+   "org": "Peninsula Allergy & Asthma Center Llc",
+   "city": "Soldotna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexander Russell, Jr, MD",
+   "title": "Pediatrician",
+   "org": "Central Peninsula General Hospital",
+   "city": "Soldotna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Walden, M.D",
+   "title": "Pediatrician",
+   "org": "Central Peninsula General Hospital",
+   "city": "Soldotna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Desiree Cook, CPNP-PC, PMHNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mat-Su Community Pediatrics, P.C.",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacob Eby, M.D",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Hess, D.O",
+   "title": "Pediatrician",
+   "org": "Ptarmigan Pediatrics Llc",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Impson, DO",
+   "title": "Pediatrician",
+   "org": "Adventures In Pediatrics, Llc",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cathleen Marshall, MD",
+   "title": "Pediatrician",
+   "org": "Northern Neurology, Llc",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randall Twenhafel, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sunshine Community Health Center, Inc",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Victor Harrison, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rural Island Medical",
+   "city": "Wrangell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allan Adler, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Alexander, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandi Angevine, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Arasmith, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Austin, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emilio Avila, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wendy Bailey, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Barton, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Blenkush",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Esteban Bonfante Ramirez, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Briggs, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jodyne Butto, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emma Cantor, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Chandler, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Christopherson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lyn Clark, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurie Colston, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roy Davis, MD, PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Dunlap, NP-C",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clifford Ellingson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Elliott",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Engel, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Fahl",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Fall, DNP, APRN CPNP AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Siv Fasci, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurie Fenderson, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Frenier, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adrian Furman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wesley Gifford",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marah Gotcsik, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Griese Williams, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Hammes, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Merlin Hamre, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chantal Hawk, DNP, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Heimerl, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Hemry, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tom Hepler, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Norman Herron, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Hill",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lilian Ho",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jack Jacob, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Johnson, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Johnson, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jay Johnson, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Jones, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Jones",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Kahler, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Phyllis Keihl, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronald Keller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Kerford Lescher, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Kesler, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Knox, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Kummer, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Lam, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Laufer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Naomi Leonard, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jo-Ann Llaneza, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "J Lovrich, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juanita Luna-Greene, CPNP, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Mandsager, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret McFadden, ANP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nola McManus, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Merkouris, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Willow Monterrosa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Myers, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Nesbitt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cory Noel, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Norman, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susannah Olnes, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Popham, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michale Ratzlaff, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colette Reahl, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Reilly, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evelyn Rider, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Ryan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Schamber, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Schumacher, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Shen, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Stewart, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Swogger, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Tappel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Tsao-Wu",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jered Weinstock, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Westley, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Wilson, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shahid Zaidi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephani Zakutansky, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randall Zernzach, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marianne Ziolkowski, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Grimsrud, RN CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Iwamoto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bethel",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Guarino, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dillingham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Beck, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Eagle River",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Gaupp, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle River",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin McArthur, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle River",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Ouimet, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle River",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dayne Bonzo, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eielson Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corneliu Antonescu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marvin Bergeson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiffany Borbon, MD, PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Brunner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carla Cartagena De Jesus, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Celina Clift, M. D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Cox, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John De Pasquale, MD, MPH, DTM&H",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brynn Ehlers Jaschen, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Foote, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Gannett, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Hanley, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nettie Irwin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Jay, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harry Jordan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Kessler, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gwendolyn Lieb, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mishelle Nace, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Naomi Pomerantz, MBCHB",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeri Rosenbloom, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Parisa Salehi, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Manal Shihadeh, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marianna Woodward, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ross Mathieu, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fort Wainwright",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suhani Patel, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fort Wainwright",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Thwing, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ft Wainwright",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Dorsey-Spitz, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Homer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Hubbard, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Homer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maeve Elliott, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcus Erdman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melanie Fry, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Dressel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Gross, M.D,",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Hopson, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Parker, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marna Schwartz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Juneau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Bhagat, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ketchikan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ketchikan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Rosenfeld, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ketchikan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Holmes, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Naknek",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jesse Atwood, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Palmer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Barry, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Palmer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Srikanth Malladi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Palmer",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Capp, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sitka",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer McNichol, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sitka",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Vastola, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sitka",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Peterson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elowyn Smith, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marie Westphal, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  }
+ ]
+}

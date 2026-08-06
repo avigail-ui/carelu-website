@@ -1,0 +1,5827 @@
+{
+ "name": "New Hampshire",
+ "slug": "new-hampshire",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-hampshire.csv",
+ "count": 575,
+ "emails": 3,
+ "phones": 575,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 467
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 92
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 16
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Lebanon",
+   "count": 144
+  },
+  {
+   "name": "Manchester",
+   "count": 97
+  },
+  {
+   "name": "Nashua",
+   "count": 56
+  },
+  {
+   "name": "Concord",
+   "count": 44
+  },
+  {
+   "name": "Bedford",
+   "count": 25
+  },
+  {
+   "name": "Portsmouth",
+   "count": 20
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Elliot Physicians Network",
+   "count": 17
+  },
+  {
+   "name": "Dartmouth-Hitchcock Clinic",
+   "count": 12
+  },
+  {
+   "name": "Concord Pediatrics, Pa",
+   "count": 12
+  },
+  {
+   "name": "Core Physician, Llc",
+   "count": 11
+  },
+  {
+   "name": "Concord Hospital",
+   "count": 10
+  },
+  {
+   "name": "Cheshire Medical Center",
+   "count": 9
+  }
+ ],
+ "rows": [
+  {
+   "name": "Keith Dominick, MD",
+   "title": "Pediatrician",
+   "org": "Amoskeag Health",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@amoskeaghealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Keane, MD",
+   "title": "Pediatrician",
+   "org": "Amoskeag Health",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@amoskeaghealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Shessler, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Amoskeag Health",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@amoskeaghealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Canfield, MD",
+   "title": "Pediatrician",
+   "org": "Amherst Pediatrics, Pllc",
+   "city": "Amherst",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Bisett, M.D",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Charest, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Della Grotta, M.D",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sam Dugan, MD",
+   "title": "Pediatrician",
+   "org": "Bedford Pediatrics, P.A.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Gheen, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alix Handelsman, M.D",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rochelle Heit, M.D",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanne Kordas, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kyle Landt, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Leighton, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Packard, M.D",
+   "title": "Pediatrician",
+   "org": "Manchester Health Services, Llc",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stanley Paras, MD",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Helen Poremba, MD",
+   "title": "Pediatrician",
+   "org": "River Road Pediatrics, P.L.L.C.",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanne Charest, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Coos County Family Health Services, Inc",
+   "city": "Berlin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anita Jones, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Coos County Family Health Services, Inc",
+   "city": "Berlin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Meredith, MD",
+   "title": "Pediatrician",
+   "org": "Coos County Family Health Services, Inc.",
+   "city": "Berlin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ellis Gardner, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Healthfirst Family Care Center, Inc.",
+   "city": "Canaan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Blair, MD",
+   "title": "Pediatrician",
+   "org": "Claremont Pediatric Specialists",
+   "city": "Claremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Victoria Johnson, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Valley Regional Hospital, Inc",
+   "city": "Claremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Lipfert, MD",
+   "title": "Pediatrician",
+   "org": "Valley Regional Hospital, Inc",
+   "city": "Claremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corinne Sullivan, MD",
+   "title": "Pediatrician",
+   "org": "Valley Regional Hospital, Inc",
+   "city": "Claremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shirley Tan, M.D",
+   "title": "Pediatrician",
+   "org": "Valley Regional Hospital, Inc",
+   "city": "Claremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Albushies, MD",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Arsnow, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Boulter, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wendy Brown-Perry, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelsey Card, DO",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Carney, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gabriella Chibbaro, DO",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dolly Courtemanche, MD",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Cramer, MD",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Devito, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Edwards, MD",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Faulkner, MD",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Viking Hedberg, M.D., M.P.H",
+   "title": "Adolescent Medicine Physician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Kahn, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "New Hampshire Public Health Laboratories",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ursula Kneissl, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Mattlage, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Mitchell, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hans Moen, M.D",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara O'Connor, MD",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Radwan, MD",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Rossi, MD",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelley Shultz, MD",
+   "title": "Pediatrician",
+   "org": "Concord Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Wicksman, DO",
+   "title": "Pediatrician",
+   "org": "Concord Pediatrics, Pa",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ross Emery, MD",
+   "title": "Pediatrician",
+   "org": "Saco River Medical Group, Pc",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharyn Flanagan-Rogers, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "White Mountain Community Health Center",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Laracy, DO",
+   "title": "Pediatrician",
+   "org": "Saco River Medical Group, Pc",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregg Rogers, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "White Mountain Community Health Center",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Brundage, MD",
+   "title": "Pediatrician",
+   "org": "Derry Pediatrics",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Della Grotta, MD",
+   "title": "Pediatrician",
+   "org": "Derry Pediatrics",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jared Dunahay",
+   "title": "Pediatrician",
+   "org": "Southern New Hampshire Internal Medicine Associates, Pllc",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Morgan, DO",
+   "title": "Pediatrician",
+   "org": "Derry Pediatrics",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sabina Omar, DO",
+   "title": "Pediatrician",
+   "org": "Southern New Hampshire Internal Medicine Associates, Pllc",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Rind, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Derry Neurological Associates, Pc",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Davie, MD",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terri Lally, M.D",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Laramee, M.D",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Pozner, CPNP-PC",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leonard Small, M.D",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andre Vanderzanden, M.D",
+   "title": "Pediatrician",
+   "org": "Dover Pediatrics, Pllc",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Boheen, MD",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shanta Dawson, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Deblasio Bonesho, MD",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Fitzgerald, MD",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiffany Guglielmo-Roxby, D.O",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carter Hines, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Jones, M.D",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Lambert, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Nowak, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Pare, DO",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Oliver Salmon, DO",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Turiano, MD",
+   "title": "Pediatrician",
+   "org": "Seacoast Hospice",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joann Lopez-Valles, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Concord Hospital-Franklin",
+   "city": "Franklin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hala Tabbah, MD",
+   "title": "Pediatrician",
+   "org": "Concord Hospital-Franklin",
+   "city": "Franklin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Weinreb, MD",
+   "title": "Pediatrician",
+   "org": "Weinreb Pediatrics",
+   "city": "Franklin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lara Wheeler, MD",
+   "title": "Pediatrician",
+   "org": "Healthfirst Family Care Center, Inc.",
+   "city": "Franklin",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Meyer, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The New London Hospital Association, Inc.",
+   "city": "Georges Mills",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Beals, MD",
+   "title": "Pediatrician",
+   "org": "Coos County Family Health Services, Inc",
+   "city": "Gorham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caryn Danielson, DO",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Hooksett",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gus Emmick, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Hooksett",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Campbell, DO",
+   "title": "Adolescent Medicine Physician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Hansen, MD",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gina O'Brien, MD",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Payton, M.D",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jillian Perry, DO",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Geraldine Rubin, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Schroeder, MD",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marni Silverstein, M.D",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arthur Simington, MD",
+   "title": "Pediatrician",
+   "org": "Cheshire Medical Center",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Couper, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lrg Healthcare",
+   "city": "Laconia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Coleen Curtin, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lrg Healthcare",
+   "city": "Laconia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Groenke, M.D",
+   "title": "Pediatrician",
+   "org": "Lrg Healthcare",
+   "city": "Laconia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Chaffee, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Dartmouth Hitchcock Psychiatric Associates",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheila Feyrer, MD",
+   "title": "Pediatrician",
+   "org": "Alice Peck Day Memorial Hospital",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Greer, M.D",
+   "title": "Pediatrician",
+   "org": "Alice Peck Day Memorial Hospital",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Williamson, MD",
+   "title": "Pediatrician",
+   "org": "Alice Peck Day Memorial Hospital",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Jacobs, MD",
+   "title": "Pediatrician",
+   "org": "Littleton Hospital Association",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sunit Patel, M.D",
+   "title": "Pediatrician",
+   "org": "Littleton Hospital Association",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Reynolds, MD",
+   "title": "Pediatrician",
+   "org": "Littleton Hospital Association",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Traci Wagner, MD",
+   "title": "Pediatrician",
+   "org": "Littleton Hospital Association",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Desena, MD",
+   "title": "Pediatrician",
+   "org": "Londonderry Pediatrics, Pa",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shanon Gruchot, MD",
+   "title": "Pediatrician",
+   "org": "Londonderry Pediatrics, Pa",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Hajduk, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kerry Houston, MD",
+   "title": "Pediatrician",
+   "org": "Londonderry Pediatrics, Pa",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Peterson, MD",
+   "title": "Pediatrician",
+   "org": "Londonderry Pediatrics, Pa",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ernest Beale, MD",
+   "title": "Neonatologist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malgorzata Bulanowski, MD",
+   "title": "Neonatologist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Cayer, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fernando Ferrucci, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Fiore, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Franzek, MD",
+   "title": "Neonatologist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Frieden, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cornelia Gonsalves, MSN,CPNP,APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Hopper, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Kossak, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Catholic Medical Center",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pia Maalouf, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marjan Makatam-Abrams, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Mintz, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Myers, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Louis Nackman, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mahendra Panesar, M.D",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Pinto, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Catholic Medical Center",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Pulaski, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexis Reimer, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Ryzewski, D.O",
+   "title": "Neonatologist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Salvatore, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harohalli Shashidhar, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Strahosky, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Elliot Professional Services",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Symansky, DO",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Truebe, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Merrill Proctor, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Root To Leaf Pediatrics Pllc",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Abel, M.D",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Alexander, M.D",
+   "title": "Pediatrician",
+   "org": "Foundation Medical Partners Inc.",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Lamprey Health Care Inc",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Beahm, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Candice Camacho, MD",
+   "title": "Pediatrician",
+   "org": "Foundation Medical Partners Inc.",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Cappetta, MD",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Micheline Cignoli, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Dobbins, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitchell Frumkin, M.D",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marykate Hill, MD",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Kaupp, M.D",
+   "title": "Pediatrician",
+   "org": "Foundation Medical Partners Inc.",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara Kaupp, MD",
+   "title": "Pediatrician",
+   "org": "Falardeau Family Chiropractic Llc",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacey Kopp, MD",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lawrence Learner, M.D",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephan Leblanc, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Levi, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gilbert Levine, M.D",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eleanor Maguire, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexa McWhinnie",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Louise Mermer, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James O'Reilly, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bridget Olsen, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Page, M.D",
+   "title": "Pediatrician",
+   "org": "Nashua Dentistry And Orthodontics For Children",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Riccio, M.D",
+   "title": "Pediatrician",
+   "org": "Foundation Medical Partners Inc.",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Albert Scaramella, MD",
+   "title": "Pediatrician",
+   "org": "Lamprey Health Care Inc",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Schuman, M.D",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Liliane Sznycer, MD",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abner Taub, M.D",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janna Thompson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lamprey Health Care Inc",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Youssef, M.D",
+   "title": "Pediatrician",
+   "org": "Quest Diagnostics Incorporated",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Ziminsky, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Oxnard, MD",
+   "title": "Pediatrician",
+   "org": "Lamprey Health Care Inc",
+   "city": "Newmarket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsey Andrea, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Memorial Hospital",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wenda Saunders, MD",
+   "title": "Pediatrician",
+   "org": "The Memorial Hospital",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Anibal, DO",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danette Colella",
+   "title": "Pediatrician",
+   "org": "Mid-State Health Center",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Crocker, MD",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Cunis, M.D",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Shamansky, MD",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelley White, MD",
+   "title": "Pediatrician",
+   "org": "Mid-State Health Center",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Williams, MD",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Deuell, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Allergy Associates Of Nh Pa",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Hickey, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Allergy Associates Of Nh Pa",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Hodges, M.D",
+   "title": "Pediatrician",
+   "org": "Coastal Pediatrics",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Walter Hoerman, MD",
+   "title": "Pediatrician",
+   "org": "Puddle Dock Pediatrics Pllc",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Itkin, MD",
+   "title": "Pediatrician",
+   "org": "Appledore Medical Group, Inc",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Kurish, MD",
+   "title": "Pediatrician",
+   "org": "Atlantic Internal Medicine & Pediatrics, Inc",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Roelofs, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Allergy Associates Of Nh Pa",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Smith, M.D",
+   "title": "Pediatrician",
+   "org": "Puddle Dock Pediatrics Pllc",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Dejohn, MD",
+   "title": "Pediatrician",
+   "org": "Rochester Pediatrics",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Hallisey, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rochester Pediatrics",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Hesko, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Greater Seacoast Community Health",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Miller, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rochester Pediatrics",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Rochefort, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Greater Seacoast Community Health",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Sanders, MD",
+   "title": "Pediatrician",
+   "org": "Rochester Pediatrics",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Udomprasert, MD",
+   "title": "Pediatrician",
+   "org": "Rochester Pediatrics",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deepak Sharma, MD",
+   "title": "Pediatrician",
+   "org": "Deepak Sharma",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Kelsey, M.D",
+   "title": "Pediatrician",
+   "org": "Family Health Center, P.A.",
+   "city": "West Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jayne Tarkleson, DO",
+   "title": "Pediatrician",
+   "org": "Weeks Medical Center",
+   "city": "Whitefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Devylder, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Huggins Hospital",
+   "city": "Wolfeboro",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Matos, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Huggins Hospital",
+   "city": "Wolfeboro",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Black, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kermit Brunelle, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rajeswari Cheerath, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Greenfeld, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Converse Hunter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Jackson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sashka Luque, M.D., M.P.H",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Palumbo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronald Schneebaum, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ken Schroeter, D.O",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Spiro, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Spivack, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bedford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maude Aldridge, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Belmont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harkeerat Bhullar",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Belmont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Laumann, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Canaan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Atkinson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Benton, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kai-Wei Chang, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Davis-Schaffer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslie Dick, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christian Hallowell, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Holub-Smith, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Kaufman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tessa Lafortune-Greenberg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Macdonald, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Medeiros, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Oliveira, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Piccone, D.O., FAAP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Todd Poret, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Robator, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Rork, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Shulman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Silva, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Thibodeau, BSN, MSN, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Vanvranken, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Watson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanna Iris Depasupil, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Derry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ahuva Brown, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christin Folker, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Franks, CPNP-PC, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Manganaro, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jo Ann Beltre, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Bloomer, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Myra Citrin, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Clark, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Fountain, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Gale, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gwendolyn Gladstone, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darren Guy, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori McClure, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Ogrady, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Oxnard, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Prazar, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Betsy Sandberg, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Simon, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Walker, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Exeter",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayla Wilson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Gilford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurel Gourville, P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Gilmanton Iron Works",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Cooley, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Greenfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandra Miller, MSN, RN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Greenfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayla Digloria, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Hampstead",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Bracken, MD, PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hanover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Turkington, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hanover",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Fredenburg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hudson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Goodman, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Hynes, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly McKane, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Nash, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malinda Scherpa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Keene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ana Silvia Hernandez Aviles, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laconia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kicki Wehlou, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laconia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amer Al-Nimr, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bethany Ames, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheryl Anderson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Arpin, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deanna Banuskevich, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Barton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Norman Berman, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Henry Bernstein, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Berube, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Bisson, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Boas, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Boyle, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Virginia Brack, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Bradley, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Braga, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Casella, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Chapman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anjulika Chawla, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Chobanian, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Christiano, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Christoffers, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Coffey, PHD, APRN , CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barry Cohen, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Collier, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Collins, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Corbett, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Curtis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Darnall, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Davis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margery Donovan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Doton, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clare Drebitko, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Edwards, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslie Fall, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Ferrara, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raymond Ferri, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Filiano, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Flanagan, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zoe Frolking",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Gifford",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Madonna Gordon, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Faith Goronga",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eileen Granahan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Gray, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tricia Groff, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Guill, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tyler Hartman, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Hawrot, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Higley, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Hoffer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison Holmes, MD, MPH, FAAP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samantha House, D.O., M.P.H",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "An Huynh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wilma Hyde, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Israel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Jenkins, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Judkins, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elvin Kaplan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nadim Khalil, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Kim, M.D., PH.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ben Kolker, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Florence Lambert-Fliszar, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Lannon, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eugene Lariviere, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Lau, MD, PHD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanna Leyenaar, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frances Lim-Liberty, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Little, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Little, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keith Loud, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Luneau",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Dee Macmillan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juliette Madan, MD, MS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Madrid, D.O",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cristina Mamolea, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Marsh, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samantha Martin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debora Matossian, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Auden McClure, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke McLaughlin, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel McWilliams, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Herman Meissner, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenna Menger, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Modlin, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Molina, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Morse, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Murray, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Nelsen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Nguyen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Lynn O'Dea, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Ogden, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ardis Olson, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Resmiye Oral, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Palumbo, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Passarelli, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brinda Prasanna Kumar, MBBS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Pullin, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ana Quintero-Del-Rio, MD, MPH",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Ratts, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Reese, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Reuman, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Torunn Rhodes, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Ricci, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Rich, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Richards, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Ringer, MD PHD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Robertson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alan Rozycki, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Ruckdeschel, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Ryan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nina Sand-Loud, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Sanville, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Sargent, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Komal Satti, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jocelyn Schreiber, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nidhi Shah, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Shipman, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Shubkin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julia Solomon",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hillary Spencer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carole Stashwick, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susanne Tanski, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Thompson, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patience Toyin-Thomas, MBBS., MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Tsichlis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Tyler, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janice Valmassoi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jack Van Hoff, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michele Vander Heyden, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Vincent, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Walsh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Weinstein, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonny Whalen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darcy Wolcott, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dorothy Wortmann, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Wright, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Yazel, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claudia Zegans, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Zimmerman, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Zinn, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maia Rutman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lebnon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Lakey, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Mane, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Paquette, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Rosen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Stamegna, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Londonderry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Puleo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lyme",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marissa Avolio, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mackenzie Bartlett, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Bradley, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Chang, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Clarke, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Clem, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elda Cordero-Goodman, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Crowley, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Cruz, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Dibrigida, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Dorsey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Dubre, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Dzialo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ana Ferrer, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Luisa Fontes Aguiar, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Frydman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Gensure, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Geraghty, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenifer Glatz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Grandgeorge, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Hand, D.O",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marc Hofley, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Hofley, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Hollister, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Jackson, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Johnson, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joyce Koerber, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Lawrence, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke Leary, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Logan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Lynch, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michele Mandel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eileen McCarthy, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jan McGonagle, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan McKeown, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tina Morhardt, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Murphy, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Murphy, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Noll, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Nordgren, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Osullivan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Oszkinis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Paris, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Plotnik, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jaisal Pragani",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Priolo, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Proulx, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Redford, D.O",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Repucci, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Ritrovato, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jillian Rork, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Rosenwasser, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Samuels, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Schreiber, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Schwartzberg, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joey Scollan, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Inbar Shani, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erik Shessler, MDCM",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evelyn Stacy, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Steichen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Stevens, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Renee Travassos, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Vargas Lowy, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ivan Von Hack-Prestinary, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Wentworth, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Widness, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Wiegand, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Zajano, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corrine Zeman, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Brumfield, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Dunetz, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Fanburg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Lavallee, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Miller, D.O., F.A.A.P",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tomas Tomanek, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merrimack",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abir Azar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Carlson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Rosenfeld, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Seraphine Thermitus, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Valerie Atkins, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Connors, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ranjan Dandekar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anindita Das, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Duff, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Fetter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Fitzgerald, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Ganem, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Glidden, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcus Hermansen, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juliana Ivanof, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susann Leblanc, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan McNamee, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara Mills, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lila Monahan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sumana Myneni, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenisha Nandhlal, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Robey, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Sargent, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Schaefer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nikita Singh, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Spirito, MSN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Thompson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Vore, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Williams, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Kluger, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New London",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Lester, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New London",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James McGuire, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New London",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gina Schwartz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New London",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Wirth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New London",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Pettis, APRN",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Newington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Fekete, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charlotte Helvie, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine McGrath, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arlene Mrozowski, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "North Conway",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Hurley, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Peterborough",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Kriebel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Peterborough",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Schoel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Peterborough",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Shea, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Peterborough",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christie Devoe, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Plaistow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca McCallister, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Plaistow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Melendy, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Plaistow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Oesterle, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Plaistow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Westinghouse, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Plaistow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Benton, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Breen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Brown, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth George, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Gibbons, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Hyer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Kaiser, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne McGann, A.R.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Ryan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gail Simonds, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "H. Turner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joann Warren, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Emmick, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Raymond",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Husarik, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Raymond",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "L. John Klunk, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Raymond",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hilary Yehling, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Raymond",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Feldmann, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Feldmann, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sunanta Ober, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Menard, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Somersworth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitchell Pivor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Somersworth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Corcoran, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Strafford",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Covey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eileen Forrest, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Johnson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Kyle, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Loh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janice Michaud, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Williams, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Stratham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Hare, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tilton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claudia Gibson, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "West Lebanon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elena Cardini, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Westmoreland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Serafin Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wilton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shideh Deurell, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Windham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Lee, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Windham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayla Maloney, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Windham",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  }
+ ]
+}

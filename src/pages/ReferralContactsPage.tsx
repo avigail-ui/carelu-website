@@ -34,7 +34,11 @@ const FAQ = [
   },
   {
     q: 'How current is the contact information?',
-    a: `The list was last refreshed in ${REFRESHED}. Contacts are enriched and cross-checked through dozens of provider data sources — professional profiles, practice websites, and public directories — and records that stop verifying are corrected or removed.`,
+    a: `The list was last refreshed in ${REFRESHED}. The base roster comes from the federal NPI registry — the government's continuously updated record of every licensed provider — and the enrichment layer (emails, direct dials, websites, LinkedIn) is cross-checked through dozens of provider data sources, with records that stop verifying corrected or removed.`,
+  },
+  {
+    q: 'Are the phone numbers direct lines?',
+    a: 'Both kinds, clearly labeled in every download. Rows marked "Direct" carry a verified direct or mobile number from our enrichment. Rows marked "Practice" carry the practice\'s main line from the federal NPI registry — still the fastest route to the front desk that books their referrals.',
   },
   {
     q: 'Can I import it into my CRM or email tool?',
@@ -46,7 +50,7 @@ const FAQ = [
   },
   {
     q: 'Who is in the list?',
-    a: 'The professionals families see before they find you: pediatricians (the large majority), developmental and developmental-behavioral pediatricians, pediatric residents and physician assistants, child psychologists and psychiatrists, licensed clinical social workers, and child therapists.',
+    a: 'The professionals families see before they find you: every pediatrician in the federal registry — general, developmental-behavioral, and pediatric subspecialists — plus pediatric nurse practitioners nationwide, and enriched records for child psychologists, psychiatrists, licensed clinical social workers and child therapists in select states.',
   },
 ];
 
@@ -101,7 +105,7 @@ const WHY_CARDS = [
 const INSIDE_CARDS = [
   { title: 'Who they are', desc: 'Full name and exact job title — pediatrician, developmental-behavioral pediatrician, child psychologist, LCSW — so you can segment outreach by role.' },
   { title: 'Where they practice', desc: 'Organization, practice website, and location, so every email can reference the actual practice and city you’d be serving together.' },
-  { title: 'How to reach them', desc: `${STATS.emails.toLocaleString()} verified work emails, ${STATS.phones.toLocaleString()} direct phone numbers, and a LinkedIn profile for every single contact.` },
+  { title: 'How to reach them', desc: `${STATS.emails.toLocaleString()} verified work emails and ${STATS.phones.toLocaleString()} phone numbers — direct lines where our enrichment found one, otherwise the practice's main line, and every row is labeled which is which. ${STATS.linkedin.toLocaleString()} contacts also carry a LinkedIn profile.` },
 ];
 
 const PLAYBOOK_CARDS = [
@@ -126,8 +130,8 @@ export default function ReferralContactsPage() {
     { n: STATS.total.toLocaleString(), label: 'referral contacts' },
     { n: String(STATS.stateCount), label: 'states covered' },
     { n: STATS.emails.toLocaleString(), label: 'verified emails' },
-    { n: STATS.phones.toLocaleString(), label: 'direct phone numbers' },
-    { n: '100%', label: 'with LinkedIn profiles' },
+    { n: STATS.phones.toLocaleString(), label: 'phone numbers (direct & practice)' },
+    { n: STATS.linkedin.toLocaleString(), label: 'LinkedIn profiles' },
   ];
 
   return (
@@ -161,9 +165,9 @@ export default function ReferralContactsPage() {
             lineHeight: 1.7, maxWidth: 680, margin: '22px auto 0',
           }}>
             {STATS.total.toLocaleString()} pediatricians, developmental specialists, child psychologists
-            and clinical social workers across {STATS.stateCount} states — with verified emails, direct
-            phone numbers and LinkedIn profiles. Enriched through dozens of provider sources.
-            Free, by state, in clean CSV.
+            and clinical social workers across all 50 states and Washington D.C. — with verified emails
+            and a phone number for nearly every contact. Built on the federal NPI registry and enriched
+            through dozens of provider sources. Free, by state, in clean CSV.
           </p>
           <div className="rv d3" style={{ marginTop: 30 }}>
             <button
@@ -264,7 +268,9 @@ export default function ReferralContactsPage() {
                 <div>
                   <a href={`/resources/pediatrician-referral-contacts/${s.slug}`} style={{ fontSize: 16, fontWeight: 700, color: INK, letterSpacing: '-0.005em', textDecoration: 'none' }}>{s.name}</a>
                   <div style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.55)', marginTop: 3 }}>
-                    {s.count.toLocaleString()} contacts · {s.emails.toLocaleString()} emails · {s.phones.toLocaleString()} phones
+                    {s.count.toLocaleString()} contacts
+                    {s.emails > 0 && <> · {s.emails.toLocaleString()} emails</>}
+                    {' '}· {s.phones.toLocaleString()} phones
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
@@ -333,11 +339,13 @@ export default function ReferralContactsPage() {
           }}>The most complete list of its kind</h2>
           <p className="rv" style={{ fontSize: 16, color: 'rgba(43,42,38,0.72)', lineHeight: 1.75, margin: '0 0 16px' }}>
             Generic contact databases treat pediatric professionals as an afterthought — a title filter
-            over stale records. This dataset was built the other way around: each contact enriched and
-            cross-checked through dozens of provider sources, deduplicated across states, and kept
-            current with ongoing re-verification. We believe it&apos;s the best pediatric referral
-            resource available anywhere on the web — and you can browse every state&apos;s list right
-            here on the site.
+            over stale records. This dataset starts from the federal NPI registry — the government&apos;s
+            own roster of every licensed provider — so no pediatrician is missing, then layers on
+            enrichment cross-checked through dozens of provider sources: verified work emails, direct
+            dials, practice websites and LinkedIn profiles. Deduplicated across states and kept current
+            with ongoing re-verification, we believe it&apos;s the best pediatric referral resource
+            available anywhere on the web — and you can browse every state&apos;s list right here on
+            the site.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 6 }}>
             {INSIDE_CARDS.map((c) => (

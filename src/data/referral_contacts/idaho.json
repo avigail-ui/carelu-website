@@ -1,0 +1,4167 @@
+{
+ "name": "Idaho",
+ "slug": "idaho",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-idaho.csv",
+ "count": 409,
+ "emails": 0,
+ "phones": 409,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 333
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 71
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 5
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Boise",
+   "count": 163
+  },
+  {
+   "name": "Meridian",
+   "count": 39
+  },
+  {
+   "name": "Coeur D Alene",
+   "count": 35
+  },
+  {
+   "name": "Idaho Falls",
+   "count": 28
+  },
+  {
+   "name": "Nampa",
+   "count": 20
+  },
+  {
+   "name": "Twin Falls",
+   "count": 20
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "St Lukes Regional Medical Center",
+   "count": 14
+  },
+  {
+   "name": "Medical Center For Children & Adolescents, Pa",
+   "count": 12
+  },
+  {
+   "name": "Alliance Medical Group, Llc",
+   "count": 10
+  },
+  {
+   "name": "St. Luke'S Treasure Valley Pediatrics",
+   "count": 7
+  },
+  {
+   "name": "Idaho Falls Pediatrics",
+   "count": 6
+  },
+  {
+   "name": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "count": 5
+  }
+ ],
+ "rows": [
+  {
+   "name": "Joseph Moore, M.D",
+   "title": "Pediatrician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ron Porter, M.D",
+   "title": "Pediatrician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Smith, D.O",
+   "title": "Pediatrician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitchael Steorts, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Vance, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Carol Klett Vance Md, Inc.",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Webb, DO",
+   "title": "Pediatrician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vaun Archibald, DO",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Physician Services Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Baker, MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Physician Services Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Bender, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Childrens Kidney Specialists Pllc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Black, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Childrens Kidney Specialists Pllc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alice Blake",
+   "title": "Pediatrician",
+   "org": "Apb Medical Pc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Bourquard, MD",
+   "title": "Pediatrician",
+   "org": "The Pediatric And Adolescent Center, Inc.",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Christensen, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Picu Associates, Llc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leona Church, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "North End Children'S Health Clinic",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitzi Cieslak, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Neurosurgry Of Idaho Pc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cydney Fenton, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Flynn, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mindy Gaddis, MD",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ben Godfrey, MD",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Guzman, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Community Health Clinics, Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aimee Hastriter, DNP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Luna Hodges, DNP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randall Jenkins, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Childrens Kidney Specialists Pllc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christie Julian, MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Physician Services Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "J Leavell, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Lindsay, DO",
+   "title": "Pediatrician",
+   "org": "Ada Pediatrics, P.A.",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evan Melville, DO",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Moughamian, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Live Well Health And Nutrition Pllc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alisa Ortega, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Community Health Clinics, Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Patterson, M.D",
+   "title": "Pediatrician",
+   "org": "Full Circle Health, Inc.",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cathy Sandstrom, MD",
+   "title": "Pediatrician",
+   "org": "The Pediatric And Adolescent Center, Inc.",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jayson Smith, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Stout, MD",
+   "title": "Pediatrician",
+   "org": "Boise Valley Asthma & Allergy Pa",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Taylor, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anja Tjaden, MD",
+   "title": "Pediatrician",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Walawender, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Childrens Kidney Specialists Pllc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hilary Warren, MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Physician Services Inc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Webb, MD",
+   "title": "Pediatrician",
+   "org": "Allergy Group Pc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Womack, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Of Idaho",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hailey Rose, DO",
+   "title": "Pediatrician",
+   "org": "Boundary Regional Community Health Center Inc",
+   "city": "Bonners Ferry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Thompson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Cornerstone Urgent Care & Family Medicine",
+   "city": "Bonners Ferry",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Babbel, DO",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center Inc",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Borup, MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center Inc",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Brown, MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center Inc",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kaysea Studioso-Hatch, DO",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center Inc",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Beattie, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dirne Health Centers Inc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Hickok, MD",
+   "title": "Pediatrician",
+   "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Jerkins, MD",
+   "title": "Pediatrician",
+   "org": "Dirne Health Centers Inc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yendi Labelle, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Premier Medical Associates Llc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Magnuson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dirne Health Centers, Inc.",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beth Martin, MD",
+   "title": "Pediatrician",
+   "org": "Dirne Health Centers, Inc.",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Prince, MD",
+   "title": "Pediatrician",
+   "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christy Riley, MD",
+   "title": "Pediatrician",
+   "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Shirts, MD",
+   "title": "Pediatrician",
+   "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jordan Taylor, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dirne Health Centers, Inc.",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronda Westcott, M.D",
+   "title": "Pediatrician",
+   "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Kokx, MD",
+   "title": "Pediatrician",
+   "org": "Kent Pediatrics, Pc",
+   "city": "Comstock Park",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Maddox, M.D",
+   "title": "Pediatrician",
+   "org": "Teton River Pediatrics",
+   "city": "Driggs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hailey Baisch, MD",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Bizimana, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oasis Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katelyn Brigham",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Hirsch, MD",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alan Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Eagle Pediatrics,P.A.",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Stinger, M.D., M.P.H",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Noreen Womack, MD",
+   "title": "Pediatrician",
+   "org": "St. Luke'S Treasure Valley Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Wong",
+   "title": "Pediatrician",
+   "org": "Oasis Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angella Zieba, MD",
+   "title": "Pediatrician",
+   "org": "Oasis Pediatrics",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abby Davis",
+   "title": "Pediatrician",
+   "org": "Snake River Pediatrics, Pc",
+   "city": "Fruitland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Devoe, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "Snake River Pediatrics, Pc",
+   "city": "Fruitland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theodore Gross",
+   "title": "Pediatrician",
+   "org": "Snake River Pediatrics, Pc",
+   "city": "Fruitland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Anderson, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Aughney, D.O",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Bagley, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Chavez, APRN CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bee Happy Pediatrics",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brad Edwards, DO",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colette Egbert, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Just 4 Kids Health Llc",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Groberg, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradford Hatch, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Jenkins, DO",
+   "title": "Neonatologist",
+   "org": "Patients First Neonatology Llc",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristie Karroum, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nurture Lactation Support For Women & Infants",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Nielsen, PA C",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Olson, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Pankau, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colby Pearson, DO",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Pettit, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Prier",
+   "title": "Pediatrician",
+   "org": "Rocky Mountain Diabetes And Osteoporosis Center, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nephi Redd, D.O",
+   "title": "Pediatrician",
+   "org": "Just 4 Kids Health Llc",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Smith, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rocky Mountain Diabetes And Osteoporosis Center, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Veber, MD",
+   "title": "Pediatrician",
+   "org": "Medical Center For Children & Adolescents, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Venn, R.D.L.D., PA-C",
+   "title": "Pediatrician",
+   "org": "Just 4 Kids Health Llc",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Drue Winder, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Just 4 Kids Health Llc",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Anderson, APRN-CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thrive Pediatrics, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Beauchaine, MD",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Birch, MD",
+   "title": "Pediatrician",
+   "org": "Treasure Valley Childrens Clinic, Pc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Weslie Cooley, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thrive Pediatrics, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Ferguison, MD-PEDIATRICS",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Francis, D.O",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Britney Holden, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Olivia Holmes, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Johnson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Kim, MD",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Byron Knowles, MD. PEDIATRICS",
+   "title": "Pediatrician",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica McCullough, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristina Miles, DO",
+   "title": "Pediatrician",
+   "org": "Full Circle Health, Inc.",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Miller, DO",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Peterman, MD",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Riffle, M.D",
+   "title": "Pediatrician",
+   "org": "Meridian Pediatrics",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Smith, M.D",
+   "title": "Pediatrician",
+   "org": "Thrive Pediatrics, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Strasser, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandon Taylor, D.O",
+   "title": "Pediatrician",
+   "org": "Thrive Pediatrics, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Wilson, MD",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Summer Day, MD",
+   "title": "Pediatrician",
+   "org": "Gritman Medical Center, Inc.",
+   "city": "Moscow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Strong, MD",
+   "title": "Pediatrician",
+   "org": "Nurture Pediatrics Pc",
+   "city": "Moscow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradley Phillips",
+   "title": "Pediatrician",
+   "org": "366Th Medgrp-Mountain Home",
+   "city": "Mountain Home Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Bryant, D.O",
+   "title": "Pediatrician",
+   "org": "Boundary Medicine & Wellness, Llc",
+   "city": "Moyie Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Godard, RNC, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nampa Family Justice Center",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juliet Lener, M.D",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Slade, M.D",
+   "title": "Pediatrician",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Suski, M.D",
+   "title": "Pediatrician",
+   "org": "Community Health Clinics, Inc.",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maximilian Veltman, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nampa Family Justice Center",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Boe, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "South Park, Inc.",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Kostur, M.D",
+   "title": "Pediatrician",
+   "org": "Health West, Inc.",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Larsen, M.D",
+   "title": "Pediatrician",
+   "org": "Pocatello Children & Adolescent Clinic",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison McInturff, M.D",
+   "title": "Pediatrician",
+   "org": "Pocatello Children & Adolescent Clinic",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Pulliam, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pocatello Children & Adolescent Clinic",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caroline Sassetti-Hryczyk, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Health West, Inc.",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Stelzer, MD",
+   "title": "Pediatrician",
+   "org": "Pocatello Children & Adolescent Clinic",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christian Yost, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "Yost And Yost Pediatrics",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elias Lines, DO",
+   "title": "Pediatrician",
+   "org": "Idaho Falls Pediatrics",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hans Redd, MD",
+   "title": "Pediatrician",
+   "org": "Byu Idaho Student Health Center",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cameron Stephenson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Madison Co Memorial Hospital",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacob Nelson, DO",
+   "title": "Pediatrician",
+   "org": "Upper Valley Community Health Services Inc",
+   "city": "Saint Anthony",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Deland, MD",
+   "title": "Pediatrician",
+   "org": "Boundary Regional Community Health Center, Inc.",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Freund, MS RN CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Boundary Regional Community Health Center, Inc.",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Vizcarra, M.D",
+   "title": "Pediatrician",
+   "org": "Boundary Regional Community Health Center, Inc.",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Bartlett, DNP, AGACNP-BC, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pro Active Advantage, Llc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kasey Cook, DO",
+   "title": "Pediatrician",
+   "org": "Frontier Pediatric Partners Pllc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Eyre, MD",
+   "title": "Pediatrician",
+   "org": "Frontier Pediatric Partners Pllc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jared Hansen, M.D",
+   "title": "Pediatrician",
+   "org": "Aeris Pediatrics, Pllc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heidi Lewis, DNP, FNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Elite Medicine Pc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Mann, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Frontier Pediatric Partners Pllc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronald Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Neurology Of Twin Falls, Llc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Scott, M.D",
+   "title": "Pediatrician",
+   "org": "Neurology Of Twin Falls, Llc",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslie Miller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julene Parson",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Blackfoot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Ullery, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Blackfoot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandria Ahlm, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Alexander, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Naya Antink, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mehrdad Asadifar, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jaeger Ashton, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kholtyn Barney, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Battista, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Bentley, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryanna Berish, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Larry Bishop, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradley Bishop, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Blaty, MD",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Boatman, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Booth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Velma Bradford, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Bross, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Perry Brown, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Brown",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Buhikire, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kaitlin Burke, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tyler Burpee, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Burrell, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Asma Butt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicolas Camilo, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Carew, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dayna Carlson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christian Casteel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eugenia Chang, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Ciesla, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronald Coen, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Coffey, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Collier, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charlene Crichton, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Derrick Dauplaise, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Digeronimo, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Duvall, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Edstrom, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Egland, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Elledge, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Ellison, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frederick Emge, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "April Evans, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Gauthier, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keren Genstler",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Simi George, MBBCH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Philip Gilliam, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Grant, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Green, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Hannay, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Hansen, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nick Harper, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shawn Hemenway, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Henbest, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ralph Higer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Hilinski, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chad Hilmo, OTD, OTR/L",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jerome Hirschfeld, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenna Hogan, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Hong, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Jambura, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Janos, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Jansen, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Josie Joseph, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Judd, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Kiehl, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Kikuchi, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer King, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly King, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Kleweno, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sivani Kuruvada, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Labor, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Lachiondo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zakary Landers, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stewart Lawrence, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Liccini",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Lilya, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynn Luginbuhl, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ingrid Lundgren, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gordon Mack, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Savarra Mantzor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Marria, BSN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Marstaeller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cali McAllister, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark McConnell, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Meeker, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Mello",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Merchant, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Messier-Gieri, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erik Meyers, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mikelle Mikesell, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yukiko Miura, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelsey Moe, PCP-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Murphy, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fizza Naqvi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Declan O'Riordan, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Pacheco, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Piscette, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Powell, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Rainey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Rand, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Remmel, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Ronquillo, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Schaffer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Sexton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Showalter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cass Smith, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Smith, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Snyder, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Stevens, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Faith Stirm, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gracie Strubel, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenilea Thomas, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Henry Thompson, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Thornton, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Timpane, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Tippets, D.O",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Trapp, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shana Tubach, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Ullery, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Uranga, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Urban, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Vanlooy, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Annis Vargas, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meera Varman, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonita Vestal, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kaitlyn Voelz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eloisa Walker, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Weiss, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsey Wendel, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marc Zafferani, D.O",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Micalena Perkins, MSN, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Burley",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Crystal Belcourt, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jee Hur, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Merle Keller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Lee",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natasha Miller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachael Smith, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Caldwell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kandralyn Steele, PPCNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Chubbuck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Anain, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kendra Black-Smith, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nichole Buynak, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Carl, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Claussen, D.O",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Duane Craddock, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryan Furr, D.O",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Gay, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brook Lang, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Magee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa McGill-Vargas, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicola McLachlan, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Mosqueda, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terence Neff, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Nicolarsen, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanna Padilla, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hinah Parker",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Price, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Rau, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Sauter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheri Savage",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Jo Shaw, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Spiess, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Ulrich, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randi Edwards, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emmalee Gerstenberger, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kirandeep Gill, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Parker, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charlotte Weeda, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Missy Sturk, M.S., OTR/L",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Driggs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Dykstra, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniela Grigore, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Humphrey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Lewis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura McDermott, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Marshall, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fort Hall",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Westerman, APRN, CPNP-AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Garden City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barton Adrian, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Hailey",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Hopeman, MD, MBA",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hailey",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Quayle",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hailey",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Cheatham, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Colson, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Gardner, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Meyers, D.O",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jordan Simpson, DO",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Wright, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Zuckerman, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Idaho Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Hoffman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ketchum",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Fry Lawson, C-PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kuna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Ambroson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natale Carasali, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theodore Krisher, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darby Lynch, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Parkey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Roth, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Schultz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tysen Weber, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Adams, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Agoudemos, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Albright",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Barker, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Barr, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Seth Branahl, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Bressler, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Copeland, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Criddle, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Geiger",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Hanks, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Joyce, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elsa Lee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Miller, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Khristine Miller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Prasch, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Roy, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marisue Susman, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kailyn Wiersma",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Hall, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Moscow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Aguilar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Aldous, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mario Brus, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Freeman, MEDICAL DOCTOR-MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Hammer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeannette Jain, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Liddell, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Lyons",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leeanne Mehling, C-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Preston Omer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Papiez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deanna Pitman, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Stringham, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Wheaton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Wilbanks, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marlene Corriere-Bransky, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Denton, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Duty, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Fulks, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colby Kearl, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Don McInturff, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Murdoch, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cindy Parsons, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shaun Summerill, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Swenson",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gentry Yost, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pocatello",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Hancock, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Hymas, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Lofgran, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Sena, PA-C",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Magee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Seaman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Seckel, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harry Vanderwal, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tara Vizcarra, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandpoint",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Fischel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tetonia",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Allen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Hartrick Buechle, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Jones, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohamed Khalifa",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Austin Kline, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitchell Moffitt, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Monson, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Mulert, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Reese, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Salame, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shayne Stokes, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Trotter, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Twin Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  }
+ ]
+}

@@ -1,0 +1,6677 @@
+{
+ "name": "Hawaii",
+ "slug": "hawaii",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-hawaii.csv",
+ "count": 660,
+ "emails": 2,
+ "phones": 660,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 594
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 55
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 11
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Honolulu",
+   "count": 344
+  },
+  {
+   "name": "Tripler Army Medical Center",
+   "count": 40
+  },
+  {
+   "name": "Wailuku",
+   "count": 30
+  },
+  {
+   "name": "Tripler Amc",
+   "count": 30
+  },
+  {
+   "name": "Aiea",
+   "count": 24
+  },
+  {
+   "name": "Kailua",
+   "count": 22
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Amc Tripler-Shafter",
+   "count": 24
+  },
+  {
+   "name": "Kaiser Foundation Health Plan Inc",
+   "count": 20
+  },
+  {
+   "name": "Family Medicine Clinic",
+   "count": 12
+  },
+  {
+   "name": "Straub Clinic & Hospital",
+   "count": 8
+  },
+  {
+   "name": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "count": 7
+  },
+  {
+   "name": "Community Clinic Of Maui, Inc.",
+   "count": 7
+  }
+ ],
+ "rows": [
+  {
+   "name": "Roxanne Bhattacharya, M.D",
+   "title": "Pediatrician",
+   "org": "Maui Medical Group Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@mauimedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Ho, M.D",
+   "title": "Pediatrician",
+   "org": "Maui Medical Group Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022@mauimedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yoshio Futatsugi, M.D",
+   "title": "Pediatrician",
+   "org": "Pacific Training Program",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie-Ann Lee-Horita, M.D",
+   "title": "Pediatrician",
+   "org": "Julie Ann H Lee Horita Md Llc",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brent Tamamoto, M.D",
+   "title": "Pediatrician",
+   "org": "Aiea Pediatrics, Llc",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyson Tamamoto, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Physicians Group",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tashya Whitehead",
+   "title": "Pediatrician",
+   "org": "Mary Savio Healthcare Services Inc",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leon Matsuo, MD",
+   "title": "Pediatrician",
+   "org": "Leon Matsuo Md Inc",
+   "city": "Captain Cook",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Cha, MD",
+   "title": "Pediatrician",
+   "org": "David Cha, Md",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Irene Papaconstadopoulos, MD",
+   "title": "Pediatrician",
+   "org": "Champs Pediatrics",
+   "city": "Haiku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Camacho, MD",
+   "title": "Pediatrician",
+   "org": "Brenda M.K. Camacho M.D. Llc",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shallon Craddock, M.D., M.P.H",
+   "title": "Pediatrician",
+   "org": "Sunshine Pediatric Clinic",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph D'Angelo, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "West Hawaii Community Health Center, Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ty De Silva, M.D",
+   "title": "Pediatrician",
+   "org": "Brenda M.K. Camacho M.D. Llc",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Lind, M.D",
+   "title": "Pediatrician",
+   "org": "West Hawaii Community Health Center, Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heajung Ruesing, MD",
+   "title": "Pediatrician",
+   "org": "Heajung Ruesing Md Inc",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Syuck Ki Saito, M.D",
+   "title": "Pediatrician",
+   "org": "S.K. Saito M.D. Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Treece, M.D",
+   "title": "Pediatrician",
+   "org": "West Hawaii Community Health Center, Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joyce Trompeta, RN, MS, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Curtis W Lee, M.D., Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keith Abe, M.D",
+   "title": "Pediatrician",
+   "org": "Keith K. Abe, Md, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Abinsay, M.D",
+   "title": "Pediatrician",
+   "org": "Elizabeth L Abinsay, Md, Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hazel Abinsay, M.D",
+   "title": "Pediatrician",
+   "org": "Elizabeth L Abinsay, Md, Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Priscilla Alfaro, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Group Of Honolulu, Llp",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Ando, MD",
+   "title": "Pediatrician",
+   "org": "Allergy Asthma Specialties Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melinda Ashton, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Group Of Honolulu, Llp",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eleane Beadle, MD",
+   "title": "Neonatologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanette Chang, MD",
+   "title": "Pediatrician",
+   "org": "Donna Jean Mah Md Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Derek Ching, M.D",
+   "title": "Pediatrician",
+   "org": "Physician Management Services Of Hawaii, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nichole Choi, MD",
+   "title": "Pediatrician",
+   "org": "The Emergency Group, Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Copp, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Gary Dela Cruz, M.D",
+   "title": "Pediatrician",
+   "org": "Edgar T. Dela Cruz M.D., Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edgar Dela Cruz, M.D",
+   "title": "Pediatrician",
+   "org": "Edgar T. Dela Cruz M.D., Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lulumafuie Fiatoa, M.D",
+   "title": "Pediatrician",
+   "org": "Lulumafuie Fiatoa, M.D. Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kriselle Gaea Gines, MD",
+   "title": "Pediatrician",
+   "org": "Kokua Kalihi Valley Comprehensive Family Services",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Guerrero, M.D",
+   "title": "Pediatrician",
+   "org": "Hawaii Residency Programs Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Hara, MD",
+   "title": "Pediatrician",
+   "org": "Kids Thrive Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynette Honbo, M.D",
+   "title": "Pediatrician",
+   "org": "Glowing Care Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amelia Jacang, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Medical Group, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Jinbo, CPNP, CWOCN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Hawaii Wound, Ostomy And Continence Services, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wilma Kam, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Toshihiko Kawasugi, MD",
+   "title": "Pediatrician",
+   "org": "Linda E Fancher Md Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claudine Kimura, M.D",
+   "title": "Pediatrician",
+   "org": "Internal Medicine/Pediatric Assoc., Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Lam, M.D",
+   "title": "Pediatrician",
+   "org": "Jenny Welham, Md Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shigeko Lau, M.D",
+   "title": "Pediatrician",
+   "org": "Shigeko Lau, M.D., Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eugene Lee, MD",
+   "title": "Pediatrician",
+   "org": "Eugene M.C. Lee, Md, Apc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chloe Anne Liu, DO",
+   "title": "Pediatrician",
+   "org": "Shigeko Lau, M.D., Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shelley Loui, MD",
+   "title": "Pediatrician",
+   "org": "Shelley Akemi Loui, Md, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marni Lum Dezzani, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Kahala Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donna Mah, M.D",
+   "title": "Pediatrician",
+   "org": "Donna Jean Mah Md Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donna Miyasaka, M.D",
+   "title": "Pediatrician",
+   "org": "Shelley Akemi Loui, Md, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marc Miyasaki, MD",
+   "title": "Pediatrician",
+   "org": "Marc R. Miyasaki M.D. Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barry Mizuo, M.D",
+   "title": "Pediatrician",
+   "org": "Kapiolani Medical Specialists",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Durany Mohammed, DO",
+   "title": "Pediatrician",
+   "org": "Grow Play Thrive",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darrell Natori, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Darrell T Natori Md Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lorene Ng, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Group Of Honolulu, Llp",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harold Nilsson, M.D",
+   "title": "Pediatrician",
+   "org": "Harold Nilsson, M.D., Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristyn Nishimoto, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Group Of Honolulu, Llp",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maura O'Donnell, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatrics Associates, Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judy Okimura, MD",
+   "title": "Pediatrician",
+   "org": "Sherrie Hirota Md Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Pfeiffer, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Price, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Rorer, DO",
+   "title": "Pediatrician",
+   "org": "Keanuenue Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jiro Saegusa, M.D",
+   "title": "Pediatrician",
+   "org": "Jiro Saegusa Md Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Satterfield, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Clinical Education & Research Associates",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristine Shaner, M.D",
+   "title": "Pediatrician",
+   "org": "Kids Thrive Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Steel, D.O",
+   "title": "Pediatrician",
+   "org": "Hawaii Residency Programs Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Stridiron, MD",
+   "title": "Pediatrician",
+   "org": "Keanuenue Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Tanabe, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Turlington, M.D",
+   "title": "Pediatrician",
+   "org": "Kokua Kalihi Valley Comprehensive Family Services",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Doreen Ueoka, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shellie Usami, MD",
+   "title": "Pediatrician",
+   "org": "Pediatrics Associates, Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brent Uyeno, M.D",
+   "title": "Pediatrician",
+   "org": "Brent K Uyeno Md",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jasmine Waipa, M.D",
+   "title": "Pediatrician",
+   "org": "Keanuenue Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Ward, MD",
+   "title": "Pediatrician",
+   "org": "Kahala Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Waring, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenny Welham, MD",
+   "title": "Pediatrician",
+   "org": "Jenny Welham, Md Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cindy Wong, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chunmei Wu, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Chunmei Wu Md Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Wu, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Pacific Coast Medical Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vince Yamashiroya, M.D",
+   "title": "Pediatrician",
+   "org": "Vince Yamashiroya, Md, Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dwight Yim, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Bennett, MD",
+   "title": "Pediatrician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Carlson, DO",
+   "title": "Pediatrician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kasi Chu, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nitasha Garcia, M.D",
+   "title": "Pediatrician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Hodge",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Johnston, M.D",
+   "title": "Pediatrician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Newton-Weaver, M.D",
+   "title": "Pediatrician",
+   "org": "Naval Health Clinic Hawaii",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Lum, MD",
+   "title": "Pediatrician",
+   "org": "Ko Olauloa Health Center",
+   "city": "Kahuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Sutherland, MD",
+   "title": "Pediatrician",
+   "org": "Ko Olauloa Health Center",
+   "city": "Kahuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frank Baum, M.D",
+   "title": "Pediatrician",
+   "org": "Frank R. Baum, Md, Inc.",
+   "city": "Kahului",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beth Fox, MD",
+   "title": "Pediatrician",
+   "org": "Andrew M. Fox Md Llc",
+   "city": "Kahului",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Fox, MD",
+   "title": "Pediatrician",
+   "org": "Andrew M. Fox Md Llc",
+   "city": "Kahului",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Locatelli, M.D",
+   "title": "Pediatrician",
+   "org": "Kona Periodontics And Implants",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wesley Sugai, M.D",
+   "title": "Pediatrician",
+   "org": "Wesley J. Sugai, M.D., Inc.",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Anderson, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Care Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haley Bujwid, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Aulike Health Partners, Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gloria Carlile",
+   "title": "Pediatrician",
+   "org": "Pediatric Care Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gerald Ching, M.D",
+   "title": "Pediatrician",
+   "org": "Rewind Counseling Services Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Franco, DNP, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Aulike Health Partners, Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Hamilton, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Hardy, CPNP, APRN RX, ATC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "John M. Nagamine, M.D. Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Harpstrite, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Amy B. Harpstrite, M.D., Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Hu, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanette Leitner, C.P.N.P., A.P.R.N",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Aulike Health Partners, Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robin Lynch, M.D",
+   "title": "Pediatrician",
+   "org": "Aulike Health Partners, Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Nagamine, M.D",
+   "title": "Pediatrician",
+   "org": "John M. Nagamine, M.D. Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gail Nakaichi, D.O",
+   "title": "Pediatrician",
+   "org": "Gail K. Nakaichi, D.O. Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bertram Weeks, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Murata, M.D",
+   "title": "Pediatrician",
+   "org": "Samuel Mahelona Memorial Hospital",
+   "city": "Kalaheo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Weiner, M.D",
+   "title": "Pediatrician",
+   "org": "Samuel Mahelona Memorial Hospital",
+   "city": "Kalaheo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cherylin Garvey, M.D",
+   "title": "Pediatrician",
+   "org": "Cherylin Garvey, M.D., Llc",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Hino, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alda Lam, MD",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Shigemura, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynn Yanagihara, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jesse Lam, M.D",
+   "title": "Pediatrician",
+   "org": "Kapaa Pediatrics Llc",
+   "city": "Kapaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Lam, M.D",
+   "title": "Pediatrician",
+   "org": "Kapaa Pediatrics Llc",
+   "city": "Kapaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela McKenna, M.D",
+   "title": "Pediatrician",
+   "org": "Hamakua Health Center, Inc.",
+   "city": "Kapaau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leila Agullana, MD",
+   "title": "Pediatrician",
+   "org": "Keiki Korner Pediatrics",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Valerie Besenbruch, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Ching, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Ishida, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Sun, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Naro Torres, M.D. , F.A.A.P",
+   "title": "Adolescent Medicine Physician",
+   "org": "The Kids Doc, Llc",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alamelu Udayappan, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vickie Fachinelli Portes, RN,C.N.P",
+   "title": "Pediatrician",
+   "org": "West Hawaii Community Health Center, Inc.",
+   "city": "Keaau",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karolina Dembinski, DO",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan",
+   "city": "Lahaina",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lise Stevens, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan",
+   "city": "Lahaina",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terence Carolan, M.D",
+   "title": "Pediatrician",
+   "org": "Kauai Pediatrics Inc",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brigitte Carreau, M.D",
+   "title": "Pediatrician",
+   "org": "Kauai Medical Clinic",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Gould, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Family Medicine Clinic",
+   "city": "McHk-Qs Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lillian Fujimoto, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Mililani",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terri Tanaka, M.D",
+   "title": "Pediatrician",
+   "org": "Straub Clinic & Hospital",
+   "city": "Mililani",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Ip, MD",
+   "title": "Pediatrician",
+   "org": "West Hawaii Community Health Center, Inc.",
+   "city": "Pahoa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lance Taniguchi, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Physicians Group",
+   "city": "Pearl City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beverly Viola",
+   "title": "Pediatrician",
+   "org": "Pediatric Physicians Group",
+   "city": "Pearl City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Vo, D.O",
+   "title": "Pediatrician",
+   "org": "Pediatric Physicians Group",
+   "city": "Pearl City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Kanis, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Family Medicine Clinic",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Sawyer, D.O",
+   "title": "Neonatologist",
+   "org": "Family Medicine Clinic",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Anisowicz, MD, FAAP, DABOM",
+   "title": "Pediatric Endocrinologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Baunchalk, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Berry, M.D",
+   "title": "Pediatrician",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lee Brock, M.D",
+   "title": "Neonatologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lingie Chiu, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Chooey, D.O",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lance Cordoni, M.D",
+   "title": "Pediatrician",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Dai, M.D",
+   "title": "Pediatrician",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Gallagher, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Guindon, M.D",
+   "title": "Neonatologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Heilmann, DO",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Walter Imai, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Kawate, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Kyle, DO",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Lentz-Kapua, MD",
+   "title": "Neonatologist",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Lumeng, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Renee Miyashiro, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yuliya Ogai, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucy Paterson, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Person, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandon Rozanski, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison Semanoff, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kyle Sexton, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelley Sonney, DO",
+   "title": "Neonatologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Staiger, MD",
+   "title": "Neonatologist",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Tapia, DO",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Thompson, MD",
+   "title": "Neonatologist",
+   "org": "Family Medicine Clinic",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dean Britos, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Fa, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Lau, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher McEvoy, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Wake, D.O",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "May Okihiro, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raymond Salazar, M.D",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melinda Santhany, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vija Sehgal, MD, PHD, MPH",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Curtis Toma, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelli-Ann Voloch, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bert Akitake, M.D",
+   "title": "Pediatrician",
+   "org": "Maui Medical Group Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Bacchus, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Barretto, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sally Bowles, MD",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Garry Cameron, M.D",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joy Dalmon, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Hassen, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Guy Hirayama, M.D",
+   "title": "Pediatrician",
+   "org": "Maui Medical Group Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tigist Mammo, MD",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Annabelle Mateo",
+   "title": "Pediatrician",
+   "org": "Maui Medical Group Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Matijasevic, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gerald Montano, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Casandra Simonson, M.D",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jodie Toward, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rinku Uberoi, MD",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anita Waterford, D.O",
+   "title": "Pediatrician",
+   "org": "Community Clinic Of Maui, Inc.",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Perlita Lampitoc, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Perlita Bolosan Lampitoc Md Inc",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benilda Luz, M.D",
+   "title": "Pediatrician",
+   "org": "Benilda C. Luz-Llena, M.D. Inc.",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Myrtle Parel, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Wee Pediatrics, Inc.",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Wee, MD",
+   "title": "Pediatrician",
+   "org": "Wee Pediatrics, Inc.",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Abe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vernon Azuma, MD,FAAP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Chan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Chang, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Chung, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Fidele, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronald Hirokawa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Trudy Hong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Agnela Isaias, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ranjini Kandasamy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alan Masuda, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Morita, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Ogawa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Russell Ogawa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bridgit Rovner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenn Saruwatari, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Sumida, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Yano, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandon Young, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aiea",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fuchat Chan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Deconto, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryscen Prothero, APRN-RX,  PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Rhine, M.D., PHD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darcie Takemoto, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ewa Beach",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maile Jachowski, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Haiku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ila Reyes, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hickam Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Russell Adwan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nadezna Lyn Ang, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miki Cain, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darrett Choy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ian Chun, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Garcia, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Gardner, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wanda Meurs, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allan Recto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Wilson, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Liane Campbell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honokaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Glenda Grawe, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honokaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Abe",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Akua Agyeman, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Oluwatoyin Ajose, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Unknown Akshatha, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Almeida, PHD, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jordan Arakawa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Arrigoni, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Ash, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacob Atkins, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kris Baik, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Venkataraman Balaraman, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Bane-Terakubo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Autumn Barbero, MSN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Bidwell, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Blair, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judd Boloker, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Johanna Bonner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rodney Boychuk, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Brandt",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Brasher",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andras Bratincsak, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Buehler, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Cambareri, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chanel Casamina, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nanea Cavaco, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corinne Chan Nishina, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rupert Chang, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maureen Chang Takahashi, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Char, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Chau, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Selina Chen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benetta Chin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelley Chinen Okimoto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Ching, MD, MPH",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lois Chiu, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Galen Chock, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dominic Chow, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Clarke, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Coel, MD",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Cunanan, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Darling, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Davis, PHD, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara-Marie Delaney, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Demarco, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Di Rocco, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Di Rocco, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vinson Diep, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hanna Distel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Dougan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anirban Dutta, MBBS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Eakin, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Easa, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Duke Escobar",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marissa Fakaosita, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Fergus, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Fernandez, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Finnegan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Derek Flores, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marie Fochtman Seleny, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gina French, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Fujinaka, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christy Furukawa, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Gans",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Francisco Garcia, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tawni Gesteuyala, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Asad Ghiasuddin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kea Gilbert, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Darryl Glaser, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashish Goyal",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mari Grief, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Griffith, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Celina Guerrero, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nelly Gutierrez Martinez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Priya Gyani, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Hallett, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brunhild Halm, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carolyn Hamasaki, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Harrington, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bethany Harter, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julia Haruno",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Healy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsey Heathcock, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Heu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Hirai, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Hodgeboom, NP MS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Naoko Hokari, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emma Holland",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Travis Hong, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Hougland, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elisabeth Hoyer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alson Inaba, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hyewon Ing, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Louise Iwaishi, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynn Iwamoto, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Usha Jain, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jasmin Jensen, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vena Joco, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Joglekar, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kendra Johnston, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Johnston, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Prakash Kabbur",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbora Kadecka, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Kahikina, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Kam, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pauline Kaplan-Stafford, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke Kawamura, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Derrick Kida, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Kilinski, MSN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sadie Kim, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Kim, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Kim, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zachary Kim, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer King, DO",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Kishida, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arlene Kiyohara, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emmanuel Kling, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tristan Knight, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tonya Kratovil, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kent Kumashiro, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheree Kuo, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Kurahara, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Garrett Kuwada, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Kwock, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wade Kyono, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mae Kyono, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rhiana Lau, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jerome Lee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Lee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Lee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kit Shan Lee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kyra Len, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Lim, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Lim, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Allen Lim, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Blair Limm-Chan, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Lin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenny Liu, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sherry Loo, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Noelani Ludlum, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna-Lena Lueker-Wallace, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yitong Ma, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Blandina Mamaclay, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jaikaran Man Singh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Matsuda, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keith Matsumoto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nagisa Matsumoto, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Matsuura, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wallace Matthews, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Mau, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Mbuthia, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chad McCormick, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Desiree Medeiros, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Iris Meily, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joan Meister, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Madison Meister, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marian Melish, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Meyer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malcolm Michels, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryan Mih, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Misailidis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Morgan, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meri Morisada, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emilee Moyer, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Murai, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Muraoka",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Murayama",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Musgrave, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ken Nagamori, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Nakamura, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Nakamura, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Napihaa, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayalvizhi Natarajan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Neal, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Neumayer, D.O",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Ng, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Camnhung Nguyen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kerri Niino, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Ninomiya, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Nishikawa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Nishimoto, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erika Noel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brachelle Nueku",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian O'Hara, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheryl Okado",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Okamoto, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dee Ann Omatsu, P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Ong, M.D., M.P.H",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Palting, DO",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Pan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pitchaya Pang, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Park, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shilpa Patel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Pearl, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erika Pearson, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Perry, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colin Petko, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Petri Pieron, CPNP, NNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Piette, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chattip Prueksapraopong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Prashant Purohit, MBBS",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Josephine Quensell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gina Ramirez, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna-Kaelle Katina Ramos",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alice Ramos-Yoshida, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malia Rasa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thanaporn Ratchataswan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marivic Raymundo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vijaya Reddy, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Venu Reddy, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelsey Rhodes, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Ricardo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bernard Riola, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Robbins, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raul Rudoy, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanna Russell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cherise Saito, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Salyer, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daisuke Sato, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Shea, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacie Shibao, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cecilia Shikuma, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melanie Shim, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lance Shirai, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Sia, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ayush Sidde Gowda, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Sim, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thitiwan Simasathien, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Sladky, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melanie Snyder, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sneha Sood, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tesa Stark, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Stefanelli, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Stryjewski, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitsuaki Suzuki, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Tamashiro, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Len Tanaka, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Taum, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Tenby, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tori Teramae, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nina Teruya, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrice Tim Sing, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Titcomb, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiong Tjoeng, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Tom, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eliot Tomomitsu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Tran, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mari Uehara, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mari Ueno, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Greg Uramoto, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Myrna Valin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richa Varshney, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Philip Verhoef, M.D., PHD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Vo",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randal Wada, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Wall, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Walter, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Wang, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jasmin Wang, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Glenn Wasserman, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Weissbach",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arthur Wong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Davis Wong",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Krystin Wong",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Wong Ramsey, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalie Woo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yolanda Wu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paula Wyatt, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Konstantine Xoinis, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rian Yalamanchili, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Loren Yamamoto, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Yamamoto, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori Yamanaka, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yuki Yasaka, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aimee Yeap, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cherilyn Yee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Yim, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynette Young, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Franklin Young, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Young, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yi Yu, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Yung",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Brender, PPCNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Moran, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debbie Wagnild-Nojima, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Askew, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kahuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Mannick, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Kahului",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Colmenares, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marta Derieg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Fong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Virginia Hatch-Pigott, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tamara Krimm, MD FAAP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Laird, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nameeta Richard, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Stevenson, PHD, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Kailua Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catharine Critz, PHD, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dwight Matsumura, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Moniz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anriada Nassif, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brijit Reis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Larry Shapiro, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eun Strawser, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judy Vincent, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edwin Herd, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kailua-Kona",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Carrington, PAC",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Kalaheo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Raelson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kalaheo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalie Chin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Azriel Dror",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brett Ferguson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Gallagher, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Gerdsen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Gregg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Kaplan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Neeva Lemmel-Duerr, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Shotwell, MSN  CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcia Wishnick, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kamuela",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Mattheus, PHD, MSN, PNP, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Morimoto-Nishioka, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eliasar Simon, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Smith, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Watson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kaneohe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lee Evslin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kapaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Reid Hamamoto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kapaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tammie Napoleon, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kapaa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Akimoto, APRN, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chloe Edinger, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kapolei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raphael Buencamino, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kealakekua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Kolosky, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kealakekua",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maila Coleman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kekaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Felicitas Livaudais, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kihei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Talbot, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kihei",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsey Guth, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lahaina",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Rose Hawkins, MSN, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lahaina",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Hessel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lahaina",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Ross, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Wotring, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Geri Young, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carl Yu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lihue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gabrielle Galler-Rimm, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Makawao",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Coral Yap, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Makawao",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Santiago",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Mililani",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jana Mullen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Paauilo",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Coleen Colahan, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tatianna Ellsworth, DNP, FNP-BC, PNP-P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kanti Ford, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kim Hoeldtke, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Terp, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dehussa Urbieta, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward Waters, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pearl Harbor",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Constance Hastings, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margret Merino, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Nguyen, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brad Strumwasser",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Carroll, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Hitt, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Hsu, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Aguilar, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Boechler, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Borruso, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rian Calo, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miguel Cano, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandon Cole, DO",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elena Crecelius, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Veronica Damasco, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Dorsey, MSW, LCSW",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eamon Filan, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nalani Gauen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Giamanco, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mitchell Hamele, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corinne Harvey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Heese, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Jiang, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erik Johnson, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Milissa Jones, MD, MPH, FAAP",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracy Levy, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert McCully, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mason McMullin, D.O",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Mikami, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Agnes Montgomery, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dolores Mullikin, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Naun, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Oberholzer, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Payton, APRN, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anita Pedersen, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Josephine Pierce Pucci, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Prescott, DO",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ceyda Sablak",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Smith, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Vann, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sebastian Welsh, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Witmer, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raquel Chan-Ikeda, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wahiawa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Escobar",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Wahiawa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Jenkins, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wahiawa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danilo Perlas, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wahiawa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cristeta Ancog, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ricardo Custodio, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Ferenchak, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Constance Nesbitt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucio Pascua, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Razon, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittany Troxel, CFNP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Yuen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bettina Ackermann, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Eckart-Dodd, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "M Edwards, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Gamet, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Howard, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donna McCleary, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennie Montijo, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hanaa Al-Khansa Nik Rushdi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Romero, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Seeley, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Ulin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Yoshikawa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wailuku",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cindy Collo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angelica Rose Flores",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robyn Hasegawa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Kawaoka, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marsha Marumoto, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brent Matsumoto, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Nakasato, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Yee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Waipahu",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Findlay, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wheeler Army Air Field",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  }
+ ]
+}

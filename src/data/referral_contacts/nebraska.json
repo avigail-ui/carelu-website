@@ -1,0 +1,7407 @@
+{
+ "name": "Nebraska",
+ "slug": "nebraska",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-nebraska.csv",
+ "count": 733,
+ "emails": 27,
+ "phones": 733,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 617
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 109
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 7
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Omaha",
+   "count": 496
+  },
+  {
+   "name": "Lincoln",
+   "count": 81
+  },
+  {
+   "name": "Boys Town",
+   "count": 37
+  },
+  {
+   "name": "Elkhorn",
+   "count": 19
+  },
+  {
+   "name": "Grand Island",
+   "count": 11
+  },
+  {
+   "name": "Bellevue",
+   "count": 9
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Nebraska Medical Center",
+   "count": 101
+  },
+  {
+   "name": "Unmc Physicians",
+   "count": 34
+  },
+  {
+   "name": "Complete Children'S Health, P.C.",
+   "count": 23
+  },
+  {
+   "name": "Lincoln Pediatric Group Llc",
+   "count": 20
+  },
+  {
+   "name": "Father Flanagans Boys Home",
+   "count": 17
+  },
+  {
+   "name": "Children'S Hospital",
+   "count": 17
+  }
+ ],
+ "rows": [
+  {
+   "name": "Kenton Amstutz, D.O",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Dawson, MD",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Domet, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Kocovsky, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharad Kunnath, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abby Peterson, MD",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Sauer, MD",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Wolff, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Zimmerman, MD",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@boystown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Boon, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022@grandislandclinic.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Gardner, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@grandislandclinic.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Law, M.D",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022@grandislandclinic.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Makayla Bertelson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Coccia, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheyenne Cordova, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Ellis, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Ellwanger, APRN-NP,  CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Gordon, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Haney, MD",
+   "title": "Pediatrician",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Krug, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Helen Lovell, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peggy Pelish, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Seivert, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Swanson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Tippery, APRN- NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Project Harmony",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@projectharmony.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brigette Vaughan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Walburn, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristine Benda, NP",
+   "title": "Pediatrician",
+   "org": "Box Butte General Hospital",
+   "city": "Alliance",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Hawk, APRN,PNP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alliance Children'S & Allied Health, Inc.",
+   "city": "Alliance",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison Allen, D.O",
+   "title": "Pediatrician",
+   "org": "55Th Medical Group Sgsl",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clancy McNally, M.D",
+   "title": "Pediatrician",
+   "org": "Bellevue Obstetrics And Gynecology Associates Pc",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine O'Keefe, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bellevue Obstetrics And Gynecology Associates Pc",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Manju Patney, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Bellevue Pediatric Center Pc",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Reel, M.D",
+   "title": "Pediatrician",
+   "org": "Memorial Community Hospital Corporation",
+   "city": "Blair",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Brady, APRN-CPNP, APRN- CNS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gina Direnzo-Coffey, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Essink, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Hammett, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Martin, MD",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nigar Nair, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurel Prestridge, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Vandersluis, M.D",
+   "title": "Pediatrician",
+   "org": "Father Flanagans Boys Home",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Allen, DO",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Anderson, MD",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Egbarts, M.D",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Kroenke, M.D",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Rohwer, MD",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Wegener, APRN-PC, APRN-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Andresen, M.D",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emilio Arispe, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marie Belin, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Broadhead, MD",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Byrne, MD",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Christner, M.D",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kurt Davey, MD",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Davey, M.D",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Dek, MD",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Kalil, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Mayhan, DO",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Reiser, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Steinauer, MD",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Votruba, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vikram Chaudhary",
+   "title": "Pediatrician",
+   "org": "Pediatric Partners L.L.C.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Esterling, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Fremont Pediatric, Adolescent And Young Adult Medicine, Llc.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paige Groppe Giesselmann, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Partners L.L.C.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Madeleine Macdonald, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Partners L.L.C.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gustavo Rosas Alvarado, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Partners L.L.C.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terry Wooldridge, MD",
+   "title": "Pediatrician",
+   "org": "Fremont Pediatric, Adolescent And Young Adult Medicine, Llc.",
+   "city": "Fremont",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Carson, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Agnes Gomes, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Higgins, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janice Kutilek, MD",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Law, M.D",
+   "title": "Pediatrician",
+   "org": "Grand Island Clinic Inc",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Strom, MD",
+   "title": "Pediatrician",
+   "org": "Bryan Physician Network",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Bendlin, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Godsil, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sirenia Knight, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Physicians Clinic Inc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katrena Lacey, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Priscilla Lacroix, DO",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Anderson, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Mary Lanning Memorial Hospital Association",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Caha, D.O",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Cole, M.D",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Collignon-Howe, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Greenwald, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Haskett, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Keifer, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deann Psota, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenton Shaffer, MD",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristi Aldridge, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kay Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Luke Anschutz, M.D",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Applegate, MD",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Bargen, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Bernhardson, M.D",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Bigbee, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Biven, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Medical Education Partnership",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacie Bleicher, M.D",
+   "title": "Pediatrician",
+   "org": "Capital City Pediatrics, Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradford Brabec, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Brewer, MD",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dalan Brown",
+   "title": "Pediatrician",
+   "org": "Madonna Rehabilitation Hospital",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Christianson, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Craft, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children First Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Cruce, MD",
+   "title": "Pediatrician",
+   "org": "Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey David, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Davis, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Dell, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Dews, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Dierks, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Draper, APRN CPNP",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Mind Body Psychiatric Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Duensing, D.O",
+   "title": "Pediatrician",
+   "org": "Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Dziacky, MD",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Ebers, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Erickson, M.D",
+   "title": "Pediatrician",
+   "org": "Bluestem Health",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Larry Fletcher, MD",
+   "title": "Pediatrician",
+   "org": "Bluestem Health",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kurstin Friesen, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mikala Geisert, APRN DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Genthe, A.P.R.N., C.P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Germer, M.D",
+   "title": "Pediatrician",
+   "org": "Bluestem Health",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Goddard, RN, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Greisen, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Hanna-Slagle, M.D",
+   "title": "Pediatrician",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natasha Hedden, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Helms, DO",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacey Houston, MD",
+   "title": "Pediatrician",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sian Jones-Jobst, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Keating, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jo Kinberg, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Knapp, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Koch, M.D",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Larson, M.D",
+   "title": "Pediatrician",
+   "org": "Capital City Pediatrics, Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Leeper, MD",
+   "title": "Pediatrician",
+   "org": "Milkworks A Nebraska Nonprofit Corporation",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karla Lester, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Lingenfelter, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kirsten Loch, APRN - PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children First Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Matthias, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Meduna, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Murry",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shelley Nelson, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patty Newell",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Akhtar Niazi, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sahra Niazi, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Overcash, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Petersen, M.D",
+   "title": "Pediatrician",
+   "org": "Capital City Pediatrics, Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Peterson, M.D",
+   "title": "Pediatrician",
+   "org": "Bluestem Health",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theodore Pham, DO",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Pinkall, M.D",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cassandra Price, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Humaira Qasimyar, MD",
+   "title": "Pediatrician",
+   "org": "Bluestem Health",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sonya Reynolds, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Russell, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Saner, DO",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Schmidt, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric And Medical Genetics Services Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Schmitz, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Smith, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Speaker, NP",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Nebraska Family Behavioral Health Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sue Springman, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Swisher, M.D",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eileen Vautravers, MD",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Walsh, MD",
+   "title": "Pediatrician",
+   "org": "Pediatrics, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brent Willman, M.D",
+   "title": "Pediatrician",
+   "org": "Doctors Of Children, Lincoln Pc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Wineinger, MD",
+   "title": "Pediatrician",
+   "org": "Lincoln Pediatric Group Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Zegers, M.D",
+   "title": "Pediatrician",
+   "org": "Complete Children'S Health, P.C.",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Blomenberg",
+   "title": "Pediatrician",
+   "org": "Nmg Llc",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leon Gebhardt, M.D",
+   "title": "Pediatrician",
+   "org": "Nmg Llc",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Pierce, M.D",
+   "title": "Pediatrician",
+   "org": "Nmg Llc",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Mosel, M.D",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Soogandaren Naidoo, MD",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Grishma Parikh, M.D",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Perrry, M.D",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathy Schumacker-Lopez, M.D",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dell Shepherd, M.D",
+   "title": "Pediatrician",
+   "org": "Adolescent And Child Care Specialists, P.C.",
+   "city": "North Platte",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raegan Austin, DO",
+   "title": "Pediatrician",
+   "org": "United States Air Force",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abdul-Rahman Abdul-Kafi, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Minnie Abromowitch, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Ahlgren, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenna Allison, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Childrens Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Qais Alloah, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Almarzooqi, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Anderson, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karoline Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Anderson Berry, MD",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Averhoff, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Backer, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Serenity Bashford, MD",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jared Baxter, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Unmc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Birge, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Toni Blazek, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Bloom Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Blount, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Borcyk, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Bossert, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Braun, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Brodie",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corinna Brown Ton",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamuna Buchanan, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Casey Burg, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Bursott, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenton Bussinger",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cicero Calderon, M.D",
+   "title": "Pediatrician",
+   "org": "Childrens Physicians Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caleb Cave, MD",
+   "title": "Neonatologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harshal Chauhan, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Songita Choudhury, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Blessing Chuku, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Nebraska Board Of Regents",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Cleaver, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Cohen, M.D",
+   "title": "Pediatrician",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Colombo, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Corley, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelli-Ann Corrao, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Cummings, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "University Of Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Danford, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bobbie Darby, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janki Dave",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Herbert Davies, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Deegan, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Max Devine, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Devries, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margarita Dickey, MD",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Drake",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Dreesen, D.O",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Dulac, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa England, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Erickson, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Ernst, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mallory Feenstra, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Finken, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lewis Fisher, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalie Fleming, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Fletcher, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Garth Fletcher, MD",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Blair Fontane, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Childrens Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joslyn Ford, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alex Foy, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Friedlander, M.D",
+   "title": "Pediatrician",
+   "org": "Allergy, Asthma And Immunology Associates, Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alan Fuss, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jiosajandy Garcia-Reyna, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Gibson, MD",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samantha Gilg, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vincent Gonzalez, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathaniel Goodrich, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Graves, DO",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carolina Guerrero Diaz, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Guild, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carl Gumbiner, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Makenzie Hamilton, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maranda Hamilton, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Harper, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Hartley, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Therese Hennessy, DO",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittni Herrera, MD",
+   "title": "Pediatrician",
+   "org": "University Of Nebraska Board Of Regents",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelsey Hillyer, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mercedes Hoffner, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Hollins, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Hopkins, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cathy Hudson, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Physicans @ Creighton Pediatrics",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke Hummel, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carlos Izarra Boscan",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shane Jacobs",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott James, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Duane Jensen, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Corey Joekel, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heidi Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juan Juarez, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harold Kaftan, MD",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amissabah Kanley, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Koller, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Kratochvil-Stava, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kari Krenzer, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Kugler, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evin Lackore, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Lacroix, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Lam, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Huy Le, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Lehn, M.D",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Payton Leiker, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Molly Lindsey, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Trevor Lockard, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Losole, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Lotfi, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Macbride, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Majerus, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maggie Malmberg, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelli Mans, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Matson, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Harold Maurer, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin May, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsey McConnell, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rose McCoy, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mikayla McKee, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen McKillip, MD",
+   "title": "Pediatrician",
+   "org": "Oncology Hematology West, Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Meyer, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wesley Meyer, DO",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Jane Mikuls, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Miller, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Moore, M.D,",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandler Morton, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Murphy, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Grace Murray",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aleisha Nabower, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arwa Nasir, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kaitlyn Nein, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Nelson, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Midwest Allergy And Asthma Clinic, P.C.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Nelson, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Neuhaus, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thuytien Nguyen, M.D",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Nguyen, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosann Nichols, MD",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Nielsen, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Olney, MD",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Callie Olson, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mackenzie Ostlie, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Park, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Patton, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Peeples, M.D",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Penry, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Surya Srividya Petla, MD",
+   "title": "Pediatrician",
+   "org": "Alegent Creighton Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arlana Phillips, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Charles Drew Health Center, Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheryl Pitner, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Protaskey, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tessa Punteney, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dara Ramirez, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Geetanjali Rathore, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kendra Reilly, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Renn, MD",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Noah Reynolds, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandrika Rizal, M.D",
+   "title": "Pediatrician",
+   "org": "Childrens Physicians Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Roach, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Robinson, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mason Rohr, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karl Roth, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Physicans @ Creighton Pediatrics",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Rothlisberger-Castillo, M.D",
+   "title": "Pediatrician",
+   "org": "Alegent Creighton Health",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Russell, M.D",
+   "title": "Pediatrician",
+   "org": "West Center Pediatrics Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Salomon, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Saxena, M.D",
+   "title": "Pediatrician",
+   "org": "Pivot Concierge Health, Llc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonah Scheffler, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Schembari, RN,MSN,CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Village Pointe Pediatrics, Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stacie Schlange, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Schlueter, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abigail Schmidt, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Travis Schreier",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tina Scott-Mordhorst, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Severson, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ebrahim Shakir, MD",
+   "title": "Pediatrician",
+   "org": "Midwest Allergy And Asthma Clinic, P.C.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristine Shaw, RN",
+   "title": "Pediatrician",
+   "org": "Children'S Respite Care Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keeley Sherman, MSN, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelli Shidler, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frances Smith, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Sneller, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheilah Snyder, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa St. Germain, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Starns, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Betsy Stephenson, M.D",
+   "title": "Pediatrician",
+   "org": "Childrens Physicians Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Stoolman, MD",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Farhath Sulthana, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Sutter, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Swanson, M.D., PH.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Veronica Taylor, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Theilen, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "At Hope Psychiatry",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Thomas, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Thompson, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kaitlynn Toben, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Toffle, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Tolo, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Tomek, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Uzendoski, M.D",
+   "title": "Pediatrician",
+   "org": "Pivot Concierge Health, Llc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Van De Graaff, M.D",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Vann, M.D",
+   "title": "Pediatrician",
+   "org": "Whitcomb Pediatrics, P.C.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Vargas, MD",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jayan Vasudevan, MBBS,ABP",
+   "title": "Pediatrician",
+   "org": "Children'S Physicans @ Creighton Pediatrics",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danita Velasco, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Nebraska Board Of Regents",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Vuchetich, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Walenz, MD",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kellen Walsh, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Physicians Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Phylis Warkentin, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Weaver",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacee Weber, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric West, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Whitcomb, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Whitley, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Wilczewski, M.D",
+   "title": "Pediatrician",
+   "org": "Childrens Physicians Clinic",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Wilkins",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lee Williames, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Nebraska Board Of Regents",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Wilwerding, MD",
+   "title": "Pediatrician",
+   "org": "Naturally Healthy Kids Llc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Winter, MD, MCR",
+   "title": "Pediatric Cardiologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Louise Winter, M.D",
+   "title": "Pediatrician",
+   "org": "Midwest Minor Medical Pc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Witt, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Madison Wolfe, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Woodford, M.D",
+   "title": "Pediatrician",
+   "org": "Physicians Clinic Inc",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Yaghmour, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Physicans @ Creighton Pediatrics",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brylee Yirkovsky, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abraham Zabih, DO",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiology Affiliates",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terence Zach, MD",
+   "title": "Neonatologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Zent, DO",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Zetterman",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Zieg, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Midwest Allergy And Asthma Clinic, P.C.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ai Lan Kobayashi, M.D",
+   "title": "Pediatrician",
+   "org": "Midlands Pediatrics Pc",
+   "city": "Papillion",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Anderson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Panhandle Health Services",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Bewley, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Panhandle Health Services",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Guerue, M.D",
+   "title": "Pediatrician",
+   "org": "Panhandle Health Services",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Masood Khan, M.D",
+   "title": "Pediatrician",
+   "org": "Panhandle Health Services",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alida Asencio, MD",
+   "title": "Pediatrician",
+   "org": "Winnebago Indian Health Service",
+   "city": "Winnebago",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Lange",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Ballston Lake",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenny Hanshaw, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Beatrice",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marilou Jack, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Beatrice",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Penny Shaffer, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Beatrice",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hai Tran, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Beatrice",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malinda Bender, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Valerie Edwards, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monique Macklem, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chitrita Roy, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Sindelar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Winslow Borkowski, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pooja Dave, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheryl Dick, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Empson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Gillespie, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Jordan, DNP APRN CPNP- AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Kelly, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Kerr, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward Kolb, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yancheng Luo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosemary Pauley, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Reiff, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Reinhardt, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nerissa Ring, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Micah Ryan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Sheehan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Sudyka, APRN",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Trauernicht, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Vanderhoof, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Zimmer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Boys Town",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pramod Shrestha, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sterling Blackham, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheila Isaacson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kody Moffatt, M.D",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hayley Timm, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paula Walters, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Elkhorn",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Trevor Kuehn, CPNP-AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heidi Wonder, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Grand Island",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Vollmuth, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andria Head, PAC",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Howe",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Johnson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Leonard, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Mayfield, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Sheffield, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shade Whalen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel McCann, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "La Vista",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin McGregor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "La Vista",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brandi Reeve-Iverson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "La Vista",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Brisso, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ameeta Martin, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Albert Owusu-Ansah, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Sitzman, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosemarie Tan, MD, PHD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly White, MD, MS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bernard Wilson, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Johanna Delacroix, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teri Thompson, APRN-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kerry Lainof, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt A F B",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mariah Davis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Faith",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shirley Miller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Patterson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Sherman, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Toth, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Tschudy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Offutt Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nadia Abraham, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Acquazzino, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adeeb Adam",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Anglim, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nwando Anyaoku, MBBS, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Asher, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Ashford, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scheherzade Aslam, MBBS",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Khalid Awad, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Bailey, MSN, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Baker, RN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lea Barajas-Deloa, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jesse Barondeau, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Bausch, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Beck, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Beebe, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Bies, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Black, DNP, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Bleed, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Philip Boucher, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brianna Brei, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frances Brennan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Brooks, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Brooks, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clara Brown, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Bruce, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholle Bruhn, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori Brunner-Buck, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Burrows",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monina Cabrera, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jodi Cantrell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Carnazzo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arthur Chang, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Chaplin, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ojasvini Choudhry Chandan, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zachary Christensen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Claudy, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brendan Cleary, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Cole, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daoka Collins, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Connelly, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Connelly, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Don Coulter, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Cramer, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hunter Creglow, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Cullimore, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Curzon, D.O",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rashmitha Dachepally, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Davis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marlon De Armas Medina, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shirley Delair, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carman Demare, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Dennis, M.D",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alka Desai",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Deschamp, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Dethlefs, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hanna Deutsch, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haley Dewitt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Magi Dickinson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Dietle, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Doherty, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Dolter, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bernard Douglas, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Drvol, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Ebers, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Eckley Peska, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Earline Edwards, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beatrice Egboh, M.B.B.S",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Ellison, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Salaheddin Elrokhsi, M.D., M.S.C",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Emodi, APRN",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Enenbach, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Euteneuer, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Facciolo, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Fellman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Lou Flearl, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miranda Floen, M.D., PH.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jake Fowler, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Freestone, DO",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dawn Gary, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abby Gauvain, APRN-NP, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Gollehon, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zoe Gonzalez Garcia, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Helen Grace, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Makenzie Grant, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Green Hines, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alfred Grovas, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kirtibala Gupta, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Binay Gurung, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karisa Hajek, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Halbur, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Grant Hamill, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Hanks, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Prince Harrison, MBBS",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vicki Herrman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tara Hoffman, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Russell Hopp, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Huang-Pacheco, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Ives, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Jackson, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katrina Jamal, MSN, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Jana, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Jepson",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karlee Jewell, DNP, APRN-NP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Jilek, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Jirka, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hillary Johnson, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Johnson",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katelyn Jones, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samantha Jordan-Schaulis, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Kadlec, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ioannis Kalampokis, M.D., PH.D., M.P.H",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stefanie Kammrad, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Kaufman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Kearns, DNP-APRN CPNP- AC",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Norman Kelley, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Kelly, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kassandra Kent, PA-C",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brady Kerr, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rima Khasawneh, MBBS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heidi Killefer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cassandra Kilpatrick",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Knowles, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Koliha, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jillyn Kratochvil, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tristan Kuckelman, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shafeeque Kunhiabdullah, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Lallman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Lang, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Larsen",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Lazoritz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Lees, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Lerner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Lloyd, D.O",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matias Lopez Chacon, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Loucks, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Macfadyen, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Mackrell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sidharth Mahapatra, M.D., PH.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Marshall",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Maskin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Therese Mathews, PLP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shaguna Mathur, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teri Mauch, M.D., PH.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael McCarthy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan McCulloch",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney McLean, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Meuth, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Miller, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Minderman, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ahmad Miri",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Mogenson, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Moore, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clayton Mowrer, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristina Mueller, APRN-CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Muff-Luett, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohan Mysore, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nagendra Natarajan, MD.,MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Howard Needelman, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kari Neemann, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Nelson, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Nestander, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Morgan Nider, APRN-NP, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hana Niebur, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Nolette, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Novotny, MD",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynn O'Hanlon, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christian Oarhe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Orr, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Ortmann, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Pachunka, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mara Paradis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sachit Patel, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Penny, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Penny, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Pietrantone, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Porter, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Potthoff, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kyle Prisby, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Pulfer, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chittalsinh Raulji, MBBS",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shelby Reese, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emille Reyes Santiago, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Reynolds, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Reynolds, RN, MSN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eli Rhoads, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Cristina Rishoi, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Luis Rivera Martinez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elena Roberts, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Spencer Robinson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Rossiter, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yudelkis Saborit, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Sammut, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexis Sawyer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marilee Schaner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Schmidt, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tricia Schmit, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sophia Schneider, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Seidel, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Seong",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalie Shafer, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abhineet Sharma, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Noelle Sherrets-Ratigan, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kari Simonsen, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shilpa Singh, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gwenn Skar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachael Slagle, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Smith, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rene Smith, DNP-CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Smith, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcus Snow, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Snow, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Omri Soffer, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Sorensen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Specht",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Spicer, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Sprague, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shubra Srinivas, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Steenson, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alex Stogdill, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Straley, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Sunderman, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Sweney, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Swenson, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Tanna, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Taylor, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jayesh Thakker, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Drew Thodeson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Tom, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Torbert, D.O",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward Truemper, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katelyn Unvert",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lars Vanderbur, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Vari",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hanh Vo, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenilee Vogel, APRN-NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Wang, D.O",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Wang, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Wehrmann, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brenda Weidner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Wengel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chauna Weyermuller, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Whaley, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa White, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Wieseler, DNP APRN, CPNP-PC/AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynne Willett, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Williams, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark Wilson, MD",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melinda Winterscheid, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Wollberg, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Woodward, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Oriana Wright, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wenyuan Xu, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Yackley, D.O",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Yetman, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kenneth Zoucha, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Goodwin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Papillion",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Hoffman, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Papillion",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Candice Uribarri, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Papillion",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "J Martin, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Roca",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Betts, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Fedoroff, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mesha Luksan, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Scottsbluff",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Swanson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Winnebago",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  }
+ ]
+}

@@ -1,155 +1,522 @@
 {
   "generated": "2026-08-06",
-  "total": 3378,
-  "emails": 1495,
-  "phones": 2535,
+  "total": 150325,
+  "emails": 3191,
+  "phones": 149474,
+  "directPhones": 2535,
   "linkedin": 3378,
-  "stateCount": 16,
+  "stateCount": 51,
   "combinedFile": "/downloads/referral-contacts/pediatric-referral-contacts-all-states.csv",
   "states": [
+    {
+      "name": "Alabama",
+      "slug": "alabama",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-alabama.csv",
+      "count": 1775,
+      "emails": 21,
+      "phones": 1775,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Alaska",
+      "slug": "alaska",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-alaska.csv",
+      "count": 268,
+      "emails": 5,
+      "phones": 267,
+      "direct": 0,
+      "linkedin": 0
+    },
     {
       "name": "Arizona",
       "slug": "arizona",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-arizona.csv",
-      "count": 126,
-      "emails": 38,
-      "phones": 79,
-      "cities": 24
+      "count": 2711,
+      "emails": 71,
+      "phones": 2664,
+      "direct": 79,
+      "linkedin": 126
+    },
+    {
+      "name": "Arkansas",
+      "slug": "arkansas",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-arkansas.csv",
+      "count": 1133,
+      "emails": 14,
+      "phones": 1133,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "California",
+      "slug": "california",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-california.csv",
+      "count": 15814,
+      "emails": 174,
+      "phones": 15812,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Colorado",
       "slug": "colorado",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-colorado.csv",
-      "count": 158,
-      "emails": 74,
-      "phones": 123,
-      "cities": 32
+      "count": 3039,
+      "emails": 102,
+      "phones": 3004,
+      "direct": 123,
+      "linkedin": 158
+    },
+    {
+      "name": "Connecticut",
+      "slug": "connecticut",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-connecticut.csv",
+      "count": 2178,
+      "emails": 39,
+      "phones": 2178,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Delaware",
+      "slug": "delaware",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-delaware.csv",
+      "count": 756,
+      "emails": 3,
+      "phones": 756,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Florida",
+      "slug": "florida",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-florida.csv",
+      "count": 8411,
+      "emails": 107,
+      "phones": 8411,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Georgia",
       "slug": "georgia",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-georgia.csv",
-      "count": 203,
-      "emails": 84,
-      "phones": 156,
-      "cities": 63
+      "count": 4456,
+      "emails": 182,
+      "phones": 4409,
+      "direct": 156,
+      "linkedin": 203
+    },
+    {
+      "name": "Hawaii",
+      "slug": "hawaii",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-hawaii.csv",
+      "count": 660,
+      "emails": 2,
+      "phones": 660,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Idaho",
+      "slug": "idaho",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-idaho.csv",
+      "count": 409,
+      "emails": 0,
+      "phones": 409,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Illinois",
       "slug": "illinois",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-illinois.csv",
-      "count": 322,
-      "emails": 137,
-      "phones": 233,
-      "cities": 95
+      "count": 6007,
+      "emails": 229,
+      "phones": 5916,
+      "direct": 233,
+      "linkedin": 322
     },
     {
       "name": "Indiana",
       "slug": "indiana",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-indiana.csv",
-      "count": 119,
-      "emails": 66,
-      "phones": 100,
-      "cities": 43
+      "count": 2558,
+      "emails": 97,
+      "phones": 2539,
+      "direct": 100,
+      "linkedin": 119
+    },
+    {
+      "name": "Iowa",
+      "slug": "iowa",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-iowa.csv",
+      "count": 1191,
+      "emails": 1,
+      "phones": 1191,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Kansas",
+      "slug": "kansas",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-kansas.csv",
+      "count": 714,
+      "emails": 8,
+      "phones": 714,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Kentucky",
+      "slug": "kentucky",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-kentucky.csv",
+      "count": 1768,
+      "emails": 55,
+      "phones": 1768,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Louisiana",
+      "slug": "louisiana",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-louisiana.csv",
+      "count": 1861,
+      "emails": 5,
+      "phones": 1861,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Maine",
+      "slug": "maine",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-maine.csv",
+      "count": 577,
+      "emails": 0,
+      "phones": 577,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Maryland",
       "slug": "maryland",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-maryland.csv",
-      "count": 286,
-      "emails": 195,
-      "phones": 225,
-      "cities": 60
+      "count": 3678,
+      "emails": 221,
+      "phones": 3617,
+      "direct": 225,
+      "linkedin": 286
     },
     {
       "name": "Massachusetts",
       "slug": "massachusetts",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-massachusetts.csv",
-      "count": 282,
-      "emails": 119,
-      "phones": 220,
-      "cities": 78
+      "count": 6168,
+      "emails": 137,
+      "phones": 6106,
+      "direct": 220,
+      "linkedin": 282
+    },
+    {
+      "name": "Michigan",
+      "slug": "michigan",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-michigan.csv",
+      "count": 4336,
+      "emails": 41,
+      "phones": 4335,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Minnesota",
+      "slug": "minnesota",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-minnesota.csv",
+      "count": 2731,
+      "emails": 26,
+      "phones": 2731,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Mississippi",
+      "slug": "mississippi",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-mississippi.csv",
+      "count": 831,
+      "emails": 1,
+      "phones": 831,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Missouri",
       "slug": "missouri",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-missouri.csv",
-      "count": 139,
-      "emails": 59,
-      "phones": 110,
-      "cities": 34
+      "count": 4061,
+      "emails": 74,
+      "phones": 4032,
+      "direct": 110,
+      "linkedin": 139
+    },
+    {
+      "name": "Montana",
+      "slug": "montana",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-montana.csv",
+      "count": 292,
+      "emails": 2,
+      "phones": 292,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Nebraska",
+      "slug": "nebraska",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-nebraska.csv",
+      "count": 733,
+      "emails": 27,
+      "phones": 733,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Nevada",
       "slug": "nevada",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-nevada.csv",
-      "count": 108,
-      "emails": 61,
-      "phones": 83,
-      "cities": 18
+      "count": 799,
+      "emails": 64,
+      "phones": 774,
+      "direct": 83,
+      "linkedin": 108
+    },
+    {
+      "name": "New Hampshire",
+      "slug": "new-hampshire",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-hampshire.csv",
+      "count": 575,
+      "emails": 3,
+      "phones": 575,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "New Jersey",
+      "slug": "new-jersey",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-jersey.csv",
+      "count": 3949,
+      "emails": 28,
+      "phones": 3949,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "New Mexico",
       "slug": "new-mexico",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-mexico.csv",
-      "count": 132,
-      "emails": 59,
-      "phones": 108,
-      "cities": 26
+      "count": 891,
+      "emails": 61,
+      "phones": 866,
+      "direct": 108,
+      "linkedin": 132
+    },
+    {
+      "name": "New York",
+      "slug": "new-york",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-york.csv",
+      "count": 11271,
+      "emails": 116,
+      "phones": 11270,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "North Carolina",
       "slug": "north-carolina",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-carolina.csv",
-      "count": 192,
-      "emails": 128,
-      "phones": 148,
-      "cities": 51
+      "count": 4566,
+      "emails": 157,
+      "phones": 4522,
+      "direct": 148,
+      "linkedin": 192
+    },
+    {
+      "name": "North Dakota",
+      "slug": "north-dakota",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-dakota.csv",
+      "count": 247,
+      "emails": 2,
+      "phones": 247,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Ohio",
       "slug": "ohio",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-ohio.csv",
-      "count": 363,
-      "emails": 107,
-      "phones": 252,
-      "cities": 82
+      "count": 6999,
+      "emails": 294,
+      "phones": 6888,
+      "direct": 252,
+      "linkedin": 363
+    },
+    {
+      "name": "Oklahoma",
+      "slug": "oklahoma",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-oklahoma.csv",
+      "count": 1294,
+      "emails": 16,
+      "phones": 1294,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Oregon",
+      "slug": "oregon",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-oregon.csv",
+      "count": 1527,
+      "emails": 11,
+      "phones": 1527,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Pennsylvania",
+      "slug": "pennsylvania",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-pennsylvania.csv",
+      "count": 7029,
+      "emails": 42,
+      "phones": 7029,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Rhode Island",
+      "slug": "rhode-island",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-rhode-island.csv",
+      "count": 650,
+      "emails": 21,
+      "phones": 650,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "South Carolina",
+      "slug": "south-carolina",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-south-carolina.csv",
+      "count": 2101,
+      "emails": 26,
+      "phones": 2101,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "South Dakota",
+      "slug": "south-dakota",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-south-dakota.csv",
+      "count": 282,
+      "emails": 0,
+      "phones": 282,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Tennessee",
       "slug": "tennessee",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-tennessee.csv",
-      "count": 84,
-      "emails": 25,
-      "phones": 62,
-      "cities": 33
+      "count": 3375,
+      "emails": 91,
+      "phones": 3353,
+      "direct": 62,
+      "linkedin": 84
     },
     {
       "name": "Texas",
       "slug": "texas",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-texas.csv",
-      "count": 479,
-      "emails": 222,
-      "phones": 321,
-      "cities": 105
+      "count": 12160,
+      "emails": 308,
+      "phones": 12002,
+      "direct": 321,
+      "linkedin": 479
     },
     {
       "name": "Utah",
       "slug": "utah",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-utah.csv",
-      "count": 116,
-      "emails": 61,
-      "phones": 94,
-      "cities": 24
+      "count": 1412,
+      "emails": 62,
+      "phones": 1390,
+      "direct": 94,
+      "linkedin": 116
+    },
+    {
+      "name": "Vermont",
+      "slug": "vermont",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-vermont.csv",
+      "count": 316,
+      "emails": 3,
+      "phones": 316,
+      "direct": 0,
+      "linkedin": 0
     },
     {
       "name": "Virginia",
       "slug": "virginia",
       "file": "/downloads/referral-contacts/pediatric-referral-contacts-virginia.csv",
-      "count": 269,
-      "emails": 60,
-      "phones": 221,
-      "cities": 77
+      "count": 3861,
+      "emails": 127,
+      "phones": 3813,
+      "direct": 221,
+      "linkedin": 269
+    },
+    {
+      "name": "Washington",
+      "slug": "washington",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-washington.csv",
+      "count": 3369,
+      "emails": 39,
+      "phones": 3369,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Washington D.C.",
+      "slug": "washington-d-c",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-washington-d-c.csv",
+      "count": 1320,
+      "emails": 0,
+      "phones": 1320,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "West Virginia",
+      "slug": "west-virginia",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-west-virginia.csv",
+      "count": 570,
+      "emails": 15,
+      "phones": 570,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Wisconsin",
+      "slug": "wisconsin",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-wisconsin.csv",
+      "count": 2527,
+      "emails": 61,
+      "phones": 2527,
+      "direct": 0,
+      "linkedin": 0
+    },
+    {
+      "name": "Wyoming",
+      "slug": "wyoming",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-wyoming.csv",
+      "count": 119,
+      "emails": 0,
+      "phones": 119,
+      "direct": 0,
+      "linkedin": 0
     }
   ],
   "samples": [

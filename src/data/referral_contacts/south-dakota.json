@@ -1,0 +1,2897 @@
+{
+ "name": "South Dakota",
+ "slug": "south-dakota",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-south-dakota.csv",
+ "count": 282,
+ "emails": 0,
+ "phones": 282,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 241
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 38
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 3
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Sioux Falls",
+   "count": 180
+  },
+  {
+   "name": "Rapid City",
+   "count": 35
+  },
+  {
+   "name": "Yankton",
+   "count": 10
+  },
+  {
+   "name": "Aberdeen",
+   "count": 9
+  },
+  {
+   "name": "Mitchell",
+   "count": 6
+  },
+  {
+   "name": "Pine Ridge",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Sanford Clinic",
+   "count": 126
+  },
+  {
+   "name": "Avera McKennan",
+   "count": 31
+  },
+  {
+   "name": "Black Hills Pediatrics, Llp",
+   "count": 16
+  },
+  {
+   "name": "Sanford Health Network",
+   "count": 5
+  },
+  {
+   "name": "Sanford Virtual Care",
+   "count": 5
+  },
+  {
+   "name": "28Th Medgrp-Ellsworth",
+   "count": 4
+  }
+ ],
+ "rows": [
+  {
+   "name": "Bisma Arbab, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Health Network",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dana Dohman, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Health Network",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bobby Goeman, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Health Network",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sheilla Kiconco",
+   "title": "Pediatrician",
+   "org": "Sanford Health Network",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Georgia Santos-Jawaid, MD",
+   "title": "Pediatrician",
+   "org": "Avera St. Luke'S",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Twisha Shukla, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Health Network",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linne Curtis Bayt, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Brandon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kassy Thorpe, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Brandon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tatiana Sergeev, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Brookings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gerald Turner, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Brookings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Costello, M.D",
+   "title": "Pediatrician",
+   "org": "28Th Medgrp-Ellsworth",
+   "city": "Ellsworth Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Duncan, MD, MPH",
+   "title": "Pediatrician",
+   "org": "28Th Medgrp-Ellsworth",
+   "city": "Ellsworth Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dustin Mayne, D.O",
+   "title": "Pediatrician",
+   "org": "28Th Medgrp-Ellsworth",
+   "city": "Ellsworth Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Meyer, DO",
+   "title": "Pediatrician",
+   "org": "28Th Medgrp-Ellsworth",
+   "city": "Ellsworth Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Basel, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Harrisburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Arnold, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine McGraw, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Tegethoff, MD",
+   "title": "Pediatrician",
+   "org": "Pediatrics Plus Llc",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Anderson, D.O",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Balay, M.D",
+   "title": "Neonatologist",
+   "org": "B&B Neonatology",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Benn, M.D",
+   "title": "Neonatologist",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Bowers, DO",
+   "title": "Pediatrician",
+   "org": "Community Health Center Of The Black Hills Inc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Chow, M.D",
+   "title": "Pediatrician",
+   "org": "Regional Health Physicians, Inc.",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amanda Diehl, MD",
+   "title": "Pediatrician",
+   "org": "Community Health Center Of The Black Hills Inc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Edelen, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Regional Health Physicians Inc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara Hamilton, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Hohm, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Founders Park Clinic, Pllc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Kovarik, M.D",
+   "title": "Neonatologist",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Kuehler, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Lehmann, MD",
+   "title": "Pediatrician",
+   "org": "Community Health Center Of The Black Hills Inc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Marten, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Regional Health Physicians Inc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Miller",
+   "title": "Pediatrician",
+   "org": "Regional Health Physicians, Inc.",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sam Mortimer, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Mueller, DO",
+   "title": "Adolescent Medicine Physician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donald Oliver, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Palmer Hooten, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Paul, MD",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynn Simmons, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Spahn, MD",
+   "title": "Pediatrician",
+   "org": "Founders Park Clinic, Pllc",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Spangler, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lori Strong, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Willis Sutliff, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Swett, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Whitney, M.D",
+   "title": "Pediatrician",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dewi Frances Depositario-Cabacar, MD",
+   "title": "Pediatrician",
+   "org": "City Of Redfield",
+   "city": "Redfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucy Reifel, MD",
+   "title": "Pediatrician",
+   "org": "Sicangu Oyate Health System",
+   "city": "Rosebud",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tonya Adamiak, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Moises Alatorre Jimenez, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mir Ali, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohammad Alzoubaidi",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Anderson, M.D",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Anderson",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nofil Arain, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sami Awadallah, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Baack, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Backer, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bruce Banwart, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Bauer, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barry Bauer, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carleigh Belush, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Virtual Care",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Berger, M.D",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lily Bills",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jerome Blake, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julia Blue",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Boadwine, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rochelle Boote, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosanne Bosch, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Madison Bren, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bethany Brooks",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kara Bruning, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Bunch, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Bunger, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Carruthers, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Chapman, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Archana Chatterjee, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kingshuk Dasgupta, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Davis Keppen, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jose Marius Dosado, M.D",
+   "title": "Neonatologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brock Doubledee, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shari Eich, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Elliott, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Emry, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Santiago Encalada, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lawrence Fenton",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nancy Free, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Free, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Free, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jordan Fritch-Hanson, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carl Galloway, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mirtha Gayoso Liviac, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacquelyn Grev, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kurt Griffin, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Althea Groen Hooyer",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashutosh Gupta, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Haggar, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor Hansen",
+   "title": "Neonatologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Hartke, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Virtual Care",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Moeez Hassan",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leah Heidenreich, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Henry, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Hickman, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Hoag",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Holmberg, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shelly Hruby, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benson Hsu, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Hsueh",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jody Huber, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amit Jain, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rashmi Jain, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Jensen, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Johnson, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bianca Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Virtual Care",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke Jones, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Joy, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Juber, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Arvind Kasaragod, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Justin Kastl, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Syed Haris Zamir Kazmi, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohammed Khan, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carolyn Kippes, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aimee Koenig, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ricky Kooima, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sinduja Lakkunarajah, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Terry Lang, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janae Langner, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katie Larson, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Lavoy",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Li, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Santiago Lopez, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward Mailloux, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christiane Maroun, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Noelle McGee, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott McKercher, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kandi McMenamy, MD",
+   "title": "Neonatologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Menking, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauritz Meyer, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Mittelstaedt, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nivedita Mohari, M.B.B.S",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chuanpit Moser, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Munson, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Nanton, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Neidich, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Candice Nelson, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Nelson, D.O",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathaniel Nelson, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paulo Nino Rojas, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joan Nold, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Olcott, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gokhan Olgun, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Peschong",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kjerstin Purintun, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rita Rabenberg, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayli Reece, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Reed, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenifer Reitsma, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Reuter, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Rogers, M.D",
+   "title": "Neonatologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Rubin-Peck, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Rust, APRN-NP, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Virtual Care",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amna Afzal Saeed",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Sandeen, D.O",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Sanders, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Sands, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haripriya Santhanam",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samuel Schimelpfenig, M.D",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Scholz, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dana Schroeder, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Segeleon, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Shelso, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Skorey, M.D",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alyssa Smith, DO",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Stamato, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dennis Stevens, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Strube",
+   "title": "Pediatrician",
+   "org": "Sanford School Of Medicine",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Stuive, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Virtual Care",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Tennant, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Thu, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eric Towe, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Van Dam, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Vanbeek, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janelle Vande Griend, APRN-CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wilfredo Veloira, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wendy Vetter, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Vogel, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayelyn Wagner, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Wallace, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Waltz, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Wang, MD",
+   "title": "Neonatologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zachary Weber, MD",
+   "title": "Pediatrician",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Weidauer, CNP-BC",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Donna Weinacht, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lawrence Wellman, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bryan Wermers, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Wharton, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica White, M.D",
+   "title": "Neonatologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Whittington, DO",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Zangla, DO",
+   "title": "Pediatric Nephrologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Zenel, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Zylstra, M.D",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Krell, MD",
+   "title": "Pediatrician",
+   "org": "Yankton Medical Clinic Pc",
+   "city": "Vermillion",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nina Bishop",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Watertown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allen Hoekman, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Watertown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracy Pierret, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Watertown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shawn Bartel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christian Eby, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Mayo, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Aberdeen",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matt Bien, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brookings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanie Holm, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Brookings",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Benjamin Eastman",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dakota Dunes",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Steven Joyce, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Dakota Dunes",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Cattaneo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ellsworth Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Brenneman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ft. Thompson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sean Schooley, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Huron",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rafael Christian, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kyle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kassidy Boyd, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Paul Lim, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Theresa Miiller, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Mitchell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marty Allison, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pierre",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Cass, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Pierre",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bretta Olson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pierre",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Poppinga, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pierre",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Berry-Palmier, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fernando Cosme, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joan Gibson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Rooks, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carmen Ruiz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "S Weber, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pine Ridge",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wendy Asher, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thea Beyer, DNP, APRN, CPNP, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marissa Copas Weaver",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Dell, M.D., MBA, MS, FAAP",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Farnsworth, MD, PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Fox, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberly Hushagen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daisha Seyfer, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rhythm Vasudeva",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Wade, NURSE PRACTITIONER",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Rosebud",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brianna Burch, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cinthya Del Castillo Lemos, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Evans, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lianne Farley, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aleesa Fedt-Abdo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Fish, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Misty Folkestad, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Hofer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Hosen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melanie Madsen",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Mark, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Halle McGee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ariane Moffett, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gulsah Olgun, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deepti Pandit, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathy Reynolds, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mason Ruthford, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Sampson, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Schimelpfenig, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Scott, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Talavera Barber, DO",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Connie Taylor, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Tetzlaff, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Whitney Weber, DNP, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Wittrock",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gisella Wong Nano, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lily Yu, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stellar Anonye Achampong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sisseton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Douglas Lasuer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sisseton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Anderson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Spearfish",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary McAdoo",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Spearfish",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephen Parys, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Spearfish",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tara Ulmer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Spearfish",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Miller, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Springfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Crismon, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Watertown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Flom, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randolph Heisinger, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Holstein, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carroll Isburg, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Kelley, APRN, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dawn Larson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael McVay, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Pepper, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "April Willman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Withrow, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  }
+ ]
+}

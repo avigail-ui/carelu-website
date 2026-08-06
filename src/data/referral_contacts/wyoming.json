@@ -1,0 +1,1267 @@
+{
+ "name": "Wyoming",
+ "slug": "wyoming",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-wyoming.csv",
+ "count": 119,
+ "emails": 0,
+ "phones": 119,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 94
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 24
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Cheyenne",
+   "count": 22
+  },
+  {
+   "name": "Gillette",
+   "count": 17
+  },
+  {
+   "name": "Casper",
+   "count": 16
+  },
+  {
+   "name": "Laramie",
+   "count": 12
+  },
+  {
+   "name": "Jackson",
+   "count": 10
+  },
+  {
+   "name": "Lander",
+   "count": 8
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Fremont County Pediatric Clinic",
+   "count": 5
+  },
+  {
+   "name": "Northeast Wyoming Pediatric Associates, P.C.",
+   "count": 4
+  },
+  {
+   "name": "Casper Children'S Center, Llc",
+   "count": 3
+  },
+  {
+   "name": "Cheyenne Regional Physicians Group, Llc",
+   "count": 3
+  },
+  {
+   "name": "Abc Pediatrics Llc",
+   "count": 2
+  },
+  {
+   "name": "Arapahoe Health Center Pharmacy",
+   "count": 1
+  }
+ ],
+ "rows": [
+  {
+   "name": "Erica Ramsey, MD",
+   "title": "Pediatrician",
+   "org": "Arapahoe Health Center Pharmacy",
+   "city": "Arapahoe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Edwards, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Diane R Edwards",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Granum, M.D",
+   "title": "Pediatrician",
+   "org": "Casper Children'S Center, Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Knudson-Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Children 1St Pediatrics Associates Of Wyoming, Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Peterson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Casper Children'S Center, Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lorraine Reed, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Advocacy Project Inc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Devin Rhoades, DNP, RN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Platte River Family Practice Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shelley Springer, MD",
+   "title": "Pediatrician",
+   "org": "Casper Children'S Center, Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Vigneri, MD",
+   "title": "Pediatrician",
+   "org": "Robert A Vigneri",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucase Wang, M.D",
+   "title": "Pediatrician",
+   "org": "Casper Pediatrics",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Horst, M.D",
+   "title": "Pediatrician",
+   "org": "Cheyenne Regional Physicians Group, Llc",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mera Johnson, D.O",
+   "title": "Pediatrician",
+   "org": "Cheyenne Regional Physicians Group, Llc",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christa Kovachevich, ARNP, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pony Express Pediatrics, Llc",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Collin Prince, PNP, PMHNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Cheyenne Regional Physicians Group, Llc",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Jamieson, MD",
+   "title": "Pediatrician",
+   "org": "Big Horn Basin Children'S Clinic, Pc",
+   "city": "Cody",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Depalma, MD",
+   "title": "Pediatrician",
+   "org": "Depalma Pediatrics Dba Evanston Pediatrics",
+   "city": "Evanston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Berg, D.O",
+   "title": "Pediatrician",
+   "org": "90Th Medgrp-Fe Warren",
+   "city": "Fe Warren Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Abujaber-Ammari, MD",
+   "title": "Pediatrician",
+   "org": "Abc Pediatrics Llc",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Helms, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Abc Pediatrics Llc",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karin Klee, MD",
+   "title": "Pediatrician",
+   "org": "Karin L Klee Md",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Travis Riddell, M.D",
+   "title": "Pediatrician",
+   "org": "County Of Teton",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Keri Wheeler, MD",
+   "title": "Pediatrician",
+   "org": "Suburban Urology Network Pllc",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Barnes, D.O",
+   "title": "Pediatrician",
+   "org": "Fremont County Pediatric Clinic",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Barnes, M.D",
+   "title": "Pediatrician",
+   "org": "Fremont County Pediatric Clinic",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheryl Fallin, M.D",
+   "title": "Pediatrician",
+   "org": "Fremont County Pediatric Clinic",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aven Glazer, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Fremont County Pediatric Clinic",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Stamps, MD",
+   "title": "Pediatrician",
+   "org": "Fremont County Pediatric Clinic",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Tracy, M.D",
+   "title": "Pediatrician",
+   "org": "Powell Valley Healthcare Inc",
+   "city": "Powell",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Shue, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Valence Health Corp Pc",
+   "city": "Rawlins",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Fisher, MD",
+   "title": "Pediatrician",
+   "org": "Wind River Pediatrics, Llc",
+   "city": "Riverton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Samantha Morgan, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Wind River Family & Community Health Care",
+   "city": "Riverton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lucy Haberthier-Ryan, MD",
+   "title": "Pediatrician",
+   "org": "Memorial Hospital Of Sweetwater County Dialysis Unit",
+   "city": "Rock Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tamara Walker, PNP, PMHNP, PMHS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "307 Hope Clinic",
+   "city": "Rock Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandrashekar Yeshlur, M.D",
+   "title": "Pediatrician",
+   "org": "Sweetwater Pediatrics P.C.",
+   "city": "Rock Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Bowers, MD",
+   "title": "Pediatrician",
+   "org": "Goose Creek Pediatrics Pc",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sudhir Finch, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Sheridan Vamc",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Oss, MD",
+   "title": "Pediatrician",
+   "org": "Northeast Wyoming Pediatric Associates, P.C.",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Sanderson, M.D",
+   "title": "Pediatrician",
+   "org": "Northeast Wyoming Pediatric Associates, P.C.",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Shaw, M.D",
+   "title": "Pediatrician",
+   "org": "Northeast Wyoming Pediatric Associates, P.C.",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barry Wohl, M.D",
+   "title": "Pediatrician",
+   "org": "Northeast Wyoming Pediatric Associates, P.C.",
+   "city": "Sheridan",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ruth Anne Tomlinson, MD",
+   "title": "Pediatrician",
+   "org": "Cowboy Kids Pediatrics",
+   "city": "Wilson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carlos Hernandez Moreno, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Arapahoe",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ismaeel Bakhsh, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Chin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Ellbogen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Green, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Grooms, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Quinn, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Venessa Yoosook, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mudassir Akhter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Borin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janelle Fried, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rayna Gravatt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daulton Grube, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanne Hassell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Hillman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Basavanagouda Hiregoudar, M D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Horam, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "April Kranz-Ferguson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Leland, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Macleod, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Prentice, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Rose, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Schiel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aleksandra Schum, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danae Stampfli, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alana Vogt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cheyenne",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Carter, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cody",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurie Hipwell, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cody",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Sidor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cody",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Skuza, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Douglas",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Barry, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fe Warren Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meaghan Georges, DNP, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fe Warren Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Smerling",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fe Warren Afb",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Louisa Mook",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fort Washakie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Nelson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fort Washakie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Boyle, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Fall, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Fall, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brittney Goeken, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Goodman, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurel Green, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Micayla Hinds, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brahmananda Koduri, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natasha Maremma, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Inara McMaster, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kyle Sabey, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hollie Stewart, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carmen Toman, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Vo, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracy Wasserburger, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Gillette",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacquelin Hardenbrook, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Hertzig, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Little, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiffany Milner, M. D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Payne, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Pockat, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Ridgway, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ryan Firth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shalini Forbis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Grace Morris, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lander",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Follett, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Harris, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Hink, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kent Kleppinger, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vijaya Koduri, MBBS",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joshua Morgan, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julia Pfromm, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Smith, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Somlyay, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanne Steane, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paula Vasek, F.N.P",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Laramie",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebekah Vance, DNP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pinedale",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joann Kaplan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tara Mercer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "May Poundstone, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rock Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Sarette, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Rock Springs",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Resheske, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Wheatland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  }
+ ]
+}

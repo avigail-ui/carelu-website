@@ -48,24 +48,54 @@ export async function POST(request: Request): Promise<Response> {
     return json({ ok: true });
   }
 
-  let leads: Lead[] = [];
-  try {
-    leads = JSON.parse(await getRepoFileText(cfg.token, 'leads.json')) as Lead[];
-  } catch {
-    // First lead ever (404) or transient read failure — start fresh either way;
-    // commitFiles writes on top of HEAD so an existing file is never clobbered
-    // silently unless the read genuinely failed, which we accept for v1 volume.
-    leads = [];
-  }
+  // This list is the newsletter list, so a lost write is a lost subscriber.
+  // leads.json is a read-modify-write: two signups landing together would make
+  // the second commit fail against a moved ref (commitFiles updates with
+  // force:false). Re-read and retry so the loser of the race still lands.
+  let stored = false;
+  let alreadyKnown = false;
+  for (let attempt = 0; attempt < 4 && !stored; attempt++) {
+    let leads: Lead[] = [];
+    let readOk = false;
+    try {
+      leads = JSON.parse(await getRepoFileText(cfg.token, 'leads.json')) as Lead[];
+      readOk = true;
+    } catch (err) {
+      // A 404 means this is the first lead ever, which is a legitimate empty
+      // start. Any other read failure must NOT be treated as an empty list —
+      // committing [] over a real file would wipe every subscriber.
+      const status = (err as { status?: number }).status;
+      if (status === 404) readOk = true;
+      else console.error('leads: read failed', err);
+    }
+    if (!readOk) {
+      await new Promise((r) => setTimeout(r, 250 * (attempt + 1)));
+      continue;
+    }
 
-  const isNew = !leads.some((l) => l.email === email);
-  if (isNew) {
+    if (leads.some((l) => l.email === email)) {
+      alreadyKnown = true;
+      stored = true;
+      break;
+    }
+
     leads.push({ ts: new Date().toISOString(), email, source });
     try {
-      await commitFiles(cfg.token, [{ path: 'leads.json', content: JSON.stringify(leads, null, 1) + '\n' }], `lead: ${email} (${source})`);
+      await commitFiles(
+        cfg.token,
+        [{ path: 'leads.json', content: JSON.stringify(leads, null, 1) + '\n' }],
+        `lead: ${email} (${source})`
+      );
+      stored = true;
     } catch (err) {
-      console.error('leads: commit failed', err);
+      console.error(`leads: commit attempt ${attempt + 1} failed`, err);
+      await new Promise((r) => setTimeout(r, 250 * (attempt + 1)));
     }
+  }
+
+  if (!stored) console.error('leads: GAVE UP storing lead', email, source);
+
+  if (stored && !alreadyKnown) {
     try {
       await fetch(SLACK_WEBHOOK_URL, {
         method: 'POST',

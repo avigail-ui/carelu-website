@@ -1,0 +1,6577 @@
+{
+ "name": "Rhode Island",
+ "slug": "rhode-island",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-rhode-island.csv",
+ "count": 650,
+ "emails": 21,
+ "phones": 650,
+ "direct": 0,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 550
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 85
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 15
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Providence",
+   "count": 406
+  },
+  {
+   "name": "Warwick",
+   "count": 32
+  },
+  {
+   "name": "Lincoln",
+   "count": 26
+  },
+  {
+   "name": "East Providence",
+   "count": 22
+  },
+  {
+   "name": "Cumberland",
+   "count": 19
+  },
+  {
+   "name": "Barrington",
+   "count": 17
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Rhode Island Hospital",
+   "count": 27
+  },
+  {
+   "name": "Thundermist Health Center",
+   "count": 16
+  },
+  {
+   "name": "The Providence Community Health Centers, Inc",
+   "count": 14
+  },
+  {
+   "name": "The Providence Community Health Centers, Inc.",
+   "count": 13
+  },
+  {
+   "name": "Pediatric Associates",
+   "count": 10
+  },
+  {
+   "name": "Barrington Pediatric Associates, Inc.",
+   "count": 8
+  }
+ ],
+ "rows": [
+  {
+   "name": "Katharine Costa, RN, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Blackstone Valley Community Health Care, Inc.",
+   "city": "Central Falls",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@bvchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jon Dooley, MD",
+   "title": "Pediatrician",
+   "org": "Blackstone Valley Community Health Care, Inc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@bvchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Scheinman, MD",
+   "title": "Pediatrician",
+   "org": "Blackstone Valley Community Health Care, Inc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@bvchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kunjbala Sharma, MD",
+   "title": "Pediatrician",
+   "org": "Blackstone Valley Community Health Care, Inc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@bvchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Bortcosh, M.D",
+   "title": "Pediatrician",
+   "org": "Brown Emergency Medicine",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Brown, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Almaz Dessie, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Brown Emergency Medicine",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mohammed Faizan, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Fassel Justus, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Irina Gorbounova, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joel Hudgins, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Brown Emergency Medicine",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Jimenez Giraldo, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caroline Kistin, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Manpreet Kochhar, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick McGann, M.D. M.S",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Mintzes, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Olutosin Ojugbele, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Schissler, D.O",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Brown Emergency Medicine",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tomo Tarui, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Delma-Jean Watts, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Westrick, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Beller, M.D",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Butler",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Clegg, MD",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Curran, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Dennison, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcolino Ferretti, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Grenander, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Hart, M.D",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Keswick, MD",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Victor Lerish, MD",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara McDole, PA-C",
+   "title": "Adolescent Medicine Physician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Mileikowsky, M.D",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ronni Peltz, MD",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ariana Raufi, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stuart Demirs, M.D",
+   "title": "Pediatrician",
+   "org": "Stuart V Demirs Md Llc",
+   "city": "Charlestown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Concannon, DO",
+   "title": "Pediatrician",
+   "org": "Drs. Concannon And Vitale, Llc",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Del Vecchio-Gilbert, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Linda Del Vecchio-Gilbert",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca McEachern, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Pediatric Endocrinology Of Rhode Island",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mark O'Brien, M.D. , M.P.H",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Ri Community Living And Supports",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Ohnmacht, MD",
+   "title": "Pediatrician",
+   "org": "Richard K Ohnmacht Md Ltd",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Vitale, M.D",
+   "title": "Pediatrician",
+   "org": "Drs. Concannon And Vitale, Llc",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Bornstein Bennett, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Nri Pediatrics Pc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanne Donahue, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nri Pediatrics Pc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Grimes, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Nri Pediatrics Pc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pranati Jha, M.D",
+   "title": "Pediatrician",
+   "org": "Prima Inc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emilio Monti, MD",
+   "title": "Pediatrician",
+   "org": "Prima Inc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol O Shea, MD",
+   "title": "Pediatrician",
+   "org": "Prima Inc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yolande Patenaude-Lockett, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Prima Inc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Starakiewicz, MD",
+   "title": "Pediatrician",
+   "org": "Prima Inc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hana Tamura, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Nri Pediatrics Pc",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Greco, MD",
+   "title": "Pediatrician",
+   "org": "Riverside Pediatrics Inc",
+   "city": "E Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Butler, M.D./M.P.H",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Cirillo, MD",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Flanagan, M.D",
+   "title": "Pediatrician",
+   "org": "Egp Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Haines, MD",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Lake, MD",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Maule, MD",
+   "title": "Pediatrician",
+   "org": "Egp Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Clare McMillan, M.D",
+   "title": "Pediatrician",
+   "org": "Egp Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Noel, MD",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Pogacar, M.D",
+   "title": "Pediatrician",
+   "org": "Egp Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bonnie Reibman, M.D",
+   "title": "Pediatrician",
+   "org": "Egp Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Howard Silversmith, MD",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Zinck, M.D",
+   "title": "Pediatrician",
+   "org": "Ocean State Pediatrics Inc",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Chi, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Dickstein, M.D",
+   "title": "Pediatrician",
+   "org": "Emma Pendleton Bradley Hospital",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Farrell, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Fox, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Griffith, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andree Heinl, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexandra Labovitz, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Martins, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Pepitone, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kimberley Townsend, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Turtle, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dinusha Dietrich, MD",
+   "title": "Pediatrician",
+   "org": "Smithfield Pediatrics",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vincent D'Alessandro, MD",
+   "title": "Pediatrician",
+   "org": "Vincent A. D'Alessandro, M.D.",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Celina Pereira, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "State Of Rhode Island",
+   "city": "Kingston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathan Beraha, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gerardo Concilio, MD",
+   "title": "Pediatrician",
+   "org": "Concilio Pediatrics",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Elofson, M.D",
+   "title": "Pediatrician",
+   "org": "Sowa Chiropractic Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Fisher, M.D",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics Inc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cheryl Flynn, M.D, PHD",
+   "title": "Pediatrician",
+   "org": "Cheryl Flynn Md Inc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Gunasti, MD",
+   "title": "Pediatrician",
+   "org": "Sharon G Gunasti Md Inc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Hughes, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Leonard, MSN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Niall Mitchell, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Pakula, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dana Parris, MD",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics Inc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Rexford, MD",
+   "title": "Pediatrician",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacquelyn Silva, M.D",
+   "title": "Pediatrician",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roxanne Simmons, MD",
+   "title": "Pediatrician",
+   "org": "Children First Pediatrics Inc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Moore, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thundermist Health Center",
+   "city": "Narragansett",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Connell, R.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Salve Regina University",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Levesque, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kingstown Pediatrics Inc",
+   "city": "North Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Powers, MD",
+   "title": "Pediatrician",
+   "org": "Kingstown Pediatrics Inc",
+   "city": "North Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Vali, MD",
+   "title": "Pediatrician",
+   "org": "Bayside Family Healthcare, Inc.",
+   "city": "North Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Doreen Ciancaglini, MD",
+   "title": "Pediatrician",
+   "org": "Northprovidencepediatrics",
+   "city": "North Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miguel Fuentes, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Santiago Medical Group, Inc.",
+   "city": "North Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Teresa Jeraldo, M.D",
+   "title": "Pediatrician",
+   "org": "Santiago Medical Group, Inc.",
+   "city": "North Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rafael Montalvo Ayala, MD",
+   "title": "Pediatrician",
+   "org": "Santiago Medical Group, Inc.",
+   "city": "North Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Bender, M.D",
+   "title": "Neonatologist",
+   "org": "Memorial Hospital",
+   "city": "Pawtucker",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tanya Becker, MD",
+   "title": "Pediatrician",
+   "org": "Tanya J. Becker Md, Inc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cameron Lang, MD",
+   "title": "Pediatrician",
+   "org": "Blackstone Valley Community Health Care, Inc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayla Vicino, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Encompass Pediatrics, Llc.",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Adams",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Rhode Island Public Health Foundation",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aliia Agliullina, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Byron Alex",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Allen, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Alvarez, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emad Awa, M.D",
+   "title": "Pediatrician",
+   "org": "Sunshine Pediatrics Llc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ritika Basnet, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ursulina Bencosme, MD, MPH",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ruslan Berdichevsky, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Aed Transportation Llc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Buckner, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Burke, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Burns, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tessa Centracchio, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kitzia Connors, CPNP-PC",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jean Devera, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jerilyn Devin, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Courtney Dowen, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Dvorin, M.D",
+   "title": "Pediatrician",
+   "org": "Providence Pediatrics",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dalal Elsori, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Esteban, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Forcier, MD MPH",
+   "title": "Pediatrician",
+   "org": "The Rhode Island Public Health Foundation",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Gabrielsen, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelvin Gillman, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Healthcare, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslia Gonzalez, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ellen Gurney, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marilyn Hammond, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Razi Hasan, M.D",
+   "title": "Pediatrician",
+   "org": "Sunshine Pediatrics Llc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Constance Hiller, MD",
+   "title": "Pediatrician",
+   "org": "Brown University Health Services Pharmacy",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Klouda, MD",
+   "title": "Pediatrician",
+   "org": "Hopehealth Hospice & Palliative Care",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anish Lamichhane, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Lutterloh, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Malone, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Loretta Marion, DO",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carla Martin, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Miranda Miller, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chad Nevola, M.D., F.A.A.P",
+   "title": "Pediatrician",
+   "org": "Chad P. Nevola, Md, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Nugent",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Providence Pediatrics",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ifeoma Odukwe, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brea Prindaville, M.D",
+   "title": "Pediatrician",
+   "org": "Marla C Angermeier, Md, Pc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rudiger Ramlal, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erin Rawson, MD, MPH",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Robertson, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Rompf, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Patricia A. Rompf, M.D., Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sabitha Sasidharan Pillai",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kevin Scully, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lillian Seo, MD",
+   "title": "Pediatrician",
+   "org": "The Miriam Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Simon, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Boris Skurkovich, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carly Stilphen, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shova Subedi, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lonice Thomas, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tim Tomy, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beth Toolan, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colette Vieau, M. D",
+   "title": "Pediatrician",
+   "org": "Partners In Pediatrics Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paul Wehbe, MD",
+   "title": "Pediatrician",
+   "org": "Sunshine Pediatrics Llc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nathaniel White, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Brown Emergency Medicine",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bridget Wieczkowski, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yvette Yatchmink, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffery Cunningham, MD",
+   "title": "Pediatrician",
+   "org": "Brown Medicine",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Singer, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Community Action Program",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Penchuk, PHYSICIAN",
+   "title": "Pediatrician",
+   "org": "Smithfield Pediatrics",
+   "city": "Smithfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Prateek Bhattacharya, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Coghlin, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Agnieszka Kendall, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Maltz, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa McHugh, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Elizabeth Murray, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joy Ziegler, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Labiak-Maher, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Nancy Lynn Levesque Kubic",
+   "city": "Tiverton",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ann Bisland, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Cmb Wellness Llc",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Chronley, M.D",
+   "title": "Pediatrician",
+   "org": "South County Pediatric Group, Inc.",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abram Collard, D.O",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Dibiasio, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Wakefield Pediatrics, Llc",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Fazio, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Wakefield Pediatrics, Llc",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Noel, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Wakefield Pediatrics, Llc",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Spaight, M.D",
+   "title": "Pediatrician",
+   "org": "South County Pediatric Group, Inc.",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Twomey, RNP, PHD",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rhode Island Cvs Pharmacy, L.L.C.",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maha Ammar, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gail Brown, MD",
+   "title": "Pediatrician",
+   "org": "Bald Hill Pediatrics",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marjorie Carges, MD",
+   "title": "Pediatrician",
+   "org": "Tender Loving Care Health Care Services Of New England, Llc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Castree, MD",
+   "title": "Pediatrician",
+   "org": "Tender Loving Care Health Care Services Of New England, Llc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ailis Clyne, MD",
+   "title": "Pediatrician",
+   "org": "Tender Loving Care Health Care Services Of New England, Llc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Helen Coughenour, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Dawson, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gerald Exil, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Ralph A Digiacomo Md Pc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allyson Hicks, M.D",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carole Lengyel, M.D",
+   "title": "Pediatrician",
+   "org": "Tender Loving Care Health Care Services Of New England, Llc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maureen McKenna, M.D",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haran Mennillo, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Howard Mintz, MD",
+   "title": "Pediatrician",
+   "org": "Tender Loving Care Health Care Services Of New England, Llc",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Graham Newstead, M.D",
+   "title": "Pediatrician",
+   "org": "Graham J. Newstead M.D., Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Celia Reyes, MD",
+   "title": "Pediatrician",
+   "org": "New England Medical Office",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juliana Vincent, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raymond Zarlengo, MD",
+   "title": "Pediatrician",
+   "org": "Toll Gate Pediatrics, Inc.",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mary Boratyn, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thundermist Health Center",
+   "city": "West Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claudia Clarke, DO",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "West Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Kao, MD",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "West Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karim Khanbhai, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Choice Pediatrics",
+   "city": "West Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Russell Stokes, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "We Luv Kids Inc",
+   "city": "Westerly",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "David Bourassa, M.D",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Brug, MD",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cynthia Ebelacker, PMHNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natasha Furtado Dalomba, MD",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marina Korneeva, M.D",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Beata Nelken, MD",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Rafferty, M.D",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Tyler, M.D",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Evelisse Viamonte, MD",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Zerdelian, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeanne Ziter, M.D",
+   "title": "Pediatrician",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony De Luca, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracy Richardson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yvonne Weiss, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Filardo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bristol",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leslie Mohlman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bristol",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Howland, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Central Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yen Longobardi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Central Falls",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Bonner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Deangelis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cecile Ibrahim, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carine Leconte, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Helene Pniewski, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rick Quiles, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen Ryan - Mancini, R.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marvin Wasser, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cranston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maureen Crotty, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Howard Furlong, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Malini Gillen, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alexander Lee, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kendra Lund",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pasquale Malafronte, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michele Mathieu, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Peduto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katelynn Socha, MSN, RN/NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peter Yasigian, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Brogan, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Siavash Ghoreishi, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Willis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Greenwich",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Cohen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Finigan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Gaines, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Lange, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward McGookin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria McGurrin",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tania Rodriguez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joanna Schatz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Shaw, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Stone, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Ward, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Sisto, APRN, CPNP-AC/PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janis Baccari, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marc Diamond, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leonora First, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Friedman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gennaro Pasquariello, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "John Sanacore, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Johnston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fortunato Procopio, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Kingston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Prerana Baranwal",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Baumann, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shawn Binns, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessie Bouchard, MSN, APRN, FNP-C",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Hines, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Jaimerena, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Madras, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Maranzano, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mallory McCabe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marta Sowa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vasupradha Suresh Kumar, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Richard Teixeira, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Budacki, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Casey Eldert, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Keating, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wendy Regan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brooke Roebuck, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Wood",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Middletown",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Sheffield, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Narragansett",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Amaio, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Doreen Donnelly, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Salm, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Schiemel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Ullman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Baum-Gupta",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Viren D'Sa, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Esther Entin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dante Ramos, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Neelam Thapa, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julie Wilson, PH.D",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Pawtucket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Dierolf, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Portsmouth",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Abrunzo, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dianne Abuelo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Olulayole Adedeji",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adebimpe Adewusi, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicole Alexander-Scott, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Zaid Alhinai, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Alksninis, NPP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Geoffrey Allen, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lauren Allister, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Altura, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Siraj Amanullah, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Angela Anderson, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deborah Bacani, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Baker, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Bakhos, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marika Bann, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Caitlin Barbarita, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hannah Barber Doucet, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Barron, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shamara Battle, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aliyah Bellm, MD, MSC",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsay Bernardo",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Scott Berns, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Beucher, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Riti Bhalla, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roma Bhuta, DO",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jnev Biros, MD, MPH",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cia Bishop, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Blegen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stanley Block, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradley Bloom, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Bonn, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diana Bradford, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Brannan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Brem, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelleigh Briden, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Brindle, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Brondon, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Brown, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristen Brown, NPP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Burnett, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Charles Callahan, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Geoffrey Capraro, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Carlson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Carroll, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Case, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Cashore, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carolina Cerezo, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jane Chandley, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wen-I Chang, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Heather Chapman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Chapman, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alice Chen, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Silvia Chiang, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Young June Choe, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Choi, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Chun, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Chung, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lydia Ciarallo, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sybil Cineas, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jevin Clark, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Coghlin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathryn Combo, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elsa Constantine, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Quindelyn Cook, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Denise Coppa, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Celeste Corcoran, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vanessa Correia, CPNP-PC, PMHS, QMHP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mara Coyle, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne Craig, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Creed, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Cueto, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Molly Curtis, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Karen Daigle, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Day, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Demartino, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Bradley Denardo, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Penelope Dennehy, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Diane Dermarderosian, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Detrisac, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alex Diaz De Villalvilla, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vincent Dimaggio, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Doberstein, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Olivia Domingue, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Dominguez, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abigail Donaldson, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cassandra Drees, MD, MBA",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Duffy, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Dyer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Eden, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Elliott, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Erdman, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Americo Esquibies Cutti, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica Farrar, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Deirdre Fearon, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lloyd Feit, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Feng, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Fernandes, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Xenia Fernandez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jamie Fierce, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jacqueline Firth, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Flanagan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Flynn, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leanne Flynn, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Ford, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Meghan Fredette, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Aaron Friedman, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Friedman, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sherry Gagnon, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Gay, PNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alicia Genisca, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Semsa Gogcu, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hayley Goldbach, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amy Goldberg, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalia Golova, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hamza Gorsi, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brett Goudie, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Grady, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Logan Greenblatt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Greene Welch, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Philip Gruppuso, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Guarino, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dana Guyer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gita Harappanahally, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "George Hardy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelsey Hart, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chelsea Haynes, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Hayward, M.D., PH.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Allison Heinly, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Herzlinger, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela High, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Hobbs, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurie Hoffman, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joan Holden, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sabina Holland, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sara Holmstrom, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Holt, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vicenta Hudziak, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Edward Hurley, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Jacobs, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Eun Ji Jang, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nora Jean-Baptiste, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shuba Kamath, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hasene Kasaroglu, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vania Kasper, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carrie Kelly",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abigail Keogh",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martin Keszler, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Valerie Kiers, CPNP, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robert Klein, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cindy Klipfel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Koster, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Kozel, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robin Kremsdorf, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Molly Lacher-Katz",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chandan Lakhiani, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Vita Lamberson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenna Lansbury, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Abbot Laptook, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yun Lee, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiffany Lee, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Lefebvre, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maayan Leroy-Melamed",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindsey Levin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Danielle Levine",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Lewander, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carol Lewis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anna Lewis, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Lewis-De Los Angeles, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Paula Lewis-De Los Angeles, MD, PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tamara Lhungay, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Linakis, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Archana Lingannan, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison Little, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Lockhart, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Emily Loe, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Lombardi, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gregory Lopez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hillary Lorenco, RN, MSN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Lorenz, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Phyllis Losikoff, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Makayla Lourenco, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Lowenhaupt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natalia Lukankina, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rishi Lulla, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brian Lurie, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Fnu Lydia Newton, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachel Lyons, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Macdonell-Yilmaz, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelly Macpherson, MD, MS",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lala Mammadova",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Martha Mance, NURSE PRACTITIONER",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nickolas Mancini, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jennifer Mann, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Mansell, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jill Maron, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniel Marwil, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gary Mason, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kayla Massey, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Julia Mayne, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Taylor McAdoo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew McCarthy, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Cara McDavitt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elisabeth McGowan, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jessica McIntyre, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robin McKinney, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Suzanne McLaughlin, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shauna McLaughlin, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph McNamara, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael McNaughton, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Colleen McSweeney, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Meech, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jenna Mennella, DO",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laura Mercurio, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Meyer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Joseph Michel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Megan Miller, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kate Millington, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Gabrielle Montalbano, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Carmen Monthe-Dreze, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Mikhaela Monty, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Melissa Moreau, NPP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Morocco, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela Mosher",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Haley Moulton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Murphy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sandra Musial, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tracey Myatt, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sfurti Nath, MBBS",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ezequiel Neimark, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rita Nenonen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Peace Nosa-Omorogiuwa, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Nyce, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "William Oh, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chukwuma Onuchukwu, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Frank Overly, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Judith Owens, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Padbury, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Adam Pallant, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lynne Palmisciano, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Janet Pardy, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hareem Park, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrea Patrico",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thankam Paul, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Holly Pereira, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maria Perez Carballo, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chanika Phornphutkul, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Paulo Pina, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patricia Poitevien, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lee Polikoff, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Raphaela Posner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Pothier",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rachael Prendergast, MSN, RN, PNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yunika Presson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michaela Procaccini",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jose Bernardo Quintos, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Marcella Radano, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ashley Reeves",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rahiya Rehman, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Renaud, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeffrey Riese, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alison Riese, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nadya Rivera-Gelabert",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Renee Robilliard, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Randal Rockney, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Albert Ross, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Rotondo, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ranna Rozenfeld, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Ruest, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jack Rusley, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Natasha Rybak, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tiwadayo Sam-Odusina, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Chase Samsel, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Juan Sanchez-Esteban, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Schaberg, MD MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Margaret Scheffler, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ivona Sediva, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Thomas Seery, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarbattama Sen, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Monica Serrano Gonzalez, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Shalon, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jason Shapiro, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Amber Shelton, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tara Shouldis",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Igor Shumskiy, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Brett Slingsby, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Linda Snelling, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Andrew Snyder, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kristin Soccio, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Yasmin Soliman",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Viven Solomon, DO",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ross Sommers, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lindo Spencer, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Philippa Sprinz, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dale Steele, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Barbara Stonestreet, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Stratton",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Catherine Sullivan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Dana Sullivan, MSN, RN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Tanya Sutcliffe, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Lisa Swartz Topor, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jonathan Tatum",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Molly Taylor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Daniella Teape, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christopher Terry, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Erica Todd, DO",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Toll, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michael Tucci, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Canan Tural, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rosalind Vaz, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anusha Viswanathan, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Patrick Vivier, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Stephanie Vogel, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Betty Vohr, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sarah Welsh, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anastasia Wermert, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Claire Williams, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Matthew Willis, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Robyn Wing, MD, MPH",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Rebecca Wingerter, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Timothy Winn, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Craig Woda, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pei-Chi Wu, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Ali Yalcindag, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Jeremy Yardley, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Desiree Yeboah, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Wilbert Yeung",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Olivia Young, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Micayla Zelny",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "James Ziegler, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Avery Zierk, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susane Dickson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Laurie Grauel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Shannon Jones, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kelley Nelligan, RN, MSN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christina Pastorello, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Elizabeth Wagner, MD, MPH",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Riverside",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Sharon Capuano, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Smithfield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Ashley, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Wakefield",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anthony Alario, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Kathleen Calenda, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Liza Cantor, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Hala Chaaban, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Johnny Chavarria, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Leena Davis, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Christine Gendreau, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Debra Greiner, NPP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Nicholas Grumbach, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Alla Matsievskaya, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Maureen McCourt",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Roger Mennillo, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Pamela San Antonio, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Romi Webster, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Katherine Weingartner, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Warwick",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Anne Garvey, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Westerly",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Susan Stuart, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Westerly",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice"
+  },
+  {
+   "name": "Michelle Gourdine",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Woonsocket",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice"
+  }
+ ]
+}

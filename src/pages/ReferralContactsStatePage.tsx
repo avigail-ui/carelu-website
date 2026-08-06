@@ -31,7 +31,7 @@ const REFRESHED = new Date(STATS.generated + 'T12:00:00Z').toLocaleDateString('e
 
 interface StateRow {
   name: string; title: string; org: string; city: string;
-  linkedin: string; email: string; phone: string;
+  linkedin: string; email: string; phone: string; phoneType?: string;
 }
 interface StateData {
   name: string; slug: string; file: string;
@@ -52,7 +52,11 @@ function buildFaq(d: StateData) {
   return [
     {
       q: `How many pediatric referral contacts are in the ${d.name} list?`,
-      a: `${d.count.toLocaleString()} professionals — including ${d.emails.toLocaleString()} with verified work emails and ${d.phones.toLocaleString()} with direct phone numbers. The largest concentration is around ${top ?? 'the state’s major metros'}.`,
+      a: `${d.count.toLocaleString()} professionals — including ${d.emails > 0 ? `${d.emails.toLocaleString()} with verified work emails and ` : ''}${d.phones.toLocaleString()} with a phone number. The largest concentration is around ${top ?? 'the state’s major metros'}.`,
+    },
+    {
+      q: 'Are the phone numbers direct lines?',
+      a: 'Both kinds, clearly labeled. Where our enrichment verified a direct or mobile number, the row is marked "Direct". For every other provider we include the practice\'s main line from the federal NPI registry, marked "Practice" — still the fastest route to the front desk that books their referrals.',
     },
     {
       q: `Is the ${d.name} contact list free?`,
@@ -173,8 +177,10 @@ function StatePage({ meta }: { meta: (typeof STATS.states)[number] }) {
             lineHeight: 1.7, maxWidth: 680, margin: '20px auto 0',
           }}>
             {meta.count.toLocaleString()} pediatricians and child-development professionals across {meta.name} —{' '}
-            {meta.emails.toLocaleString()} verified emails, {meta.phones.toLocaleString()} direct phone numbers,
-            and a LinkedIn profile for every contact. Browse the full list below, or take it with you as a clean CSV.
+            {meta.emails > 0 && <>{meta.emails.toLocaleString()} verified emails and </>}
+            {meta.phones.toLocaleString()} phone numbers
+            (direct lines where our enrichment verified one, otherwise the practice&apos;s main line, and
+            every row is labeled which is which). Browse the list below, or take it with you as a clean CSV.
           </p>
           <div className="rv d3" style={{ marginTop: 28 }}>
             <button
@@ -251,14 +257,18 @@ function StatePage({ meta }: { meta: (typeof STATS.states)[number] }) {
             letterSpacing: '-0.015em', margin: '0 0 6px', textAlign: 'center',
           }}>Every contact in {meta.name}</h2>
           <p className="rv" style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.6)', textAlign: 'center', margin: '0 0 22px' }}>
-            Emails and phone numbers are masked on the page — the free CSV carries the full record.
+            Emails and phone numbers are masked on the page — the free CSV carries the full record,
+            with each phone labeled as a direct line or the practice&apos;s main number.
+            {data && data.rows.length < data.count && (
+              <> Showing the first {data.rows.length.toLocaleString()} of {data.count.toLocaleString()} contacts — the CSV has all of them.</>
+            )}
           </p>
           <div className="rv" style={{ background: '#fff', borderRadius: 18, boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)', overflow: 'hidden' }}>
             <div style={{ overflowX: 'auto', maxHeight: 640, overflowY: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 860 }}>
                 <thead>
                   <tr style={{ borderBottom: `1px solid ${HAIR}`, position: 'sticky', top: 0, background: '#fff', zIndex: 1 }}>
-                    {['Name', 'Title', 'Organization', 'City', 'Email', 'Phone', ''].map((h, i) => (
+                    {['Name', 'Title', 'Organization', 'City', 'Email', 'Phone (direct or practice)', ''].map((h, i) => (
                       <th key={i} style={{ textAlign: 'left', padding: '14px 14px', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.5)' }}>{h}</th>
                     ))}
                   </tr>
@@ -271,7 +281,17 @@ function StatePage({ meta }: { meta: (typeof STATS.states)[number] }) {
                       <td style={{ padding: '11px 14px', fontSize: 13, color: 'rgba(43,42,38,0.65)' }}>{r.org}</td>
                       <td style={{ padding: '11px 14px', fontSize: 13, color: 'rgba(43,42,38,0.65)', whiteSpace: 'nowrap' }}>{r.city}</td>
                       <td style={{ padding: '11px 14px', fontSize: 12, color: 'rgba(43,42,38,0.6)', whiteSpace: 'nowrap', fontFamily: 'monospace' }}>{r.email || '—'}</td>
-                      <td style={{ padding: '11px 14px', fontSize: 12, color: 'rgba(43,42,38,0.6)', whiteSpace: 'nowrap', fontFamily: 'monospace' }}>{r.phone || '—'}</td>
+                      <td style={{ padding: '11px 14px', whiteSpace: 'nowrap' }}>
+                        <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', fontFamily: 'monospace' }}>{r.phone || '—'}</span>
+                        {r.phone && r.phoneType && (
+                          <span style={{
+                            marginLeft: 7, fontSize: 10, fontWeight: 700, letterSpacing: '0.04em',
+                            textTransform: 'uppercase', padding: '2px 7px', borderRadius: 100,
+                            color: r.phoneType === 'Direct' ? '#2e5a26' : 'rgba(43,42,38,0.55)',
+                            background: r.phoneType === 'Direct' ? 'rgba(63,122,52,0.10)' : 'rgba(43,42,38,0.06)',
+                          }}>{r.phoneType}</span>
+                        )}
+                      </td>
                       <td style={{ padding: '11px 14px' }}>
                         {r.linkedin && (
                           <a href={r.linkedin} target="_blank" rel="nofollow noopener noreferrer" aria-label={`${r.name} on LinkedIn`}
