@@ -3,6 +3,7 @@ import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
+import SiteFooter from '../components/SiteFooter';
 
 const SOLUTION_TITLES: Record<string, string> = {
   'single-site': 'Single-Site Clinics',
@@ -19,7 +20,6 @@ const SOLUTION_TITLES: Record<string, string> = {
 const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const LIME = '#D4F25C';
-const HAIR = 'rgba(43,42,38,0.08)';
 
 const W: React.CSSProperties = { maxWidth: 1100, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' };
 
@@ -216,16 +216,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* Minimal footer */}
-      <footer style={{ borderTop: `1px solid ${HAIR}`, padding: '28px 0' }}>
-        <div style={{ ...W, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <a href="/carelu" style={{ textDecoration: 'none' }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 22, width: 'auto', display: 'block', opacity: 0.85 }} />
-          </a>
-          <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)' }}>
-            © {new Date().getFullYear()} Carelu — The front office of care
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <style>{`
         @media (max-width: 768px) {

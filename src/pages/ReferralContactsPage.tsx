@@ -5,6 +5,7 @@ import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
 import { GateModal, useGatedDownload } from '../components/ReferralGate';
 import STATS from '../data/referral_contacts_stats.json';
+import SiteFooter from '../components/SiteFooter';
 
 /* ================================================================
    CARELU — PEDIATRIC REFERRAL CONTACTS (/resources/pediatrician-referral-contacts)
@@ -441,16 +442,7 @@ export default function ReferralContactsPage() {
       </section>
 
       {/* Minimal footer */}
-      <footer style={{ borderTop: `1px solid ${HAIR}`, padding: '28px 0' }}>
-        <div style={{ ...W, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <a href="/carelu" style={{ textDecoration: 'none' }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 22, width: 'auto', display: 'block', opacity: 0.85 }} />
-          </a>
-          <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)' }}>
-            © {new Date().getFullYear()} Carelu — The front office of care
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

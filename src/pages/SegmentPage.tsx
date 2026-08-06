@@ -5,6 +5,7 @@ import { useSeo } from '../hooks/useSeo';
 import NavDropdown from '../components/NavDropdown';
 import { segments } from '../data/segments';
 import type { SegmentConfig } from '../data/segments';
+import SiteFooter from '../components/SiteFooter';
 
 /* ============================================================
    SEGMENT LANDING PAGE TEMPLATE
@@ -13,6 +14,17 @@ import type { SegmentConfig } from '../data/segments';
    ============================================================ */
 
 const W: React.CSSProperties = { maxWidth: 1200, margin: '0 auto', padding: '0 36px' };
+
+// The site footer's default headline is pediatric. Each vertical gets its own
+// so the closing line matches who that page is actually for. Falls back to the
+// default (undefined) for ABA.
+const FOOTER_HEADLINES: Record<string, string | undefined> = {
+  'aba-therapy': undefined,
+  'mental-health': 'Somewhere right now, someone is looking for a therapist with room to see them.',
+  'home-care': 'Somewhere right now, a family is trying to get someone home safely.',
+  'addiction-treatment': 'Somewhere right now, someone has decided today is the day.',
+  'hospice': 'Somewhere right now, a family is trying to make someone comfortable.',
+};
 
 function Pill({ children, dark }: { children: string; dark?: boolean }) {
   return (
@@ -269,18 +281,7 @@ function SegmentContent({ config }: { config: SegmentConfig }) {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ ...W, padding: '48px 36px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span className="dot-pulse" style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: 'var(--green-600)', display: 'inline-block' }} />
-          <span style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 600, color: 'var(--gray-400)', letterSpacing: '-0.6px' }}>carelu</span>
-        </div>
-        <div style={{ display: 'flex', gap: 24 }}>
-          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-400)' }}>HIPAA Compliant</span>
-          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-400)' }}>SOC 2 Type II</span>
-          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-400)' }}>© 2026 Carelu, Inc.</span>
-        </div>
-      </footer>
+      <SiteFooter headline={FOOTER_HEADLINES[config.slug]} />
     </div>
   );
 }

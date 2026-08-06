@@ -6,6 +6,7 @@ import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
 import { integrations } from '../data/integrations';
 import type { IntegrationConfig } from '../data/integrations';
+import SiteFooter from '../components/SiteFooter';
 
 /* ================================================================
    CARELU — INTEGRATION PAGES (/integrations/:slug)
@@ -222,16 +223,7 @@ function IntegrationGuide({ config }: { config: IntegrationConfig }) {
       </section>
 
       {/* Minimal footer */}
-      <footer style={{ borderTop: `1px solid ${HAIR}`, padding: '28px 0' }}>
-        <div style={{ ...W, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <a href="/carelu" style={{ textDecoration: 'none' }}>
-            <img src="/carelu-logo.svg" alt="Carelu" style={{ height: 22, width: 'auto', display: 'block', opacity: 0.85 }} />
-          </a>
-          <span style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.5)' }}>
-            © {new Date().getFullYear()} Carelu — The front office of care
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <style>{`
         @media (max-width: 980px) { .int-flow { grid-template-columns: repeat(2, 1fr) !important; } }

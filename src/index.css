@@ -1006,5 +1006,7 @@ nav .nav-link:first-child { margin-left: 12px; }
 
 /* mobile: footer link columns collapse to 2 */
 @media (max-width: 768px) {
-  .session-light .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 28px !important; }
+  /* Not scoped to .session-light — the site footer ships on marketing pages
+     that don't set that class. .footer-grid only exists in the footer. */
+  .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 28px !important; }
 }
