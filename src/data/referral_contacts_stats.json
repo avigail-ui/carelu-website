@@ -1,0 +1,181 @@
+{
+  "generated": "2026-08-06",
+  "total": 3378,
+  "emails": 1495,
+  "phones": 2535,
+  "linkedin": 3378,
+  "stateCount": 16,
+  "combinedFile": "/downloads/referral-contacts/pediatric-referral-contacts-all-states.csv",
+  "states": [
+    {
+      "name": "Arizona",
+      "slug": "arizona",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-arizona.csv",
+      "count": 126,
+      "emails": 38,
+      "phones": 79
+    },
+    {
+      "name": "Colorado",
+      "slug": "colorado",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-colorado.csv",
+      "count": 158,
+      "emails": 74,
+      "phones": 123
+    },
+    {
+      "name": "Georgia",
+      "slug": "georgia",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-georgia.csv",
+      "count": 203,
+      "emails": 84,
+      "phones": 156
+    },
+    {
+      "name": "Illinois",
+      "slug": "illinois",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-illinois.csv",
+      "count": 322,
+      "emails": 137,
+      "phones": 233
+    },
+    {
+      "name": "Indiana",
+      "slug": "indiana",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-indiana.csv",
+      "count": 119,
+      "emails": 66,
+      "phones": 100
+    },
+    {
+      "name": "Maryland",
+      "slug": "maryland",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-maryland.csv",
+      "count": 286,
+      "emails": 195,
+      "phones": 225
+    },
+    {
+      "name": "Massachusetts",
+      "slug": "massachusetts",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-massachusetts.csv",
+      "count": 282,
+      "emails": 119,
+      "phones": 220
+    },
+    {
+      "name": "Missouri",
+      "slug": "missouri",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-missouri.csv",
+      "count": 139,
+      "emails": 59,
+      "phones": 110
+    },
+    {
+      "name": "Nevada",
+      "slug": "nevada",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-nevada.csv",
+      "count": 108,
+      "emails": 61,
+      "phones": 83
+    },
+    {
+      "name": "New Mexico",
+      "slug": "new-mexico",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-mexico.csv",
+      "count": 132,
+      "emails": 59,
+      "phones": 108
+    },
+    {
+      "name": "North Carolina",
+      "slug": "north-carolina",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-carolina.csv",
+      "count": 192,
+      "emails": 128,
+      "phones": 148
+    },
+    {
+      "name": "Ohio",
+      "slug": "ohio",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-ohio.csv",
+      "count": 363,
+      "emails": 107,
+      "phones": 252
+    },
+    {
+      "name": "Tennessee",
+      "slug": "tennessee",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-tennessee.csv",
+      "count": 84,
+      "emails": 25,
+      "phones": 62
+    },
+    {
+      "name": "Texas",
+      "slug": "texas",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-texas.csv",
+      "count": 479,
+      "emails": 222,
+      "phones": 321
+    },
+    {
+      "name": "Utah",
+      "slug": "utah",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-utah.csv",
+      "count": 116,
+      "emails": 61,
+      "phones": 94
+    },
+    {
+      "name": "Virginia",
+      "slug": "virginia",
+      "file": "/downloads/referral-contacts/pediatric-referral-contacts-virginia.csv",
+      "count": 269,
+      "emails": 60,
+      "phones": 221
+    }
+  ],
+  "samples": [
+    {
+      "name": "Daniel Driscoll PhD/MD MSc FAAP",
+      "title": "Pediatrician",
+      "org": "Chiricahua Community Health Centers, Inc.",
+      "state": "Arizona",
+      "email": "d\u2022\u2022\u2022\u2022\u2022@cchci.org",
+      "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+    },
+    {
+      "name": "Leslie Bosch, PhD",
+      "title": "Developmental Psychologist, PCC, CLC, NBC-HWC",
+      "org": "Bosch Integrative Wellness",
+      "state": "Arizona",
+      "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@boschintegrativewellness.com",
+      "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+    },
+    {
+      "name": "Jennifer Gray",
+      "title": "Child Psychologist",
+      "org": "St. Joseph's Hospital and Medical Center",
+      "state": "Arizona",
+      "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@dignityhealth.org",
+      "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+    },
+    {
+      "name": "Frank Baldwin",
+      "title": "Pediatric Physician Assistant",
+      "org": "MedNOW Clinics, Inc.",
+      "state": "Colorado",
+      "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@mednowclinics.com",
+      "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+    },
+    {
+      "name": "Shannon K.",
+      "title": "Owner/Licensed Clinical Social Worker",
+      "org": "The Mindful Goldfish",
+      "state": "Nevada",
+      "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@themindfulgoldfish.com",
+      "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+    }
+  ]
+}
