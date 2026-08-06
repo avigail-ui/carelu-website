@@ -3,8 +3,8 @@
  "slug": "wyoming",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-wyoming.csv",
  "count": 119,
- "emails": 3,
- "practiceEmails": 3,
+ "emails": 4,
+ "practiceEmails": 2,
  "phones": 119,
  "direct": 0,
  "roles": [
@@ -74,6 +74,17 @@
   }
  ],
  "rows": [
+  {
+   "name": "Jessica Peterson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Casper Children'S Center, Llc",
+   "city": "Casper",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
   {
    "name": "Catherine Depalma, MD",
    "title": "Pediatrician",
@@ -150,17 +161,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Peterson, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Casper Children'S Center, Llc",
-   "city": "Casper",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@jasonsfriends.org"
   },
   {
    "name": "Lorraine Reed, RN, CPNP",

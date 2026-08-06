@@ -3,8 +3,8 @@
  "slug": "hawaii",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-hawaii.csv",
  "count": 660,
- "emails": 18,
- "practiceEmails": 35,
+ "emails": 20,
+ "practiceEmails": 34,
  "phones": 660,
  "direct": 0,
  "roles": [
@@ -218,6 +218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brandon Rozanski, MD",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Christopher McEvoy, M.D",
    "title": "Pediatrician",
    "org": "Amc Tripler-Shafter",
@@ -269,6 +280,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022@mauimedical.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Healy, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@vcu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2253,17 +2275,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brandon Rozanski, MD",
-   "title": "Pediatrician",
-   "org": "Amc Tripler-Shafter",
-   "city": "Tripler Amc",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil"
-  },
-  {
    "name": "Alison Semanoff, M.D",
    "title": "Pediatrician",
    "org": "Amc Tripler-Shafter",
@@ -3921,17 +3932,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Healy, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Honolulu",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

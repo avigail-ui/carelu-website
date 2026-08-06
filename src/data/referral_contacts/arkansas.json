@@ -3,8 +3,8 @@
  "slug": "arkansas",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-arkansas.csv",
  "count": 1133,
- "emails": 37,
- "practiceEmails": 18,
+ "emails": 43,
+ "practiceEmails": 17,
  "phones": 1133,
  "direct": 0,
  "roles": [
@@ -284,6 +284,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephen Pace, MD",
+   "title": "Pediatrician",
+   "org": "St Bernards Physician Clinics INC",
+   "city": "Jonesboro",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@dermarite.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Carroll, MD",
    "title": "Pediatric Pulmonologist",
    "org": "University Of Arkansas For Medical Sciences",
@@ -317,6 +328,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kelsey Keith, MD",
+   "title": "Pediatrician",
+   "org": "Little Rock Pediatric Group",
+   "city": "Little Rock",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sam Lee, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Arkansas Childrens Professional Services Organization LLC",
@@ -324,6 +346,17 @@
    "linkedin": "https://www.linkedin.com/in/samuelcglee",
    "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cindy Nguyen, MD",
+   "title": "Pediatrician",
+   "org": "University Of Arkansas For Medical Sciences",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/cindnguyen",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -478,6 +511,39 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@arcare.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Morgan Patterson, ECDS",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Frank C. Steudlein Learning Center",
+   "city": "West Memphis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@med.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Stone, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Bentonville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Manar Ibrahim, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fort Smith",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2352,17 +2418,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Pace, MD",
-   "title": "Pediatrician",
-   "org": "St Bernards Physician Clinics INC",
-   "city": "Jonesboro",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tomorrow Potter, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Pediatric Associates Of Jonesboro, Pllc",
@@ -3683,17 +3738,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kelsey Keith, MD",
-   "title": "Pediatrician",
-   "org": "Little Rock Pediatric Group",
-   "city": "Little Rock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Matthew Kelly, M.D., M.P.H",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Arkansas Childrens Professional Services Organization LLC",
@@ -4095,17 +4139,6 @@
    "org": "University Of Arkansas For Medical Sciences",
    "city": "Little Rock",
    "linkedin": "https://www.linkedin.com/in/jamesnesmithinrichmondva",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cindy Nguyen, MD",
-   "title": "Pediatrician",
-   "org": "University Of Arkansas For Medical Sciences",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/cindnguyen",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -6290,17 +6323,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Morgan Patterson, ECDS",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "Frank C. Steudlein Learning Center",
-   "city": "West Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": "y\u2022\u2022\u2022\u2022\u2022\u2022@ddpaarkansas.org"
-  },
-  {
    "name": "Yousef Shaddood, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of West Memphis, Plc",
@@ -6686,17 +6708,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Stone, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Bentonville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Sullivan, M.D",
    "title": "Pediatrician",
    "org": "",
@@ -6996,17 +7007,6 @@
   {
    "name": "Ranata Hatcher, APN",
    "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Fort Smith",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Manar Ibrahim, MD",
-   "title": "Pediatrician",
    "org": "",
    "city": "Fort Smith",
    "linkedin": "",

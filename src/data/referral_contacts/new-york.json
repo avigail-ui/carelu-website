@@ -3,8 +3,8 @@
  "slug": "new-york",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-york.csv",
  "count": 11271,
- "emails": 434,
- "practiceEmails": 513,
+ "emails": 509,
+ "practiceEmails": 510,
  "phones": 11270,
  "direct": 0,
  "roles": [
@@ -104,6 +104,17 @@
    "linkedin": "https://www.linkedin.com/in/farrukh-anwer-6321545b",
    "email": "f\u2022\u2022\u2022\u2022\u2022@auburnhospital.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ahmed Souid, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Health Specialists, P.C.",
+   "city": "Auburn",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@zaytuna.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -379,6 +390,17 @@
    "linkedin": "https://www.linkedin.com/in/glennfennelly",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@ttep.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eryn Fox, MD",
+   "title": "Pediatrician",
+   "org": "Montefiore Medical Center",
+   "city": "Bronx",
+   "linkedin": "https://www.linkedin.com/in/eryn-fox-5564a3334",
+   "email": "e\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -735,6 +757,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Amit Sharma, MD, MPHTM",
+   "title": "Pediatrician",
+   "org": "Urban Health Plan, Inc.",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Peter Sherman, MD",
    "title": "Pediatrician",
    "org": "Bronxcare Health System",
@@ -834,6 +867,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Deborah York, CPNPPC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Montefiore Medical Center",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Alexandr Abramov, MD",
    "title": "Pediatrician",
    "org": "Alexandr Abramov Medical Pc",
@@ -841,6 +885,17 @@
    "linkedin": "https://ru.linkedin.com/in/alexandr-abramov-21312b1b7",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abhilasha Ahuja, MD",
+   "title": "Pediatrician",
+   "org": "New York Health And Hospital Corporation",
+   "city": "Brooklyn",
+   "linkedin": "https://www.linkedin.com/in/abhilasha-ahuja",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1384,6 +1439,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anh Nguyen",
+   "title": "Pediatrician",
+   "org": "Kaleida Health",
+   "city": "Buffalo",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Carol Winkler",
    "title": "Pediatric Nurse Practitioner",
    "org": "Bestself Behavioral Health INC",
@@ -1567,6 +1633,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Healy, DO",
+   "title": "Pediatrician",
+   "org": "John Mulawka Do, Pc",
+   "city": "Derby",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@dal.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1802,6 +1879,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ashley Jackson, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Adirondack Pediatrics, P.C.",
+   "city": "Glens Falls",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Eric Gould, M.D",
    "title": "Pediatrician",
    "org": "Gould, Hyman, Frank",
@@ -1901,6 +1989,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Amanda Anaya, NP",
+   "title": "Adolescent Medicine Physician",
+   "org": "Freed, Scherz, Kleinberg, Nussbaum, Festa, M.D. Llp",
+   "city": "Holbrook",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@southwestuniversity.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Virginia Bersani, D.O",
    "title": "Pediatrician",
    "org": "Family Health Network Of Central New York, Inc.",
@@ -1930,6 +2029,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@txpeds.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Stiles, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "North Shore-Lij Medical PC",
+   "city": "Huntington Station",
+   "linkedin": "https://www.linkedin.com/in/lauren-stiles-8aa937300",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@dysautonomiainternational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2073,6 +2183,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@dhha.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Johnson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Chautauqua Center, Inc",
+   "city": "Jamestown",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2517,6 +2638,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Paola Angelini, MD, PHD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Memorial Sloan Kettering Cancer Center",
+   "city": "New York",
+   "linkedin": "https://www.linkedin.com/in/paola-angelini-76460245",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@nhs.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Robert Angert, M.D",
    "title": "Neonatologist",
    "org": "New York University Medical Center",
@@ -2579,6 +2711,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mia Bates, MD",
+   "title": "Pediatrician",
+   "org": "Mount Sinai School Of Medicine",
+   "city": "New York",
+   "linkedin": "https://www.linkedin.com/in/mia-bates-3a577a111",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mountsinai.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2759,6 +2902,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Caroline Christianson, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Mount Sinai School Of Medicine",
+   "city": "New York",
+   "linkedin": "https://www.linkedin.com/in/caroline-christianson-md-ms-546aa071",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jaime Chu, M.D",
    "title": "Pediatric Gastroenterologist",
    "org": "Mount Sinai School Of Medicine",
@@ -2777,6 +2931,17 @@
    "linkedin": "https://www.linkedin.com/in/may-chu-62040233",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samantha Chu",
+   "title": "Pediatrician",
+   "org": "Manhattan Queens Pediatrics",
+   "city": "New York",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@dlsu.edu.ph",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2942,6 +3107,17 @@
    "linkedin": "https://www.linkedin.com/in/melanie-greifer-05591819b",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Grubner, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Mount Sinai School Of Medicine",
+   "city": "New York",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3419,6 +3595,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Harleen Singh, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Memorial Sloan Kettering Cancer Center",
+   "city": "New York",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@jh.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Louis Spina",
    "title": "Pediatrician",
    "org": "Mount Sinai School Of Medicine",
@@ -3496,6 +3683,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brittany Trogen, MD",
+   "title": "Pediatrician",
+   "org": "Icahn School Of Medicine At Mount Sinai",
+   "city": "New York",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "James Tsung, M.D",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Icahn School Of Medicine At Mount Sinai",
@@ -3529,6 +3727,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jessica Walthall, PPCNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Manhattan Valley Pediatrics",
+   "city": "New York",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jessica Wang, M.D",
    "title": "Pediatrician",
    "org": "Hudson Heights Pediatrics, Pc",
@@ -3547,6 +3756,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brooke Willis",
+   "title": "Pediatrician",
+   "org": "Mount Sinai School Of Medicine",
+   "city": "New York",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@clevelandactu.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jack Winters, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Icahn School Of Medicine At Mount Sinai",
+   "city": "New York",
+   "linkedin": "https://www.linkedin.com/in/jack-winters-mba-4a66427a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@marquette.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3584,6 +3815,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sandy Zhang, MD",
+   "title": "Pediatrician",
+   "org": "New York Presbyterian Hospital- Morgan Stanley Children'S Hospital",
+   "city": "New York",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sol Zimmerman, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of Nyc",
@@ -3591,6 +3833,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Doyle, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pm Pediatrics Of Selden",
+   "city": "North Babylon",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3859,6 +4112,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Terence Joa, MD",
+   "title": "Pediatrician",
+   "org": "Frank J Ross Md Pc",
+   "city": "Richmond Hill",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rita Verma, M.D",
    "title": "Neonatologist",
    "org": "Best Medical Care Pc",
@@ -4086,6 +4350,17 @@
    "linkedin": "https://www.linkedin.com/in/dan-thanh-nguyen-3070071b0",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@elmwoodpediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Noel, MD",
+   "title": "Pediatrician",
+   "org": "Portland Pediatric Group, Llp",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022@pgsd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4585,6 +4860,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kathryn Keenan, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Upstate Emergency Medicine, Inc",
+   "city": "Syracuse",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nist.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nisha Patel, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Hackensack Meridian Health Medical Group - Specialty Care PC",
@@ -4783,6 +5069,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Daniel Hamilton, MD",
+   "title": "Pediatrician",
+   "org": "Buffalo Medical Group, P.C.",
+   "city": "Williamsville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@monash.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Elizabeth Smith, CPNP, ANP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Roehmholdt Neurology Pc",
@@ -4845,6 +5142,534 @@
    "linkedin": "https://www.linkedin.com/in/sarika-sunku-12907918",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Betzhold, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Albany",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daphne Hsu, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Manuel Perez, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@sanjuanbautista.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shantanu Rastogi, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Walsh, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@health.wa.gov.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ping Zhou, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Bronx",
+   "linkedin": "",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@aliyun.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Bruno, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Casey, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Dattner, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lewis Krata, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@tbh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Leblanc, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hanna Lesicka, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@lesickapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Guo Nie, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robin Ovitsh, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Steven Pavlakis, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sukhvinder Ranu, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nychhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Henry Schaeffer, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Suss, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Wadowski, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Brooklyn",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yucel Atakent, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Meadow",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bernard Fish, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Hawthorne",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Fern Juster, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hawthorne",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janet Stockheim, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hawthorne",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wihd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Weiss, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Hawthorne",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Reshma Panjwani, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hempstead",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maja Djordjevic, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Mount Kisco",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@imd.org.rs",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Stafford, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Mount Kisco",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Keith Benkov, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Biagas, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@stonybrookmedicine.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edward Conway, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nychhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Irving Fish, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lawrence Fordjour, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sandeep Gangadharan",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Hart, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Philip Larussa, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@columbia.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary McCord, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nychhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Steven Pon, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022@med.cornell.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Logi Rajagopalan, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Veniamin Ratner",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kenneth Rivlin",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nychhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abigail Trager, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "New York",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathleen Parker, RN, PNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@washpost.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joseph Castellano, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Staten Island",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uthscsa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Praveen Ballabh, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Valhalla",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@einsteinmed.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edmund Lagamma, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Valhalla",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@wmchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Boriana Parvez, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Valhalla",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@wcmc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aalok Singh, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Valhalla",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wmchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bum Park, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Woodside",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6390,17 +7215,6 @@
   },
   {
    "name": "Sujit Shrestha",
-   "title": "Pediatrician",
-   "org": "Children'S Health Specialists, P.C.",
-   "city": "Auburn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ahmed Souid, MD",
    "title": "Pediatrician",
    "org": "Children'S Health Specialists, P.C.",
    "city": "Auburn",
@@ -8259,17 +9073,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Eryn Fox, MD",
-   "title": "Pediatrician",
-   "org": "Montefiore Medical Center",
-   "city": "Bronx",
-   "linkedin": "https://www.linkedin.com/in/eryn-fox-5564a3334",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jinal Gada, MD",
    "title": "Pediatrician",
    "org": "Montefiore Medical Center",
@@ -9733,17 +10536,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amit Sharma, MD, MPHTM",
-   "title": "Pediatrician",
-   "org": "Urban Health Plan, Inc.",
-   "city": "Bronx",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Carly Slater, MD, MA, MS",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of North Riverdale, P.C.",
@@ -10118,17 +10910,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Deborah York, CPNPPC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Montefiore Medical Center",
-   "city": "Bronx",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elissa Yozawitz, MD",
    "title": "Pediatrician",
    "org": "Montefiore Medical Center",
@@ -10290,787 +11071,6 @@
    "linkedin": "https://www.linkedin.com/in/neera-ahuja-b37739256",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Abhilasha Ahuja, MD",
-   "title": "Pediatrician",
-   "org": "New York Health And Hospital Corporation",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/abhilasha-ahuja",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jamil Akhtar, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "New York City Health And Hospitals Corporation",
-   "city": "Brooklyn",
-   "linkedin": "https://uk.linkedin.com/in/jamil-akhtar-29450121",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Iqra Akram, MD",
-   "title": "Pediatrician",
-   "org": "Nyu Lutheran Medical Center",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amira Alfil, MD,MPH",
-   "title": "Pediatrician",
-   "org": "Brookdale Hospital",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gina Allegretti, MD",
-   "title": "Pediatrician",
-   "org": "Comprehensive Pediatrics Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/gina-allegretti-58392020",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Diogenes Almonte, MD",
-   "title": "Pediatrician",
-   "org": "Diogenes A. Almonte Md Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/maritza-valentin-72a70b160",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Abdulla Alwani, M.D",
-   "title": "Pediatrician",
-   "org": "Bay Ridge Pediatrics And Adolescents Office Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/ahmed-dhouib21",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ada Anon, MD",
-   "title": "Pediatrician",
-   "org": "Pedro Smukler",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Virgilio Ansay",
-   "title": "Pediatrician",
-   "org": "Brookdale Family Care Center, Inc.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Anthony, MD",
-   "title": "Pediatrician",
-   "org": "Millennium Medical Services, Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sofia Arain, M.D",
-   "title": "Pediatrician",
-   "org": "Rakesh K Dua Physician, Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/sofia-arain-0a647b9a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marilyn Arca, MD",
-   "title": "Pediatrician",
-   "org": "Urban Strategies Brookdale Family Care Center Inc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margarita Aronov, MD",
-   "title": "Pediatrician",
-   "org": "Icahn School Of Medicine At Mount Sinai",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu"
-  },
-  {
-   "name": "Erik Aurigemma",
-   "title": "Pediatrician",
-   "org": "Comprehensive Pediatrics Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Antonio Aybar Arias",
-   "title": "Pediatrician",
-   "org": "Wyckoff Pediatric Care Center",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Angela Badiner, M.D",
-   "title": "Pediatrician",
-   "org": "Advanced Pediatric Practice Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amarpreet Bains, M.D",
-   "title": "Pediatrician",
-   "org": "New York University",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/amarpreet-bains-md-sfhm-a196295",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shreshtha Banga, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shilpa Bansal, M.D",
-   "title": "Pediatrician",
-   "org": "Mmc Pediatric Ambulatory Care",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@careindex.app"
-  },
-  {
-   "name": "Isaac Barr, MD",
-   "title": "Pediatrician",
-   "org": "Ny1Dental Associated P.C.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Noha Basouny, MD",
-   "title": "Pediatrician",
-   "org": "Icahn School Of Medicine At Mount Sinai",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu"
-  },
-  {
-   "name": "Albert Bassoul, MD FAAP",
-   "title": "Pediatrician",
-   "org": "Avenue U Pediatrics, Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yelena Bataykin",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Group Medical Associates, P.C",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/yelena-bataykin-53a99382",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Surkhay Bebiya",
-   "title": "Pediatrician",
-   "org": "Greenman Pharmacy Inc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samuel Bekar, M.D",
-   "title": "Pediatrician",
-   "org": "I C A Pediatrics",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anatoly Belilovsky, MD",
-   "title": "Pediatrician",
-   "org": "Anatoly Belilovsky Md Pllc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/abelilovsky",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Taisha Benjamin, M.D",
-   "title": "Pediatrician",
-   "org": "Community Healthcare Network, Inc.",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/taisha-benjamin-8b086b73",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bernard Berchin, MD",
-   "title": "Pediatrician",
-   "org": "Reich Medical And Surgical Eyecare, Llc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dena Berlin, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Ny Methodist Hospital",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/dena-berlin-46461555",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@stmatthews.edu"
-  },
-  {
-   "name": "Geeta Bhattacharya, MD",
-   "title": "Pediatrician",
-   "org": "Viva Wellness Llc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alok Bhutada",
-   "title": "Neonatologist",
-   "org": "Mmc Neonatology Fpp",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@careindex.app"
-  },
-  {
-   "name": "Terry-Jan Blackett-Bonnett, M.D",
-   "title": "Pediatrician",
-   "org": "T Bonnett Medical Services PC",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/terry-blackett-bonnett-128941210",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathryn Blouin, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Brownsville Community Development Corporation",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@nyhealthfoundation.org"
-  },
-  {
-   "name": "Cynthia Boakye, M.D. M.P.H",
-   "title": "Pediatrician",
-   "org": "New York City Health And Hospitals Corporation",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/cynthia-boakye-37134a7b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Harry Bond, M.D",
-   "title": "Pediatrician",
-   "org": "Modern Pediatrics Of Great New York, Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leticia Bravo, M.D",
-   "title": "Pediatrician",
-   "org": "Kings County Hospital",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marie Brunelli, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Kings Physician Services PC",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Verlaine Brunot, M.D",
-   "title": "Pediatrician",
-   "org": "Ronald Jacques Md Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/joshua-hyacinthe-8b189113b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yoleida Bucobo, MD",
-   "title": "Pediatrician",
-   "org": "Cityblock Medical Practice Nc, P.C.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rose Bullen, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Woodhll Medical Group",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Max Bulmash",
-   "title": "Pediatrician",
-   "org": "Kensington Pediatrics, Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/max-bulmash-4bb7b629",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cristina Bumatay, MD",
-   "title": "Pediatrician",
-   "org": "New York City Health And Hospitals Corporation",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Cabbad, M.D",
-   "title": "Pediatrician",
-   "org": "Bee-Healthy Pediatrics Pllc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/david-cabbad-9742766",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "W C Mulawin Cabigas, M.D",
-   "title": "Pediatrician",
-   "org": "Zaheer Ahmed M.D.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marie Cadet, MD",
-   "title": "Pediatric Hospice & Palliative Medicine Physician",
-   "org": "Liberty Audiology Of New York Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Violeta Calibuso, MD",
-   "title": "Pediatrician",
-   "org": "Brookdale Family Care Center, Inc.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Fe Canieso, MD",
-   "title": "Pediatrician",
-   "org": "Diop Oh Family Health Management",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Meagan Carley, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Ny Methodist Hospital",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/meagan-carley-a5b7208b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@stmatthews.edu"
-  },
-  {
-   "name": "Fritz Casimir, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Joseph N Charles Md",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lyudmila Cavalier, MD",
-   "title": "Pediatrician",
-   "org": "Lyudmila Cavalier Physician Pc",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/lyudmila-cavalier-392154114",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Calixto Cazano, M.D",
-   "title": "Neonatologist",
-   "org": "Wyckoff Emergency Medicine Services, P.C.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jean Claude Charles, MD",
-   "title": "Pediatrician",
-   "org": "Kings Rehabilitation Pt Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joseph Charles, MD",
-   "title": "Pediatrician",
-   "org": "Joseph N Charles Md",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/josephcharles87",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mara Chavolla-Calderon, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Mmc Pediatric Critical Care Fpp",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yaw Chen, M.D",
-   "title": "Pediatrician",
-   "org": "Nyu Lutheran Medical Center",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ye Cheng, MD",
-   "title": "Pediatrician",
-   "org": "Zhang And Cheng Medical PC",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/ye-cheng-6231a7128",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shu-Chung Cheng, M.D",
-   "title": "Pediatrician",
-   "org": "New York City Health And Hospitals Corporation",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Cheng, M.D",
-   "title": "Pediatrician",
-   "org": "First Care Medical Group Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Manoj Chhabra, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Kings Physician Services PC",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kaeya Choksey, MD",
-   "title": "Pediatrician",
-   "org": "Hai T Cao, Md Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "A.Y.M. Maksudul Chowdhury, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Group Medical Associates, P.C",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marie Conde, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Linden Children Services",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Danis Copenhaver, M.D",
-   "title": "Pediatrician",
-   "org": "Hai T Cao, Md Pc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Cruvant, M.D",
-   "title": "Pediatrician",
-   "org": "Mmc Pediatric Ambulatory Care",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@careindex.app"
-  },
-  {
-   "name": "Natasha Cupidore",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Cupids Handz",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Freya Da Silva, MD",
-   "title": "Pediatrician",
-   "org": "Usukumah E. Usukumah Medical, Pllc",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nessy Dahan, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Ny Methodist Hospital",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/nessy-dahan-md-b04205132",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@stmatthews.edu"
-  },
-  {
-   "name": "Erin Dalton, MD",
-   "title": "Pediatrician",
-   "org": "Edna Anne Pytlak, Md & Brianne O'Connor, Md, Llp",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Janhavi Dalvi",
-   "title": "Neonatologist",
-   "org": "Brookdale Hospital",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lilya Darevskaya, D.O",
-   "title": "Pediatrician",
-   "org": "L.Darevskaya Pediatric Center",
-   "city": "Brooklyn",
-   "linkedin": "https://www.linkedin.com/in/lilya-darevskaya-98492548",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Aurora David, MD",
-   "title": "Pediatrician",
-   "org": "Perfect Steps Care Center, Inc.",
-   "city": "Brooklyn",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

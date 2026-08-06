@@ -3,7 +3,7 @@
  "slug": "oregon",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-oregon.csv",
  "count": 1527,
- "emails": 62,
+ "emails": 72,
  "practiceEmails": 17,
  "phones": 1527,
  "direct": 0,
@@ -295,6 +295,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Erin Clark",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Grants Pass Clinic Llp",
+   "city": "Grants Pass",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@drexelmed.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Frank Calcagno, MD",
    "title": "Pediatrician",
    "org": "Calcagno Pediatrics Pc",
@@ -548,6 +559,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Gurleen Kaur Kahlon, MD",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services Oregon",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/gurleen-kaur-kahlon-76657522a",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kimberly Kripps, MD",
    "title": "Pediatrician",
    "org": "University Professional Services",
@@ -658,6 +680,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Nithin Ravi, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/nithin-ravi-447155140",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Erika Rodakowski, CPNP-AC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -676,6 +709,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kaitlyn Simmons, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Sellwood Medical Clinic Pc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@conferencedirect.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -735,12 +779,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sharon Lee, MD",
+   "title": "Pediatrician",
+   "org": "Salem Health",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Brian Blair, M.D",
    "title": "Pediatrician",
    "org": "Oregon Pediatrics- Meridian Park, Llc",
    "city": "Tualatin",
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022@tucsonkidsheart.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Devin Corrigan, MD",
+   "title": "Pediatrician",
+   "org": "Oregon Pediatrics- Meridian Park, Llc",
+   "city": "Tualatin",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@einsteinmed.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -753,6 +819,50 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@georgiasouthern.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stacy Berube, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bend",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Lindsay, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nhs.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Helen Miller, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@temple.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Clayton Young, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Springfield",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vt.vcom.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1930,17 +2040,6 @@
    "linkedin": "https://www.linkedin.com/in/lisa-callahan-transformational-life-coach",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Clark",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Grants Pass Clinic Llp",
-   "city": "Grants Pass",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5113,17 +5212,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gurleen Kaur Kahlon, MD",
-   "title": "Pediatrician",
-   "org": "Providence Health & Services Oregon",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/gurleen-kaur-kahlon-76657522a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Miranda Keepers, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Oregon Pediatrics Ne Portland Pc",
@@ -6048,17 +6136,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nithin Ravi, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/nithin-ravi-447155140",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Raybin, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Professional Services",
@@ -6440,17 +6517,6 @@
    "linkedin": "https://www.linkedin.com/in/aaronsilver10",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kaitlyn Simmons, MD, MPH",
-   "title": "Pediatrician",
-   "org": "Sellwood Medical Clinic Pc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7170,17 +7236,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sharon Lee, MD",
-   "title": "Pediatrician",
-   "org": "Salem Health",
-   "city": "Salem",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Marlowe, M.D",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Health Plan Of The Northwest",
@@ -7650,17 +7705,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Devin Corrigan, MD",
-   "title": "Pediatrician",
-   "org": "Oregon Pediatrics- Meridian Park, Llc",
-   "city": "Tualatin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8321,17 +8365,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stacy Berube, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Bend",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -11038,39 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ramesh Mishra, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shelly Monti, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Diana Scholtz, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

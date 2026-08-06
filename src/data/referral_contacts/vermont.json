@@ -3,7 +3,7 @@
  "slug": "vermont",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-vermont.csv",
  "count": 316,
- "emails": 24,
+ "emails": 25,
  "practiceEmails": 4,
  "phones": 316,
  "direct": 0,
@@ -335,6 +335,17 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Molly Andersen, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Windsor Hospital Corporation",
+   "city": "Woodstock",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@rasmussen.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1864,17 +1875,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Molly Andersen, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Windsor Hospital Corporation",
-   "city": "Woodstock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

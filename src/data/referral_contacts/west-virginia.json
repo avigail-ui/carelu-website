@@ -3,7 +3,7 @@
  "slug": "west-virginia",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-west-virginia.csv",
  "count": 570,
- "emails": 29,
+ "emails": 32,
  "practiceEmails": 34,
  "phones": 570,
  "direct": 0,
@@ -284,6 +284,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lauren Rover, MD",
+   "title": "Pediatrician",
+   "org": "West Virginia University Medical Corporation",
+   "city": "Morgantown",
+   "linkedin": "https://www.linkedin.com/in/lauren-rover-70b877214",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@hsc.wvu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ibanga Ekanem, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Lifeline Pediatrics Inc",
@@ -390,6 +401,28 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cardinalpediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimberly Cross, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@camc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Rosen, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "",
+   "city": "Morgantown",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@hsc.wvu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2110,17 +2143,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lauren Rover, MD",
-   "title": "Pediatrician",
-   "org": "West Virginia University Medical Corporation",
-   "city": "Morgantown",
-   "linkedin": "https://www.linkedin.com/in/lauren-rover-70b877214",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rouba Sayegh",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "West Virginia University Medical Corporation",
@@ -3030,17 +3052,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly Cross, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5439,17 +5450,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Rosen, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "",
-   "city": "Morgantown",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

@@ -3,8 +3,8 @@
  "slug": "missouri",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-missouri.csv",
  "count": 4061,
- "emails": 189,
- "practiceEmails": 296,
+ "emails": 221,
+ "practiceEmails": 295,
  "phones": 4032,
  "direct": 110,
  "roles": [
@@ -1612,6 +1612,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Meagan Conwell, CNP, PNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Woodstream Wellness",
+   "city": "Bloomsdale",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@woodstreamwellness.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kelly Fritz, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Lee'S Summit Physicians Group",
@@ -1740,6 +1751,17 @@
    "linkedin": "https://www.linkedin.com/in/alan-skoultchi-95b569240",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stlpeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Kruse, CPNP-PC, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Preferred Family Healthcare, Inc",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@ccf.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1876,6 +1898,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rohan Akhouri, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/rohan-akhouri",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Alliyia Ali, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "The Children'S Mercy Hospital",
@@ -1931,6 +1964,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sarah Davis, MD",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "James Day, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "The Children'S Mercy Hospital",
@@ -1970,6 +2014,17 @@
    "city": "Kansas City",
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Haines, MD",
+   "title": "Neonatologist",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2041,6 +2096,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michael Lugo, MD",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Mann, MD",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rebecca Martin, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "The Children'S Mercy Hospital",
@@ -2074,12 +2151,45 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jacqueline McGee, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jefferson.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Miller, MD",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@osumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tara Myers, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Children'S Mercy Hospital",
    "city": "Kansas City",
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@ana.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nehal Parikh, DO",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2184,6 +2294,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Priya Tiwari, MD",
+   "title": "Neonatologist",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alison Tran",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Kansas City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@quinnipiac.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lauren Wilson, DO",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "The Children'S Mercy Hospital",
@@ -2213,6 +2345,17 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jaclyn Morris, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Ssm St Charles Clinic Medical Group",
+   "city": "Lake Saint Louis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2283,6 +2426,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sydney Long, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Ibrahim S Umar M P C",
+   "city": "Saint Charles",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jamie Myers, FNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Heartland Regional Medical Center",
+   "city": "Saint Joseph",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@scf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Philip Abraham, MD",
    "title": "Pediatrician",
    "org": "Washington University",
@@ -2323,6 +2488,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Bollinger, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Washington University",
+   "city": "Saint Louis",
+   "linkedin": "https://www.linkedin.com/in/emily-bollinger-93a39b236",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Burke, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Ssm Health Care Group",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@med.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2433,6 +2620,17 @@
    "linkedin": "https://www.linkedin.com/in/katie-gettinger-85495290",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natalie Goedeker, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Washington University",
+   "city": "Saint Louis",
+   "linkedin": "https://www.linkedin.com/in/natalie-goedeker-025421233",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2668,6 +2866,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth King, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Fairview Heights Medical Group Sc",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@bmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Amanda Kolmar, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Washington University",
@@ -2796,6 +3005,28 @@
    "linkedin": "https://www.linkedin.com/in/anthony-orvedahl-9b7b491a8",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Ott, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Washington University",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abigail Pare, DNP, APRN, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Saint Louis",
+   "linkedin": "https://www.linkedin.com/in/abigail-pare-dnp-cpnp-ac-439355274",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2987,6 +3218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shanon Luke, MD",
+   "title": "Pediatrician",
+   "org": "Regional Health Care Clinic, Inc",
+   "city": "Versailles",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Muhammad Asif, M.D",
    "title": "Pediatrician",
    "org": "Western Missouri Medical Center",
@@ -3038,6 +3280,116 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@smchc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Lang, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "509Th Medgrp-Whiteman",
+   "city": "Whiteman Afb",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Harrison, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cottleville",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@fieldprint.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Greenberg, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Frontenac",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Adams, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "O Fallon",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adrienne Atzemis, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Beverly Brozanski, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eve Colson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Kreusser, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Merritt, DNP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martin Schmidt, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Saint Louis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vetmed.uni-giessen.de",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3126,17 +3478,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Meagan Conwell, CNP, PNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Woodstream Wellness",
-   "city": "Bloomsdale",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5031,17 +5372,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022@umsystem.edu"
-  },
-  {
-   "name": "Megan Kruse, CPNP-PC, CPNP-AC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Preferred Family Healthcare, Inc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Aaron Lambdin, MD",
@@ -7057,17 +7387,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rohan Akhouri, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/rohan-akhouri",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Baha'Uddin Al-Shawwa, MD",
    "title": "Pediatric Sleep Medicine Physician",
    "org": "The Children'S Mercy Hospital",
@@ -8652,17 +8971,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Davis, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Francesco De Luca, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "The Children'S Mercy Hospital",
@@ -9785,17 +10093,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shannon Haines, MD",
-   "title": "Neonatologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Geetha Haligheri, MD",
    "title": "Pediatric Cardiologist",
    "org": "The Children'S Mercy Hospital",
@@ -10777,303 +11074,6 @@
   {
    "name": "Jessica Kinney, CPNP",
    "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kellie Kirkland, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/kellie-kirkland-6b793b6a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Kirkpatrick, M.D",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jacqueline Kitchen, M.D",
-   "title": "Pediatrician",
-   "org": "University Health Physicians",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Knapitsch, MD",
-   "title": "Neonatologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jane Knapp, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Knisely",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Knoll, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Koertje",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/whitney-sparks-468482b0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsey Kostal",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Kronberg, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/stephanie-kronberg-04202986",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tarah Kruger, M.D",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Molly Kubesh, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Deepa Kumar",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yonatan Kurland, MD",
-   "title": "Neonatologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ebony Kurtz, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Lafferty",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kyle Langford, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Veronica Lawrence, M.D",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrea Lawrence, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thao Le, DO/MBA",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Victoria Leblanc, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dianne Lee, D.O., M.B.A",
-   "title": "Neonatologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ding-You Li, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/ding-you-li-876ab165",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jenna Lillian",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joel Lim, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Medstar Medical Group II LLC",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Linebarger, MD, MPH",
-   "title": "Pediatric Hospice & Palliative Medicine Physician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Kansas City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Littell, MD",
-   "title": "Pediatrician",
    "org": "The Children'S Mercy Hospital",
    "city": "Kansas City",
    "linkedin": "",

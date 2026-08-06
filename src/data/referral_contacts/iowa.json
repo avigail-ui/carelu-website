@@ -3,8 +3,8 @@
  "slug": "iowa",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-iowa.csv",
  "count": 1191,
- "emails": 66,
- "practiceEmails": 98,
+ "emails": 113,
+ "practiceEmails": 89,
  "phones": 1191,
  "direct": 0,
  "roles": [
@@ -35,11 +35,11 @@
    "count": 73
   },
   {
-   "name": "Waterloo",
+   "name": "West Des Moines",
    "count": 34
   },
   {
-   "name": "West Des Moines",
+   "name": "Waterloo",
    "count": 34
   },
   {
@@ -218,6 +218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Cara Franey, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Central Iowa Hospital Corporation",
+   "city": "Des Moines",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.co.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nicholas Fustino, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Central Iowa Hospital Corporation",
@@ -306,6 +317,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Vanessa Solomon, ARNP, FNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Iowa Physicians Clinic Medical Foundation",
+   "city": "Hiawatha",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@cdrewu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stephanie Acosta, MD",
    "title": "Pediatric Cardiologist",
    "org": "State University Of Iowa",
@@ -313,6 +335,17 @@
    "linkedin": "https://www.linkedin.com/in/stephanie-acosta-3a0647192",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alaa Ahmed, MD",
+   "title": "Pediatrician",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "https://www.linkedin.com/in/alaa-ahmed-a4672653",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@med.asu.edu.eg",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -379,6 +412,28 @@
    "linkedin": "https://www.linkedin.com/in/robert-blount-639a2b28",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gabriel Castano Heredia",
+   "title": "Pediatric Endocrinologist",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bharatendu Chandra, MD",
+   "title": "Pediatrician",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "https://www.linkedin.com/in/bharatendu-chandra-4058233b2",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -526,6 +581,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Amy Hobson, DO",
+   "title": "Neonatologist",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "https://www.linkedin.com/in/amy-hobson-do-ma-43489849",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stephanie James, D.O",
    "title": "Pediatrician",
    "org": "State University Of Iowa",
@@ -537,6 +603,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Hidemi Kajimoto",
+   "title": "Pediatric Cardiologist",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rabia Khan, MD",
    "title": "Pediatric Cardiologist",
    "org": "State University Of Iowa",
@@ -544,6 +621,17 @@
    "linkedin": "https://www.linkedin.com/in/rabia-khan-514211187",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ubc.ca",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tyler King, DO",
+   "title": "Neonatologist",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "https://www.linkedin.com/in/tylermking",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -658,6 +746,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Uzma Rani, MD",
+   "title": "Pediatrician",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mahil Rao",
    "title": "Pediatric Critical Care Specialist",
    "org": "State University Of Iowa",
@@ -746,6 +845,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Moon Ley Tung, MD",
+   "title": "Pediatrician",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rebecca Weiner, M.D",
    "title": "Pediatric Pulmonologist",
    "org": "State University Of Iowa",
@@ -753,6 +863,17 @@
    "linkedin": "https://www.linkedin.com/in/rebecca-weiner2",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Averi Wilson, MD",
+   "title": "Pediatrician",
+   "org": "State University Of Iowa",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -790,6 +911,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shannon Stevenson, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Prairie Pediatrics & Adolescent Clinic, P.C.",
+   "city": "Sioux City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@osumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Joseph Falco, D.O",
    "title": "Pediatrician",
    "org": "Rapha House Health Llc",
@@ -797,6 +929,391 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unitypoint.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erica Sloan, DNP, ARNP, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Central Iowa Hospital Corporation",
+   "city": "West Des Moines",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@washpost.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sheila Baker",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Ames",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Scott Nau, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cedar Rapids",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharon McElhinney, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Davenport",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jan Foote, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Des Moines",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Groen, D.O",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Des Moines",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@unitypoint.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Acarregui, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Ahrens, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dianne Atkins, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexander Bassuk, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edward Bell, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Warren Bishop, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lori Christensen, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tarah Colaizy, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Dagle, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Fasano, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Grose, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kirsten Hanrahan, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Jennissen, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shirley Johnson, CPNP, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vcu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Larew, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ellen Link, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vera Loening Baucke, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Larry Mahoney, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul McCray, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anita Moonjely, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frank Morriss, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jody Murph, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Norris, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Roghair, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Widness, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jerold Woodhead, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Iowa City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ronald Graeff, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Oskaloosa",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cheryll Jones, ARNP CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Ottumwa",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shoab Sayeed, DO",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Windsor Heights",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@msn.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2319,17 +2836,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Cara Franey, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Central Iowa Hospital Corporation",
-   "city": "Des Moines",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Janet Graeve, MD",
    "title": "Pediatrician",
    "org": "Mercy Clinics Inc",
@@ -3001,17 +3507,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Vanessa Solomon, ARNP, FNP-BC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Iowa Physicians Clinic Medical Foundation",
-   "city": "Hiawatha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kimberly Stromert, DNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Iowa Physicians Clinic Medical Foundation",
@@ -3054,17 +3549,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": "i\u2022\u2022\u2022\u2022@ahd.com"
-  },
-  {
-   "name": "Alaa Ahmed, MD",
-   "title": "Pediatrician",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "https://www.linkedin.com/in/alaa-ahmed-a4672653",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
   {
    "name": "Deidra Ansah, M.D",
@@ -3153,28 +3637,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Gabriel Castano Heredia",
-   "title": "Pediatric Endocrinologist",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
-   "name": "Bharatendu Chandra, MD",
-   "title": "Pediatrician",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "https://www.linkedin.com/in/bharatendu-chandra-4058233b2",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
   {
    "name": "Madhuradhar Chegondi, MD",
@@ -3353,17 +3815,6 @@
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
   {
-   "name": "Amy Hobson, DO",
-   "title": "Neonatologist",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "https://www.linkedin.com/in/amy-hobson-do-ma-43489849",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
    "name": "Alexandra Iannone, DO",
    "title": "Pediatrician",
    "org": "State University Of Iowa",
@@ -3371,28 +3822,6 @@
    "linkedin": "https://www.linkedin.com/in/alexandra-iannone-ab365983",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
-   "name": "Hidemi Kajimoto",
-   "title": "Pediatric Cardiologist",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
-   "name": "Tyler King, DO",
-   "title": "Neonatologist",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "https://www.linkedin.com/in/tylermking",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
    "phoneType": "Practice",
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
@@ -3628,17 +4057,6 @@
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
   {
-   "name": "Uzma Rani, MD",
-   "title": "Pediatrician",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
    "name": "Brian Rodriguez, MD",
    "title": "Pediatrician",
    "org": "State University Of Iowa",
@@ -3826,17 +4244,6 @@
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
   {
-   "name": "Moon Ley Tung, MD",
-   "title": "Pediatrician",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
    "name": "Aliye Uc, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "State University Of Iowa",
@@ -3888,17 +4295,6 @@
    "linkedin": "https://www.linkedin.com/in/melanie-wellington-89b4128",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
-  },
-  {
-   "name": "Averi Wilson, MD",
-   "title": "Pediatrician",
-   "org": "State University Of Iowa",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022@foriowa.org"
   },
@@ -4420,17 +4816,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shannon Stevenson, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Prairie Pediatrics & Adolescent Clinic, P.C.",
-   "city": "Sioux City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ray Sturdevant, MD",
    "title": "Pediatrician",
    "org": "Prairie Pediatrics, Pc",
@@ -4838,17 +5223,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erica Sloan, DNP, ARNP, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Central Iowa Hospital Corporation",
-   "city": "West Des Moines",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Aparna Sondhi, MD",
    "title": "Pediatrician",
    "org": "Iowa Physicians Clinic Medical Foundation",
@@ -4933,17 +5307,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sheila Baker",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Ames",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5575,17 +5938,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Scott Nau, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Cedar Rapids",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Andrew Nordine, M.D",
    "title": "Neonatologist",
    "org": "",
@@ -6077,17 +6429,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sharon McElhinney, DO",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Davenport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6620,17 +6961,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jan Foote, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Des Moines",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Francis",
    "title": "Pediatrician",
    "org": "",
@@ -6715,17 +7045,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Groen, D.O",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "",
-   "city": "Des Moines",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8336,17 +8655,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Acarregui, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kelli Africh, NNPBC",
    "title": "Pediatric Nurse Practitioner",
    "org": "",
@@ -8354,17 +8662,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Richard Ahrens, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8501,17 +8798,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dianne Atkins, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marcelo Auslender, M.D",
    "title": "Pediatric Cardiologist",
    "org": "",
@@ -8567,17 +8853,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alexander Bassuk, MD PHD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kyle Baum, DO",
    "title": "Pediatric Endocrinologist",
    "org": "",
@@ -8607,17 +8882,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Edward Bell, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8662,17 +8926,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Warren Bishop, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8908,28 +9161,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lori Christensen, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tarah Colaizy, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Victoria Cole, MD",
    "title": "Pediatrician",
    "org": "",
@@ -9025,17 +9256,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Dagle, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9245,17 +9465,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Fasano, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9524,17 +9733,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Charles Grose, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amy Gu, MD",
    "title": "Pediatric Endocrinologist",
    "org": "",
@@ -9564,17 +9762,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kirsten Hanrahan, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9799,17 +9986,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Charles Jennissen, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mary Jeno, MD",
    "title": "Pediatrician",
    "org": "",
@@ -9850,17 +10026,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shirley Johnson, CPNP, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10063,17 +10228,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mary Larew, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tiffany Lau, MD",
    "title": "Neonatologist",
    "org": "",
@@ -10217,28 +10371,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ellen Link, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vera Loening Baucke, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sujana Madathil, M.D",
    "title": "Pediatrician",
    "org": "",
@@ -10268,17 +10400,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Larry Mahoney, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10356,17 +10477,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul McCray, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10536,17 +10646,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anita Moonjely, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Irene Morcuende Gonzalez, MD",
    "title": "Pediatrician",
    "org": "",
@@ -10565,17 +10664,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Frank Morriss, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10609,17 +10697,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jody Murph, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10730,17 +10807,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrew Norris, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -11005,72 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Glenda Rabe, M.D",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Radig, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Adrianne Rahde Bischoff, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Akhila Ramakrishna, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Veronica Ramirez Altamirano, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Skyler Rands, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Iowa City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

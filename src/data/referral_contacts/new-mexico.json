@@ -3,7 +3,7 @@
  "slug": "new-mexico",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-mexico.csv",
  "count": 891,
- "emails": 74,
+ "emails": 82,
  "practiceEmails": 16,
  "phones": 866,
  "direct": 108,
@@ -73,11 +73,11 @@
    "count": 17
   },
   {
-   "name": "Unm Hospital",
+   "name": "San Juan Regional Medical Center Inc",
    "count": 15
   },
   {
-   "name": "San Juan Regional Medical Center Inc",
+   "name": "Unm Hospital",
    "count": 15
   }
  ],
@@ -1557,6 +1557,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Lucero, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mednet.ucla.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Siddharth Patel, MD",
    "title": "Pediatric Cardiologist",
    "org": "Presbyterian Healthcare Services",
@@ -1634,6 +1645,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Erin Tinker, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "San Juan Regional Medical Center Inc",
+   "city": "Farmington",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@pembrokek12.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jose Galvez, M.D",
    "title": "Pediatrician",
    "org": "La Clinica De Familia, Incorporated",
@@ -1689,6 +1711,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Crystal Romero, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St. Vincent Hospital",
+   "city": "Santa Fe",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Gene Nathan, M.D",
    "title": "Pediatrician",
    "org": "Taos Whole Health Integrative Care, LLC.",
@@ -1696,6 +1729,61 @@
    "linkedin": "",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Anderson, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Albuquerque",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cannabisdoc.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Luis Delatorre, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Albuquerque",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Miller, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "",
+   "city": "Albuquerque",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Neal, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Los Alamos",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susie John, MD MPH",
+   "title": "Adolescent Medicine Physician",
+   "org": "",
+   "city": "Shiprock",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2774,17 +2862,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Lucero, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Presbyterian Healthcare Services",
-   "city": "Albuquerque",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3933,17 +4010,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erin Tinker, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "San Juan Regional Medical Center Inc",
-   "city": "Farmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": ".Peggy Tolliver, MD",
    "title": "Pediatrician",
    "org": "San Juan Regional Medical Center Inc",
@@ -4912,17 +4978,6 @@
    "practiceEmail": "s\u2022\u2022\u2022\u2022\u2022\u2022@nursa.com"
   },
   {
-   "name": "Crystal Romero, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "St. Vincent Hospital",
-   "city": "Santa Fe",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Scott Rossol, MD",
    "title": "Pediatrician",
    "org": "St. Vincent Hospital",
@@ -5458,17 +5513,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Anderson, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Albuquerque",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6074,17 +6118,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Luis Delatorre, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Albuquerque",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7317,17 +7350,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Miller, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "",
-   "city": "Albuquerque",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9301,17 +9323,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "John Neal, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Los Alamos",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sonia Murillo, M.D",
    "title": "Pediatrician",
    "org": "",
@@ -9781,17 +9792,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susie John, MD MPH",
-   "title": "Adolescent Medicine Physician",
-   "org": "",
-   "city": "Shiprock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

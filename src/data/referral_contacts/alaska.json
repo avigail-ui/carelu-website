@@ -3,7 +3,7 @@
  "slug": "alaska",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-alaska.csv",
  "count": 268,
- "emails": 12,
+ "emails": 13,
  "practiceEmails": 13,
  "phones": 267,
  "direct": 0,
@@ -203,6 +203,17 @@
    "linkedin": "https://www.linkedin.com/in/elisa-rosier",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@pacificpediatricsllc.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Peterson, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wasilla",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2986,17 +2997,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Peterson, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Wasilla",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

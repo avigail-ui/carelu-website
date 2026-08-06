@@ -3,7 +3,7 @@
  "slug": "idaho",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-idaho.csv",
  "count": 409,
- "emails": 11,
+ "emails": 13,
  "practiceEmails": 21,
  "phones": 409,
  "direct": 0,
@@ -174,6 +174,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Bradley Phillips",
+   "title": "Pediatrician",
+   "org": "366Th Medgrp-Mountain Home",
+   "city": "Mountain Home Afb",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jacob Nelson, DO",
    "title": "Pediatrician",
    "org": "Upper Valley Community Health Services Inc",
@@ -192,6 +203,17 @@
    "linkedin": "https://www.linkedin.com/in/debra-freund-724a2834a",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nancy Miller, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@bmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1622,17 +1644,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bradley Phillips",
-   "title": "Pediatrician",
-   "org": "366Th Medgrp-Mountain Home",
-   "city": "Mountain Home Afb",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4020,17 +4031,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nancy Miller, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Meridian",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

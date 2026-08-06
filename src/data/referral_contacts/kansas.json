@@ -3,7 +3,7 @@
  "slug": "kansas",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-kansas.csv",
  "count": 714,
- "emails": 32,
+ "emails": 38,
  "practiceEmails": 21,
  "phones": 714,
  "direct": 0,
@@ -163,6 +163,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jessica Fisher, MD",
+   "title": "Pediatrician",
+   "org": "Cottonwood Pediatrics, Pa",
+   "city": "Newton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ttep.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julia Zahn, APN, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Abundant Care And Wellness",
@@ -202,6 +213,17 @@
    "city": "Overland Park",
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@baltimorecity.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Benvenuti, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Overland Park",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@eastsidecatholics.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -361,6 +383,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Arif Hussain, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Ut Lebonheur Pediatric Specialists, INC.",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Debra Kinnane, M.D",
    "title": "Pediatrician",
    "org": "Mid-Kansas Pediatric Associates, P.A.",
@@ -368,6 +401,17 @@
    "linkedin": "https://www.linkedin.com/in/debra-kinnane-31757231",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@midkspeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heidi Koschwanez, MD, PHD",
+   "title": "Pediatrician",
+   "org": "William Newton Memorial Hospital",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -423,6 +467,28 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine White, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Merriam",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@freedompediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Wittler, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1428,17 +1494,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Fisher, MD",
-   "title": "Pediatrician",
-   "org": "Cottonwood Pediatrics, Pa",
-   "city": "Newton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Angela Gatz, MD",
    "title": "Pediatrician",
    "org": "Cottonwood Pediatrics, Pa",
@@ -1631,17 +1686,6 @@
    "org": "The Children'S Mercy Hospital",
    "city": "Overland Park",
    "linkedin": "https://www.linkedin.com/in/gracielle-bahia-do-ma-6b841215",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shannon Benvenuti, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Overland Park",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -3375,17 +3419,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Arif Hussain, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Ut Lebonheur Pediatric Specialists, INC.",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Praveen Khilnani, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Via Christi Regional Medical Center",
@@ -3402,17 +3435,6 @@
    "org": "University Of Kansas School Of Medicine Wichita Medical Practice Assoc",
    "city": "Wichita",
    "linkedin": "https://ke.linkedin.com/in/cynthia-kibet-17781a293",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heidi Koschwanez, MD, PHD",
-   "title": "Pediatrician",
-   "org": "William Newton Memorial Hospital",
-   "city": "Wichita",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
    "phoneType": "Practice",
@@ -5147,17 +5169,6 @@
   },
   {
    "name": "Mary Tyson, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Merriam",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christine White, MD",
    "title": "Pediatrician",
    "org": "",
    "city": "Merriam",
@@ -7881,17 +7892,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Wittler, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

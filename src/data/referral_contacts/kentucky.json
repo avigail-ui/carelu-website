@@ -3,8 +3,8 @@
  "slug": "kentucky",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-kentucky.csv",
  "count": 1768,
- "emails": 174,
- "practiceEmails": 116,
+ "emails": 196,
+ "practiceEmails": 114,
  "phones": 1768,
  "direct": 0,
  "roles": [
@@ -136,6 +136,17 @@
    "city": "Cold Spring",
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@sdhc.k12.fl.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Campbell, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Grace Community Health Center, Inc.",
+   "city": "Corbin",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -335,6 +346,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stny.rr.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jordan Burke, MD",
+   "title": "Pediatrician",
+   "org": "Primary Care Centers Of Eastern Kentucky LLC",
+   "city": "Hazard",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@colchestersd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -603,6 +625,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mrudu Herbert, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Kentucky Medical Services Foundation, INC",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Elizabeth Jackson, MD",
    "title": "Pediatric Nephrologist",
    "org": "Kentucky Medical Services Foundation",
@@ -610,6 +643,17 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gabrielle Kahler, MD",
+   "title": "Pediatrician",
+   "org": "Kentucky Medical Services Foundation",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -632,6 +676,17 @@
    "linkedin": "https://www.linkedin.com/in/stefan-kiessling-123a123",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tatyana Lemelman, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Kentucky Medical Services Foundation, INC",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/tatyana-lemelman-081307194",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -867,6 +922,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Allison Ward",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bluegrass Peds, Pllc",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nhs.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Fred Warkentine, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Community Medical Associates INC",
@@ -1061,6 +1127,17 @@
    "linkedin": "https://www.linkedin.com/in/larryrcook",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jael Cowan, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Children'S Heart Specialists, Psc",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1593,6 +1670,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Morgan Robinson",
+   "title": "Pediatrician",
+   "org": "Norton Childrens Medical Group LLC",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Heather Rush, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Louisville",
@@ -1791,12 +1879,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Esper Wadih",
+   "title": "Pediatrician",
+   "org": "Norton Childrens Medical Group LLC",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sara Watson, MD",
    "title": "Pediatric Endocrinologist",
    "org": "University Of Louisville",
    "city": "Louisville",
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Madeline Weber, MD",
+   "title": "Pediatrician",
+   "org": "Norton Childrens Medical Group LLC",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1985,6 +2095,138 @@
    "linkedin": "https://pk.linkedin.com/in/najam-sheikh-85987b18",
    "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Debra Sowell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bowling Green",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@outlook.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Sternberg, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Bowling Green",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Whitsett, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Edgewood",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aurelia Radulescu, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Adamkin, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristina Bryant, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "In Kim, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pradip Patel, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julia Richerson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@fhclouisville.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Roberts, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Waters, MD PHD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@health.nsw.gov.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Williams, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "",
+   "city": "Louisville",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2574,17 +2816,6 @@
   {
    "name": "Christina Butler, M.D",
    "title": "Pediatrician",
-   "org": "Grace Community Health Center, Inc.",
-   "city": "Corbin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Campbell, APRN",
-   "title": "Pediatric Nurse Practitioner",
    "org": "Grace Community Health Center, Inc.",
    "city": "Corbin",
    "linkedin": "",
@@ -3859,17 +4090,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jordan Burke, MD",
-   "title": "Pediatrician",
-   "org": "Primary Care Centers Of Eastern Kentucky LLC",
-   "city": "Hazard",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Molly O'Rourke, M.D",
    "title": "Pediatrician",
    "org": "Primary Care Centers Of Eastern Kentucky LLC",
@@ -5113,17 +5333,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mrudu Herbert, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Kentucky Medical Services Foundation, INC",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022@uky.edu"
-  },
-  {
    "name": "Alexander Hernandez, M.D",
    "title": "Pediatrician",
    "org": "Kentuckyone Health Medical Group INC",
@@ -5300,17 +5509,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gabrielle Kahler, MD",
-   "title": "Pediatrician",
-   "org": "Kentucky Medical Services Foundation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jamshed Kanga, MD",
    "title": "Pediatric Pulmonologist",
    "org": "Kentucky Medical Services Foundation",
@@ -5386,17 +5584,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Tatyana Lemelman, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Kentucky Medical Services Foundation, INC",
-   "city": "Lexington",
-   "linkedin": "https://www.linkedin.com/in/tatyana-lemelman-081307194",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022@uky.edu"
   },
   {
    "name": "Barnett Lewis, MD",
@@ -6191,17 +6378,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Allison Ward",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Bluegrass Peds, Pllc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Watts, ARNP",
    "title": "Pediatrician",
    "org": "Lexington Fayette Urban Co Govt",
@@ -6836,17 +7012,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jael Cowan, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Children'S Heart Specialists, Psc",
-   "city": "Louisville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8369,17 +8534,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Morgan Robinson",
-   "title": "Pediatrician",
-   "org": "Norton Childrens Medical Group LLC",
-   "city": "Louisville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amanda Rogers, MD",
    "title": "Pediatrician",
    "org": "Norton Childrens Medical Group LLC",
@@ -8930,17 +9084,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Esper Wadih",
-   "title": "Pediatrician",
-   "org": "Norton Childrens Medical Group LLC",
-   "city": "Louisville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Deborah Wallace, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Partners Of Jeffersontown",
@@ -8992,17 +9135,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Madeline Weber, MD",
-   "title": "Pediatrician",
-   "org": "Norton Childrens Medical Group LLC",
-   "city": "Louisville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10939,138 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ronald Fulkerson, MD PSC",
-   "title": "Pediatrician",
-   "org": "Ronald Fulkerson Md Psc",
-   "city": "Winchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suzanne Pica, MD",
-   "title": "Pediatrician",
-   "org": "Clark Regional Physician Practices LLC",
-   "city": "Winchester",
-   "linkedin": "https://www.linkedin.com/in/selena-scalzitti-06226235",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alynn Berg",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cheryl Cook, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samantha Cook, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Courtney De Jesso, M.D",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Priya Jain, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashok Khanna, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Scott Knight, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Maynard, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ramon Ymalay, M.D",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Ashland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Koenig, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Bagdad",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

@@ -3,7 +3,7 @@
  "slug": "oklahoma",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-oklahoma.csv",
  "count": 1294,
- "emails": 58,
+ "emails": 62,
  "practiceEmails": 82,
  "phones": 1294,
  "direct": 0,
@@ -69,7 +69,7 @@
    "count": 10
   },
   {
-   "name": "Norman Pediatric Associates",
+   "name": "Osu Center For Health Sciences",
    "count": 9
   }
  ],
@@ -148,6 +148,17 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@purdue.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimberly Harrison, DO",
+   "title": "Pediatrician",
+   "org": "Osu Center For Health Sciences",
+   "city": "Coweta",
+   "linkedin": "https://www.linkedin.com/in/kimberlytaylorharrison",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@okstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -378,6 +389,28 @@
    "city": "Owasso",
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ihv.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chelsea Walker, APRN-CPNP",
+   "title": "Adolescent Medicine Physician",
+   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
+   "city": "Owasso",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon White, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
+   "city": "Owasso",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@theabfm.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -709,6 +742,17 @@
    "linkedin": "https://www.linkedin.com/in/catherine-flores-43399a24",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@neurosurgery.ufl.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wendy McConnell, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sand Springs",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1147,17 +1191,6 @@
    "org": "Osu Center For Health Sciences",
    "city": "Coweta",
    "linkedin": "https://www.linkedin.com/in/emily-bolender-a4b19a149",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly Harrison, DO",
-   "title": "Pediatrician",
-   "org": "Osu Center For Health Sciences",
-   "city": "Coweta",
-   "linkedin": "https://www.linkedin.com/in/kimberlytaylorharrison",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
@@ -4675,28 +4708,6 @@
   {
    "name": "Brian McDowell, D.O",
    "title": "Pediatrician",
-   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
-   "city": "Owasso",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chelsea Walker, APRN-CPNP",
-   "title": "Adolescent Medicine Physician",
-   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
-   "city": "Owasso",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shannon White, APRN",
-   "title": "Pediatric Nurse Practitioner",
    "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
    "city": "Owasso",
    "linkedin": "",
@@ -11060,17 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jarod John Pamatmat, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

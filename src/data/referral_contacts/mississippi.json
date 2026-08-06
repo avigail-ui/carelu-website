@@ -3,7 +3,7 @@
  "slug": "mississippi",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-mississippi.csv",
  "count": 831,
- "emails": 19,
+ "emails": 23,
  "practiceEmails": 125,
  "phones": 831,
  "direct": 0,
@@ -218,6 +218,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Helen Turner, MD",
+   "title": "Pediatrician",
+   "org": "Premier Medical Group Of Mississippi LLC",
+   "city": "Kosciusko",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@ouh.nhs.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erica Anderson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Flowood River Oaks Hma Medical Group, Llc",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Myers, M.D",
    "title": "Pediatrician",
    "org": "Children'S Medical Group, P.A.",
@@ -225,6 +247,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Porter, CPNP",
+   "title": "Pediatrician",
+   "org": "Sidhu Pediatrics, Llc",
+   "city": "Southaven",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -280,6 +313,17 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Milton Smith, M.D., F.A.A.P",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "McComb",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3287,17 +3331,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Helen Turner, MD",
-   "title": "Pediatrician",
-   "org": "Premier Medical Group Of Mississippi LLC",
-   "city": "Kosciusko",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tomia Carter, PCNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Ms Magnolia Medical,Llc",
@@ -3316,17 +3349,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erica Anderson, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Flowood River Oaks Hma Medical Group, Llc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4711,17 +4733,6 @@
    "org": "Sidhu Pediatrics, Llc",
    "city": "Southaven",
    "linkedin": "https://www.linkedin.com/in/galen-phillips-cpnp-ac-pc-41024918a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathryn Porter, CPNP",
-   "title": "Pediatrician",
-   "org": "Sidhu Pediatrics, Llc",
-   "city": "Southaven",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
@@ -8310,17 +8321,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Milton Smith, M.D., F.A.A.P",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "McComb",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

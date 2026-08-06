@@ -3,7 +3,7 @@
  "slug": "utah",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-utah.csv",
  "count": 1412,
- "emails": 84,
+ "emails": 93,
  "practiceEmails": 11,
  "phones": 1390,
  "direct": 94,
@@ -1520,6 +1520,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ellie Hummel",
+   "title": "Pediatrician",
+   "org": "University Of Utah Adult Services",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/ellie-hummel-a65611125",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@mta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Richard Lemons",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Pediatric Bone Marrow Transplant Department Of University Of Utah",
@@ -1553,6 +1564,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rebecca Powell, MD",
+   "title": "Pediatrician",
+   "org": "University Of Utah Medical Center Psychiatry",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/rebecca-powell-b686843b",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julia Rawlings",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Of Utah Adult Services",
@@ -1564,12 +1586,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kimberly Uchida",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Utah Pediatric Acuity Care",
+   "city": "Salt Lake City",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Richard Williams",
    "title": "Pediatric Cardiologist",
    "org": "University Of Utah Pediatric Services",
    "city": "Salt Lake City",
    "linkedin": "https://mc.linkedin.com/in/richard-bradbury-williams",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@imail.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Scott Wirth, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Children'S Hospital Medical Center",
+   "city": "Salt Lake City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1604,6 +1648,61 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022@montefiore.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Cosgrove, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Murray",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Cook, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ogden",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Lloyd, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Salt Lake City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Robison, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Sandy",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ucollege.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Peter Silas, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Syracuse",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4622,17 +4721,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ellie Hummel",
-   "title": "Pediatrician",
-   "org": "University Of Utah Adult Services",
-   "city": "Salt Lake City",
-   "linkedin": "https://www.linkedin.com/in/ellie-hummel-a65611125",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Irene Hung, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Genetics Department Of University Of Utah",
@@ -5293,17 +5381,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rebecca Powell, MD",
-   "title": "Pediatrician",
-   "org": "University Of Utah Medical Center Psychiatry",
-   "city": "Salt Lake City",
-   "linkedin": "https://www.linkedin.com/in/rebecca-powell-b686843b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sean Pyper, M.D. PH.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Of Utah Pediatric Services",
@@ -5722,17 +5799,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kimberly Uchida",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Utah Pediatric Acuity Care",
-   "city": "Salt Lake City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hunter Underhill, M.D",
    "title": "Pediatrician",
    "org": "University Of Utah Pediatric Services",
@@ -5894,17 +5960,6 @@
    "linkedin": "https://www.linkedin.com/in/sarah-winter-7313b0b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Scott Wirth, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Children'S Hospital Medical Center",
-   "city": "Salt Lake City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7636,17 +7691,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "William Cosgrove, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Murray",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "David Hurley, MD",
    "title": "Pediatrician",
    "org": "",
@@ -7841,17 +7885,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Cook, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Ogden",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -11042,39 +11075,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Harry Hill, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "",
-   "city": "Salt Lake City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Winifred Hobson, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "",
-   "city": "Salt Lake City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joslynn Hoburg, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Salt Lake City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

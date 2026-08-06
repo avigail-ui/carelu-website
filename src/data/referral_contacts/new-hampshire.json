@@ -3,7 +3,7 @@
  "slug": "new-hampshire",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-hampshire.csv",
  "count": 575,
- "emails": 17,
+ "emails": 18,
  "practiceEmails": 11,
  "phones": 575,
  "direct": 0,
@@ -257,6 +257,17 @@
    "city": "Plymouth",
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Schreiber, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -5373,17 +5384,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Schreiber, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Manchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

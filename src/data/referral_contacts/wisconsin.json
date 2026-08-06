@@ -3,8 +3,8 @@
  "slug": "wisconsin",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-wisconsin.csv",
  "count": 2527,
- "emails": 118,
- "practiceEmails": 112,
+ "emails": 138,
+ "practiceEmails": 109,
  "phones": 2527,
  "direct": 0,
  "roles": [
@@ -225,6 +225,17 @@
    "linkedin": "https://pk.linkedin.com/in/sadaf-altaf-1001b2396",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@aku.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Logan, D.O",
+   "title": "Pediatrician",
+   "org": "Mayo Clinic Health System-Southwest Wisconsin Region, Inc.",
+   "city": "La Crosse",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -467,6 +478,17 @@
    "linkedin": "https://www.linkedin.com/in/kennedy-fuglseth",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tayler Garvey, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Wisconsin System Non Payroll",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/tayler-garvey-8434ab151",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -735,6 +757,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ryan McMunn, DO",
+   "title": "Pediatrician",
+   "org": "University Of Wisconsin Hospitals And Clinics Authority",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/ryan-mcmunn-nc",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@dmu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kali Mesdjian, APNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Wisconsin Medical Foundation INC",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/kali-mesdjian-5719421ba",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ann Miranda, MD",
    "title": "Pediatrician",
    "org": "University Of Wisconsin Hospitals And Clinics Authority",
@@ -852,6 +896,17 @@
    "linkedin": "https://www.linkedin.com/in/marlapereznegrin/en",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Reiels, RN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Wisconsin System Non Payroll",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/sarah-reiels-b08506132",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1197,6 +1252,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Wajiha Jeelani, MBBS",
+   "title": "Pediatrician",
+   "org": "Children'S Medical Group",
+   "city": "Milwaukee",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Jetton, M.D",
    "title": "Pediatric Nephrologist",
    "org": "Childrens Specialty Group INC",
@@ -1241,6 +1307,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anisha Patel, MD",
+   "title": "Pediatrician",
+   "org": "Medical College Of Wisconsin Affiliated Hospitals",
+   "city": "Milwaukee",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ruchika Sharma, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Of Texas Southwestern Medical Center At Dallas",
@@ -1280,6 +1357,17 @@
    "city": "Monroe",
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@fammed.wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohammad Jaber, MD",
+   "title": "Neonatologist",
+   "org": "Children'S Hospital Of Wisconsin, Inc.",
+   "city": "Neenah",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@najah.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1369,6 +1457,138 @@
    "linkedin": "",
    "email": "w\u2022\u2022\u2022\u2022@unb.ca",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alissa Zeglin",
+   "title": "Pediatrician",
+   "org": "Froedtert Andthe Medical College Of Wisconsin Community Physicians INC",
+   "city": "Wauwatosa",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@froedtert.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samantha Starkey, DNP, APNP, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Froedtert Andthe Medical College Of Wisconsin Community Physicians INC",
+   "city": "West Bend",
+   "linkedin": "https://www.linkedin.com/in/sstarkey-sts",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Dunigan, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Fond Du Lac",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Wells, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Hales Corners",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Rude, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "La Crosse",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@med.und.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Suzanne Toce, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "La Crosse",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bruce Klein, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nina Menda, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@pediatrics.wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Seroogy, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Sondel, MD PHD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@humonc.wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Segar, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Milwaukee",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Waters, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Milwaukee",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4684,17 +4904,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Logan, D.O",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic Health System-Southwest Wisconsin Region, Inc.",
-   "city": "La Crosse",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ann Lorenz",
    "title": "Pediatric Nurse Practitioner",
    "org": "Gundersen Clinic Ltd",
@@ -5476,17 +5685,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tayler Garvey, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Wisconsin System Non Payroll",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/tayler-garvey-8434ab151",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@slh.wisc.edu"
-  },
-  {
    "name": "Philip Giampietro, MD PHD",
    "title": "Pediatrician",
    "org": "University Of Wisconsin Medical Foundation, Inc",
@@ -6015,17 +6213,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ryan McMunn, DO",
-   "title": "Pediatrician",
-   "org": "University Of Wisconsin Hospitals And Clinics Authority",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/ryan-mcmunn-nc",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Wanda Meeteer, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Wisconsin System Non Payroll",
@@ -6035,17 +6222,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@slh.wisc.edu"
-  },
-  {
-   "name": "Kali Mesdjian, APNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Wisconsin Medical Foundation INC",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/kali-mesdjian-5719421ba",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Kathleen Messman, CPNP-PC, RN",
@@ -6332,17 +6508,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Reiels, RN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Wisconsin System Non Payroll",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/sarah-reiels-b08506132",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@slh.wisc.edu"
   },
   {
    "name": "Carine Renner, MD",
@@ -8743,17 +8908,6 @@
    "practiceEmail": "i\u2022\u2022\u2022@greatnonprofits.org"
   },
   {
-   "name": "Wajiha Jeelani, MBBS",
-   "title": "Pediatrician",
-   "org": "Children'S Medical Group",
-   "city": "Milwaukee",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Paritosh Kaul, MD",
    "title": "Pediatrician",
    "org": "Medical College Of Wisconsin Affiliated Hospitals",
@@ -9509,17 +9663,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@mcw.edu"
-  },
-  {
-   "name": "Anisha Patel, MD",
-   "title": "Pediatrician",
-   "org": "Medical College Of Wisconsin Affiliated Hospitals",
-   "city": "Milwaukee",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@mcw.edu"
   },
@@ -10789,17 +10932,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mohammad Jaber, MD",
-   "title": "Neonatologist",
-   "org": "Children'S Hospital Of Wisconsin, Inc.",
-   "city": "Neenah",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "William Kasper, MD",
    "title": "Pediatrician",
    "org": "Ascension Medical Group-Fox Valley Wisconsin, Inc",
@@ -10939,138 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Casandra Zummallen, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Wisconsin, Inc.",
-   "city": "Neenah",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nathalie Akl, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sadia Ansari, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Arne, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Barbian, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anna Barnier, APNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Beck, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alexandra Berge, D.O",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Bernstein, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Roopa Bhupathi, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Theresa Bullis, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Davietta Butty",
-   "title": "Pediatrician",
-   "org": "Children'S Health System",
-   "city": "New Berlin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

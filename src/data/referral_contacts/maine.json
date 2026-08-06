@@ -3,8 +3,8 @@
  "slug": "maine",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-maine.csv",
  "count": 577,
- "emails": 17,
- "practiceEmails": 21,
+ "emails": 21,
+ "practiceEmails": 19,
  "phones": 577,
  "direct": 0,
  "roles": [
@@ -86,12 +86,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michelle Graves, PNPC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Penobscot Community Health Center",
+   "city": "Bangor",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kristen Martin, DO",
    "title": "Pediatrician",
    "org": "Penobscot Community Health Center",
    "city": "Bangor",
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ivy Todd, PNPC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Penobscot Community Health Center",
+   "city": "Bangor",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -218,6 +240,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Corinne Fisher, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Buckley Foods Inc",
+   "city": "Presque Isle",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ucl.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Megan Smetana, CPNP-AC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Pediatric Cardiology Assoc Pa",
@@ -258,6 +291,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@latrobe.edu.au",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jay Kerecman, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Bangor",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -526,17 +570,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@pchc.com"
   },
   {
-   "name": "Michelle Graves, PNPC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Penobscot Community Health Center",
-   "city": "Bangor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@pchc.com"
-  },
-  {
    "name": "Sandra Ilaka-Chibuluzo, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Sunbury Primary Care, P.A.",
@@ -722,17 +755,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
    "phoneType": "Practice",
    "practiceEmail": "i\u2022\u2022\u2022\u2022@ahd.com"
-  },
-  {
-   "name": "Ivy Todd, PNPC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Penobscot Community Health Center",
-   "city": "Bangor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@pchc.com"
   },
   {
    "name": "Ann Waitt, PNP",
@@ -2495,17 +2517,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Corinne Fisher, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Buckley Foods Inc",
-   "city": "Presque Isle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Maria Gonzalez Rutmann, MD",
    "title": "Pediatrician",
    "org": "Lionheart Health Pllc",
@@ -3679,17 +3690,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jay Kerecman, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Bangor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

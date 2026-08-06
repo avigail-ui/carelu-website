@@ -3,7 +3,7 @@
  "slug": "nevada",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-nevada.csv",
  "count": 799,
- "emails": 88,
+ "emails": 96,
  "practiceEmails": 10,
  "phones": 774,
  "direct": 83,
@@ -1304,6 +1304,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "William Quach, DO",
+   "title": "Pediatrician",
+   "org": "Lamotte Pediatrics, Llp",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/william-quach-do-faap-3380315b",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@unlv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Marlene Unisa, DNP, APRN, FNP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Wee Care Pediatrics",
@@ -1344,6 +1355,17 @@
    "linkedin": "https://www.linkedin.com/in/james-bakerink-42289149",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@zarminali.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Davies, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southern Nevada Medical & Pediatrics Associates Llc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1469,6 +1491,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Angela Sanchez, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Incredicare Primary Care Inc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jill Schwartz, APN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Desert Valley Pediatrics, Llp",
@@ -1524,6 +1557,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Nancy Arredondo, DNP, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Community Care Services LLC",
+   "city": "Reno",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@nm.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Crystal Castaneda, M.D",
    "title": "Pediatrician",
    "org": "Community Care Services Llc",
@@ -1564,6 +1608,50 @@
    "linkedin": "https://www.linkedin.com/in/steven-shane-0553b4103",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@renown.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Stevenson, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gardnerville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@hmhn.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Miriam Bar-On, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@jefferson.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Petersen, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@k12.dc.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Ribeiro, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Reno",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2250,17 +2338,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "William Quach, DO",
-   "title": "Pediatrician",
-   "org": "Lamotte Pediatrics, Llp",
-   "city": "Henderson",
-   "linkedin": "https://www.linkedin.com/in/william-quach-do-faap-3380315b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sandeep Reddy, M.D",
    "title": "Pediatrician",
    "org": "Misch/Hyun/Hodapp Healthcare, Llp",
@@ -2862,17 +2939,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Davies, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Southern Nevada Medical & Pediatrics Associates Llc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4098,17 +4164,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Angela Sanchez, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Incredicare Primary Care Inc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Katie Sandvick, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Nevada Health Centers, Inc.",
@@ -4807,17 +4862,6 @@
    "org": "Zucker Horsley Tatem Althoff Professional Corp",
    "city": "Reno",
    "linkedin": "https://www.linkedin.com/in/steven-althoff-300887140",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nancy Arredondo, DNP, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Community Care Services LLC",
-   "city": "Reno",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
    "phoneType": "Practice",
@@ -5572,17 +5616,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathryn Stevenson, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Gardnerville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jaime Carrigan, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "",
@@ -5854,17 +5887,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Miriam Bar-On, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7174,17 +7196,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Petersen, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8560,17 +8571,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Ribeiro, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Reno",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

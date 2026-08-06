@@ -3,7 +3,7 @@
  "slug": "rhode-island",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-rhode-island.csv",
  "count": 650,
- "emails": 69,
+ "emails": 79,
  "practiceEmails": 29,
  "phones": 650,
  "direct": 0,
@@ -229,6 +229,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Emily Adams",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Rhode Island Public Health Foundation",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ncapa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Byron Alex",
    "title": "Pediatrician",
    "org": "The Providence Community Health Centers, Inc",
@@ -401,6 +412,17 @@
    "linkedin": "",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelsey Hart, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@uga.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -691,6 +713,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Carly Stilphen, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michael Stratton",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Children'S Hospital Medical Center",
@@ -830,6 +863,83 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mail.harvard.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maureen Crotty, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Cumberland",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barbara Gaines, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Daigle, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martin Keszler, M.D",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chandan Lakhiani, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Juan Sanchez-Esteban, MD",
+   "title": "Neonatologist",
+   "org": "",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anne Garvey, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Westerly",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@uww.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1681,17 +1791,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Emily Adams",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Rhode Island Public Health Foundation",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Aliia Agliullina, MD",
    "title": "Pediatrician",
    "org": "The Providence Community Health Centers, Inc",
@@ -2011,17 +2110,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
-   "name": "Kelsey Hart, MD",
-   "title": "Pediatrician",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Razi Hasan, M.D",
    "title": "Pediatrician",
    "org": "Sunshine Pediatrics Llc",
@@ -2317,17 +2405,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
-  },
-  {
-   "name": "Carly Stilphen, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Daniella Teape, MD",
@@ -3144,17 +3221,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Maureen Crotty, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Cumberland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Howard Furlong, MD",
    "title": "Pediatrician",
    "org": "",
@@ -3299,17 +3365,6 @@
   },
   {
    "name": "John Finigan, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "East Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barbara Gaines, MD",
    "title": "Pediatrician",
    "org": "",
    "city": "East Providence",
@@ -4574,17 +4629,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Karen Daigle, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Day, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "",
@@ -5223,17 +5267,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Martin Keszler, M.D",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Valerie Kiers, CPNP, RN",
    "title": "Pediatric Nurse Practitioner",
    "org": "",
@@ -5296,17 +5329,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chandan Lakhiani, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6444,17 +6466,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Juan Sanchez-Esteban, MD",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Monica Schaberg, MD MPH",
    "title": "Pediatrician",
    "org": "",
@@ -7188,17 +7199,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anne Garvey, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Westerly",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

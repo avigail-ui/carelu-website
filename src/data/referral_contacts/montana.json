@@ -3,7 +3,7 @@
  "slug": "montana",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-montana.csv",
  "count": 292,
- "emails": 13,
+ "emails": 15,
  "practiceEmails": 17,
  "phones": 292,
  "direct": 0,
@@ -130,6 +130,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anna Martin, APRN",
+   "title": "Pediatrician",
+   "org": "Benefis Hospitals, Inc.",
+   "city": "Great Falls",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nicole White, RN, MS, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Benefis Hospitals, Inc.",
@@ -159,6 +170,17 @@
    "linkedin": "https://www.linkedin.com/in/dirk-gottman-md-a23295a4",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@wmclinic.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kate Harrison",
+   "title": "Child Abuse Pediatrician",
+   "org": "Providence Health & Services Mt",
+   "city": "Missoula",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@wpi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1109,17 +1131,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anna Martin, APRN",
-   "title": "Pediatrician",
-   "org": "Benefis Hospitals, Inc.",
-   "city": "Great Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Nancy Maynard, MD",
    "title": "Pediatrician",
    "org": "Great Falls Clinic Llc",
@@ -1655,17 +1666,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kate Harrison",
-   "title": "Child Abuse Pediatrician",
-   "org": "Providence Health & Services Mt",
-   "city": "Missoula",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

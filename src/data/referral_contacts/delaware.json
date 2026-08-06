@@ -3,8 +3,8 @@
  "slug": "delaware",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-delaware.csv",
  "count": 756,
- "emails": 62,
- "practiceEmails": 292,
+ "emails": 65,
+ "practiceEmails": 291,
  "phones": 756,
  "direct": 0,
  "roles": [
@@ -416,6 +416,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Megan Feick, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/megan-feick-3100a0368",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kelvin Fong, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -753,6 +764,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kerry Kirifides, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shirley Klein, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3204,17 +3237,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Megan Feick, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/megan-feick-3100a0368",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -6301,17 +6323,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kerry Kirifides, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mai Lam",
    "title": "Pediatrician",
    "org": "",
@@ -7452,17 +7463,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shirley Klein, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

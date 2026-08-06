@@ -3,8 +3,8 @@
  "slug": "virginia",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-virginia.csv",
  "count": 3861,
- "emails": 261,
- "practiceEmails": 219,
+ "emails": 287,
+ "practiceEmails": 212,
  "phones": 3813,
  "direct": 221,
  "roles": [
@@ -3277,6 +3277,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth Wolf",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Pediatric Group, Pc",
+   "city": "Alexandria",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Allison Waller",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of Alexandria",
@@ -3343,6 +3354,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jessica Cline, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Anchor Healthcare, Plc",
+   "city": "Charlottesville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@peds.ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kathryn Cook, DDS",
    "title": "Pediatrician",
    "org": "Kathryn A. Cook,D.D.S.",
@@ -3383,6 +3405,39 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@charlottesvillepeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Howell, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mental Fitness Matters",
+   "city": "Charlottesville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nova.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Keeling, MSN, RN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Virginia Physicians Group",
+   "city": "Charlottesville",
+   "linkedin": "https://www.linkedin.com/in/stephanie-keeling-b58bb31a3",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ualberta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Lisk, AG-ACNP",
+   "title": "Pediatric Cardiologist",
+   "org": "University Of Virginia Physicians Group",
+   "city": "Charlottesville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022@buffalo.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3497,6 +3552,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Caroline Christian, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Hospital Of The Kings Daughters Inc",
+   "city": "Chesapeake",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Cherubim Goldsby, M.D",
    "title": "Pediatrician",
    "org": "Children'S Health Associates Of Tidewater",
@@ -3526,6 +3592,17 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Lowe, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Family Care Of Chilhowie, P.C.",
+   "city": "Chilhowie",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3680,6 +3757,17 @@
    "linkedin": "https://www.linkedin.com/in/krupal-shah-510ab14a",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Hudson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Richeson Drive Pediatrics, Inc.",
+   "city": "Forest",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@stjude.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3981,6 +4069,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mary Willis, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Riverside Hospital Inc",
+   "city": "Newport News",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@oregonstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Joel Brenner, M.D",
    "title": "Pediatric Sports Medicine Physician",
    "org": "Childrens Specialty Group PLLC",
@@ -4032,6 +4131,17 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Smith, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Childrens Specialty Group Pllc",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@medtronic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4102,6 +4212,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Colleen Allen, DO",
+   "title": "Pediatrician",
+   "org": "Monument Avenue Pediatrics",
+   "city": "Richmond",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@emmes.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Bobby Archuleta, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates Pc",
@@ -4142,6 +4263,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelsey Blazar, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4230,6 +4362,17 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Caroline Cooke",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/caroline-cooke-bb2054202",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gcsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4564,6 +4707,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jacquelyn Lineberry, DO",
+   "title": "Pediatrician",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ashley Litchfield, M.D",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Virginia Commonwealth University Health System Authority",
@@ -4604,6 +4758,17 @@
    "linkedin": "",
    "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Meredith Mitchell, MD",
+   "title": "Pediatrician",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/meredith-mitchell-723a6887",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4663,6 +4828,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Theodore Parks, MD",
+   "title": "Pediatrician",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Dominick Pastore, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates Pc",
@@ -4714,6 +4890,17 @@
    "linkedin": "https://www.linkedin.com/in/ankhanhpham",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Raffaele, MD",
+   "title": "Pediatrician",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/jenraf",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4879,6 +5066,17 @@
    "linkedin": "https://www.linkedin.com/in/kyle-trowbridge-97065a34",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Walters, MD",
+   "title": "Pediatrician",
+   "org": "Virginia Commonwealth University Health System Authority",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/christine-walters-bb411281",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@optioncare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5253,6 +5451,94 @@
    "linkedin": "https://www.linkedin.com/in/jenmmckinney",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ruth McDonald, MD PHD FAAP",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Ashburn",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Timothy York, D.O",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Covington",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathleen Mitchell, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "",
+   "city": "Fort Lee",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anne Howard, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Gloucester",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mac.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Kennedy, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cdimd.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Barnhart, M.D",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Roanoke",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@delta.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Kayrouz, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Roanoke",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Smith, MD",
+   "title": "Pediatrician",
+   "org": "",
+   "city": "Roanoke",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@email.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6193,17 +6479,6 @@
   },
   {
    "name": "Tisha Walter, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Pediatric Group, Pc",
-   "city": "Alexandria",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Wolf",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Pediatric Group, Pc",
    "city": "Alexandria",
@@ -7556,17 +7831,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Cline, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Anchor Healthcare, Plc",
-   "city": "Charlottesville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kara Coffey, MD",
    "title": "Pediatric Allergist & Immunologist",
    "org": "University Of Virginia Physicians Group",
@@ -8018,17 +8282,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "James Howell, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Mental Fitness Matters",
-   "city": "Charlottesville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Valentina Intagliata, M.D",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "University Of Virginia Physicians Group",
@@ -8091,17 +8344,6 @@
    "linkedin": "https://www.linkedin.com/in/meg-keeley-491b0594",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Keeling, MSN, RN, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Virginia Physicians Group",
-   "city": "Charlottesville",
-   "linkedin": "https://www.linkedin.com/in/stephanie-keeling-b58bb31a3",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8245,17 +8487,6 @@
    "linkedin": "https://www.linkedin.com/in/lisa-letzkus-87686563",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Lisk, AG-ACNP",
-   "title": "Pediatric Cardiologist",
-   "org": "University Of Virginia Physicians Group",
-   "city": "Charlottesville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9349,17 +9580,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Caroline Christian, MD",
-   "title": "Pediatrician",
-   "org": "Childrens Hospital Of The Kings Daughters Inc",
-   "city": "Chesapeake",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine Costa, MD",
    "title": "Pediatrician",
    "org": "Childrens Hospital Of The Kings Daughters Inc",
@@ -9895,17 +10115,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Lowe, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Family Care Of Chilhowie, P.C.",
-   "city": "Chilhowie",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10874,215 +11083,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Lee, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Gastroenterology Associates Of Northern Virginia, Llc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Corazon Lee, MD",
-   "title": "Pediatrician",
-   "org": "B.I.Lee,M.D.,P.C.",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Lewanda, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Russell Libby, M.D",
-   "title": "Pediatrician",
-   "org": "Virginia Pediatric Group, Ltd",
-   "city": "Fairfax",
-   "linkedin": "https://www.linkedin.com/in/russell-libby-5b0753141",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Lindsey, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Pediatric Cardiology Associates, P.C.",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patrick Mason, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Northern Virginia Endocrinologists Inc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anthony Mayen, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Pediatric Cardiology Associates, P.C.",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nancy McCarthey, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Otolaryngology Associates",
-   "city": "Fairfax",
-   "linkedin": "https://www.linkedin.com/in/nancy-mccarthey-06088678",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly McCuen, RN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Pediatric Group, Pc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patricia McDade, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Trusted Doctors Llc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Regina Milteer, MD",
-   "title": "Pediatrician",
-   "org": "Director Of Finance-County Of Fairfax Va",
-   "city": "Fairfax",
-   "linkedin": "https://www.linkedin.com/in/regina-milteer-4827626",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Davoud Mohtat, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Inova Health Care Services",
-   "city": "Fairfax",
-   "linkedin": "https://www.linkedin.com/in/davoud-mohtat-168a931a1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessie Morrin, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Trusted Doctors Llc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Morris, IBCLC",
-   "title": "Pediatrician",
-   "org": "Virginia Pediatric Group, Ltd",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heloisa Moser, MD",
-   "title": "Pediatrician",
-   "org": "Virginia Pediatric Group, Ltd",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bernadette Murphy, M.D",
-   "title": "Pediatrician",
-   "org": "Trusted Doctors Llc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Newton, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Pediatric Specialists Of Virginia LLC",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Nguyen, DO",
-   "title": "Pediatrician",
-   "org": "Trusted Doctors Llc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Nolan, CPNP,",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Pediatric Group, Pc",
-   "city": "Fairfax",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   }
