@@ -31,7 +31,7 @@ const REFRESHED = new Date(STATS.generated + 'T12:00:00Z').toLocaleDateString('e
 
 interface StateRow {
   name: string; title: string; org: string; city: string;
-  linkedin: string; email: string; phone: string; phoneType?: string;
+  linkedin: string; email: string; phone: string; phoneType?: string; practiceEmail?: string;
 }
 interface StateData {
   name: string; slug: string; file: string;
@@ -268,7 +268,7 @@ function StatePage({ meta }: { meta: (typeof STATS.states)[number] }) {
               <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 860 }}>
                 <thead>
                   <tr style={{ borderBottom: `1px solid ${HAIR}`, position: 'sticky', top: 0, background: '#fff', zIndex: 1 }}>
-                    {['Name', 'Title', 'Organization', 'City', 'Email', 'Phone (direct or practice)', ''].map((h, i) => (
+                    {['Name', 'Title', 'Organization', 'City', 'Email (personal or office)', 'Phone (direct or practice)', ''].map((h, i) => (
                       <th key={i} style={{ textAlign: 'left', padding: '14px 14px', fontSize: 11.5, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.5)' }}>{h}</th>
                     ))}
                   </tr>
@@ -280,7 +280,22 @@ function StatePage({ meta }: { meta: (typeof STATS.states)[number] }) {
                       <td style={{ padding: '11px 14px', fontSize: 13, color: 'rgba(43,42,38,0.65)' }}>{r.title}</td>
                       <td style={{ padding: '11px 14px', fontSize: 13, color: 'rgba(43,42,38,0.65)' }}>{r.org}</td>
                       <td style={{ padding: '11px 14px', fontSize: 13, color: 'rgba(43,42,38,0.65)', whiteSpace: 'nowrap' }}>{r.city}</td>
-                      <td style={{ padding: '11px 14px', fontSize: 12, color: 'rgba(43,42,38,0.6)', whiteSpace: 'nowrap', fontFamily: 'monospace' }}>{r.email || '—'}</td>
+                      <td style={{ padding: '11px 14px', whiteSpace: 'nowrap' }}>
+                        {r.email ? (
+                          <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', fontFamily: 'monospace' }}>{r.email}</span>
+                        ) : r.practiceEmail ? (
+                          <>
+                            <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', fontFamily: 'monospace' }}>{r.practiceEmail}</span>
+                            <span style={{
+                              marginLeft: 7, fontSize: 10, fontWeight: 700, letterSpacing: '0.04em',
+                              textTransform: 'uppercase', padding: '2px 7px', borderRadius: 100,
+                              color: 'rgba(43,42,38,0.55)', background: 'rgba(43,42,38,0.06)',
+                            }}>Office</span>
+                          </>
+                        ) : (
+                          <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)' }}>—</span>
+                        )}
+                      </td>
                       <td style={{ padding: '11px 14px', whiteSpace: 'nowrap' }}>
                         <span style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', fontFamily: 'monospace' }}>{r.phone || '—'}</span>
                         {r.phone && r.phoneType && (

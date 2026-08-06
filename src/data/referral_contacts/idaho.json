@@ -3,7 +3,8 @@
  "slug": "idaho",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-idaho.csv",
  "count": 409,
- "emails": 0,
+ "emails": 1,
+ "practiceEmails": 20,
  "phones": 409,
  "direct": 0,
  "roles": [
@@ -56,6 +57,10 @@
    "count": 12
   },
   {
+   "name": "St Lukes Clinic-Treasure Valley LLC",
+   "count": 11
+  },
+  {
    "name": "Alliance Medical Group, Llc",
    "count": 10
   },
@@ -66,13 +71,31 @@
   {
    "name": "Idaho Falls Pediatrics",
    "count": 6
-  },
-  {
-   "name": "Lakeside Pediatric & Adolescent Medicine, Pllc",
-   "count": 5
   }
  ],
  "rows": [
+  {
+   "name": "Charles Webb, MD",
+   "title": "Pediatrician",
+   "org": "Allergy Group Pc",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leslie Miller, MD",
+   "title": "Pediatrician",
+   "org": "Pearl Health Clinic",
+   "city": "Ammon",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
   {
    "name": "Joseph Moore, M.D",
    "title": "Pediatrician",
@@ -81,17 +104,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ron Porter, M.D",
    "title": "Pediatrician",
    "org": "Idaho Falls Pediatrics",
    "city": "Ammon",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/ron-porter-425a37249",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Scott Smith, D.O",
@@ -101,7 +126,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mitchael Steorts, M.D",
@@ -111,17 +137,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Carol Vance, M.D",
    "title": "Developmental-Behavioral Pediatrician",
    "org": "Carol Klett Vance Md, Inc.",
    "city": "Ammon",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/carol-vance-872a271b0",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeffrey Webb, DO",
@@ -131,7 +159,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gary Ullery, D.O",
+   "title": "Pediatrician",
+   "org": "Bmh INC",
+   "city": "Blackfoot",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Vaun Archibald, DO",
@@ -141,7 +181,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "James Baker, MD",
@@ -151,7 +192,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jean Bender, MD",
@@ -161,7 +203,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Elizabeth Black, MD",
@@ -171,7 +214,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alice Blake",
@@ -181,7 +225,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Justin Blaty, MD",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "Saint Alphonsus Regional Medical Center INC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "William Bourquard, MD",
@@ -191,7 +247,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Bross, M.D",
+   "title": "Pediatrician",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Christensen, MD",
@@ -201,7 +269,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Leona Church, CPNP",
@@ -211,7 +280,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mitzi Cieslak, NP",
@@ -221,17 +291,85 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Coffey, M.D",
+   "title": "Pediatrician",
+   "org": "Carepoint Emergency Medicine Kansas LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Duvall, MD",
+   "title": "Pediatrician",
+   "org": "Full Circle Health INC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexandra Egland, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Elledge, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Ellison, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Saint Alphonsus Regional Medical Center INC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
+  },
+  {
+   "name": "April Evans, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cydney Fenton, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "St Lukes Regional Medical Center",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/cydney-fenton-60785129",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Daniel Flynn, MD",
@@ -241,37 +379,41 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mindy Gaddis, MD",
    "title": "Pediatrician",
    "org": "St. Luke'S Treasure Valley Pediatrics",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/mindy-gaddis-94ab2318",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Ben Godfrey, MD",
    "title": "Pediatrician",
    "org": "St. Luke'S Treasure Valley Pediatrics",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/bengodfrey91",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Ann Guzman, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Community Health Clinics, Inc",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/ann-guzman-6657b4239",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Aimee Hastriter, DNP, CPNP",
@@ -281,7 +423,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Luna Hodges, DNP, CPNP",
@@ -291,7 +434,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jenna Hogan, M.D",
+   "title": "Neonatologist",
+   "org": "Saint Alphonsus Regional Medical Center INC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Randall Jenkins, MD",
@@ -301,17 +456,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christie Julian, MD",
    "title": "Pediatrician",
    "org": "Saint Alphonsus Physician Services Inc",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/christie-julian-16016b29",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "J Leavell, MD",
@@ -321,7 +478,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ryan Lindsay, DO",
@@ -331,7 +489,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gordon Mack, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nathan Meeker, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Evan Melville, DO",
@@ -341,7 +522,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jill Moughamian, NP",
@@ -351,7 +533,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alisa Ortega, NP",
@@ -361,7 +544,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Pacheco, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Thomas Patterson, M.D",
@@ -371,17 +566,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cathy Sandstrom, MD",
    "title": "Pediatrician",
    "org": "The Pediatric And Adolescent Center, Inc.",
    "city": "Boise",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/cathy-sandstrom-62a22024",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jayson Smith, N.P",
@@ -391,7 +588,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sean Stout, MD",
@@ -401,7 +599,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lisa Taylor, MD",
@@ -411,7 +610,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Henry Thompson, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Anja Tjaden, MD",
@@ -421,7 +632,41 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Trapp, M.D",
+   "title": "Pediatrician",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Urban, MD",
+   "title": "Pediatrician",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kaitlyn Voelz, MD",
+   "title": "Pediatrician",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Laura Walawender, M.D",
@@ -431,7 +676,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Hilary Warren, MD",
@@ -441,17 +687,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Charles Webb, MD",
-   "title": "Pediatrician",
-   "org": "Allergy Group Pc",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Womack, M.D",
@@ -461,7 +698,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Hailey Rose, DO",
@@ -471,7 +709,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katie Thompson, NP",
@@ -481,17 +720,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Babbel, DO",
    "title": "Pediatrician",
    "org": "Saint Alphonsus Regional Medical Center Inc",
    "city": "Caldwell",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/david-babbel-547730112",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Timothy Borup, MD",
@@ -501,7 +742,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Matthew Brown, MD",
@@ -511,7 +753,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Kaysea Studioso-Hatch, DO",
@@ -521,7 +764,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
+  },
+  {
+   "name": "Kandralyn Steele, PPCNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sterling Provider Group",
+   "city": "Chubbuck",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alexandra Beattie, NP",
@@ -531,17 +786,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brian Hickok, MD",
    "title": "Pediatrician",
    "org": "Lakeside Pediatric & Adolescent Medicine, Pllc",
    "city": "Coeur D Alene",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/brian-hickok-4288907a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jonathan Jerkins, MD",
@@ -551,7 +808,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Yendi Labelle, APRN",
@@ -561,7 +819,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Magee, M.D",
+   "title": "Pediatrician",
+   "org": "Public Hospital District No 4 King County Washington",
+   "city": "Coeur D Alene",
+   "linkedin": "https://www.linkedin.com/in/mageemj",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Deborah Magnuson, APRN",
@@ -571,7 +841,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Beth Martin, MD",
@@ -581,7 +852,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeremy Nicolarsen, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Providence Health And Services Washington",
+   "city": "Coeur D Alene",
+   "linkedin": "https://www.linkedin.com/in/jeremy-nicolarsen-084a5069",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jean Prince, MD",
@@ -591,7 +874,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christy Riley, MD",
@@ -601,7 +885,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeffrey Shirts, MD",
@@ -611,7 +896,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jordan Taylor, PNP",
@@ -621,7 +907,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ronda Westcott, M.D",
@@ -631,7 +918,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kirandeep Gill, D.O",
+   "title": "Pediatrician",
+   "org": "Providence Health And Services Washington",
+   "city": "Coeur D'Alene",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nicholas Kokx, MD",
@@ -641,7 +940,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jessica Maddox, M.D",
@@ -651,7 +951,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Hailey Baisch, MD",
@@ -661,7 +962,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Vanessa Bizimana, NP",
@@ -671,7 +973,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katelyn Brigham",
@@ -681,7 +984,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Nathan Hirsch, MD",
@@ -691,7 +995,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
+  },
+  {
+   "name": "Nicholas Lewis, MD",
+   "title": "Pediatrician",
+   "org": "St Lukes Clinic-Treasure Valley LLC",
+   "city": "Eagle",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alan Miller, M.D",
@@ -701,17 +1017,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amanda Stinger, M.D., M.P.H",
    "title": "Pediatrician",
    "org": "St. Luke'S Treasure Valley Pediatrics",
    "city": "Eagle",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/amanda-stinger-61700414a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Noreen Womack, MD",
@@ -721,7 +1039,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@eocco.com"
   },
   {
    "name": "Brian Wong",
@@ -731,7 +1050,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Angella Zieba, MD",
@@ -741,7 +1061,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Abby Davis",
@@ -751,7 +1072,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michelle Devoe, D.O",
@@ -761,7 +1083,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Theodore Gross",
@@ -771,7 +1094,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kelly Anderson, MD",
@@ -781,7 +1105,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeffrey Aughney, D.O",
@@ -791,7 +1116,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Heather Bagley, N.P",
@@ -801,7 +1127,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amy Chavez, APRN CPNP",
@@ -811,7 +1138,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brad Edwards, DO",
@@ -821,7 +1149,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Colette Egbert, FNP-C",
@@ -831,7 +1160,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "-\u2022\u2022\u2022\u2022\u2022\u2022@bebee.com"
   },
   {
    "name": "George Groberg, MD",
@@ -841,17 +1171,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bradford Hatch, MD",
    "title": "Pediatrician",
    "org": "Medical Center For Children & Adolescents, Pa",
    "city": "Idaho Falls",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/bradford-hatch-185a40204",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Shannon Jenkins, DO",
@@ -861,7 +1193,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kristie Karroum, FNP-C",
@@ -871,7 +1204,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Diane Nielsen, PA C",
@@ -881,7 +1215,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eric Olson, MD",
@@ -891,7 +1226,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Pankau, MD",
@@ -901,7 +1237,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Colby Pearson, DO",
@@ -911,7 +1248,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Pettit, MD",
@@ -921,7 +1259,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kevin Prier",
@@ -931,27 +1270,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nephi Redd, D.O",
    "title": "Pediatrician",
    "org": "Just 4 Kids Health Llc",
    "city": "Idaho Falls",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/nephi-redd-88ba7a92",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "-\u2022\u2022\u2022\u2022\u2022\u2022@bebee.com"
   },
   {
    "name": "Joshua Smith, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Rocky Mountain Diabetes And Osteoporosis Center, Pa",
    "city": "Idaho Falls",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/joshuasmith375",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jill Veber, MD",
@@ -961,7 +1303,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lindsay Venn, R.D.L.D., PA-C",
@@ -971,7 +1314,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "-\u2022\u2022\u2022\u2022\u2022\u2022@bebee.com"
   },
   {
    "name": "Drue Winder, FNP",
@@ -981,7 +1325,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": "-\u2022\u2022\u2022\u2022\u2022\u2022@bebee.com"
+  },
+  {
+   "name": "Theodore Krisher, MD",
+   "title": "Pediatrician",
+   "org": "St Joseph Hospital LLC",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Roth, M.D",
+   "title": "Pediatrician",
+   "org": "St Joseph Hospital LLC",
+   "city": "Lewiston",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Chelsea Anderson, APRN-CPNP",
@@ -991,7 +1358,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Angela Beauchaine, MD",
@@ -1001,17 +1369,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brian Birch, MD",
    "title": "Pediatrician",
    "org": "Treasure Valley Childrens Clinic, Pc",
    "city": "Meridian",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/brian-birch-7304846b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Weslie Cooley, CPNP-PC",
@@ -1021,7 +1391,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kimberly Ferguison, MD-PEDIATRICS",
@@ -1031,7 +1402,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amy Francis, D.O",
@@ -1041,7 +1413,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Britney Holden, CPNP-PC",
@@ -1051,7 +1424,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Olivia Holmes, PNP",
@@ -1061,7 +1435,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Heather Johnson, NP",
@@ -1071,7 +1446,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Susan Kim, MD",
@@ -1081,7 +1457,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Byron Knowles, MD. PEDIATRICS",
@@ -1091,7 +1468,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Monica McCullough, CPNP",
@@ -1101,7 +1479,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kristina Miles, DO",
@@ -1111,7 +1490,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ann Miller, DO",
@@ -1121,7 +1501,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Peterman, MD",
@@ -1131,7 +1512,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Anne Riffle, M.D",
@@ -1141,7 +1523,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Steven Smith, M.D",
@@ -1151,7 +1534,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sara Strasser, PNP",
@@ -1161,7 +1545,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brandon Taylor, D.O",
@@ -1171,7 +1556,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "James Wilson, MD",
@@ -1181,7 +1567,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Summer Day, MD",
@@ -1191,7 +1578,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Hall, DO",
+   "title": "Pediatrician",
+   "org": "Bonner General Hospital INC",
+   "city": "Moscow",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jessica Strong, MD",
@@ -1201,7 +1600,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bradley Phillips",
@@ -1211,7 +1611,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christopher Bryant, D.O",
@@ -1221,7 +1622,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Freeman, MEDICAL DOCTOR-MD",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center INC",
+   "city": "Nampa",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Karen Godard, RNC, CPNP",
@@ -1231,7 +1644,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Juliet Lener, M.D",
@@ -1241,7 +1655,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Preston Omer, M.D",
+   "title": "Pediatrician",
+   "org": "Saint Alphonsus Regional Medical Center INC",
+   "city": "Nampa",
+   "linkedin": "https://www.linkedin.com/in/preston-omer-4b4545122",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
   {
    "name": "Jason Slade, M.D",
@@ -1251,7 +1677,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alicia Suski, M.D",
@@ -1261,7 +1688,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Maximilian Veltman, CPNP",
@@ -1271,7 +1699,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Roger Boe, M.D",
@@ -1281,7 +1710,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gregory Kostur, M.D",
@@ -1291,7 +1721,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Larsen, M.D",
@@ -1301,7 +1732,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alison McInturff, M.D",
@@ -1311,7 +1743,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joshua Pulliam, PNP-PC",
@@ -1321,7 +1754,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Caroline Sassetti-Hryczyk, CPNP",
@@ -1331,7 +1765,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Matthew Stelzer, MD",
@@ -1341,17 +1776,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christian Yost, D.O",
    "title": "Adolescent Medicine Physician",
    "org": "Yost And Yost Pediatrics",
    "city": "Pocatello",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/christianyost",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Hancock, MD",
+   "title": "Pediatrician",
+   "org": "Mountain View Hospital LLC",
+   "city": "Rexburg",
+   "linkedin": "",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Elias Lines, DO",
@@ -1361,7 +1809,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Hans Redd, MD",
@@ -1371,7 +1820,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cameron Stephenson, NP",
@@ -1381,7 +1831,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jacob Nelson, DO",
@@ -1391,7 +1842,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "George Deland, MD",
@@ -1401,27 +1853,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Debra Freund, MS RN CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Boundary Regional Community Health Center, Inc.",
    "city": "Sandpoint",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/debra-freund-724a2834a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Andrew Vizcarra, M.D",
    "title": "Pediatrician",
    "org": "Boundary Regional Community Health Center, Inc.",
    "city": "Sandpoint",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/andrew-vizcarra-phd-278b333",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nicole Bartlett, DNP, AGACNP-BC, PNP",
@@ -1431,7 +1886,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kasey Cook, DO",
@@ -1441,7 +1897,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christopher Eyre, MD",
@@ -1451,7 +1908,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jared Hansen, M.D",
@@ -1461,27 +1919,30 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Heidi Lewis, DNP, FNP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Elite Medicine Pc",
    "city": "Twin Falls",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/heidi-lewis-91a1343a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nancy Mann, M.D",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Frontier Pediatric Partners Pllc",
    "city": "Twin Falls",
-   "linkedin": "",
+   "linkedin": "https://www.linkedin.com/in/nancy-mann-bb912415",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ronald Miller, M.D",
@@ -1491,7 +1952,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jane Scott, M.D",
@@ -1501,17 +1963,19 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
-   "name": "Leslie Miller, MD",
+   "name": "Shayne Stokes, MD",
    "title": "Pediatrician",
-   "org": "",
-   "city": "Ammon",
+   "org": "Asthma And Allergy Of Idaho PLLC",
+   "city": "Twin Falls",
    "linkedin": "",
    "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Julene Parson",
@@ -1521,17 +1985,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Gary Ullery, D.O",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Blackfoot",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alexandria Ahlm, DO",
@@ -1541,7 +1996,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Diana Alexander, MD",
@@ -1551,7 +2007,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Naya Antink, MD",
@@ -1561,7 +2018,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mehrdad Asadifar, M.D",
@@ -1571,7 +2029,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jaeger Ashton, NP",
@@ -1581,7 +2040,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kholtyn Barney, MD",
@@ -1591,7 +2051,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Battista, MD",
@@ -1601,7 +2062,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Rachel Bentley, NP",
@@ -1611,7 +2073,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bryanna Berish, PNP",
@@ -1621,7 +2084,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Larry Bishop, MD",
@@ -1631,7 +2095,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bradley Bishop, MD",
@@ -1641,17 +2106,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Justin Blaty, MD",
-   "title": "Pediatric Sleep Medicine Physician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jill Boatman, NP",
@@ -1661,7 +2117,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "George Booth, MD",
@@ -1671,7 +2128,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Velma Bradford, M.D",
@@ -1681,17 +2139,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Gregory Bross, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Perry Brown, M.D",
@@ -1701,7 +2150,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Taylor Brown",
@@ -1711,7 +2161,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katherine Buhikire, APRN",
@@ -1721,7 +2172,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kaitlin Burke, M.D",
@@ -1731,7 +2183,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Tyler Burpee, MD",
@@ -1741,7 +2194,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Holly Burrell, DO",
@@ -1751,7 +2205,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Asma Butt, MD",
@@ -1761,7 +2216,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nicolas Camilo, MD",
@@ -1771,7 +2227,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Heather Carew, M.D",
@@ -1781,7 +2238,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Dayna Carlson, MD",
@@ -1791,7 +2249,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christian Casteel, MD",
@@ -1801,7 +2260,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eugenia Chang, MD",
@@ -1811,7 +2271,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Stephanie Ciesla, PNP",
@@ -1821,7 +2282,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ronald Coen, MD",
@@ -1831,17 +2293,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Charles Coffey, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Collier, M.D",
@@ -1851,7 +2304,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Charlene Crichton, MD",
@@ -1861,7 +2315,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Derrick Dauplaise, MD",
@@ -1871,7 +2326,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Digeronimo, MD",
@@ -1881,17 +2337,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Jessica Duvall, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cynthia Edstrom, MD",
@@ -1901,37 +2348,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Alexandra Egland, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Rachel Elledge, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Jason Ellison, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Frederick Emge, MD",
@@ -1941,17 +2359,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "April Evans, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Allison Gauthier, MD",
@@ -1961,7 +2370,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Keren Genstler",
@@ -1971,7 +2381,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Simi George, MBBCH",
@@ -1981,7 +2392,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Philip Gilliam, CPNP",
@@ -1991,7 +2403,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kevin Grant, M.D",
@@ -2001,7 +2414,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Diana Green, DO",
@@ -2011,7 +2425,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nathan Hannay, DO",
@@ -2021,7 +2436,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Matthew Hansen, MD",
@@ -2031,7 +2447,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nick Harper, MD",
@@ -2041,7 +2458,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Shawn Hemenway, MD",
@@ -2051,7 +2469,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Margaret Henbest, NP",
@@ -2061,7 +2480,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ralph Higer, MD",
@@ -2071,7 +2491,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joseph Hilinski, MD",
@@ -2081,7 +2502,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Chad Hilmo, OTD, OTR/L",
@@ -2091,7 +2513,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jerome Hirschfeld, MD",
@@ -2101,17 +2524,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Jenna Hogan, M.D",
-   "title": "Neonatologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nancy Hong, M.D",
@@ -2121,7 +2535,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Jambura, MD",
@@ -2131,7 +2546,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gregory Janos, MD",
@@ -2141,7 +2557,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Paul Jansen, MD",
@@ -2151,7 +2568,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Josie Joseph, DO",
@@ -2161,7 +2579,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kimberly Judd, MD",
@@ -2171,7 +2590,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Kiehl, MD",
@@ -2181,7 +2601,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Julie Kikuchi, M.D",
@@ -2191,7 +2612,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jennifer King, MD",
@@ -2201,7 +2623,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kimberly King, CPNP-PC",
@@ -2211,7 +2634,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Elizabeth Kleweno, M.D",
@@ -2221,7 +2645,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sivani Kuruvada, MD",
@@ -2231,7 +2656,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lisa Labor, MD",
@@ -2241,7 +2667,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alicia Lachiondo, MD",
@@ -2251,7 +2678,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Zakary Landers, DO",
@@ -2261,7 +2689,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Stewart Lawrence, M.D",
@@ -2271,7 +2700,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Anthony Liccini",
@@ -2281,7 +2711,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kara Lilya, FNP",
@@ -2291,7 +2722,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lynn Luginbuhl, MD",
@@ -2301,7 +2733,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Ingrid Lundgren, MD",
@@ -2311,17 +2744,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Gordon Mack, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Savarra Mantzor, M.D",
@@ -2331,7 +2755,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Stephanie Marria, BSN",
@@ -2341,7 +2766,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Megan Marstaeller, MD",
@@ -2351,7 +2777,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cali McAllister, MD",
@@ -2361,7 +2788,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mark McConnell, MD",
@@ -2371,17 +2799,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Nathan Meeker, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Taylor Mello",
@@ -2391,7 +2810,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jennifer Merchant, MD",
@@ -2401,7 +2821,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amber Messier-Gieri, MD",
@@ -2411,7 +2832,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Erik Meyers, MD",
@@ -2421,7 +2843,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mikelle Mikesell, DO",
@@ -2431,7 +2854,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Yukiko Miura, M.D",
@@ -2441,7 +2865,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kelsey Moe, PCP-NP",
@@ -2451,7 +2876,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Meghan Murphy, DO",
@@ -2461,7 +2887,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Fizza Naqvi, MD",
@@ -2471,7 +2898,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Declan O'Riordan, MD",
@@ -2481,17 +2909,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Martha Pacheco, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Benjamin Piscette, NP",
@@ -2501,7 +2920,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Erin Powell, M.D",
@@ -2511,7 +2931,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Richard Rainey, MD",
@@ -2521,7 +2942,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Thomas Rand, MD",
@@ -2531,7 +2953,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "James Remmel, M.D",
@@ -2541,7 +2964,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joseph Ronquillo, DNP",
@@ -2551,7 +2975,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Linda Schaffer, MD",
@@ -2561,7 +2986,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Sexton, MD",
@@ -2571,7 +2997,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kelly Showalter, MD",
@@ -2581,7 +3008,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cass Smith, MD",
@@ -2591,7 +3019,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Andrew Smith, DO",
@@ -2601,7 +3030,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Scott Snyder, MD",
@@ -2611,7 +3041,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katherine Stevens, MD",
@@ -2621,7 +3052,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Faith Stirm, MD",
@@ -2631,7 +3063,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gracie Strubel, DO",
@@ -2641,7 +3074,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jenilea Thomas, PNP",
@@ -2651,17 +3085,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Henry Thompson, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nathan Thornton, MD",
@@ -2671,7 +3096,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sean Timpane, MD",
@@ -2681,7 +3107,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Benjamin Tippets, D.O",
@@ -2691,17 +3118,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Gregory Trapp, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Shana Tubach, MD",
@@ -2711,7 +3129,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Ullery, MD",
@@ -2721,7 +3140,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mark Uranga, MD",
@@ -2731,17 +3151,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Mark Urban, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "James Vanlooy, MD",
@@ -2751,7 +3162,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Annis Vargas, M.D",
@@ -2761,7 +3173,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Meera Varman, M.D",
@@ -2771,7 +3184,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bonita Vestal, M.D",
@@ -2781,17 +3195,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Kaitlyn Voelz, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eloisa Walker, MD",
@@ -2801,7 +3206,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Aaron Weiss, MD",
@@ -2811,7 +3217,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lindsey Wendel, CPNP-PC",
@@ -2821,7 +3228,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Marc Zafferani, D.O",
@@ -2831,7 +3239,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Micalena Perkins, MSN, APRN, CPNP",
@@ -2841,7 +3250,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Crystal Belcourt, CPNP-PC",
@@ -2851,7 +3261,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jee Hur, MD",
@@ -2861,7 +3272,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Merle Keller, MD",
@@ -2871,7 +3283,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amanda Lee",
@@ -2881,7 +3294,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Natasha Miller, MD",
@@ -2891,7 +3305,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Rachael Smith, PNP-PC",
@@ -2901,17 +3316,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Kandralyn Steele, PPCNP-BC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "",
-   "city": "Chubbuck",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Pamela Anain, CPNP",
@@ -2921,7 +3327,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kendra Black-Smith, MD",
@@ -2931,7 +3338,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nichole Buynak, DO",
@@ -2941,7 +3349,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Carl, M.D",
@@ -2951,7 +3360,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sarah Claussen, D.O",
@@ -2961,7 +3371,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Duane Craddock, MD",
@@ -2971,7 +3382,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Bryan Furr, D.O",
@@ -2981,7 +3393,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Timothy Gay, MD",
@@ -2991,7 +3404,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brook Lang, M.D",
@@ -3001,17 +3415,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Michael Magee, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Coeur D Alene",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lisa McGill-Vargas, M.D",
@@ -3021,7 +3426,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nicola McLachlan, PNP",
@@ -3031,7 +3437,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eric Mosqueda, M.D",
@@ -3041,7 +3448,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Terence Neff, MD",
@@ -3051,17 +3459,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Jeremy Nicolarsen, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "",
-   "city": "Coeur D Alene",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeanna Padilla, CPNP-PC",
@@ -3071,7 +3470,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Hinah Parker",
@@ -3081,7 +3481,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jamie Price, MD",
@@ -3091,7 +3492,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Thomas Rau, MD",
@@ -3101,7 +3503,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alicia Sauter, MD",
@@ -3111,7 +3514,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cheri Savage",
@@ -3121,7 +3525,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mary Jo Shaw, MD",
@@ -3131,7 +3536,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alicia Spiess, ARNP",
@@ -3141,7 +3547,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Timothy Ulrich, MD",
@@ -3151,7 +3558,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Randi Edwards, MD",
@@ -3161,7 +3569,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Emmalee Gerstenberger, CNP",
@@ -3171,17 +3580,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Kirandeep Gill, D.O",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Coeur D'Alene",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Matthew Parker, MD",
@@ -3191,7 +3591,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Charlotte Weeda, MD",
@@ -3201,7 +3602,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Missy Sturk, M.S., OTR/L",
@@ -3211,7 +3613,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Aaron Dykstra, NP",
@@ -3221,7 +3624,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Daniela Grigore, MD",
@@ -3231,7 +3635,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Carrie Humphrey, MD",
@@ -3241,17 +3646,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Nicholas Lewis, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Eagle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Laura McDermott, M.D",
@@ -3261,7 +3657,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kathleen Marshall, CPNP",
@@ -3271,7 +3668,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lindsay Westerman, APRN, CPNP-AC/PC",
@@ -3281,7 +3679,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Barton Adrian, M.D",
@@ -3291,7 +3690,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Caitlin Hopeman, MD, MBA",
@@ -3301,7 +3701,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katherine Quayle",
@@ -3311,7 +3712,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Cheatham, MD",
@@ -3321,7 +3723,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Steven Colson, M.D",
@@ -3331,7 +3734,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Aaron Gardner, M.D",
@@ -3341,7 +3745,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Stephen Meyers, D.O",
@@ -3351,7 +3756,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jordan Simpson, DO",
@@ -3361,7 +3767,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Amber Wright, M.D",
@@ -3371,7 +3778,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Samuel Zuckerman, M.D",
@@ -3381,7 +3789,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gary Hoffman, M.D",
@@ -3391,7 +3800,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Margaret Fry Lawson, C-PNP",
@@ -3401,7 +3811,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Craig Ambroson, MD",
@@ -3411,7 +3822,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Natale Carasali, MD",
@@ -3421,17 +3833,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Theodore Krisher, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Lewiston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Darby Lynch, MD",
@@ -3441,7 +3844,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Parkey, MD",
@@ -3451,17 +3855,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Angela Roth, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Lewiston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gregory Schultz, MD",
@@ -3471,7 +3866,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Tysen Weber, MD",
@@ -3481,7 +3877,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Adams, MD",
@@ -3491,7 +3888,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Melissa Agoudemos, M.D",
@@ -3501,7 +3899,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joshua Albright",
@@ -3511,7 +3910,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Lisa Barker, MD",
@@ -3521,7 +3921,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Alyssa Barr, NP",
@@ -3531,7 +3932,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Seth Branahl, M.D",
@@ -3541,7 +3943,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Bressler, DO",
@@ -3551,7 +3954,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katie Copeland, M.D",
@@ -3561,7 +3965,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Charles Criddle, D.O",
@@ -3571,7 +3976,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Laura Geiger",
@@ -3581,7 +3987,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Hanks, DO",
@@ -3591,7 +3998,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Matthew Joyce, MD",
@@ -3601,7 +4009,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Elsa Lee, MD",
@@ -3611,7 +4020,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Nancy Miller, NP",
@@ -3621,7 +4031,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Khristine Miller, MD",
@@ -3631,7 +4042,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Andrea Prasch, MD",
@@ -3641,7 +4053,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eric Roy, MD",
@@ -3651,7 +4064,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Marisue Susman, NP",
@@ -3661,7 +4075,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kailyn Wiersma",
@@ -3671,17 +4086,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Sarah Hall, DO",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Moscow",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Richard Aguilar, M.D",
@@ -3691,7 +4097,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Aldous, M.D",
@@ -3701,7 +4108,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mario Brus, MD",
@@ -3711,17 +4119,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "John Freeman, MEDICAL DOCTOR-MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Nampa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Thomas Hammer, MD",
@@ -3731,7 +4130,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeannette Jain, M.D",
@@ -3741,7 +4141,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brian Liddell, D.O",
@@ -3751,7 +4152,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Christopher Lyons",
@@ -3761,7 +4163,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Leeanne Mehling, C-NP",
@@ -3771,17 +4174,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Preston Omer, M.D",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Nampa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joseph Papiez, MD",
@@ -3791,7 +4185,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Deanna Pitman, D.O",
@@ -3801,7 +4196,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Sean Stringham, MD",
@@ -3811,7 +4207,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Michael Wheaton, MD",
@@ -3821,7 +4218,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Joseph Wilbanks, MD",
@@ -3831,7 +4229,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Marlene Corriere-Bransky, MD",
@@ -3841,7 +4240,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Denton, M.D",
@@ -3851,7 +4251,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Laura Duty, M.D",
@@ -3861,7 +4262,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Brian Fulks, MD",
@@ -3871,7 +4273,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Colby Kearl, MD",
@@ -3881,7 +4284,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Don McInturff, M.D",
@@ -3891,7 +4295,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Matthew Murdoch, M.D",
@@ -3901,7 +4306,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Cindy Parsons, M.D",
@@ -3911,7 +4317,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Shaun Summerill, M.D",
@@ -3921,7 +4328,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Andrea Swenson",
@@ -3931,7 +4339,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gentry Yost, MD",
@@ -3941,17 +4350,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Jeffrey Hancock, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Rexburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jason Hymas, M.D",
@@ -3961,7 +4361,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Robert Lofgran, M.D",
@@ -3971,7 +4372,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gary Sena, PA-C",
@@ -3981,7 +4383,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Katherine Magee, MD",
@@ -3991,7 +4394,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Seaman, MD",
@@ -4001,7 +4405,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Shannon Seckel, DO",
@@ -4011,7 +4416,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Harry Vanderwal, MD",
@@ -4021,7 +4427,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Tara Vizcarra, M.D",
@@ -4031,7 +4438,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "David Fischel, M.D",
@@ -4041,7 +4449,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Eric Allen, MD",
@@ -4051,7 +4460,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kimberly Hartrick Buechle, CPNP-PC",
@@ -4061,7 +4471,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Gregory Jones, M.D",
@@ -4071,7 +4482,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mohamed Khalifa",
@@ -4081,7 +4493,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Austin Kline, M.D",
@@ -4091,7 +4504,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Mitchell Moffitt, M.D",
@@ -4101,7 +4515,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Andrew Monson, D.O",
@@ -4111,7 +4526,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jeffrey Mulert, MD",
@@ -4121,7 +4537,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Kathryn Reese, M.D",
@@ -4131,7 +4548,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "Jennifer Salame, M.D",
@@ -4141,17 +4559,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice"
-  },
-  {
-   "name": "Shayne Stokes, MD",
-   "title": "Pediatrician",
-   "org": "",
-   "city": "Twin Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   },
   {
    "name": "John Trotter, M.D",
@@ -4161,7 +4570,8 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice"
+   "phoneType": "Practice",
+   "practiceEmail": ""
   }
  ]
 }
