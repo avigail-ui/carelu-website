@@ -1,0 +1,1218 @@
+{
+ "name": "Arizona",
+ "slug": "arizona",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-arizona.csv",
+ "count": 126,
+ "emails": 38,
+ "phones": 79,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 80
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 17
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 16
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 10
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 3
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Phoenix",
+   "count": 40
+  },
+  {
+   "name": "Tucson",
+   "count": 18
+  },
+  {
+   "name": "Greater Phoenix Area",
+   "count": 16
+  },
+  {
+   "name": "Gilbert",
+   "count": 8
+  },
+  {
+   "name": "Scottsdale",
+   "count": 7
+  },
+  {
+   "name": "Tempe",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Phoenix Children's",
+   "count": 24
+  },
+  {
+   "name": "Banner Health",
+   "count": 13
+  },
+  {
+   "name": "Mountain Park Health Center",
+   "count": 6
+  },
+  {
+   "name": "Gila River Health Care",
+   "count": 5
+  },
+  {
+   "name": "Indian Health Service",
+   "count": 5
+  },
+  {
+   "name": "Pediatric Associates Family of Companies",
+   "count": 4
+  }
+ ],
+ "rows": [
+  {
+   "name": "Leslie Bosch, PhD",
+   "title": "Developmental Psychologist, PCC, CLC, NBC-HWC",
+   "org": "Bosch Integrative Wellness",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/leslie-bosch-phd",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@boschintegrativewellness.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Jacob Shalkevich",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/jacob-shalkevich",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Zarren Hattery",
+   "title": "Autism Behavioral Analyst",
+   "org": "Autism Behavior Services, Inc.",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/zarren-hattery-082549272",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Uriel Casta\u00f1eda, MD",
+   "title": "Pediatrician",
+   "org": "Gila River Health Care",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/uriel-casta%c3%b1eda-md-bb66088",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Sali Loughery (Avades)",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/saliavades",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Yolanda Estrada MAMFT, CCTP, CFTP,",
+   "title": "Outpatient Family and Child Therapist/Clinician",
+   "org": "Touchstone Health Services",
+   "city": "Glendale",
+   "linkedin": "https://www.linkedin.com/in/yestrada",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Vinny Diano",
+   "title": "RBT (ABA) Registered Behavior Technician (Applied Behavior Analysis - Autism Spectrum Therapy)",
+   "org": "Hopebridge",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/vindiano",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Daniel Driscoll PhD/MD MSc FAAP",
+   "title": "Pediatrician",
+   "org": "Chiricahua Community Health Centers, Inc.",
+   "city": "Bisbee",
+   "linkedin": "https://www.linkedin.com/in/danieldriscollphdmd",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@cchci.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Mandy Oliden",
+   "title": "General Pediatrician",
+   "org": "St. Joseph's Hospital and Medical Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/mandy-oliden-5ba60113a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Gizel A Cazares",
+   "title": "Board Certified Autism Technician",
+   "org": "LEARN Behavioral",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/gizelcazares",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Gary Kirkilas",
+   "title": "General Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/gary-kirkilas-9a2b68234",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Samantha L. Shear, D.O.",
+   "title": "Pediatric Resident",
+   "org": "Nicklaus Children's Health System",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/samantha-l-shear1894",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Luc\u00eda Ferreras-Cox, MD, IBCLC",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/luc%c3%ada-ferreras-cox-md-ibclc",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Ryan Hardesty",
+   "title": "Family Centered Autism Program Therapist",
+   "org": "TouchStone Behavioral Health Clinic",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/ryan-hardesty-76876bb6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Sowjanya Ravi",
+   "title": "Board Certified Autism Technician",
+   "org": "Center for Autism and Related Disorders (CARD)",
+   "city": "Chandler",
+   "linkedin": "https://www.linkedin.com/in/sowjanya-ravi-20a839228",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cjay Carvalho",
+   "title": "Board Certified Autism Technician",
+   "org": "Life Skills Autism Academy",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/cjay-carvalho-55271b207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Cooper VandeMerwe",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/cooper-vandemerwe-2b2406109",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Alana Horais, DO, MPH, FAAP",
+   "title": "Pediatrician",
+   "org": "Phoenix Indian Medical Center",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/alanahorais",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Luz Mu\u00f1oz",
+   "title": "Care Coordinator, Southwest Autism Center of Excellence",
+   "org": "Southwest Behavioral & Health Services",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/luz-mu\u00f1oz-857480192",
+   "email": "l\u2022\u2022\u2022@sbhservices.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Mariah Mthembu",
+   "title": "Pediatric Resident",
+   "org": "Diamond Children's",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/mariah-mthembu-88b087b6",
+   "email": "m\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Saisho Mangla",
+   "title": "General Pediatrician",
+   "org": "Banner Health",
+   "city": "Chandler",
+   "linkedin": "https://www.linkedin.com/in/saisho-mangla-969913100",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Naomi Pomerantz",
+   "title": "Pediatric Resident",
+   "org": "Banner Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/naomi-pomerantz-1aa98a15b",
+   "email": "n\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Aarthi Kasilingam",
+   "title": "Primary Care Pediatrician",
+   "org": "Desert Valley Pediatrics, LTD",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/aarthi-kasilingam-22196b3a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@dvpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Sumeet Gill",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/sumeet-gill-084049211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Shraddha Krishnan",
+   "title": "Child Therapist",
+   "org": "Jewish Family & Children's Service of Arizona",
+   "city": "Chandler",
+   "linkedin": "https://www.linkedin.com/in/shraddha-krishnan-047944173",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jfcsaz.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Joshua Ritzema",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/joshua-ritzema-85736b119",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Maryah Hoeft",
+   "title": "Child Autism Therapist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/maryah-hoeft-032a8a231",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Camille Mero",
+   "title": "Pediatric Resident",
+   "org": "LifeBridge Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/camille-mero-19b9b0144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "David Gross",
+   "title": "Pediatrician",
+   "org": "Gila River Health Care",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/david-gross-74033715",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@grhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Monica Schlitt",
+   "title": "General Pediatrician",
+   "org": "Banner Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/monica-schlitt-783065ba",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Kathryn Wickersham",
+   "title": "Operations Director [Life Skills Autism Academy]",
+   "org": "Centria Autism",
+   "city": "Glendale",
+   "linkedin": "https://www.linkedin.com/in/kathryn-wickersham-a48230182",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@centriahealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Aaron Weisman",
+   "title": "ABA Therapist - RBT Southwest Autism Center of Excellence",
+   "org": "Southwest Behavioral & Health Services",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/aaron-weisman-715892158",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@sbhservices.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "John Sarmiento",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Peoria",
+   "linkedin": "https://www.linkedin.com/in/john-sarmiento-2036458",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Celia Alvarez-Reeder",
+   "title": "Pediatric Physician Assistant",
+   "org": "Mountain Park Health Center",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/celia-reeder-899381130",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Harold Magalnick",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/harold-magalnick-b310493b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Elizabeth Rinaldo",
+   "title": "Family Centered Autism Program Coordinator",
+   "org": "Touchstone Health Services",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-rinaldo-713aa782",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Lucia Gonzalez-Llanos",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/lucia-gonzalez-llanos-87b360232",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Barbora Hladek",
+   "title": "Program Manager, Relationship Based Autism Center",
+   "org": "Child & Family Support Services, Inc",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/barbora-hladek-028900b1",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@cfss.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Juanita (IHS/NAV) Young",
+   "title": "Mental Health Child Therapist",
+   "org": "Indian Health Service",
+   "city": "Kayenta",
+   "linkedin": "https://www.linkedin.com/in/juanita-ihs-nav-young-50359113",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Aaron Gomez  MD FAAP",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/aaron-gomez-md-faap-b6b99465",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "alice arviso",
+   "title": "child therapist",
+   "org": "Indian Health Service",
+   "city": "Chinle",
+   "linkedin": "https://www.linkedin.com/in/alice-arviso-21380b69",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Wendy Pedigo",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/wendy-pedigo-293152a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Maristela Nabong-Nillas",
+   "title": "Medical Director/ Pediatrician",
+   "org": "Adelante Healthcare",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/maristela-nabong-nillas-3479b0205",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Courtney Johnson",
+   "title": "pediatrician",
+   "org": "Banner Health",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/courtney-johnson-24b373130",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Margaret Ray",
+   "title": "Pediatrician",
+   "org": "Tuba City Regional Health Care Corporation (TCRHCC)",
+   "city": "Tuba City",
+   "linkedin": "https://www.linkedin.com/in/margaret-ray-a67b66345",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Joseph Werther",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/joseph-werther-b08b54135",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Tiffany Stangel",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/tiffany-stangel-30537222b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Kamala Vallabhaneni",
+   "title": "Pediatrician",
+   "org": "District Medical Group",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/kamala-vallabhaneni-7b082791",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Brandon Buhring",
+   "title": "Child therapist",
+   "org": "Zrpath Behavioral Health Services",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/brandon-buhring-9b1420282",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Carlotta Huff, Trauma Therapy,Grief Recovery Specialist",
+   "title": "Child therapist",
+   "org": "Zrpath Behavioral Health Services",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/carlotta-huff-trauma-therapy-grief-recovery-specialist-6b79b363",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Ellen Giordano",
+   "title": "Pediatrician",
+   "org": "Adelante Healthcare",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/ellen-giordano-68383ab9",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@adelantehealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Priya Vannarath",
+   "title": "Pediatrician, MD, FAAP",
+   "org": "Mountain Park Health Center",
+   "city": "Chandler",
+   "linkedin": "https://www.linkedin.com/in/priya-vannarath-1648b725",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "J. Leonardo Flores Torres",
+   "title": "Pediatric Resident",
+   "org": "Nassau University Medical Center",
+   "city": "Glendale",
+   "linkedin": "https://www.linkedin.com/in/drflorestorres",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Megan Burke",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital New Orleans",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/megan-burke-a47bab172",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Ashley E.",
+   "title": "Pediatrician",
+   "org": "Phoenix Indian Medical Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/ashley-e-b9a99a89",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Jenny B. Lemus,M.S.",
+   "title": "Child Therapist",
+   "org": "Office of Refugee Resettlement",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/jenny-b-lemus-m-s-7b8579124",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Maria Khan",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/maria-khan-776983207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Christine Rejdukowski",
+   "title": "Pediatrician",
+   "org": "Mountain Park Health Center",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/christine-rejdukowski-00261982",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Sumbul Shakoor",
+   "title": "Pediatrician",
+   "org": "Chandler Pediatrics",
+   "city": "Chandler",
+   "linkedin": "https://www.linkedin.com/in/sumbul-shakoor-2045b81ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Darlene Melk",
+   "title": "Community Pediatrician",
+   "org": "Chiricahua Community Health Centers, Inc.",
+   "city": "Douglas",
+   "linkedin": "https://www.linkedin.com/in/darlene-melk-b825796a",
+   "email": "d\u2022\u2022\u2022\u2022@cchci.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Jane Oski",
+   "title": "Staff pediatrician",
+   "org": "Tuba City Regional Health Care Corporation",
+   "city": "Flagstaff",
+   "linkedin": "https://www.linkedin.com/in/jane-oski-619151191",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Elmira Pashayeva",
+   "title": "Pediatrician",
+   "org": "Mountain Park Health Center",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/elmira-pashayeva-272a361a8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Navaz Dolasa",
+   "title": "Pediatrician",
+   "org": "Gila River Health Care",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/navaz-dolasa-591999154",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@grhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Raj Patel",
+   "title": "Pediatrician",
+   "org": "Gila River Health Care",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/raj-patel-93b670279",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@grhc.org",
+   "phone": ""
+  },
+  {
+   "name": "Heather Giacone",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/heather-giacone-566033126",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Deann Davies",
+   "title": "Director, Early Childhood Outreach and Child Psychology",
+   "org": "Summit Healthcare Regional Medical Center",
+   "city": "Show Low",
+   "linkedin": "https://www.linkedin.com/in/deann-davies-303baa99",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@summithealthcare.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Rodrigo Villar",
+   "title": "Epidemiologist and Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/rodrigo-villar-2900a0108",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Becky Huppert",
+   "title": "Pediatric therapist",
+   "org": "HUPPERT PEDIATRIC THERAPY",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/becky-huppert-6a7253222",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Kevin Carter",
+   "title": "Pediatrician",
+   "org": "Children's Clinics",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/kevin-carter-a31414297",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Bill Orman",
+   "title": "Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Tuba City",
+   "linkedin": "https://www.linkedin.com/in/bill-orman-16450641",
+   "email": "b\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Cristina Tamez",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/cristina-tamez-3b350a30",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Tamara Woodard, LMSW.  Clinical Social Worker",
+   "title": "Child Therapist and Clinician",
+   "org": "Terros Health",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/tamara-woodard-lmsw-clinical-social-worker-5b9615189",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@terroshealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Jennifer Gray",
+   "title": "Child Psychologist",
+   "org": "St. Joseph's Hospital and Medical Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/jennifer-gray-46679931",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@dignityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Flo Sandmann",
+   "title": "Pediatrician",
+   "org": "Gila River Health Care",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/flo-sandmann-a68b29178",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@grhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Susan Geren",
+   "title": "pediatrician",
+   "org": "District Medical Group",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/susan-geren-40939b11",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Dr. Juan Gabriel Martinez DO, FAAP",
+   "title": "Board Certified Pediatrician",
+   "org": "San Carlos Apache Healthcare Corporation",
+   "city": "Litchfield Park",
+   "linkedin": "https://www.linkedin.com/in/juan-gabriel-martinez-8955a4206",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@scahealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Jessica Nakib, DO",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/jessica-nakib-do-5623b51a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lora Duncanson",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/lora-duncanson-651b1b263",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Philip Lee, D.O., MBS",
+   "title": "Emergency Department Pediatrician",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/philip-lee-d-o-mbs-52824269",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": ""
+  },
+  {
+   "name": "Diane Hindman",
+   "title": "Pediatrician",
+   "org": "Havasu Regional Medical Center",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/diane-hindman-b9704a24",
+   "email": "H\u2022\u2022\u2022@phoenixchildrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Erica Noelle Barin, DO",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/erica-noelle-barin-do-4aa404104",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Lekha Anantuni",
+   "title": "Pediatric Resident",
+   "org": "Children's National Hospital",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/lekha-anantuni-02a5547b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Drisde Cruz, MD",
+   "title": "Pediatrician",
+   "org": "CLINICA LA FAMILIA, PC",
+   "city": "El Mirage",
+   "linkedin": "https://www.linkedin.com/in/drisde-cruz-md-27337215",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@clinicalafamilia.com",
+   "phone": ""
+  },
+  {
+   "name": "Emily Goodman, MD",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Peoria",
+   "linkedin": "https://www.linkedin.com/in/emily-goodman-md-48885268",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alan Graham",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/alan-graham-808a1314",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Lauren Triay",
+   "title": "Faculty Pediatrician",
+   "org": "St. Joseph's Hospital and Medical Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/lauren-atterbom",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@dignityhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Winnie Tung",
+   "title": "General Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/winnie-tung-65090830",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Ashley Assadi, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/ashley-assadi-md-mph-88a72b55",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Shelby Tuttle",
+   "title": "Youth Therapist",
+   "org": "Valle del Sol",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/shelby-tuttle-28a9a02a1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Coleen Marias",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/coleen-marias-75a746b7",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "David Brodkin",
+   "title": "Pediatrician",
+   "org": "District Medical Group",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/david-brodkin-966422a4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Kara Prier",
+   "title": "Pediatrician",
+   "org": "YAKIMA NEIGHBORHOOD HEALTH SERVICES",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/kara-prier-61ba06169",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Christina Lettieri",
+   "title": "fellow pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/christina-lettieri-20000429",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Mwela Asombang",
+   "title": "Pediatrician",
+   "org": "SCHC",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/mwela-asombang-31440515b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Steve Goldberg",
+   "title": "Pediatrician",
+   "org": "Catalina Pediatrics",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/steve-goldberg-5094a0163",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anushka Kinra",
+   "title": "Pediatrician",
+   "org": "Community Health Systems, Inc. (FQHC)",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/anushka-kinra-55b53815a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Stephanie Hock",
+   "title": "Autism CommunityWorks Coordinator",
+   "org": "Southwest Autism Research & Resource Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/stephanie-hock-8645911b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Todd Gardner",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Mesa",
+   "linkedin": "https://www.linkedin.com/in/todd-gardner-584846224",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Zebulon Delp",
+   "title": "Pediatrician",
+   "org": "OLD PUEBLO PEDIATRICS",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/zebulon-delp-0a2829207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Meghan Hunter",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/meghan-hunter-2288191b2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tess Reese",
+   "title": "Child therapist",
+   "org": "Southwest Behavioral & Health Services",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/tess-reese-06a2208b",
+   "email": "t\u2022\u2022\u2022\u2022@sbhservices.org",
+   "phone": ""
+  },
+  {
+   "name": "Hasita Patel",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/hasita-patel-a05072256",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@pediatricassociates.com",
+   "phone": ""
+  },
+  {
+   "name": "William Seitter",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Gilbert",
+   "linkedin": "https://www.linkedin.com/in/william-seitter-970733260",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Linda Meza",
+   "title": "pediatrician",
+   "org": "MCHC is now the Illinois Health and Hospital Association",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/linda-meza-45790717",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Sean Byers",
+   "title": "Child Autism Therapist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/sean-byers-524968251",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": ""
+  },
+  {
+   "name": "Jessica Pogachar",
+   "title": "Pediatrician",
+   "org": "HealthPoint (CHC)",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/jessica-pogachar-91218a112",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Hannah Starke",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Tempe",
+   "linkedin": "https://www.linkedin.com/in/hannah-starke-6aa9a6285",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shreepal Shah",
+   "title": "Pediatrician",
+   "org": "Mountain Park Health Center",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/shreepal-shah-47b0a3176",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sangeeta Manuel",
+   "title": "Pediatrician",
+   "org": "Mountain Park Health Center",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/sangeeta-manuel-52799546",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tetyana Kovalenko CA-Sacramento",
+   "title": "Pediatrician",
+   "org": "Dignity Health",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/tetyana-kovalenko-ca-sacramento-bb4454210",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mariah Scott",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/mariah-scott-a674671b7",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amanda Scott",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/amanda-scott-b97079197",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Valencia Bizahaloni",
+   "title": "Child Therapist",
+   "org": "Indian Health Service",
+   "city": "Pinon",
+   "linkedin": "https://www.linkedin.com/in/valencia-bizahaloni-18004931",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "James Dennemeyer",
+   "title": "Pediatrician",
+   "org": "MD Live by Evernorth",
+   "city": "Marana",
+   "linkedin": "https://www.linkedin.com/in/james-dennemeyer-901697168",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mdlive.com",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Prince",
+   "title": "Consultant Pediatrician",
+   "org": "Infant Acid Reflux Solutions",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/jennifer-prince-a25127263",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ahmad Ishfaq",
+   "title": "Pediatrician",
+   "org": "Community Health Systems",
+   "city": "Yuma County",
+   "linkedin": "https://www.linkedin.com/in/ahmad-ishfaq-317a40198",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@chs.net",
+   "phone": ""
+  },
+  {
+   "name": "Kevin Doyle",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/kevin-doyle-384484183",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stella Raposas",
+   "title": "Pediatrician",
+   "org": "Chiricahua Community Health Centers, Inc.",
+   "city": "Sierra Vista",
+   "linkedin": "https://www.linkedin.com/in/stella-raposas-8714261ab",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@cchci.org",
+   "phone": ""
+  },
+  {
+   "name": "Rebecca Egbert",
+   "title": "Pediatrician",
+   "org": "Children's Clinics",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/rebecca-egbert-4bb75b278",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Caplan",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/jennifer-caplan-bba732337",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Hope Kurk",
+   "title": "Pediatrician",
+   "org": "MedPros Group",
+   "city": "Scottsdale",
+   "linkedin": "https://www.linkedin.com/in/hope-kurk-59700514",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kayla Bird",
+   "title": "Pediatric Resident",
+   "org": "Banner Health",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/kayla-bird-9b7a57333",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Karen Guerrero",
+   "title": "Board Certified Autism Technician",
+   "org": "Center for Autism and Related Disorders (CARD)",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/karen-guerrero-b11039176",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Erin Goode",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Greater Phoenix Area",
+   "linkedin": "https://www.linkedin.com/in/erin-goode-0852a0197",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Conklin-Aguilera Cody",
+   "title": "Pediatrician of Mobile Clinic Programs",
+   "org": "Phoenix Children's",
+   "city": "Carefree",
+   "linkedin": "https://www.linkedin.com/in/conklin-aguilera-cody-88613a86",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Traci Brown",
+   "title": "Family Centered Autism Program",
+   "org": "Touchstone Health Services",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/traci-brown-3a908b21",
+   "email": "",
+   "phone": ""
+  }
+ ]
+}

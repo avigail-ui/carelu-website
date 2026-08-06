@@ -1,0 +1,4399 @@
+{
+ "name": "Texas",
+ "slug": "texas",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-texas.csv",
+ "count": 479,
+ "emails": 222,
+ "phones": 321,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 364
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 59
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 33
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 11
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 8
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 4
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Houston",
+   "count": 88
+  },
+  {
+   "name": "Austin",
+   "count": 45
+  },
+  {
+   "name": "San Antonio",
+   "count": 36
+  },
+  {
+   "name": "Dallas",
+   "count": 33
+  },
+  {
+   "name": "Greater Houston",
+   "count": 31
+  },
+  {
+   "name": "Dallas-Fort Worth Metroplex",
+   "count": 19
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Texas Children's Hospital",
+   "count": 52
+  },
+  {
+   "name": "Cook Children's Health Care System",
+   "count": 35
+  },
+  {
+   "name": "Kelsey-Seybold Clinic",
+   "count": 26
+  },
+  {
+   "name": "Children's Health",
+   "count": 20
+  },
+  {
+   "name": "UTHealth Houston",
+   "count": 17
+  },
+  {
+   "name": "The University of Texas Medical Branch",
+   "count": 14
+  }
+ ],
+ "rows": [
+  {
+   "name": "Brian Findlay",
+   "title": "Program Manager-BCBA, Center for Children with Autism",
+   "org": "Metrocare Services",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/brian-findlay-ms-bcba-lba-55136592",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Lara Shekerdemian",
+   "title": "Pediatrician In-Chief",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/lara-shekerdemian",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Kaitlyn Bowden",
+   "title": "Client Services Coordinator - Business Development | Autism & Behavior Support Services",
+   "org": "The Stepping Stones Group, LLC",
+   "city": "Greater Corpus Christi Area",
+   "linkedin": "https://www.linkedin.com/in/kaitlyn-bowden-279669171",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Joseph Lipscomb MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Sherman",
+   "linkedin": "https://www.linkedin.com/in/joseph-lipscomb-md-faap-835835a5",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Vijeta Salunkhe-Pansare, MD,MHA,MBA",
+   "title": "Pediatrician - Behavioral Health Integration and Guidance",
+   "org": "Children's Health",
+   "city": "McKinney",
+   "linkedin": "https://www.linkedin.com/in/vijeta-salunkhe-pansare-md-mha-mba-90341616",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Brittany Zehr",
+   "title": "Clinical Director, Autism/Behavior Support",
+   "org": "The Stepping Stones Group, LLC",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/brittany-zehr-4a7122a4",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@thesteppingstonesgroup.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Catherine Bryant",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/bryantcat",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Amber Bennett",
+   "title": "Early Intervention Autism Specialist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/amber-bennett-813524231",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alban Tomaj, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "LAKE RAY HUBBARD PEDIATRICS CLINIC FORNEY",
+   "city": "Rockwall",
+   "linkedin": "https://www.linkedin.com/in/albantomaj",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Lydia Terry BSN, RN NC-BC",
+   "title": "Pediatric Physician Recruiter",
+   "org": "Ascension",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/lydia-terry-bsn-rn-nc-bc-75668336",
+   "email": "n\u2022\u2022\u2022@ascension.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Dr. Shea'-Lynn F. H.",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/shealynnhopson",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Arathi Shah, MD FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "CommuniCare",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/arathishahmd7985",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Marian Ayensu, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/marian-ayensu-md-faap-806247126",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jason Terk",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Keller",
+   "linkedin": "https://www.linkedin.com/in/jason-terk-01744910",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Aslan Taylor, MPAS, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Envision Physician Services",
+   "city": "McKinney",
+   "linkedin": "https://www.linkedin.com/in/aslan-taylor-mpas-pa-c-874761298",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Daniel Vijjeswarapu M.D,FAAP",
+   "title": "Pediatrician",
+   "org": "CentroMed",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/daniel-vijjeswarapu-m-d-faap-9a364615",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Tiorra Johnson Ross",
+   "title": "Primary Care Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/tiorra-johnson-ross-50378321",
+   "email": "t\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Ashley Case McClary, MD MPH",
+   "title": "Lead Pediatrician",
+   "org": "Summer Health",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/ashley-case-mcclary-md-mph",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Deborah Martinez",
+   "title": "Primary Care Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/debmarti14",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Navya Singirikonda, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/navya-singirikonda-md-faap-74875145",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Trenton Berrie",
+   "title": "Director of Autism Services",
+   "org": "Center For Life Resources",
+   "city": "Brownwood",
+   "linkedin": "https://www.linkedin.com/in/trenton-berrie-2057894b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Cara Bird",
+   "title": "Pediatric Resident",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/cara-bird-a365ba78",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Saletha Smith",
+   "title": "Developmental Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/saletha-smith-b347a96a",
+   "email": "s\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Amber Landry, MD FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/amber-landry-md-faap-357574205",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Glenn Frutiz",
+   "title": "Autism Support Professional/Behavior Therapist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/glennfrutiz",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Christopher Case",
+   "title": "Pediatrician",
+   "org": "CHILDREN'S HOSPITAL OF SAN ANTONIO",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/christopher-case-2616a824",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Shanmuga \"Puji\" Jonnalagadda",
+   "title": "Developmental and Behavioral Pediatrician",
+   "org": "Scottish Rite for Children",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/shanmuga-puji-jonnalagadda-85a138b7",
+   "email": "p\u2022\u2022\u2022@scottishriteforchildren.org",
+   "phone": ""
+  },
+  {
+   "name": "Rachel Heist",
+   "title": "Pediatrician",
+   "org": "Carl R. Darnall Army Medical Center",
+   "city": "Fort Cavazos",
+   "linkedin": "https://www.linkedin.com/in/rachel-heist-672311b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Alysha Diaz, MSPAS, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Vibrance Health",
+   "city": "Palacios",
+   "linkedin": "https://www.linkedin.com/in/alysha-diaz-mspas-pa-c-987291234",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Cindy Durr",
+   "title": "Pediatrician",
+   "org": "Cardinal Health",
+   "city": "Grand Prairie",
+   "linkedin": "https://www.linkedin.com/in/cindy-durr-462a44a1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Lizy Varughese",
+   "title": "pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Lewisville",
+   "linkedin": "https://www.linkedin.com/in/lizy-varughese-9ab223a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Shikha Kohli",
+   "title": "Pediatrician, Texas Children's Pediatrics",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/shikha-kohli-17a94815b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Heather Hummel, M.D.",
+   "title": "Pediatrician",
+   "org": "Pearland Pediatrics",
+   "city": "Friendswood",
+   "linkedin": "https://www.linkedin.com/in/heather-hummel-m-d-362298a0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Biva Narsing",
+   "title": "Pediatric Resident",
+   "org": "UCLA Health",
+   "city": "Coppell",
+   "linkedin": "https://www.linkedin.com/in/biva-narsing-96554365",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Komal Vargas, MD",
+   "title": "Pediatrician",
+   "org": "Blueberry Pediatrics",
+   "city": "Rockwall",
+   "linkedin": "https://www.linkedin.com/in/komal-vargas-md-8a6b8211a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Jennifer Mullen",
+   "title": "General Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Humble",
+   "linkedin": "https://www.linkedin.com/in/jennifer-mullen-b3841225",
+   "email": "j\u2022\u2022\u2022@memorialhermann.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Kimberly Bloomberg",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/kimberly-bloomberg-1a076876",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Shang Chen Wu",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/shang-chen-wu-1b2422345",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Brenna M. Parker, MD, IBCLC",
+   "title": "General Pediatrician",
+   "org": "Almouie Pediatrics",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/brenna-m-parker-md-ibclc-627058282",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dr.Shailaja Kancherla",
+   "title": "General Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/dr-shailaja-kancherla-7236809b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Margaret Duvic",
+   "title": "Pediatrician",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/margaret-duvic-84a7a376",
+   "email": "d\u2022\u2022\u2022@secureserver.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Julie Messner",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/julie-messner-21206211",
+   "email": "j\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Nicole Brown",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Duncanville",
+   "linkedin": "https://www.linkedin.com/in/nicole-brown-813215169",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "JAIME PHALEN",
+   "title": "Developmental Pediatrician",
+   "org": "University Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/jaime-phalen-61a008108",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Barbara Cardona M.D.",
+   "title": "Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Greater Wichita Falls",
+   "linkedin": "https://www.linkedin.com/in/barbara-cardona-60655764",
+   "email": "B\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": ""
+  },
+  {
+   "name": "Jammie RN",
+   "title": "Ambulatory RN Autism Center",
+   "org": "Children's Health",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/jammie-rn-212292125",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Heeten Masters",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Arlington",
+   "linkedin": "https://www.linkedin.com/in/heeten-masters-15ab49100",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Mohamed Hassouba, MD",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/mohamed-hassouba-md-952657364",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rachna Sheth",
+   "title": "Pediatrician",
+   "org": "MD Anderson Cancer Center",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/rachna-sheth-9b12bb179",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@mdanderson.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Katherine Snyder, MD, MPH, FAAP",
+   "title": "Child Abuse Pediatrician",
+   "org": "Dell Children's Medical Center Foundation",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/katherine-snyder-md-mph-faap-54b30880",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Binh Vu",
+   "title": "Pediatric Resident",
+   "org": "Florida Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/binh-vu-4bb4a46b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Meagan Logan",
+   "title": "Child Autism Support Professional",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Weatherford",
+   "linkedin": "https://www.linkedin.com/in/meagan-logan-039127189",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Kimberly Vu",
+   "title": "Pediatrician",
+   "org": "University Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/kimberly-vu-48085a2a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@universityhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Dr. Beth Trevino",
+   "title": "Developmental Pediatrician",
+   "org": "GATEWAY COMMUNITY HEALTH CENTER INC",
+   "city": "Laredo",
+   "linkedin": "https://www.linkedin.com/in/dr-beth-trevino-922a0826",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "J. Todd Johnson",
+   "title": "Urgent Care Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Allen",
+   "linkedin": "https://www.linkedin.com/in/j-todd-johnson-4469a06",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Gina Duong",
+   "title": "Pediatrician",
+   "org": "GROW Pediatrics and Adolescent Medicine",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/gina-duong-16b94279",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Ressiel Nicole Villegas, DO, MPH",
+   "title": "Pediatric Resident",
+   "org": "CHRISTUS Children's",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/ressielnicolev",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Chantel Morey",
+   "title": "Pediatrician",
+   "org": "Vecino Health Centers",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/chantel-morey-21001b82",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Lindsey Gurganious",
+   "title": "Administrative Advisor to the Pediatrician-In-Chief, Texas Children's Hospital",
+   "org": "Texas Children's Hospital",
+   "city": "Pasadena",
+   "linkedin": "https://www.linkedin.com/in/lindsey-gurganious-23254665",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Sarah E. Williams",
+   "title": "Pediatrician",
+   "org": "Asian American Health Coalition - HOPE Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sarah-e-williams-0119aa66",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Ike Pauli  M.D.",
+   "title": "Pediatrician",
+   "org": "Northeast Pediatric Clinic",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/ike-pauli-m-d-1810b547",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Yi Wang",
+   "title": "Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/yi-wang-7549051b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Zachary Stone, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/zachary-stone-md-faap-47777892",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Alison Kimura",
+   "title": "Pediatric Resident",
+   "org": "Childrens Medical Center of Dallas",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/alison-kimura-7983124a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Alexandra Thomas, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Liberty Hill",
+   "linkedin": "https://www.linkedin.com/in/alexandra-thomas-md-2393719a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Abhinaya Bhakta, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/abhinaya-bhakta-pa-c-45725781",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Ramon L. Kinloch",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/ramon-l-kinloch-748b567a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Dr Cynthia Abou Zeid, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/dr-cynthia-abou-zeid-md-faap-1612a3200",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Ernesto J Jimeno Chacin",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/ernesto-jimeno-026b0461",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marion Forbes",
+   "title": "Pediatrician, Child Abuse resource and education team",
+   "org": "DELL CHILDREN'S MEDICAL CENTER NURSING SERVICES",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/marion-forbes-21828068",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Amber Rogers, MD, FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/amber-rogers-md-faap-61116a103",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "ANDRES A. GOMEZ GARZA",
+   "title": "Pediatric Resident",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/andres-a-gomez-garza-161355a6",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Krista Parran",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/krista-parran-206a3541",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Jessica Lanerie",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/jessica-lanerie-37889699",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Maria Belen Cubria",
+   "title": "Pediatric Resident",
+   "org": "University of Miami Health System",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/maria-belen-cubria-64b493106",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Caila Magazine",
+   "title": "Internal Medicine-Pediatric Physician",
+   "org": "Asian American Health Coalition - HOPE Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/caila-magazine-157baa64",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Alexander Injac",
+   "title": "Pediatrician",
+   "org": "PurePediatrics",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/alexander-injac-16186726",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Katharine McNiel",
+   "title": "Pediatrician and Internist",
+   "org": "Community Clinic NWA",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/katharine-mcniel-80765092",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Pavan Bang",
+   "title": "General Pediatrician",
+   "org": "COOK CHILDREN'S PHYSICIANS NETWORK",
+   "city": "McKinney",
+   "linkedin": "https://www.linkedin.com/in/pavanbang1460",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Maria Webb, LCSW-S",
+   "title": "Autism Service Navigator",
+   "org": "Accolade, Inc.",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/maria-webb-lcsw",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Shang Lian MD PhD",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/shanglianmd",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Shelley Mundt, LPC, CCM",
+   "title": "Behavioral Autism Coaching and Support Supervisor",
+   "org": "Evernorth Health Services",
+   "city": "Flower Mound",
+   "linkedin": "https://www.linkedin.com/in/shelley-mundt-lpc-8a047487",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Demvihin I.",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/demvihin-i-26527336",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Rama Siddipeta",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Irving",
+   "linkedin": "https://www.linkedin.com/in/rama-siddipeta-2084149",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Toni Wakefield",
+   "title": "Pediatrician",
+   "org": "DELL CHILDRENS MEDICAL CENTER OF CENTRAL TEXAS",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/toniwakefield",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Helene Sheena, MD",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Bellaire",
+   "linkedin": "https://www.linkedin.com/in/helene-sheena-md-1702bb109",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Lynnette Leffall, DO",
+   "title": "General Pediatrician",
+   "org": "COOK CHILDREN'S PHYSICIANS NETWORK",
+   "city": "Mansfield",
+   "linkedin": "https://www.linkedin.com/in/lynnette-leffall-do-23544459",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Sana Kayani MD",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/sana-kayani-md-5ba3a98b",
+   "email": "s\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Brendan Mueller",
+   "title": "General Pediatrician",
+   "org": "CommuniCare",
+   "city": "Boerne",
+   "linkedin": "https://www.linkedin.com/in/brendan-mueller-8b46192b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Diana Schulz",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/diana-schulz-7293b879",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Jake Moser",
+   "title": "Pediatric Resident",
+   "org": "Nemours Children's Health",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/jake-moser-391b18139",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kaitlyn Bergeron Lloyd",
+   "title": "General Pediatrician",
+   "org": "GROW Pediatrics and Adolescent Medicine",
+   "city": "Georgetown",
+   "linkedin": "https://www.linkedin.com/in/kaitlyn-bergeron-lloyd-77857744",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "ISIL HALAC",
+   "title": "Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/isil-halac-472b0a2b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Dr Mohammed Zubair Khidr Mohammed",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/dr-mohammed-zubair-khidr-mohammed-74812157",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Susan Ebosiem",
+   "title": "Early Intervention Autism Specialist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Garland",
+   "linkedin": "https://www.linkedin.com/in/susan-ebosiem-abb5b082",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": ""
+  },
+  {
+   "name": "Sohail Azadi",
+   "title": "Pediatrician, Section Chief",
+   "org": "Baylor Scott & White Health",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/sohail-azadi-8b624943",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Katelyn Tran",
+   "title": "Pediatrician Shadowing",
+   "org": "The Woman's Hospital of Texas",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/katelyn-tran-b46747337",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Tyshantra Coleman MD",
+   "title": "Per Diem Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/tyshantra-coleman-md-a0ab95b",
+   "email": "t\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Mahjabeen Khan, M.D., F.A.A.P",
+   "title": "Pediatrician",
+   "org": "CLS Health",
+   "city": "Webster",
+   "linkedin": "https://www.linkedin.com/in/mahjabeen-khan-m-d-f-a-a-p-68572549",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Soumya Pathuri",
+   "title": "Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Georgetown",
+   "linkedin": "https://www.linkedin.com/in/soumyapathuri",
+   "email": "p\u2022\u2022\u2022@memorialhermann.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Tiffany C.",
+   "title": "Pediatric Resident",
+   "org": "The University of Texas Medical Branch",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/tiffany-c-692a58172",
+   "email": "T\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Brittney Sharp",
+   "title": "Autism Support Professional",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/brittney-sharp-945010163",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Maurine Sam",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/maurine-sam-a6231713a",
+   "email": "s\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Helene Sheena",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Bellaire",
+   "linkedin": "https://www.linkedin.com/in/helene-sheena-1702bb109",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Juan Guerrero",
+   "title": "Pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/juan-guerrero-972327a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@adclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Geronimo Mendoza Urias MD FAAP",
+   "title": "Telehealth Pediatrician",
+   "org": "CHRISTUS Health",
+   "city": "Odessa",
+   "linkedin": "https://www.linkedin.com/in/geronimo-mendoza-urias-md-faap-b70570205",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Jennifer Morgan M.S, LPC, CAS",
+   "title": "LPC-Intern, Certified Autism Specialist",
+   "org": "Banyan Counseling",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/jennifer-morgan-m-s-lpc-cas-39412328",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Hadley Barnes, MPAS, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Children's Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/hadbarnes",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "James Davis",
+   "title": "General Pediatrician",
+   "org": "UT Health East Texas",
+   "city": "Tyler",
+   "linkedin": "https://www.linkedin.com/in/james-davis-85460a179",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Alyssa Bahorich",
+   "title": "Urgent Care Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/alyssa-bahorich-6a70a295",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Samantha Atkins",
+   "title": "Pediatric Resident",
+   "org": "Advocate Children's Hospital",
+   "city": "Travis County",
+   "linkedin": "https://www.linkedin.com/in/samantha-atkins-71a8327b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Hannah Lee",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/hannah-lee-2686b048",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Joan Shook",
+   "title": "pediatrician",
+   "org": "Baylor",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/joan-shook-89460b4",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Christina Mateo",
+   "title": "Pediatrician",
+   "org": "University Medical Center of El Paso (UMC)",
+   "city": "El Paso",
+   "linkedin": "https://www.linkedin.com/in/christina-mateo-76a63a118",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Kristi W.",
+   "title": "Lead Pediatrician",
+   "org": "Carevide",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/kristi-w-9273a7a7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Samuel Wang",
+   "title": "General Pediatrician",
+   "org": "Pediatric Associates of Dallas",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/samuel-wang-0a995a71",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Kristina Kraninger",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/kristina-kraninger-80a29021",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Dr Jeevan Bhatt",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/dr-jeevan-bhatt-095674253",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kim Fehlis",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Marble Falls",
+   "linkedin": "https://www.linkedin.com/in/kim-fehlis-ab8aa571",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Charisma Garcia",
+   "title": "Pediatrician",
+   "org": "Abc Pediatric Clinic",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/charisma-garcia-241702167",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@abcpediatricclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Joud Ayoub",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/joud-ayoub-9a46021b7",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "China Smith, MPAS, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "The University of Texas Medical Branch",
+   "city": "Galveston",
+   "linkedin": "https://www.linkedin.com/in/china-smith-159893154",
+   "email": "s\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "Candice Nolan",
+   "title": "Neonatologist / Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/candice-nolan-209b81ba",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Wilfred Raine",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Arlington",
+   "linkedin": "https://www.linkedin.com/in/wilfred-raine-27494384",
+   "email": "r\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Brett Ipson",
+   "title": "Pediatric Resident",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/brett-ipson-8244b490",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Ann Buell",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/ann-buell-60b52473",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Mansi Lalwani",
+   "title": "General Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/mansi-lalwani",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Andrew Hamby",
+   "title": "Pediatrician",
+   "org": "CHRISTUS Trinity Mother Frances Health System",
+   "city": "Tyler",
+   "linkedin": "https://www.linkedin.com/in/andrew-hamby-770a8213",
+   "email": "a\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Jamie Campbell",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/jamie-campbell-3554a5134",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Diana Sofowora",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/diana-sofowora-324baa2b4",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Adolfo Flores, MD, FAAP",
+   "title": "General Pediatrician",
+   "org": "Children's Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/adolfo-flores-md-faap-372b4a220",
+   "email": "a\u2022\u2022\u2022@urgentcarekids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Ngozika O., M.D.",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ngozika-o-m-d-86715092",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Mary Elizabeth Sweeney-Singleton",
+   "title": "Program Coordinator, Community Pediatric Physician Partners Outreach Program & Alumni Affairs",
+   "org": "UT Southwestern Medical Center",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/mary-elizabeth-sweeney-singleton-7aa2bab4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Neal Spears",
+   "title": "Pediatrician",
+   "org": "St. Joseph Health",
+   "city": "College Station",
+   "linkedin": "https://www.linkedin.com/in/neal-spears-1234a9103",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Angelica Higgins MD",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/angelica-higgins-md-959a9a69",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Paige Garrison, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "PurePediatrics",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/paige-garrison-md-faap-26596540",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Elizabeth Winterroth",
+   "title": "Pediatrician",
+   "org": "People's Community Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-winterroth-8973a4a7",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@austinpcc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Mi Pham, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "US Acute Care Solutions",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/mi-pham-md-faap-024770263",
+   "email": "m\u2022\u2022\u2022@usacs.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Ankita Trivedi",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ankita-trivedi-6878ab103",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Christine Romo, MA, BCBA, LBA",
+   "title": "Children's Center for Autism - Program Manager",
+   "org": "Texana Center",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/christine-romo-b6b809208",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Luis Taylor",
+   "title": "Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Beaumont",
+   "linkedin": "https://www.linkedin.com/in/luis-taylor-81802135",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Ellyn Hirsch",
+   "title": "pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ellyn-hirsch-58030312",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Courtney Seabolt",
+   "title": "Pediatrician",
+   "org": "Alliance Pediatrics",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/courtney-seabolt-73530673",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Steven Fischer",
+   "title": "Pediatrician at Communicare, Medical Center Campus",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/steven-fischer-63630882",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@secureserver.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Dr. Sangeeta Elhence",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/dr-sangeeta-elhence-2b6057234",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Dr. Larry Caesar",
+   "title": "Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/dr-larry-caesar-b0254846",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Marilyn Janke",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Lewisville",
+   "linkedin": "https://www.linkedin.com/in/marilyn-janke-61284910",
+   "email": "j\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Saarah Chaudhri D.O., M.M.S.",
+   "title": "General Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Lubbock",
+   "linkedin": "https://www.linkedin.com/in/saarah-chaudhri-d-o-m-m-s-91556674",
+   "email": "S\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Cynthia Sirri",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/cynthia-sirri-01686b1b5",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Mayra Nieves-R\u00edos, MD, FAAP",
+   "title": "Pediatrician, Clinical Associate Professor",
+   "org": "UT Southwestern Medical Center",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/mayra-nieves-r\u00edos-md-faap-74b75643",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Adrienne Linscomb",
+   "title": "Child therapist",
+   "org": "Integral Care-Austin, TX",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/adrienne-linscomb-785249b8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Subhashini Valavalkar",
+   "title": "Pediatrician",
+   "org": "CHRISTUS Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/subhashini-valavalkar-7ba1551b7",
+   "email": "v\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Suzanne Rienstra, MD",
+   "title": "Pediatrician",
+   "org": "University Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/suzanne-lewis-md-07a32311a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shreeya Parajuli, MD",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Georgetown",
+   "linkedin": "https://www.linkedin.com/in/shreeya-parajuli-md-8b4402113",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Ahmad Qawasmi",
+   "title": "General Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Prosper",
+   "linkedin": "https://www.linkedin.com/in/ahmad-qawasmi-53181089",
+   "email": "q\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Natasha Ahmed",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/natasha-ahmed-b8217b98",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Meredith Drake",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/meredith-drake-46563982",
+   "email": "d\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Adiva Sahar",
+   "title": "Pediatric Resident",
+   "org": "UT Southwestern Medical Center",
+   "city": "Richardson",
+   "linkedin": "https://www.linkedin.com/in/adiva-sahar-b03a5592",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Keigo Takahashi",
+   "title": "Pediatric Resident",
+   "org": "UT Southwestern Medical Center",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/keigo-takahashi-412646ab",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Andrea E.",
+   "title": "Assistant to the Pediatrician In-Chief",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/andreaens",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ryan Lowery, MD",
+   "title": "Pediatrician",
+   "org": "CommUnityCare Health Centers",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/ryan-lowery-md-325a0a267",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Ciro Porras",
+   "title": "Staff Pediatrician",
+   "org": "MD Medical Group",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/ciro-porras-3b0ba430",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@mdmedicalgroup.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Evelyn Daniela Olaya Gallo",
+   "title": "Senior Behavior Technician-Training and Research: Autism Intervention Lab (TR:AIL)",
+   "org": "UNT Kristin Farmer Autism Center",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/evelyn-daniela-olaya-gallo-632937255",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Srikanth Podaralla",
+   "title": "Pediatrician",
+   "org": "Shannon Medical Center",
+   "city": "San Angelo",
+   "linkedin": "https://www.linkedin.com/in/srikanth-podaralla-929b6148",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Olusimidele Ayeni, MD, PhD, FAAP",
+   "title": "General Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/olusimidele-ayeni-md-phd-faap-a1bb07185",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Ashley Garibaldi",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ashley-garibaldi-0384a2ab",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Taina Trevino",
+   "title": "Pediatrician",
+   "org": "JPS Health Network",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/taina-trevino-199b7137",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Gregory Dann",
+   "title": "General Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/gregory-dann-3431461b1",
+   "email": "d\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Angel Luong",
+   "title": "Child Autism Support Professional",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/angel-luong-4a2400256",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Susan Sponenberg",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/susan-sponenberg-385a72156",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Baoping Qian",
+   "title": "Pediatrician",
+   "org": "Regence Health Network Inc",
+   "city": "Plainview",
+   "linkedin": "https://www.linkedin.com/in/baoping-qian-251bb132",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Esra Caylan",
+   "title": "Pediatrician",
+   "org": "COOK CHILDREN'S PHYSICIANS NETWORK",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/esra-caylan-b59338149",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tighrid Brouzine - MD",
+   "title": "Pediatric Resident",
+   "org": "Mercy Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/tighrid-brouzine-md-b49a08203",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lith Nasif",
+   "title": "Pediatric Resident",
+   "org": "UT Southwestern Medical Center",
+   "city": "Irving",
+   "linkedin": "https://www.linkedin.com/in/lith-nasif-912618320",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sara Curtis, MD",
+   "title": "Pediatrician",
+   "org": "PurePediatrics",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sara-curtis-md-1065a7333",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shen Palaniswamy",
+   "title": "Pediatrician",
+   "org": "Hebron Pediatrics",
+   "city": "Carrollton",
+   "linkedin": "https://www.linkedin.com/in/shen-palaniswamy-109a91230",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Christian Najera",
+   "title": "Board Certified Autism Technician",
+   "org": "ABA of North Texas",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/christian-najera-32a999278",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Eriel Hayes",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/eriel-hayes-047907b0",
+   "email": "h\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Nancy Kelly",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/nancy-kelly-7b993a33",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Hannah Rios",
+   "title": "Pediatric Resident",
+   "org": "Advocate Children's Hospital",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/hannah-rios-829b94a2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Audrey Rogers",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/audrey-rogers-75883a121",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Deaina Berry-Williams",
+   "title": "Physician-Pediatrician",
+   "org": "Parkland Health",
+   "city": "Sunnyvale",
+   "linkedin": "https://www.linkedin.com/in/deaina-berry-williams-5b623a72",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Amanda Hargett-Granato",
+   "title": "Pediatric Resident",
+   "org": "Mayo Clinic",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/amanda-hargett-granato-do-b239841bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Sheri Mitchell",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Missouri City",
+   "linkedin": "https://www.linkedin.com/in/sheri-mitchell-19ab6521a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Afroze Hai",
+   "title": "Pediatrician",
+   "org": "Mott Children's Health Center",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/afroze-hai-b55274212",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Rachel Hamilton",
+   "title": "Pediatrician, Henderson Clinic",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/rachel-hamilton-71620a88",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Nina Chegireddy",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/nina-chegireddy-216678162",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Natalie Royer",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "League City",
+   "linkedin": "https://www.linkedin.com/in/natalie-royer-b2b6733b",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Rachel Rodriguez",
+   "title": "Pediatrician",
+   "org": "Blueberry Pediatrics",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/rachel-rodriguez-154ba3219",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@blueberrypediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Christina Ateek",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/christina-ateek-863132164",
+   "email": "a\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Archana Varma",
+   "title": "Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Sugar Land",
+   "linkedin": "https://www.linkedin.com/in/archana-varma-9a148a113",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Briana Gonner, D.O.",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/briana-gonner-00985813b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": ""
+  },
+  {
+   "name": "Eduardo Covarrubias",
+   "title": "Primary Care Pediatrician",
+   "org": "University Medical Center of El Paso (UMC)",
+   "city": "El Paso",
+   "linkedin": "https://www.linkedin.com/in/eduardo-covarrubias-a38458239",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@umcelpaso.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Matthew Wilber",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/matthew-wilber-aa721724",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Kara Stewart",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/kara-stewart-64128299",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Don Fox",
+   "title": "Pediatrician",
+   "org": "Next Generation Pediatrics",
+   "city": "Arlington",
+   "linkedin": "https://www.linkedin.com/in/don-fox-71bb8414a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Tammy Hayward",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/tammy-hayward-768081342",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Erica Wang",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Sugar Land",
+   "linkedin": "https://www.linkedin.com/in/erica-wang-96631a129",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Leigh Stubbs",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/leigh-stubbs-49207618b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Hannah Chong",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/hannah-chong-012497161",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Rachel Styer",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Temple",
+   "linkedin": "https://www.linkedin.com/in/rachel-styer-8a7574236",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "jace balzen",
+   "title": "Pediatrician",
+   "org": "Little Spurs Pediatric Urgent Care",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/jace-balzen-229700277",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Elida Flores",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/elida-flores-a4613514",
+   "email": "f\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "shelley anne giddings",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/shelley-anne-giddings-1486ba108",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Richard Nail",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/richard-nail-a598b5262",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "samanta epsi",
+   "title": "Pediatrician",
+   "org": "Providence St. Joseph Hospital",
+   "city": "Irving",
+   "linkedin": "https://www.linkedin.com/in/samanta-epsi-31b02557",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Petra Duran",
+   "title": "Child Psychologist",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/petra-duran-97517a290",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laurel Scott",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/laurel-scott-234b9b207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Susie Annie",
+   "title": "Pediatrician",
+   "org": "Meth-Wick Community",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/susie-annie-8b54b114a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Todd Burton",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/todd-burton-6ba42536b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Franchesca Estrada",
+   "title": "Pediatrician",
+   "org": "Chisholm Trail Pediatrics",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/fran-estrada-md-451240a3",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sandhya Vethachalam",
+   "title": "Pediatrician",
+   "org": "Recuro Health",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sandhya-vethachalam-b651a3357",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Grace Hidalgo",
+   "title": "Board certified Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/grace-hidalgo-8b757a2b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Mara Klein",
+   "title": "Pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/mara-klein-ab2ab2ba",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Rose Payne",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/rose-payne-32616115b",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Katie Cotter",
+   "title": "Pediatrician",
+   "org": "UT Southwestern Medical Center",
+   "city": "Irving",
+   "linkedin": "https://www.linkedin.com/in/katie-cotter-a769b5151",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": ""
+  },
+  {
+   "name": "Jeanine Ratliff",
+   "title": "Pediatric Resident",
+   "org": "The University of Texas Medical Branch",
+   "city": "Galveston",
+   "linkedin": "https://www.linkedin.com/in/jeanine-ratliff-a9057637",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "JustIn Serrette",
+   "title": "Pediatric Resident",
+   "org": "The University of Texas Medical Branch",
+   "city": "Galveston",
+   "linkedin": "https://www.linkedin.com/in/justin-serrette-0a20b136",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Suzanna Maupin",
+   "title": "Pediatrician",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/suzanna-maupin-5aaa7769",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Celia Browning",
+   "title": "Pediatrician",
+   "org": "INWOOD VILLAGE PEDIATRICS",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/celia-browning-80aa53137",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Lilian Leon",
+   "title": "Staff Pediatrician",
+   "org": "Parkland Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/lilian-leon-54b62035",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Margaret Payne",
+   "title": "Pediatrician",
+   "org": "Sterling Healthcare Management",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/margaret-payne-b9328b11",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Paula Schlesinger",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/paula-schlesinger-4b952b117",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Natalie Ayala",
+   "title": "Pediatrician",
+   "org": "Harlingen Pediatrics Assoc",
+   "city": "Harlingen",
+   "linkedin": "https://www.linkedin.com/in/natalie-ayala-7bb12014a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Chuck Clemons",
+   "title": "Pediatrician",
+   "org": "LA CLINICA MONUMENT",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/chuck-clemons-a720426",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Tam Phan, MD, MBA",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/tamtphan",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Damian Dos Santos, MD",
+   "title": "Pediatrician",
+   "org": "Hazel Health",
+   "city": "Edinburg",
+   "linkedin": "https://www.linkedin.com/in/damian-dos-santos-md-68a135147",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@hazel.co",
+   "phone": ""
+  },
+  {
+   "name": "Naima Garrett, MD",
+   "title": "General Pediatrician",
+   "org": "Kidsville Pediatrics",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/naima-garrett-md-b1931b204",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@kidsvillepediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Angela Mazur",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/angela-mazur-22353590",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Elissa Prado Gonzalez",
+   "title": "Pediatrician",
+   "org": "BEE WELL PEDIATRICS OF CENTRAL AUSTIN",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/elissa-prado-gonzalez-8788b925",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Dinesh Gowda",
+   "title": "Primary Care Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Midland County",
+   "linkedin": "https://www.linkedin.com/in/dinesh-gowda-b57078b8",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@pediatricassociates.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Murad Dharani",
+   "title": "Pediatrician",
+   "org": "Parkland Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/murad-dharani-aa160833",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Kundan Verma",
+   "title": "Pediatric Resident",
+   "org": "Mayo Clinic",
+   "city": "El Paso",
+   "linkedin": "https://www.linkedin.com/in/kundan-verma-58867bb4",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@mayoclinic.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Monique Mills, MD",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Temple",
+   "linkedin": "https://www.linkedin.com/in/monique-mills-md-ab2a7556",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Ellen Mueller",
+   "title": "General Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ellen-mueller-abbab423a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Melanie Ribbeck",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/melanie-ribbeck",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Lovina Bater",
+   "title": "Clinical Child Psychologist",
+   "org": "Texas Children's Hospital",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/lovina-bater-943137239",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Doctor Don",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/doctor-don-0b47a5a8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Jayne Truckenbrod",
+   "title": "Pediatrician",
+   "org": "Mednax, National Medical Group",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/jayne-truckenbrod-0827681b5",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Kelly Frosch",
+   "title": "Autism Program Manager",
+   "org": "Tri-County Behavioral Healthcare",
+   "city": "Conroe",
+   "linkedin": "https://www.linkedin.com/in/kelly-frosch-6984b768",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@tcbhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Shanice Latham",
+   "title": "Pediatrician",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/shanice-latham-7a699361",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Uchenna Nnaji",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/uchenna-nnaji-4898082a5",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Daniela L. Vela, M.A., LPC",
+   "title": "Child Counselor-LPC",
+   "org": "Mercy",
+   "city": "Laredo",
+   "linkedin": "https://www.linkedin.com/in/daniela-l-vela-m-a-lpc-78b24a1b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "David Barry",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/david-barry-4963b637",
+   "email": "D\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Tasneem Afser",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/tasneem-afser-46122210a",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Sandhya Vethachalam",
+   "title": "Pediatrician",
+   "org": "Ibn Sina",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sandhya-vethachalam-8b4a4654",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Saran A.",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/saran-ahuja-3738809a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sadiya Jamal",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sadiya-jamal-40885b67",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Roshni Sambasivan",
+   "title": "Pediatrician",
+   "org": "PurePediatrics",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/roshni-sambasivan-839a88136",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Beth Yip",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/beth-yip-285bb311",
+   "email": "b\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Tayyab Pasha",
+   "title": "Pediatrician",
+   "org": "MEHOP",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/tayyab-pasha-446436131",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@mehop.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Wendy Markowitz M.D.",
+   "title": "Primary Care Pediatrician",
+   "org": "Special Health Resources",
+   "city": "Longview",
+   "linkedin": "https://www.linkedin.com/in/wendy-markowitz-m-d-97066a62",
+   "email": "w\u2022\u2022\u2022\u2022@specialhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Souzan Siddig, MD, ABP, FAAP",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/souzan-siddig-md-abp-faap-9a0b212ab",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Krista Putty, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/krista-putty-md-faap-65666954",
+   "email": "m\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Jusan Galarza",
+   "title": "Pediatrician",
+   "org": "JPS Health Network",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/jusan-galarza-6a8b2836",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Victoria Church (Walker)",
+   "title": "Assistant Clinical Director at Action Behavior Centers - ABA Therapy for Autism",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/victoria-church-walker-68215b233",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Jocelyn Medina",
+   "title": "Early Intervention Autism Specialist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/jocelyn-medina-aa9395178",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Theresa Vanderventer",
+   "title": "Pediatric Resident",
+   "org": "Baylor Scott & White Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/theresa-vanderventer-151466192",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Angel Barnaby",
+   "title": "Autism Service Navigator",
+   "org": "Accolade, Inc.",
+   "city": "Paris",
+   "linkedin": "https://www.linkedin.com/in/angel-barnaby-36083287",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Eduardo Mancia",
+   "title": "Pediatric resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/eduardo-mancia-949bbb71",
+   "email": "E\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "samina jamil",
+   "title": "Pediatrician",
+   "org": "Laredo Medical Center",
+   "city": "Laredo",
+   "linkedin": "https://www.linkedin.com/in/samina-jamil-1b501341",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Kayla Still",
+   "title": "Autism Care Demonstration Specialist",
+   "org": "TriWest Healthcare Alliance",
+   "city": "China Spring",
+   "linkedin": "https://www.linkedin.com/in/kayla-still-a18a29228",
+   "email": "k\u2022\u2022\u2022@triwest.com",
+   "phone": ""
+  },
+  {
+   "name": "Douglas Klepper",
+   "title": "Pediatrician",
+   "org": "UMC Health System",
+   "city": "Lubbock",
+   "linkedin": "https://www.linkedin.com/in/douglas-klepper-58777a16",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Abieyuwa Iyare",
+   "title": "Pediatrician",
+   "org": "NewYork-Presbyterian Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/abieyuwa-iyare-a7a750269",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Hufnagel Deanne",
+   "title": "Resident Pediatrician",
+   "org": "Advocate Condell Medical Center",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/hufnagel-deanne-b5b44b77",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dr. Joshua Sun",
+   "title": "Pediatrician",
+   "org": "HealthCareClinics",
+   "city": "Garland",
+   "linkedin": "https://www.linkedin.com/in/dr-joshua-sun-a4477a82",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Marie F. Dawlett",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Dickinson",
+   "linkedin": "https://www.linkedin.com/in/marie-f-dawlett-1b1a5428",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Kenneth Cohen",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/kenneth-cohen-37a5bb113",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Karin Ayer",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Wichita Falls",
+   "linkedin": "https://www.linkedin.com/in/karin-ayer",
+   "email": "a\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth Bonnet",
+   "title": "Pediatrician",
+   "org": "Pediatric Health Care Associates, P.C.",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-bonnet-b5a79b158",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Luisa Cabebe, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Central Health",
+   "city": "Buda",
+   "linkedin": "https://www.linkedin.com/in/luisa-cabebe-70aaa51b5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kimberly Earle",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/kimberly-earle-6b25b516a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Diana Nguyen",
+   "title": "General Pediatrician",
+   "org": "MD Medical Group",
+   "city": "Garland",
+   "linkedin": "https://www.linkedin.com/in/diana-nguyen-7687aa79",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laura Pena",
+   "title": "Pediatrician",
+   "org": "COOK CHILDREN'S PHYSICIANS NETWORK",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/laura-pena-7465791b4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Rachel Rosenfeld",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/rachel-rosenfeld-29739b198",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Josiah Ward",
+   "title": "Pediatrician",
+   "org": "Shannon Medical Center",
+   "city": "Christoval",
+   "linkedin": "https://www.linkedin.com/in/josiah-ward-611319206",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Kyralessa Ramirez",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/kyralessa-ramirez-68977b161",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Rochelle Flynn",
+   "title": "Pediatrician",
+   "org": "Little Spurs Pediatric Urgent Care",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/rochelle-flynn-a968b1b5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tiffany Hnatow",
+   "title": "Pediatrician",
+   "org": "Envision Healthcare",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/tiffany-hnatow-72750992",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@evhc.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Allecia Hayes",
+   "title": "Interim Pediatrician Physician Resident",
+   "org": "Baylor Scott & White Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/allecia-hayes-12164929",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Carlos Quiroz",
+   "title": "Pediatrician",
+   "org": "CommuniCare Health Services",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/carlos-quiroz-pediatrician",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marel Hanks",
+   "title": "pediatrician",
+   "org": "CHRISTUS Trinity Mother Frances Health System",
+   "city": "Athens",
+   "linkedin": "https://www.linkedin.com/in/marel-hanks-a45aa0b2",
+   "email": "m\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Gift Onyenso",
+   "title": "Board-Certified Pediatrician",
+   "org": "Saint Francis Healthcare System",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/gift-onyenso-68ab03367",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alicia Balogh",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/alicia-balogh-2998883",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Angela Hippeli",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/angela-hippeli-3aa4a114a",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Veronica Zamora-Campos",
+   "title": "Pediatrician",
+   "org": "VIVA PEDIATRICS, PA",
+   "city": "Boerne",
+   "linkedin": "https://www.linkedin.com/in/veronica-zamora-campos-04732b29a",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@vivapediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Susan Mandell",
+   "title": "Pediatrician",
+   "org": "Pediatrics After Hours",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/susan-mandell-a583a9189",
+   "email": "s\u2022\u2022\u2022@urgentcarekids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Anne Cates",
+   "title": "Pediatrician",
+   "org": "CHRISTUS Trinity Mother Frances Health System",
+   "city": "Tyler",
+   "linkedin": "https://www.linkedin.com/in/anne-cates-4aa920231",
+   "email": "a\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Bikal Sapkota",
+   "title": "General Pediatrician",
+   "org": "Lane Regional Medical Center",
+   "city": "Amarillo",
+   "linkedin": "https://www.linkedin.com/in/bikal-sapkota-75901020a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Juanita Bhatnagar",
+   "title": "Pediatrician",
+   "org": "Mednax, National Medical Group",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/juanita-bhatnagar-5b6b78106",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Mohsen Aboelella",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/mohsen-aboelella-234050201",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Caudill",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/john-caudill-94aa36b9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Kelly Thorstad",
+   "title": "Pediatrician",
+   "org": "Lone Star Pediatrics",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/kelly-thorstad-23b194123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Andrea Salemi",
+   "title": "Pediatric Physician Assistant",
+   "org": "MD Medical Group",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/andrea-salemi-a8b191237",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mdmedicalgroup.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Denise Pautler",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Round Rock",
+   "linkedin": "https://www.linkedin.com/in/denise-pautler-6807a4120",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Carrie Carlson",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/carrie-carlson-65960a24",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Erica Sol\u00eds",
+   "title": "Pediatrician",
+   "org": "HHM Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/drericasolis",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sarah Heathcote",
+   "title": "Pediatrician",
+   "org": "Legacy Community Health",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/sarah-heathcote-631556189",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Jayne Truckenbrod",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/jayne-truckenbrod-566343276",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Kibler Elise",
+   "title": "Pediatrician",
+   "org": "CommuniCare",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/kibler-elise-b209b241",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Soumya Billa",
+   "title": "Primary Care Pediatrician",
+   "org": "AZOVA",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/soumya-billa-320810267",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Zahra Saad Siddiqui",
+   "title": "Child Autism Therapist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/zahra-saad-siddiqui-00b90634a",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": ""
+  },
+  {
+   "name": "Suzi melancon Kyle",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/suzi-melancon-kyle-25173777",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Julie Risinger",
+   "title": "General Pediatrician",
+   "org": "HealthPartners",
+   "city": "Orange",
+   "linkedin": "https://www.linkedin.com/in/julie-risinger-2a1208100",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@healthpartners.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Andrielle Collier, DO",
+   "title": "General Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/andrielle-collier-do-396287341",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sheida Asgari",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Sugar Land",
+   "linkedin": "https://www.linkedin.com/in/sheida-asgari-bb4a411a9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Dra. Nadya Medina Parrilla",
+   "title": "Pediatra",
+   "org": "El Centro de Coraz\u00f3n",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/dra-nadya-medina-parrilla-aba894160",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Janet O'Donnell",
+   "title": "Child Psychologist",
+   "org": "Child Psychological Services",
+   "city": "Aledo",
+   "linkedin": "https://www.linkedin.com/in/drjanetodonnell333",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childpsychservices.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Bryan McOmber",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/bryan-mcomber-b446b0156",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Sutapa Khatua",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/sutapa-khatua-73015420",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Byrd Md",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Sugar Land",
+   "linkedin": "https://www.linkedin.com/in/byrd-md-5b995248",
+   "email": "b\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": ""
+  },
+  {
+   "name": "Sherri Burke",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/sherri-burke-658a92101",
+   "email": "b\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Souzan Siddig",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Sugar Land",
+   "linkedin": "https://www.linkedin.com/in/souzan-siddig-641915147",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Roland Flanagan",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/roland-flanagan-027976139",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Dan Howard",
+   "title": "Pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/dan-howard-86a28115b",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Triveni Kallur",
+   "title": "Pediatrician",
+   "org": "Parkland Health",
+   "city": "The Colony",
+   "linkedin": "https://www.linkedin.com/in/triveni-kallur-609174129",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Mairiani Rondon",
+   "title": "autism therapy",
+   "org": "Building BLOCS",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/mairiani-rondon-920786154",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Michael Haas",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/michael-haas-71296353",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Brittany Vaio",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/brittany-armenta-937b6337",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth Mitchell",
+   "title": "Pet Assisted Child Therapist",
+   "org": "Myndfit Mental Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-mitchell-81ba37b7",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@myndfitmentalhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Ericka Scheller McLaughlin",
+   "title": "Pediatric Resident",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/ericka-scheller-mclaughlin-b838491",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Sheila White-Jackson",
+   "title": "Pediatrician",
+   "org": "Parkland Health",
+   "city": "DeSoto",
+   "linkedin": "https://www.linkedin.com/in/sheila-white-jackson-03026874",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Richard Shore",
+   "title": "Pediatrician",
+   "org": "CommuniCare Health Services",
+   "city": "New Braunfels",
+   "linkedin": "https://www.linkedin.com/in/richard-shore-01b6215a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Elumalai Appachi",
+   "title": "Pediatrician in chief",
+   "org": "CHILDREN'S HOSPITAL OF SAN ANTONIO",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/elumalai-appachi-8102011b0",
+   "email": "e\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Joan Choi",
+   "title": "Pediatrician",
+   "org": "William Beaumont Army Medical Center",
+   "city": "El Paso",
+   "linkedin": "https://www.linkedin.com/in/joan-choi-15433138",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Shuya Wu",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/shuya-wu-9578b147",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202273"
+  },
+  {
+   "name": "Julie Hong",
+   "title": "General Pediatrician",
+   "org": "Kidsville Pediatrics",
+   "city": "Mansfield",
+   "linkedin": "https://www.linkedin.com/in/julie-hong-67b442317",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tania Diaz",
+   "title": "pediatrician",
+   "org": "EmCare",
+   "city": "Rowlett",
+   "linkedin": "https://www.linkedin.com/in/tania-diaz-7b135862",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@emcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Rachel Fein, PhD, BCBA",
+   "title": "Child Psychologist",
+   "org": "Legacy Community Health",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/rachel-fein-phd-bcba-b22563a1",
+   "email": "r\u2022\u2022\u2022\u2022@legacycommunityhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Natacha Pankratz, M.D.",
+   "title": "Primary Care Pediatrician",
+   "org": "People's Community Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/natacha-pankratz-10b2397b",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@austinpcc.org",
+   "phone": ""
+  },
+  {
+   "name": "Brandon Altillo",
+   "title": "Primary Care Internist and Pediatrician",
+   "org": "CommUnityCare Health Centers",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/brandon-altillo-33474370",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Paulette See",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/paulette-see-73b65394",
+   "email": "s\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Scott Katz, M.D., MBA",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/scott-katz-m-d-mba-4b94825",
+   "email": "s\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Hima Bodagala MD, FAAP",
+   "title": "General Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/himabodagala",
+   "email": "b\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Jeannine Hatt",
+   "title": "Pediatrician",
+   "org": "GREATER TEXOMA HEALTH CLINIC",
+   "city": "Denison",
+   "linkedin": "https://www.linkedin.com/in/jeannine-hatt-47832a10",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Seth Kaplan",
+   "title": "Primary Care Pediatrician",
+   "org": "COOK CHILDREN'S PHYSICIANS NETWORK",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/seth-kaplan-aaab2a4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Olaseni Prince",
+   "title": "General Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/moshood-karim-b9615810a",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": ""
+  },
+  {
+   "name": "Caroline Little",
+   "title": "Pediatric Resident",
+   "org": "Brooke Army Medical Center",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/caroline-little-01890b1b2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Iqbal A Memon MD",
+   "title": "Addiction Specialist/Pediatrician/Urgent Care Physician/Telemedicine physician",
+   "org": "Pediatrics Practice",
+   "city": "Irving",
+   "linkedin": "https://www.linkedin.com/in/iamemon",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Amber Caraway, MS, LPC",
+   "title": "Case Manager II-Autism Spectrum Disorder",
+   "org": "Elevance Health",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/amber-caraway-ms-lpc-b9274129",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amber Miller-Showalter, MS, LPC",
+   "title": "Case Manager II-Autism Spectrum Disorder",
+   "org": "Elevance Health",
+   "city": "Richmond",
+   "linkedin": "https://www.linkedin.com/in/amber-miller-showalter-ms-lpc-b9274129",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Muranna Sherwood, MA, LMFT",
+   "title": "Child Therapist",
+   "org": "Heritage Counseling & Consulting P.A.",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/muranna-sherwood",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Dr. Meenu Bhatti",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/drmollybhatti",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Edgar Navarro Garza",
+   "title": "Pediatra",
+   "org": "Lone Star Circle of Care",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/edgar-navarro-garza-b3958663",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Lea Abou Haidar",
+   "title": "Pediatric Resident",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/lea-abou-haidar-a89ba5171",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Washington Marin Castro, MD, FAAP, CLC",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/washington-marin-castro-md-faap-clc-0b5b2952",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Elisa Abdallah",
+   "title": "Registered Behavior Technician at APARA Autism Center",
+   "org": "Apara Autism Centers",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/elisa-abdallah-3809022a4",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@aparaautism.com",
+   "phone": ""
+  },
+  {
+   "name": "Rose Lapis",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/rose-lapis-5389b232",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Olowo Tope",
+   "title": "Pediatrician",
+   "org": "Kidsville Pediatrics PLLC",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/olowo-tope-150202124",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kia Quinlan",
+   "title": "Pediatric Resident",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/kia-quinlan-b8676693",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Emad Lawendy",
+   "title": "Pediatrician - MD, FAAP.",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/emad-lawendy-131972a3",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Stacy Nayes",
+   "title": "Staff Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/stacy-nayes-693097110",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Sunil Bochare",
+   "title": "Pediatrician",
+   "org": "University Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/sunil-bochare-49749715",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@universityhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Suratha Elango",
+   "title": "Pediatrician -  Texas Children's Pediatrics Westwood",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/suratha-elango-0a6851a1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Joann Schulte",
+   "title": "Staff Pediatrician",
+   "org": "PEDIATRICIAN OFFICE",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/joann-schulte-00425b23",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Brianica Joubert",
+   "title": "Autism Support Specialist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Beaumont",
+   "linkedin": "https://www.linkedin.com/in/brianica-joubert-n062426",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Brina Bui",
+   "title": "Pediatrician",
+   "org": "UT PHYSICIANS BAY AREA PEDIATRICS",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/brina-bui-77174674",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Sean Faries",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/sean-faries-6708a9109",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Raquel Vargas-Whale MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/raquel-vargas-whale-md-0167b78",
+   "email": "v\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Hannah Justice",
+   "title": "General Pediatrician",
+   "org": "CommUnityCare Health Centers",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/hannah-justice-53702577",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@communitycaretx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Mariam El-Haj, MA, LPC-Associate",
+   "title": "Youth therapist",
+   "org": "Daybreak Health",
+   "city": "Edinburg",
+   "linkedin": "https://www.linkedin.com/in/mariam-el-haj",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Dr. Sultan Purewal",
+   "title": "Pediatric Resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/sultan-purewal-a52ab191",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Christina Wood",
+   "title": "Pediatrician",
+   "org": "Imagine Pediatrics",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/christina-wood-050b55345",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alexandra Viso, MD",
+   "title": "Pediatric Resident",
+   "org": "Brooke Army Medical Center",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/alexandra-viso-md-04472210b",
+   "email": "a\u2022\u2022\u2022@virginia.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jessica Edwards",
+   "title": "ADHD, Autism, and Trauma Focused Counselor",
+   "org": "Layers Counseling Specialists",
+   "city": "Denton",
+   "linkedin": "https://www.linkedin.com/in/jessica-edwards-8b807b1ba",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@layerscs.com",
+   "phone": ""
+  },
+  {
+   "name": "Brianne Dentel",
+   "title": "Pediatric Resident",
+   "org": "UT Southwestern Medical Center",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/brianne-pierce-b836a967",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": ""
+  },
+  {
+   "name": "Lakshmi Atkuri, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/lakshmi-atkuri-md-faap-97884247",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Fatima Rahlouni, DO, PhD",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/fatimarahlouni",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Mark Barros",
+   "title": "General Pediatrician",
+   "org": "Cortica",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/mark-barros-05885019a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@corticacare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Julio Valdes",
+   "title": "Pediatric resident",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/julio-valdes-b881686b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202273"
+  },
+  {
+   "name": "Alice Taylor, MD",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/alice-taylor-md-b310362a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Lauren Shepard",
+   "title": "Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/lauren-shepard-4440793a",
+   "email": "s\u2022\u2022\u2022@memorialhermann.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Nour Farah",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/nour-farah-465973a0",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Karli Silverberg",
+   "title": "Primary Care Pediatrician",
+   "org": "CommUnityCare Health Centers",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/karli-silverberg-b499bb61",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@communitycaretx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Tahir Khan, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "SOUTH PADRE ISLAND PEDIATRIC CENTER",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/tahir-khan-md-35087a1a5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Dalia Morad",
+   "title": "Primary Care Pediatrician",
+   "org": "Family Circle of Care",
+   "city": "Tyler",
+   "linkedin": "https://www.linkedin.com/in/dalia-morad-4b82031b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Charlie Williams",
+   "title": "Pediatrician",
+   "org": "COOK CHILDRENS PHYSICIAN NETWORK",
+   "city": "Denton",
+   "linkedin": "https://www.linkedin.com/in/charlie-williams-53271038",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Ren\u00e9 Bartos MD, MPH",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "DELL CHILDRENS MEDICAL GROUP",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/ren\u00e9bartosmdmph",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Dane Fliedner",
+   "title": "Medical Director/ Staff Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Georgetown",
+   "linkedin": "https://www.linkedin.com/in/dane-fliedner-10ba2258",
+   "email": "D\u2022\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Yvette Robinson",
+   "title": "Autism Service Navigator",
+   "org": "Accolade, Inc.",
+   "city": "Converse",
+   "linkedin": "https://www.linkedin.com/in/yvette-alejos-robinson-612865101",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Charlotte Zuniga",
+   "title": "Pediatrician",
+   "org": "Imagine Pediatrics",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/charlotte-zuniga-0b4b6080",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Nathalie Tiberio, MD, FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "CommuniCare",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/nathalie-tiberio-md-faap-4793641a0",
+   "email": "t\u2022\u2022\u2022@secureserver.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Arturo Alejandro Hernandez",
+   "title": "General Pediatrician",
+   "org": "GATEWAY COMMUNITY HEALTH CENTER INC",
+   "city": "Laredo",
+   "linkedin": "https://www.linkedin.com/in/arturo-alejandro-hernandez-aa15a227",
+   "email": "A\u2022\u2022\u2022\u2022\u2022\u2022@gatewaychc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Melissa Chavez- Humphrey MEd, MSW, LCSW TX/KS",
+   "title": "Clinical Program Manager Autism/ABA Team",
+   "org": "UnitedHealth Group",
+   "city": "Rosenberg",
+   "linkedin": "https://www.linkedin.com/in/melissa-chavez-humphrey-med-msw-lcsw-tx-ks-65777052",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Surya Jacob,MD,FAAP",
+   "title": "Pediatrician",
+   "org": "Kelsey-Seybold Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/surya-jacob-md-faap-5aa02272",
+   "email": "s\u2022\u2022\u2022@kelsey-seybold.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Kim Tran",
+   "title": "Pediatrician",
+   "org": "Lone Star Circle of Care",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/kim-tran-53367baa",
+   "email": "k\u2022\u2022\u2022@lscctx.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Elizabeth Adams, M.D., FAAP",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-adams-m-d-faap-414ab31b1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Vonni Gant",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Missouri City",
+   "linkedin": "https://www.linkedin.com/in/vonni-gant-0a57a290",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@pediatricassociates.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Mark Clee",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Keller",
+   "linkedin": "https://www.linkedin.com/in/mark-clee-b8156410b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Nicholas Lindsay",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/nicholas-lindsay-81541461",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Catherine Yost",
+   "title": "Pediatrician",
+   "org": "Carl R. Darnall Army Medical Center",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/catherine-yost-23021b9b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Anne Vo",
+   "title": "Pediatrician",
+   "org": "DeTar Healthcare Systems",
+   "city": "Victoria",
+   "linkedin": "https://www.linkedin.com/in/anne-vo-40856283",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@detar.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Matt Wilber",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Friendswood",
+   "linkedin": "https://www.linkedin.com/in/matt-wilber-90a71756",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Mary Elizabeth Gomez",
+   "title": "Pediatric Resident",
+   "org": "The University of Texas Medical Branch",
+   "city": "Galveston",
+   "linkedin": "https://www.linkedin.com/in/mary-elizabeth-gomez-714288154",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "Carmen Wilson",
+   "title": "Pediatrician",
+   "org": "Parkland Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/carmen-wilson-9067a829",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Jean McAtee",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/jean-mcatee-13a824195",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Robert Crandell",
+   "title": "Pediatrician",
+   "org": "Mercy Cedar Rapids",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/robert-crandell-20360718b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jeff Lee",
+   "title": "Pediatrician",
+   "org": "St. Joseph Health",
+   "city": "College Station",
+   "linkedin": "https://www.linkedin.com/in/jeff-lee-390790286",
+   "email": "j\u2022\u2022\u2022@stlukeshealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Eron Linver",
+   "title": "Pediatrician Hospitalist",
+   "org": "Children's Health",
+   "city": "Carrollton",
+   "linkedin": "https://www.linkedin.com/in/eron-linver-29768921",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Kathleen K.",
+   "title": "General Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Belton",
+   "linkedin": "https://www.linkedin.com/in/kathleen-k-836a8a209",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "brooklynn coulter",
+   "title": "Pediatrician",
+   "org": "Hendrick Health",
+   "city": "Jayton",
+   "linkedin": "https://www.linkedin.com/in/brooklynn-coulter-3a6138152",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Sutapa Khatua",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sutapa-khatua-3bb86637",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Rubina Ahad",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Spring",
+   "linkedin": "https://www.linkedin.com/in/rubina-ahad-03b404348",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "nancy ngo",
+   "title": "Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/nancy-ngo-9aabb290",
+   "email": "n\u2022\u2022\u2022@memorialhermann.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Susan Kent M.D.",
+   "title": "Pediatrician",
+   "org": "Mednax, National Medical Group",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/susan-kent-m-d-916857138",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Grace Tyler",
+   "title": "Pediatrician",
+   "org": "Maven Clinic",
+   "city": "El Paso",
+   "linkedin": "https://www.linkedin.com/in/grace-tyler-63096b279",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jian Wang",
+   "title": "Pediatrician",
+   "org": "Parkland Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/jian-wang-04a88016",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Brianna Meier",
+   "title": "Pediatric Resident",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/brianna-meier-7a4429a3",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Tareq Hulali",
+   "title": "Pediatrician",
+   "org": "Midland Memorial Hospital",
+   "city": "Midland",
+   "linkedin": "https://www.linkedin.com/in/tareq-hulali-3938a750",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Matthew Nierling",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/matthew-nierling-30859055",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Qiana Green",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Missouri City",
+   "linkedin": "https://www.linkedin.com/in/qiana-green-b969b0220",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Henri-Ann Nortman",
+   "title": "Pediatrician",
+   "org": "MEHOP",
+   "city": "Wharton",
+   "linkedin": "https://www.linkedin.com/in/henri-ann-nortman-4a670999",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@mehop.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Karina Phang",
+   "title": "Pediatrician",
+   "org": "Medical University of South Carolina",
+   "city": "Garland",
+   "linkedin": "https://www.linkedin.com/in/karina-phang-6b0872161",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Lori Mitchell",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/lori-mitchell-0b85941a0",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "Denise Uchoa",
+   "title": "Pediatrician",
+   "org": "CentroMed",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/denise-uchoa-444aa61ab",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@centromedsa.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Bellatrix Vivas",
+   "title": "Pediatrician",
+   "org": "Ortega Medical Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/bellatrix-vivas-abaa71136",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Gonzalez Alex",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Katy",
+   "linkedin": "https://www.linkedin.com/in/gonzalez-alex-1725b230",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Dr. Kara Froelich",
+   "title": "pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Conroe",
+   "linkedin": "https://www.linkedin.com/in/dr-kara-froelich-2762111b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Prihoda",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Conroe",
+   "linkedin": "https://www.linkedin.com/in/melissa-prihoda-350abb103",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "john thompson",
+   "title": "pediatrician",
+   "org": "Baylor Scott & White Health Plan",
+   "city": "Temple",
+   "linkedin": "https://www.linkedin.com/in/john-thompson-8bb9374b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Yolanda Rice",
+   "title": "Autism teacher",
+   "org": "The Behavior Exchange, Inc.",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/yolanda-rice-24aaba188",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Gregory Sonnen, M.D.",
+   "title": "Pediatrician",
+   "org": "DALLAS PHYSICIAN MEDICAL SERVICES FOR CHILDREN INC",
+   "city": "Rockwall",
+   "linkedin": "https://www.linkedin.com/in/gregory-sonnen-m-d-2611b21b1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Wil Raine",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Arlington",
+   "linkedin": "https://www.linkedin.com/in/wil-raine-04204542",
+   "email": "r\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Ansa Thomas",
+   "title": "Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas",
+   "linkedin": "https://www.linkedin.com/in/ansa-thomas-09bb2987",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Estela O'Daniell",
+   "title": "Board certified pediatrician",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/estela-o-daniell-42a9b24a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Dick Worrel",
+   "title": "pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/dick-worrel-84b30324",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Magda Fawzy",
+   "title": "pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Hurst",
+   "linkedin": "https://www.linkedin.com/in/magda-fawzy-a6564736",
+   "email": "f\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Theresa Velasquez",
+   "title": "Pediatrician",
+   "org": "CommuniCare",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/theresa-velasquez-1214286b",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@communicaresa.org",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Smith-Phillips",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Galveston",
+   "linkedin": "https://www.linkedin.com/in/melissa-smith-phillips-206a8876",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "Cathy Roberts",
+   "title": "Neuro Developmental Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Allen",
+   "linkedin": "https://www.linkedin.com/in/cathy-roberts-124ba985",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@mednax.com",
+   "phone": ""
+  },
+  {
+   "name": "Maria Nguyen",
+   "title": "pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Alvin",
+   "linkedin": "https://www.linkedin.com/in/maria-nguyen-7b2bb44",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "James Wheeler",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Bedford",
+   "linkedin": "https://www.linkedin.com/in/james-wheeler-332862aa",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Novera Akram",
+   "title": "Pediatrician",
+   "org": "BCHC",
+   "city": "Brownsville",
+   "linkedin": "https://www.linkedin.com/in/novera-akram-7b386541",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ana Mishaan",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Fort Worth",
+   "linkedin": "https://www.linkedin.com/in/ana-mishaan-937a0b113",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amy Crissman",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/amy-crissman-742468149",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "vandana rawal",
+   "title": "Pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/vandana-rawal-34a28b3b",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Tomasina Clarke",
+   "title": "idividual therapist for autism",
+   "org": "Texana Center",
+   "city": "Rosenberg",
+   "linkedin": "https://www.linkedin.com/in/tomasina-clarke-b8796572",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Holy Chor",
+   "title": "Primary Care Pediatrician",
+   "org": "Children's Health",
+   "city": "Dallas-Fort Worth Metroplex",
+   "linkedin": "https://www.linkedin.com/in/holy-chor",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrens.com",
+   "phone": ""
+  },
+  {
+   "name": "Fauzia Naqvi",
+   "title": "pediatrician",
+   "org": "Parkland Health",
+   "city": "Plano",
+   "linkedin": "https://www.linkedin.com/in/fauzia-naqvi-a2390633",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@parklandhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Art Lozano",
+   "title": "Pediatric Resident",
+   "org": "Vidant Health",
+   "city": "Southlake",
+   "linkedin": "https://www.linkedin.com/in/art-lozano-3078521",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Janie Miller",
+   "title": "Pediatric Therapist",
+   "org": "Connections Wellness Group",
+   "city": "Duncanville",
+   "linkedin": "https://www.linkedin.com/in/janie-miller",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Vicki Moore",
+   "title": "Pediatrician",
+   "org": "UT Southwestern Medical Center",
+   "city": "Prosper",
+   "linkedin": "https://www.linkedin.com/in/vicki-moore-633aba145",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": ""
+  },
+  {
+   "name": "Sof\u00eda Isea",
+   "title": "Pediatric Resident",
+   "org": "Centro M\u00e9dico Docente La Trinidad",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/sof%c3%ada-isea-274496212",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cmdlt.edu.ve",
+   "phone": ""
+  },
+  {
+   "name": "Leah Mercado",
+   "title": "Pediatrician",
+   "org": "CentroMed",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/leah-mercado-9566239a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Maria Rossell",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/dr-maria-rossell-11002891",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Richard Shore",
+   "title": "Pediatrician",
+   "org": "CentroMed",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/richard-shore-1b4632175",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@centromedsa.com",
+   "phone": ""
+  },
+  {
+   "name": "Paisley Penzes",
+   "title": "Autism Services Navigator",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Argyle",
+   "linkedin": "https://www.linkedin.com/in/paisley-penzes-335905252",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cindy Durr, DO",
+   "title": "Pediatrician Urgent Care",
+   "org": "Cook Children's Health Care System",
+   "city": "Grand Prairie",
+   "linkedin": "https://www.linkedin.com/in/cindy-durr-do-87956480",
+   "email": "d\u2022\u2022\u2022@cookchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Jeannie Huynh",
+   "title": "Pediatrician",
+   "org": "NightLight Pediatric Urgent Care",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/jeannie-huynh-352333195",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nightlightpediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Brad Onhaizer",
+   "title": "Pediatrician",
+   "org": "Pearland Pediatrics",
+   "city": "Pearland",
+   "linkedin": "https://www.linkedin.com/in/brad-onhaizer-9a46a1277",
+   "email": "B\u2022\u2022\u2022@pearlandpediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Brenna Pickard",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/brenna-pickard-8851b3108",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Patty Goen",
+   "title": "Pediatrician",
+   "org": "HealthPoint",
+   "city": "College Station",
+   "linkedin": "https://www.linkedin.com/in/patty-goen-243b906b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mike Austin",
+   "title": "Pediatrician",
+   "org": "UT Health East Texas",
+   "city": "Tyler",
+   "linkedin": "https://www.linkedin.com/in/mike-austin-240a386",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@etmc.org",
+   "phone": ""
+  },
+  {
+   "name": "Pierpaolo Palmieri",
+   "title": "Pediatrician",
+   "org": "Asian American Health Coalition - HOPE Clinic",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/pierpaolo-palmieri-2b955a120",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@hopechc.org",
+   "phone": ""
+  },
+  {
+   "name": "Cynthia Schaeffer",
+   "title": "Clinical Coordinator, Autism Center",
+   "org": "UTHealth Houston",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/cynthia-schaeffer-b2270145",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Samuel Clark",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Waco",
+   "linkedin": "https://www.linkedin.com/in/samuel-clark-2a361a239",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Arielle Guillory",
+   "title": "Pediatrician",
+   "org": "Girling Personal Care",
+   "city": "Beaumont",
+   "linkedin": "https://www.linkedin.com/in/arielle-guillory-b07057141",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gentivahs.com",
+   "phone": ""
+  },
+  {
+   "name": "Nora Saavedra",
+   "title": "Pediatrician",
+   "org": "Vecino Health Centers",
+   "city": "Manvel",
+   "linkedin": "https://www.linkedin.com/in/nora-saavedra-691aa9341",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Susan Raff",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Allen",
+   "linkedin": "https://www.linkedin.com/in/susan-raff-260322329",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Katherine Leaning",
+   "title": "Pediatrician",
+   "org": "Baylor",
+   "city": "Colleyville",
+   "linkedin": "https://www.linkedin.com/in/katherine-leaning-87a749115",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Theodora Mucher",
+   "title": "Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/theodora-mucher-3b972666",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Daniel Howard",
+   "title": "Pediatrician",
+   "org": "The Austin Diagnostic Clinic",
+   "city": "Pflugerville",
+   "linkedin": "https://www.linkedin.com/in/daniel-howard-8b011815",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Richard Joos",
+   "title": "Pediatrician",
+   "org": "WELLNESS POINTE, PC",
+   "city": "Longview",
+   "linkedin": "https://www.linkedin.com/in/richard-joos-4578b1235",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kimberly Lazarus",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Humble",
+   "linkedin": "https://www.linkedin.com/in/kimberly-lazarus-77043335a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "caitlin ogden",
+   "title": "autism behavioral therapist",
+   "org": "DFW Center for Autism",
+   "city": "Carrollton",
+   "linkedin": "https://www.linkedin.com/in/caitlin-ogden-a3041aa9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Daisy Gracia Saad",
+   "title": "Pediatrician",
+   "org": "Ravenswood Family Health Network",
+   "city": "Richardson",
+   "linkedin": "https://www.linkedin.com/in/daisy-gracia-saad-5a3b03167",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Karen Roberts",
+   "title": "Pediatrician",
+   "org": "Diagnostic Clinic of Longview",
+   "city": "Longview",
+   "linkedin": "https://www.linkedin.com/in/karen-roberts-59a93349",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Zulms Ines Toledo",
+   "title": "Pediatrician - Developmental & Behavioral Peds.",
+   "org": "Driscoll Children's Hospital",
+   "city": "Corpus Christi",
+   "linkedin": "https://www.linkedin.com/in/zulms-ines-toledo-1b660775",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@driscollchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Alysha Diaz",
+   "title": "Pediatric Physician Assistant",
+   "org": "MEHOP",
+   "city": "Palacios",
+   "linkedin": "https://www.linkedin.com/in/alysha-diaz-ms-pas-pa-c-987291234",
+   "email": "a\u2022\u2022\u2022\u2022@mehop.org",
+   "phone": ""
+  },
+  {
+   "name": "Lauren Raimer Goodman",
+   "title": "Pediatrician",
+   "org": "The University of Texas Medical Branch",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/lauren-raimer-goodman-562837338",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@utmb.edu",
+   "phone": ""
+  },
+  {
+   "name": "Perla Soni",
+   "title": "Pediatrician",
+   "org": "CHRISTUS Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/perla-soni-940312330",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Logan Acero",
+   "title": "Pediatrician",
+   "org": "Memorial Hermann Health System",
+   "city": "Houston",
+   "linkedin": "https://www.linkedin.com/in/logan-acero-02440095",
+   "email": "a\u2022\u2022\u2022@memorialhermann.org",
+   "phone": ""
+  },
+  {
+   "name": "Ashley Wilson",
+   "title": "Pediatrician",
+   "org": "Chisholm Trail Pediatrics",
+   "city": "Georgetown",
+   "linkedin": "https://www.linkedin.com/in/ashley-wilson-b03995183",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Payton Diers",
+   "title": "Pediatrician",
+   "org": "Rady Children's Hospital-San Diego",
+   "city": "Austin",
+   "linkedin": "https://www.linkedin.com/in/payton-diers-0a339514b",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@rchsd.org",
+   "phone": ""
+  },
+  {
+   "name": "Olivia Boone",
+   "title": "Primary Care Pediatrician",
+   "org": "Kidsville Pediatrics PLLC",
+   "city": "Frisco",
+   "linkedin": "https://www.linkedin.com/in/olivia-boone-02456931a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Olivia Castro, MD FAAP",
+   "title": "Pediatrician",
+   "org": "CHRISTUS Health",
+   "city": "San Antonio",
+   "linkedin": "https://www.linkedin.com/in/olivia-castro-md-faap-707577264",
+   "email": "m\u2022\u2022\u2022@christushealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Kimberly Earle",
+   "title": "Pediatrician",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/kimberly-earle-057648195",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Divya Dhoot",
+   "title": "Pediatric Resident",
+   "org": "UTHealth Houston",
+   "city": "Greater Houston",
+   "linkedin": "https://www.linkedin.com/in/divya-dhoot-455559167",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Stephanie Watabe",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Midlothian",
+   "linkedin": "https://www.linkedin.com/in/stephanie-watabe-01739a2a0",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": ""
+  }
+ ]
+}

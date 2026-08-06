@@ -1,0 +1,1506 @@
+{
+ "name": "Colorado",
+ "slug": "colorado",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-colorado.csv",
+ "count": 158,
+ "emails": 74,
+ "phones": 123,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 98
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 27
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 17
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 10
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 6
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Denver",
+   "count": 62
+  },
+  {
+   "name": "Denver Metropolitan Area",
+   "count": 22
+  },
+  {
+   "name": "Colorado Springs",
+   "count": 12
+  },
+  {
+   "name": "Aurora",
+   "count": 9
+  },
+  {
+   "name": "Littleton",
+   "count": 6
+  },
+  {
+   "name": "Parker",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Children's Hospital Colorado",
+   "count": 29
+  },
+  {
+   "name": "Denver Health",
+   "count": 23
+  },
+  {
+   "name": "Kaiser Permanente",
+   "count": 16
+  },
+  {
+   "name": "Colorado Permanente Medical Group (CPMG)",
+   "count": 9
+  },
+  {
+   "name": "UCHealth",
+   "count": 5
+  },
+  {
+   "name": "Optum",
+   "count": 5
+  }
+ ],
+ "rows": [
+  {
+   "name": "Chris Blankenship",
+   "title": "Founder of Autism Learning Lab",
+   "org": "Autism Learning Lab",
+   "city": "Silverton",
+   "linkedin": "https://www.linkedin.com/in/chris-blankenship-ab2496a6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Monica Davern MD, MPH",
+   "title": "Pediatrician & Innovation Contributor",
+   "org": "Blueberry Pediatrics",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/monica-davern",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Deborah Archer, MD FAAP",
+   "title": "Pediatrican",
+   "org": "Kaiser Permanente",
+   "city": "Fort Collins",
+   "linkedin": "https://www.linkedin.com/in/deborah-archer-md-faap",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Joe Craig",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/joe-craig-93589023",
+   "email": "J\u2022\u2022\u2022@permanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Katharine Reynolds, PhD",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Hospital Colorado",
+   "city": "Broomfield",
+   "linkedin": "https://www.linkedin.com/in/katharine-reynolds-phd-3949294a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Sarah Corin",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/sarah-corin-a54b2682",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Christopher Wells, LMFT, CAC II, PAT-C",
+   "title": "Contract Marriage, Family and Child Therapist",
+   "org": "Caring Heart Counseling LLC",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/christopher-wells-lmft-cac-ii-cfi-ba79921",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shannon Herd Cole, MD, FAAP",
+   "title": "Pediatrician for Colorado Permanente Medical Group",
+   "org": "Kaiser Permanente",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/shannon-herd-cole-md-faap-5b971b32",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Tracy Dee Whitt",
+   "title": "Autism Awareness Speaker",
+   "org": "SSM Health",
+   "city": "Grand Junction",
+   "linkedin": "https://www.linkedin.com/in/tracydeewhitt",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Mary Lou Gutierrez, M.D.",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Talkiatry",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/mary-lou-gutierrez-m-d-438327a9",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@talkiatry.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Julia Tanguay",
+   "title": "Pediatrician",
+   "org": "CommonSpirit Health",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/julia-tanguay-95250213",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Dawnelle Schatte, MD",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Family Care Center",
+   "city": "Loveland",
+   "linkedin": "https://www.linkedin.com/in/dawnelle-schatte-md-a8b1b8222",
+   "email": "d\u2022\u2022\u2022@fccsprings.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Pragya Verma Bhatnagar MD MPH, FAAP",
+   "title": "Pediatrician - Emergency Medicine",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/pragyavermabhatnagar",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Abbi Gutierrez, PsyD",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/abbi-gutierrez-psyd-020003b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Margaret Van Der Bosch",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/margaret-van-der-bosch-83380b110",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Frank Baldwin",
+   "title": "Pediatric Physician Assistant",
+   "org": "MedNOW Clinics, Inc.",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/frank-baldwin-503b1818",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@mednowclinics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Morgan Spellman, PsyD",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/morgan-spellman-psyd-89323174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Emma Lecarie",
+   "title": "Integrated Pediatric Psychologist",
+   "org": "Children's Hospital Colorado",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/emma-lecarie-1746a275",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Mark Wiesner",
+   "title": "Pediatrician",
+   "org": "UCHealth",
+   "city": "Loveland",
+   "linkedin": "https://www.linkedin.com/in/mark-wiesner-8497411b",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@uchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "marita bledsoe",
+   "title": "Locum Tenens pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Eagle",
+   "linkedin": "https://www.linkedin.com/in/marita-bledsoe-2877a8121",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Lauren Gillespie, M.D.",
+   "title": "Pediatrician",
+   "org": "Academy Park Pediatrics Inc",
+   "city": "Arvada",
+   "linkedin": "https://www.linkedin.com/in/legillesp",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@academyparkpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Kristen Kammerer",
+   "title": "Pediatrician",
+   "org": "Nextera Healthcare",
+   "city": "Longmont",
+   "linkedin": "https://www.linkedin.com/in/kkammerer",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Bethany Carvajal, MD, IBCLC",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/bethany-carvajal-md-ibclc-043099112",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "James Kaferly",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/james-kaferly-49b92590",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Mark Schane, MD",
+   "title": "Pediatrician",
+   "org": "UCHEALTH LONGMONT CLINIC",
+   "city": "Longmont",
+   "linkedin": "https://www.linkedin.com/in/mark-schane-md-994385b",
+   "email": "m\u2022\u2022\u2022@uchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Carrie Burgess, MS, BCBA, LBA",
+   "title": "Supervisor, Case Management Special Programs, Autism Care Demonstration",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Bailey",
+   "linkedin": "https://www.linkedin.com/in/carrie-burgess-ms-bcba-lba-0338b31ba",
+   "email": "b\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Monica Galaz",
+   "title": "Autism Demonstration Specialist",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Brighton",
+   "linkedin": "https://www.linkedin.com/in/monica-galaz-52851573",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Robin Zenick",
+   "title": "Pediatrician in Emergency Department",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/robin-zenick-9ba6ab2a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Michelle DeNault",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Denver Wellness Associates",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/michellesmith84",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Paige Landau, Ph.D.",
+   "title": "Child Psychologist",
+   "org": "Kimel Psychological Services, LLC",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/paige-landau-ph-d-6716aa88",
+   "email": "d\u2022\u2022\u2022@kimelpsychologicalservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Manuel Rodriguez Montana",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/manuel-rodriguez-montana-4aa112a0",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Deirdre Foster M.D.",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/deirdre-poppy-foster-m-d-6b7a2bb9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Bradley Zastrow, MD",
+   "title": "Inpatient Child and Adolescent Psychiatrist",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/bradley-zastrow-md-589718bb",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Diane Rubin Kane",
+   "title": "MD, pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/diane-rubin-kane-62b6bb46",
+   "email": "d\u2022\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Bob Casey Ph.D.",
+   "title": "Pediatric Psychologist - Center for Cancer & Blood Disorders",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/bob-casey-ph-d-96142266",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": ""
+  },
+  {
+   "name": "Johanna Michelsohn",
+   "title": "Pediatric Resident",
+   "org": "Oregon Health & Science University",
+   "city": "Fort Collins",
+   "linkedin": "https://www.linkedin.com/in/johanna-michelsohn-140bb11a6",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Eiman Ali",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/eiman-ali-2a8a0b180",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Veronica Combs",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/veronica-combs-0a28b217",
+   "email": "V\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Jordan Wright, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jordan-wright-md-faap-b95546323",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nicholas Gilman",
+   "title": "Pediatrician",
+   "org": "PEAK PEDIATRICS -WHEAT RIDGE",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/nicholas-gilman-b6057bb0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Christine Jelinek-Berents",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/christine-jelinek-berents-560696144",
+   "email": "C\u2022\u2022\u2022\u2022\u2022\u2022@permanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Kathy Love-Osborne",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/kathy-love-osborne-25a3a637",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Amie Lofton, PsyD",
+   "title": "Pediatric Psychologist - Integrated Care Specialist",
+   "org": "Kaiser Permanente",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/amie-lofton-psyd-029553210",
+   "email": "l\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Abigail Ommert",
+   "title": "FT Caregiver & Mom to Son w/ Intellectual Developmental Disabilities, Down Syndrome, Autism",
+   "org": "Physicians Home Health Care",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/abigail-ommert-8b719338",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Linda Thornton",
+   "title": "Registered Behavior Technician at Mindcolor Autism",
+   "org": "Mindcolor Autism",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/linda-thornton-41144918a",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@mindcolorautism.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Eugene M.",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/eugenemaster",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Meghan Fels, D.O.",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Greeley",
+   "linkedin": "https://www.linkedin.com/in/meghan-fels-d-o-01378774",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Jessica Jack",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jessica-jack-a4300595",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Janice Niver",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Kaiser Permanente",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/janice-niver-9787491a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Aarti Sharma",
+   "title": "Pediatrician",
+   "org": "Peak Pediatrics",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/aarti-sharma-b9993054",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@peakpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Jacky Waido",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jacky-waido-959b0137",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Cassaundra Hein",
+   "title": "Marriage, Family and Child Therapist",
+   "org": "Griffith Centers",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/cassaundra-hein-86455739",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Amy Long",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/amy-long-7032522",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Elaine Scholes",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/elaine-scholes-5b586114",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Nicki Erwin",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Westminster",
+   "linkedin": "https://www.linkedin.com/in/nicki-erwin-a5775966",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Abby Hughes",
+   "title": "Pediatrician",
+   "org": "Lakeside Youth N Kids Pediatrics (LYNK Pediatrics)",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/abby-hughes-42216317a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jenny Wall, M.D.",
+   "title": "Pediatrician",
+   "org": "Arapahoe Park Pediatrics",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/jenny-wall-m-d-07230519a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Erin Casey",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/erin-casey-884b097a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Jennifer Harr",
+   "title": "Pediatrician",
+   "org": "Rose Pediatrics",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/jennifer-harr-21a56488",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Amanda Sevvom PA-C, MPAS",
+   "title": "Pediatric Physician Assistant",
+   "org": "Arvada Pediatric Associates",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/amanda-sevvom-pa-c-mpas-928361184",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Sarah Amoroso",
+   "title": "Pediatrician",
+   "org": "CommonSpirit Health",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/sarah-amoroso-200ab414b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Denise Vidas",
+   "title": "Pediatric Physician Assistant",
+   "org": "Children's Hospital Colorado",
+   "city": "Golden",
+   "linkedin": "https://www.linkedin.com/in/denise-vidas-b3359712",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Kailey Proctor",
+   "title": "Pediatric Resident",
+   "org": "ARNOLD PALMER HOSPITAL FOR CHILDREN",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/kailey-proctor-69bb43b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Ruth Lestikow",
+   "title": "Pediatric Physician Assistant",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/ruth-lestikow",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Lindsy Brickell",
+   "title": "General Pediatrician",
+   "org": "Optum",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/lindsy-brickell-318370188",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Kelly Price",
+   "title": "General Pediatrician",
+   "org": "Optum",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/kelly-price-7477b248",
+   "email": "k\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Ali Wiersma",
+   "title": "Pediatrician, Clinical Instructor, Department of Emergency Medicine",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/ali-wiersma-7b687584",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cynthia Snyder",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/cynthia-snyder-324aa364",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Ali Russell",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/ali-russell-40188469",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Ogle",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/john-ogle-65050644",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Lauren Davis-Hubball LPC, CRC",
+   "title": "Therapist- Autism/IDD Counseling Center",
+   "org": "Aurora Mental Health & Recovery",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/laurendavishubball",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "jean stewart",
+   "title": "pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/jean-stewart-3b399234",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Kathleen Nitcher, M.D.",
+   "title": "Pediatrician",
+   "org": "Optum",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/kathleen-nitcher-m-d-1a91b244",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Clare Burchenal",
+   "title": "Primary Care Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/clare-burchenal-498084195",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Molly Lindsey",
+   "title": "Pediatric Resident",
+   "org": "Children's Nebraska",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/molly-lindsey-b7ba02168",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@childrensnebraska.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Nicole Miller Villamaria, MD, IBCLC",
+   "title": "Primary Care Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/nicole-miller-villamaria-md-ibclc-75a71124b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Matthew Spear",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/matthew-spear-3b3440209",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Bre Barela",
+   "title": "Clinical Child Psychologist",
+   "org": "Rocky Mountain Human Services",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/bre-barela-06530950",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Michele Tuepker",
+   "title": "Pediatrician",
+   "org": "Intermountain Health Platte Valley Hospital",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/michele-tuepker-24b191155",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Hany Khattab",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/hany-khattab-025697151",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Michelle Taylor",
+   "title": "Pediatric Physician Assistant",
+   "org": "UCHealth",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/michelle-taylor-353b604",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Meg Tomcho",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/meg-tomcho-a80b3313",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Megan Henderson",
+   "title": "Pediatrican",
+   "org": "Denver Health",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/megan-henderson-034135187",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Amanda Lovette",
+   "title": "Pediatrician",
+   "org": "Delta Health",
+   "city": "Delta",
+   "linkedin": "https://www.linkedin.com/in/amanda-lovette-b1a609119",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@deltahospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Matt Rustici",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/matt-rustici-2b160a4a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Rachel Severson",
+   "title": "Autism Care Advocate",
+   "org": "Optum",
+   "city": "Arvada",
+   "linkedin": "https://www.linkedin.com/in/rachel-severson-49282b183",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Mona Simons",
+   "title": "Pediatric Physician Assistant",
+   "org": "Kaiser Permanente",
+   "city": "Castle Rock",
+   "linkedin": "https://www.linkedin.com/in/mona-simons-28388238",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Michelle Kuster, PhD",
+   "title": "Mentally STRONG Counselor Pediatric Specialist",
+   "org": "Mentally STRONG",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/michelle-kuster-phd-1b1183228",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mentallystrong.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Kathryn Chmura",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Westminster",
+   "linkedin": "https://www.linkedin.com/in/kathryn-chmura-162a4916",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Sarah Winbourn",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/sarah-winbourn-b85a191a7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Noel Brucker",
+   "title": "Pediatrician",
+   "org": "Arvada Pediatric Associates",
+   "city": "Broomfield",
+   "linkedin": "https://www.linkedin.com/in/noel-brucker-711354102",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Kristina Foreman",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/kristina-foreman-027b7730",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": ""
+  },
+  {
+   "name": "Mona Simons",
+   "title": "Pediatric physician assistant",
+   "org": "Kaiser Permanente",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/mona-simons-194558191",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Keegan Aberson Distler",
+   "title": "BT at Soar Autism Center",
+   "org": "Soar Autism Center",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/keegan-ad",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@soarautismcenter.com",
+   "phone": ""
+  },
+  {
+   "name": "George Brandt",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Springstone",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/george-brandt-a83b67145",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Jeff Almony",
+   "title": "medical director/child psychiatrist",
+   "org": "Mental Health Center of Boulder County",
+   "city": "Boulder",
+   "linkedin": "https://www.linkedin.com/in/jeff-almony-50735339",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Scott Showalter",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/scott-showalter-1361aa60",
+   "email": "s\u2022\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Deniz Kolozs",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/deniz-kolozs-43a1996",
+   "email": "k\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Charlene Guggenheim",
+   "title": "Pediatrician",
+   "org": "ASPEN MEDICAL CARE BASALT",
+   "city": "Aspen",
+   "linkedin": "https://www.linkedin.com/in/charlene-guggenheim-328659266",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Robin Semple",
+   "title": "Child Psychiatrist",
+   "org": "Aurora Mental Health & Recovery",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/robin-semple-73811620",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Chris Moore",
+   "title": "Pediatrician",
+   "org": "Colorado Health Medical Group, LLC",
+   "city": "Greeley",
+   "linkedin": "https://www.linkedin.com/in/chris-moore-159bbb31",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jean Stevenson",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jean-stevenson-872228a5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Cynthia Toland",
+   "title": "Child Psychologist and Registered Play Therapist-Supervisor",
+   "org": "Family Care Center",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/cynthia-toland-0b5b2152",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@fccsprings.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Leslie Renz",
+   "title": "Pediatrician",
+   "org": "Peak Vista Community Health Centers",
+   "city": "Greater Colorado Springs Area",
+   "linkedin": "https://www.linkedin.com/in/leslie-renz-6865a116",
+   "email": "L\u2022\u2022\u2022\u2022@peakvista.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Robert Casey",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/robert-casey-b5308854",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Grace Costello",
+   "title": "Autism Services Navigator LCSW",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/grace-costello-lcsw-msw",
+   "email": "g\u2022\u2022\u2022@triwest.com",
+   "phone": ""
+  },
+  {
+   "name": "Karen Wilson",
+   "title": "pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Lyons",
+   "linkedin": "https://www.linkedin.com/in/karen-wilson-95b6aa38",
+   "email": "k\u2022\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Elizabeth Colvin",
+   "title": "Pediatrician",
+   "org": "Optum",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-colvin-213ba279",
+   "email": "e\u2022\u2022\u2022@optum.com",
+   "phone": ""
+  },
+  {
+   "name": "Robinson Jane",
+   "title": "Pediatric Psychologist",
+   "org": "National Jewish Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/robinson-jane-3b9b0734",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Erin Jacob",
+   "title": "Pediatric Physician Assistant",
+   "org": "Kaiser Permanente",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/erin-jacob-5737443b",
+   "email": "e\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Mark Schane",
+   "title": "Chief Medical Officer/ Pediatrician",
+   "org": "UCHealth",
+   "city": "Longmont",
+   "linkedin": "https://www.linkedin.com/in/mark-schane-506980150",
+   "email": "m\u2022\u2022\u2022@uchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Shellie Sasscer",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/shellie-sasscer-2720b371",
+   "email": "s\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Lora Melnicoe",
+   "title": "Pediatrician, Team Leader",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/lora-melnicoe-29088813",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Amanda Nedzinski",
+   "title": "Pediatrician",
+   "org": "Centura Health",
+   "city": "Colorado Springs",
+   "linkedin": "https://www.linkedin.com/in/amanda-nedzinski-18bb99146",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@centura.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Rochelle Remus",
+   "title": "Pediatrician",
+   "org": "Mercy Cedar Rapids",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/rochelle-remus-0049a3237",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Yvette Buxton",
+   "title": "Child Psychiatrist",
+   "org": "Mental Health Center of Denver",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/yvette-buxton-93a9a31a",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@mhcd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Melissa L. Sinkus",
+   "title": "Child and Adolescent Psychiatrist",
+   "org": "Arapahoe / Douglas Mental Health Network",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/melissa-l-sinkus-0a5197105",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Robert Bruce",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Fort Collins",
+   "linkedin": "https://www.linkedin.com/in/robert-bruce-6b10481a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Emily Dobyns",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/emily-dobyns-40a75726",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Donna Vishnevetsky",
+   "title": "Child And Adolescent Psychiatrist",
+   "org": "Aurora Mental Health & Recovery",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/donna-vishnevetsky-74a08b16b",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@aumhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Brian Lopez",
+   "title": "Director of Psychological Services | Championing Equitable Autism Evaluation via Telehealth",
+   "org": "JumpStart Autism Collective",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/brian-lopez-952960229",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@jumpstartaba.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "MacColl, Catherine",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/maccoll-catherine-2066893",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Laura Steinberg",
+   "title": "Pediatrician",
+   "org": "Sapphire Pediatrics",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/laura-steinberg-337a97358",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laura Zaps",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Englewood",
+   "linkedin": "https://www.linkedin.com/in/laura-zaps-99b20a91",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mark Feldman",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/mark-feldman-5785a31b1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Laurie Schwanitz",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/laurie-schwanitz-3aa92161",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Valerie Castanon",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/valerie-castanon-110073156",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Emmanuel Dotse",
+   "title": "Center for Autism and Related Disabilities",
+   "org": "Center for Autism and Related Disorders (CARD)",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/emmanuel-dotse-35823b1a8",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Robin Schaten",
+   "title": "Pediatrician",
+   "org": "Colorado Health Medical Group, LLC",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/robin-schaten-321b91b9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Elyssa Wiegand",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Silverthorne",
+   "linkedin": "https://www.linkedin.com/in/elyssa-wiegand-b203a5152",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Kathleen Joy",
+   "title": "Pediatrician",
+   "org": "Altitude Pediatrics",
+   "city": "Grand Junction",
+   "linkedin": "https://www.linkedin.com/in/kathleen-joy-56613a367",
+   "email": "k\u2022\u2022\u2022@altitudepediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Amy Driscoll",
+   "title": "Pediatrician",
+   "org": "UCHealth",
+   "city": "Greeley",
+   "linkedin": "https://www.linkedin.com/in/amy-driscoll-4970a2240",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Jane Robinson, PhD",
+   "title": "Clinical Pediatric Psychologist",
+   "org": "National Jewish Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jane-robinson-phd-8273a85",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Cara Mack",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Englewood",
+   "linkedin": "https://www.linkedin.com/in/cara-mack-3229b552",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Deb Crawford",
+   "title": "pediatrician",
+   "org": "Salud Family Health",
+   "city": "Fort Collins",
+   "linkedin": "https://www.linkedin.com/in/deb-crawford-0401292b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Christine Perlmutter",
+   "title": "Family and Child Therapist",
+   "org": "Aurora Mental Health & Recovery",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/christine-perlmutter-4529a423",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Jennifer Ess",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jennifer-ess-1b3352316",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": ""
+  },
+  {
+   "name": "Mary Klinnert",
+   "title": "Pediatric Psychologist",
+   "org": "National Jewish Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/mary-klinnert-9156b524",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@njhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Jennifer Wolfe",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Evergreen",
+   "linkedin": "https://www.linkedin.com/in/jennifer-wolfe-302507256",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kristi Knuti Rodrigues",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/kristi-knuti-rodrigues-78b167342",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": ""
+  },
+  {
+   "name": "Joshua Williams",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/joshua-williams-630a31338",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": ""
+  },
+  {
+   "name": "Steve Vogler",
+   "title": "Pediatrician",
+   "org": "Denver Health",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/steve-vogler-03a2ba180",
+   "email": "S\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": ""
+  },
+  {
+   "name": "Sorenna Kirkegaard",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/sorenna-kirkegaard-13707024b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anne Lorenson",
+   "title": "Pediatrician",
+   "org": "Grand River Hospital",
+   "city": "Glenwood Springs",
+   "linkedin": "https://www.linkedin.com/in/anne-lorenson-a66393366",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ananya Lusero",
+   "title": "Pediatrician",
+   "org": "Centura Health",
+   "city": "Canon City",
+   "linkedin": "https://www.linkedin.com/in/ananya-lusero-9b46b0257",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Estrella Mendez",
+   "title": "Pediatrician",
+   "org": "Peak Vista Community Health Centers",
+   "city": "Peyton",
+   "linkedin": "https://www.linkedin.com/in/estrella-mendez-909a7a147",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "tim stidham",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/tim-stidham-51960a123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Hayden Young",
+   "title": "BCAT (Board certified autism tech)",
+   "org": "Center for Autism and Related Disorders (CARD)",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/hayden-young-797a5a15b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Abby Watkins",
+   "title": "Pediatrician",
+   "org": "HCA Healthcare",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/abby-watkins-a28878197",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "gosh hobo",
+   "title": "Pediatrician",
+   "org": "Amsterdam UMC",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/gosh-hobo-a0778823",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Jaime Fell",
+   "title": "Pediatric Physician Assistant",
+   "org": "Arapahoe Park Pediatrics",
+   "city": "Denver metropolitan area",
+   "linkedin": "https://www.linkedin.com/in/jaime-fell-3a231a358",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "amy long",
+   "title": "pediatrician",
+   "org": "Denver Health",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/amy-long-959a1622",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@den.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Schane Mark",
+   "title": "Pediatrician",
+   "org": "UCHealth",
+   "city": "Longmont",
+   "linkedin": "https://www.linkedin.com/in/schane-mark-893040101",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nicole Morgan",
+   "title": "Pediatric Physician Assistant",
+   "org": "Primary Care Partners",
+   "city": "Grand Junction",
+   "linkedin": "https://www.linkedin.com/in/nicole-morgan-0286101a7",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lauren Finney, MD",
+   "title": "General Pediatrician",
+   "org": "PARKER PEDIATRICS AND ADOLESCENT PC",
+   "city": "Parker",
+   "linkedin": "https://www.linkedin.com/in/lauren-finney-md-09b368339",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cindy Cirolla",
+   "title": "Pediatrician",
+   "org": "Colorado Permanente Medical Group (CPMG)",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/cindy-cirolla-17069b253",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amy Sass",
+   "title": "Pediatrician",
+   "org": "Children's Hospital Colorado",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/amy-sass-b2006236a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Deanne Hufnagel Wingerter",
+   "title": "General Pediatrician",
+   "org": "Commonwealth Healthcare Corporation",
+   "city": "Denver Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/deanne-hufnagel-wingerter-31003792",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  }
+ ]
+}

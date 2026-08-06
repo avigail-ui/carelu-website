@@ -1,0 +1,2662 @@
+{
+ "name": "Maryland",
+ "slug": "maryland",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-maryland.csv",
+ "count": 286,
+ "emails": 195,
+ "phones": 225,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 188
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 44
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 42
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 7
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 4
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Baltimore",
+   "count": 120
+  },
+  {
+   "name": "Silver Spring",
+   "count": 12
+  },
+  {
+   "name": "Bethesda",
+   "count": 12
+  },
+  {
+   "name": "Baltimore City County",
+   "count": 12
+  },
+  {
+   "name": "Columbia",
+   "count": 11
+  },
+  {
+   "name": "Rockville",
+   "count": 11
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "The Johns Hopkins University School of Medicine",
+   "count": 38
+  },
+  {
+   "name": "Children's National Hospital",
+   "count": 26
+  },
+  {
+   "name": "University of Maryland Medical System",
+   "count": 19
+  },
+  {
+   "name": "Johns Hopkins Hospital",
+   "count": 16
+  },
+  {
+   "name": "Kennedy Krieger Institute",
+   "count": 14
+  },
+  {
+   "name": "Trellis Services",
+   "count": 14
+  }
+ ],
+ "rows": [
+  {
+   "name": "Ali Memon",
+   "title": "Physician Urgent Care Pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Potomac",
+   "linkedin": "https://www.linkedin.com/in/ali-memon-md-faap-737b6451",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@choa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Anushree Rana, MBBS, MPH",
+   "title": "Pediatric Resident",
+   "org": "MedStar Georgetown University Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/anushreerana",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@medstar.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Helen Hughes MD, MPH",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/helen-hughes-mdmph",
+   "email": "h\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Rebecca Landa",
+   "title": "Founder, Executive Director, Center for Autism Services, Science and Innovation; Vice President",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/rebecca-landa-053a7140",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Paul Lipkin",
+   "title": "Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/paul-lipkin-58a11712",
+   "email": "p\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Leonard Feldman",
+   "title": "Associate Professor, Physician/Hospitalist in Internal Medicine and Pediatrics",
+   "org": "Johns Hopkins Hospital",
+   "city": "Jessup",
+   "linkedin": "https://www.linkedin.com/in/leonard-feldman-247a657",
+   "email": "l\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Kyle Henninger",
+   "title": "Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/kylehenninger",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Anne Swett",
+   "title": "Administrator, OB/GYN and Pediatrics",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/anne-swett-94890526",
+   "email": "a\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Elias Zambidis",
+   "title": "Professor of Oncology and Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/elias-zambidis-8092567",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Sanjeev Sriram",
+   "title": "Director of Pediatrics",
+   "org": "Chase Brexton Health Care",
+   "city": "Fulton",
+   "linkedin": "https://www.linkedin.com/in/sanjeev-sriram-4ab32118",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@chasebrexton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Manuel Bramble",
+   "title": "Pediatrician",
+   "org": "Hello Pediatrics",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/manuel-bramble-1867b610b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hellopediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Lorraine Bowen",
+   "title": "Maternal-Child Health Service Line CNM Liason",
+   "org": "Meritus Medical Center, Inc.",
+   "city": "Hagerstown",
+   "linkedin": "https://www.linkedin.com/in/lorraine-bowen-b90b462a",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@meritushealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Iretenevesho Obaitan, M.D",
+   "title": "Graduate Research Coordinator (Department of Pediatrics)",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ireteobaitan-md",
+   "email": "o\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Greg G.",
+   "title": "Resident Physician in Internal Medicine/Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/greg-goshgarian-345b9458",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": ""
+  },
+  {
+   "name": "Deepa Menon",
+   "title": "Asst Medical Director- Center for Autism  Services, Science and Innovation(CASSI)",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/deepa-menon-0b25271a",
+   "email": "m\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Eric Jackson",
+   "title": "Associate Professor of Neurosurgery, Pediatrics, and Plastic & Reconstructive Surgery",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/eric-jackson-22699681",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Casey Hribar, MD MBA",
+   "title": "Resident Physician, Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/casey-hribar",
+   "email": "c\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Christin Park, MD",
+   "title": "Pediatrics Intern Physician",
+   "org": "Johns Hopkins Children's Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/christin-park-md-2496b4101",
+   "email": "c\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Sheila Mosee",
+   "title": "Pediatrician",
+   "org": "Greater Baden Medical Services, Inc.",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/sheila-mosee-3824936",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@gbms.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Katarina Clegg",
+   "title": "PGY-1 Internal Medicine/Pediatrics Resident Physician",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/katarina-clegg328",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Melissa Miller",
+   "title": "Inpatient OT - Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/melissa-miller-b95b851a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Anne \"Gillian\" Freedman",
+   "title": "Patient Safety Specialist- Maternal Child Health Department",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/anne-gillian-freedman-9ba86b57",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Jennifer Sun",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/jenniferysun",
+   "email": "j\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Paul Patterson MD PhD FAAP",
+   "title": "Chief of subspecialty pediatrics",
+   "org": "Walter Reed National Military Medical Center",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/paulepatterson",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Robyn Gartrell",
+   "title": "Assistant Professor in Pediatrics and Oncology",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/robyn-gartrell",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Barry Solomon",
+   "title": "Chief, Division of General Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/barry-solomon-b40682103",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Shahid Aziz",
+   "title": "Team Pediatrician, M Kids",
+   "org": "Montgomery Hospice, Inc.",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/shahid-aziz-132b931a",
+   "email": "s\u2022\u2022\u2022\u2022@montgomeryhospice.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Megan McClure",
+   "title": "Pediatric Resident",
+   "org": "Inova Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/megan-mcclure-0a06711a7",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@inova.org",
+   "phone": ""
+  },
+  {
+   "name": "Leticia Manning Ryan",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/leticia-manning-ryan-2a019722",
+   "email": "l\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Thomas Shelley RN, MSN",
+   "title": "Asst. Director of Nursing-Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Bel Air",
+   "linkedin": "https://www.linkedin.com/in/thomas-shelley-rn-msn-76882011b",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Keisha Target, MD",
+   "title": "Pediatric Resident",
+   "org": "RWJMS",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/keisha-target-md-5a4b24b8",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@lakesidebank.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Laura McNabb BSN, RN",
+   "title": "Nurse Coordinator - Neurodevelopmental Pediatrics",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/laura-mcnabb-6b933054",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": ""
+  },
+  {
+   "name": "Gina B\u00e1ez",
+   "title": "Director of Maternal and Child Health and Multicultural Programs",
+   "org": "Baltimore Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/gina-b%c3%a1ez-a1217410",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@bmsi.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Samantha Jackson Dilts MD, FAAP",
+   "title": "Physician/Pediatrician",
+   "org": "SINAI HOSPITAL OF BALTIMORE",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/samantha-jackson-dilts-md-faap-9170aa36",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@usacs.com",
+   "phone": ""
+  },
+  {
+   "name": "Christian Cornejo",
+   "title": "Pediatrician",
+   "org": "Mary's Center",
+   "city": "Kensington",
+   "linkedin": "https://www.linkedin.com/in/christian-cornejo-52409a3b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Bethany Sharpless Chalk, PharmD, BCPPS",
+   "title": "Lead Clinical Pharmacy Specialist - Pediatrics",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/bethanysharpless",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Eli Lesher",
+   "title": "Project Coordinator, Department of Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/eli-lesher-7ba42a215",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Shelby Warring",
+   "title": "Clinical Pharmacy Specialist - General Pediatrics/Pediatric Infectious Disease",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/shelbywarring",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Marc C.",
+   "title": "Primary Care Pediatrician",
+   "org": "THE MARYLAND PEDIATRIC GROUP, L.L.C.",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/marc-c-11867935",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mdpedgrp.com",
+   "phone": ""
+  },
+  {
+   "name": "Camille Knable",
+   "title": "Resident Physician- Internal Medicine/Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/camille-knable-87a32b123",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Jennifer Lee",
+   "title": "General Academic Pediatrics Fellow",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jennifer-lee-3b241b157",
+   "email": "j\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Deborah (Debbi) Stroback",
+   "title": "Sr. Administrative Manager, Dept of Pediatrics/Div of Neonatology",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/deborah-debbi-stroback-3483869",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Kiely Law, MD, MPH",
+   "title": "Research Director, Autism Research and Engagement, Maryland Center for Developmental Disabilities",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/kiely-law-md-mph-95b4892a",
+   "email": "l\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Christina Vrettakos",
+   "title": "Pediatrician",
+   "org": "POTOMAC PHYSICIANS PA/BEL AIR HEALTH CENTER",
+   "city": "Bel Air",
+   "linkedin": "https://www.linkedin.com/in/christina-vrettakos-695414a1",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Gloribel Olexa, MD",
+   "title": "Pediatrician",
+   "org": "HIRSCH PEDIATRICS, LLC",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/gloribel-le-5b449859",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Charlotte Tisdale",
+   "title": "Maternal Child Health-Leadership Education, Advocacy, Research Intern",
+   "org": "Kennedy Krieger Institute",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/charlotte-tisdale-6847bb2a8",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@richmond.edu",
+   "phone": ""
+  },
+  {
+   "name": "Olivia Davis",
+   "title": "Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/olivia-davis-62560b248",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": ""
+  },
+  {
+   "name": "Lilly Su",
+   "title": "Pediatrics Resident",
+   "org": "Stanford Health Care",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lilly-su-167479b1",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@stanford.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Alyssa Flanagan Cook",
+   "title": "Physician, Internal Medicine & Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/alyssa-flanagan-cook-47588735",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@phagenesis.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Sheila Ravendhran, MD,MPH",
+   "title": "General Pediatrician",
+   "org": "Johns Hopkins Medicine",
+   "city": "Elkridge",
+   "linkedin": "https://www.linkedin.com/in/sheila-ravendhran-8a6201a3",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Ditte Knudsen",
+   "title": "Pediatrics Resident",
+   "org": "MedStar Georgetown University Hospital",
+   "city": "Brandywine",
+   "linkedin": "https://www.linkedin.com/in/ditte-knudsen-980197",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Teresa Willey",
+   "title": "Department Director ED/trauma/pediatrics",
+   "org": "Suburban Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/teresa-willey-391845",
+   "email": "t\u2022\u2022\u2022@jhu.edu",
+   "phone": ""
+  },
+  {
+   "name": "Barbara Fivush",
+   "title": "Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Owings Mills",
+   "linkedin": "https://www.linkedin.com/in/barbara-fivush-41419a3b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Felicia Voss",
+   "title": "Pediatrician",
+   "org": "Children's Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/felicia-voss-427b6139",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Liu Esther",
+   "title": "Chair of Pediatrics",
+   "org": "University of Maryland Baltimore Washington Medical Center",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/liu-esther-3b6a87105",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Paula Archampong",
+   "title": "In Home Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/paula-archampong-0795081b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Laurel Yap",
+   "title": "Director of Pediatrics and Neonatal Care Unit",
+   "org": "MedStar Harbor Hospital",
+   "city": "Ellicott City",
+   "linkedin": "https://www.linkedin.com/in/laurel-yap-29093148",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@medstar.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Rosella Castro",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/rosella-castro-10539263",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Zafir Kalamadeen",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/zafir-kalamadeen-b92399260",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": ""
+  },
+  {
+   "name": "Katherine Dahab",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/katherine-dahab-035b564",
+   "email": "k\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Sherice Richardson",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Upper Marlboro",
+   "linkedin": "https://www.linkedin.com/in/sherice-richardson-b17865264",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Sahira Sahira",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Upper Marlboro",
+   "linkedin": "https://www.linkedin.com/in/sahira-sahira-5328a27",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Pamela Donohue",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/pamela-donohue-90b39338",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Marjan Naghavi",
+   "title": "Assistant Director of Autism Educational Programs",
+   "org": "Sheppard Pratt",
+   "city": "Gaithersburg",
+   "linkedin": "https://www.linkedin.com/in/marjan-naghavi-a7354136",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@sheppardpratt.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Laila Mahmood",
+   "title": "Pediatric Resident",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/laila-mahmood-71648b2a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Emily Thomas",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/emily-thomas-86b94a58",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@sibley.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Maria MARQUEZ",
+   "title": "Pediatrician",
+   "org": "MedStar Georgetown University Hospital",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/maria-marquez-9b920314",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@medstar.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Alison Patek",
+   "title": "Pediatric Resident",
+   "org": "Children's National Hospital",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/alison-patek-24309312",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Maria Pearl",
+   "title": "Pediatrician",
+   "org": "Tidelands Health",
+   "city": "Kensington",
+   "linkedin": "https://www.linkedin.com/in/maria-pearl-1b846390",
+   "email": "m\u2022\u2022\u2022\u2022@tidelandshealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Julie Ellis",
+   "title": "Pediatrician",
+   "org": "Mercy Medical Center, Baltimore, MD",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/julie-ellis-8288971a4",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@mdmercy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Tammy Vyskocil",
+   "title": "Admin Assist to the Chairman of Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/tammy-vyskocil-8426a842",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jenna Hammond",
+   "title": "pediatrician",
+   "org": "LifeBridge Health",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/jenna-hammond-35072150",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@patch.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Danielle Monet",
+   "title": "Pediatrician",
+   "org": "Mediclinic",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/danielle-monet-719aa858",
+   "email": "d\u2022\u2022\u2022@mediclinic.co.za",
+   "phone": ""
+  },
+  {
+   "name": "Jon Kibbler",
+   "title": "Child Counselor",
+   "org": "WellSpan Health",
+   "city": "Parkton",
+   "linkedin": "https://www.linkedin.com/in/jon-kibbler-3a0340b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Jill Brubaker",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "La Plata",
+   "linkedin": "https://www.linkedin.com/in/jill-brubaker-a3b819a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": ""
+  },
+  {
+   "name": "Keith Hall",
+   "title": "Autism instuctor",
+   "org": "Trellis Services",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/keith-hall-0591b1186",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "stephan ladisch",
+   "title": "Professor and Vice Chairman, Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/stephan-ladisch-8b9a8627",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Joseph Scafidi",
+   "title": "Asst Professor of Neurology & Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Ellicott City",
+   "linkedin": "https://www.linkedin.com/in/joseph-scafidi-61751349",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Shaquavia Holmes",
+   "title": "Early Intervention / Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/shaquavia-holmes-900ba0241",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Hamna Rashid",
+   "title": "Pediatric Resident",
+   "org": "SINAI HOSPITAL OF BALTIMORE",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/hamna-rashid-605565171",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Julianna gordon",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/julianna-gordon-2b1b48171",
+   "email": "j\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Amarah Shakoor",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/amarah-shakoor-md-8598031a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": ""
+  },
+  {
+   "name": "Erica Elzey",
+   "title": "Pediatric Resident",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/erica-elzey-67b47467",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mary Reen",
+   "title": "Pediatric Resident",
+   "org": "MedStar Georgetown University Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/mary-jane-reen-750446176",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@medstar.net",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth Stains",
+   "title": "Autism instructors",
+   "org": "Trellis Services",
+   "city": "Westminster",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-stains-32516224b",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Peter Claybour",
+   "title": "Pediatrician",
+   "org": "LifeBridge Health",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/peter-claybour-018182325",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Edith Dietz",
+   "title": "Primary Care Pediatrician",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/edith-dietz-42ab486",
+   "email": "e\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Sydney Mour MSN, RNC-OB, C-EFM",
+   "title": "Maternal Child Health RN Practice Specialist",
+   "org": "Saint Agnes Hospital",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/sydney-mour-msn-rnc-ob-c-efm-a322b212b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Samla Doura",
+   "title": "Bed management/Shift Coordinator-Pediatrics",
+   "org": "Johns Hopkins Hospital",
+   "city": "Odenton",
+   "linkedin": "https://www.linkedin.com/in/samla-doura-28594420",
+   "email": "d\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Paige Luneburg, MD",
+   "title": "Physician, Internal Medicine and Pediatrics",
+   "org": "Saint Agnes Hospital",
+   "city": "Ellicott City",
+   "linkedin": "https://www.linkedin.com/in/paige-luneburg-md-03138117",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Oluwakemi Badaki-Makun",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/oluwakemi-badaki-makun-906a35b8",
+   "email": "o\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Lindsay Clendaniel, Ph.D.",
+   "title": "Owner, Director & Pediatric Psychologist",
+   "org": "Thinking Tree Psychology",
+   "city": "Annapolis",
+   "linkedin": "https://www.linkedin.com/in/lindsayclendaniel",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@thinkingtreepsychology.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Jay Gopal",
+   "title": "Pediatrician, Pediatric Associates, Florida",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jay-gopal-58a60586",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Alexander S. Golec, MD",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/alexander-s-golec-md-5a4a9b21",
+   "email": "a\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Oliver Komm",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/oliver-komm",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "David Aurigemma",
+   "title": "Staff Pediatrician/Pediatric Cardiologist",
+   "org": "Naval Medical Center Camp Lejeune",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/david-aurigemma-81b324100",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Joseph Scafidi",
+   "title": "Associate Professor of Neurology and Pediatrics, Johns Hopkins School of Medicine",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/joseph-scafidi-a420148a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Nakiya Showell",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/nakiya-showell-85a4231b3",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Chuck Ng",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Potomac Psychiatry",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/chuck-ng-001040147",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@potomacpsychiatry.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Temur W. Hannan",
+   "title": "Pediatric Resident (PGY-1)",
+   "org": "SINAI HOSPITAL OF BALTIMORE",
+   "city": "Frederick",
+   "linkedin": "https://www.linkedin.com/in/temur-w-hannan-a02795a5",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Masiray Kamara, MD MPH",
+   "title": "Pediatrician",
+   "org": "CCI Health Services",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/masiray-kamara-md-908331153",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cciweb.org",
+   "phone": ""
+  },
+  {
+   "name": "Kelsey Coulthard, Ph.D.",
+   "title": "Pediatric Psychologist",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/kelsey-coulthard-ph-d-986a45ba",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Sherlyn Hernandez Hernandez",
+   "title": "Maternal and Child Health Programs Coordinator",
+   "org": "CCI Health Services",
+   "city": "Washington DC-Baltimore Area",
+   "linkedin": "https://www.linkedin.com/in/sherlyn-hernandez",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Flavia Cuestas Quiroz",
+   "title": "Pediatrician",
+   "org": "Sixteenth Street Community Health Centers",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/flavia-cuestas-quiroz-73a70121a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Caroline Liang",
+   "title": "Clinical Pharmacy Specialist, Maternal and Child Health",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/liangcaroline",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202244"
+  },
+  {
+   "name": "Angeles Vasquez Pelaez",
+   "title": "Holy Cross Health Center Pediatrics Registrar",
+   "org": "Holy Cross Health",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/angeles-vasquez-pelaez-92b530205",
+   "email": "a\u2022\u2022\u2022@trinity-health.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Monica Pearl",
+   "title": "Professor of Radiology and Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/monica-pearl-6873b016",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Mariah Ashe",
+   "title": "Ambulatory Operations Manager - Pediatrics",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/mariah-ashe-7bb0aaa2",
+   "email": "a\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Veronica Wang",
+   "title": "Pediatrician",
+   "org": "KENNETH M KLEBANOW & ASSOCIATES",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/veronica-wang-58196052",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Deborah Schwengel",
+   "title": "Associate Professor of Anesthesiology, Critical Care Medicine and Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Mays Chapel",
+   "linkedin": "https://www.linkedin.com/in/deborah-schwengel-2b251aa0",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Tim Doran",
+   "title": "Chairman of Pediatrics",
+   "org": "GBMC HealthCare",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/tim-doran-53112b12",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Susan Schrock",
+   "title": "Chief of Internal Medicine and Pediatrics for Johns Hopkins Community Physicians",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore County",
+   "linkedin": "https://www.linkedin.com/in/susan-schrock-2a1b0a195",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Hope Ossakow",
+   "title": "ABA Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Sparks Glencoe",
+   "linkedin": "https://www.linkedin.com/in/hope-ossakow-a185082bb",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Uma Jayaraman, MD, FAAFP",
+   "title": "Program Medical Director for Pediatrics",
+   "org": "One Medical",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/uma-jayaraman-md-faafp-ab453a27a",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@onemedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Dipanwita Saha, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/dipanwita-saha-md-25684ba3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Dipanwita Saha",
+   "title": "Primary Care Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/dipanwita-saha-25684ba3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Jennifer Cooper",
+   "title": "Nurse Administrator, Maternal Child Health",
+   "org": "Montgomery County Department of Health and Human Services",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/jennifer-cooper20000",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Maria Eleni Nikita, MD, DipABLM",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/maria-eleni-nikita-md-dipablm-71360715",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Habiba Wada",
+   "title": "General Pediatrician",
+   "org": "MedStar Health",
+   "city": "Perry Hall",
+   "linkedin": "https://www.linkedin.com/in/habiba-wada-b8953810",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@medstar.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Chana Richter",
+   "title": "Pediatrician",
+   "org": "Kennedy Krieger Institute",
+   "city": "Pikesville",
+   "linkedin": "https://www.linkedin.com/in/chana-richter-4965657a",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Akua Asiedu",
+   "title": "Neurodevelopmental pediatrician",
+   "org": "Kennedy Krieger Institute",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/akua-asiedu-9079b53a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Sarah Schaffer DeRoo",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/sarah-schaffer-deroo-6b79a38",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Dulkerian MD,  Susan,",
+   "title": "Chair, Department of Pediatrics, Mercy Medical Center",
+   "org": "Mercy Medical Center, Baltimore, MD",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/dulkerian-md-susan-528bab2a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mdmercy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Claire Kingsbury, MPH",
+   "title": "Senior Research Program Coordinator II, Department of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/claire-kingsbury",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Courtney Douglas, PsyD",
+   "title": "Pediatric Psychologist",
+   "org": "Mt. Washington Pediatric Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/courtney-douglas-psyd-317530193",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@mwph.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Rachyl Fornaro, PharmD",
+   "title": "Clinical Pharmacist I - Pediatrics",
+   "org": "Johns Hopkins Hospital",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/rachyl-fornaro-pharmd-7598b5347",
+   "email": "r\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Lauren Smith, MD, EdM",
+   "title": "Resident Physician, Pediatrics and Anesthesiology",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lauren-smith-md-edm-4738a6b6",
+   "email": "e\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Radhika Manikumar",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Clarksburg",
+   "linkedin": "https://www.linkedin.com/in/radhika-manikumar-35096850",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Erica Sibinga",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/erica-sibinga-62193410",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Minna Leydorf",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Annapolis",
+   "linkedin": "https://www.linkedin.com/in/minna-leydorf-93a2083b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Yetunde Bucknor",
+   "title": "Primary Care Pediatrician",
+   "org": "CCI Health Services",
+   "city": "Gaithersburg",
+   "linkedin": "https://www.linkedin.com/in/yetunde-bucknor-306418270",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@cciweb.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Christopher Golden",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/christopher-golden-19a97aba",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Sarina Raman",
+   "title": "Pediatric Resident",
+   "org": "Children's National Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sarina-raman-7528b1126",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Brian Ladle",
+   "title": "Assistant Professor of Oncology and Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/brian-ladle-43aa84180",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "beryl ROSENSTEIN",
+   "title": "professor of pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/beryl-rosenstein-b8252639",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Amaris Keiser, MD",
+   "title": "Assistant Professor of Pediatrics, Division of Neonatal-Perinatal Medicine",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/amaris-keiser-md-6578367b",
+   "email": "a\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Kate Donohue",
+   "title": "Program Director, Internal Medicine and Pediatrics Residency",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/kate-donohue-640533145",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Ann Hellerstein",
+   "title": "PEDIATRICIAN",
+   "org": "MedStar Health",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/hellerstein-ann-38668218",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Justin Hills, MD",
+   "title": "Pediatric Resident",
+   "org": "Children's National Hospital",
+   "city": "Hyattsville",
+   "linkedin": "https://www.linkedin.com/in/justin-hills-md",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lavanya Madabusi",
+   "title": "Primary Care Pediatrician",
+   "org": "MedStar Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lavanya-madabusi-785a5138",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Sameer Belgaumi, MBBS",
+   "title": "Pediatric Resident",
+   "org": "SINAI HOSPITAL OF BALTIMORE",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sameer-belgaumi-mbbs-4329648a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Maria J. Gutierrez",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/maria-j-gutierrez-550939129",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Jennifer Lammers, D.O.",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jennifer-lammers-d-o-08989768",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Joshua Davis MSN, RN",
+   "title": "Community Health Nurse Program Manager- Maternal Child Health",
+   "org": "WORCESTER COUNTY HEALTH DEPARTMENT",
+   "city": "Berlin",
+   "linkedin": "https://www.linkedin.com/in/joshua-davis-msn-rn-5ab622258",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Akua Asiedu",
+   "title": "Developmental Pediatrician",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/akua-asiedu-56a8ab21",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Jeanette Freeman",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jeanette-freeman-18ba04136",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Benny Kerzner",
+   "title": "MD and Prof of pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/benny-kerzner-663a5a4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Graeme Bloomfield",
+   "title": "Pediatric Resident",
+   "org": "Walter Reed Army Medical Center",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/graeme-bloomfield-68458523",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "deborah schwengel",
+   "title": "Associate Professor of Anesthesiology, Critical Care Medicine and Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Lutherville-Timonium",
+   "linkedin": "https://www.linkedin.com/in/deborah-schwengel-70106a16",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Kirsten Taleb",
+   "title": "Family Nurse Practitioner-Pediatrics",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/kirsten-taleb-046682194",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Aileen Kammer, MSN, RN, IBCLC",
+   "title": "Maternal-Child Health Registered Nurse",
+   "org": "Mercy Medical Center, Baltimore, MD",
+   "city": "Cockeysville",
+   "linkedin": "https://www.linkedin.com/in/aileen-kammer-msn",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mdmercy.com",
+   "phone": ""
+  },
+  {
+   "name": "Belina Y.",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/belina-y-61412b214",
+   "email": "b\u2022\u2022\u2022@jhu.edu",
+   "phone": ""
+  },
+  {
+   "name": "Patricia Barnes",
+   "title": "ABA- Clinical CARE COORDINATOR-AUTISM",
+   "org": "Beacon Health Options",
+   "city": "Upper Marlboro",
+   "linkedin": "https://www.linkedin.com/in/patricia-barnes-1706b052",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@beaconhealthoptions.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Pedro Sarmiento, Jr",
+   "title": "Chief, Department of Pediatrics",
+   "org": "MedStar Southern Maryland Hospital Center",
+   "city": "Fort Washington",
+   "linkedin": "https://www.linkedin.com/in/pedro-sarmiento-jr-00102558",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Merideth Wirstiuk",
+   "title": "Pediatric Psychologist",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/merideth-wirstiuk-238343116",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": ""
+  },
+  {
+   "name": "Talisa Tait, MD",
+   "title": "Pediatric Resident",
+   "org": "Inova Children's",
+   "city": "Washington DC-Baltimore Area",
+   "linkedin": "https://www.linkedin.com/in/talisa-tait-md-b1a0b1157",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Jane Kim",
+   "title": "Associate Professor of Radiology and Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Kensington",
+   "linkedin": "https://www.linkedin.com/in/jane-kim-5aa3824",
+   "email": "j\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Stephan Ladisch",
+   "title": "Professor of Pediatrics and of Biochemistry/Molecular Medicine",
+   "org": "Children's National Hospital",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/stephan-ladisch-b048291",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Brittany Taylor MD FAAP",
+   "title": "Pediatrician",
+   "org": "ALL Pediatrics",
+   "city": "Washington DC-Baltimore Area",
+   "linkedin": "https://www.linkedin.com/in/brittany-taylor-md-faap-018012178",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Lindsay Weiss",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lindsay-weiss-7a43b79b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Elizabeth Black",
+   "title": "Clinical Research Coordinator - Center for Autism Spectrum Disorders",
+   "org": "Children's National Hospital",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/elizabethrblack",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": ""
+  },
+  {
+   "name": "Matthew Moake",
+   "title": "Pediatric Resident",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/matthew-moake-829b0ab0",
+   "email": "m\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Ophard Mupanomunda",
+   "title": "Pediatrician",
+   "org": "MedStar Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ophard-mupanomunda-b7b38b13",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Tricia Schappell, PsyD",
+   "title": "Pediatric Psychologist",
+   "org": "Mt. Washington Pediatric Hospital",
+   "city": "Bel Air",
+   "linkedin": "https://www.linkedin.com/in/tricia-schappell-psyd-35b919304",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@mwph.org",
+   "phone": ""
+  },
+  {
+   "name": "Christopher Knoll",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/christopher-knoll-23835129",
+   "email": "k\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Rivka Thurm",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/rivka-thurm-aa3a8212b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Catherine Cross",
+   "title": "Primary Care Pediatrician at CNPA Chevy Chase",
+   "org": "Children's National Hospital",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/catherine-cross-b466662a1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mary Leppert, MB,BCh",
+   "title": "Associate Professor of Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/mary-leppert-mb-bch-a14727104",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": ""
+  },
+  {
+   "name": "Karen Kirkpatrick, MSW LCSW-C",
+   "title": "Clinical Care Manager ABA -Autism Program",
+   "org": "Magellan Health",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/karen-kirkpatrick-msw-lcsw-c-3b656839",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Stephanie Hemm",
+   "title": "Pediatrician",
+   "org": "LifeBridge Health",
+   "city": "Mays Chapel",
+   "linkedin": "https://www.linkedin.com/in/stephanie-hemm-bba76679",
+   "email": "s\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Bonnie Van Metre",
+   "title": "Autism Specialist/ BCBA",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore County",
+   "linkedin": "https://www.linkedin.com/in/bonnie-van-metre-28a7b4122",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Heather Metcalf, MD",
+   "title": "Chief, Department of Pediatrics",
+   "org": "TidalHealth",
+   "city": "Salisbury",
+   "linkedin": "https://www.linkedin.com/in/heather-metcalf-md-b2280214a",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@tidalhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Emily Golden",
+   "title": "Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/emily-golden-559240184",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Cozumel Pruette",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/cozumel-pruette-4728b379",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Jennifer Lambert",
+   "title": "Academic General Pediatrics Fellow",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jenniferatcnmc",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Tania Maria Caballero",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/tmcaballero",
+   "email": "m\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Ashley Dunn",
+   "title": "Pediatrician",
+   "org": "STGi",
+   "city": "Olney Mill",
+   "linkedin": "https://www.linkedin.com/in/ashley-dunn-06388149",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Brian Reilly",
+   "title": "Assistant Professor of Otolaryngology and Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/brian-reilly-03a99412",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Sara McCann",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sara-mccann-7a3876115",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Paula Newton",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/doctorpaula",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Milton Moore",
+   "title": "Autism Special Education Teacher",
+   "org": "Springbrook Autism Behavioral Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/milton-moore-539761112",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Krishnaveni Cheethirala",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/krishnaveni-cheethirala-30b84660",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Meggie Cook",
+   "title": "Child Abuse Pediatrics Fellow",
+   "org": "Penn State Health",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/meggie-cook-895a1a98",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Joanie Brady-Rios",
+   "title": "Office Manager, Emergency, Trauma, Pediatrics",
+   "org": "Suburban Hospital",
+   "city": "Kensington",
+   "linkedin": "https://www.linkedin.com/in/joanie-brady-rios-32064887",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Ann Hellerstein",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/ann-hellerstein-80502927",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Kylie Chisnell",
+   "title": "Autism Instructor",
+   "org": "LEARN Behavioral",
+   "city": "Owings Mills",
+   "linkedin": "https://www.linkedin.com/in/kylie-chisnell-53b661173",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Meral Gunay-Aygun",
+   "title": "Professor of Pediatrics and Genetic Medicine",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/meral-gunay-aygun-49a67687",
+   "email": "m\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Paul Tarectecan",
+   "title": "Pediatrician",
+   "org": "Howard County General Hospital",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/paul-tarectecan-a725ab90",
+   "email": "p\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Lori Pandya",
+   "title": "Attending Physician, Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lori-pandya-04765967",
+   "email": "l\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Amy Hapip",
+   "title": "Pediatrician",
+   "org": "Bethesda Pediatrics",
+   "city": "Washington DC-Baltimore Area",
+   "linkedin": "https://www.linkedin.com/in/amy-hapip-5b43ba1b3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Lindsay Gavin",
+   "title": "Pediatric Psychologist",
+   "org": "Mt. Washington Pediatric Hospital",
+   "city": "Reisterstown",
+   "linkedin": "https://www.linkedin.com/in/lindsay-gavin-736791283",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@mwph.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Gabriel Pontipiedra",
+   "title": "Pediatric Resident",
+   "org": "Atlantic Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/gabriel-pontipiedra-44a0b2277",
+   "email": "p\u2022\u2022\u2022@umd.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Pedro Sarmiento, Jr.",
+   "title": "Primary Care Pediatrician",
+   "org": "MedStar Health",
+   "city": "Waldorf",
+   "linkedin": "https://www.linkedin.com/in/pedro-sarmiento-335703124",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@gwu.edu",
+   "phone": ""
+  },
+  {
+   "name": "Neree Hannays-Harewood",
+   "title": "Project Manager Pediatrics",
+   "org": "SINAI HOSPITAL OF BALTIMORE",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/neree-hannays-harewood-70727493",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Jerry Winkelstein",
+   "title": "PROFESSOR OF PEDIATRICS, MEDICINE AND PATHOLOGY",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jerry-winkelstein-91800982",
+   "email": "j\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Brandon Pye",
+   "title": "Pediatrician",
+   "org": "Martin Army Community Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/brandon-pye-209ab119",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "mark reed",
+   "title": "pediatrician",
+   "org": "The Permanente Medical Group, Inc.",
+   "city": "Waldorf",
+   "linkedin": "https://www.linkedin.com/in/marspeedo1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Rosemary Dayie",
+   "title": "Pediatrician",
+   "org": "Baltimore Medical System",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/rosemary-dayie-2b0239a2",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@bmsi.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Carol Orth",
+   "title": "Clinical Supervisor for Community Psychiatry Program -Adult Autism Clinic",
+   "org": "Johns Hopkins Bayview Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/carol-orth-6299a426",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Oyin Ajewole, MD, MHS",
+   "title": "Primary Care Pediatrician",
+   "org": "Park Pediatrics",
+   "city": "Bowie",
+   "linkedin": "https://www.linkedin.com/in/oyin-ajewole-md-mhs-418861202",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Patrick Ward",
+   "title": "In Home Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore County",
+   "linkedin": "https://www.linkedin.com/in/patrick-ward-3560b5104",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Heather Levens",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/heather-levens-44a931119",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Sarah Stone",
+   "title": "Pediatrician",
+   "org": "CCI Health Services",
+   "city": "Potomac",
+   "linkedin": "https://www.linkedin.com/in/sarah-stone-68794a148",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cciweb.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Delaney Bernhardt",
+   "title": "Behavioral Technician, Autism (ABA)",
+   "org": "Trellis Services",
+   "city": "Baldwin",
+   "linkedin": "https://www.linkedin.com/in/delaney-bernhardt-ab56461bb",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": ""
+  },
+  {
+   "name": "Laurie Bothwell",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Health Plans",
+   "city": "Harford County",
+   "linkedin": "https://www.linkedin.com/in/laurie-bothwell-44a7373b",
+   "email": "l\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Lauren Strady Zimmer",
+   "title": "Pediatrician",
+   "org": "University of Maryland Medical System",
+   "city": "Easton",
+   "linkedin": "https://www.linkedin.com/in/lauren-strady-zimmer-9a816153",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Iris Eisenberg",
+   "title": "Patient Coordinator at Valley Pediatrics",
+   "org": "Valley Pediatrics Inc",
+   "city": "Reisterstown",
+   "linkedin": "https://www.linkedin.com/in/iris-eisenberg-02335814",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@valleypediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Rupal Udeshi",
+   "title": "Pediatrician",
+   "org": "Sound Physicians",
+   "city": "Gaithersburg",
+   "linkedin": "https://www.linkedin.com/in/rupal-udeshi-781a9b383",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@soundphysicians.com",
+   "phone": ""
+  },
+  {
+   "name": "Mei-Lin Lu",
+   "title": "Pediatrician",
+   "org": "Primary Pediatrics",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/mei-lin-lu-637a2a147",
+   "email": "m\u2022\u2022\u2022@mcmaster.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Stefanie Parsons",
+   "title": "Early Intervention Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Hampstead",
+   "linkedin": "https://www.linkedin.com/in/stefanie-parsons-04b1ba118",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jessica H.",
+   "title": "Pediatrician",
+   "org": "Bethesda Pediatrics",
+   "city": "Potomac",
+   "linkedin": "https://www.linkedin.com/in/jessica-howard-6462628a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Maide Ozen, MD",
+   "title": "Assistant Professor of Pediatrics, Director Neonatal Simulation Education",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/maide-ozen-md-057648287",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": ""
+  },
+  {
+   "name": "Susannah Olnes",
+   "title": "Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/susannah-olnes-68636211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Amy Wells",
+   "title": "Staff Pediatrician",
+   "org": "Erlanger",
+   "city": "Kensington",
+   "linkedin": "https://www.linkedin.com/in/amy-wells-93b058a8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Ann Johnson",
+   "title": "Clinical Educator NICU & Pediatrics",
+   "org": "Mercy Medical Center, Baltimore, MD",
+   "city": "Chester",
+   "linkedin": "https://www.linkedin.com/in/ann-johnson-aaa156100",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mdmercy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Jennifer Klein",
+   "title": "Pediatrician",
+   "org": "Kennedy Krieger Institute",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/jennifer-klein-9a2a6a1a7",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Lalina Sunuwar",
+   "title": "Pediatrician",
+   "org": "PEDIATRIC CENTER OF FREDERICK LLC,THE",
+   "city": "Frederick",
+   "linkedin": "https://www.linkedin.com/in/lalina-sunuwar-004658259",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@thepedcenter.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Olivine Singh",
+   "title": "Director of Maternal Child Health",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/olivine-singh-13287824b",
+   "email": "o\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Jenais Miller-Favors",
+   "title": "Primary Care Pediatrician",
+   "org": "Total Health Care, Inc.",
+   "city": "Crofton",
+   "linkedin": "https://www.linkedin.com/in/jenais-miller-favors-2a4823207",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@totalhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "claude migeon",
+   "title": "professor of pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/claude-migeon-49796482",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Allison G.",
+   "title": "Pediatrician",
+   "org": "Alteon Health",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/allison-g-b639311b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Oscar Taube",
+   "title": "Pediatrician",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/oscar-taube-5b56336b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Julie Anne Baunchalk",
+   "title": "Pediatric Resident",
+   "org": "Walter Reed Army Medical Center",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/julie-anne-baunchalk-047447a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Illona Allen  BSN, RN",
+   "title": "Pediatrics Complex Care Nurse Case Manager",
+   "org": "Johns Hopkins Hospital",
+   "city": "Maryland",
+   "linkedin": "https://www.linkedin.com/in/illona-allen-bsn-rn-98915761",
+   "email": "a\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Joe Vander Walde",
+   "title": "service chief in Pediatrics",
+   "org": "Kaiser Permanente",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/joe-vander-walde-2b829531",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Natella Rakhmanina",
+   "title": "Associate Professor of Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/natella-rakhmanina-46517875",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephanie Entrup",
+   "title": "Research Program Manager-Pediatrics",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/stephanie-entrup-83489b26",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Edisa Padder",
+   "title": "Pediatrician",
+   "org": "Padder Health Services, LLC",
+   "city": "Ellicott City",
+   "linkedin": "https://www.linkedin.com/in/edisa-padder-2448124",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Darcy Thompson",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/darcy-thompson-27a76b25",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jana Mohassel",
+   "title": "Pediatric Resident",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jana-mohassel-4992142a",
+   "email": "j\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Juliet Oroszy",
+   "title": "Early Intervention/Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Parkville",
+   "linkedin": "https://www.linkedin.com/in/juliet-oroszy-6a78945b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Lisa Stambolis",
+   "title": "Director of Pediatrics",
+   "org": "Health Care for the Homeless",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lisa-stambolis-65118942",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jordan Garvin",
+   "title": "Autism Support Coach",
+   "org": "Itineris Inc.",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jordan-garvin-29538013",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Sookie Stackhouse",
+   "title": "Pediatrician",
+   "org": "Unity Health Care",
+   "city": "Capitol Heights",
+   "linkedin": "https://www.linkedin.com/in/sookie-stackhouse-4876423a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Lauren Detorie",
+   "title": "Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/lauren-detorie-2aa047200",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@trellisservices.com",
+   "phone": ""
+  },
+  {
+   "name": "Anne Harris Kirstukas",
+   "title": "Division Administrator, Pediatrics",
+   "org": "University of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/anne-harris-kirstukas-3b398624",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Asmita Paudel, MBBS",
+   "title": "Pediatrics PGY1",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/asmita-paudel-mbbs-242744177",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Kathleen Romero",
+   "title": "Pediatrician",
+   "org": "Luminis Health",
+   "city": "Millersville",
+   "linkedin": "https://www.linkedin.com/in/kathleen-romero-b903461a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Natella Rakhmanina",
+   "title": "Associate Professor of Pediatrics, Program Director, Special Immunology",
+   "org": "Children's National Hospital",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/natella-rakhmanina-2314654b",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Schwalbe",
+   "title": "Resident Medicine/Pediatrics",
+   "org": "University Hospitals",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jennifer-schwalbe-7366605",
+   "email": "j\u2022\u2022\u2022@case.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Lisa Patel",
+   "title": "Pediatric Resident",
+   "org": "UCSF Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lisa-patel-943912a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Janet Siddiqui",
+   "title": "Pediatrician",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Odenton",
+   "linkedin": "https://www.linkedin.com/in/janet-siddiqui-6b97343b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "David Fleischer",
+   "title": "Associate Professor of Pediatrics",
+   "org": "Children's Hospital Colorado",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/david-fleischer-382a13a8",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Amanda Thompson",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/amanda-thompson-46523740",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Joyce Kelley",
+   "title": "pediatrics technition",
+   "org": "Union Hospital",
+   "city": "Elkton",
+   "linkedin": "https://www.linkedin.com/in/joyce-kelley-85380865",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@union.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Abigail Shockley",
+   "title": "Autism Waiver",
+   "org": "Ocean Front Counseling LLC",
+   "city": "Salisbury",
+   "linkedin": "https://www.linkedin.com/in/abigail-shockley-44a0971b1",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ocfront.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Julia McMillan",
+   "title": "pediatrician",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/julia-mcmillan-b471b141",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Larry Nogee",
+   "title": "Professor of Pediatrics",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/larry-nogee-49297215",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Gilda Arevalo",
+   "title": "Ed Pediatrics Registered Nurse",
+   "org": "Holy Cross Health",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/gilda-arevalo-a5637653",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Lisa Everhart",
+   "title": "Lead Clinical Practice Specialist, Maternal Child Health",
+   "org": "St. Joseph Medical Center",
+   "city": "Harford County",
+   "linkedin": "https://www.linkedin.com/in/lisa-everhart-86921236",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Milton Lum",
+   "title": "General Pediatrician",
+   "org": "Walter Reed Army Medical Center",
+   "city": "Chevy Chase",
+   "linkedin": "https://www.linkedin.com/in/milton-lum-46569423",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Larry Yap",
+   "title": "Director of Pediatrics and Neonatal Care Unit",
+   "org": "MedStar Harbor Hospital",
+   "city": "Brooklyn Homes",
+   "linkedin": "https://www.linkedin.com/in/larry-yap-b9963041",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alicia Lopez",
+   "title": "Autism Instructor",
+   "org": "Trellis Services",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/alicia-lopez-85812b182",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Lindsay Warren",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/lindsay-warren-a43b233a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Alexsandria Haddad",
+   "title": "Postpartum/Pediatrics, Clinical Technician II",
+   "org": "VHC Health",
+   "city": "Gaithersburg",
+   "linkedin": "https://www.linkedin.com/in/alexsandria-haddad-979782174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Dan Felten",
+   "title": "Pediatrician",
+   "org": "Children's National Hospital",
+   "city": "Washington DC-Baltimore Area",
+   "linkedin": "https://www.linkedin.com/in/dan-felten-22b861b6",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Mohammed Iqbal",
+   "title": "Pediatrician",
+   "org": "University of Maryland Medical System",
+   "city": "Ellicott City",
+   "linkedin": "https://www.linkedin.com/in/mohammed-iqbal-2226b81a6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Connie Panza",
+   "title": "Clinical Nurse Educator Med/Surg;Pediatrics",
+   "org": "CalvertHealth",
+   "city": "Prince Frederick",
+   "linkedin": "https://www.linkedin.com/in/connie-panza-8669a23a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@cmhlink.org",
+   "phone": ""
+  },
+  {
+   "name": "Nkiruka Chukudebelu Olele",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Medicine",
+   "city": "Greenbelt",
+   "linkedin": "https://www.linkedin.com/in/nkiruka-chukudebelu-olele-581709230",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Isaaca Kamara",
+   "title": "Autism tech",
+   "org": "Integrated Care Management",
+   "city": "Laurel",
+   "linkedin": "https://www.linkedin.com/in/isaaca-kamara-5930b792",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Gordon Scott",
+   "title": "Pediatric Resident",
+   "org": "University of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/gordon-scott-89b27b218",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@sutterhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Leesa Wishart",
+   "title": "Director 8W Acute Pediatrics and Joint and Spine",
+   "org": "Holy Cross Health",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/leesa-wishart-199b001b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Lauren Kenworthy",
+   "title": "Director, Center for Autism Spectrum Disorders",
+   "org": "Children's National Hospital",
+   "city": "Takoma Park",
+   "linkedin": "https://www.linkedin.com/in/lauren-kenworthy-0423ba1",
+   "email": "d\u2022\u2022\u2022\u2022@nemtzow.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Meng-Keong Choo",
+   "title": "Chair, Department of Pediatrics; Medical Director, Pediatric Emergency Department",
+   "org": "Johns Hopkins Howard County Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/meng-keong-choo-339041142",
+   "email": "m\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Jay Gopal",
+   "title": "Director, Division of Pediatrics, MedStar Union Memorial Hospital",
+   "org": "MedStar Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jay-gopal-8792a912b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Steven Hirsch",
+   "title": "Pediatrician",
+   "org": "HIRSCH PEDIATRICS, LLC",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/steven-hirsch-7b9a19147",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hirschpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Pauline Hsu",
+   "title": "Pediatrician",
+   "org": "Potomac Physicians",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/pauline-hsu-375385147",
+   "email": "p\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Joe Riffe",
+   "title": "Pediatrician",
+   "org": "University of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/joe-riffe-1831a022a",
+   "email": "r\u2022\u2022\u2022@umm.edu",
+   "phone": ""
+  },
+  {
+   "name": "Michael Pallone",
+   "title": "Pediatrician",
+   "org": "Hanover Pediatrics",
+   "city": "Easton",
+   "linkedin": "https://www.linkedin.com/in/michael-pallone-534b20b8",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hanoverpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Brad McCammack",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/brad-mccammack-06b6b764",
+   "email": "b\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Jennifer Fundora",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Hospital",
+   "city": "Baltimore City County",
+   "linkedin": "https://www.linkedin.com/in/jennifer-fundora-365418102",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "sakkubai Naidu",
+   "title": "Prof. Neurology & Pediatrics",
+   "org": "Kennedy Krieger Institute",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sakkubai-naidu-77417a115",
+   "email": "n\u2022\u2022\u2022\u2022@kennedykrieger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Jamil Fletcher",
+   "title": "Director of Development, Community Pediatrics",
+   "org": "Children's National Hospital",
+   "city": "Upper Marlboro",
+   "linkedin": "https://www.linkedin.com/in/jamil-fletcher-b0808060",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@aip.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Michael Crocetti",
+   "title": "Pediatrician",
+   "org": "The Johns Hopkins University School of Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/michael-crocetti-2483b12b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Adam Paul",
+   "title": "Resident Pediatrics",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/adam-paul-88477b8",
+   "email": "a\u2022\u2022\u2022@umm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Caitlin Cordial",
+   "title": "Autism Support Coach",
+   "org": "Itineris Inc.",
+   "city": "Owings Mills",
+   "linkedin": "https://www.linkedin.com/in/caitlin-cordial-525b871b2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Robert Habicht",
+   "title": "Director, Internal Medicine and Pediatrics Residency Training Program; Hospitalist",
+   "org": "University of Maryland Medical System",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/robert-habicht-84939223",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Christina Triplett",
+   "title": "Pediatrics Patient Access Specialist II",
+   "org": "Johns Hopkins Hospital",
+   "city": "Bowie",
+   "linkedin": "https://www.linkedin.com/in/christina-triplett-1963b6137",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Pam Woynicz",
+   "title": "Clinical Nurse Manager- Pediatrics/PICU",
+   "org": "Adventist HealthCare",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/pam-woynicz-85692918",
+   "email": "p\u2022\u2022\u2022@adventisthealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Cecily Dorros",
+   "title": "Pediatrician",
+   "org": "GBMC HealthCare",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/cecily-dorros-30aa1689",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Ashlie Tam",
+   "title": "Pediatric Resident",
+   "org": "LifeBridge Health",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ashlie-tam-92288a1a9",
+   "email": "a\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Tierra Burrell",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Medicine",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/tierra-burrell-46528a146",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Stephen Liverman",
+   "title": "NICU Pediatrician",
+   "org": "GBMC HealthCare",
+   "city": "Perry Hall",
+   "linkedin": "https://www.linkedin.com/in/stephen-liverman-2147027b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Sandy Resnick",
+   "title": "Coordinator, Maternal Child Health Educ.",
+   "org": "Adventist HealthCare",
+   "city": "Rockville",
+   "linkedin": "https://www.linkedin.com/in/sandy-resnick-62497032",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Md",
+   "title": "pediatrician",
+   "org": "MedStar Harbor Hospital",
+   "city": "Catonsville",
+   "linkedin": "https://www.linkedin.com/in/john-md-5461913a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lindsey Wilhelm",
+   "title": "Autism Support Coach, Personal Support",
+   "org": "Itineris Inc.",
+   "city": "Towson",
+   "linkedin": "https://www.linkedin.com/in/lindsey-wilhelm-6a99a813a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  }
+ ]
+}

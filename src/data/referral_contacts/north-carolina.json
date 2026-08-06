@@ -1,0 +1,1816 @@
+{
+ "name": "North Carolina",
+ "slug": "north-carolina",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-carolina.csv",
+ "count": 192,
+ "emails": 128,
+ "phones": 148,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 138
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 33
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 10
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 7
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 2
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 2
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Charlotte",
+   "count": 42
+  },
+  {
+   "name": "Winston-Salem",
+   "count": 20
+  },
+  {
+   "name": "Durham",
+   "count": 17
+  },
+  {
+   "name": "Chapel Hill",
+   "count": 12
+  },
+  {
+   "name": "Raleigh-Durham-Chapel Hill Area",
+   "count": 9
+  },
+  {
+   "name": "Raleigh",
+   "count": 7
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Atrium Health",
+   "count": 21
+  },
+  {
+   "name": "Novant Health",
+   "count": 18
+  },
+  {
+   "name": "Atrium Health Wake Forest Baptist",
+   "count": 17
+  },
+  {
+   "name": "Carolinas HealthCare System",
+   "count": 8
+  },
+  {
+   "name": "UNC Physicians Network",
+   "count": 7
+  },
+  {
+   "name": "Duke University Health System",
+   "count": 5
+  }
+ ],
+ "rows": [
+  {
+   "name": "Jasmine Weiss, MD, MHS",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/jasmine-weiss-md-mhs-574227b7",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Veronica Wiltshire,MD, FAAP",
+   "title": "Pediatrician",
+   "org": "OneHealth",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/veronica-wiltshire-md-265b2a14a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kim R.",
+   "title": "COO - Family Centered Autism Therapy",
+   "org": "Applied ABC",
+   "city": "Asheville",
+   "linkedin": "https://www.linkedin.com/in/kim-r-955b403",
+   "email": "k\u2022\u2022\u2022@appliedabc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Katelynn Donovan",
+   "title": "Chief Executive Officer at Autism 360",
+   "org": "Autism 360",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/katelynn-donovan-56239863",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@autism-360.com",
+   "phone": ""
+  },
+  {
+   "name": "Anne Steptoe, MD MBA",
+   "title": "Pediatrician",
+   "org": "Kintegra Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anne-steptoe-md-mba-04b05a43",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@kintegra.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Matthew Ahrenholz, MD",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/matthew-ahrenholz-md-b7557449",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Cecil Thoppil",
+   "title": "Founding Partner/ Pediatrician/NH Surry Medical Associates",
+   "org": "Novant Health",
+   "city": "Mount Airy",
+   "linkedin": "https://www.linkedin.com/in/cecil-thoppil-a493a938",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Clara Th\u00f6rn, M.Ed, BCBA",
+   "title": "Autism Services Intern",
+   "org": "Devereux",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/clara-th\u00f6rn-m-ed-bcba-17a902170",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@devereux.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Kayla Moreno Vega, MSW, LCSW",
+   "title": "Owner and Child Therapist",
+   "org": "Hesed Counseling, PLLC",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/kayla-moreno-vega-msw-lcsw-53261b1b7",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@hesedcounseling.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Dr. Ellie MacGregor",
+   "title": "Pediatrician",
+   "org": "Blueberry Pediatrics",
+   "city": "Asheville",
+   "linkedin": "https://www.linkedin.com/in/dr-ellie-macgregor-53000b275",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Reeda Shakir",
+   "title": "Pediatrician",
+   "org": "GROWING CHILD PEDIATRICS - CLAYTON",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/reeda-shakir",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Britni Floyd",
+   "title": "Assistant Director of Autism Services",
+   "org": "Clarvida",
+   "city": "Hampstead",
+   "linkedin": "https://www.linkedin.com/in/britni-floyd-97b87bb2",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@accessfamilyservices.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Erica Liebelt",
+   "title": "Primary Care Pediatrician",
+   "org": "Blue Ridge Health",
+   "city": "Hendersonville",
+   "linkedin": "https://www.linkedin.com/in/erica-liebelt-61704b125",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@brchs.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Clio H. Austin",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/clio-h-austin-4922a791",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Jessica Jones",
+   "title": "Primary Care Pediatrician",
+   "org": "Atrium Health Levine Children's",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/jessica-jones-1688b794",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Karen Lewis",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Cornelius",
+   "linkedin": "https://www.linkedin.com/in/karen-lewis-a55aa85",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Nicole Aristy",
+   "title": "Pediatrician",
+   "org": "Jacksonville Children's Multispecialty Clinic (JCMC)",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/nicole-aristy-51714847",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@jcmcpa.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Andrew Miller",
+   "title": "Pediatric Resident",
+   "org": "Carilion Clinic",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/andrew-miller-670a6066",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Tarshree Sawyer-Knox, MD, MPH,MS",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/tarshree-sawyer-knox-md-mph-ms-35aa575a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Corbett Hall",
+   "title": "Assistant Director of Autism Services",
+   "org": "ABS Kids",
+   "city": "Garner",
+   "linkedin": "https://www.linkedin.com/in/corbett-hall-360059139",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Kaitlyn Proctor Lewis",
+   "title": "Director of Autism Services",
+   "org": "Clarvida",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/kaitlyn-proctor-lewis-ba569a211",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@clarvida.com",
+   "phone": ""
+  },
+  {
+   "name": "Jedidiah Mahan",
+   "title": "Pediatrician",
+   "org": "Duke University Hospital",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/jed-mahan",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Wesley Gregory",
+   "title": "Pediatric Resident",
+   "org": "Duke University Health System",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/wesley-gregory-8aa602149",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@vcom.edu",
+   "phone": ""
+  },
+  {
+   "name": "Marina Spanos, PhD",
+   "title": "Director, Data Management and Analysis Core-Duke Center for Autism and Brain Development",
+   "org": "Duke University Medical Center",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/marina-spanos-phd-9a431066",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Francesca Devine",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/francesca-devine-5b2215a2",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Elizabeth Kerr, MD",
+   "title": "Pediatrician",
+   "org": "Duke Health Integrated Practice",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-kerr-md-0a5a0775",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "James Newton",
+   "title": "Pediatrician",
+   "org": "UNC Health",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/james-newton-09537012a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unchealth.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Claire Kelleher, MD",
+   "title": "Pediatrician",
+   "org": "UNC Health",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/claire-kelleher-md-81141215",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@unchealth.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Laura Sinai",
+   "title": "Pediatrician",
+   "org": "Maven Clinic",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/laura-sinai-8820883b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Rayana Swanson, LCMHCA, NCC",
+   "title": "Pediatric Therapist",
+   "org": "Apogee Behavioral Medicine",
+   "city": "Whitsett",
+   "linkedin": "https://www.linkedin.com/in/rayana-swanson",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Emily Lucero",
+   "title": "Pediatric Resident",
+   "org": "Prisma Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/emily-lucero-aab710126",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Kimberly Lewis",
+   "title": "Primary Care Pediatrician",
+   "org": "Advocate Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/kimberly-lewis-b381297a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@advocatehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Brett Ostrander, DO, FAAP",
+   "title": "General Pediatrician",
+   "org": "LANCASTER PEDIATRIC ASSOCIATES LTD",
+   "city": "Goldsboro",
+   "linkedin": "https://www.linkedin.com/in/brett-ostrander",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@lancped.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Colleen Kerger, CPO, MS",
+   "title": "Certified Prosthetist Orthotist, Pediatric Specialist",
+   "org": "Hanger, Inc.",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/ckerger",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hanger.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Alyssa Hawkins",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/alyssa-hawkins-002833bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Malaika Fenzel, MD, FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "Goldsboro Pediatrics",
+   "city": "Goldsboro",
+   "linkedin": "https://www.linkedin.com/in/malaikadahn",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Sharmell W.",
+   "title": "Pediatrician",
+   "org": "Duke Health Integrated Practice",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/sharmell-w-50a21847",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Nikita Lindsay",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/nikita-lindsay-68439b251",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Dr. Geetika Gupta",
+   "title": "Pediatrician",
+   "org": "Atrium Health Levine Children's",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/dr-geetika-gupta-02465929",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Nour Baltagi",
+   "title": "Pediatrician",
+   "org": "Essentia Health",
+   "city": "North Carolina",
+   "linkedin": "https://www.linkedin.com/in/nour-baltagi-a52815a",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Ambresha Gul, M.D.",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/ambresha-gul-m-d-8696a2120",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Anna Molengraft",
+   "title": "Pediatric Physician Assistant",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anna-molengraft-7350021b0",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Brian Mackey",
+   "title": "Clinical/Child Psychologist",
+   "org": "Carolina Partners in Mental HealthCare, PLLC",
+   "city": "Holly Springs",
+   "linkedin": "https://www.linkedin.com/in/brian-mackey-2408715",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Deri-Ann Dixon",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/deri-ann-dixon-59095a43",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Nick Jernigan",
+   "title": "Pediatrician",
+   "org": "Kidzcare Pediatrics PC, NC",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/nick-jernigan-77a7a646",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Mayuri Lakdawala Khatri",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/mayuri-lakdawala-khatri-48642258",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Laura Windham",
+   "title": "Pediatrician",
+   "org": "Chapel Hill Children and Adolescents' Clinic",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/laura-windham-a50a36173",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@chapelhillchildrensclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Pallavi Kamra",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/pallavi-kamra-40243a4b",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Shereen Alavian",
+   "title": "Pediatrician",
+   "org": "WakeMed",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/shereen-alavian-65a94a90",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wakemed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Maureen Ben-Davies",
+   "title": "Pediatrician, Clinical Assistant Professor",
+   "org": "Cone Health",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/maureen-ben-davies-5493312a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@conehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Ashley Clower",
+   "title": "Pediatrician",
+   "org": "Vidant Health",
+   "city": "Greenville-Washington",
+   "linkedin": "https://www.linkedin.com/in/ashley-clower-33970b174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Rob Poth",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "High Point",
+   "linkedin": "https://www.linkedin.com/in/rob-poth-930536131",
+   "email": "r\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Shelley Rinker",
+   "title": "pediatrician",
+   "org": "Novant Health",
+   "city": "Mooresville",
+   "linkedin": "https://www.linkedin.com/in/shelley-rinker-95360654",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Michael S. Artman",
+   "title": "Pediatrician",
+   "org": "Jeffers Mann Artman Pediatric",
+   "city": "Apex",
+   "linkedin": "https://www.linkedin.com/in/michael-s-artman-681297114",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@jeffersandmann.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Laurie MacDonald",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/laurie-macdonald-a26752241",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "kelli wheeler",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/kelli-wheeler-59b2a9194",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Mary Christiaanse",
+   "title": "pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/mary-christiaanse-788aa698",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Alison Kavanaugh",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/alison-kavanaugh-41b582218",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Summer Davies",
+   "title": "Pediatric Resident",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/summer-davies-99197736",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Shelia Ankrah",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Matthews",
+   "linkedin": "https://www.linkedin.com/in/shelia-ankrah-584660233",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Bob Fromuth",
+   "title": "pediatrician",
+   "org": "Sutter Health",
+   "city": "Greater Monroe Area",
+   "linkedin": "https://www.linkedin.com/in/bob-fromuth-82760bb8",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@sutterhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Pamela Taylor",
+   "title": "Pediatrician",
+   "org": "Wilmington Health",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/pamela-taylor-385160224",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@wilmingtonhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Kristen Dorsey-Leake",
+   "title": "General Pediatrician",
+   "org": "Rural Health Group, Inc.",
+   "city": "Roanoke Rapids",
+   "linkedin": "https://www.linkedin.com/in/kristen-dorsey-leake-3aa941262",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Aubrey Barker",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/aubrey-barker-2a4117a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Sharonjit (Sharon) Grewal, MD",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/sharonjit-sharon-grewal-md-745404150",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Mike Settle",
+   "title": "child counselor",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/mike-settle-a5452339",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Anna Wood",
+   "title": "Pediatrician",
+   "org": "NOVANT HEALTH WAVERLY PEDIATRICS & PRIMARY CARE",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anna-wood-a8a11725a",
+   "email": "a\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Robert Duffey",
+   "title": "Pediatrician",
+   "org": "Blue Ridge Health",
+   "city": "Hendersonville",
+   "linkedin": "https://www.linkedin.com/in/robert-duffey-3a98a897",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Jennifer Chen",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente - Southern California Permanente Medical Group Physician Careers",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/jennifer-c-31018011",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Johanna Kielbasa",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/johanna-kielbasa-367aa226",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "caren mangarelli",
+   "title": "Pediatrician",
+   "org": "Duke University Health System",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/caren-mangarelli-2a3990141",
+   "email": "c\u2022\u2022\u2022@duke.edu",
+   "phone": ""
+  },
+  {
+   "name": "Nazia Aslam",
+   "title": "Pediatric resident",
+   "org": "Vidant Health",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/nazia-aslam-42238070",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Chrissy Andrews",
+   "title": "In-Home Family and Child Therapist",
+   "org": "Carolina Outreach, LLC",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/chrissy-andrews-14b4b116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Davis Bateman",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/davis-bateman-688a50218",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Anja Skljarevski",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anja-skljarevski-81a52a249",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Kurt Klinepeter",
+   "title": "Developmental pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/kurt-klinepeter-aa925024",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Richard Gelber",
+   "title": "Pediatrician",
+   "org": "CORNERSTONE PEDIATRIC & ADOLESCENT MEDICINE PA",
+   "city": "Cary",
+   "linkedin": "https://www.linkedin.com/in/richard-gelber-621404259",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@rdmgpa.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Joe Stegman",
+   "title": "Developmental Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Concord",
+   "linkedin": "https://www.linkedin.com/in/joe-stegman-55b8912a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Bartholomew Resta",
+   "title": "Pediatrician",
+   "org": "ECU Health",
+   "city": "Edenton",
+   "linkedin": "https://www.linkedin.com/in/bartholomew-resta-6007b22b4",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ecuhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Todd Vedder",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/todd-vedder-5a656a1a8",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Ellen Davis",
+   "title": "Pediatrician, Chairman of Pediatrics, CaroMont Health",
+   "org": "CaroMont Health",
+   "city": "Gastonia",
+   "linkedin": "https://www.linkedin.com/in/ellen-davis-8a709361",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Kayla Martin",
+   "title": "Pediatrician",
+   "org": "Cone Health",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/kayla-martin-18a754183",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Robert Goins",
+   "title": "Job/Life Skills Coach (Autism)",
+   "org": "Cardinal Health",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/ragoins",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Maribeth Cengia",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/maribeth-cengia-604724370",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Katie Stalbaum",
+   "title": "Pediatric Resident",
+   "org": "UNC Health",
+   "city": "Mebane",
+   "linkedin": "https://www.linkedin.com/in/katie-stalbaum-b12985323",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anna Mooney",
+   "title": "Pediatrician",
+   "org": "Haywood Regional Medical Center - A Duke LifePoint Hospital",
+   "city": "Waynesville",
+   "linkedin": "https://www.linkedin.com/in/anna-mooney-7b69092b1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Chris Guido",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/chris-guido-40226b276",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rachel Kistemaker",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/rachel-kistemaker-1462a21b3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Leslie Stanfield",
+   "title": "Primary Care Pediatrician",
+   "org": "Atrium Health Levine Children's",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/leslie-stanfield-35299a359",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cassandra Graeff",
+   "title": "Pediatric Resident",
+   "org": "Prisma Health",
+   "city": "Tryon",
+   "linkedin": "https://www.linkedin.com/in/cassandra-graeff-6703b411b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Erin Hower",
+   "title": "Pediatrician",
+   "org": "Duke University Health System",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/erin-hower-116533142",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ashley Xu",
+   "title": "Pediatrician",
+   "org": "Northwest Pediatrics, Inc",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/ashley-xu-9b5485359",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kasey Joyner-Thompson MD, FAAP",
+   "title": "Pediatrician",
+   "org": "White Oak Pediatric Associates, P.A.",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/kasey-joyner-thompson-md-faap-51a52b60",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@whiteoak-peds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Shimona Kumar, D.O.",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/shimona-kumar-d-o-696172107",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Elizabeth Wright",
+   "title": "Pediatric Physician Assistant",
+   "org": "Appalachian Mountain Health",
+   "city": "Greater Asheville",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-wright-59625b254",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@amchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Folake Olojo",
+   "title": "Pediatrician",
+   "org": "Atrium Health Levine Children's",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/folake-olojo-a6640673",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Sallie Permar",
+   "title": "Nancy C. Paduano Professor and Chair Weill Cornell Medicine Pediatrician-in-Chief NewYork-Presbyteri",
+   "org": "Weill Cornell Medicine",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/sallie-permar-313716137",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@med.cornell.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Miriam Medero-Eng, MD",
+   "title": "Pediatrician/Medical Director UNC Pediatrics at North Hills",
+   "org": "UNC Physicians Network",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/miriam-medero-eng-md-bb96a891",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Brittany Martin",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/brittany-martin-6239a742",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Rhonda Patt MD",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/rhonda-patt-64b0bb12",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Kasey W.",
+   "title": "Autism Case Management Lead Analyst",
+   "org": "Evernorth Health Services",
+   "city": "Huntersville",
+   "linkedin": "https://www.linkedin.com/in/kasey-w-74aa8735",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@evernorth.com",
+   "phone": ""
+  },
+  {
+   "name": "Tarshona Stevens",
+   "title": "Pediatrician",
+   "org": "DUKE CHILDREN'S PRIMARY CARE",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/tarshona-stevens-19629192",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Deanna Barnes",
+   "title": "Autism Assessment Specialist",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/deanna-barnes-93b212232",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Kathryn Eaker",
+   "title": "Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Belmont",
+   "linkedin": "https://www.linkedin.com/in/kathryn-eaker-287b4ba1",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@carolinashealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Elizabeth MacLean",
+   "title": "Pediatrician",
+   "org": "Chapel Hill Children and Adolescents' Clinic",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-maclean-86436b13",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@chapelhillchildrensclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Anna Tous PA-C, MPAS",
+   "title": "Pediatric Physician Assistant",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anna-tous",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Jennifer Willard",
+   "title": "Primary Care Pediatrician",
+   "org": "WakeMed",
+   "city": "Wake Forest",
+   "linkedin": "https://www.linkedin.com/in/jennifer-willard-b509b311b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wakemed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Kelly Carney, MD",
+   "title": "Pediatrician",
+   "org": "CORNERSTONE PEDIATRIC & ADOLESCENT MEDICINE PA",
+   "city": "Cary",
+   "linkedin": "https://www.linkedin.com/in/kelly-carney-md-04b7a011",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@rdmgpa.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Halei Benefield",
+   "title": "Pediatrician",
+   "org": "WakeMed",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/halei-benefield-3b632875",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@wakemed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "James (Carl) Burr IV",
+   "title": "Pediatric Resident",
+   "org": "UNC Health",
+   "city": "Hillsborough",
+   "linkedin": "https://www.linkedin.com/in/james-carl-burr-iv-7919ba24",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "christine martin",
+   "title": "Primary Care Pediatrician",
+   "org": "WakeMed",
+   "city": "Wake Forest",
+   "linkedin": "https://www.linkedin.com/in/christine-martin-05168514",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wakemed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Erin Hollingsworth Stubbs",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/erin-hollingsworth-stubbs-7585a971",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Daniellee Artis",
+   "title": "Pediatrician",
+   "org": "Guilford Child Health",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/daniellee-artis-b53b3972",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Sara Lappe",
+   "title": "Pediatrician",
+   "org": "Mission Health",
+   "city": "Asheville",
+   "linkedin": "https://www.linkedin.com/in/sara-lappe-26b3a5142",
+   "email": "s\u2022\u2022\u2022@missionhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Catherine McHugh",
+   "title": "Pediatrician in Behavioral Health at PM Pediatric Care",
+   "org": "PM Pediatric Care",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/catherine-mchugh-60248010",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Jeffery D. Rosenbaum",
+   "title": "Clinical Child Psychologist",
+   "org": "Modern Era Counseling, PLLC",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/jeffery-d-rosenbaum-49549a12",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@southeastpsych.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Linda Collazo",
+   "title": "Pediatrician",
+   "org": "UNC Physicians Network",
+   "city": "Cary",
+   "linkedin": "https://www.linkedin.com/in/linda-collazo-74900116",
+   "email": "l\u2022\u2022\u2022\u2022@uncpn.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Kirsti H.",
+   "title": "Pediatric Physician Assistant",
+   "org": "CRAVEN COUNTY HEALTH DEPARTMENT",
+   "city": "New Bern",
+   "linkedin": "https://www.linkedin.com/in/kirsti-h-709b69277",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cravencountync.gov",
+   "phone": ""
+  },
+  {
+   "name": "Ana Hodges",
+   "title": "Pediatrician",
+   "org": "Cape Fear Valley Health",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/ana-hodges-7ab534174",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@capefearvalley.com",
+   "phone": ""
+  },
+  {
+   "name": "McAllister Windom",
+   "title": "Pediatric Resident",
+   "org": "Duke University Medical Center",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/mcallister-windom-5405ba28",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Mikayla Herron, MHS, PA-C",
+   "title": "Inpatient Pediatric Physician Assistant Fellow",
+   "org": "Children's Hospital Colorado",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/mikayla-herron",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": ""
+  },
+  {
+   "name": "Erin Clark",
+   "title": "Pediatric Resident",
+   "org": "UNC Children's",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/erin-clark-026770144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Elyse Slabaugh",
+   "title": "Pediatric Physician Assistant",
+   "org": "Park Pediatrics",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/elyse-slabaugh",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ruth Lotz",
+   "title": "Pediatrician",
+   "org": "Regional Pediatrics",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/ruth-lotz-60b17a116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Kari Lake",
+   "title": "Pediatrician",
+   "org": "Children's Health of Carolina, PA",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/kari-lake-a2b99637",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Julie Schneider",
+   "title": "Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/julie-schneider-8218bab3",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@carolinashealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "LaWanna Starks",
+   "title": "Pediatrician",
+   "org": "Duke University Health System",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/lawanna-starks-2945a764",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Meredith Roof Copeland",
+   "title": "Family Support Coordinator Autism Resource Program",
+   "org": "Lucet",
+   "city": "Brevard",
+   "linkedin": "https://www.linkedin.com/in/meredith-roof-copeland-99b28755",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@lucethealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Heather G Krueger",
+   "title": "Newborn Hospitalist Pediatrician",
+   "org": "AdventHealth North Carolina",
+   "city": "Arden",
+   "linkedin": "https://www.linkedin.com/in/heather-g-krueger-0652a61aa",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@adventhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Darlene West",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/darlene-west-853766155",
+   "email": "d\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Andrew Grein",
+   "title": "Pediatrician",
+   "org": "AdventHealth North Carolina",
+   "city": "Asheville",
+   "linkedin": "https://www.linkedin.com/in/andrew-grein-26b85884",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@adventhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Stephen Jaqua",
+   "title": "General Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/stephen-jaqua-642a118b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Julia Richards",
+   "title": "Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/julia-drubinskaya-521b0b35",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth O'Neil, MD",
+   "title": "General Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-o-neil-md-010a50310",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Susan Butler",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Waxhaw",
+   "linkedin": "https://www.linkedin.com/in/susan-butler-38839655",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Amy Moon",
+   "title": "Pediatrician",
+   "org": "Duke Health Integrated Practice",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/amy-moon-6876ab53",
+   "email": "m\u2022\u2022\u2022\u2022@piedmonthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Justina Clemons",
+   "title": "General Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/justina-harley-55885512",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Marianna G.",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/marianna-g-83561399",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Seth Cline",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/seth-cline-617aa412b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Marianna Gagina",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/marianna-gagina-83561399",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Estefania Flores",
+   "title": "Pediatrician",
+   "org": "CaroMont Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/estefania-flores-9aabba121",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Caroline Iskander",
+   "title": "Pediatrician and Sports Medicine Physician",
+   "org": "Affinia Healthcare",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/caroline-newman-5a124089",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ashley Edmonston, M.D.",
+   "title": "Pediatrician",
+   "org": "Jeffers Mann Artman Pediatric",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/ashley-edmonston-m-d-57721372",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Shobha Shekar",
+   "title": "Pediatrician",
+   "org": "Womack Army Medical Center",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/shobha-shekar-648a7b1b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@army.mil",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Niyomi Patel",
+   "title": "PRN Float Pool Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/niyomi-patel-ab302a100",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Cassidy Petrigac, DO",
+   "title": "Pediatric Resident",
+   "org": "ECU Health",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/cassidy-petrigac-do-99978b118",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ecuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Cruz Stocker, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Randolph Health",
+   "city": "Asheboro",
+   "linkedin": "https://www.linkedin.com/in/cruz-stocker-md-3185b321a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Garnet Maharajh",
+   "title": "Md pediatrician",
+   "org": "Novant Health",
+   "city": "Waxhaw",
+   "linkedin": "https://www.linkedin.com/in/garnet-maharajh-482752a6",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Faith Jones",
+   "title": "Pediatric Physician Assistant",
+   "org": "Novant Health",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/faith-lanning-50932012b",
+   "email": "f\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Megan Murray",
+   "title": "Pediatric Physician Assistant",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/megan-murray-31363b20b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Martha Agee",
+   "title": "Pediatrician",
+   "org": "Duke University Medical Center",
+   "city": "Raleigh-Durham-Chapel Hill Area",
+   "linkedin": "https://www.linkedin.com/in/martha-agee-518520b8",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Ashley Honeycutt",
+   "title": "Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/ashley-honeycutt-709024121",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@carolinashealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Mohammad Nasiri",
+   "title": "Pediatrician",
+   "org": "Kidzcare Pediatrics PC, NC",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/abdus-sabur-nasiri-78410649",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rose Lawson",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/rose-lawson-4a50378a",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Victoria Parente",
+   "title": "Pediatric Resident",
+   "org": "Duke University Hospital",
+   "city": "Durham",
+   "linkedin": "https://www.linkedin.com/in/victoria-parente-8a98b876",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@duke.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Tommy Sutton",
+   "title": "Pediatrician",
+   "org": "Jeffers Mann Artman Pediatric",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/tommy-sutton-8103a76",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@jeffersandmann.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Shakya Anders MSW, LCSWA",
+   "title": "Child Therapist",
+   "org": "Cherokee Indian Hospital",
+   "city": "Cullowhee",
+   "linkedin": "https://www.linkedin.com/in/shakya-anders-msw-lcswa-024554299",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cherokeehospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Amra Z.",
+   "title": "General Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/amrazuzo",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Audrey Ashkin",
+   "title": "Behavior Therapist at Solving Autism",
+   "org": "Solving Autism, LLC",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/audrey-ashkin-3301b631",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Amra Zuzo",
+   "title": "General Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/amra-zuzo-660b59265",
+   "email": "a\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Kalen Holliday",
+   "title": "Pediatric Therapist",
+   "org": "ABS Kids",
+   "city": "High Point",
+   "linkedin": "https://www.linkedin.com/in/kalen-holliday-7a75a0209",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Thomas Bailey",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Albemarle",
+   "linkedin": "https://www.linkedin.com/in/thomas-bailey-1a204b173",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Shannon Drohan",
+   "title": "Pediatrician",
+   "org": "Eastern Carolina Pediatrics",
+   "city": "Wilson",
+   "linkedin": "https://www.linkedin.com/in/shannon-drohan-166252116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Carolyn Brookhart",
+   "title": "Pediatrician",
+   "org": "Chatham Pediatrics",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/carolyn-brookhart-219463338",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@chathampeds.com",
+   "phone": ""
+  },
+  {
+   "name": "Christina Thuet",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/christina-thuet-9672239b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dori Thomas MD",
+   "title": "Pediatrician",
+   "org": "Kidzcare Pediatrics PC, NC",
+   "city": "Morrisville",
+   "linkedin": "https://www.linkedin.com/in/dori-thomas-md-19a76785",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "George Stablein",
+   "title": "Pediatrician",
+   "org": "Chapel Hill Pediatrics and Adolescents",
+   "city": "Chapel Hill",
+   "linkedin": "https://www.linkedin.com/in/george-stablein-b0949a2b",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@chapelhillpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Jerry Wiley",
+   "title": "Pediatrician",
+   "org": "health centers",
+   "city": "Raleigh",
+   "linkedin": "https://www.linkedin.com/in/jerry-wiley-4b946845",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Olga Johnson",
+   "title": "Pediatric Resident",
+   "org": "Vidant Health",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/olga-johnson-a18a962",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@vidanthealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Jack Thomas",
+   "title": "Pediatric Resident",
+   "org": "Le Bonheur Children's Hospital",
+   "city": "Apex",
+   "linkedin": "https://www.linkedin.com/in/jack-thomas-19b8a8151",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@lebonheur.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Gurpreet Vidwan",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/gurpreet-vidwan-b691b9170",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Dr Rita Gunter",
+   "title": "Pediatrician",
+   "org": "Carolina Collaborative Community Care",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/dr-rita-gunter-a61a64108",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@carolinaccc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Andy Gunter",
+   "title": "Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/andy-gunter-67763151",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@carolinashealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Carrie Friesen",
+   "title": "Pediatrician",
+   "org": "NOVANT HEALTH MEADOWLARK PEDIATRICS",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/carrie-friesen-815756272",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Tyia Clark",
+   "title": "General Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/tyia-clark-md-faap-94612a1b9",
+   "email": "t\u2022\u2022\u2022\u2022@uncpn.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Madison Zenk",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/madison-zenk-b5254a185",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "James High",
+   "title": "pediatrician",
+   "org": "CaroMont Health",
+   "city": "Belmont",
+   "linkedin": "https://www.linkedin.com/in/james-high-82ab8297",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@caromonthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Loverica Irby",
+   "title": "Pediatrician",
+   "org": "CaroMont Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/loverica-irby-b47778144",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@caromonthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Heather Anderson",
+   "title": "Pediatric Resident",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/heather-anderson-aa22589b",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Khalia Grant Thorpe",
+   "title": "Pediatrician",
+   "org": "Duke University Health System",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/khalia-grant-thorpe-a028a0265",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@conehealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Steve Kearns",
+   "title": "Pediatrician",
+   "org": "Atrium Health Wake Forest Baptist",
+   "city": "Winston-Salem",
+   "linkedin": "https://www.linkedin.com/in/steve-kearns-57921838",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wakehealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Anna Kowalczyk",
+   "title": "Pediatrician",
+   "org": "Atrium Health",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/anna-kowalczyk-745962ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Tamika Thomas",
+   "title": "Qualified Autism Service Practitioner-Supervisor",
+   "org": "Speech Connections, LLC",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/tamika-thomas-18ba33173",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@myspeechconnections.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Larry Glass",
+   "title": "MD/Pediatrician",
+   "org": "Carolinas HealthCare System",
+   "city": "Charlotte",
+   "linkedin": "https://www.linkedin.com/in/larry-glass-1992a981",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@carolinashealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Nusiebeh Redpath",
+   "title": "Pediatric Resident",
+   "org": "Vidant Health",
+   "city": "Cary",
+   "linkedin": "https://www.linkedin.com/in/nusiebeh-redpath-md-msph",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ecuhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Shayne Bates",
+   "title": "Pediatrician",
+   "org": "High Point Pediatrics",
+   "city": "High Point",
+   "linkedin": "https://www.linkedin.com/in/shayne-bates-a3071674",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Yera Chokshi",
+   "title": "Pediatrician",
+   "org": "Novant Health",
+   "city": "Charlotte Metro",
+   "linkedin": "https://www.linkedin.com/in/yera-chokshi-b3399417",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@novanthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Joshua Alweiss MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Harris Regional Hospital - A Duke LifePoint Hospital",
+   "city": "Sylva",
+   "linkedin": "https://www.linkedin.com/in/joshua-alweiss-md-faap-27a03a153",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "RITA NNAEMEKA-OKOYEH",
+   "title": "Pediatrician",
+   "org": "Shalom Pediatrics",
+   "city": "Greensboro",
+   "linkedin": "https://www.linkedin.com/in/rita-nnaemeka-okoyeh-76b966117",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "KidzCare Pediatrics Wallace",
+   "title": "Pediatrician",
+   "org": "Kidzcare Pediatrics PC, NC",
+   "city": "Wallace",
+   "linkedin": "https://www.linkedin.com/in/kidzcare-pediatrics-wallace-557a43165",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Gary Lytle",
+   "title": "Pediatrician, MD, retired",
+   "org": "Nemours Children's Health",
+   "city": "Greater Asheville",
+   "linkedin": "https://www.linkedin.com/in/gary-lytle-6ab884b9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "James Anderson",
+   "title": "Pediatrician, Cornerstone Pediatrics",
+   "org": "Cornerstone Health Care",
+   "city": "High Point",
+   "linkedin": "https://www.linkedin.com/in/james-anderson-19649615",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  }
+ ]
+}

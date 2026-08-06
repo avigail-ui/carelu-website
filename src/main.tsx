@@ -21,6 +21,7 @@ import CareluCompany from './pages/CareluCompany'
 import CookieConsent from './components/CookieConsent'
 import ResourcePage from './pages/ResourcePage'
 import ReferralContactsPage from './pages/ReferralContactsPage'
+import ReferralContactsStatePage from './pages/ReferralContactsStatePage'
 import IntakeGapReport from './pages/IntakeGapReport'
 import LeakCalculator from './pages/LeakCalculator'
 import PayerPage from './pages/PayerPage'
@@ -74,6 +75,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/solutions/:slug" element={<SolutionsPage />} />
         {/* Static resource pages must precede the :slug catch-all (static wins in v6 ranking anyway) */}
         <Route path="/resources/pediatrician-referral-contacts" element={<ReferralContactsPage />} />
+        <Route path="/resources/pediatrician-referral-contacts/:state" element={<ReferralContactsStatePage />} />
         <Route path="/resources/:slug" element={<ResourcePage />} />
         <Route path="/research/the-intake-gap" element={<IntakeGapReport />} />
         <Route path="/tools/intake-leak-calculator" element={<LeakCalculator />} />

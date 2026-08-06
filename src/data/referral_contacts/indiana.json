@@ -1,0 +1,1155 @@
+{
+ "name": "Indiana",
+ "slug": "indiana",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-indiana.csv",
+ "count": 119,
+ "emails": 66,
+ "phones": 100,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 96
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 8
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 7
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 6
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 2
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Indianapolis",
+   "count": 42
+  },
+  {
+   "name": "Greater Indianapolis",
+   "count": 7
+  },
+  {
+   "name": "Bloomington",
+   "count": 5
+  },
+  {
+   "name": "Fishers",
+   "count": 4
+  },
+  {
+   "name": "Greenwood",
+   "count": 4
+  },
+  {
+   "name": "Carmel",
+   "count": 4
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Indiana University Health",
+   "count": 15
+  },
+  {
+   "name": "Community Health Network",
+   "count": 13
+  },
+  {
+   "name": "Damar Services, Inc.",
+   "count": 5
+  },
+  {
+   "name": "Eskenazi Health",
+   "count": 5
+  },
+  {
+   "name": "Ascension",
+   "count": 5
+  },
+  {
+   "name": "Parkview Health",
+   "count": 4
+  }
+ ],
+ "rows": [
+  {
+   "name": "Carla Hubbard",
+   "title": "Child Therapist",
+   "org": "Hendricks Therapy",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/carlajhubbard",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Robert \"Nick\" Tucker",
+   "title": "Pediatric Resident",
+   "org": "St. Louis Children's Hospital",
+   "city": "Fishers",
+   "linkedin": "https://www.linkedin.com/in/robert-nick-tucker-a0b480120",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@bjc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Donald Trainor",
+   "title": "Internist and Pediatrician at HealthNet Community Health Centers",
+   "org": "HealthNet",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/donald-trainor-3859812",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@indyhealthnet.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Melissa Collier, MD, MPH, FAAP",
+   "title": "Internal Medicine and Pediatric Physician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/melissa-collier-md-mph-faap-65234321",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Teykia Deveaux, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Doctors Hospital",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/teykia-deveaux-md-faap-80976277",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@doctorshosp.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Elizabeth Campbell, MD",
+   "title": "Pediatrician and Partner/Owner",
+   "org": "Associated Pediatricians",
+   "city": "Valparaiso",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-campbell-md-5aa10a86",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@associatedpediatricians.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Autumn Bowden",
+   "title": "Registered Respiratory Therapist - Neonatal Pediatric Specialist",
+   "org": "Community Health Network",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/autumn-bowden-013a2081",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Lamia Katbi",
+   "title": "Pediatrician",
+   "org": "Community Healthcare System",
+   "city": "Munster",
+   "linkedin": "https://www.linkedin.com/in/drlamiakatbi",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@comhs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Sarah Berline",
+   "title": "BCBA, Intensive Autism Services",
+   "org": "Damar Services, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/sarah-berline-13731b52",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@damar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Shivani Parikshak",
+   "title": "Pediatrician",
+   "org": "Franciscan Physician Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/shivani-parikshak-3139a570",
+   "email": "s\u2022\u2022\u2022@franciscanalliance.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Christy Loke, DO, FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "Witham Health Services",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/christyloke",
+   "email": "c\u2022\u2022\u2022\u2022@witham.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Eric Puster",
+   "title": "Pediatrician",
+   "org": "Eskenazi Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/eric-puster-960b1617",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@eskenazihealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Robert Minturn",
+   "title": "Pediatric Resident",
+   "org": "CLEVELAND CLINIC CHILDREN'S HOSPITAL",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/robert-minturn-6ba136128",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Kristen Anderson, D.O.",
+   "title": "General Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/kristen-anderson-552a71a2",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Julia Lane Mitchell, MD",
+   "title": "Pediatrician",
+   "org": "Damar Services, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/julia-lane-mitchell-md-575a0a5a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@damar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Jenna Matijevic",
+   "title": "Residential Program Manager - Autism Services",
+   "org": "Damar Services, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/jenna-matijevic-04b553156",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@damar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Ashley O.",
+   "title": "BH Care Manager - Autism",
+   "org": "Elevance Health",
+   "city": "Crown Point",
+   "linkedin": "https://www.linkedin.com/in/ashmcgill",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Sarah Olvey, DO, FAAP",
+   "title": "Pediatrician",
+   "org": "Ascension",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/sarah-olvey-do",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Hasnaa Chahrour",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Bloomington",
+   "linkedin": "https://www.linkedin.com/in/hasnaa-chahrour-464714a7",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Naseer Syed",
+   "title": "General Pediatrician",
+   "org": "Community Health Network",
+   "city": "Noblesville",
+   "linkedin": "https://www.linkedin.com/in/naseer-syed-8a61ba106",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Sheila Stewart, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Jane Pauley Community Health Center",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/sheila-stewart-md-faap-05142843",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@janepauleychc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Madeleine Teeter, MA, LMHC",
+   "title": "Child Therapist & PBHI Clinical Pgms Supervisor",
+   "org": "Parkview Health",
+   "city": "Fort Wayne",
+   "linkedin": "https://www.linkedin.com/in/madeleinehjelm",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@parkview.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Daniel Riggins",
+   "title": "Primary Care Pediatrician",
+   "org": "Eskenazi Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/daniel-riggins-053372183",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@eskenazihealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Alexis McClure",
+   "title": "Pediatric Physician Assistant",
+   "org": "Parkview Health",
+   "city": "Peru",
+   "linkedin": "https://www.linkedin.com/in/alexis-mcclure-9bb116251",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@parkview.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Audrey Gabriel",
+   "title": "General Pediatrician",
+   "org": "Community Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/audrey-gabriel-a7a8704a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Marla Souder",
+   "title": "Pediatric Psychologist",
+   "org": "Hopebridge",
+   "city": "Fort Wayne",
+   "linkedin": "https://www.linkedin.com/in/marla-souder-53563aa5",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hopebridge.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Alison Fisher",
+   "title": "Registered Respiratory Therapist-Neonatal Pediatric Specialist",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/alison-fisher-9a8a5a84",
+   "email": "f\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Jasmine Kaur, MS, MD",
+   "title": "Pediatric Resident",
+   "org": "Riley Children's Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/jasminekaur94",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Kathleen Polonka, D.O.",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Fishers",
+   "linkedin": "https://www.linkedin.com/in/kathleen-polonka-d-o-17b82647",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Amberly Brewer",
+   "title": "Pediatrician",
+   "org": "Associated Pediatricians",
+   "city": "Crown Point",
+   "linkedin": "https://www.linkedin.com/in/amberly-brewer-1b84a946",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@associatedpediatricians.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Annika Ritz, MD",
+   "title": "Pediatrician",
+   "org": "Allegro Pediatrics",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/annika-ritz-md-592b65128",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Eva Freeman",
+   "title": "Pediatrician",
+   "org": "St. Vincent Health",
+   "city": "Zionsville",
+   "linkedin": "https://www.linkedin.com/in/eva-freeman-a6500635",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Megan Ciaccio",
+   "title": "Pediatrician",
+   "org": "Johnson Memorial Health",
+   "city": "Greenwood",
+   "linkedin": "https://www.linkedin.com/in/megan-ciaccio-08970936",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@johnsonmemorial.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Nassali Mugwanya",
+   "title": "Pediatrician",
+   "org": "Adelante Healthcare",
+   "city": "Valparaiso",
+   "linkedin": "https://www.linkedin.com/in/nassali-mugwanya-532a3021",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@adelantehealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Lourdes Geise",
+   "title": "Pediatrician",
+   "org": "Windrose Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/lourdes-geise-a939ab9a",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@windrosehealth.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Janice K.",
+   "title": "Pediatrician",
+   "org": "Witham Health Services",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/janice-k-513b0528",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@witham.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Hadeily Salazar Hernandez",
+   "title": "Pediatrician",
+   "org": "La Porte Hospital",
+   "city": "La Porte",
+   "linkedin": "https://www.linkedin.com/in/hadeily-salazar-hernandez-healthy-strong-kids",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Bianca Maya",
+   "title": "Pediatrician",
+   "org": "Riley Children's Health",
+   "city": "Fishers",
+   "linkedin": "https://www.linkedin.com/in/bianca-maya-a3aa23220",
+   "email": "b\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Jacqui Kukulski, DO, FAAP",
+   "title": "Pediatrician",
+   "org": "Powers Health",
+   "city": "Munster",
+   "linkedin": "https://www.linkedin.com/in/jacqui-kukulski-do-faap-a71a4043",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Waqas Khan, M.D",
+   "title": "General Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Bloomington",
+   "linkedin": "https://www.linkedin.com/in/wkhan357",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Waqas Khan, M.D",
+   "title": "General Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Bloomington",
+   "linkedin": "https://www.linkedin.com/in/waqas-khan-m-d-716917147",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Amanda Beach",
+   "title": "Pediatrician",
+   "org": "St. Vincent Health",
+   "city": "Carmel",
+   "linkedin": "https://www.linkedin.com/in/amanda-beach-37007999",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Christina Branham",
+   "title": "Pediatrician",
+   "org": "NorthShore Health Centers",
+   "city": "Chesterton",
+   "linkedin": "https://www.linkedin.com/in/christina-branham-3aa41795",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Jennifer Hartwell",
+   "title": "Pediatrician",
+   "org": "Columbus Regional Health - Columbus, Indiana",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/jennifer-hartwell-8703a5278",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@crh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Reshma Khatri",
+   "title": "Pediatrician",
+   "org": "Parkview Health",
+   "city": "Greater Fort Wayne",
+   "linkedin": "https://www.linkedin.com/in/reshma-khatri-8b5b0aa0",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@parkview.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Andrea (Aikman) Kurtz, M.S., BCBA",
+   "title": "Intensive Autism Supervisor",
+   "org": "Damar Services, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/andrea-aikman-kurtz-m-s-bcba-b6aa3695",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@damar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Andrea Aikman, M.S., BCBA",
+   "title": "Intensive Autism Supervisor",
+   "org": "Damar Services, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/andrea-aikman-m-s-bcba-b6aa3695",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@damar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Carla Weaver",
+   "title": "BC Pediatrician - Newborn Hospitalist",
+   "org": "Community Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/carla-weaver-3b740371",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Tanya Radisich",
+   "title": "Registered Behavior Technician (Autism Therapy)",
+   "org": "LittleStar ABA Therapy",
+   "city": "Bloomington",
+   "linkedin": "https://www.linkedin.com/in/tanya-radisich-81b09197",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@littlestaraba.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Natalie Kurtz, MD, MS, FAAP",
+   "title": "Pediatrician",
+   "org": "Goshen Health",
+   "city": "Elkhart County",
+   "linkedin": "https://www.linkedin.com/in/kurtznatalie",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@goshenhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Anne Conley-Goldstein, Ph.D., HSPP",
+   "title": "Clinical Child Psychologist",
+   "org": "LifeStance Health",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/anne-conley-goldstein-ph-d-hspp-12698027",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@lifestance.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Dr. Marilyn Bull Bull",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/dr-marilyn-bull-bull-940713b0",
+   "email": "m\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Elizabeth Villafuerte",
+   "title": "Primary Care Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-villafuerte-3b083240",
+   "email": "l\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Joyce Rodgers RRT,NPS,ACCS",
+   "title": "Registered Respiratory Therapist,Neonatal/Pediatric Specialist, Adult Critical Care",
+   "org": "Community Health Network",
+   "city": "Trafalgar",
+   "linkedin": "https://www.linkedin.com/in/joyce-rodgers-rrt-nps-accs-54b89168",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rita Patel",
+   "title": "Pediatrician",
+   "org": "Jane Pauley Community Health Center",
+   "city": "Westfield",
+   "linkedin": "https://www.linkedin.com/in/rita-patel-271896268",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@janepauleychc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Kirsten Lengacher, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Alliance Health Centers",
+   "city": "Fort Wayne",
+   "linkedin": "https://www.linkedin.com/in/kirsten-lengacher-pa-c-29a421282",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@myalliancehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Angela Barton",
+   "title": "Pediatrician",
+   "org": "St.Vincent Indianapolis Hospital",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/angela-barton-1b5695172",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Katherine Crawford",
+   "title": "Pediatrician",
+   "org": "HealthNet",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/katherine-crawford-029998115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Himanshu Shah",
+   "title": "Pediatrician",
+   "org": "Ascension",
+   "city": "Evansville",
+   "linkedin": "https://www.linkedin.com/in/himanshu-shah-07251b251",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Robert Lindeman MD",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/robert-lindeman-md-b37165152",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Sarah Freese",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Bloomington",
+   "linkedin": "https://www.linkedin.com/in/sarah-freese-b52b9014b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Aaron Carlson",
+   "title": "Pediatric Physician Assistant",
+   "org": "Park DuValle Community Health Centers",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/carlso86",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Matt Sall",
+   "title": "Primary Care Pediatrician",
+   "org": "Eskenazi Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/matt-sall-b4122556",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@eskenazihealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Ann Jonkman MD",
+   "title": "Pediatrician",
+   "org": "Unity Healthcare, LLC",
+   "city": "Lafayette",
+   "linkedin": "https://www.linkedin.com/in/ann-jonkman-md-75b20b31",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Nadine Al Homsi",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/nadine-al-homsi-672244245",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Parisa Mansoori",
+   "title": "Pediatrician",
+   "org": "Eskenazi Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/parisa-mansoori-9b2a741a7",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@eskenazihealth.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Jaime Stelzer, MD",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Anderson",
+   "linkedin": "https://www.linkedin.com/in/jaime-stelzer-md-b6887aaa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Anne Clark",
+   "title": "Pediatrician",
+   "org": "SOUTHSIDE PEDIATRICS, INC.",
+   "city": "Greenwood",
+   "linkedin": "https://www.linkedin.com/in/anne-clark-511a33a4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Esineya Chigaga",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/esineya-chigaga-2a8b6730",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Linda Emery",
+   "title": "Pediatrician",
+   "org": "Franciscan Physician Network",
+   "city": "West Lafayette",
+   "linkedin": "https://www.linkedin.com/in/linda-emery-5959309a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Laurie Goebel",
+   "title": "Pediatrician",
+   "org": "IU Medical Group Primary Care",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/laurie-goebel-24b7a741",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Beth Barron",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/beth-barron-8204831a3",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Neha Batra",
+   "title": "Pediatrician",
+   "org": "Goshen Health",
+   "city": "Mishawaka",
+   "linkedin": "https://www.linkedin.com/in/neha-batra-4312231aa",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@goshenhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Amy Clark",
+   "title": "Pediatrician",
+   "org": "St. Elizabeth Healthcare",
+   "city": "Lawrenceburg",
+   "linkedin": "https://www.linkedin.com/in/amy-clark-ab02861a5",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stelizabeth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Amanda Walter",
+   "title": "Pediatrician",
+   "org": "Franciscan Physician Network",
+   "city": "Mooresville",
+   "linkedin": "https://www.linkedin.com/in/amanda-walter-99a63434",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@franciscanalliance.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Camille Kureth",
+   "title": "Pediatrician",
+   "org": "St. Joseph Health",
+   "city": "Mishawaka",
+   "linkedin": "https://www.linkedin.com/in/camille-kureth-9651bb55",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "RUSHABH SHAH",
+   "title": "PEDIATRICIAN",
+   "org": "Saint Joseph Health System (Indiana)",
+   "city": "Plymouth",
+   "linkedin": "https://www.linkedin.com/in/rushabh-shah-1325a4b3",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@sjrmc.com",
+   "phone": ""
+  },
+  {
+   "name": "Don DuBois",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Greenwood",
+   "linkedin": "https://www.linkedin.com/in/don-dubois-502894200",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Donnie Fahler",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Lafayette",
+   "linkedin": "https://www.linkedin.com/in/donnie-fahler-32b99870",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Kelly Nixon",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/kelly-nixon-097a2a1a1",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Carla Bystricky",
+   "title": "Pediatrician",
+   "org": "Parkview Health",
+   "city": "Columbia City",
+   "linkedin": "https://www.linkedin.com/in/carla-bystricky-a6aa7bb0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "paul tortoriello",
+   "title": "Pediatrician",
+   "org": "DuPage Medical Group",
+   "city": "Dyer",
+   "linkedin": "https://www.linkedin.com/in/paul-tortoriello-4887834b",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@dupagemd.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Alan Schwartz",
+   "title": "Pediatrician",
+   "org": "Ascension",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/alan-schwartz-a27123161",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Donna Zloza",
+   "title": "Pediatrician",
+   "org": "Regional Health Systems",
+   "city": "Hammond",
+   "linkedin": "https://www.linkedin.com/in/donna-zloza-28048578",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@rhs.care",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Joanne Chaten",
+   "title": "Pediatrician",
+   "org": "Ascension",
+   "city": "Carmel",
+   "linkedin": "https://www.linkedin.com/in/joanne-chaten-531a82116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Erika Carroll",
+   "title": "Milestones Autism Center",
+   "org": "Milestones Autism Center",
+   "city": "Delphi",
+   "linkedin": "https://www.linkedin.com/in/erika-carroll-7b332012b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Jeff Kuo",
+   "title": "Pediatrician",
+   "org": "La Porte Hospital",
+   "city": "La Porte",
+   "linkedin": "https://www.linkedin.com/in/jeff-kuo-559b803a",
+   "email": "j\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Beata Samuel",
+   "title": "Pediatrician",
+   "org": "St. Vincent",
+   "city": "Fishers",
+   "linkedin": "https://www.linkedin.com/in/beata-samuel-85aa76146",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Michael Klingler",
+   "title": "Pediatrician",
+   "org": "Clay County Hospital and Clinics",
+   "city": "Greater Evansville Area",
+   "linkedin": "https://www.linkedin.com/in/michael-klingler-085345186",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@claycountyhospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Barry Phillips",
+   "title": "Pediatrician",
+   "org": "Deaconess Health System",
+   "city": "Newburgh",
+   "linkedin": "https://www.linkedin.com/in/barry-phillips-b1b6401a5",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@deaconess.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Maves Laura",
+   "title": "Pediatrician",
+   "org": "St. Vincent Health",
+   "city": "Osgood",
+   "linkedin": "https://www.linkedin.com/in/maves-laura-70776129",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Colleen Morrison, MD",
+   "title": "Pediatrician",
+   "org": "Beacon Health System",
+   "city": "South Bend",
+   "linkedin": "https://www.linkedin.com/in/colleen-morrison-md-8081a0284",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@beaconhealthsystem.org",
+   "phone": ""
+  },
+  {
+   "name": "george horvath",
+   "title": "senior physician--pediatrician",
+   "org": "The South Bend Clinic",
+   "city": "South Bend",
+   "linkedin": "https://www.linkedin.com/in/george-horvath-3b931242",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Stephanie Fleck",
+   "title": "Pediatrician",
+   "org": "MERIDIAN PEDIATRICS, LLC",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/stephanie-fleck-b893b71a0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tamra Woodworth",
+   "title": "Primary Care Pediatrician",
+   "org": "Ascension",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/tamra-woodworth-7b63bb8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Alicia Wilson",
+   "title": "Pediatrician",
+   "org": "The South Bend Clinic",
+   "city": "South Bend",
+   "linkedin": "https://www.linkedin.com/in/alicia-wilson-240524b6",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@southbendclinic.com",
+   "phone": ""
+  },
+  {
+   "name": "Dawn Haut",
+   "title": "Pediatrician",
+   "org": "IU Medical Group Primary Care",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/dawn-haut-4a4a3a16",
+   "email": "d\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Katherine North",
+   "title": "Autism Specialist",
+   "org": "Meridian Health",
+   "city": "Greater Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/katherine-north-912311ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Ann Jonkman",
+   "title": "Pediatrician",
+   "org": "Unity Healthcare, LLC",
+   "city": "Lafayette",
+   "linkedin": "https://www.linkedin.com/in/ann-jonkman-5740342a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Risa Davidson",
+   "title": "Physician- Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/risa-davidson-93672873",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Keith Chitty",
+   "title": "Pediatrician",
+   "org": "MERIDIAN PEDIATRICS, LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/keith-chitty-667372292",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alicia Leedy",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Indiana",
+   "linkedin": "https://www.linkedin.com/in/alicia-leedy-939989275",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@ecommunity.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Suzanne Grannan",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/suzanne-grannan-a0a417272",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ecommunity.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Caldwell Antoinette",
+   "title": "Pediatrician",
+   "org": "Franciscan Alliance, Inc.",
+   "city": "West Lafayette",
+   "linkedin": "https://www.linkedin.com/in/caldwell-antoinette-38b30232",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "don dubois",
+   "title": "pediatrician",
+   "org": "Community Health Network",
+   "city": "Greenwood",
+   "linkedin": "https://www.linkedin.com/in/don-dubois-7ab4a333",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Lindsey Taylor",
+   "title": "Pediatrician",
+   "org": "Jasper Memorial Hospital",
+   "city": "Ireland",
+   "linkedin": "https://www.linkedin.com/in/lindsey-taylor-4a6730129",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Brenda Harris",
+   "title": "Registered Respiratory Therapist-Neonatal Pediatric Specialist",
+   "org": "VEI - Community Health Network",
+   "city": "Plainfield",
+   "linkedin": "https://www.linkedin.com/in/brenda-harris-bb32b37a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Debbie Hall",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Paoli",
+   "linkedin": "https://www.linkedin.com/in/debbie-hall-a857a076",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Christina Ricks",
+   "title": "Pediatrician",
+   "org": "Eskenazi Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/christina-ricks-185611212",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Rachel Woods",
+   "title": "Pediatrician",
+   "org": "Columbus Regional Health - Columbus, Indiana",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/rachel-woods-bb930911b",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@crh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Terri Henderson",
+   "title": "Pediatrician",
+   "org": "Hendricks Regional Health",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/terri-henderson-2532b018b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ramiz Mohammed",
+   "title": "General Pediatrician",
+   "org": "Meridian Health Services Corp.",
+   "city": "Carmel",
+   "linkedin": "https://www.linkedin.com/in/ramiz-mohammed-78923b327",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@meridianhs.org",
+   "phone": ""
+  },
+  {
+   "name": "Zavier Yeakle",
+   "title": "Pediatrician",
+   "org": "Marion Health",
+   "city": "Gas City",
+   "linkedin": "https://www.linkedin.com/in/zavier-yeakle-596533109",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Callyn Riggs",
+   "title": "Pediatrician",
+   "org": "IU HEALTH PHYSICIANS",
+   "city": "Zionsville",
+   "linkedin": "https://www.linkedin.com/in/callyn-riggs-88066522b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Barry Phillips",
+   "title": "Pediatrician",
+   "org": "Deaconess Health System",
+   "city": "Newburgh",
+   "linkedin": "https://www.linkedin.com/in/barry-phillips-4b134150",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@deaconess.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Sarah McClain",
+   "title": "Pediatrician",
+   "org": "Community Health Network",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/sarah-mcclain-202558283",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Rebecca Jessee",
+   "title": "Pediatrician",
+   "org": "Indiana University Health",
+   "city": "Williams",
+   "linkedin": "https://www.linkedin.com/in/rebecca-jessee-5b403535b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lindsay Elsner",
+   "title": "Pediatrician",
+   "org": "St. Vincent Health",
+   "city": "Carmel",
+   "linkedin": "https://www.linkedin.com/in/lindsay-elsner-086808260",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nasrideen Noor",
+   "title": "Pediatrician",
+   "org": "Indiana Health Centers, Inc.",
+   "city": "Kokomo",
+   "linkedin": "https://www.linkedin.com/in/nasrideen-noor-414a0a44",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  }
+ ]
+}

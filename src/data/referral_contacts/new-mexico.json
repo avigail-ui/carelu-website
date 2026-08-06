@@ -1,0 +1,1268 @@
+{
+ "name": "New Mexico",
+ "slug": "new-mexico",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-mexico.csv",
+ "count": 132,
+ "emails": 59,
+ "phones": 108,
+ "roles": [
+  {
+   "label": "Other child-development professionals",
+   "count": 69
+  },
+  {
+   "label": "Pediatricians & physicians",
+   "count": 41
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 12
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 10
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Albuquerque",
+   "count": 59
+  },
+  {
+   "name": "Santa Fe",
+   "count": 9
+  },
+  {
+   "name": "Las Cruces",
+   "count": 8
+  },
+  {
+   "name": "Albuquerque-Santa Fe Metropolitan Area",
+   "count": 8
+  },
+  {
+   "name": "Rio Rancho",
+   "count": 6
+  },
+  {
+   "name": "Gallup",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Presbyterian Healthcare Services",
+   "count": 26
+  },
+  {
+   "name": "The University of New Mexico Health Sciences Center",
+   "count": 14
+  },
+  {
+   "name": "Indian Health Service",
+   "count": 9
+  },
+  {
+   "name": "UNM Medical Group, Inc.",
+   "count": 4
+  },
+  {
+   "name": "CHRISTUS St. Vincent",
+   "count": 3
+  },
+  {
+   "name": "Lovelace Health System",
+   "count": 3
+  }
+ ],
+ "rows": [
+  {
+   "name": "Kimberly Rosenberger-Meyer",
+   "title": "Registered Respiratory Therapist",
+   "org": "AMG Specialty Hospital - Albuquerque",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/kimberly-rosenberger-meyer-a0b7a748",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@amgihm.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Jyoti S",
+   "title": "Managing Director",
+   "org": "eze medical billing services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jyoti6464",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ezemedbills.com",
+   "phone": ""
+  },
+  {
+   "name": "Patrick D. Salas",
+   "title": "Vice President Operations",
+   "org": "Inteli-Care LLC",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/patrick-d-salas-6b907363",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@inteli-care.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Dale Alverson",
+   "title": "Telemedicine Senior Advisor",
+   "org": "Wellness Equity Alliance",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/dale-alverson-a762524",
+   "email": "d\u2022\u2022\u2022@wellnessequityalliance.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Lba Trisha Braecklein",
+   "title": "Lead Bcba",
+   "org": "Mariposa Autism Service Center",
+   "city": "Alamogordo",
+   "linkedin": "https://www.linkedin.com/in/trisha-braecklein-bcba-lba-47289237",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Acadia Buro",
+   "title": "Member",
+   "org": "University of New Mexico Comprehensive Cancer Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/acadia-buro-10457884",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Giang Page, PharmD, AAHIVP",
+   "title": "Clinical Pharmacist",
+   "org": "CHRISTUS St. Vincent",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/giang-page",
+   "email": "a\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Kevin Maben",
+   "title": "Pediatrician",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/kevinmaben",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Irfan Khan",
+   "title": "Medical Director of PICU",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/irfan-khan-4ba43342",
+   "email": "i\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Iris Medrano",
+   "title": "ABA Mentor",
+   "org": "Finni Health (YC W23)",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/iris-medrano-84b128265",
+   "email": "i\u2022\u2022\u2022@finnihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Kathleen St. Clair",
+   "title": "Outpatient Physician Offices Manager",
+   "org": "Lovelace Health System",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/kathleen-st-clair-7b413614",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@lovelace.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Mechem F.",
+   "title": "Director of Nursing",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/mechem-f-a635192a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Diane Hoy",
+   "title": "Medical Staff Recruiter",
+   "org": "Indian Health Service",
+   "city": "Crownpoint",
+   "linkedin": "https://www.linkedin.com/in/diane-hoy-a37208117",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Margaret Danielson",
+   "title": "Medical Coding Analyst Auditor/ Educator",
+   "org": "UNM Medical Group, Inc.",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/margaret-danielson",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Joshua Cerna",
+   "title": "ER Medical Director",
+   "org": "CHRISTUS Health",
+   "city": "Alamogordo",
+   "linkedin": "https://www.linkedin.com/in/joshua-cerna-97151510",
+   "email": "j\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Carli Romero",
+   "title": "Registered Behavior Technician",
+   "org": "Behavior Change Institute",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/carli-romero-50273438",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Gloria Isabel L\u00f3pez Hern\u00e1ndez",
+   "title": "Associate Professor of Pediatrics",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/gloria-isabel-l%25c3%25b3pez-hern%25c3%25a1ndez-34758b69",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Jonathan Palmer, FNP, PMHS",
+   "title": "Nurse Practitioner, Pediatrics",
+   "org": "San Juan Regional Medical Center",
+   "city": "Farmington",
+   "linkedin": "https://www.linkedin.com/in/jonathan-palmer-fnp-pmhs-74582351",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Michael Dunkle MS, RN, NP-C",
+   "title": "Nurse Practitioner",
+   "org": "CHRISTUS St. Vincent",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/michael-dunkle-ms-rn-np-c-71301aa",
+   "email": "c\u2022\u2022\u2022@christushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Heidi Vendegna (Judd) MSW, LCSW",
+   "title": "Medical Social Worker III",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/heidi-vendegna-judd-msw-lcsw-117a8771",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Lindsay Worrell",
+   "title": "Pediatrician and Neonatal Specialist",
+   "org": "Gila Regional Medical Center",
+   "city": "Silver City",
+   "linkedin": "https://www.linkedin.com/in/lindsay-worrell-837b02b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@grmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Marlys Folly",
+   "title": "Clinical Educator",
+   "org": "LOVELACE REGIONAL HOSPITAL FAMILY AND URGENT CARE",
+   "city": "Roswell",
+   "linkedin": "https://www.linkedin.com/in/marlys-folly-53688a55",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Martha Elia Reyes",
+   "title": "Family Nurse Practitioner",
+   "org": "Lovelace Health System",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/martha-elia-reyes-a570b049",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Terri Kangas-Feller",
+   "title": "Infection Preventionist",
+   "org": "ICCNM",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/terri-kangas-feller-75440a83",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Jos\u00e9 Luis Tello C\u00f3rdoba",
+   "title": "Clinical Pharmacist",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jos%c3%a9-luis-tello-c%c3%b3rdoba-16a691136",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Rebecca W.",
+   "title": "Behavioral Health Specialist",
+   "org": "Magellan Health",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/rebecca-whitaker-a6a93133",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@magellanhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Sarah McMillan",
+   "title": "Occupational Therapist",
+   "org": "Encompass Health",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/sarah-mcmillan-823b4b110",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@encompasshealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Eric Haag",
+   "title": "Podiatrist",
+   "org": "Indian Health Service",
+   "city": "Farmington",
+   "linkedin": "https://www.linkedin.com/in/eric-haag-65700358",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Emily Shumate",
+   "title": "Health Services Manager",
+   "org": "Evernorth Health Services",
+   "city": "Placitas",
+   "linkedin": "https://www.linkedin.com/in/emilyshumate",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@evernorth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Keith Krist",
+   "title": "Primary Care Pediatrician",
+   "org": "Holy Cross Hospital",
+   "city": "Taos",
+   "linkedin": "https://www.linkedin.com/in/keithmkristmd",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Jacqueline Goerig",
+   "title": "Life Enrichment Director",
+   "org": "The Montecito Santa Fe",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-goerig-abb06bb9",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@montecitosantafe.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Geronimo Mendoza-Urias",
+   "title": "Medical Director",
+   "org": "Gerald Champion Regional Medical Center",
+   "city": "Alamogordo",
+   "linkedin": "https://www.linkedin.com/in/geronimo-mendoza-urias-b70570205",
+   "email": "g\u2022\u2022\u2022\u2022\u2022@gcrmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Jennifer Phillips, MD",
+   "title": "chief medical officer of UNM Medical Group",
+   "org": "UNM Medical Group, Inc.",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jennifer-phillips-md-b8073679",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Amor McGahie",
+   "title": "Utilzation Review",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/amor-mcgahie-ba843b72",
+   "email": "a\u2022\u2022\u2022@urgentcarekids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "JOHN LORBIECKE",
+   "title": "RADIOLOGIC TECHNOLOGIST",
+   "org": "MCCAMEY COUNTY HOSPITAL DISTRICT",
+   "city": "Roswell",
+   "linkedin": "https://www.linkedin.com/in/john-lorbiecke-3142a546",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Jasmine Trujillo, RRT-NPS",
+   "title": "Registered Respiratory Therapist",
+   "org": "RAYMOND G. MURPHY VA MEDICAL CENTER",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jasmine-trujillo-rrt-nps-132995225",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Marisa Salazar, MD MS",
+   "title": "Resident Doctor",
+   "org": "UT Southwestern Medical Center",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/marisa-salazar-md-ms-7aab76a3",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@UTSouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Lindsay Thorsen",
+   "title": "Physical Therapist",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/lindsay-thorsen-b937b84",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Joshua Wright, MA, BCBA",
+   "title": "Regional Clinic Director",
+   "org": "Cross River Therapy",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/joshua-wright-ma-bcba-2464b6b3",
+   "email": "J\u2022\u2022\u2022\u2022\u2022@crossrivertherapy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Katie Harmoney",
+   "title": "Clinical Assistant Professor",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/katie-harmoney-199422a2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Akhil Ansary",
+   "title": "Resident Physician",
+   "org": "UNM Hospital",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/akhil-ansary-90063727b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Julia Thorn",
+   "title": "Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/julia-thorn-2059b714",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Gina Fox",
+   "title": "Case Manager",
+   "org": "Visions Case Management NM",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/ginaofox",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Irene Sadr, MD, MIHM, FAAP, FACC",
+   "title": "Pediatric and Fetal Cardiologist",
+   "org": "UNM Hospital",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/irene-sadr-pcqa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Lauren Clewley",
+   "title": "Physician Assistant",
+   "org": "CommonSpirit Health",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/lauren-clewley-758501107",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@commonspirit.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Arwin Isidro",
+   "title": "Physical Therapist",
+   "org": "Encompass Health",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/arwin-isidro-298518150",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@encompasshealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Raven Mendoza",
+   "title": "Board Certified Behavior Analyst BCBA",
+   "org": "Mariposa Autism Service Center",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/raven-mendoza-29398b271",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@aitkids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Jacob Schoof",
+   "title": "Outpatient Pediatrician",
+   "org": "Renown Health",
+   "city": "Clovis",
+   "linkedin": "https://www.linkedin.com/in/jacob-schoof-89870a89",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Nancy Wright",
+   "title": "Primary Care Pediatrician",
+   "org": "El Centro Family Health",
+   "city": "Sapello",
+   "linkedin": "https://www.linkedin.com/in/nancy-wright-901a88236",
+   "email": "N\u2022\u2022\u2022\u2022\u2022\u2022@ecfh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Katie Schultz",
+   "title": "Visiting Assistant Professor",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/katie-schultz-a68278239",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Marie Meakin",
+   "title": "Registered Nurse, Childbirth Educator, Birth Assistant",
+   "org": "DAR A LUZ BIRTH & HEALTH CENTER",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/marie-meakin-18903a16",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Amanda Gutierrez-Dotson",
+   "title": "RN PACU Eye Surgery Center",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/amanda-gutierrez-dotson-a1445441",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Alexa Glick",
+   "title": "Company Owner",
+   "org": "Affinity Autism Behavior Care",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/alexa-glick-1ba0ba360",
+   "email": "a\u2022\u2022\u2022\u2022@affinityabc.com",
+   "phone": ""
+  },
+  {
+   "name": "Benjamin Holley",
+   "title": "Board Certified Family Nurse Practitioner",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/benjamin-holley-6895412b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Alaina Garcia",
+   "title": "Behavioral Health Technician",
+   "org": "Cross River Therapy",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/alaina-garcia-9b55b280",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@crossrivertherapy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Anne Flood",
+   "title": "LPN",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/anne-flood-45358328",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Alyaa Barakat",
+   "title": "Registered Nurse",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Rio Rancho",
+   "linkedin": "https://www.linkedin.com/in/alyaa-barakat",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@unm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Alexa S Lujan MSN",
+   "title": "Neonatology Nurse Practitioner",
+   "org": "UNIVERSITY OF NEW MEXICO HOSPITALS",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/alexa-s-lujan-msn-nnp-bc-38244064",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marla Yazzie",
+   "title": "General Pediatrician",
+   "org": "Fort Defiance Indian Hospital Board, Inc.",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/marla-yazzie-a4ab93127",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@fdihb.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Prasad Mathew",
+   "title": "Prof of Pediatrics",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/prasad-mathew-29921b41",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Marsha Warren MD, FAAP",
+   "title": "Chairperson Department of Pediatrics",
+   "org": "Tamarack Health",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/marsha-warren-md-faap-62a03021",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Dory Dyer",
+   "title": "Home Healthcare Caregiver",
+   "org": "Heritage Home Healthcare & Hospice",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/dory-dyer-92760958",
+   "email": "D\u2022\u2022\u2022@good-sam.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Julie Gbara",
+   "title": "Server",
+   "org": "MorningStar Senior Living",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/julie-gbara-895ab6302",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Amelia Kreienkamp",
+   "title": "Pediatrician",
+   "org": "CHRISTUS St. Vincent",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/amy-kreienkamp-54324084",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stvin.org",
+   "phone": ""
+  },
+  {
+   "name": "Jena Berry",
+   "title": "Medical Management Specialist",
+   "org": "Health Care Service Corporation",
+   "city": "Clovis",
+   "linkedin": "https://www.linkedin.com/in/jena-berry-infusionnurse",
+   "email": "j\u2022\u2022\u2022@hcsc.com",
+   "phone": ""
+  },
+  {
+   "name": "Chris Manuelito, MSN RN",
+   "title": "Care Coordinator",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/chris-manuelito-msn-rn-514568a0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Angela Schmid, MSN, RN",
+   "title": "Director of Home Health",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/angela-schmid-msn-rn-40b618117",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Cristian Pichardo",
+   "title": "Registered Nurse",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/cristian-pichardo-2a8b1099",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Sarah Murphy",
+   "title": "Emergency Medicine Physician Assistant",
+   "org": "UNM Medical Group, Inc.",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/sarah-murphy-5a130051",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@unmmg.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Angelina Smith",
+   "title": "Nurse Lactation Educator, PHN",
+   "org": "Indian Health Service",
+   "city": "Shiprock",
+   "linkedin": "https://www.linkedin.com/in/angelina-smith-b9597937",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Angela Wehle",
+   "title": "Occupational Therapist",
+   "org": "Ernest Health",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/angela-wehle-a017021a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Tiffini Lucero BSN, RN",
+   "title": "Registered Nurse",
+   "org": "UNIVERSITY OF NEW MEXICO HOSPITALS",
+   "city": "Edgewood",
+   "linkedin": "https://www.linkedin.com/in/tiffini-lucero-bsn-rn",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Leslie Bryant",
+   "title": "Speech Language Pathologist",
+   "org": "Corus Health",
+   "city": "Corrales",
+   "linkedin": "https://www.linkedin.com/in/leslie-bryant-67990123",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@corushealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Rebecca Webb",
+   "title": "pediatrician",
+   "org": "Lovelace Health System",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/rebeccawebbmd",
+   "email": "R\u2022\u2022\u2022\u2022\u2022\u2022@lovelace.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Tanya Cossettini",
+   "title": "Diagnostic Medical Sonographer",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Clovis",
+   "linkedin": "https://www.linkedin.com/in/tanya-cossettini-a5b613167",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sandy Coriz",
+   "title": "LPN/ Clinic Manager",
+   "org": "St. Vincent Regional Medical Center",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/sandy-coriz-090b4b99",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Sandra Whisler",
+   "title": "MD",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/sandra-whisler-b5a38a40",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Carol Spizman",
+   "title": "OT",
+   "org": "HealthSouth",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/carol-spizman-b31ab33a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Emma Quinn",
+   "title": "RBT",
+   "org": "Cross River Therapy",
+   "city": "Los Lunas",
+   "linkedin": "https://www.linkedin.com/in/emma-quinn-0251a9199",
+   "email": "e\u2022\u2022\u2022@crossrivertherapy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Jessica Salazar",
+   "title": "Program Manager",
+   "org": "UNM Hospital",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jessica-salazar-984466240",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Mayra Duran",
+   "title": "BSN-RN",
+   "org": "Eastern New Mexico Medical Center",
+   "city": "Roswell",
+   "linkedin": "https://www.linkedin.com/in/mayra-duran-11b576b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "LuAnn Wittrock",
+   "title": "RN",
+   "org": "Gila Regional Medical Center",
+   "city": "Silver City",
+   "linkedin": "https://www.linkedin.com/in/wittrock-luann-wittrock-11174a58",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@grmc.org",
+   "phone": ""
+  },
+  {
+   "name": "Francisco Silva",
+   "title": "Scribe",
+   "org": "ProScribe",
+   "city": "Chaparral",
+   "linkedin": "https://www.linkedin.com/in/francisco-silva-869a9390",
+   "email": "f\u2022\u2022\u2022\u2022\u2022@proscribemd.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Taralyn Muniz, CPC-A",
+   "title": "Medical Coding Analyst",
+   "org": "Optum",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/taralyn-muniz-674447152",
+   "email": "m\u2022\u2022\u2022@optum.com",
+   "phone": ""
+  },
+  {
+   "name": "Philip Jones",
+   "title": "Registered Nurse",
+   "org": "Space Coast Volunteers In Medicine",
+   "city": "Alamogordo",
+   "linkedin": "https://www.linkedin.com/in/philip-jones-03351279",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Natalie Guerrero",
+   "title": "Resident Physician",
+   "org": "Duke University Health System",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/natalie-guerrero-905a10161",
+   "email": "n\u2022\u2022\u2022@dukehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Whitney Pack",
+   "title": "Physician (Pediatrics)",
+   "org": "Axis Health System",
+   "city": "White Rock",
+   "linkedin": "https://www.linkedin.com/in/whitney-pack-43260811",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@axishealthsystem.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Huachan Liang",
+   "title": "Research Assistant",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/huachan-liang-a50852349",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Carla Nelson",
+   "title": "Nursing Supervisor",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/carla-nelson-18b849174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Teresa Ziomek",
+   "title": "Co-Owner/Occupational Therapist",
+   "org": "Sandia Sunrise Therapy",
+   "city": "Placitas",
+   "linkedin": "https://www.linkedin.com/in/teresa-ziomek-a195651b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Patty Moore",
+   "title": "Clinic Registered Nurse",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/patty-moore-14515b64",
+   "email": "m\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Sylvia Negrete",
+   "title": "Professor of Pediatrics",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/sylvia-negrete-59b4a763",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Gretchen McGregor",
+   "title": "CPhT",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/gretchen-mcgregor8185",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Santiago Archuleta",
+   "title": "Assitant Nurse Manager Med-Surg-Pediatrics/ICU",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Espanola",
+   "linkedin": "https://www.linkedin.com/in/santiago-archuleta-4b30ba7a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Cheryl Whitman",
+   "title": "Pediatrician",
+   "org": "St. Vincent Regional Medical Center",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/cheryl-whitman-10418b36",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Patrick Murphy",
+   "title": "Medical Officer",
+   "org": "Indian Health Services",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/patrick-murphy-294ab41b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Janell Fuller",
+   "title": "Division Chief of Neonatology",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/janell-fuller-76192333",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "greg langas",
+   "title": "Pediatrician",
+   "org": "Federally Qualified Health Center Urban Health Network (FUHN)",
+   "city": "Clovis",
+   "linkedin": "https://www.linkedin.com/in/greg-langas-1b69977",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Stuart Winter",
+   "title": "Vice Chair of Pediatrics",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/stuart-winter-b4787844",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Linda Schultz",
+   "title": "medical doctor pediatrician",
+   "org": "Indian Health Service",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/linda-schultz-75b05213b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Gretchen Struemph",
+   "title": "Pediatrician",
+   "org": "MountainView Regional Medical Center",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/gretchen-struemph-223993141",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@mountainviewregional.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Estephany Hernandez",
+   "title": "Health Service Assistant",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/estephany-hernandez-313013271",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "reymundo torres",
+   "title": "pediatrician",
+   "org": "Indian Health Service",
+   "city": "Farmington",
+   "linkedin": "https://www.linkedin.com/in/reymundo-torres-0b719080",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Soledad Melendez Johnson",
+   "title": "Albuquerque, NM",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/soledad-melendez-johnson-8531348",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "William Babb",
+   "title": "Registered Nurse",
+   "org": "UNIVERSITY OF NEW MEXICO HOSPITALS",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/william-babb-4656801b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Randall Knott",
+   "title": "Pediatrician",
+   "org": "UNM Medical Group, Inc.",
+   "city": "Albuquerque-Santa Fe Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/randall-knott-aa3529177",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Barbara Clarke",
+   "title": "Director of Women and Children's Services",
+   "org": "MountainView Regional Medical Center",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/barbara-clarke-5069b935",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@mountainviewregional.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Brian Oldham",
+   "title": "Residential Counselor",
+   "org": "BERNALILLO ACADEMY",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/brian-smith-12818688",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sandy Garcia",
+   "title": "Pediatrician",
+   "org": "Indian Health Service",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/sandy-garcia-3aa97115b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Patricia Causey",
+   "title": "Home Health Aide",
+   "org": "Thrive Skilled Pediatric Care",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/patricia-causey-531561a1",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@thrivespc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Robin Stewart",
+   "title": "RN Medical/Surgical/Pediatrics",
+   "org": "GRMC",
+   "city": "Silver City",
+   "linkedin": "https://www.linkedin.com/in/robin-stewart-0b04b717",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Alicia Gill",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/alicia-gill-509a8556",
+   "email": "g\u2022\u2022\u2022@cookchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Amber Olivar",
+   "title": "Clinic Manager",
+   "org": "Rehoboth McKinley Christian Health Care Services",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/amber-olivar-4a746320b",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@rmch.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Jacqueline Jimenez",
+   "title": "Board Certified Behavior Analyst Intern",
+   "org": "Behavior Change Institute",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-jimenez-66287b1a8",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Richelle Sprunk",
+   "title": "Medical Assistant",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Santa Fe County",
+   "linkedin": "https://www.linkedin.com/in/richelle-sprunk-37b7a8114",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Kimberly Barnes",
+   "title": "Director of Nursing",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Texico",
+   "linkedin": "https://www.linkedin.com/in/kimberly-barnes-8203a82b7",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Irene Moya",
+   "title": "RN  Northside Pediatrics",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/irene-moya-b5950736",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Edward Kleiner",
+   "title": "Pediatrician",
+   "org": "St. Vincent Regional Medical Center",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/edward-kleiner-7154b536",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Sanchez",
+   "title": "Family Specialist",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/jennifer-sanchez-abq",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unm.edu",
+   "phone": ""
+  },
+  {
+   "name": "Sylvia Allen",
+   "title": "Behavioral Therapist",
+   "org": "FORMATIONS BEHAVIOR THERAPY",
+   "city": "Bloomfield",
+   "linkedin": "https://www.linkedin.com/in/sylvia-allen-3801b3217",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Kathy Mezoff",
+   "title": "Pediatrician",
+   "org": "Rehoboth McKinley Christian Health Care Services",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/kathy-mezoff-78585924",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@rmch.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Christine Thron",
+   "title": "Occupational Therapist",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Portales",
+   "linkedin": "https://www.linkedin.com/in/christine-thron-468ab2b7",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@phs.org",
+   "phone": ""
+  },
+  {
+   "name": "Raelene McKeon Kent",
+   "title": "Pediatrician",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/raelene-mckeon-kent-043a5197",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "german fierro perez",
+   "title": "PEDIATRICIAN",
+   "org": "Memorial Medical Center Las Cruces",
+   "city": "Las Cruces",
+   "linkedin": "https://www.linkedin.com/in/german-fierro-perez-a18b09359",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Michael Klein",
+   "title": "Pediatrician",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/michael-klein-8b8562108",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Kevin Sweeney",
+   "title": "Chief of Pediatrics",
+   "org": "Indian Health Service",
+   "city": "Gallup",
+   "linkedin": "https://www.linkedin.com/in/kevin-sweeney-a495a61b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shannon Sandberg",
+   "title": "Certified Medical Assistant",
+   "org": "Gila Regional Medical Center",
+   "city": "Silver City",
+   "linkedin": "https://www.linkedin.com/in/shannon-sandberg-08800b82",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@grmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Emily Phillips",
+   "title": "Pediatrician",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/emily-phillips-37261a1b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Michael Marquardt",
+   "title": "Pediatrician",
+   "org": "MARQUARDT MEDICAL SERVICES LIMITED",
+   "city": "Roswell",
+   "linkedin": "https://www.linkedin.com/in/michael-marquardt-1529b41b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Jennifer Achilles",
+   "title": "Pediatrician",
+   "org": "Presbyterian Healthcare Services",
+   "city": "Santa Fe",
+   "linkedin": "https://www.linkedin.com/in/jennifer-achilles-906973339",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "reymundo torres",
+   "title": "pediatrician",
+   "org": "Indian Health Service",
+   "city": "Shiprock",
+   "linkedin": "https://www.linkedin.com/in/reymundo-torres-713956118",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Katherine Gnauck",
+   "title": "pediatrician",
+   "org": "The University of New Mexico Health Sciences Center",
+   "city": "Albuquerque",
+   "linkedin": "https://www.linkedin.com/in/katherine-gnauck-618a9367",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@unm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  }
+ ]
+}

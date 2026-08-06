@@ -1,0 +1,1056 @@
+{
+ "name": "Nevada",
+ "slug": "nevada",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-nevada.csv",
+ "count": 108,
+ "emails": 61,
+ "phones": 83,
+ "roles": [
+  {
+   "label": "Therapists & social workers",
+   "count": 54
+  },
+  {
+   "label": "Pediatricians & physicians",
+   "count": 47
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 3
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 2
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 2
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Las Vegas",
+   "count": 41
+  },
+  {
+   "name": "Henderson",
+   "count": 17
+  },
+  {
+   "name": "Reno",
+   "count": 15
+  },
+  {
+   "name": "Las Vegas Metropolitan Area",
+   "count": 9
+  },
+  {
+   "name": "Greater Reno Area",
+   "count": 6
+  },
+  {
+   "name": "Sparks",
+   "count": 3
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Intermountain Health",
+   "count": 13
+  },
+  {
+   "name": "Nevada Health Centers",
+   "count": 4
+  },
+  {
+   "name": "Marathon Health",
+   "count": 3
+  },
+  {
+   "name": "Mind and Body Counseling Associates",
+   "count": 3
+  },
+  {
+   "name": "Renown Health",
+   "count": 3
+  },
+  {
+   "name": "Nevada Division of Child and Family Services",
+   "count": 3
+  }
+ ],
+ "rows": [
+  {
+   "name": "Shannon K.",
+   "title": "Owner/Licensed Clinical Social Worker",
+   "org": "The Mindful Goldfish",
+   "city": "Carson City",
+   "linkedin": "https://www.linkedin.com/in/shannonkossick",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@themindfulgoldfish.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Weldon James, MD MHA",
+   "title": "Primary Care Physician",
+   "org": "Doctors Center",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/weldon-james-md-mha-86837027",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@drscenter.com",
+   "phone": ""
+  },
+  {
+   "name": "Gabrielle Love, LISW-S",
+   "title": "Clinical Social Worker",
+   "org": "VA SOUTHERN NEVADA HEALTHCARE SYSTEM",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/gabrielle-love-lisw-s-68365410",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@va.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Ross A. Aalgaard, DSW, LICSW, LADC, LCSW",
+   "title": "Clinical Social Worker/Mental Health Therapist",
+   "org": "Intermountain Health",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/ross-a-aalgaard-dsw-licsw-ladc-lcsw-4330385",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Johanna Fricke",
+   "title": "Developmental/Behavioral Pediatrician",
+   "org": "Healthy Minds (Las Vegas)",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/johannasfrickedbpede",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "April Blonien",
+   "title": "Licensed Clinical Social Worker",
+   "org": "RED ROCK PSYCHOLOGICAL HEALTH, LLC",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/april-blonien-197461133",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@redrockph.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Sunita Kalra",
+   "title": "Family Physician",
+   "org": "Intermountain Health",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/sunita-kalra-4b3b2550",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Chad Hall DO, FACOI",
+   "title": "Primary Care Physician",
+   "org": "Marathon Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/chad-hall-do-facoi-aab82a132",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@marathon.health",
+   "phone": ""
+  },
+  {
+   "name": "Kristin Paragas, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Desert Behavioral Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/kristin-paragas-lcsw-0b778b213",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@dbhcares.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "George Benson, DO, FAAP",
+   "title": "Developmental & Behavioral Pediatrician",
+   "org": "Mike O'Callaghan Military Medical Center",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/george-benson-do-faap-693993b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Mark Tan, MD",
+   "title": "Primary Care Physician",
+   "org": "Astrana Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/mark-tan-50650823",
+   "email": "m\u2022\u2022\u2022@student.touro.edu",
+   "phone": ""
+  },
+  {
+   "name": "Darren Rahaman",
+   "title": "Family Physician",
+   "org": "Nevada Health Centers",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/darren-rahaman-b6376461",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nvhealthcenters.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Raquel Ramirez",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Community Health Alliance Nevada",
+   "city": "Sparks",
+   "linkedin": "https://www.linkedin.com/in/raquel-ramirez-msw-b77b34154",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@chanevada.org",
+   "phone": ""
+  },
+  {
+   "name": "Lopa Shah",
+   "title": "Pediatrician",
+   "org": "SIENA PEDIATRICS",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/lopa-shah-1525014a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Chad Hall",
+   "title": "Primary Care Physician",
+   "org": "Marathon Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/chad-hall-aab82a132",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@marathon.health",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Josh Summers, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Insight Therapy Solutions",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/josh-summers-lcsw-85442277",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@insighttherapy.us",
+   "phone": ""
+  },
+  {
+   "name": "Jan Brizee Johnston, MSW, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Balanced Mental Wellness NV.",
+   "city": "Carlin",
+   "linkedin": "https://www.linkedin.com/in/janbrizee",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Noel Reid, LCSW",
+   "title": "Licensed Clinical Social Worker (LCSW) \u2022 Mental Health Therapist \u2022 Clinical Director",
+   "org": "SEEDS2SUCCEED Wellness & Therapy Group",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/noel-reid-lcsw-67a372157",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@seeds2succeed.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Shirley Najjar",
+   "title": "Family Physician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/shirley-najjar-569a8a81",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "DHEERESH MAMIDI",
+   "title": "Pediatrician - Board Certified",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/dheeresh-mamidi-a128955",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Nathan Gilford LMSW",
+   "title": "Clinical Social Worker III",
+   "org": "UCLA Health",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/nathangilford",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@ucla.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Meggan Roman",
+   "title": "Pediatric Resident",
+   "org": "Phoenix Children's",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/megganmurphy",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Maryam Delsen",
+   "title": "Clinical Social Worker",
+   "org": "Kaiser Permanente",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/maryam-delsen-lcsw-903a2b13",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Mathew Karinen",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Mind and Body Counseling Associates",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/mathew-karinen-6661b777",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mbcareno.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Kabir Vohra",
+   "title": "Primary Care Physician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/kabirvohra7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Clint Banks, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Behavioral Health Solutions",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/clint-banks-msw-lsw-csw-intern-47934716",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bhs.health",
+   "phone": ""
+  },
+  {
+   "name": "Terence McAllister",
+   "title": "Pediatrician",
+   "org": "Desert Valley Pediatrics, LTD",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/drtrmcallister",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Catherine Contreras",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Desert Behavioral Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/catherine-contreras-684872158",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@dbhcares.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "S. Alex Bice",
+   "title": "Licensed Clinical Social Worker",
+   "org": "SonderMind",
+   "city": "Fallon",
+   "linkedin": "https://www.linkedin.com/in/s-alex-bice-618a20138",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Brittney Mengistu, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Nevada Health Centers",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/brittney-mengistu-md-faap-b0bbb262",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nvhealthcenters.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Haley Kuykendall",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Mind and Body Counseling Associates",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/haley-kuykendall-959437249",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@mbcareno.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Jennifer Hsiao",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Quest Counseling & Consulting",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/jennhsiao",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@questreno.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Kelly Campbell, LCSW",
+   "title": "Clinical Social Worker and Intern Supervisor",
+   "org": "Spring Mountain Treatment Center",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/kellycampbelllcsw",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "David Johnson, MD FAAFP CWSP",
+   "title": "Family Physician",
+   "org": "Carson Tahoe Health",
+   "city": "Minden",
+   "linkedin": "https://www.linkedin.com/in/david-johnson-md-faafp-cwsp-97507047",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@carsontahoe.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Jennifer Romo Santistevan, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/jennifer-romo-santistevan-md-faap-2217931b0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rain Torosyan, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "NaphCare, Inc.",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/rain-torosyan-lcsw-2a2918173",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@naphcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Trenton Argyle",
+   "title": "Family Physician",
+   "org": "Humboldt General Hospital",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/trenton-argyle-85b82271",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hghospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Agatha F.",
+   "title": "General Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/amfuf20",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jacob Schoof, DO, FAAP",
+   "title": "Outpatient Pediatrician",
+   "org": "Renown Health",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/jacob-schoof-do-faap-89870a89",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@renown.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Katherine Rettke",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Dignity Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/katherine-rettke-2849545a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@commonspirit.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Jessica Shanti Leman",
+   "title": "Clinical Social Worker",
+   "org": "Carson Tahoe Health",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/jessica-shanti-leman-67a027161",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@carsontahoe.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Chea Lu",
+   "title": "Primary Care Physician",
+   "org": "The Valley Health System",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/chea-lu-140706162",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uhsinc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Kellie Donahue",
+   "title": "Family Physician",
+   "org": "Nevada Health Centers",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/kellie-donahue-a1a2a675",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nvhealthcenters.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Victoria Yeghiayan LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Mind and Body Counseling Associates",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/victoria-yeghiayan-406941160",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@mbcareno.com",
+   "phone": ""
+  },
+  {
+   "name": "Anthony Hemmert",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Premise Health",
+   "city": "Elko",
+   "linkedin": "https://www.linkedin.com/in/anthony-hemmert-89522a7a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@premisehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Marianna Kryvokrysenko",
+   "title": "Primary Care Physician",
+   "org": "Renown Health",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/marianna-kryvokrysenko-bb5a461a9",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@renown.org",
+   "phone": ""
+  },
+  {
+   "name": "Amber Hayes",
+   "title": "Family Physician",
+   "org": "Renown Health",
+   "city": "Sparks",
+   "linkedin": "https://www.linkedin.com/in/amber-hayes-139358132",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Megan Sullivan LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "HEALING MINDS, LLC",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/megan-sullivan-lcsw-b43480237",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@healingminds.com",
+   "phone": ""
+  },
+  {
+   "name": "Danny Duvall",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Desert Peace Therapy",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/danny-duvall-84276332",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@desertpeacetherapy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Celeste Ainsley",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Insight Therapy Solutions",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/ceainsley",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@insighttherapy.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Dawn Swanson",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Humboldt General Hospital",
+   "city": "Winnemucca",
+   "linkedin": "https://www.linkedin.com/in/dawn-swanson-a2660318",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hghospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Paola Villena",
+   "title": "Licensed Clinical Social Worker",
+   "org": "DINI-TOWNSEND HOSPITAL AT NORTHERN NEVADA ADULT MENTAL HEALTH SERVICES",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/paola-villena-268609a5",
+   "email": "p\u2022\u2022\u2022\u2022@nv.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Renee del Carmen",
+   "title": "Primary Care Physician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/renee-del-carmen-5a7089122",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Brandon Stilson",
+   "title": "Family Physician",
+   "org": "Intermountain Health",
+   "city": "Logandale",
+   "linkedin": "https://www.linkedin.com/in/brandon-stilson-52a53749",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Nicole Brodie",
+   "title": "Outreach Care Specialist, Autism Team",
+   "org": "Elevance Health",
+   "city": "North Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/nicole-brodie-081b917a",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@elevancehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "David Moss",
+   "title": "Family Physician",
+   "org": "Defense Health Agency",
+   "city": "North Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/david-moss-9152b4267",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil",
+   "phone": ""
+  },
+  {
+   "name": "Nicole P.",
+   "title": "Licensed Independent Clinical Social Worker",
+   "org": "Vibe Therapy",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/npal23",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@vibetherapygroup.com",
+   "phone": ""
+  },
+  {
+   "name": "Tona Ambis",
+   "title": "Clinical Social Worker and Drug and Alcohol Counselor",
+   "org": "Private Practice",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/tona-ambis-cadc-lcsw-064a2846",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Megan Jobe",
+   "title": "Primary Care Physician Assistant",
+   "org": "Sunset Clinic",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/megan-jobe-pa-c-195b01187",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ward Perdue",
+   "title": "Autism Coach",
+   "org": "Chrysalis Inc",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/ward-perdue-18b508113",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Allison Hernandez, LCSW",
+   "title": "Licensed Clinical Social Worker, Psychotherapist",
+   "org": "Rula",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/allison-hernandez-lcsw-4b1724230",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@rula.com",
+   "phone": ""
+  },
+  {
+   "name": "Weston Krauss",
+   "title": "Primary Care Physician",
+   "org": "CenterWell Senior Primary Care",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/weston-krauss-878a7347",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Betty Rodriguez",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Elements of Motivation",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/betty-rodriguez-2a13a920",
+   "email": "b\u2022\u2022\u2022\u2022@elementslv.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Sophia Argyropoulos",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Nevada Division of Child and Family Services",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/sophia-argyropoulos-2b9947116",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@nv.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Heather Coffin",
+   "title": "Family Physician",
+   "org": "Kaiser Permanente",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/heather-coffin-24563438",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@sti.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Lisa Korslin",
+   "title": "Licensed Clinical Social Worker",
+   "org": "CortexTBI",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/lisa-korslin-6a443926",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cortextbi.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Margaret Campbell (Craddock)",
+   "title": "Clinical Social Worker Intern",
+   "org": "Alta Vista Mental Health",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/margaret-campbell-craddock-45807b116",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@altavistamh.com",
+   "phone": ""
+  },
+  {
+   "name": "Aisha Bowen, LCSW",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Desert Parkway Behavioral Healthcare Hospital",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/aisha-bowen-lcsw-675852187",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Angelique Murguia",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Amwell",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/angelique-murguia-6a7635189",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Justin Leeka, D.O.",
+   "title": "Family Physician",
+   "org": "Spring Valley Primary Care",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/justin-leeka-d-o-6532241b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Kathleen Weber",
+   "title": "Pediatrician",
+   "org": "Summerlin Hospital Medical Ctr",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/kathleen-weber-104a35206",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Romeo Rosales",
+   "title": "Family Physician Assistant",
+   "org": "Marathon Health",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/romeo-rosales-1690a760",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Marie Corbin",
+   "title": "Licensed clinical social worker",
+   "org": "Loyal Source Government Services",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/marie-corbin-38519686",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Samuel C. Winter",
+   "title": "Primary Care Physician",
+   "org": "Intermountain Health",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/samuelcwinter",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Ha Vu",
+   "title": "Primary Care Physician",
+   "org": "William Bee Ririe Hospital",
+   "city": "Elko",
+   "linkedin": "https://www.linkedin.com/in/ha-vu-8a161b11a",
+   "email": "h\u2022\u2022\u2022@wbrhely.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Janie Rippetoe",
+   "title": "Clinical Social Worker",
+   "org": "Nevada Rural Clinics",
+   "city": "Panaca",
+   "linkedin": "https://www.linkedin.com/in/janie-rippetoe-b2453160",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@state.nv.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Sarah Stanko",
+   "title": "General Pediatrician",
+   "org": "Tucson Medical Center",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/sarah-stanko-bb8964102",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Lisa A Wilkinson",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Premise Health",
+   "city": "Elko",
+   "linkedin": "https://www.linkedin.com/in/lisa-a-wilkinson-4b5293a9",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@premisehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Hailee Collier",
+   "title": "Licensed Clinical Social Worker",
+   "org": "RESTORATIVE BEHAVIORAL HEALTH LLC",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/hailee-collier-3a04841a9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Mimi Kuriakose",
+   "title": "Pediatrician",
+   "org": "Las Vegas Pediatrics + Urgent Care",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/mimi-kuriakose-95a349145",
+   "email": "m\u2022\u2022\u2022@lvpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Manuel Proenza,  DO, FAAP",
+   "title": "Pediatric Hospitalist and Outpatient Pediatrician",
+   "org": "Benefis Health System",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/dr-proenza",
+   "email": "p\u2022\u2022\u2022@benefis.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Sharmane Gray",
+   "title": "Family Physician",
+   "org": "North Country HealthCare",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/sharmane-gray-454235153",
+   "email": "s\u2022\u2022\u2022\u2022@nchcaz.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Sheree Davidson",
+   "title": "clinical social worker LCSW",
+   "org": "Intermountain Health",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/sheree-davidson-220486b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Natalee Mallory, LCSW",
+   "title": "Licensed Clinical Social Worker - Emergency Room/Trauma Social Worker",
+   "org": "Sunrise Hospital",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/natalee-mallory-lcsw-662618101",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Marianne Hamrick",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Nevada Childhood Cancer Foundation",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/marianne-hamrick-1a6158aa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Cheryll Magbanua-Calalo",
+   "title": "Pediatrician - Clinical Geneticist",
+   "org": "St. Luke's Medical Center",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/cheryll-magbanua-calalo-aa5160205",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Obiageri Ekeh",
+   "title": "Pediatrician",
+   "org": "Mednax, National Medical Group",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/obiageri-ekeh-9a933a164",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@pediatrix.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Lori Layugan",
+   "title": "Behavioral Health Social Worker",
+   "org": "Tufts Medicine Integrated Network",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/lori-layugan-654b645b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@tuftsmedicine.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Frank Jacobelli",
+   "title": "Clinical Social Worker",
+   "org": "Carson Valley Health",
+   "city": "Gardnerville",
+   "linkedin": "https://www.linkedin.com/in/frank-jacobelli-8953a6117",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@carsonvalleyhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Christine Potterjones",
+   "title": "Family Physician",
+   "org": "BATTLE MOUNTAIN GENERAL HOSPITAL",
+   "city": "Battle Mountain",
+   "linkedin": "https://www.linkedin.com/in/christine-potterjones-5362a61b0",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bmgh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Debra Sutter",
+   "title": "Clinical Social Worker",
+   "org": "Summit View Hospice",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/debra-sutter-b167b5117",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Dee Raymond",
+   "title": "Clinical Social Worker III",
+   "org": "Nevada Department of Health and Human Services",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/dee-raymond-8190a8100",
+   "email": "d\u2022\u2022\u2022@state.nv.us",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Hawelu",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Nevada Division of Child and Family Services",
+   "city": "Greater Reno Area",
+   "linkedin": "https://www.linkedin.com/in/jennifer-hawelu-740551280",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@dcfs.nv.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Candace Eddy",
+   "title": "Licensed Clinical Social Worker",
+   "org": "UHS",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/candace-eddy-4b886b45",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Michelle Dalessio",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Banner Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/michelle-dalessio-4a6874132",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Sonja Brownlee",
+   "title": "General Pediatrician",
+   "org": "Sonja Brownlee MD",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/sonja-brownlee-8b09b5271",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Johanna Koch",
+   "title": "Primary Care Physician",
+   "org": "Tahoe Forest Health System",
+   "city": "Incline Village",
+   "linkedin": "https://www.linkedin.com/in/johanna-koch-0964b1222",
+   "email": "j\u2022\u2022\u2022\u2022@tfhd.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Mark Arnold",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Nevada Division of Child and Family Services",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/mark-arnold-a6031a38",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@state.nv.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Jaun Collazos",
+   "title": "Pediatrician",
+   "org": "Nevada Health Centers",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/jaun-collazos-67b90881",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Lisa Hohl",
+   "title": "Family Physician",
+   "org": "University Medical Center of Southern Nevada (UMC)",
+   "city": "Henderson",
+   "linkedin": "https://www.linkedin.com/in/lisa-hohl-35361111a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mehdi Shamloo",
+   "title": "Family Physician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/mehdi-shamloo-78461a251",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "solyana embaye",
+   "title": "Pediatrician",
+   "org": "Sunrise Hospital",
+   "city": "Sparks",
+   "linkedin": "https://www.linkedin.com/in/solyana-embaye-220211109",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kerri Smith",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/kerri-smith-03383516a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Jaime Maldonado",
+   "title": "Licensed Clinical Social Worker/Mental Health Professional",
+   "org": "NaphCare, Inc.",
+   "city": "Las Vegas",
+   "linkedin": "https://www.linkedin.com/in/jaime-maldonado-lcsw-licsw-35b86a1bb",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@naphcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Colleen C Lyons",
+   "title": "Family Physician",
+   "org": "VA Sierra Nevada Health Care System",
+   "city": "Carson City",
+   "linkedin": "https://www.linkedin.com/in/colleen-c-lyons-15026baa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Mark Ying",
+   "title": "Pediatrician",
+   "org": "Southern Trinity Area Rescue",
+   "city": "Las Vegas Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/mark-ying-a09252b4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Lu Ochsner",
+   "title": "Pediatrician",
+   "org": "Banner Health",
+   "city": "Fallon",
+   "linkedin": "https://www.linkedin.com/in/lu-ochsner-426362248",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rachel Martinez",
+   "title": "Licensed Clinical Social Worker",
+   "org": "Great Basin Behavioral Health",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/rachel-martinez-654327252",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@greatbasinbehavioral.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  }
+ ]
+}

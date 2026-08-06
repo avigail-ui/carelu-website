@@ -1,0 +1,1915 @@
+{
+ "name": "Georgia",
+ "slug": "georgia",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-georgia.csv",
+ "count": 203,
+ "emails": 84,
+ "phones": 156,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 164
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 23
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 12
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 2
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 1
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Atlanta",
+   "count": 48
+  },
+  {
+   "name": "Atlanta Metropolitan Area",
+   "count": 23
+  },
+  {
+   "name": "Marietta",
+   "count": 13
+  },
+  {
+   "name": "Decatur",
+   "count": 8
+  },
+  {
+   "name": "Alpharetta",
+   "count": 7
+  },
+  {
+   "name": "Macon",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Children's Healthcare of Atlanta",
+   "count": 31
+  },
+  {
+   "name": "Wellstar Health System",
+   "count": 24
+  },
+  {
+   "name": "Kaiser Permanente",
+   "count": 11
+  },
+  {
+   "name": "Georgia Department of Public Health",
+   "count": 11
+  },
+  {
+   "name": "Piedmont",
+   "count": 7
+  },
+  {
+   "name": "Navicent Health",
+   "count": 7
+  }
+ ],
+ "rows": [
+  {
+   "name": "Ali Memon, MD",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Snellville",
+   "linkedin": "https://www.linkedin.com/in/ali-memon-md-737b6451",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Megan Kemp",
+   "title": "Marcus Autism Center Research Coordinator",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/meganokemp",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Nicole B. Hight, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/nicole-b-hight-md-faap-53aa39241",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Kate Peterson",
+   "title": "Member Board of Trustees Marcus Autism Center",
+   "org": "Marcus Autism Center",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/kate-peterson-57628818",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Sabrina L. Clark-Hepburn, DO, MBA, FAAP",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/sabrina-l-clark-do-mba-faap-4476aaa0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tamara Leach",
+   "title": "Autism Clinical Care Analyst",
+   "org": "Centene Corporation",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/tamara-leach-497366117",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@centene.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Dorie Saxon, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/dorie-saxon-md-faap-27373ba0",
+   "email": "d\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Taylor Green",
+   "title": "Maternal and Child Health Community Outreach Coordinator",
+   "org": "DeKalb Public Health (GA)",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/taylorgreen690",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Adrian Ghadrdan",
+   "title": "Pediatrics APPE Extern, Scottish Rite",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/adrianghadrdan",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Srilaxmi Kishor",
+   "title": "Pediatrics Resident",
+   "org": "LEBONHEUR PEDIATRICS LLC",
+   "city": "Kennesaw",
+   "linkedin": "https://www.linkedin.com/in/srilaxmi-kishor-a08029123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Melissa S.",
+   "title": "Program Manager, Health Systems, Global Pediatric Medicine",
+   "org": "St. Jude Children's Research Hospital",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/melissa-s-1108",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ekemini Ogbu",
+   "title": "Associate Professor of Pediatrics",
+   "org": "Cincinnati Children's",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/ekemini-ogbu-384319237",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Abraham Mathai, MD, PhD",
+   "title": "Physician - Internal Medicine & Pediatrics",
+   "org": "Piedmont",
+   "city": "Jasper",
+   "linkedin": "https://www.linkedin.com/in/abraham-mathai-md-phd-a2163819",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Kimberly Ross",
+   "title": "Child Health Director",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/kimberly-stringer-a8445321",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": ""
+  },
+  {
+   "name": "Joey Felder, MD",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/joey-felder-md-9b32221a2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Riya Bhatt (Misal)",
+   "title": "Metrics Reporting Consultant, Metrics and Performance Unit, Department of Global Pediatric Medicine",
+   "org": "St. Jude Children's Research Hospital",
+   "city": "Flowery Branch",
+   "linkedin": "https://www.linkedin.com/in/riya-misal",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kathryn Carroll",
+   "title": "Pediatrician",
+   "org": "Harbin Clinic",
+   "city": "Rome",
+   "linkedin": "https://www.linkedin.com/in/kathryn-carroll-4821156",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@harbinclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Joseph Felder, MD",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/joseph-felder-md-9b32221a2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "kimberly applegate",
+   "title": "Professor of Radiology and Pediatrics",
+   "org": "Emory Healthcare",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/kimberly-applegate-94baa31a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@emoryhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Harriet Crockett-Woods, D.O.",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Cumming",
+   "linkedin": "https://www.linkedin.com/in/harriet-crockett-woods-d-o-595b8677",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Carrie Stinson, MD, MBA",
+   "title": "Chief Pediatrics Officer",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/carrie-stinson-md-mba-b85ba466",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Emily Chu, MD",
+   "title": "Pediatric Resident",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/emily-chu-md-11946216a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melanie Morris",
+   "title": "Child Health Deputy Director & Referral and Screening Programs Director",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/melanie-morris-atl",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Ankit Sutaria",
+   "title": "Child Health Epidemiologist",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/ankit-sutaria-b29674ab",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Nayna Shah",
+   "title": "Clinical Observer- Pediatrics",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/naynashah7",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amy Rule",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/amy-rule-0a96a7177",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Domonique Charles, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Navicent Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/domonique-charles-md-mph-57236358",
+   "email": "c\u2022\u2022\u2022@navicenthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Nicole Manning",
+   "title": "Patient Appointment Services Specialist in Pediatrics Neurology",
+   "org": "Mayo Clinic",
+   "city": "Greater Savannah Area",
+   "linkedin": "https://www.linkedin.com/in/nicolekernst",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mayoclinic.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Kevin McClearn",
+   "title": "Senior Clinical Data Specialist, Marcus Autism Center",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/kevin-mcclearn",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Adam Kraus",
+   "title": "Director of Pediatrics",
+   "org": "Mercy Care",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/adam-kraus-4310b034",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@mercyatlanta.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Shaveanda Queen, MD",
+   "title": "Lead Physician of Pediatrics",
+   "org": "MedCura Health",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/shaveandaqueenmd",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@medcura.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Lori Duckett",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/lori-duckett-42694562",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Lynne Hosier-Brite",
+   "title": "Registered Respiratory Therapist-Neonatal Pediatric Specialist",
+   "org": "Emory Healthcare",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/lynne-hosier-brite-44a17916",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@emoryhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Jamilet Alegria, MD",
+   "title": "Pediatrician Team Lead",
+   "org": "Blueberry Pediatrics",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/jamilet-alegria-md",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Tammy Williams",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Cartersville",
+   "linkedin": "https://www.linkedin.com/in/tammy-williams-2a65bb91",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Allison S. King, MD, ACC",
+   "title": "prn faculty pediatrician",
+   "org": "Advocate Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/allison-s-king-md-pediatrician-coach",
+   "email": "A\u2022\u2022\u2022\u2022\u2022\u2022@advocatehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Jessica Ashley",
+   "title": "Nurse Practitioner, State Infant and Child Health Clinical Manager",
+   "org": "Georgia Department of Public Health",
+   "city": "Evans",
+   "linkedin": "https://www.linkedin.com/in/jessicanashley",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Lindsey Theodore, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Pediatric Center For Wellness",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/lindsey-theodore-md",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@pcfwellness.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Marie Laurence Noisette",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/marie-laurence-noisette-30207b195",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tyler Barnes",
+   "title": "Pediatrician",
+   "org": "Atrium Health Floyd",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/tyler-barnes-85522088",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@floyd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Michelle Schoettler",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/michelle-schoettler-22506312b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "David Sprayberry",
+   "title": "Pediatrician and CEO",
+   "org": "Prime Time Pediatrics",
+   "city": "Watkinsville",
+   "linkedin": "https://www.linkedin.com/in/david-sprayberry-a779562a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Dominique Grasty Hines, MD",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/dominique-grasty-b9643839",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": ""
+  },
+  {
+   "name": "Carolyn Henderson",
+   "title": "Resident Pediatrician",
+   "org": "Texas Children's Hospital",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/carolyn-henderson-8b95a83a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Janell Hargrove, Ph.D.",
+   "title": "Licensed Psychologist & Autism Diagnostician",
+   "org": "Hopebridge",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/janell-hargrove-ph-d-4754a939",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Andrew Carlson MD",
+   "title": "Pediatrician",
+   "org": "VERANDA LLC,THE",
+   "city": "Americus",
+   "linkedin": "https://www.linkedin.com/in/andrew-carlson-md-4845227",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Alison Bola\u00f1os",
+   "title": "Pediatrics Hospital Volunteer",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/alison-bola\u00f1os-522692286",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tamika Bryant",
+   "title": "Child Abuse Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Snellville",
+   "linkedin": "https://www.linkedin.com/in/tamika-bryant-9405511a9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Anna Saxon Wall",
+   "title": "Maternal Child Health Coordinator",
+   "org": "Georgia Department of Public Health",
+   "city": "Waycross",
+   "linkedin": "https://www.linkedin.com/in/anna-saxon-wall",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Shannon Mattox, MBA",
+   "title": "Autism Resources - Business Development",
+   "org": "Laurel Heights Hospital",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/shannon-mattox-mba-b2a89520a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Candace Holladay",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/candace-holladay-ab0827138",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Adrianna Gaddy",
+   "title": "Qualified Autism Services Practioner-Supervisor",
+   "org": "The Treetop ABA",
+   "city": "Hinesville",
+   "linkedin": "https://www.linkedin.com/in/adrianna-gaddy-5837311ab",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Susan Reines",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/susan-reines-93407330",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Heidi Moore",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/heidi-moore-224472173",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Michael Simpson, M.D.",
+   "title": "Internist / Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/michael-simpson-m-d-4aab4614",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Pat Wolfe",
+   "title": "pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Powder Springs",
+   "linkedin": "https://www.linkedin.com/in/pat-wolfe-7800273b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Joseph Zanga",
+   "title": "Chief of Pediatrics",
+   "org": "Piedmont",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/joseph-zanga-66636270",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@piedmont.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Bailey Alford, MD",
+   "title": "Pediatrician",
+   "org": "Effingham Health System",
+   "city": "Guyton",
+   "linkedin": "https://www.linkedin.com/in/bailey-alford-md-0934a8238",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@effinghamhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "James Nalley",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/james-nalley-156a731a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Kenneth Martin",
+   "title": "Pediatrician",
+   "org": "Alomere Health",
+   "city": "Evans",
+   "linkedin": "https://www.linkedin.com/in/kenneth-martin-a6a814131",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Charles Scarborough",
+   "title": "Director of Pediatrics",
+   "org": "Christ Community Health Services Augusta",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/charles-scarborough-04617112",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Caroline Yaphockun",
+   "title": "Pediatrician",
+   "org": "Harbin Clinic",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/caroline-yaphockun-6b32a1b9",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@harbinclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Lynette Wilson-Phillips",
+   "title": "Pediatrician",
+   "org": "Decatur Pediatric Group",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/lynette-wilson-phillips-486a32228",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "christy peterson",
+   "title": "assistant professor pediatrics",
+   "org": "Navicent Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/christy-peterson-294412147",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@navicenthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Amanda Good",
+   "title": "Pediatric Resident",
+   "org": "Johns Hopkins Aramco Healthcare (JHAH)",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/amanda-good-35510b110",
+   "email": "A\u2022\u2022\u2022\u2022\u2022\u2022@jhah.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Dawn Truett",
+   "title": "Clinical Coordinator Pediatrics",
+   "org": "Floyd Medical Center",
+   "city": "Rome",
+   "linkedin": "https://www.linkedin.com/in/dawn-truett-75614333",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@floyd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Uncle Cliff'S",
+   "title": "Pediatrician",
+   "org": "Floyd Medical Center",
+   "city": "Rome",
+   "linkedin": "https://www.linkedin.com/in/uncle-cliff-s-893ba81b",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@floyd.org",
+   "phone": ""
+  },
+  {
+   "name": "christy peterson",
+   "title": "Pediatrician",
+   "org": "Navicent Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/christy-peterson-065b9b50",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@navicenthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Susan McCard",
+   "title": "Director MedSurg, Pediatrics, & Orthopedics",
+   "org": "Crisp Regional Health Services",
+   "city": "Cordele",
+   "linkedin": "https://www.linkedin.com/in/susan-mccard-17a795115",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@crispregional.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Tiji Philip",
+   "title": "Pediatric Resident",
+   "org": "Carolinas HealthCare System",
+   "city": "Cumming",
+   "linkedin": "https://www.linkedin.com/in/tiji-philip-3a295270",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephanie Montoya",
+   "title": "Pediatric Resident",
+   "org": "Sparrow Health System",
+   "city": "Douglasville",
+   "linkedin": "https://www.linkedin.com/in/stephanie-montoya-9b3238218",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Alvaro Rios",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/alvaro-rios-bb959337",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Amy Talboy",
+   "title": "Developmental Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/amy-talboy-72932150",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Lisa Unruh",
+   "title": "Pediatric Resident",
+   "org": "Navicent Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/lisa-unruh-406bb3b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Michelle Payne",
+   "title": "Pediatrician",
+   "org": "Piedmont",
+   "city": "Newnan",
+   "linkedin": "https://www.linkedin.com/in/michelle-payne-670a0185",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@piedmont.org",
+   "phone": ""
+  },
+  {
+   "name": "Gillian McGuire",
+   "title": "Nurse/ Pediatrics",
+   "org": "Pediatria Healthcare for Kids",
+   "city": "Snellville",
+   "linkedin": "https://www.linkedin.com/in/gillian-mcguire-667280a1",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@aveanna.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Cassie Wilson",
+   "title": "Pediatrician",
+   "org": "Navicent Health",
+   "city": "Milner",
+   "linkedin": "https://www.linkedin.com/in/cassie-wilson-6637b879",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Tom Steimer",
+   "title": "Pediatrician",
+   "org": "The Permanente Medical Group, Inc.",
+   "city": "Norcross",
+   "linkedin": "https://www.linkedin.com/in/tom-steimer-75ab9914",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ei Ye Mon",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/ei-ye-mon-1784bb220",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Melissa Davis",
+   "title": "Pediatrician",
+   "org": "Harbin Clinic",
+   "city": "Rome",
+   "linkedin": "https://www.linkedin.com/in/melissa-davis-8568b7150",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@harbinclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Rogena Miller",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/rogena-miller-3a189787",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Jim Nalley",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Kennesaw",
+   "linkedin": "https://www.linkedin.com/in/jim-nalley-b50ba631",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Daniel Saade",
+   "title": "pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/daniel-saade-41729048",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Clay Stallworth",
+   "title": "Pediatrician",
+   "org": "Augusta University Health",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/clay-stallworth-0562331b4",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Chris Lee",
+   "title": "Administrative Director - Outpatient Pediatrics",
+   "org": "Augusta University Health",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/chris-lee-582a875",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Bill Bristol",
+   "title": "Pediatrician",
+   "org": "Southeast Georgia Health System",
+   "city": "Brunswick",
+   "linkedin": "https://www.linkedin.com/in/bill-bristol-417b5790",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Michelle Calabro",
+   "title": "Pediatrician",
+   "org": "Albany Pediatrics",
+   "city": "Albany",
+   "linkedin": "https://www.linkedin.com/in/michelle-calabro-a3aab8115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Joli McCarthy",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Acworth",
+   "linkedin": "https://www.linkedin.com/in/joli-mccarthy-b97a5b26a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Judith Anderson",
+   "title": "Pediatrician",
+   "org": "Memorial Health Care System",
+   "city": "Chickamauga",
+   "linkedin": "https://www.linkedin.com/in/judith-anderson-507261122",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kelly Herring",
+   "title": "RN, BSN on Pediatrics",
+   "org": "SGMC Health",
+   "city": "Hahira",
+   "linkedin": "https://www.linkedin.com/in/kelly-herring-4830994b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Tawuana Ford",
+   "title": "Pediatrician",
+   "org": "Mednax, National Medical Group",
+   "city": "Conyers",
+   "linkedin": "https://www.linkedin.com/in/tawuana-ford-a172702",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Nancy Moye",
+   "title": "Registered Respiratory Therapist/Neonatal Pediatric Specialist",
+   "org": "Colquitt Regional Medical Center",
+   "city": "Leesburg",
+   "linkedin": "https://www.linkedin.com/in/nancy-moye-26891b1ab",
+   "email": "n\u2022\u2022\u2022\u2022@colquittregional.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Randy Barfield",
+   "title": "Retired Pediatrician",
+   "org": "Peachtree Park Pediatrics",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/randy-barfield-265501168",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@peachtreeparkpeds.com",
+   "phone": ""
+  },
+  {
+   "name": "Kathryn McCusker",
+   "title": "Pediatrician",
+   "org": "MedLink Georgia",
+   "city": "Jefferson",
+   "linkedin": "https://www.linkedin.com/in/kathryn-mccusker-b689392b0",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@medlinkga.org",
+   "phone": ""
+  },
+  {
+   "name": "Londyn Walker",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Conyers",
+   "linkedin": "https://www.linkedin.com/in/londyn-walker-a664121bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "claire mazewski",
+   "title": "associate professor of pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/claire-mazewski-3b54a731",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Kenneth James",
+   "title": "Pediatric Resident",
+   "org": "Navicent Health",
+   "city": "Greater Macon",
+   "linkedin": "https://www.linkedin.com/in/kenneth-james-719235178",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Steven Eubanks",
+   "title": "Pediatrician",
+   "org": "Tanner Health",
+   "city": "Carroll County",
+   "linkedin": "https://www.linkedin.com/in/steven-eubanks-12093366",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@tanner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "paresh patel",
+   "title": "Pediatrician",
+   "org": "Northeast Georgia Health System",
+   "city": "Arnoldsville",
+   "linkedin": "https://www.linkedin.com/in/paresh-patel-054a121a7",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@nghs.com",
+   "phone": ""
+  },
+  {
+   "name": "Omada Umar",
+   "title": "Pediatrician",
+   "org": "Doctor On Demand",
+   "city": "Stone Mountain",
+   "linkedin": "https://www.linkedin.com/in/omada-umar-4a459a160",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@includedhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Dennis Murray",
+   "title": "Professor, Department of Pediatrics",
+   "org": "Georgia Health Sciences University",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/dennis-murray-2323a935",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Nadia Bergeron",
+   "title": "Pediatrician",
+   "org": "UAB Medicine",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/nadia-bergeron-787056135",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "mike millison",
+   "title": "pediatrician",
+   "org": "McLeod Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/mike-millison-869296124",
+   "email": "M\u2022\u2022\u2022@mcleodhealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Becky Westmoreland",
+   "title": "Practice Manager for Pediatrics at NGPG",
+   "org": "Northeast Georgia Health System",
+   "city": "Gainesville",
+   "linkedin": "https://www.linkedin.com/in/becky-westmoreland-9152a5b1",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nghs.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Laura Hagan, PharmD, BCPPS",
+   "title": "Clinical Pharmacist, Neonatology/Pediatrics",
+   "org": "Piedmont",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/laura-hagan-pharmd-bcpps-680b4a131",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Jean O. ALOUIDOR",
+   "title": "Senior Coordinator - Child Health Research and Training Advisor",
+   "org": "Partners In Health",
+   "city": "Douglasville",
+   "linkedin": "https://www.linkedin.com/in/jean-o-alouidor-339bbb250",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Zubler",
+   "title": "Volunteer pediatrician",
+   "org": "Good Samaritan Health Center Atlanta",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/jennifer-zubler-md-381355106",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tim Slesnick",
+   "title": "Associate Professor of Pediatrics and Radiology",
+   "org": "Children's Healthcare of Atlanta Cardiology",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/tim-slesnick-a83293157",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Lika Sarkisashvili",
+   "title": "Pediatrician assistant",
+   "org": "Pirveli Clinic",
+   "city": "Tbilisi",
+   "linkedin": "https://www.linkedin.com/in/lika-sarkisashvili-402982288",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laqueita Austin",
+   "title": "Memorial Pediatrics and Magnolia Women Center Referral Specialist",
+   "org": "Memorial Hospital and Manor",
+   "city": "Bainbridge",
+   "linkedin": "https://www.linkedin.com/in/laqueita-austin-9b8a8ab6",
+   "email": "A\u2022\u2022\u2022\u2022\u2022@mh-m.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Gena Alexander-Albert",
+   "title": "Pediatrician",
+   "org": "Piedmont",
+   "city": "Watkinsville",
+   "linkedin": "https://www.linkedin.com/in/gena-alexander-albert-70218b17",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Alison Niebanck MD FAAP",
+   "title": "Program Director, Pediatrics",
+   "org": "Memorial Health",
+   "city": "Savannah",
+   "linkedin": "https://www.linkedin.com/in/alisonniebanck",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@memorialhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Renee Alli",
+   "title": "Primary Care Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/renee-alli-44b91388",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Latrena Ford",
+   "title": "Manager Adult Medicine and Pediatrics",
+   "org": "Kaiser Permanente",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/latrena-ford-13ba2755",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Brittani Zackery",
+   "title": "Maternal Child Health Registered Nurse",
+   "org": "Kaiser Permanente Georgia",
+   "city": "Austell",
+   "linkedin": "https://www.linkedin.com/in/brittani-austin-aa171015",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": ""
+  },
+  {
+   "name": "Nicole Shepard",
+   "title": "Director of Pediatrics",
+   "org": "Liberty Regional Medical Center",
+   "city": "Hinesville",
+   "linkedin": "https://www.linkedin.com/in/nicole-shepard-ab1814",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@libertyregional.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Shaleak Brown",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/shaleak-brown-93ba2a50",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Kiersten Darnell, MSN, APRN, CPN, CPNP-PC",
+   "title": "Clinical Nurse Practice Specialist (Pediatrics)",
+   "org": "Wellstar Health System",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/kierstendarnell",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Bryana Ferris, MD, FAAP",
+   "title": "General Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Kennesaw",
+   "linkedin": "https://www.linkedin.com/in/bryana-ferris-md-faap-2a2795b0",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Joshua Pittman",
+   "title": "Pediatrician",
+   "org": "HCA Healthcare",
+   "city": "Vidalia",
+   "linkedin": "https://www.linkedin.com/in/joshua-pittman-625034b2",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@hcahealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Gary Kapp",
+   "title": "Charge Nurse at Crescent Centre Pediatrics",
+   "org": "Kaiser Permanente",
+   "city": "Tucker",
+   "linkedin": "https://www.linkedin.com/in/gary-kapp-6301b921",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Cidjah Rodney-Somersall",
+   "title": "Pediatrician",
+   "org": "Brookhaven Health Care Center",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/cidjahrodneysomersall",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Candice Buchanon, MPH",
+   "title": "Maternal and Child Health Department Manager",
+   "org": "DeKalb Public Health (GA)",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/candice-buchanon-mph-095059139",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Elizabeth LeDuc",
+   "title": "Pediatrician, Children\u2019s Physician Group",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-leduc-75262784",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Adegoke Olawale",
+   "title": "Registered Behavioral Technician at Bluesprig Pediatrics",
+   "org": "BlueSprig",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/adegoke-olawale-658b7a181",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@bluesprigpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Nicole Kearney",
+   "title": "Pediatrician",
+   "org": "Privia Health",
+   "city": "Peachtree City",
+   "linkedin": "https://www.linkedin.com/in/nicole-kearney-394a03a0",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@priviahealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Sonali Vashi",
+   "title": "General Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/sonali-vashi-832a8019b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Roxy Rinallo",
+   "title": "Pediatrics",
+   "org": "Children's Healthcare of Atlanta Cardiology",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/roxy-rinallo-1122437a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Kenny Esho",
+   "title": "Primary Care Pediatrician",
+   "org": "Athens Neighborhood Health Center",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/kenny-esho-22912226",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Leon Bederman",
+   "title": "Assitant Professor of Pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/leon-bederman",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Belinda Stephens Hodges",
+   "title": "Physcian Lead of Pediatrics at Henry, Fayette, and Newnan",
+   "org": "The Southeast Permanente Medical Group",
+   "city": "McDonough",
+   "linkedin": "https://www.linkedin.com/in/belinda-stephens-hodges-b3518b67",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Elinor Douglass",
+   "title": "Pediatrician",
+   "org": "Heal",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/elinor-douglass-1a046530",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Synita Griswell",
+   "title": "Autism & Developmental Disabilities Program Manager",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/synita-griswell-392b11131",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@ga.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Melissa Boekhaus, MD, FAAP",
+   "title": "Pediatrician at Pediatric and Adolescent Center",
+   "org": "Wellstar Health System",
+   "city": "Smyrna",
+   "linkedin": "https://www.linkedin.com/in/melissa-boekhaus-md-faap-09143b3b",
+   "email": "m\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Dana Gillespie-Webb, MD",
+   "title": "Pediatrician",
+   "org": "Phoenix Children's",
+   "city": "Lawrenceville",
+   "linkedin": "https://www.linkedin.com/in/dana-gillespie-webb-md-9a696075",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Aimee Behnke",
+   "title": "Pediatrician",
+   "org": "HCA Healthcare",
+   "city": "Guyton",
+   "linkedin": "https://www.linkedin.com/in/aimee-behnke-a577ba2b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@hcahealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Stephanie Henry",
+   "title": "Pediatrician",
+   "org": "The Southeast Permanente Medical Group",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/stephanie-henry-37439815",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Betsy Umberger",
+   "title": "Project Director, Marcus Autism Center",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Norcross",
+   "linkedin": "https://www.linkedin.com/in/betsy-umberger-29558a58",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Mary Lewis",
+   "title": "Chief of Pediatrics",
+   "org": "Dwight D. Eisenhower Army Medical Center",
+   "city": "Evans",
+   "linkedin": "https://www.linkedin.com/in/mary-lewis-77b18255",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Ami Dalsania",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Smyrna",
+   "linkedin": "https://www.linkedin.com/in/ami-dalsania-137165125",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Synita Griswell, MPH, CLC, CHES",
+   "title": "Autism & Developmental Disabilities Program Manager",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/synita-griswell-mph-clc-ches-55a31040",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@ga.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Jennifer Onyirimba, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/jennifer-onyirimba-md-7873949a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Pooja Soni",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/pooja-soni-5152261b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Dr. Joan Ibitoye-Ifarinde",
+   "title": "Pediatrician",
+   "org": "Covington Pediatrics",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/joan-ifarinde",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Edward Clark",
+   "title": "Associate Professor of Pediatrics",
+   "org": "Navicent Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/edward-clark-4145a96",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@navicenthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Regina Robbins, MD",
+   "title": "Pediatrician- Kenmar Pediatrics",
+   "org": "Wellstar Health System",
+   "city": "Mableton",
+   "linkedin": "https://www.linkedin.com/in/regina-robbins-md-80b27434",
+   "email": "R\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Roma Lithuania",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Woodstock",
+   "linkedin": "https://www.linkedin.com/in/roma-lithuania-7aa32140",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kimberly Dao-King",
+   "title": "General Pediatrician",
+   "org": "The Southeast Permanente Medical Group",
+   "city": "Kennesaw",
+   "linkedin": "https://www.linkedin.com/in/kimberly-dao-king-9b95a850",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Suzanne Caruthers",
+   "title": "Child Health Audiologist",
+   "org": "Georgia Department of Public Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/suzanne-caruthers-39631199",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Saranya Ravichandran MD FAAP IBCLC",
+   "title": "Pediatrician",
+   "org": "Piedmont",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/saranya-ravichandran-md-faap-ibclc-0210687a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Stettler",
+   "title": "Child Health-LPN",
+   "org": "Georgia Department of Public Health",
+   "city": "Savannah",
+   "linkedin": "https://www.linkedin.com/in/melissa-stettler-698ab46a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Dennis Jones",
+   "title": "Emergency Department Technician / Pediatrics",
+   "org": "Gwinnett Medical Center",
+   "city": "Lawrenceville",
+   "linkedin": "https://www.linkedin.com/in/dennis-jones-71898710",
+   "email": "d\u2022\u2022\u2022@northside.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Ifeoma Eke  MD",
+   "title": "Consultant Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/ifeoma-eke-md-0a10a733",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Tanganekia Kaguwo, BSN, RN",
+   "title": "Charge Nurse (Surgical/Orthopedics/Pediatrics)",
+   "org": "Northeast Georgia Health System",
+   "city": "Hoschton",
+   "linkedin": "https://www.linkedin.com/in/tanganekia-kaguwo-9bb611166",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nghs.com",
+   "phone": ""
+  },
+  {
+   "name": "Salome Gogichaishvili",
+   "title": "Pediatrician",
+   "org": "Medison Holding",
+   "city": "Tbilisi",
+   "linkedin": "https://www.linkedin.com/in/salome-gogichaishvili-097a17349",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Megan Redfern, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Prime Time Pediatrics",
+   "city": "Athens",
+   "linkedin": "https://www.linkedin.com/in/megan-redfern-md-faap-129520b2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Adrian Moll",
+   "title": "Senior Clinical Manager of Pediatrics",
+   "org": "Flournoy Health Systems",
+   "city": "McDonough",
+   "linkedin": "https://www.linkedin.com/in/adrian-moll-34805273",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Christine Konfrst",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Norcross",
+   "linkedin": "https://www.linkedin.com/in/christine-konfrst-11135a7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Jorie Muraida",
+   "title": "Pediatrician",
+   "org": "MedLink Georgia",
+   "city": "Athens",
+   "linkedin": "https://www.linkedin.com/in/jorie-muraida-54353b1aa",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@medlinkga.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Alysia Johnson",
+   "title": "Deputy Child Health Coordinator",
+   "org": "Georgia Department of Public Health",
+   "city": "Macon",
+   "linkedin": "https://www.linkedin.com/in/alysia-johnson-054731351",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Theresa Campbell, MSN, RN, CCRN, NPD-BC",
+   "title": "Division Specialty Educator-Pediatrics",
+   "org": "HCA Healthcare",
+   "city": "Greater Savannah Area",
+   "linkedin": "https://www.linkedin.com/in/theresa-campbell-msn-rn-ccrn-npd-bc-144a9519a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Tammy Showman",
+   "title": "Telehealth RN for adult medicine and pediatrics",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/tammy-showman-41913b37",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Amy Holcomb",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Hiram",
+   "linkedin": "https://www.linkedin.com/in/amy-holcomb-2a3b9a10a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Aris Gardere",
+   "title": "Hopebridge Autism Therapy Center",
+   "org": "Hopebridge",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/aris-gardere-93970922a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Casey Conner",
+   "title": "Pediatrician",
+   "org": "Tift Regional Health System",
+   "city": "Ocilla",
+   "linkedin": "https://www.linkedin.com/in/casey-conner-78950061",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Aditi Patel",
+   "title": "Pediatric Resident",
+   "org": "University of Mississippi Medical Center",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/aditi-patel-5822091b7",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu",
+   "phone": ""
+  },
+  {
+   "name": "Rebeca Orellana",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/rebeca-orellana-97b373110",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Johelin De Freitas H",
+   "title": "Pediatrician",
+   "org": "Baylor Scott & White Health",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/johelin-de-freitas-h-20041589",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@bswhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "bela nishnianidze",
+   "title": "Pediatrician",
+   "org": "MEDICAL EVIDENCE LTD",
+   "city": "Tbilisi",
+   "linkedin": "https://www.linkedin.com/in/bela-nishnianidze-76617b371",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Monica Taylor",
+   "title": "Pediatrician",
+   "org": "Beaufort Jasper Hampton Comprehensive Health Services, Inc.",
+   "city": "Greater Savannah Area",
+   "linkedin": "https://www.linkedin.com/in/monica-taylor-54b75b189",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bjhchs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Melissa Mabrey",
+   "title": "CNOIC Pediatrics",
+   "org": "Martin Army Community Hospital",
+   "city": "Hamilton",
+   "linkedin": "https://www.linkedin.com/in/melissa-mabrey-63489174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Alison B.",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/alison-b-816bb7163",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Madhuri Viswanadham",
+   "title": "CEO & M.D. (Pediatrician)",
+   "org": "Dare2Care Pediatrics",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/madhuri-viswanadham-139ab8b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@dare2carepediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Jacob Kirkpatrick MD",
+   "title": "Pediatrician",
+   "org": "Atrium Health Navicent",
+   "city": "Warner Robins",
+   "linkedin": "https://www.linkedin.com/in/jacob-kirkpatrick-md-5a985b242",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Rashida Avery, MD",
+   "title": "Pediatrician",
+   "org": "Grady Health System",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/rashida-avery-md-08b194211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Latika Goyal",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/latika-goyal-17699016b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Jennifer Youngblood",
+   "title": "Urgent Care Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Stockbridge",
+   "linkedin": "https://www.linkedin.com/in/jennifer-youngblood-a69a2779",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Tamara Taylor Ball",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/tamara-taylor-ball-77b696103",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Aliya Ghani",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/aliya-ghani-68714b78",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "David Wahbeh",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/david-wahbeh-422108164",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jonathan Schuh",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/jonathan-schuh-087162a1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Erica Riedesel",
+   "title": "Associate Professor, Radiology and Pediatrics",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/erica-riedesel-864558176",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Amit Deokar",
+   "title": "General Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/amit-deokar-661817248",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Rose Marie Samaniego",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins Hospital",
+   "city": "Greater Savannah Area",
+   "linkedin": "https://www.linkedin.com/in/rose-marie-samaniego-885b21161",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Mar'Quenda Sanders, MD, FAAP",
+   "title": "General Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/mar-quenda-sanders-md-faap-4426b3227",
+   "email": "s\u2022\u2022\u2022@kp.org",
+   "phone": ""
+  },
+  {
+   "name": "Stacie Hamley, MD",
+   "title": "Pediatrician",
+   "org": "WELLSTAR PEDIATRICS - EAST COBB",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/stacie-hamley-md-136b75140",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Marissa Reagan MSN-Ed, RNC-OB, C-EFM",
+   "title": "Maternal Child Health Corporate Education Specialist",
+   "org": "Prime Healthcare",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/rnmrissa",
+   "email": "e\u2022\u2022\u2022@primehealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Chelsea Tehan",
+   "title": "Pediatrician",
+   "org": "Memorial Health | Meadows Hospital",
+   "city": "Vidalia",
+   "linkedin": "https://www.linkedin.com/in/chelsea-tehan-24a3451a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kristine Andrews",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Fayetteville",
+   "linkedin": "https://www.linkedin.com/in/kristine-andrews-08424a131",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Tim Troyer",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Atlanta",
+   "linkedin": "https://www.linkedin.com/in/tim-troyer-94289334",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Tamika Bryant",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Snellville",
+   "linkedin": "https://www.linkedin.com/in/tamika-bryant-535b52149",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Amanda Hall",
+   "title": "Clinical Coordinator-Labor & Delivery, Postpartum, Nursery, Pediatrics",
+   "org": "Houston Healthcare",
+   "city": "Bonaire",
+   "linkedin": "https://www.linkedin.com/in/amanda-hall-02508034",
+   "email": "a\u2022\u2022\u2022\u2022@hhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Krishna Eechampati",
+   "title": "Pediatrician",
+   "org": "Children's Healthcare of Atlanta",
+   "city": "Alpharetta",
+   "linkedin": "https://www.linkedin.com/in/krishna-eechampati-286b164b",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@choa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Tarayn Fairlie",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Decatur",
+   "linkedin": "https://www.linkedin.com/in/tarayn-fairlie-67990b75",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@kp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Charlene Chalmers",
+   "title": "Pediatrician",
+   "org": "Piedmont",
+   "city": "Athens",
+   "linkedin": "https://www.linkedin.com/in/charlene-chalmers-93755a35",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Dennis Ownby",
+   "title": "Professor of Pediatrics",
+   "org": "Georgia Health Sciences University",
+   "city": "Evans",
+   "linkedin": "https://www.linkedin.com/in/dennis-ownby-8513a135",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Tina Vothang",
+   "title": "Pediatrician",
+   "org": "Wellstar Health System",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/tina-vothang-71bb8a14b",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Jana James",
+   "title": "Health Policy Analyst: Child Health Promotion",
+   "org": "Georgia Department of Public Health",
+   "city": "Greater Savannah Area",
+   "linkedin": "https://www.linkedin.com/in/jana-james-617051371",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@georgia.gov",
+   "phone": ""
+  },
+  {
+   "name": "Reda Bassali",
+   "title": "Pediatrician",
+   "org": "Augusta University Health",
+   "city": "Augusta",
+   "linkedin": "https://www.linkedin.com/in/reda-bassali-aa879a91",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@wellstar.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Sheisa Claudio",
+   "title": "Primary Care Pediatrician",
+   "org": "PRINCETON LAKES PEDIATRICS- KENNESAW INC",
+   "city": "Kennesaw",
+   "linkedin": "https://www.linkedin.com/in/sheisa-claudio-08350b123",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Amy Levine",
+   "title": "Pediatrician",
+   "org": "The Southeast Permanente Medical Group",
+   "city": "Atlanta Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/amy-levine-3ba883167",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Lisbeth Gaddy",
+   "title": "RN - Pediatrics",
+   "org": "Northeast Georgia Health System",
+   "city": "Gainesville",
+   "linkedin": "https://www.linkedin.com/in/lisbeth-gaddy-09a26790",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Meredith Udell",
+   "title": "Pediatrician",
+   "org": "MedLink Georgia",
+   "city": "Colbert",
+   "linkedin": "https://www.linkedin.com/in/meredith-udell-a3a03a46",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@medlinkga.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  }
+ ]
+}

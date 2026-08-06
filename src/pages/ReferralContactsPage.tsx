@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import DemoModalHost from '../components/DemoModal';
 import { useReveal } from '../hooks/useReveal';
 import { useSeo } from '../hooks/useSeo';
 import { Nav } from './Landing';
+import { GateModal, useGatedDownload } from '../components/ReferralGate';
 import STATS from '../data/referral_contacts_stats.json';
 
 /* ================================================================
@@ -23,10 +24,6 @@ const GREEN = '#3f7a34';
 
 const W: React.CSSProperties = { maxWidth: 1100, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' };
 const MEASURE: React.CSSProperties = { maxWidth: 760, margin: '0 auto', padding: '0 clamp(20px, 4.5vw, 40px)' };
-
-const EMAIL_RE = /^[A-Za-z0-9._%+'-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-const GIVEN_KEY = 'carelu_leads_email';
-const SKIP_KEY = 'carelu_refdir_skip';
 
 const REFRESHED = new Date(STATS.generated + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
@@ -93,135 +90,6 @@ function useDatasetJsonLd() {
   }, []);
 }
 
-function triggerDownload(file: string) {
-  const a = document.createElement('a');
-  a.href = file;
-  a.download = '';
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}
-
-/* ---- Soft email gate ------------------------------------------------ */
-
-function GateModal({ pendingFile, onDone }: { pendingFile: string; onDone: () => void }) {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
-  const hpRef = useRef<HTMLInputElement>(null);
-
-  const proceed = () => {
-    triggerDownload(pendingFile);
-    onDone();
-  };
-
-  const skip = () => {
-    try { sessionStorage.setItem(SKIP_KEY, '1'); } catch { /* private mode */ }
-    proceed();
-  };
-
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const clean = email.trim();
-    if (!EMAIL_RE.test(clean)) { setError('That doesn’t look like an email — or just skip below.'); return; }
-    try { localStorage.setItem(GIVEN_KEY, clean); } catch { /* private mode */ }
-    // Fire-and-forget: never make the visitor wait on storage.
-    fetch('/api/leads', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ email: clean, source: 'referral-contacts', website: hpRef.current?.value ?? '' }),
-      keepalive: true,
-    }).catch(() => {});
-    proceed();
-  };
-
-  return (
-    <div
-      onClick={skip}
-      style={{
-        position: 'fixed', inset: 0, zIndex: 1000,
-        background: 'rgba(26,26,26,0.45)', backdropFilter: 'blur(4px)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        padding: 20,
-      }}
-    >
-      <div
-        role="dialog"
-        aria-modal="true"
-        aria-label="Get dataset updates"
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          position: 'relative', background: '#fff', borderRadius: 22,
-          maxWidth: 440, width: '100%', padding: 'clamp(28px, 4vw, 38px)',
-          boxShadow: '0 24px 80px rgba(0,0,0,0.28)',
-        }}
-      >
-        <button
-          onClick={skip}
-          aria-label="Close and download"
-          style={{
-            position: 'absolute', top: 14, right: 14,
-            width: 34, height: 34, borderRadius: 100, border: 'none',
-            background: 'rgba(43,42,38,0.06)', color: 'rgba(43,42,38,0.6)',
-            fontSize: 16, cursor: 'pointer', lineHeight: 1,
-          }}
-        >
-          ✕
-        </button>
-        <h3 style={{
-          fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 400,
-          color: INK, letterSpacing: '-0.015em', lineHeight: 1.15, margin: '0 0 10px',
-        }}>
-          Want the refreshed list when it updates?
-        </h3>
-        <p style={{ fontSize: 14.5, color: 'rgba(43,42,38,0.65)', lineHeight: 1.6, margin: '0 0 20px' }}>
-          This dataset is re-verified on an ongoing basis. Leave your work email and we&apos;ll
-          send you the newest version each time it changes. Or skip it — your download starts either way.
-        </p>
-        <form onSubmit={submit}>
-          {/* Honeypot — hidden from humans, bots fill it. */}
-          <input ref={hpRef} type="text" name="website" tabIndex={-1} autoComplete="off"
-            style={{ position: 'absolute', left: -9999, top: 'auto', width: 1, height: 1, opacity: 0 }} />
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => { setEmail(e.target.value); setError(''); }}
-            placeholder="you@yourpractice.com"
-            autoFocus
-            style={{
-              width: '100%', boxSizing: 'border-box',
-              padding: '14px 18px', borderRadius: 14,
-              border: `1.5px solid ${error ? '#c0392b' : 'rgba(43,42,38,0.16)'}`,
-              fontSize: 15, color: INK, background: BONE, outline: 'none',
-              fontFamily: 'var(--font-body)',
-            }}
-          />
-          {error && <p style={{ fontSize: 12.5, color: '#c0392b', margin: '8px 0 0' }}>{error}</p>}
-          <button type="submit" style={{
-            width: '100%', marginTop: 12,
-            padding: '14px 24px', borderRadius: 100, border: 'none',
-            fontSize: 15, fontWeight: 600, color: '#fff', backgroundColor: GREEN,
-            cursor: 'pointer', boxShadow: '0 6px 20px rgba(46,90,38,0.24)',
-            fontFamily: 'var(--font-body)',
-          }}>
-            Email me updates &amp; download
-          </button>
-        </form>
-        <button
-          onClick={skip}
-          style={{
-            display: 'block', margin: '14px auto 0',
-            background: 'none', border: 'none', cursor: 'pointer',
-            fontSize: 13, color: 'rgba(43,42,38,0.5)', textDecoration: 'underline',
-            fontFamily: 'var(--font-body)',
-          }}
-        >
-          Skip — just download
-        </button>
-      </div>
-    </div>
-  );
-}
-
 /* ---- Page ----------------------------------------------------------- */
 
 const WHY_CARDS = [
@@ -252,16 +120,7 @@ export default function ReferralContactsPage() {
   });
   useDatasetJsonLd();
 
-  const [pendingFile, setPendingFile] = useState<string | null>(null);
-
-  const download = (file: string) => {
-    let unlocked = false;
-    try {
-      unlocked = !!localStorage.getItem(GIVEN_KEY) || !!sessionStorage.getItem(SKIP_KEY);
-    } catch { /* private mode */ }
-    if (unlocked) triggerDownload(file);
-    else setPendingFile(file);
-  };
+  const { pendingFile, download, clear } = useGatedDownload();
 
   const statTiles = [
     { n: STATS.total.toLocaleString(), label: 'referral contacts' },
@@ -275,7 +134,7 @@ export default function ReferralContactsPage() {
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
       <DemoModalHost />
       <Nav base="/carelu" />
-      {pendingFile && <GateModal pendingFile={pendingFile} onDone={() => setPendingFile(null)} />}
+      {pendingFile && <GateModal pendingFile={pendingFile} onDone={clear} />}
 
       {/* Hero */}
       <section style={{ paddingTop: 'clamp(150px, 18vw, 210px)', paddingBottom: 'clamp(32px, 4.5vw, 56px)', textAlign: 'center' }}>
@@ -403,24 +262,32 @@ export default function ReferralContactsPage() {
                 display: 'flex', flexDirection: 'column', gap: 10,
               }}>
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: INK, letterSpacing: '-0.005em' }}>{s.name}</div>
+                  <a href={`/resources/pediatrician-referral-contacts/${s.slug}`} style={{ fontSize: 16, fontWeight: 700, color: INK, letterSpacing: '-0.005em', textDecoration: 'none' }}>{s.name}</a>
                   <div style={{ fontSize: 12.5, color: 'rgba(43,42,38,0.55)', marginTop: 3 }}>
                     {s.count.toLocaleString()} contacts · {s.emails.toLocaleString()} emails · {s.phones.toLocaleString()} phones
                   </div>
                 </div>
-                <button
-                  onClick={() => download(s.file)}
-                  style={{
-                    alignSelf: 'flex-start',
-                    display: 'inline-flex', alignItems: 'center', gap: 7,
-                    fontSize: 13, fontWeight: 600, color: GREEN,
-                    background: 'rgba(63,122,52,0.08)', border: 'none', cursor: 'pointer',
-                    padding: '9px 16px', borderRadius: 100, fontFamily: 'var(--font-body)',
-                  }}
-                >
-                  Download CSV
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
-                </button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+                  <button
+                    onClick={() => download(s.file)}
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 7,
+                      fontSize: 13, fontWeight: 600, color: GREEN,
+                      background: 'rgba(63,122,52,0.08)', border: 'none', cursor: 'pointer',
+                      padding: '9px 16px', borderRadius: 100, fontFamily: 'var(--font-body)',
+                    }}
+                  >
+                    Download CSV
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
+                  </button>
+                  <a href={`/resources/pediatrician-referral-contacts/${s.slug}`} style={{
+                    fontSize: 13, fontWeight: 600, color: 'rgba(43,42,38,0.55)', textDecoration: 'none',
+                    display: 'inline-flex', alignItems: 'center', gap: 5,
+                  }}>
+                    Browse
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -468,9 +335,9 @@ export default function ReferralContactsPage() {
             Generic contact databases treat pediatric professionals as an afterthought — a title filter
             over stale records. This dataset was built the other way around: each contact enriched and
             cross-checked through dozens of provider sources, deduplicated across states, and kept
-            current with ongoing re-verification. We use the same data discipline that powers our{' '}
-            <a href="/payers" style={{ color: GREEN, fontWeight: 600 }}>payer guides</a>, and we believe
-            it&apos;s the best pediatric referral resource available anywhere on the web.
+            current with ongoing re-verification. We believe it&apos;s the best pediatric referral
+            resource available anywhere on the web — and you can browse every state&apos;s list right
+            here on the site.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 6 }}>
             {INSIDE_CARDS.map((c) => (

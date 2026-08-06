@@ -1,0 +1,3355 @@
+{
+ "name": "Ohio",
+ "slug": "ohio",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-ohio.csv",
+ "count": 363,
+ "emails": 107,
+ "phones": 252,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 241
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 57
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 21
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 18
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 15
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 11
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Columbus",
+   "count": 53
+  },
+  {
+   "name": "Cleveland",
+   "count": 49
+  },
+  {
+   "name": "Cincinnati",
+   "count": 47
+  },
+  {
+   "name": "Greater Cleveland",
+   "count": 19
+  },
+  {
+   "name": "Dayton",
+   "count": 18
+  },
+  {
+   "name": "Akron",
+   "count": 17
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Nationwide Children's Hospital",
+   "count": 56
+  },
+  {
+   "name": "Cleveland Clinic",
+   "count": 51
+  },
+  {
+   "name": "Akron Children's",
+   "count": 44
+  },
+  {
+   "name": "Cincinnati Children's",
+   "count": 34
+  },
+  {
+   "name": "University Hospitals",
+   "count": 25
+  },
+  {
+   "name": "Dayton Children's Hospital",
+   "count": 13
+  }
+ ],
+ "rows": [
+  {
+   "name": "Jessica Madden, MD, IBCLC",
+   "title": "Lead Pediatrician",
+   "org": "Blueberry Pediatrics",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jessica-madden-md-ibclc-85798489",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Thomas Phelps MD",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Chesterland",
+   "linkedin": "https://www.linkedin.com/in/thomas-phelps-md-5099953a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Eric Feitl",
+   "title": "Director of Residential Autism Services",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/eric-feitl-06052985",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cristina Tomatis Souverbielle",
+   "title": "Pediatrician. Infectious Diseases.",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/cristina-tomatis-souverbielle",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Timothy Benik",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/timothy-benik-946355174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Emma R.",
+   "title": "General Pediatrician; Associate Professor of Pediatrics",
+   "org": "Akron Children's",
+   "city": "Medina",
+   "linkedin": "https://www.linkedin.com/in/emma-r-b262b120",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Allison Griesmer, PhD",
+   "title": "Clinical Child Psychologist",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/allison-griesmer",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Micah Resnick M.D.",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/micahresnick",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Andrew Beck",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/andrew-beck-066a8541",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Koye A. Oyerinde MD DrPH FAAP",
+   "title": "Pediatrician",
+   "org": "AxessPointe Community Health Centers",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/koyeoyerinde",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Laura O'Connor",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/laura-o-connor-a96891a0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Brad Gascoigne",
+   "title": "pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/brad-gascoigne-537ba834",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Harshal Chauhan",
+   "title": "Pediatric Resident",
+   "org": "Mercy Health",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/harshal-chauhan-3952a8200",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alexander Coe",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/alexander-coe-38849511b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Kevin Miller",
+   "title": "Pediatrician",
+   "org": "Genesis Healthcare System",
+   "city": "Nashport",
+   "linkedin": "https://www.linkedin.com/in/kevin-miller-85627393",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Charles Deitschel",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/charles-deitschel-53a25b94",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Gayle melnick",
+   "title": "Pediatrician",
+   "org": "Adena Health System",
+   "city": "Circleville",
+   "linkedin": "https://www.linkedin.com/in/gayle-melnick-353920b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Michal Feldon",
+   "title": "Physican/ pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/michal-feldon-998a2b88",
+   "email": "",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202279"
+  },
+  {
+   "name": "Amina Smajlovic",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/amina-smajlovic-6a077215b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Jessica Tattershall",
+   "title": "Outpatient pediatrician",
+   "org": "Akron Children's",
+   "city": "Youngstown",
+   "linkedin": "https://www.linkedin.com/in/jessica-tattershall-3baa721a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Darcy Morris, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Grove City",
+   "linkedin": "https://www.linkedin.com/in/darcy-morris-md-750b3513b",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Jennifer Beck",
+   "title": "Pediatrician",
+   "org": "Cook Children's Health Care System",
+   "city": "Loveland",
+   "linkedin": "https://www.linkedin.com/in/jennifer-beck-ab4930b4",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Olivia Rivard",
+   "title": "Autism Spectrum Disorder Specialist",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/olivia-rivard-338728162",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Ashlei Funtjar",
+   "title": "Behavioral intervention aide- Center for Autism Spectrum Disorders",
+   "org": "Nationwide Children's Hospital",
+   "city": "Hilliard",
+   "linkedin": "https://www.linkedin.com/in/ashlei-funtjar-7a796a26",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Courtney McCall",
+   "title": "General Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/courtney-mccall-04870783",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Imad Moiduddin",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/imad-moiduddin-0b2b25120",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Lorraine Fay",
+   "title": "developmental behavioral pediatrician",
+   "org": "Harbor",
+   "city": "Sylvania",
+   "linkedin": "https://www.linkedin.com/in/lorraine-fay-1167a328",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Ayana N",
+   "title": "Autism Service Coordinator",
+   "org": "Centene Corporation",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/ayana-n-0b379975",
+   "email": "a\u2022\u2022\u2022\u2022@centene.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Foley Conrad",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Beachwood",
+   "linkedin": "https://www.linkedin.com/in/foley-conrad-32b7a27b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Brittany Raburn",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/brittany-raburn-b76b299a",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@trihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Tonia Bogema",
+   "title": "Youth Therapist",
+   "org": "Anazao Community Partners",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/tonia-bogema-13429a41",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Sabrina Ma",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/sabrina-ma-690420111",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Maria P Hanson MD",
+   "title": "Partner / Pediatrician",
+   "org": "Pediatric Associates Of Dayton",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/maria-p-hanson-md-32b818111",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Laurie Penix",
+   "title": "Pediatrician, Alliance ACHP Office",
+   "org": "Akron Children's",
+   "city": "Salem",
+   "linkedin": "https://www.linkedin.com/in/laurie-penix-b3870131",
+   "email": "L\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Mitchell Camp",
+   "title": "Pediatrician",
+   "org": "Olentangy Pediatrics Inc",
+   "city": "Pickerington",
+   "linkedin": "https://www.linkedin.com/in/mitchell-camp-0999b099",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Duane Copenheaver",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Ohio",
+   "linkedin": "https://www.linkedin.com/in/duane-copenheaver-5914305b",
+   "email": "D\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Richard Turner",
+   "title": "Pediatrician",
+   "org": "PEDIATRIC CARE OF KENTUCKY PSC",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/richard-turner-42276b92",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Ryan Mifflin",
+   "title": "Pediatric Resident",
+   "org": "University Hospitals",
+   "city": "Stow",
+   "linkedin": "https://www.linkedin.com/in/ryanmifflin",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Connie Chin",
+   "title": "Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/connie-chin-856b4a161",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Hannah Barton, PhD, BCBA",
+   "title": "Child Psychologist at the Child Development Center",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/hannahlbarton",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Emma Strode",
+   "title": "Pediatric Resident",
+   "org": "Rainbow Babies and Children's Hospital",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/emma-strode-5055b8108",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Alexander Karrfalt",
+   "title": "Associate Teaher at Monarch Center for Autism",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/alexander-karrfalt-17a3a5104",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Preston Keiffer",
+   "title": "General academic pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/preston-keiffer-74122a86",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Clare Crosh",
+   "title": "General Pediatrician",
+   "org": "Advocate Children's Hospital",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/clare-crosh-13262465",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Meghan Lynch Ljubi, DO",
+   "title": "Pediatrician",
+   "org": "Zest Pediatric Network",
+   "city": "Avon",
+   "linkedin": "https://www.linkedin.com/in/meghan-lynch-ljubi-do-a2b25793",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Sophia Cross",
+   "title": "Language and Communications Instructional Assistant at Monarch Center for Autism",
+   "org": "Bellefaire JCB",
+   "city": "Willoughby",
+   "linkedin": "https://www.linkedin.com/in/sophiaecross",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@bellefairejcb.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Karen La Salle, MD, MS, FAAP",
+   "title": "Pediatrician",
+   "org": "Fisher-Titus Medical Center",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/karen-la-salle-md-ms-faap-60823115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Allison Benedict",
+   "title": "School Administrator, Center for Autism",
+   "org": "Cleveland Clinic",
+   "city": "Strongsville",
+   "linkedin": "https://www.linkedin.com/in/allison-benedict-633475b1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Lauren Cardinal",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/lauren-cardinal-67354551",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "W. Kyle Mudd",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/w-kyle-mudd-65a939103",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Matthew Tien",
+   "title": "Pediatrician and Associate Director of Clinical Informatics",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/matthew-tien-93076010",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Helena Herman, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "HealthSource of Ohio",
+   "city": "Cincinnati Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/helena-herman-md-faap-79331a13",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Nicholas Skiviat",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/nicholas-skiviat-8a09a4a1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Henry McGee",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/henry-mcgee-27a17232",
+   "email": "h\u2022\u2022\u2022\u2022\u2022@metrohealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Ella Neruda",
+   "title": "Autism Self-Advocacy Program (ASAP) Group Facilitator",
+   "org": "Nisonger Center - University Center for Excellence in Developmental Disabilities",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/ella-neruda-4a7355143",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Edward Beatty, DO",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/edward-beatty-do-31112519",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Swati Patel",
+   "title": "General Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/swati-patel-b1937bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Allison Keefer",
+   "title": "Autism Diagnostic Specialist",
+   "org": "Nationwide Children's Hospital",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/allison-keefer-05a933ab",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Jamal Al Ani",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/jamal-al-ani",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Stephen Kebe",
+   "title": "Pediatrician",
+   "org": "American Health Network",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/stephen-kebe-18a06879",
+   "email": "s\u2022\u2022\u2022@Jobs.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Jason Sherman",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jason-sherman-50946714b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Scott Oplinger",
+   "title": "Pediatric Resident",
+   "org": "Madigan Army Medical Center",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/scottoplinger",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Robert Needlman",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/robert-needlman-30280616",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Megan Binder, MD",
+   "title": "Pediatric Resident",
+   "org": "University Hospitals",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/megan-binder-md-2450bb167",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Kristin Wennerstrom Guilonard DO, MPH",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/kristin-wennerstrom-guilonard-do-mph-6b951115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Douglas Fleck, MD, FAAP",
+   "title": "Pediatrician and Site Medical Director",
+   "org": "University Hospitals",
+   "city": "Ashtabula",
+   "linkedin": "https://www.linkedin.com/in/douglas-fleck-md-faap-982876b",
+   "email": "f\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Sarah Tarai",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Fairfield",
+   "linkedin": "https://www.linkedin.com/in/sarah-tarai-0a78a0132",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Joshua Prudent",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/joshua-prudent-a3937522",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Jane Chikkala",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/jane-chikkala-5287a61a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Frank Artinian",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Massillon",
+   "linkedin": "https://www.linkedin.com/in/frank-artinian-120491111",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Abdel Rahman E'mar",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/abdel-rahman-e-mar-80a8b8148",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marie Clark",
+   "title": "Assistant Professor, Developmental-Behavioral Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/marie-clark-706b2373",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Natalie Woods",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/natalie-woods-699ab08",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Kristen DeMarco",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/kristen-demarco-5441662a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Mona Choueiry",
+   "title": "Pediatrician and Staff Physician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/mona-choueiry-468a8741",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Neeraja Ravindran",
+   "title": "Clinical Child Psychologist",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/neeraja-ravindran-13a1a666",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Alicia Rodgers, DO, MS",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/alicia-rodgers-do-ms-8b910112a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Mark Fradkin",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/mark-fradkin-077001258",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202270"
+  },
+  {
+   "name": "Elizabeth McManus",
+   "title": "Behavioral Intervention Aide (Center for Autism Spectrum Disorder)",
+   "org": "Nationwide Children's Hospital",
+   "city": "Westerville",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-mcmanus-a0077192",
+   "email": "e\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Jon Mumma",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/jon-mumma-a476aa207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Lisa Eggleston",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Barberton",
+   "linkedin": "https://www.linkedin.com/in/lisa-eggleston-95929931",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Karlee Davidson, M.D.",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/karlee-davidson-m-d-707996180",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Barry Belcher, DO, FAAP",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Hilliard",
+   "linkedin": "https://www.linkedin.com/in/barry-belcher-do-45076783",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Rima Rusnak",
+   "title": "Pediatrician",
+   "org": "Group Health Associates",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/rima-rusnak-4b33167a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Wendelin Burdo-Hartman",
+   "title": "Neurodevelopmental pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/wendelin-burdo-hartman-8038a066",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "John Radford, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Southern Ohio Medical Center",
+   "city": "Waverly",
+   "linkedin": "https://www.linkedin.com/in/john-radford-md-faap-11241082",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Megan Vaccarella, RBT",
+   "title": "Autism Resource Clinician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/megan-vaccarella-rbt-6883ba67",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Julia Hara",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Cuyahoga Falls",
+   "linkedin": "https://www.linkedin.com/in/julia-hara-392929121",
+   "email": "j\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Ryan Ciarlo",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/ryan-ciarlo-25966687",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Terra Broering",
+   "title": "Pediatric Physician Assistant",
+   "org": "Dayton Children's Hospital",
+   "city": "Tipp City",
+   "linkedin": "https://www.linkedin.com/in/terra-broering-8083b078",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Gregory Weaver",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/gregory-weaver-9552755b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Emily Krikke",
+   "title": "Primary Care Pediatrician",
+   "org": "Fisher-Titus Medical Center",
+   "city": "Greenwich",
+   "linkedin": "https://www.linkedin.com/in/emily-krikke-5884b082",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Daniela Isakov",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Solon",
+   "linkedin": "https://www.linkedin.com/in/daniela-isakov-4b04a994",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Greta Hilbrands, PsyD",
+   "title": "Child Psychologist",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/greta-hilbrands-psyd-6b67288b",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Anna Winfield, MD, MPH, FAAP",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/anna-winfield-md-mph-faap-1b0b0777",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@metrohealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Brigitte Jahoor",
+   "title": "General Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/brigitte-jahoor-966a1422a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Rena Chandra",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/rena-chandra-386480b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Lama Dakik",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/lama-dakik-b7b0051bb",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Margaret Somple",
+   "title": "Pediatrician",
+   "org": "Knox Community Hospital",
+   "city": "Mount Vernon",
+   "linkedin": "https://www.linkedin.com/in/margaret-somple-04a1a735",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@KCH.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Sara Schroder",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/sara-schroder-950011b4",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Angel DeSouza Cannon MSSA, LSW",
+   "title": "Autism Patient Navigator",
+   "org": "University Hospitals",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/angeldcannon",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Jacob Morrow",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/jacob-morrow-9b6a93207",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Doug Hackenberg, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Hudson",
+   "linkedin": "https://www.linkedin.com/in/doug-hackenberg-md-faap-5430aa11",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Mike Pappas MD",
+   "title": "Consultant Pediatrician - Telemedicine",
+   "org": "HEALTH PROMOTION DISEASE PREVENTION",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/mike-pappas-md-49a92395",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "LeRoy LeRoy Eberly",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Canfield",
+   "linkedin": "https://www.linkedin.com/in/leroy-leroy-eberly-3b182538",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Julie Javorek, MD",
+   "title": "Outpatient Pediatrician",
+   "org": "University Hospitals",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/julie-javorek-md-2a43779b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Jake Watson",
+   "title": "Resident Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/jake-watson-09297016",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Arlene Roble",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/arlene-roble-b603497",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Sheldon Polonsky",
+   "title": "Pediatrician/Physician Analyst (Epic)",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/sheldon-polonsky-973025198",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Nikki Lengyel-Halicky",
+   "title": "Youth Therapist",
+   "org": "JEFFERSON BEHAVIORAL HEALTH SYSTEM",
+   "city": "Adena",
+   "linkedin": "https://www.linkedin.com/in/nikki-lengyel-halicky-4b8b824",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Katy Corrigan",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Lakewood",
+   "linkedin": "https://www.linkedin.com/in/katy-corrigan-1751ba99",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Allayne Stephans",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/allayne-stephans-5b6a8011b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Niki Khandheria, MD, MPH",
+   "title": "Primary Care Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/niki-khandheria-md-mph-258957b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Valerie Fouts-Fowler",
+   "title": "Pediatrician",
+   "org": "UHMP - COMPREHENSIVE PEDIATRICS",
+   "city": "Avon Lake",
+   "linkedin": "https://www.linkedin.com/in/valerie-fouts-fowler-90902a37b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Katherine Perry",
+   "title": "Youth Therapist",
+   "org": "RECOVERY WORKS HEALING CENTER",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/katherine-perry-6b1b953b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rajyalakshmi (Raj) Rambhatla",
+   "title": "General Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Twinsburg",
+   "linkedin": "https://www.linkedin.com/in/rajyalakshmi-raj-rambhatla-630b53209",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Jonathan Mathis Mathis",
+   "title": "Pediatrician",
+   "org": "Holzer Health System",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/jonathan-mathis-mathis-a71b5a166",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Michal (Mica) Maksimak",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/michal-mica-maksimak-466815131",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Elisha Eveleigh",
+   "title": "Child Psychologist",
+   "org": "Lindner Center of HOPE",
+   "city": "Mason",
+   "linkedin": "https://www.linkedin.com/in/elisha-eveleigh-a73b25161",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Jennifer Allen",
+   "title": "Pediatrician",
+   "org": "Adena Health System",
+   "city": "Chillicothe",
+   "linkedin": "https://www.linkedin.com/in/jennifer-allen-3486a3a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@adena.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Marcia Columbro",
+   "title": "Pediatrician, medical site director",
+   "org": "University Hospitals",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/marcia-columbro-3b3320b3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Pamela Holmes",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/pamela-holmes-7a428144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Megan Rodts",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/megan-rodts-874595169",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Aparna Jha",
+   "title": "Pediatrician",
+   "org": "Kidzcare Pediatrics PC, NC",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/aparna-jha-50164aa3",
+   "email": "a\u2022\u2022\u2022@kidzcarepediatrics.com",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Hoff",
+   "title": "Child Psychologist",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/melissa-hoff-90a6153b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Ester Gayol",
+   "title": "Pediatrician",
+   "org": "Neighborhood Healthcare",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/ester-gayol-73836859",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Michael Lemon",
+   "title": "pediatrician",
+   "org": "Wood County Hospital",
+   "city": "Bowling Green",
+   "linkedin": "https://www.linkedin.com/in/michael-lemon-48460876",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@woodcountyhospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "JDonald Lucker",
+   "title": "Pediatrician",
+   "org": "Lake Health",
+   "city": "Mentor",
+   "linkedin": "https://www.linkedin.com/in/jdonald-lucker-358baa16",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Robert Siegel",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/robert-siegel-2317704b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Rebecca Dandoy",
+   "title": "Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Franklin",
+   "linkedin": "https://www.linkedin.com/in/rebecca-dandoy-6872b3153",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Mark Lamson",
+   "title": "Pediatric Resident",
+   "org": "Dayton Children's Hospital",
+   "city": "Springboro",
+   "linkedin": "https://www.linkedin.com/in/mark-lamson-6995b085",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Jennifer Montgomery",
+   "title": "Child therapist/CPST/Provention provider",
+   "org": "Scioto Paint Valley Mental Health Center",
+   "city": "Waverly",
+   "linkedin": "https://www.linkedin.com/in/jennifer-montgomery-982ba87b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@spvmhc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Amy Hess",
+   "title": "Autism Treatment Network",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/amy-hess-75168b45",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Lisa Light",
+   "title": "Pediatrician",
+   "org": "AKRON CHILDREN'S HOSPITAL PEDIATRICS",
+   "city": "Stow",
+   "linkedin": "https://www.linkedin.com/in/lisa-light-59b18011",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Catherine Tripp",
+   "title": "Autism Youth Counselor",
+   "org": "Bellefaire JCB",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/catherine-tripp-8b10a1173",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anita Kefgen",
+   "title": "child therapist",
+   "org": "Adena Health System",
+   "city": "Chillicothe",
+   "linkedin": "https://www.linkedin.com/in/anita-kefgen-bab27173",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Patricia Fine Rosenstein",
+   "title": "Pediatrician",
+   "org": "Ohio Pediatrics Inc",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/patricia-fine-rosenstein-338a2242",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Andrew Paisley",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/andrew-paisley-058354185",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Rachael Morocco",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/rachael-morocco-a50b33167",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Tracy Lim",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/tracy-lim-9aa161195",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Ladinsky Morissa",
+   "title": "pediatrician",
+   "org": "TriHealth",
+   "city": "Loveland",
+   "linkedin": "https://www.linkedin.com/in/ladinsky-morissa-87426326",
+   "email": "l\u2022\u2022\u2022@trihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Erin Dahlinghaus",
+   "title": "Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/erin-dahlinghaus-03b815149",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Kristin Garton",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/kristin-garton-182b6278",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Hannah Elkus",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/hannah-elkus-808565150",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Devon Swick",
+   "title": "Pediatric resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Westerville",
+   "linkedin": "https://www.linkedin.com/in/devon-swick-84432056",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Glenda Zamora",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/glenda-zamora-8a2553274",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Amy Senk",
+   "title": "general pediatrician",
+   "org": "Akron Children's",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/amy-senk-53567016a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "karin wetzler",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/karin-wetzler-b05bb1104",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@trihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Michele Coates Marshall MD",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Stow",
+   "linkedin": "https://www.linkedin.com/in/michele-coates-marshall-md-653927353",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Svetlana Pomeranets",
+   "title": "pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Chagrin Falls",
+   "linkedin": "https://www.linkedin.com/in/svetlana-pomeranets-87949236",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Kate Driscoll",
+   "title": "Pediatrician",
+   "org": "Anderson Hills Pediatrics, Inc.",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/kate-driscoll-59b48028a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Howard Eckstein",
+   "title": "Primary Care Pediatrician",
+   "org": "Avita Health System",
+   "city": "Mansfield",
+   "linkedin": "https://www.linkedin.com/in/howard-eckstein-11b2722a4",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Phyllis Harding",
+   "title": "Pediatrician",
+   "org": "DODGE CITY MEDICAL CENTER",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/phyllis-harding-134508220",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alonzo Patterson III, MD",
+   "title": "Pediatrician",
+   "org": "PriMED Physicians",
+   "city": "Dayton Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/alonzo-patterson-iii-md-06234012a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Megan King",
+   "title": "Primary Care Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/megan-king-6b91291b8",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth Bing",
+   "title": "Psychologist/Autism Spectrum Specialist",
+   "org": "Beech Brook",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-bing-98305713",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Karlee Kimble",
+   "title": "Autism-Youth Cousnlor",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/karlee-kimble-3773a1144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Kacie Nafzger",
+   "title": "Pediatric Therapist",
+   "org": "Kids Thrive",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/kacie-nafzger-347982274",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Svetlana Pomeranets",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Chagrin Falls",
+   "linkedin": "https://www.linkedin.com/in/svetlana-pomeranets-0b12b666",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Iris Castillo",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/iris-castillo-545819a5",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Sladjana Courson",
+   "title": "Pediatrician",
+   "org": "Akron Children's Hospital",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/sladjana-courson-b3aa55158",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Lindsay Bartram",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/lindsay-bartram-15b899166",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Ellen Kumler",
+   "title": "General Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/ellen-kumler-903a6850",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Jonathan Price, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Dublin",
+   "linkedin": "https://www.linkedin.com/in/jonathan-price-md-faap-b50380262",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mark Feingold, MD",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/mark-feingold-md-56006829",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kelsey Bertrand",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Beachwood",
+   "linkedin": "https://www.linkedin.com/in/kelsey-bertrand-01b37687",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Shannon Golden",
+   "title": "pediatrician",
+   "org": "SPRINGDALE MASON PEDIATRIC ASSOC",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/shannon-golden-24598b17",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Matt Mascioli",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/matt-mascioli-6139b011b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": ""
+  },
+  {
+   "name": "Elodie Betances, MD, FAAP",
+   "title": "Developmental and Behavioral Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/elodie-betances-md-faap-a13802229",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Tamika Patilla  MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Medina",
+   "linkedin": "https://www.linkedin.com/in/tamika-patilla-md-faap-948aa2b",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Melissa Klein",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/melissa-klein-4bb38714a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Kristen Stefanski",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Akron Children's",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/kristen-stefanski-253628196",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Laura Hutchison",
+   "title": "Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Germantown",
+   "linkedin": "https://www.linkedin.com/in/laura-hutchison-42817091",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Angela Lovett",
+   "title": "Youth Therapist",
+   "org": "South Community Behavioral Health",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/angela-lovett-5178a8294",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Underwood James",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Brecksville",
+   "linkedin": "https://www.linkedin.com/in/underwood-james-0470526a",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Blane Evans",
+   "title": "Resident Pediatric Physician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Ohio",
+   "linkedin": "https://www.linkedin.com/in/blane-evans-0200ba125",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Noah Sutter",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Maumee",
+   "linkedin": "https://www.linkedin.com/in/noah-sutter-8962b719",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Megan Durham",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/megan-durham-69227b169",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Christopher Miller",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/christopher-miller-00b36223b",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Bonny Tsai",
+   "title": "Pediatrician",
+   "org": "Pediatrix Medical Group",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/bonny-tsai-6a5a3a9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Joshua Sensenbaugh, Psy.D.",
+   "title": "Child Psychologist",
+   "org": "Empower Psychology + Wellness",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/joshua-sensenbaugh-psy-d-b43a6234b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@empowerdayton.com",
+   "phone": ""
+  },
+  {
+   "name": "Shellie Russell",
+   "title": "Pediatrician",
+   "org": "SAMARITAN PACIFIC COMMUNITIES HOSPITAL",
+   "city": "Wooster",
+   "linkedin": "https://www.linkedin.com/in/shellie-russell-90653413",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Bernard Metz",
+   "title": "Pediatric/Clinical Child Psychologist",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/bernard-metz-449a3315",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Susan Wiley",
+   "title": "Developmental and Behavioral Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/susan-wiley-21a5bb172",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Jarom Jardine",
+   "title": "Pediatric Resident",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/jarom-jardine-b30339158",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Phyllis Elinson",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/phyllis-elinson-19030089",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephanie Weckesser",
+   "title": "Pediatrician",
+   "org": "Wood County Hospital",
+   "city": "Bowling Green",
+   "linkedin": "https://www.linkedin.com/in/stephanie-weckesser-aa1682b0",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@woodcountyhospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Jared Wortham",
+   "title": "Pediatrician",
+   "org": "St. Luke's Health System",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/jared-wortham-0077549a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Chrissy Dugan Adams",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/chrissy-dugan-adams-9312545",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Kathryn Davis",
+   "title": "Pediatrician",
+   "org": "Monclova Road Pediatrics",
+   "city": "Maumee",
+   "linkedin": "https://www.linkedin.com/in/kathryn-davis-7764a7308",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Sarah Perrine",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/sarah-perrine-193b88178",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Matt Byers",
+   "title": "Pediatrician",
+   "org": "Ohio Pediatrics Inc",
+   "city": "Dayton Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/matt-byers-3a89abb4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Charron Johnson",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Grand River",
+   "linkedin": "https://www.linkedin.com/in/charron-johnson-8b382910b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Chris Bolling",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/chris-bolling-0a55213",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Robert Richter",
+   "title": "pediatric resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/robert-richter-65393b3a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lorraine Fay",
+   "title": "developmental pediatrician",
+   "org": "Harbor",
+   "city": "Sylvania",
+   "linkedin": "https://www.linkedin.com/in/lorraine-fay-39a59545",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Janet Orr",
+   "title": "pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/janet-orr-76190a169",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@copcp.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Priyanshi Patel, MD",
+   "title": "Urgent Care Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/priyanshi-patel-md-8604a0378",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shankar Baskar",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/shankar-baskar-1b07048b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Doc Akua",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/doc-akua-15ab3557",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Dane Warner",
+   "title": "Hospitalist Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/dane-warner-57793417",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Richard Mendieta",
+   "title": "Pediatrician",
+   "org": "Holzer Health System",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/richard-mendieta-0a30a424a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Holan Jane",
+   "title": "developmental pediatrician",
+   "org": "University Hospitals",
+   "city": "Cuyahoga Falls",
+   "linkedin": "https://www.linkedin.com/in/holan-jane-08231a45",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Joel Davidson",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Stow",
+   "linkedin": "https://www.linkedin.com/in/joel-davidson-2b827a60",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Phyllis Elinson Royce",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/phyllis-elinson-royce-2a947979",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Deanna Pennewitt",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Solon",
+   "linkedin": "https://www.linkedin.com/in/deanna-pennewitt-73a2a0285",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Radhai Prabhakaran",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Avon",
+   "linkedin": "https://www.linkedin.com/in/radhai-prabhakaran-530a12a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Naba Alibeji",
+   "title": "Outpatient Pediatrician",
+   "org": "Pediatric HealthCare",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/naba-alibeji-8016931b7",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@phckids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Lisa Gichner",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/lisa-gichner-53b05899",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Rachel Pratt",
+   "title": "Pediatrician",
+   "org": "Olentangy Pediatrics",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/rachel-pratt-875b76174",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Christian Meade",
+   "title": "Pediatrician",
+   "org": "Mercy Hospital, Inc. Miami 1950-2011",
+   "city": "Findlay",
+   "linkedin": "https://www.linkedin.com/in/christian-meade-b2a3b75a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@mercymiami.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Hannah Gordon",
+   "title": "Pediatric Resident",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/hannah-gordon-211247222",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": ""
+  },
+  {
+   "name": "Alison Biltz",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/alison-biltz-655bbb115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Kassandra Najm",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/kassandra-najm-bb85209",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Zack Rohrer",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "North Canton",
+   "linkedin": "https://www.linkedin.com/in/zack-rohrer-36173792",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Jennifer Brown",
+   "title": "Outreach Coordinator Autism Program",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/jennifer-brown-8351bbb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Margaret Polk",
+   "title": "Youth Autism Specialist",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/margaret-polk-2ab55b199",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Kathryn Abele (Fasoli), DO",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/kathryn-abele-fasoli-do-b45785284",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Zane Saalouke",
+   "title": "pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/zane-saalouke-2a886146",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Gregg Kottyan",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/gregg-kottyan-3631267a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "debra mandell",
+   "title": "Director, Monarch School for children with autism",
+   "org": "Bellefaire JCB",
+   "city": "Chagrin Falls",
+   "linkedin": "https://www.linkedin.com/in/debra-mandell-9a656813",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Matt Hardwick",
+   "title": "pediatrician",
+   "org": "PriMED Physicians",
+   "city": "Spring Valley",
+   "linkedin": "https://www.linkedin.com/in/matt-hardwick-580aa0b3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Sean Gallagher",
+   "title": "Pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Westerville",
+   "linkedin": "https://www.linkedin.com/in/sean-gallagher-250aa5318",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sylvia Parks",
+   "title": "Pediatrician",
+   "org": "South Dayton Pediatrics Inc",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/sylvia-parks-75505895",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Pattie Nash",
+   "title": "Developmental-behavioral Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/pattie-nash-a78a9984",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "TJ Stidham",
+   "title": "Pediatrician",
+   "org": "Southern Ohio Medical Center",
+   "city": "Portsmouth",
+   "linkedin": "https://www.linkedin.com/in/tj-stidham-546246141",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@somc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Clara Chlon",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/clara-chlon-3838b562",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Syeda Maqsood",
+   "title": "Pediatrician",
+   "org": "MetroHealth",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/syeda-maqsood-b53180127",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Catherine Lipman",
+   "title": "Developmental-Behavioral Pediatrician at Cleveland Clinic",
+   "org": "Cleveland Clinic",
+   "city": "Beachwood",
+   "linkedin": "https://www.linkedin.com/in/catherine-lipman-012054a4",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jonathan Mathis",
+   "title": "General Pediatrician",
+   "org": "Holzer Health System",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/jonathan-mathis-6a9030114",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@holzer.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Danielle Greco",
+   "title": "General Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/danielle-greco1213",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Akua Amponsah",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/akua-amponsah-aa9b0a211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Tracy Vanden Branden",
+   "title": "pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Avon",
+   "linkedin": "https://www.linkedin.com/in/tracy-vanden-branden-34279440",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Phil Fragassi",
+   "title": "pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/phil-fragassi-a2b61b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Evan Ingram, MD",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/drevan",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Andrea Newman",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/andrea-newman-55163b20b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Jamie Kent",
+   "title": "Pediatric Resident",
+   "org": "Rainbow Babies and Children's Hospital",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jamie-kent-60922b112",
+   "email": "J\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Carolyn Burnett (Sich)",
+   "title": "Autism Navigator",
+   "org": "Akron Children's",
+   "city": "Canfield",
+   "linkedin": "https://www.linkedin.com/in/carolyn-burnett922",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Nicole R. VanSteyn MD FAAP CLC",
+   "title": "Pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/nicole-r-vansteyn-md-faap-clc-6737046",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "M. Bonnie Pugh",
+   "title": "Pediatrician, COPC Ohio Center for Pediatrics",
+   "org": "Central Ohio Primary Care",
+   "city": "Dublin",
+   "linkedin": "https://www.linkedin.com/in/m-bonnie-pugh-88980123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Desiree Jones-Rubin",
+   "title": "Child Abuse Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/desiree-jones-rubin-67333018",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Kevin Turner, MD",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Amherst",
+   "linkedin": "https://www.linkedin.com/in/kevin-turner-md-555b611bb",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Bella O'Malley, MD",
+   "title": "Pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/bella-o-malley-md-a5561762",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Michael Perry",
+   "title": "Pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "New Albany",
+   "linkedin": "https://www.linkedin.com/in/michael-perry-3ba9048",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@copcp.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Chase Harshbarger, MA, LPCC-S",
+   "title": "LPCC-S/Autism Counselor/Transition Coordinator",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Barberton",
+   "linkedin": "https://www.linkedin.com/in/chase-harshbarger-ma-lpcc-s-7380461b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Christina Giammarco",
+   "title": "Clinical Supervisor - Center for Autism Spectrum Disorders",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/christina-giammarco-36668515",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Daniel Janisz, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Strongsville",
+   "linkedin": "https://www.linkedin.com/in/danieljanisz",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Cheryl Clay",
+   "title": "Pediatrician",
+   "org": "Avita Health System",
+   "city": "Mansfield",
+   "linkedin": "https://www.linkedin.com/in/cheryl-clay-35073a28",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "ShaDora Crockett MSW, LSW",
+   "title": "Clinical Child Therapist",
+   "org": "Genacross Lutheran Services",
+   "city": "Toledo",
+   "linkedin": "https://www.linkedin.com/in/shadora-crockett-msw-lsw-829861110",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Anya Kleinman",
+   "title": "Academic Pediatrician",
+   "org": "Akron Children's",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/anya-kleinman-307b7828",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Jefferson Chandler",
+   "title": "Pediatric Resident",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jefferson-chandler-73b73ab1",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Jennifer DePalma-Duersch MD",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Avon",
+   "linkedin": "https://www.linkedin.com/in/jennifer-depalma-duersch-md-37bab616a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Tal Marshanski",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/tal-marshanski-916ab5b0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Isabel Yeomans",
+   "title": "Autism Care Advocate",
+   "org": "Action Behavior Centers - ABA Therapy for Autism",
+   "city": "Cincinnati Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/isabel-yeomans-506460196",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@actionbehavior.com",
+   "phone": ""
+  },
+  {
+   "name": "Amelia El-Mahdy",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Strongsville",
+   "linkedin": "https://www.linkedin.com/in/ameliael-mahdy",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Kate Livesay Broering",
+   "title": "Pediatrician",
+   "org": "Group Health Associates",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/kate-livesay-broering-4b2b539",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Jacqueline Branch, MD, FAAP",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-branch-md-faap-a8b61956",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Renee Caslow, DO, MHCI",
+   "title": "Pediatrician, Regional Medical Director, Southern Region",
+   "org": "Akron Children's",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/renee-caslow-do-205857191",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melissa King",
+   "title": "General Academic Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Germantown",
+   "linkedin": "https://www.linkedin.com/in/melissa-king-712b8ba9",
+   "email": "k\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Gina Aiello, M.Ed., LPCC, NCC",
+   "title": "Licensed Autism Care Advocate",
+   "org": "Optum",
+   "city": "Youngstown",
+   "linkedin": "https://www.linkedin.com/in/gina-aiello-m-ed-lpc-ncc-733b1298",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kelsey Quinn, D.O.",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/kelsey-quinn-d-o-74187a42",
+   "email": "k\u2022\u2022\u2022@trihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Lauren Larkin",
+   "title": "Pediatric Resident",
+   "org": "CLEVELAND CLINIC CHILDREN'S HOSPITAL",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/lauren-larkin-46195833",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Shana Alexander",
+   "title": "Primary Care Pediatrician",
+   "org": "HealthSource of Ohio",
+   "city": "Batavia",
+   "linkedin": "https://www.linkedin.com/in/shana-alexander-a5a77582",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Firoza Faruqui",
+   "title": "Pediatrician",
+   "org": "Group Health Associates",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/firoza-faruqui-9a56874",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Simee Malik",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Solon",
+   "linkedin": "https://www.linkedin.com/in/simee-malik-733a2613",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Nazly Pashmini",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Solon",
+   "linkedin": "https://www.linkedin.com/in/nazly-pashmini-4660a65a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephen Kebe",
+   "title": "Pediatrician",
+   "org": "American Health Network",
+   "city": "Grove City",
+   "linkedin": "https://www.linkedin.com/in/stephen-kebe-351a6912",
+   "email": "s\u2022\u2022\u2022@Jobs.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Kristen Shepard, DO",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/kristenshepard",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Carrie Bohenick",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Broadview Heights",
+   "linkedin": "https://www.linkedin.com/in/carrie-bohenick-8522ab127",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Dr Janice Roeder",
+   "title": "Telemedicine Pediatrician",
+   "org": "Teladoc Health",
+   "city": "Mason",
+   "linkedin": "https://www.linkedin.com/in/dr-janice-roeder-061b3054",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nafeh Fananapazir",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/nafeh-fananapazir-92280b137",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@trihealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Jennifer D. Bellegarde, DO",
+   "title": "Psychiatrist - Adult IDD/Autism | Medical Education (MedEd) | Core Faculty -  Residency Training",
+   "org": "University Hospitals",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jennifer-bellegarde-434205121",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Adriane Lioudis",
+   "title": "pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Chagrin Falls",
+   "linkedin": "https://www.linkedin.com/in/adriane-lioudis-96888390",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Theresa Yost",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/theresa-yost-86b44599",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Jen Klemenc",
+   "title": "Pediatric Resident",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Willoughby",
+   "linkedin": "https://www.linkedin.com/in/jen-klemenc-04814097",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@metrohealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Caitlin Castillo, MD",
+   "title": "Pediatric Resident",
+   "org": "Seattle Children's",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/caitlin-castillo-md-56345a176",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Alice McIntyre MD",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/alice-mcintyre-94557573",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stanley DeVore, MD, PhD",
+   "title": "Pediatric Resident",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/stanley-devore-md-phd-bb6b10a1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephanie Bland",
+   "title": "Primary Care Pediatrician",
+   "org": "OhioHealth",
+   "city": "Delaware",
+   "linkedin": "https://www.linkedin.com/in/stephanie-farber-0229b3a3",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laura Shefner",
+   "title": "Pediatrician",
+   "org": "The MetroHealth System (Cleveland, OH)",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/laura-shefner-318ab5bb",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@metrohealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Alexa Rohrbach",
+   "title": "Autism Youth Counselor",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/alexa-rohrbach-b51b945a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Rebecca Baum",
+   "title": "developmental behavioral pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/rebecca-baum-a2847931",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Eliana Diaz, M.D., FAAP",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Rocky River",
+   "linkedin": "https://www.linkedin.com/in/eliana-diaz-m-d-faap-8aa146124",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Emily Kain",
+   "title": "Pediatric Resident",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/emily-kain-246b5ab5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272"
+  },
+  {
+   "name": "Robin Benis",
+   "title": "Pediatrician",
+   "org": "NORTHEAST OHIO NEIGHBORHOOD HEALTH SERVICES, INC.",
+   "city": "Beachwood",
+   "linkedin": "https://www.linkedin.com/in/robin-benis-8003542b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@neonhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Sumedha Medicherla, D.O.",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Dublin",
+   "linkedin": "https://www.linkedin.com/in/sumedha-medicherla-d-o-bb221bb8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Jessica Bockenstedt",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/jessica-bockenstedt-8a43138a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Kristen Schneider, DO",
+   "title": "Pediatrician",
+   "org": "Ohio Pediatrics Inc",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/kristenschneiderdo",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Susan Shah",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Hudson",
+   "linkedin": "https://www.linkedin.com/in/susan-shah-3a70b5b1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Odenigbo Linda",
+   "title": "Pediatrician",
+   "org": "PriMED Physicians",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/odenigbo-linda-93b465bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Patty Courtney",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/patty-courtney-06522b22",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Richard Mendieta",
+   "title": "Pediatrician",
+   "org": "Holzer Health System",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/richard-mendieta-09a8a059",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Danielle Macabobby",
+   "title": "Pediatrician",
+   "org": "SALEM REGIONAL MEDICAL CENTER",
+   "city": "Canfield",
+   "linkedin": "https://www.linkedin.com/in/danielle-macabobby-251370285",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@salemregional.com",
+   "phone": ""
+  },
+  {
+   "name": "Elizabeth Hilow",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Lakewood",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-hilow-33aa84158",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Danielle Reed",
+   "title": "Pediatric Resident",
+   "org": "Columbus Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/danielle-reed-5a6ba71",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Reham Elgammal",
+   "title": "Pediatrician",
+   "org": "Ashtabula Regional Medical Center",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/reham-elgammal-366a4517a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Andrea Rinderknecht",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/andrea-rinderknecht-6b0b781b3",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@trihealth.com",
+   "phone": ""
+  },
+  {
+   "name": "CARLO DI LORENZO",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Westerville",
+   "linkedin": "https://www.linkedin.com/in/carlo-di-lorenzo-578ba9287",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nancy Van Keuls",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/nancy-van-keuls-45a16711a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jessica James",
+   "title": "BC Pediatrician",
+   "org": "Holzer Health System",
+   "city": "Athens",
+   "linkedin": "https://www.linkedin.com/in/jessica-james-632677172",
+   "email": "J\u2022\u2022\u2022\u2022\u2022@holzer.org",
+   "phone": ""
+  },
+  {
+   "name": "Hiba Salhah",
+   "title": "Pediatric Resident",
+   "org": "St. Joseph Regional Medical Center, Inc.",
+   "city": "Dayton Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/hiba-salhah-3145b7174",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sarah Feran Ayers",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Streetsboro",
+   "linkedin": "https://www.linkedin.com/in/sarah-feran-ayers-6b00917",
+   "email": "S\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Suneeli Tandra",
+   "title": "Pediatric Resident",
+   "org": "Akron Children's",
+   "city": "Solon",
+   "linkedin": "https://www.linkedin.com/in/suneeli-tandra-5784a97",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Laura Konczal",
+   "title": "Physician- Geneticist/ Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/laura-konczal-008b917",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Anderson Wendy",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/anderson-wendy-6b7953a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Angela Jones",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Pickerington",
+   "linkedin": "https://www.linkedin.com/in/angela-jones-934ba126",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Pam Williams",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/pam-williams-6565471b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Stacey Scudder",
+   "title": "pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Pickerington",
+   "linkedin": "https://www.linkedin.com/in/stacey-scudder-28b8b945",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@copcp.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Bobbi Bauer",
+   "title": "Neurodevelopmental Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Hudson",
+   "linkedin": "https://www.linkedin.com/in/bobbi-bauer-179a7415",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Diana Brinker",
+   "title": "Pediatrician",
+   "org": "Group Health Associates",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/diana-brinker-404a35b4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Jamell Stephens",
+   "title": "Autism Treatment Specialist",
+   "org": "Bellefaire JCB",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/jamell-stephens-594611371",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bellefairejcb.org",
+   "phone": ""
+  },
+  {
+   "name": "Erin Ricciardi",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Hilliard",
+   "linkedin": "https://www.linkedin.com/in/erin-ricciardi-4419a051",
+   "email": "e\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Maya Eddie",
+   "title": "Autism-Youth counselor",
+   "org": "Bellefaire JCB",
+   "city": "Beachwood",
+   "linkedin": "https://www.linkedin.com/in/maya-eddie-b68168a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anne Kalata",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/anne-marie-kalata-285a6256",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Erin Hoehn",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/erin-hoehn-5b9169b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ces Amisola",
+   "title": "Developmental Pediatrician",
+   "org": "Dayton Children's Hospital",
+   "city": "Dayton",
+   "linkedin": "https://www.linkedin.com/in/ces-amisola-2411755b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrensdayton.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Bowman Eric",
+   "title": "Pediatric resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Grove City",
+   "linkedin": "https://www.linkedin.com/in/bowman-eric-57676219",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Syed Azim Bukhari",
+   "title": "Associate Pediatrician / Pediatric Cardiology",
+   "org": "OhioHealth",
+   "city": "Marion",
+   "linkedin": "https://www.linkedin.com/in/syed-azim-bukhari-74834464",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lena Bando",
+   "title": "Classroom Behavioral Therapist - Lerner School for Autism",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/lena-bando-b88864211",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kim Rothermel",
+   "title": "pediatrician",
+   "org": "Central Ohio Primary Care",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/kim-rothermel-96bab145",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@copcp.com",
+   "phone": ""
+  },
+  {
+   "name": "Kathy Helmuth",
+   "title": "pediatrician",
+   "org": "Akron Children's",
+   "city": "Wooster",
+   "linkedin": "https://www.linkedin.com/in/kathy-helmuth-b3587b16",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tommy Winborne",
+   "title": "Autism Therapist",
+   "org": "Private Practice",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/tommy-winborne-83b585155",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stephen Bird",
+   "title": "Pediatrician",
+   "org": "TriHealth",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/stephen-bird-3a038452",
+   "email": "s\u2022\u2022\u2022@trihealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Trevor Maurer",
+   "title": "Pediatrician",
+   "org": "Mary Rutan Health",
+   "city": "Bellefontaine",
+   "linkedin": "https://www.linkedin.com/in/trevor-maurer-a6561b84",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@maryrutan.org",
+   "phone": ""
+  },
+  {
+   "name": "Sarah Uguccini, DO",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/sarah-uguccini-690b84b1",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Angelique Redus-McCoy",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Macedonia",
+   "linkedin": "https://www.linkedin.com/in/angelique-redus-mccoy-a606206",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Debbie Toder",
+   "title": "Pediatric Pulmonolgist",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/debbie-toder-b69a571b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Danielle Cappelletti",
+   "title": "MD-pediatrician",
+   "org": "Holzer Health System",
+   "city": "Gallipolis",
+   "linkedin": "https://www.linkedin.com/in/danielle-cappelletti-95b1a014",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Micheline Silva",
+   "title": "Child Psychologist",
+   "org": "Nationwide Children's Hospital",
+   "city": "Westerville",
+   "linkedin": "https://www.linkedin.com/in/micheline-silva-8b4956129",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Carrie Lehman",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/carrie-lehman-28b3461b5",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Scott Francy",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/scott-francy-1bb4701a2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marilee Gallagher",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Mentor",
+   "linkedin": "https://www.linkedin.com/in/marilee-gallagher-b3127220",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": ""
+  },
+  {
+   "name": "Terry Aragon",
+   "title": "Pediatric Resident",
+   "org": "St. Vincent Mercy Hospital",
+   "city": "Perrysburg",
+   "linkedin": "https://www.linkedin.com/in/terry-aragon-b59003230",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Inga Muser",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Greater Cleveland",
+   "linkedin": "https://www.linkedin.com/in/inga-muser-833b83196",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Deborah Brindza",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Twinsburg",
+   "linkedin": "https://www.linkedin.com/in/deborah-brindza-b9727b45",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": ""
+  },
+  {
+   "name": "Fouts-Fowler Valerie",
+   "title": "Pediatrician",
+   "org": "Comprehensive Pediatrics",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/fouts-fowler-valerie-a260a3b2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "James Taddeo",
+   "title": "ED Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/james-taddeo-609634a9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jacqueline Kaari",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Hudson",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-kaari-7824a6235",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ball Richard",
+   "title": "pediatrician",
+   "org": "Akron Children's",
+   "city": "Uniontown",
+   "linkedin": "https://www.linkedin.com/in/ball-richard-36aa3192",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Mullaney",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/melissa-mullaney-01b382a2",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Stone Robert",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/stone-robert-6aab774a",
+   "email": "s\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Shelley Gittens",
+   "title": "PEDIATRICIAN",
+   "org": "Licking Memorial Health Systems",
+   "city": "New Albany",
+   "linkedin": "https://www.linkedin.com/in/shelley-gittens-8432245b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Emily Hargrave",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/emily-hargrave-14a8571b3",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Joann Brewer",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Westlake",
+   "linkedin": "https://www.linkedin.com/in/joann-brewer-b83b011b9",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kathy Bain",
+   "title": "Staff Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/kathy-bain-735b571a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alana Painter",
+   "title": "Pediatrician",
+   "org": "Nationwide Children's Hospital",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/alana-painter-636667350",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dania Safi",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/dania-safi-a4a55120a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jacqueline Lickliter",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Columbiana",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-lickliter-371bb3215",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tara Davis",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Uniontown",
+   "linkedin": "https://www.linkedin.com/in/tara-davis-b460b0157",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": ""
+  },
+  {
+   "name": "Ashley Endres",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Mason",
+   "linkedin": "https://www.linkedin.com/in/ashley-endres-241224268",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nick DeBlasio",
+   "title": "Pediatrician",
+   "org": "Cincinnati Children's",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/nick-deblasio-a3a715136",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Travis Thompson",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Kent",
+   "linkedin": "https://www.linkedin.com/in/travis-thompson-83a9b7223",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ene Fairchild",
+   "title": "Pediatric Resident",
+   "org": "Nationwide Children's Hospital",
+   "city": "Dublin",
+   "linkedin": "https://www.linkedin.com/in/ene-fairchild-791b7b96",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Chelsi Rose",
+   "title": "Pediatrician",
+   "org": "University Hospitals",
+   "city": "Parma Heights",
+   "linkedin": "https://www.linkedin.com/in/chelsi-rose-b5789a212",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Thomas Blondis",
+   "title": "Neurodevelopmental Disabilities Pediatrician",
+   "org": "Akron Children's",
+   "city": "Akron",
+   "linkedin": "https://www.linkedin.com/in/thomas-blondis-782a7b54",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Todd McMillen",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Wadsworth",
+   "linkedin": "https://www.linkedin.com/in/todd-mcmillen-b23b532b0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alissa Gilbert",
+   "title": "Pediatrician",
+   "org": "MVHC",
+   "city": "Cincinnati",
+   "linkedin": "https://www.linkedin.com/in/alissa-gilbert-3b4606162",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lisa Freed",
+   "title": "Autism Youth Counselor",
+   "org": "Bellefaire JCB",
+   "city": "Painesville",
+   "linkedin": "https://www.linkedin.com/in/lisa-freed-a3828074",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ruchi Babriwala",
+   "title": "Pediatrician - Virtualist",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/ruchi-babriwala-341a55202",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mark Thoma",
+   "title": "Pediatrician",
+   "org": "OhioHealth",
+   "city": "Columbus",
+   "linkedin": "https://www.linkedin.com/in/mark-thoma-61bb87324",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Sara Lappe",
+   "title": "Pediatrician",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/sara-lappe-2283a5142",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mohamed Elshazzly",
+   "title": "Pediatric Resident",
+   "org": "Cleveland Clinic",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/mohamed-elshazzly-329a54229",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lydia Roberts",
+   "title": "Pediatrician",
+   "org": "Akron Children's",
+   "city": "Marietta",
+   "linkedin": "https://www.linkedin.com/in/lydia-roberts-89521b321",
+   "email": "",
+   "phone": ""
+  }
+ ]
+}

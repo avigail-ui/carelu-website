@@ -1,0 +1,840 @@
+{
+ "name": "Tennessee",
+ "slug": "tennessee",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-tennessee.csv",
+ "count": 84,
+ "emails": 25,
+ "phones": 62,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 60
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 9
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 8
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 6
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Nashville",
+   "count": 16
+  },
+  {
+   "name": "Nashville Metropolitan Area",
+   "count": 8
+  },
+  {
+   "name": "Memphis",
+   "count": 7
+  },
+  {
+   "name": "Chattanooga",
+   "count": 5
+  },
+  {
+   "name": "Memphis Metropolitan Area",
+   "count": 5
+  },
+  {
+   "name": "Clarksville",
+   "count": 4
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Vanderbilt University Medical Center",
+   "count": 10
+  },
+  {
+   "name": "Frontier Health",
+   "count": 5
+  },
+  {
+   "name": "Erlanger",
+   "count": 4
+  },
+  {
+   "name": "Dickson Medical Associates",
+   "count": 3
+  },
+  {
+   "name": "East Tennessee Children's Hospital",
+   "count": 3
+  },
+  {
+   "name": "BLANCHFIELD ARMY COMMUNITY HOSPITAL",
+   "count": 2
+  }
+ ],
+ "rows": [
+  {
+   "name": "William See, III, D.O., MBA",
+   "title": "Pediatrician",
+   "org": "Lifepoint Health",
+   "city": "Frankewing",
+   "linkedin": "https://www.linkedin.com/in/tennesseebillsee",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Brialisse Sayre",
+   "title": "Pediatric Resident",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/brialisse-sayre",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Christian Nunez",
+   "title": "General Pediatrician",
+   "org": "BLANCHFIELD ARMY COMMUNITY HOSPITAL",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/christian-nunez-765980107",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Britney Hazlett",
+   "title": "Family and Child Therapist",
+   "org": "Centerstone",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/britney-hazlett-89a185aa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Jill Steigelfest",
+   "title": "Pediatrician, Assistant Professor of Pediatrics",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jill-steigelfest-60ba3993",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Heather Gilliam",
+   "title": "Pediatrician",
+   "org": "Erlanger",
+   "city": "Greater Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/heather-gilliam-656594183",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Claudine Habib",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital at Erlanger",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/claudine-habib-aa1498238",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Robert Washington, Ph.D.",
+   "title": "Child Psychologist",
+   "org": "Nemours Children's Health",
+   "city": "Memphis Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/robert-washington-ph-d-69b964b7",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Elizabeth Stewart",
+   "title": "Director of ADHD Program & Child Therapist",
+   "org": "NASHVILLE CHILD & FAMILY WELLNESS CENTER, LLC",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-stewart-2a307873",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Aleshia Lunsford, MD",
+   "title": "Pediatrician",
+   "org": "Dayspring Health, Inc.",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/aleshia-lunsford-md-76223991",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Juliet Soscia Collins",
+   "title": "Pediatrician",
+   "org": "Dr. Lori McAuliffe M.D. Pediatrics",
+   "city": "Franklin",
+   "linkedin": "https://www.linkedin.com/in/juliet-soscia-collins-b2113339",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@4moms4kids.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Jeffery Gordon",
+   "title": "Pediatrician",
+   "org": "Dickson Medical Associates",
+   "city": "Dickson",
+   "linkedin": "https://www.linkedin.com/in/jeffery-gordon-a9038298",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@dicksonmd.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Sarah Wyatt",
+   "title": "Children and Youth Therapist",
+   "org": "Frontier Health",
+   "city": "Johnson City",
+   "linkedin": "https://www.linkedin.com/in/sarah-wyatt-543a551a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "John Purvis",
+   "title": "Pediatrician",
+   "org": "UT Medical Group, Inc.",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/john-purvis-8669609",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Luke Maschmeyer",
+   "title": "Pediatrician",
+   "org": "LEBONHEUR PEDIATRICS LLC",
+   "city": "Memphis Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/luke-maschmeyer-b0809723",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Dena Mainord",
+   "title": "Manager, Behavioral Health, Autism Case Management",
+   "org": "Elevance Health",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/dena-mainord-19430274",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@elevancehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Cindy Harris",
+   "title": "Pediatrician",
+   "org": "Galen Medical Group",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/cindy-harris-4a343870",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Diane Benitez",
+   "title": "Autism Care Demonstration Specialist",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Murfreesboro",
+   "linkedin": "https://www.linkedin.com/in/diane-benitez-09388979",
+   "email": "d\u2022\u2022\u2022@triwest.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Alicia Adair",
+   "title": "Owner of Autism Centers of Tennessee, PLLC",
+   "org": "Autism Centers of Tennessee, PLLC",
+   "city": "Shelby County",
+   "linkedin": "https://www.linkedin.com/in/alicia-adair-b5862349",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@autismcenterstn.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Wendy Bourland",
+   "title": "General Pediatrician",
+   "org": "Urgent Care for Children",
+   "city": "Memphis Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/wendy-bourland-84824b112",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Andy Jordan",
+   "title": "Pediatrician",
+   "org": "CUMBERLAND PEDIATRIC ASSOCIATES",
+   "city": "Lebanon",
+   "linkedin": "https://www.linkedin.com/in/andy-jordan-007977257",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Elizabeth Edwards LCSW",
+   "title": "Autism Care Advocate",
+   "org": "Optum",
+   "city": "Murfreesboro",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-edwards-lcsw-bb1914162",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
+   "phone": ""
+  },
+  {
+   "name": "Morgan Morgan",
+   "title": "Pediatric Physician Assistant",
+   "org": "East Tennessee Children's Hospital",
+   "city": "Knoxville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/morgan-fillyaw-a83b78ab",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Victoria Magloire",
+   "title": "Pediatric Resident",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/victoria-magloire-1a3a9573",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Lana Yanishevski",
+   "title": "Pediatrician",
+   "org": "Laurelwood Pediatrics Llc",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/lana-yanishevski-570011103",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Johnathon Bishop, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Southern Pediatrics",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/johnathon-bishop-md-5083095a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Pamela Harrison",
+   "title": "Autism Program Technician",
+   "org": "Odyssey Behavioral Healthcare",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/pamela-harrison-b40153198",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Ashley Woods",
+   "title": "Pediatrician",
+   "org": "Matthew Walker Comprehensive Health Center",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/ashley-woods-973477bb",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@mwchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Natasha Khan",
+   "title": "Pediatrician",
+   "org": "Golden Valley Health Centers",
+   "city": "Johnson City",
+   "linkedin": "https://www.linkedin.com/in/natasha-khan-852b121b8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Swetha Natarajan",
+   "title": "Pediatrician",
+   "org": "Memphis Health Center, Inc.",
+   "city": "Rossville",
+   "linkedin": "https://www.linkedin.com/in/swetha-natarajan-0589864b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  },
+  {
+   "name": "Stephanie Saldarriaga",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/stephanie-saldarriaga-3b2a1b20",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Hannah Whitten-Vile",
+   "title": "Pediatrician",
+   "org": "Rainbow Kids Clinic",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/hannah-whitten-vile-168a26a4",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@rainbowkidsclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Rachel Nelson",
+   "title": "Pediatrician",
+   "org": "Erlanger",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/rachel-nelson-047b11144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Anjeli Wilson",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "White House",
+   "linkedin": "https://www.linkedin.com/in/anjeli-wilson-b43675103",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Stephen Bauch",
+   "title": "Primary Care Pediatrician",
+   "org": "LEBONHEUR PEDIATRICS LLC",
+   "city": "Memphis Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/stephen-bauch-b839b3187",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Jennifer Mink",
+   "title": "Lead Pediatrician",
+   "org": "Lifedoc Health",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/jennifer-mink-51063b1b3",
+   "email": "j\u2022\u2022\u2022\u2022@lifedochealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Apryl Hall",
+   "title": "Pediatrician",
+   "org": "Cookeville Regional Medical Center",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/apryl-hall-391020126",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Jasmine Jacquez",
+   "title": "Child and Youth Therapist",
+   "org": "Frontier Health",
+   "city": "Bristol",
+   "linkedin": "https://www.linkedin.com/in/jasminejacquez",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Danielle Lee",
+   "title": "Primary Care Pediatrician",
+   "org": "Meharry Health Network",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/danielle-lee-87497923b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Beverly Frank",
+   "title": "Pediatrician",
+   "org": "Tennessee Pediatrics",
+   "city": "Franklin",
+   "linkedin": "https://www.linkedin.com/in/beverly-frank-b88070139",
+   "email": "B\u2022\u2022\u2022\u2022\u2022\u2022@tnpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Michelle Estes",
+   "title": "Pediatrician",
+   "org": "Ballad Health",
+   "city": "Johnson City",
+   "linkedin": "https://www.linkedin.com/in/michelle-estes-a85224174",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Adam Wynn",
+   "title": "Pediatric Resident",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/adam-wynn-45008a378",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Richard Bennett",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/richard-bennett-a57b81255",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Carolyn Brannon",
+   "title": "Pediatrician",
+   "org": "Galen Medical Group",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/carolyn-brannon-6411591ab",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Meagan Aiken Vaphiadis",
+   "title": "Pediatrician",
+   "org": "Amwell",
+   "city": "Harrogate",
+   "linkedin": "https://www.linkedin.com/in/meagan-aiken-vaphiadis-ab262651",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Kristen Ton",
+   "title": "Autism Support Professional | Registered Behavior Technician (RBT)",
+   "org": "Global Behavior Education Alliance, LLC",
+   "city": "Altamont",
+   "linkedin": "https://www.linkedin.com/in/kristenton",
+   "email": "k\u2022\u2022\u2022@gbealliance.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Jessica McCall",
+   "title": "General Pediatrician",
+   "org": "Christ Community Health Services West Tennessee",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/jessica-mccall-02322b221",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Jennifer Jaynes",
+   "title": "Pediatrician",
+   "org": "East Tennessee Children's Hospital",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/jennifer-jaynes-mph-89799a171",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Alan Roach",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/alan-roach-6a0696235",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Landon Combs",
+   "title": "pediatrician, epic physician builder",
+   "org": "Wellmont Health System",
+   "city": "Kingsport",
+   "linkedin": "https://www.linkedin.com/in/landon-combs-a33482126",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Katie DeMars",
+   "title": "Pediatrician",
+   "org": "GALEN NORTH PEDIATRICS",
+   "city": "Johnson City",
+   "linkedin": "https://www.linkedin.com/in/katie-demars-94973716a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Steve Pishko",
+   "title": "Pediatrician",
+   "org": "Methodist Le Bonheur Healthcare",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/steve-pishko-2b6237b4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Paige Dudley",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/paige-dudley-1483851ab",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "George Tvardy",
+   "title": "Children and Youth Therapist",
+   "org": "Frontier Health",
+   "city": "Greeneville",
+   "linkedin": "https://www.linkedin.com/in/george-tvardy-0a016a153",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@frontierhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Jennifer Osborne, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "TriStar Centennial Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jennifer-osborne-md-faap-21b23132",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tristarhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Chandler Ramsey",
+   "title": "Child and Youth Therapist",
+   "org": "Frontier Health",
+   "city": "Elizabethton",
+   "linkedin": "https://www.linkedin.com/in/chandler-ramsey-585b4b215",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Marie Noah",
+   "title": "General Pediatrician",
+   "org": "BLANCHFIELD ARMY COMMUNITY HOSPITAL",
+   "city": "Fort Campbell",
+   "linkedin": "https://www.linkedin.com/in/marie-noah-09436463",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Nancy Gomez",
+   "title": "Autism Care Advocate",
+   "org": "Optum",
+   "city": "Lebanon",
+   "linkedin": "https://www.linkedin.com/in/nancy-gomez-34035865",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Amit Jain",
+   "title": "Board Certified General Pediatrician",
+   "org": "Neighborhood Health",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/amit-jain-77279a9",
+   "email": "a\u2022\u2022\u2022\u2022@neighborhoodhealthtn.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Scott Huitink MD, MBA",
+   "title": "Pediatrician, Owner",
+   "org": "Compass Pediatrics",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/scott-huitink-md-mba-b5057383",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@compasspeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Lillian Lynch",
+   "title": "Autism Therapist",
+   "org": "Hopebridge",
+   "city": "Gallatin",
+   "linkedin": "https://www.linkedin.com/in/lillian-lynch-b2658b66",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@hopebridge.com",
+   "phone": ""
+  },
+  {
+   "name": "Brian Gavan, M.D., DABOM",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/brian-gavan-m-d-dabom-770847216",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Jeff Baumgartner, CPA",
+   "title": "Partner & CFO at Lighthouse Kids Centers for Autism",
+   "org": "Lighthouse Kids Centers for Autism-TN",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jeff-baumgartner-cpa-133b7446",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@lighthousekids.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Genetta Gross",
+   "title": "PROJECT BASIC REGIONAL COORDIANTOR/CHILD THERAPIST",
+   "org": "Frontier Health",
+   "city": "Greeneville",
+   "linkedin": "https://www.linkedin.com/in/genetta-gross-122a0468",
+   "email": "g\u2022\u2022\u2022\u2022\u2022@frontierhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Lauren Chipman",
+   "title": "Pediatrician",
+   "org": "Resurrection Health (REZHEALTH)",
+   "city": "Memphis Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/lauren-chipman-a5891475",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Brenda Medina, MD, MSc",
+   "title": "Pediatrician",
+   "org": "Kaiser Permanente",
+   "city": "Germantown",
+   "linkedin": "https://www.linkedin.com/in/brenda-medina-6a4005b7",
+   "email": "m\u2022\u2022\u2022@kaiserpermanente.org",
+   "phone": ""
+  },
+  {
+   "name": "Eliza Whitten-Hoskins",
+   "title": "General Pediatrician",
+   "org": "Jennie Stuart Health",
+   "city": "Clarksville",
+   "linkedin": "https://www.linkedin.com/in/eliza-whitten-hoskins-8b430240",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jenniestuarthealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Rebecca Dixon",
+   "title": "General Pediatrician",
+   "org": "Nova Scotia Health Authority",
+   "city": "Kingsport",
+   "linkedin": "https://www.linkedin.com/in/rebecca-dixon-4466a739",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Dr Karla Garcia",
+   "title": "Ambulatory Care Pediatrician",
+   "org": "Erlanger",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/dr-karla-garcia-5b2bb710",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Kristen Powell",
+   "title": "Pediatrician",
+   "org": "Old Harding Pediatric Assoc",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kristen-powell-4168ba63",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Paul Darke",
+   "title": "Medical Doctor-Pediatrician",
+   "org": "Beacon Health",
+   "city": "Signal Mountain",
+   "linkedin": "https://www.linkedin.com/in/paul-darke-30271b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Barros Thomas",
+   "title": "Pediatric Resident",
+   "org": "Erlanger",
+   "city": "Hixson",
+   "linkedin": "https://www.linkedin.com/in/barros-thomas-3994b591",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Angela Smithey",
+   "title": "Pediatrician",
+   "org": "East Tennessee Children's Hospital",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/angela-smithey-a125a7143",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Mary McNeal",
+   "title": "Pediatrician",
+   "org": "Dickson Medical Associates",
+   "city": "Dickson",
+   "linkedin": "https://www.linkedin.com/in/mary-mcneal-23443ba8",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@dicksonmd.com",
+   "phone": ""
+  },
+  {
+   "name": "Paige Smith",
+   "title": "Pediatrician",
+   "org": "Heritage Medical Associates",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/paige-j-smith-md",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lauren Cole",
+   "title": "Pediatrician",
+   "org": "Heritage Medical Associates",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/lauren-cole-7b71271b5",
+   "email": "l\u2022\u2022\u2022\u2022@heritagemedical.com",
+   "phone": ""
+  },
+  {
+   "name": "Peter Woolman",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/peter-woolman-a65695159",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nina LeCompte",
+   "title": "Pediatrician",
+   "org": "Dickson Medical Associates",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/nina-lecompte-3aa00614a",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@dicksonmd.com",
+   "phone": ""
+  },
+  {
+   "name": "Heather De Luca",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Arrington",
+   "linkedin": "https://www.linkedin.com/in/heather-de-luca-a895981b6",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Luis Anderson",
+   "title": "Primary Care Pediatrician",
+   "org": "REELFOOT FAMILY WALK IN CLINIC",
+   "city": "Paris",
+   "linkedin": "https://www.linkedin.com/in/luis-anderson-0ab51b292",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Bart Starr",
+   "title": "Pediatrician",
+   "org": "Tennova Healthcare",
+   "city": "Cleveland",
+   "linkedin": "https://www.linkedin.com/in/bart-starr-a44419154",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@tennova.com",
+   "phone": ""
+  },
+  {
+   "name": "Kirk kerensky",
+   "title": "Primary Care Pediatrician",
+   "org": "VANDERBILT CHILDREN'S CLINIC",
+   "city": "Nashville Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/kirk-kerensky-674448365",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Anna Morad",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/anna-morad-87a80a2b3",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Melissa Thompson",
+   "title": "Autism Clinical Health Navigator",
+   "org": "Accolade, Inc.",
+   "city": "Rogersville",
+   "linkedin": "https://www.linkedin.com/in/melissa-thompson-rn-ccm-520a5ab1",
+   "email": "",
+   "phone": ""
+  }
+ ]
+}

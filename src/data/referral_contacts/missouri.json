@@ -1,0 +1,1335 @@
+{
+ "name": "Missouri",
+ "slug": "missouri",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-missouri.csv",
+ "count": 139,
+ "emails": 59,
+ "phones": 110,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 76
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 29
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 20
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 13
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 1
+  }
+ ],
+ "topCities": [
+  {
+   "name": "St Louis",
+   "count": 39
+  },
+  {
+   "name": "Kansas City",
+   "count": 26
+  },
+  {
+   "name": "Greater St. Louis",
+   "count": 9
+  },
+  {
+   "name": "Springfield",
+   "count": 9
+  },
+  {
+   "name": "Kansas City Metropolitan Area",
+   "count": 7
+  },
+  {
+   "name": "Columbia",
+   "count": 6
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Mercy",
+   "count": 26
+  },
+  {
+   "name": "Children's Mercy",
+   "count": 22
+  },
+  {
+   "name": "St. Louis Children's Hospital",
+   "count": 13
+  },
+  {
+   "name": "SSM Health",
+   "count": 10
+  },
+  {
+   "name": "SSM Health Cardinal Glennon Children's Hospital",
+   "count": 8
+  },
+  {
+   "name": "Children's Mercy Kansas City",
+   "count": 5
+  }
+ ],
+ "rows": [
+  {
+   "name": "Anu French MD FAAP ABoIM",
+   "title": "Integrative Pediatrician",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "Bridgeton",
+   "linkedin": "https://www.linkedin.com/in/anu-french-md-faap-aboim-35041489",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223"
+  },
+  {
+   "name": "Seyedeh Zahra Tara",
+   "title": "Pediatric Resident",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/sztara",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Osama Sami Al Oudat",
+   "title": "Pediatric Resident",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/osama-sami-al-oudat-144093156",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Carolyn Ream",
+   "title": "Pediatric Resident",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/carolyn-ream-5793a3141",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Fatima Omer",
+   "title": "Pediatric Resident",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "Ballwin",
+   "linkedin": "https://www.linkedin.com/in/fatima-omer-203590218",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cy Nadler",
+   "title": "Section Chief, Autism Psychology",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/cy-nadler",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": ""
+  },
+  {
+   "name": "Christy Horton, MSW, LCSW",
+   "title": "Autism Navigator",
+   "org": "Mercy",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/christy-horton-msw-lcsw-85676298",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Leslee Belzer, PhD",
+   "title": "Pediatric Psychologist, Associate Professor, Pediatrics, UMKC School of Medicine",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/lesleebelzerphd",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Keerti Vajrala, DO",
+   "title": "Pediatric Resident",
+   "org": "Prisma Health",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/keerti-vajrala-do-a40249ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Sarah Girresch-Ward, Ph.D.",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/sarah-girresch-ward-a2228b12",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rawan Hammoud",
+   "title": "Pediatric Resident",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/rawan-hammoud",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Chauncey Tarrant, M.D. , FAAP",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/chauncey-tarrant-m-d-faap-943777b7",
+   "email": "c\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Dazialee Goodwin, Ph.D.",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/dazialee-goodwin-ph-d-4a673374",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Michelle Dampf",
+   "title": "Speech Language Pathologist and Clinical Supervisor at the Thompson Center for Autism",
+   "org": "Thompson Center for Autism & Neurodevelopment",
+   "city": "Jefferson City",
+   "linkedin": "https://www.linkedin.com/in/michelle-dampf-78b36845",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@missouri.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Sean Simons",
+   "title": "Child Psychologist",
+   "org": "Thompson Center for Autism & Neurodevelopment",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/drseansimons",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Erik Wehrens",
+   "title": "Pediatrician in training",
+   "org": "Wilhelmina Kinderziekenhuis (WKZ)",
+   "city": "Netherlands",
+   "linkedin": "https://www.linkedin.com/in/erik-wehrens-a1194572",
+   "email": "",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202285"
+  },
+  {
+   "name": "Gregory J. Weissler, M.D.",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "Fenton",
+   "linkedin": "https://www.linkedin.com/in/gregory-j-weissler-m-d-835a2572",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Gillian Mayersohn, Psy.D., ABPP",
+   "title": "Child Psychologist",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/gillian-mayersohn-psy-d-abpp-6a662066",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Hunter Berry",
+   "title": "Autism Program Facilitator",
+   "org": "KidsTLC",
+   "city": "Oak Grove",
+   "linkedin": "https://www.linkedin.com/in/hunter-berry-291156153",
+   "email": "h\u2022\u2022\u2022\u2022\u2022@kidstlc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Seth Allen",
+   "title": "Director, Autism Center",
+   "org": "Burrell Behavioral Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/seth-allen-49a88211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Christopher Wangard",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/christopher-wangard-30a46030",
+   "email": "c\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Anna Huger",
+   "title": "Pediatrician",
+   "org": "Purely Pediatrics",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/annahugermd",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "John Burson",
+   "title": "General Pediatrician",
+   "org": "Mercy",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/john-burson-83548576",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Alex Maixner, Ph.D.",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/alex-maixner-7796203b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Candace Fleming",
+   "title": "Pediatric Physician Assistant",
+   "org": "Mercy",
+   "city": "Ballwin",
+   "linkedin": "https://www.linkedin.com/in/candace-fleming-b0a85414a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Megan Shelton",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "Ballwin",
+   "linkedin": "https://www.linkedin.com/in/megan-shelton-49a5276a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Dr. Megan Pinnamaneni",
+   "title": "Pediatrician",
+   "org": "St. Luke's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/dr-megan-pinnamaneni-a22439a6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Mary Jane Harmless, Ph.D.",
+   "title": "Mary Jane Harmless, Ph.D.; Certified Autism Clinical Specialist; Collaborative Neutral Coach",
+   "org": "Private Practice",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/mary-jane-harmless-ph-d-12343615",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216"
+  },
+  {
+   "name": "Thomas McKinney",
+   "title": "Pediatrician",
+   "org": "Affinia Healthcare",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/thomas-mckinney-b908279",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@affiniahealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Ralph Groom",
+   "title": "Behavioral Health Care Manager for Autism Spectrum Disorders",
+   "org": "Elevance Health",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/ralph-groom-a316b04",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@elevancehealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Kate Benton",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/kate-benton-97ab2181",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Fiona Whitaker",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/fiona-whitaker-a8a447184",
+   "email": "f\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Meleah Morales",
+   "title": "Pediatrician",
+   "org": "Jordan Valley Community Health Center",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/meleah-morales-61a6594b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@jordanvalley.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Kevin O'Bryan",
+   "title": "Pediatrician",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/kevin-o-bryan-19260598",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Emma Kulig",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital Colorado",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/emma-kulig-46a89a13",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Munira Rahman-Anwar, DO, FAAP",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Cape Girardeau",
+   "linkedin": "https://www.linkedin.com/in/munira-rahman-anwar-do-faap-35a865117",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Sarah J. Grafeman",
+   "title": "Clinical Psychologist - Mercy Kids Autism Center",
+   "org": "Mercy",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/sarah-j-grafeman-23753335",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Destiny Harrell-Washington, D.O.",
+   "title": "Attending Pediatric Physician",
+   "org": "Franciscan Health",
+   "city": "Kirksville",
+   "linkedin": "https://www.linkedin.com/in/destiny-harrell-646b1688",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Meredith Dreyer",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy Kansas City",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/meredith-dreyer-a93a2312",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Nguyen \"Ryan\" Hoang",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/ryannhoang91",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Divya Natarajan",
+   "title": "Pediatric Resident",
+   "org": "Seattle Children's",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/divya-natarajan-79996638",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "George Rezabek",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Jefferson County",
+   "linkedin": "https://www.linkedin.com/in/george-rezabek-54695a76",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Abby T.",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/abby-t-20b799b3",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Julie Muckerman, MPH",
+   "title": "Autism Training Specialist",
+   "org": "Thompson Center for Autism & Neurodevelopment",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/julie-muckerman-27272670",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Rosemary Cherian",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/rosemary-cherian-7b2242150",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Jennifer G.",
+   "title": "General Pediatrician",
+   "org": "CAPE PHYSICIAN ASSOCIATES",
+   "city": "Cape Girardeau",
+   "linkedin": "https://www.linkedin.com/in/jennifer-giza-do",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Gokce Busra Cakir",
+   "title": "Pediatric Resident",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/gokce-busra-cakir-999a77275",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283"
+  },
+  {
+   "name": "Melissa Eddy-Shelby",
+   "title": "Pediatrician",
+   "org": "Our Lady of the Lake Health",
+   "city": "Jackson County",
+   "linkedin": "https://www.linkedin.com/in/melissa-eddy-shelby-31456083",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Laura Slosky",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy Kansas City",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/laura-slosky-556b7234",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Emily Killough",
+   "title": "Child Abuse Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/emily-killough-95442516b",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Emily Ehresman",
+   "title": "Pediatric Resident",
+   "org": "CHILDREN'S MERCY HOSPITAL AND CLINICS",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/emily-ehresman-aa1a9691",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Laura Moreno Garcia",
+   "title": "Pediatrician",
+   "org": "Cox Health Systems",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/laura-morenogarcia",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Robyn Herbert, Ph.D.",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/robyn-herbert",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284"
+  },
+  {
+   "name": "Stefanie Vollet",
+   "title": "Autism Assessment Specialist",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/stefanie-vollet-a380a7133",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Angela Scott, M.D., F.A.A.P.",
+   "title": "Pediatrician",
+   "org": "Mercy Clinics",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/angela-scott-m-d-f-a-a-p-53956361",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Wendolyn DiSalvo",
+   "title": "Primary Care Pediatrician",
+   "org": "SSM Health",
+   "city": "St Charles",
+   "linkedin": "https://www.linkedin.com/in/wendolyn-disalvo-04302a64",
+   "email": "w\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Katie Walker",
+   "title": "Autism Service Navigator",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/katie-walker-49800b272",
+   "email": "k\u2022\u2022\u2022@triwest.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Juhi Kangas",
+   "title": "Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/juhi-kangas-43903a65",
+   "email": "j\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Tory Sherman",
+   "title": "Pediatric Physician Assistant",
+   "org": "Mercy",
+   "city": "Dexter",
+   "linkedin": "https://www.linkedin.com/in/tory-sherman-223016b4",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Haley Killian",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/haley-killian-a1703b65",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Michelle Boyette VanDoren",
+   "title": "Pediatrician",
+   "org": "Children's Mercy Kansas City",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/michelle-boyette-vandoren-31033444",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Allison Hadley, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/allison-hadley-md-faap-149636182",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Cecilia Enriquez",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/cecilia-enriquez-b237b6153",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Maggie Mueller, MD",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/maggie-mueller-md-459476287",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "Thomas Neufeld",
+   "title": "Pediatric Resident",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/thomas-neufeld-945653b0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mark Woolley",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/mark-woolley-8311b131",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "vasudha kota",
+   "title": "General Pediatrician",
+   "org": "Mercy",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/vasudha-kota-1b5576171",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Kaley Dahlin",
+   "title": "Autism Program Facilitator",
+   "org": "KidsTLC",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/kaleydahlin",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@kidstlc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Amber Hamilton",
+   "title": "Pediatric Resident",
+   "org": "SSM Health",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/amber-hamilton-85130b43",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Randy Andrews",
+   "title": "staff pediatrician for Glennon Care for Kids",
+   "org": "SSM Health",
+   "city": "Foristell",
+   "linkedin": "https://www.linkedin.com/in/randy-andrews-4bb40975",
+   "email": "r\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Maryjo Petruska-Nordmann",
+   "title": "Glennoncare Pediatrician",
+   "org": "SSM Health",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/maryjo-petruska-nordmann-6341b79",
+   "email": "p\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Luke Stephens",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/luke-stephens-598915168",
+   "email": "l\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Keri J",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Hazelwood",
+   "linkedin": "https://www.linkedin.com/in/keri-j-9a921a66",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "Kristen Theobald-Hazel",
+   "title": "Pediatrician",
+   "org": "Lake Regional Health System",
+   "city": "Osage Beach",
+   "linkedin": "https://www.linkedin.com/in/kristen-theobald-8233b4a4",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Gleeson",
+   "title": "Pediatrician",
+   "org": "Gateway Pediatrics",
+   "city": "Ballwin",
+   "linkedin": "https://www.linkedin.com/in/john-gleeson-a9717513",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Klanci McCabe",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/klanci-mccabe-4b585b62",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Elizabeth Hastings",
+   "title": "Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-hastings-654a7082",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Beth Simpson",
+   "title": "Medical Director Routine Newborn Services, General Pediatrician, Pediatric Care Center",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/beth-simpson-b8b01943",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Amy Dolinar",
+   "title": "Pediatrician",
+   "org": "Scotland County Hospital",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/amy-dolinar-3a493847",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@scotlandcountyhospital.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Lynne Covitz",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/lynne-covitz-085373165",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Ama Karikari",
+   "title": "Pediatric Resident",
+   "org": "UAMS - University of Arkansas for Medical Sciences",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/amakarikari",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Keri Johnson",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "Bridgeton",
+   "linkedin": "https://www.linkedin.com/in/keri-johnson-287879130",
+   "email": "k\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Sucheta Thekkedam",
+   "title": "Pediatric Psychologist",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/sucheta-thekkedam-67031050",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "summer bryant",
+   "title": "Pediatrician",
+   "org": "Golden Valley Memorial Healthcare",
+   "city": "Clinton",
+   "linkedin": "https://www.linkedin.com/in/summer-bryant-965b12121",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gvmh.org",
+   "phone": ""
+  },
+  {
+   "name": "Andrew Zuckerman",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/andrew-zuckerman-0b673170",
+   "email": "A\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Freeman Md",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Ozark",
+   "linkedin": "https://www.linkedin.com/in/freeman-md-a1117262",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "stacey monaco",
+   "title": "Pediatrician",
+   "org": "Mercy Health",
+   "city": "St Peters",
+   "linkedin": "https://www.linkedin.com/in/stacey-monaco-681a681aa",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Steven Mueth",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/steven-mueth-b37a944a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "JoAnn Couch",
+   "title": "Locum pediatrician",
+   "org": "Gerald Champion Regional Medical Center",
+   "city": "Greater Columbia",
+   "linkedin": "https://www.linkedin.com/in/joann-couch-37a565a6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Thierauf Stephen",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Jefferson County",
+   "linkedin": "https://www.linkedin.com/in/thierauf-stephen-6364a690",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "Daniel Wachsstock",
+   "title": "Pediatrician",
+   "org": "St. Luke's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/daniel-wachsstock-21013a24",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@stlukes-stl.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Robert Atteberry",
+   "title": "Pediatrician",
+   "org": "Washington University School of Medicine in St. Louis",
+   "city": "Chesterfield",
+   "linkedin": "https://www.linkedin.com/in/robert-atteberry-979984148",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Josh Hall",
+   "title": "Pediatric Resident",
+   "org": "University of Missouri Health Care",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/josh-hall-930ba0287",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jesse Groh",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/jesse-groh-a95207152",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Rachel Ochotny",
+   "title": "Pediatrician",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/rachel-ochotny-8a5881133",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Suzanne Thompson",
+   "title": "Pediatric Psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/suzanne-thompson-b358179",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Michele Niemczyk",
+   "title": "Pediatrician",
+   "org": "Compass Health Network",
+   "city": "St Charles",
+   "linkedin": "https://www.linkedin.com/in/michele-niemczyk-286828309",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@compasshealthnetwork.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Amanda Marie",
+   "title": "Pediatric Resident",
+   "org": "BJC Health",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/amanda-marie-35534a75",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Jordan Schneider",
+   "title": "Autism Specialty Care Manager",
+   "org": "Cigna Healthcare",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/jordan-lathrop-25382346",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Brian Burghardt",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy Kansas City",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/brian-burghardt-4706078",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "David Lowry",
+   "title": "Pediatrician",
+   "org": "Heartland Health",
+   "city": "Platte City",
+   "linkedin": "https://www.linkedin.com/in/david-lowry-a888922b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Whitney Pressler",
+   "title": "Pediatrician",
+   "org": "The University of Kansas Health System",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/whitney-pressler-39b94b211",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Kim Hackney",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Lake St Louis",
+   "linkedin": "https://www.linkedin.com/in/kim-hackney-877051139",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Elizabeth Andrews",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-andrews-45326185",
+   "email": "E\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "McKenzie Smith",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/mckenzie-smith-51a508252",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Meredith Arra",
+   "title": "Pediatric Resident",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/meredith-arra-54919422b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Suzanne Thompson",
+   "title": "pediatric psychologist",
+   "org": "St. Louis Children's Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/suzanne-thompson-b1177b27",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Roxana Ionas",
+   "title": "Pediatrician",
+   "org": "Northeast Missouri Health Council",
+   "city": "Kirksville",
+   "linkedin": "https://www.linkedin.com/in/roxana-ionas-01b16972",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@nmhcinc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Thiagarajan Nandhagopal",
+   "title": "Pediatrician",
+   "org": "CoxHealth",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/thiagarajan-nandhagopal-22992396",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@coxhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Ella Rozin",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Chesterfield",
+   "linkedin": "https://www.linkedin.com/in/ella-rozin-9231b7133",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "eugene barth",
+   "title": "pediatrician",
+   "org": "SSM Health",
+   "city": "Lake St Louis",
+   "linkedin": "https://www.linkedin.com/in/eugene-barth-52191b35",
+   "email": "e\u2022\u2022\u2022@ssmhc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Maury Maury Stern",
+   "title": "Retired Pediatrician",
+   "org": "The Permanente Medical Group, Inc.",
+   "city": "Grandview",
+   "linkedin": "https://www.linkedin.com/in/maury-maury-stern-aa7674116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "William Pankey",
+   "title": "Pediatrician",
+   "org": "Vibrant Health",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/william-pankey-564176168",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@vibrantwyandotte.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Ashley Hiatt",
+   "title": "Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/ashley-hiatt-7a5470162",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Clayton Butcher",
+   "title": "Internist and Pediatrician",
+   "org": "University of Missouri Health Care",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/clayton-butcher-8a902190",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Carol Garrison",
+   "title": "Developmental Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/carol-garrison-b28593b6",
+   "email": "c\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Landon Olson",
+   "title": "Pediatric Resident",
+   "org": "University of Missouri Health Care",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/landon-olson-730218266",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Connie Simmons",
+   "title": "Pediatrician",
+   "org": "Ranken Jordan Pediatric Bridge Hospital",
+   "city": "Greater St. Louis",
+   "linkedin": "https://www.linkedin.com/in/connie-simmons-41a81b19a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Don Sponenberg",
+   "title": "pediatrician",
+   "org": "Mercy",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/don-sponenberg-420185127",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Dr Harrison",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Charles",
+   "linkedin": "https://www.linkedin.com/in/dr-harrison-96b86440",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "Yasasvi Vasili",
+   "title": "Pediatrician",
+   "org": "Washington University School of Medicine in St. Louis",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/yasasvi-vasili-762063157",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Cameron Kelley",
+   "title": "Pediatric Resident",
+   "org": "Children's Mercy Kansas City",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/cameron-kelley-2920b569",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Taylor Goldammer",
+   "title": "Pediatric Resident",
+   "org": "University of Missouri Health Care",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/taylor-goldammer-647b611b7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Erin McCann",
+   "title": "General Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/erin-mccann-5a4188289",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Sam Holmes",
+   "title": "Pediatrician",
+   "org": "Freeman Health System",
+   "city": "Newton County",
+   "linkedin": "https://www.linkedin.com/in/sam-holmes-0706989b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Brandi Morrison",
+   "title": "Pediatrician",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/brandi-morrison-84901663",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@childrensmercy.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Brock Wendlandt",
+   "title": "Pediatrician",
+   "org": "CoxHealth",
+   "city": "Buffalo",
+   "linkedin": "https://www.linkedin.com/in/brock-wendlandt-807b001b5",
+   "email": "b\u2022\u2022\u2022\u2022@coxhealth.com",
+   "phone": ""
+  },
+  {
+   "name": "Rebecca Johnson",
+   "title": "Pediatric Psychologist",
+   "org": "Children's Mercy",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/rebecca-johnson-3129a5288",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Wai Phyo",
+   "title": "Pediatrician",
+   "org": "Medical Online Solutions",
+   "city": "Friedheim",
+   "linkedin": "https://www.linkedin.com/in/wai-phyo-3107b1a0",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jane DeFalco",
+   "title": "Pediatrician",
+   "org": "Mercy Health",
+   "city": "Ballwin",
+   "linkedin": "https://www.linkedin.com/in/jane-defalco-8773171b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Liora Soesman",
+   "title": "Kinderarts in opleiding",
+   "org": "Amsterdam UMC",
+   "city": "Netherlands",
+   "linkedin": "https://www.linkedin.com/in/liora-soesman-144176163",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Christie Bayer",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "Chesterfield",
+   "linkedin": "https://www.linkedin.com/in/christie-bayer-39bb097a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Madison Ganden",
+   "title": "Autism Clinical Care Analyst",
+   "org": "Centene Corporation",
+   "city": "St. Louis County",
+   "linkedin": "https://www.linkedin.com/in/madison-ganden-8508a2123",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@centene.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Elliott Casey",
+   "title": "pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/elliott-casey-70159516",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@mercy.net",
+   "phone": ""
+  },
+  {
+   "name": "Kelli Boelens",
+   "title": "Pediatrician",
+   "org": "Ste. Genevieve County Memorial Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/kelli-boelens-2a3500102",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Dawn McNamee",
+   "title": "Pediatrician",
+   "org": "Ranken Jordan Pediatric Bridge Hospital",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/dawn-mcnamee-14982b33a",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@rankenjordan.org",
+   "phone": ""
+  },
+  {
+   "name": "Nabiha Awan",
+   "title": "Pediatric Resident",
+   "org": "SSM Health Cardinal Glennon Children's Hospital",
+   "city": "Hazelwood",
+   "linkedin": "https://www.linkedin.com/in/nabiha-awan-70a33220a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kathleen Bernhard",
+   "title": "Pediatrician",
+   "org": "Mercy",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/kathleen-bernhard-99a2a9145",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "elizabeth bergamini",
+   "title": "Pediatrician",
+   "org": "SSM Health",
+   "city": "St Louis",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-bergamini-87bba9298",
+   "email": "",
+   "phone": ""
+  }
+ ]
+}

@@ -1,0 +1,2626 @@
+{
+ "name": "Massachusetts",
+ "slug": "massachusetts",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-massachusetts.csv",
+ "count": 282,
+ "emails": 119,
+ "phones": 220,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 185
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 50
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 19
+  },
+  {
+   "label": "Therapists & social workers",
+   "count": 10
+  },
+  {
+   "label": "Developmental & behavioral pediatricians",
+   "count": 10
+  },
+  {
+   "label": "Psychologists & psychiatrists",
+   "count": 8
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Boston",
+   "count": 82
+  },
+  {
+   "name": "Greater Boston",
+   "count": 49
+  },
+  {
+   "name": "Brookline",
+   "count": 11
+  },
+  {
+   "name": "Springfield",
+   "count": 9
+  },
+  {
+   "name": "Cambridge",
+   "count": 9
+  },
+  {
+   "name": "Worcester",
+   "count": 7
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Boston Children's Hospital",
+   "count": 48
+  },
+  {
+   "name": "Massachusetts General Hospital",
+   "count": 24
+  },
+  {
+   "name": "Harvard Vanguard Medical Associates",
+   "count": 16
+  },
+  {
+   "name": "Atrius Health",
+   "count": 14
+  },
+  {
+   "name": "Cambridge Health Alliance",
+   "count": 10
+  },
+  {
+   "name": "Reliant Medical Group",
+   "count": 8
+  }
+ ],
+ "rows": [
+  {
+   "name": "Mary Beth Miotto, MD, MPH",
+   "title": "Staff Pediatrician",
+   "org": "Mattapan Community Health Center",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/mary-beth-miotto-md-mph-5373b45",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "James Perrin",
+   "title": "Former pediatrician at MassGeneral Brigham for Children",
+   "org": "Mass General Brigham",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/james-perrin-8b262940",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Susan Shea, ED.S",
+   "title": "Clinical Director, Autism EIBI Specialist",
+   "org": "BEHAVIORAL NETWORK, INC",
+   "city": "Marblehead",
+   "linkedin": "https://www.linkedin.com/in/behavioralnetwork",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Jeremy Hastings",
+   "title": "President, Community Autism Services",
+   "org": "Community Autism Services - CAS",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/jeremy-hastings-1a86ab3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Nicole de Paz, MD MPH FAAP",
+   "title": "Primary Care Pediatrician",
+   "org": "Atrius Health",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/nicoledepaz",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Ann Neumeyer",
+   "title": "MGH Lurie Family Endowed Chair in Autism",
+   "org": "Massachusetts General Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/ann-neumeyer-209178b0",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Dr. Timothy Buie",
+   "title": "Senior Physician, Co-Director GI Autism Clinic, Assistant Professor, Harvard Medical School",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/timbuie",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alex Eaton M.D.",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/alex-eaton-m-d-5b4518103",
+   "email": "a\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Cornelia Elwood, MA, LMHC, Certified Autism Specialist",
+   "title": "Licensed Clinical Mental Health Counselor / Coach - Autism / ADHD Speciality",
+   "org": "Cornelia Elwood Counseling",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/corneliapelzerelwood",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@corneliaelwoodcounseling.com",
+   "phone": ""
+  },
+  {
+   "name": "Nirmal Maitra",
+   "title": "Pediatric Resident",
+   "org": "Mass General Brigham",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/nirmalmaitra",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Kaye-Alese Green",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/kaye-alese-green-145b135a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jose Alex Rodrigues, D.O., Ph.D.",
+   "title": "Pediatric Resident",
+   "org": "Columbia University Irving Medical Center",
+   "city": "Stoughton",
+   "linkedin": "https://www.linkedin.com/in/jose-alex-rodrigues-d-o-ph-d-a8219a86",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@columbia.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Michael Arenson",
+   "title": "General Pediatrician",
+   "org": "Hennepin Healthcare",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/michael-arenson-96766539",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Jasmin Darling",
+   "title": "Pediatrician",
+   "org": "Acton Medical Associates",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/jasmin-darling-08669112",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@actonmedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Tara Jamieson",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/tarajamieson",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Jose Alberto Betances, MD",
+   "title": "Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Dedham",
+   "linkedin": "https://www.linkedin.com/in/jose-alberto-betances-md-70a2753",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Sarah Spence",
+   "title": "Co-Director Autism Spectrum Center",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/sarah-spence-96a93956",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Kendall Donohue",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/kendall-burdick",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Yamini Jagannath Howe, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Cortica",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/yamini-jagannath-howe-md-083554138",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Kyle Wickham, MD",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/kylewickham",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257"
+  },
+  {
+   "name": "Carmon Davis MD, MPH, MBA, FAAP",
+   "title": "Academic General Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/carmon-davis-md-mph-mba-faap-77923a33",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Paola Daza Nunez",
+   "title": "Pediatrician",
+   "org": "Lowell Community Health Center",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/paola-daza-nunez-50282819a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kaleb Mikami, MD",
+   "title": "General Pediatrician",
+   "org": "Beacon Pediatrics",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/kaleb-mikami-836824126",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@beaconpediatricsma.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Michelle Barr",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Reading",
+   "linkedin": "https://www.linkedin.com/in/michelle-barr-9968b1a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Ani Papazian, MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Atrius Health",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/anipapazian",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Emily O'Neill, MSW, LCSW",
+   "title": "Clinical Social Worker - Autism Spectrum Center",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/emily-o-neill-msw-lcsw-7169a6178",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Naomi Mackey, MBA",
+   "title": "Grant Administrator, Lurie Center for Autism",
+   "org": "Massachusetts General Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/naomi-schaffer-mackey",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Catherine Smilow, MD",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/catherine-smilow-md-286222123",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Natalia Kellam Sahler, MD",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/natalia-kellam-sahler-md-a94aa0169",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "matthew sadof",
+   "title": "Pediatrician",
+   "org": "Baystate Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/matthew-sadof-97631b29",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@baystatehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Gwenn OKeeffe",
+   "title": "General Pediatrician",
+   "org": "Cortica",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/drgwenn",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Alina Bahlavouni",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/alina-bahlavouni-86b05269",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Carol Wilkinson",
+   "title": "Developmental Behavioral Pediatrician & Assistant Professor",
+   "org": "Boston Children's Hospital",
+   "city": "Newton Centre",
+   "linkedin": "https://www.linkedin.com/in/carol-wilkinson-14028333",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249"
+  },
+  {
+   "name": "Brittany Leland, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/brittany-leland-pa-c-96421b1b2",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Perry Dinardo",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/perry-dinardo-851b5772",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Caroline Coughlin",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/caroline-coughlin-4909048b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Deborah Ondrasik",
+   "title": "General Pediatrician",
+   "org": "Southcoast Health",
+   "city": "North Dartmouth",
+   "linkedin": "https://www.linkedin.com/in/deborah-ondrasik-638665271",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@southcoast.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Drisana Henry, MD, MPH",
+   "title": "Pediatrician and Adolescent Medicine Specialist",
+   "org": "Mass General Brigham",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/drisana-henry-md-mph-732bb2126",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Yvette Stoddard, M.Ed, BCBA, LBA",
+   "title": "Director of Autism Services",
+   "org": "Hillcrest Educational Centers, Inc.",
+   "city": "Pittsfield",
+   "linkedin": "https://www.linkedin.com/in/yvette-stoddard-m-ed-bcba-lba-9148b986",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@hillcrestec.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Yvette Stoddard, M.Ed, BCBA, LABA",
+   "title": "Director of Autism Services",
+   "org": "Hillcrest Educational Centers, Inc.",
+   "city": "Pittsfield",
+   "linkedin": "https://www.linkedin.com/in/yvette-stoddard-m-ed-bcba-laba-9148b986",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@hillcrestec.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Amy Conrad M.D.",
+   "title": "Founder, Pediatrician",
+   "org": "Kinder Online Pediatric Clinic",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/amy-conrad-m-d-2bb109ba",
+   "email": "a\u2022\u2022\u2022\u2022@gokinderkid.com",
+   "phone": ""
+  },
+  {
+   "name": "Iris Kaddis, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Health Care Associates, P.C.",
+   "city": "Peabody",
+   "linkedin": "https://www.linkedin.com/in/iris-kaddis-md-5195445",
+   "email": "i\u2022\u2022\u2022@phcapediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Daniel Lubarsky",
+   "title": "Pediatric Resident",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/daniel-lubarsky-56aa60126",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Rhea Palsule",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/rhea-palsule-7a932418a",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237"
+  },
+  {
+   "name": "Soukaina Adolphe",
+   "title": "Pediatrician",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/soukaina-adolphe-67a19b21",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Brittany Davis-Schaffer MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Dartmouth Hitchcock Medical Center and Clinics",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/brittany-davis-schaffer-md-faap-7527471b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Siobhan McNally, MD, MPH, FAAP",
+   "title": "Primary Care Pediatrician | Director, Pediatric Refugee Program",
+   "org": "Caring Health Center, Inc.",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/siobhan-mcnally-md-mph-faap-0878172",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277"
+  },
+  {
+   "name": "Galen Harnden",
+   "title": "Pediatrician",
+   "org": "NeighborHealth",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/galen-harnden-396645a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Stephen Vorenberg",
+   "title": "Pediatrician",
+   "org": "Bowdoin Street Health Ctr",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/stephen-vorenberg-36844266",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bidmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275"
+  },
+  {
+   "name": "Alison Cullinane",
+   "title": "Pediatrician",
+   "org": "Westwood-Mansfield Pediatric Associates",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/alisonkarniski",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Tinalynne Haugen",
+   "title": "Pediatric Therapist",
+   "org": "Reliant Medical Group",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/tinalynne-haugen-8b0761189",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Amy Flamenbaum",
+   "title": "Pediatrician",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/amy-flamenbaum-356335183",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Julie Stepanian",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/julie-stepanian-974604164",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "NATALIA KANDROR",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/natalia-kandror-2a006b21",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Matthew Heeney",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Newton Highlands",
+   "linkedin": "https://www.linkedin.com/in/matthew-heeney-656a985",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Jamie Kuehnapfel",
+   "title": "Autism Specialist",
+   "org": "ServiceNet",
+   "city": "Natick",
+   "linkedin": "https://www.linkedin.com/in/jamie-kuehnapfel-836412217",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Thomas O'Leary",
+   "title": "Pediatrician",
+   "org": "UMass Memorial Health - Harrington",
+   "city": "Southbridge",
+   "linkedin": "https://www.linkedin.com/in/thomas-o-leary-b66a279a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Tom Furth",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Medford",
+   "linkedin": "https://www.linkedin.com/in/tom-furth-405b5035",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Margaret McCahan",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Wayland",
+   "linkedin": "https://www.linkedin.com/in/margaret-mccahan-70a18820a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dr. Anne Josephs",
+   "title": "Pediatrician",
+   "org": "Day Kimball Health",
+   "city": "Leominster",
+   "linkedin": "https://www.linkedin.com/in/dr-anne-josephs-670753a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Mary Ellen Dugan",
+   "title": "pediatrician",
+   "org": "Southboro Medical Group",
+   "city": "Southborough",
+   "linkedin": "https://www.linkedin.com/in/mary-ellen-dugan-b891211a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Diane MD",
+   "title": "Pediatrician",
+   "org": "Lowell Community Health Center",
+   "city": "Concord",
+   "linkedin": "https://www.linkedin.com/in/diane-md-3abb79100",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jose Correa",
+   "title": "Pediatrician",
+   "org": "MetroWest Medical Center",
+   "city": "Northborough",
+   "linkedin": "https://www.linkedin.com/in/jose-correa-0b99946b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mwmc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Todd Lyons",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/todd-lyons-2b67769",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Alan Meyers",
+   "title": "pediatrician",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/alan-meyers-7858402a",
+   "email": "m\u2022\u2022\u2022@bmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Kerrie Jongeneelen",
+   "title": "Child Therapist",
+   "org": "Mental Health Center",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/kerrie-jongeneelen-2a695020",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Julie Nicoletta",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Family of Companies",
+   "city": "Wellesley",
+   "linkedin": "https://www.linkedin.com/in/julie-nicoletta-9a7052336",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Edward Hurley",
+   "title": "Pediatric Resident",
+   "org": "Lifespan",
+   "city": "North Seekonk",
+   "linkedin": "https://www.linkedin.com/in/edward-hurley-a8359356",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Maddox",
+   "title": "Pediatrician",
+   "org": "Mass General Brigham",
+   "city": "Haverhill",
+   "linkedin": "https://www.linkedin.com/in/john-maddox-9b8148316",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Kathleen Conroy",
+   "title": "Pediatrician",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/kathleen-conroy-6b4b945",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Elizabeth Barnett",
+   "title": "Pediatrician",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-barnett-3a8168105",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lisa Fitzgibbons",
+   "title": "Pediatrician",
+   "org": "Pentucket Medical Associates",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/lisa-fitzgibbons-58013a166",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@pmaonline.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Alexis Dugan",
+   "title": "Child Psychologist",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/alexis-dugan-5b91a95",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Trish Kavanagh",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/trish-kavanagh-7624201",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Kathleen Mitchell",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Waban",
+   "linkedin": "https://www.linkedin.com/in/kathleen-mitchell-55494820",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Brooke T. McLaughlin, MD MPH",
+   "title": "Pediatrician and Clinical Research Fellow",
+   "org": "Dartmouth Hitchcock Medical Center and Clinics",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/brooketmclaughlin11",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Jessica Zina-Duarte",
+   "title": "Pediatrician",
+   "org": "Baystate Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/jessica-zina-duarte-7415b8122",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@baystatehealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Orlando Sola-gomez",
+   "title": "Pediatrician",
+   "org": "Baystate Franklin Medical Center",
+   "city": "Amherst",
+   "linkedin": "https://www.linkedin.com/in/orlando-sola-gomez-36b4631b8",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Ho-Wen Hsu",
+   "title": "Pediatrician",
+   "org": "Boston Community Pediatrics",
+   "city": "Watertown",
+   "linkedin": "https://www.linkedin.com/in/ho-wen-hsu-baa430370",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Eileen Kramer",
+   "title": "Pediatrician",
+   "org": "Pediatrics At Newton Wellesley",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/eileen-kramer-3045891a9",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Amita R Chopra",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Waltham",
+   "linkedin": "https://www.linkedin.com/in/amita-r-chopra-7699b9217",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "John Sooy",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Concord",
+   "linkedin": "https://www.linkedin.com/in/john-sooy-b51b472b4",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dr. Joseph Dulac",
+   "title": "Pediatrician",
+   "org": "East Boston Neighborhood Health Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/dr-joseph-dulac-md-1b4ba235",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Emily Holden",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Peabody",
+   "linkedin": "https://www.linkedin.com/in/emily-holden-061b01ab",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202222"
+  },
+  {
+   "name": "Gloria Ciccone",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/gloria-ciccone-8b239a20",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Jenni Petrella DO, FAAP",
+   "title": "Per Diem UC Pediatrician",
+   "org": "PM Pediatric Care",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/jenni-petrella-do-faap-b8718b114",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Morgan McCarthy",
+   "title": "Autism Support Broker",
+   "org": "Vinfen",
+   "city": "Stoughton",
+   "linkedin": "https://www.linkedin.com/in/morgan-mccarthy-469841304",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Susan Beebe",
+   "title": "Staff Pediatrician Well Baby Nursery",
+   "org": "Brigham and Women's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/susan-beebe-43b51451",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Katherine Wu",
+   "title": "Pediatrician",
+   "org": "Pediatric Health Care Associates, P.C.",
+   "city": "Peabody",
+   "linkedin": "https://www.linkedin.com/in/katherine-wu-2803422",
+   "email": "k\u2022\u2022\u2022@phcapediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Diana Palmer",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Revere",
+   "linkedin": "https://www.linkedin.com/in/daniel-palmer-aba3b183",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "sherwood lee",
+   "title": "Pediatrician",
+   "org": "Pentucket Medical Associates",
+   "city": "Haverhill",
+   "linkedin": "https://www.linkedin.com/in/sherwood-lee-324b15aa",
+   "email": "s\u2022\u2022\u2022@pmaonline.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "Margaret Fallon",
+   "title": "Primary Care Pediatrician",
+   "org": "Mass General Brigham",
+   "city": "Milton",
+   "linkedin": "https://www.linkedin.com/in/margaret-fallon-4b188028a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cathleen Bonacci",
+   "title": "Primary Care Pediatrician",
+   "org": "Tufts Medical Center",
+   "city": "Lowell",
+   "linkedin": "https://www.linkedin.com/in/cathleen-bonacci-297ba5148",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@tuftsmedicalcenter.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Peter Murphy",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Lancaster",
+   "linkedin": "https://www.linkedin.com/in/peter-murphy-a8226713b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Julie stepanian",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/julie-stepanian-84a706168",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Maggie Jones",
+   "title": "Primary Care Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/maggie-jones-4b71b5158",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Aidette Florimon",
+   "title": "Pediatrician",
+   "org": "Caring Health Center, Inc.",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/aidette-florimon-a85a788a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Meghan Fredette",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/meghan-fredette-7bb7b271",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Shalini Shah",
+   "title": "Pediatric Resident",
+   "org": "UMass Memorial Medical Center",
+   "city": "Dracut",
+   "linkedin": "https://www.linkedin.com/in/shalini-shah-3116b742",
+   "email": "s\u2022\u2022\u2022@umassmemorial.org",
+   "phone": ""
+  },
+  {
+   "name": "Lisa Thayer",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/lisa-thayer-544b9960",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Jeannette Tokarz",
+   "title": "Pediatrician",
+   "org": "Baystate Health",
+   "city": "Amherst",
+   "linkedin": "https://www.linkedin.com/in/jeannette-tokarz-bb43181b",
+   "email": "j\u2022\u2022\u2022@baystatehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Michael Fuenfer",
+   "title": "Associate Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/michael-fuenfer-47ba8b15",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Christine McGivney",
+   "title": "Developmental and Behavioral Pediatrician",
+   "org": "Elliot Health System",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/christine-mcgivney-057501134",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Jeffrey Zaref",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Framingham",
+   "linkedin": "https://www.linkedin.com/in/jeffrey-zaref",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Priscilla Gonzalez",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/priscilla-gonzalez-25b290200",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264"
+  },
+  {
+   "name": "Robin Kornegay-Rougeau",
+   "title": "Pediatrician",
+   "org": "Mass General Brigham",
+   "city": "Waltham",
+   "linkedin": "https://www.linkedin.com/in/robin-kornegay-rougeau-3ba88a1b3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Dianne Coscia",
+   "title": "Pediatrician",
+   "org": "East Boston Neighborhood Health Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/dianne-coscia-75634338",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Meghan Meczywor",
+   "title": "Autism Support Broker",
+   "org": "Vinfen",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/meghan-meczywor",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Emmanuel Mudika Mosuka",
+   "title": "Primary Care Pediatrician",
+   "org": "BERKSHIRE MEDICAL CENTER - BERKSHIRE CAMPUS",
+   "city": "Chestnut Hill",
+   "linkedin": "https://www.linkedin.com/in/emmanuel-mudika-mosuka-8b89511ba",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Logan Groneck Hart, MD",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/logan-groneck-hart-md-7040a733b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Nancy Kloczko",
+   "title": "pediatrician",
+   "org": "Baystate Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/nancy-kloczko-42900a7b",
+   "email": "n\u2022\u2022\u2022@baystatehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Jeneva Smith",
+   "title": "Pediatric Resident",
+   "org": "UMass Memorial Medical Center \u2013 Marlborough Campus",
+   "city": "Shrewsbury",
+   "linkedin": "https://www.linkedin.com/in/jeneva-smith-b9a807122",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Kari Hironaka",
+   "title": "Developmental and Behavioral Pediatrician",
+   "org": "Tufts Medical Center",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/kari-hironaka-7ab1a71ba",
+   "email": "h\u2022\u2022\u2022\u2022@tuftsmedicalcenter.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Huy Nguyen",
+   "title": "Pediatrician",
+   "org": "DotHouse Health",
+   "city": "Quincy",
+   "linkedin": "https://www.linkedin.com/in/huy-nguyen-2a507712b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "carolyn o'donnell",
+   "title": "pediatrician",
+   "org": "Acton Medical Associates",
+   "city": "Somerville",
+   "linkedin": "https://www.linkedin.com/in/carolyn-o-donnell-68941a27",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@actonmedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Fergus Moylan",
+   "title": "pediatrician",
+   "org": "Beth Israel Deaconess Hospital-Plymouth",
+   "city": "Plymouth",
+   "linkedin": "https://www.linkedin.com/in/fergus-moylan-02513b74",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@bidplymouth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Brooke Di Anni",
+   "title": "Pediatrician",
+   "org": "Fallon Clinic",
+   "city": "Auburn",
+   "linkedin": "https://www.linkedin.com/in/brooke-di-anni-6209251b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Patricia Davis",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/patricia-davis-a9368932",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Laura Marcus",
+   "title": "Pediatrician",
+   "org": "Southern Jamaica Plain Health",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/laura-marcus-431445195",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Dana Sackton",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Somerville",
+   "linkedin": "https://www.linkedin.com/in/dana-sackton-19ababb",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Kathleen Levin",
+   "title": "Pediatrician",
+   "org": "Healthcare South P.C.",
+   "city": "Scituate",
+   "linkedin": "https://www.linkedin.com/in/kathleen-levin-6a4600164",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@healthcaresouth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Linda Bishop",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "South Yarmouth",
+   "linkedin": "https://www.linkedin.com/in/linda-bishop-77934a48",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Stephanie Graves",
+   "title": "Autism Navigator",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/stephanie-graves-b5332369",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Roxanne Almas",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "UCSF Benioff Children's Hospitals",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/roxanne-almas-4889979",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Katharine Barefoot Herrick",
+   "title": "Pediatrician, Medical Director Well Newborn Care",
+   "org": "Brigham and Women's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/katharine-barefoot-herrick-661790184",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Pamela Swearingen",
+   "title": "pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Belmont",
+   "linkedin": "https://www.linkedin.com/in/pamela-swearingen-48683332",
+   "email": "P\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Tetiana Pronchick",
+   "title": "Pediatrician",
+   "org": "Pediatrics At Newton Wellesley",
+   "city": "Newton",
+   "linkedin": "https://www.linkedin.com/in/tetiana-pronchick-3321391ab",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Suzanne Damiani",
+   "title": "Pediatrician",
+   "org": "Pentucket Medical Associates",
+   "city": "Andover",
+   "linkedin": "https://www.linkedin.com/in/suzanne-damiani-80a3b4148",
+   "email": "S\u2022\u2022\u2022\u2022\u2022\u2022@pmaonline.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Nicole Young-Sileo",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/nicole-young-sileo-584bb1378",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Suzanne Duval",
+   "title": "Primary Care Pediatrician",
+   "org": "Woburn & North Andover Pediatric Associates",
+   "city": "Middleton",
+   "linkedin": "https://www.linkedin.com/in/suzanne-duval-033415290",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@woburnpedi.com",
+   "phone": ""
+  },
+  {
+   "name": "Jean Brodnax",
+   "title": "pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Braintree",
+   "linkedin": "https://www.linkedin.com/in/jean-brodnax-b906872b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Wang Marvin",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Suffolk County",
+   "linkedin": "https://www.linkedin.com/in/wang-marvin-97253785",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Cara Weinstein",
+   "title": "Primary Care Pediatrician",
+   "org": "Atrius Health",
+   "city": "Dedham",
+   "linkedin": "https://www.linkedin.com/in/cara-weinstein-123223100",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Michelle Sanders",
+   "title": "Pediatrician",
+   "org": "Pediatrics West",
+   "city": "Bedford",
+   "linkedin": "https://www.linkedin.com/in/michelle-sanders-6a4b03111",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Chang Ruby",
+   "title": "pediatrician",
+   "org": "Berkshire Health Systems",
+   "city": "Great Barrington",
+   "linkedin": "https://www.linkedin.com/in/chang-ruby-240a3454",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Wanda Lopez",
+   "title": "Pediatrician",
+   "org": "Brigham and Women's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/wanda-lopez-a984b392",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Beth McCabe",
+   "title": "pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Waltham",
+   "linkedin": "https://www.linkedin.com/in/beth-mccabe-6259b233",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "W. Ray Byers, MD FAAP",
+   "title": "Pediatrician",
+   "org": "Laconia Clinic",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/w-ray-byers-md-faap-590498172",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Iris Roman",
+   "title": "Behavior Technician and Autism Therapist",
+   "org": "Center for Autism and Related Disorders (CARD)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/iris-roman-6465b5229",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Aeri Moon",
+   "title": "Assistant Professor of Harvard Medical School, Associate Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/aeri-moon-b57634106",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Allison Clack",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/allison-clack-44b55620a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Bresnahan C",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Tufts Medical Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/bresnahan-c-81a83b58",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@tuftsmedicalcenter.org",
+   "phone": ""
+  },
+  {
+   "name": "Dana Rubin",
+   "title": "Team lead for Child BH ; Pediatrician and Child Psychiatrist",
+   "org": "DotHouse Health",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/dana-rubin-b778a217a",
+   "email": "D\u2022\u2022\u2022\u2022\u2022\u2022@dorchesterhouse.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Amy Armstrong",
+   "title": "Pediatric Resident",
+   "org": "Ann & Robert H. Lurie Children's Hospital of Chicago",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/amy-armstrong-1874784",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Christopher Sullivan",
+   "title": "Pediatrician",
+   "org": "Healthcare South P.C.",
+   "city": "Marshfield",
+   "linkedin": "https://www.linkedin.com/in/christopher-sullivan-888180130",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@healthcaresouth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Carolyn Rundquist",
+   "title": "Pediatrician",
+   "org": "Brigham and Women's Hospital",
+   "city": "Suffolk County",
+   "linkedin": "https://www.linkedin.com/in/carolyn-rundquist-74a86b13b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Jacqueline Spain",
+   "title": "Pediatrician",
+   "org": "Holyoke Health Center, Inc.",
+   "city": "Northampton",
+   "linkedin": "https://www.linkedin.com/in/jacqueline-spain-72949483",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hhcinc.org",
+   "phone": ""
+  },
+  {
+   "name": "Karen Turner",
+   "title": "Occupational Therapist Patient Navigator for Autism and Developmental Disorders",
+   "org": "Massachusetts General Hospital",
+   "city": "Quincy",
+   "linkedin": "https://www.linkedin.com/in/karen-turner-2a2756111",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lambert Rebecca",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Chelsea",
+   "linkedin": "https://www.linkedin.com/in/lambert-rebecca-0199b0141",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jeanette Callahan",
+   "title": "Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/jeanette-callahan-a53b3a16",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@challiance.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Cristina Culcea",
+   "title": "Pediatrician",
+   "org": "Holyoke Health Center, Inc.",
+   "city": "Charlton",
+   "linkedin": "https://www.linkedin.com/in/cristina-culcea-a11553158",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hhcinc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Berryzad Ramadan",
+   "title": "Pediatrician",
+   "org": "Lowell Community Health Center",
+   "city": "Chelmsford",
+   "linkedin": "https://www.linkedin.com/in/berryzad-ramadan-19428642",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@lchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Julie Jankelson",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Acton",
+   "linkedin": "https://www.linkedin.com/in/julie-jankelson-441b4b76",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Kore Anderson",
+   "title": "Pediatrician",
+   "org": "Parkview Adventist Medical Center",
+   "city": "Charlestown",
+   "linkedin": "https://www.linkedin.com/in/kore-anderson-1b6758b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Deborah Gurski",
+   "title": "Pediatrician",
+   "org": "UMass Memorial Medical Center",
+   "city": "Spencer",
+   "linkedin": "https://www.linkedin.com/in/deborah-gurski-49716921",
+   "email": "d\u2022\u2022\u2022@umassmemorial.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Nick Hallett",
+   "title": "Pediatrician",
+   "org": "Windrose Health Network",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/nick-hallett-b60347123",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Teresa Mitchell",
+   "title": "Pediatrician",
+   "org": "Sisters of Providence Health System",
+   "city": "Westfield",
+   "linkedin": "https://www.linkedin.com/in/teresa-mitchell-28244399",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Peter Greenspan",
+   "title": "Primary Care Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Newton",
+   "linkedin": "https://www.linkedin.com/in/peter-greenspan-75121330a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "William Horgan",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Grafton",
+   "linkedin": "https://www.linkedin.com/in/william-horgan-821874a8",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Michaela Hoffmann",
+   "title": "Board Certified Autism Technician",
+   "org": "Cortica",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/michaela-hoffmann-59047b22a",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Mari Nakamura",
+   "title": "Pediatrician and researcher",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/mari-nakamura-2a298615",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Marcia Dworkind",
+   "title": "Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/marcia-dworkind-3a746b17",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Sabina K.",
+   "title": "Pediatrician",
+   "org": "Harvard Medical Faculty Physicians at Beth Israel Deaconess Medical Center, Inc.",
+   "city": "Norfolk County",
+   "linkedin": "https://www.linkedin.com/in/sabina-k-aa93991a1",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Marc Grella",
+   "title": "pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/marcgrellamd",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Anna Schwieger-Hart",
+   "title": "Pediatrician/ Developmental-Behavioral Pediatric Fellow",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/anna-schwieger-hart-b3872263",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Hannah Martin",
+   "title": "Pediatric Resident",
+   "org": "Yale New Haven Hospital",
+   "city": "Natick",
+   "linkedin": "https://www.linkedin.com/in/hannah-martin-139923a5",
+   "email": "H\u2022\u2022\u2022\u2022\u2022\u2022@ynhh.org",
+   "phone": ""
+  },
+  {
+   "name": "Mary grace",
+   "title": "Pediatrician",
+   "org": "Quincy Pediatrics Assoc Inc",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/mary-grace-516697159",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Cohen Mark",
+   "title": "Pediatrician",
+   "org": "Acton Medical Associates",
+   "city": "Acton",
+   "linkedin": "https://www.linkedin.com/in/cohen-mark-45080287",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@actonmedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Jenny Raphael",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/jenny-raphael-7b5319162",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": ""
+  },
+  {
+   "name": "Anne Coates",
+   "title": "Pediatric resident",
+   "org": "UMass Memorial Medical Center",
+   "city": "Shrewsbury",
+   "linkedin": "https://www.linkedin.com/in/anne-coates-3540a27",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Tess Curran",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/tess-curran-b72768247",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Gigi Anchan",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Sharon",
+   "linkedin": "https://www.linkedin.com/in/gigi-anchan-11471641",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Michael Cummings",
+   "title": "Pediatrician",
+   "org": "Healthcare South P.C.",
+   "city": "East Weymouth",
+   "linkedin": "https://www.linkedin.com/in/michael-cummings-809a65b8",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@healthcaresouth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293"
+  },
+  {
+   "name": "Marie-Astrid Lefebvre",
+   "title": "Pediatrician",
+   "org": "Tufts Medical Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/marie-astrid-lefebvre-4136aa47",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Gregory Hagan",
+   "title": "Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Somerville",
+   "linkedin": "https://www.linkedin.com/in/gregory-hagan-8a3b15218",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Betty Collada",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/betty-collada-a3603a123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Peter Barrant",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Stoughton",
+   "linkedin": "https://www.linkedin.com/in/peter-barrant-245378",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290"
+  },
+  {
+   "name": "Vivian Tang",
+   "title": "Pediatric Resident",
+   "org": "Tufts Medical Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/vivian-tang-52969925",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Laura McCullough",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/laura-mccullough-291aa210",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Whitney Schutzbank",
+   "title": "Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/whitney-schutzbank-014803ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Sarah Teasdale",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/sarah-teasdale-ab301812",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Beth Wigden",
+   "title": "pediatrician",
+   "org": "Southboro Medical Group",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/beth-wigden-1a096549",
+   "email": "b\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Caitlin King",
+   "title": "Primary Care Pediatrician",
+   "org": "Centre Pediatric Associates, PC",
+   "city": "Wellesley Hills",
+   "linkedin": "https://www.linkedin.com/in/caitlin-king-b1437727b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Eileen Semancik",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Concord",
+   "linkedin": "https://www.linkedin.com/in/eileen-semancik-7629b116b",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Kayla Haskin, LCSW",
+   "title": "Child Therapist",
+   "org": "Merrimack Valley Psychological Associates",
+   "city": "Methuen",
+   "linkedin": "https://www.linkedin.com/in/kayla-haskin-lcsw-638013172",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295"
+  },
+  {
+   "name": "Jessica Pierre Francois, MD",
+   "title": "Pediatrician",
+   "org": "Codman Square Health Center",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/jessica-pierre-francois-md-b67a472a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Jill Sedacca,M.D.",
+   "title": "Pediatrician",
+   "org": "Teladoc Health",
+   "city": "Wellesley Hills",
+   "linkedin": "https://www.linkedin.com/in/jill-sedacca-m-d-0944b0b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Malessa D.",
+   "title": "Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/malessa-d-27b80312b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Derrick Chu",
+   "title": "Primary Care Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/derrick-chu-54b15899",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Alex Cordova",
+   "title": "Clinical Research Coordinator, Lurie Center for Autism",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/alexander-cordova-451045147",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Allie Epstein",
+   "title": "Pediatrician",
+   "org": "Woburn & North Andover Pediatric Associates",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/allie-epstein-098994a7",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@woburnpedi.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220"
+  },
+  {
+   "name": "Jennifer Schonberg",
+   "title": "Staff Child Psychologist",
+   "org": "Cambridge Health Alliance",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/jennifer-schonberg-psyd-023a0648",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Erin Carroll",
+   "title": "Pediatric Resident",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/erinmcarroll",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Richard Marshall",
+   "title": "pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/richard-marshall-1937634",
+   "email": "R\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Megan McBride",
+   "title": "Child Psychologist",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/megan-mcbride-33260a5a",
+   "email": "m\u2022\u2022\u2022\u2022@utexas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Tracy S.",
+   "title": "Acute Care Pediatrician, Hospitalist",
+   "org": "Boston Children's Hospital",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/tracy-seimears-95837616",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": ""
+  },
+  {
+   "name": "Natalie Diacovo",
+   "title": "Primary Care Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Somerville",
+   "linkedin": "https://www.linkedin.com/in/natalie-diacovo-2b235a90",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Andrew Oliver, MD",
+   "title": "Pediatrician",
+   "org": "Plymouth Pediatric Associates",
+   "city": "Plymouth",
+   "linkedin": "https://www.linkedin.com/in/andrew-oliver-md-39671529",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276"
+  },
+  {
+   "name": "Ariana Witkin, MD, FAAP",
+   "title": "Telehealth Pediatrician",
+   "org": "Maven Clinic",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/ariana-witkin-md-faap-80b425186",
+   "email": "m\u2022\u2022\u2022@bmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Marvin Wang, MD",
+   "title": "Pediatrician",
+   "org": "Mount Auburn Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/marvin-wang-md-060851a6",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Matthew Chamberlain",
+   "title": "Pediatrician",
+   "org": "Acton Medical Associates",
+   "city": "Chelmsford",
+   "linkedin": "https://www.linkedin.com/in/matthewdchamberlain",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@actonmedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Liana Bolen M.Ed., LABA, BCBA",
+   "title": "Licensed Autism Care Advocate",
+   "org": "Optum",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/liana-bolen-m-ed-laba-bcba-20868862",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Mawada Hussein, MD",
+   "title": "General Pediatrician",
+   "org": "UMass Memorial Health",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/mawada-hussein-md-20816a12b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Shelby Hyvonen",
+   "title": "Clinical Child Psychologist/Assistant Professor of Psychiatry",
+   "org": "Baystate Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/shelby-hyvonen-54b0b53",
+   "email": "s\u2022\u2022\u2022@baystatehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203"
+  },
+  {
+   "name": "Liana Kretschmar McCabe",
+   "title": "Pediatrician",
+   "org": "Framingham Pediatrics",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/liana-kretschmar-mccabe-868143b1",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Priscilla Morales-Williams PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "First Choice Health Centers, Inc.",
+   "city": "Westfield",
+   "linkedin": "https://www.linkedin.com/in/pmoraleswilliams",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Marie Reilly, MD",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/marie-reilly-md-628967174",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Mohsina Alom",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/mohsina-alom-854b0117",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298"
+  },
+  {
+   "name": "Kelly Dakin",
+   "title": "Associate Scientific Director, Lurie Center for Autism",
+   "org": "Massachusetts General Hospital",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/kelly-dakin-5a824618",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Ying Ge Wang",
+   "title": "Pediatric Resident",
+   "org": "NewYork-Presbyterian Hospital",
+   "city": "Quincy",
+   "linkedin": "https://www.linkedin.com/in/ying-ge-wang-80021272",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Erin Bouchard",
+   "title": "Child Therapist",
+   "org": "Center for Life Management",
+   "city": "Lynn",
+   "linkedin": "https://www.linkedin.com/in/erin-bouchard-735a6bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "Elizabeth Abbate, PsyD",
+   "title": "Outpatient Staff Child Psychologist",
+   "org": "Cambridge Health Alliance",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-abbate-psyd-7948ba160",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Emily Smith",
+   "title": "Pediatrician",
+   "org": "Plymouth Pediatric Associates",
+   "city": "Plymouth",
+   "linkedin": "https://www.linkedin.com/in/emily-smith-a7142b123",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234"
+  },
+  {
+   "name": "Lindsay Oliver",
+   "title": "Pediatrician",
+   "org": "Reliant Medical Group",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/lindsay-oliver-1708749",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235"
+  },
+  {
+   "name": "Deborah Buccino, MD, FAAP",
+   "title": "Developmental Behavioral Pediatrician",
+   "org": "Community Health & Wellness Center",
+   "city": "Stockbridge",
+   "linkedin": "https://www.linkedin.com/in/deborah-buccino-md-faap-86ba4a74",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@chwctorr.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Alyssa Levin-Scherz",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/alyssa-levin-scherz-abb77626",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@tuftsmedicalcenter.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Adetokunbo Olotu",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/adetokunbo-olotu-52455071",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Brittanny Boulanger MD, FAAP",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Winchester",
+   "linkedin": "https://www.linkedin.com/in/brittanny-boulanger-md-faap-0105b87",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255"
+  },
+  {
+   "name": "Laddy Maisonet",
+   "title": "Pediatrician",
+   "org": "Pediatric Health Care Associates, P.C.",
+   "city": "Lynn",
+   "linkedin": "https://www.linkedin.com/in/laddy-maisonet-5a5080124",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@phcapediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265"
+  },
+  {
+   "name": "SARA BECHERUCCI",
+   "title": "medico Pediatra",
+   "org": "AZIENDA USL 3 PISTOIA",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/sara-becherucci-16593536",
+   "email": "",
+   "phone": "+\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u202264"
+  },
+  {
+   "name": "Natasha F.",
+   "title": "Pediatric Resident",
+   "org": "Hasbro Children's",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/natasha-f-41a075b2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Usman Ghumman",
+   "title": "Director of Autism-Depression Comorbidity",
+   "org": "Massachusetts General Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/usmanghumman",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Tim Porter",
+   "title": "Pediatrician",
+   "org": "Brigham and Women's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/tim-porter-69bb489",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Lori Aronson",
+   "title": "General Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/lori-aronson-122b671b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Jason M. Luszcz",
+   "title": "Pediatric Physician Assistant",
+   "org": "Trinity Health Of New England",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/jason-m-luszcz-6b78615",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Andrew B.",
+   "title": "Pediatrician",
+   "org": "Framingham Pediatrics",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/andrew-b-a95191100",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206"
+  },
+  {
+   "name": "Susan A., PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/susan-a-pa-c-1117b1175",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jeremy Slosberg",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Sharon",
+   "linkedin": "https://www.linkedin.com/in/jeremy-slosberg-995248a9",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Maria Pento",
+   "title": "Pediatric Physician Assistant",
+   "org": "Boston Children's Hospital",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/maria-pento-25a85a180",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Beatriz Meza-Valencia",
+   "title": "Pediatrician",
+   "org": "NeighborHealth",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/beatriz-meza-valencia-09319073",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244"
+  },
+  {
+   "name": "Colbee Daigneault",
+   "title": "Pediatric Physician Assistant",
+   "org": "Medical Associates Pediatrics",
+   "city": "Leominster",
+   "linkedin": "https://www.linkedin.com/in/colbee-daigneault-78a86927a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "John Truman",
+   "title": "Honorary Pediatrician",
+   "org": "Massachusetts General Hospital",
+   "city": "North Andover",
+   "linkedin": "https://www.linkedin.com/in/john-truman-a667259",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231"
+  },
+  {
+   "name": "Karen Klein",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/karen-klein-68966146",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Christie Devoe, D.O.",
+   "title": "Pediatrician",
+   "org": "Core Physicians, LLC",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/christie-devoe-d-o-95341962",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299"
+  },
+  {
+   "name": "Lori Andersen",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/lori-andersen-4973b15",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Kate Smith",
+   "title": "Clinical Child Psychologist",
+   "org": "Neuropsychological Assessment & Treatment Services",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/drkatesmith",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@neuropsychassessment.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214"
+  },
+  {
+   "name": "Alec Allain",
+   "title": "Pediatric Resident",
+   "org": "Massachusetts General Hospital",
+   "city": "Lynn",
+   "linkedin": "https://www.linkedin.com/in/alec-allain-845420b6",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Ruby Fehm",
+   "title": "Autism Program Intern at BMC Division of Developmental and Behavioral Pediatrics",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/ruby-fehm-573b00333",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Divya Koster",
+   "title": "Pediatrician",
+   "org": "Signature Healthcare, MA",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/divya-koster-3463945a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Olufunke (Funke) Oladejo",
+   "title": "Pediatrician",
+   "org": "St. Luke's University Health Network",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/olufunke-oladejo-8a97a858",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@sluhn.org",
+   "phone": ""
+  },
+  {
+   "name": "Lisa G.",
+   "title": "Pediatrician",
+   "org": "Mass General Brigham",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/lisakgruber",
+   "email": "g\u2022\u2022\u2022\u2022@partners.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Lisa Dobberteen M.D.",
+   "title": "pediatrician, Cambridge Pediatrics",
+   "org": "Cambridge Health Alliance",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/lisa-dobberteen-m-d-183067b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@challiance.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258"
+  },
+  {
+   "name": "Ellyn Schmidt",
+   "title": "Clinical Child Psychologist",
+   "org": "Boston Child Study Center - Boston, Los Angeles, Maine",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/ellyn-schmidt-904a393a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@bostonchildstudycenter.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273"
+  },
+  {
+   "name": "Moira Zabel",
+   "title": "Pediatrician",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/moira-zabel-260b07104",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287"
+  },
+  {
+   "name": "Lulu Xu",
+   "title": "Pediatric Resident",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/lulu-xu-62584299",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Shelby Ballou",
+   "title": "Pediatric Resident",
+   "org": "UMass Memorial Medical Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/shelby-ballou-a0300769",
+   "email": "b\u2022\u2022\u2022@umassmemorial.org",
+   "phone": ""
+  },
+  {
+   "name": "Grace Chi",
+   "title": "Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/grace-chi-793a5911",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Thomas Wadzinski",
+   "title": "Pediatrician and Pediatric Endocrinologist",
+   "org": "Fairview Pediatrics LLC",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/thomas-wadzinski-819a99a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Alyssa Robinson",
+   "title": "Primary Care Pediatrician",
+   "org": "South Boston Community Health Center",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/alyssa-robinson-4804182b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Laurel Xu",
+   "title": "Pediatrician",
+   "org": "Cambridge Health Alliance",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/laurel-xu-02a198180",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Katherine Tuttle",
+   "title": "Pediatric Resident",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/katherine-tuttle-4b73ab14",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "Lauren Harris",
+   "title": "Pediatric Physician Assistant",
+   "org": "Reliant Medical Group",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/lauren-harris-632b59102",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Julia Berg",
+   "title": "Development-Behavioral Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/julia-berg-198b1764",
+   "email": "j\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Emily Chen",
+   "title": "Pediatrician and Internal Medicine Primary Care Physician",
+   "org": "Cambridge Health Alliance",
+   "city": "Cambridge",
+   "linkedin": "https://www.linkedin.com/in/emily-chen-74727421",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Alexander Strzalkowski",
+   "title": "Pediatrician",
+   "org": "Children's Specialized Hospital",
+   "city": "Auburndale",
+   "linkedin": "https://www.linkedin.com/in/alexander-strzalkowski-528b1591",
+   "email": "a\u2022\u2022\u2022@rwjbh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Loretta Chou",
+   "title": "Pediatrician",
+   "org": "East Boston Neighborhood Health Center",
+   "city": "Bedford",
+   "linkedin": "https://www.linkedin.com/in/loretta-chou-725074135",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "catherine distler",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Brookline",
+   "linkedin": "https://www.linkedin.com/in/catherine-distler-6135a740",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Naomi Priver",
+   "title": "Pediatrician",
+   "org": "Mount Auburn Cambridge Independent Practice Association, Inc. (MACIPA)",
+   "city": "Lexington",
+   "linkedin": "https://www.linkedin.com/in/naomi-priver-61613694",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@MACIPA.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268"
+  },
+  {
+   "name": "Lara Antkowiak, MD, MEd",
+   "title": "Primary Care Pediatrician",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/lara-antkowiak-md-med-90890318",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227"
+  },
+  {
+   "name": "Virginia Elliott, LMHC",
+   "title": "Child Counselor",
+   "org": "Arbour Counseling Services",
+   "city": "Suffolk County",
+   "linkedin": "https://www.linkedin.com/in/virginia-elliott-lmhc-70110786",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Alexandra Kimmel",
+   "title": "Pediatric Resident",
+   "org": "Boston Children's Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/alexandra-kimmel-89ba2b11a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenshospital.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "Carol Yohanna Godoy Collazos",
+   "title": "Pediatra intensivista",
+   "org": "FUNDACION CARDIOINFANTIL",
+   "city": "Quincy",
+   "linkedin": "https://www.linkedin.com/in/carol-yohanna-godoy-collazos-a4934b158",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cardioinfantil.org",
+   "phone": ""
+  },
+  {
+   "name": "John Cocchiarella",
+   "title": "Pediatrician",
+   "org": "Southboro Medical Group",
+   "city": "Holliston",
+   "linkedin": "https://www.linkedin.com/in/john-cocchiarella-27a1526a",
+   "email": "j\u2022\u2022\u2022@reliantmedicalgroup.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "David Leslie",
+   "title": "Pediatrician",
+   "org": "Franciscan Children's",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/david-leslie-08bb0520",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@franciscanchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Stephanie Friend",
+   "title": "Pediatrician",
+   "org": "East Boston Neighborhood Health Center",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/stephanie-friend-0b34ba95",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Loretta Chou",
+   "title": "Pediatrician",
+   "org": "Lowell Community Health Center",
+   "city": "Lowell",
+   "linkedin": "https://www.linkedin.com/in/loretta-chou-a661b015a",
+   "email": "L\u2022\u2022\u2022\u2022\u2022\u2022@lchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Kristen Haddon, DO",
+   "title": "Pediatrician \u2014 Mt Auburn Pediatrics at Beaver Brook",
+   "org": "Beth Israel Lahey Health",
+   "city": "Wellesley Hills",
+   "linkedin": "https://www.linkedin.com/in/kristen-haddon-do-a607971a9",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@bilh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Marni Roitfarb (Canterbury)",
+   "title": "Pediatrician",
+   "org": "Harvard Vanguard Medical Associates",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/marni-roitfarb-canterbury-a5b64a8",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240"
+  },
+  {
+   "name": "Anna Rosenquist",
+   "title": "Pediatrician",
+   "org": "Atrius Health",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/anna-rosenquist-5b0228122",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@atriushealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Haylee Rosenblatt",
+   "title": "Pediatric Resident",
+   "org": "Children's National Hospital",
+   "city": "Wayland",
+   "linkedin": "https://www.linkedin.com/in/haylee-rosenblatt-8b17bb86",
+   "email": "H\u2022\u2022\u2022\u2022\u2022@childrensnational.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243"
+  },
+  {
+   "name": "Jenny Chen, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "PM Pediatric Care",
+   "city": "Wilbraham",
+   "linkedin": "https://www.linkedin.com/in/jenny-chen-pa-c-b149611b7",
+   "email": "j\u2022\u2022\u2022\u2022@pmpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267"
+  },
+  {
+   "name": "Deborah Jonas",
+   "title": "Pediatrician",
+   "org": "Dedham Medical Associates",
+   "city": "Newton Centre",
+   "linkedin": "https://www.linkedin.com/in/deborah-jonas-a8a6b345",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@dedhammedical.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "Norah Mwakio",
+   "title": "Board certified Autism Technician",
+   "org": "Cortica",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/norah-mwakio-31749141",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Nicole Ouimette",
+   "title": "Autism Specialist Associate",
+   "org": "Howard Center",
+   "city": "Chicopee",
+   "linkedin": "https://www.linkedin.com/in/nicole-ouimette-89b9a937",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252"
+  },
+  {
+   "name": "Sheyla Candido",
+   "title": "Pediatrician",
+   "org": "Emerson Health",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/sheyla-candido-bb250688",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Shelby S.",
+   "title": "Pediatric Physician Assistant",
+   "org": "Lake Region Healthcare",
+   "city": "Worcester",
+   "linkedin": "https://www.linkedin.com/in/shelby-s-4517812a8",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Briana Primavera",
+   "title": "Adult Autism Resource Specialist Intern",
+   "org": "Boston Medical Center (BMC)",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/briana-primavera-933581264",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Karen Turner, MS, OTR/L",
+   "title": "Occupational Therapist Patient Navigator for Autism and Developmental Disorders",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/karen-turner-ms-otr-l-b7350b1b2",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225"
+  },
+  {
+   "name": "Dan Hall",
+   "title": "Pediatric Resident",
+   "org": "Massachusetts General Hospital",
+   "city": "Boston",
+   "linkedin": "https://www.linkedin.com/in/dan-hall-237b6929",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Sophia Leu",
+   "title": "Pediatric Resident",
+   "org": "Baystate Health",
+   "city": "Springfield",
+   "linkedin": "https://www.linkedin.com/in/sophia-leu-11270b85",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211"
+  },
+  {
+   "name": "Carly Eiduson",
+   "title": "Pediatric Resident",
+   "org": "Children's Hospital of Philadelphia",
+   "city": "Greater Boston",
+   "linkedin": "https://www.linkedin.com/in/carly-eiduson-7325761a3",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Kim Bergner",
+   "title": "Pediatrican",
+   "org": "Boston Children's Hospital",
+   "city": "Weston",
+   "linkedin": "https://www.linkedin.com/in/kim-bergner-77454845",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226"
+  }
+ ]
+}

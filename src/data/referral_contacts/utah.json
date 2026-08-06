@@ -1,0 +1,1120 @@
+{
+ "name": "Utah",
+ "slug": "utah",
+ "file": "/downloads/referral-contacts/pediatric-referral-contacts-utah.csv",
+ "count": 116,
+ "emails": 61,
+ "phones": 94,
+ "roles": [
+  {
+   "label": "Pediatricians & physicians",
+   "count": 84
+  },
+  {
+   "label": "Other child-development professionals",
+   "count": 18
+  },
+  {
+   "label": "Residents, PAs & NPs",
+   "count": 14
+  }
+ ],
+ "topCities": [
+  {
+   "name": "Salt Lake City",
+   "count": 50
+  },
+  {
+   "name": "Salt Lake City Metropolitan Area",
+   "count": 13
+  },
+  {
+   "name": "Provo",
+   "count": 7
+  },
+  {
+   "name": "Ogden",
+   "count": 6
+  },
+  {
+   "name": "Sandy",
+   "count": 5
+  },
+  {
+   "name": "South Jordan",
+   "count": 4
+  }
+ ],
+ "topOrgs": [
+  {
+   "name": "Intermountain Health",
+   "count": 39
+  },
+  {
+   "name": "University of Utah Health",
+   "count": 35
+  },
+  {
+   "name": "Wasatch Behavioral Health",
+   "count": 7
+  },
+  {
+   "name": "Ogden Clinic",
+   "count": 7
+  },
+  {
+   "name": "Valley Behavioral Health",
+   "count": 5
+  },
+  {
+   "name": "Utah Valley Pediatrics",
+   "count": 3
+  }
+ ],
+ "rows": [
+  {
+   "name": "Krow Ampofo",
+   "title": "Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/krow-ampofo-0a120235",
+   "email": "K\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Laura Simenson",
+   "title": "Service Line Director: Women's Health / Pediatrics / Neurosciences @ Intermountain Medical Center",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/mccullochlaura",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Jana Neville",
+   "title": "Supervisor of Case Managememt and Special Programs-Autism",
+   "org": "TriWest Healthcare Alliance",
+   "city": "Hyrum",
+   "linkedin": "https://www.linkedin.com/in/jana-neville-949202222",
+   "email": "j\u2022\u2022\u2022@triwest.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256"
+  },
+  {
+   "name": "Hiu Yan Lam",
+   "title": "Research Assistant | Autism Speech Analysis",
+   "org": "BYU Comprehensive Clinic",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/heidilhy",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289"
+  },
+  {
+   "name": "Brenda Ritson",
+   "title": "Urgent Care Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/brenda-ritson-24637114",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263"
+  },
+  {
+   "name": "Saee Ashtaputre",
+   "title": "Medical Assistant- Pediatrics and Internal Medicine",
+   "org": "University of Utah Health",
+   "city": "South Jordan",
+   "linkedin": "https://www.linkedin.com/in/saee-ashtaputre",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": ""
+  },
+  {
+   "name": "Sarah Schear, MD, MS",
+   "title": "Clinical Assistant Professor of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/sarah-schear-md-ms-9087b648",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204"
+  },
+  {
+   "name": "Joseph Cramer",
+   "title": "Pediatrician",
+   "org": "Hope Clinic",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/joseph-cramer-6904b437",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282"
+  },
+  {
+   "name": "Sirey Zhang",
+   "title": "Resident Physician- Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/sireyzhang",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Pav Selvam",
+   "title": "Combined Pediatrics Medical Genetics Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/pav-selvam-4b92ba56",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Andi Stubbs, RN",
+   "title": "Director of Pediatrics",
+   "org": "Salus Homecare",
+   "city": "Midvale",
+   "linkedin": "https://www.linkedin.com/in/andi-stubbs-rn-hcs-d-hcs-o-cos-c-ab276a6b",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Shelby Kneip",
+   "title": "Intermountain Health Pediatrics Dept MA",
+   "org": "Intermountain Health",
+   "city": "Washington",
+   "linkedin": "https://www.linkedin.com/in/shelby-stephenson1",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Abdelaziz Farhat MD",
+   "title": "Division Medical Director - Pediatrics",
+   "org": "HCA Mountain Division",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/abdelaziz-farhat-md",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mountainstar.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  },
+  {
+   "name": "Gloria Slattum",
+   "title": "Program Director and Research Manager, Research Education Office - Department of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/gloria-slattum-538ab661",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Megan Brandt-Cornwell, MSBA",
+   "title": "Pediatrics Analytics Team Lead",
+   "org": "Intermountain Health",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/megan-brandt-cornwell-msba-31b33240",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209"
+  },
+  {
+   "name": "Margaret Bale",
+   "title": "General Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/margaret-bale-3a67b856",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "gina knight",
+   "title": "Medical Sales Representative at IQVIA | L\u2019Oreal | CeraVe | Pediatrics",
+   "org": "IQVIA",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/gina-knight-3b1b4a231",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@iqvia.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281"
+  },
+  {
+   "name": "Courtney Beasley",
+   "title": "Outpatient Scheduling Manager - Department of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/beasleycourtney",
+   "email": "C\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207"
+  },
+  {
+   "name": "Madison Pratt",
+   "title": "Patient Care Technician and Health Unit Coordinator/Pediatrics",
+   "org": "Intermountain Health",
+   "city": "St George",
+   "linkedin": "https://www.linkedin.com/in/madison-pratt-893941108",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202"
+  },
+  {
+   "name": "Mark Valentine",
+   "title": "Pediatrican",
+   "org": "Intermountain Health",
+   "city": "Sandy",
+   "linkedin": "https://www.linkedin.com/in/mark-valentine-263a7a66",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Lindsay Curtis, MBA, MSN, RN, NE-BC",
+   "title": "PICU/Pediatrics Nurse Manager",
+   "org": "Intermountain Health",
+   "city": "Herriman",
+   "linkedin": "https://www.linkedin.com/in/lindsay-curtis-mba-msn-rn-ne-bc-b5401023a",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Jennifer Bischoff",
+   "title": "Director, Revenue Cycle Pediatrics and Multi Specialty",
+   "org": "Specialty Dental Brands",
+   "city": "Pleasant Grove",
+   "linkedin": "https://www.linkedin.com/in/jennifer-bischoff-b50927168",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Bruce Mullenix",
+   "title": "iCentra (Cerner) System Nurse Manager Women's Health and Pediatrics",
+   "org": "Intermountain Health",
+   "city": "American Fork",
+   "linkedin": "https://www.linkedin.com/in/bruce-mullenix-8047482",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269"
+  },
+  {
+   "name": "Mili Shum",
+   "title": "Assistant Professor of Medicine and Adjunct Professor of Pediatrics in Allergy and Immunology",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/mili-shum-b006002",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Leslie Nakaya APRN, FNP-C",
+   "title": "Family Nurse Practitioner, Pediatrics",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/leslie-nakaya-aprn-fnp-c-68855321",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229"
+  },
+  {
+   "name": "Renee Olesen, MD, FAAP",
+   "title": "Pediatrician",
+   "org": "INTERMOUNTAIN HOLLADAY CLINIC",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/renee-olesen-md-faap-89a98127",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Taylor Ostmark Beidler",
+   "title": "Administration Manager, Department of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/taylor-ostmark",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245"
+  },
+  {
+   "name": "Amy Jeong",
+   "title": "Autism Aide - Giant Steps Autism Preschool",
+   "org": "Wasatch Behavioral Health",
+   "city": "American Fork",
+   "linkedin": "https://www.linkedin.com/in/amy-jeong-797595186",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Hank Wirth, MD, MS",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/hank-wirth-md-ms-a9b58827",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242"
+  },
+  {
+   "name": "Jennifer Mijer",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Riverton",
+   "linkedin": "https://www.linkedin.com/in/jennifer-mijer-1548bb13",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217"
+  },
+  {
+   "name": "John Weipert",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/john-weipert-52845489",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259"
+  },
+  {
+   "name": "Jed VanDenBerghe",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/jed-vandenberghe-66038488",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Maria Vigil-Mallette",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/maria-vigil-mallette-443a73112",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Mandy Donavan",
+   "title": "Practice Director Pediatrics/OB",
+   "org": "Intermountain Health",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/mandy-donavan-95719267",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292"
+  },
+  {
+   "name": "Swati Chandra",
+   "title": "Pediatrics Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/swati-chandra-2019",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251"
+  },
+  {
+   "name": "Kevin Watt",
+   "title": "Professor of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/kevin-watt-3b3125184",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278"
+  },
+  {
+   "name": "Katrina Hillam",
+   "title": "Pediatrician",
+   "org": "Connecticut Children's",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/katrina-hillam-872432106",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@connecticutchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208"
+  },
+  {
+   "name": "Jessie Hatch MS, RDN, CD",
+   "title": "Lead Clinical Dietitian for NICU, Obstetrics, and Pediatrics",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/jessie-hatch-ms-rdn-cd-2657965a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Natalie Darro",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/natalie-darro-36858aa9",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Nelangi Pinto",
+   "title": "Professor of Pediatrics",
+   "org": "Seattle Children's",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/nelangi-pinto-abb61b120",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jon Bartholomew",
+   "title": "Pediatrician",
+   "org": "Utah Valley Pediatrics",
+   "city": "Orem",
+   "linkedin": "https://www.linkedin.com/in/jon-bartholomew-69b27370",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "Amanda Davidson",
+   "title": "Lead Facilitator of PEERS Social Skills for Adults With Autism",
+   "org": "Valley Behavioral Health",
+   "city": "Sandy",
+   "linkedin": "https://www.linkedin.com/in/amanda-davidson-a03980115",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285"
+  },
+  {
+   "name": "Jessica Riese, MD, MPH",
+   "title": "Primary Care Pediatrician",
+   "org": "MultiCare Health System",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/jessica-riese-md-mph-02717511",
+   "email": "m\u2022\u2022\u2022@multicare.org",
+   "phone": ""
+  },
+  {
+   "name": "Tammie Richardson",
+   "title": "Claims Solutions Coder - Neonatology and Pediatrics",
+   "org": "Intermountain Health",
+   "city": "Pleasant Grove",
+   "linkedin": "https://www.linkedin.com/in/tammie-richardson-00544220b",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Stacy Henry, M.Ed., RBT",
+   "title": "Registered Behavioral Technician for Children with Autism Spectrum Disorder",
+   "org": "Alternative Behavior Strategies, Inc",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/stacy-henry-needs-a-job",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "kathy franchek-roa",
+   "title": "Assistant Professor of Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/kathy-franchek-roa-804a4633",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221"
+  },
+  {
+   "name": "Kimberly Hunt",
+   "title": "Autism aide",
+   "org": "Wasatch Behavioral Health",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/kimberly-hunt-41571566",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jonathan Williams",
+   "title": "Chair of Pediatrics",
+   "org": "Ogden Clinic",
+   "city": "Kaysville",
+   "linkedin": "https://www.linkedin.com/in/jonathan-williams-44626a10",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ogdenclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266"
+  },
+  {
+   "name": "Coral Nolen",
+   "title": "General Pediatrics Administrative Assistant",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/coral-nolen-4069692b",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "D. Spencer Mangum",
+   "title": "Associate Professor of Pediatrics in the Division of Pediatric Hematology and Oncology",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/d-spencer-mangum-06b7b0256",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jenna Whitham",
+   "title": "Attending Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/jenna-whitham-a30b54168",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Bryan Stone",
+   "title": "Hospitalist, pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/bryan-stone-a2111840",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253"
+  },
+  {
+   "name": "Wayne Elwood, PHR",
+   "title": "Pediatrics Personnel Representative",
+   "org": "University of Utah Health",
+   "city": "Roy",
+   "linkedin": "https://www.linkedin.com/in/wayne-elwood-696b47b5",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": ""
+  },
+  {
+   "name": "Gwen Cannon",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/gwen-cannon-a240084b",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Stacey Townsend",
+   "title": "Pediatrician and owner",
+   "org": "HOBBLE CREEK MEDICAL CLINIC",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/stacey-townsend-a43a11144",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Anne Hayes",
+   "title": "Autism Specialist",
+   "org": "Wasatch Behavioral Health",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/anne-hayes-12501a73",
+   "email": "a\u2022\u2022\u2022\u2022@wasatch.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201"
+  },
+  {
+   "name": "Thatcher Allred, MPAS, PA-C",
+   "title": "Pediatric Physician Assistant",
+   "org": "Ogden Clinic",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/thatcher-allred-mpas-pa-c-1185381b2",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@ogdenclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Brad Clark",
+   "title": "Pediatrician",
+   "org": "Ogden Clinic",
+   "city": "Clearfield",
+   "linkedin": "https://www.linkedin.com/in/brad-clark-aa812599",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280"
+  },
+  {
+   "name": "Tahlia Walbrecht",
+   "title": "Clinical Rotation- Pediatrics",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/tahlia-walbrecht-052282204",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218"
+  },
+  {
+   "name": "mary burton",
+   "title": "pediatrician",
+   "org": "Intermountain Health",
+   "city": "Park City",
+   "linkedin": "https://www.linkedin.com/in/mary-burton-22440271",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260"
+  },
+  {
+   "name": "Fauncy DalCanto",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/fauncy-dalcanto-09735040",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274"
+  },
+  {
+   "name": "Kimbrie Nally",
+   "title": "Autism Aide",
+   "org": "Wasatch Behavioral Health",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/kimbrie-nally-09b91b1bb",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Kaitlyn Simpson (Skrzypcak), MD",
+   "title": "Primary Care Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/kaitlyn-simpson-skrzypcak-md-6abb3b116",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222"
+  },
+  {
+   "name": "Peter Lindgren",
+   "title": "pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/peter-lindgren-06091146",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Macey Denison",
+   "title": "Autism Aide",
+   "org": "Wasatch Behavioral Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/maceydenison",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212"
+  },
+  {
+   "name": "John M. Matsen, M.D.",
+   "title": "Emeritus Professor of Pathology and Pediatrics, University of Utah School of Medicine",
+   "org": "University of Utah Health",
+   "city": "Farmington",
+   "linkedin": "https://www.linkedin.com/in/john-m-matsen-m-d-36699146",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219"
+  },
+  {
+   "name": "Tina Allgaier",
+   "title": "Customer Advocate Specialist in Pediatrics",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/tina-allgaier-9316a2b5",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270"
+  },
+  {
+   "name": "Dustin Havey",
+   "title": "Physician assistant, Pediatrics",
+   "org": "Ogden Clinic",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/dustin-havey-194a9991",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ogdenclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Michelle Bosley Henderson",
+   "title": "General Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/michelle-bosley-henderson-bbb509ba",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261"
+  },
+  {
+   "name": "Elizabeth Smith",
+   "title": "pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-smith-04b49727",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296"
+  },
+  {
+   "name": "Tazeem Aizad",
+   "title": "Pediatrician",
+   "org": "Jordan Valley Hospital",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/tazeem-aizad-a1b68570",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246"
+  },
+  {
+   "name": "jordan Judkins",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Sandy",
+   "linkedin": "https://www.linkedin.com/in/jordan-judkins-74880a1a5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238"
+  },
+  {
+   "name": "Guy LaMere",
+   "title": "Physician, Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Park City",
+   "linkedin": "https://www.linkedin.com/in/guy-lamere-7a34a497",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Bradley Hunter",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "Woods Cross",
+   "linkedin": "https://www.linkedin.com/in/bradley-hunter-845aa0132",
+   "email": "B\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Mindy Boehm",
+   "title": "Pediatrician",
+   "org": "Ogden Clinic",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/mindy-boehm-99bbb139",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241"
+  },
+  {
+   "name": "Catherine Strasser",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Kaysville",
+   "linkedin": "https://www.linkedin.com/in/catherine-strasser-99a1b4143",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271"
+  },
+  {
+   "name": "Anna Jones",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/anna-jones-68664131a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": ""
+  },
+  {
+   "name": "Dowse Ben",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "South Jordan",
+   "linkedin": "https://www.linkedin.com/in/dowse-ben-986b7750",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Derek Weyhrauch",
+   "title": "Assistant Professor of Clinical Pediatrics",
+   "org": "Cincinnati Children's",
+   "city": "South Jordan",
+   "linkedin": "https://www.linkedin.com/in/derek-weyhrauch-245629148",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210"
+  },
+  {
+   "name": "Lu Lu Waterhouse",
+   "title": "Resident Physician (Pediatrics)",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/lu-lu-waterhouse-bb7a5b5",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279"
+  },
+  {
+   "name": "Alicia Yan",
+   "title": "autism aide",
+   "org": "Wasatch Behavioral Health",
+   "city": "Provo",
+   "linkedin": "https://www.linkedin.com/in/alicia-yan-a59075a7",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Carol Bruggers",
+   "title": "pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/carol-bruggers-9bb48975",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233"
+  },
+  {
+   "name": "Jacob Varghese",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/jacob-varghese-29a68521",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "Michelle Kim",
+   "title": "Manager, Autism Resource",
+   "org": "New Directions Behavioral Health (now Lucet)",
+   "city": "Farmington",
+   "linkedin": "https://www.linkedin.com/in/michelle-kim-4963ab230",
+   "email": "m\u2022\u2022\u2022@ndbh.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297"
+  },
+  {
+   "name": "Lucy Hansen",
+   "title": "Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/lucy-hansen-374a3739",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205"
+  },
+  {
+   "name": "Abby Huggard",
+   "title": "Autism Aide",
+   "org": "Valley Behavioral Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/abby-huggard-9741128a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Ryan Hassan",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/ryan-hassan-039957138",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Alyson Edmunds",
+   "title": "pediatrician",
+   "org": "University of Utah Health",
+   "city": "Midvale",
+   "linkedin": "https://www.linkedin.com/in/alyson-edmunds-45b99b50",
+   "email": "A\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215"
+  },
+  {
+   "name": "Shannon (Cox) Murphy",
+   "title": "Pediatrics Resident",
+   "org": "University of Utah Health",
+   "city": "Sandy",
+   "linkedin": "https://www.linkedin.com/in/shannon-cox-murphy-6503466",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262"
+  },
+  {
+   "name": "Jason Church",
+   "title": "Physician- Pediatrician",
+   "org": "Ogden Clinic",
+   "city": "Ogden",
+   "linkedin": "https://www.linkedin.com/in/jason-church-2717b219",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ogdenclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213"
+  },
+  {
+   "name": "Sylvie Home",
+   "title": "pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/sylvie-home-1b117b82",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Ana Navarro",
+   "title": "Autism aid",
+   "org": "Wasatch Behavioral Health",
+   "city": "Orem",
+   "linkedin": "https://www.linkedin.com/in/ana-navarro-04400367",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248"
+  },
+  {
+   "name": "kerri smith",
+   "title": "pediatrician",
+   "org": "Intermountain Health",
+   "city": "St George",
+   "linkedin": "https://www.linkedin.com/in/kerri-smith-7122a76a",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "kristin Lynch",
+   "title": "General Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/kristin-lynch-08331456",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286"
+  },
+  {
+   "name": "Neal Davis",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "South Jordan",
+   "linkedin": "https://www.linkedin.com/in/neal-davis-a7144545",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250"
+  },
+  {
+   "name": "John Galian",
+   "title": "pediatrician",
+   "org": "IHCIS",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/john-galian-8a00229",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224"
+  },
+  {
+   "name": "Ty Olson",
+   "title": "ABA Autism-Waiver",
+   "org": "Chrysalis Inc",
+   "city": "St George",
+   "linkedin": "https://www.linkedin.com/in/ty-olson-3b3ba6a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Brian McCune",
+   "title": "Pediatrician",
+   "org": "Utah Valley Pediatrics",
+   "city": "American Fork",
+   "linkedin": "https://www.linkedin.com/in/brian-mccune-4000362a5",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Jeff Schmidt",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Sandy",
+   "linkedin": "https://www.linkedin.com/in/jeff-schmidt-b0021022",
+   "email": "j\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Douglas Nielsen",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Bountiful",
+   "linkedin": "https://www.linkedin.com/in/douglas-nielsen-75295825",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288"
+  },
+  {
+   "name": "Halee Mecham",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Layton",
+   "linkedin": "https://www.linkedin.com/in/halee-mecham-08b435150",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "John Allred",
+   "title": "pediatrician",
+   "org": "Ogden Clinic",
+   "city": "Roy",
+   "linkedin": "https://www.linkedin.com/in/john-allred-6288961a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ogdenclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230"
+  },
+  {
+   "name": "Brenda Hernandez",
+   "title": "Autism Instructor",
+   "org": "Weber Human Services",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/brenda-hernandez-757906185",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254"
+  },
+  {
+   "name": "Jessica Kim",
+   "title": "Pediatric Resident",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/jessica-kim-2bb151278",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Lisa Samson-Fang",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/lisa-samson-fang-83623a335",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Erin Avondet",
+   "title": "Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/erin-avondet-145659263",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291"
+  },
+  {
+   "name": "Ellie Brownstein",
+   "title": "Pediatrician",
+   "org": "University of Utah Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/ellie-brownstein-8b570a10a",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232"
+  },
+  {
+   "name": "Eva Mercado",
+   "title": "UTAH VALLEY PEDIATRICS- MA",
+   "org": "Utah Valley Pediatrics",
+   "city": "American Fork",
+   "linkedin": "https://www.linkedin.com/in/eva-mercado-139074221",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200"
+  },
+  {
+   "name": "Mary Burton",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Park City",
+   "linkedin": "https://www.linkedin.com/in/mary-burton-8179a023b",
+   "email": "M\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Taylor Anderson",
+   "title": "Autism Aide",
+   "org": "Valley Behavioral Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/taylor-anderson-912171168",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236"
+  },
+  {
+   "name": "Sierra Jensen",
+   "title": "Autism Aide",
+   "org": "Valley Behavioral Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/sierra-jensen-50453934",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228"
+  },
+  {
+   "name": "Shellie Ring",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/shellie-ring-008b7466",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@intermountainhealthcare.org",
+   "phone": ""
+  },
+  {
+   "name": "Yadira Ramirez",
+   "title": "Autism assistant",
+   "org": "Valley Behavioral Health",
+   "city": "Salt Lake City Metropolitan Area",
+   "linkedin": "https://www.linkedin.com/in/yadira-ramirez-111255179",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "name": "Roland Dimick",
+   "title": "Pediatrician",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/roland-dimick-313393263",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247"
+  },
+  {
+   "name": "Cynthia Coor",
+   "title": "pediatrics",
+   "org": "Intermountain Health",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/cynthia-coor-489a4840",
+   "email": "",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294"
+  },
+  {
+   "name": "Abdelaziz Farhat MD",
+   "title": "Division Medical Director - Pediatrics",
+   "org": "HCA Mountain Division",
+   "city": "Salt Lake City",
+   "linkedin": "https://www.linkedin.com/in/abdelaziz-farhat-md-ba045217b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mountainstar.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239"
+  }
+ ]
+}
