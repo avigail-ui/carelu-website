@@ -3,8 +3,8 @@
  "slug": "alabama",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-alabama.csv",
  "count": 1775,
- "emails": 23,
- "practiceEmails": 61,
+ "emails": 76,
+ "practiceEmails": 59,
  "phones": 1775,
  "direct": 0,
  "roles": [
@@ -75,6 +75,171 @@
  ],
  "rows": [
   {
+   "name": "Andrea Branch, MD",
+   "title": "Pediatrician",
+   "org": "Purohit Pediatric Clinic, Llc",
+   "city": "Anniston",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amanda Hall, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Purohit Pediatric Clinic, Llc",
+   "city": "Anniston",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Martin, MD",
+   "title": "Pediatrician",
+   "org": "Angela M. Martin, M.D. F.A.A.P.",
+   "city": "Anniston",
+   "linkedin": "https://www.linkedin.com/in/martinangela",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Tucker, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Purohit Pediatric Clinic, Llc",
+   "city": "Anniston",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tonya Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Kids R Us Pediatrics Llc",
+   "city": "Arab",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carrie Sanders, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Dorsett Dental Care, Llc",
+   "city": "Bessemer",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@montgomeryplanning.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Amamoo, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Magnolia Pediatrics South Inc",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/paul-amamoo-0a5555169",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Benton, M.D",
+   "title": "Pediatrician",
+   "org": "Uahsf Pediatrics Adolescent Medicine",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ct.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Brooks, MSN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Children'S Hosptial Of Alabama",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@russellreynolds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Campbell, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/christine-campbell-6131a35",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Clark, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Alabama Health Services Foundation Pc",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/stephen-clark-014b1b22",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vicki Cunningham, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Children'S Hospital Of Alabama",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@northlanddhb.org.nz",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Dodenhoff, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Alabama Health Services Foundation, PC",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uab.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Donahue, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Alabama Health Services Foundation Pc",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/brian-donahue-74982275",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edward Goldblatt, M.D",
+   "title": "Pediatrician",
+   "org": "Southlake Pediatrics, Inc.",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ansley Gross",
    "title": "Pediatric Nurse Practitioner",
    "org": "Christ Health Center Inc",
@@ -82,6 +247,50 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022@christhealthcenter.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Hawkins, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric & Adult Asthma And Allergy, P.C",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Walter Johnson, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Of Alabama Health Services Foundation, PC",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Snehal Khatri, M.D",
+   "title": "Pediatrician",
+   "org": "Primary Care Clinic",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uab.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Peters, MD",
+   "title": "Pediatrician",
+   "org": "The Children'S Hospital Of Alabama",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-peters-097806106",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@maryland.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -97,6 +306,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephen Russell, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Alabama Health Services Foundation, PC",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/stephenmrussell",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@utexas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elna Saah, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Of Alabama Health Services Foundation Pc",
+   "city": "Birmingham",
+   "linkedin": "https://www.linkedin.com/in/elna-saah-md-ms-a4a251237",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Abbie Sharpe",
    "title": "Pediatric Nurse Practitioner",
    "org": "Christ Health Center Inc",
@@ -104,6 +335,105 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@christhealthcenter.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Simpson, M.D",
+   "title": "Pediatrician",
+   "org": "The Children'S Hospital Of Alabama",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gstt.nhs.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Smith, M.D",
+   "title": "Pediatrician",
+   "org": "The Children'S Hospital Of Alabama",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hope Weeks, M.D",
+   "title": "Pediatrician",
+   "org": "Quality Of Life Health Services, Inc",
+   "city": "Cullman",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@unr.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brenda McGivern, DO",
+   "title": "Adolescent Medicine Physician",
+   "org": "Demopolis Pediatrics",
+   "city": "Demopolis",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uwa.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Lozano, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Dothan Pediatric Clinic, P. A.",
+   "city": "Dothan",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ual.es",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jenny Reid, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southeastern Pediatric Associates, P.A.",
+   "city": "Dothan",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@redcross.no",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Grant Allen, MD",
+   "title": "Pediatrician",
+   "org": "Riverbend Center For Mental Health",
+   "city": "Florence",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erika Crenshaw, MD",
+   "title": "Pediatrician",
+   "org": "Infants And Childrens Clinic Pc",
+   "city": "Florence",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@iccpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Wallace, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Infants And Childrens Clinic Pc",
+   "city": "Florence",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -163,6 +493,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Patricia Harris, M.D",
+   "title": "Pediatrician",
+   "org": "Healthykids Of Gardendale",
+   "city": "Gardendale",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@cchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amber Bishop, M.D",
+   "title": "Pediatrician",
+   "org": "Marshall Medical Center North Jones Pediatric Practice",
+   "city": "Guntersville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Don Jones, M.D",
+   "title": "Pediatrician",
+   "org": "North Marshall Pediatrics, P.C.",
+   "city": "Guntersville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@illinois.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mary Santiago, MD",
    "title": "Pediatrician",
    "org": "North Mississippi Medical Clinics Inc",
@@ -174,6 +537,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Lovell, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Athens Limestone Health Services",
+   "city": "Harvest",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@csumb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Malone, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "South Trace Pediatrics, P.C.",
+   "city": "Hoover",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@waldenu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mario Davila, M.D",
+   "title": "Pediatrician",
+   "org": "Central North Alabama Health Services, Inc.",
+   "city": "Huntsville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utrgv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Joann Johnson, MD",
    "title": "Pediatrician",
    "org": "Athens Pediatrics",
@@ -181,6 +577,39 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@stcloudstate.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Donald Laney, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Pediatric Gastroenterology Associates Pc",
+   "city": "Huntsville",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Teresa Lynch, M.D",
+   "title": "Pediatrician",
+   "org": "Huntsville Hospital Pediatric Hospitalists",
+   "city": "Huntsville",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Sabio, MD",
+   "title": "Pediatrician",
+   "org": "The Village Medical Clinic",
+   "city": "Huntsville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -229,6 +658,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Alicia Saunders, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Drs Dabbs & Hyland Pc",
+   "city": "Jasper",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@rnao.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Robert Rux, M.D",
    "title": "Pediatrician",
    "org": "Magnolia Springs Pediatrics Pc",
@@ -251,6 +691,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Hannah Bahakel, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Medical Center",
+   "city": "Mobile",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ladonna Crews, MD",
+   "title": "Pediatrician",
+   "org": "Usa Health Physician Billing Services LLC",
+   "city": "Mobile",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gul Dadlani, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Nemours Foundation",
+   "city": "Mobile",
+   "linkedin": "https://www.linkedin.com/in/gul-dadlani-094742127",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anne-Marie Kaulfers, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Laboratory Corporation Of America Holdings",
+   "city": "Mobile",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@health.southalabama.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Daniel McCall, M.D",
    "title": "Pediatrician",
    "org": "Mobile County Board Of Health",
@@ -258,6 +742,28 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mchd.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Thai, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Of Texas Southwestern Medical Center At Dallas",
+   "city": "Mobile",
+   "linkedin": "https://www.linkedin.com/in/lauren-thai",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Albert Holloway, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Adolescent & Pediatric Associates",
+   "city": "Montgomery",
+   "linkedin": "https://www.linkedin.com/in/albert-holloway-65a357114",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@charter.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -284,6 +790,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joseph Sadler, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Healthcare, Llc",
+   "city": "Montgomery",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Danielle Speight, M.D",
    "title": "Pediatrician",
    "org": "Partners In Pediatrics, Llc",
@@ -295,6 +812,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shanda Shrader, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Eastside Ventures, Inc.",
+   "city": "Oneonta",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Stinson, M.D",
+   "title": "Pediatrician",
+   "org": "Dothan Pediatric Clinic, P. A.",
+   "city": "Ozark",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carolyn Wilson, C.R.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mission Medical, Inc",
+   "city": "Russellville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Melissa Byrd, CPCP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Coastal Pediatrics Llc",
@@ -302,6 +852,39 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@dc.gov",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sandra Soares, M.D",
+   "title": "Pediatrician",
+   "org": "Southeast Cancer Network, Inc",
+   "city": "Sylacauga",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hhchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Farmer, M.D",
+   "title": "Pediatrician",
+   "org": "Tuscaloosa Pediatrics",
+   "city": "Tuscaloosa",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@pitt.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Keisha Lowther, MD",
+   "title": "Pediatrician",
+   "org": "Pinnacle Physician Group LLP",
+   "city": "Tuscaloosa",
+   "linkedin": "https://www.linkedin.com/in/keisha-lowther-m-d-696482293",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@whatleyhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -526,17 +1109,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Andrea Branch, MD",
-   "title": "Pediatrician",
-   "org": "Purohit Pediatric Clinic, Llc",
-   "city": "Anniston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Cori Broadhead",
    "title": "Pediatric Nurse Practitioner",
    "org": "Purohit Pediatric Clinic, Llc",
@@ -581,17 +1153,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amanda Hall, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Purohit Pediatric Clinic, Llc",
-   "city": "Anniston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Nikko Holloway, FNP",
    "title": "Pediatrician",
    "org": "Purohit Pediatric Clinic, Llc",
@@ -610,17 +1171,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Angela Martin, MD",
-   "title": "Pediatrician",
-   "org": "Angela M. Martin, M.D. F.A.A.P.",
-   "city": "Anniston",
-   "linkedin": "https://www.linkedin.com/in/martinangela",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -702,17 +1252,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Tucker, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Purohit Pediatric Clinic, Llc",
-   "city": "Anniston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Randi Countryman",
    "title": "Pediatric Nurse Practitioner",
    "org": "Kids R Us Pediatrics Llc",
@@ -726,17 +1265,6 @@
   {
    "name": "Katie Jones, CPNP-PC, PMHNP-BC",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Kids R Us Pediatrics Llc",
-   "city": "Arab",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tonya Miller, M.D",
-   "title": "Pediatrician",
    "org": "Kids R Us Pediatrics Llc",
    "city": "Arab",
    "linkedin": "",
@@ -966,17 +1494,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Carrie Sanders, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Dorsett Dental Care, Llc",
-   "city": "Bessemer",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marwan Shalabi, MD",
    "title": "Pediatrician",
    "org": "Babi Pediatrics,Pc Dba Peds459",
@@ -1061,17 +1578,6 @@
    "linkedin": "https://www.linkedin.com/in/elizabeth-alva-14029771",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Amamoo, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Magnolia Pediatrics South Inc",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/paul-amamoo-0a5555169",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1329,17 +1835,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Benton, M.D",
-   "title": "Pediatrician",
-   "org": "Uahsf Pediatrics Adolescent Medicine",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "David Bernard, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Of Alabama Health Services Foundation, PC",
@@ -1560,17 +2055,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Brooks, MSN, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Hosptial Of Alabama",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Khalilah Brown, M.D",
    "title": "Pediatrician",
    "org": "Jefferson County Board Of Health",
@@ -1681,17 +2165,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christine Campbell, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/christine-campbell-6131a35",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Waldemar Carlo, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Of Alabama Health Services Foundation, PC",
@@ -1776,17 +2249,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Clark, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Alabama Health Services Foundation Pc",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/stephen-clark-014b1b22",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1923,17 +2385,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Vicki Cunningham, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Hospital Of Alabama",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Valerie Davis, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Of Alabama Health Services Foundation, PC",
@@ -2029,28 +2480,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Dodenhoff, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Alabama Health Services Foundation, PC",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Donahue, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Alabama Health Services Foundation Pc",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/brian-donahue-74982275",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2374,17 +2803,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Edward Goldblatt, M.D",
-   "title": "Pediatrician",
-   "org": "Southlake Pediatrics, Inc.",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Emily Goodwin, M.D",
    "title": "Pediatrician",
    "org": "Primary Care Clinic",
@@ -2627,17 +3045,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Hawkins, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric & Adult Asthma And Allergy, P.C",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Deborah Hayes, M.D",
    "title": "Pediatrician",
    "org": "Jefferson County Board Of Health",
@@ -2847,17 +3254,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Walter Johnson, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Of Alabama Health Services Foundation, PC",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kaitlin Johnson, MD",
    "title": "Pediatrician",
    "org": "Pediatric Anesthesia Associates Pc",
@@ -2964,17 +3360,6 @@
    "linkedin": "https://www.linkedin.com/in/ahmadmkhalil",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Snehal Khatri, M.D",
-   "title": "Pediatrician",
-   "org": "Primary Care Clinic",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3617,17 +4002,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Peters, MD",
-   "title": "Pediatrician",
-   "org": "The Children'S Hospital Of Alabama",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/elizabeth-peters-097806106",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bragan Petrey, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Uahsf Pediatric Endocrinology",
@@ -3881,17 +4255,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Russell, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Alabama Health Services Foundation, PC",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/stephenmrussell",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Chrystal Rutledge, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "University Of Alabama Health Services Foundation, PC",
@@ -3899,17 +4262,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elna Saah, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Of Alabama Health Services Foundation Pc",
-   "city": "Birmingham",
-   "linkedin": "https://www.linkedin.com/in/elna-saah-md-ms-a4a251237",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4046,17 +4398,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "John Simpson, M.D",
-   "title": "Pediatrician",
-   "org": "The Children'S Hospital Of Alabama",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathryn Six, M.D",
    "title": "Pediatrician",
    "org": "Carolinas Medical Center",
@@ -4066,17 +4407,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@atriumhealth.org"
-  },
-  {
-   "name": "Richard Smith, M.D",
-   "title": "Pediatrician",
-   "org": "The Children'S Hospital Of Alabama",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Andrea Smith, CRNP",
@@ -4816,17 +5146,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Hope Weeks, M.D",
-   "title": "Pediatrician",
-   "org": "Quality Of Life Health Services, Inc",
-   "city": "Cullman",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Karen Barker, M.D",
    "title": "Pediatrician",
    "org": "Pulmonary Associates Of Mobile Pc",
@@ -4992,17 +5311,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brenda McGivern, DO",
-   "title": "Adolescent Medicine Physician",
-   "org": "Demopolis Pediatrics",
-   "city": "Demopolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Craig Adams, M.D",
    "title": "Pediatrician",
    "org": "Southeastern Pediatric Associates, P.A.",
@@ -5157,17 +5465,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Lozano, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Dothan Pediatric Clinic, P. A.",
-   "city": "Dothan",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Marshall, C.R.N.P",
    "title": "Pediatric Nurse Practitioner",
    "org": "Dothan Pediatric Clinic, P. A.",
@@ -5219,17 +5516,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jenny Reid, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Southeastern Pediatric Associates, P.A.",
-   "city": "Dothan",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5454,30 +5740,8 @@
    "practiceEmail": "i\u2022\u2022\u2022@fairhopepeds.com"
   },
   {
-   "name": "Grant Allen, MD",
-   "title": "Pediatrician",
-   "org": "Riverbend Center For Mental Health",
-   "city": "Florence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jeffrey Cornelius, CRNP",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Infants And Childrens Clinic Pc",
-   "city": "Florence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erika Crenshaw, MD",
-   "title": "Pediatrician",
    "org": "Infants And Childrens Clinic Pc",
    "city": "Florence",
    "linkedin": "",
@@ -5549,17 +5813,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Wallace, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Infants And Childrens Clinic Pc",
-   "city": "Florence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5927,17 +6180,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patricia Harris, M.D",
-   "title": "Pediatrician",
-   "org": "Healthykids Of Gardendale",
-   "city": "Gardendale",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Anne Keen, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Pediatric Rural Health Clinics, Inc",
@@ -6004,17 +6246,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amber Bishop, M.D",
-   "title": "Pediatrician",
-   "org": "Marshall Medical Center North Jones Pediatric Practice",
-   "city": "Guntersville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alicia Ewing, MD",
    "title": "Pediatrician",
    "org": "Marshall Medical Center North Jones Pediatric Practice",
@@ -6022,17 +6253,6 @@
    "linkedin": "https://www.linkedin.com/in/alicia-ewing-919566a3",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Don Jones, M.D",
-   "title": "Pediatrician",
-   "org": "North Marshall Pediatrics, P.C.",
-   "city": "Guntersville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6105,17 +6325,6 @@
   {
    "name": "Ana Bell, M.D",
    "title": "Pediatrician",
-   "org": "Athens Limestone Health Services",
-   "city": "Harvest",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Lovell, NP",
-   "title": "Pediatric Nurse Practitioner",
    "org": "Athens Limestone Health Services",
    "city": "Harvest",
    "linkedin": "",
@@ -6242,17 +6451,6 @@
    "linkedin": "https://www.linkedin.com/in/brian-dudgeon-a9385b18",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Malone, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "South Trace Pediatrics, P.C.",
-   "city": "Hoover",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6539,17 +6737,6 @@
    "linkedin": "https://www.linkedin.com/in/marladaves",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mario Davila, M.D",
-   "title": "Pediatrician",
-   "org": "Central North Alabama Health Services, Inc.",
-   "city": "Huntsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6884,17 +7071,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Donald Laney, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Pediatric Gastroenterology Associates Pc",
-   "city": "Huntsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thomas Lee, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Huntsville Hospital Pediatric Hospitalists",
@@ -6924,17 +7100,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Teresa Lynch, M.D",
-   "title": "Pediatrician",
-   "org": "Huntsville Hospital Pediatric Hospitalists",
-   "city": "Huntsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7177,17 +7342,6 @@
    "linkedin": "https://www.linkedin.com/in/carolyn-russo-a210aa12",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maria Sabio, MD",
-   "title": "Pediatrician",
-   "org": "The Village Medical Clinic",
-   "city": "Huntsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7518,17 +7672,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alicia Saunders, N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Drs Dabbs & Hyland Pc",
-   "city": "Jasper",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7973,17 +8116,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Hannah Bahakel, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Medical Center",
-   "city": "Mobile",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Erlinda Belen, M.D",
    "title": "Pediatrician",
    "org": "Mobile County Board Of Health",
@@ -8149,17 +8281,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ladonna Crews, MD",
-   "title": "Pediatrician",
-   "org": "Usa Health Physician Billing Services LLC",
-   "city": "Mobile",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Karen Crissinger, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "Laboratory Corporation Of America Holdings",
@@ -8180,17 +8301,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Gul Dadlani, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Nemours Foundation",
-   "city": "Mobile",
-   "linkedin": "https://www.linkedin.com/in/gul-dadlani-094742127",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
    "name": "Janelle Davis, NP",
@@ -8442,17 +8552,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anne-Marie Kaulfers, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Laboratory Corporation Of America Holdings",
-   "city": "Mobile",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9007,17 +9106,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lauren Thai, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Of Texas Southwestern Medical Center At Dallas",
-   "city": "Mobile",
-   "linkedin": "https://www.linkedin.com/in/lauren-thai",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "t\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu"
-  },
-  {
    "name": "Kimberly Thompson, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Usa Health Physician Billing Services Llc",
@@ -9337,17 +9425,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Albert Holloway, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Adolescent & Pediatric Associates",
-   "city": "Montgomery",
-   "linkedin": "https://www.linkedin.com/in/albert-holloway-65a357114",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Malissa Hoy, D.O",
    "title": "Pediatrician",
    "org": "The Children'S Hospital Of Alabama",
@@ -9498,17 +9575,6 @@
    "linkedin": "https://www.linkedin.com/in/elmer-roque-6a0b2936",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joseph Sadler, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Healthcare, Llc",
-   "city": "Montgomery",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9762,17 +9828,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shanda Shrader, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Eastside Ventures, Inc.",
-   "city": "Oneonta",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10118,17 +10173,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Stinson, M.D",
-   "title": "Pediatrician",
-   "org": "Dothan Pediatric Clinic, P. A.",
-   "city": "Ozark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Farzana Malik, M.D",
    "title": "Pediatrician",
    "org": "The Children'S Hospital Of Alabama",
@@ -10213,17 +10257,6 @@
    "linkedin": "https://www.linkedin.com/in/jitpatel31",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carolyn Wilson, C.R.N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Mission Medical, Inc",
-   "city": "Russellville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10477,17 +10510,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sandra Soares, M.D",
-   "title": "Pediatrician",
-   "org": "Southeast Cancer Network, Inc",
-   "city": "Sylacauga",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10767,17 +10789,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Thomas Farmer, M.D",
-   "title": "Pediatrician",
-   "org": "Tuscaloosa Pediatrics",
-   "city": "Tuscaloosa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Faye Knowles, M.D",
    "title": "Pediatrician",
    "org": "Whatley Health Services, Inc.",
@@ -10785,17 +10796,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Keisha Lowther, MD",
-   "title": "Pediatrician",
-   "org": "Pinnacle Physician Group LLP",
-   "city": "Tuscaloosa",
-   "linkedin": "https://www.linkedin.com/in/keisha-lowther-m-d-696482293",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

@@ -3,7 +3,7 @@
  "slug": "north-dakota",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-north-dakota.csv",
  "count": 247,
- "emails": 4,
+ "emails": 10,
  "practiceEmails": 0,
  "phones": 247,
  "direct": 0,
@@ -75,6 +75,17 @@
  ],
  "rows": [
   {
+   "name": "Waseem Altaf, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Zara Hussain, MD",
    "title": "Pediatrician",
    "org": "Innovis Health Llc",
@@ -97,6 +108,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephen Nelson, MD",
+   "title": "Neonatologist",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Tinguely, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Medical Center Fargo",
+   "city": "Fargo",
+   "linkedin": "https://www.linkedin.com/in/stephen-tinguely-02622640",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@med.und.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "James Miles, MD",
    "title": "Pediatrician",
    "org": "Altru Health System",
@@ -114,6 +147,39 @@
    "city": "Grand Forks",
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@altru.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Myra Quanrud, MD",
+   "title": "Pediatrician",
+   "org": "Anne Carlsen Center",
+   "city": "Jamestown",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Steven Mattson, MD",
+   "title": "Pediatrician",
+   "org": "Trinity Hospitals",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Himadri Nath, M.D",
+   "title": "Neonatologist",
+   "org": "Trinity Health",
+   "city": "Minot",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -275,17 +341,6 @@
   {
    "name": "Amanda Alexis, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Sanford Medical Center Fargo",
-   "city": "Fargo",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Waseem Altaf, MD",
-   "title": "Neonatologist",
    "org": "Sanford Medical Center Fargo",
    "city": "Fargo",
    "linkedin": "",
@@ -713,17 +768,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Nelson, MD",
-   "title": "Neonatologist",
-   "org": "Sanford Medical Center Fargo",
-   "city": "Fargo",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Janice Nicklay Catalan, MD",
    "title": "Neonatologist",
    "org": "Sanford Medical Center Fargo",
@@ -900,17 +944,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Tinguely, MD",
-   "title": "Pediatrician",
-   "org": "Sanford Medical Center Fargo",
-   "city": "Fargo",
-   "linkedin": "https://www.linkedin.com/in/stephen-tinguely-02622640",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Matthew Trefz, MD",
    "title": "Pediatric Cardiologist",
    "org": "Sanford Medical Center Fargo",
@@ -1043,17 +1076,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Myra Quanrud, MD",
-   "title": "Pediatrician",
-   "org": "Anne Carlsen Center",
-   "city": "Jamestown",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "James Mehus, MD",
    "title": "Pediatrician",
    "org": "Sanford Health Network North",
@@ -1094,28 +1116,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Steven Mattson, MD",
-   "title": "Pediatrician",
-   "org": "Trinity Hospitals",
-   "city": "Minot",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Himadri Nath, M.D",
-   "title": "Neonatologist",
-   "org": "Trinity Health",
-   "city": "Minot",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

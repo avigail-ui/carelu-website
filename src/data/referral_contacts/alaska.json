@@ -3,8 +3,8 @@
  "slug": "alaska",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-alaska.csv",
  "count": 268,
- "emails": 5,
- "practiceEmails": 15,
+ "emails": 12,
+ "practiceEmails": 13,
  "phones": 267,
  "direct": 0,
  "roles": [
@@ -53,11 +53,11 @@
    "count": 21
   },
   {
-   "name": "Alaska Center For Pediatrics, Llc",
+   "name": "Alaska Native Tribal Health Consortium",
    "count": 11
   },
   {
-   "name": "Alaska Native Tribal Health Consortium",
+   "name": "Alaska Center For Pediatrics, Llc",
    "count": 11
   },
   {
@@ -74,6 +74,28 @@
   }
  ],
  "rows": [
+  {
+   "name": "Jill Barnes, ANP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Asthma And Immunology Center Of Alaska Llc",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jasmine Brock, MD",
+   "title": "Pediatrician",
+   "org": "Department Of Defense",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
   {
    "name": "Michael Malandra, M.D",
    "title": "Pediatric Gastroenterologist",
@@ -119,6 +141,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anne White, MD- PEDIATRICS",
+   "title": "Pediatrician",
+   "org": "Southcentral Foundation",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mednet.ucla.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Brenda Wittman, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Alaska Pediatric Specialties Llc",
@@ -126,6 +159,50 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@alaskapeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephani Zakutansky, MD",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Anchorage",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@anthc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gwendolyn Lieb, M.D",
+   "title": "Pediatrician",
+   "org": "Tanana Valley Clinic LLC",
+   "city": "Fairbanks",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@foundationhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anne Murphy, D.O",
+   "title": "Pediatrician",
+   "org": "Anchorage Vamc",
+   "city": "Jber",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elisa Rosier, M.D",
+   "title": "Pediatrician",
+   "org": "Pacific Pediatrics, Llc",
+   "city": "Ketchikan",
+   "linkedin": "https://www.linkedin.com/in/elisa-rosier",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@pacificpediatricsllc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -159,17 +236,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jill Barnes, ANP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Allergy Asthma And Immunology Center Of Alaska Llc",
-   "city": "Anchorage",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -258,17 +324,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jasmine Brock, MD",
-   "title": "Pediatrician",
-   "org": "Department Of Defense",
-   "city": "Anchorage",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -966,17 +1021,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anne White, MD- PEDIATRICS",
-   "title": "Pediatrician",
-   "org": "Southcentral Foundation",
-   "city": "Anchorage",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thad Woodard, MD",
    "title": "Pediatrician",
    "org": "Alaska Center For Pediatrics, Llc",
@@ -997,17 +1041,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Stephani Zakutansky, MD",
-   "title": "Pediatrician",
-   "org": "Alaska Native Tribal Health Consortium",
-   "city": "Anchorage",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022@anthc.org"
   },
   {
    "name": "Beverly Burden",
@@ -1197,17 +1230,6 @@
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@hhsc.org"
   },
   {
-   "name": "Gwendolyn Lieb, M.D",
-   "title": "Pediatrician",
-   "org": "Tanana Valley Clinic LLC",
-   "city": "Fairbanks",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": "s\u2022\u2022\u2022\u2022\u2022\u2022@modahealth.com"
-  },
-  {
    "name": "Mary Macfarlane, M.D",
    "title": "Pediatrician",
    "org": "Fairbanks Clinic Inc",
@@ -1296,17 +1318,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anne Murphy, D.O",
-   "title": "Pediatrician",
-   "org": "Anchorage Vamc",
-   "city": "Jber",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Patricia Vassallo, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Anchorage Vamc",
@@ -1380,17 +1391,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elisa Rosier, M.D",
-   "title": "Pediatrician",
-   "org": "Pacific Pediatrics, Llc",
-   "city": "Ketchikan",
-   "linkedin": "https://www.linkedin.com/in/elisa-rosier",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

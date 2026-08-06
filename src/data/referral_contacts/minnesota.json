@@ -3,8 +3,8 @@
  "slug": "minnesota",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-minnesota.csv",
  "count": 2731,
- "emails": 43,
- "practiceEmails": 183,
+ "emails": 110,
+ "practiceEmails": 178,
  "phones": 2731,
  "direct": 0,
  "roles": [
@@ -75,6 +75,39 @@
  ],
  "rows": [
   {
+   "name": "Ying Wang, M.D",
+   "title": "Pediatrician",
+   "org": "Metropolitan",
+   "city": "Albert Lea",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@ucmail.uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Opp, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Brainerd Medical Center Inc",
+   "city": "Baxter",
+   "linkedin": "https://www.linkedin.com/in/karen-opp-1903bb46",
+   "email": "k\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Hildebrand",
+   "title": "Pediatrician",
+   "org": "North Memorial Health Care",
+   "city": "Blaine",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@stjude.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Hollerud, M.D",
    "title": "Pediatrician",
    "org": "Child And Teen Medical Center",
@@ -130,6 +163,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Yasmin Khan, MD",
+   "title": "Pediatrician",
+   "org": "Park Nicollet Health Care Products",
+   "city": "Bloomington",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Anne Edwards",
    "title": "Pediatrician",
    "org": "Park Nicollet Health Care Products",
@@ -137,6 +181,39 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@aap.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Garrett Jones, M.D",
+   "title": "Pediatrician",
+   "org": "Park Nicollet Health Care Products",
+   "city": "Brooklyn Center",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@baltimorecountymd.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Putnam, M.D",
+   "title": "Pediatrician",
+   "org": "Columbia Park Medical Group, Pa",
+   "city": "Brooklyn Park",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barbara Hansen, MD",
+   "title": "Pediatrician",
+   "org": "Southdale Pediatric Associates, Ltd",
+   "city": "Burnsville",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -174,6 +251,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Susan Lim, MD",
+   "title": "Pediatrician",
+   "org": "Allina Health System",
+   "city": "Coon Rapids",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022@mail.nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abigail Thomas, D.O",
+   "title": "Pediatrician",
+   "org": "Allina Health System",
+   "city": "Coon Rapids",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ucalgary.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Parsons, M.D",
+   "title": "Pediatrician",
+   "org": "Allina Health System",
+   "city": "Cottage Grove",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@columbusfoundation.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jose Gomez, MD, PHD",
    "title": "Pediatrician",
    "org": "The Duluth Clinic Ltd",
@@ -185,6 +295,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Gordon Harvieux",
+   "title": "Pediatrician",
+   "org": "The Duluth Clinic, Ltd",
+   "city": "Duluth",
+   "linkedin": "https://www.linkedin.com/in/gordon-harvieux-19196633",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Meyer, MD",
+   "title": "Pediatrician",
+   "org": "The Duluth Clinic, Ltd",
+   "city": "Duluth",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@unige.ch",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Andrea Watson, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "The Duluth Clinic Ltd",
@@ -192,6 +324,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@essentiahealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Loann Heuring, M.D",
+   "title": "Pediatrician",
+   "org": "Fairview Clinics",
+   "city": "Eagan",
+   "linkedin": "https://www.linkedin.com/in/loann-heuring-md-459364b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -295,6 +438,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kristen Miller, MD",
+   "title": "Pediatrician",
+   "org": "Virtual Radiologic Professionals LLC",
+   "city": "Edina",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lori Skallerud, MD",
    "title": "Pediatrician",
    "org": "Southdale Pediatric Associates, Ltd",
@@ -317,6 +471,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Vicki Thomson, MD",
+   "title": "Pediatrician",
+   "org": "Vicki Thomson Pa",
+   "city": "Edina",
+   "linkedin": "https://au.linkedin.com/in/vicki-thomson-19bb274",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sheri Williams, MD",
    "title": "Pediatrician",
    "org": "Southdale Pediatric Associates, Ltd",
@@ -324,6 +489,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@southdalepeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Knudtson, MD",
+   "title": "Pediatrician",
+   "org": "Hutchinson Medical Center Pa",
+   "city": "Hutchinson",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@isd423.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -350,6 +526,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Erin Stepka, M.D., PH.D",
+   "title": "Neonatologist",
+   "org": "Maple Grove Hospital Corporation",
+   "city": "Maple Grove",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Iluonose Amoni, MD",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shanthi Balani, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sheyanga Beecher, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Hennepin Healthcare System Inc",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hcmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jocelyn Berbee, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Childrens Heart Clinic P,A",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@chc-pa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Brown, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Hennepin Healthcare System Inc",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@utsa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sara Bryan, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Pediatric Surgical Associates Ltd",
@@ -357,6 +599,61 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022@pediatricsurgical.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Burton, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Childrens Heart Clinic P,A",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Cabler, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristin Disori, M.D",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Emery, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aayush Gabrani, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -383,6 +680,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Naomi Goloff, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "Accentcare Fairview Home Health - West, Llc",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@mcgill.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janet Hume, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Katz, M.D",
+   "title": "Pediatrician",
+   "org": "Alaska Native Tribal Health Consortium",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@mail.huji.ac.il",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julie Kenney, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Children'S Health Care",
@@ -405,6 +735,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Hannah Lee, MD",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Linda Madsen, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Childrens Health Care",
@@ -412,6 +753,17 @@
    "linkedin": "https://www.linkedin.com/in/linda-madsen-585896b4",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@minotstateu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin McHugh, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -427,6 +779,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Erin Novak, M.D",
+   "title": "Pediatrician",
+   "org": "Allina Health System",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary O'Donnell, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Regents Of The University Of Minnesota",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nital Patel, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@signaturepremier.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Pitt, M.D",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Plouff, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Health Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sara Ramel, MD",
+   "title": "Pediatrician",
+   "org": "Fairview",
+   "city": "Minneapolis",
+   "linkedin": "https://www.linkedin.com/in/sara-ramel-141190b2",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karim Sadak, MD, MSE",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julie Seiler, M.D",
    "title": "Pediatrician",
    "org": "Fairview Clinics",
@@ -438,6 +867,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephen Selinsky, MD",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kavisha Shah, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Miriam Shapiro, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Stumphy, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Fairview Express Care",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Tan, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@stanford.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tonya White, MD",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tyler Winkelman, M.D",
+   "title": "Pediatrician",
+   "org": "Hennepin Healthcare System Inc",
+   "city": "Minneapolis",
+   "linkedin": "https://www.linkedin.com/in/tyler-winkelman-md-msc-1aa949113",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@hcmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Wozniak, PHD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chris Yang, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
+   "city": "Minneapolis",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@drexel.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Stark, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Fairview Express Care",
+   "city": "Minnetonka",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@choa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Sundberg, MD",
+   "title": "Pediatrician",
+   "org": "White Earth Indian Health Center",
+   "city": "Ogema",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Amy Burt, DO",
    "title": "Pediatrician",
    "org": "Bio-Medical Applications Of Minnesota, Inc.",
@@ -445,6 +995,17 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022@hsc.wvu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cynthia Anderson, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mayo Clinic",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -471,6 +1032,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Breann Butts, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Medical Center",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melinda Chen, MD",
+   "title": "Pediatrician",
+   "org": "University Of Wisconsin Medical Foundation INC",
+   "city": "Rochester",
+   "linkedin": "https://www.linkedin.com/in/melinda-chen-53bb01194",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Katy Gibson, D.O",
    "title": "Pediatrician",
    "org": "Olmsted Medical Center",
@@ -493,6 +1076,116 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joseph Wilson, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Mayo Clinic",
+   "city": "Rochester",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@shrinenet.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jon Dennis, MD, MPH, FAAP",
+   "title": "Pediatrician",
+   "org": "Centracare Clinic",
+   "city": "Saint Cloud",
+   "linkedin": "https://www.linkedin.com/in/jon-dennis-67081431",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ualberta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristen Heffern, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Centracare Clinic",
+   "city": "Saint Cloud",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Molly Welch, RN, CNP",
+   "title": "Neonatologist",
+   "org": "Centracare Clinic",
+   "city": "Saint Cloud",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Adams, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Independent School District 625",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimberly Berg, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Minnesota Epilepsy Group Pa",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@ddpc.ny.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Golnik, MD",
+   "title": "Pediatrician",
+   "org": "Allina Health System",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Mundy, MD",
+   "title": "Pediatrician",
+   "org": "Group Health Plan INC",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@monash.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frank Ritter, MD",
+   "title": "Pediatrician",
+   "org": "Minnesota Epilepsy Group Pa",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@psu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Schneider, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Gillette Childrens Specialty Healthcare",
+   "city": "Saint Paul",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@med.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mackenzie Stice, MD",
    "title": "Pediatrician",
    "org": "Banner-University Medical Group",
@@ -504,6 +1197,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Deana Thomasson, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Gillette Childrens Specialty Healthcare",
+   "city": "Saint Paul",
+   "linkedin": "https://www.linkedin.com/in/deana-thomasson-954b0a124",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Amy Criego, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Park Nicollet Clinic",
@@ -511,6 +1215,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@parknicollet.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Gustafson, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Health Care",
+   "city": "St Paul",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Darling, MD",
+   "title": "Pediatrician",
+   "org": "Group Health Plan INC",
+   "city": "St. Paul",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@usc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -548,6 +1274,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer McCormack, M.D",
+   "title": "Pediatrician",
+   "org": "Group Health Plan Inc",
+   "city": "Woodbury",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@emmes.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lowell Barr, MD",
    "title": "Pediatrician",
    "org": "County Of Freeborn",
@@ -555,17 +1292,6 @@
    "linkedin": "https://www.linkedin.com/in/lowell-barr-9126a43b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ying Wang, M.D",
-   "title": "Pediatrician",
-   "org": "Metropolitan",
-   "city": "Albert Lea",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -845,17 +1571,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Karen Opp, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Brainerd Medical Center Inc",
-   "city": "Baxter",
-   "linkedin": "https://www.linkedin.com/in/karen-opp-1903bb46",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Dean Smith, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Brainerd Medical Center Inc",
@@ -909,17 +1624,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Hildebrand",
-   "title": "Pediatrician",
-   "org": "North Memorial Health Care",
-   "city": "Blaine",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@northmemorial.com"
   },
   {
    "name": "Jennifer Olson, M.D",
@@ -1008,17 +1712,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Yasmin Khan, MD",
-   "title": "Pediatrician",
-   "org": "Park Nicollet Health Care Products",
-   "city": "Bloomington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@healthpartners.com"
   },
   {
    "name": "Stefan Kramarczuk, M.D",
@@ -1162,17 +1855,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@state.mn.us"
-  },
-  {
-   "name": "Garrett Jones, M.D",
-   "title": "Pediatrician",
-   "org": "Park Nicollet Health Care Products",
-   "city": "Brooklyn Center",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@healthpartners.com"
   },
   {
    "name": "David Kloehn, MD",
@@ -1351,17 +2033,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Putnam, M.D",
-   "title": "Pediatrician",
-   "org": "Columbia Park Medical Group, Pa",
-   "city": "Brooklyn Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Daniel Rounds, MD",
    "title": "Pediatrician",
    "org": "Hennepin Healthcare System Inc",
@@ -1501,17 +2172,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barbara Hansen, MD",
-   "title": "Pediatrician",
-   "org": "Southdale Pediatric Associates, Ltd",
-   "city": "Burnsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2055,17 +2715,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Susan Lim, MD",
-   "title": "Pediatrician",
-   "org": "Allina Health System",
-   "city": "Coon Rapids",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Martin-McKay, MD",
    "title": "Pediatrician",
    "org": "Allina Health System",
@@ -2154,17 +2803,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Abigail Thomas, D.O",
-   "title": "Pediatrician",
-   "org": "Allina Health System",
-   "city": "Coon Rapids",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Randall Warren, MD",
    "title": "Pediatrician",
    "org": "Group Health Plan Inc",
@@ -2207,17 +2845,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@state.mn.us"
-  },
-  {
-   "name": "Angela Parsons, M.D",
-   "title": "Pediatrician",
-   "org": "Allina Health System",
-   "city": "Cottage Grove",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Angelina Ausban, MD",
@@ -2440,17 +3067,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gordon Harvieux",
-   "title": "Pediatrician",
-   "org": "The Duluth Clinic, Ltd",
-   "city": "Duluth",
-   "linkedin": "https://www.linkedin.com/in/gordon-harvieux-19196633",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Emily Hvidston, M.D",
    "title": "Pediatrician",
    "org": "The Duluth Clinic, Ltd",
@@ -2617,17 +3233,6 @@
   },
   {
    "name": "Thomas McIntee, MD",
-   "title": "Pediatrician",
-   "org": "The Duluth Clinic, Ltd",
-   "city": "Duluth",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Benjamin Meyer, MD",
    "title": "Pediatrician",
    "org": "The Duluth Clinic, Ltd",
    "city": "Duluth",
@@ -2931,17 +3536,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Loann Heuring, M.D",
-   "title": "Pediatrician",
-   "org": "Fairview Clinics",
-   "city": "Eagan",
-   "linkedin": "https://www.linkedin.com/in/loann-heuring-md-459364b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3298,17 +3892,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristen Miller, MD",
-   "title": "Pediatrician",
-   "org": "Virtual Radiologic Professionals LLC",
-   "city": "Edina",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Noelle Nelson, MD",
    "title": "Pediatrician",
    "org": "Allina Health System",
@@ -3371,17 +3954,6 @@
    "linkedin": "https://www.linkedin.com/in/britta-sundquist-42468764",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vicki Thomson, MD",
-   "title": "Pediatrician",
-   "org": "Vicki Thomson Pa",
-   "city": "Edina",
-   "linkedin": "https://au.linkedin.com/in/vicki-thomson-19bb274",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3789,17 +4361,6 @@
    "linkedin": "https://www.linkedin.com/in/ilene-moore-67329962",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Knudtson, MD",
-   "title": "Pediatrician",
-   "org": "Hutchinson Medical Center Pa",
-   "city": "Hutchinson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4629,17 +5190,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erin Stepka, M.D., PH.D",
-   "title": "Neonatologist",
-   "org": "Maple Grove Hospital Corporation",
-   "city": "Maple Grove",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Aaron Swenson, M.D",
    "title": "Neonatologist",
    "org": "Spine & Sports Institute",
@@ -4937,17 +5487,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Iluonose Amoni, MD",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sanford Anderson, MD",
    "title": "Pediatrician",
    "org": "Children'S Health Care",
@@ -5069,17 +5608,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shanthi Balani, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hannah Balder, APRN CNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Fairview Clinics",
@@ -5168,17 +5696,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sheyanga Beecher, APRN, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Hennepin Healthcare System Inc",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Daniel Beissel, M.D",
    "title": "Pediatric Cardiologist",
    "org": "The Childrens Heart Clinic P,A",
@@ -5241,17 +5758,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jocelyn Berbee, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Childrens Heart Clinic P,A",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5520,17 +6026,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathryn Brown, APRN, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Hennepin Healthcare System Inc",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Fang Bu, M.D",
    "title": "Pediatrician",
    "org": "Children'S Health Care",
@@ -5542,17 +6037,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Burton, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Childrens Heart Clinic P,A",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Razaan Byrne, M.D",
    "title": "Pediatrician",
    "org": "Children'S Health Care",
@@ -5560,17 +6044,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Cabler, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5817,17 +6290,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristin Disori, M.D",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "William Donald, MD",
    "title": "Pediatrician",
    "org": "Group Health Plan Inc",
@@ -5923,17 +6385,6 @@
    "linkedin": "https://www.linkedin.com/in/meikenberry",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Emery, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6114,17 +6565,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aayush Gabrani, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Robert Galvin, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Fairview Express Care",
@@ -6198,17 +6638,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Naomi Goloff, MD",
-   "title": "Pediatric Hospice & Palliative Medicine Physician",
-   "org": "Accentcare Fairview Home Health - West, Llc",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6287,7 +6716,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "l\u2022\u2022\u2022\u2022\u2022\u2022@wnykidsent.com"
   },
   {
    "name": "Ashish Gupta, M.D, M.P.H",
@@ -6642,17 +7071,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Janet Hume, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marnie Huntley, M.D",
    "title": "Pediatric Cardiologist",
    "org": "The Childrens Heart Clinic P,A",
@@ -6827,17 +7245,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Benjamin Katz, M.D",
-   "title": "Pediatrician",
-   "org": "Alaska Native Tribal Health Consortium",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022@anthc.org"
   },
   {
    "name": "Susan Kearney, MD",
@@ -7166,17 +7573,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hannah Lee, MD",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7588,17 +7984,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erin McHugh, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Carolyn McKay, MD",
    "title": "Pediatrician",
    "org": "Fairview Clinics",
@@ -7940,17 +8325,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erin Novak, M.D",
-   "title": "Pediatrician",
-   "org": "Allina Health System",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jeffrey Nowak, M.D",
    "title": "Pediatric Critical Care Specialist",
    "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
@@ -7971,17 +8345,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@state.mn.us"
-  },
-  {
-   "name": "Mary O'Donnell, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Regents Of The University Of Minnesota",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Mallery Olsen, MD",
@@ -8077,17 +8440,6 @@
    "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
    "city": "Minneapolis",
    "linkedin": "https://www.linkedin.com/in/andrew-ozolins-2b268943",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nital Patel, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
-   "city": "Minneapolis",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -8204,28 +8556,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Pitt, M.D",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Plouff, MD",
-   "title": "Pediatrician",
-   "org": "Childrens Health Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hope Pogemiller, M.D",
    "title": "Pediatrician",
    "org": "Fairview Health Services",
@@ -8288,17 +8618,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sara Ramel, MD",
-   "title": "Pediatrician",
-   "org": "Fairview",
-   "city": "Minneapolis",
-   "linkedin": "https://www.linkedin.com/in/sara-ramel-141190b2",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8512,17 +8831,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Karim Sadak, MD, MSE",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Molly Sales, DNP, APRN, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Fairview Express Care",
@@ -8677,17 +8985,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Selinsky, MD",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Sencer, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Childrens Health Care",
@@ -8721,17 +9018,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kavisha Shah, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Robin Shannon, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Fairview Express Care",
@@ -8739,17 +9025,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Miriam Shapiro, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8952,17 +9227,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Stumphy, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Fairview Express Care",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Krishnan Subrahmanian, MD",
    "title": "Pediatrician",
    "org": "Hennepin Healthcare System Inc",
@@ -9003,17 +9267,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Aaron Tan, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9293,17 +9546,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tonya White, MD",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Chester Whitley, MD",
    "title": "Pediatrician",
    "org": "Fairview Express Care",
@@ -9392,17 +9634,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tyler Winkelman, M.D",
-   "title": "Pediatrician",
-   "org": "Hennepin Healthcare System Inc",
-   "city": "Minneapolis",
-   "linkedin": "https://www.linkedin.com/in/tyler-winkelman-md-msc-1aa949113",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Molly Wirtz, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Children'S Health Care",
@@ -9433,18 +9664,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Wozniak, PHD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "l\u2022\u2022\u2022\u2022\u2022\u2022@wnykidsent.com"
   },
   {
    "name": "Gregory Wright, M.D",
@@ -9487,17 +9707,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chris Yang, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Children'S Respiratory & Critical Care Specialists. P.A.",
-   "city": "Minneapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9887,17 +10096,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Megan Stark, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Fairview Express Care",
-   "city": "Minnetonka",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lynda Stuber, C.P.N.P",
    "title": "Pediatric Nurse Practitioner",
    "org": "Wayzata Children'S Clinic P.A.",
@@ -10193,17 +10391,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@northfieldhospital.org"
-  },
-  {
-   "name": "Michael Sundberg, MD",
-   "title": "Pediatrician",
-   "org": "White Earth Indian Health Center",
-   "city": "Ogema",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Twila Jesso, CNP",
@@ -10613,17 +10800,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Cynthia Anderson, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kristin Arndt",
    "title": "Pediatrician",
    "org": "Olmsted Medical Center",
@@ -10745,17 +10921,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Breann Butts, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Medical Center",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Allison Cabalka, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Mayo Clinic",
@@ -10774,17 +10939,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melinda Chen, MD",
-   "title": "Pediatrician",
-   "org": "University Of Wisconsin Medical Foundation INC",
-   "city": "Rochester",
-   "linkedin": "https://www.linkedin.com/in/melinda-chen-53bb01194",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10913,160 +11067,6 @@
    "name": "Partha Ghosh, MD",
    "title": "Pediatrician",
    "org": "C H Neurology Foundation INC",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Gleich, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "https://www.linkedin.com/in/stephen-gleich-72641095",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Natalia Gonzalez-Paz, M.D",
-   "title": "Pediatrician",
-   "org": "Olmsted Medical Center",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Green, MD",
-   "title": "Pediatrician",
-   "org": "Olmsted Medical Center",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jacob Greenmyer, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "https://www.linkedin.com/in/jacob-greenmyer-m-d-5467101a6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nawras Habash, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Donald Hagler, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "https://www.linkedin.com/in/donald-hagler-b40a5338",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Hall, MD",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christian Hanna, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Hartz, M.D",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jason Homme, M.D",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Homme, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Jacobson, M.D",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "https://www.linkedin.com/in/robertmjacobson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rabia Javed, M.B.B.S",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic",
-   "city": "Rochester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Johnson, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Mayo Clinic",
    "city": "Rochester",
    "linkedin": "",
    "email": "",

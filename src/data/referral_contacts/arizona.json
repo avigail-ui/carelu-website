@@ -3,8 +3,8 @@
  "slug": "arizona",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-arizona.csv",
  "count": 2711,
- "emails": 109,
- "practiceEmails": 50,
+ "emails": 149,
+ "practiceEmails": 51,
  "phones": 2664,
  "direct": 79,
  "roles": [
@@ -1495,6 +1495,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Courtney Bishop, MD",
+   "title": "Pediatrician",
+   "org": "Step By Step Pediatrics",
+   "city": "Chandler",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nichole Kaiser, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Healing Hearts Pediatrics",
+   "city": "Chandler",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nilam Khurana, M.D",
    "title": "Pediatrician",
    "org": "Healing Hearts Pediatrics",
@@ -1583,6 +1605,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Divij Pasrija, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "East Carolina University",
+   "city": "Flagstaff",
+   "linkedin": "https://www.linkedin.com/in/divij-pasrija-371b48100",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@ecu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ebba Ebba, M.D",
    "title": "Pediatrician",
    "org": "Fort Defiance Indian Hospital Board, Inc",
@@ -1590,6 +1623,28 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022@msm.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Junko Nakai, MD",
+   "title": "Pediatrician",
+   "org": "Fort Defiance Indian Hospital",
+   "city": "Fort Defiance",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@stanfordalumni.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Eby, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "All-Star Pediatrics, Pllc",
+   "city": "Gilbert",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1616,6 +1671,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sonal Shah, MD",
+   "title": "Pediatrician",
+   "org": "Sunrise Pediatrics, Plc",
+   "city": "Gilbert",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aashima Bansal, MD",
+   "title": "Pediatrician",
+   "org": "New Beginnings Pediatrics, Plc",
+   "city": "Glendale",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amit Jain, M.D., M.B.A",
+   "title": "Pediatrician",
+   "org": "Healthy Looks For Women Llc",
+   "city": "Glendale",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@ucmail.uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Leandra McCutcheon, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Banner-University Medical Group",
@@ -1623,6 +1711,28 @@
    "linkedin": "",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Nolan, M.D",
+   "title": "Pediatrician",
+   "org": "Mayo Clinic Arizona",
+   "city": "Glendale",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexis Aramini, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Havasu Rainbow Pediatrics",
+   "city": "Lake Havasu City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1645,6 +1755,28 @@
    "linkedin": "https://www.linkedin.com/in/vinay-bandla-82493a238",
    "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Galletta, PAC",
+   "title": "Pediatrician",
+   "org": "Arizona Childrens Surgery Pc",
+   "city": "Mesa",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "H. Garner, M.D",
+   "title": "Pediatrician",
+   "org": "East Valley Pediatrics, Plc",
+   "city": "Mesa",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1693,6 +1825,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brian Blair, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Pediatric Cardiac Care Of Arizona",
+   "city": "Oro Valley",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@tucsonkidsheart.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shannon Barker, D.O",
    "title": "Pediatrician",
    "org": "Pleasant Pediatrics Plc",
@@ -1700,6 +1843,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@pleasantpediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anshul Arora, M.D",
+   "title": "Neonatologist",
+   "org": "Obstetrics And Pediatrics Subspecialty Group Of Kansas And Missouri Pa",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1737,6 +1891,116 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sarah Beaumont, M.D",
+   "title": "Pediatrician",
+   "org": "Phoenix Children'S Hospital",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhtgroup.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Victoria Campbell, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Desert Valley Pediatrics",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@nhs.scot",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cristina Carballo, MD",
+   "title": "Pediatrician",
+   "org": "Neonatology Associates, Ltd",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nva.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tiffany Davis, MD",
+   "title": "Pediatrician",
+   "org": "Mountain Park Health Center",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Duff, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Phoenix Children'S Hospital",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bonnie Gance-Cleveland, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Arizona State University",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/bonnie-gance-cleveland-b4058321",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Gordon, DO",
+   "title": "Pediatrician",
+   "org": "Court Support Services",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Guido, M.D",
+   "title": "Pediatrician",
+   "org": "Phoenix Childrens Hospital Maricopa Medical Center Pediatric Residency",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Huddleston, MD",
+   "title": "Pediatrician",
+   "org": "Phoenix Children'S Hospital",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Keller, P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Phoenix Children'S Hospital",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@ualberta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Barbara Lednicky, MD",
    "title": "Pediatrician",
    "org": "The Phoenix Children'S Center, Ltd",
@@ -1748,6 +2012,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Julie McCarthy, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Desert Valley Pediatrics",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@utoronto.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Renee Mercer, DO",
+   "title": "Pediatrician",
+   "org": "Honorhealth Ambulatory",
+   "city": "Phoenix",
+   "linkedin": "https://www.linkedin.com/in/renee-mercer-do-471a3126",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@sutherlin.k12.or.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Subir Mitra, MD",
    "title": "Pediatrician",
    "org": "Pediatric Group Specialists, Ltd.",
@@ -1755,6 +2041,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@mkuh.nhs.uk",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mandy O'Hara, M.D",
+   "title": "Child Abuse Pediatrician",
+   "org": "Childhelp, Inc.",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1792,6 +2089,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Hilary Price, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mountain Park Health Center",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@homesofhope.org.nz",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Harvey Simon, M.D",
+   "title": "Pediatrician",
+   "org": "Good Night Pediatrics East Valley Pc",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@rch.org.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nina Souders, MD",
    "title": "Pediatrician",
    "org": "Northern Arizona Healthcare Corporation",
@@ -1799,6 +2118,39 @@
    "linkedin": "",
    "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@nahealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Stevens, M.D",
+   "title": "Pediatrician",
+   "org": "Phoenix Children'S Hospital",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Valentine, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Associates Pc",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Monica Wagner, MD",
+   "title": "Pediatrician",
+   "org": "Camelback Pediatrics Pc",
+   "city": "Phoenix",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bellin.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1821,6 +2173,39 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@pbrc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joel Hahnke, M.D",
+   "title": "Pediatrician",
+   "org": "Banner Physician Super Specialists Arizona Llc",
+   "city": "Scottsdale",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ruth Lewis, CRNA, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Mayo Clinic Arizona",
+   "city": "Scottsdale",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@glasgow.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Young, M.D",
+   "title": "Pediatrician",
+   "org": "Young Arizona Pediatrics Llc",
+   "city": "Surprise",
+   "linkedin": "https://www.linkedin.com/in/brian-young-0973035",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1869,6 +2254,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Thomas Ball, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Healthcare",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/cthomasball",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Brent Barber, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Banner-University Medical Group",
@@ -1876,6 +2272,17 @@
    "linkedin": "https://www.linkedin.com/in/brent-barber",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Henry Bianchi, MD",
+   "title": "Pediatrician",
+   "org": "Skyline Pediatrics Professional Corporation",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/henry-bianchi-566a9445",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2078,6 +2485,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Julia Liu, D.O",
+   "title": "Pediatrician",
+   "org": "The University Of Arizona",
+   "city": "Tucson",
+   "linkedin": "https://www.linkedin.com/in/julialiu05",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barry London, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Clinics For Rehabilitative Services",
+   "city": "Tucson",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Merlin Lowe, M.D",
    "title": "Pediatrician",
    "org": "Banner-University Medical Group",
@@ -2250,6 +2679,17 @@
    "linkedin": "https://www.linkedin.com/in/sofhia-ytuarte-41522097",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@bannerhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Crawford, MD",
+   "title": "Pediatrician",
+   "org": "Yuma Pediatrics",
+   "city": "Yuma",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2694,17 +3134,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Courtney Bishop, MD",
-   "title": "Pediatrician",
-   "org": "Step By Step Pediatrics",
-   "city": "Chandler",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alexandria Bosak",
    "title": "Pediatric Nurse Practitioner",
    "org": "Desert Shores Pediatrics",
@@ -2856,7 +3285,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@caremore.com"
   },
   {
    "name": "Ronald Jones, M.D",
@@ -2873,17 +3302,6 @@
    "name": "Laurie Jones, MD",
    "title": "Pediatrician",
    "org": "Scottsdale Pediatrics And Pediatric Nephrology, Pllc",
-   "city": "Chandler",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nichole Kaiser, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Healing Hearts Pediatrics",
    "city": "Chandler",
    "linkedin": "",
    "email": "",
@@ -3552,17 +3970,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Divij Pasrija, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "East Carolina University",
-   "city": "Flagstaff",
-   "linkedin": "https://www.linkedin.com/in/divij-pasrija-371b48100",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Ring",
    "title": "Pediatrician",
    "org": "Flagstaff Emergency Physicians",
@@ -3682,17 +4089,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@fdihb.org"
-  },
-  {
-   "name": "Junko Nakai, MD",
-   "title": "Pediatrician",
-   "org": "Fort Defiance Indian Hospital",
-   "city": "Fort Defiance",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Renee Ornelas, MD",
@@ -3856,17 +4252,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Eby, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "All-Star Pediatrics, Pllc",
-   "city": "Gilbert",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4234,17 +4619,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sonal Shah, MD",
-   "title": "Pediatrician",
-   "org": "Sunrise Pediatrics, Plc",
-   "city": "Gilbert",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ana Sierra De Aragon, M.D",
    "title": "Pediatrician",
    "org": "Ana M Sierra De Aragon Md",
@@ -4344,17 +4718,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aashima Bansal, MD",
-   "title": "Pediatrician",
-   "org": "New Beginnings Pediatrics, Plc",
-   "city": "Glendale",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Berman, DO",
    "title": "Pediatrician",
    "org": "Arrowhead Pediatrics",
@@ -4439,17 +4802,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amit Jain, M.D., M.B.A",
-   "title": "Pediatrician",
-   "org": "Healthy Looks For Women Llc",
-   "city": "Glendale",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4560,17 +4912,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patrick Nolan, M.D",
-   "title": "Pediatrician",
-   "org": "Mayo Clinic Arizona",
-   "city": "Glendale",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4971,17 +5312,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alexis Aramini, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Havasu Rainbow Pediatrics",
-   "city": "Lake Havasu City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Parnian Changizzadeh, M.D",
    "title": "Pediatrician",
    "org": "Hrmc, Llc",
@@ -5264,28 +5594,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melissa Galletta, PAC",
-   "title": "Pediatrician",
-   "org": "Arizona Childrens Surgery Pc",
-   "city": "Mesa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "H. Garner, M.D",
-   "title": "Pediatrician",
-   "org": "East Valley Pediatrics, Plc",
-   "city": "Mesa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6071,17 +6379,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Blair, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Pediatric Cardiac Care Of Arizona",
-   "city": "Oro Valley",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Diana Honebrink, M.D",
    "title": "Pediatrician",
    "org": "Tmc Medical Network",
@@ -6599,17 +6896,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anshul Arora, M.D",
-   "title": "Neonatologist",
-   "org": "Obstetrics And Pediatrics Subspecialty Group Of Kansas And Missouri Pa",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Luis Arroyo Brito, MD",
    "title": "Pediatrician",
    "org": "Pediatric Group Specialists, Ltd.",
@@ -6782,17 +7068,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Beaumont, M.D",
-   "title": "Pediatrician",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7325,17 +7600,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Victoria Campbell, RN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Desert Valley Pediatrics",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amanda Campos, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Phoenix Children'S Hospital",
@@ -7376,17 +7640,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cristina Carballo, MD",
-   "title": "Pediatrician",
-   "org": "Neonatology Associates, Ltd",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7886,17 +8139,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tiffany Davis, MD",
-   "title": "Pediatrician",
-   "org": "Mountain Park Health Center",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Avis Davis, DNP, RN, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Childhelp, Inc.",
@@ -8058,17 +8300,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Duff, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8513,17 +8744,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Bonnie Gance-Cleveland, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Arizona State University",
-   "city": "Phoenix",
-   "linkedin": "https://www.linkedin.com/in/bonnie-gance-cleveland-b4058321",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Byron Garn, MD",
    "title": "Pediatric Cardiologist",
    "org": "Obstetrix Medical Group Of Phoenix Pc",
@@ -8689,17 +8909,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Gordon, DO",
-   "title": "Pediatrician",
-   "org": "Court Support Services",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ronald Gosnell, MD",
    "title": "Pediatrician",
    "org": "Desert Valley Pediatrics",
@@ -8828,17 +9037,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelly Guido, M.D",
-   "title": "Pediatrician",
-   "org": "Phoenix Childrens Hospital Maricopa Medical Center Pediatric Residency",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9250,17 +9448,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Huddleston, MD",
-   "title": "Pediatrician",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathryn Hunt, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Dignity Health",
@@ -9532,17 +9719,6 @@
    "linkedin": "https://www.linkedin.com/in/kelly-kelleher-27a55b180",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Keller, P.N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10185,17 +10361,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Julie McCarthy, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Desert Valley Pediatrics",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine McDermott, DO",
    "title": "Pediatrician",
    "org": "Neonatology Associates, Ltd",
@@ -10337,17 +10502,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Renee Mercer, DO",
-   "title": "Pediatrician",
-   "org": "Honorhealth Ambulatory",
-   "city": "Phoenix",
-   "linkedin": "https://www.linkedin.com/in/renee-mercer-do-471a3126",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "f\u2022\u2022\u2022\u2022\u2022\u2022@honorhealth.com"
   },
   {
    "name": "Amanda Mihalik, M.D",
@@ -10647,17 +10801,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mandy O'Hara, M.D",
-   "title": "Child Abuse Pediatrician",
-   "org": "Childhelp, Inc.",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Oliver Oatman, DO",
    "title": "Pediatric Endocrinologist",
    "org": "Phoenix Children'S Hospital",
@@ -10940,149 +11083,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tara Pierce, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Phoenix Children'S Center, Ltd",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Janiel Pimentel-Vasquez, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Pinson, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Arizona Pediatric Cardiology, Llc",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Prescott, MD",
-   "title": "Pediatrician",
-   "org": "Phoenix Childrens Hospital Maricopa Medical Center Pediatric Residency",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cynthia Price, M.D",
-   "title": "Pediatrician",
-   "org": "Center For Dermatology PLLC",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hilary Price, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Mountain Park Health Center",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elisabet Prieto, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Obstetrix Medical Group Of Phoenix Pc",
-   "city": "Phoenix",
-   "linkedin": "https://www.linkedin.com/in/elisabet-prieto-565157162",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Puntel, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Arizona Pediatric Cardiology, Llc",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Putz, MD",
-   "title": "Pediatrician",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maa-Ohui Quarmyne",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Quinlan",
-   "title": "Pediatrician",
-   "org": "Phoenix Children'S Hospital",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jaskaran Rakkar, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Phoenix Childrens Hospital Maricopa Medical Center Pediatric Residency",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashwin Ram, M.D.,MPH",
-   "title": "Pediatrician",
-   "org": "Obstetrics And Pediatrics Subspecialty Group Of Kansas And Missouri Pa",
-   "city": "Phoenix",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

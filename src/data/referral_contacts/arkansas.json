@@ -3,8 +3,8 @@
  "slug": "arkansas",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-arkansas.csv",
  "count": 1133,
- "emails": 18,
- "practiceEmails": 9,
+ "emails": 37,
+ "practiceEmails": 18,
  "phones": 1133,
  "direct": 0,
  "roles": [
@@ -152,6 +152,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michael Jerkins, M.D",
+   "title": "Pediatrician",
+   "org": "Arkansas Health Group",
+   "city": "Cabot",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@panaceafinancial.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jeffrey Craig, M.D",
    "title": "Pediatrician",
    "org": "Central Arkansas Pediatrics, P.A.",
@@ -174,6 +185,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lisa Martin, APN",
+   "title": "Pediatrician",
+   "org": "Conway Childrens Clinic Pa Corp",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Steven McNabb, MD",
    "title": "Pediatrician",
    "org": "Arkansas Pediatrics Of Conway, Pa",
@@ -181,6 +203,17 @@
    "linkedin": "https://www.linkedin.com/in/steven-mcnabb-495121210",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@charter.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Young, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "1St Choice Healthcare Inc",
+   "city": "Corning",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -207,6 +240,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Robin Ray, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Robin Ray Pediatrics",
+   "city": "El Dorado",
+   "linkedin": "https://www.linkedin.com/in/robinray1",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michelle Phillips, MD",
    "title": "Pediatrician",
    "org": "Arcare",
@@ -214,6 +258,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@arcare.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Vaughan, NURSE PRACTITIONER",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Partners Pa",
+   "city": "Fort Smith",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -229,6 +284,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Carroll, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Of Arkansas For Medical Sciences",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/carolynnollsorg",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsey Haack, M.D",
+   "title": "Pediatrician",
+   "org": "Arkansas Childrens Professional Services Organization LLC",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/lindsey-haack-088444168",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Medhavi Honhar, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Of Arkansas For Medical Sciences",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/medhavi-honhar-778453239",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uams.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sam Lee, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Arkansas Childrens Professional Services Organization LLC",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/samuelcglee",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Robben, M.D",
+   "title": "Pediatrician",
+   "org": "Little Rock Pediatric Group",
+   "city": "Little Rock",
+   "linkedin": "https://www.linkedin.com/in/catherine-robben-529501101",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tracy Stewart, M.D",
    "title": "Pediatrician",
    "org": "Little Rock Children'S Clinic, P.A.",
@@ -236,6 +346,105 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@ed.ac.uk",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Young, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Of Arkansas For Medical Sciences",
+   "city": "Little Rock",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022@gwu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yuri Zarate, MD",
+   "title": "Pediatrician",
+   "org": "Kentucky Medical Services Foundation, INC",
+   "city": "Little Rock",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robin Goodman, MD",
+   "title": "Pediatrician",
+   "org": "Flagg Emergency Group, PLLC",
+   "city": "Morrilton",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gary Fowler, A.P.N",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Pediatric Clinic Of Nlr, P.A.",
+   "city": "North Little Rock",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Yancey, M.D",
+   "title": "Pediatrician",
+   "org": "1St Choice Healthcare Inc",
+   "city": "Paragould",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Flowers, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Flowers Pediatraic Clinic",
+   "city": "Pine Bluff",
+   "linkedin": "https://www.linkedin.com/in/john-flowers-surf",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janet Cantwell, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Harvey Pediatrics. Pllc",
+   "city": "Rogers",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@smsva.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Craig Keever, MD",
+   "title": "Pediatrician",
+   "org": "Keever Pediatrics Pa",
+   "city": "Rogers",
+   "linkedin": "https://www.linkedin.com/in/dr-craig-keever-5b02546b",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ozarkpediatrics.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Wilson, M.D",
+   "title": "Pediatrician",
+   "org": "Arkansas Health Group",
+   "city": "Sherwood",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -614,17 +823,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Jerkins, M.D",
-   "title": "Pediatrician",
-   "org": "Arkansas Health Group",
-   "city": "Cabot",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tina Jones, M.D",
    "title": "Pediatrician",
    "org": "Arcare",
@@ -666,7 +864,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@fortsmithchamber.com"
   },
   {
    "name": "Erin Caldwell",
@@ -878,17 +1076,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa Martin, APN",
-   "title": "Pediatrician",
-   "org": "Conway Childrens Clinic Pa Corp",
-   "city": "Conway",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Caroline Mazoch, M.D",
    "title": "Pediatrician",
    "org": "Central Arkansas Pediatrics, P.A.",
@@ -999,17 +1186,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Young, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "1St Choice Healthcare Inc",
-   "city": "Corning",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hunter Ramey, MD, MPH",
    "title": "Pediatrician",
    "org": "Dardanelle Regional, Llc",
@@ -1072,17 +1248,6 @@
    "linkedin": "https://www.linkedin.com/in/ashton-molsbee",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robin Ray, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Robin Ray Pediatrics",
-   "city": "El Dorado",
-   "linkedin": "https://www.linkedin.com/in/robinray1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1579,7 +1744,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@fortsmithchamber.com"
   },
   {
    "name": "Anne Eckes, MD",
@@ -1670,17 +1835,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Vaughan, NURSE PRACTITIONER",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Partners Pa",
-   "city": "Fort Smith",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kendall Wagner, M.D",
    "title": "Pediatrician",
    "org": "Primary Care Collective, Pllc",
@@ -1733,7 +1887,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@narmc.com"
   },
   {
    "name": "Jessie Little, MD",
@@ -1744,7 +1898,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@narmc.com"
   },
   {
    "name": "Steven Shrum, MD",
@@ -2096,7 +2250,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@kionpeds.com"
   },
   {
    "name": "Sasha Clements, APRN",
@@ -2305,7 +2459,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@kionpeds.com"
   },
   {
    "name": "Vye Watson, MD",
@@ -2766,17 +2920,6 @@
    "linkedin": "https://www.linkedin.com/in/taylor-carmichael-60418398",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Carroll, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Of Arkansas For Medical Sciences",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/carolynnollsorg",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3331,17 +3474,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lindsey Haack, M.D",
-   "title": "Pediatrician",
-   "org": "Arkansas Childrens Professional Services Organization LLC",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/lindsey-haack-088444168",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "R. Whit Hall, MD",
    "title": "Neonatologist",
    "org": "University Of Arkansas For Medical Sciences",
@@ -3470,17 +3602,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Medhavi Honhar, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Of Arkansas For Medical Sciences",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/medhavi-honhar-778453239",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3690,17 +3811,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sam Lee, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Arkansas Childrens Professional Services Organization LLC",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/samuelcglee",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4251,17 +4361,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Robben, M.D",
-   "title": "Pediatrician",
-   "org": "Little Rock Pediatric Group",
-   "city": "Little Rock",
-   "linkedin": "https://www.linkedin.com/in/catherine-robben-529501101",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4849,17 +4948,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Heather Young, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Of Arkansas For Medical Sciences",
-   "city": "Little Rock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leah Youngblood, MD",
    "title": "Pediatrician",
    "org": "Little Rock Children'S Clinic, P.A.",
@@ -4902,17 +4990,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Yuri Zarate, MD",
-   "title": "Pediatrician",
-   "org": "Kentucky Medical Services Foundation, INC",
-   "city": "Little Rock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022@uky.edu"
   },
   {
    "name": "Katherine Zehr, MD",
@@ -4966,17 +5043,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robin Goodman, MD",
-   "title": "Pediatrician",
-   "org": "Flagg Emergency Group, PLLC",
-   "city": "Morrilton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5043,17 +5109,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gary Fowler, A.P.N",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Pediatric Clinic Of Nlr, P.A.",
-   "city": "North Little Rock",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5212,17 +5267,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "James Yancey, M.D",
-   "title": "Pediatrician",
-   "org": "1St Choice Healthcare Inc",
-   "city": "Paragould",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joseph Elser, MD",
    "title": "Pediatrician",
    "org": "Arkansas Children'S Hospital",
@@ -5231,18 +5275,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Flowers, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Flowers Pediatraic Clinic",
-   "city": "Pine Bluff",
-   "linkedin": "https://www.linkedin.com/in/john-flowers-surf",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@archildrens.org"
   },
   {
    "name": "Sade Anita Francois, MD",
@@ -5253,7 +5286,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@archildrens.org"
   },
   {
    "name": "Brandon Murphy, M.D",
@@ -5294,17 +5327,6 @@
    "org": "St. Mary - Rogers Memorial Hospital Dba Friends House",
    "city": "Rogers",
    "linkedin": "https://www.linkedin.com/in/kristen-brandon-3b94977b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Janet Cantwell, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Harvey Pediatrics. Pllc",
-   "city": "Rogers",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -5362,17 +5384,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Craig Keever, MD",
-   "title": "Pediatrician",
-   "org": "Keever Pediatrics Pa",
-   "city": "Rogers",
-   "linkedin": "https://www.linkedin.com/in/dr-craig-keever-5b02546b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5813,17 +5824,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Wilson, M.D",
-   "title": "Pediatrician",
-   "org": "Arkansas Health Group",
-   "city": "Sherwood",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6276,7 +6276,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "y\u2022\u2022\u2022\u2022\u2022\u2022@ddpaarkansas.org"
   },
   {
    "name": "Johanna Mallare, MD",
@@ -6298,7 +6298,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "y\u2022\u2022\u2022\u2022\u2022\u2022@ddpaarkansas.org"
   },
   {
    "name": "Yousef Shaddood, MD",

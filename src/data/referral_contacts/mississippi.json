@@ -3,8 +3,8 @@
  "slug": "mississippi",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-mississippi.csv",
  "count": 831,
- "emails": 1,
- "practiceEmails": 124,
+ "emails": 19,
+ "practiceEmails": 125,
  "phones": 831,
  "direct": 0,
  "roles": [
@@ -75,6 +75,193 @@
  ],
  "rows": [
   {
+   "name": "John McPherson, MD",
+   "title": "Pediatrician",
+   "org": "P&S Primary Care, Pllc",
+   "city": "Amory",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cfl.rr.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Hensley, D.O",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Mississippi State Department Of Health",
+   "city": "Biloxi",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@newcastle.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Mullins, M.D",
+   "title": "Pediatrician",
+   "org": "Rankin Children'S Group, Pllc",
+   "city": "Brandon",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@brocku.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Rogers, M.D",
+   "title": "Pediatrician",
+   "org": "Rankin Children'S Group, Pllc",
+   "city": "Brandon",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Holland, M.D",
+   "title": "Pediatrician",
+   "org": "King'S Daughters Medical Center",
+   "city": "Brookhaven",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@stbh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janice Bacon, MD",
+   "title": "Pediatrician",
+   "org": "Central Mississippi Health Services, INC",
+   "city": "Canton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@outlook.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Caldwell, M.D",
+   "title": "Neonatologist",
+   "org": "Southern Mississippi Neonatology, Pa",
+   "city": "Gulfport",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@pbrc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Gaudet, MD",
+   "title": "Pediatrician",
+   "org": "The Pediatric Neurology Clinic Of Hattiesburg",
+   "city": "Hattiesburg",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@me.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Lancaster, MD",
+   "title": "Pediatrician",
+   "org": "Hattiesburg Clinic Pa",
+   "city": "Hattiesburg",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@nsdermatology.com.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Gordon, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "State Of Mississippi-University Of Mississippi Medical Center",
+   "city": "Jackson",
+   "linkedin": "https://www.linkedin.com/in/gordoncatherine",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samuel Hopper, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Medical Group, P.A.",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Ingram, M.D",
+   "title": "Pediatrician",
+   "org": "State Of Mississippi-University Of Mississippi Medical Center",
+   "city": "Jackson",
+   "linkedin": "https://www.linkedin.com/in/john-ingram-20151510",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@plantandfood.co.nz",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Tasan, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Upa Pllc Critical Care",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Myers, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Medical Group, P.A.",
+   "city": "Richland",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Shirley, MD",
+   "title": "Pediatrician",
+   "org": "Starkville Pediatric Clinic",
+   "city": "Starkville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@maryland.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Foster, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "North Mississippi Medical Clinics Inc",
+   "city": "Tupelo",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Palmer, D.O",
+   "title": "Neonatologist",
+   "org": "Wayne General Hospital",
+   "city": "Waynesboro",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@medicine.ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Byron Watson, MD",
    "title": "Pediatrician",
    "org": "Clay County Medical Corporation",
@@ -82,6 +269,17 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nmhs.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tiffany Bowen, NNP, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kidz 1St Clinic, Llc",
+   "city": "Yazoo City",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -148,17 +346,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John McPherson, MD",
-   "title": "Pediatrician",
-   "org": "P&S Primary Care, Pllc",
-   "city": "Amory",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -284,17 +471,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Hensley, D.O",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Mississippi State Department Of Health",
-   "city": "Biloxi",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Christy Howard, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Coastal Family Health Center, Inc",
@@ -329,28 +505,6 @@
   },
   {
    "name": "Ann Lee, M.D",
-   "title": "Pediatrician",
-   "org": "Rankin Children'S Group, Pllc",
-   "city": "Brandon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Mullins, M.D",
-   "title": "Pediatrician",
-   "org": "Rankin Children'S Group, Pllc",
-   "city": "Brandon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Rogers, M.D",
    "title": "Pediatrician",
    "org": "Rankin Children'S Group, Pllc",
    "city": "Brandon",
@@ -460,17 +614,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Charles Holland, M.D",
-   "title": "Pediatrician",
-   "org": "King'S Daughters Medical Center",
-   "city": "Brookhaven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joshua Iles, M.D",
    "title": "Pediatrician",
    "org": "King'S Daughters Medical Center",
@@ -511,17 +654,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Janice Bacon, MD",
-   "title": "Pediatrician",
-   "org": "Central Mississippi Health Services, INC",
-   "city": "Canton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1175,17 +1307,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu"
   },
   {
-   "name": "Jennifer Caldwell, M.D",
-   "title": "Neonatologist",
-   "org": "Southern Mississippi Neonatology, Pa",
-   "city": "Gulfport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Madelena Campbell, RN, CPNP-BC, CPN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Memorial Hospital At Gulfport",
@@ -1417,17 +1538,6 @@
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@hattiesburgclinic.com"
   },
   {
-   "name": "John Gaudet, MD",
-   "title": "Pediatrician",
-   "org": "The Pediatric Neurology Clinic Of Hattiesburg",
-   "city": "Hattiesburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Aprile Gilmore, M.D",
    "title": "Pediatrician",
    "org": "Hattiesburg Clinic Pa",
@@ -1525,17 +1635,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Lancaster, MD",
-   "title": "Pediatrician",
-   "org": "Hattiesburg Clinic Pa",
-   "city": "Hattiesburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@hattiesburgclinic.com"
   },
   {
    "name": "Katie Moore, CPNP-PC",
@@ -2297,17 +2396,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu"
   },
   {
-   "name": "Catherine Gordon, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "State Of Mississippi-University Of Mississippi Medical Center",
-   "city": "Jackson",
-   "linkedin": "https://www.linkedin.com/in/gordoncatherine",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu"
-  },
-  {
    "name": "Dana Grant, M.D",
    "title": "Pediatrician",
    "org": "Jackson Pediatric Associates P A",
@@ -2427,28 +2515,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Samuel Hopper, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Medical Group, P.A.",
-   "city": "Jackson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Ingram, M.D",
-   "title": "Pediatrician",
-   "org": "State Of Mississippi-University Of Mississippi Medical Center",
-   "city": "Jackson",
-   "linkedin": "https://www.linkedin.com/in/john-ingram-20151510",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu"
   },
   {
    "name": "Christopher Jenks, MD",
@@ -3076,17 +3142,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@umc.edu"
-  },
-  {
-   "name": "Laura Tasan, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "Upa Pllc Critical Care",
-   "city": "Jackson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Mary Taylor, MD",
@@ -4230,7 +4285,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@semrhi.com"
   },
   {
    "name": "Barbara Karcher, M.D",
@@ -4252,7 +4307,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@semrhi.com"
   },
   {
    "name": "Madison Flake, D.O",
@@ -4365,17 +4420,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Myers, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Medical Group, P.A.",
-   "city": "Richland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leigh Campbell, M.D",
    "title": "Neonatologist",
    "org": "Bloom And Grow Lactation",
@@ -4417,7 +4461,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@jacksonpediatrics.com"
   },
   {
    "name": "Manisha Sethi, M.D",
@@ -4439,7 +4483,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@jacksonpediatrics.com"
   },
   {
    "name": "Charles Meeks, D.O",
@@ -4761,17 +4805,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Deborah Shirley, MD",
-   "title": "Pediatrician",
-   "org": "Starkville Pediatric Clinic",
-   "city": "Starkville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melissa Spurrier, DNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Starkville Pediatric Clinic",
@@ -4801,17 +4834,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Foster, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "North Mississippi Medical Clinics Inc",
-   "city": "Tupelo",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4926,17 +4948,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rachel Palmer, D.O",
-   "title": "Neonatologist",
-   "org": "Wayne General Hospital",
-   "city": "Waynesboro",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Charles Hill, MD",
    "title": "Pediatrician",
    "org": "Clay County Medical Corporation",
@@ -4955,17 +4966,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tiffany Bowen, NNP, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Kidz 1St Clinic, Llc",
-   "city": "Yazoo City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

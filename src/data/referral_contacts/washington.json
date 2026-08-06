@@ -3,8 +3,8 @@
  "slug": "washington",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-washington.csv",
  "count": 3369,
- "emails": 68,
- "practiceEmails": 52,
+ "emails": 198,
+ "practiceEmails": 57,
  "phones": 3369,
  "direct": 0,
  "roles": [
@@ -75,6 +75,28 @@
  ],
  "rows": [
   {
+   "name": "Kevin Dooms, MD",
+   "title": "Pediatrician",
+   "org": "Allergy And Asthma Associates Pllc",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michele Fang, MD",
+   "title": "Pediatrician",
+   "org": "Dynacare Northwest Inc",
+   "city": "Bellevue",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uphs.upenn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nawdeep Gill, MSN, PNP-CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -86,6 +108,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kerri Fitzgerald, MD",
+   "title": "Pediatrician",
+   "org": "Fourth Corner Neurosurgical Associates Inc Ps",
+   "city": "Bellingham",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@aaos.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Bennett, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "David A Bennett Md",
+   "city": "Chattaroy",
+   "linkedin": "https://uk.linkedin.com/in/david-bennett-71250131",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@drexel.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Agnes Wong, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Children'S Clinic Of South Snohomish County, Ltd",
@@ -93,6 +137,39 @@
    "linkedin": "https://www.linkedin.com/in/agnes-wong-m-d-41398612a",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utoronto.ca",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dana Lee, M.D",
+   "title": "Pediatrician",
+   "org": "Franciscan Medical Group",
+   "city": "Enumclaw",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ohiohealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "George Beck, MD",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services - Washington",
+   "city": "Everett",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leah Hastings, D.O",
+   "title": "Pediatrician",
+   "org": "Optum Care Washington Pllc",
+   "city": "Everett",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@privatecare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -163,6 +240,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Robert Bolton, M.D",
+   "title": "Pediatrician",
+   "org": "92D Medgrp-Fairchild",
+   "city": "Fairchild Afb",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@mac.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Judith Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of Washington",
+   "city": "Federal Way",
+   "linkedin": "https://www.linkedin.com/in/judith-johnson-876a6112",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@leeds.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Belinda Rone, M.D",
+   "title": "Pediatrician",
+   "org": "University Place Pediatric Clinic P S",
+   "city": "Fircrest",
+   "linkedin": "https://www.linkedin.com/in/belinda-rone-42b5429",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Tomas, NNP-BC, CPNP-PC&AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kids 0 To 18 Integrative Pediatrics -Aka Concierge Pediatrics",
+   "city": "Gig Harbor",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@centrum.cz",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Hildebrand, MD",
+   "title": "Pediatrician",
+   "org": "Cascade Pediatrics",
+   "city": "Issaquah",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Scott Terry, DO",
    "title": "Pediatrician",
    "org": "Tri-Cities Community Health",
@@ -170,6 +302,39 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022@mytcch.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Blessing, MD",
+   "title": "Pediatrician",
+   "org": "Association Of University Physicians",
+   "city": "Kent",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Jinguji",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Association Of University Physicians",
+   "city": "Kent",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Develle, MD",
+   "title": "Pediatrician",
+   "org": "Swedish Health Services",
+   "city": "Kirkland",
+   "linkedin": "https://www.linkedin.com/in/stephanie-develle-md-faap-a7923411",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -273,6 +438,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Taylor, M.D",
+   "title": "Pediatrician",
+   "org": "Skagit Pediatrics, Llp",
+   "city": "Mount Vernon",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@njhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tessa Commers",
    "title": "Pediatrician",
    "org": "Optum Care Washington Pllc",
@@ -291,6 +467,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Dettori, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Nhc Oak Harbor",
+   "city": "Oak Harbor",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -317,6 +504,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sara Murdoch, M.D",
+   "title": "Pediatrician",
+   "org": "South Sound Pediatrics Pllc",
+   "city": "Olympia",
+   "linkedin": "https://www.linkedin.com/in/sara-murdoch-13672929",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@glasgow.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Damon Perry, PNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Healthy Future Pediatrics",
@@ -335,6 +533,83 @@
    "linkedin": "https://www.linkedin.com/in/kimberly-stonerock-aprn-cpnp-a966a29",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@healthyfuturepeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vanessa Frank, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Columbia Basin Health Association",
+   "city": "Othello",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@takiniskyhawks.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Scott Davis, MD",
+   "title": "Pediatrician",
+   "org": "Columbia River Medical Center Pllc",
+   "city": "Pasco",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@email.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Cogley, MD",
+   "title": "Pediatrician",
+   "org": "Kitsap Childrens Clinic Llp",
+   "city": "Port Orchard",
+   "linkedin": "https://www.linkedin.com/in/catherine-cogley-898070122",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@fammed.wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Adkins-Dwivedi, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Stepping Stone Pediatrics",
+   "city": "Redmond",
+   "linkedin": "https://www.linkedin.com/in/amy-adkins-dwivedi-62534a56",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Keeler, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
+   "city": "Redmond",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@blueyonder.co.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Krebs, DO",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
+   "city": "Redmond",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@meduniwien.ac.at",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hannah Lee, MD",
+   "title": "Pediatrician",
+   "org": "Healthpoint",
+   "city": "Redmond",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -427,6 +702,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Curtis McDonald, MD",
+   "title": "Pediatrician",
+   "org": "The Vancouver Clinic INC Ps",
+   "city": "Ridgefield",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Adam, MD, MS",
+   "title": "Pediatrician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/margaret-adam-90465328",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Akiyama, M.D",
+   "title": "Pediatrician",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/lisaakiyama",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Albers, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/erinalbers",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eric Allenspach, M.D., PH.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/eric-allenspach-24913b406",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Erin Alving, MSN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -434,6 +764,28 @@
    "linkedin": "https://www.linkedin.com/in/erin-alving-6b5bb6296",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bhawna Arya, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://ca.linkedin.com/in/bhawnaarya",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shaquita Bell, MD",
+   "title": "Pediatrician",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -460,6 +812,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Aarti Bhat, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carter Biewen",
+   "title": "Pediatrician",
+   "org": "Sutter Valley Medical Foundation",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lauren Bigbee, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -467,6 +841,39 @@
    "linkedin": "",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Petter Bjornstad, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Niviann Blondet, MD",
+   "title": "Pediatric Transplant Hepatologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cora Breuner, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/cora-breuner-798a6b39",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -493,6 +900,94 @@
    "practiceEmail": ""
   },
   {
+   "name": "Eric Chow, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Terrence Chun",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/terrence-chun11",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@washington.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Esther Chung, MD",
+   "title": "Pediatrician",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Cogen, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Colyer, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jessica-colyer-ab03a341",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@washington.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jill Cook, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of Washington",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@utdallas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Deen, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jason-deen-16b0017",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kavita Dhodapkar, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Meagan Dodge",
    "title": "Pediatrician",
    "org": "Seattle Children'S Hospital",
@@ -515,12 +1010,67 @@
    "practiceEmail": ""
   },
   {
+   "name": "Benjamin Edmonds, MD",
+   "title": "Pediatrician",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Ehling, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Seattle Childrens Hospital",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/susan-ehling-69519a34",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelsey Eitel, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Constance Evans, PNP C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
    "city": "Seattle",
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Reid Farris, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/reid-farris-47390a40",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yasaman Fatemi, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -537,6 +1087,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joseph Flynn, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/joseph-flynn-84888338",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Force, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/lisa-force-b16233b9",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Gern, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/evhsincheng",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Katherine Golden, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -544,6 +1127,28 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole Green, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/nicolegreenbusinessstrategies",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sriharsha Grevich, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -565,6 +1170,72 @@
    "city": "Seattle",
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022@nwasthma.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Gunderman, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Halbach, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Timothy Hall, MD",
+   "title": "Pediatrician",
+   "org": "Ballard Pediatric Clinic Inc Ps",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristen Hayward, MD, MS",
+   "title": "Pediatric Rheumatologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/kristenlauren",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sangeeta Hingorani, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/sangeeta-hingorani-008762180",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Juanita Hodax, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sapphire Community Health INC",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/juanita-hodax-74a45714b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -592,12 +1263,144 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shaun Jackson, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/shaunedwardjackson",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kaileen Jafari, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Jaspan, MD, PHD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Guy Jensen, MD",
+   "title": "Pediatrician",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristine Karvonen",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/kristine-karvonen-012b24131",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Keilman, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/ashley-keilman-williams-39625929",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mariska Kemna, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/mariska-kemna-919611161",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Killien, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Kim, MD",
    "title": "Pediatrician",
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "https://www.linkedin.com/in/donghoon-john-kim-431b9bb2",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nm.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Breanna Kinghorn, M.D. M.S",
+   "title": "Pediatric Pulmonologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Danielle Kirkey",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/danielle-kirkey-842b6412",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Kolnik, M.D",
+   "title": "Neonatologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/sarah-kolnik-md-mba-faap-a1023a90",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@washington.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Victoria Konold",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -614,6 +1417,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sangitha Krishnan, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Kronman, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yuk Law, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erika Lease, M.D",
+   "title": "Pediatrician",
+   "org": "The Association Of University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Junho Lee",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -621,6 +1468,50 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jared Levin, MD",
+   "title": "Pediatrician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jared-levin-61578a44",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristin Maher, MD PHD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/krmastrategy",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Marshall, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/susan-marshall-hr",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amber May, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of Washington",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/amberlmay",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -636,6 +1527,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brian Morray, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/brian-morray-55684477",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Nguyen, MD, PHD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/lizwin",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Pearl Nguyen, MD",
    "title": "Pediatrician",
    "org": "Seattle Children'S Hospital",
@@ -643,6 +1556,50 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hans Ochs",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daryl Okamura, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/daryl-okamura-2250a8185",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Pickens, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/mikepickens",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Travis Piester, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/travispiester",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -658,6 +1615,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "William Prince, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://uk.linkedin.com/in/william-prince-230ba331",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Reid, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jennifer-reid-bab75a5",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katelyn Saarela, DO",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michelle Sakoda, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -665,6 +1655,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jack Salerno",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jackmsalerno",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -680,6 +1681,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jay Sarthy, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Harborview Medical Center",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jay-sarthy-md-phd-a6a149b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Alice Schukin",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -687,6 +1699,116 @@
    "linkedin": "https://www.linkedin.com/in/alice-schukin-b22a02117",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Seslar, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/stephen-g-seslar",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Shelkowitz, MD",
+   "title": "Pediatrician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/emily-shelkowitz-a7b1b2358",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Shenoi, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/anna-phillips-sutton",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Corinne Shubin, M.D",
+   "title": "Pediatrician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/corinne-shubin-md-2512a9152",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jodi Smith",
+   "title": "Pediatric Nephrologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/jodi-smith-94a59a9",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Donna Smith, MD",
+   "title": "Pediatrician",
+   "org": "Virginia Mason Medical Center",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Soriano, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Stewart, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Washington",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Sullivan, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Childrens Hospital Los Angeles Medical Group INC",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Suskind",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/david-suskind-2ba6bb1a9",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -724,6 +1846,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Matthew Test, M.D",
+   "title": "Pediatrician",
+   "org": "Ballard Pediatric Clinic Inc Ps",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/matthew-test-b99614241",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Trowbridge, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/amy-trowbridge-a163964",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Loris Valeros, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Seattle Childrens Hospital",
@@ -731,6 +1875,17 @@
    "linkedin": "",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Watson, MD, MPH",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://uk.linkedin.com/in/drrobertwatson",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@med.fsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -768,6 +1923,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ofer Yanay, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "",
+   "email": "o\u2022\u2022\u2022\u2022\u2022@washington.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Luciana Young, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://www.linkedin.com/in/luciana-young-319206149",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samuel Zinner",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Seattle",
+   "linkedin": "https://it.linkedin.com/in/dr-samuel-zinner-38b25139",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kelly Shontell",
    "title": "Pediatrician",
    "org": "Optum Care Washington Pllc",
@@ -775,6 +1963,72 @@
    "linkedin": "https://www.linkedin.com/in/kellyshontell",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@optum.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janelle Clauser, MD",
+   "title": "Pediatrician",
+   "org": "Providence Health And Services Washington",
+   "city": "Spokane",
+   "linkedin": "https://www.linkedin.com/in/janelle-clauser-klein-aaa030164",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bridget Duffy, MD",
+   "title": "Pediatrician",
+   "org": "Laboratory Corporation Of America",
+   "city": "Spokane",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Goshorn, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Providence Health And Services Washington",
+   "city": "Spokane",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@maryland.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Hess, MD",
+   "title": "Pediatrician",
+   "org": "Providence Health And Services Washington",
+   "city": "Spokane",
+   "linkedin": "https://www.linkedin.com/in/sarahhess1",
+   "email": "s\u2022\u2022\u2022\u2022@legalcouncil.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Jensen, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Northwest Center For Congenital Heart Disease",
+   "city": "Spokane",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@agora.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Lee, D.O",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "Providence Health And Services Washington",
+   "city": "Spokane",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -801,6 +2055,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Boyd, MD",
+   "title": "Pediatrician",
+   "org": "Madigan Army Medical Center",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hli.ubc.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Utkarsh Fichadia, M.D",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "https://www.linkedin.com/in/utkarsh-fichadia-828408306",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Hall, D.O",
+   "title": "Pediatrician",
+   "org": "Puyallup Tribal Health Authority",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Kett, MD",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "Mary Bridge Children'S Hospital",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Suzanne Klein, MD MPH",
+   "title": "Pediatrician",
+   "org": "Community Health Care",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsay Lavin, MD",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@weppa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Nilsen, MD",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@multicare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vicki Sakata, MD",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "https://www.linkedin.com/in/vicki-sakata-a872bb13",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@nwhrn.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Staples, MD",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@campkorey.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Woolard, MD",
+   "title": "Pediatrician",
+   "org": "Multicare Health System",
+   "city": "Tacoma",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Oliver",
+   "title": "Pediatrician",
+   "org": "Yakima Valley Farm Workers Clinic",
+   "city": "Toppenish",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@carrollk12.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kristie Marbut, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Fir Creek Pediatrics",
@@ -812,6 +2187,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Katherine Holland, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Evergreen Pediatric Clinic Ps",
+   "city": "Vancouver",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joyce Liu, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Northwest",
+   "city": "Vancouver",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022@peakinteractivewellness.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elwyn Garaza, M.D",
+   "title": "Pediatrician",
+   "org": "Pine Ridge Indian Health Service Hospital",
+   "city": "Walla Walla",
+   "linkedin": "https://www.linkedin.com/in/elwyn-garaza-b6688517a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eric Seymour, MD",
+   "title": "Pediatrician",
+   "org": "Legacy Emanuel Hospital And Health Center",
+   "city": "Wenatchee",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Trever Burnett, M.D",
    "title": "Pediatrician",
    "org": "Northwest Asthma & Allergy Center",
@@ -819,6 +2238,17 @@
    "linkedin": "https://www.linkedin.com/in/trever-burnett-18470948",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nwasthma.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chad Douglas, D.O",
+   "title": "Pediatrician",
+   "org": "Yakima Neighborhood Health Services",
+   "city": "Yakima",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@lifeshare.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1150,7 +2580,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "o\u2022\u2022\u2022\u2022\u2022@steppingstonepeds.org"
   },
   {
    "name": "Nancy Danoff, MD, MPH",
@@ -1160,28 +2590,6 @@
    "linkedin": "https://www.linkedin.com/in/nancy-danoff-5aaaa129",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kevin Dooms, MD",
-   "title": "Pediatrician",
-   "org": "Allergy And Asthma Associates Pllc",
-   "city": "Bellevue",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michele Fang, MD",
-   "title": "Pediatrician",
-   "org": "Dynacare Northwest Inc",
-   "city": "Bellevue",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1557,7 +2965,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@ichs.com"
   },
   {
    "name": "Pariksha Patwari, M.D",
@@ -1857,17 +3265,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kerri Fitzgerald, MD",
-   "title": "Pediatrician",
-   "org": "Fourth Corner Neurosurgical Associates Inc Ps",
-   "city": "Bellingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amber Machin, M.D",
    "title": "Pediatrician",
    "org": "A.Machin, M.D. P.A.",
@@ -2140,7 +3537,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@pchsweb.org"
   },
   {
    "name": "Faith Claman, NP",
@@ -2151,7 +3548,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@pchsweb.org"
   },
   {
    "name": "Mark Daeley, M.D",
@@ -2506,17 +3903,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Bennett, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "David A Bennett Md",
-   "city": "Chattaroy",
-   "linkedin": "https://uk.linkedin.com/in/david-bennett-71250131",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jamie Macpherson, MSN, ARNP, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "David A Bennett Md",
@@ -2558,7 +3944,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@ccckids370.com"
   },
   {
    "name": "Chris Nelson, MD",
@@ -2569,7 +3955,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@ccckids370.com"
   },
   {
    "name": "Emily Reynolds, DO",
@@ -2638,17 +4024,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dana Lee, M.D",
-   "title": "Pediatrician",
-   "org": "Franciscan Medical Group",
-   "city": "Enumclaw",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Paweena Thoophom, M.D",
    "title": "Pediatrician",
    "org": "Franciscan Medical Group",
@@ -2667,17 +4042,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "George Beck, MD",
-   "title": "Pediatrician",
-   "org": "Providence Health & Services - Washington",
-   "city": "Everett",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2766,17 +4130,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leah Hastings, D.O",
-   "title": "Pediatrician",
-   "org": "Optum Care Washington Pllc",
-   "city": "Everett",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3089,17 +4442,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Bolton, M.D",
-   "title": "Pediatrician",
-   "org": "92D Medgrp-Fairchild",
-   "city": "Fairchild Afb",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alyse Carlson, M.D",
    "title": "Pediatrician",
    "org": "92D Medgrp-Fairchild",
@@ -3239,17 +4581,6 @@
    "linkedin": "https://www.linkedin.com/in/lydia-groseclose-29442042",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Judith Johnson, MD",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of Washington",
-   "city": "Federal Way",
-   "linkedin": "https://www.linkedin.com/in/judith-johnson-876a6112",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3397,17 +4728,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Belinda Rone, M.D",
-   "title": "Pediatrician",
-   "org": "University Place Pediatric Clinic P S",
-   "city": "Fircrest",
-   "linkedin": "https://www.linkedin.com/in/belinda-rone-42b5429",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Malgorzata Skarzynska, M.D",
    "title": "Pediatrician",
    "org": "University Place Pediatric Clinic P S",
@@ -3492,17 +4812,6 @@
    "linkedin": "https://www.linkedin.com/in/jessica-riese-md-mph-02717511",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Tomas, NNP-BC, CPNP-PC&AC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Kids 0 To 18 Integrative Pediatrics -Aka Concierge Pediatrics",
-   "city": "Gig Harbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3618,17 +4927,6 @@
   },
   {
    "name": "Traci Hiegel, MD",
-   "title": "Pediatrician",
-   "org": "Cascade Pediatrics",
-   "city": "Issaquah",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Hildebrand, MD",
    "title": "Pediatrician",
    "org": "Cascade Pediatrics",
    "city": "Issaquah",
@@ -3903,17 +5201,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Blessing, MD",
-   "title": "Pediatrician",
-   "org": "Association Of University Physicians",
-   "city": "Kent",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mary Brown",
    "title": "Pediatrician",
    "org": "Association Of University Physicians",
@@ -3932,17 +5219,6 @@
    "linkedin": "https://www.linkedin.com/in/richard-eccles-589376108",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Jinguji",
-   "title": "Pediatric Sports Medicine Physician",
-   "org": "Association Of University Physicians",
-   "city": "Kent",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4042,17 +5318,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Develle, MD",
-   "title": "Pediatrician",
-   "org": "Swedish Health Services",
-   "city": "Kirkland",
-   "linkedin": "https://www.linkedin.com/in/stephanie-develle-md-faap-a7923411",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4915,17 +6180,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Taylor, M.D",
-   "title": "Pediatrician",
-   "org": "Skagit Pediatrics, Llp",
-   "city": "Mount Vernon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Deena Vichugsananon, M.D",
    "title": "Pediatrician",
    "org": "Public Hospital Dist No 1 Skagit",
@@ -5076,17 +6330,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Dettori, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Nhc Oak Harbor",
-   "city": "Oak Harbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5300,17 +6543,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sara Murdoch, M.D",
-   "title": "Pediatrician",
-   "org": "South Sound Pediatrics Pllc",
-   "city": "Olympia",
-   "linkedin": "https://www.linkedin.com/in/sara-murdoch-13672929",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jay Odell, MD",
    "title": "Pediatrician",
    "org": "Sheridan Healthcare Of Washington, Pc",
@@ -5509,17 +6741,6 @@
    "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@cbha.org"
   },
   {
-   "name": "Vanessa Frank, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Columbia Basin Health Association",
-   "city": "Othello",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@cbha.org"
-  },
-  {
    "name": "Lotf Sennain, DO",
    "title": "Pediatrician",
    "org": "Columbia Basin Health Association",
@@ -5538,17 +6759,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Scott Davis, MD",
-   "title": "Pediatrician",
-   "org": "Columbia River Medical Center Pllc",
-   "city": "Pasco",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5703,17 +6913,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Cogley, MD",
-   "title": "Pediatrician",
-   "org": "Kitsap Childrens Clinic Llp",
-   "city": "Port Orchard",
-   "linkedin": "https://www.linkedin.com/in/catherine-cogley-898070122",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6235,17 +7434,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Adkins-Dwivedi, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Stepping Stone Pediatrics",
-   "city": "Redmond",
-   "linkedin": "https://www.linkedin.com/in/amy-adkins-dwivedi-62534a56",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Altomare, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
@@ -6455,17 +7643,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Richard Keeler, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
-   "city": "Redmond",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Cynthia Keller, MD",
    "title": "Pediatrician",
    "org": "Redmond Pediatrics",
@@ -6488,17 +7665,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Krebs, DO",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
-   "city": "Redmond",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Megan Kullnat, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
@@ -6506,17 +7672,6 @@
    "linkedin": "https://www.linkedin.com/in/megan-kullnat-679881370",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hannah Lee, MD",
-   "title": "Pediatrician",
-   "org": "Healthpoint",
-   "city": "Redmond",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6972,17 +8127,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Curtis McDonald, MD",
-   "title": "Pediatrician",
-   "org": "The Vancouver Clinic INC Ps",
-   "city": "Ridgefield",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stephanie Brunner, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates, Inc., P.S. Dba Allegro Pediatrics",
@@ -7137,17 +8281,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Margaret Adam, MD, MS",
-   "title": "Pediatrician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/margaret-adam-90465328",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Timothy Adamos, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "The Association Of Chrmc And University Physicians",
@@ -7203,17 +8336,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa Akiyama, M.D",
-   "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/lisaakiyama",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bernard Alberda, M.D",
    "title": "Pediatrician",
    "org": "North Seattle Pediatrics",
@@ -7221,17 +8343,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Albers, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/erinalbers",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7265,17 +8376,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eric Allenspach, M.D., PH.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/eric-allenspach-24913b406",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7353,17 +8453,6 @@
    "linkedin": "https://www.linkedin.com/in/angela-armen-a586a69",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bhawna Arya, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://ca.linkedin.com/in/bhawnaarya",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7467,17 +8556,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shaquita Bell, MD",
-   "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Francis Bell, MD",
    "title": "Pediatrician",
    "org": "Swedish Health Services",
@@ -7533,17 +8611,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aarti Bhat, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Neel Bhatt, MD MPH",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Harborview Medical Center",
@@ -7566,44 +8633,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Carter Biewen",
-   "title": "Pediatrician",
-   "org": "Sutter Valley Medical Foundation",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Petter Bjornstad, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susanna Block, MD, MPH",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Health Plan Of Washington",
    "city": "Seattle",
    "linkedin": "https://www.linkedin.com/in/susanna-block-md-mph-40202143",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Niviann Blondet, MD",
-   "title": "Pediatric Transplant Hepatologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -7694,17 +8728,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cora Breuner, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/cora-breuner-798a6b39",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8006,39 +9029,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Eric Chow, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Terrence Chun",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/terrence-chun11",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Esther Chung, MD",
-   "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Erin Chung, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Harborview Medical Center",
@@ -8105,17 +9095,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jonathan Cogen, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Toby Cohen, MD",
    "title": "Neonatologist",
    "org": "Harborview Medical Center",
@@ -8132,17 +9111,6 @@
    "org": "Kaiser Foundation Health Plan Of Washington",
    "city": "Seattle",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Colyer, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jessica-colyer-ab03a341",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -8178,17 +9146,6 @@
    "linkedin": "https://www.linkedin.com/in/jeffrey-conwell-ab796719",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jill Cook, MD",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of Washington",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8281,17 +9238,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Deen, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jason-deen-16b0017",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathryn Delbeccaro, M.D",
    "title": "Pediatrician",
    "org": "Ballard Pediatric Clinic Inc Ps",
@@ -8316,17 +9262,6 @@
   {
    "name": "Florence Desrosiers, M.D",
    "title": "Adolescent Medicine Physician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kavita Dhodapkar, MD",
-   "title": "Pediatric Hematologist-Oncologist",
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "",
@@ -8446,41 +9381,8 @@
    "practiceEmail": ""
   },
   {
-   "name": "Benjamin Edmonds, MD",
-   "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Daisy Mae Edu",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Ehling, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Seattle Childrens Hospital",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/susan-ehling-69519a34",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelsey Eitel, MD",
-   "title": "Pediatric Endocrinologist",
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "",
@@ -8545,28 +9447,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Reid Farris, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/reid-farris-47390a40",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yasaman Fatemi, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Matthew Files, MD",
    "title": "Pediatric Cardiologist",
    "org": "The Association Of Chrmc And University Physicians",
@@ -8618,28 +9498,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joseph Flynn, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/joseph-flynn-84888338",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Force, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/lisa-force-b16233b9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8748,17 +9606,6 @@
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Benjamin Gern, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/evhsincheng",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -8875,17 +9722,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicole Green, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/nicolegreenbusinessstrategies",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jeffery Greene, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Harborview Medical Center",
@@ -8904,17 +9740,6 @@
    "linkedin": "https://www.linkedin.com/in/tgreensweig",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sriharsha Grevich, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8963,42 +9788,9 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lauren Gunderman, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Surbhi Gupta, MD",
    "title": "Pediatric Cardiologist",
    "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Halbach, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Timothy Hall, MD",
-   "title": "Pediatrician",
-   "org": "Ballard Pediatric Clinic Inc Ps",
    "city": "Seattle",
    "linkedin": "",
    "email": "",
@@ -9084,17 +9876,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristen Hayward, MD, MS",
-   "title": "Pediatric Rheumatologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/kristenlauren",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rafael Hernandez, MD, PHD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "The Association Of Chrmc And University Physicians",
@@ -9124,17 +9905,6 @@
    "linkedin": "https://www.linkedin.com/in/theresa-hineline-865ab41b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sangeeta Hingorani, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/sangeeta-hingorani-008762180",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9177,17 +9947,6 @@
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Juanita Hodax, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Sapphire Community Health INC",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/juanita-hodax-74a45714b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -9348,50 +10107,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shaun Jackson, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/shaunedwardjackson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kaileen Jafari, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Jaspan, MD, PHD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Guy Jensen, MD",
-   "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jenifer Jerome-Roberts, MD",
    "title": "Pediatrician",
    "org": "Harborview Medical Center",
@@ -9491,17 +10206,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristine Karvonen",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/kristine-karvonen-012b24131",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Frederick Kassab, M.D",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Health Plan Of Washington",
@@ -9568,17 +10272,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Keilman, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/ashley-keilman-williams-39625929",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Samuel Keller, MD",
    "title": "Pediatric Cardiologist",
    "org": "Harborview Medical Center",
@@ -9601,17 +10294,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mariska Kemna, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/mariska-kemna-919611161",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melissa Kester, DNP, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Daniel S Frank Md Pllc",
@@ -9630,17 +10312,6 @@
    "linkedin": "https://www.linkedin.com/in/terry-kho-11ab7738",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Killien, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9722,28 +10393,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Breanna Kinghorn, M.D. M.S",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Danielle Kirkey",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/danielle-kirkey-842b6412",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Traci Knutzen-Yen, ARNP, FNP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Harborview Medical Center",
@@ -9755,30 +10404,8 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Kolnik, M.D",
-   "title": "Neonatologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/sarah-kolnik-md-mba-faap-a1023a90",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tracie Kong, MD",
    "title": "Pediatrician",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Victoria Konold",
-   "title": "Pediatric Infectious Disease Specialist",
    "org": "Harborview Medical Center",
    "city": "Seattle",
    "linkedin": "",
@@ -9799,17 +10426,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sangitha Krishnan, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Vijay Krishnan, MD",
    "title": "Pediatrician",
    "org": "Harborview Medical Center",
@@ -9817,17 +10433,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Matthew Kronman, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9953,17 +10558,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Yuk Law, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sabrina Law, MD",
    "title": "Pediatric Cardiologist",
    "org": "Trustees Of Columbia University In The City Of New York",
@@ -9973,17 +10567,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
    "phoneType": "Practice",
    "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@columbia.edu"
-  },
-  {
-   "name": "Erika Lease, M.D",
-   "title": "Pediatrician",
-   "org": "The Association Of University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Dale Lee, M.D",
@@ -10004,17 +10587,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jared Levin, MD",
-   "title": "Pediatrician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jared-levin-61578a44",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10096,17 +10668,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristin Maher, MD PHD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/krmastrategy",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Mahoney, MD, PHD",
    "title": "Pediatrician",
    "org": "The Association Of Chrmc And University Physicians",
@@ -10162,33 +10723,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Susan Marshall, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/susan-marshall-hr",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alexa Mason, MD",
    "title": "Pediatrician",
    "org": "Virginia Mason Medical Center",
    "city": "Seattle",
    "linkedin": "https://www.linkedin.com/in/alexa-mason-2037432a6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amber May, MD, MPH",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of Washington",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/amberlmay",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -10279,17 +10818,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Morray, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/brian-morray-55684477",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10393,17 +10921,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Nguyen, MD, PHD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/lizwin",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leroy Nill, M.D",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Health Plan Of Washington",
@@ -10442,28 +10959,6 @@
    "org": "Virginia Mason Medical Center",
    "city": "Seattle",
    "linkedin": "https://www.linkedin.com/in/kristin-nyweide-white-0829baaa",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hans Ochs",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daryl Okamura, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/daryl-okamura-2250a8185",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -10569,28 +11064,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Pickens, D.O",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/mikepickens",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Travis Piester, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Association Of University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/travispiester",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shanta Pillai, DO",
    "title": "Pediatric Sleep Medicine Physician",
    "org": "The Polyclinic Pllc",
@@ -10598,479 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Allison Pollock, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/allison-pollock-m-d-6b52b8b4",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Prince, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://uk.linkedin.com/in/william-prince-230ba331",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Rakes, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/lauren-rakes-lacey-cpa-6a679473",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicole Rees, PA-C",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "International Community Health Services",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Reeves, M.D., PH.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/stephen-reeves-304336207",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Reid, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jennifer-reid-bab75a5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathy Risse, MD",
-   "title": "Pediatrician",
-   "org": "Virginia Mason Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/kathy-risse-393227167",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joan Roberts",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/joan-roberts-515a2915",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathleen Rosen, MD",
-   "title": "Pediatrician",
-   "org": "Virginia Mason Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Agustin Rubio, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/agustin-rubio-67a35098/es",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katelyn Saarela, DO",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eyal Sagiv, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/eyal-sagiv-1294b6351",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jack Salerno",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jackmsalerno",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peggy Sarjeant, MD",
-   "title": "Pediatrician",
-   "org": "Virginia Mason Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/peggy-sarjeant-m-d-9919a48a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jay Sarthy, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Harborview Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jay-sarthy-md-phd-a6a149b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Savitz, MD",
-   "title": "Pediatrician",
-   "org": "Childrens Hospital Los Angeles Medical Group INC",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jennifer-savitz-97b68b282",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suzanne Seo, M.D",
-   "title": "Pediatrician",
-   "org": "Childrens Specialty Group INC",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margarita Sergonis, M.D",
-   "title": "Pediatrician",
-   "org": "Puffin Pediatrics, Pllc",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vinita Seru, M.D",
-   "title": "Pediatrician",
-   "org": "North Seattle Pediatrics",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/vinita-seru-747589274",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Seslar, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/stephen-g-seslar",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Prachi Sharma, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Shelkowitz, MD",
-   "title": "Pediatrician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/emily-shelkowitz-a7b1b2358",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Shenoi, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/anna-phillips-sutton",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elena Shephard",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carolyn Sherman, MD",
-   "title": "Pediatrician",
-   "org": "Swedish Health Services",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karla Sherwood",
-   "title": "Pediatrician",
-   "org": "Virginia Mason Medical Center",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/karla-sherwood-977bba203",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alaina Shine, MD",
-   "title": "Pediatrician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/alaina-shine-04775568",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Corinne Shubin, M.D",
-   "title": "Pediatrician",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/corinne-shubin-md-2512a9152",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margaret Sigley, MD",
-   "title": "Pediatrician",
-   "org": "Seattle-King County Dept Of Public Health",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ednea Simon",
-   "title": "Pediatrician",
-   "org": "Providence Health And Services Oregon",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/ednea-simon-62320a68",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bay Sittler, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Neighborcare Health",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/bay-sittler-03729b104",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lincoln Smith, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/lincolnsmith",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jodi Smith",
-   "title": "Pediatric Nephrologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "https://www.linkedin.com/in/jodi-smith-94a59a9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Donna Smith, MD",
-   "title": "Pediatrician",
-   "org": "Virginia Mason Medical Center",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jenny Smokey",
-   "title": "Pediatrician",
-   "org": "Carson Medical Group Professional Corporation",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ping Song, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Rainbow Pediatrics, Llc",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Clayton Sontheimer, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "St Lukes Clinic-Treasure Valley LLC",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Soriano, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Springer, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Wallingford Pediatrics Pllc",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Benjamin Starnes, MD",
-   "title": "Pediatrician",
-   "org": "Swedish Health Services",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Staunton, M.D",
-   "title": "Pediatrician",
-   "org": "Seattle-King County Dept Of Public Health",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bryn Stevens, M.D",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of Washington",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Stewart, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Washington",
-   "city": "Seattle",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

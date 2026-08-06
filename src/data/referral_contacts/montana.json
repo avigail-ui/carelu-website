@@ -3,8 +3,8 @@
  "slug": "montana",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-montana.csv",
  "count": 292,
- "emails": 2,
- "practiceEmails": 18,
+ "emails": 13,
+ "practiceEmails": 17,
  "phones": 292,
  "direct": 0,
  "roles": [
@@ -61,19 +61,118 @@
    "count": 9
   },
   {
-   "name": "Billings Clinic",
-   "count": 8
-  },
-  {
    "name": "Scl Health Montana",
    "count": 8
   },
   {
    "name": "Benefis Hospitals, Inc.",
    "count": 8
+  },
+  {
+   "name": "Billings Clinic",
+   "count": 8
   }
  ],
  "rows": [
+  {
+   "name": "Jeffrey Carroll, MD",
+   "title": "Neonatologist",
+   "org": "Scl Health Montana",
+   "city": "Billings",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wjccschools.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John King, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Children'S Hospital Colorado",
+   "city": "Billings",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nadia Halstead, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Bozeman Health Deaconess Hospital",
+   "city": "Bozeman",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marie Mitchell, PNP, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Four Corners Health Care Inc",
+   "city": "Bozeman",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@llu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jerrold Eichner, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Great Falls Clinic Llc",
+   "city": "Great Falls",
+   "linkedin": "https://www.linkedin.com/in/jerrold-eichner-88433b55",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gfclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole White, RN, MS, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Benefis Hospitals, Inc.",
+   "city": "Great Falls",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@wmchealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jean-Pierre Pujol, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Helena Urgent Care, Pc",
+   "city": "Helena",
+   "linkedin": "https://www.linkedin.com/in/jean-pierre-pujol-549b987b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dirk Gottman, MD",
+   "title": "Pediatrician",
+   "org": "Western Montana Clinic PC",
+   "city": "Missoula",
+   "linkedin": "https://www.linkedin.com/in/dirk-gottman-md-a23295a4",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@wmclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Mielke, MD, JD",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services Mt",
+   "city": "Missoula",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@med.wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
   {
    "name": "Leslie Scott, MD",
    "title": "Pediatrician",
@@ -93,6 +192,28 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@communitymed.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Sticka, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Western Montana Clinic PC",
+   "city": "Missoula",
+   "linkedin": "https://www.linkedin.com/in/joshua-sticka-3a07429b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Wilkinson, M.D",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services Mt",
+   "city": "Missoula",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@newcastle.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -218,17 +339,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeffrey Carroll, MD",
-   "title": "Neonatologist",
-   "org": "Scl Health Montana",
-   "city": "Billings",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Gordon Collett, MD",
    "title": "Pediatrician",
    "org": "St. Vincent Healthcare",
@@ -258,17 +368,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John King, M.D",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "Children'S Hospital Colorado",
-   "city": "Billings",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -570,17 +669,6 @@
    "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@bozemanhealth.org"
   },
   {
-   "name": "Nadia Halstead, MD, MPH",
-   "title": "Pediatrician",
-   "org": "Bozeman Health Deaconess Hospital",
-   "city": "Bozeman",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@bozemanhealth.org"
-  },
-  {
    "name": "Courtney Handlin",
    "title": "Pediatrician",
    "org": "Sheila M Idzerda, Md Pllc",
@@ -709,17 +797,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marie Mitchell, PNP, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Four Corners Health Care Inc",
-   "city": "Bozeman",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -933,17 +1010,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jerrold Eichner, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Great Falls Clinic Llc",
-   "city": "Great Falls",
-   "linkedin": "https://www.linkedin.com/in/jerrold-eichner-88433b55",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thomas Eskelsen, D.O",
    "title": "Pediatrician",
    "org": "Great Falls Clinic Llc",
@@ -1131,17 +1197,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicole White, RN, MS, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Benefis Hospitals, Inc.",
-   "city": "Great Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessie Winkler",
    "title": "Pediatric Nurse Practitioner",
    "org": "Kalispell Regional Medical Center, Inc",
@@ -1270,17 +1325,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jean-Pierre Pujol, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Helena Urgent Care, Pc",
-   "city": "Helena",
-   "linkedin": "https://www.linkedin.com/in/jean-pierre-pujol-549b987b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1604,17 +1648,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dirk Gottman, MD",
-   "title": "Pediatrician",
-   "org": "Western Montana Clinic PC",
-   "city": "Missoula",
-   "linkedin": "https://www.linkedin.com/in/dirk-gottman-md-a23295a4",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Hall, MD",
    "title": "Pediatrician",
    "org": "Western Montana Clinic Pc",
@@ -1692,17 +1725,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Karen Mielke, MD, JD",
-   "title": "Pediatrician",
-   "org": "Providence Health & Services Mt",
-   "city": "Missoula",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thomas Randall, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Community Medical Center",
@@ -1725,17 +1747,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Joshua Sticka, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Western Montana Clinic PC",
-   "city": "Missoula",
-   "linkedin": "https://www.linkedin.com/in/joshua-sticka-3a07429b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shannon Summers, M.D",
    "title": "Pediatrician",
    "org": "Missoula Anesthesiology PC",
@@ -1743,17 +1754,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Wilkinson, M.D",
-   "title": "Pediatrician",
-   "org": "Providence Health & Services Mt",
-   "city": "Missoula",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

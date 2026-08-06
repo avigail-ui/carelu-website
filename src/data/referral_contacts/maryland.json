@@ -3,8 +3,8 @@
  "slug": "maryland",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-maryland.csv",
  "count": 3678,
- "emails": 235,
- "practiceEmails": 58,
+ "emails": 343,
+ "practiceEmails": 61,
  "phones": 3617,
  "direct": 225,
  "roles": [
@@ -3233,6 +3233,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Katherine Hopkins, M.D",
+   "title": "Pediatrician",
+   "org": "Box Hill Pediatrics",
+   "city": "Abingdon",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@kellyhart.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Juliet Naldo, M.D",
+   "title": "Pediatrician",
+   "org": "Juliet C. Naldo, M.D., P.C.",
+   "city": "Adelphi",
+   "linkedin": "https://www.linkedin.com/in/monica-mirchandani-88112222",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Camille Broussard, M.D., M.P.H",
+   "title": "Adolescent Medicine Physician",
+   "org": "Trusted Doctors Llc",
+   "city": "Annapolis",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cynthia Bryant, MD",
+   "title": "Pediatrician",
+   "org": "Nhc Annapolis",
+   "city": "Annapolis",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@health.in.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Patricia McGinnis, RN CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Trusted Doctors Llc",
@@ -3251,6 +3295,39 @@
    "linkedin": "https://www.linkedin.com/in/james-telep-541b5717",
    "email": "j\u2022\u2022\u2022\u2022\u2022@pediatriccardiologymd.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hoover Adger, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/hoover-adger-83ab4729",
+   "email": "h\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bakri Alzarka, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yevgeniya Bamme, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sinai Hospital Of Baltimore Inc",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3288,6 +3365,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jessica Carpenter, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, PA",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/jessica-carpenter-83947349",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Carter, MD",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/rebeccacarter00",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Casella, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kevin Cesa, MD",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eunsung Cho, M.D",
+   "title": "Neonatologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/eunsung-cho-0592a51ab",
+   "email": "e\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Choi",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sarahachoi",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wales.nhs.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Cooke, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/davidcookeay",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stacy Cooper",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Johns Hopkins University",
@@ -3295,6 +3449,127 @@
    "linkedin": "https://www.linkedin.com/in/lovears77",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Janet Crane, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/janet-crane-a46a1a375",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ginny Cummings, NP",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/capturedbyginny",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Valerie Curren, MD",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/valerie-curren-9382a136",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ajit Das, MD",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ajit-das-31053024",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natalie Davis, M.D",
+   "title": "Neonatologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Dean, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/shannon-dean-29385465",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@stjude.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Johana Diaz, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/johanadiaz",
+   "email": "j\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katelyn Donohue, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of Maryland Medical Center",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/katelyn-donohue-75a587184",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Errol Fields, MD, PHD, MPH",
+   "title": "Adolescent Medicine Physician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cortney Foster, D.O",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Maryland Pediatric Associates, PA",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/cortneymfoster",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Grant, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://uk.linkedin.com/in/matthewjggrant",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3310,6 +3585,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Guyther, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of Maryland Pediatric Associates, PA",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ada Hamosh, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ada-hamosh-7a933743",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Clea Harris, MD",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -3317,6 +3614,39 @@
    "linkedin": "https://uk.linkedin.com/in/clea-harris",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Howard Kader, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wendy Lane, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/wendylaneemploymentlaw",
+   "email": "w\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Miriam Laufer, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://de.linkedin.com/in/dr-miriam-laufer/en",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3332,6 +3662,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Colleen Lenz, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kennedy Krieger Associates",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Wayne Leung, M.D",
    "title": "Neonatologist",
    "org": "Johns Hopkins University",
@@ -3339,6 +3680,17 @@
    "linkedin": "https://ca.linkedin.com/in/wayne-leung-367181a",
    "email": "w\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amanda Levin, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/amanda-levin-b73a9a37",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3354,6 +3706,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Nicolas Llosa, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Johns Hopkins Medical Institutions",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sheela Magge, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/cynthia-wang-b416521b8",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Arik Marcell, M.D., MPH",
    "title": "Adolescent Medicine Physician",
    "org": "Johns Hopkins University",
@@ -3361,6 +3735,50 @@
    "linkedin": "https://www.linkedin.com/in/arik-marcell-4639a6262",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Martin, D.O",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/theashleyrebel",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@dal.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barbara Masiulis, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Baltimore County Maryland",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@bcps.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Fernando Mena, M.D",
+   "title": "Neonatologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/fernando-mena-7a997093",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Olurotimi Mesubi, MD",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3376,6 +3794,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ryan Miller, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Sinai Hospital Of Baltimore Inc",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sara Mixter, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/sara-mixter-1410b6140",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julianne Moss, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://au.linkedin.com/in/julianne-moss-65280345",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathleen Murphy, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sinai Hospital Of Baltimore, Inc.",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gihan Naguib, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alicia Neu, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/alicia-neu-133009a1",
+   "email": "a\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kenneth Ng, D.O",
    "title": "Pediatric Gastroenterologist",
    "org": "Johns Hopkins University",
@@ -3383,6 +3867,50 @@
    "linkedin": "https://www.linkedin.com/in/kenneth-yale",
    "email": "k\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melanie Nies, M.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cheryl Parks, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uconn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eric Raabe, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/eric-raabe-77926b61",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nidhi Rawal, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/nidhi-rawal-7756268",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@centerforpedsgastro.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3398,6 +3926,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Soha Shah, M.D",
+   "title": "Pediatrician",
+   "org": "Unm Medical Group INC",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@buffalo.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julia Shalen, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jh.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sara Smith, M.D",
    "title": "Pediatric Gastroenterologist",
    "org": "Johns Hopkins University",
@@ -3405,6 +3955,61 @@
    "linkedin": "https://www.linkedin.com/in/sara-edwards-smith",
    "email": "s\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Clay Smith, M.D",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Kennedy Krieger Associates",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natalie Spicyn, MD, MHS",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Physicians PA",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/nataliespicyn",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@ihv.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Stevens, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/martha-stevens-msw-8aba224b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sripriya Sundararajan, M.D",
+   "title": "Neonatologist",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/mayuripatel9",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Symons, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/heather-symons-2551926",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3420,6 +4025,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth Tucker, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-tucker-ba116717a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yoram Unguru, M.D., M.S., M.A",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sinai Hospital Of Baltimore Inc",
+   "city": "Baltimore",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@lifebridgehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tao Wang, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "Johns Hopkins University",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/taowanguofa",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@live.cn",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Runa Watkins, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, Pa",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/runa-watkins-4527a4277",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christian Wright, MD",
+   "title": "Pediatrician",
+   "org": "University Of Maryland Pediatric Associates, PA",
+   "city": "Baltimore",
+   "linkedin": "https://www.linkedin.com/in/ctwright",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shira Ziegler, MD PHD",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -3427,6 +4087,39 @@
    "linkedin": "https://www.linkedin.com/in/evan-kinder-b5a811124",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Generosa Lazor, MD",
+   "title": "Pediatrician",
+   "org": "Plumtree Pediatrics, Llc",
+   "city": "Bel Air",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Miller, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "Pediatric Partners Llc",
+   "city": "Bel Air",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@osumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tanisha Powell, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Partners Llc",
+   "city": "Bel Air",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@brynmawr.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3453,6 +4146,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brittany Badesch, MD",
+   "title": "Pediatrician",
+   "org": "Nih Clinical Center",
+   "city": "Bethesda",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jane Balkam, PHD, APRN, CPNP,IBCL",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Babies 'N Business, Llc",
+   "city": "Bethesda",
+   "linkedin": "https://www.linkedin.com/in/jane-balkam-phd-aprn-cpnp-ibclc-39705510",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ndm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Howard Bennett, M.D",
+   "title": "Pediatrician",
+   "org": "Chevy Chase Pediatric Center P.C.",
+   "city": "Bethesda",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@chevychasepediatrics.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christina Kozycki, MD",
+   "title": "Pediatrician",
+   "org": "National Institutes Of Health",
+   "city": "Bethesda",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Yvonne Jackson, M.D",
    "title": "Pediatrician",
    "org": "Love Kids Llc",
@@ -3470,6 +4207,72 @@
    "city": "Bowie",
    "linkedin": "https://www.linkedin.com/in/amina-watson-72421a8a",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ana Ibanez",
+   "title": "Pediatrician",
+   "org": "Greater Baden Medical Service Incorporated",
+   "city": "Brandywine",
+   "linkedin": "https://www.linkedin.com/in/ana-ibanez-a00670b3",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@maderacap.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Celicia Little, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Pediatricians & Associates, Llc",
+   "city": "Clinton",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@bowiestate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Regina George, MD",
+   "title": "Pediatrician",
+   "org": "Regina A George Md",
+   "city": "Cockeysville",
+   "linkedin": "https://www.linkedin.com/in/hreginageorge",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ruby Dey, M.D., M.P.H",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
+   "city": "Columbia",
+   "linkedin": "https://in.linkedin.com/in/ruby-dey-a57259168",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Misrak Tadesse, MD",
+   "title": "Neonatologist",
+   "org": "Howard County Neonatal Services Series",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/misrak-tadesse-a05b62b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Thompson, M.D",
+   "title": "Pediatrician",
+   "org": "Thistlebird Lactation Consultants, Llc",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -3508,6 +4311,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kennon Harris, M.D",
+   "title": "Pediatrician",
+   "org": "Azam Baig,M.D.",
+   "city": "Edgewater",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Holly Mohr, MSRN PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Azam Baig,M.D.",
+   "city": "Edgewater",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022@southriverpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lisa Barnett, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Trusted Doctors, Llc",
@@ -3515,6 +4340,50 @@
    "linkedin": "",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@deakin.edu.au",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kari Pratt, A.R.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Frederick Pediatric Associates P.A.",
+   "city": "Frederick",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@isd77.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cecilia Nwankwo, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Cecilia A Nwankwo M D F A A P P C",
+   "city": "Gaithersburg",
+   "linkedin": "https://www.linkedin.com/in/cecilia-nwankwo-ba30091a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Young, M.D., MPH",
+   "title": "Pediatrician",
+   "org": "Childrens Pediatricians & Assoc",
+   "city": "Gaithersburg",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Albert Hsu, MD",
+   "title": "Pediatrician",
+   "org": "Takai, Hoover & Hsu, Pa",
+   "city": "Germantown",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022@alum.mit.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3563,6 +4432,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Teresa Lum, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Simply 4 Kidz Healthcare, Llc",
+   "city": "Hagerstown",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@myactv.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christa Martin, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southside Pediatrics & Adult Care Llc",
+   "city": "Hagerstown",
+   "linkedin": "https://www.linkedin.com/in/christa-martin-m-s-1bb50a24",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@geisinger.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Young Cha, MD",
+   "title": "Pediatrician",
+   "org": "Dimensions Healthcare Associates, Inc",
+   "city": "Hyattsville",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aileen Garcia, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Juliet C. Naldo, M.D., P.C.",
+   "city": "Hyattsville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@sdstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Brett Coons, MD",
    "title": "Pediatrician",
    "org": "Calvert Internal Medicine Group, PA",
@@ -3574,6 +4487,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Blanche Brown, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Harford County Health Department",
+   "city": "Joppa",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Soma Mitra, M.D",
+   "title": "Pediatrician",
+   "org": "Medpeds, Llc",
+   "city": "Laurel",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Medstar Medical Group II LLC",
+   "city": "Leonardtown",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Monica Hughes, CRNP",
+   "title": "Pediatrician",
+   "org": "White Oak Pediatrics, Drs. Battiata & Impeduglia, P.A.",
+   "city": "Millersville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@txstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Avneet Bawa, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Potomac Valley Pediatrics",
+   "city": "N Potomac",
+   "linkedin": "https://www.linkedin.com/in/avneet-bawa-2682115b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Pearson, MD",
+   "title": "Pediatrician",
+   "org": "White Oak Pediatrics, Drs. Battiata & Impeduglia, P.A.",
+   "city": "New Market",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Courtney Stone, CRNP - PEDIATRICS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Potomac Valley Pediatrics",
+   "city": "North Potomac",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@illinois.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rona Stein, MD",
    "title": "Pediatrician",
    "org": "Valley Pediatric Associates, Llc",
@@ -3581,6 +4571,17 @@
    "linkedin": "https://www.linkedin.com/in/rona-stein-a0b25212",
    "email": "r\u2022\u2022\u2022\u2022\u2022@valleypediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Padmini Sagar, MD",
+   "title": "Pediatrician",
+   "org": "Lifebridge Community Physicians, Inc",
+   "city": "Parkville",
+   "linkedin": "https://in.linkedin.com/in/padmini-sagar-52b610281",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3614,6 +4615,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022@chesapeakehc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Friedman, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Shady Grove Hyperbaric Medicine",
+   "city": "Rockville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@jhu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Lee, MD MPH",
+   "title": "Pediatrician",
+   "org": "The Pediatric Development Center, Llc",
+   "city": "Rockville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3673,6 +4696,171 @@
    "practiceEmail": ""
   },
   {
+   "name": "Julie Berg, MD",
+   "title": "Pediatrician",
+   "org": "Privia Medical Group, Llc",
+   "city": "Silver Spring",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@glasgow.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Castillo, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/amykcastillo",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@txfcc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Downing, M.D., D.O",
+   "title": "Neonatologist",
+   "org": "William I Smith, Jr. Md Pc",
+   "city": "Silver Spring",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@innovationhorizons.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Feldman, M.D",
+   "title": "Pediatrician",
+   "org": "Privia Medical Group, Llc",
+   "city": "Silver Spring",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ligia Peralta, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Casa Ruben Incorporated",
+   "city": "Silver Spring",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Raksis, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
+   "city": "Silver Spring",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dawn Walton, MD",
+   "title": "Neonatologist",
+   "org": "William I Smith, Jr. Md Pc",
+   "city": "Silver Spring",
+   "linkedin": "https://www.linkedin.com/in/dwalton2019",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Rosner, M.D",
+   "title": "Pediatrician",
+   "org": "Michael S Rosner, Md., Pa.",
+   "city": "Taneytown",
+   "linkedin": "https://www.linkedin.com/in/michael-rosner-4837325a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mfa.gwu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Prosser, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
+   "city": "Temple Hills",
+   "linkedin": "https://www.linkedin.com/in/andrea-prosser-4140782b5",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@augusta.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristen Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Childrens Health Care Associates INC",
+   "city": "Towson",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Meredith Gibson, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Pediatricians & Associates, Llc",
+   "city": "Upper Marlboro",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@publicstrategies.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Robert E Miller Md Faap Pa",
+   "city": "Waldorf",
+   "linkedin": "https://www.linkedin.com/in/rjmiii",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Engel, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "Wheaton",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@nku.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Howard, D.O",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates",
+   "city": "Wheaton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristi Machemer, M.D",
+   "title": "Pediatrician",
+   "org": "Waldorf Pediatrics",
+   "city": "White Plains",
+   "linkedin": "https://www.linkedin.com/in/kristi-machemer-3ab86291",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Meaghan Moxley",
    "title": "Pediatrician",
    "org": "Upper Chesapeake Endocrinology Associates, Llc",
@@ -3689,17 +4877,6 @@
    "org": "Box Hill Pediatrics",
    "city": "Abingdon",
    "linkedin": "https://www.linkedin.com/in/marci-chasnow-562129a1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Hopkins, M.D",
-   "title": "Pediatrician",
-   "org": "Box Hill Pediatrics",
-   "city": "Abingdon",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
@@ -3750,17 +4927,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Juliet Naldo, M.D",
-   "title": "Pediatrician",
-   "org": "Juliet C. Naldo, M.D., P.C.",
-   "city": "Adelphi",
-   "linkedin": "https://www.linkedin.com/in/monica-mirchandani-88112222",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amanda Alberotanza, MSN, RN, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Trusted Doctors Llc",
@@ -3801,28 +4967,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Camille Broussard, M.D., M.P.H",
-   "title": "Adolescent Medicine Physician",
-   "org": "Trusted Doctors Llc",
-   "city": "Annapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cynthia Bryant, MD",
-   "title": "Pediatrician",
-   "org": "Nhc Annapolis",
-   "city": "Annapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4278,17 +5422,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Hoover Adger, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/hoover-adger-83ab4729",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Allison Agwu, M.D",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Johns Hopkins University",
@@ -4318,17 +5451,6 @@
    "linkedin": "https://uk.linkedin.com/in/yasmin-akhtar-521983222",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bakri Alzarka, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4505,17 +5627,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yevgeniya Bamme, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Sinai Hospital Of Baltimore Inc",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4828,17 +5939,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Carpenter, MD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, PA",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/jessica-carpenter-83947349",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Channelle Carr, MD",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -4857,39 +5957,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Carter, MD",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/rebeccacarter00",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Casella, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kevin Cesa, MD",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4923,28 +5990,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eunsung Cho, M.D",
-   "title": "Neonatologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/eunsung-cho-0592a51ab",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Choi",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/sarahachoi",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5026,17 +6071,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Cooke, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/davidcookeay",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kenneth Cooke, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Johns Hopkins University",
@@ -5081,17 +6115,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Janet Crane, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/janet-crane-a46a1a375",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sophie Crinion",
    "title": "Pediatrician",
    "org": "Alameda Health System",
@@ -5103,17 +6126,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ginny Cummings, NP",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/capturedbyginny",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Charles Cuneo, MD, MPH",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -5121,17 +6133,6 @@
    "linkedin": "https://www.linkedin.com/in/charles-cuneo-5b269b1ba",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Valerie Curren, MD",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/valerie-curren-9382a136",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5169,28 +6170,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ajit Das, MD",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/ajit-das-31053024",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Natalie Davis, M.D",
-   "title": "Neonatologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michelle Davis, M.D",
    "title": "Pediatrician",
    "org": "Hollis Seunarine Mdpa Llc",
@@ -5211,17 +6190,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@heallexa.com"
-  },
-  {
-   "name": "Shannon Dean, M.D., PH.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/shannon-dean-29385465",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Lilia Deborja, MD",
@@ -5286,17 +6254,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Johana Diaz, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/johanadiaz",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5407,17 +6364,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katelyn Donohue, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Of Maryland Medical Center",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/katelyn-donohue-75a587184",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5609,17 +6555,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Errol Fields, MD, PHD, MPH",
-   "title": "Adolescent Medicine Physician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Laura Finkelstein, MD",
    "title": "Pediatrician",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -5658,17 +6593,6 @@
    "org": "University Of Maryland Pediatric Associates, PA",
    "city": "Baltimore",
    "linkedin": "https://www.linkedin.com/in/ibtahaj-hussain-md-70b77b269",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cortney Foster, D.O",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Maryland Pediatric Associates, PA",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/cortneymfoster",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
    "phoneType": "Practice",
@@ -5917,17 +6841,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Grant, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://uk.linkedin.com/in/matthewjggrant",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Frances Green-Su, MD",
    "title": "Pediatrician",
    "org": "Baltimore Medical System Inc",
@@ -5990,17 +6903,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Guyther, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Of Maryland Pediatric Associates, PA",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6089,17 +6991,6 @@
    "linkedin": "https://www.linkedin.com/in/treyhammond",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ada Hamosh, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/ada-hamosh-7a933743",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6434,17 +7325,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Howard Kader, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joshua Kanter, MD",
    "title": "Pediatric Cardiologist",
    "org": "Children'S Hospital",
@@ -6764,17 +7644,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Wendy Lane, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/wendylaneemploymentlaw",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Larosa, M.D",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -6791,17 +7660,6 @@
    "org": "University Of Maryland Pediatric Associates, Pa",
    "city": "Baltimore",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Miriam Laufer, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://de.linkedin.com/in/dr-miriam-laufer/en",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
@@ -6874,28 +7732,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Colleen Lenz, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Kennedy Krieger Associates",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amanda Levin, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/amanda-levin-b73a9a37",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mark Lindsay, M.D., PH.D",
    "title": "Pediatric Cardiologist",
    "org": "Massachusetts General Physicians Organization INC",
@@ -6940,17 +7776,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicolas Llosa, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Johns Hopkins Medical Institutions",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Lovelace, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -6991,17 +7816,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sheela Magge, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/cynthia-wang-b416521b8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7061,17 +7875,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Martin, D.O",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/theashleyrebel",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Albara Marwa, MD, MPH",
    "title": "Pediatric Endocrinologist",
    "org": "Sinai Hospital Of Baltimore Inc",
@@ -7079,17 +7882,6 @@
    "linkedin": "https://www.linkedin.com/in/albaramarwa",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barbara Masiulis, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Baltimore County Maryland",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7204,17 +7996,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Fernando Mena, M.D",
-   "title": "Neonatologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/fernando-mena-7a997093",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Mendley, M.D",
    "title": "Pediatric Nephrologist",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -7237,17 +8018,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Olurotimi Mesubi, MD",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine Miele, M.D",
    "title": "Pediatrician",
    "org": "Select Rehabilitation, LLC",
@@ -7255,17 +8025,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Miller, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Sinai Hospital Of Baltimore Inc",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7319,17 +8078,6 @@
    "org": "Baltimore Medical System, INC.",
    "city": "Baltimore",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sara Mixter, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/sara-mixter-1410b6140",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -7402,17 +8150,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Julianne Moss, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://au.linkedin.com/in/julianne-moss-65280345",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sara Munoz-Blanco",
    "title": "Neonatologist",
    "org": "Johns Hopkins University",
@@ -7446,17 +8183,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathleen Murphy, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Sinai Hospital Of Baltimore, Inc.",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rachel Murray, CRNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -7475,17 +8201,6 @@
    "linkedin": "https://www.linkedin.com/in/william-mysko-682b0216",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gihan Naguib, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7534,17 +8249,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alicia Neu, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/alicia-neu-133009a1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sara Newton",
    "title": "Pediatric Nurse Practitioner",
    "org": "Johns Hopkins University",
@@ -7552,17 +8256,6 @@
    "linkedin": "https://www.linkedin.com/in/newtonsara",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melanie Nies, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7776,17 +8469,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Cheryl Parks, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Maureen Parrott, MD",
    "title": "Pediatrician",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -7974,17 +8656,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Eric Raabe, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/eric-raabe-77926b61",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Emily Rao, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Johns Hopkins University",
@@ -8014,17 +8685,6 @@
    "linkedin": "https://www.linkedin.com/in/nnena-kalu-8982b3105",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nidhi Rawal, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/nidhi-rawal-7756268",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8370,28 +9030,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Soha Shah, M.D",
-   "title": "Pediatrician",
-   "org": "Unm Medical Group INC",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Julia Shalen, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melissa Shapiro, M.D",
    "title": "Pediatric Gastroenterologist",
    "org": "Sinai Hospital Of Baltimore Inc",
@@ -8557,17 +9195,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Clay Smith, M.D",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "Kennedy Krieger Associates",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Linda Smith-Resar",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Johns Hopkins University",
@@ -8623,17 +9250,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Natalie Spicyn, MD, MHS",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Physicians PA",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/nataliespicyn",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Carl Stafstrom, MD PHD",
    "title": "Pediatrician",
    "org": "Johns Hopkins University",
@@ -8663,17 +9279,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Stevens, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/martha-stevens-msw-8aba224b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8711,17 +9316,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sripriya Sundararajan, M.D",
-   "title": "Neonatologist",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/mayuripatel9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alia Sunderji, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Johns Hopkins University",
@@ -8740,17 +9334,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Symons, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/heather-symons-2551926",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8898,28 +9481,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Tucker, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/elizabeth-tucker-ba116717a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yoram Unguru, M.D., M.S., M.A",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Sinai Hospital Of Baltimore Inc",
-   "city": "Baltimore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Trevor Valentine, M.D",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "University Of Maryland Pediatric Associates, Pa",
@@ -9019,17 +9580,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tao Wang, M.D., PH.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins University",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/taowanguofa",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jenene Washington, MD",
    "title": "Pediatrician",
    "org": "Baltimore Medical System Inc",
@@ -9048,17 +9598,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Runa Watkins, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, Pa",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/runa-watkins-4527a4277",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9191,17 +9730,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christian Wright, MD",
-   "title": "Pediatrician",
-   "org": "University Of Maryland Pediatric Associates, PA",
-   "city": "Baltimore",
-   "linkedin": "https://www.linkedin.com/in/ctwright",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9426,17 +9954,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Generosa Lazor, MD",
-   "title": "Pediatrician",
-   "org": "Plumtree Pediatrics, Llc",
-   "city": "Bel Air",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marion Lomonico, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Pediatric Partners Llc",
@@ -9514,17 +10031,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lauren Miller, D.O",
-   "title": "Adolescent Medicine Physician",
-   "org": "Pediatric Partners Llc",
-   "city": "Bel Air",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Vibha Murthy, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Partners Llc",
@@ -9554,17 +10060,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tanisha Powell, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Partners Llc",
-   "city": "Bel Air",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9756,28 +10251,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brittany Badesch, MD",
-   "title": "Pediatrician",
-   "org": "Nih Clinical Center",
-   "city": "Bethesda",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jane Balkam, PHD, APRN, CPNP,IBCL",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Babies 'N Business, Llc",
-   "city": "Bethesda",
-   "linkedin": "https://www.linkedin.com/in/jane-balkam-phd-aprn-cpnp-ibclc-39705510",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leslie Ball, M.D",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "U.S. Navy",
@@ -9796,17 +10269,6 @@
    "linkedin": "https://www.linkedin.com/in/karin-belsito-b7003259",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Howard Bennett, M.D",
-   "title": "Pediatrician",
-   "org": "Chevy Chase Pediatric Center P.C.",
-   "city": "Bethesda",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9972,17 +10434,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christina Kozycki, MD",
-   "title": "Pediatrician",
-   "org": "National Institutes Of Health",
-   "city": "Bethesda",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10295,17 +10746,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ana Ibanez",
-   "title": "Pediatrician",
-   "org": "Greater Baden Medical Service Incorporated",
-   "city": "Brandywine",
-   "linkedin": "https://www.linkedin.com/in/ana-ibanez-a00670b3",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Saida Sanusi, MD",
    "title": "Pediatrician",
    "org": "Greater Baden Medical Service Incorporated",
@@ -10336,7 +10776,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@mbihs.com"
   },
   {
    "name": "Viral Gala, M.D",
@@ -10643,446 +11083,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Linda Goldstein, MD",
-   "title": "Pediatrician",
-   "org": "Friendship Pediatrics, Pa",
-   "city": "Chevy Chase",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Gross, MD",
-   "title": "Pediatrician",
-   "org": "Potomac Physician Associates",
-   "city": "Chevy Chase",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Taj Hadee, M.D",
-   "title": "Pediatrician",
-   "org": "Privia Medical Group, Llc",
-   "city": "Chevy Chase",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Nino, M.D",
-   "title": "Pediatrician",
-   "org": "Suburban/Nrh Medical Rehabilitation INC",
-   "city": "Chevy Chase",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carla Sguigna, MD",
-   "title": "Pediatrician",
-   "org": "Friendship Pediatrics, Pa",
-   "city": "Chevy Chase",
-   "linkedin": "https://www.linkedin.com/in/carla-sguigna-03b188133",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Walley, M.D",
-   "title": "Pediatrician",
-   "org": "Privia Medical Group, Llc",
-   "city": "Chevy Chase",
-   "linkedin": "https://www.linkedin.com/in/ryan-walley-a52b5b39",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Angela Wang",
-   "title": "Pediatrician",
-   "org": "Privia Medical Group, Llc",
-   "city": "Chevy Chase",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Ambush, M.D",
-   "title": "Pediatrician",
-   "org": "Paul Ambush Md, Pa",
-   "city": "Clarksville",
-   "linkedin": "https://www.linkedin.com/in/crystal-patterson-b0749858",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Celicia Little, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Pediatricians & Associates, Llc",
-   "city": "Clinton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maria Milan, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Pediatricians & Associates, Llc",
-   "city": "Clinton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Moccia",
-   "title": "Pediatrician",
-   "org": "Children'S Pediatricians & Associates, Llc",
-   "city": "Clinton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Arlene Nichols, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Pediatricians & Associates, Llc",
-   "city": "Clinton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kermit Simrel",
-   "title": "Pediatrician",
-   "org": "Children'S Pediatricians & Associates, Llc",
-   "city": "Clinton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Regina George, MD",
-   "title": "Pediatrician",
-   "org": "Regina A George Md",
-   "city": "Cockeysville",
-   "linkedin": "https://www.linkedin.com/in/hreginageorge",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Monk, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Regina A George Md",
-   "city": "Cockeysville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Janet Adams, M.D",
-   "title": "Pediatrician",
-   "org": "Woodside Pediatrics, Llc",
-   "city": "College Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sacared Bodison, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "University Health Center",
-   "city": "College Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marcia Augustine, MD",
-   "title": "Pediatrician",
-   "org": "Thistlebird Lactation Consultants, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sylvia Bank, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Johns Hopkins Emergency Services",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Zaneb Beams, MD",
-   "title": "Pediatrician",
-   "org": "Atiya B Khan Md Pc",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/zaneb-beams-8a242b12",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tracy Burns, MD",
-   "title": "Pediatrician",
-   "org": "Medstar Medical Group II LLC",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ruby Dey, M.D., M.P.H",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of The Mid Atlantic States, Inc",
-   "city": "Columbia",
-   "linkedin": "https://in.linkedin.com/in/ruby-dey-a57259168",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Terri Difazio, MD",
-   "title": "Neonatologist",
-   "org": "Howard County Neonatal Services Series",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicholas Donkor, MD",
-   "title": "Pediatrician",
-   "org": "Nicholas Donkor Md Pa",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/nicholas-donkor-63326660",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christina Figlozzi, M.D",
-   "title": "Pediatrician",
-   "org": "Walker Merrick Developmental Pediatrics",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cynthia Gao",
-   "title": "Pediatrician",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nadeem Hashmi, MD",
-   "title": "Neonatologist",
-   "org": "Ellicott City Primary Care Physicians, Pa",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/nadeem-hashmi-a29288146",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Hess",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margaret Kahwaty, MD",
-   "title": "Pediatrician",
-   "org": "Thistlebird Lactation Consultants, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Priya Janaki Kasturirangan, M.B.B.S, M.D",
-   "title": "Pediatrician",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eun A Kim, MD",
-   "title": "Pediatrician",
-   "org": "Patient First Maryland Medical Group PLLC",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Morufat Kosoko, MD",
-   "title": "Pediatrician",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kellie Le, DNP, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Casey Mabry, M.D",
-   "title": "Pediatrician",
-   "org": "Seton Medical Group, Inc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Esther Makanjuola, CRNP - PEDIATRICS",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Sun River Health INC.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Secelela Malecela, MD",
-   "title": "Pediatrician",
-   "org": "John Hopkins Emergency Medical System",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Courtney McGuire, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins Emergency Medical Services,Llc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wendell McKay, M.D",
-   "title": "Pediatrician",
-   "org": "Howard County Pediatrics, Llc",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/wendell-mckay-96537a174",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cecelia Mendiola, MD",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins Community Physicians, Inc",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Monroe, M.D",
-   "title": "Pediatrician",
-   "org": "Johns Hopkins Emergency Services",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

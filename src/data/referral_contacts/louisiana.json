@@ -3,8 +3,8 @@
  "slug": "louisiana",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-louisiana.csv",
  "count": 1861,
- "emails": 13,
- "practiceEmails": 41,
+ "emails": 67,
+ "practiceEmails": 43,
  "phones": 1861,
  "direct": 0,
  "roles": [
@@ -75,6 +75,28 @@
  ],
  "rows": [
   {
+   "name": "Beth Evans, D.O",
+   "title": "Pediatrician",
+   "org": "Ochsner Clinic Llc",
+   "city": "Abita Springs",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@suscc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Blaine Broussard, M.D",
+   "title": "Pediatrician",
+   "org": "Physical Therapy Services Of West Louisiana INC",
+   "city": "Alexandria",
+   "linkedin": "https://www.linkedin.com/in/blaine-broussard-5b347978",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@fcimllp.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Clark, MD",
    "title": "Pediatrician",
    "org": "Premier Pediatrics",
@@ -82,6 +104,39 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marla Johnson, M.D",
+   "title": "Neonatologist",
+   "org": "Amar Nijjar Md Medical Corpo",
+   "city": "Alexandria",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kevin Dean, M.D",
+   "title": "Pediatrician",
+   "org": "Our Lady Of The Lake Inc",
+   "city": "Baton Rouge",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Harris, M.D",
+   "title": "Pediatrician",
+   "org": "Convenient Care Llc",
+   "city": "Baton Rouge",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -108,6 +163,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michelle Steinhardt, MD",
+   "title": "Neonatologist",
+   "org": "Baton Rouge Neonatal Associates, Inc.",
+   "city": "Baton Rouge",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Christopher Turner, MD",
    "title": "Pediatrician",
    "org": "Our Lady Of The Lake Inc",
@@ -115,6 +181,28 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Wood, MD",
+   "title": "Pediatrician",
+   "org": "Our Lady Of The Lake Hospital, Inc.",
+   "city": "Baton Rouge",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@consolidated.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jacqueline Gray, MD",
+   "title": "Pediatrician",
+   "org": "Wk Premier Pediatrics",
+   "city": "Bossier City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@med.und.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -141,6 +229,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Christy Valentine, M.D",
+   "title": "Pediatrician",
+   "org": "Growing Up Children'S Clinic Llc",
+   "city": "Gretna",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@healthybluela.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cristina Halk, M.D",
+   "title": "Pediatrician",
+   "org": "North Oaks Pediatric Clinic, L.L.P.",
+   "city": "Hammond",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Young, MD",
+   "title": "Pediatrician",
+   "org": "Ochsner Clinic Llc",
+   "city": "Kenner",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Geneva Lejeune, MD",
    "title": "Pediatrician",
    "org": "La Petite Pediatric Clinic",
@@ -148,6 +269,28 @@
    "linkedin": "",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@lapetitepeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Myers, M.D",
+   "title": "Pediatrician",
+   "org": "The Regional Health System Of Acadiana, Llc",
+   "city": "Lafayette",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@slucare.ssmhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laszlo Papp, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Group Of Acadiana, Llc",
+   "city": "Lafayette",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@meduniwien.ac.at",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -163,6 +306,325 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jamie Stephenson, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Bryan G Sibley Md Apmc",
+   "city": "Lafayette",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tricia Templet, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Regional Health System Of Acadiana, Llc",
+   "city": "Lafayette",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@louisiana.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Murray, MD",
+   "title": "Pediatrician",
+   "org": "Lsuhsc Family Practice Center @ Lcmh",
+   "city": "Lake Charles",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sheri Berger, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Leblanc Pediatrics Llc",
+   "city": "Mandeville",
+   "linkedin": "https://www.linkedin.com/in/sheri-berger-4b4081a6",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Victor Lucas, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Ochsner Clinic Llc",
+   "city": "Mandeville",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael White, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Ochsner Clinic Llc",
+   "city": "Mandeville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abigail Reyes, MD",
+   "title": "Pediatrician",
+   "org": "Westside Clinics Anc",
+   "city": "Marrero",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uci.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Avery Sampson, MD",
+   "title": "Pediatrician",
+   "org": "Westside Clinics Anc",
+   "city": "Marrero",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carlos Trujillo, M.D",
+   "title": "Pediatrician",
+   "org": "Jefferson Pediatric Clinic",
+   "city": "Marrero",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@fsfb.org.co",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Danna, MD",
+   "title": "Pediatrician",
+   "org": "Sunrise Pediatric Associates",
+   "city": "Metairie",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Corey Falcon, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Administrators Of The Tulane Education Fund",
+   "city": "Metairie",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Carlson, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Ochsner Clinic LLC",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Craig Conard",
+   "title": "Pediatrician",
+   "org": "Childrens Hospital Medical Practice Corporation",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ivory Crittendon, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Ochsner Clinic LLC",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Debord, MD",
+   "title": "Pediatrician",
+   "org": "Administrators Of The Tulane Educational Fund",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsay Ford, M.D",
+   "title": "Pediatrician",
+   "org": "East Jefferson Physicians Group LLC",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Gugel, MD",
+   "title": "Pediatrician",
+   "org": "Administrators Of The Tulane Educational Fund",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Hales",
+   "title": "Pediatrician",
+   "org": "Stephen W Hales Md Apmc Dba Hales Pediatrics",
+   "city": "New Orleans",
+   "linkedin": "https://www.linkedin.com/in/stephen-hales",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@halespediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ryan Himes, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Ochsner Clinic Llc",
+   "city": "New Orleans",
+   "linkedin": "https://www.linkedin.com/in/ryan-himes-md",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Walter Hoyt, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Ochsner Clinic LLC",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Diego Lara, M.D., M.P.H",
+   "title": "Pediatric Cardiologist",
+   "org": "Ochsner Clinic Llc",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benton Marino, M.D",
+   "title": "Pediatrician",
+   "org": "Keith J. Capone, Md, Llc",
+   "city": "New Orleans",
+   "linkedin": "https://www.linkedin.com/in/benton-marino-33a95110",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jasmeet Mokha, M.D., M.P.H",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Ochsner Clinic Llc",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anjali Niyogi, MD,MPH",
+   "title": "Pediatrician",
+   "org": "Administrators Of The Tulane Educational Fund",
+   "city": "New Orleans",
+   "linkedin": "https://www.linkedin.com/in/anjaliniyogi",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Oates",
+   "title": "Pediatrician",
+   "org": "Stephen W Hales Md Apmc Dba Hales Pediatrics",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Giovanni Piedimonte, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Pediatric Pulmonary & Critical Care",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ira Shukla, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Childrens Hospital Medical Practice Corporation",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margarita Silio, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Childrens Hospital Medical Practice Corporation",
+   "city": "New Orleans",
+   "linkedin": "https://www.linkedin.com/in/margarita-silio-65502a40",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alfonso Vargas, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Lsu Health New Orleans",
+   "city": "New Orleans",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Song-Gui Yang, MD",
    "title": "Pediatric Cardiologist",
    "org": "Childrens Hospital Medical Practice Corporation",
@@ -170,6 +632,61 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022@tulane.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Ardoin, M.D",
+   "title": "Pediatrician",
+   "org": "Lily Pad Pediatrics, Llc",
+   "city": "Opelousas",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Jones, MD APMC",
+   "title": "Pediatrician",
+   "org": "Lily Pad Pediatrics, Llc",
+   "city": "Opelousas",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Levinson, NURSE PRACTITIONER",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "A Plus Medical Of Ruston Llc",
+   "city": "Ruston",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pat Bass, M.D",
+   "title": "Pediatrician",
+   "org": "Bass Consulting, Llc",
+   "city": "Shreveport",
+   "linkedin": "https://www.linkedin.com/in/pat-bass-9b39a22",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Steven Conrad, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Lsu Health Sciences Center Shreveport Faculty Group Practice",
+   "city": "Shreveport",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -207,6 +724,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Minh Tran, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Wk Pediatric Intensivist",
+   "city": "Shreveport",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susannah Walker, MD",
+   "title": "Pediatrician",
+   "org": "United Investment Group Of Louisiana, Llc",
+   "city": "Shreveport",
+   "linkedin": "https://uk.linkedin.com/in/susannah-walker-393b7820a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@firstnationsuniversity.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Henry Peltier, M.D",
    "title": "Pediatrician",
    "org": "The Center For Pediatric And Adolescent Medicine,Llc",
@@ -214,6 +753,61 @@
    "linkedin": "",
    "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@charter.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Drake, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S International, Llc",
+   "city": "Walker",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@jocogov.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cresha Davis, M.D",
+   "title": "Pediatrician",
+   "org": "Mark F. Dollar, M.D. Inc.",
+   "city": "West Monroe",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Thorn, CPNP-PN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Clhg-Winn, Llc",
+   "city": "Winnfield",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@googlemail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Broussard, M.D",
+   "title": "Pediatrician",
+   "org": "Premier Pediatrics Of Acadiana, Llc",
+   "city": "Youngsville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@startcorp.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Perkins, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Hospital Service District  1 Of East Baton Rouge Parish",
+   "city": "Zachary",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -240,17 +834,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Beth Evans, D.O",
-   "title": "Pediatrician",
-   "org": "Ochsner Clinic Llc",
-   "city": "Abita Springs",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joseph Awotwi, M.D",
    "title": "Pediatric Pulmonologist",
    "org": "Alexandria Pediatrics, Llc",
@@ -269,17 +852,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Blaine Broussard, M.D",
-   "title": "Pediatrician",
-   "org": "Physical Therapy Services Of West Louisiana INC",
-   "city": "Alexandria",
-   "linkedin": "https://www.linkedin.com/in/blaine-broussard-5b347978",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -314,7 +886,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@mansoorpediatrics.com"
   },
   {
    "name": "Tessie Doughty, NP",
@@ -357,17 +929,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marla Johnson, M.D",
-   "title": "Neonatologist",
-   "org": "Amar Nijjar Md Medical Corpo",
-   "city": "Alexandria",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -966,17 +1527,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kevin Dean, M.D",
-   "title": "Pediatrician",
-   "org": "Our Lady Of The Lake Inc",
-   "city": "Baton Rouge",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brian Despinasse, MD",
    "title": "Pediatrician",
    "org": "R A Holdings Llc",
@@ -1215,17 +1765,6 @@
    "linkedin": "https://www.linkedin.com/in/noor-hajjaj-517505322",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Harris, M.D",
-   "title": "Pediatrician",
-   "org": "Convenient Care Llc",
-   "city": "Baton Rouge",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2121,17 +2660,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Steinhardt, MD",
-   "title": "Neonatologist",
-   "org": "Baton Rouge Neonatal Associates, Inc.",
-   "city": "Baton Rouge",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rachel Stephenson, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Red Stick Pediatrics",
@@ -2330,17 +2858,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Wood, MD",
-   "title": "Pediatrician",
-   "org": "Our Lady Of The Lake Hospital, Inc.",
-   "city": "Baton Rouge",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Pamela Woods, MD",
    "title": "Pediatrician",
    "org": "Clinic Of Ear Nose Throat & Neck",
@@ -2414,17 +2931,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jacqueline Gray, MD",
-   "title": "Pediatrician",
-   "org": "Wk Premier Pediatrics",
-   "city": "Bossier City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3529,17 +4035,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christy Valentine, M.D",
-   "title": "Pediatrician",
-   "org": "Growing Up Children'S Clinic Llc",
-   "city": "Gretna",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Arnold, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "North Oaks Pediatric Clinic, L.L.P.",
@@ -3613,17 +4108,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cristina Halk, M.D",
-   "title": "Pediatrician",
-   "org": "North Oaks Pediatric Clinic, L.L.P.",
-   "city": "Hammond",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4178,17 +4662,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Young, MD",
-   "title": "Pediatrician",
-   "org": "Ochsner Clinic Llc",
-   "city": "Kenner",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Wendi Defrank, M.D",
    "title": "Pediatrician",
    "org": "Wendi Defrank, Md Apmc",
@@ -4607,17 +5080,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Deborah Myers, M.D",
-   "title": "Pediatrician",
-   "org": "The Regional Health System Of Acadiana, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Durga Naidu, M.D, FAAP, FACC",
    "title": "Pediatric Cardiologist",
    "org": "Childrens Heart Clinic Of Louisiana Llc",
@@ -4658,17 +5120,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laszlo Papp, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Group Of Acadiana, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4746,28 +5197,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jamie Stephenson, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Bryan G Sibley Md Apmc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tricia Templet, DNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Regional Health System Of Acadiana, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4856,17 +5285,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Murray, MD",
-   "title": "Pediatrician",
-   "org": "Lsuhsc Family Practice Center @ Lcmh",
-   "city": "Lake Charles",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4992,17 +5410,6 @@
    "practiceEmail": "i\u2022\u2022\u2022@sttammanychamber.org"
   },
   {
-   "name": "Sheri Berger, APRN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Leblanc Pediatrics Llc",
-   "city": "Mandeville",
-   "linkedin": "https://www.linkedin.com/in/sheri-berger-4b4081a6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@sttammanychamber.org"
-  },
-  {
    "name": "Spring Cloud Neill, MD",
    "title": "Pediatrician",
    "org": "Ochsner Clinic Llc",
@@ -5069,17 +5476,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Victor Lucas, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Ochsner Clinic Llc",
-   "city": "Mandeville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Isaac Odudu, MD",
    "title": "Pediatrician",
    "org": "Clark Family Dentistry",
@@ -5129,17 +5525,6 @@
    "org": "Ochsner Clinic Llc",
    "city": "Mandeville",
    "linkedin": "https://www.linkedin.com/in/naglaa-shourbaji-8b76ba30",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael White, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Ochsner Clinic Llc",
-   "city": "Mandeville",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
@@ -5355,17 +5740,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Abigail Reyes, MD",
-   "title": "Pediatrician",
-   "org": "Westside Clinics Anc",
-   "city": "Marrero",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mitchell Rubin, MD",
    "title": "Pediatrician",
    "org": "Wjh Physician Services D/B/A West Jefferson Physicians Services",
@@ -5373,17 +5747,6 @@
    "linkedin": "https://www.linkedin.com/in/mitchell-rubin-md-2b474065",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Avery Sampson, MD",
-   "title": "Pediatrician",
-   "org": "Westside Clinics Anc",
-   "city": "Marrero",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5428,17 +5791,6 @@
    "linkedin": "https://www.linkedin.com/in/aaronthompsonmd",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carlos Trujillo, M.D",
-   "title": "Pediatrician",
-   "org": "Jefferson Pediatric Clinic",
-   "city": "Marrero",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5619,17 +5971,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicholas Danna, MD",
-   "title": "Pediatrician",
-   "org": "Sunrise Pediatric Associates",
-   "city": "Metairie",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Evan Davis",
    "title": "Pediatrician",
    "org": "Keith A. Collins Md Llc",
@@ -5670,17 +6011,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Corey Falcon, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Administrators Of The Tulane Education Fund",
-   "city": "Metairie",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6961,17 +7291,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "John Carlson, MD, PHD",
-   "title": "Pediatrician",
-   "org": "Ochsner Clinic LLC",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Carver, M.D",
    "title": "Pediatric Gastroenterologist",
    "org": "Louisiana State University School Of Med In New Orleans Faculty Grou",
@@ -7038,17 +7357,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Craig Conard",
-   "title": "Pediatrician",
-   "org": "Childrens Hospital Medical Practice Corporation",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Caitlin Creel, MD",
    "title": "Pediatric Hospice & Palliative Medicine Physician",
    "org": "University Of Texas Southwestern Medical Center At Dallas",
@@ -7058,17 +7366,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "t\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu"
-  },
-  {
-   "name": "Ivory Crittendon, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Ochsner Clinic LLC",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Terry Cummings, M.D",
@@ -7089,17 +7386,6 @@
    "linkedin": "https://www.linkedin.com/in/laurendavis1",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Debord, MD",
-   "title": "Pediatrician",
-   "org": "Administrators Of The Tulane Educational Fund",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7276,17 +7562,6 @@
    "linkedin": "https://www.linkedin.com/in/stephanie-ford-a7a27524a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsay Ford, M.D",
-   "title": "Pediatrician",
-   "org": "East Jefferson Physicians Group LLC",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7497,7 +7772,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu"
   },
   {
    "name": "Sherry Gu",
@@ -7511,17 +7786,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jonathan Gugel, MD",
-   "title": "Pediatrician",
-   "org": "Administrators Of The Tulane Educational Fund",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ayush Gupta, MBBS",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Lcmc Health Clinical Services, Llc",
@@ -7531,17 +7795,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "l\u2022\u2022\u2022\u2022\u2022\u2022@lcmchealth.org"
-  },
-  {
-   "name": "Stephen Hales",
-   "title": "Pediatrician",
-   "org": "Stephen W Hales Md Apmc Dba Hales Pediatrics",
-   "city": "New Orleans",
-   "linkedin": "https://www.linkedin.com/in/stephen-hales",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Minghua Hao, M.D., M.S",
@@ -7573,17 +7826,6 @@
    "linkedin": "https://www.linkedin.com/in/charles-hemenway-9575b319",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Himes, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Ochsner Clinic Llc",
-   "city": "New Orleans",
-   "linkedin": "https://www.linkedin.com/in/ryan-himes-md",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7628,17 +7870,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Walter Hoyt, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Ochsner Clinic LLC",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7753,17 +7984,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Diego Lara, M.D., M.P.H",
-   "title": "Pediatric Cardiologist",
-   "org": "Ochsner Clinic Llc",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Anna Lara, M.D., M.P.H",
    "title": "Pediatrician",
    "org": "Ochsner Clinic Llc",
@@ -7874,17 +8094,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Benton Marino, M.D",
-   "title": "Pediatrician",
-   "org": "Keith J. Capone, Md, Llc",
-   "city": "New Orleans",
-   "linkedin": "https://www.linkedin.com/in/benton-marino-33a95110",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amy Matherne, MD",
    "title": "Pediatrician",
    "org": "Keith J. Capone, Md, Llc",
@@ -7943,17 +8152,6 @@
    "name": "Carmen Mironovici, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Ochsner Clinic LLC",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jasmeet Mokha, M.D., M.P.H",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Ochsner Clinic Llc",
    "city": "New Orleans",
    "linkedin": "",
    "email": "",
@@ -8028,17 +8226,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anjali Niyogi, MD,MPH",
-   "title": "Pediatrician",
-   "org": "Administrators Of The Tulane Educational Fund",
-   "city": "New Orleans",
-   "linkedin": "https://www.linkedin.com/in/anjaliniyogi",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leah Nuss, M.D",
    "title": "Pediatric Pulmonologist",
    "org": "Childrens Hospital Medical Practice Corporation",
@@ -8057,17 +8244,6 @@
    "linkedin": "https://www.linkedin.com/in/victoria-o-connor-172013100",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Oates",
-   "title": "Pediatrician",
-   "org": "Stephen W Hales Md Apmc Dba Hales Pediatrics",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8171,17 +8347,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Giovanni Piedimonte, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Pediatric Pulmonary & Critical Care",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shannon Powell, D.O",
    "title": "Pediatric Cardiologist",
    "org": "Ochsner Clinic Llc",
@@ -8267,7 +8432,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu"
   },
   {
    "name": "Alva Roche, MD",
@@ -8431,28 +8596,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ira Shukla, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Childrens Hospital Medical Practice Corporation",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margarita Silio, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Childrens Hospital Medical Practice Corporation",
-   "city": "New Orleans",
-   "linkedin": "https://www.linkedin.com/in/margarita-silio-65502a40",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8655,17 +8798,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alfonso Vargas, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Lsu Health New Orleans",
-   "city": "New Orleans",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": "e\u2022\u2022\u2022\u2022@lsuhsc.edu"
-  },
-  {
    "name": "Robert Vasquez, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Ochsner Clinic LLC",
@@ -8864,29 +8996,7 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Ardoin, M.D",
-   "title": "Pediatrician",
-   "org": "Lily Pad Pediatrics, Llc",
-   "city": "Opelousas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Allison Hatfield, MD",
-   "title": "Pediatrician",
-   "org": "Lily Pad Pediatrics, Llc",
-   "city": "Opelousas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Jones, MD APMC",
    "title": "Pediatrician",
    "org": "Lily Pad Pediatrics, Llc",
    "city": "Opelousas",
@@ -8949,7 +9059,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@mansoorpediatrics.com"
   },
   {
    "name": "Ernest Kelly, MD",
@@ -9183,17 +9293,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Levinson, NURSE PRACTITIONER",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "A Plus Medical Of Ruston Llc",
-   "city": "Ruston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brenda McIntyre, M.D",
    "title": "Pediatrician",
    "org": "Rainbow Health Access",
@@ -9348,17 +9447,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Pat Bass, M.D",
-   "title": "Pediatrician",
-   "org": "Bass Consulting, Llc",
-   "city": "Shreveport",
-   "linkedin": "https://www.linkedin.com/in/pat-bass-9b39a22",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joseph Bocchini, M.D",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Wk Childrens Health Specialists",
@@ -9452,17 +9540,6 @@
    "org": "Lsu Health Sciences Center Shreveport Faculty Group Practice",
    "city": "Shreveport",
    "linkedin": "https://www.linkedin.com/in/juanita-coke-621744196",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Steven Conrad, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Lsu Health Sciences Center Shreveport Faculty Group Practice",
-   "city": "Shreveport",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -9986,17 +10063,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Minh Tran, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Wk Pediatric Intensivist",
-   "city": "Shreveport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ashley Viviano, MSN, APRN, PNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Progressive Childrens Clinic Llc",
@@ -10004,17 +10070,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susannah Walker, MD",
-   "title": "Pediatrician",
-   "org": "United Investment Group Of Louisiana, Llc",
-   "city": "Shreveport",
-   "linkedin": "https://uk.linkedin.com/in/susannah-walker-393b7820a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10613,17 +10668,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Laura Drake, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S International, Llc",
-   "city": "Walker",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine Spiller, MD",
    "title": "Pediatrician",
    "org": "Our Lady Of The Lake Physician Group LLC",
@@ -10642,17 +10686,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cresha Davis, M.D",
-   "title": "Pediatrician",
-   "org": "Mark F. Dollar, M.D. Inc.",
-   "city": "West Monroe",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10723,17 +10756,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Angela Thorn, CPNP-PN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Clhg-Winn, Llc",
-   "city": "Winnfield",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ashley Anderson, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Franklin Parish Hospital Service Dist 1",
@@ -10756,17 +10778,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Catherine Broussard, M.D",
-   "title": "Pediatrician",
-   "org": "Premier Pediatrics Of Acadiana, Llc",
-   "city": "Youngsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Adrienne Musumeche",
    "title": "Pediatrician",
    "org": "Premier Pediatrics Of Acadiana, Llc",
@@ -10785,17 +10796,6 @@
    "linkedin": "https://www.linkedin.com/in/chana-heintz-5a82b216a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Perkins, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Hospital Service District  1 Of East Baton Rouge Parish",
-   "city": "Zachary",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

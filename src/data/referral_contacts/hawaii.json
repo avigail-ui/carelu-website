@@ -3,8 +3,8 @@
  "slug": "hawaii",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-hawaii.csv",
  "count": 660,
- "emails": 3,
- "practiceEmails": 34,
+ "emails": 18,
+ "practiceEmails": 35,
  "phones": 660,
  "direct": 0,
  "roles": [
@@ -31,11 +31,11 @@
    "count": 40
   },
   {
-   "name": "Wailuku",
+   "name": "Tripler Amc",
    "count": 30
   },
   {
-   "name": "Tripler Amc",
+   "name": "Wailuku",
    "count": 30
   },
   {
@@ -75,6 +75,127 @@
  ],
  "rows": [
   {
+   "name": "Brenda Camacho, MD",
+   "title": "Pediatrician",
+   "org": "Brenda M.K. Camacho M.D. Llc",
+   "city": "Hilo",
+   "linkedin": "https://www.linkedin.com/in/brenda-camacho-she-her-89382120",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joyce Trompeta, RN, MS, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Curtis W Lee, M.D., Inc.",
+   "city": "Hilo",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anthony Guerrero, M.D",
+   "title": "Pediatrician",
+   "org": "Hawaii Residency Programs Inc.",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@dop.hawaii.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Hara, MD",
+   "title": "Pediatrician",
+   "org": "Kids Thrive Pediatrics, Llc",
+   "city": "Honolulu",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Harold Nilsson, M.D",
+   "title": "Pediatrician",
+   "org": "Harold Nilsson, M.D., Llc",
+   "city": "Honolulu",
+   "linkedin": "https://www.linkedin.com/in/haroldnilsson",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Johnston, M.D",
+   "title": "Pediatrician",
+   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
+   "city": "Jbphh",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ucalgary.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frank Baum, M.D",
+   "title": "Pediatrician",
+   "org": "Frank R. Baum, Md, Inc.",
+   "city": "Kahului",
+   "linkedin": "https://www.linkedin.com/in/frank-baum-081988a",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Hamilton, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Inc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Harpstrite, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Amy B. Harpstrite, M.D., Llc",
+   "city": "Kailua",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gail Nakaichi, D.O",
+   "title": "Pediatrician",
+   "org": "Gail K. Nakaichi, D.O. Llc",
+   "city": "Kailua",
+   "linkedin": "https://www.linkedin.com/in/amanda-olson-7022b5122",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Kanis, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Family Medicine Clinic",
+   "city": "Tamc",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Taylor Sawyer, D.O",
    "title": "Neonatologist",
    "org": "Family Medicine Clinic",
@@ -82,6 +203,50 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lingie Chiu, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Amc",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher McEvoy, M.D",
+   "title": "Pediatrician",
+   "org": "Amc Tripler-Shafter",
+   "city": "Tripler Army Medical Center",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@petermac.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Curtis Toma, MD",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022@dhs.hawaii.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Yuen, M.D",
+   "title": "Pediatrician",
+   "org": "Waianae District Comprehensive Health And Hospital Board INC",
+   "city": "Waianae",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022@ketchum.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -196,17 +361,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brenda Camacho, MD",
-   "title": "Pediatrician",
-   "org": "Brenda M.K. Camacho M.D. Llc",
-   "city": "Hilo",
-   "linkedin": "https://www.linkedin.com/in/brenda-camacho-she-her-89382120",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shallon Craddock, M.D., M.P.H",
    "title": "Pediatrician",
    "org": "Sunshine Pediatric Clinic",
@@ -237,7 +391,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@ehiipa.com"
   },
   {
    "name": "Angela Lind, M.D",
@@ -280,17 +434,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joyce Trompeta, RN, MS, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Curtis W Lee, M.D., Inc.",
-   "city": "Hilo",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -534,7 +677,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022@kkv.net"
   },
   {
    "name": "Darryl Glaser, M.D",
@@ -544,28 +687,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anthony Guerrero, M.D",
-   "title": "Pediatrician",
-   "org": "Hawaii Residency Programs Inc.",
-   "city": "Honolulu",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christine Hara, MD",
-   "title": "Pediatrician",
-   "org": "Kids Thrive Pediatrics, Llc",
-   "city": "Honolulu",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -900,17 +1021,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Harold Nilsson, M.D",
-   "title": "Pediatrician",
-   "org": "Harold Nilsson, M.D., Llc",
-   "city": "Honolulu",
-   "linkedin": "https://www.linkedin.com/in/haroldnilsson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Scott Ninomiya, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Kapiolani Medical Center For Women And Children",
@@ -1139,7 +1249,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022@kkv.net"
   },
   {
    "name": "Doreen Ueoka, MD",
@@ -1373,17 +1483,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aaron Johnston, M.D",
-   "title": "Pediatrician",
-   "org": "Mariardnutrition Llc Dba Veg Out With Maria",
-   "city": "Jbphh",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rachel Newton-Weaver, M.D",
    "title": "Pediatrician",
    "org": "Naval Health Clinic Hawaii",
@@ -1413,17 +1512,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Frank Baum, M.D",
-   "title": "Pediatrician",
-   "org": "Frank R. Baum, Md, Inc.",
-   "city": "Kahului",
-   "linkedin": "https://www.linkedin.com/in/frank-baum-081988a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1538,17 +1626,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Hamilton, MD",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Inc",
-   "city": "Kailua",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jacqueline Hardy, CPNP, APRN RX, ATC",
    "title": "Pediatric Nurse Practitioner",
    "org": "John M. Nagamine, M.D. Inc",
@@ -1558,17 +1635,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": "o\u2022\u2022\u2022\u2022\u2022@johnnagaminemd.com"
-  },
-  {
-   "name": "Amy Harpstrite, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Amy B. Harpstrite, M.D., Llc",
-   "city": "Kailua",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Margaret Hu, MD",
@@ -1613,17 +1679,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": "o\u2022\u2022\u2022\u2022\u2022@johnnagaminemd.com"
-  },
-  {
-   "name": "Gail Nakaichi, D.O",
-   "title": "Pediatrician",
-   "org": "Gail K. Nakaichi, D.O. Llc",
-   "city": "Kailua",
-   "linkedin": "https://www.linkedin.com/in/amanda-olson-7022b5122",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Eun Strawser, D.O",
@@ -1989,17 +2044,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Adam Kanis, MD, PHD",
-   "title": "Pediatrician",
-   "org": "Family Medicine Clinic",
-   "city": "Tamc",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Anisowicz, MD, FAAP, DABOM",
    "title": "Pediatric Endocrinologist",
    "org": "Amc Tripler-Shafter",
@@ -2040,17 +2084,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil"
-  },
-  {
-   "name": "Lingie Chiu, M.D",
-   "title": "Pediatrician",
-   "org": "Amc Tripler-Shafter",
-   "city": "Tripler Amc",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil"
   },
@@ -2330,17 +2363,6 @@
    "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil"
   },
   {
-   "name": "Christopher McEvoy, M.D",
-   "title": "Pediatrician",
-   "org": "Amc Tripler-Shafter",
-   "city": "Tripler Army Medical Center",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.mil"
-  },
-  {
    "name": "Brittany Wake, D.O",
    "title": "Pediatrician",
    "org": "Amc Tripler-Shafter",
@@ -2407,17 +2429,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Curtis Toma, MD",
-   "title": "Pediatrician",
-   "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
-   "city": "Waianae",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kelli-Ann Voloch, MD",
    "title": "Pediatrician",
    "org": "Waianae District Comprehensive Health And Hospital Board, Incorporated",
@@ -2425,17 +2436,6 @@
    "linkedin": "https://www.linkedin.com/in/ashley-lee-md-046193166",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Yuen, M.D",
-   "title": "Pediatrician",
-   "org": "Waianae District Comprehensive Health And Hospital Board INC",
-   "city": "Waianae",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

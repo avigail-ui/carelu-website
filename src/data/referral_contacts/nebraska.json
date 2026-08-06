@@ -3,8 +3,8 @@
  "slug": "nebraska",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-nebraska.csv",
  "count": 733,
- "emails": 37,
- "practiceEmails": 121,
+ "emails": 52,
+ "practiceEmails": 117,
  "phones": 733,
  "direct": 0,
  "roles": [
@@ -218,6 +218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kimberly Allen, DO",
+   "title": "Pediatrician",
+   "org": "Cch Pediatric Clinic Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Douglas Boon, MD",
    "title": "Pediatrician",
    "org": "Grand Island Clinic Inc",
@@ -247,6 +258,50 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022@grandislandclinic.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Cole, M.D",
+   "title": "Pediatrician",
+   "org": "Kearney Clinic Pc",
+   "city": "Kearney",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@bu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Larson, M.D",
+   "title": "Pediatrician",
+   "org": "Capital City Pediatrics, Llc",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Teri Thompson, APRN-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Faith Regional Physician Services LLC",
+   "city": "Norfolk",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@wvacil.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jenna Allison, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Childrens Hospital & Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -295,6 +350,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Steven Ebers, M.D",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Cynthia Ellis, MD",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Unmc Physicians",
@@ -339,6 +405,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Therese Hennessy, DO",
+   "title": "Pediatrician",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@ul.ie",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Johnson, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heidi Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Hannah Krug, PNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Project Harmony",
@@ -357,6 +467,28 @@
    "linkedin": "",
    "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Murphy, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Oneworld Community Health Centers, Inc.",
+   "city": "Omaha",
+   "linkedin": "https://www.linkedin.com/in/colleen-murphy-msn-fnp-c-55533365",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aleisha Nabower, M.D",
+   "title": "Pediatrician",
+   "org": "Nebraska Medical Center",
+   "city": "Omaha",
+   "linkedin": "https://www.linkedin.com/in/aleisha-nabower-64867816b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -394,6 +526,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeffrey Salomon, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Patricia Seivert, MD",
    "title": "Pediatrician",
    "org": "Unmc Physicians",
@@ -427,6 +570,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rachel Taylor, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@buffalo.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jayesh Thakker, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Unmc Physicians",
@@ -434,6 +588,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Thompson, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Unmc Physicians",
+   "city": "Omaha",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -651,17 +816,6 @@
    "title": "Pediatrician",
    "org": "Father Flanagans Boys Home",
    "city": "Boys Town",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly Allen, DO",
-   "title": "Pediatrician",
-   "org": "Cch Pediatric Clinic Pc",
-   "city": "Columbus",
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
@@ -1088,17 +1242,6 @@
   },
   {
    "name": "Melissa Caha, D.O",
-   "title": "Pediatrician",
-   "org": "Kearney Clinic Pc",
-   "city": "Kearney",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Megan Cole, M.D",
    "title": "Pediatrician",
    "org": "Kearney Clinic Pc",
    "city": "Kearney",
@@ -1626,17 +1769,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Larson, M.D",
-   "title": "Pediatrician",
-   "org": "Capital City Pediatrics, Llc",
-   "city": "Lincoln",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathryn Leeper, MD",
    "title": "Pediatrician",
    "org": "Milkworks A Nebraska Nonprofit Corporation",
@@ -2022,17 +2154,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Teri Thompson, APRN-BC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Faith Regional Physician Services LLC",
-   "city": "Norfolk",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melissa Mosel, M.D",
    "title": "Pediatrician",
    "org": "Adolescent And Child Care Specialists, P.C.",
@@ -2152,17 +2273,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
-  },
-  {
-   "name": "Jenna Allison, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Childrens Hospital & Medical Center",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@hrc.org"
   },
   {
    "name": "Qais Alloah, MD",
@@ -2737,17 +2847,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Steven Ebers, M.D",
-   "title": "Pediatrician",
-   "org": "Unmc Physicians",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melissa England, MD",
    "title": "Pediatrician",
    "org": "Nebraska Medical Center",
@@ -3089,17 +3188,6 @@
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
   },
   {
-   "name": "Therese Hennessy, DO",
-   "title": "Pediatrician",
-   "org": "Oneworld Community Health Centers, Inc.",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brittni Herrera, MD",
    "title": "Pediatrician",
    "org": "University Of Nebraska Board Of Regents",
@@ -3230,39 +3318,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Johnson, M.D",
-   "title": "Pediatrician",
-   "org": "Unmc Physicians",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melissa Johnson, M.D",
-   "title": "Pediatrician",
-   "org": "Nebraska Medical Center",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
-  },
-  {
-   "name": "Heidi Johnson, MD",
-   "title": "Pediatrician",
-   "org": "Nebraska Medical Center",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
   },
   {
    "name": "Gregory Johnson, M.D",
@@ -3738,17 +3793,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Colleen Murphy, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Oneworld Community Health Centers, Inc.",
-   "city": "Omaha",
-   "linkedin": "https://www.linkedin.com/in/colleen-murphy-msn-fnp-c-55533365",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Grace Murray",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Nebraska Medical Center",
@@ -3756,17 +3800,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
-  },
-  {
-   "name": "Aleisha Nabower, M.D",
-   "title": "Pediatrician",
-   "org": "Nebraska Medical Center",
-   "city": "Omaha",
-   "linkedin": "https://www.linkedin.com/in/aleisha-nabower-64867816b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
   },
@@ -4156,17 +4189,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeffrey Salomon, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Unmc Physicians",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kristin Saxena, M.D",
    "title": "Pediatrician",
    "org": "Pivot Concierge Health, Llc",
@@ -4453,17 +4475,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rachel Taylor, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Unmc Physicians",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alicia Theilen, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "At Hope Psychiatry",
@@ -4484,17 +4495,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
    "phoneType": "Practice",
    "practiceEmail": "p\u2022\u2022\u2022\u2022\u2022\u2022@nebraskamed.com"
-  },
-  {
-   "name": "Elizabeth Thompson, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Unmc Physicians",
-   "city": "Omaha",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Kaitlynn Toben, DO",

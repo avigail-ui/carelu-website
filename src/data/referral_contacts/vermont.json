@@ -3,8 +3,8 @@
  "slug": "vermont",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-vermont.csv",
  "count": 316,
- "emails": 4,
- "practiceEmails": 2,
+ "emails": 24,
+ "practiceEmails": 4,
  "phones": 316,
  "direct": 0,
  "roles": [
@@ -27,15 +27,15 @@
    "count": 125
   },
   {
-   "name": "Brattleboro",
-   "count": 15
-  },
-  {
    "name": "Rutland",
    "count": 15
   },
   {
    "name": "South Burlington",
+   "count": 15
+  },
+  {
+   "name": "Brattleboro",
    "count": 15
   },
   {
@@ -75,6 +75,39 @@
  ],
  "rows": [
   {
+   "name": "Thomas Clark, MD",
+   "title": "Pediatrician",
+   "org": "Upper Valley Pediatrics",
+   "city": "Bradford",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abigail Adler, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://il.linkedin.com/in/abigail-adler-9a13022b0",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Anderson, MD",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/kalfordanderson",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@dhha.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Whittney Barkhuff, MD, PHD",
    "title": "Pediatrician",
    "org": "Fletcher Allen Health Care",
@@ -97,6 +130,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jonathan Flyer, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amelia Hopkins, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://ke.linkedin.com/in/amelia-hopkins-phillips-4871988b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Lahiri, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uvm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Samuel Loren, MD",
    "title": "Pediatrician",
    "org": "Fletcher Allen Health Care",
@@ -108,6 +174,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joshua Price, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/joshuamprice",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christian Pulcini, MD",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/christian-pulcini",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uvm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Teach, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Victor, MD",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stanley Weinberger, MD",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Burlington",
+   "linkedin": "https://www.linkedin.com/in/stanley-weinberger-41268342",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uvm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Paul Costello, M.D",
    "title": "Pediatrician",
    "org": "Essex Pediatrics Pc",
@@ -115,6 +236,105 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@stanford.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Moran, M.D",
+   "title": "Pediatrician",
+   "org": "Lamoille Health Partners, Inc",
+   "city": "Morrisville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ucf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Jewett, M.D",
+   "title": "Pediatrician",
+   "org": "Gifford Health Care, Inc",
+   "city": "Randolph",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@mta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Plavin, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Vermont Medical Center INC",
+   "city": "Randolph",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Adams, M.D",
+   "title": "Pediatrician",
+   "org": "Community Health Centers Of The Rutland Region, Inc.",
+   "city": "Rutland",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Delia Horn, M.D",
+   "title": "Neonatologist",
+   "org": "Community Health Centers Of The Rutland Region, Inc.",
+   "city": "Rutland",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Carlson, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Medicine, Plc",
+   "city": "South Burlington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karin Gray, MD",
+   "title": "Pediatrician",
+   "org": "Primary Care Health Partners",
+   "city": "South Burlington",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Foulk, MD",
+   "title": "Pediatrician",
+   "org": "Rebecca A Foulk Md Pc",
+   "city": "South Royalton",
+   "linkedin": "https://www.linkedin.com/in/rebecca-foulk",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Miller, MD",
+   "title": "Pediatrician",
+   "org": "Rebecca A Foulk Md Pc",
+   "city": "South Royalton",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -198,17 +418,6 @@
   {
    "name": "Jennifer Civiello, CPNP",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Upper Valley Pediatrics",
-   "city": "Bradford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Clark, MD",
-   "title": "Pediatrician",
    "org": "Upper Valley Pediatrics",
    "city": "Bradford",
    "linkedin": "",
@@ -346,28 +555,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Abigail Adler, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://il.linkedin.com/in/abigail-adler-9a13022b0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Anderson, MD",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://www.linkedin.com/in/kalfordanderson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -526,17 +713,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jonathan Flyer, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathleen Goodwin, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Lakeside Pediatrics, Pllc",
@@ -603,17 +779,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amelia Hopkins, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://ke.linkedin.com/in/amelia-hopkins-phillips-4871988b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Hunt, MD",
    "title": "Pediatrician",
    "org": "University Of Vermont Medical Center INC",
@@ -621,17 +786,6 @@
    "linkedin": "https://www.linkedin.com/in/elizabethmkountze",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Lahiri, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -654,28 +808,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joshua Price, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://www.linkedin.com/in/joshuamprice",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christian Pulcini, MD",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://www.linkedin.com/in/christian-pulcini",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -724,17 +856,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephen Teach, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Twichell, MD",
    "title": "Pediatric Nephrologist",
    "org": "University Of Vermont Medical Center INC",
@@ -768,17 +889,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Colleen Victor, MD",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Coral Walker, MD",
    "title": "Pediatrician",
    "org": "University Of Vermont Medical Center Inc",
@@ -797,17 +907,6 @@
    "linkedin": "https://www.linkedin.com/in/john-wax-1b32b713",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stanley Weinberger, MD",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Burlington",
-   "linkedin": "https://www.linkedin.com/in/stanley-weinberger-41268342",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1131,17 +1230,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Colleen Moran, M.D",
-   "title": "Pediatrician",
-   "org": "Lamoille Health Partners, Inc",
-   "city": "Morrisville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Geneva Pedersen, APRN, FNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Sarayu Balu",
@@ -1263,17 +1351,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Jewett, M.D",
-   "title": "Pediatrician",
-   "org": "Gifford Health Care, Inc",
-   "city": "Randolph",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Martin Johns, M.D",
    "title": "Pediatrician",
    "org": "Newgen Alabama Billing LLC",
@@ -1292,17 +1369,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joshua Plavin, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Vermont Medical Center INC",
-   "city": "Randolph",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1351,17 +1417,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Allison Adams, M.D",
-   "title": "Pediatrician",
-   "org": "Community Health Centers Of The Rutland Region, Inc.",
-   "city": "Rutland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Dimas Espinola, MD, MPH, MPS",
    "title": "Pediatrician",
    "org": "Community Health Centers Of The Rutland Region, Inc.",
@@ -1386,17 +1441,6 @@
   {
    "name": "Robert Hession, M.D",
    "title": "Pediatrician",
-   "org": "Community Health Centers Of The Rutland Region, Inc.",
-   "city": "Rutland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Delia Horn, M.D",
-   "title": "Neonatologist",
    "org": "Community Health Centers Of The Rutland Region, Inc.",
    "city": "Rutland",
    "linkedin": "",
@@ -1560,17 +1604,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Carlson, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Medicine, Plc",
-   "city": "South Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leah Costello, MD",
    "title": "Pediatrician",
    "org": "Primary Care Health Partners",
@@ -1583,17 +1616,6 @@
   },
   {
    "name": "Monica Fiorenza, MD",
-   "title": "Pediatrician",
-   "org": "Primary Care Health Partners",
-   "city": "South Burlington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karin Gray, MD",
    "title": "Pediatrician",
    "org": "Primary Care Health Partners",
    "city": "South Burlington",
@@ -1648,30 +1670,8 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rebecca Foulk, MD",
-   "title": "Pediatrician",
-   "org": "Rebecca A Foulk Md Pc",
-   "city": "South Royalton",
-   "linkedin": "https://www.linkedin.com/in/rebecca-foulk",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Frank Lamson, CPNP",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Rebecca A Foulk Md Pc",
-   "city": "South Royalton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Miller, MD",
-   "title": "Pediatrician",
    "org": "Rebecca A Foulk Md Pc",
    "city": "South Royalton",
    "linkedin": "",
@@ -1700,7 +1700,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@springfieldhospital.org"
   },
   {
    "name": "Roger Owen, MD",
@@ -1711,7 +1711,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@springfieldhospital.org"
   },
   {
    "name": "Sarah Weidhaas, M.D",

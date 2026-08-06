@@ -3,8 +3,8 @@
  "slug": "colorado",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-colorado.csv",
  "count": 3039,
- "emails": 109,
- "practiceEmails": 67,
+ "emails": 261,
+ "practiceEmails": 70,
  "phones": 3004,
  "direct": 123,
  "roles": [
@@ -1825,6 +1825,215 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jordan Abbott, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jordan-abbott-7798a2254",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stacy Anderson, PNP, CNS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/stacy-anderson-phd-6971229a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aubrey Armento, M.D",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/aubrey-armento-md-1a5a04178",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher Baker, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Peter Baker, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/peter-baker-7577702a",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Bellis, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jennifer-bellis-03589b9",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Timothy Benke, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/chad-r-camp-phd",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eric Benz, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/eric-benz-03349140",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eliza Blanchette, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/elizablanchette",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margret Bock, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Boggs, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/elizabethroseboggs",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julia Brant, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/julia-brant-b0b2271a0",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Meghan Breheney, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dale Burkett, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Cafferty, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/rachelcafferty",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melvin Chan, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://ca.linkedin.com/in/melvin-ch-chan",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Chassen, M.D",
+   "title": "Neonatologist",
+   "org": "University Physicians, Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Cobry, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/erin-cobry-84378965",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kate Coleman Minahan, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jareau Cordell, MD",
    "title": "Pediatrician",
    "org": "Rocky Mountain Health Centers Pediatrics, Pc",
@@ -1832,6 +2041,281 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@rmhcpeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Donna Curtis, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/donna-curtis-1504028",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nathan Dahl, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/ndahl09",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dee Daniels, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Darst, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jesse Davidson, MD, MPH",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jesse-davidson-52421141",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shanlee Davis, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/shanlee-davis-74b102358",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jenna Demedis, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jenna-demedis-b976b6159",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robin Deterding, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/robin-deterding-2979a056",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edwin Dezoeten, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bradley Dixon, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/bradley-dixon-8b9b2118a",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cinnamon Dixon, D.O",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Dodd, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samuel Dominguez, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Drake, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/kelly-drake-137188153",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimiko Dunbar, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hesham Eissa, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/hesham-eissa-88756a7a",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katelyn Enzer, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Espinoza, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jason-espinoza-00252698",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vanessa Fabrizio, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://ca.linkedin.com/in/vanessa-fabrizio-cpa-auditor-ca-4b4a7a3a",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Faulk, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Monica Federico, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Feldman, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/amy-feldman-3b69301",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Fonseca, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/brianpfonseca",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Foreman, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/nickjforeman",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Forlenza, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/gregory-forlenza-51663773",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1847,6 +2331,336 @@
    "practiceEmail": ""
   },
   {
+   "name": "Benjamin Frank, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/benjamin-frank-66101761",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brandi Freeman, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brigitte Frohnert, M.D., PH.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Terry Fry, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/terry-fry-99a3b4248",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Gallo, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Timothy Garrington, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ryan Good, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/ryan-good-39b182",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lia Gore, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/lia-gore-19b0a86",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cameron Gunville, D.O",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pia Hauk, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Hawkins, M.D",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/stephen-hawkins-0b42a213",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Edward Hoffenberg, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/edward-hoffenberg-466baa1a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristin Jensen, M.D., M.SC",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://ie.linkedin.com/in/kristin-jensen-95510a65",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Arun Kannappan, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexandra Kilgore, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/alexandra-kilgore",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexandra Kilinsky, DO",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaina Kochhar, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Kohler, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/mark-kohler-66848744",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Kramer, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/robert-g-kramer",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Kudron, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Oren Kupfer, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Austin Larson, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/austin-larson-678371b5",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Leibowitz, M.D./PH.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://au.linkedin.com/in/michael-leibowitz-52bab92b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Holly Lindsay, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/holly-lindsay-91b94b135",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michele Loi, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://it.linkedin.com/in/michele-loi-4457b111",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Mahar, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/patrick-mahar-crpc%E2%84%A2-37627973",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Manning, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/william-manning-a1955093",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Blake Martin, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/blake-martin-mha",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher McKinney, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/christophertmckinney",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa McLeod, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sophia Meharena, DO",
    "title": "Pediatrician",
    "org": "Rocky Mountain Youth Medical And Nursing Consultants, Inc",
@@ -1854,6 +2668,149 @@
    "linkedin": "https://www.linkedin.com/in/sophia-meharena-do-faap-5a7a281a9",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@everychildpediatrics.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Michels, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/aaron-michels-1aa1a27",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katharine Moore, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/katharineholtmoore",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gareth Morgan, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/gareth-morgan-72923364",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dustin Nash, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/dustin-nash-07200a29",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Suzanne Ngo, M.D",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://sg.linkedin.com/in/suzanne-ngo-04b717144",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hai Nguyen-Tran",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natalie Nokoff, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/natalie-nokoff-md-phd-63448a192",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Nowicki, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/katherine-nowicki-00203286",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maureen O'Brien, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Meghan Pauley, D.O",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/mkpauley",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole Penwill, M.D",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/nicole-penwill-md-mph-984915266",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Pitts, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/brian-pitts-26520b6",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher Rausch, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/christopher-rausch-815044241",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1869,6 +2826,116 @@
    "practiceEmail": ""
   },
   {
+   "name": "Marian Rewers, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/marian-rewers-427132228",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ann Reynolds, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/ann-reynolds-a8198413b",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Roback, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/mark-roback-68047399",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Rochford, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/laura-rochford-75a7675",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Rogers, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/ashley-rogers-4aa75498",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Romanowicz, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelley Roswell, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/kelley-roswell-13466b171",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Ruffenach, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@burrell.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Sanders, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cristina Sarmiento, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/cristina-i-sarmiento",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Emi Scala, M. D",
    "title": "Pediatrician",
    "org": "Rocky Mountain Youth Medical And Nursing Consultants, Inc",
@@ -1876,6 +2943,94 @@
    "linkedin": "https://www.linkedin.com/in/emi-scala-0b98b62a4",
    "email": "e\u2022\u2022\u2022\u2022\u2022@everychildpediatrics.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Douglas Scudamore, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sanam Shahid, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/sanamshahid",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Animesh Sharma, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/anantanimesh",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Steck, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/andrea-steck-227563b3",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Stenson, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Diane Straub, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Children'S Hospital Colorado",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christina Suh, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/christina-suh-017189103",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gabriel Tarshish, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1891,6 +3046,138 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anne Taylor, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/annetayloradams",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Irina Topoz, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/irina-topoz-5248642b",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chun-Hui Tsai, MD",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mario Villasenor, M.D",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/mario-villasenor-016393a4",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Johannes Von Alvensleben, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/johannes-von-alvensleben-77219a11a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Walker, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/sarahsuzannewalker",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Ann Wang, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alexandria Wiersma, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Woods",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/-jason-woods",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Yeung, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/elizabethcyeung",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Zamkoff, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Aurora",
+   "linkedin": "https://www.linkedin.com/in/jason-zamkoff-3769818",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Hutchinson, NP-C",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Colorado Mountain Medical, LLC",
+   "city": "Avon",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@meridianbioscience.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Emma McCarty, MD",
    "title": "Pediatrician",
    "org": "Boulder Medical Center, PC",
@@ -1902,12 +3189,78 @@
    "practiceEmail": ""
   },
   {
+   "name": "Melissa Johnson, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Hospital Colorado-Premier Pediatrics, Inc.",
+   "city": "Brighton",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Romano, LPC, NCC",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "New Beginnings Counseling, Llc",
+   "city": "Canon City",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@istitutotumori.mi.it",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Bauer, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Greenwood Pediatrics Pc",
+   "city": "Centennial",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aristides Maniatis, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rocky Mountain Pediatric Endocrinology, Pc",
+   "city": "Centennial",
+   "linkedin": "https://www.linkedin.com/in/aristides-maniatis-a84b20a3",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@rmpedendo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Middlemist, MD",
+   "title": "Pediatrician",
+   "org": "Simko Pediatric Dentistry Of Colorado, Pc",
+   "city": "Centennial",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@msn.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Suzanne Rogers, D.O",
    "title": "Pediatrician",
    "org": "Aurora Pediatric Associates, Llp",
    "city": "Centennial",
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@idahocom.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Stevens, M.D",
+   "title": "Pediatrician",
+   "org": "Aurora Pediatric Associates, Llp",
+   "city": "Centennial",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1931,6 +3284,17 @@
    "linkedin": "https://www.linkedin.com/in/sean-bradley-85357972",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ironhorsepeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lynn Bullock, MD",
+   "title": "Pediatrician",
+   "org": "Optumcare Colorado Medical Group Llc",
+   "city": "Colorado Springs",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@legclubfoundation.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2012,6 +3376,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mary McMurray, M.D",
+   "title": "Pediatrician",
+   "org": "Tamara K Rice Md Pc",
+   "city": "Craig",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alison Burt, M.D",
+   "title": "Pediatrician",
+   "org": "H Lee Moffitt Cancer Ctr And Res Inst Life Time Cancer Scrn Ctr INC",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Dahab, M.D",
+   "title": "Pediatrician",
+   "org": "Sapphire Pediatrics",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Dimaria, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/michael-dimaria-md-fase-4aabb271",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Garnreiter, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Gilbert, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Joynt, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Denver Health And Hospital Authority",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@dhha.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Robin Larabee, M.D",
    "title": "Pediatrician",
    "org": "Sapphire Pediatrics",
@@ -2030,6 +3471,83 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@innercityhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erika Lund, MD",
+   "title": "Pediatrician",
+   "org": "Denver Health And Hospital Authority",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@colostate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Delores Marrs, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Southeast Denver Pediatrics, Pc",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@spotsylvania.k12.va.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kanao Otsu, M.D",
+   "title": "Pediatrician",
+   "org": "National Jewish Health",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "o\u2022\u2022\u2022\u2022@njhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marco Pinder, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Baycare Medical Group, INC.",
+   "city": "Denver",
+   "linkedin": "https://www.linkedin.com/in/marco-pinder-14a6b2357",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@me.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Taylor-Cousar, M.D",
+   "title": "Pediatrician",
+   "org": "National Jewish Health",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@njhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tayler Thompson, FNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Poudre Valley Medical Group, Llc",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@centersforfamilydevelopment.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Young, M.D",
+   "title": "Pediatrician",
+   "org": "Denver Health And Hospital Authority",
+   "city": "Denver",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022@gwu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2078,6 +3596,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mia Roberts, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Regents Of The University Of Colorado",
+   "city": "Englewood",
+   "linkedin": "https://uk.linkedin.com/in/mia-roberts-mba-2a84a8b9",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrice Thibodeau, M.D",
+   "title": "Pediatrician",
+   "org": "Healthreach Community Health Centers",
+   "city": "Evergreen",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@umhs-sk.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Deborah Crawford, MD",
    "title": "Pediatrician",
    "org": "Salud Family Health",
@@ -2107,6 +3647,28 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022@mountainfamily.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sonal Patel, MD",
+   "title": "Neonatologist",
+   "org": "Nayacare Ltd",
+   "city": "Golden",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Hughes, M.D",
+   "title": "Pediatric Sleep Medicine Physician",
+   "org": "University Physicians Incorporated",
+   "city": "Grand Junction",
+   "linkedin": "https://www.linkedin.com/in/benjaminghughes",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2144,6 +3706,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Megan Stinar, M.D",
+   "title": "Pediatrician",
+   "org": "Primary Care Partners, Inc.",
+   "city": "Grand Junction",
+   "linkedin": "https://www.linkedin.com/in/megan-stinar-md-faap-97340437a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mary Willy, DO",
    "title": "Pediatrician",
    "org": "Altitude Pediatrics",
@@ -2155,6 +3728,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Suzanne Fox, PNP, PMHS",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lg Behavioral Health Of Colorado Llc",
+   "city": "Greenwood Village",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@dhw.idaho.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gail Griffin, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Rocky Mountain Pediatrics Pc",
+   "city": "Lakewood",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Juri Boguniewicz, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Physicians Incorporated",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/juri-boguniewicz-a39793380",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vincent Dimaria, M.D",
+   "title": "Pediatrician",
+   "org": "Arapahoe Park Pediatrics",
+   "city": "Littleton",
+   "linkedin": "https://www.linkedin.com/in/vincent-dimaria-09358b71",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Nelson, MD",
+   "title": "Pediatrician",
+   "org": "Arapahoe Park Pediatrics",
+   "city": "Littleton",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Katherine McCormack, MD",
    "title": "Pediatrician",
    "org": "Boulder Medical Center, PC",
@@ -2162,6 +3790,28 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@bouldermedicalcenter.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anuja Riles, M.D",
+   "title": "Pediatrician",
+   "org": "Poudre Valley Medical Group, Llc",
+   "city": "Loveland",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Stanga, MD",
+   "title": "Pediatrician",
+   "org": "Parker Pediatrics And Adolescents Pc",
+   "city": "Parker",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2194,6 +3844,28 @@
    "city": "Thornton",
    "linkedin": "https://www.linkedin.com/in/jennifer-burns-434aaa44",
    "email": "j\u2022\u2022\u2022\u2022\u2022@everychildpediatrics.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Tharp, M.D",
+   "title": "Pediatrician",
+   "org": "Rocky Mountain Youth Medical And Nursing Consultants, Inc",
+   "city": "Thornton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@manassasparkva.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lawrence Wolk, MD",
+   "title": "Pediatrician",
+   "org": "Rocky Mountain Youth Medical And Nursing Consultants, Inc",
+   "city": "Thornton",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2353,17 +4025,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jordan Abbott, M.D",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jordan-abbott-7798a2254",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ashraf Abdel-Azeem, M.D",
    "title": "Pediatrician",
    "org": "Ashraf Azeem, Md Llc",
@@ -2393,17 +4054,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stacy Anderson, PNP, CNS",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/stacy-anderson-phd-6971229a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2452,17 +4102,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aubrey Armento, M.D",
-   "title": "Pediatric Sports Medicine Physician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/aubrey-armento-md-1a5a04178",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Millana Babayeva",
    "title": "Pediatric Nurse Practitioner",
    "org": "Rocky Mountain Health Centers Pediatrics, Pc",
@@ -2470,28 +4109,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christopher Baker, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Baker, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/peter-baker-7577702a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2584,44 +4201,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Bellis, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jennifer-bellis-03589b9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jacob Beniflah, M.D",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Timothy Benke, MD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/chad-r-camp-phd",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eric Benz, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/eric-benz-03349140",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -2639,17 +4223,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Eliza Blanchette, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/elizablanchette",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Emily Blauel, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Physicians Incorporated",
@@ -2657,28 +4230,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margret Bock, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Boggs, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/elizabethroseboggs",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2694,39 +4245,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Julia Brant, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/julia-brant-b0b2271a0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Meghan Breheney, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dale Burkett, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Danielle Burton, MD",
    "title": "Pediatrician",
    "org": "Children'S Hospital Colorado",
@@ -2734,17 +4252,6 @@
    "linkedin": "https://www.linkedin.com/in/danielle-burton-660b7b215",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Cafferty, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/rachelcafferty",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2815,17 +4322,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Melvin Chan, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://ca.linkedin.com/in/melvin-ch-chan",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Howard Chase, MD",
    "title": "Pediatric Endocrinologist",
    "org": "University Physicians Incorporated",
@@ -2833,17 +4329,6 @@
    "linkedin": "https://www.linkedin.com/in/howardchaserealestate",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Chassen, M.D",
-   "title": "Neonatologist",
-   "org": "University Physicians, Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2870,17 +4355,6 @@
    "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@idealist.org"
   },
   {
-   "name": "Erin Cobry, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/erin-cobry-84378965",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sandra Cockerham, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Physicians Incorporated",
@@ -2899,17 +4373,6 @@
    "linkedin": "https://www.linkedin.com/in/haleykcoleman",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kate Coleman Minahan, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3002,39 +4465,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Donna Curtis, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/donna-curtis-1504028",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nathan Dahl, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/ndahl09",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dee Daniels, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Diana Danilenko, MD",
    "title": "Neonatologist",
    "org": "University Physicians Incorporated",
@@ -3046,77 +4476,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeffrey Darst, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jesse Davidson, MD, MPH",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jesse-davidson-52421141",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shanlee Davis, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/shanlee-davis-74b102358",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shelley Dell'Orfano, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/shelley-dell-orfano-b2933385",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jenna Demedis, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jenna-demedis-b976b6159",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robin Deterding, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/robin-deterding-2979a056",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Edwin Dezoeten, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -3134,28 +4498,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Bradley Dixon, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/bradley-dixon-8b9b2118a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cinnamon Dixon, D.O",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Della Dnicuola, MS (FNP-BC)",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
@@ -3163,28 +4505,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karen Dodd, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samuel Dominguez, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3200,33 +4520,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kelly Drake, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/kelly-drake-137188153",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alison Duggar, MD",
    "title": "Pediatrician",
    "org": "Children'S Hospital Colorado",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/alison-duggar-a815503b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimiko Dunbar, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
@@ -3255,39 +4553,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Hesham Eissa, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/hesham-eissa-88756a7a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katelyn Enzer, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jason Espinoza, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jason-espinoza-00252698",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Suzanne Essengue Belibi, M.D",
    "title": "Pediatric Allergist & Immunologist",
    "org": "Grace Health Clinic",
@@ -3299,55 +4564,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Vanessa Fabrizio, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://ca.linkedin.com/in/vanessa-fabrizio-cpa-auditor-ca-4b4a7a3a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Fanelli, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelly Faulk, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Monica Federico, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Feldman, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/amy-feldman-3b69301",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -3376,17 +4597,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Fonseca, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/brianpfonseca",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kari Fontenot, CNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
@@ -3394,28 +4604,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicholas Foreman, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/nickjforeman",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gregory Forlenza, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/gregory-forlenza-51663773",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3431,77 +4619,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Benjamin Frank, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/benjamin-frank-66101761",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brandi Freeman, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Richard Friesen, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/richard-friesen-986099136",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brigitte Frohnert, M.D., PH.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Terry Fry, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/terry-fry-99a3b4248",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Gallo, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Timothy Garrington, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -3552,28 +4674,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ryan Good, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/ryan-good-39b182",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lia Gore, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/lia-gore-19b0a86",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Graham, M.D",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Of Utah Pediatric Acuity Care",
@@ -3593,7 +4693,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@oagpc.com"
   },
   {
    "name": "Stephanie Grayson, MD",
@@ -3642,17 +4742,6 @@
   {
    "name": "Joseph Grubenhoff, MD",
    "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cameron Gunville, D.O",
-   "title": "Pediatric Critical Care Specialist",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "",
@@ -3728,28 +4817,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Pia Hauk, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Hawkins, M.D",
-   "title": "Pediatric Sleep Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/stephen-hawkins-0b42a213",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Masanori Hayashi, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Physicians Incorporated",
@@ -3801,17 +4868,6 @@
    "linkedin": "https://www.linkedin.com/in/susan-hines-497a927",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Edward Hoffenberg, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/edward-hoffenberg-466baa1a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3948,17 +5004,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kristin Jensen, M.D., M.SC",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://ie.linkedin.com/in/kristin-jensen-95510a65",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stephanie Johannes, M.D",
    "title": "Pediatrician",
    "org": "Regents Of The University Of California - Ucsf",
@@ -3977,17 +5022,6 @@
    "linkedin": "https://www.linkedin.com/in/kelli-johnson-6a668592",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Arun Kannappan, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4036,28 +5070,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alexandra Kilgore, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/alexandra-kilgore",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alexandra Kilinsky, DO",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Kinder, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "University Physicians Incorporated",
@@ -4091,17 +5103,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aaina Kochhar, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kelsey Koff, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "The Association Of Chrmc And University Physicians",
@@ -4109,50 +5110,6 @@
    "linkedin": "https://www.linkedin.com/in/kelsey-koff-4208b88a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Kohler, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/mark-kohler-66848744",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Kramer, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/robert-g-kramer",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Kudron, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Oren Kupfer, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4190,17 +5147,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Austin Larson, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/austin-larson-678371b5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sara Lass, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
@@ -4208,17 +5154,6 @@
    "linkedin": "https://www.linkedin.com/in/sara-lass-792656145",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Leibowitz, M.D./PH.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://au.linkedin.com/in/michael-leibowitz-52bab92b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4245,17 +5180,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Holly Lindsay, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/holly-lindsay-91b94b135",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Edwin Liu, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "University Physicians Incorporated",
@@ -4272,17 +5196,6 @@
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/ashley-lock-smith-b83965252",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michele Loi, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://it.linkedin.com/in/michele-loi-4457b111",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -4322,17 +5235,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patrick Mahar, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/patrick-mahar-crpc%E2%84%A2-37627973",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kelly Maloney, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Physicians Incorporated",
@@ -4344,33 +5246,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "William Manning, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/william-manning-a1955093",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Margolis, DO",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/elizabeth-margolis",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Blake Martin, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/blake-martin-mha",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -4443,17 +5323,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christopher McKinney, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/christophertmckinney",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Laura McLaughlin, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Physicians Incorporated",
@@ -4472,17 +5341,6 @@
    "linkedin": "https://hk.linkedin.com/in/wesley-mclaughlin-24306a8",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa McLeod, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4542,17 +5400,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aaron Michels, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/aaron-michels-1aa1a27",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lori Montagna, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Usacs Community Emergency Services Of Colorado INC.",
@@ -4564,17 +5411,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Katharine Moore, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/katharineholtmoore",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Suman Morarka, MD",
    "title": "Pediatrician",
    "org": "Suman Morarka Md Llc",
@@ -4582,17 +5418,6 @@
    "linkedin": "https://www.linkedin.com/in/suman-morarka-67a40742",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gareth Morgan, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/gareth-morgan-72923364",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4652,17 +5477,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dustin Nash, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/dustin-nash-07200a29",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sarah Nelson-Taylor, MD",
    "title": "Pediatric Nephrologist",
    "org": "University Physicians Incorporated",
@@ -4685,39 +5499,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Suzanne Ngo, M.D",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://sg.linkedin.com/in/suzanne-ngo-04b717144",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hai Nguyen-Tran",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Natalie Nokoff, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/natalie-nokoff-md-phd-63448a192",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Gregory Norris",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -4725,28 +5506,6 @@
    "linkedin": "https://www.linkedin.com/in/gregoryanorris",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Nowicki, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/katherine-nowicki-00203286",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maureen O'Brien, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4806,28 +5565,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Meghan Pauley, D.O",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/mkpauley",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicole Penwill, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/nicole-penwill-md-mph-984915266",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Maria Pereda Ginocchio, M.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Childrens Hospital Medical Practice Corporation",
@@ -4846,17 +5583,6 @@
    "linkedin": "https://www.linkedin.com/in/kevin-pettit-9276407",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Pitts, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/brian-pitts-26520b6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4888,17 +5614,6 @@
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/shipra-rai-123456789abc",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christopher Rausch, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/christopher-rausch-815044241",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -4960,44 +5675,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Marian Rewers, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/marian-rewers-427132228",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ann Reynolds, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/ann-reynolds-a8198413b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stephen Rineer, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/stephen-rineer-5a9300176",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Roback, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/mark-roback-68047399",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -5015,17 +5697,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Laura Rochford, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/laura-rochford-75a7675",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine Rodriguez, MD",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -5033,17 +5704,6 @@
    "linkedin": "https://www.linkedin.com/in/catrodriguez",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Rogers, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/ashley-rogers-4aa75498",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5059,55 +5719,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Romanowicz, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelley Roswell, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/kelley-roswell-13466b171",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Ruffenach, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kimberly Ruiz, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
    "city": "Aurora",
    "linkedin": "https://www.linkedin.com/in/kimberly-ruiz-b9803025",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Sanders, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
@@ -5132,17 +5748,6 @@
    "linkedin": "https://www.linkedin.com/in/sara-saporta-keating-b0483546",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cristina Sarmiento, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/cristina-i-sarmiento",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5224,17 +5829,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Douglas Scudamore, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Sedler, MD",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -5253,28 +5847,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sanam Shahid, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/sanamshahid",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Animesh Sharma, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/anantanimesh",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5400,28 +5972,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Andrea Steck, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/andrea-steck-227563b3",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Stenson, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Chad Stewart, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Physicians Incorporated",
@@ -5466,17 +6016,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Diane Straub, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Children'S Hospital Colorado",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ruth Strock, CPNP-AC",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
@@ -5484,17 +6023,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christina Suh, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/christina-suh-017189103",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5521,39 +6049,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gabriel Tarshish, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anne Taylor, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/annetayloradams",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Irina Topoz, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/irina-topoz-5248642b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Carla Torres-Zegarra, M.D",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -5574,17 +6069,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Chun-Hui Tsai, MD",
-   "title": "Pediatrician",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
   },
   {
    "name": "Yu-Shan Tsen, M.D",
@@ -5620,28 +6104,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mario Villasenor, M.D",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/mario-villasenor-016393a4",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Johannes Von Alvensleben, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/johannes-von-alvensleben-77219a11a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Raj Wadwa, MD",
    "title": "Pediatric Endocrinologist",
    "org": "University Physicians Incorporated",
@@ -5664,17 +6126,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Walker, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/sarahsuzannewalker",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Diana Walleigh, MD",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -5693,17 +6144,6 @@
    "linkedin": "https://be.linkedin.com/in/philip-walravens-66461131",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Ann Wang, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5763,17 +6203,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alexandria Wiersma, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Benjamin Wisniewski, M.D",
    "title": "Pediatric Pulmonologist",
    "org": "University Physicians Incorporated",
@@ -5829,17 +6258,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Woods",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/-jason-woods",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Works, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Physicians Incorporated",
@@ -5873,17 +6291,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Yeung, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/elizabethcyeung",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amy Young, MD",
    "title": "Pediatrician",
    "org": "University Physicians Incorporated",
@@ -5902,28 +6309,6 @@
    "linkedin": "https://www.linkedin.com/in/adel-younoszai-52ab654b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jason Zamkoff, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Aurora",
-   "linkedin": "https://www.linkedin.com/in/jason-zamkoff-3769818",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrea Hutchinson, NP-C",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Colorado Mountain Medical, LLC",
-   "city": "Avon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6071,17 +6456,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Melissa Johnson, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Hospital Colorado-Premier Pediatrics, Inc.",
-   "city": "Brighton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Richard Martin, M.D",
    "title": "Pediatrician",
    "org": "Brighton Pediatrics, P.C.",
@@ -6214,17 +6588,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rebecca Romano, LPC, NCC",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "New Beginnings Counseling, Llc",
-   "city": "Canon City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ambrose Soler, M.D",
    "title": "Pediatrician",
    "org": "Catholic Health Initiatives Colorado",
@@ -6344,17 +6707,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": "s\u2022\u2022\u2022\u2022@leadiq.com"
-  },
-  {
-   "name": "Andrew Bauer, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Greenwood Pediatrics Pc",
-   "city": "Centennial",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Kirk Bouzarelos, M.D",
@@ -6643,28 +6995,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aristides Maniatis, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Rocky Mountain Pediatric Endocrinology, Pc",
-   "city": "Centennial",
-   "linkedin": "https://www.linkedin.com/in/aristides-maniatis-a84b20a3",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Middlemist, MD",
-   "title": "Pediatrician",
-   "org": "Simko Pediatric Dentistry Of Colorado, Pc",
-   "city": "Centennial",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "s\u2022\u2022\u2022\u2022\u2022\u2022@dental.me"
-  },
-  {
    "name": "Hoai-Trinh Nguyen, M.D",
    "title": "Pediatrician",
    "org": "Centennial Pediatrics, Pc",
@@ -6797,17 +7127,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephanie Stevens, M.D",
-   "title": "Pediatrician",
-   "org": "Aurora Pediatric Associates, Llp",
-   "city": "Centennial",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Paul Tschetter, M.D",
    "title": "Pediatrician",
    "org": "Simko Pediatric Dentistry Of Colorado, Pc",
@@ -6892,17 +7211,6 @@
    "linkedin": "https://www.linkedin.com/in/nathanael-brady-4716a361",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lynn Bullock, MD",
-   "title": "Pediatrician",
-   "org": "Optumcare Colorado Medical Group Llc",
-   "city": "Colorado Springs",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7798,17 +8106,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mary McMurray, M.D",
-   "title": "Pediatrician",
-   "org": "Tamara K Rice Md Pc",
-   "city": "Craig",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kristie Yarmer, M.D",
    "title": "Pediatrician",
    "org": "The Memorial Hospital",
@@ -7828,7 +8125,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@deltaschools.com"
   },
   {
    "name": "Sarah Young, NP",
@@ -7839,7 +8136,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@deltaschools.com"
   },
   {
    "name": "Sarah Albert, MD",
@@ -8051,17 +8348,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Alison Burt, M.D",
-   "title": "Pediatrician",
-   "org": "H Lee Moffitt Cancer Ctr And Res Inst Life Time Cancer Scrn Ctr INC",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amy Campbell, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Sapphire Pediatrics",
@@ -8150,17 +8436,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Katherine Dahab, M.D",
-   "title": "Pediatrician",
-   "org": "Sapphire Pediatrics",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brandon Davison Tracy, MD",
    "title": "Pediatrician",
    "org": "Colorado Kids Pediatrics",
@@ -8190,17 +8465,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Dimaria, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
-   "city": "Denver",
-   "linkedin": "https://www.linkedin.com/in/michael-dimaria-md-fase-4aabb271",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8370,17 +8634,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Garnreiter, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Gaughan, MS, APRN, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Integrative Pediatric Health Care, Llc",
@@ -8410,17 +8663,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Deborah Gilbert, N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Healthone Clinic Services - Pediatric Specialties Llc",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8623,17 +8865,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patrick Joynt, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Denver Health And Hospital Authority",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lefkothea Karaviti, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Blue Sky Pediatric Endocrinology Pllc",
@@ -8832,17 +9063,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erika Lund, MD",
-   "title": "Pediatrician",
-   "org": "Denver Health And Hospital Authority",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stacey Macfarlane, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Cherry Creek Pediatrics, Pc",
@@ -8872,17 +9092,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Delores Marrs, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Southeast Denver Pediatrics, Pc",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8950,7 +9159,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@coloradocoalition.org"
   },
   {
    "name": "Alyssa Melber, MD",
@@ -9140,17 +9349,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kanao Otsu, M.D",
-   "title": "Pediatrician",
-   "org": "National Jewish Health",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Benjamin Pallant, MD",
    "title": "Pediatrician",
    "org": "Denver Health And Hospital Authority",
@@ -9202,17 +9400,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marco Pinder, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Baycare Medical Group, INC.",
-   "city": "Denver",
-   "linkedin": "https://www.linkedin.com/in/marco-pinder-14a6b2357",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9445,7 +9632,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@coloradocoalition.org"
   },
   {
    "name": "Erika Sidney, MD",
@@ -9532,28 +9719,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Taylor-Cousar, M.D",
-   "title": "Pediatrician",
-   "org": "National Jewish Health",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tayler Thompson, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Poudre Valley Medical Group, Llc",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9719,17 +9884,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Young, M.D",
-   "title": "Pediatrician",
-   "org": "Denver Health And Hospital Authority",
-   "city": "Denver",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10006,18 +10160,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mia Roberts, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Regents Of The University Of Colorado",
-   "city": "Englewood",
-   "linkedin": "https://uk.linkedin.com/in/mia-roberts-mba-2a84a8b9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@cu.edu"
   },
   {
    "name": "Michael Simones",
@@ -10126,17 +10269,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patrice Thibodeau, M.D",
-   "title": "Pediatrician",
-   "org": "Healthreach Community Health Centers",
-   "city": "Evergreen",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10537,17 +10669,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sonal Patel, MD",
-   "title": "Neonatologist",
-   "org": "Nayacare Ltd",
-   "city": "Golden",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sheila Tann, ND, APRN, CPNP, PMHS",
    "title": "Pediatric Nurse Practitioner",
    "org": "My Place Pediatrics, Llc",
@@ -10645,17 +10766,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@pcpgj.com"
-  },
-  {
-   "name": "Benjamin Hughes, M.D",
-   "title": "Pediatric Sleep Medicine Physician",
-   "org": "University Physicians Incorporated",
-   "city": "Grand Junction",
-   "linkedin": "https://www.linkedin.com/in/benjaminghughes",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Claudia Jantzer, MD",
@@ -10823,17 +10933,6 @@
    "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@pcpgj.com"
   },
   {
-   "name": "Megan Stinar, M.D",
-   "title": "Pediatrician",
-   "org": "Primary Care Partners, Inc.",
-   "city": "Grand Junction",
-   "linkedin": "https://www.linkedin.com/in/megan-stinar-md-faap-97340437a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@pcpgj.com"
-  },
-  {
    "name": "Cecilia Weaver, MD",
    "title": "Pediatrician",
    "org": "Primary Care Partners, Inc.",
@@ -10984,105 +11083,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brittany Weber, D.O",
-   "title": "Pediatrician",
-   "org": "Poudre Valley Medical Group, Llc",
-   "city": "Greeley",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yvonne Yousey, RN, CPNP, PHD",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Sunrise Community Health",
-   "city": "Greeley",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Madison Zenk",
-   "title": "Pediatrician",
-   "org": "Poudre Valley Medical Group, Llc",
-   "city": "Greeley",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Clifford Bloch, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Endocrine Associates, P.C.",
-   "city": "Greenwood Village",
-   "linkedin": "https://www.linkedin.com/in/clifford-bloch-10857672",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suzanne Fox, PNP, PMHS",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lg Behavioral Health Of Colorado Llc",
-   "city": "Greenwood Village",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lacy-Ann Harari, M.D",
-   "title": "Pediatrician",
-   "org": "Banner Hospital Based Physicians Arizona LLC",
-   "city": "Greenwood Village",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sunil Nayak, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Pediatric Endocrine Associates, P.C.",
-   "city": "Greenwood Village",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Somershoe, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Endocrine Associates, P.C.",
-   "city": "Greenwood Village",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Akshay Vijayaraman",
-   "title": "Pediatrician",
-   "org": "Critical Care And Pulmonary Consultants, P.C.",
-   "city": "Greenwood Village",
-   "linkedin": "https://www.linkedin.com/in/akshay-vijayaraman-b7b232239",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

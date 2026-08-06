@@ -3,8 +3,8 @@
  "slug": "west-virginia",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-west-virginia.csv",
  "count": 570,
- "emails": 18,
- "practiceEmails": 35,
+ "emails": 29,
+ "practiceEmails": 34,
  "phones": 570,
  "direct": 0,
  "roles": [
@@ -97,6 +97,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brian Policano, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associate",
+   "city": "Bridgeport",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@wvumedicine.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohamad Badawi, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Charleston Area Medical Center INC",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/mohamad-badawi-7bb935164",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@camc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Bishara, D.O",
+   "title": "Pediatric Pulmonologist",
+   "org": "Charleston Area Medical Center INC",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@camc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Divita, D.O",
+   "title": "Pediatrician",
+   "org": "Abc Pediatrics, Pllc",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/jennifer-divita-907757157",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gordon Green, MD",
+   "title": "Pediatrician",
+   "org": "Charleston Area Medical Center",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/gordon-green-a0720482",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@cusm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Hines, D.O",
    "title": "Pediatrician",
    "org": "Womencare Inc",
@@ -163,6 +218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lisa McBride, M.D",
+   "title": "Pediatrician",
+   "org": "Cardinal Pediatrics Pllc",
+   "city": "Morgantown",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Fanny Murken, MD",
    "title": "Pediatrician",
    "org": "Cardinal Pediatrics Pllc",
@@ -185,6 +251,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Isabela Negrin, MD",
+   "title": "Pediatrician",
+   "org": "West Virginia University Medical Corporation",
+   "city": "Morgantown",
+   "linkedin": "https://www.linkedin.com/in/isabela-negrin-18076530",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@hsc.wvu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Phillips, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "West Virginia University Medical Corporation",
+   "city": "Morgantown",
+   "linkedin": "https://www.linkedin.com/in/john-phillips-b2b6a36",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shariane Rankin, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Cardinal Pediatrics Pllc",
@@ -192,6 +280,28 @@
    "linkedin": "https://www.linkedin.com/in/shariane-rankin-5b530ab3",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cardinalpediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ibanga Ekanem, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Lifeline Pediatrics Inc",
+   "city": "New Martinsville",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joan Allman, D.O",
+   "title": "Pediatrician",
+   "org": "Marietta Memorial Hospital",
+   "city": "Parkersburg",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mmhs.medicity.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -258,6 +368,17 @@
    "linkedin": "",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@msutexas.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Denise Young, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Stallamb P.L.L.C.",
+   "city": "Scott Depot",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -471,17 +592,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Policano, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Associate",
-   "city": "Bridgeport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kayla Watson, PNP-BC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Premier Pediatrics Pllc",
@@ -548,17 +658,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mohamad Badawi, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Charleston Area Medical Center INC",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/mohamad-badawi-7bb935164",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bonnie Bailey, MD",
    "title": "Pediatrician",
    "org": "New Century Emergency Physician Of West Virginia Inc",
@@ -588,17 +687,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Bishara, D.O",
-   "title": "Pediatric Pulmonologist",
-   "org": "Charleston Area Medical Center INC",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -647,17 +735,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Divita, D.O",
-   "title": "Pediatrician",
-   "org": "Abc Pediatrics, Pllc",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/jennifer-divita-907757157",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Veneta Eggleton, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Pediatrix Medical Group Pc",
@@ -691,17 +768,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gordon Green, MD",
-   "title": "Pediatrician",
-   "org": "Charleston Area Medical Center",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/gordon-green-a0720482",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Afif Habash, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Bandak Plastic Surgery Pllc",
@@ -721,7 +787,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "e\u2022\u2022\u2022\u2022\u2022\u2022@familycarewv.org"
   },
   {
    "name": "Vera Hoylman, M.D",
@@ -1857,17 +1923,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa McBride, M.D",
-   "title": "Pediatrician",
-   "org": "Cardinal Pediatrics Pllc",
-   "city": "Morgantown",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "f\u2022\u2022\u2022\u2022@cardinalpediatrics.com"
-  },
-  {
    "name": "Christen McDaniel",
    "title": "Pediatrician",
    "org": "West Virginia University Medical Corporation",
@@ -1945,17 +2000,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Isabela Negrin, MD",
-   "title": "Pediatrician",
-   "org": "West Virginia University Medical Corporation",
-   "city": "Morgantown",
-   "linkedin": "https://www.linkedin.com/in/isabela-negrin-18076530",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ryan Nofziger, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Children'S Hospital Medical Center Of Akron",
@@ -1996,17 +2040,6 @@
    "linkedin": "https://www.linkedin.com/in/brian-peppers-1305a095",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Phillips, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "West Virginia University Medical Corporation",
-   "city": "Morgantown",
-   "linkedin": "https://www.linkedin.com/in/john-phillips-b2b6a36",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2187,17 +2220,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ibanga Ekanem, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Lifeline Pediatrics Inc",
-   "city": "New Martinsville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jody Meredith, MD",
    "title": "Pediatrician",
    "org": "Petersen Clinic, Pllc",
@@ -2218,17 +2240,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Joan Allman, D.O",
-   "title": "Pediatrician",
-   "org": "Marietta Memorial Hospital",
-   "city": "Parkersburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": "j\u2022\u2022\u2022\u2022\u2022\u2022@mhsystem.org"
   },
   {
    "name": "Orton Armstrong, M.D",
@@ -2491,17 +2502,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Denise Young, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Stallamb P.L.L.C.",
-   "city": "Scott Depot",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

@@ -3,7 +3,7 @@
  "slug": "oregon",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-oregon.csv",
  "count": 1527,
- "emails": 19,
+ "emails": 62,
  "practiceEmails": 17,
  "phones": 1527,
  "direct": 0,
@@ -61,11 +61,11 @@
    "count": 35
   },
   {
-   "name": "Hillsboro Pediatric Clinic Llc",
+   "name": "Providence Health & Services - Oregon",
    "count": 18
   },
   {
-   "name": "Providence Health & Services - Oregon",
+   "name": "Hillsboro Pediatric Clinic Llc",
    "count": 18
   },
   {
@@ -115,6 +115,17 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@samhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christina Miller, M.D",
+   "title": "Pediatrician",
+   "org": "Willamette Valley Pediatrics",
+   "city": "Albany",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -174,6 +185,94 @@
    "practiceEmail": ""
   },
   {
+   "name": "Howard Davidson, MD",
+   "title": "Pediatrician",
+   "org": "Tanasbourne Pediatrics, Llc",
+   "city": "Aloha",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Martin, M.D",
+   "title": "Pediatrician",
+   "org": "Riverside Pediatrics, Llc",
+   "city": "Astoria",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@einsteinmed.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Bina Mehta, M. D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Northwest",
+   "city": "Beaverton",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hailey Garside, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Wind River Family And Community Healthc Care",
+   "city": "Bend",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Mills, MD",
+   "title": "Pediatrician",
+   "org": "Neuromusculoskeletal Center Of The Cascades Pc",
+   "city": "Bend",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bogg.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristi Nix, MD",
+   "title": "Pediatrician",
+   "org": "Neuromusculoskeletal Center Of The Cascades Pc",
+   "city": "Bend",
+   "linkedin": "https://www.linkedin.com/in/kristi-nix-8559b04",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Brooks, MD",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Health Plan Of The Northwest",
+   "city": "Clackamas",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lon McQuillan, M.D",
+   "title": "Pediatrician",
+   "org": "Good Samaritan Hospital Corvallis",
+   "city": "Corvallis",
+   "linkedin": "https://www.linkedin.com/in/lon-mcquillan-4b633095",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@samhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michael Koester, MD",
    "title": "Pediatric Sports Medicine Physician",
    "org": "Slocum Orthopedics PC",
@@ -181,6 +280,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@slocumcenter.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Randall Phelps, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "University Professional Services",
+   "city": "Eugene",
+   "linkedin": "https://www.linkedin.com/in/randall-phelps-53663939",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -229,6 +339,182 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeffrey Hoffman, M.D",
+   "title": "Pediatrician",
+   "org": "Olson Pediatric Clinic, Llc",
+   "city": "Lake Oswego",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shi Lee, M.D",
+   "title": "Pediatrician",
+   "org": "Midv-Valley Healthcare, Inc.",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Davis, M.D",
+   "title": "Pediatrician",
+   "org": "Providence Health & Services - Oregon",
+   "city": "Medford",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@varian.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Mueller, M.D",
+   "title": "Pediatrician",
+   "org": "La Clinica Del Valle Family Health Care Center Inc",
+   "city": "Medford",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@pennmedicine.upenn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Strickland, MD",
+   "title": "Pediatrician",
+   "org": "Rogue Community Health",
+   "city": "Medford",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@dhhs.nc.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Young, MD",
+   "title": "Pediatrician",
+   "org": "Southern Oregon Pediatrics, Llp",
+   "city": "Medford",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022@gwu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sean Rash, MD",
+   "title": "Pediatrician",
+   "org": "Samaritan Pacific Health Services Inc",
+   "city": "Newport",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022@cablespeed.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Smith, APRN, CNP, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Children'S Center",
+   "city": "Oregon City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carol Anderson, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Georgia Wilcox And Associates Pc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@psychcenterif.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Hospitals",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@alabamaallergy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pamela Avila, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Georgia Wilcox And Associates Pc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Seshadri Balaji, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/seshadri-balaji-39894b106",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Genevieve Buser, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Providence Health & Services Oregon",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharon Butcher, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Legacy Meridian Park Pediatric Rehab",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Corcoran, M.D",
+   "title": "Pediatrician",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/andrew-corcoran-2258781",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@monash.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Crowder, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/danielcrowder21",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jon Davis, M.D",
    "title": "Pediatrician",
    "org": "East Portland Pediatric Clinic, P.C.",
@@ -251,6 +537,116 @@
    "practiceEmail": ""
   },
   {
+   "name": "Tracy Funk, MD",
+   "title": "Pediatrician",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/tracy-funk-shrm-cp-4914985b",
+   "email": "f\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimberly Kripps, MD",
+   "title": "Pediatrician",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Lacey, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Clinic Pc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ucl.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joyce Lee, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Legacy Emanuel Hospital And Health Center",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Holger Link, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/holger-link-342588247",
+   "email": "l\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Madison, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/lisa-madison-8b253213",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Marshall, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Northwest Pediatric Gastroenterology, Llc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@osumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amit Mehta, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/amit-mehta-43846a5",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Petersen, MD",
+   "title": "Pediatrician",
+   "org": "Legacy Meridian Park Pediatric Rehab",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@wsj.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gillian Piro, MD",
+   "title": "Pediatrician",
+   "org": "Georgia Wilcox And Associates Pc",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/gillian-piro-3b489b2a1",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "David Porter, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of The Northwest, Pc",
@@ -269,6 +665,83 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shinpei Shibata, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ohsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Thomas, MD",
+   "title": "Pediatrician",
+   "org": "Portland Acupuncture Group",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Raghu Varier, D.O",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Northwest Pediatric Gastroenterology, Llc",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Woods, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/kathryn-woods-257420",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@soton.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Yang, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Professional Services",
+   "city": "Portland",
+   "linkedin": "https://www.linkedin.com/in/emily-yang-153a69",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lucy Bollinger",
+   "title": "Pediatrician",
+   "org": "Kaiser Foundation Hospitals",
+   "city": "Salem",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Blair, M.D",
+   "title": "Pediatrician",
+   "org": "Oregon Pediatrics- Meridian Park, Llc",
+   "city": "Tualatin",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@tucsonkidsheart.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -383,17 +856,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christina Miller, M.D",
-   "title": "Pediatrician",
-   "org": "Willamette Valley Pediatrics",
-   "city": "Albany",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mythili Ransdell, M.D",
    "title": "Pediatrician",
    "org": "Good Samaritan Hospital Corvallis",
@@ -432,17 +894,6 @@
    "org": "Tanasbourne Pediatrics, Llc",
    "city": "Aloha",
    "linkedin": "https://www.linkedin.com/in/raquel-apodaca-75487a14",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Howard Davidson, MD",
-   "title": "Pediatrician",
-   "org": "Tanasbourne Pediatrics, Llc",
-   "city": "Aloha",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
    "phoneType": "Practice",
@@ -494,17 +945,6 @@
   },
   {
    "name": "Ramchander Madhavarapu, M.D",
-   "title": "Pediatrician",
-   "org": "Riverside Pediatrics, Llc",
-   "city": "Astoria",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022@riversidectpediatrics.com"
-  },
-  {
-   "name": "Allison Martin, M.D",
    "title": "Pediatrician",
    "org": "Riverside Pediatrics, Llc",
    "city": "Astoria",
@@ -669,17 +1109,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Bina Mehta, M. D",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of The Northwest",
-   "city": "Beaverton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Quoc Nguyen, D.O",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Hospitals",
@@ -746,17 +1175,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Hailey Garside, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Wind River Family And Community Healthc Care",
-   "city": "Bend",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Guitar Hanna, D.O",
    "title": "Pediatrician",
    "org": "Bend Memorial Clinic Pc",
@@ -812,33 +1230,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Mills, MD",
-   "title": "Pediatrician",
-   "org": "Neuromusculoskeletal Center Of The Cascades Pc",
-   "city": "Bend",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Whitney Morgan",
    "title": "Pediatrician",
    "org": "Neuromusculoskeletal Center Of The Cascades Pc",
    "city": "Bend",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kristi Nix, MD",
-   "title": "Pediatrician",
-   "org": "Neuromusculoskeletal Center Of The Cascades Pc",
-   "city": "Bend",
-   "linkedin": "https://www.linkedin.com/in/kristi-nix-8559b04",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -918,17 +1314,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Brooks, MD",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Health Plan Of The Northwest",
-   "city": "Clackamas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1263,17 +1648,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lon McQuillan, M.D",
-   "title": "Pediatrician",
-   "org": "Good Samaritan Hospital Corvallis",
-   "city": "Corvallis",
-   "linkedin": "https://www.linkedin.com/in/lon-mcquillan-4b633095",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bryan Miller, PA",
    "title": "Pediatric Cardiologist",
    "org": "Good Samaritan Hospital Corvallis",
@@ -1457,17 +1831,6 @@
    "linkedin": "https://www.linkedin.com/in/mario-petersen-28356a41",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Randall Phelps, M.D",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "University Professional Services",
-   "city": "Eugene",
-   "linkedin": "https://www.linkedin.com/in/randall-phelps-53663939",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2407,17 +2770,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeffrey Hoffman, M.D",
-   "title": "Pediatrician",
-   "org": "Olson Pediatric Clinic, Llc",
-   "city": "Lake Oswego",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Nikolaus Kashey, MD, MPH",
    "title": "Pediatrician",
    "org": "Legacy Emanuel Hospital And Health Center",
@@ -2524,17 +2876,6 @@
    "linkedin": "https://www.linkedin.com/in/edward-junkins-6630b1150",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shi Lee, M.D",
-   "title": "Pediatrician",
-   "org": "Midv-Valley Healthcare, Inc.",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2737,17 +3078,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Davis, M.D",
-   "title": "Pediatrician",
-   "org": "Providence Health & Services - Oregon",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "James Frierson, M.D",
    "title": "Pediatrician",
    "org": "Rogue Community Health",
@@ -2854,17 +3184,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Mueller, M.D",
-   "title": "Pediatrician",
-   "org": "La Clinica Del Valle Family Health Care Center Inc",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3023,17 +3342,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Heather Strickland, MD",
-   "title": "Pediatrician",
-   "org": "Rogue Community Health",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lawrence Stumpff, MD",
    "title": "Pediatrician",
    "org": "Rogue Valley Childrens Physicians",
@@ -3063,17 +3371,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Young, MD",
-   "title": "Pediatrician",
-   "org": "Southern Oregon Pediatrics, Llp",
-   "city": "Medford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3112,17 +3409,6 @@
   },
   {
    "name": "Lindsay Lefler, M.D",
-   "title": "Pediatrician",
-   "org": "Samaritan Pacific Health Services Inc",
-   "city": "Newport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sean Rash, MD",
    "title": "Pediatrician",
    "org": "Samaritan Pacific Health Services Inc",
    "city": "Newport",
@@ -3276,17 +3562,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Smith, APRN, CNP, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Children'S Center",
-   "city": "Oregon City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Donald Guenther, MD",
    "title": "Pediatrician",
    "org": "Pediatric Specialists Of Pendleton, Llc",
@@ -3397,17 +3672,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Carol Anderson, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Georgia Wilcox And Associates Pc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Erin Anderson, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Professional Services",
@@ -3415,17 +3679,6 @@
    "linkedin": "https://www.linkedin.com/in/erinelizabethanderson",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Anderson, M.D",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Hospitals",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3459,17 +3712,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Pamela Avila, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Georgia Wilcox And Associates Pc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3525,17 +3767,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Seshadri Balaji, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/seshadri-balaji-39894b106",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3881,28 +4112,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Genevieve Buser, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Providence Health & Services Oregon",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sharon Butcher, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Legacy Meridian Park Pediatric Rehab",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jean Butler, PNP",
    "title": "Pediatrician",
    "org": "Kaiser Foundation Health Plan Of The Northwest",
@@ -4090,17 +4299,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Andrew Corcoran, M.D",
-   "title": "Pediatrician",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/andrew-corcoran-2258781",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "James Coughlin, MD",
    "title": "Pediatrician",
    "org": "East Portland Pediatric Clinic, P.C.",
@@ -4130,17 +4328,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Crowder, MD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/danielcrowder21",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4460,17 +4647,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tracy Funk, MD",
-   "title": "Pediatrician",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/tracy-funk-shrm-cp-4914985b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5003,17 +5179,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kimberly Kripps, MD",
-   "title": "Pediatrician",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lena Kuo, M.D",
    "title": "Pediatrician",
    "org": "Georgia Wilcox And Associates Pc",
@@ -5032,17 +5197,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Lacey, MD",
-   "title": "Pediatrician",
-   "org": "Childrens Clinic Pc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5109,17 +5263,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joyce Lee, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Legacy Emanuel Hospital And Health Center",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5201,17 +5344,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Holger Link, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/holger-link-342588247",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jamie Loutfy, DO",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "University Professional Services",
@@ -5267,17 +5399,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa Madison, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/lisa-madison-8b253213",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Erin Madriago, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Professional Services",
@@ -5285,17 +5406,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Marshall, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Northwest Pediatric Gastroenterology, Llc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5407,7 +5517,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@oagpc.com"
   },
   {
    "name": "Carol McFarland, M.D",
@@ -5472,17 +5582,6 @@
    "linkedin": "https://www.linkedin.com/in/julie-r-mckee",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amit Mehta, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/amit-mehta-43846a5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5795,17 +5894,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Andrea Petersen, MD",
-   "title": "Pediatrician",
-   "org": "Legacy Meridian Park Pediatric Rehab",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Teri Pettersen, MD",
    "title": "Pediatrician",
    "org": "Childrens Clinic Pc",
@@ -5835,17 +5923,6 @@
    "linkedin": "https://www.linkedin.com/in/juan-piantino-63a2a8124",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gillian Piro, MD",
-   "title": "Pediatrician",
-   "org": "Georgia Wilcox And Associates Pc",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/gillian-piro-3b489b2a1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6323,17 +6400,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shinpei Shibata, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mark Shih, M.D",
    "title": "Pediatrician",
    "org": "Legacy Emanuel Hospital And Health Center",
@@ -6554,17 +6620,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Paul Thomas, MD",
-   "title": "Pediatrician",
-   "org": "Portland Acupuncture Group",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Catherine Thompson, MD",
    "title": "Pediatrician",
    "org": "Childrens Clinic Pc",
@@ -6638,17 +6693,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Raghu Varier, D.O",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Northwest Pediatric Gastroenterology, Llc",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6829,17 +6873,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathryn Woods, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/kathryn-woods-257420",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shaudine Woody, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Nw Pediatrics Integrative Medicine Llc",
@@ -6891,17 +6924,6 @@
    "linkedin": "https://www.linkedin.com/in/amy-yang-360profile",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Yang, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Professional Services",
-   "city": "Portland",
-   "linkedin": "https://www.linkedin.com/in/emily-yang-153a69",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7034,17 +7056,6 @@
    "linkedin": "https://www.linkedin.com/in/linda-eddy-b1748b117",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lucy Bollinger",
-   "title": "Pediatrician",
-   "org": "Kaiser Foundation Hospitals",
-   "city": "Salem",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7617,17 +7628,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Blair, M.D",
-   "title": "Pediatrician",
-   "org": "Oregon Pediatrics- Meridian Park, Llc",
-   "city": "Tualatin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202219",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

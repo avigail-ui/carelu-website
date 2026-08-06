@@ -3,8 +3,8 @@
  "slug": "tennessee",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-tennessee.csv",
  "count": 3375,
- "emails": 156,
- "practiceEmails": 72,
+ "emails": 339,
+ "practiceEmails": 67,
  "phones": 3353,
  "direct": 62,
  "roles": [
@@ -1066,6 +1066,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "William Gaylord, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Erlanger Health",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/william-gaylord-91a058a6",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@erlanger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katye Herring, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Erlanger Health",
+   "city": "Chattanooga",
+   "linkedin": "https://www.linkedin.com/in/katye-herring-65382166",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@utc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Susan McLean, M.D",
    "title": "Pediatrician",
    "org": "Spring Creek Pediatrics, Inc.",
@@ -1073,6 +1095,28 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ttep.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brandon Morrical, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Erlanger Health",
+   "city": "Chattanooga",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@erlanger.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lea Parsley, MD",
+   "title": "Pediatrician",
+   "org": "Rockford Health Physicians",
+   "city": "Chattanooga",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1105,6 +1149,28 @@
    "city": "Clarksville",
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@stripes.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Prine, MD",
+   "title": "Pediatrician",
+   "org": "Aim Comprehensive Therapy Llc",
+   "city": "Clarksville",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Walker, M.D",
+   "title": "Pediatrician",
+   "org": "Premier Medical Group Pc",
+   "city": "Clarksville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stthomas.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1220,6 +1286,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Anthony Smith, MD",
+   "title": "Pediatrician",
+   "org": "Columbia Pediatric Clinic, Inc.",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gaaap.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Smith, M.D",
+   "title": "Pediatrician",
+   "org": "Columbia Pediatric Clinic, Inc.",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Steven Smith, MD",
    "title": "Pediatrician",
    "org": "Maury Regional Medical Group, INC",
@@ -1238,6 +1326,28 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@mauryregional.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Thompson, MD",
+   "title": "Pediatrician",
+   "org": "Columbia Pediatric Clinic, Inc.",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laurie Tucker, M.D",
+   "title": "Pediatrician",
+   "org": "Columbia Pediatric Clinic, Inc.",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@stmark-school.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1275,6 +1385,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Christine Reed, M.D",
+   "title": "Pediatrician",
+   "org": "Plateau Pediatrics, Plc",
+   "city": "Crossville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristin Steele, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Plateau Pediatrics, Plc",
+   "city": "Crossville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@ochsner.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Nelson, M.D., F.A.A.P",
+   "title": "Pediatrician",
+   "org": "Dayton Pediatrics P C",
+   "city": "Dayton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Denise Werner, M.D",
+   "title": "Pediatrician",
+   "org": "State Of Tennessee",
+   "city": "Fairview",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@tn.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Myers, M.D",
    "title": "Pediatrician",
    "org": "Harpeth Pediatrics, Pllc",
@@ -1297,6 +1451,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Steven Riley, MD",
+   "title": "Pediatrician",
+   "org": "Vip Midsouth, Llc",
+   "city": "Gallatin",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@imperial.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Robbins, DNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Collierville Pediatrics, Llc",
+   "city": "Germantown",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@phila.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Erick Bulawa, M.D",
    "title": "Pediatrician",
    "org": "Wellmont Medical Associates INC",
@@ -1308,6 +1484,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sarah Adams, M.D",
+   "title": "Pediatrician",
+   "org": "Allergy Associates, PA",
+   "city": "Hendersonville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ashley Hancock, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Maury Regional Hospital",
@@ -1315,6 +1502,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mauryregional.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Gibson, M.D",
+   "title": "Pediatrician",
+   "org": "Medical Genetics Lab",
+   "city": "Johnson City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Schweitzer, M.D",
+   "title": "Pediatrician",
+   "org": "Medical Genetics Lab",
+   "city": "Johnson City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@illinois.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1341,6 +1550,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Riwaaj Lamsal",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Medical Education Assistance Corporation",
+   "city": "Kingsport",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Danielle Stephens, D.O",
+   "title": "Pediatrician",
+   "org": "Holston Medical Group PC",
+   "city": "Kingsport",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@health.southalabama.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tamara Bland, MSN, RN, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Tennessee",
@@ -1359,6 +1590,17 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@rvh.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Core, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Associates, PA",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/laura-core-bb173169",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1385,6 +1627,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeffory Jennings, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Health System, INC.",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Johnson, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "East Tennessee Children'S Hospital Association Inc.",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@veritasamc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Megan King, MD",
    "title": "Pediatrician",
    "org": "Cherokee Health Systems",
@@ -1392,6 +1656,28 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@rvh.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ameeta Lall, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "East Tennessee Children'S Hospital Association Inc.",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022@etch.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leonid Melnikov",
+   "title": "Pediatrician",
+   "org": "East Tennessee Children'S Hospital Association Inc.",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@etch.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1407,12 +1693,89 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeanann Pardue, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "East Tennessee Children'S Hospital Association Inc.",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/jeanann-pardue-248b842a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@dollychildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Renee Powell, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Health System, Inc",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/renee-powell",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@kippdc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rebecca Roland, MD",
    "title": "Pediatrician",
    "org": "Cherokee Health Systems",
    "city": "Knoxville",
    "linkedin": "",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@rvh.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Taylor, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Health System, Inc",
+   "city": "Knoxville",
+   "linkedin": "https://www.linkedin.com/in/rachel-taylor-ba52b5b7",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@buffalo.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Williams, M.D",
+   "title": "Pediatrician",
+   "org": "East Tennessee Children'S Hospital Association Inc.",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@pediatrics.wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelli Wolfe, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Consultants West",
+   "city": "Knoxville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@ohioeyeassociates.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kimberly Hicks, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Consultants Of Lenoir City",
+   "city": "Lenoir City",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@mofrpn.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Crystal Moses, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Choice Llc",
+   "city": "Lenoir City",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ymail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1429,6 +1792,94 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lori Baxter, M.D., FAAP",
+   "title": "Pediatrician",
+   "org": "Cedar Creek Pediatric & Adolescent Medicine, Pc",
+   "city": "Maryville",
+   "linkedin": "https://www.linkedin.com/in/lori-baxter-81652048",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@savethechildren.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohammed Absi, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leah Akinseye, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Baptist Memorial Medical Group, INC.",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/leah-akinseye-a6878b60",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Bissler, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abhishek Chakraborty",
+   "title": "Pediatric Cardiologist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Austin Dalgo, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "Ut Medical Group INC",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/austin-dalgo-50476159",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Durbin, M.D., PH.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "St. Jude Childrens Research Hospital",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/adam-durbin-b09987141",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stjude.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohamad Elabiad, M.D",
+   "title": "Neonatologist",
+   "org": "The Regional Medical Center At Memphis",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jonathan Finder, MD",
    "title": "Pediatric Pulmonologist",
    "org": "Ut Lebonheur Pediatric Specialists, Inc.",
@@ -1436,6 +1887,39 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tanjala Gipson, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dylan Graetz, M.D., M.P.H",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "St. Jude Childrens Research Hospital",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@stjude.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Graham, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Children'S Hospital Medical Center",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1451,6 +1935,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sharon Hogue, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Hysmith, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Methodist Healthcare - Memphis Hospitals",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Valerie Jameson, MD",
+   "title": "Pediatrician",
+   "org": "Compass Laboratory Services Llc",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Kramer, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Meche",
+   "title": "Pediatrician",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/katherine-meche-0351b5bb",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laurel Metzler, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/laurel-metzler-865278326",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stacey Murray, MD",
    "title": "Pediatrician",
    "org": "Memphis Children'S Clinic, Pllc",
@@ -1458,6 +2008,61 @@
    "linkedin": "https://www.linkedin.com/in/stacey-murray-md-32949150",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@b-secur.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Nelson, MD",
+   "title": "Pediatrician",
+   "org": "Christ Community Health Services Inc",
+   "city": "Memphis",
+   "linkedin": "https://www.linkedin.com/in/richardnelson",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frederick Palmer, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Compass Laboratory Services Llc",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ruchi Patel, D.O",
+   "title": "Pediatrician",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ranjit Philip, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Piper, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Emergency Specialists, Pc",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@aapmr.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1473,12 +2078,100 @@
    "practiceEmail": ""
   },
   {
+   "name": "Angela Schulz, M.D",
+   "title": "Pediatrician",
+   "org": "Cody'S Center Of Hope, Dedicated Pediatric Care, Pc",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uke.uni-hamburg.de",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nadeem Shafi, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samir Shah, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Compass Laboratory Services Llc",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Willie Tsiu, MD",
+   "title": "Pediatrician",
+   "org": "Segal Parker Kronenberg Tsiu & Eiseman",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Walsh, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Ut Lebonheur Pediatric Specialists, INC.",
+   "city": "Memphis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uthsc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kristie Aamodt",
    "title": "Pediatric Endocrinologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/kristie-aamodt-818086b",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sari Acra, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/sari-acra-183595155",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Adams, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Neena Agrawal, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/neena-agrawal-14025019",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1506,12 +2199,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Carl Anderson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tucker Anderson, M.D",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/c-tucker-anderson-361439a6",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Antoon, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/james-antoon",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leonard Bacharier, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laleh Bahrami, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1524,6 +2261,39 @@
    "linkedin": "https://ca.linkedin.com/in/ritu-banerjee-b42361309",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Barrett, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/daniel-barrett-a5b8655",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Xylina Bean, M.D",
+   "title": "Pediatrician",
+   "org": "Meharry Medical College",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/xylina-bean-01898ba",
+   "email": "x\u2022\u2022\u2022\u2022@mmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Bearl, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/david-bearl",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1561,12 +2331,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Cassandra Brady, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/cassandra-brady-a7a19437",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Debra Braun-Courville, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jeremy Brown, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/socialjeremy",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Buckley, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/lisabuckley1",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ryan Byrne, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/ryan-byrne-b2236b109",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1583,6 +2397,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Alison Carroll, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/alison-carroll-5480a9a4",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Cassini, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Cara Charnogursky",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Vanderbilt University Medical Center",
@@ -1594,12 +2430,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Gloria Choi, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/choigloria",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Christensen, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jason-christensen-61898137",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Beverly Cotton, RN, MSN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Our Kids",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kaitlyn Cowan, DNP, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/kaitlyncowan",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aarti Dalal, DO",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/aarti-dalal-0957b6350",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1616,12 +2496,111 @@
    "practiceEmail": ""
   },
   {
+   "name": "Karishma Datye, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Deckard, MSN, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/allison-deckard-03366a238",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Deffendall, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Walter Dehority, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/walter-dehority-03099b30",
    "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Demaria",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/karen-demaria-45517681",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Denison, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/mark-denison-54241866",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alex Diamond, DO, MPH",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/alex-diamond-26b76559",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Isaura Diaz",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/isaura-diaz-1909241a5",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Dipietro, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/lisa-dipietro-msn-rn-b-c-5918529b",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stacy Dorris, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/stacy-dorris-18996219b",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1634,6 +2613,160 @@
    "linkedin": "https://www.linkedin.com/in/stephanie-doupnik-md-mshp-186592211",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Doyle, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/thomas-doyle-375188151",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Doyle, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/joshua-doyle-5b5666285",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wisc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Dressler, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Dulek, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/daniel-dulek-8a9288165",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Edwards, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://ca.linkedin.com/in/kathryn-edwards-37286927",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Eidson, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@newhopeumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maie El-Sourady, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Esbenshade, M.D., MSCI",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Monroe Carell Jr. Children'S Hospital At Vanderbilt",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/adam-esbenshade-07b507294",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cristina Estrada, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/cristina-estrada-b20a82b5",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Fain, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/emilyfain",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohammad Fazili, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://in.linkedin.com/in/mohammad-fazili-7252722b4",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Finkler",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/david-finkler-b6401647",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frank Fish, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/frank-fish-028a1739",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharon Fleming, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Thrive Therapies Group",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1655,6 +2788,28 @@
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/eric-freemon-317869b0",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cristin Fritz, MD, MPH",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/cristin-fritz-70786898",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Candace Galbreath, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1693,12 +2848,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rachel Goode",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/rachelmoodie1",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julie Goodfellow, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/julie-goodfellow-a8379910a",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alisa Gotte, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1737,12 +2914,67 @@
    "practiceEmail": ""
   },
   {
+   "name": "Andrew Gregory, MD",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Grochowsky, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Susan Guttentag, MD",
    "title": "Neonatologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/susan-guttentag-66027420",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Hackett, MD",
+   "title": "Neonatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/brian-hackett-0969a070",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natasha Halasa, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/natasha-halasa-0553344",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Hardy, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kelly-hardy-80ab751",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@childrennow.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1770,6 +3002,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jane Hearnsberger, RN, MSN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alison Herndon, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gerald Hickson, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/gerald-hickson-28675115",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Sarah Hill, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Vanderbilt University Medical Center",
@@ -1792,12 +3057,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brittney Hills, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/brittney-hills-270a6935",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Dustin Hipp, MD, MBA",
    "title": "Pediatric Critical Care Specialist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leigh Howard, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/leigh-howard-430294248",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Donna Hummell, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/donna-hummell-35585937",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michaela Ibach, M.D",
+   "title": "Pediatric Hospice & Palliative Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1814,12 +3123,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kevin Johnson, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kevjohns",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Melissa Johnson, CPNP-AC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Jones, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/deborah-jones-7bb36841",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mednet.ucla.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Jones",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Prince Kannankeril, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/prince-kannankeril-216027134",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1858,12 +3211,45 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth Kennedy, APN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carrie Kitko, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/carrie-kitko-6741a3117",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lauren Klein, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/lauren-klein-cpa-67787213",
    "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Valentina Kon, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1880,6 +3266,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Maria Krakauer, MD",
+   "title": "Neonatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Amethyst Kurbegov, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "Vanderbilt University Medical Center",
@@ -1887,6 +3284,28 @@
    "linkedin": "https://www.linkedin.com/in/amethyst-kurbegov-b0766614",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Lakin, MD",
+   "title": "Child Abuse Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/karen-lakin-19412226",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Lane, C.P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@belmont.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1924,6 +3343,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jefferson Lomenick, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Long, M.D",
    "title": "Pediatrician",
    "org": "Old Harding Pediatric Associates",
@@ -1935,12 +3365,89 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kate Luck, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kate-luck-511b5370",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Malik, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Timothy Mangrum, M.D",
    "title": "Pediatrician",
    "org": "St. Thomas Medical Group Pllc",
    "city": "Nashville",
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@stmg.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Hannah Martin, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://uk.linkedin.com/in/hannah-martin-0b8aa334",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristal Matlock, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kristal-matlock-90221612",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather McDaniel, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Monroe Carell Jr. Children'S Hospital At Vanderbilt",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kevin Mitchell, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kevin-mitchell-b2019029",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Saeed Mohammad, MD",
+   "title": "Pediatric Transplant Hepatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/saeedmohammad",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1968,6 +3475,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Paul Moore, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/paul-moore-122a60",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Amanda Mouvery, APRN",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Vanderbilt University Medical Center",
@@ -1979,12 +3497,111 @@
    "practiceEmail": ""
   },
   {
+   "name": "Maya Neeley, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "My-Linh Ngo, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Allison Norton, MD",
    "title": "Pediatric Allergist & Immunologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/allison-norton-816150163",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Parker, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/seoparker",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Parra, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/davidaparra",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Devang Pastakia, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Pasto-Crosby, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/rachel-pasto-crosby-5a727440",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Neal Patel, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/nealpareshpatel",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anuj Patel, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/adp23",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barron Patterson, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/barron-patterson-41b62178",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2023,12 +3640,89 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Phillips, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Plemmons, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/gregory-plemmons-36171b6",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Meredith Pugh, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/meredith-pugh-14370640",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Radbill, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Julie Randolph, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/julie-randolph-425104b",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frank Raucci, M.D., PH.D",
+   "title": "Pediatric Cardiologist",
+   "org": "McV Associated Physicians",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tyler Reese, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/tylerreese",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kris Rehm, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kris-rehm-615b113a4",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2045,6 +3739,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mary Romano, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/mary-romano-0abb32111",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Romano, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alice Rothman, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/hayleyrothman/ja",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ashley Sarb, D.O",
    "title": "Pediatrician",
    "org": "Vanderbilt University Medical Center",
@@ -2056,12 +3783,89 @@
    "practiceEmail": ""
   },
   {
+   "name": "Bryce Schuler, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/bryce-schuler-6219355b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jason Schwartz, M.D., PH.D",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/jason-schwartz-10316a53",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Scobey, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/mary-scobey-657594125",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@kpschools.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Malee Shah, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Shoemaker, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/ashley-shoemaker-19b428246",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Smith, APRN-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jelizabethsmith",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Smith, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/christine-smith-17bb187",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jodi Smith, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jodi-smith-gick-8219081b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2084,6 +3888,17 @@
    "city": "Nashville",
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Soslow, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2133,6 +3948,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Sucre, MD",
+   "title": "Neonatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jennifer-sucre-519a36180",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "William Sullivan, M.D., M.ED",
    "title": "Pediatrician",
    "org": "Vanderbilt University Medical Center",
@@ -2166,6 +3992,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rebecca Swan, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://au.linkedin.com/in/rebeccaaswan",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Swanson, DO",
+   "title": "Neonatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/lauren-swanson-47444662",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@prosthodontics.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jaclyn Tamaroff, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jaclyn-tamaroff-389b85a3",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Varsha Thomas, M.B.B.S",
    "title": "Pediatric Endocrinologist",
    "org": "Vanderbilt University Medical Center",
@@ -2177,12 +4036,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brian Tinch, MD",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University Medical Center",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Olga Toro-Salazar, MD",
    "title": "Pediatric Cardiologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/olga-toro-salazar-880a51196",
    "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Turnbull, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/jfcturnbull",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2210,6 +4091,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kimberly Vera, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/kimberly-vera-43a01932",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Walker, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Steven Watson, MD",
    "title": "Pediatrician",
    "org": "Vanderbilt University Medical Center",
@@ -2221,12 +4124,45 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth Watts, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/eljwatts",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@capitalareapediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Whitlock, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/james-whitlock-358a2666",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Donna Whitney, MD",
    "title": "Neonatologist",
    "org": "Vanderbilt University Medical Center",
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/donna-whitney-27a179282",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Wilson, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/wilgory",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2260,6 +4196,50 @@
    "city": "Nashville",
    "linkedin": "https://www.linkedin.com/in/amelia-wong-ca",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "George Wood, M.D",
+   "title": "Pediatrician",
+   "org": "Green Hills Pediatric Associates",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022@ramdocs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Woodward, MD, MPH",
+   "title": "Pediatric Rheumatologist",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/amywoodward",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wilhelm Woolery, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nadia Zaim, M.D",
+   "title": "Pediatrician",
+   "org": "Vanderbilt University",
+   "city": "Nashville",
+   "linkedin": "https://www.linkedin.com/in/nadia-zaim-067346a4",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@jhmi.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -2331,6 +4311,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephanie Gorman, DO",
+   "title": "Pediatrician",
+   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
+   "city": "Seymour",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Feldhaus, M.D",
    "title": "Pediatrician",
    "org": "Maury Regional Medical Group, INC",
@@ -2397,6 +4388,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Fox, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Specialists Of Marion County Pllc",
+   "city": "South Pittsburg",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@foxworthyconsulting.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Regina Coleman, MD",
    "title": "Pediatrician",
    "org": "Primary Care Associates, Pc",
@@ -2436,6 +4438,17 @@
    "city": "Tullahoma",
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tullahomapediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ho Kim, M.D",
+   "title": "Pediatrician",
+   "org": "Tullahoma Pediatrics Pllc",
+   "city": "Tullahoma",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -3420,17 +5433,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "William Gaylord, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Erlanger Health",
-   "city": "Chattanooga",
-   "linkedin": "https://www.linkedin.com/in/william-gaylord-91a058a6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Dawn Hancock, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "White'S Pediatrics Urgent Care",
@@ -3482,17 +5484,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katye Herring, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Erlanger Health",
-   "city": "Chattanooga",
-   "linkedin": "https://www.linkedin.com/in/katye-herring-65382166",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3581,28 +5572,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brandon Morrical, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Erlanger Health",
-   "city": "Chattanooga",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lea Parsley, MD",
-   "title": "Pediatrician",
-   "org": "Rockford Health Physicians",
-   "city": "Chattanooga",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4080,17 +6049,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "William Prine, MD",
-   "title": "Pediatrician",
-   "org": "Aim Comprehensive Therapy Llc",
-   "city": "Clarksville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Margaret Rausch, MSN, RN, PNP-BC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Premier Medical Group Pc",
@@ -4169,17 +6127,6 @@
   },
   {
    "name": "Crystal Vernon, MD",
-   "title": "Pediatrician",
-   "org": "Premier Medical Group Pc",
-   "city": "Clarksville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Walker, M.D",
    "title": "Pediatrician",
    "org": "Premier Medical Group Pc",
    "city": "Clarksville",
@@ -4553,50 +6500,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anthony Smith, MD",
-   "title": "Pediatrician",
-   "org": "Columbia Pediatric Clinic, Inc.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Richard Smith, M.D",
-   "title": "Pediatrician",
-   "org": "Columbia Pediatric Clinic, Inc.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Thompson, MD",
-   "title": "Pediatrician",
-   "org": "Columbia Pediatric Clinic, Inc.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laurie Tucker, M.D",
-   "title": "Pediatrician",
-   "org": "Columbia Pediatric Clinic, Inc.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lauren Wheeler, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of Bowling Green, Llc",
@@ -4938,28 +6841,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christine Reed, M.D",
-   "title": "Pediatrician",
-   "org": "Plateau Pediatrics, Plc",
-   "city": "Crossville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kristin Steele, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Plateau Pediatrics, Plc",
-   "city": "Crossville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brooke Wright, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Plateau Pediatrics, Plc",
@@ -5033,17 +6914,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Nelson, M.D., F.A.A.P",
-   "title": "Pediatrician",
-   "org": "Dayton Pediatrics P C",
-   "city": "Dayton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5242,17 +7112,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Denise Werner, M.D",
-   "title": "Pediatrician",
-   "org": "State Of Tennessee",
-   "city": "Fairview",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5697,17 +7556,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Steven Riley, MD",
-   "title": "Pediatrician",
-   "org": "Vip Midsouth, Llc",
-   "city": "Gallatin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Victoria Rundus, MD",
    "title": "Pediatrician",
    "org": "Vip Midsouth, Llc",
@@ -5946,17 +7794,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Robbins, DNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Collierville Pediatrics, Llc",
-   "city": "Germantown",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6210,17 +8047,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Adams, M.D",
-   "title": "Pediatrician",
-   "org": "Allergy Associates, PA",
-   "city": "Hendersonville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7160,17 +8986,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Gibson, M.D",
-   "title": "Pediatrician",
-   "org": "Medical Genetics Lab",
-   "city": "Johnson City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@labster.com"
-  },
-  {
    "name": "Thomas Gill, M.D",
    "title": "Pediatrician",
    "org": "Champion Physical Therapy LLC Halls",
@@ -7501,17 +9316,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "John Schweitzer, M.D",
-   "title": "Pediatrician",
-   "org": "Medical Genetics Lab",
-   "city": "Johnson City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@labster.com"
-  },
-  {
    "name": "Lauren Selzer",
    "title": "Pediatrician",
    "org": "Medical Genetics Lab",
@@ -7765,17 +9569,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Riwaaj Lamsal",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Medical Education Assistance Corporation",
-   "city": "Kingsport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Donald Lewis, MD",
    "title": "Pediatrician",
    "org": "New Horizons Plastic Surgery Llc",
@@ -7840,17 +9633,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@balladhealth.org"
-  },
-  {
-   "name": "Danielle Stephens, D.O",
-   "title": "Pediatrician",
-   "org": "Holston Medical Group PC",
-   "city": "Kingsport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "William Steptoe, MD",
@@ -8289,17 +10071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Core, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Allergy Associates, PA",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/laura-core-bb173169",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8799,28 +10570,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeffory Jennings, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Health System, INC.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Johnson, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Morgin Johnson, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Regional Neonatal Associates",
@@ -8927,17 +10676,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ameeta Lall, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9140,17 +10878,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Leonid Melnikov",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mary Miller, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "East Tennessee Children'S Hospital Association Inc.",
@@ -9316,17 +11043,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeanann Pardue, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/jeanann-pardue-248b842a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Komalben Parmar, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "East Tennessee Children'S Hospital Association Inc.",
@@ -9364,1722 +11080,6 @@
    "title": "Pediatric Infectious Disease Specialist",
    "org": "East Tennessee Children'S Hospital Association Inc.",
    "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joseph Peeden, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marymer Perales, M.D",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nancy Phillips, MD",
-   "title": "Pediatrician",
-   "org": "Drs Black&Benton Pediatrics",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Pierce, MD",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Polk, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Tennessee Orthopaedic Clinics Pc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samantha Pollard, MD",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Renee Powell, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Health System, Inc",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/renee-powell",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eric Prenshaw, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Keystone Pharmacy Services Llc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Prinz, M.D",
-   "title": "Neonatologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maggie Quinn, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Behavioral Medicine Institute Pc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Diana Quintero, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Radu, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association, Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Redman, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Whitney Reynolds, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Consultants West",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Russel Rhea, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Consultants West",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/russel-rhea-163890b4",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eduardo Riff, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Riker, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Southeastern Emergency Physicians LLC",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ronald Rimer, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marielisa Rincon-Subtirelu, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Valerie Rinehart, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Roberts, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Robinson, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Spencer Rodgers, M.D",
-   "title": "Neonatologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Rogers, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Russ-Barber, MD",
-   "title": "Pediatrician",
-   "org": "University Health System, Inc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Scott, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Breonna Scott",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Act Virtualcare Of Texas, P.A.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sumeet Sharma, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jamie Sharpe, ANP-BC, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Health System, Inc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christopher Siano, M.D. D.O",
-   "title": "Pediatrician",
-   "org": "Knox Wellness Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrew Singer, MD",
-   "title": "Pediatrician",
-   "org": "Allergy & Asthma Affiliates, Pc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hannah Smith, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Cherokee Health Systems",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dennis Solomon, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Sparrow, M.D",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Speckner, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Spiller, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Philip Stanley, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amber Steeley, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cory Strobel, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Pediatric Gastroenterology And Nutritional Support, P.C.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/cory-strobel-86a6b47b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jordan Stroud, DO",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group,Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mihail Subtirelu, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barbara Summers, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hanumaiah Suvarna, M.D",
-   "title": "Neonatologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gregory Swabe, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/grace-roberts-b412031b8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christy Tabarani, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/christy-tabarani-md-6ab12b1b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carmen Tapiador, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Taylor, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Health System, Inc",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/rachel-taylor-ba52b5b7",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Teaster, MD",
-   "title": "Pediatrician",
-   "org": "Drs Black&Benton Pediatrics",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Terry, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vanessa Thomas, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chad Thornhill, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "East Tennessee Children'S Hospital Association, Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/chad-thornhill-md-94728028",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mackenzie Travis",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Health System, Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/mackenzie-travis-6a12a0156",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lawrie Treakle, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Pediatric Urology, Pc",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/lawrie-treakle-a1809712b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Trentham, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/laura-trentham-62bbb094",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marissa Warwar, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Washer, M.D",
-   "title": "Pediatrician",
-   "org": "Knox County Health Dept.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amber Wetherington, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/ms-amber-wetherington-np-55a276a5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer White, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Tots & Teens Pediatrics, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melissa White, MSN, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Otolaryngology Head And Neck Surgery,Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kaitlyn White, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Regional Neonatal Associates",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kenneth Wicker, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Wilkinson, MD",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katie Willard, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Of Tennessee",
-   "city": "Knoxville",
-   "linkedin": "https://www.linkedin.com/in/katie-willard-6b154b176",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Williams, M.D",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Wirthwein, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelli Wolfe, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Consultants West",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Wooldridge, M.D",
-   "title": "Neonatologist",
-   "org": "East Tennessee Children'S Hospital Association Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Deanna Yen, M.D",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patricia Zetterberg, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Association, Inc.",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sheri Zieminick, MD",
-   "title": "Pediatrician",
-   "org": "Summit Medical Group, Pllc",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Deborah Zimo, M.D",
-   "title": "Pediatrician",
-   "org": "Main Campus Pediatrics",
-   "city": "Knoxville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mallory Brooks, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "La Follette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsey Bull, DO",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "La Follette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Mills, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "La Follette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Charlotte Taylor, CPNP/AGNP-C",
-   "title": "Pediatrician",
-   "org": "Dx Mso PLLC",
-   "city": "La Follette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Mounts, APRN, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Vip Midsouth, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jaime Byrum, PNP, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Eastlake Medical, Pllc",
-   "city": "Lafollette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Benefield, M.D",
-   "title": "Pediatrician",
-   "org": "Crockett Kids Pediatrics, P.C.",
-   "city": "Lawrenceburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Kuechle, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Amg-Crockett, Llc",
-   "city": "Lawrenceburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Russell Gibson, MD",
-   "title": "Pediatric Sleep Medicine Physician",
-   "org": "Advanced Sleep Consultants Of Middle Tn, Inc",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Donna Lett, M.D",
-   "title": "Pediatrician",
-   "org": "Heritage Medical Associates PC",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brandi Lindsey, R. N., C.P.N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Middle Tennessee And Adolescent Medicine P.C.",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Neff, N.P",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Tennessee Oncology Pharmacy Dispensing",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "George Robertson, MD",
-   "title": "Pediatrician",
-   "org": "Family Medical PC",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Bernard Sy, MD",
-   "title": "Pediatrician",
-   "org": "Family Medical PC",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennie Haney, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Choice Llc",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly Hicks, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Consultants Of Lenoir City",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Crystal Moses, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Choice Llc",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrea Shoemaker, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Choice Llc",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wendy Taylor, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Choice Llc",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sydney Upchurch, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Choice Llc",
-   "city": "Lenoir City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alexander Brunner, M.D",
-   "title": "Pediatrician",
-   "org": "Mercy Health Services, INC.",
-   "city": "Lewisburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kimberly Alexander, CAMS, CCIS, CDVS, PI",
-   "title": "Child Abuse Pediatrician",
-   "org": "Tn Anger Management / Counsel Care, Llc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kendra Grissom, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lentz Pediatrics, Plc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Aley Hamadani, MD",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Reggie Henderson, M.D",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Lentz, MD",
-   "title": "Pediatrician",
-   "org": "Lentz Pediatrics, Plc",
-   "city": "Lexington",
-   "linkedin": "https://www.linkedin.com/in/jonathan-lentz-5159174b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Natasha Loftin",
-   "title": "Pediatrician",
-   "org": "Delta Clinics Plc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rita McCoy, MSN, APRN, FNP-C",
-   "title": "Pediatrician",
-   "org": "Tom McDonald Md Pllc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas McDonald, MD",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Corey McNeilly, MD",
-   "title": "Pediatrician",
-   "org": "Vidant Medical Group LLC",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Melton, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lentz Pediatrics, Plc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tammy Milholen, NP-C",
-   "title": "Pediatrician",
-   "org": "Family Physicians Of Lexington",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dennis Orr, DO",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kaushal Patel, M.D",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chad Scott, FNP MSN",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hannah Shelby-Kennedy, M.D",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Snider, CPNP-PC, RN, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lentz Pediatrics, Plc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Stanfill, FNP",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Eric Telfer, M.D",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alan Weatherford, PA-C",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "https://www.linkedin.com/in/alan-weatherford-9250ab49",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Winston, M.D",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jon Zamber, MD",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Langenberg, M.D",
-   "title": "Pediatrician",
-   "org": "Amg-Livingston LLC",
-   "city": "Livingston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marc Courts, M.D",
-   "title": "Pediatrician",
-   "org": "Loudon Pediatric Clinic Pc",
-   "city": "Loudon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Guider, M.D",
-   "title": "Pediatrician",
-   "org": "Loudon Pediatric Clinic Pc",
-   "city": "Loudon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Calvin Schaerer, M.D",
-   "title": "Pediatrician",
-   "org": "Loudon Pediatric Clinic Pc",
-   "city": "Loudon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ma Irene Abillar, MD",
-   "title": "Pediatrician",
-   "org": "United Neighborhood Health Services, Inc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sarah Mantle, MD",
-   "title": "Pediatrician",
-   "org": "Elbert E Jackson, Dds, Pc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karen Meredith, MD",
-   "title": "Pediatrician",
-   "org": "Elbert E Jackson, Dds, Pc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Oliver, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Elbert E Jackson, Dds, Pc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Patricia Robinson, MD",
-   "title": "Pediatrician",
-   "org": "Elbert E Jackson, Dds, Pc",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Harry Bartee, MD",
-   "title": "Pediatrician",
-   "org": "Willow Medical, Llc",
-   "city": "Manchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Chantal Jordan",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Tullahoma Pediatrics Pllc",
-   "city": "Manchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Susan Brewer, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Martin Pediatric And Adolescent Clinic, Pc",
-   "city": "Martin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Walter Fletcher, M.D",
-   "title": "Pediatrician",
-   "org": "Martin Medical Center, P.C.",
-   "city": "Martin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Gardner",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Martin Children'S Clinic, Llc",
-   "city": "Martin",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lori Baxter, M.D., FAAP",
-   "title": "Pediatrician",
-   "org": "Cedar Creek Pediatric & Adolescent Medicine, Pc",
-   "city": "Maryville",
-   "linkedin": "https://www.linkedin.com/in/lori-baxter-81652048",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vivian Colont, RN APRN NURSE PRACTI",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Damron, MD",
-   "title": "Pediatrician",
-   "org": "R Brent Harbin Dpm Pllc",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Whitney Dee, MD",
-   "title": "Pediatrician",
-   "org": "R Brent Harbin Dpm Pllc",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lana Fox, M.D",
-   "title": "Pediatrician",
-   "org": "Cedar Creek Pediatric & Adolescent Medicine, Pc",
-   "city": "Maryville",
-   "linkedin": "https://www.linkedin.com/in/lana-fox-b93a5283",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Holt, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karthik Krishnan, MD",
-   "title": "Pediatrician",
-   "org": "Allergy, Asthma, Immunology Center - Ty Prince, Pllc",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Martin, MSN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Cedar Creek Pediatric & Adolescent Medicine, Pc",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Charles Raper, MD",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wilson Robinson, MD",
-   "title": "Pediatrician",
-   "org": "Allergy, Asthma, Immunology Center - Ty Prince, Pllc",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Talbott, WHNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Women'S Care Group Pllc",
-   "city": "Maryville",
-   "linkedin": "https://www.linkedin.com/in/erin-talbott-aa1895126",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Watkins, MD",
-   "title": "Pediatrician",
-   "org": "East Tennessee Children'S Hospital Primary Care Center, Inc.",
-   "city": "Maryville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laura Baker, NP-C",
-   "title": "Pediatrician",
-   "org": "Lexington Hospital Corporation",
-   "city": "Mc Kenzie",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Andrews, D.O",
-   "title": "Pediatrician",
-   "org": "Pioneer Pediatrics, Pllc",
-   "city": "McMinnville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrew Langille, DO",
-   "title": "Pediatrician",
-   "org": "Bayhealth Emergency Physicians Llc",
-   "city": "McMinnville",
-   "linkedin": "https://www.linkedin.com/in/andrew-langille-do-94697594",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey McVey, DO",
-   "title": "Pediatrician",
-   "org": "Pioneer Pediatrics, Pllc",
-   "city": "McMinnville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Rogers, D.O",
-   "title": "Pediatrician",
-   "org": "Pioneer Pediatrics, Pllc",
-   "city": "McMinnville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shauna Samuel, MSN, APRN, FNP-C",
-   "title": "Pediatric Nephrologist",
-   "org": "McMinnville Medical Associates Pllc",
-   "city": "McMinnville",
-   "linkedin": "https://www.linkedin.com/in/shaunawileysamuelmsnfnp",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Nerland, M.D",
-   "title": "Pediatrician",
-   "org": "Jackson Clinic PA",
-   "city": "Medina",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Seema Abbasi, MD",
-   "title": "Pediatrician",
-   "org": "River City Pediatrics, P.C.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mohammed Absi, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hitesh Agrawal, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nour Akil, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leah Akinseye, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Baptist Memorial Medical Group, INC.",
-   "city": "Memphis",
-   "linkedin": "https://www.linkedin.com/in/leah-akinseye-a6878b60",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hiba Al-Zubeidi, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Ut Lebonheur Pediatric Specialists, Inc.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Allen Nicole Alana, MD",
-   "title": "Pediatrician",
-   "org": "Methodist Le Bonheur Community Outreach",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anna Allen, M.D",
-   "title": "Pediatrician",
-   "org": "Ut Regional One Physicians INC",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kristin Allen, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Raleigh Group P.C.",
-   "city": "Memphis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@raleighgroup.com"
-  },
-  {
-   "name": "Bruce Alpert, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Compass Laboratory Services Llc",
-   "city": "Memphis",
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",

@@ -3,8 +3,8 @@
  "slug": "oklahoma",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-oklahoma.csv",
  "count": 1294,
- "emails": 20,
- "practiceEmails": 85,
+ "emails": 58,
+ "practiceEmails": 82,
  "phones": 1294,
  "direct": 0,
  "roles": [
@@ -69,7 +69,7 @@
    "count": 10
   },
   {
-   "name": "Osu Center For Health Sciences",
+   "name": "Norman Pediatric Associates",
    "count": 9
   }
  ],
@@ -119,6 +119,149 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lisa Hoffman, MD",
+   "title": "Pediatrician",
+   "org": "Chickasaw Nation Division Of Health",
+   "city": "Ardmore",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret White, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St. John Physicians, INC.",
+   "city": "Bartlesville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uth.tmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Douglas Richmond, M.D",
+   "title": "Pediatrician",
+   "org": "On Call Pediatrics Pllc",
+   "city": "Broken Arrow",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@purdue.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brooke Nida, MD",
+   "title": "Pediatrician",
+   "org": "Brooke Nida, Md, Pc",
+   "city": "Edmond",
+   "linkedin": "https://www.linkedin.com/in/brooke-nida-0521a4129",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Roth, MD",
+   "title": "Pediatrician",
+   "org": "Jonathan B Roth Llc",
+   "city": "Edmond",
+   "linkedin": "https://www.linkedin.com/in/jonathan-roth-a539831b7",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Berman, MSN, APRNBC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Young Peoples Clinic",
+   "city": "Jenks",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Marshall, D.O",
+   "title": "Neonatologist",
+   "org": "Comanche County Hospital Authority",
+   "city": "Lawton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@tcu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Thomas, MD",
+   "title": "Pediatrician",
+   "org": "Warren Clinic INC",
+   "city": "McAlester",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Donna Jackson, M.D",
+   "title": "Pediatrician",
+   "org": "Norman Pediatric Associates",
+   "city": "Norman",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allyson Black, MD",
+   "title": "Pediatrician",
+   "org": "Integris Ambulatory Care Corporation",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Carlton, APRN",
+   "title": "Pediatrician",
+   "org": "Next Generation Pediatrics, Llc",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Cross, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians",
+   "city": "Oklahoma City",
+   "linkedin": "https://www.linkedin.com/in/rachelecross",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ascension.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Hanna, MD",
+   "title": "Neonatologist",
+   "org": "Oklahoma Mothers' Milk Bank",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Janice Hixson, M.D",
    "title": "Pediatrician",
    "org": "Central Oklahoma American Indian Health Council, Inc.",
@@ -126,6 +269,138 @@
    "linkedin": "https://www.linkedin.com/in/janice-hixson-73674316b",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@okcic.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adrienne Kesinger, MD",
+   "title": "Pediatrician",
+   "org": "Integris Ambulatory Care Corporation",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Subhrajit Lahiri, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Ou Health Partners INC",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Scott Melson, MD",
+   "title": "Pediatrician",
+   "org": "Oklahoma Mothers' Milk Bank",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ramin Nazari, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Florida Hospital Medical Group INC",
+   "city": "Oklahoma City",
+   "linkedin": "https://www.linkedin.com/in/ramin-nazari-m-d-faap-fccm-16a73b38",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Pickens, M.D",
+   "title": "Neonatologist",
+   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jose Pineda, M.D",
+   "title": "Neonatologist",
+   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
+   "city": "Oklahoma City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julie Watson, M.D",
+   "title": "Neonatologist",
+   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
+   "city": "Oklahoma City",
+   "linkedin": "https://www.linkedin.com/in/julie-watson-97988630",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@lshtm.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maha Yousif, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Of Texas Southwestern Medical Center At Dallas",
+   "city": "Oklahoma City",
+   "linkedin": "https://www.linkedin.com/in/maha-yousif-b8302133",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Burger, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "On Call Pediatrics Pllc",
+   "city": "Owasso",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@llcc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Gonzales, APRN, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
+   "city": "Owasso",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ihv.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William James, MD",
+   "title": "Pediatrician",
+   "org": "Omni Medical Group INC",
+   "city": "Sand Springs",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@uphs.upenn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ryan McCracken, D.O",
+   "title": "Pediatrician",
+   "org": "Mission Street Medical Clinic Inc",
+   "city": "Sapulpa",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@delta.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -207,6 +482,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Gary Gaston, M.D",
+   "title": "Pediatrician",
+   "org": "Northeastern Oklahoma Community Health Centers Inc",
+   "city": "Tahlequah",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@wichita.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Trevor Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Oklahoma State University",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/trevoreugeneanderson",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@okstate.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Baird, M.D",
+   "title": "Pediatrician",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/mary-baird-b2bb839",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Benson, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://uk.linkedin.com/in/paul-benson-ab6b5a34",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@umb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Vanessa Boshuizen, M.D",
    "title": "Pediatrician",
    "org": "Community Health Connection Inc",
@@ -214,6 +533,28 @@
    "linkedin": "https://www.linkedin.com/in/vanessa-boshuizen-30ab85324",
    "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@communityhealthconnection.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "April Bowling, MD",
+   "title": "Pediatrician",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/april-bowling-26a1781a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@mail.harvard.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vanessa Byers, ARNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Clinic Of Tulsa, Inc.",
+   "city": "Tulsa",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -229,6 +570,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeffrey Carroll, M.D",
+   "title": "Pediatrician",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@wjccschools.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michelle Castor, DO",
    "title": "Pediatrician",
    "org": "Community Health Connection Inc",
@@ -236,6 +588,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@communityhealthconnection.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Scott Cyrus, D.O",
+   "title": "Adolescent Medicine Physician",
+   "org": "Children & Adolescent Medical Services Inc.",
+   "city": "Tulsa",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@burrell.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -262,6 +625,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ashley Hopkins, MD",
+   "title": "Pediatrician",
+   "org": "Indian Health Care Resource Center",
+   "city": "Tulsa",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@flinders.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Janet Jones, MD",
    "title": "Pediatrician",
    "org": "Community Health Connection Inc",
@@ -273,6 +647,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kimberly Martin, D.O",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/kimberly-martin-ab6b8412",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Miriam Mills, M.D",
+   "title": "Pediatrician",
+   "org": "Young Peoples Clinic",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/miriam-mills-4a544589",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Toni Ramos, D.O",
    "title": "Pediatrician",
    "org": "Community Health Connection Inc",
@@ -280,6 +676,28 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@communityhealthconnection.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Ryan, MD",
+   "title": "Pediatrician",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/patrick-ryan-ceo",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nisha Singh, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
+   "city": "Tulsa",
+   "linkedin": "https://www.linkedin.com/in/nisha-singh-dc",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@health.nsw.gov.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -394,17 +812,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa Hoffman, MD",
-   "title": "Pediatrician",
-   "org": "Chickasaw Nation Division Of Health",
-   "city": "Ardmore",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Gopal Chandrasekharan, M.D",
    "title": "Pediatrician",
    "org": "Pediatrics Of Bartlesville",
@@ -434,17 +841,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margaret White, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "St. John Physicians, INC.",
-   "city": "Bartlesville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -566,17 +962,6 @@
    "linkedin": "https://www.linkedin.com/in/carl-pfanstiel-463ba237",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Douglas Richmond, M.D",
-   "title": "Pediatrician",
-   "org": "On Call Pediatrics Pllc",
-   "city": "Broken Arrow",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1054,17 +1439,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brooke Nida, MD",
-   "title": "Pediatrician",
-   "org": "Brooke Nida, Md, Pc",
-   "city": "Edmond",
-   "linkedin": "https://www.linkedin.com/in/brooke-nida-0521a4129",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jason Onarecker, MD",
    "title": "Pediatrician",
    "org": "Saint Medical Group, Llc",
@@ -1127,17 +1501,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Roth, MD",
-   "title": "Pediatrician",
-   "org": "Jonathan B Roth Llc",
-   "city": "Edmond",
-   "linkedin": "https://www.linkedin.com/in/jonathan-roth-a539831b7",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1406,17 +1769,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rebecca Berman, MSN, APRNBC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Young Peoples Clinic",
-   "city": "Jenks",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melinda Dandridge, DO",
    "title": "Pediatrician",
    "org": "Melinda Dandridge Do Pllc",
@@ -1516,17 +1868,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@memorialhealthswok.com"
   },
   {
-   "name": "James Marshall, D.O",
-   "title": "Neonatologist",
-   "org": "Comanche County Hospital Authority",
-   "city": "Lawton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@memorialhealthswok.com"
-  },
-  {
    "name": "Minda Roan, MD",
    "title": "Pediatrician",
    "org": "Comanche County Healthcare Corp",
@@ -1563,17 +1904,6 @@
    "name": "Misti Crawley, D.O",
    "title": "Pediatrician",
    "org": "Choctaw Nation Of Oklahoma",
-   "city": "McAlester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Thomas, MD",
-   "title": "Pediatrician",
-   "org": "Warren Clinic INC",
    "city": "McAlester",
    "linkedin": "",
    "email": "",
@@ -1778,17 +2108,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Donna Jackson, M.D",
-   "title": "Pediatrician",
-   "org": "Norman Pediatric Associates",
-   "city": "Norman",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@normanpediatrics.com"
   },
   {
    "name": "Kelcey King, DNP, APRN, CPNP-PC",
@@ -2242,17 +2561,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Allyson Black, MD",
-   "title": "Pediatrician",
-   "org": "Integris Ambulatory Care Corporation",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Piers Blackett, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Board Of Regents Of The Univ Of Oklahoma-Ou Physicians Adolescent Med",
@@ -2374,17 +2682,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Carlton, APRN",
-   "title": "Pediatrician",
-   "org": "Next Generation Pediatrics, Llc",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Valari Cathey, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Ou Health Partners INC",
@@ -2469,17 +2766,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Cross, APRN, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians",
-   "city": "Oklahoma City",
-   "linkedin": "https://www.linkedin.com/in/rachelecross",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2781,17 +3067,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Adam Hanna, MD",
-   "title": "Neonatologist",
-   "org": "Oklahoma Mothers' Milk Bank",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022@okmilkbank.org"
-  },
-  {
    "name": "Jacee Harcourt, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Board Of Regents Of The University Of Oklahoma - Ou Physicians",
@@ -2990,17 +3265,6 @@
    "practiceEmail": "i\u2022\u2022\u2022@varietycare.org"
   },
   {
-   "name": "Adrienne Kesinger, MD",
-   "title": "Pediatrician",
-   "org": "Integris Ambulatory Care Corporation",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Branson Kester, MD",
    "title": "Pediatrician",
    "org": "Oklahoma Mothers' Milk Bank",
@@ -3041,17 +3305,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Subhrajit Lahiri, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Ou Health Partners INC",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3276,17 +3529,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Scott Melson, MD",
-   "title": "Pediatrician",
-   "org": "Oklahoma Mothers' Milk Bank",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022@okmilkbank.org"
-  },
-  {
    "name": "Lakshmi Menon-Dawson, MD",
    "title": "Pediatrician",
    "org": "Central Oklahoma American Indian Health Council, Inc.",
@@ -3437,17 +3679,6 @@
    "linkedin": "https://www.linkedin.com/in/matthew-naumann-a31224240",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ramin Nazari, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Florida Hospital Medical Group INC",
-   "city": "Oklahoma City",
-   "linkedin": "https://www.linkedin.com/in/ramin-nazari-m-d-faap-fccm-16a73b38",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3606,17 +3837,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "James Pickens, M.D",
-   "title": "Neonatologist",
-   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Gabriella Pierce, MD",
    "title": "Pediatrician",
    "org": "Central Oklahoma American Indian Health Council, Inc.",
@@ -3624,17 +3844,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jose Pineda, M.D",
-   "title": "Neonatologist",
-   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
-   "city": "Oklahoma City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4233,17 +4442,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Julie Watson, M.D",
-   "title": "Neonatologist",
-   "org": "Pediatrix Medical Group Of Oklahoma, P.C.",
-   "city": "Oklahoma City",
-   "linkedin": "https://www.linkedin.com/in/julie-watson-97988630",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Robert Welliver, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Board Of Regents Of The Univ Of Oklahoma-Ou Physicians Adolescent Med",
@@ -4330,17 +4528,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Maha Yousif, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "University Of Texas Southwestern Medical Center At Dallas",
-   "city": "Oklahoma City",
-   "linkedin": "https://www.linkedin.com/in/maha-yousif-b8302133",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": "t\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu"
   },
   {
    "name": "Shahwar Yousuf",
@@ -4431,17 +4618,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Burger, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "On Call Pediatrics Pllc",
-   "city": "Owasso",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shelby Droege, DO",
    "title": "Pediatrician",
    "org": "Your Health Llc",
@@ -4465,17 +4641,6 @@
   },
   {
    "name": "Erin Fleming, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
-   "city": "Owasso",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Gonzales, APRN, CNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Owasso Pediatric And Adolescent Medicine, P.L.C.",
    "city": "Owasso",
@@ -4560,7 +4725,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022@staging.iowanation.org"
   },
   {
    "name": "Jessica Kennedy",
@@ -4571,7 +4736,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022@staging.iowanation.org"
   },
   {
    "name": "Lacey McNett, CPNP",
@@ -4662,28 +4827,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "William James, MD",
-   "title": "Pediatrician",
-   "org": "Omni Medical Group INC",
-   "city": "Sand Springs",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan McCracken, D.O",
-   "title": "Pediatrician",
-   "org": "Mission Street Medical Clinic Inc",
-   "city": "Sapulpa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Pachneerat Chainakul, M.D",
    "title": "Pediatrician",
    "org": "Absentee Shawnee Tribal Health Authority, Inc.",
@@ -4768,17 +4911,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gary Gaston, M.D",
-   "title": "Pediatrician",
-   "org": "Northeastern Oklahoma Community Health Centers Inc",
-   "city": "Tahlequah",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4981,33 +5113,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Trevor Anderson, M.D",
-   "title": "Pediatrician",
-   "org": "Oklahoma State University",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/trevoreugeneanderson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Dolores Atkinson, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
    "city": "Tulsa",
    "linkedin": "https://www.linkedin.com/in/dolores-atkinson-43087b55",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Baird, M.D",
-   "title": "Pediatrician",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/mary-baird-b2bb839",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -5091,17 +5201,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Paul Benson, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://uk.linkedin.com/in/paul-benson-ab6b5a34",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kyle Bielefeld, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
@@ -5135,17 +5234,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "April Bowling, MD",
-   "title": "Pediatrician",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/april-bowling-26a1781a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathleen Boyls, M.D",
    "title": "Pediatrician",
    "org": "Grow Well Health Llc",
@@ -5164,17 +5252,6 @@
    "linkedin": "https://www.linkedin.com/in/william-butron-9784a6b1",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vanessa Byers, ARNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Allergy Clinic Of Tulsa, Inc.",
-   "city": "Tulsa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202213",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5217,17 +5294,6 @@
    "org": "T.L. Carey, M.D. And Associates, INC.",
    "city": "Tulsa",
    "linkedin": "https://www.linkedin.com/in/terence-carey",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Carroll, M.D",
-   "title": "Pediatrician",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -5351,17 +5417,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Scott Cyrus, D.O",
-   "title": "Adolescent Medicine Physician",
-   "org": "Children & Adolescent Medical Services Inc.",
-   "city": "Tulsa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5685,17 +5740,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Hopkins, MD",
-   "title": "Pediatrician",
-   "org": "Indian Health Care Resource Center",
-   "city": "Tulsa",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Robert Hudson, MD",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
@@ -5982,17 +6026,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kimberly Martin, D.O",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/kimberly-martin-ab6b8412",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Keith Mather, M.D",
    "title": "Pediatrician",
    "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
@@ -6044,17 +6077,6 @@
    "linkedin": "https://uk.linkedin.com/in/shelly-mercer-ab06b948",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Miriam Mills, M.D",
-   "title": "Pediatrician",
-   "org": "Young Peoples Clinic",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/miriam-mills-4a544589",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6268,17 +6290,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patrick Ryan, MD",
-   "title": "Pediatrician",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/patrick-ryan-ceo",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jane Scott",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Tulsa Family Development Center",
@@ -6306,17 +6317,6 @@
    "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
    "city": "Tulsa",
    "linkedin": "https://www.linkedin.com/in/elizabeth-fankhauser-b-s-7005b6261",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nisha Singh, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Board Of Regents Of The University Of Oklahoma Ou Physicians Tulsa",
-   "city": "Tulsa",
-   "linkedin": "https://www.linkedin.com/in/nisha-singh-dc",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",

@@ -3,8 +3,8 @@
  "slug": "delaware",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-delaware.csv",
  "count": 756,
- "emails": 5,
- "practiceEmails": 342,
+ "emails": 62,
+ "practiceEmails": 292,
  "phones": 756,
  "direct": 0,
  "roles": [
@@ -86,6 +86,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Richa Sharma, MD",
+   "title": "Pediatrician",
+   "org": "Kaza Medical Group",
+   "city": "Dover",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ccf.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Priscilla Mpasi",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Milford",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ursula Guillen, M.D",
+   "title": "Neonatologist",
+   "org": "Christiana Neonatal Associates Llc",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tracey Henderson, MD",
+   "title": "Pediatrician",
+   "org": "Christiana Care Health Services Inc",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@mwchc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Kelly, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@ucmail.uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mohammad Khan, MD",
+   "title": "Pediatrician",
+   "org": "Khan Pediatrics Inc",
+   "city": "Newark",
+   "linkedin": "https://ca.linkedin.com/in/mohammadikhan",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Taylor Phillips",
    "title": "Pediatrician",
    "org": "Westside Family Healthcare, Inc",
@@ -97,12 +163,221 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jessica Rohde, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Molly Sandrian, D.O",
    "title": "Pediatrician",
    "org": "Westside Family Healthcare, Inc",
    "city": "Newark",
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@westsidehealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Zook, M.D",
+   "title": "Neonatologist",
+   "org": "Christiana Care Health System",
+   "city": "Newark",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Haut, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Beacon Pediatrics Llc",
+   "city": "Rehoboth Beach",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Persephone Jones, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Rockland",
+   "linkedin": "https://www.linkedin.com/in/persephone-jones-5b177366",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nandini Bhat, M.B.B.S",
+   "title": "Pediatric Endocrinologist",
+   "org": "The Nemours Foundation",
+   "city": "Seaford",
+   "linkedin": "https://in.linkedin.com/in/nandini-bhat-38244724a",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@manipal.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adebowale Adeyemi, MD",
+   "title": "Pediatric Transplant Hepatologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deepthi Alapati, MD",
+   "title": "Neonatologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Anttila, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/ashley-anttila-0042b1109",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Antunes, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vancouver.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tania Burns, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/tania-burns-1969499",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Carpenter, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/aaron-carpenter-a7973323",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emi Caywood, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Harry Chugani, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alisa Clark, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@myhunter.cuny.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sean Connolly",
+   "title": "Pediatric Cardiologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Daly, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@u.northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Davis, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeannine Del Pizzo, M.D",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Deutsch, M.D",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -119,12 +394,364 @@
    "practiceEmail": ""
   },
   {
+   "name": "Colleen Ditro, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maureen Egan, ANP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelvin Fong, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Arieda Gjikopulli, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Caroline Gluck, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole Green, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jodi Gustave, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/jodi-gustave-745b78a",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Hammett, D.O",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharon Hwang, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jane Ierardi, MD",
    "title": "Neonatologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/jane-ierardi-620ba4165",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Chijioke Ikomi, M.D",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/cole-bilbrough",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carly Levy, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robyn Miller, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elissa Miller, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shaida Nasiri-Blomgren, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/shaida-nasiri-blomgren-md-faap-991a93122",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abby Nerlinger, M.D",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Petrini, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Powell, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Purcell, M.D",
+   "title": "Pediatrician",
+   "org": "Patricia H Purcell Md Pa",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/patricia-purcell-3b25313b",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joanne Quillen, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/joanne-quillen-299a0b19",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Rappaport, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wojciech Ratajczak, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennie Ryan, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jefferson.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Candace Scace, MD",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Corinna Schultz, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/corinna-schultz-0236bb56",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Beth Schwartz, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@jefferson.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Valerie Schwartz",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@unibe.ch",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Sherman, PH.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Slamon, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/nicholas-slamon-55a56ab0",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deepika Thacker, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/deepika-thacker-8ba0a656",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Takeshi Tsuda, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "https://www.linkedin.com/in/takeshi-tsuda-680ab112",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Walter, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abbas Zaidi, M.D",
+   "title": "Pediatrician",
+   "org": "The Nemours Foundation",
+   "city": "Wilmington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -394,17 +1021,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Richa Sharma, MD",
-   "title": "Pediatrician",
-   "org": "Kaza Medical Group",
-   "city": "Dover",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kevin Sheahan, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -579,17 +1195,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Priscilla Mpasi",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Milford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
    "name": "Natasha Seerattan, MD",
@@ -966,28 +1571,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ursula Guillen, M.D",
-   "title": "Neonatologist",
-   "org": "Christiana Neonatal Associates Llc",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tracey Henderson, MD",
-   "title": "Pediatrician",
-   "org": "Christiana Care Health Services Inc",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tina Hu, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Christiana Care Health System",
@@ -1021,17 +1604,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lisa Kelly, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Christine Kelly, M.D",
    "title": "Pediatrician",
    "org": "Christiana Care Health Services, Inc",
@@ -1050,17 +1622,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mohammad Khan, MD",
-   "title": "Pediatrician",
-   "org": "Khan Pediatrics Inc",
-   "city": "Newark",
-   "linkedin": "https://ca.linkedin.com/in/mohammadikhan",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1285,17 +1846,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Rohde, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Nevena Rose, DO",
    "title": "Pediatrician",
    "org": "Christiana Care Health Services Inc",
@@ -1516,17 +2066,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kelly Zook, M.D",
-   "title": "Neonatologist",
-   "org": "Christiana Care Health System",
-   "city": "Newark",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Colleen Altares, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Beacon Pediatrics Llc",
@@ -1626,17 +2165,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Catherine Haut, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Beacon Pediatrics Llc",
-   "city": "Rehoboth Beach",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Meredith Luckenbaugh, M.D",
    "title": "Pediatrician",
    "org": "Beacon Pediatrics Llc",
@@ -1648,33 +2176,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Persephone Jones, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Rockland",
-   "linkedin": "https://www.linkedin.com/in/persephone-jones-5b177366",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Thiele Anthony, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
    "city": "Seaford",
    "linkedin": "https://www.linkedin.com/in/thiele-anthony-82816b114",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Nandini Bhat, M.B.B.S",
-   "title": "Pediatric Endocrinologist",
-   "org": "The Nemours Foundation",
-   "city": "Seaford",
-   "linkedin": "https://in.linkedin.com/in/nandini-bhat-38244724a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
@@ -1824,28 +2330,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Adebowale Adeyemi, MD",
-   "title": "Pediatric Transplant Hepatologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Deepthi Alapati, MD",
-   "title": "Neonatologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Jessica An, MD",
    "title": "Pediatrician",
    "org": "Christiana Care Health Services Inc",
@@ -1873,28 +2357,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/paul-anisman-39539878",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Ashley Anttila, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/ashley-anttila-0042b1109",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Shannon Antunes, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2198,28 +2660,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Tania Burns, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/tania-burns-1969499",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Aaron Carpenter, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/aaron-carpenter-a7973323",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Christin Carroll, M.D",
    "title": "Pediatric Critical Care Specialist",
    "org": "The Nemours Foundation",
@@ -2258,17 +2698,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/alena-cavalieri-a89620126",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Emi Caywood, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2352,17 +2781,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Harry Chugani, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Mariah Cicioni, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -2379,17 +2797,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/heather-claar-bb18a8152",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Alisa Clark, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2425,17 +2832,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Sean Connolly",
-   "title": "Pediatric Cardiologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
@@ -2495,17 +2891,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Lauren Daly, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Barry Dashefsky, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "The Nemours Foundation",
@@ -2528,33 +2913,11 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Deborah Davis, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Erica Del Grippo",
    "title": "Pediatric Cardiologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/erica-del-grippo-389041384",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Jeannine Del Pizzo, M.D",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2605,17 +2968,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Stephanie Deutsch, M.D",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Attila Devenyi, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "The Nemours Foundation",
@@ -2643,17 +2995,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/christine-dipaolo-lmhc-3346252b5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Colleen Ditro, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2781,17 +3122,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Maureen Egan, ANP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Justin Eldridge, M.D",
    "title": "Pediatrician",
    "org": "Christiana Care Health Services Inc",
@@ -2903,17 +3233,6 @@
   },
   {
    "name": "Emily Fingado, M.D",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Kelvin Fong, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
@@ -3155,17 +3474,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Arieda Gjikopulli, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Daniel Glasstetter, MD",
    "title": "Pediatrician",
    "org": "Christiana Care Health Services Inc",
@@ -3179,17 +3487,6 @@
   {
    "name": "Rochelle Glidden, PSY.D",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Caroline Gluck, M.D",
-   "title": "Pediatric Nephrologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
@@ -3265,17 +3562,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicole Green, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Gregory Griffin, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "The Nemours Foundation",
@@ -3309,17 +3595,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jodi Gustave, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/jodi-gustave-745b78a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Alice Hackett, M.D",
    "title": "Pediatric Cardiologist",
    "org": "The Nemours Foundation",
@@ -3344,17 +3619,6 @@
   {
    "name": "Darcy Hamill, DO",
    "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Deborah Hammett, D.O",
-   "title": "Pediatrician",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
@@ -3479,28 +3743,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/jennifer-houston-7755b824",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Sharon Hwang, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Chijioke Ikomi, M.D",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/cole-bilbrough",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -3859,17 +4101,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Carly Levy, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Richard Lorber, M.D",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -4134,28 +4365,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Robyn Miller, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Elissa Miller, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Kenneth Molczan, APN",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Nemours Foundation",
@@ -4233,33 +4442,11 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Shaida Nasiri-Blomgren, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/shaida-nasiri-blomgren-md-faap-991a93122",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Shannon Nees, MD",
    "title": "Pediatric Cardiologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "https://www.linkedin.com/in/shannon-nees",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Abby Nerlinger, M.D",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4420,17 +4607,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Maria Petrini, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Carol Pina Parker, M.D",
    "title": "Pediatrician",
    "org": "Ankle And Foot Surgical Associates",
@@ -4475,17 +4651,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Jonathan Powell, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Catherine Preedy, APN",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Nemours Foundation",
@@ -4513,28 +4678,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Patricia Purcell, M.D",
-   "title": "Pediatrician",
-   "org": "Patricia H Purcell Md Pa",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/patricia-purcell-3b25313b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joanne Quillen, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/joanne-quillen-299a0b19",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4576,28 +4719,6 @@
   {
    "name": "Russell Raphaely, MD",
    "title": "Pediatric Critical Care Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "David Rappaport, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Wojciech Ratajczak, MD",
-   "title": "Pediatric Cardiologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
@@ -4794,17 +4915,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Jennie Ryan, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Karen Sacks, APN",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Nemours Foundation",
@@ -4871,17 +4981,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Candace Scace, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "John Schneider, M.D",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -4900,39 +4999,6 @@
    "linkedin": "https://www.linkedin.com/in/mary-ellen-schofield-11530694",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Corinna Schultz, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/corinna-schultz-0236bb56",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Beth Schwartz, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Valerie Schwartz",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
@@ -5047,17 +5113,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Colleen Sherman, PH.D",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Ellen Sherman",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -5133,17 +5188,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Nicholas Slamon, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/nicholas-slamon-55a56ab0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
    "name": "Sara Slovin, M.D., M.S.P.H",
@@ -5366,17 +5410,6 @@
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
-   "name": "Deepika Thacker, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/deepika-thacker-8ba0a656",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
    "name": "Matthew Theoharakis, MD",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
@@ -5437,17 +5470,6 @@
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Takeshi Tsuda, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "https://www.linkedin.com/in/takeshi-tsuda-680ab112",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -5522,17 +5544,6 @@
   {
    "name": "Rhonda Walter, MD",
    "title": "Developmental-Behavioral Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Andrew Walter, MD",
-   "title": "Pediatric Hematologist-Oncologist",
    "org": "The Nemours Foundation",
    "city": "Wilmington",
    "linkedin": "",
@@ -5664,17 +5675,6 @@
   },
   {
    "name": "Sarina Zahid, MD",
-   "title": "Pediatrician",
-   "org": "The Nemours Foundation",
-   "city": "Wilmington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
-  },
-  {
-   "name": "Abbas Zaidi, M.D",
    "title": "Pediatrician",
    "org": "The Nemours Foundation",
    "city": "Wilmington",

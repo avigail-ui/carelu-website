@@ -3,8 +3,8 @@
  "slug": "indiana",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-indiana.csv",
  "count": 2558,
- "emails": 135,
- "practiceEmails": 33,
+ "emails": 198,
+ "practiceEmails": 38,
  "phones": 2539,
  "direct": 100,
  "roles": [
@@ -1396,6 +1396,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Bryce McKee, MD",
+   "title": "Pediatrician",
+   "org": "Southern Indiana Pediatrics, Llc",
+   "city": "Bloomington",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher Belcher, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Infectious Disease Of Indiana, Psc",
+   "city": "Carmel",
+   "linkedin": "https://www.linkedin.com/in/christopher-belcher-b0b37239",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Layman",
    "title": "Pediatrician",
    "org": "Community Hospitals Of Indiana Inc",
@@ -1429,6 +1451,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michelle Richer, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Northside Pediatric Associates, Pc",
+   "city": "Columbus",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@bmcsd.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kayla Hamstra, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Trustees Of Purdue University",
@@ -1436,6 +1469,17 @@
    "linkedin": "https://www.linkedin.com/in/kayla-hamstra-msn-rn-cpnp-pc-pmhs-b18481408",
    "email": "k\u2022\u2022\u2022\u2022\u2022@purdue.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Carey, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Tri-State Pediatric Associates Llc",
+   "city": "Evansville",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1528,6 +1572,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jonathan Benson",
+   "title": "Pediatrician",
+   "org": "Parkview Health System,Inc.",
+   "city": "Fort Wayne",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ccsi.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Candace Caldwell, M.D",
+   "title": "Neonatologist",
+   "org": "Professional Emergency Physicians Inc",
+   "city": "Fort Wayne",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Cameron, M.D",
+   "title": "Neonatologist",
+   "org": "Northern Indiana Neonatal Associates, Pc",
+   "city": "Fort Wayne",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mohammed Ghazali, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Parkview Health System INC",
@@ -1605,6 +1682,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rebecca Franklin, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Arnett Clinic, Llc",
+   "city": "Frankfort",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ekomobong Essien, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Maple City Health Care Center, Inc",
@@ -1623,6 +1711,17 @@
    "linkedin": "https://ca.linkedin.com/in/stacy-krahn-207052375",
    "email": "s\u2022\u2022\u2022\u2022\u2022@mchcc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Barrett, MD",
+   "title": "Pediatrician",
+   "org": "The South Bend Clinic Llc",
+   "city": "Granger",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1682,6 +1781,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Muayad Alali, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Hospitals Medical Group INC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/muayad-alali-34154441",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Ayers, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mariju Baluyot, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sandeep Batra, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Elizabeth Beach",
    "title": "Pediatrician",
    "org": "Community Hospitals Of Indiana Inc",
@@ -1693,6 +1836,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Adnan Bhutta, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Pediatric Associates, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/adnanbhutta",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Black, M.D",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/william-black-02000b17",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Erin Boschert, APN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Shalom Health Care Center, Inc.",
@@ -1700,6 +1865,17 @@
    "linkedin": "https://www.linkedin.com/in/erin-boschert-33998a207",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@shalomhealthcenter.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Brooks, MD",
+   "title": "Pediatrician",
+   "org": "Fairview Health Services",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1722,6 +1898,17 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ecommunity.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pi Chun Cheng, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1781,6 +1968,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "James Fortenberry, MD",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@choa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Friedman, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Fuqua, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Deaconess Clinic INC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Gail Gilmore, D.O",
    "title": "Neonatologist",
    "org": "Community Hospitals Of Indiana Inc",
@@ -1788,6 +2008,50 @@
    "linkedin": "",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@ecommunity.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anisha Gohil, D.O",
+   "title": "Pediatric Endocrinologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dana Hartman, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Professional Staff Management",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsey Haut, MD",
+   "title": "Pediatrician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022@iuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shaina Hecht",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1814,6 +2078,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michael Hobson, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Pediatric Associates INC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/michael-hobson-9054a821",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Richard Hussey, MD",
+   "title": "Pediatrician",
+   "org": "Josephson-Wallack-Munshower Neurology Pc",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vlad Ianus, MD",
+   "title": "Neonatologist",
+   "org": "Unm Medical Group INC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Seethal Jacob, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Pediatric Associates INC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Hasnaa Jalou, MD",
    "title": "Pediatric Pulmonologist",
    "org": "University Pediatric Associates INC",
@@ -1821,6 +2129,50 @@
    "linkedin": "https://www.linkedin.com/in/hasnaa-jalou-md-faap-faasm-12247432",
    "email": "h\u2022\u2022\u2022\u2022\u2022@iu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Johansen, D.O",
+   "title": "Pediatric Cardiologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ohiohealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jessica Kanis, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Myda Khalid, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/myda-khalid-b64092355",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Miriam Kim, D.O",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1836,6 +2188,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Marciana Laster, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/marciana-laster-71014621b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kelsey Loden, MD",
    "title": "Pediatrician",
    "org": "Healthnet INC",
@@ -1847,12 +2210,67 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sarah McKenna, MD",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@qub.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jeffrey Meglin, M.D",
    "title": "Pediatrician",
    "org": "Healthnet INC",
    "city": "Indianapolis",
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@indyhealthnet.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Muston, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ward Myers, MD",
+   "title": "Pediatrician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@bmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mara Nitu, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Nti, MD",
+   "title": "Pediatrician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022@iu.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1869,6 +2287,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jyoti Patel, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Professional Staff Management",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/pateljpp",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Palka Patel, M.D",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/palka-patel-6b846a178",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Emily Peters, MD",
    "title": "Pediatrician",
    "org": "Healthnet INC",
@@ -1876,6 +2316,50 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@indyhealthnet.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Phillips, M.D",
+   "title": "Pediatrician",
+   "org": "Southside Pediatrics, Inc.",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sandeep Puranik, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/sandeep-puranik-md-faap-atsf-32ba70b1",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cynthia Reed, MD",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/cynthia-s-reed",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kyra Reed, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1891,6 +2375,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Nomi Sherwin, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "University Pediatric Associates INC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/nomi-sherwin-b8301572",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stefanie Smith, M.D",
    "title": "Pediatrician",
    "org": "Healthnet, Inc.",
@@ -1898,6 +2393,28 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@indyhealthnet.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julie Stark, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Starr, MD, MPH",
+   "title": "Pediatric Nephrologist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/michelle-starr-5a2853230",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1913,6 +2430,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Alvaro Tori, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Weaver, MD",
+   "title": "Pediatrician",
+   "org": "Iu Medical Group",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@integrishealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jenna Westwick, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Shalom Health Care Center, Inc.",
@@ -1920,6 +2459,50 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@shalomhealthcenter.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Wiehe, MD",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebekah Williams, MD, MS",
+   "title": "Adolescent Medicine Physician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Wilson, MD",
+   "title": "Pediatrician",
+   "org": "Indiana University Health Southern Indiana Physicians LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/michael-wilson-66a91216",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Winters, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St. Vincent Children'S Hospital",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@k12.dc.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1935,12 +2518,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jason Woodward, MD",
+   "title": "Pediatrician",
+   "org": "The Health And Hospital Corporation Of Marion County",
+   "city": "Indianapolis",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mouhammad Yabrodi, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Iu Health Medical Group Riley Specialists LLC",
+   "city": "Indianapolis",
+   "linkedin": "https://www.linkedin.com/in/mouhammad-yabrodi-4b514585",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Martha Yearsley, M.D",
    "title": "Pediatrician",
    "org": "Martha F Yearsley M.D. Professional Corporation",
    "city": "Jasper",
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@osumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Fleming, M.D",
+   "title": "Pediatrician",
+   "org": "Southern Indiana Pediatrics P.S.C.",
+   "city": "Jeffersonville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wasim Khasawneh, MD",
+   "title": "Neonatologist",
+   "org": "Arnett Clinic, Llc",
+   "city": "Lafayette",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@just.edu.jo",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -1975,6 +2602,28 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@mymanatee.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Paisley, MD",
+   "title": "Pediatrician",
+   "org": "Partners In Health, P.S.C.",
+   "city": "Lawrenceburg",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@stelizabeth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Gould, M.D",
+   "title": "Pediatrician",
+   "org": "Henry County Memorial Hospital",
+   "city": "New Castle",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@radiology.ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2089,6 +2738,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Linda Decesare, MD",
+   "title": "Pediatrician",
+   "org": "Hendricks County Hospital",
+   "city": "Plainfield",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@broadriverrehab.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michael Harper, MD",
    "title": "Pediatrician",
    "org": "Sellersburg Internal Medicine & Pediatrics",
@@ -2100,6 +2760,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joseph Lamb, M.D",
+   "title": "Pediatrician",
+   "org": "Jackson County Schneck Memorial Hospital",
+   "city": "Seymour",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Anna Annee, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Major Hospital",
@@ -2107,6 +2778,28 @@
    "linkedin": "https://www.linkedin.com/in/anna-annee-686bb5149",
    "email": "a\u2022\u2022\u2022\u2022\u2022@mymhp.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ruchita Kachru, MD",
+   "title": "Pediatrician",
+   "org": "Beacon Medical Group, Inc.",
+   "city": "South Bend",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Seth Coynor, D.O",
+   "title": "Pediatrician",
+   "org": "Perry County Memorial Hospital",
+   "city": "Tell City",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2672,17 +3365,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Bryce McKee, MD",
-   "title": "Pediatrician",
-   "org": "Southern Indiana Pediatrics, Llc",
-   "city": "Bloomington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jeremy Mescher, M.D",
    "title": "Pediatrician",
    "org": "Southern Indiana Pediatrics, Llc",
@@ -2877,17 +3559,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christopher Belcher, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Infectious Disease Of Indiana, Psc",
-   "city": "Carmel",
-   "linkedin": "https://www.linkedin.com/in/christopher-belcher-b0b37239",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3117,17 +3788,6 @@
    "org": "Northside Pediatric Associates, Pc",
    "city": "Columbus",
    "linkedin": "https://www.linkedin.com/in/tamara-iorio-5081b4a8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Richer, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Northside Pediatric Associates, Pc",
-   "city": "Columbus",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
@@ -3526,17 +4186,6 @@
    "linkedin": "https://www.linkedin.com/in/karen-barnes-ellis-18452a38",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Carey, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Tri-State Pediatric Associates Llc",
-   "city": "Evansville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4014,17 +4663,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jonathan Benson",
-   "title": "Pediatrician",
-   "org": "Parkview Health System,Inc.",
-   "city": "Fort Wayne",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lisa Bergeron, M.D",
    "title": "Pediatrician",
    "org": "Professional Emergency Physicians Inc",
@@ -4065,28 +4703,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Candace Caldwell, M.D",
-   "title": "Neonatologist",
-   "org": "Professional Emergency Physicians Inc",
-   "city": "Fort Wayne",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Cameron, M.D",
-   "title": "Neonatologist",
-   "org": "Northern Indiana Neonatal Associates, Pc",
-   "city": "Fort Wayne",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4586,17 +5202,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rebecca Franklin, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Arnett Clinic, Llc",
-   "city": "Frankfort",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Anna Musser, RN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Arnett Clinic, Llc",
@@ -4736,17 +5341,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Barrett, MD",
-   "title": "Pediatrician",
-   "org": "The South Bend Clinic Llc",
-   "city": "Granger",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5378,17 +5972,6 @@
    "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@bcm.edu"
   },
   {
-   "name": "Muayad Alali, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Hospitals Medical Group INC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/muayad-alali-34154441",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ryan Alexy, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Iu Health Medical Group Riley Specialists LLC",
@@ -5510,17 +6093,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mark Ayers, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Benjamin Bacon, MD",
    "title": "Pediatrician",
    "org": "Iu Health Medical Group LLC",
@@ -5550,17 +6122,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mariju Baluyot, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5616,17 +6177,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sandeep Batra, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5697,17 +6247,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Adnan Bhutta, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Pediatric Associates, Inc.",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/adnanbhutta",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Harvey Bieler, MD",
    "title": "Pediatrician",
    "org": "Rutgers Health-Rwj Scleroderma Program",
@@ -5715,17 +6254,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Black, M.D",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/william-black-02000b17",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5880,17 +6408,6 @@
    "linkedin": "https://www.linkedin.com/in/alexandra-britten-66280171",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katherine Brooks, MD",
-   "title": "Pediatrician",
-   "org": "Fairview Health Services",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6089,17 +6606,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Pi Chun Cheng, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6610,17 +7116,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "James Fortenberry, MD",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Fortunak, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Community Physicians Of Indiana INC",
@@ -6665,17 +7160,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Friedman, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Blake Froberg, M.D",
    "title": "Pediatric Medical Toxicologist",
    "org": "Iu Health Medical Group Riley Specialists LLC",
@@ -6694,17 +7178,6 @@
    "linkedin": "https://www.linkedin.com/in/courtney-frye-b3b468186",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Fuqua, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Deaconess Clinic INC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6804,17 +7277,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anisha Gohil, D.O",
-   "title": "Pediatric Endocrinologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7069,7 +7531,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu"
   },
   {
    "name": "Allison Hammer, NP",
@@ -7105,28 +7567,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dana Hartman, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Professional Staff Management",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsey Haut, MD",
-   "title": "Pediatrician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Melanie Hayes, M.D",
    "title": "Pediatrician",
    "org": "Windrose Health Network, Inc.",
@@ -7156,17 +7596,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shaina Hecht",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7255,17 +7684,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Hobson, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Pediatric Associates INC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/michael-hobson-9054a821",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7402,28 +7820,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Richard Hussey, MD",
-   "title": "Pediatrician",
-   "org": "Josephson-Wallack-Munshower Neurology Pc",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vlad Ianus, MD",
-   "title": "Neonatologist",
-   "org": "Unm Medical Group INC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Erik Imel, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Iu Health Medical Group LLC",
@@ -7438,17 +7834,6 @@
    "name": "Kyle Jackson, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Seethal Jacob, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Pediatric Associates INC",
    "city": "Indianapolis",
    "linkedin": "",
    "email": "",
@@ -7508,17 +7893,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Johansen, D.O",
-   "title": "Pediatric Cardiologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7644,17 +8018,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jessica Kanis, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kristine Kauffman, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Pediatric Associates INC",
@@ -7776,17 +8139,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Myda Khalid, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/myda-khalid-b64092355",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Khouli, MD",
    "title": "Pediatrician",
    "org": "Cep America LLC",
@@ -7805,17 +8157,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Miriam Kim, D.O",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7970,17 +8311,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marciana Laster, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/marciana-laster-71014621b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8260,17 +8590,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah McKenna, MD",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Daniel McKenney, MD",
    "title": "Pediatric Nephrologist",
    "org": "St Vincent Pediatric Subspecialties",
@@ -8502,28 +8821,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Heather Muston, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ward Myers, MD",
-   "title": "Pediatrician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Buria Naeem, MBBS, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Ut Lebonheur Pediatric Specialists, INC.",
@@ -8612,17 +8909,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mara Nitu, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Christine Nix",
    "title": "Pediatrician",
    "org": "Iu Health Medical Group LLC",
@@ -8654,17 +8940,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@rochester.edu"
-  },
-  {
-   "name": "Benjamin Nti, MD",
-   "title": "Pediatrician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Julia O'Hara, CPNP, CPN, CPHON",
@@ -8733,28 +9008,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jyoti Patel, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Professional Staff Management",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/pateljpp",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202206",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Palka Patel, M.D",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/palka-patel-6b846a178",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Neha Patel, M.D",
    "title": "Pediatrician",
    "org": "Eskenazi Medical Group INC",
@@ -8769,17 +9022,6 @@
    "name": "Eneysis Pena, MD",
    "title": "Neonatologist",
    "org": "Obstetrix Medical Group Of Indiana, P.C.",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Phillips, M.D",
-   "title": "Pediatrician",
-   "org": "Southside Pediatrics, Inc.",
    "city": "Indianapolis",
    "linkedin": "",
    "email": "",
@@ -8887,17 +9129,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sandeep Puranik, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/sandeep-puranik-md-faap-atsf-32ba70b1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ivana Radovanovic, MD",
    "title": "Pediatrician",
    "org": "Windrose Health Network, Inc.",
@@ -8982,28 +9213,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cynthia Reed, MD",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/cynthia-s-reed",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kyra Reed, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9437,17 +9646,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nomi Sherwin, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "University Pediatric Associates INC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/nomi-sherwin-b8301572",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marcia Shew, MD",
    "title": "Adolescent Medicine Physician",
    "org": "The Health And Hospital Corporation Of Marion County",
@@ -9668,28 +9866,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Julie Stark, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Starr, MD, MPH",
-   "title": "Pediatric Nephrologist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/michelle-starr-5a2853230",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ryan Stegink, MD",
    "title": "Pediatrician",
    "org": "The Health And Hospital Corporation Of Marion County",
@@ -9786,7 +9962,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@iu.edu"
   },
   {
    "name": "Florence Sun, DO",
@@ -9939,17 +10115,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alvaro Tori, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10207,17 +10372,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Weaver, MD",
-   "title": "Pediatrician",
-   "org": "Iu Medical Group",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bree Weaver, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Iu Health Medical Group LLC",
@@ -10306,17 +10460,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sarah Wiehe, MD",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Megan Wilde",
    "title": "Pediatric Cardiologist",
    "org": "Iu Health Medical Group Riley Specialists LLC",
@@ -10335,28 +10478,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebekah Williams, MD, MS",
-   "title": "Adolescent Medicine Physician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Wilson, MD",
-   "title": "Pediatrician",
-   "org": "Indiana University Health Southern Indiana Physicians LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/michael-wilson-66a91216",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10394,17 +10515,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Melissa Winters, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "St. Vincent Children'S Hospital",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Cristina Wiseman, RN, MSN, CPNP, FNP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Community Physician Network Urgent Care Llc",
@@ -10438,17 +10548,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Woodward, MD",
-   "title": "Pediatrician",
-   "org": "The Health And Hospital Corporation Of Marion County",
-   "city": "Indianapolis",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Margaret Workman, MD",
    "title": "Pediatrician",
    "org": "Southpointe Pediatrics, Pc",
@@ -10456,17 +10555,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mouhammad Yabrodi, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Iu Health Medical Group Riley Specialists LLC",
-   "city": "Indianapolis",
-   "linkedin": "https://www.linkedin.com/in/mouhammad-yabrodi-4b514585",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10610,17 +10698,6 @@
    "linkedin": "https://www.linkedin.com/in/carrie-crigger-76572269",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Fleming, M.D",
-   "title": "Pediatrician",
-   "org": "Southern Indiana Pediatrics P.S.C.",
-   "city": "Jeffersonville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -11004,83 +11081,6 @@
    "org": "Arnett Clinic, Llc",
    "city": "Lafayette",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sabeena Hubbard, D.O",
-   "title": "Pediatrician",
-   "org": "Arnett Clinic, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mara Humberg, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Riggs Community Health Center Inc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anas Jaber, MD",
-   "title": "Pediatrician",
-   "org": "Arnett Clinic, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maritha Jonkman, MD",
-   "title": "Pediatrician",
-   "org": "Unity Healthcare, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "L Kenney, MD",
-   "title": "Pediatrician",
-   "org": "Riggs Community Health Center Inc",
-   "city": "Lafayette",
-   "linkedin": "https://www.linkedin.com/in/michael-l-kenney-23493b255",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202267",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wasim Khasawneh, MD",
-   "title": "Neonatologist",
-   "org": "Arnett Clinic, Llc",
-   "city": "Lafayette",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Steven Lipp, MD",
-   "title": "Pediatrician",
-   "org": "Arnett Clinic, Llc",
-   "city": "Lafayette",
-   "linkedin": "https://www.linkedin.com/in/steven-lipp-57413346",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",

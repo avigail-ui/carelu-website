@@ -3,8 +3,8 @@
  "slug": "maine",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-maine.csv",
  "count": 577,
- "emails": 3,
- "practiceEmails": 23,
+ "emails": 17,
+ "practiceEmails": 21,
  "phones": 577,
  "direct": 0,
  "roles": [
@@ -75,6 +75,28 @@
  ],
  "rows": [
   {
+   "name": "Amy Barrett, MD",
+   "title": "Pediatrician",
+   "org": "Penobscot Community Health Center",
+   "city": "Bangor",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@geisinger.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristen Martin, DO",
+   "title": "Pediatrician",
+   "org": "Penobscot Community Health Center",
+   "city": "Bangor",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Christine Bender, D.O",
    "title": "Pediatric Sports Medicine Physician",
    "org": "Martin'S Point Health Care, INC.",
@@ -97,6 +119,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ann Brooks, MD",
+   "title": "Pediatrician",
+   "org": "Waterboro Village Pediatrics Llc Pa",
+   "city": "East Waterboro",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Walsh, DO",
+   "title": "Pediatrician",
+   "org": "Waterboro Village Pediatrics Llc Pa",
+   "city": "East Waterboro",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@duny.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Fanburg, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "Mainehealth",
+   "city": "Falmouth",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Fowler",
+   "title": "Pediatrician",
+   "org": "Mainehealth",
+   "city": "Falmouth",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barry Hugo, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Webber Hospital Association",
+   "city": "Kennebunk",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ihs.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathryn Saunders, APRN, CNP",
+   "title": "Pediatrician",
+   "org": "Katahdin Valley Health Center",
+   "city": "Millinocket",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@ulster.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jocelin Reatiraza, MD",
    "title": "Pediatrician",
    "org": "Mainegeneral Medical Center",
@@ -104,6 +192,72 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mainegeneral.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Steven Blumenthal, MD",
+   "title": "Pediatrician",
+   "org": "Portland Community Health Center",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Randolph Thomas, MD",
+   "title": "Pediatrician",
+   "org": "Mainehealth",
+   "city": "Portland",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Megan Smetana, CPNP-AC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Cardiology Assoc Pa",
+   "city": "Scarborough",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lucy Rosenbaum, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Mainehealth",
+   "city": "South Portland",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cynthia Howes, C.P.N.P",
+   "title": "Pediatrician",
+   "org": "Waterville Pediatrics Pa",
+   "city": "Waterville",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Power, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Bayview Pediatrics",
+   "city": "Yarmouth",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@latrobe.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -227,17 +381,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Amy Barrett, MD",
-   "title": "Pediatrician",
-   "org": "Penobscot Community Health Center",
-   "city": "Bangor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@pchc.com"
   },
   {
    "name": "Aimee Beaton, DO",
@@ -439,17 +582,6 @@
   },
   {
    "name": "Thomas Lever, MD",
-   "title": "Pediatrician",
-   "org": "Penobscot Community Health Center",
-   "city": "Bangor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@pchc.com"
-  },
-  {
-   "name": "Kristen Martin, DO",
    "title": "Pediatrician",
    "org": "Penobscot Community Health Center",
    "city": "Bangor",
@@ -977,28 +1109,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ann Brooks, MD",
-   "title": "Pediatrician",
-   "org": "Waterboro Village Pediatrics Llc Pa",
-   "city": "East Waterboro",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Walsh, DO",
-   "title": "Pediatrician",
-   "org": "Waterboro Village Pediatrics Llc Pa",
-   "city": "East Waterboro",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tiankai Du, MD",
    "title": "Pediatrician",
    "org": "Maine Coast Regional Health Facilities",
@@ -1011,28 +1121,6 @@
   },
   {
    "name": "Dayle Dewey, MD",
-   "title": "Pediatrician",
-   "org": "Mainehealth",
-   "city": "Falmouth",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Fanburg, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "Mainehealth",
-   "city": "Falmouth",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicholas Fowler",
    "title": "Pediatrician",
    "org": "Mainehealth",
    "city": "Falmouth",
@@ -1138,17 +1226,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barry Hugo, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Webber Hospital Association",
-   "city": "Kennebunk",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1450,17 +1527,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathryn Saunders, APRN, CNP",
-   "title": "Pediatrician",
-   "org": "Katahdin Valley Health Center",
-   "city": "Millinocket",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Steven Feder, D.O",
    "title": "Pediatrician",
    "org": "Lifespan Family Healthcare Llc",
@@ -1556,17 +1622,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Steven Blumenthal, MD",
-   "title": "Pediatrician",
-   "org": "Portland Community Health Center",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2352,17 +2407,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Randolph Thomas, MD",
-   "title": "Pediatrician",
-   "org": "Mainehealth",
-   "city": "Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Vozzelli, M.D",
    "title": "Neonatologist",
    "org": "Maine Neonatology Associates",
@@ -2748,17 +2792,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Megan Smetana, CPNP-AC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Pediatric Cardiology Assoc Pa",
-   "city": "Scarborough",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "S. Ashley Speckhart, MD",
    "title": "Pediatrician",
    "org": "Mainehealth",
@@ -2848,17 +2881,6 @@
   },
   {
    "name": "Cynthia Robbins, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Mainehealth",
-   "city": "South Portland",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lucy Rosenbaum, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Mainehealth",
    "city": "South Portland",
@@ -3046,17 +3068,6 @@
   },
   {
    "name": "Michael Hofmann, M.D",
-   "title": "Pediatrician",
-   "org": "Waterville Pediatrics Pa",
-   "city": "Waterville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cynthia Howes, C.P.N.P",
    "title": "Pediatrician",
    "org": "Waterville Pediatrics Pa",
    "city": "Waterville",
@@ -3371,17 +3382,6 @@
    "linkedin": "https://www.linkedin.com/in/marcelle-pick-a2b7072",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Power, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Bayview Pediatrics",
-   "city": "Yarmouth",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

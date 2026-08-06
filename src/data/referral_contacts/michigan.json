@@ -3,8 +3,8 @@
  "slug": "michigan",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-michigan.csv",
  "count": 4336,
- "emails": 58,
- "practiceEmails": 223,
+ "emails": 184,
+ "practiceEmails": 222,
  "phones": 4335,
  "direct": 0,
  "roles": [
@@ -57,11 +57,11 @@
    "count": 149
   },
   {
-   "name": "Spectrum Health Hospitals",
+   "name": "Iha Health Services Corporation",
    "count": 146
   },
   {
-   "name": "Iha Health Services Corporation",
+   "name": "Spectrum Health Hospitals",
    "count": 146
   },
   {
@@ -75,6 +75,204 @@
  ],
  "rows": [
   {
+   "name": "Jeremy Adler, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/jeremy-adler-b8196838",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ayesha Ahmad, MBBS",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/ayeshaahmad",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Brophy, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/brian-brophy-5011344",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Carlton, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/erin-kathryn-johnston",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsay Caverly, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kao-Ping Chua, M.D, PH.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/kaopingchua",
+   "email": "c\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melinda Delaney, MD",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Flood",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://uk.linkedin.com/in/david-flood-a43454b",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Goldman, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/joshuagoldmanmd",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Grim, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/andrew-grim-60453b14",
+   "email": "g\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Hill, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@dhha.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Janssen, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/erin-janssen-936b3b1bb",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Keefer, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Catherine Keegan, MD, PHD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/catherine-keegan-705739127",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Kershaw, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/david-kershaw-78237b32",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kristen Krieger, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/kristen-krieger-444597251",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joyce Lee, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/joyce-lee-cpa",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Grace Lee, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/grace-lee-nyc",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Taylor Lin, M.D",
    "title": "Pediatric Allergist & Immunologist",
    "org": "Allergy & Immunology Associates Of Ann Arbor, P.C.",
@@ -82,6 +280,116 @@
    "linkedin": "https://www.linkedin.com/in/taylor-swabash-lin",
    "email": "t\u2022\u2022\u2022@annarborallergy.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Luke, DO",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://uk.linkedin.com/in/amyparkinson",
+   "email": "a\u2022\u2022\u2022\u2022@luc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Carey Lumeng, MD, PHD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/carey-lumeng-49725020",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jacqueline Madison, MD",
+   "title": "Pediatric Rheumatologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Prashant Mahajan, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/prashant-mahajan-a0ba61155",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Marks, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/adammarks",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Matlen, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Meisner, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/joshua-meisner-nj",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ram Menon, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/rpmenon1",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Zubin Modi, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rajen Mody, MB BS",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -97,6 +405,149 @@
    "practiceEmail": ""
   },
   {
+   "name": "Samya Nasr, MB BCH",
+   "title": "Pediatric Pulmonologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/samya-nasr-6592223",
+   "email": "s\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly O'Shea, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/kelly-o-shea-21a70a243",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Folafoluwa Odetola, MB, CHB",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Peng, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/david-peng-8a6b7926",
+   "email": "d\u2022\u2022\u2022\u2022@usc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lindsay Petty, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/lindsay-petty",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shaili Rajput, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://in.linkedin.com/in/shaili-rajput-945ba2339",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Krishna Rao, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/krishna-rao-62489066",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nadine Saad, M.D",
+   "title": "Pediatric Rheumatologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://ca.linkedin.com/in/nadine-saad-239505328",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Saba, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/thomassaba1",
+   "email": "t\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Sedig, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/laura-sedig-929864112",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gerald Serwer, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/gerald-serwer-87366a16",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aarti Shakkottai, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "University Of Texas Southwestern Medical Center At Dallas",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jordan Shavit, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/jordan-shavit",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Andrew Shieh, MD",
    "title": "Pediatrician",
    "org": "Emergency Medicine Specialists Of Orange County",
@@ -108,6 +559,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sharon Singh, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Walling, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/emily-walling-81340b176",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Angela Weyand, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/angela-weyand-229577173",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Whitehead, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@ecu.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthias Wolf, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/matthias-wolf-310a4b2b9",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gregory Yanik, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/gregory-yanik-135046139",
+   "email": "g\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "George Zacur, M.D., M.S",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Zampi, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julie Ziobro, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Ann Arbor",
+   "linkedin": "https://www.linkedin.com/in/julie-ziobro-2b8bb5170",
+   "email": "z\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tracy Brandenburg, MD",
+   "title": "Pediatrician",
+   "org": "Covenant Medical Center INC",
+   "city": "Bay City",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@crowley.k12.tx.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Walker, M.D",
+   "title": "Pediatrician",
+   "org": "Bay Pediatric Clinic",
+   "city": "Bay City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@stthomas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Katherine Keith, M.D",
    "title": "Pediatrician",
    "org": "Lakeland Medical Practices",
@@ -115,6 +687,28 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@pediatricsplus.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Wozniak, M.D",
+   "title": "Pediatrician",
+   "org": "Bloom Pediatrics Pc",
+   "city": "Birmingham",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hoga.pl",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Duffy, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Early Solutions Clinic, Llc",
+   "city": "Bloomfield Hills",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@med.umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -137,6 +731,39 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@twmi.rr.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tracey Alperin, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Brighton",
+   "linkedin": "https://www.linkedin.com/in/tracey-alperin-77053023",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Arjun Gowda",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Brighton",
+   "linkedin": "https://uk.linkedin.com/in/arjun-gowda-9aa995105",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Annissa Hammoud, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Brighton",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -196,6 +823,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Matthew Davis, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Canton",
+   "linkedin": "https://www.linkedin.com/in/matthewneilldavis",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Hepper, M.D",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Canton",
+   "linkedin": "https://www.linkedin.com/in/amy-hepper-4b850769",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wendy Hulsing, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Canton",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kelly Roberts, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Iha Health Services Corporation",
+   "city": "Canton",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@nau.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Esther Yoon, MD",
+   "title": "Pediatrician",
+   "org": "Regents Of The University Of Michigan",
+   "city": "Canton",
+   "linkedin": "https://www.linkedin.com/in/estherxkim",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tara Kelly, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Chelsea",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022@ivesbank.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Thomas, M.D",
+   "title": "Pediatrician",
+   "org": "Premiere Pediatrics, Pc",
+   "city": "Clarkston",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "William Clark, MD",
    "title": "Neonatologist",
    "org": "Oakwood Healthcare, Inc",
@@ -218,6 +922,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "David Crawford, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Clinics For Rehabilitative Services",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Barbara Cushing, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Of Michigan",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@med.wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Davalos, MD",
+   "title": "Pediatrician",
+   "org": "Detroit Medical Center",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@dph.sbcounty.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cheryl Jackson, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Harper University Hospital",
+   "city": "Detroit",
+   "linkedin": "https://www.linkedin.com/in/cheryljacksonentertainment",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@med.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Kelly, FNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Riverview Hospital",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ucalgary.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marissa Lightbourne, MD",
+   "title": "Pediatrician",
+   "org": "University Internal Medicine Specialists",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vinod Misra, MD PHD",
+   "title": "Pediatrician",
+   "org": "Friendship Manor Nursing Home",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@cmich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Pelshaw, MD",
+   "title": "Pediatrician",
+   "org": "Hurley Medical Center",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@dmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharada Sarnaik, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Hospital Of Michigan",
+   "city": "Detroit",
+   "linkedin": "https://www.linkedin.com/in/sharada-sarnaik-1770bba6",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@med.wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Secord, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Henry Ford Health System",
+   "city": "Detroit",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@med.wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gautam Singh, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "University Pediatricians",
+   "city": "Detroit",
+   "linkedin": "https://www.linkedin.com/in/gautam-singh-61302463",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@kids.wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Muthayipalayam Thirumoorthi, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Ascension St. John Hospital",
@@ -229,6 +1054,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Suzanne Thomashow, MD PHD",
+   "title": "Pediatrician",
+   "org": "Turke And Thomashow Pediatrics Pc",
+   "city": "Dexter",
+   "linkedin": "https://www.linkedin.com/in/suzanne-thomashow-6a3aaa40",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Lipsitz, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Care Of Lansing Pc",
+   "city": "East Lansing",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lori Finn, MD",
+   "title": "Pediatrician",
+   "org": "Haller & Hug, Pc",
+   "city": "Farmington Hills",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022@sage.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Chad Mayer, DO",
    "title": "Pediatrician",
    "org": "Allergy And Asthma Institute Of Se Michigan",
@@ -236,6 +1094,50 @@
    "linkedin": "https://www.linkedin.com/in/chad-mayer-27353a14",
    "email": "c\u2022\u2022\u2022\u2022\u2022@theallergydoc.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nancy Mason, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Massachusetts General Physicians Organization INC",
+   "city": "Ferndale",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@physicianhealthcare.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mona Hanna, MD MPH",
+   "title": "Pediatrician",
+   "org": "Hurley Medical Center",
+   "city": "Flint",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hurleymc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Faisal Mawri, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric & Adolescent Advance Care Pllc",
+   "city": "Flint",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anju Sawni, MD",
+   "title": "Pediatrician",
+   "org": "Hurley Medical Center",
+   "city": "Flint",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@hurleymc.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -295,6 +1197,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sarah Kelso, APN/CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Alger Pediatrics Pc",
+   "city": "Grand Rapids",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uvmhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Robert Lang, MD",
    "title": "Pediatrician",
    "org": "Grand Valley Medical Specialists Plc",
@@ -313,6 +1226,28 @@
    "linkedin": "https://www.linkedin.com/in/marcy-larson-losing-a-child-podcast",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@foresthillspediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kim Lee, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Spectrum Health Primary Care Partners",
+   "city": "Grand Rapids",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022@stanfordchildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Farhan Malik, DO",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Florida Jacksonville Physicians, INC.",
+   "city": "Grand Rapids",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -357,6 +1292,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022@foresthillspediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Pott, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Grand Rapids",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -416,6 +1362,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Susan Andrews, MD",
+   "title": "Pediatrician",
+   "org": "Jami A. Wichert M.D. Pllc",
+   "city": "Haslett",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gsk.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Beck, MD",
+   "title": "Pediatrician",
+   "org": "Bright Start Pediatrics, P.C.",
+   "city": "Hastings",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Philip Jackson, M.D",
+   "title": "Pediatrician",
+   "org": "Western Wayne Family Health Centers",
+   "city": "Inkster",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Max Chen, M.D",
+   "title": "Pediatrician",
+   "org": "Center For Family Health",
+   "city": "Jackson",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@medportal.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Carey, M.D",
+   "title": "Pediatrician",
+   "org": "Paragon Health Pc",
+   "city": "Kalamazoo",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@cornell.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Davidson, M.D",
+   "title": "Pediatrician",
+   "org": "Healthcare Midwest Pc",
+   "city": "Kalamazoo",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uvm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Robin Murphy, MD",
    "title": "Pediatric Cardiologist",
    "org": "Bronson Methodist Hospital",
@@ -427,6 +1439,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Swati Patel, MD",
+   "title": "Pediatrician",
+   "org": "Michigan State University Kalamazoo Center For Medical Studies",
+   "city": "Kalamazoo",
+   "linkedin": "https://www.linkedin.com/in/swati-patel",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robin Pierucci, M.D",
+   "title": "Neonatologist",
+   "org": "Southwestern Michigan Neonatology, P.C.",
+   "city": "Kalamazoo",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Usman Saeed, MD",
+   "title": "Pediatrician",
+   "org": "Michigan State University Kalamazoo Center For Medical Studies",
+   "city": "Kalamazoo",
+   "linkedin": "",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Burke, MD",
+   "title": "Pediatrician",
+   "org": "Child Health Partners Pc",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@pbrc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Santokh Dhillon, MD",
+   "title": "Pediatrician",
+   "org": "Sparrow",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@iwk.nshealth.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Linda Fletcher, N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Child Health Partners Pc",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@michigan.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Guertin, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Edward W. Sparrow Hospital Association",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Courtney Hart, MD",
    "title": "Pediatrician",
    "org": "Capital Area Pediatrics",
@@ -434,6 +1523,28 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@capitalareapeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Klein, MD",
+   "title": "Pediatrician",
+   "org": "Lansing Pediatric Associates, P.C.",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tarek Mohamed, MD",
+   "title": "Neonatologist",
+   "org": "Edward W Sparrow Hospital Association",
+   "city": "Lansing",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@lsuhs.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -456,6 +1567,50 @@
    "linkedin": "https://www.linkedin.com/in/arti-shah-6b355088",
    "email": "a\u2022\u2022\u2022\u2022@capitalareapeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Todd Marcus, DO",
+   "title": "Pediatrician",
+   "org": "Dr. Todd'S Pediatrics, Pc",
+   "city": "Livonia",
+   "linkedin": "https://www.linkedin.com/in/todd-marcus-0463125",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kenneth Hill, M.D",
+   "title": "Pediatrician",
+   "org": "Kenneth C. Hill, M. D., P. C.",
+   "city": "Ludington",
+   "linkedin": "https://www.linkedin.com/in/kenneth-hill",
+   "email": "k\u2022\u2022\u2022\u2022@jhsph.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Ross, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Memorial Medical Center Of West Michigan",
+   "city": "Ludington",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ucdenver.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Hamilton, M.D",
+   "title": "Pediatrician",
+   "org": "Mymichigan Medical Group",
+   "city": "Midland",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uwa.edu.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -570,6 +1725,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Avinash Chawla, MD",
+   "title": "Pediatrician",
+   "org": "Northeast Pediatric Associates, P.C.",
+   "city": "Rochester Hills",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kim Alt, MD",
    "title": "Pediatrician",
    "org": "Rockford Pediatrics",
@@ -625,6 +1791,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ami Shah, MD",
+   "title": "Pediatrician",
+   "org": "Mukund R Shah Md Plc",
+   "city": "Saint Joseph",
+   "linkedin": "https://www.linkedin.com/in/ami-shah-4b5b709",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Beckman, D.O",
+   "title": "Pediatrician",
+   "org": "Chippewa County War Memorial Hospital Inc.",
+   "city": "Sault Sainte Marie",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@georgetown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yong Kim, M.D",
+   "title": "Pediatrician",
+   "org": "Child And Adolescent Center P C",
+   "city": "Southgate",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@snu.ac.kr",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Broda, C.P.N.P",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Spring Arbor University",
+   "city": "Spring Arbor",
+   "linkedin": "https://www.linkedin.com/in/mary-broda-7713b419",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@arbor.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abdur Rasheed, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatrics Plus Plc",
+   "city": "Sterling Heights",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@duhs.edu.pk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Durdana Rehman, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Durdana Rehman Md Pc",
+   "city": "Sterling Heights",
+   "linkedin": "https://www.linkedin.com/in/durdana-rehman-md-pc-undefined-234b9b378",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James O'Brien, D.O",
+   "title": "Pediatrician",
+   "org": "Sterling Area Health Center",
+   "city": "Sterling",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@louisville.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202291",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Frederick Johansen, MD",
+   "title": "Pediatrician",
+   "org": "Lakeland Medical Practices",
+   "city": "Stevensville",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ann Avery, NURSE PRACTITIONER",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Traverse Health Clinic And Coalition",
+   "city": "Traverse City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@metrohealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Robertson, MD",
+   "title": "Pediatrician",
+   "org": "Kids Creek Childrens Clinic Pc",
+   "city": "Traverse City",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Abraham, MD",
+   "title": "Pediatrician",
+   "org": "University Physician Group",
+   "city": "Troy",
+   "linkedin": "https://www.linkedin.com/in/heather-abraham-2a8898211",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@med.wayne.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Derrick Holeman, MD",
    "title": "Pediatrician",
    "org": "Abc Pediatrics, Pc",
@@ -669,6 +1956,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeffrey Fisher",
+   "title": "Adolescent Medicine Physician",
+   "org": "Michigan Adult & Child Medicine",
+   "city": "Warren",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uconn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Foster, M.D",
+   "title": "Pediatrician",
+   "org": "Complete Care Chiropractic Clinic Llc",
+   "city": "Warren",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@montefiore.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dawn Seifert, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Macomb Pediatric Associatea P.C",
+   "city": "Warren",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mgschools.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Mary Steele, MD",
    "title": "Pediatrician",
    "org": "Michigan Adult & Child Medicine",
@@ -702,6 +2022,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Hopper, MD",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia McNally, MD",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@proton.me",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Piniatoglou, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ihacares.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sara Platte, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Robida, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Benjamin Song, MD",
    "title": "Pediatrician",
    "org": "Allergy & Immunology Associates Of Ann Arbor, P.C.",
@@ -709,6 +2084,17 @@
    "linkedin": "https://www.linkedin.com/in/benjamin-song-56749129a",
    "email": "b\u2022\u2022\u2022\u2022@annarborallergy.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Neal Weinberg, M.D",
+   "title": "Pediatrician",
+   "org": "Iha Health Services Corporation",
+   "city": "Ypsilanti",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -955,17 +2341,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeremy Adler, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/jeremy-adler-b8196838",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Laura Agresta, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Care Of Chelsea, Pc",
@@ -982,17 +2357,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/jennifer-agrusa-5ba66ab9",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ayesha Ahmad, MBBS",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/ayeshaahmad",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -1395,17 +2759,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Brophy, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/brian-brophy-5011344",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brendan Burke, DO",
    "title": "Pediatric Cardiologist",
    "org": "Regents Of The University Of Michigan",
@@ -1472,17 +2825,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Erin Carlton, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/erin-kathryn-johnston",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kristin Cauchon, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Regents Of The University Of Michigan",
@@ -1490,17 +2832,6 @@
    "linkedin": "https://www.linkedin.com/in/kristin-cauchon-2a9b51274",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsay Caverly, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1598,17 +2929,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/joy-christensen-84b0b318",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kao-Ping Chua, M.D, PH.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/kaopingchua",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -1761,17 +3081,6 @@
    "name": "Brynn Dechert-Crooks, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melinda Delaney, MD",
-   "title": "Pediatrician",
-   "org": "Rhode Island Hospital",
    "city": "Ann Arbor",
    "linkedin": "",
    "email": "",
@@ -2000,17 +3309,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Flood",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://uk.linkedin.com/in/david-flood-a43454b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Andrea Franson, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Regents Of The University Of Michigan",
@@ -2088,17 +3386,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Joshua Goldman, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/joshuagoldmanmd",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Paula Goldman, MD",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan-Uhs-University Health Ser",
@@ -2172,17 +3459,6 @@
    "linkedin": "https://www.linkedin.com/in/ryan-greene-casp-2a2b0826",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrew Grim, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/andrew-grim-60453b14",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2374,17 +3650,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Hill, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kiti Ho, MD",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -2423,17 +3688,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/elizabeth-jahns-92427711b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Janssen, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/erin-janssen-936b3b1bb",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2517,39 +3771,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patricia Keefer, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Catherine Keegan, MD, PHD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/catherine-keegan-705739127",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Kershaw, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/david-kershaw-78237b32",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sophia Khalil, MD",
    "title": "Pediatric Nephrologist",
    "org": "Spectrum Health Hospitals",
@@ -2623,17 +3844,6 @@
    "linkedin": "https://www.linkedin.com/in/emilie-korn-b6a324257",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kristen Krieger, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/kristen-krieger-444597251",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2733,28 +3943,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joyce Lee, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/joyce-lee-cpa",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Grace Lee, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/grace-lee-nyc",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2935,17 +4123,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Luke, DO",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://uk.linkedin.com/in/amyparkinson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Lukela, MD",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -2953,17 +4130,6 @@
    "linkedin": "https://www.linkedin.com/in/michael-lukela-md-81912b251",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carey Lumeng, MD, PHD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/carey-lumeng-49725020",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3001,17 +4167,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jacqueline Madison, MD",
-   "title": "Pediatric Rheumatologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Katherine Magerko",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -3019,17 +4174,6 @@
    "linkedin": "https://www.linkedin.com/in/katherine-magerko-95773516a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Prashant Mahajan, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/prashant-mahajan-a0ba61155",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3100,17 +4244,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Adam Marks, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/adammarks",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Donald Martin, M.D",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -3138,17 +4271,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/anna-mathew-967b23132",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Matlen, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -3298,28 +4420,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Joshua Meisner, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/joshua-meisner-nj",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ram Menon, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/rpmenon1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Vija Merrill, MD",
    "title": "Pediatrician",
    "org": "Liberty Pediatrics Pllc",
@@ -3386,28 +4486,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Zubin Modi, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rajen Mody, MB BS",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Smriti Mohan, M.D",
    "title": "Pediatric Rheumatologist",
    "org": "Regents Of The University Of Michigan",
@@ -3457,17 +4535,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/emile-muallem-md-7b1072377",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samya Nasr, MB BCH",
-   "title": "Pediatric Pulmonologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/samya-nasr-6592223",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -3547,28 +4614,6 @@
    "linkedin": "https://www.linkedin.com/in/kimberlyodonnellmullins",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kelly O'Shea, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/kelly-o-shea-21a70a243",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Folafoluwa Odetola, MB, CHB",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3701,28 +4746,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Peng, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/david-peng-8a6b7926",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsay Petty, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/lindsay-petty",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3881,17 +4904,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shaili Rajput, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://in.linkedin.com/in/shaili-rajput-945ba2339",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ixsy Ramirez, MD, MPH",
    "title": "Pediatric Pulmonologist",
    "org": "Regents Of The University Of Michigan",
@@ -3899,17 +4911,6 @@
    "linkedin": "https://www.linkedin.com/in/ixsy-ramirez-md-mph-178169b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Krishna Rao, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/krishna-rao-62489066",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4029,28 +5030,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://www.linkedin.com/in/olivia-ruth-messer-9a372138",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nadine Saad, M.D",
-   "title": "Pediatric Rheumatologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://ca.linkedin.com/in/nadine-saad-239505328",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Thomas Saba, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/thomassaba1",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4189,17 +5168,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Laura Sedig, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/laura-sedig-929864112",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Andrew Seiler, MD",
    "title": "Pediatrician",
    "org": "Liberty Pediatrics Pllc",
@@ -4207,17 +5175,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202258",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gerald Serwer, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/gerald-serwer-87366a16",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4244,17 +5201,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aarti Shakkottai, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "University Of Texas Southwestern Medical Center At Dallas",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "t\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu"
-  },
-  {
    "name": "Meredith Sharp",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -4271,17 +5217,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://za.linkedin.com/in/alta-sharp-107ba846",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jordan Shavit, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/jordan-shavit",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4350,17 +5285,6 @@
    "linkedin": "https://www.linkedin.com/in/andrewcarlsinger",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sharon Singh, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4794,17 +5718,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Emily Walling, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/emily-walling-81340b176",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stacy Walters, M.D",
    "title": "Pediatrician",
    "org": "Iha Health Services Corporation",
@@ -4871,17 +5784,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Angela Weyand, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/angela-weyand-229577173",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Eric Wheatley, MD",
    "title": "Pediatrician",
    "org": "Iha Health Services Corporation",
@@ -4889,17 +5791,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Whitehead, M.D",
-   "title": "Pediatrician",
-   "org": "Iha Health Services Corporation",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4931,17 +5822,6 @@
    "org": "Regents Of The University Of Michigan",
    "city": "Ann Arbor",
    "linkedin": "https://ca.linkedin.com/in/savanah-dv-wilson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Matthias Wolf, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/matthias-wolf-310a4b2b9",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -5003,17 +5883,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gregory Yanik, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/gregory-yanik-135046139",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Yee, M.D",
    "title": "Pediatric Nephrologist",
    "org": "Regents Of The University Of Michigan",
@@ -5047,28 +5916,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "George Zacur, M.D., M.S",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Zampi, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Vicki Zilke, CNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Iha Health Services Corporation",
@@ -5076,17 +5923,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Julie Ziobro, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Ann Arbor",
-   "linkedin": "https://www.linkedin.com/in/julie-ziobro-2b8bb5170",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5377,17 +6213,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tracy Brandenburg, MD",
-   "title": "Pediatrician",
-   "org": "Covenant Medical Center INC",
-   "city": "Bay City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Debbie Filek, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Debbie Filek Md",
@@ -5428,17 +6253,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Walker, M.D",
-   "title": "Pediatrician",
-   "org": "Bay Pediatric Clinic",
-   "city": "Bay City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5828,17 +6642,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Maria Wozniak, M.D",
-   "title": "Pediatrician",
-   "org": "Bloom Pediatrics Pc",
-   "city": "Birmingham",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathleen Asmar, DNP, RN, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Maureen A Kelly Md Pllc",
@@ -5875,17 +6678,6 @@
    "name": "Kimberlee Coleman, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Specialists Of Bloomfield Hills,P.C",
-   "city": "Bloomfield Hills",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Duffy, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Early Solutions Clinic, Llc",
    "city": "Bloomfield Hills",
    "linkedin": "",
    "email": "",
@@ -6015,17 +6807,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Tracey Alperin, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Brighton",
-   "linkedin": "https://www.linkedin.com/in/tracey-alperin-77053023",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Maria Bule, MD",
    "title": "Pediatrician",
    "org": "Iha Health Services Corporation",
@@ -6092,17 +6873,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Arjun Gowda",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Brighton",
-   "linkedin": "https://uk.linkedin.com/in/arjun-gowda-9aa995105",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bethany Hall, M.D",
    "title": "Pediatrician",
    "org": "Iha Health Services Corporation",
@@ -6110,17 +6880,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Annissa Hammoud, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Brighton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6510,17 +7269,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Davis, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Canton",
-   "linkedin": "https://www.linkedin.com/in/matthewneilldavis",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Inta Ertel, MD",
    "title": "Pediatrician",
    "org": "Regents Of The University Of Michigan",
@@ -6583,28 +7331,6 @@
    "linkedin": "https://www.linkedin.com/in/kelly-harte-b8467959",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Hepper, M.D",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Canton",
-   "linkedin": "https://www.linkedin.com/in/amy-hepper-4b850769",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wendy Hulsing, M.D",
-   "title": "Pediatrician",
-   "org": "Iha Health Services Corporation",
-   "city": "Canton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6807,17 +7533,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kelly Roberts, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Iha Health Services Corporation",
-   "city": "Canton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Madhavi Sennerikuppam, M.D",
    "title": "Pediatrician",
    "org": "Iha Health Services Corporation",
@@ -6977,17 +7692,6 @@
    "org": "Canton Center Pediatrics",
    "city": "Canton",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Esther Yoon, MD",
-   "title": "Pediatrician",
-   "org": "Regents Of The University Of Michigan",
-   "city": "Canton",
-   "linkedin": "https://www.linkedin.com/in/estherxkim",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -7155,17 +7859,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tara Kelly, M.D",
-   "title": "Pediatrician",
-   "org": "Iha Health Services Corporation",
-   "city": "Chelsea",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7373,17 +8066,6 @@
    "org": "Premiere Pediatrics, Pc",
    "city": "Clarkston",
    "linkedin": "https://www.linkedin.com/in/satish-sundar-md-faap-dch-0a00b150",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Thomas, M.D",
-   "title": "Pediatrician",
-   "org": "Premiere Pediatrics, Pc",
-   "city": "Clarkston",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
@@ -8575,7 +9257,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@partnersinwellnesshhc.com"
   },
   {
    "name": "Jennifer Blake, MD",
@@ -8842,28 +9524,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Crawford, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Clinics For Rehabilitative Services",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Barbara Cushing, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thomas Czolgosz, M.D",
    "title": "Pediatrician",
    "org": "Ecs Western Michigan PC",
@@ -8893,17 +9553,6 @@
    "linkedin": "https://www.linkedin.com/in/joy-darden-1a50943b8",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maria Davalos, MD",
-   "title": "Pediatrician",
-   "org": "Detroit Medical Center",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9246,7 +9895,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@partnersinwellnesshhc.com"
   },
   {
    "name": "Rickie Hardaway, MD",
@@ -9392,17 +10041,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Cheryl Jackson, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Harper University Hospital",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/cheryljacksonentertainment",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amrish Jain, M.D",
    "title": "Pediatric Nephrologist",
    "org": "University Pediatricians",
@@ -9465,17 +10103,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margaret Kelly, FNP-BC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Riverview Hospital",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9599,17 +10226,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
    "phoneType": "Practice",
    "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@hfhs.org"
-  },
-  {
-   "name": "Marissa Lightbourne, MD",
-   "title": "Pediatrician",
-   "org": "University Internal Medicine Specialists",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Jennifer Livingston, CPNP-AC",
@@ -9788,17 +10404,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Vinod Misra, MD PHD",
-   "title": "Pediatrician",
-   "org": "Friendship Manor Nursing Home",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathleen Moltz, MD",
    "title": "Pediatric Endocrinologist",
    "org": "Promedica Children'S Specialists",
@@ -9938,17 +10543,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Charles Pelshaw, MD",
-   "title": "Pediatrician",
-   "org": "Hurley Medical Center",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10294,17 +10888,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sharada Sarnaik, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/sharada-sarnaik-1770bba6",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sureyya Savasan, MD",
    "title": "Pediatrician",
    "org": "Children'S Hospital Of Michigan",
@@ -10347,17 +10930,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Secord, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Henry Ford Health System",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@hfhs.org"
   },
   {
    "name": "Swati Sehgal, MD",
@@ -10437,17 +11009,6 @@
    "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@ecs-wmi.com"
   },
   {
-   "name": "Gautam Singh, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/gautam-singh-61302463",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Richard Smith, MD",
    "title": "Pediatrician",
    "org": "University Pediatricians",
@@ -10510,567 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Taub, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/jeffrey-taub-139ba579",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashley Thibodeau",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Friendship Manor Nursing Home",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brenda Thomas, M.D",
-   "title": "Pediatrician",
-   "org": "Jordan & Thomas Pllc",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/brenda-m-thomas-325b5a13",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Philomina Thomas, MD",
-   "title": "Pediatrician",
-   "org": "Universal Pediatrics Pc",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nabeel Toma, MD",
-   "title": "Pediatrician",
-   "org": "Redeemer Family Clinic",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Diana Torpoco Rivera, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Transue, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "Ascension St. John Hospital",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nancy Treece, MD",
-   "title": "Pediatrician",
-   "org": "Detroit Riverview Pediatrics Pc",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Truong, MD",
-   "title": "Pediatrician",
-   "org": "Ascension St. John Hospital",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Taylor Tucker, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Friendship Manor Nursing Home",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gianna Valenti, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/gianna-valenti-md-6b571425a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rudolph Valentini, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nathan Vandjelovic",
-   "title": "Pediatric Pulmonologist",
-   "org": "Detroit Medical Center",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrea Wait, M.D",
-   "title": "Pediatrician",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/andrea-wait-98b72b5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Walton-Doyle, M.D, M.P.H",
-   "title": "Pediatrician",
-   "org": "Iha Olma Primary Care Risk LLC",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Staci Wang, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Indira Warrier, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lindsey Webb, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Vhs Physicians Of Michigan",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathleen Webber, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wanda Whitten-Shurney, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/wanda-whitten-shurney-ba67a329",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tiffney Widner, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alina Witkowski, MD",
-   "title": "Pediatrician",
-   "org": "Ascension St. John Hospital",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/alina-witkowski-58232210b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tess Woehrlen, DO",
-   "title": "Pediatrician",
-   "org": "Friendship Manor Nursing Home",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Deepak Yadav, MD",
-   "title": "Pediatrician",
-   "org": "Henry Ford Health System",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
-   "phoneType": "Practice",
-   "practiceEmail": "h\u2022\u2022\u2022\u2022\u2022\u2022@hfhs.org"
-  },
-  {
-   "name": "Lauren Yagiela, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "https://www.linkedin.com/in/lauren-yagiela-3588b9132",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stacey Yoscovits, MD",
-   "title": "Pediatrician",
-   "org": "University Pediatricians",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ahmar Zaidi, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Children'S Hospital Of Michigan",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yiping Zeng-Wang, FNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Henry Ford Urgent Care",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Douglas Ziegler, MD",
-   "title": "Pediatrician",
-   "org": "Ascension St. John Hospital",
-   "city": "Detroit",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suzanne Thomashow, MD PHD",
-   "title": "Pediatrician",
-   "org": "Turke And Thomashow Pediatrics Pc",
-   "city": "Dexter",
-   "linkedin": "https://www.linkedin.com/in/suzanne-thomashow-6a3aaa40",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Turke, M.D",
-   "title": "Pediatrician",
-   "org": "Turke And Thomashow Pediatrics Pc",
-   "city": "Dexter",
-   "linkedin": "https://www.linkedin.com/in/paul-turke-9263748",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kylene Willsey, M.D",
-   "title": "Pediatrician",
-   "org": "Turke And Thomashow Pediatrics Pc",
-   "city": "Dexter",
-   "linkedin": "https://www.linkedin.com/in/kylene-willsey-md-35231782",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Adeel Yousaf, M.D",
-   "title": "Pediatrician",
-   "org": "Wake Forest University Health Sciences",
-   "city": "Dowagiac",
-   "linkedin": "https://www.linkedin.com/in/adeel-yousaf-aa58b71a8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Daill, MD",
-   "title": "Pediatrician",
-   "org": "Dundee Pediatrics, Pllc",
-   "city": "Dundee",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Krista Hodne, MD",
-   "title": "Pediatrician",
-   "org": "Catherine McAuley Health Services",
-   "city": "Dundee",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katelyn Nordyke, NP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Dundee Pediatrics, Pllc",
-   "city": "Dundee",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jessica Grace, M.D",
-   "title": "Pediatrician",
-   "org": "Michael Solomon Chiropractic, Pllc",
-   "city": "East China",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marlie Campbell, DO",
-   "title": "Pediatrician",
-   "org": "Pediatric Care Of Lansing Pc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Marie Cole, M.D",
-   "title": "Pediatrician",
-   "org": "Msu Health Care Inc.",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cathrine Corwin, CPNP-AC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Medical Observation Services, Pllc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202257",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ashweena Gonuguntla, MD",
-   "title": "Pediatrician",
-   "org": "Michigan State University",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cori Hemming, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Care Of Lansing Pc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suad Khalil, M.D",
-   "title": "Pediatrician",
-   "org": "Msu Health Care Inc.",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Lipsitz, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Care Of Lansing Pc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Melissa Pieroni Long, D.O",
-   "title": "Pediatrician",
-   "org": "Pediatric Care Of Lansing Pc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Douglas Postels, MD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "Michigan State University",
-   "city": "East Lansing",
-   "linkedin": "https://www.linkedin.com/in/douglas-postels-57159978",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Yakov Sigal, M.D",
-   "title": "Pediatrician",
-   "org": "Msu Health Care INC.",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Quincy Tran, DO",
-   "title": "Pediatrician",
-   "org": "Msu Health Care INC.",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jane Turner, MD",
-   "title": "Pediatrician",
-   "org": "Great Lakes Learning Academy",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Homing Yian, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Pediatric Care Of Lansing Pc",
-   "city": "East Lansing",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Decco, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Grosse Pointe Allergy & Asthma Center Pc",
-   "city": "Eastpointe",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

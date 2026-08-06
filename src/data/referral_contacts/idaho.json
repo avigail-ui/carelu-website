@@ -3,8 +3,8 @@
  "slug": "idaho",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-idaho.csv",
  "count": 409,
- "emails": 1,
- "practiceEmails": 20,
+ "emails": 11,
+ "practiceEmails": 21,
  "phones": 409,
  "direct": 0,
  "roles": [
@@ -75,6 +75,39 @@
  ],
  "rows": [
   {
+   "name": "Daniel Flynn, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022@slhs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ryan Lindsay, DO",
+   "title": "Pediatrician",
+   "org": "Ada Pediatrics, P.A.",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Taylor, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Boise",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@unlv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Charles Webb, MD",
    "title": "Pediatrician",
    "org": "Allergy Group Pc",
@@ -82,6 +115,83 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Beth Martin, MD",
+   "title": "Pediatrician",
+   "org": "Dirne Health Centers, Inc.",
+   "city": "Coeur D Alene",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joshua Smith, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rocky Mountain Diabetes And Osteoporosis Center, Pa",
+   "city": "Idaho Falls",
+   "linkedin": "https://www.linkedin.com/in/joshuasmith375",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Birch, MD",
+   "title": "Pediatrician",
+   "org": "Treasure Valley Childrens Clinic, Pc",
+   "city": "Meridian",
+   "linkedin": "https://www.linkedin.com/in/brian-birch-7304846b",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Kim, MD",
+   "title": "Pediatrician",
+   "org": "Alliance Medical Group, Llc",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Monica McCullough, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "St Lukes Regional Medical Center",
+   "city": "Meridian",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@vaems.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jacob Nelson, DO",
+   "title": "Pediatrician",
+   "org": "Upper Valley Community Health Services Inc",
+   "city": "Saint Anthony",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@med.fsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Debra Freund, MS RN CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Boundary Regional Community Health Center, Inc.",
+   "city": "Sandpoint",
+   "linkedin": "https://www.linkedin.com/in/debra-freund-724a2834a",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -372,17 +482,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Daniel Flynn, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "St Lukes Regional Medical Center",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Mindy Gaddis, MD",
    "title": "Pediatrician",
    "org": "St. Luke'S Treasure Valley Pediatrics",
@@ -478,17 +577,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ryan Lindsay, DO",
-   "title": "Pediatrician",
-   "org": "Ada Pediatrics, P.A.",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -599,17 +687,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Taylor, MD",
-   "title": "Pediatric Endocrinologist",
-   "org": "St Lukes Regional Medical Center",
-   "city": "Boise",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -836,17 +913,6 @@
   {
    "name": "Deborah Magnuson, APRN",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Dirne Health Centers, Inc.",
-   "city": "Coeur D Alene",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Beth Martin, MD",
-   "title": "Pediatrician",
    "org": "Dirne Health Centers, Inc.",
    "city": "Coeur D Alene",
    "linkedin": "",
@@ -1271,7 +1337,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "i\u2022\u2022\u2022@trialnet.org"
   },
   {
    "name": "Nephi Redd, D.O",
@@ -1283,17 +1349,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": "-\u2022\u2022\u2022\u2022\u2022\u2022@bebee.com"
-  },
-  {
-   "name": "Joshua Smith, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Rocky Mountain Diabetes And Osteoporosis Center, Pa",
-   "city": "Idaho Falls",
-   "linkedin": "https://www.linkedin.com/in/joshuasmith375",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Jill Veber, MD",
@@ -1373,17 +1428,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Brian Birch, MD",
-   "title": "Pediatrician",
-   "org": "Treasure Valley Childrens Clinic, Pc",
-   "city": "Meridian",
-   "linkedin": "https://www.linkedin.com/in/brian-birch-7304846b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Weslie Cooley, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Thrive Pediatrics, Llc",
@@ -1450,17 +1494,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Susan Kim, MD",
-   "title": "Pediatrician",
-   "org": "Alliance Medical Group, Llc",
-   "city": "Meridian",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Byron Knowles, MD. PEDIATRICS",
    "title": "Pediatrician",
    "org": "St Lukes Regional Medical Center",
@@ -1468,17 +1501,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Monica McCullough, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "St Lukes Regional Medical Center",
-   "city": "Meridian",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1835,17 +1857,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jacob Nelson, DO",
-   "title": "Pediatrician",
-   "org": "Upper Valley Community Health Services Inc",
-   "city": "Saint Anthony",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "George Deland, MD",
    "title": "Pediatrician",
    "org": "Boundary Regional Community Health Center, Inc.",
@@ -1853,17 +1864,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Debra Freund, MS RN CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Boundary Regional Community Health Center, Inc.",
-   "city": "Sandpoint",
-   "linkedin": "https://www.linkedin.com/in/debra-freund-724a2834a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

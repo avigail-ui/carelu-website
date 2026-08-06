@@ -3,7 +3,7 @@
  "slug": "nevada",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-nevada.csv",
  "count": 799,
- "emails": 76,
+ "emails": 88,
  "practiceEmails": 10,
  "phones": 774,
  "direct": 83,
@@ -1271,6 +1271,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jennifer Vogt, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Utah Community Physicians Group",
+   "city": "Fernley",
+   "linkedin": "https://www.linkedin.com/in/jennifer-vogt-anthropologist",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Necole Leland, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Allergy Partners, Pllc",
+   "city": "Henderson",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@unlv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Levin, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Henderson Pediatrics, Llp",
+   "city": "Henderson",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@imperial.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Marlene Unisa, DNP, APRN, FNP-C",
    "title": "Pediatric Nurse Practitioner",
    "org": "Wee Care Pediatrics",
@@ -1359,6 +1392,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Robert Jerome, M.D",
+   "title": "Pediatrician",
+   "org": "John Lepore Do Pc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Joseph Lasky, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Alliance For Childhood Diseases",
@@ -1366,6 +1410,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022@cure4thekids.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Lee",
+   "title": "Pediatrician",
+   "org": "Unsom Multispeciality Group Practice South, Inc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1414,6 +1469,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jill Schwartz, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Desert Valley Pediatrics, Llp",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@unlv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dodds Simangan, D.O",
+   "title": "Pediatrician",
+   "org": "Unsom Multispeciality Group Practice South, Inc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@unlv.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sathyaseelan Subramaniam, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Doctors Medical Services, Emcare",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Wilkinson, D.O",
+   "title": "Pediatrician",
+   "org": "Incredicare Primary Care Inc",
+   "city": "Las Vegas",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@crick.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shankar Bhat, M.D",
    "title": "Pediatrician",
    "org": "Nevada Health Centers, Inc",
@@ -1421,6 +1520,39 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nitte.edu.in",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Crystal Castaneda, M.D",
+   "title": "Pediatrician",
+   "org": "Community Care Services Llc",
+   "city": "Reno",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@med.unr.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Olivera Couloures, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Community Care Services Llc",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/olivera-marsenic-couloures-69b7284b",
+   "email": "o\u2022\u2022\u2022\u2022\u2022\u2022@unr.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lari Frazee, DO",
+   "title": "Pediatrician",
+   "org": "Lari L Frazee Do Pc",
+   "city": "Reno",
+   "linkedin": "https://www.linkedin.com/in/lari-frazee-534010192",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@ponderosapeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1586,17 +1718,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Vogt, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Utah Community Physicians Group",
-   "city": "Fernley",
-   "linkedin": "https://www.linkedin.com/in/jennifer-vogt-anthropologist",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1949,28 +2070,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Necole Leland, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Allergy Partners, Pllc",
-   "city": "Henderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202289",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Levin, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Henderson Pediatrics, Llp",
-   "city": "Henderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3218,17 +3317,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Jerome, M.D",
-   "title": "Pediatrician",
-   "org": "John Lepore Do Pc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rosalita Jurani, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Jurani Llc",
@@ -3401,17 +3489,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Lee",
-   "title": "Pediatrician",
-   "org": "Unsom Multispeciality Group Practice South, Inc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4109,17 +4186,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jill Schwartz, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Desert Valley Pediatrics, Llp",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Karen Segal, D.O",
    "title": "Pediatrician",
    "org": "Karen Segal Pllc",
@@ -4193,17 +4259,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dodds Simangan, D.O",
-   "title": "Pediatrician",
-   "org": "Unsom Multispeciality Group Practice South, Inc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4292,17 +4347,6 @@
    "linkedin": "https://www.linkedin.com/in/nana-strier-1a329882",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sathyaseelan Subramaniam, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Doctors Medical Services, Emcare",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4512,17 +4556,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Wilkinson, D.O",
-   "title": "Pediatrician",
-   "org": "Incredicare Primary Care Inc",
-   "city": "Las Vegas",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4802,17 +4835,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Crystal Castaneda, M.D",
-   "title": "Pediatrician",
-   "org": "Community Care Services Llc",
-   "city": "Reno",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kathleen Christopherson, M.D",
    "title": "Pediatrician",
    "org": "The Speicher Medical Grp",
@@ -4842,17 +4864,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Olivera Couloures, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Community Care Services Llc",
-   "city": "Reno",
-   "linkedin": "https://www.linkedin.com/in/olivera-marsenic-couloures-69b7284b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4897,17 +4908,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lari Frazee, DO",
-   "title": "Pediatrician",
-   "org": "Lari L Frazee Do Pc",
-   "city": "Reno",
-   "linkedin": "https://www.linkedin.com/in/lari-frazee-534010192",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

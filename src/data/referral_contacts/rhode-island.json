@@ -3,8 +3,8 @@
  "slug": "rhode-island",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-rhode-island.csv",
  "count": 650,
- "emails": 44,
- "practiceEmails": 33,
+ "emails": 69,
+ "practiceEmails": 29,
  "phones": 650,
  "direct": 0,
  "roles": [
@@ -69,11 +69,44 @@
    "count": 10
   },
   {
-   "name": "Brown Emergency Medicine",
+   "name": "Barrington Pediatric Associates, Inc.",
    "count": 8
   }
  ],
  "rows": [
+  {
+   "name": "John Butler",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Katherine Hart, M.D",
+   "title": "Pediatrician",
+   "org": "Barrington Pediatric Associates, Inc.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ariana Raufi, MD",
+   "title": "Pediatrician",
+   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
   {
    "name": "Katharine Costa, RN, NP",
    "title": "Pediatric Nurse Practitioner",
@@ -86,6 +119,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Colleen Vitale, M.D",
+   "title": "Pediatrician",
+   "org": "Drs. Concannon And Vitale, Llc",
+   "city": "Cranston",
+   "linkedin": "https://www.linkedin.com/in/colleen-vitale-8b999598",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@outlook.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Dickstein, M.D",
+   "title": "Pediatrician",
+   "org": "Emma Pendleton Bradley Hospital",
+   "city": "East Providence",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mountsinai.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Celina Pereira, MD",
+   "title": "Adolescent Medicine Physician",
+   "org": "State Of Rhode Island",
+   "city": "Kingston",
+   "linkedin": "https://www.linkedin.com/in/celina-pereira-a83ab42a",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com.br",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Prerana Baranwal",
    "title": "Pediatric Gastroenterologist",
    "org": "Rhode Island Hospital",
@@ -93,6 +159,39 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202252",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cheryl Flynn, M.D, PHD",
+   "title": "Pediatrician",
+   "org": "Cheryl Flynn Md Inc",
+   "city": "Lincoln",
+   "linkedin": "https://www.linkedin.com/in/cherylflynnshrmscp",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jacquelyn Silva, M.D",
+   "title": "Pediatrician",
+   "org": "Anchor Medical Associates",
+   "city": "Lincoln",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@fortbendisd.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Teresa Jeraldo, M.D",
+   "title": "Pediatrician",
+   "org": "Santiago Medical Group, Inc.",
+   "city": "North Providence",
+   "linkedin": "https://www.linkedin.com/in/teresa-jeraldo-4102182b1",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -130,6 +229,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Byron Alex",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/byron-alex-0b111150",
+   "email": "b\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emad Awa, M.D",
+   "title": "Pediatrician",
+   "org": "Sunshine Pediatrics Llc",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/emad-awa-68481a93",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "William Bortcosh, M.D",
    "title": "Pediatrician",
    "org": "Brown Emergency Medicine",
@@ -148,6 +269,17 @@
    "linkedin": "",
    "email": "w\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Susan Buckner, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@providencechc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -236,6 +368,17 @@
    "linkedin": "https://www.linkedin.com/in/irina-gorbounova-61946a1b6",
    "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dana Guyer, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -339,6 +482,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Matthew Lorenz, M.D",
+   "title": "Pediatrician",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@lifespan.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Lutterloh, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@health.ny.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Nickolas Mancini, MD",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Brown Emergency Medicine",
@@ -361,6 +526,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Robin McKinney, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@lifespan.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Suzanne McLaughlin, M.D",
    "title": "Pediatrician",
    "org": "Rhode Island Hospital",
@@ -368,6 +544,17 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kate Millington, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Lifespan Physician Group INC",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/kate-millington",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -427,6 +614,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Ranna Rozenfeld, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Natasha Rybak, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Lifespan Physician Group INC",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/kavin-patel-b1088646",
+   "email": "n\u2022\u2022\u2022\u2022\u2022@lifespan.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kathryn Schissler, D.O",
    "title": "Pediatric Emergency Medicine Physician",
    "org": "Brown Emergency Medicine",
@@ -482,6 +691,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michael Stratton",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Children'S Hospital Medical Center",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shova Subedi, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rhode Island Hospital",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tomo Tarui, M.D",
    "title": "Pediatrician",
    "org": "Rhode Island Hospital",
@@ -500,6 +731,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colette Vieau, M. D",
+   "title": "Pediatrician",
+   "org": "Partners In Pediatrics Inc",
+   "city": "Providence",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -526,6 +768,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Bridget Wieczkowski, MD",
+   "title": "Pediatrician",
+   "org": "The Providence Community Health Centers, Inc.",
+   "city": "Providence",
+   "linkedin": "https://www.linkedin.com/in/bridgetwieczkowski",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Rebecca Wingerter, MD",
    "title": "Pediatrician",
    "org": "Brown Emergency Medicine",
@@ -533,6 +786,17 @@
    "linkedin": "",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@brownhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joy Ziegler, MD",
+   "title": "Pediatrician",
+   "org": "Narragansett Bay Pediatrics, Inc.",
+   "city": "South Kingstown",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -559,18 +823,18 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Beller, M.D",
+   "name": "Jason Rafferty, M.D",
    "title": "Pediatrician",
-   "org": "Barrington Pediatric Associates, Inc.",
-   "city": "Barrington",
+   "org": "Thundermist Health Center",
+   "city": "Woonsocket",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@mail.harvard.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
   {
-   "name": "John Butler",
+   "name": "Michelle Beller, M.D",
    "title": "Pediatrician",
    "org": "Barrington Pediatric Associates, Inc.",
    "city": "Barrington",
@@ -636,17 +900,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Katherine Hart, M.D",
-   "title": "Pediatrician",
-   "org": "Barrington Pediatric Associates, Inc.",
-   "city": "Barrington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lisa Keswick, MD",
    "title": "Pediatrician",
    "org": "Barrington Pediatric Associates, Inc.",
@@ -698,17 +951,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ariana Raufi, MD",
-   "title": "Pediatrician",
-   "org": "East Bay Pediatric & Adolescent Medicine Associates Inc",
-   "city": "Barrington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -788,17 +1030,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Colleen Vitale, M.D",
-   "title": "Pediatrician",
-   "org": "Drs. Concannon And Vitale, Llc",
-   "city": "Cranston",
-   "linkedin": "https://www.linkedin.com/in/colleen-vitale-8b999598",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": "h\u2022\u2022\u2022\u2022@npiportal.com"
   },
   {
    "name": "Michelle Bornstein Bennett, MD",
@@ -1054,17 +1285,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Daniel Dickstein, M.D",
-   "title": "Pediatrician",
-   "org": "Emma Pendleton Bradley Hospital",
-   "city": "East Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Farrell, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates",
@@ -1186,17 +1406,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Celina Pereira, MD",
-   "title": "Adolescent Medicine Physician",
-   "org": "State Of Rhode Island",
-   "city": "Kingston",
-   "linkedin": "https://www.linkedin.com/in/celina-pereira-a83ab42a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Nathan Beraha, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Anchor Medical Associates",
@@ -1237,17 +1446,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cheryl Flynn, M.D, PHD",
-   "title": "Pediatrician",
-   "org": "Cheryl Flynn Md Inc",
-   "city": "Lincoln",
-   "linkedin": "https://www.linkedin.com/in/cherylflynnshrmscp",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1319,17 +1517,6 @@
   },
   {
    "name": "Linda Rexford, MD",
-   "title": "Pediatrician",
-   "org": "Anchor Medical Associates",
-   "city": "Lincoln",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jacquelyn Silva, M.D",
    "title": "Pediatrician",
    "org": "Anchor Medical Associates",
    "city": "Lincoln",
@@ -1439,17 +1626,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Teresa Jeraldo, M.D",
-   "title": "Pediatrician",
-   "org": "Santiago Medical Group, Inc.",
-   "city": "North Providence",
-   "linkedin": "https://www.linkedin.com/in/teresa-jeraldo-4102182b1",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rafael Montalvo Ayala, MD",
    "title": "Pediatrician",
    "org": "Santiago Medical Group, Inc.",
@@ -1527,17 +1703,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
-   "name": "Byron Alex",
-   "title": "Pediatrician",
-   "org": "The Providence Community Health Centers, Inc",
-   "city": "Providence",
-   "linkedin": "https://www.linkedin.com/in/byron-alex-0b111150",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
-  },
-  {
    "name": "Emily Allen, M.D",
    "title": "Pediatrician",
    "org": "Rhode Island Hospital",
@@ -1556,17 +1721,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emad Awa, M.D",
-   "title": "Pediatrician",
-   "org": "Sunshine Pediatrics Llc",
-   "city": "Providence",
-   "linkedin": "https://www.linkedin.com/in/emad-awa-68481a93",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202283",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1624,17 +1778,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Susan Buckner, MD",
-   "title": "Pediatrician",
-   "org": "The Providence Community Health Centers, Inc",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
    "name": "Robert Burke, MD",
@@ -1868,17 +2011,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
-   "name": "Dana Guyer, M.D",
-   "title": "Pediatrician",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kelsey Hart, MD",
    "title": "Pediatrician",
    "org": "Rhode Island Hospital",
@@ -1967,17 +2099,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Lorenz, M.D",
-   "title": "Pediatrician",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Phyllis Losikoff, MD",
    "title": "Pediatrician",
    "org": "Lynn Community Health, INC.",
@@ -1996,17 +2117,6 @@
    "linkedin": "https://www.linkedin.com/in/elizabeth-lowenhaupt-3a208128",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Lutterloh, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2044,17 +2154,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
-   "name": "Robin McKinney, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Miranda Miller, MD",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Rhode Island Hospital",
@@ -2062,17 +2161,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kate Millington, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Lifespan Physician Group INC",
-   "city": "Providence",
-   "linkedin": "https://www.linkedin.com/in/kate-millington",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2176,28 +2264,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ranna Rozenfeld, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Natasha Rybak, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Lifespan Physician Group INC",
-   "city": "Providence",
-   "linkedin": "https://www.linkedin.com/in/kavin-patel-b1088646",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Sabitha Sasidharan Pillai",
    "title": "Pediatric Endocrinologist",
    "org": "Rhode Island Hospital",
@@ -2264,28 +2330,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Stratton",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Children'S Hospital Medical Center",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shova Subedi, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Rhode Island Hospital",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Daniella Teape, MD",
    "title": "Pediatrician",
    "org": "Rhode Island Hospital",
@@ -2330,17 +2374,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
-   "name": "Colette Vieau, M. D",
-   "title": "Pediatrician",
-   "org": "Partners In Pediatrics Inc",
-   "city": "Providence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Paul Wehbe, MD",
    "title": "Pediatrician",
    "org": "Sunshine Pediatrics Llc",
@@ -2361,17 +2394,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Bridget Wieczkowski, MD",
-   "title": "Pediatrician",
-   "org": "The Providence Community Health Centers, Inc.",
-   "city": "Providence",
-   "linkedin": "https://www.linkedin.com/in/bridgetwieczkowski",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022@providencechc.org"
   },
   {
    "name": "Claire Williams, M.D",
@@ -2496,17 +2518,6 @@
   },
   {
    "name": "Mary Elizabeth Murray, MD",
-   "title": "Pediatrician",
-   "org": "Narragansett Bay Pediatrics, Inc.",
-   "city": "South Kingstown",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joy Ziegler, MD",
    "title": "Pediatrician",
    "org": "Narragansett Bay Pediatrics, Inc.",
    "city": "South Kingstown",
@@ -2931,17 +2942,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jason Rafferty, M.D",
-   "title": "Pediatrician",
-   "org": "Thundermist Health Center",
-   "city": "Woonsocket",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

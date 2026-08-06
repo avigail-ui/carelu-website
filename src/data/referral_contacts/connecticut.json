@@ -3,8 +3,8 @@
  "slug": "connecticut",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-connecticut.csv",
  "count": 2178,
- "emails": 52,
- "practiceEmails": 16,
+ "emails": 106,
+ "practiceEmails": 15,
  "phones": 2178,
  "direct": 0,
  "roles": [
@@ -75,6 +75,17 @@
  ],
  "rows": [
   {
+   "name": "Andrea Tavlan, MD",
+   "title": "Pediatrician",
+   "org": "Children'S Medical Associates, P.C.",
+   "city": "Ansonia",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Meredith Barrows, MD",
    "title": "Pediatrician",
    "org": "Hartford Area Pediatrics Pc",
@@ -108,6 +119,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shruti Gupta, MD",
+   "title": "Neonatologist",
+   "org": "Fairfield County Radiology",
+   "city": "Bridgeport",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sanjeev Rao, MD",
+   "title": "Pediatrician",
+   "org": "Bridgeport Hospital",
+   "city": "Bridgeport",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.co.in",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James O'Connor, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Of Cheshire Pc",
+   "city": "Cheshire",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Bruce Cohen, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of Western Ct",
@@ -115,6 +159,17 @@
    "linkedin": "https://www.linkedin.com/in/bruce-cohen-a8a85479",
    "email": "b\u2022\u2022\u2022\u2022\u2022@akronchildrens.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sheikh Ahmed, M.D",
+   "title": "Pediatrician",
+   "org": "East Hartford Medical Center Inc",
+   "city": "East Hartford",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ubc.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -163,6 +218,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Robert Nolfo, MD",
+   "title": "Pediatrician",
+   "org": "Guilford Pediatrics Inc",
+   "city": "Guilford",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Joseph Canarie, M.D",
    "title": "Pediatrician",
    "org": "Anchor Health Initiative Corp.",
@@ -170,6 +236,28 @@
    "linkedin": "https://www.linkedin.com/in/joseph-canarie-b5418720",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@anchorhealthct.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Delucia, D.O",
+   "title": "Pediatrician",
+   "org": "Children'S Medical Group, Llc",
+   "city": "Hamden",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Perkins, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Whitney Pediatrics & Adolescent Medicine, P.C.",
+   "city": "Hamden",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -196,6 +284,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jamie Harris, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "Hartford",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nyulangone.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shellion Murray",
    "title": "Pediatric Nurse Practitioner",
    "org": "Community Health Services INC",
@@ -207,6 +306,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Rahul Shah",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "Hartford",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jesse Sturm, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "Hartford",
+   "linkedin": "https://www.linkedin.com/in/jesse-sturm-8a605a212",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Francisco Sylvester, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "University Of North Carolina At Chapel Hill",
@@ -214,6 +335,50 @@
    "linkedin": "https://www.linkedin.com/in/francisco-sylvester-00115a10a",
    "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@unc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leonela Villegas, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "Hartford",
+   "linkedin": "https://www.linkedin.com/in/leonela-villegas-35311228",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Golden, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Shoreline Pediatrics & Adolescent Medicine, P.C.",
+   "city": "Madison",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Wendy Mackey, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Connecticut Pediatric Otolaryngology",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/wendy-mackey-2176386",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leslie Sude, MD",
+   "title": "Pediatrician",
+   "org": "Madison Pediatrics Llc",
+   "city": "Madison",
+   "linkedin": "https://www.linkedin.com/in/leslie-sude-68b44553",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -317,6 +482,138 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jason Davis, M.D",
+   "title": "Pediatrician",
+   "org": "New England Pediatrics, Llp",
+   "city": "New Canaan",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Arik Alper, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/arik-alper-b8808a10a",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ronald Angoff, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric & Medical Associates, P.C.",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ami Belmont, M.D",
+   "title": "Pediatrician",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/ami-belmont-4001ba89",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laurie Braun, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Craig Canapari, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/craig-canapari-md-faasm-b7247350",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathleen Cardinale, MD",
+   "title": "Pediatrician",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/kathleen-cardinale-68b86569",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elif Dokmeci, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Unm Medical Group INC",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Elder, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/roberttelder",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sandra Escalera, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/sandra-escalera-97239249",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Faherty, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/erin-faherty-7851b9a",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aron Flagg, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Patrick Gallagher, MD",
    "title": "Neonatologist",
    "org": "Yale University",
@@ -324,6 +621,17 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Glaser, M.D., M.P.H",
+   "title": "Pediatric Rheumatologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/daniel-glaser-6255b015",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -339,6 +647,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Saria Hassan, MD",
+   "title": "Pediatrician",
+   "org": "Conwell B. Carter, M.D., Inc.",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mary Jane Hogan, MD, MPH",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Massaro, M.D., M.P.H",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/stephanie-massaro-463b05221",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Paul McCarthy, MD",
    "title": "Pediatrician",
    "org": "Yale University",
@@ -346,6 +687,50 @@
    "linkedin": "",
    "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Veronica Meneses, M.D",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marie Nader, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/marie-nader-16016125a",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Nazari, MD",
+   "title": "Pediatrician",
+   "org": "Medstar Medical Group II LLC",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nih.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Nugent, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/jamesnugent777",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -361,6 +746,50 @@
    "practiceEmail": ""
   },
   {
+   "name": "Salley Pels, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Uma Phatak, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "u\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Apoorva Ravindranath Waikar, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "McV Associated Physicians",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Roberts, M.D",
+   "title": "Pediatrician",
+   "org": "Cornell Scott Hill Health Corporation",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/benhrob",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Leonel Rodriguez, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "Yale University",
@@ -372,6 +801,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jeremy Schwartz, MD",
+   "title": "Pediatrician",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/jeremybschwartz",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jan Harold Sia, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Yale Hemophilia Treatment Center",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samantha Smith, MD",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://uk.linkedin.com/in/samantha-smith-2a3a031b0",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeremy Steele, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/jwswrites",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Swartz, PHD, APRN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Yale University",
+   "city": "New Haven",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jaideep Talwalkar, MD",
    "title": "Pediatrician",
    "org": "Yale University",
@@ -379,6 +863,17 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pamela Valentino, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "New Haven",
+   "linkedin": "https://www.linkedin.com/in/pamela-valentino-37814b8",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -427,6 +922,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Romana Primus, MD",
+   "title": "Pediatrician",
+   "org": "Community Health Center Inc",
+   "city": "New London",
+   "linkedin": "https://www.linkedin.com/in/romana-primus-2b89582a5",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Carlson, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Branford North Branford Pediatrics,Pc",
+   "city": "North Branford",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michelle Caserta, M.D",
    "title": "Pediatrician",
    "org": "Complete Pediatrics",
@@ -434,6 +951,17 @@
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@completepediatrics.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Cohen, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatrics Plus Pc",
+   "city": "North Haven",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@montgomerycountymd.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -548,6 +1076,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Daniel Roth, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "South Windsor Pediatrics, Llc",
+   "city": "South Windsor",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@sickkids.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Walker, M.D",
    "title": "Pediatrician",
    "org": "Manchester Pediatric Associates Llc",
@@ -636,6 +1175,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Benjamin Doolittle, MD",
+   "title": "Pediatrician",
+   "org": "Yale University",
+   "city": "Waterbury",
+   "linkedin": "https://ca.linkedin.com/in/benjamindoolittle",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Tracy Rabin, MD, SM",
+   "title": "Pediatrician",
+   "org": "Yale University",
+   "city": "Waterbury",
+   "linkedin": "https://www.linkedin.com/in/tracy-rabin-1218324",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@yale.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Allyson Duffy, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Pedicorp, Pc",
@@ -643,6 +1204,39 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022@pedicorp.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202253",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lauren Allison, MD",
+   "title": "Pediatrician",
+   "org": "Willows Pediatric Group Pc",
+   "city": "Westport",
+   "linkedin": "https://www.linkedin.com/in/lauren-allison-md-09740723",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@lshtm.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202239",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Raymond Lorenzoni, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Connecticut Children'S Specialty Group, INC",
+   "city": "Westport",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole Taylor, MD",
+   "title": "Pediatrician",
+   "org": "Generations Family Health Center, Inc.",
+   "city": "Willimantic",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@ct.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -725,17 +1319,6 @@
   },
   {
    "name": "Catherine Paszek, D.O",
-   "title": "Pediatrician",
-   "org": "Children'S Medical Associates, P.C.",
-   "city": "Ansonia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Andrea Tavlan, MD",
    "title": "Pediatrician",
    "org": "Children'S Medical Associates, P.C.",
    "city": "Ansonia",
@@ -1318,17 +1901,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Shruti Gupta, MD",
-   "title": "Neonatologist",
-   "org": "Fairfield County Radiology",
-   "city": "Bridgeport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Andrea Hagani, M.D",
    "title": "Pediatrician",
    "org": "Fairfield County Healthcare Associates",
@@ -1391,17 +1963,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sanjeev Rao, MD",
-   "title": "Pediatrician",
-   "org": "Bridgeport Hospital",
-   "city": "Bridgeport",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1697,17 +2258,6 @@
    "org": "Pediatric Associates Of Cheshire Pc",
    "city": "Cheshire",
    "linkedin": "https://www.linkedin.com/in/brian-liebler-136646b8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James O'Connor, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates Of Cheshire Pc",
-   "city": "Cheshire",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
@@ -2271,17 +2821,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sheikh Ahmed, M.D",
-   "title": "Pediatrician",
-   "org": "East Hartford Medical Center Inc",
-   "city": "East Hartford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202268",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3408,17 +3947,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Nolfo, MD",
-   "title": "Pediatrician",
-   "org": "Guilford Pediatrics Inc",
-   "city": "Guilford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jonathan Stein, MD",
    "title": "Pediatrician",
    "org": "Guilford Pediatrics Inc",
@@ -3518,17 +4046,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Maria Delucia, D.O",
-   "title": "Pediatrician",
-   "org": "Children'S Medical Group, Llc",
-   "city": "Hamden",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Elizabeth Dieckman, M.D",
    "title": "Pediatrician",
    "org": "Whitney Pediatrics & Adolescent Medicine, P.C.",
@@ -3600,17 +4117,6 @@
    "org": "Whitney Pediatrics & Adolescent Medicine, P.C.",
    "city": "Hamden",
    "linkedin": "https://www.linkedin.com/in/cynthia-mann-150b174b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Perkins, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Whitney Pediatrics & Adolescent Medicine, P.C.",
-   "city": "Hamden",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4020,17 +4526,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jamie Harris, M.D",
-   "title": "Pediatric Pulmonologist",
-   "org": "Connecticut Children'S Specialty Group, INC",
-   "city": "Hartford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4596,17 +5091,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Rahul Shah",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Connecticut Children'S Specialty Group, INC",
-   "city": "Hartford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Janelle Singh, M.B.B.S",
    "title": "Pediatrician",
    "org": "Connecticut Children'S Specialty Group, INC",
@@ -4651,17 +5135,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jesse Sturm, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Connecticut Children'S Specialty Group, INC",
-   "city": "Hartford",
-   "linkedin": "https://www.linkedin.com/in/jesse-sturm-8a605a212",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lynda Tagliavini, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Trustees Of Trinity College",
@@ -4700,17 +5173,6 @@
    "org": "Connecticut Children'S Specialty Group, INC",
    "city": "Hartford",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leonela Villegas, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Connecticut Children'S Specialty Group, INC",
-   "city": "Hartford",
-   "linkedin": "https://www.linkedin.com/in/leonela-villegas-35311228",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -4915,33 +5377,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Golden, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Shoreline Pediatrics & Adolescent Medicine, P.C.",
-   "city": "Madison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "David Karas, MD",
    "title": "Pediatric Sleep Medicine Physician",
    "org": "Connecticut Pediatric Otolaryngology",
    "city": "Madison",
    "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wendy Mackey, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Connecticut Pediatric Otolaryngology",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/wendy-mackey-2176386",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202296",
    "phoneType": "Practice",
@@ -4977,17 +5417,6 @@
    "linkedin": "https://www.linkedin.com/in/erin-springhorn-065ab5277",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leslie Sude, MD",
-   "title": "Pediatrician",
-   "org": "Madison Pediatrics Llc",
-   "city": "Madison",
-   "linkedin": "https://www.linkedin.com/in/leslie-sude-68b44553",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5652,17 +6081,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Davis, M.D",
-   "title": "Pediatrician",
-   "org": "New England Pediatrics, Llp",
-   "city": "New Canaan",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "William Flynn, MD",
    "title": "Pediatrician",
    "org": "New Canaan Pediatrics Llc",
@@ -5736,28 +6154,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Arik Alper, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/arik-alper-b8808a10a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ronald Angoff, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric & Medical Associates, P.C.",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5850,17 +6246,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ami Belmont, M.D",
-   "title": "Pediatrician",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/ami-belmont-4001ba89",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Andrea Benin, MD",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Yale University",
@@ -5901,17 +6286,6 @@
    "linkedin": "https://www.linkedin.com/in/peter-bowers-70839310",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Laurie Braun, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5978,28 +6352,6 @@
    "linkedin": "https://www.linkedin.com/in/joanne-burger-715771211",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Craig Canapari, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/craig-canapari-md-faasm-b7247350",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kathleen Cardinale, MD",
-   "title": "Pediatrician",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/kathleen-cardinale-68b86569",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6114,17 +6466,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elif Dokmeci, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Unm Medical Group INC",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Troy Dominguez, M.D",
    "title": "Pediatric Critical Care Specialist",
    "org": "Yale University",
@@ -6165,39 +6506,6 @@
    "linkedin": "https://www.linkedin.com/in/dennis-durante-29710841",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Elder, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/roberttelder",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sandra Escalera, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/sandra-escalera-97239249",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Faherty, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/erin-faherty-7851b9a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6253,17 +6561,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Aron Flagg, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6341,17 +6638,6 @@
    "linkedin": "https://www.linkedin.com/in/eric-gershon-30098049",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Glaser, M.D., M.P.H",
-   "title": "Pediatric Rheumatologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/daniel-glaser-6255b015",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6477,17 +6763,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Saria Hassan, MD",
-   "title": "Pediatrician",
-   "org": "Conwell B. Carter, M.D., Inc.",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Henly Hewan, MD",
    "title": "Pediatrician",
    "org": "Northeast Medical Group INC",
@@ -6495,17 +6770,6 @@
    "linkedin": "https://www.linkedin.com/in/henly-hewan-13a4481a7",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mary Jane Hogan, MD, MPH",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6818,17 +7082,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephanie Massaro, M.D., M.P.H",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/stephanie-massaro-463b05221",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tina McGillicuddy, APRN NURSE PRACTITIO",
    "title": "Pediatric Nurse Practitioner",
    "org": "Conwell B. Carter, M.D., Inc.",
@@ -6836,17 +7089,6 @@
    "linkedin": "https://www.linkedin.com/in/tina-mcgillicuddy-31ba8330",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Veronica Meneses, M.D",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6917,28 +7159,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Marie Nader, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Connecticut Children'S Specialty Group, INC",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/marie-nader-16016125a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Matthew Nazari, MD",
-   "title": "Pediatrician",
-   "org": "Medstar Medical Group II LLC",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Amy Noyes, CPNP, MSN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Yale University",
@@ -6946,17 +7166,6 @@
    "linkedin": "https://www.linkedin.com/in/amy-m-noyes",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Nugent, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/jamesnugent777",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7016,28 +7225,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Salley Pels, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Uma Phatak, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Maya Raad, MD",
    "title": "Pediatrician",
    "org": "Albany Medical College",
@@ -7060,17 +7247,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Apoorva Ravindranath Waikar, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "McV Associated Physicians",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Recht, MD, PHD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "Yale Hemophilia Treatment Center",
@@ -7078,17 +7254,6 @@
    "linkedin": "https://www.linkedin.com/in/michael-recht-268590121",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Benjamin Roberts, M.D",
-   "title": "Pediatrician",
-   "org": "Cornell Scott Hill Health Corporation",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/benhrob",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7148,17 +7313,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jeremy Schwartz, MD",
-   "title": "Pediatrician",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/jeremybschwartz",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Meltem Seli, MD",
    "title": "Neonatologist",
    "org": "Yale University",
@@ -7214,17 +7368,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jan Harold Sia, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "Yale Hemophilia Treatment Center",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Moshe Siev, M. D",
    "title": "Pediatrician",
    "org": "Yale University",
@@ -7276,28 +7419,6 @@
    "linkedin": "https://www.linkedin.com/in/barbara-sleight-708247101",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Samantha Smith, MD",
-   "title": "Pediatric Sports Medicine Physician",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://uk.linkedin.com/in/samantha-smith-2a3a031b0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202279",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeremy Steele, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/jwswrites",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7368,17 +7489,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Martha Swartz, PHD, APRN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Yale University",
-   "city": "New Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Peter Tebben, M.D",
    "title": "Pediatric Endocrinologist",
    "org": "Yale University",
@@ -7430,17 +7540,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Pamela Valentino, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "New Haven",
-   "linkedin": "https://www.linkedin.com/in/pamela-valentino-37814b8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7628,17 +7727,6 @@
    "linkedin": "https://www.linkedin.com/in/ruth-lebovitz-33171225",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Romana Primus, MD",
-   "title": "Pediatrician",
-   "org": "Community Health Center Inc",
-   "city": "New London",
-   "linkedin": "https://www.linkedin.com/in/romana-primus-2b89582a5",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7885,17 +7973,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Carlson, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Branford North Branford Pediatrics,Pc",
-   "city": "North Branford",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Alanna Coughlin, M.D",
    "title": "Pediatrician",
    "org": "Branford North Branford Pediatrics,Pc",
@@ -7914,17 +7991,6 @@
    "linkedin": "https://www.linkedin.com/in/ann-maley-241b58a0",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Allison Cohen, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatrics Plus Pc",
-   "city": "North Haven",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9278,17 +9344,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Roth, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "South Windsor Pediatrics, Llc",
-   "city": "South Windsor",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -10855,17 +10910,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Benjamin Doolittle, MD",
-   "title": "Pediatrician",
-   "org": "Yale University",
-   "city": "Waterbury",
-   "linkedin": "https://ca.linkedin.com/in/benjamindoolittle",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Downs, M.D",
    "title": "Pediatrician",
    "org": "Staywell Health Care Inc",
@@ -11027,50 +11071,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Judith Moskal-Kanz, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "West Haven Vamc",
-   "city": "Waterbury",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Newell, MD",
-   "title": "Pediatrician",
-   "org": "West Haven Vamc",
-   "city": "Waterbury",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Angela Quatrocelli, MD",
-   "title": "Pediatrician",
-   "org": "Trinity Health Of New England Urgent Care PLLC",
-   "city": "Waterbury",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Tracy Rabin, MD, SM",
-   "title": "Pediatrician",
-   "org": "Yale University",
-   "city": "Waterbury",
-   "linkedin": "https://www.linkedin.com/in/tracy-rabin-1218324",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   }

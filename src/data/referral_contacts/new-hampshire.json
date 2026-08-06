@@ -3,8 +3,8 @@
  "slug": "new-hampshire",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-new-hampshire.csv",
  "count": 575,
- "emails": 5,
- "practiceEmails": 9,
+ "emails": 17,
+ "practiceEmails": 11,
  "phones": 575,
  "direct": 0,
  "roles": [
@@ -75,6 +75,17 @@
  ],
  "rows": [
   {
+   "name": "Lisa Atkinson, MD",
+   "title": "Pediatrician",
+   "org": "Mary Hitchcock Memorial Hospital",
+   "city": "Concord",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Judith Mitchell, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Concord Pediatrics, Pa",
@@ -82,6 +93,61 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@downstate.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Jones, M.D",
+   "title": "Pediatrician",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ucmail.uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Danielle Lambert, APRN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Core Physician, Llc",
+   "city": "Epping",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gosh.nhs.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Weinreb, MD",
+   "title": "Pediatrician",
+   "org": "Weinreb Pediatrics",
+   "city": "Franklin",
+   "linkedin": "https://www.linkedin.com/in/mark-weinreb-msc-b377259b",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Barton, MD",
+   "title": "Pediatrician",
+   "org": "University Physicians Incorporated",
+   "city": "Lebanon",
+   "linkedin": "https://www.linkedin.com/in/colleenbartonsutton2010",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@childrenscolorado.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joel Bradley, M.D",
+   "title": "Pediatrician",
+   "org": "Dartmouth-Hitchcock Clinic",
+   "city": "Lebanon",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -119,12 +185,78 @@
    "practiceEmail": ""
   },
   {
+   "name": "Holly Mintz, MD",
+   "title": "Pediatrician",
+   "org": "Elliot Physicians Network",
+   "city": "Manchester",
+   "linkedin": "https://www.linkedin.com/in/holly-mintz",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anna Pinto, MD",
+   "title": "Developmental-Behavioral Pediatrician",
+   "org": "Catholic Medical Center",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joey Scollan, DO",
+   "title": "Pediatrician",
+   "org": "Mainehealth",
+   "city": "Manchester",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Melissa Shessler, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Amoskeag Health",
    "city": "Manchester",
    "linkedin": "",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@amoskeaghealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Anderson, M.D",
+   "title": "Pediatrician",
+   "org": "Lamprey Health Care Inc",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@alabamaallergy.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Connors, MD",
+   "title": "Pediatrician",
+   "org": "Community Council Of Nashua Nh INC",
+   "city": "Nashua",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@jstartpt.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nancy Crocker, MD",
+   "title": "Pediatrician",
+   "org": "Speare Memorial Hospital",
+   "city": "Plymouth",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -412,17 +544,6 @@
    "linkedin": "https://www.linkedin.com/in/christine-arsnow-19100452",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Atkinson, MD",
-   "title": "Pediatrician",
-   "org": "Mary Hitchcock Memorial Hospital",
-   "city": "Concord",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -922,28 +1043,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Jones, M.D",
-   "title": "Pediatrician",
-   "org": "Core Physician, Llc",
-   "city": "Epping",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Danielle Lambert, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Core Physician, Llc",
-   "city": "Epping",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Whitney Nowak, NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Core Physician, Llc",
@@ -1017,17 +1116,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202259",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mark Weinreb, MD",
-   "title": "Pediatrician",
-   "org": "Weinreb Pediatrics",
-   "city": "Franklin",
-   "linkedin": "https://www.linkedin.com/in/mark-weinreb-msc-b377259b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1248,28 +1336,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Colleen Barton, MD",
-   "title": "Pediatrician",
-   "org": "University Physicians Incorporated",
-   "city": "Lebanon",
-   "linkedin": "https://www.linkedin.com/in/colleenbartonsutton2010",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202208",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joel Bradley, M.D",
-   "title": "Pediatrician",
-   "org": "Dartmouth-Hitchcock Clinic",
-   "city": "Lebanon",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1923,17 +1989,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Holly Mintz, MD",
-   "title": "Pediatrician",
-   "org": "Elliot Physicians Network",
-   "city": "Manchester",
-   "linkedin": "https://www.linkedin.com/in/holly-mintz",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Tina Morhardt, MD",
    "title": "Pediatric Gastroenterologist",
    "org": "Dartmouth-Hitchcock Clinic",
@@ -1996,17 +2051,6 @@
    "linkedin": "https://www.linkedin.com/in/mahendra-panesar-a3313b49",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anna Pinto, MD",
-   "title": "Developmental-Behavioral Pediatrician",
-   "org": "Catholic Medical Center",
-   "city": "Manchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2095,17 +2139,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joey Scollan, DO",
-   "title": "Pediatrician",
-   "org": "Mainehealth",
-   "city": "Manchester",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2231,17 +2264,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "John Anderson, M.D",
-   "title": "Pediatrician",
-   "org": "Lamprey Health Care Inc",
-   "city": "Nashua",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Pamela Beahm, M.D",
    "title": "Pediatrician",
    "org": "Nashua Dentistry And Orthodontics For Children",
@@ -2282,17 +2304,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Connors, MD",
-   "title": "Pediatrician",
-   "org": "Community Council Of Nashua Nh INC",
-   "city": "Nashua",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2638,17 +2649,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nancy Crocker, MD",
-   "title": "Pediatrician",
-   "org": "Speare Memorial Hospital",
-   "city": "Plymouth",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "David Cunis, M.D",
    "title": "Pediatrician",
    "org": "Speare Memorial Hospital",
@@ -2943,7 +2943,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@hugginshospital.org"
   },
   {
    "name": "Michael Matos, MD",
@@ -2954,7 +2954,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@hugginshospital.org"
   },
   {
    "name": "Rachel Black, MD",

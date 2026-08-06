@@ -3,8 +3,8 @@
  "slug": "south-dakota",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-south-dakota.csv",
  "count": 282,
- "emails": 3,
- "practiceEmails": 0,
+ "emails": 14,
+ "practiceEmails": 1,
  "phones": 282,
  "direct": 0,
  "roles": [
@@ -86,6 +86,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Eric Chow, M.D",
+   "title": "Pediatrician",
+   "org": "Regional Health Physicians, Inc.",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Swett, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Black Hills Pediatrics, Llp",
+   "city": "Rapid City",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@rmhcomaha.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Elizabeth Bauer, MD",
    "title": "Pediatrician",
    "org": "Sanford Clinic",
@@ -104,6 +126,105 @@
    "linkedin": "",
    "email": "b\u2022\u2022\u2022\u2022@sio.midco.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashutosh Gupta, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Avera McKennan",
+   "city": "Sioux Falls",
+   "linkedin": "https://www.linkedin.com/in/ashutosh-gupta-0751a86",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Deborah Hickman, CNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@nsula.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Peter Holmberg, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@aarhus.rm.dk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amit Jain, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@ucmail.uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Reed, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Suzanne Reuter, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "https://www.linkedin.com/in/suzanne-reuter-582380241",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@usd.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kayelyn Wagner, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@sanfordhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joseph Zenel, MD",
+   "title": "Pediatrician",
+   "org": "Sanford Clinic",
+   "city": "Sioux Falls",
+   "linkedin": "https://www.linkedin.com/in/joseph-zenel-507ab543",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@usd.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Martha Holstein, MD",
+   "title": "Pediatrician",
+   "org": "Sacred Heart Health Services",
+   "city": "Yankton",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@yanktonmedicalclinic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -394,17 +515,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Eric Chow, M.D",
-   "title": "Pediatrician",
-   "org": "Regional Health Physicians, Inc.",
-   "city": "Rapid City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Marissa Copas Weaver",
    "title": "Pediatrician",
    "org": "Monument Health Rapid City Hospital INC",
@@ -413,7 +523,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "s\u2022\u2022\u2022\u2022\u2022@monument.health"
   },
   {
    "name": "Adam Dell, M.D., MBA, MS, FAAP",
@@ -630,17 +740,6 @@
    "org": "Black Hills Pediatrics, Llp",
    "city": "Rapid City",
    "linkedin": "https://www.linkedin.com/in/willis-sutliff-80531224a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Swett, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Black Hills Pediatrics, Llp",
-   "city": "Rapid City",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
@@ -1186,17 +1285,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashutosh Gupta, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Avera McKennan",
-   "city": "Sioux Falls",
-   "linkedin": "https://www.linkedin.com/in/ashutosh-gupta-0751a86",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Haggar, M.D",
    "title": "Pediatrician",
    "org": "Sanford Clinic",
@@ -1263,17 +1351,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Deborah Hickman, CNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Benjamin Hoag",
    "title": "Pediatric Endocrinologist",
    "org": "Sanford Clinic",
@@ -1281,17 +1358,6 @@
    "linkedin": "https://www.linkedin.com/in/benjamin-hoag-4551071ba",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Holmberg, MD",
-   "title": "Pediatrician",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1331,17 +1397,6 @@
   {
    "name": "Jody Huber, M.D",
    "title": "Pediatric Critical Care Specialist",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amit Jain, MD",
-   "title": "Pediatric Pulmonologist",
    "org": "Sanford Clinic",
    "city": "Sioux Falls",
    "linkedin": "",
@@ -1846,33 +1901,11 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jennifer Reed, MD",
-   "title": "Pediatrician",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jenifer Reitsma, CNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Sanford Clinic",
    "city": "Sioux Falls",
    "linkedin": "https://www.linkedin.com/in/jenifer-reitsma-627829132",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Suzanne Reuter, MD",
-   "title": "Pediatrician",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "https://www.linkedin.com/in/suzanne-reuter-582380241",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -2187,17 +2220,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kayelyn Wagner, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "James Wallace, MD",
    "title": "Pediatric Pulmonologist",
    "org": "Sanford Clinic",
@@ -2330,17 +2352,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Joseph Zenel, MD",
-   "title": "Pediatrician",
-   "org": "Sanford Clinic",
-   "city": "Sioux Falls",
-   "linkedin": "https://www.linkedin.com/in/joseph-zenel-507ab543",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Aaron Zylstra, M.D",
    "title": "Pediatrician",
    "org": "Sanford Clinic",
@@ -2403,17 +2414,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Martha Holstein, MD",
-   "title": "Pediatrician",
-   "org": "Sacred Heart Health Services",
-   "city": "Yankton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
    "phoneType": "Practice",
    "practiceEmail": ""
   },

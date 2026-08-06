@@ -3,8 +3,8 @@
  "slug": "illinois",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-illinois.csv",
  "count": 6007,
- "emails": 266,
- "practiceEmails": 285,
+ "emails": 408,
+ "practiceEmails": 277,
  "phones": 5917,
  "direct": 233,
  "roles": [
@@ -3629,6 +3629,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Gina Mathew, D.O",
+   "title": "Pediatrician",
+   "org": "Mea Medical Care Centers, Llc",
+   "city": "Addison",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@stonybrookmedicine.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Timothy Geleske, MD",
    "title": "Pediatrician",
    "org": "North Arlington Pediatrics S.C.",
@@ -3636,6 +3647,61 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@northarlingtonpediatrics.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anita Shah, M.D",
+   "title": "Pediatrician",
+   "org": "Partners In Pediatrics, S.C.",
+   "city": "Arlington Heights",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nisha Kakodkar, M.D",
+   "title": "Pediatrician",
+   "org": "Dreyer Clinic, Inc",
+   "city": "Aurora",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Judith Brown, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Of Barrington, S.C.",
+   "city": "Barrington",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@ehs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Schwartz, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Schwartz Pediatrics Sc",
+   "city": "Bartlett",
+   "linkedin": "https://www.linkedin.com/in/sjoelkatz",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Renee Davis, DNP, APRN, CPNP-PC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "David C. Norman Md Inc",
+   "city": "Belleville",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uwf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3651,6 +3717,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mohammad Khan, MD",
+   "title": "Pediatrician",
+   "org": "Complete Child Health",
+   "city": "Bolingbroook",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Judith Garcia, MD",
+   "title": "Pediatrician",
+   "org": "Sanders Court Pediatrics, Ltd.",
+   "city": "Buffalo Grove",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@isglobal.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Liedel, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Nemours Foundation",
+   "city": "Burr Ridge",
+   "linkedin": "https://www.linkedin.com/in/jennifer-liedel-615a53104",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "David Israel, D.O",
    "title": "Pediatrician",
    "org": "Christopher Greater Area Rural Health Planning Corporation",
@@ -3658,6 +3757,39 @@
    "linkedin": "",
    "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@crhpc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202286",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Abts, MD",
+   "title": "Pediatric Pulmonologist",
+   "org": "The Association Of Chrmc And University Physicians",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/matthew-abts-md-a4a43775",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Fatima Ajmal, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Chicago",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/fatima-ajmal-525a3725a",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Akhtar, MD, PHD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3684,6 +3816,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sherif Badawy, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/sherif-badawy-md-ms-mba-b84464116",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Barnes, MD",
+   "title": "Pediatrician",
+   "org": "Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/michellembarnes27",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christina Barriteau, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Kenneth Boyer, M.D",
    "title": "Pediatric Infectious Disease Specialist",
    "org": "Rush University Medical Center",
@@ -3691,6 +3856,17 @@
    "linkedin": "https://www.linkedin.com/in/kenneth-boyer-chp-ecmp-ccsa-a1424823",
    "email": "k\u2022\u2022\u2022\u2022\u2022@rush.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kathleen Breen, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/kathleen-breen-48218195",
+   "email": "k\u2022\u2022\u2022\u2022\u2022@leaderdog.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3706,6 +3882,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lorraine Canham, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/lorraine-canham-28019519",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Carter",
+   "title": "Pediatrician",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@ahs.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Caskey, MD, MAPP",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/rachel-caskey-a806044a",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Frank Cetta, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Of Chicago",
@@ -3713,6 +3922,17 @@
    "linkedin": "https://www.linkedin.com/in/frank-cetta-6530a154",
    "email": "f\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Joel Charrow, MD",
+   "title": "Pediatrician",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3728,6 +3948,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elaine Coldren",
+   "title": "Pediatrician",
+   "org": "Laboratory Corporation Of America",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Conrad, MD",
+   "title": "Pediatrician",
+   "org": "Access Community Health Network",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@dal.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Contreras",
+   "title": "Pediatrician",
+   "org": "Lakeview Pediatrics, Llc",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Tracy Cooper, MSW, LCSW, EI-IMH",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "Emotional Intelligence Inc.",
@@ -3735,6 +3988,17 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@hackettschools.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Denise Cunill, MD",
+   "title": "Pediatrician",
+   "org": "Cook County",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3750,6 +4014,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Wendy Darlington",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "The University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/wendy-darlington-67279411",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Dobyns, M.D",
+   "title": "Pediatrician",
+   "org": "Fairview Express Care",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@umn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Colleen Fox, MD",
+   "title": "Neonatologist",
+   "org": "Northside Neonatal And Infant Care Sc",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shireen Hashmat",
    "title": "Pediatric Nephrologist",
    "org": "University Of Chicago",
@@ -3761,6 +4058,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Peter Heydemann, M.D",
+   "title": "Pediatrician",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Judith Holleman",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Chicago",
@@ -3768,6 +4076,50 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ravi Jhaveri, M.D",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/ravi-jhaveri-25b6b48",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jannine Joyce, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/jannine-joyce-72a781b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Kahn",
+   "title": "Pediatrician",
+   "org": "Northwestern Medical Faculty Foundation",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@iqvia.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ronald Kallen, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Childrens Kidney Specialists Sc",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3794,6 +4146,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Damien Kenny, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Rush Center For Congenital & Structural Heart Disease",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anil Kesavan, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rush University Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/anil-kesavan-67a8763",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Fatima Khan, MD",
    "title": "Pediatric Allergist & Immunologist",
    "org": "University Of Chicago",
@@ -3801,6 +4175,17 @@
    "linkedin": "https://www.linkedin.com/in/fatima-khan-269545105",
    "email": "f\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Teresa Kim, M.D",
+   "title": "Pediatrician",
+   "org": "Northside-Suburban Pediatric Associates, S.C.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022@mail.einstein.yu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3816,6 +4201,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "David Lee, M.D",
+   "title": "Pediatrician",
+   "org": "Advocate Health And Hospitals Corporation",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022@pacific.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alicia Lenzen, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202274",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Krithika Lingappan, MD",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://sg.linkedin.com/in/krithika-lingappan-76b640156",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@chop.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Liu, M.D., M.P.H",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/amy-liu-91371713",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@med.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gina Lowell, M.D",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/gina-lowell-3009b48",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Ludwig, M.D",
+   "title": "Pediatrician",
+   "org": "Nephrology Associates Of Northern Illinois Ltd",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hshs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202209",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Emily Lund, M.D",
    "title": "Pediatrician",
    "org": "University Of Chicago",
@@ -3823,6 +4274,61 @@
    "linkedin": "https://www.linkedin.com/in/emily-lund-887388261",
    "email": "e\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202249",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Brian Madden, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ana Clara Mauro",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Abdul Mazin, M.D",
+   "title": "Pediatrician",
+   "org": "Baptist Health Medical Group INC",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anna McCormick, DO",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/anna-mccormick-160a1765",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Medernach, M.D",
+   "title": "Pediatrician",
+   "org": "Rush University Medical Group",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3844,6 +4350,39 @@
    "city": "Chicago",
    "linkedin": "https://www.linkedin.com/in/elizabeth-meinert-82b82915b",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Miller, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ufl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Marc Miller, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mssm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Minier, MD",
+   "title": "Pediatrician",
+   "org": "Esperanza Health Centers",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/mark-minier-2b0519169",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -3871,12 +4410,67 @@
    "practiceEmail": ""
   },
   {
+   "name": "Joshua Murphy, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Rush Center For Congenital & Structural Heart Disease",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@choa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Margaret Nickels, M.D",
+   "title": "Pediatrician",
+   "org": "Esperanza Health Centers",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Suwon Nopachai, M.D",
+   "title": "Pediatrician",
+   "org": "Rush University Medical Center",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Audrey Oetomo",
    "title": "Pediatric Nurse Practitioner",
    "org": "University Of Chicago",
    "city": "Chicago",
    "linkedin": "https://www.linkedin.com/in/audrey-oetomo-87997373",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amanda Osta, MD",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/amanda-osta-8b539674",
+   "email": "a\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Clarence Parks, M.D",
+   "title": "Pediatrician",
+   "org": "Rush Center For Congenital & Structural Heart Disease",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/clarence-parks-55985212",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@aol.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -3926,6 +4520,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Victoria Rodriguez, M.D",
+   "title": "Pediatrician",
+   "org": "University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/victoria-aylin-rodriguez",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Arlene Roman",
    "title": "Pediatrician",
    "org": "University Of Chicago",
@@ -3933,6 +4538,61 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jenna Rossoff, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/jenna-rossoff-b33b355b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sharon Scott, M.D",
+   "title": "Pediatrician",
+   "org": "Irok Obstetrics & Gynecological Services Ltd",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Felicia Scott, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Rush University Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/felicia-scott-98625470",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Seed, MD PHD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kavitha Selvaraj, MD",
+   "title": "Pediatrician",
+   "org": "Lurie Children'S Medical Group",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3970,6 +4630,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jean Silvestri, M.D",
+   "title": "Neonatologist",
+   "org": "Rush University Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/jean-silvestri-9b1414142",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Ruchi Singla",
    "title": "Pediatric Allergist & Immunologist",
    "org": "University Of Chicago",
@@ -4003,6 +4674,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Amy Walz, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Lurie Children'S Medical Group INC.",
+   "city": "Chicago",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jeremy Winer, MD",
    "title": "Pediatric Endocrinologist",
    "org": "University Of Chicago",
@@ -4010,6 +4692,28 @@
    "linkedin": "https://pa.linkedin.com/in/jeremy-winer-81500975",
    "email": "j\u2022\u2022\u2022\u2022\u2022@uchicago.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sho Yano, MD",
+   "title": "Pediatrician",
+   "org": "The University Of Chicago Medical Center",
+   "city": "Chicago",
+   "linkedin": "https://www.linkedin.com/in/orlando-lara-b901a826b",
+   "email": "s\u2022\u2022\u2022\u2022@uchicago.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher Nau, MD",
+   "title": "Pediatrician",
+   "org": "Osf Multi-Specialty Group",
+   "city": "Chillicothe",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uhhospitals.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4058,6 +4762,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Thomas Lynch, M.D",
+   "title": "Pediatrician",
+   "org": "Dupage Pediatrics",
+   "city": "Darien",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@nationwidechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Gill, MD PHD",
+   "title": "Pediatrician",
+   "org": "Primary Care Medical Specialists L.L.C",
+   "city": "Des Plaines",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@me.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kerry Sheehan, D.O",
+   "title": "Pediatrician",
+   "org": "Downers Grove Pediatrics Ltd",
+   "city": "Downers Grove",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@dgpeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202251",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Stephannie Davies, MD",
    "title": "Pediatrician",
    "org": "Greater Family Health",
@@ -4091,6 +4828,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lauren Reid, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Associates In Pediatrics Sc",
+   "city": "Elgin",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@delaware.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Taff, MD/PHD",
+   "title": "Pediatrician",
+   "org": "Vna Health Care",
+   "city": "Elgin",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Clair Triner, M.S., PNP-BC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Greater Family Health",
@@ -4098,6 +4857,28 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@greaterfamilyhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Benjamin Kornfeld, MD",
+   "title": "Pediatrician",
+   "org": "North Suburban Pediatrics, Sc",
+   "city": "Evanston",
+   "linkedin": "https://www.linkedin.com/in/benjamin-kornfeld-82776213",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melanie Thomas, M.D",
+   "title": "Pediatrician",
+   "org": "Traisman Benuck Traisman & Merens",
+   "city": "Evanston",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@mac.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4146,6 +4927,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lizbeth Didriksen, M.D",
+   "title": "Pediatrician",
+   "org": "Bard And Didriksen Pediatrics, P.C.",
+   "city": "Glen Carbon",
+   "linkedin": "https://www.linkedin.com/in/lizbeth-didriksen-46a18b116",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202212",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Karen Nauman, MD",
    "title": "Pediatrician",
    "org": "Bard And Didriksen Pediatrics, P.C.",
@@ -4164,6 +4956,28 @@
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utoronto.ca",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Samina Ali, M.D",
+   "title": "Pediatrician",
+   "org": "Grace Pediatrics Llc",
+   "city": "Glendale Heights",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022@ualberta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amanda Parsley, D.O",
+   "title": "Pediatrician",
+   "org": "Southern Illinois Healthcare Foundation, Inc",
+   "city": "Granite City",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@orange.k12.nc.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4245,6 +5059,72 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lester Hockenberry",
+   "title": "Pediatrician",
+   "org": "Family Christian Health Center",
+   "city": "Harvey",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@familychc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Athra Kaviani, MD",
+   "title": "Neonatologist",
+   "org": "Endeavor Health Clinical Operations",
+   "city": "Highland Park",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Siegel, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Highland Park Pediatric Associates",
+   "city": "Highland Park",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@pedraresearch.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Adam Norton, M.D",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Springfield Clinic, LLP",
+   "city": "Jacksonville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melanie Lachman, M.D",
+   "title": "Pediatrician",
+   "org": "All Star Pediatrics, P.C.",
+   "city": "La Grange Highlands",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@talgov.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Kaczor, MD",
+   "title": "Pediatrician",
+   "org": "Lagrange Pediatrics Ltd",
+   "city": "Lagrange",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@lagrangepeds.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Samantha Bailey, DO",
    "title": "Pediatrician",
    "org": "Lake Forest Pediatric Associates, Ltd",
@@ -4322,6 +5202,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Mary Hanley, M.D",
+   "title": "Pediatrician",
+   "org": "Lake Forest Pediatric Associates, Ltd",
+   "city": "Lake Bluff",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@durham.ac.uk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Katherine Hidaka, M.D",
    "title": "Pediatrician",
    "org": "Lake Forest Pediatric Associates, Ltd",
@@ -4361,6 +5252,28 @@
    "city": "Lake Bluff",
    "linkedin": "",
    "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@lakeforestpediatrics.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Craig, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lake Forest Pediatric Associates, Ltd",
+   "city": "Lake Forest",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@jointcommission.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Fitzpatrick, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Lake Forest Pediatric Associates, Ltd",
+   "city": "Lake Forest",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@usdoj.gov",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -4410,6 +5323,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Kenneth Porter, MD",
+   "title": "Pediatrician",
+   "org": "Lemont Primary Care, Sc",
+   "city": "Lemont",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@k12.dc.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Donald Fisher, M.D",
    "title": "Pediatrician",
    "org": "Willow Oak Pediatrics",
@@ -4432,6 +5356,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Brian Medernach, BRIAN MEDERNACH",
+   "title": "Pediatrician",
+   "org": "Infectious Diseases Associates PC",
+   "city": "Lombard",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Smith, MD",
+   "title": "Pediatrician",
+   "org": "Dupage Medical Group Ltd",
+   "city": "Lombard",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jennifer Krick, M.D",
    "title": "Pediatrician",
    "org": "Ssm Medical Group",
@@ -4439,6 +5385,28 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ssmhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Reynolds, DNP,  PMHNP-BC",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Sertoma Centre, Inc.",
+   "city": "Matteson",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@ioscoresa.net",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lawrence Bennett, MD",
+   "title": "Neonatologist",
+   "org": "Loyola University Medical Center",
+   "city": "Maywood",
+   "linkedin": "https://uk.linkedin.com/in/lawrence-bennett",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4465,6 +5433,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Minal Giri, M.D",
+   "title": "Pediatrician",
+   "org": "K.B.Giri Mdsc",
+   "city": "Melrose Park",
+   "linkedin": "https://www.linkedin.com/in/dr-minal-giri-60a6176",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Hartman, D.O",
+   "title": "Pediatrician",
+   "org": "Hartman Pediatrics, Llc",
+   "city": "Moline",
+   "linkedin": "https://www.linkedin.com/in/sarah-hartman-c400",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Joyce, M.D",
+   "title": "Pediatrician",
+   "org": "Suburban Pediatrics, Ltd.",
+   "city": "Morton Grove",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@vcuhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Becca Barth, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Christopher Greater Area Rural Health Planning Corporation",
@@ -4483,6 +5484,17 @@
    "linkedin": "https://www.linkedin.com/in/megan-plummer-885550199",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@crhpc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Vladimir Ulyanov, M.D",
+   "title": "Pediatrician",
+   "org": "Excelsior Medical Center Ltd",
+   "city": "Mundelein",
+   "linkedin": "",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@faa.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4553,6 +5565,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Karen Loftus, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Pediatric Health Associates Ltd",
+   "city": "Naperville",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@yahoo.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Lisa Martin, MD MPH",
    "title": "Pediatrician",
    "org": "Pediatric Health Associates Ltd",
@@ -4564,6 +5587,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Shreevidya Menon, D.O",
+   "title": "Pediatrician",
+   "org": "Edward Health Ventures",
+   "city": "Naperville",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Gokila Pillai, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Health Associates Ltd",
@@ -4571,6 +5605,17 @@
    "linkedin": "",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@pedhealth.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Sambrookes, SLPD, CCC-SLP, PLLC",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "Laura Sambrookes-McQuade, Slpd, Ccc-Slp, Pllc",
+   "city": "Naperville",
+   "linkedin": "https://www.linkedin.com/in/laurasambrookesmcquade",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4663,6 +5708,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Pei-Yuan Tsou, MD",
+   "title": "Pediatrician",
+   "org": "Edward Health Ventures",
+   "city": "Naperville",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202297",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Laura Uselding, MD",
    "title": "Pediatrician",
    "org": "Pediatric Health Associates Ltd",
@@ -4674,6 +5730,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Paul Tortoriello, M.D",
+   "title": "Pediatrician",
+   "org": "Meridian App Medical Services, Llc",
+   "city": "New Lenox",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Saavedra, M.D",
+   "title": "Pediatrician",
+   "org": "Bromenn Physicians Management Corporation",
+   "city": "Normal",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@icloud.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shaunte Moore, CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Ssm Medical Group",
@@ -4681,6 +5759,61 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@ssmhealth.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ann Collier, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Oak Brook Allergists Sc",
+   "city": "Oak Brook",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uw.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kurt Drury, MD",
+   "title": "Pediatrician",
+   "org": "University Of Chicago",
+   "city": "Oak Lawn",
+   "linkedin": "https://www.linkedin.com/in/kurt-drury-307490280",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Gordon, DO",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Torero Pulmonary Specialists, Sc",
+   "city": "Oak Lawn",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Thomas Myers, M.D",
+   "title": "Neonatologist",
+   "org": "Renaissance Medical Group",
+   "city": "Oak Lawn",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Saad Siddiqui, MD",
+   "title": "Pediatric Cardiologist",
+   "org": "Advocate Health And Hospitals Corporation",
+   "city": "Oak Lawn",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@duhs.edu.pk",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4740,6 +5873,127 @@
    "practiceEmail": ""
   },
   {
+   "name": "Elizabeth Thompson, M.D",
+   "title": "Pediatrician",
+   "org": "Oak Park Pediatrics Ltd.",
+   "city": "Oak Park",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "William Crevier, MD",
+   "title": "Pediatrician",
+   "org": "William I Crevier Md Ltd",
+   "city": "Orland Park",
+   "linkedin": "https://www.linkedin.com/in/williamcrevier",
+   "email": "w\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christine Duong, M.D",
+   "title": "Pediatrician",
+   "org": "Palatine Pediatrics",
+   "city": "Palatine",
+   "linkedin": "https://www.linkedin.com/in/christine-duong-486b8931",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jonathan Belgrad, M.D",
+   "title": "Pediatrician",
+   "org": "Southwest Pediatrics, Ltd.",
+   "city": "Palos Park",
+   "linkedin": "https://www.linkedin.com/in/jonathan-belgrad-48937468",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Emily Dudek, D.O",
+   "title": "Pediatrician",
+   "org": "Center For Childrens Digestive Health",
+   "city": "Park Ridge",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022@uh.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Becker",
+   "title": "Pediatrician",
+   "org": "Osf Multi-Specialty Group",
+   "city": "Peoria",
+   "linkedin": "",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@pitt.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Girish Deshpande, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Of Illinois",
+   "city": "Peoria",
+   "linkedin": "https://www.linkedin.com/in/girish-deshpande-5664914a",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@health.nsw.gov.au",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeanne Harris",
+   "title": "Pediatrician",
+   "org": "Lisenby Physical Therapy For Women, Inc.",
+   "city": "Peoria",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uvm.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Prerna Kumar, M.D",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Of Illinois",
+   "city": "Peoria",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022@tulane.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Mark Miller, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "University Of Illinois",
+   "city": "Peoria",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sylwia Nowak, M.D",
+   "title": "Pediatrician",
+   "org": "Osf Multi-Specialty Group",
+   "city": "Peoria",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jonathan Roberts, M.D",
    "title": "Pediatrician",
    "org": "The Bleeding And Clotting Disorders Institute",
@@ -4751,6 +6005,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Sidney Stewart, M.D",
+   "title": "Pediatrician",
+   "org": "The Board Of Trustees Of The University Of Illinois",
+   "city": "Peoria",
+   "linkedin": "https://www.linkedin.com/in/sidney-stewart-97086126a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@outlook.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Michael Tarantino, MD",
    "title": "Pediatric Hematologist-Oncologist",
    "org": "The Bleeding And Clotting Disorders Institute",
@@ -4758,6 +6023,17 @@
    "linkedin": "https://www.linkedin.com/in/michael-tarantino-0b113a70",
    "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@ilbcdi.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Forbes, M.D., PH.D",
+   "title": "Pediatrician",
+   "org": "Pinckneyville Community Hospital",
+   "city": "Pinckneyville",
+   "linkedin": "https://www.linkedin.com/in/ajforbes",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@monash.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202231",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4806,6 +6082,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Becky Campbell, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Quincy Physicians & Surgeons Clinic, Pllc",
+   "city": "Quincy",
+   "linkedin": "https://www.linkedin.com/in/becky-campbell-rn",
+   "email": "b\u2022\u2022\u2022\u2022\u2022\u2022@drexel.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Todd Porter, MD",
+   "title": "Pediatrician",
+   "org": "Quincy Physicians & Surgeons Clinic, Pllc",
+   "city": "Quincy",
+   "linkedin": "",
+   "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jillian Kaskavage, M.D",
    "title": "Pediatrician",
    "org": "Swedishamerican Hospital",
@@ -4813,6 +6111,28 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Clarisa Medina Poeliniz, APN",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "County Of Ogle",
+   "city": "Rochelle",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@utah.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202276",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashraf Baeshu, M.D",
+   "title": "Neonatologist",
+   "org": "Javon Bea Hospital",
+   "city": "Rockford",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4839,6 +6159,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Francisco Carrion, MD",
+   "title": "Pediatric Endocrinologist",
+   "org": "Rockford Health Physicians",
+   "city": "Rockford",
+   "linkedin": "",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Thomas Danko, MD",
    "title": "Pediatrician",
    "org": "Swedishamerican Hospital",
@@ -4846,6 +6177,28 @@
    "linkedin": "",
    "email": "t\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Deutsch, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rockford Health Physicians",
+   "city": "Rockford",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Prabha Dosi, M.D",
+   "title": "Neonatologist",
+   "org": "Pediatrix Medical Group Of Illinois Pc",
+   "city": "Rockford",
+   "linkedin": "https://www.linkedin.com/in/prabha-dosi-466803a9",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4883,12 +6236,34 @@
    "practiceEmail": ""
   },
   {
+   "name": "John Hart, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Of Rockford",
+   "city": "Rockford",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022@utdallas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202227",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Armando Huaringa, M.D",
    "title": "Neonatologist",
    "org": "Swedishamerican Hospital",
    "city": "Rockford",
    "linkedin": "",
    "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Pablo Morales, MD",
+   "title": "Neonatologist",
+   "org": "Rockford Health Physicians",
+   "city": "Rockford",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@mednet.ucla.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -4911,6 +6286,28 @@
    "city": "Rockford",
    "linkedin": "",
    "email": "w\u2022\u2022\u2022\u2022@uwhealth.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "David Shoberg, M.D",
+   "title": "Pediatric Pulmonologist",
+   "org": "Rockford Pediatric Pulmonology, Ltd.",
+   "city": "Rockford",
+   "linkedin": "https://www.linkedin.com/in/david-shoberg-71b7b237a",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Eugene Vortia, MD",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Rockford Health Physicians",
+   "city": "Rockford",
+   "linkedin": "https://www.linkedin.com/in/eugene-vortia-8b19bb7b",
+   "email": "v\u2022\u2022\u2022\u2022\u2022\u2022@ccf.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -4971,6 +6368,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Michael Odonnell, MD",
+   "title": "Pediatrician",
+   "org": "Children & Teensmedical Center",
+   "city": "Schaumburg",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Jocelyn Robertson, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Woodfield Pediatrics Sc",
@@ -4978,6 +6386,61 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@fuse.net",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Leah Durst, M.D",
+   "title": "Pediatrician",
+   "org": "Endeavor Health Medical Group",
+   "city": "Skokie",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022@purdue.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Lawrence, NP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Kids First Pediatric Partners Sc",
+   "city": "Skokie",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gsu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ingrid Alexander, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Physicians Group Associates S C",
+   "city": "Springfield",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@hcmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jody Lack, MD",
+   "title": "Pediatrician",
+   "org": "St. John'S Hospital",
+   "city": "Springfield",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022@siumed.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Laura Radel, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "St. John'S Hospital",
+   "city": "Springfield",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@utsouthwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5000,6 +6463,28 @@
    "linkedin": "https://ph.linkedin.com/in/ariel-gerard-tolentino-4741a4200",
    "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@centralcounties.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Smith, M.D",
+   "title": "Pediatrician",
+   "org": "Fox Valley Women & Children'S Health Partners Ltd",
+   "city": "St Charles",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@som.umaryland.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Han, M.D",
+   "title": "Pediatrician",
+   "org": "Southern Illinois Healthcare Foundation, Inc.",
+   "city": "Swansea",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022@mail.utoronto.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5037,6 +6522,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Holly Russell, M.D",
+   "title": "Pediatrician",
+   "org": "Hahn Pediatric Group Llc",
+   "city": "Tinley Park",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@thisweekhealth.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Dahlen, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of Illinois Urbana-Champaign",
+   "city": "Urbana",
+   "linkedin": "https://ph.linkedin.com/in/jeffrey-dahlen-9ab99a7b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@zacros.co.jp",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Yu-Shan Tseng, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Carle Foundation Hospital",
+   "city": "Urbana",
+   "linkedin": "",
+   "email": "y\u2022\u2022\u2022\u2022\u2022\u2022@uic.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sarah Joseph, MD",
+   "title": "Pediatrician",
+   "org": "Osf Multi-Specialty Group",
+   "city": "Washington",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@email.unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lubna Abdullah, MD",
+   "title": "Pediatrician",
+   "org": "Kids Urgent Care Ltd",
+   "city": "Wheaton",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202221",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Shama Shirazi, M.D",
    "title": "Pediatrician",
    "org": "Greater Family Health",
@@ -5044,6 +6584,28 @@
    "linkedin": "",
    "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@greaterfamilyhealth.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patricia Brunner, M.D",
+   "title": "Pediatrician",
+   "org": "Peter R. Lewy, Md, Ltd",
+   "city": "Wilmette",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@iapa.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rosalind Downing, M.D",
+   "title": "Pediatrician",
+   "org": "Woodridge Clinic S.C",
+   "city": "Woodridge",
+   "linkedin": "https://www.linkedin.com/in/rosalind-downing-bb003786",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@northwestern.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5090,17 +6652,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@oprfchamber.org"
-  },
-  {
-   "name": "Gina Mathew, D.O",
-   "title": "Pediatrician",
-   "org": "Mea Medical Care Centers, Llc",
-   "city": "Addison",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
   },
   {
    "name": "Ausencio Nunez, M.D",
@@ -5474,7 +7025,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@legacymedicalcare.org"
   },
   {
    "name": "Elchanan Golan, M.D",
@@ -5719,17 +7270,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anita Shah, M.D",
-   "title": "Pediatrician",
-   "org": "Partners In Pediatrics, S.C.",
-   "city": "Arlington Heights",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202204",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Suman Sharma, M.D",
    "title": "Pediatrician",
    "org": "Dina Kaner, M.D., S.C.",
@@ -5760,7 +7300,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@legacymedicalcare.org"
   },
   {
    "name": "Gregory Summers, M.D",
@@ -5968,17 +7508,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nisha Kakodkar, M.D",
-   "title": "Pediatrician",
-   "org": "Dreyer Clinic, Inc",
-   "city": "Aurora",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202205",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6291,17 +7820,6 @@
    "practiceEmail": "e\u2022\u2022\u2022\u2022@pediatric-care.org"
   },
   {
-   "name": "Judith Brown, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates Of Barrington, S.C.",
-   "city": "Barrington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Darryl Colen, D.O",
    "title": "Pediatrician",
    "org": "Pediatric Associates Of Barrington, S.C.",
@@ -6423,17 +7941,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Schwartz, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Schwartz Pediatrics Sc",
-   "city": "Bartlett",
-   "linkedin": "https://www.linkedin.com/in/sjoelkatz",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Henry Schwartz, M.D",
    "title": "Pediatrician",
    "org": "Schwartz Pediatrics Sc",
@@ -6474,17 +7981,6 @@
    "linkedin": "https://www.linkedin.com/in/laurie-beavers-5340278a",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202242",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Renee Davis, DNP, APRN, CPNP-PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "David C. Norman Md Inc",
-   "city": "Belleville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6995,17 +8491,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Mohammad Khan, MD",
-   "title": "Pediatrician",
-   "org": "Complete Child Health",
-   "city": "Bolingbroook",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Antoni Banas, MD",
    "title": "Pediatrician",
    "org": "Antoni Banas Inc",
@@ -7204,17 +8689,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Judith Garcia, MD",
-   "title": "Pediatrician",
-   "org": "Sanders Court Pediatrics, Ltd.",
-   "city": "Buffalo Grove",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jessica Nilsen, MD",
    "title": "Pediatrician",
    "org": "Sanders Court Pediatrics, Ltd.",
@@ -7312,17 +8786,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Liedel, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Nemours Foundation",
-   "city": "Burr Ridge",
-   "linkedin": "https://www.linkedin.com/in/jennifer-liedel-615a53104",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org"
   },
   {
    "name": "Charles Marcuccilli, MD",
@@ -7487,7 +8950,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "d\u2022\u2022\u2022\u2022\u2022\u2022@cherokeeia.com"
   },
   {
    "name": "Lori Eberhart, M.D",
@@ -7831,17 +9294,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Abts, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "The Association Of Chrmc And University Physicians",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/matthew-abts-md-a4a43775",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202264",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Billie Adams, MD",
    "title": "Pediatrician",
    "org": "Pediatric Associates Sc",
@@ -7860,17 +9312,6 @@
    "linkedin": "https://www.linkedin.com/in/ellenchiocca",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Fatima Ajmal, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Chicago",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/fatima-ajmal-525a3725a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7904,17 +9345,6 @@
    "linkedin": "https://www.linkedin.com/in/katrynatorres/tl",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Akhtar, MD, PHD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8216,17 +9646,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Sherif Badawy, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/sherif-badawy-md-ms-mba-b84464116",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Colleen Badke, MD/MPH",
    "title": "Pediatrician",
    "org": "Lurie Children'S Medical Group INC.",
@@ -8300,28 +9719,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202241",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Barnes, MD",
-   "title": "Pediatrician",
-   "org": "Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/michellembarnes27",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
-   "name": "Christina Barriteau, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8667,17 +10064,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kathleen Breen, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/kathleen-breen-48218195",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
    "name": "Erin Bressler, M.D",
    "title": "Pediatric Critical Care Specialist",
    "org": "Lurie Children'S Medical Group INC.",
@@ -8832,17 +10218,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lorraine Canham, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/lorraine-canham-28019519",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Thomas Carberry, M.D",
    "title": "Pediatric Cardiologist",
    "org": "Spectrum Health Primary Care Partners",
@@ -8874,28 +10249,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Laura Carter",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Caskey, MD, MAPP",
-   "title": "Pediatrician",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/rachel-caskey-a806044a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
   },
   {
    "name": "Yesenia Ceja, PNP",
@@ -9004,17 +10357,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joel Charrow, MD",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9151,17 +10493,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elaine Coldren",
-   "title": "Pediatrician",
-   "org": "Laboratory Corporation Of America",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jennifer Colleton, M.D",
    "title": "Pediatrician",
    "org": "Erie Family Health Center, INC",
@@ -9184,17 +10515,6 @@
    "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
   },
   {
-   "name": "Patricia Conrad, MD",
-   "title": "Pediatrician",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lauren Conti, MD",
    "title": "Pediatrician",
    "org": "University Of Chicago Medical Center",
@@ -9204,17 +10524,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Contreras",
-   "title": "Pediatrician",
-   "org": "Lakeview Pediatrics, Llc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@lincolnsquare.org"
   },
   {
    "name": "Sara Cooper, MD",
@@ -9294,17 +10603,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Denise Cunill, MD",
-   "title": "Pediatrician",
-   "org": "Cook County",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
-   "phoneType": "Practice",
-   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@cookcountytreasurer.com"
-  },
-  {
    "name": "Sherry D'Souza, M.D",
    "title": "Pediatrician",
    "org": "Northwestern Medical Faculty Foundation",
@@ -9354,17 +10652,6 @@
    "org": "University Of Chicago",
    "city": "Chicago",
    "linkedin": "https://www.linkedin.com/in/rachel-danzig-93821b179",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wendy Darlington",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "The University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/wendy-darlington-67279411",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -9488,17 +10775,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202299",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Dobyns, M.D",
-   "title": "Pediatrician",
-   "org": "Fairview Express Care",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202225",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9709,7 +10985,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202217",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "s\u2022\u2022\u2022\u2022\u2022\u2022@zippia.com"
   },
   {
    "name": "Ann Fazzio",
@@ -9809,1282 +11085,6 @@
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202298",
    "phoneType": "Practice",
    "practiceEmail": ""
-  },
-  {
-   "name": "Nia Foney",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/niafoney",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Fortunato, MD",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Colleen Fox, MD",
-   "title": "Neonatologist",
-   "org": "Northside Neonatal And Infant Care Sc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carolyn Fox, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/carolyn-fox-7283a828",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
-   "name": "Consuelo Fuentes, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Shriners Hospitals For Children",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ramsay Fuleihan, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Trustees Of Columbia University In The City Of New York",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": "g\u2022\u2022\u2022\u2022\u2022\u2022@columbia.edu"
-  },
-  {
-   "name": "Anna Funsten",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lincoln Pediatric Center, Pc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sabiha Gafoor, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Chicago City Of",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/sabiha-gafoor-0b39161b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alex Mauricio Gale, MD",
-   "title": "Pediatrician",
-   "org": "Osf Multi-Specialty Group",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/alex-mauricio-gale-9049bb318",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shannon Gallagher, DO",
-   "title": "Pediatrician",
-   "org": "Mainegeneral Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Katheryn Gambetta, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "David Gamboa",
-   "title": "Pediatric Cardiologist",
-   "org": "Advocate Health And Hospitals Corporation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Harivadan Gandhi, M.D",
-   "title": "Pediatrician",
-   "org": "Harivadan K Gandhi Md Sc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rupali Gandhi, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Advocate Health And Hospitals Corporation",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/rupali-gandhi-md-jd-160424371",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Madhusudan Ganigara, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Advocate Health And Hospitals Corporation",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/madhusudan-ganigara-3b17b9137",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202229",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Garcia, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/elizabeth-e-garcia",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Garcia Sosa, M.D",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/rebecca-garcia-sosa-13573823",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jamuna Garisa, M.D.,",
-   "title": "Pediatrician",
-   "org": "John H Stroger Hospital Of Cook County",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202243",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "McKinnon Garrett, MD",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Gillian Garver, MD",
-   "title": "Pediatrician",
-   "org": "Northwestern Medical Faculty Foundation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@idealist.org"
-  },
-  {
-   "name": "Dipika Gaur, MD",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/dipika-gaur-782b0430",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anne Gearhart, M.D",
-   "title": "Pediatrician",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/anne-gearhart-6211ab36",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202277",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Genualdi, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Csf Medical Specialists, Llc.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kamala Ghaey, MD",
-   "title": "Pediatrician",
-   "org": "Kidz Health P.C.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vivek Ghai, MD",
-   "title": "Neonatologist",
-   "org": "Northside Neonatal And Infant Care Sc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202247",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Debasree Ghosh, MD",
-   "title": "Pediatrician",
-   "org": "Northshore Pediatrics Associates,S.C.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202223",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ursula Giesen, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/ursula-giesen-831102b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Gill, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Town And Country Pediatrics",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Johana Gimenezrodriguez, MD",
-   "title": "Pediatrician",
-   "org": "Near North Health Service Corporation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mariana Glusman, MD",
-   "title": "Pediatrician",
-   "org": "Near North Health Service Corporation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Goldhar, RN, PNP-AC/PC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/emily-goldhar-4a1876106",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Joshua Goldstein, MD",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karen Goldstein, M.D",
-   "title": "Pediatrician",
-   "org": "Friend Family Health Center Inc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anne Goodenow, MD, MPH",
-   "title": "Pediatrician",
-   "org": "Chicago Lake Shore Medical Associates,Ltd",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carrie Gosch, M.D",
-   "title": "Pediatrician",
-   "org": "Children'S Healthcare Associates P.C.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nina Gotteiner, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/nina-gotteiner-08788b10b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Vidya Govind, MD",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/vidya-govind-23b64815",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Dannielle Grayer, MD",
-   "title": "Pediatrician",
-   "org": "McGaw Medical Center Of Northwestern University",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/dannielle-grayer-md-mph-a695aa42",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lauren Gregory",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ligia Grindeanu, M.D",
-   "title": "Pediatrician",
-   "org": "J C Reyes Pediatrics Sc",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/ligia-grindeanu-47931b10",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Gruenstein, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Eastern Maine Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022\u2022@ahd.com"
-  },
-  {
-   "name": "Brisa Gulari-Jones, MD",
-   "title": "Pediatrician",
-   "org": "Pcc Community Wellness Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202285",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@pccwellness.org"
-  },
-  {
-   "name": "Ruchi Gupta, MD MPH",
-   "title": "Pediatrician",
-   "org": "Near North Health Service Corporation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sachin Gupta, M.D",
-   "title": "Neonatologist",
-   "org": "John H Stroger Hospital Of Cook County",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robyn Gutierrez, DO",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Linda Guzman-Kurani, APN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/linda-guzman-kurani-msn-cpnp-517ab447",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elizabeth Haggerty, MD",
-   "title": "Pediatrician",
-   "org": "Lakeview Pediatrics, Llc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@lincolnsquare.org"
-  },
-  {
-   "name": "Laura Halprin, MSN, CPNP-AC",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/laura-halprin-b2b46510a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Davin Hami, MD",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Steve Handoyo, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "The University Of Chicagp",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/steve-handoyo-a892b85",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Kristen Haney, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "Advocate Dental Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Brian Hang, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Collin Hanson, MD",
-   "title": "Pediatrician",
-   "org": "Northwestern Medical Faculty Foundation",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/collin-hanson-4a0486242",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@idealist.org"
-  },
-  {
-   "name": "Victoria Haro, M.D",
-   "title": "Neonatologist",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://mx.linkedin.com/in/victoria-haro-uma/en",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Hannah Harp, MD",
-   "title": "Pediatrician",
-   "org": "Esperanza Health Centers",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leslie Harris, M.D",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/leslie-harris-122a8134",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Maureen Haugen, APN NP",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/maureen-haugen-0bb658116",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karen Haverkamp, MD",
-   "title": "Pediatrician",
-   "org": "Laboratory Corporation Of America",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202294",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "William Hayden, M.D",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/amplifywilliam",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Taylor Heald-Sargent, M.D., PH.D",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/taylorhealdsargent",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Federico Herrera, M.D",
-   "title": "Pediatrician",
-   "org": "Esperanza Health Centers",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Heydemann, M.D",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202236",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Hickey, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Hospitals",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/erin-hickey-81bb6014",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ziyad Hijazi, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "Rush Center For Congenital & Structural Heart Disease",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/ziyad-hijazi-7b343860",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Letitia Hillsman, M.D",
-   "title": "Pediatrician",
-   "org": "Cook County",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@cookcountytreasurer.com"
-  },
-  {
-   "name": "Dawson Hobbs",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/dawson-hobbs-w27",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "George Hoganson, MD",
-   "title": "Pediatrician",
-   "org": "University Of Illinois Department Of Pediatrics",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/george-hoganson-md-mba-a6245b1b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202232",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Drew Hollender, MD",
-   "title": "Pediatrician",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/drew-hollender-090533259",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Hadassa Holzapfel, MD",
-   "title": "Pediatrician",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/hadassa-holzapfel-130240b8",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
-   "name": "David Hong",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christine Horne, APN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/christine-horne-3b6a6567",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202282",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
-   "name": "Frances Howard",
-   "title": "Pediatrician",
-   "org": "Lawndale Christian Health Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@lawndale.org"
-  },
-  {
-   "name": "Virginia Hsu, M.D",
-   "title": "Pediatrician",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jingtao Huang, M.D., PH.D",
-   "title": "Pediatrician",
-   "org": "Iowa Physicians Clinic Medical Foundation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Carletha Hughes, MD",
-   "title": "Pediatrician",
-   "org": "Friedell Clinic, S. C.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/dr-carletha-hughes-49a3358",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202248",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Beau Hunsinger, MD",
-   "title": "Neonatologist",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Syed Hussaini, MD",
-   "title": "Pediatrician",
-   "org": "Pedscare Sc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Haley Hutcherson, APRN",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Christian Community Health Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/haley-hutcherson-msn-aprn-cpnp-pc-320296121",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Amy Ingeneri, MD",
-   "title": "Pediatrician",
-   "org": "Lawndale Christian Health Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@lawndale.org"
-  },
-  {
-   "name": "Sarah Ishamuddin",
-   "title": "Pediatrician",
-   "org": "The University Of Chicagp",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/sarah-ishamuddin",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Leslie Jabine, M.D",
-   "title": "Pediatrician",
-   "org": "The Board Of Trustees Of The University Of Illinois",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/leslie-jabine-99257255",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": "u\u2022\u2022\u2022\u2022@uillinois.edu"
-  },
-  {
-   "name": "Phillip Jacobson, M.D",
-   "title": "Pediatrician",
-   "org": "Base10 Genetics, Llc",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/phil-jacobson",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Omar Jamil, MD",
-   "title": "Pediatrician",
-   "org": "Osf Multi-Specialty Group",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202275",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Margolit Jankelow, MD",
-   "title": "Pediatrician",
-   "org": "Kidz Health P.C.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Christine Janowiak, MD",
-   "title": "Pediatrician",
-   "org": "Children'S Memorial Hospital",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Jao, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ravi Jhaveri, M.D",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/ravi-jhaveri-25b6b48",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Annita John, MD",
-   "title": "Pediatrician",
-   "org": "Annita John M.D. P.C.",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/annita-john-94579a2b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202216",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Johnston, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Friend Family Health Center Inc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elisabeth Jones, MD",
-   "title": "Pediatrician",
-   "org": "Lawndale Christian Health Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "i\u2022\u2022\u2022@lawndale.org"
-  },
-  {
-   "name": "Anna Joong, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202262",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shreeya Joshee",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Hospitals",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/shreeya-joshee",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Neha Joshi, MD",
-   "title": "Pediatric Pulmonologist",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/nehakjoshi",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Jannine Joyce, M.D",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/jannine-joyce-72a781b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202256",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Emily Kahn",
-   "title": "Pediatrician",
-   "org": "Northwestern Medical Faculty Foundation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202224",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@idealist.org"
-  },
-  {
-   "name": "Saba Kaiseruddin, M.D",
-   "title": "Pediatrician",
-   "org": "Near North Health Service Corporation",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Batul Kaj-Carbaidwala, MBBS",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Elzbieta Kalata, MD",
-   "title": "Neonatologist",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ronald Kallen, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Childrens Kidney Specialists Sc",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202245",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shaista Kamal, MD",
-   "title": "Pediatrician",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/shaista-kamal-745967175",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jason Kane",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Of Chicago",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/jason-kane-82a89737",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Mona Kansagra",
-   "title": "Pediatrician",
-   "org": "Town And Country Pediatrics",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Anjani Kapadia, MD",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Hospitals",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Theresa Karacic, M.D",
-   "title": "Pediatrician",
-   "org": "Northwestern Memorial Physicians Group",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202228",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Wanda Karaman, M.D",
-   "title": "Pediatrician",
-   "org": "Shantharaj Samuel M.D.,S.C.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ben Katz, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "Lurie Children'S Medical Group INC.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202287",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Gary Kaufman, M.D",
-   "title": "Pediatrician",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Damien Kenny, MD",
-   "title": "Pediatric Cardiologist",
-   "org": "Rush Center For Congenital & Structural Heart Disease",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Kent, M.D",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Anil Kesavan, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Rush University Medical Center",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/anil-kesavan-67a8763",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
-   "phoneType": "Practice",
-   "practiceEmail": "b\u2022\u2022\u2022\u2022\u2022\u2022@rush.edu"
-  },
-  {
-   "name": "Rati Khamenkhetkarn",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Medical Center",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Salman Khan, MD",
-   "title": "Pediatrician",
-   "org": "Access Community Health Network",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Aleisha Khan, MD",
-   "title": "Pediatrician",
-   "org": "University Of Chicago Hospitals",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/aleisha-khan",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Asha Kharwadkar, M.D",
-   "title": "Pediatrician",
-   "org": "Omega Community Healthcare Organization Inc.",
-   "city": "Chicago",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nazih Khatib, MD",
-   "title": "Pediatrician",
-   "org": "Dr Khatib & Associates Ltd",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/nazih-khatib-0a8aa236",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Manhal Khilfeh, M.D",
-   "title": "Neonatologist",
-   "org": "Cook County",
-   "city": "Chicago",
-   "linkedin": "https://www.linkedin.com/in/manhal-khilfeh-35b257252",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "m\u2022\u2022\u2022\u2022\u2022\u2022@cookcountytreasurer.com"
   }
  ]
 }

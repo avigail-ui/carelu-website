@@ -3,8 +3,8 @@
  "slug": "south-carolina",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-south-carolina.csv",
  "count": 2101,
- "emails": 35,
- "practiceEmails": 39,
+ "emails": 102,
+ "practiceEmails": 45,
  "phones": 2101,
  "direct": 0,
  "roles": [
@@ -108,6 +108,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "Nathan Bradford, MD",
+   "title": "Pediatrician",
+   "org": "Anmed Health",
+   "city": "Anderson",
+   "linkedin": "",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@anmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Bradshaw, MD",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates Of Anderson, P.A.",
+   "city": "Anderson",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@saskatoonhealthregion.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "James Carson, MD",
+   "title": "Pediatrician",
+   "org": "Anmed Health",
+   "city": "Anderson",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@utoronto.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rachel Ford, MD",
+   "title": "Pediatrician",
+   "org": "Anmed Health",
+   "city": "Anderson",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@dhsoha.state.or.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Anita Vagnoni, MD",
+   "title": "Pediatrician",
+   "org": "Anmed Health",
+   "city": "Anderson",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@anmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Karen Keane, D.O",
    "title": "Pediatrician",
    "org": "Sea Island Pediatrics",
@@ -115,6 +170,28 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@jefferson.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Taylor, CRNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Beaufort County Memorial Hospital",
+   "city": "Beaufort",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Rebecca Brown, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Carolina Children'S Clinic, Llc",
+   "city": "Boiling Springs",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@pennmedicine.upenn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -130,6 +207,61 @@
    "practiceEmail": ""
   },
   {
+   "name": "David Bundy, MD",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/davidmbundy",
+   "email": "d\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole Cain, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dennis Delany, M.D",
+   "title": "Pediatric Cardiologist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://es.linkedin.com/in/dennis-delany-69967129",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Allison Eckard, MD",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/allison-eckard-5a0441397",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephanie Gaydos, M.D",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/stephanie-gaydos-a47624b0",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Elizabeth Kirlis, MD",
    "title": "Pediatrician",
    "org": "Coastal Pediatric Associates, P.A.",
@@ -137,6 +269,160 @@
    "linkedin": "",
    "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jason Lake, M.D., M.P.H",
+   "title": "Pediatric Infectious Disease Specialist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/jason-lake-4658997",
+   "email": "l\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Lally, MD",
+   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/michelle-lally-8753b48",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@brown.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kerry Maleska, RN, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/kerry-maleska-aa261013",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicole McCoy, MD",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/nmowens",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Oddo",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/elizabeth-oddo-80593a17",
+   "email": "o\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Park, M.D",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Of North Carolina At Chapel Hill",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/danpark212",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@unc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "John Pastore, MD",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/john-c-pastore",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Malcolm Rhodes, MD",
+   "title": "Pediatrician",
+   "org": "Parkwood Pediatric Group Pa",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Heather Saavedra, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "Iu Health Medical Group LLC",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@uth.tmc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Sherri Smart, MD",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/sherri-smart-325298165",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Christopher Stem, MD",
+   "title": "Pediatric Emergency Medicine Physician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/christopher-stem-csp-007aa4328",
+   "email": "s\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Stephen Stripling, M.D",
+   "title": "Pediatrician",
+   "org": "Coastal Pediatric Associates, P.A.",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrea Summer, MD",
+   "title": "Pediatrician",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "https://www.linkedin.com/in/andrea-summer-46902a33",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Alice Walz, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "University Medical Associates Of The Medical University Of South Carol",
+   "city": "Charleston",
+   "linkedin": "",
+   "email": "w\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -163,6 +449,39 @@
    "practiceEmail": ""
   },
   {
+   "name": "Stephanie Ambrose, DO",
+   "title": "Pediatric Hematologist-Oncologist",
+   "org": "Prisma Health Medical Group-Midlands",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Amrol, MD",
+   "title": "Pediatrician",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julie Anderson, MD",
+   "title": "Pediatrician",
+   "org": "Prisma Health Medical Group-Midlands",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "John Carroll, M.D",
    "title": "Pediatrician",
    "org": "Childrens Choice Pediatrics Pa",
@@ -170,6 +489,127 @@
    "linkedin": "",
    "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@cuanschutz.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Charles Castles, M.D",
+   "title": "Pediatrician",
+   "org": "Pediatric Associates, P.A.",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Randall Colby, MD",
+   "title": "Pediatrician",
+   "org": "Medical Park Pediatrics & Adolescence",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Monica Cramer, D.O",
+   "title": "Pediatric Nephrologist",
+   "org": "Prisma Health Medical Group-Midlands",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Dallman, M.D",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@mailbox.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Holleman, M.D",
+   "title": "Pediatric Nephrologist",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/robert-holleman-jr",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jeffrey Holloway, M.D",
+   "title": "Pediatric Sports Medicine Physician",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/hollowayjeffrey",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Hucks, M.D",
+   "title": "Pediatrician",
+   "org": "Prisma Health Medical Group-Midlands",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/jennifer-hucks-3286b397",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Knight, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/lisa-knight-1350894",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Mitchell, DO",
+   "title": "Pediatrician",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/mjmitch",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@utexas.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Duncan Norton, M.D",
+   "title": "Pediatrician",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://uk.linkedin.com/in/duncan-norton-b12a147a",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Erin Ricker, MD",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "Palmetto Health - University Of South Carolina Medical Group",
+   "city": "Columbia",
+   "linkedin": "https://www.linkedin.com/in/erin-ricker-43b366118",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@mailbox.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -196,6 +636,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Diana Taylor, DNP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Palmetto Pediatrics Of Conway",
+   "city": "Conway",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@nursing.ucsf.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Charles Collins, MD",
    "title": "Pediatrician",
    "org": "McLeod Physician Associates II",
@@ -203,6 +654,28 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@tulane.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michael Foxworth, MD",
+   "title": "Pediatrician",
+   "org": "Hopehealth Inc",
+   "city": "Florence",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@hope-health.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Roy Furr, M.D",
+   "title": "Pediatrician",
+   "org": "Cherokee Community Care, Llc",
+   "city": "Gaffney",
+   "linkedin": "https://www.linkedin.com/in/roy-furr-47029081",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -236,6 +709,105 @@
    "linkedin": "",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@genesisfqhc.org",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Gary Bass, MD",
+   "title": "Pediatrician",
+   "org": "Childrens Medical Center",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "g\u2022\u2022\u2022\u2022\u2022\u2022@pennmedicine.upenn.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shannon Burgess, M.D",
+   "title": "Pediatrician",
+   "org": "University Medical Associates, Llc",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/shannon-burgess-m-s-7203987",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@southernschools.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Andrew Gunter, MD",
+   "title": "Pediatrician",
+   "org": "Prisma Health-Upstate",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@ruralhs.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Elizabeth Hipp, M.D",
+   "title": "Pediatrician",
+   "org": "Tribe513, P.A.",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@uscmed.sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julie Jones, PSYD",
+   "title": "Pediatrician",
+   "org": "Prisma Health University Medical Group",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/julieaherman",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@hhs.iowa.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Faith Lindsay Mart, M.D",
+   "title": "Pediatrician",
+   "org": "Prisma Health University Medical Group",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/faith-lindsay-mart-b1006414",
+   "email": "f\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melissa Robinson, M.D",
+   "title": "Pediatrician",
+   "org": "Greenville Health System",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@llu.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Kerry Sease, M.D",
+   "title": "Pediatrician",
+   "org": "Greenville Health System",
+   "city": "Greenville",
+   "linkedin": "https://www.linkedin.com/in/katharinepatrick",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@furman.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Melanie Wills, M.D",
+   "title": "Pediatrician",
+   "org": "Greenville Health System",
+   "city": "Greenville",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022@uoguelph.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -306,6 +878,83 @@
    "practiceEmail": ""
   },
   {
+   "name": "Megan Smith, MD",
+   "title": "Pediatrician",
+   "org": "Tribe513, P.A.",
+   "city": "Greer",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@medtronic.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Peter Salerno, MD",
+   "title": "Pediatrician",
+   "org": "Salerno Pediatric Care Llc",
+   "city": "Hilton Head",
+   "linkedin": "https://www.linkedin.com/in/peter-salerno-6011bb10",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Michelle Sayles, MD",
+   "title": "Pediatrician",
+   "org": "Spartanburg Medical Center",
+   "city": "Inman",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@aahd.us",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Karen Pollock, M.D",
+   "title": "Adolescent Medicine Physician",
+   "org": "Ballentine Pediatrics, Llc",
+   "city": "Irmo",
+   "linkedin": "",
+   "email": "k\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robin Estrada",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "The Children'S Clinic",
+   "city": "Lancaster",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@sc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Ashley Carter, MD",
+   "title": "Pediatrician",
+   "org": "Southern Medical Management, Llc",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@csulb.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Cheryl Gambrell, M.D",
+   "title": "Pediatrician",
+   "org": "Sandhills Pediatrics",
+   "city": "Lexington",
+   "linkedin": "",
+   "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@hotmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Christie Thomas, MD",
    "title": "Pediatrician",
    "org": "Sandhills Pediatrics",
@@ -313,6 +962,50 @@
    "linkedin": "https://www.linkedin.com/in/christie-thomas-b6106b1b",
    "email": "c\u2022\u2022\u2022\u2022\u2022\u2022@uiowa.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Matthew Davis, MD",
+   "title": "Pediatrician",
+   "org": "Mount Pleasant Pediatrics, P.A.",
+   "city": "Mount Pleasant",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@nemours.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Robert Weaver, MD",
+   "title": "Pediatrician",
+   "org": "Mount Pleasant Pediatrics, P.A.",
+   "city": "Mount Pleasant",
+   "linkedin": "",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@uky.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Maria Streck",
+   "title": "Pediatrician",
+   "org": "Carolina Family Care, Inc",
+   "city": "Mt Pleasant",
+   "linkedin": "https://www.linkedin.com/in/maria-streck-606311a",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@musc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jill Aiken, MD",
+   "title": "Pediatrician",
+   "org": "Georgetown Physician Associates, Llc",
+   "city": "Myrtle Beach",
+   "linkedin": "https://www.linkedin.com/in/jill-jill-aiken-99268a3b",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@anmed.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -434,6 +1127,50 @@
    "linkedin": "",
    "email": "e\u2022\u2022\u2022\u2022\u2022\u2022@walgreens.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202211",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Raymond Reiser, M.D",
+   "title": "Pediatrician",
+   "org": "Affinity Health Center",
+   "city": "Rock Hill",
+   "linkedin": "https://www.linkedin.com/in/raymond-reiser-9856a6365",
+   "email": "r\u2022\u2022\u2022\u2022\u2022\u2022@acaarmada.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202263",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Patrick Ryan, MD",
+   "title": "Pediatrician",
+   "org": "Novant Health Medical Group, LLC",
+   "city": "Rock Hill",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@cchmc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202234",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Dawn Russell, ARNP, CPNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Carolina Kids Pediatrics, P.A.",
+   "city": "Seneca",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@emory.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Amy Rush, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Tribe513, P.A.",
+   "city": "Spartanburg",
+   "linkedin": "https://www.linkedin.com/in/amy-rush-a6a3a591",
+   "email": "a\u2022\u2022\u2022\u2022@wustl.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -581,39 +1318,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nathan Bradford, MD",
-   "title": "Pediatrician",
-   "org": "Anmed Health",
-   "city": "Anderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202254",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Matthew Bradshaw, MD",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates Of Anderson, P.A.",
-   "city": "Anderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "James Carson, MD",
-   "title": "Pediatrician",
-   "org": "Anmed Health",
-   "city": "Anderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Deandra Clark, MD",
    "title": "Pediatrician",
    "org": "Anmed Health",
@@ -632,17 +1336,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rachel Ford, MD",
-   "title": "Pediatrician",
-   "org": "Anmed Health",
-   "city": "Anderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -823,17 +1516,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Anita Vagnoni, MD",
-   "title": "Pediatrician",
-   "org": "Anmed Health",
-   "city": "Anderson",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Megan Witrick, M.D",
    "title": "Pediatrician",
    "org": "Anmed Health",
@@ -999,17 +1681,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Amy Taylor, CRNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Beaufort County Memorial Hospital",
-   "city": "Beaufort",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michelle Davignon, PNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Rural Health Services, Inc.",
@@ -1171,17 +1842,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202260",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Rebecca Brown, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Carolina Children'S Clinic, Llc",
-   "city": "Boiling Springs",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1582,17 +2242,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Bundy, MD",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/davidmbundy",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Kayla Byrnes",
    "title": "Pediatrician",
    "org": "Musc",
@@ -1600,17 +2249,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicole Cain, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1714,17 +2352,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Dennis Delany, M.D",
-   "title": "Pediatric Cardiologist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://es.linkedin.com/in/dennis-delany-69967129",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Brittany Depriest, M.D",
    "title": "Pediatrician",
    "org": "Duke Health Integrated Practice INC",
@@ -1763,17 +2390,6 @@
    "org": "University Medical Associates Of The Medical University Of South Carol",
    "city": "Charleston",
    "linkedin": "https://www.linkedin.com/in/anca-dumitriu-0a20975",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Allison Eckard, MD",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/allison-eckard-5a0441397",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
@@ -1864,17 +2480,6 @@
    "linkedin": "https://www.linkedin.com/in/kelly-garrity-8939a7167",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephanie Gaydos, M.D",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/stephanie-gaydos-a47624b0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2319,17 +2924,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Jason Lake, M.D., M.P.H",
-   "title": "Pediatric Infectious Disease Specialist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/jason-lake-4658997",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Missy Lalich, DO",
    "title": "Pediatrician",
    "org": "Nueces Emergency Medicine Associates PA",
@@ -2337,17 +2931,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michelle Lally, MD",
-   "title": "Pediatric Neurodevelopmental Disabilities Specialist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/michelle-lally-8753b48",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2495,17 +3078,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kerry Maleska, RN, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/kerry-maleska-aa261013",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Namrita Malhi, MD",
    "title": "Pediatrician",
    "org": "Pelican Pediatrics Llc",
@@ -2544,17 +3116,6 @@
    "org": "University Medical Associates Of The Medical University Of South Carol",
    "city": "Charleston",
    "linkedin": "https://www.linkedin.com/in/patricia-mcburney-5a23a2206",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Nicole McCoy, MD",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/nmowens",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
@@ -2682,17 +3243,6 @@
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@live5news.com"
   },
   {
-   "name": "Elizabeth Oddo",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/elizabeth-oddo-80593a17",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Gurpur Pai, MD",
    "title": "Pediatric Neurodevelopmental Disabilities Specialist",
    "org": "University Medical Associates Of The Medical University Of South Carol",
@@ -2711,28 +3261,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Daniel Park, M.D",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Of North Carolina At Chapel Hill",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/danpark212",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "John Pastore, MD",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/john-c-pastore",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -2858,17 +3386,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Malcolm Rhodes, MD",
-   "title": "Pediatrician",
-   "org": "Parkwood Pediatric Group Pa",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "John Rhodes, M.D",
    "title": "Pediatric Cardiologist",
    "org": "University Medical Associates Of The Medical University Of South Carol",
@@ -2907,17 +3424,6 @@
    "org": "University Medical Associates Of The Medical University Of South Carol",
    "city": "Charleston",
    "linkedin": "https://www.linkedin.com/in/william-russell-jr-44494a1b0",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Heather Saavedra, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "Iu Health Medical Group LLC",
-   "city": "Charleston",
-   "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
@@ -2975,17 +3481,6 @@
    "linkedin": "https://www.linkedin.com/in/sharvette-slaughter-65901814",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202293",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Sherri Smart, MD",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/sherri-smart-325298165",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3056,17 +3551,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Christopher Stem, MD",
-   "title": "Pediatric Emergency Medicine Physician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/christopher-stem-csp-007aa4328",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202295",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Savanna Stoy, DO",
    "title": "Pediatrician",
    "org": "Musc",
@@ -3074,28 +3558,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Stephen Stripling, M.D",
-   "title": "Pediatrician",
-   "org": "Coastal Pediatric Associates, P.A.",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022\u2022@live5news.com"
-  },
-  {
-   "name": "Andrea Summer, MD",
-   "title": "Pediatrician",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "https://www.linkedin.com/in/andrea-summer-46902a33",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202214",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3228,17 +3690,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202235",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Alice Walz, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "University Medical Associates Of The Medical University Of South Carol",
-   "city": "Charleston",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202218",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3518,28 +3969,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Stephanie Ambrose, DO",
-   "title": "Pediatric Hematologist-Oncologist",
-   "org": "Prisma Health Medical Group-Midlands",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Amrol, MD",
-   "title": "Pediatrician",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lauren Ancona, M.D",
    "title": "Pediatrician",
    "org": "Palmetto Health - University Of South Carolina Medical Group",
@@ -3547,17 +3976,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Julie Anderson, MD",
-   "title": "Pediatrician",
-   "org": "Prisma Health Medical Group-Midlands",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3859,17 +4277,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Charles Castles, M.D",
-   "title": "Pediatrician",
-   "org": "Pediatric Associates, P.A.",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joe Castles, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Associates, P.A.",
@@ -3888,17 +4295,6 @@
    "linkedin": "https://www.linkedin.com/in/anton-clemmons-6202b662",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Randall Colby, MD",
-   "title": "Pediatrician",
-   "org": "Medical Park Pediatrics & Adolescence",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202266",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -3947,17 +4343,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Monica Cramer, D.O",
-   "title": "Pediatric Nephrologist",
-   "org": "Prisma Health Medical Group-Midlands",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202272",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hayley Cruz, DO",
    "title": "Pediatrician",
    "org": "Palmetto Health - University Of South Carolina Medical Group",
@@ -3965,17 +4350,6 @@
    "linkedin": "https://www.linkedin.com/in/hayley-cruz-3879b5217",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Dallman, M.D",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202203",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4343,17 +4717,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Holleman, M.D",
-   "title": "Pediatric Nephrologist",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/robert-holleman-jr",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Prishal Holloway, M.D",
    "title": "Pediatrician",
    "org": "Eau Claire Cooperative Health Center, Inc.",
@@ -4361,17 +4724,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202269",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jeffrey Holloway, M.D",
-   "title": "Pediatric Sports Medicine Physician",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/hollowayjeffrey",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4394,17 +4746,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Hucks, M.D",
-   "title": "Pediatrician",
-   "org": "Prisma Health Medical Group-Midlands",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/jennifer-hucks-3286b397",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4516,7 +4857,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "k\u2022\u2022\u2022\u2022\u2022\u2022@comop.org"
   },
   {
    "name": "Mary Kayse, PNP",
@@ -4570,17 +4911,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Knight, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/lisa-knight-1350894",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -4849,17 +5179,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michael Mitchell, DO",
-   "title": "Pediatrician",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/mjmitch",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Leah Mitchell, DNP APRN CPNP-PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Palmetto Health - University Of South Carolina Medical Group",
@@ -4912,7 +5231,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "k\u2022\u2022\u2022\u2022\u2022\u2022@comop.org"
   },
   {
    "name": "Riyadh Muhammad, MD, MPH",
@@ -4955,17 +5274,6 @@
    "linkedin": "https://www.linkedin.com/in/andrew-nienhuis-560a6118b",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Duncan Norton, M.D",
-   "title": "Pediatrician",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://uk.linkedin.com/in/duncan-norton-b12a147a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202271",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5120,17 +5428,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202201",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Erin Ricker, MD",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "Palmetto Health - University Of South Carolina Medical Group",
-   "city": "Columbia",
-   "linkedin": "https://www.linkedin.com/in/erin-ricker-43b366118",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202255",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -5795,17 +6092,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Diana Taylor, DNP, CPNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Palmetto Pediatrics Of Conway",
-   "city": "Conway",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202278",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Julia Wren, MD",
    "title": "Pediatrician",
    "org": "Careteam Plus, Inc.",
@@ -6055,17 +6341,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202265",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Foxworth, MD",
-   "title": "Pediatrician",
-   "org": "Hopehealth Inc",
-   "city": "Florence",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -6411,17 +6686,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Roy Furr, M.D",
-   "title": "Pediatrician",
-   "org": "Cherokee Community Care, Llc",
-   "city": "Gaffney",
-   "linkedin": "https://www.linkedin.com/in/roy-furr-47029081",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Susan Shealy, APRN MSN CPNP PC",
    "title": "Pediatric Nurse Practitioner",
    "org": "Cherokee Community Care, Llc",
@@ -6587,17 +6851,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Gary Bass, MD",
-   "title": "Pediatrician",
-   "org": "Childrens Medical Center",
-   "city": "Greenville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202202",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Hareshchandra Baxi, MD",
    "title": "Pediatrician",
    "org": "North Hills Medical Center",
@@ -6759,17 +7012,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Shannon Burgess, M.D",
-   "title": "Pediatrician",
-   "org": "University Medical Associates, Llc",
-   "city": "Greenville",
-   "linkedin": "https://www.linkedin.com/in/shannon-burgess-m-s-7203987",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7379,17 +7621,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Andrew Gunter, MD",
-   "title": "Pediatrician",
-   "org": "Prisma Health-Upstate",
-   "city": "Greenville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michael Guyton, M.D",
    "title": "Adolescent Medicine Physician",
    "org": "Prisma Health University Medical Group",
@@ -7511,17 +7742,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Elizabeth Hipp, M.D",
-   "title": "Pediatrician",
-   "org": "Tribe513, P.A.",
-   "city": "Greenville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Justin Holladay, MD",
    "title": "Pediatrician",
    "org": "Prisma Health University Medical Group",
@@ -7541,7 +7761,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@achieve-md.com"
   },
   {
    "name": "Rebekah Hovland, M.D",
@@ -7617,17 +7837,6 @@
    "linkedin": "https://www.linkedin.com/in/william-jones-77a2b429",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Julie Jones, PSYD",
-   "title": "Pediatrician",
-   "org": "Prisma Health University Medical Group",
-   "city": "Greenville",
-   "linkedin": "https://www.linkedin.com/in/julieaherman",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -7870,17 +8079,6 @@
    "linkedin": "https://uk.linkedin.com/in/sara-lilly-11630925",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202215",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Faith Lindsay Mart, M.D",
-   "title": "Pediatrician",
-   "org": "Prisma Health University Medical Group",
-   "city": "Greenville",
-   "linkedin": "https://www.linkedin.com/in/faith-lindsay-mart-b1006414",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -8413,17 +8611,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Melissa Robinson, M.D",
-   "title": "Pediatrician",
-   "org": "Greenville Health System",
-   "city": "Greenville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joseph Rogers, M.D",
    "title": "Pediatrician",
    "org": "Tribe513, P.A.",
@@ -8479,17 +8666,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Kerry Sease, M.D",
-   "title": "Pediatrician",
-   "org": "Greenville Health System",
-   "city": "Greenville",
-   "linkedin": "https://www.linkedin.com/in/katharinepatrick",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Theresa Sexton, APRN",
    "title": "Pediatric Nurse Practitioner",
    "org": "Achieve Md",
@@ -8498,7 +8674,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202292",
    "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "c\u2022\u2022\u2022\u2022\u2022\u2022@achieve-md.com"
   },
   {
    "name": "Heema Shah, DO",
@@ -8798,17 +8974,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Melanie Wills, M.D",
-   "title": "Pediatrician",
-   "org": "Greenville Health System",
-   "city": "Greenville",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202270",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "William Wilson, M.D",
    "title": "Pediatrician",
    "org": "Prisma Health-Upstate",
@@ -9029,17 +9194,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Megan Smith, MD",
-   "title": "Pediatrician",
-   "org": "Tribe513, P.A.",
-   "city": "Greer",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202288",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Michelle Viglianco-Vanpelt, MD",
    "title": "Pediatrician",
    "org": "Spartanburg Regional Med Ctr",
@@ -9058,17 +9212,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202226",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Peter Salerno, MD",
-   "title": "Pediatrician",
-   "org": "Salerno Pediatric Care Llc",
-   "city": "Hilton Head",
-   "linkedin": "https://www.linkedin.com/in/peter-salerno-6011bb10",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9128,17 +9271,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Michelle Sayles, MD",
-   "title": "Pediatrician",
-   "org": "Spartanburg Medical Center",
-   "city": "Inman",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202290",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Deanne Geurkink, MD",
    "title": "Adolescent Medicine Physician",
    "org": "Ballentine Pediatrics, Llc",
@@ -9147,18 +9279,7 @@
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
    "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Karen Pollock, M.D",
-   "title": "Adolescent Medicine Physician",
-   "org": "Ballentine Pediatrics, Llc",
-   "city": "Irmo",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202220",
-   "phoneType": "Practice",
-   "practiceEmail": ""
+   "practiceEmail": "m\u2022\u2022\u2022@ballentinepeds.com"
   },
   {
    "name": "Robert Whitaker, M.D",
@@ -9260,17 +9381,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robin Estrada",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "The Children'S Clinic",
-   "city": "Lancaster",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202237",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Ebenezer Mante, MD",
    "title": "Pediatrician",
    "org": "Mante Pediatrics Llc",
@@ -9337,17 +9447,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Ashley Carter, MD",
-   "title": "Pediatrician",
-   "org": "Southern Medical Management, Llc",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Bruce Cope, MD",
    "title": "Pediatrician",
    "org": "Sandhills Pediatrics",
@@ -9366,17 +9465,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Cheryl Gambrell, M.D",
-   "title": "Pediatrician",
-   "org": "Sandhills Pediatrics",
-   "city": "Lexington",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202244",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9722,17 +9810,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Matthew Davis, MD",
-   "title": "Pediatrician",
-   "org": "Mount Pleasant Pediatrics, P.A.",
-   "city": "Mount Pleasant",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Neill Herring, MD",
    "title": "Pediatrician",
    "org": "Mount Pleasant Pediatrics, P.A.",
@@ -9788,17 +9865,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Robert Weaver, MD",
-   "title": "Pediatrician",
-   "org": "Mount Pleasant Pediatrics, P.A.",
-   "city": "Mount Pleasant",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202207",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Joanna Ghegan, MD",
    "title": "Pediatrician",
    "org": "Focus.Md-Sc 1001",
@@ -9817,17 +9883,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202284",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Maria Streck",
-   "title": "Pediatrician",
-   "org": "Carolina Family Care, Inc",
-   "city": "Mt Pleasant",
-   "linkedin": "https://www.linkedin.com/in/maria-streck-606311a",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202233",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -9927,17 +9982,6 @@
    "linkedin": "https://www.linkedin.com/in/corinne-adkins-539975149",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202238",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jill Aiken, MD",
-   "title": "Pediatrician",
-   "org": "Georgetown Physician Associates, Llc",
-   "city": "Myrtle Beach",
-   "linkedin": "https://www.linkedin.com/in/jill-jill-aiken-99268a3b",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -11022,50 +11066,6 @@
   {
    "name": "Monica Evans, NP",
    "title": "Pediatric Nurse Practitioner",
-   "org": "Carolinas Physicians Network Inc",
-   "city": "Rock Hill",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Robert Goodbar",
-   "title": "Pediatrician",
-   "org": "Carolinas Physicians Network Inc",
-   "city": "Rock Hill",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Ali Haider, MD",
-   "title": "Pediatrician",
-   "org": "Carolinas Physicians Network Inc",
-   "city": "Rock Hill",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Douglas Hansen, MD",
-   "title": "Pediatrician",
-   "org": "Carolinas Physicians Network Inc",
-   "city": "Rock Hill",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202281",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Pallavi Kamra, MD",
-   "title": "Pediatrician",
    "org": "Carolinas Physicians Network Inc",
    "city": "Rock Hill",
    "linkedin": "",

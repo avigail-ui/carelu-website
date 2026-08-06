@@ -3,8 +3,8 @@
  "slug": "kansas",
  "file": "/downloads/referral-contacts/pediatric-referral-contacts-kansas.csv",
  "count": 714,
- "emails": 14,
- "practiceEmails": 24,
+ "emails": 32,
+ "practiceEmails": 21,
  "phones": 714,
  "direct": 0,
  "roles": [
@@ -75,6 +75,50 @@
  ],
  "rows": [
   {
+   "name": "Michael Shull, D.O",
+   "title": "Pediatrician",
+   "org": "Commonspirit Kansas, Inc.",
+   "city": "Garden City",
+   "linkedin": "",
+   "email": "m\u2022\u2022\u2022\u2022\u2022\u2022@montgomerycountymd.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Nicholas Herrera, MD",
+   "title": "Pediatric Nephrologist",
+   "org": "Kansas University Physicians INC",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/nicholasrherrera",
+   "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Shawn Sood, MD MBA",
+   "title": "Pediatric Critical Care Specialist",
+   "org": "The Curators Of The University Of Missouri",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/shawn-sood-680272186",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Daniel Tilden, M.D",
+   "title": "Pediatric Endocrinologist",
+   "org": "Kansas University Physicians INC",
+   "city": "Kansas City",
+   "linkedin": "https://www.linkedin.com/in/daniel-tilden-4762521bb",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Beth Rundquist, M.D",
    "title": "Pediatrician",
    "org": "Heartland Medical Clinic, Inc.",
@@ -108,6 +152,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "David Kennedy, M.D",
+   "title": "Pediatrician",
+   "org": "Adventhealth Primary Care Mar",
+   "city": "Merriam",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@umassmed.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Julia Zahn, APN, PNP",
+   "title": "Pediatric Nurse Practitioner",
+   "org": "Abundant Care And Wellness",
+   "city": "Newton",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@k12.dc.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Laurie Conway, MD",
    "title": "Pediatrician",
    "org": "Cotton-O'Neil Clinic Revocable Trust",
@@ -130,6 +196,28 @@
    "practiceEmail": ""
   },
   {
+   "name": "Patricia Bell, M.D",
+   "title": "Pediatrician",
+   "org": "The Children'S Mercy Hospital",
+   "city": "Overland Park",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@baltimorecity.gov",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Jennifer Bernard, M.D",
+   "title": "Pediatrician",
+   "org": "Saint Lukes Physician Group INC",
+   "city": "Overland Park",
+   "linkedin": "",
+   "email": "j\u2022\u2022\u2022\u2022\u2022\u2022@ualberta.ca",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Barry Broeckelman, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Professional Association",
@@ -141,12 +229,56 @@
    "practiceEmail": ""
   },
   {
+   "name": "Jonathan Finks, M.D",
+   "title": "Pediatrician",
+   "org": "Legacy Healthcare Services INC",
+   "city": "Overland Park",
+   "linkedin": "https://www.linkedin.com/in/drjonathanfinks",
+   "email": "j\u2022\u2022\u2022\u2022\u2022@umich.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Thomas Heaphy, M.D",
    "title": "Pediatrician",
    "org": "Pediatric Professional Association",
    "city": "Overland Park",
    "linkedin": "https://www.linkedin.com/in/thomas-heaphy-6188238",
    "email": "t\u2022\u2022\u2022\u2022\u2022\u2022@ppadocs.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Moore, MD",
+   "title": "Pediatrician",
+   "org": "Shawnee Mission Medical Center INC",
+   "city": "Overland Park",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@vumc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Casey Hudson, D.O",
+   "title": "Pediatrician",
+   "org": "Community Health Center Of Southeast Kansas INC",
+   "city": "Pittsburg",
+   "linkedin": "",
+   "email": "h\u2022\u2022\u2022\u2022\u2022\u2022@uci.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Lisa Gilmer, MD",
+   "title": "Pediatrician",
+   "org": "Jayhawk Primary Care Inc",
+   "city": "Prairie Village",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
    "practiceEmail": ""
@@ -185,6 +317,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Deborah Alliston, MD",
+   "title": "Pediatrician",
+   "org": "Wesley Medical Center Llc",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "d\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Erin Brubacher, ARNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Mid-Kansas Pediatric Associates, P.A.",
@@ -207,6 +350,17 @@
    "practiceEmail": ""
   },
   {
+   "name": "Lana Hattar, M.D",
+   "title": "Pediatric Gastroenterologist",
+   "org": "Preferred Medical Associates",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "l\u2022\u2022\u2022\u2022\u2022\u2022@viachristi.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
    "name": "Debra Kinnane, M.D",
    "title": "Pediatrician",
    "org": "Mid-Kansas Pediatric Associates, P.A.",
@@ -225,6 +379,50 @@
    "linkedin": "https://www.linkedin.com/in/nicole-latvala-a64585270",
    "email": "n\u2022\u2022\u2022\u2022\u2022\u2022@midkspeds.com",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Aaron Olson, MD",
+   "title": "Pediatrician",
+   "org": "Ascension Via Christi Hospitals Wichita INC",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "a\u2022\u2022\u2022\u2022\u2022\u2022@seattlechildrens.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Iram Sirajuddin, MD",
+   "title": "Pediatric Allergist & Immunologist",
+   "org": "Morton County Hospital",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "i\u2022\u2022\u2022\u2022\u2022\u2022@kansashsc.org",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Siddharthan Sivamurthy, MD",
+   "title": "Pediatrician",
+   "org": "Wesley Medical Center Llc",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "s\u2022\u2022\u2022\u2022\u2022\u2022@kumc.edu",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
+   "phoneType": "Practice",
+   "practiceEmail": ""
+  },
+  {
+   "name": "Paul Teran, M.D",
+   "title": "Pediatrician",
+   "org": "Wesley Medical Center Llc",
+   "city": "Wichita",
+   "linkedin": "",
+   "email": "p\u2022\u2022\u2022\u2022\u2022\u2022@gmail.com",
+   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -423,17 +621,6 @@
    "linkedin": "https://www.linkedin.com/in/nandhini-sehar-84817b74",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202210",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Michael Shull, D.O",
-   "title": "Pediatrician",
-   "org": "Commonspirit Kansas, Inc.",
-   "city": "Garden City",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -757,17 +944,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Nicholas Herrera, MD",
-   "title": "Pediatric Nephrologist",
-   "org": "Kansas University Physicians INC",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/nicholasrherrera",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202261",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
-  },
-  {
    "name": "Alanna Lee, MD",
    "title": "Pediatrician",
    "org": "Healthy Living First Medical Group, Llc",
@@ -830,28 +1006,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
-  },
-  {
-   "name": "Shawn Sood, MD MBA",
-   "title": "Pediatric Critical Care Specialist",
-   "org": "The Curators Of The University Of Missouri",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/shawn-sood-680272186",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": "a\u2022\u2022\u2022@umsystem.edu"
-  },
-  {
-   "name": "Daniel Tilden, M.D",
-   "title": "Pediatric Endocrinologist",
-   "org": "Kansas University Physicians INC",
-   "city": "Kansas City",
-   "linkedin": "https://www.linkedin.com/in/daniel-tilden-4762521bb",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202222",
    "phoneType": "Practice",
    "practiceEmail": "a\u2022\u2022\u2022\u2022\u2022@charitynavigator.org"
   },
@@ -1263,17 +1417,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "David Kennedy, M.D",
-   "title": "Pediatrician",
-   "org": "Adventhealth Primary Care Mar",
-   "city": "Merriam",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "William McDonald, APRN/NP",
    "title": "Pediatric Nurse Practitioner",
    "org": "Ness County Hospital District #2",
@@ -1336,17 +1479,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Julia Zahn, APN, PNP",
-   "title": "Pediatric Nurse Practitioner",
-   "org": "Abundant Care And Wellness",
-   "city": "Newton",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202246",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
@@ -1505,31 +1637,9 @@
    "practiceEmail": ""
   },
   {
-   "name": "Patricia Bell, M.D",
-   "title": "Pediatrician",
-   "org": "The Children'S Mercy Hospital",
-   "city": "Overland Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Shannon Benvenuti, CPNP",
    "title": "Pediatric Nurse Practitioner",
    "org": "The Children'S Mercy Hospital",
-   "city": "Overland Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jennifer Bernard, M.D",
-   "title": "Pediatrician",
-   "org": "Saint Lukes Physician Group INC",
    "city": "Overland Park",
    "linkedin": "",
    "email": "",
@@ -1697,17 +1807,6 @@
    "org": "Pediatric Professional Association",
    "city": "Overland Park",
    "linkedin": "https://www.linkedin.com/in/delsie-filardi-88038a11",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Jonathan Finks, M.D",
-   "title": "Pediatrician",
-   "org": "Legacy Healthcare Services INC",
-   "city": "Overland Park",
-   "linkedin": "https://www.linkedin.com/in/drjonathanfinks",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
    "phoneType": "Practice",
@@ -1945,17 +2044,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Paul Moore, MD",
-   "title": "Pediatrician",
-   "org": "Shawnee Mission Medical Center INC",
-   "city": "Overland Park",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202230",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Rachel Oldfather, MD",
    "title": "Pediatrician",
    "org": "Shawnee Mission Medical Center INC",
@@ -2176,17 +2264,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Casey Hudson, D.O",
-   "title": "Pediatrician",
-   "org": "Community Health Center Of Southeast Kansas INC",
-   "city": "Pittsburg",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202273",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Roylan McDaniel, M.D",
    "title": "Pediatrician",
    "org": "Children And Teenagers Clinic",
@@ -2210,17 +2287,6 @@
   },
   {
    "name": "Jennifer Dioszeghy, M.D",
-   "title": "Pediatrician",
-   "org": "Jayhawk Primary Care Inc",
-   "city": "Prairie Village",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Lisa Gilmer, MD",
    "title": "Pediatrician",
    "org": "Jayhawk Primary Care Inc",
    "city": "Prairie Village",
@@ -2935,17 +3001,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Deborah Alliston, MD",
-   "title": "Pediatrician",
-   "org": "Wesley Medical Center Llc",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Muzna Atif, MD",
    "title": "Pediatrician",
    "org": "Wesley Medical Center Llc",
@@ -3276,17 +3331,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Lana Hattar, M.D",
-   "title": "Pediatric Gastroenterologist",
-   "org": "Preferred Medical Associates",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202240",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Stephen Hinkin, M.D",
    "title": "Pediatrician",
    "org": "Carepoint Hospital Medicine Kansas LLC",
@@ -3518,17 +3562,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Aaron Olson, MD",
-   "title": "Pediatrician",
-   "org": "Ascension Via Christi Hospitals Wichita INC",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Jamie Page, MD",
    "title": "Pediatrician",
    "org": "Redbud Pediatrics Llc",
@@ -3672,28 +3705,6 @@
    "practiceEmail": ""
   },
   {
-   "name": "Iram Sirajuddin, MD",
-   "title": "Pediatric Allergist & Immunologist",
-   "org": "Morton County Hospital",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202280",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Siddharthan Sivamurthy, MD",
-   "title": "Pediatrician",
-   "org": "Wesley Medical Center Llc",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
    "name": "Lindall Smith, MD",
    "title": "Pediatric Critical Care Specialist",
    "org": "Wesley Medical Center Llc",
@@ -3756,17 +3767,6 @@
    "linkedin": "",
    "email": "",
    "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202200",
-   "phoneType": "Practice",
-   "practiceEmail": ""
-  },
-  {
-   "name": "Paul Teran, M.D",
-   "title": "Pediatrician",
-   "org": "Wesley Medical Center Llc",
-   "city": "Wichita",
-   "linkedin": "",
-   "email": "",
-   "phone": "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u202250",
    "phoneType": "Practice",
    "practiceEmail": ""
   },
