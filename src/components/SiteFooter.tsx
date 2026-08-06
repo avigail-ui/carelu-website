@@ -17,7 +17,7 @@ const columns: { title: string; links: string[] }[] = [
   { title: 'Product',    links: ['Intake AI', 'Insurance Verification', 'Document Collection', 'Follow-ups', 'Scheduling'] },
   { title: 'Industries', links: ['ABA Therapy', 'Mental Health', 'Home Care', 'Addiction Treatment', 'Hospice'] },
   { title: 'Customers',  links: ['Single-Site', 'Multi-Site', 'Enterprise'] },
-  { title: 'Company',    links: ['About', 'Careers', 'Contact'] },
+  { title: 'Company',    links: ['About', 'Careers', 'News', 'Contact'] },
   { title: 'Resources',  links: ['The Intake Gap (Research)', 'Intake Leak Calculator', 'Intake Guides', 'Payer Guides', 'Referral Contacts', 'Front-Office Risks', 'Integrations', 'Carelu vs a CRM', 'Trust'] },
 ];
 
@@ -42,6 +42,7 @@ const HREFS: Record<string, string> = {
   'Enterprise': '/solutions/enterprise',
   'About': '/carelu/company',
   'Careers': '/carelu/company#careers',
+  'News': '/news',
   'Contact': '/demo',
   'The Intake Gap (Research)': '/research/the-intake-gap',
   'Intake Leak Calculator': '/tools/intake-leak-calculator',

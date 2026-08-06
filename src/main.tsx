@@ -33,6 +33,7 @@ import CrmVsPage from './pages/CrmVsPage'
 import ZapierMakeRisk from './pages/ZapierMakeRisk'
 import FrontOfficeRisks from './pages/FrontOfficeRisks'
 import SourcesApp from './pages/SourcesApp'
+import News from './pages/News'
 import { CRM_SLUGS } from './data/crms'
 // --- V2 sandbox (radically different direction; fully isolated from the originals above) ---
 import GatewayV2 from './pages/GatewayV2'
@@ -84,6 +85,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/integrations" element={<IntegrationsDirectory />} />
         <Route path="/integrations/:slug" element={<IntegrationPage />} />
         <Route path="/carelu-vs-crm" element={<CrmComparison />} />
+        <Route path="/news" element={<News />} />
         <Route path="/zapier-make-hipaa-risk" element={<ZapierMakeRisk />} />
         <Route path="/aba-front-office-risks" element={<FrontOfficeRisks />} />
         {/* Standalone document-upload app (no marketing nav, noindex, not in sitemap) */}
