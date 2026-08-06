@@ -1,4 +1,13 @@
-import { json, requireConfig, isResponse, getRepoFileText, commitFiles, SLACK_WEBHOOK_URL } from './sources/_shared.js';
+import { json, requireConfig, isResponse, getRepoFileText, commitFiles } from './sources/_shared.js';
+
+// Dedicated "Carelu newsletter signup" Slack workflow -> #marketing. Deliberately
+// NOT the shared SLACK_WEBHOOK_URL from _shared.ts: that one is the "Bot is down"
+// workflow posting to #alerts, where signups were indistinguishable from
+// bot-liveness noise. Variables must stay named `email` and `source` — the
+// workflow renders only fields matching its declared variables, and a mismatch
+// posts a blank message with no error (the trigger 200s on any body).
+const LEADS_SLACK_WEBHOOK_URL =
+  'https://hooks.slack.com/triggers/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';
 
 /* ================================================================
    POST /api/leads  (public, no auth)
@@ -97,10 +106,10 @@ export async function POST(request: Request): Promise<Response> {
 
   if (stored && !alreadyKnown) {
     try {
-      await fetch(SLACK_WEBHOOK_URL, {
+      await fetch(LEADS_SLACK_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ text: `New lead from carelu.com: ${email} (via ${source})` }),
+        body: JSON.stringify({ email, source }),
       });
     } catch (err) {
       console.error('leads: slack notify failed (non-fatal)', err);
