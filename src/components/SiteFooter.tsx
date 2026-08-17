@@ -18,7 +18,7 @@ const columns: { title: string; links: string[] }[] = [
   { title: 'Industries', links: ['ABA Therapy', 'Mental Health', 'Home Care', 'Addiction Treatment', 'Hospice'] },
   { title: 'Customers',  links: ['Single-Site', 'Multi-Site', 'Enterprise'] },
   { title: 'Company',    links: ['About', 'Careers', 'News', 'Contact'] },
-  { title: 'Resources',  links: ['The Intake Gap (Research)', 'Intake Leak Calculator', 'Intake Guides', 'Payer Guides', 'Referral Contacts', 'Front-Office Risks', 'Integrations', 'Carelu vs a CRM', 'Trust'] },
+  { title: 'Resources',  links: ['The Intake Gap (Research)', 'ROI Calculator', 'Intake Guides', 'Payer Guides', 'Referral Contacts', 'Front-Office Risks', 'Integrations', 'Carelu vs a CRM', 'Trust'] },
 ];
 
 // Section anchors resolve against the home page, which is `/` on carelu.com and
@@ -45,7 +45,7 @@ const HREFS: Record<string, string> = {
   'News': '/news',
   'Contact': '/demo',
   'The Intake Gap (Research)': '/research/the-intake-gap',
-  'Intake Leak Calculator': '/tools/intake-leak-calculator',
+  'ROI Calculator': '/tools/intake-leak-calculator',
   'Intake Guides': '/resources/aba-client-intake-process',
   'Payer Guides': '/payers',
   'Referral Contacts': '/resources/pediatrician-referral-contacts',

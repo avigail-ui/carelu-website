@@ -23,7 +23,7 @@ import ResourcePage from './pages/ResourcePage'
 import ReferralContactsPage from './pages/ReferralContactsPage'
 import ReferralContactsStatePage from './pages/ReferralContactsStatePage'
 import IntakeGapReport from './pages/IntakeGapReport'
-import LeakCalculator from './pages/LeakCalculator'
+import RoiCalculator from './pages/RoiCalculator'
 import PayerPage from './pages/PayerPage'
 import IntegrationPage from './pages/IntegrationPage'
 import PayersDirectory from './pages/PayersDirectory'
@@ -79,7 +79,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/resources/pediatrician-referral-contacts/:state" element={<ReferralContactsStatePage />} />
         <Route path="/resources/:slug" element={<ResourcePage />} />
         <Route path="/research/the-intake-gap" element={<IntakeGapReport />} />
-        <Route path="/tools/intake-leak-calculator" element={<LeakCalculator />} />
+        <Route path="/tools/intake-leak-calculator" element={<RoiCalculator />} />
         <Route path="/payers" element={<PayersDirectory />} />
         <Route path="/payers/:slug" element={<PayerPage />} />
         <Route path="/integrations" element={<IntegrationsDirectory />} />

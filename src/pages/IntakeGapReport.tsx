@@ -404,10 +404,10 @@ export default function IntakeGapReport() {
           >
             <div style={{ flex: '1 1 300px' }}>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2.2vw, 26px)', color: BONE, letterSpacing: '-0.01em', marginBottom: 6 }}>
-                Run these numbers on your own funnel.
+                See what these numbers mean for your practice.
               </div>
               <p style={{ fontSize: 14, color: 'rgba(250,248,243,0.65)', lineHeight: 1.55, margin: 0 }}>
-                The Intake Leak Calculator shows how many families — and how much revenue — your current intake is leaving behind.
+                The ROI Calculator shows the families — and the revenue — 33% more intakes would add to your practice.
               </p>
             </div>
             <span style={{

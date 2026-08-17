@@ -6,10 +6,10 @@ import { Nav } from './Landing';
 import SiteFooter from '../components/SiteFooter';
 
 /* ================================================================
-   CARELU — INTAKE LEAK CALCULATOR (/tools/intake-leak-calculator)
-   Enter monthly inquiries + monthly starts + revenue per client →
-   see families lost per year and the annualized revenue gap vs a
-   well-run funnel. Benchmarks from The Intake Gap report.
+   CARELU — ROI CALCULATOR (/tools/intake-leak-calculator)
+   Enter monthly intakes + what an intake is worth per year →
+   see the extra families and annual revenue Carelu adds at a
+   33% intake uplift. Benchmarks from The Intake Gap report.
    ================================================================ */
 
 const INK = '#1A1A1A';
@@ -46,12 +46,12 @@ function Slider({ label, hint, value, min, max, step, format, onChange }: {
   );
 }
 
-export default function LeakCalculator() {
+export default function RoiCalculator() {
   useReveal();
   useSeo({
-    title: 'Intake Leak Calculator — How Many Families Is Your Intake Losing? | Carelu',
+    title: 'ROI Calculator — What Are 33% More Intakes Worth? | Carelu',
     description:
-      'Free calculator for ABA and behavioral-health providers: enter your monthly inquiries and starts to see how many families — and how much revenue — your intake funnel loses each year.',
+      'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and annual revenue — Carelu adds.',
     canonical: '/tools/intake-leak-calculator',
   });
 
@@ -62,11 +62,11 @@ export default function LeakCalculator() {
     script.textContent = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
-      name: 'Intake Leak Calculator',
+      name: 'ROI Calculator',
       url: 'https://carelu.com/tools/intake-leak-calculator',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
-      description: 'Calculates how many families and how much revenue an ABA provider loses to intake drop-off each year.',
+      description: 'Calculates the additional families and annual revenue an ABA provider gains from a 33% increase in intakes with Carelu.',
       publisher: { '@id': 'https://carelu.com/#organization' },
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     });
@@ -74,25 +74,18 @@ export default function LeakCalculator() {
     return () => { document.getElementById('calc-jsonld')?.remove(); };
   }, []);
 
-  // Carelu's asserted recovery of currently-lost families — a static figure we
-  // stand behind, not a user guess, and not shown to the visitor. Grounded in
-  // the Intake Gap research: ~48% of inquiries arrive after hours (largely
-  // unanswered) and the first provider to respond usually wins, so roughly half
-  // of current losses are recoverable by always-on, complete intake. The
-  // visitor sees the OUTCOME (growth), not the assumption.
-  const RECOVERY = 0.5;
+  // Carelu's asserted intake uplift — a static figure we stand behind, not a
+  // user guess. Grounded in the Intake Gap research: ~48% of inquiries arrive
+  // after hours (largely unanswered) and the first provider to respond usually
+  // wins, so always-on, complete intake grows starts by about a third.
+  const UPLIFT = 0.33;
 
-  const [inquiries, setInquiries] = useState(40);
-  const [starts, setStarts] = useState(24);
-  const [revenue, setRevenue] = useState(45000);
+  const [intakes, setIntakes] = useState(100);
+  const [value, setValue] = useState(15000);
 
-  const effStarts = Math.min(starts, inquiries);
-  const lostPerMonth = Math.max(0, inquiries - effStarts);   // families not starting today
-  const recoveredPerMonth = lostPerMonth * RECOVERY;
-  const recoveredPerYear = recoveredPerMonth * 12;
-  const revenueRecovered = recoveredPerYear * revenue;
-  const growth = effStarts > 0 ? recoveredPerMonth / effStarts : 0;  // % more families started
-  const afterHours = Math.round(inquiries * 0.48);
+  const addedFamilies = Math.round(intakes * UPLIFT);        // more families served each month
+  const newIntakes = intakes + addedFamilies;                // monthly intakes with Carelu
+  const addedRevenue = addedFamilies * value;                // added annual revenue
 
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
@@ -110,20 +103,20 @@ export default function LeakCalculator() {
               padding: '10px 20px', borderRadius: 100,
               border: '1px solid rgba(0,0,0,0.06)',
               boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)',
-            }}>Free tool · Intake Leak Calculator</span>
+            }}>Free tool · ROI Calculator</span>
           </div>
           <h1 className="rv-scale d1" style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 5vw, 68px)',
             fontWeight: 400, color: INK, lineHeight: 1.06,
             letterSpacing: '-0.022em', margin: '26px auto 0', maxWidth: 820,
           }}>
-            How many families is your intake losing?
+            What are 33% more intakes worth to you?
           </h1>
           <p className="rv d2" style={{
             fontSize: 'clamp(15px, 1.5vw, 18px)', color: 'rgba(43,42,38,0.68)',
             lineHeight: 1.65, maxWidth: 600, margin: '22px auto 0',
           }}>
-            Three numbers you already know — and the growth you're leaving on the table.
+            Two numbers you already know — and the revenue Carelu adds.
           </p>
         </div>
       </section>
@@ -140,25 +133,18 @@ export default function LeakCalculator() {
               display: 'flex', flexDirection: 'column', gap: 28, justifyContent: 'center',
             }}>
               <Slider
-                label="Family inquiries per month"
-                hint="Every call, form, chat, and text from a new family — the fleet median is 24/mo; the top decile sees 127."
-                value={inquiries} min={5} max={300} step={5}
+                label="Intakes per month"
+                hint="Families who start services each month — new clients reaching a first session."
+                value={intakes} min={5} max={300} step={5}
                 format={(v) => String(v)}
-                onChange={setInquiries}
+                onChange={setIntakes}
               />
               <Slider
-                label="Families who start services per month"
-                hint="New clients who actually reach a first session."
-                value={starts} min={0} max={150} step={1}
-                format={(v) => String(v)}
-                onChange={setStarts}
-              />
-              <Slider
-                label="Annual revenue per client"
-                hint="Typical ABA programs run tens of thousands per client per year — adjust to your payer mix."
-                value={revenue} min={10000} max={120000} step={5000}
+                label="What an intake is worth per year"
+                hint="Annual revenue per client — adjust to your programs and payer mix."
+                value={value} min={5000} max={60000} step={1000}
                 format={(v) => fmtMoney(v)}
-                onChange={setRevenue}
+                onChange={setValue}
               />
             </div>
 
@@ -171,13 +157,13 @@ export default function LeakCalculator() {
             }}>
               <div>
                 <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 8 }}>
-                  Growth in families started, with Carelu
+                  Added revenue with Carelu
                 </div>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 64px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    +{Math.round(growth * 100)}%
+                    +{fmtMoney(addedRevenue)}
                   </span>
-                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>more families reaching a first session — same team, same marketing</span>
+                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>per year — same team, same marketing</span>
                 </div>
               </div>
 
@@ -187,26 +173,25 @@ export default function LeakCalculator() {
                     Additional families
                   </div>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    +{Math.round(recoveredPerYear)}
+                    +{addedFamilies}
                   </div>
-                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>started per year</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>served each month</div>
                 </div>
                 <div>
                   <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 6 }}>
-                    Added revenue
+                    Monthly intakes
                   </div>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px, 3.2vw, 42px)', color: BONE, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    +{fmtMoney(revenueRecovered)}
+                    {newIntakes}
                   </div>
-                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>per year</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,248,243,0.45)', marginTop: 5, lineHeight: 1.4 }}>with Carelu, up from {intakes}</div>
                 </div>
               </div>
 
               <div style={{ borderTop: '1px solid rgba(250,248,243,0.12)', paddingTop: 18, fontSize: 13.5, color: 'rgba(250,248,243,0.68)', lineHeight: 1.6 }}>
                 Carelu answers <strong style={{ color: BONE }}>100% of your inquiries instantly</strong> and runs intake to
-                completion — winning back the families you lose to slow response and dropped follow-up.{' '}
-                {afterHours} of your {inquiries} monthly inquiries arrive after hours (48% do), and the first
-                provider to respond usually wins.{' '}
+                completion — 48% of inquiries arrive after hours, and the first provider to respond
+                usually wins. That's how practices take in a third more families.{' '}
                 <a href="/research/the-intake-gap" style={{ color: '#D4F25C', textDecoration: 'underline' }}>See the research →</a>
               </div>
             </div>
@@ -228,7 +213,7 @@ export default function LeakCalculator() {
             fontWeight: 400, color: INK, lineHeight: 1.15,
             letterSpacing: '-0.02em', margin: '0 0 14px',
           }}>
-            Now watch Carelu plug the leak.
+            Now watch Carelu make it real.
           </p>
           <p className="rv d1" style={{
             fontSize: 'clamp(15px, 1.5vw, 17px)', color: 'rgba(43,42,38,0.65)',
