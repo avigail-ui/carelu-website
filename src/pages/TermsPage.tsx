@@ -44,7 +44,7 @@ export default function TermsPage() {
           Terms of Service
         </h1>
         <p style={{ fontSize: 14, color: 'rgba(43,42,38,0.55)', margin: '14px 0 0' }}>
-          LeadTrap, Inc. dba Carelu &middot; Last updated: April 27, 2026
+          LeadTrap, Inc. dba Carelu &middot; Last updated: August 18, 2026
         </p>
 
         <div style={{ height: 1, background: 'rgba(43,42,38,0.12)', margin: '36px 0 8px' }} />
@@ -274,6 +274,20 @@ export default function TermsPage() {
           Services, and Customer&rsquo;s use of any Third-Party Services is governed by the terms and policies of the
           applicable third-party provider. Customer is responsible for obtaining and maintaining any subscriptions,
           licenses, or accounts required to use Third-Party Services in connection with the Services.
+        </P>
+        <P>
+          <B>Connected accounts.</B> Customer may connect third-party accounts to the Services, including Google or
+          Microsoft email accounts and Meta (Facebook) accounts. Meta accounts are connected through our Meta app,
+          &ldquo;Carelu Connector,&rdquo; so the Services can display advertising performance from Customer&rsquo;s
+          Facebook and Instagram campaigns alongside the leads they generate. By connecting an account, Customer
+          authorizes LeadTrap to access it as described in the{' '}
+          <a href="/privacy" style={{ color: '#2e5a26', fontWeight: 600 }}>Privacy Policy</a> and only to provide the
+          features Customer enables; Customer may disconnect at any time. Use of Meta data is subject to the{' '}
+          <a href="https://developers.facebook.com/terms/" target="_blank" rel="noreferrer"
+            style={{ color: '#2e5a26', fontWeight: 600 }}>Meta Platform Terms</a>, and Customer represents that it is
+          authorized to grant access to the ad accounts, Pages, and business assets it shares and that its advertising
+          on Meta&rsquo;s platforms complies with Meta&rsquo;s own terms and policies. Use of Google data is subject to
+          the Google API Services User Data Policy, including Limited Use.
         </P>
 
         <H2>14. Modifications to the Terms</H2>

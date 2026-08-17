@@ -16,7 +16,7 @@ const accent = '#3a8ab0';
 const MUTED = 'rgba(255,255,255,0.6)';
 const FAINT = 'rgba(255,255,255,0.4)';
 const BORDER = 'rgba(255,255,255,0.1)';
-const EFFECTIVE = 'July 31, 2026';
+const EFFECTIVE = 'August 18, 2026';
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
@@ -81,12 +81,20 @@ export default function LeadTrapTerms() {
           HIPAA where applicable; and (d) the accuracy of business information they provide for carrier or platform
           registrations.</P>
 
-        <H2>4. Connected Accounts (Google / Microsoft)</H2>
-        <P>Partners may connect third-party accounts (such as Gmail or Microsoft Outlook) to the Services. By connecting
-          an account, you authorize LeadTrap to access it as described in our{' '}
+        <H2>4. Connected Accounts (Google / Microsoft / Meta)</H2>
+        <P>Partners may connect third-party accounts (such as Gmail, Microsoft Outlook, or a Meta (Facebook) account) to
+          the Services. By connecting an account, you authorize LeadTrap to access it as described in our{' '}
           <a href="/privacy" style={link}>Privacy Policy</a> and only to provide the features you enable. You may
           disconnect at any time. Use of Google data is subject to the Google API Services User Data Policy, including
           Limited Use.</P>
+        <P>Meta accounts are connected through our Meta app, &ldquo;Carelu Connector,&rdquo; so the Services can display
+          advertising performance from your Facebook and Instagram campaigns alongside the Leads they generate. Use of
+          Meta data is subject to the{' '}
+          <a href="https://developers.facebook.com/terms/" style={link} target="_blank" rel="noopener noreferrer">Meta Platform Terms</a>. By
+          connecting a Meta account, you represent that you are authorized to grant access to the ad accounts, Pages,
+          and business assets you share, and that your advertising on Meta&rsquo;s platforms complies with Meta&rsquo;s
+          own terms and policies. Disconnecting revokes our access, and you may request deletion of stored Meta data as
+          described in the Privacy Policy.</P>
 
         <H2>5. Acceptable Use</H2>
         <P>You may not use the Services to send spam or unconsented messages; violate law or third-party rights; transmit
