@@ -8,7 +8,7 @@ import SiteFooter from '../components/SiteFooter';
 /* ================================================================
    CARELU — ROI CALCULATOR (/tools/intake-leak-calculator)
    Enter monthly intakes + what an intake is worth per year →
-   see the extra families and annual revenue Carelu adds at a
+   see the extra families and annual profit Carelu adds at a
    33% intake uplift. Benchmarks from The Intake Gap report.
    ================================================================ */
 
@@ -51,7 +51,7 @@ export default function RoiCalculator() {
   useSeo({
     title: 'ROI Calculator — What Are 33% More Intakes Worth? | Carelu',
     description:
-      'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and annual revenue — Carelu adds.',
+      'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and annual profit — Carelu adds.',
     canonical: '/tools/intake-leak-calculator',
   });
 
@@ -66,7 +66,7 @@ export default function RoiCalculator() {
       url: 'https://carelu.com/tools/intake-leak-calculator',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
-      description: 'Calculates the additional families and annual revenue an ABA provider gains from a 33% increase in intakes with Carelu.',
+      description: 'Calculates the additional families and annual profit an ABA provider gains from a 33% increase in intakes with Carelu.',
       publisher: { '@id': 'https://carelu.com/#organization' },
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     });
@@ -85,7 +85,7 @@ export default function RoiCalculator() {
 
   const addedFamilies = Math.round(intakes * UPLIFT);        // more families served each month
   const newIntakes = intakes + addedFamilies;                // monthly intakes with Carelu
-  const addedRevenue = addedFamilies * value;                // added annual revenue
+  const addedProfit = addedFamilies * value;                 // added annual profit
 
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
@@ -116,7 +116,7 @@ export default function RoiCalculator() {
             fontSize: 'clamp(15px, 1.5vw, 18px)', color: 'rgba(43,42,38,0.68)',
             lineHeight: 1.65, maxWidth: 600, margin: '22px auto 0',
           }}>
-            Two numbers you already know — and the revenue Carelu adds.
+            Two numbers you already know — and the profit Carelu adds.
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function RoiCalculator() {
               />
               <Slider
                 label="What an intake is worth per year"
-                hint="Annual revenue per client — adjust to your programs and payer mix."
+                hint="Annual profit per client — adjust to your programs and payer mix."
                 value={value} min={5000} max={60000} step={1000}
                 format={(v) => fmtMoney(v)}
                 onChange={setValue}
@@ -157,11 +157,11 @@ export default function RoiCalculator() {
             }}>
               <div>
                 <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'rgba(250,248,243,0.5)', marginBottom: 8 }}>
-                  Added revenue with Carelu
+                  Added profit with Carelu
                 </div>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 64px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                    +{fmtMoney(addedRevenue)}
+                    +{fmtMoney(addedProfit)}
                   </span>
                   <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>per year — same team, same marketing</span>
                 </div>
