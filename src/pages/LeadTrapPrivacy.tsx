@@ -19,7 +19,7 @@ const accent = '#3a8ab0';
 const MUTED = 'rgba(255,255,255,0.6)';
 const FAINT = 'rgba(255,255,255,0.4)';
 const BORDER = 'rgba(255,255,255,0.1)';
-const EFFECTIVE = 'July 31, 2026';
+const EFFECTIVE = 'August 17, 2026';
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
@@ -44,7 +44,7 @@ export default function LeadTrapPrivacy() {
   const revealed = careluRevealed();
   useSeo({
     title: 'Privacy Policy — LeadTrap',
-    description: 'How LeadTrap, Inc. collects, uses, and shares information across leadtrap.com and its chat, phone, SMS, and email products, including Google/Microsoft email data and SMS consent.',
+    description: 'How LeadTrap, Inc. collects, uses, and shares information across leadtrap.com and its chat, phone, SMS, email, and advertising-reporting products, including Google/Microsoft email data, Meta advertising data, and SMS consent.',
     canonical: 'https://leadtrap.com/privacy',
   });
   return (
@@ -71,8 +71,8 @@ export default function LeadTrapPrivacy() {
           LeadTrap, Inc., a Delaware corporation{revealed ? ' doing business as Carelu' : ''} (&ldquo;LeadTrap,&rdquo;
           &ldquo;we,&rdquo; &ldquo;us&rdquo;), provides an AI-powered lead capture, qualification, and intake platform for healthcare
           providers and service businesses. This Privacy Policy explains what information we collect, how we use it, and
-          the choices you have. It applies to leadtrap.com, app.leadtrap.ai, and our chat, phone, SMS, and email products
-          (the &ldquo;Services&rdquo;).
+          the choices you have. It applies to leadtrap.com, app.leadtrap.ai, and our chat, phone, SMS, email, and
+          advertising-reporting products (the &ldquo;Services&rdquo;).
         </P>
 
         <H2>1. Information We Collect</H2>
@@ -84,6 +84,8 @@ export default function LeadTrapPrivacy() {
           content of your conversation &mdash; on behalf of that Partner and process it under their instructions.</P>
         <P><B>Email data (with your permission).</B> If a Partner connects a Google or Microsoft email account to the
           Services, we access mailbox data through Google and Microsoft APIs solely as described in Section 3.</P>
+        <P><B>Advertising data (with your permission).</B> If a Partner connects a Meta (Facebook) account to the
+          Services, we access advertising data through Meta&rsquo;s APIs solely as described in Section 4.</P>
         <P><B>Automatic information.</B> Log data, device and browser information, approximate location derived from IP
           address, and usage analytics.</P>
 
@@ -116,7 +118,41 @@ export default function LeadTrapPrivacy() {
           disconnect a mailbox at any time from their LeadTrap settings, which revokes our access; previously synced data
           can be deleted on request.</P>
 
-        <H2>4. SMS / Text Messaging</H2>
+        <H2>4. Meta (Facebook and Instagram) Advertising Data</H2>
+        <P>Partners may connect a Meta (Facebook) account to the Services &mdash; through our Meta app,{' '}
+          <B>Carelu Connector</B> &mdash; so they can see how their Facebook and Instagram advertising performs alongside
+          the leads and intakes those ads generate. Access is granted by the Partner through Facebook Login and
+          Meta&rsquo;s permission dialogs, and we access Meta data only through Meta&rsquo;s official APIs (including the
+          Marketing API).</P>
+        <P><B>What we receive.</B> With the Partner&rsquo;s permission, we receive: basic profile information of the
+          connecting user (such as name and email address); the ad accounts, Pages, and business assets the Partner
+          chooses to share; and advertising data from those assets &mdash; such as campaign, ad set, and ad names and
+          settings, and aggregate performance metrics (for example spend, impressions, reach, clicks, and conversion
+          counts).</P>
+        <P><B>How we use it.</B> We use Meta data only to provide the features the Partner has enabled: displaying
+          advertising performance in that Partner&rsquo;s LeadTrap dashboard, attributing leads and intakes to the
+          campaigns that generated them, and reporting on the results. Specifically:</P>
+        <ul style={{ margin: '0 0 14px', paddingLeft: 22 }}>
+          <LI>We do <B>not</B> sell Meta data or use it for our own advertising or marketing.</LI>
+          <LI>We do <B>not</B> share Meta data with third parties, except with service providers who host and operate the
+            Services for us under contract, or where required by law. Each Partner&rsquo;s Meta data is visible only to
+            that Partner&rsquo;s account.</LI>
+          <LI>We do <B>not</B> use Meta data to build or train generalized artificial-intelligence or machine-learning
+            models.</LI>
+          <LI>Access tokens for connected Meta accounts are stored encrypted and are never shared.</LI>
+        </ul>
+        <P>Our collection, use, and deletion of Meta data (&ldquo;Platform Data&rdquo;) complies with the{' '}
+          <a href="https://developers.facebook.com/terms/" style={link} target="_blank" rel="noopener noreferrer">Meta Platform Terms</a> and{' '}
+          <a href="https://developers.facebook.com/devpolicy/" style={link} target="_blank" rel="noopener noreferrer">Developer Policies</a>.</P>
+        <P><B>Disconnecting and data deletion.</B> A Partner can disconnect their Meta account at any time from their
+          LeadTrap settings, which revokes our access. You can also remove the &ldquo;Carelu Connector&rdquo; app yourself
+          in your Facebook settings under <B>Settings &amp; Privacy &rarr; Settings &rarr; Apps and Websites</B>, which
+          invalidates our access tokens. To have the Meta data we have stored deleted, disconnect (or remove the app) and
+          email <a href="mailto:privacy@leadtrap.com" style={link}>privacy@leadtrap.com</a> from the account
+          owner&rsquo;s address with the subject &ldquo;Meta data deletion request.&rdquo; We will delete the stored Meta
+          data associated with the connection within 30 days and confirm by email.</P>
+
+        <H2>5. SMS / Text Messaging</H2>
         <P>Leads may receive SMS messages from a Partner via LeadTrap only after providing consent &mdash; for example, by
           submitting a form or chat conversation that discloses SMS follow-up, or by texting in first. Message frequency
           varies; message and data rates may apply. Reply <B>STOP</B> to opt out at any time and <B>HELP</B> for help.</P>
@@ -124,33 +160,33 @@ export default function LeadTrapPrivacy() {
           Text messaging originator opt-in data and consent are not shared with any third parties, except as necessary to
           deliver the messages (e.g., our SMS carrier partners) or as required by law.</P>
 
-        <H2>5. Sharing</H2>
+        <H2>6. Sharing</H2>
         <P>We share information with: the Partner on whose behalf a conversation occurs; service providers who process
           data for us under contract (hosting, telephony/SMS carriers, payment processing, analytics); and authorities
           when required by law. We may share aggregated, de-identified information that cannot reasonably identify you.</P>
 
-        <H2>6. Data Retention and Deletion</H2>
+        <H2>7. Data Retention and Deletion</H2>
         <P>We retain personal information for as long as needed to provide the Services to the relevant Partner, then
           delete or de-identify it. Partners may request deletion of lead data at any time; account holders may request
           deletion of their account data by contacting{' '}
           <a href="mailto:privacy@leadtrap.com" style={link}>privacy@leadtrap.com</a>.</P>
 
-        <H2>7. Security</H2>
+        <H2>8. Security</H2>
         <P>We use industry-standard safeguards, including encryption in transit (TLS) and at rest, access controls, and
           least-privilege internal access. OAuth tokens for connected email accounts are stored encrypted and are never
           shared.</P>
 
-        <H2>8. Your Rights</H2>
+        <H2>9. Your Rights</H2>
         <P>Depending on where you live, you may have rights to access, correct, delete, or port your personal
           information, and to opt out of certain processing. Contact{' '}
           <a href="mailto:privacy@leadtrap.com" style={link}>privacy@leadtrap.com</a> to exercise these rights. If we
           process your data on behalf of a Partner, we may direct your request to that Partner.</P>
 
-        <H2>9. Children</H2>
+        <H2>10. Children</H2>
         <P>The Services are not directed to children under 13, and we do not knowingly collect their information without
           appropriate consent obtained by the Partner (e.g., a parent completing intake for a child&rsquo;s care).</P>
 
-        <H2>10. Changes and Contact</H2>
+        <H2>11. Changes and Contact</H2>
         <P>We will post any changes to this policy on this page with an updated effective date. Questions:{' '}
           <a href="mailto:privacy@leadtrap.com" style={link}>privacy@leadtrap.com</a>, LeadTrap, Inc., 169 Madison Ave,
           STE 62431, New York, NY 10016.</P>

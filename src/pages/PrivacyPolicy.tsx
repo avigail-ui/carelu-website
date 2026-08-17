@@ -12,7 +12,7 @@ import { useSeo } from '../hooks/useSeo';
 const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const MUTED = 'rgba(43,42,38,0.72)';
-const UPDATED = 'July 31, 2026';
+const UPDATED = 'August 17, 2026';
 
 function H2({ id, children }: { id?: string; children: React.ReactNode }) {
   return (
@@ -22,8 +22,8 @@ function H2({ id, children }: { id?: string; children: React.ReactNode }) {
     }}>{children}</h2>
   );
 }
-function P({ children }: { children: React.ReactNode }) {
-  return <p style={{ fontSize: 15, color: MUTED, lineHeight: 1.75, margin: '0 0 14px' }}>{children}</p>;
+function P({ id, children }: { id?: string; children: React.ReactNode }) {
+  return <p id={id} style={{ fontSize: 15, color: MUTED, lineHeight: 1.75, margin: '0 0 14px', scrollMarginTop: 100 }}>{children}</p>;
 }
 function B({ children }: { children: React.ReactNode }) {
   return <strong style={{ color: INK, fontWeight: 600 }}>{children}</strong>;
@@ -62,9 +62,11 @@ export default function PrivacyPolicy() {
           provider &mdash; including any Protected Health Information (PHI) &mdash; is governed by our{' '}
           <a href="/terms" style={{ color: '#2e5a26', fontWeight: 600 }}>Terms of Service</a> and, where applicable, a
           signed Business Associate Agreement (BAA), not by this Site policy. We do not collect PHI through this Site.
-          One exception: our handling of data from email accounts a provider connects to the Carelu product (Google or
+          Two exceptions: our handling of data from email accounts a provider connects to the Carelu product (Google or
           Microsoft) is described in <a href="#connected-email" style={{ color: '#2e5a26', fontWeight: 600 }}>Connected
-          email accounts</a> below.
+          email accounts</a> below, and our handling of data from Meta (Facebook) accounts a provider connects is
+          described in <a href="#connected-meta" style={{ color: '#2e5a26', fontWeight: 600 }}>Connected advertising
+          accounts</a> below.
         </P>
 
         <H2>Information we collect</H2>
@@ -134,6 +136,44 @@ export default function PrivacyPolicy() {
         <P>
           Microsoft account data accessed through Microsoft Graph is handled under the same restrictions. OAuth tokens
           for connected accounts are stored encrypted and are never shared.
+        </P>
+
+        <H2 id="connected-meta">Connected advertising accounts (Meta)</H2>
+        <P>
+          Providers using the Carelu product may connect a Meta (Facebook) account through our Meta app,{' '}
+          <B>Carelu Connector</B>, so they can see how their Facebook and Instagram advertising performs alongside the
+          leads and intakes those ads generate. Access is granted by the provider through Facebook Login and
+          Meta&rsquo;s permission dialogs, and Carelu accesses Meta data only through Meta&rsquo;s official APIs
+          (including the Marketing API).
+        </P>
+        <P>
+          <B>What we receive.</B> With the provider&rsquo;s permission, we receive: basic profile information of the
+          connecting user (such as name and email address); the ad accounts, Pages, and business assets the provider
+          chooses to share; and advertising data from those assets &mdash; such as campaign, ad set, and ad names and
+          settings, and aggregate performance metrics (for example spend, impressions, reach, clicks, and conversion
+          counts).
+        </P>
+        <P>
+          <B>How we use it.</B> We use Meta data only to provide the features the provider has enabled: displaying
+          advertising performance in that provider&rsquo;s dashboard, attributing leads and intakes to the campaigns
+          that generated them, and reporting on the results. We do not sell Meta data or use it for our own advertising;
+          we do not share it with third parties except service providers who host and operate the product for us under
+          contract, or where required by law; we do not use it to build or train generalized artificial-intelligence or
+          machine-learning models; and access tokens for connected Meta accounts are stored encrypted and are never
+          shared. Our collection, use, and deletion of Meta data (&ldquo;Platform Data&rdquo;) complies with the{' '}
+          <a href="https://developers.facebook.com/terms/" target="_blank" rel="noreferrer"
+            style={{ color: '#2e5a26', fontWeight: 600 }}>Meta Platform Terms</a> and{' '}
+          <a href="https://developers.facebook.com/devpolicy/" target="_blank" rel="noreferrer"
+            style={{ color: '#2e5a26', fontWeight: 600 }}>Developer Policies</a>.
+        </P>
+        <P id="data-deletion">
+          <B>Disconnecting and data deletion.</B> Providers can disconnect a Meta account at any time from their
+          settings, which revokes our access. You can also remove the &ldquo;Carelu Connector&rdquo; app yourself in
+          your Facebook settings under <B>Settings &amp; Privacy &rarr; Settings &rarr; Apps and Websites</B>, which
+          invalidates our access tokens. To have the Meta data we have stored deleted, disconnect (or remove the app)
+          and email <a href="mailto:privacy@carelu.com" style={{ color: '#2e5a26', fontWeight: 600 }}>privacy@carelu.com</a>{' '}
+          from the account owner&rsquo;s address with the subject &ldquo;Meta data deletion request.&rdquo; We will
+          delete the stored Meta data associated with the connection within 30 days and confirm by email.
         </P>
 
         <H2>SMS / text messaging</H2>
