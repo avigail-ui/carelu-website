@@ -9,7 +9,7 @@ import SiteFooter from '../components/SiteFooter';
    CARELU — ROI CALCULATOR (/tools/intake-leak-calculator)
    Enter monthly intakes + what an intake is worth per year →
    see the extra families and annual profit Carelu adds at a
-   33% intake uplift. Benchmarks from The Intake Gap report.
+   40% intake uplift. Benchmarks from The Intake Gap report.
    ================================================================ */
 
 const INK = '#1A1A1A';
@@ -49,7 +49,7 @@ function Slider({ label, hint, value, min, max, step, format, onChange }: {
 export default function RoiCalculator() {
   useReveal();
   useSeo({
-    title: 'ROI Calculator — What Are 33% More Intakes Worth? | Carelu',
+    title: 'ROI Calculator — What Are 40% More Intakes Worth? | Carelu',
     description:
       'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and annual profit — Carelu adds.',
     canonical: '/tools/intake-leak-calculator',
@@ -66,7 +66,7 @@ export default function RoiCalculator() {
       url: 'https://carelu.com/tools/intake-leak-calculator',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
-      description: 'Calculates the additional families and annual profit an ABA provider gains from a 33% increase in intakes with Carelu.',
+      description: 'Calculates the additional families and annual profit an ABA provider gains from a 40% increase in intakes with Carelu.',
       publisher: { '@id': 'https://carelu.com/#organization' },
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     });
@@ -77,8 +77,8 @@ export default function RoiCalculator() {
   // Carelu's asserted intake uplift — a static figure we stand behind, not a
   // user guess. Grounded in the Intake Gap research: ~48% of inquiries arrive
   // after hours (largely unanswered) and the first provider to respond usually
-  // wins, so always-on, complete intake grows starts by about a third.
-  const UPLIFT = 0.33;
+  // wins, so always-on, complete intake grows starts by about 40%.
+  const UPLIFT = 0.4;
 
   const [intakes, setIntakes] = useState(100);
   const [value, setValue] = useState(15000);
@@ -110,7 +110,7 @@ export default function RoiCalculator() {
             fontWeight: 400, color: INK, lineHeight: 1.06,
             letterSpacing: '-0.022em', margin: '26px auto 0', maxWidth: 820,
           }}>
-            What are 33% more intakes worth to you?
+            What are 40% more intakes worth to you?
           </h1>
           <p className="rv d2" style={{
             fontSize: 'clamp(15px, 1.5vw, 18px)', color: 'rgba(43,42,38,0.68)',
@@ -191,7 +191,7 @@ export default function RoiCalculator() {
               <div style={{ borderTop: '1px solid rgba(250,248,243,0.12)', paddingTop: 18, fontSize: 13.5, color: 'rgba(250,248,243,0.68)', lineHeight: 1.6 }}>
                 Carelu answers <strong style={{ color: BONE }}>100% of your inquiries instantly</strong> and runs intake to
                 completion — 48% of inquiries arrive after hours, and the first provider to respond
-                usually wins. That's how practices take in a third more families.{' '}
+                usually wins. That's how practices take in 40% more families.{' '}
                 <a href="/research/the-intake-gap" style={{ color: '#D4F25C', textDecoration: 'underline' }}>See the research →</a>
               </div>
             </div>

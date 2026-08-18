@@ -407,7 +407,7 @@ export default function IntakeGapReport() {
                 See what these numbers mean for your practice.
               </div>
               <p style={{ fontSize: 14, color: 'rgba(250,248,243,0.65)', lineHeight: 1.55, margin: 0 }}>
-                The ROI Calculator shows the families — and the profit — 33% more intakes would add to your practice.
+                The ROI Calculator shows the families — and the profit — 40% more intakes would add to your practice.
               </p>
             </div>
             <span style={{
