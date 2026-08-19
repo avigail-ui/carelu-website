@@ -8,8 +8,8 @@ import SiteFooter from '../components/SiteFooter';
 /* ================================================================
    CARELU — ROI CALCULATOR (/tools/intake-leak-calculator)
    Enter monthly intakes + what an intake is worth per year →
-   see the extra families and annual profit Carelu adds at a
-   40% intake uplift. Benchmarks from The Intake Gap report.
+   see the extra families and monthly/annualized profit Carelu
+   adds at a 40% intake uplift. Benchmarks from The Intake Gap.
    ================================================================ */
 
 const INK = '#1A1A1A';
@@ -51,7 +51,7 @@ export default function RoiCalculator() {
   useSeo({
     title: 'ROI Calculator — What Are 40% More Intakes Worth? | Carelu',
     description:
-      'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and annual profit — Carelu adds.',
+      'Free ROI calculator for ABA and behavioral-health providers: enter your monthly intakes and what an intake is worth to see the families — and added profit — Carelu adds.',
     canonical: '/tools/intake-leak-calculator',
   });
 
@@ -66,7 +66,7 @@ export default function RoiCalculator() {
       url: 'https://carelu.com/tools/intake-leak-calculator',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
-      description: 'Calculates the additional families and annual profit an ABA provider gains from a 40% increase in intakes with Carelu.',
+      description: 'Calculates the additional families and added profit an ABA provider gains from a 40% increase in intakes with Carelu.',
       publisher: { '@id': 'https://carelu.com/#organization' },
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     });
@@ -85,7 +85,8 @@ export default function RoiCalculator() {
 
   const addedFamilies = Math.round(intakes * UPLIFT);        // more families served each month
   const newIntakes = intakes + addedFamilies;                // monthly intakes with Carelu
-  const addedProfit = addedFamilies * value;                 // added annual profit
+  const addedProfit = addedFamilies * value;                 // client value added each month
+  const addedProfitYear = addedProfit * 12;                  // annualized
 
   return (
     <div className="session-light" style={{ background: BONE, color: '#2B2A26', minHeight: '100vh' }}>
@@ -163,7 +164,7 @@ export default function RoiCalculator() {
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 64px)', color: '#D4F25C', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
                     +{fmtMoney(addedProfit)}
                   </span>
-                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>per year — same team, same marketing</span>
+                  <span style={{ fontSize: 13, color: 'rgba(250,248,243,0.55)' }}>per month, {fmtMoney(addedProfitYear)} a year — same team, same marketing</span>
                 </div>
               </div>
 
