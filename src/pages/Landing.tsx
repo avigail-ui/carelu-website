@@ -1223,7 +1223,95 @@ function Pill({ children, dark }: { children: string; dark?: boolean }) {
 }
 
 /* CUSTOMER STORIES section removed 2026-08-19 (placeholder quotes/photos) —
-   restore from git history when real customer stories are ready. */
+   restore from git history when real customer stories are ready.
+   CeoLetter below holds this slot in the meantime. */
+
+// ── A LETTER FROM THE CEO ─────────────────────────
+// Editorial letter in the old Customer Stories slot. Narrow measure, EB
+// Garamond body, script signature (Mrs Saint Delafield, loaded in index.html).
+function CeoLetter() {
+  const para: React.CSSProperties = {
+    fontFamily: 'var(--font-display)',
+    fontSize: 'clamp(17px, 1.45vw, 19.5px)',
+    lineHeight: 1.75,
+    color: 'var(--gray-800)',
+    margin: '0 0 26px',
+  };
+  return (
+    <section id="ceo-letter" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--white)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: 660, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center' }}>
+            <div className="rv"><Pill>A letter from our CEO</Pill></div>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)',
+              lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+            }}>
+              Every family deserves an answer.
+            </h2>
+            {/* Quiet rule between heading and letter body */}
+            <div className="rv d2" aria-hidden="true" style={{
+              width: 44, height: 1, background: 'var(--sage-300)',
+              margin: 'clamp(32px, 4vw, 48px) auto',
+            }} />
+          </div>
+
+          <div className="rv d2">
+            <p style={para}>
+              When a parent finally reaches out about their child, they&rsquo;ve usually been
+              carrying that decision for months. The message they send at 11pm on a Tuesday is
+              one of the bravest they&rsquo;ll ever write. What happens next should honor that.
+            </p>
+            <p style={para}>
+              Too often, it doesn&rsquo;t. Calls go to voicemail, forms disappear into inboxes,
+              and families wait weeks for a reply &mdash; not because practices don&rsquo;t care,
+              but because the people doing intake are stretched impossibly thin. I built Carelu
+              because the gap between reaching out and starting care shouldn&rsquo;t be where
+              families are lost.
+            </p>
+            <p style={para}>
+              My hope is simple: that every family who asks for help hears back quickly and
+              warmly, at any hour, in their own language. That the practices serving them can
+              grow without losing the humanity that made families trust them in the first
+              place. And that intake &mdash; a family&rsquo;s very first experience of care
+              &mdash; feels like being welcomed, not processed.
+            </p>
+            <p style={{ ...para, marginBottom: 0 }}>
+              We measure our work in one number: families who made it to care. Everything else
+              is detail.
+            </p>
+          </div>
+
+          {/* Signature block */}
+          <div className="rv d3" style={{ marginTop: 'clamp(36px, 4.5vw, 52px)' }}>
+            <div style={{
+              fontFamily: "'Mrs Saint Delafield', 'EB Garamond', cursive",
+              fontSize: 'clamp(44px, 5vw, 56px)',
+              lineHeight: 1,
+              color: 'var(--green-900)',
+              transform: 'rotate(-2.5deg)',
+              transformOrigin: 'left bottom',
+              paddingLeft: 6,
+            }}>
+              Yoni Belson
+            </div>
+            <div style={{
+              marginTop: 14,
+              fontSize: 11.5, fontWeight: 600, color: 'var(--gray-500)',
+              letterSpacing: '0.14em', textTransform: 'uppercase',
+            }}>
+              Founder &amp; CEO, Carelu
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 // ── CHANNEL ICONS — small stroke-based glyphs for each pill ──
 function ChannelIcon({ name }: { name: string }) {
@@ -3171,6 +3259,7 @@ export default function Landing() {
         <Impact />
         <HowCarelu />
         <Outcomes />
+        <CeoLetter />
         <GettingStarted />
         <Compliance />
         <Faq />
