@@ -13,7 +13,6 @@ import Gateway from './pages/Gateway'
 import SolutionsPage from './pages/SolutionsPage'
 import TermsPage from './pages/TermsPage'
 import PrivacyPolicy from './pages/PrivacyPolicy'
-import { PartnerPrivacy, PartnerTerms } from './pages/PartnerPolicy'
 import CookiePolicy from './pages/CookiePolicy'
 import LeadTrapPrivacy from './pages/LeadTrapPrivacy'
 import LeadTrapTerms from './pages/LeadTrapTerms'
@@ -96,9 +95,8 @@ createRoot(document.getElementById('root')!).render(
         ))}
         {/* legacy /compare URLs 301 into integrations */}
         <Route path="/compare/:slug" element={<CompareRedirect />} />
-        {/* Per-company default policy pages the intake platform links to (no nav, noindex) */}
-        <Route path="/privacy/:company" element={<PartnerPrivacy />} />
-        <Route path="/terms/:company" element={<PartnerTerms />} />
+        {/* /privacy/:company and /terms/:company are served server-side by
+            api/policy.ts (see vercel.json) so compliance scanners get full HTML */}
         <Route path="/terms" element={isCareluDomain ? <TermsPage /> : <LeadTrapTerms />} />
         <Route path="/privacy" element={isCareluDomain ? <PrivacyPolicy /> : <LeadTrapPrivacy />} />
         <Route path="/cookies" element={<CookiePolicy />} />

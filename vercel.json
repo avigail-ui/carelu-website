@@ -20,6 +20,14 @@
       "has": [{ "type": "host", "value": "(www\\.)?carelu\\.com" }],
       "destination": "/static/carelu-terms.html"
     },
+    {
+      "source": "/privacy/:company",
+      "destination": "/api/policy?kind=privacy&company=:company"
+    },
+    {
+      "source": "/terms/:company",
+      "destination": "/api/policy?kind=terms&company=:company"
+    },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
