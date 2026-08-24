@@ -18,20 +18,18 @@ import { enrichLead, renderEnrichment, isFreeEmail } from './_enrich.js';
    notification failure still returns 200 so the front-end proceeds.
    ================================================================ */
 
-// Demo requests post to their own "Carelu demo request" Slack workflow ->
-// #sales. Until that workflow exists in Slack this stays empty and demo
-// leads fall back to the marketing workflow, so no ping is ever lost.
-const SALES_SLACK_WEBHOOK_URL = '';
-
-// "Carelu newsletter signup" Slack workflow -> #marketing. Deliberately NOT
-// the shared SLACK_WEBHOOK_URL from _shared.ts: that one is the "Bot is down"
-// workflow posting to #alerts, where signups were indistinguishable from
-// bot-liveness noise. Variables must stay named `email` and `source` — the
-// workflow renders only fields matching its declared variables, and a
-// mismatch posts a blank message with no error (the trigger 200s on any
-// body). Everything a human needs to read is therefore packed into `source`.
-const MARKETING_SLACK_WEBHOOK_URL =
-  'https://hooks.slack.com/triggers/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';
+/* Slack Workflow Builder trigger URLs, from the environment because THIS REPO
+   IS PUBLIC — anyone holding one of these can post arbitrary messages into the
+   channel behind it.
+     SLACK_SALES_WEBHOOK_URL     -> "Carelu demo request"      -> #sales
+     SLACK_MARKETING_WEBHOOK_URL -> "Carelu newsletter signup" -> #marketing
+   Both workflows declare exactly two variables, `email` and `source`: a
+   trigger renders only fields matching its declared variables, and a mismatch
+   posts a blank message with no error (it 200s on any body). Everything a
+   human needs to read is therefore packed into `source`. Sales falls back to
+   marketing so a missing var loses the routing, never the lead. */
+const SALES_SLACK_WEBHOOK_URL = process.env.SLACK_SALES_WEBHOOK_URL ?? '';
+const MARKETING_SLACK_WEBHOOK_URL = process.env.SLACK_MARKETING_WEBHOOK_URL ?? '';
 
 export const config = { maxDuration: 60 };
 
@@ -167,17 +165,19 @@ export async function POST(request: Request): Promise<Response> {
     ].filter(Boolean).join(' | ');
     const display = detail ? `${formLabel} · ${detail}` : formLabel;
 
-    const webhook = team === 'sales' && SALES_SLACK_WEBHOOK_URL
-      ? SALES_SLACK_WEBHOOK_URL
-      : MARKETING_SLACK_WEBHOOK_URL;
-    try {
-      await fetch(webhook, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ email, source: display }),
-      });
-    } catch (err) {
-      console.error('leads: slack notify failed (non-fatal)', err);
+    const webhook = (team === 'sales' && SALES_SLACK_WEBHOOK_URL) || MARKETING_SLACK_WEBHOOK_URL;
+    if (!webhook) {
+      console.error('leads: no Slack webhook configured, ping skipped', email, form);
+    } else {
+      try {
+        await fetch(webhook, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ email, source: display }),
+        });
+      } catch (err) {
+        console.error('leads: slack notify failed (non-fatal)', err);
+      }
     }
   }
 
