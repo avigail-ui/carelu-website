@@ -76,17 +76,21 @@ export function DemoFlow() {
 
   // Submit = the lead is captured (fire-and-forget, never blocks the calendar)
   // and the calendar unlocks. Most visitors who fill the form but never pick a
-  // slot would otherwise vanish. Name and size ride along inside `source`
-  // because /api/leads (and its Slack workflow) only know `email` and `source`.
+  // slot would otherwise vanish. keepalive so the POST survives the visitor
+  // closing the tab straight after submitting.
   const submit = () => {
     if (!ready || submitted) return;
     setSubmitted(true);
     fetch('/api/leads', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
+      keepalive: true,
       body: JSON.stringify({
+        form: 'demo',
         email: email.trim().toLowerCase(),
-        source: `demo: ${name.trim()} (${size})`.slice(0, 80),
+        name: name.trim(),
+        size,
+        page: window.location.pathname,
       }),
     }).catch(() => {});
   };

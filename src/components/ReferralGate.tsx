@@ -64,7 +64,12 @@ export function GateModal({ pendingFile, onDone }: { pendingFile: string; onDone
     fetch('/api/leads', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ email: clean, source: 'referral-contacts', website: hpRef.current?.value ?? '' }),
+      body: JSON.stringify({
+        email: clean,
+        form: 'referral-contacts',
+        page: window.location.pathname,
+        website: hpRef.current?.value ?? '',
+      }),
       keepalive: true,
     }).catch(() => {});
     proceed();
