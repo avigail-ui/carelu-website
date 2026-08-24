@@ -82,7 +82,12 @@ export async function POST(request: Request): Promise<Response> {
       continue;
     }
 
-    if (leads.some((l) => l.email === email)) {
+    // Newsletter-style signups dedupe on email alone. Demo-form captures
+    // (source "demo: ...") must still land — and still ping Slack — even when
+    // the email is already on the list from an earlier gated download; those
+    // dedupe on the exact email+source pair instead.
+    const isDemo = source.startsWith('demo');
+    if (leads.some((l) => l.email === email && (!isDemo || l.source === source))) {
       alreadyKnown = true;
       stored = true;
       break;

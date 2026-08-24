@@ -3,8 +3,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 /* ================================================================
    GET-A-DEMO OVERLAY
    ================================================================
-   Gated booking flow: name + work email + practice size first; only
-   then does the calendar unlock. The calendar is the existing
+   Gated booking flow: name + work email + practice size first, then
+   an explicit submit (which captures the lead via /api/leads) unlocks
+   the calendar. The calendar is the existing
    Calendly event (their real connected calendar), mounted inline
    with the visitor's details prefilled.
 
@@ -25,6 +26,7 @@ const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const MUTED = '#8C8674';
 const LIME = '#D4F25C';
+const PURPLE = '#7C5CE0';
 const SIZES = ['1-10', '11-25', '26-50', '51-100', '101-500', '500+'];
 
 function loadCalendlyScript(): Promise<void> {
@@ -59,6 +61,7 @@ export function DemoFlow() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [size, setSize] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
   const calRef = useRef<HTMLDivElement>(null);
   const mounted = useRef(false);
 
@@ -71,9 +74,26 @@ export function DemoFlow() {
     : !size ? 'Pick a practice size above'
     : null;
 
-  // Mount the Calendly inline widget exactly once, when the form completes.
+  // Submit = the lead is captured (fire-and-forget, never blocks the calendar)
+  // and the calendar unlocks. Most visitors who fill the form but never pick a
+  // slot would otherwise vanish. Name and size ride along inside `source`
+  // because /api/leads (and its Slack workflow) only know `email` and `source`.
+  const submit = () => {
+    if (!ready || submitted) return;
+    setSubmitted(true);
+    fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        email: email.trim().toLowerCase(),
+        source: `demo: ${name.trim()} (${size})`.slice(0, 80),
+      }),
+    }).catch(() => {});
+  };
+
+  // Mount the Calendly inline widget exactly once, on submit.
   useEffect(() => {
-    if (!ready || mounted.current || !calRef.current) return;
+    if (!submitted || mounted.current || !calRef.current) return;
     mounted.current = true;
     const el = calRef.current;
     loadCalendlyScript().then(() => {
@@ -93,7 +113,7 @@ export function DemoFlow() {
         },
       });
     });
-  }, [ready, name, email, size]);
+  }, [submitted, name, email, size]);
 
   return (
     <div>
@@ -154,18 +174,18 @@ export function DemoFlow() {
         {/* Calendly mounts here once ready */}
         <div ref={calRef} style={{
           width: '100%', height: 'min(560px, 62vh)',
-          opacity: ready ? 1 : 0, transition: 'opacity 0.5s ease',
+          opacity: submitted ? 1 : 0, transition: 'opacity 0.5s ease',
         }} />
 
         {/* White patch over Calendly's corner ribbon (blank area in this layout) */}
-        {ready && (
+        {submitted && (
           <div aria-hidden="true" style={{
             position: 'absolute', top: 0, right: 0, width: 90, height: 90,
             background: '#fff', pointerEvents: 'none',
           }} />
         )}
 
-        {!ready && (
+        {!submitted && (
           <div style={{
             position: 'absolute', inset: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -184,15 +204,31 @@ export function DemoFlow() {
                 }} />
               ))}
             </div>
-            <span style={{
-              position: 'relative', fontSize: 14, fontWeight: 600,
-              color: INK, background: '#fff',
-              border: '1px solid rgba(0,0,0,0.05)',
-              boxShadow: '0 8px 28px rgba(0,0,0,0.12)',
-              padding: '12px 24px', borderRadius: 100,
-            }}>
-              {missing}
-            </span>
+            {ready ? (
+              <button type="button" onClick={submit} style={{
+                position: 'relative', fontSize: 15, fontWeight: 600,
+                fontFamily: 'var(--font-body)', color: '#fff',
+                background: PURPLE, border: `1px solid ${PURPLE}`,
+                boxShadow: '0 8px 28px rgba(124, 92, 224, 0.45)',
+                padding: '14px 30px', borderRadius: 100, cursor: 'pointer',
+                transition: 'transform 0.15s, box-shadow 0.2s, background 0.2s',
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 36px rgba(124, 92, 224, 0.55)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(124, 92, 224, 0.45)'; }}
+              >
+                See available times&nbsp;&rarr;
+              </button>
+            ) : (
+              <span style={{
+                position: 'relative', fontSize: 14, fontWeight: 600,
+                color: INK, background: '#fff',
+                border: '1px solid rgba(0,0,0,0.05)',
+                boxShadow: '0 8px 28px rgba(0,0,0,0.12)',
+                padding: '12px 24px', borderRadius: 100,
+              }}>
+                {missing}
+              </span>
+            )}
           </div>
         )}
       </div>
