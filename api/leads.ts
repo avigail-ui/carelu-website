@@ -1,4 +1,47 @@
+import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2';
 import { json, requireConfig, isResponse, getRepoFileText, commitFiles } from './sources/_shared.js';
+
+// Demo-form submits also email the team directly (Slack pings are easy to
+// miss). Sends through the same SES account as the LeadTrap backend, whose
+// verified identity is the ses.leadtrap.com SUBDOMAIN — the From must live
+// there, not on leadtrap.com. Env names are SES_*, not AWS_*: Vercel reserves
+// AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY and refuses to set them. Creds
+// missing → skip silently (lead storage and Slack are unaffected).
+const DEMO_NOTIFY_TO = ['yoni@leadtrap.com', 'avi@leadtrap.com'];
+const DEMO_NOTIFY_FROM = 'Carelu Demo Requests <demo@ses.leadtrap.com>';
+
+async function emailDemoNotify(email: string, source: string): Promise<void> {
+  const accessKeyId = process.env.SES_ACCESS_KEY_ID;
+  const secretAccessKey = process.env.SES_SECRET_ACCESS_KEY;
+  if (!accessKeyId || !secretAccessKey) {
+    console.error('leads: SES creds not configured, demo email skipped');
+    return;
+  }
+  const ses = new SESv2Client({
+    region: process.env.SES_REGION || 'us-east-1',
+    credentials: { accessKeyId, secretAccessKey },
+  });
+  await ses.send(new SendEmailCommand({
+    FromEmailAddress: DEMO_NOTIFY_FROM,
+    Destination: { ToAddresses: DEMO_NOTIFY_TO },
+    ReplyToAddresses: [email],
+    Content: {
+      Simple: {
+        Subject: { Data: `Demo request — ${source.replace(/^demo:\s*/, '')}` },
+        Body: {
+          Text: {
+            Data:
+              `New demo request on carelu.com\n\n` +
+              `Email: ${email}\n` +
+              `Details: ${source}\n\n` +
+              `They submitted the form and were shown the calendar; a Calendly ` +
+              `invite only follows if they picked a slot. Reply-to is set to the lead.`,
+          },
+        },
+      },
+    },
+  }));
+}
 
 // Dedicated "Carelu newsletter signup" Slack workflow -> #marketing. Deliberately
 // NOT the shared SLACK_WEBHOOK_URL from _shared.ts: that one is the "Bot is down"
@@ -49,6 +92,7 @@ export async function POST(request: Request): Promise<Response> {
   const email = typeof body.email === 'string' ? body.email.trim().toLowerCase().slice(0, 254) : '';
   const source = typeof body.source === 'string' ? body.source.trim().slice(0, 80) : 'unknown';
   if (!EMAIL_RE.test(email)) return json({ error: 'invalid email' }, 400);
+  const isDemo = source.startsWith('demo');
 
   const cfg = requireConfig();
   if (isResponse(cfg)) {
@@ -86,7 +130,6 @@ export async function POST(request: Request): Promise<Response> {
     // (source "demo: ...") must still land — and still ping Slack — even when
     // the email is already on the list from an earlier gated download; those
     // dedupe on the exact email+source pair instead.
-    const isDemo = source.startsWith('demo');
     if (leads.some((l) => l.email === email && (!isDemo || l.source === source))) {
       alreadyKnown = true;
       stored = true;
@@ -118,6 +161,13 @@ export async function POST(request: Request): Promise<Response> {
       });
     } catch (err) {
       console.error('leads: slack notify failed (non-fatal)', err);
+    }
+    if (isDemo) {
+      try {
+        await emailDemoNotify(email, source);
+      } catch (err) {
+        console.error('leads: demo email notify failed (non-fatal)', err);
+      }
     }
   }
 

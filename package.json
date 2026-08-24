@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.3",
+    "@aws-sdk/client-sesv2": "^3.1116.0",
     "@types/matter-js": "^0.20.2",
     "matter-js": "^0.20.0",
     "react": "^19.2.4",
