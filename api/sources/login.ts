@@ -6,6 +6,11 @@ import { json, requireConfig, isResponse, passwordMatches, signToken, sessionCoo
    then sets an httpOnly Secure SameSite=Lax cookie carrying an
    HMAC-signed, 7-day session token. SOURCES_USERNAME is optional
    config — when unset, any username is accepted (password-only).
+
+   SOURCES_ACCOUNTS optionally adds named per-person accounts on top
+   of the shared pair: comma-separated `email:password` entries,
+   split on the FIRST colon so passwords may contain colons. A login
+   succeeds if it matches the shared pair OR any named account.
    ================================================================ */
 
 export async function POST(request: Request): Promise<Response> {
@@ -23,8 +28,20 @@ export async function POST(request: Request): Promise<Response> {
   if (!password) return json({ error: 'password required' }, 400);
 
   const expectedUser = process.env.SOURCES_USERNAME || '';
-  const userOk = !expectedUser || passwordMatches(username, expectedUser);
-  if (!userOk || !passwordMatches(password, cfg.password)) {
+  const sharedOk =
+    (!expectedUser || passwordMatches(username, expectedUser)) &&
+    passwordMatches(password, cfg.password);
+  const accountOk = (process.env.SOURCES_ACCOUNTS || '')
+    .split(',')
+    .some((entry) => {
+      const sep = entry.indexOf(':');
+      if (sep < 1) return false;
+      return (
+        passwordMatches(username, entry.slice(0, sep).trim()) &&
+        passwordMatches(password, entry.slice(sep + 1))
+      );
+    });
+  if (!sharedOk && !accountOk) {
     return json({ error: 'incorrect username or password' }, 401);
   }
 
