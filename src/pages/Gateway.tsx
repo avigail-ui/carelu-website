@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSeo } from '../hooks/useSeo';
-import { careluRevealed } from '../lib/careluReveal';
+import { careluRevealed, demoLive } from '../lib/careluReveal';
 
 const accent = '#3a8ab0';
 
@@ -151,7 +151,11 @@ export default function Gateway() {
           <img src="/logo.jpeg" alt="" style={{ height: 28, width: 28, borderRadius: 7 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 19, color: '#fff', letterSpacing: '-0.02em' }}>LeadTrap</span>
         </Link>
-        <a href="/demo" style={{ fontSize: 14, fontWeight: 600, color: '#0a0a0c', background: '#fff', padding: '10px 20px', borderRadius: 100, textDecoration: 'none' }}>Request demo</a>
+        {demoLive() ? (
+          <a href="/demo" style={{ fontSize: 14, fontWeight: 600, color: '#0a0a0c', background: '#fff', padding: '10px 20px', borderRadius: 100, textDecoration: 'none' }}>Request demo</a>
+        ) : (
+          <span style={{ fontSize: 14, fontWeight: 600, color: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.25)', padding: '10px 20px', borderRadius: 100 }}>Coming soon</span>
+        )}
       </nav>
 
       {/* Headline */}
