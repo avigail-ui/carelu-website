@@ -89,9 +89,14 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
 export function Nav({ base = '' }: { base?: string }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
-  // The nav is its own quiet layer from the first frame — a bone veil with a
-  // hairline edge, deliberately separate from the sky below it.
-  const scrolled = true;
+  // See-through over the hero sky; the bone veil fades in once the page scrolls
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   // Lock page scroll while the mobile menu is open
   useEffect(() => {
@@ -405,7 +410,7 @@ function Hero() {
   return (
     <section ref={sectionRef} className="hero-section" style={{
       position: 'relative', height: '100svh',
-      background: '#f0e6d2',
+      background: '#FAF8F3',
     }}>
       <div className="hero-sticky" style={{
         position: 'sticky', top: 0, height: '100svh',
@@ -447,7 +452,7 @@ function Hero() {
         }} />
         <div style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, height: '55%', zIndex: 2,
-          background: 'linear-gradient(180deg, rgba(240,230,210,0) 0%, rgba(240,230,210,0.15) 30%, rgba(240,230,210,0.5) 55%, rgba(240,230,210,0.85) 78%, #f0e6d2 100%)',
+          background: 'linear-gradient(180deg, rgba(250,248,243,0) 0%, rgba(250,248,243,0.15) 30%, rgba(250,248,243,0.5) 55%, rgba(250,248,243,0.85) 78%, #FAF8F3 100%)',
           pointerEvents: 'none',
         }} />
 
@@ -569,7 +574,7 @@ function Hero() {
             fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: 'rgba(60,50,40,0.7)',
-            textAlign: 'center', marginBottom: 38,
+            textAlign: 'center', marginBottom: 18,
             mixBlendMode: 'multiply',
           }}>
             Trusted by 100+ of the fastest growing ABA providers
@@ -622,87 +627,88 @@ function Hero() {
   );
 }
 
-// ── DEMO VIDEO ── The older "watch demo" video in a white frame with play button.
-// Sits in its own section right under the hero.
+// ── DEMO VIDEO — full-bleed cinema. The film runs silently, edge to edge,
+// as the page reaches it; one frosted pill offers the sound.
 function DemoVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const handlePlay = () => {
+  const [withSound, setWithSound] = useState(false);
+
+  // Play silently while the strip is on screen; rest when it leaves
+  useEffect(() => {
     const v = videoRef.current; if (!v) return;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !v.ended) v.play().catch(() => {});
+      else v.pause();
+    }, { threshold: 0.35 });
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
+  const handleSound = () => {
+    const v = videoRef.current; if (!v) return;
+    v.muted = false;
+    v.currentTime = 0;
     v.play().catch(() => {});
-    setIsPlaying(true);
+    setWithSound(true);
   };
 
   return (
     <section style={{
-      paddingTop: 'clamp(80px, 10vh, 140px)',
+      paddingTop: 'clamp(90px, 12vh, 160px)',
       paddingBottom: 'clamp(80px, 10vh, 130px)',
-      background: 'linear-gradient(180deg, #f0e6d2 0%, #f0e6d2 72%, #FAF8F3 100%)',
+      background: '#FAF8F3',
     }}>
-      <div style={{ ...W, maxWidth: 1040, textAlign: 'center' }}>
-        {/* Minimal — just the film, mounted like a print: a thin white mat inside
-            a hairline frame, floating on a deep soft shadow. */}
-        <div className="hero-visual rv-scale" style={{
-          maxWidth: 640, margin: '0 auto',
-          borderRadius: 20, overflow: 'hidden',
-          boxShadow: '0 0 0 1px rgba(43,42,38,0.06), 0 24px 64px rgba(30,30,25,0.13), 0 6px 18px rgba(30,30,25,0.06)',
-          position: 'relative',
-        }}>
-          <video
-            ref={videoRef}
-            controls={isPlaying}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/demo-poster.jpg"
-            style={{ width: '100%', height: 'auto', display: 'block', background: '#fff' }}
-          >
-            <source src="https://framerusercontent.com/assets/ZEFznJK3xO8gPZ8psOliFXvKwO0.mp4" type="video/mp4" />
-          </video>
+      <div className="rv" style={{ position: 'relative', maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
+        <video
+          ref={videoRef}
+          controls={withSound}
+          muted={!withSound}
+          playsInline
+          preload="metadata"
+          poster="/demo-poster.jpg"
+          style={{
+            width: '100%', aspectRatio: '16 / 9', height: 'auto',
+            objectFit: 'cover', display: 'block', background: '#0a0a0c',
+          }}
+        >
+          <source src="/carelu-film.mp4" type="video/mp4" />
+        </video>
 
-          {!isPlaying && (
-            <button
-              type="button"
-              onClick={handlePlay}
-              aria-label="Play video"
-              style={{
-                position: 'absolute', inset: 0,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: 'linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.03) 40%, rgba(0,0,0,0.18) 100%)',
-                border: 'none', cursor: 'pointer',
-                transition: 'background 0.3s ease',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.08) 40%, rgba(0,0,0,0.28) 100%)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.04) 40%, rgba(0,0,0,0.22) 100%)'; }}
-            >
-              <span style={{
-                position: 'relative',
-                width: 64, height: 64, borderRadius: '50%',
-                background: 'rgba(20,19,16,0.38)',
-                backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255,255,255,0.45)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 10px 30px rgba(20,19,16,0.25)',
-                transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s',
-              }}>
-                <span style={{
-                  position: 'absolute', inset: -9, borderRadius: '50%',
-                  border: '1px solid rgba(255,255,255,0.28)',
-                  animation: 'hubPulse 2.8s ease-out infinite',
-                  pointerEvents: 'none',
-                }} />
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" style={{ marginLeft: 3 }}>
-                  <path d="M7 5v14l12-7L7 5z" />
-                </svg>
-              </span>
-            </button>
-          )}
-        </div>
+        {!withSound && (
+          <button
+            type="button"
+            onClick={handleSound}
+            aria-label="Play with sound"
+            style={{
+              position: 'absolute', left: '50%', bottom: 'clamp(24px, 5vh, 44px)', transform: 'translateX(-50%)',
+              display: 'inline-flex', alignItems: 'center', gap: 10,
+              fontSize: 12, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase',
+              color: '#fff', background: 'rgba(20,19,16,0.32)',
+              backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255,255,255,0.45)', borderRadius: 100,
+              padding: '11px 24px', cursor: 'pointer', fontFamily: 'inherit',
+              transition: 'background 0.25s, transform 0.25s',
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(20,19,16,0.5)'; e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(20,19,16,0.32)'; e.currentTarget.style.transform = 'translateX(-50%)'; }}
+          >
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M7 5v14l12-7L7 5z" /></svg>
+            Watch with sound
+          </button>
+        )}
       </div>
+
+      {/* Museum label — one italic line beneath the film */}
+      <p className="rv" style={{
+        textAlign: 'center', fontFamily: 'var(--font-display)', fontStyle: 'italic',
+        fontSize: 16, color: 'var(--gray-500)', margin: '26px auto 0', maxWidth: 560,
+      }}>
+        Where every intake ends &mdash; with a family, met.
+      </p>
     </section>
   );
 }
+
 
 /* ================================================================
    LOGO BAR
@@ -822,6 +828,18 @@ function Problem() {
               <p style={{ fontSize: 15, color: '#6b675e', lineHeight: 1.7, margin: 0 }}>{c.body}</p>
             </div>
           ))}
+        </div>
+
+        {/* Editorial full stop — the dark circle mark, same language as the FAQ toggle */}
+        <div className="rv" style={{ display: 'flex', justifyContent: 'center', marginTop: 'clamp(52px, 7vh, 84px)' }}>
+          <div aria-hidden="true" style={{
+            width: 32, height: 32, borderRadius: '50%', background: '#2B2A26',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#FAF8F3" strokeWidth="1.4" strokeLinecap="round">
+              <path d="M6 1.5v9M1.5 6h9" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -1031,12 +1049,13 @@ function CeoLetter() {
 
 // ── CHANNEL ICONS — small stroke-based glyphs for each pill ──
 function ChannelIcon({ name }: { name: string }) {
+  // Thin-line editorial icons — same hand as the journey/problem drawings
   const common = {
-    width: 13, height: 13,
+    width: 14, height: 14,
     viewBox: '0 0 24 24',
     fill: 'none',
     stroke: 'currentColor',
-    strokeWidth: 1.7,
+    strokeWidth: 1.4,
     strokeLinecap: 'round' as const,
     strokeLinejoin: 'round' as const,
   };
@@ -1044,43 +1063,45 @@ function ChannelIcon({ name }: { name: string }) {
     case 'Phone':
       return (
         <svg {...common}>
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          <path d="M5.2 3.5h3l1.6 3.9-2 1.5a13.6 13.6 0 0 0 6.3 6.3l1.5-2 3.9 1.6v3a1.8 1.8 0 0 1-2 1.8C11 19 5 13 4 6.5a1.8 1.8 0 0 1 1.2-3z" />
         </svg>
       );
     case 'Text':
       return (
         <svg {...common}>
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          <rect x="3.5" y="4.5" width="17" height="12.5" rx="3" />
+          <path d="M8 17v4l4-4" />
         </svg>
       );
     case 'Chat':
       return (
         <svg {...common}>
-          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          <path d="M12 3.8a8.2 8.2 0 1 1-4.2 15.3L3.6 20.4l1.3-4.2A8.2 8.2 0 0 1 12 3.8z" />
+          <path d="M8.5 12h7" strokeDasharray="0.1 3.4" />
         </svg>
       );
     case 'Forms':
       return (
         <svg {...common}>
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <polyline points="14 2 14 8 20 8" />
-          <line x1="9" y1="13" x2="15" y2="13" />
-          <line x1="9" y1="17" x2="13" y2="17" />
+          <path d="M6.5 3h7.5l4 4v14h-11.5z" />
+          <path d="M14 3v4h4" />
+          <path d="M10 12.5h5M10 16h3.5" />
         </svg>
       );
     case 'Fax':
       return (
         <svg {...common}>
-          <polyline points="6 9 6 2 18 2 18 9" />
-          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-          <rect x="6" y="14" width="12" height="8" rx="1" />
+          <path d="M7.5 8.5V3h9v5.5" />
+          <rect x="4" y="8.5" width="16" height="8" rx="2" />
+          <path d="M7.5 16.5V21h9v-4.5" />
+          <circle cx="17" cy="11.2" r="0.4" fill="currentColor" stroke="none" />
         </svg>
       );
     case 'Email':
       return (
         <svg {...common}>
-          <rect x="2" y="4" width="20" height="16" rx="2" />
-          <polyline points="2 7 12 13 22 7" />
+          <rect x="3.5" y="5" width="17" height="13.5" rx="2.5" />
+          <path d="M4.5 7.5l7.5 5.7 7.5-5.7" />
         </svg>
       );
     default:
@@ -2072,7 +2093,11 @@ function Impact() {
 
           {/* A single hairline separates the living number from its four proofs —
               the stats read as one engraved plaque, not four floating cards */}
-          <div style={{ height: 1, background: 'rgba(43,42,38,0.10)', maxWidth: 1020, margin: '52px auto 0' }} />
+          <div style={{ position: 'relative', maxWidth: 1020, margin: '52px auto 0' }}>
+            <div style={{ height: 1, background: 'rgba(43,42,38,0.10)' }} />
+            <span style={{ position: 'absolute', top: 0.5, left: 0, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(-50%, -50%)' }} />
+            <span style={{ position: 'absolute', top: 0.5, right: 0, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(50%, -50%)' }} />
+          </div>
           <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', maxWidth: 1020, margin: '0 auto', textAlign: 'center' }}>
           {[
             { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
@@ -2110,291 +2135,186 @@ function Impact() {
 }
 
 
-// ── GETTING STARTED — 2×2 vignette cards + founder note on direct access ─────
-
-// Small animated vignettes for each onboarding step — same crafted-miniature
-// language as ChecklistVisual / HandoffVisual.
-function GsVignetteCall() {
-  return (
-    <div className="gs-pop" style={{
-      background: '#fff', borderRadius: 14, padding: '16px 18px',
-      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
-      width: 250,
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces" alt="" style={{
-          width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
-          objectFit: 'cover', border: '1px solid var(--sage-200)',
-        }} />
-        <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--green-900)' }}>Intro call</div>
-          <div style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Intake specialist &middot; 45 min</div>
-        </div>
-      </div>
-      <div style={{
-        marginTop: 12, paddingTop: 12, borderTop: '1px solid rgba(0,0,0,0.06)',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      }}>
-        <span style={{ fontSize: 11.5, color: 'var(--gray-500)' }}>Tue, 11:00 AM</span>
-        <span className="gs-check" style={{
-          display: 'inline-flex', alignItems: 'center', gap: 5,
-          background: 'var(--lime)', color: 'var(--green-900)',
-          fontSize: 10.5, fontWeight: 600, borderRadius: 999, padding: '4px 9px',
-        }}>
-          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
-          Scheduled
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function GsVignetteSign() {
-  return (
-    <div className="gs-pop" style={{
-      background: '#fff', borderRadius: 14, padding: '18px 20px 14px',
-      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
-      width: 250,
-    }}>
-      {[112, 168, 138].map((w) => (
-        <div key={w} style={{ height: 5, width: w, borderRadius: 3, background: 'rgba(0,0,0,0.07)', marginBottom: 8 }} />
-      ))}
-      <div style={{
-        marginTop: 14, paddingTop: 4, borderTop: '1px solid rgba(0,0,0,0.06)',
-        display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 12,
-      }}>
-        <svg width="128" height="42" viewBox="0 0 128 42" fill="none" style={{ display: 'block' }}>
-          <path
-            className="gs-sig"
-            pathLength={1}
-            d="M6 32 C 20 6, 30 4, 27 20 C 24 33, 12 37, 24 28 C 38 18, 44 14, 52 22 C 58 28, 64 20, 72 24 C 80 28, 88 18, 98 24 C 106 29, 114 24, 122 27"
-            stroke="var(--green-800, #2C3E2D)" strokeWidth="1.6" strokeLinecap="round"
-          />
-        </svg>
-        <span className="gs-check" style={{
-          width: 22, height: 22, borderRadius: '50%', flexShrink: 0,
-          background: 'var(--lime)', color: 'var(--green-900)',
-          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-        }}>
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function GsVignetteTrain() {
-  const team = [
-    { initials: 'DK', bg: '#7B8F7B' },
-    { initials: 'RA', bg: '#A08F76' },
-    { initials: 'MS', bg: '#6E7F8D' },
-    { initials: 'TB', bg: '#8D7B8F' },
-  ];
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        {team.map((a, i) => (
-          <div key={a.initials} className="gs-av" style={{
-            width: 44, height: 44, borderRadius: '50%',
-            background: a.bg, border: '2.5px solid #fff',
-            marginLeft: i > 0 ? -10 : 0,
-            fontSize: 12, fontWeight: 600, color: '#fff',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 14px rgba(0,0,0,0.10)',
-            position: 'relative', zIndex: team.length - i,
-          }}>
-            {a.initials}
-          </div>
-        ))}
-      </div>
-      <div className="gs-check" style={{
-        display: 'inline-flex', alignItems: 'center', gap: 6,
-        marginTop: 16,
-        background: '#fff', border: '1px solid rgba(0,0,0,0.07)',
-        borderRadius: 999, padding: '6px 13px',
-        fontSize: 11.5, fontWeight: 500, color: 'var(--green-900)',
-        boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-      }}>
-        <span style={{
-          width: 15, height: 15, borderRadius: '50%', background: 'var(--lime)',
-          display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'var(--green-900)',
-        }}>
-          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6" /></svg>
-        </span>
-        Team onboarded
-      </div>
-    </div>
-  );
-}
-
-function GsVignetteLive() {
-  return (
-    <div className="gs-pop" style={{
-      background: '#fff', borderRadius: 14, padding: '16px 18px 14px',
-      boxShadow: '0 6px 24px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)',
-      width: 250,
-    }}>
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 4 }}>
-        <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--gray-500)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-          Intakes this week
-        </span>
-        <span className="gs-check" style={{
-          display: 'inline-flex', alignItems: 'center', gap: 4,
-          fontSize: 10.5, fontWeight: 600, color: 'var(--green-900)',
-          background: 'var(--lime)', borderRadius: 999, padding: '3px 8px',
-        }}>
-          Live
-        </span>
-      </div>
-      <div style={{
-        fontFamily: 'var(--font-display)', fontSize: 34, lineHeight: 1.1,
-        color: 'var(--green-900)', fontVariantNumeric: 'lining-nums tabular-nums',
-        marginBottom: 6,
-      }}>
-        <Counter target={12} />
-      </div>
-      <svg width="100%" height="38" viewBox="0 0 214 38" fill="none" preserveAspectRatio="none" style={{ display: 'block' }}>
-        <path
-          className="gs-spark"
-          pathLength={1}
-          d="M2 32 C 26 30, 38 24, 56 25 C 76 26, 88 18, 108 19 C 126 20, 138 12, 158 13 C 176 14, 194 8, 212 5"
-          stroke="var(--green-800, #2C3E2D)" strokeWidth="1.8" strokeLinecap="round"
-        />
-        <circle className="gs-check" cx="212" cy="5" r="3.5" fill="var(--lime)" stroke="var(--green-900)" strokeWidth="1.2" />
-      </svg>
-    </div>
-  );
-}
-
+// ── GETTING STARTED — a scroll-driven journey: the hairline travels with the
+// reader, and each numbered station lights up as the line reaches it ─────
 function GettingStarted() {
   const steps = [
     {
-      n: '01',
+      n: 'I',
       title: 'Meet your specialist',
-      desc: 'A short call to walk through how your practice works — panels, service areas, programs. You’ll meet the person who’ll be working alongside your team.',
-      visual: <GsVignetteCall />,
+      desc: 'A short call to walk through how your practice works \u2014 panels, service areas, programs. You\u2019ll meet the person who\u2019ll be working alongside your team.',
+      icon: (
+        <svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect className="gs-draw a" pathLength={1} x="8" y="10" width="32" height="30" rx="4" />
+          <path className="gs-draw a" pathLength={1} d="M8 19h32" />
+          <path className="gs-draw b" pathLength={1} d="M16 6v7M32 6v7" />
+          <path className="gs-draw c" pathLength={1} d="M18 30l4.5 4.5L31 26" />
+        </svg>
+      ),
     },
     {
-      n: '02',
+      n: 'II',
       title: 'Sign and get set up',
-      desc: 'We configure Carelu around your practice and connect it across your front office. Integrations with leading CRMs and EMRs mean you launch fast — without changing your core systems.',
-      visual: <GsVignetteSign />,
+      desc: 'We configure Carelu around your practice and connect it across your front office. Integrations with leading CRMs and EMRs mean you launch fast \u2014 without changing your core systems.',
+      icon: (
+        <svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path className="gs-draw a" pathLength={1} d="M30 8l6 6-17 17-8 2 2-8z" />
+          <path className="gs-draw b" pathLength={1} d="M26 12l6 6" />
+          <path className="gs-draw c" pathLength={1} d="M9 41c4-3 7 1.5 11-1.2 3-2 5.5-1 7.5.2 2.6 1.6 6.5 1 10-2" />
+        </svg>
+      ),
     },
     {
-      n: '03',
+      n: 'III',
       title: 'We train your team',
       desc: 'One session, and your team knows how Carelu works and where to find everything it collects. It should feel like a new teammate, not new software.',
-      visual: <GsVignetteTrain />,
+      icon: (
+        <svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle className="gs-draw a" pathLength={1} cx="24" cy="15" r="5" />
+          <path className="gs-draw b" pathLength={1} d="M15 40c0-6 4-10 9-10s9 4 9 10" />
+          <circle className="gs-draw b" pathLength={1} cx="10.5" cy="19" r="3.6" />
+          <path className="gs-draw c" pathLength={1} d="M4 38c0-4.4 2.8-7.4 6.5-7.4 1.2 0 2.3.3 3.2.9" />
+          <circle className="gs-draw b" pathLength={1} cx="37.5" cy="19" r="3.6" />
+          <path className="gs-draw c" pathLength={1} d="M44 38c0-4.4-2.8-7.4-6.5-7.4-1.2 0-2.3.3-3.2.9" />
+        </svg>
+      ),
     },
     {
-      n: '04',
+      n: 'IV',
       title: 'Go live, with visibility',
       desc: 'Your dashboard shows every conversation and every intake as it happens. And a dedicated growth partner stays on your account, working it like one of your own.',
-      visual: <GsVignetteLive />,
+      icon: (
+        <svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path className="gs-draw a" pathLength={1} d="M7 41V13" />
+          <path className="gs-draw a" pathLength={1} d="M7 41h34" />
+          <path className="gs-draw b" pathLength={1} d="M12 33c6 0 7-9 12-11 4.5-1.8 7-6 9.5-11" />
+          <circle className="gs-draw c" pathLength={1} cx="35" cy="9.5" r="2.6" />
+        </svg>
+      ),
     },
   ];
+
+  // Scroll progress through the tall track: 0 when the section pins, 1 at release
+  const trackRef = useRef<HTMLElement>(null);
+  const [t, setT] = useState(0);
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      const el = trackRef.current; if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      setT(total > 0 ? Math.max(0, Math.min(1, -rect.top / total)) : 1);
+    };
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  // The line reaches each station's node just before that station lights up
+  const TH = [0.08, 0.36, 0.63, 0.90];
+  const lineScale = Math.max(0, Math.min(1, t / 0.93));
+
   return (
-    <section id="getting-started" style={{
-      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
-      background: 'var(--bone)',
+    <section id="getting-started" ref={trackRef} className="gs-outer" style={{
+      position: 'relative', background: 'var(--bone)',
     }}>
-      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 5vw, 64px)' }}>
-          <div className="rv"><Pill>Getting started</Pill></div>
-          <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
-            fontWeight: 400, color: 'var(--green-900)',
-            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
-          }}>
-            Getting started is simple.
-          </h2>
-        </div>
-
-        {/* 2×2 step cards — each with a small animated vignette */}
-        <div className="gs-grid" style={{
-          display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 20,
-          maxWidth: 1000, margin: '0 auto',
-        }}>
-          {steps.map((s, i) => (
-            <div key={s.n} className={`rv gs-card d${i + 1}`} style={{
-              background: '#fff', borderRadius: 24,
-              boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
-              overflow: 'hidden',
-              display: 'flex', flexDirection: 'column',
+      <div className="gs-sticky">
+        <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+          <div style={{ textAlign: 'center', marginBottom: 'clamp(48px, 6vw, 80px)' }}>
+            <div className="rv"><Pill>Getting started</Pill></div>
+            <h2 className="rv-scale d1" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+              fontWeight: 400, color: 'var(--green-900)',
+              lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
             }}>
-              <div style={{
-                background: 'rgba(0,0,0,0.015)', borderBottom: '1px solid rgba(0,0,0,0.04)',
-                minHeight: 178, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                padding: '26px 24px',
-              }}>
-                {s.visual}
-              </div>
-              <div style={{ padding: '26px 30px 30px' }}>
-                <div style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 10,
-                  fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-                  letterSpacing: '0.12em', textTransform: 'uppercase',
-                  marginBottom: 12,
-                }}>
-                  <span style={{
-                    width: 22, height: 22, borderRadius: '50%',
-                    background: 'var(--lime)', color: 'var(--green-900)',
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: 11, fontWeight: 700, letterSpacing: 0,
-                  }}>{s.n}</span>
-                  Step
-                </div>
-                <h3 style={{
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 2vw, 26px)',
-                  fontWeight: 400, color: 'var(--green-900)',
-                  lineHeight: 1.2, letterSpacing: '-0.5px', margin: '0 0 10px',
-                }}>
-                  {s.title}
-                </h3>
-                <p style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.6, margin: 0 }}>
-                  {s.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+              Getting started is simple.
+            </h2>
+          </div>
 
-        {/* Quiet enterprise pointer */}
-        <p className="rv" style={{
-          textAlign: 'center', fontSize: 14, color: 'var(--gray-500)',
-          margin: '40px auto 0', maxWidth: 520, lineHeight: 1.6,
-        }}>
-          Larger organization? We&rsquo;ll shape onboarding around your locations, systems, and team.{' '}
-          <a href="/demo" style={{ color: 'var(--green-900)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>
-            Talk to us
-          </a>
-        </p>
+          <div className="gs-track" style={{ position: 'relative', maxWidth: 1080, margin: '0 auto' }}>
+            <div className="gs-line" style={{
+              position: 'absolute', top: 17, left: '4%', right: '4%', height: 1,
+              background: 'rgba(43,42,38,0.18)',
+              transform: `scaleX(${lineScale})`, transformOrigin: 'left',
+            }} />
+            <div className="gs-line gs-tip" style={{
+              position: 'absolute', top: 17, left: `calc(4% + ${lineScale * 92}%)`,
+              width: 8, height: 8, borderRadius: '50%', background: 'var(--lime)',
+              border: '1px solid rgba(43,42,38,0.35)',
+              boxShadow: '0 0 0 3px rgba(212, 242, 92, 0.3)',
+              transform: 'translate(-50%, -50%)',
+              opacity: t > 0.01 && t < 0.97 ? 1 : 0, transition: 'opacity 0.3s ease',
+            }} />
+            <div className="gs-journey" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', columnGap: 'clamp(16px, 2.5vw, 40px)' }}>
+              {steps.map((s, i) => (
+                <div key={s.n} className={`gs-step${t >= TH[i] ? ' on' : ''}`} style={{ textAlign: 'center', position: 'relative' }}>
+                  <div style={{
+                    width: 34, height: 34, borderRadius: '50%', margin: '0 auto',
+                    background: 'var(--bone)', border: '1px solid rgba(43,42,38,0.30)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontFamily: 'var(--font-display)', fontSize: 13.5, color: 'var(--green-900)',
+                    letterSpacing: '0.04em', position: 'relative', zIndex: 1,
+                  }}>{s.n}</div>
+                  <div style={{ display: 'flex', justifyContent: 'center', margin: '34px 0 24px', opacity: 0.9 }}>
+                    {s.icon}
+                  </div>
+                  <h3 style={{
+                    fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 1.8vw, 24px)',
+                    fontWeight: 400, color: 'var(--green-900)',
+                    lineHeight: 1.25, letterSpacing: '-0.3px', margin: '0 0 12px',
+                  }}>
+                    {s.title}
+                  </h3>
+                  <p style={{ fontSize: 14.5, color: 'var(--gray-600)', lineHeight: 1.65, margin: '0 auto', maxWidth: 240 }}>
+                    {s.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="rv" style={{
+            textAlign: 'center', fontSize: 14, color: 'var(--gray-500)',
+            margin: 'clamp(48px, 6vw, 72px) auto 0', maxWidth: 520, lineHeight: 1.6,
+            textWrap: 'balance',
+          }}>
+            Larger organization? We&rsquo;ll shape onboarding around your locations, systems, and team.{' '}
+            <a href="/demo" style={{ color: 'var(--green-900)', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: 3 }}>
+              Talk to us
+            </a>
+          </p>
+        </div>
       </div>
 
-      {/* Scoped vignette choreography — cards rise via .rv; inner pieces follow */}
+      {/* Scroll choreography: the sticky stage holds while the reader's scroll
+          pushes the line forward; stations rise and sketch themselves in turn */}
       <style>{`
-        .gs-card .gs-pop { opacity: 0; transform: translateY(12px) scale(0.97); transition: opacity 0.6s ease 0.25s, transform 0.65s var(--ease-dramatic) 0.25s; }
-        .gs-card.visible .gs-pop { opacity: 1; transform: translateY(0) scale(1); }
-        .gs-card .gs-check { opacity: 0; transform: scale(0.4); transition: opacity 0.4s ease 1.05s, transform 0.5s var(--ease-dramatic) 1.05s; }
-        .gs-card.visible .gs-check { opacity: 1; transform: scale(1); }
-        .gs-card .gs-sig { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s ease-in-out 0.45s; }
-        .gs-card.visible .gs-sig { stroke-dashoffset: 0; }
-        .gs-card .gs-spark { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s ease-in-out 0.45s; }
-        .gs-card.visible .gs-spark { stroke-dashoffset: 0; }
-        .gs-card .gs-av { opacity: 0; transform: scale(0.3) translateY(6px); transition: opacity 0.45s ease, transform 0.55s var(--ease-dramatic); }
-        .gs-card.visible .gs-av { opacity: 1; transform: scale(1) translateY(0); }
-        .gs-card.visible .gs-av:nth-child(1) { transition-delay: 0.3s; }
-        .gs-card.visible .gs-av:nth-child(2) { transition-delay: 0.42s; }
-        .gs-card.visible .gs-av:nth-child(3) { transition-delay: 0.54s; }
-        .gs-card.visible .gs-av:nth-child(4) { transition-delay: 0.66s; }
+        .gs-outer { height: 280vh; }
+        .gs-sticky {
+          position: sticky; top: 0; min-height: 100svh;
+          display: flex; flex-direction: column; justify-content: center;
+          overflow: hidden; padding: 90px 0 40px;
+          box-sizing: border-box;
+        }
+        .gs-step { opacity: 0; transform: translateY(20px); transition: opacity 0.75s var(--ease-dramatic), transform 0.75s var(--ease-dramatic); }
+        .gs-step.on { opacity: 1; transform: translateY(0); }
         @media (max-width: 768px) {
-          .gs-grid { grid-template-columns: 1fr !important; }
+          .gs-outer { height: auto; }
+          .gs-sticky { position: static; min-height: 0; padding: 0; overflow: visible; }
+          .gs-journey { grid-template-columns: 1fr !important; row-gap: 52px; }
+          .gs-line { display: none; }
+          .gs-step { opacity: 1 !important; transform: none !important; }
         }
       `}</style>
     </section>
   );
 }
-
 
 // ── COMPLIANCE -- formal certificate style ─────
 function Compliance() {
