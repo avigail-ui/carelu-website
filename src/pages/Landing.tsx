@@ -368,6 +368,51 @@ function Hero() {
     };
   }, []);
 
+  // Center spotlight: as the marquee glides, the logo nearest the screen's
+  // center takes its turn in full color, then returns to greyscale as it moves on.
+  useEffect(() => {
+    const REST_FILTER = 'grayscale(100%) brightness(0.55) contrast(1.1)';
+    let raf = 0;
+    let current: HTMLImageElement | null = null;
+    const tick = () => {
+      const track = marqueeRef.current;
+      if (track && !document.hidden) {
+        const cx = window.innerWidth / 2;
+        let best: HTMLImageElement | null = null;
+        let bestDist = Infinity;
+        track.querySelectorAll('img').forEach((img) => {
+          const r = img.getBoundingClientRect();
+          const d = Math.abs(r.left + r.width / 2 - cx);
+          if (d < bestDist) { bestDist = d; best = img; }
+        });
+        const winner = bestDist < 130 ? best : null;
+        if (winner !== current) {
+          if (current) {
+            const gray = current.dataset.gray;
+            if (gray) current.src = gray;
+            current.style.opacity = '0.55';
+            current.style.filter = REST_FILTER;
+            current.style.mixBlendMode = 'multiply';
+            current.style.transform = 'scale(1)';
+          }
+          if (winner) {
+            const w = winner as HTMLImageElement;
+            const color = w.dataset.color;
+            if (color) w.src = color;
+            w.style.opacity = '1';
+            w.style.filter = 'grayscale(0%) brightness(1) contrast(1)';
+            w.style.mixBlendMode = 'normal';
+            w.style.transform = 'scale(1.05)';
+          }
+          current = winner;
+        }
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
   // Scroll-driven video (only first VIDEO_CAP of duration plays) + staged content reveal
   const VIDEO_CAP = 0.35;
   useEffect(() => {
@@ -588,6 +633,8 @@ function Hero() {
                       key={`${set}-${logo.alt}`}
                       src={logo.src}
                       alt={logo.alt}
+                      data-gray={logo.src}
+                      data-color={(logo as { color?: string }).color || ''}
                       style={{
                         height: ((logo as { h?: number }).h ?? ((logo as { smaller?: boolean }).smaller ? 34 : 40)) * 0.78,
                         width: 'auto', objectFit: 'contain',
@@ -762,7 +809,7 @@ function Problem() {
           <rect x="7" y="7" width="14" height="14" rx="3" />
           <rect x="27" y="7" width="14" height="14" rx="3" />
           <rect x="7" y="27" width="14" height="14" rx="3" />
-          <rect x="27" y="27" width="14" height="14" rx="3" strokeDasharray="2.5 3.5" />
+          <rect x="27" y="27" width="14" height="14" rx="3" strokeDasharray="2.5 3.5" fill="rgba(212,242,92,0.4)" />
         </svg>
       ),
     },
@@ -911,9 +958,9 @@ function LiveCounter() {
         {count.toLocaleString()}+
       </div>
       <div style={{
-        marginTop: 14,
-        fontSize: 14.5, fontWeight: 400,
-        color: 'var(--green-900)', opacity: 0.55, letterSpacing: '0.01em',
+        marginTop: 16,
+        fontSize: 14.5, fontWeight: 400, letterSpacing: '0.01em',
+        color: 'var(--green-900)', opacity: 0.6,
       }}>
         families connected to care across {HERO_STATES} states
       </div>
@@ -951,6 +998,10 @@ function Pill({ children, dark }: { children: string; dark?: boolean }) {
       border: dark ? '1px solid rgba(255,255,255,0.18)' : '1px solid rgba(0,0,0,0.06)',
       boxShadow: dark ? 'none' : '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)',
     }}>
+      <span aria-hidden="true" style={{
+        width: 6, height: 6, borderRadius: '50%', background: 'var(--lime)',
+        border: '1px solid rgba(43,42,38,0.25)', marginRight: 9, flexShrink: 0,
+      }} />
       {children}
     </span>
   );
@@ -1020,9 +1071,9 @@ function CeoLetter() {
             </p>
           </div>
 
-          {/* Signature block */}
+          {/* Signature block — the name writes itself once the letter is read */}
           <div className="rv d3" style={{ marginTop: 'clamp(36px, 4.5vw, 52px)' }}>
-            <div style={{
+            <div className="sig-write" style={{
               fontFamily: "'Mrs Saint Delafield', 'EB Garamond', cursive",
               fontSize: 'clamp(44px, 5vw, 56px)',
               lineHeight: 1,
@@ -1033,7 +1084,7 @@ function CeoLetter() {
             }}>
               Yoni Belson
             </div>
-            <div style={{
+            <div className="sig-title" style={{
               marginTop: 14,
               fontSize: 11.5, fontWeight: 600, color: 'var(--gray-500)',
               letterSpacing: '0.14em', textTransform: 'uppercase',
@@ -1675,8 +1726,8 @@ type HowStep = { step: string; tag: string; title: string; desc: string; visual:
 function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
   return (
     <div style={{
-      background: '#fff', borderRadius: 24,
-      boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03)',
+      background: '#fff', borderRadius: 0,
+      boxShadow: '0 0 0 1px rgba(43,42,38,0.08)',
       display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1.2fr',
       overflow: 'hidden',
       width: mobile ? '100%' : 'clamp(640px, 78vw, 900px)',
@@ -1687,7 +1738,9 @@ function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
       <div style={{
         padding: mobile ? '28px 20px' : 36,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        background: 'rgba(0,0,0,0.015)',
+        background: 'rgba(43,42,38,0.02)',
+        borderRight: mobile ? 'none' : '1px solid rgba(43,42,38,0.07)',
+        borderBottom: mobile ? '1px solid rgba(43,42,38,0.07)' : 'none',
         minWidth: 0, overflow: 'hidden',
       }}>
         {s.visual}
@@ -1699,18 +1752,19 @@ function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
       }}>
         <div>
           <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: 10,
+            display: 'inline-flex', alignItems: 'center', gap: 11,
             fontSize: 11, fontWeight: 600, color: 'var(--gray-500)',
-            letterSpacing: '0.12em', textTransform: 'uppercase',
+            letterSpacing: '0.14em', textTransform: 'uppercase',
             marginBottom: 14,
           }}>
             <span style={{
-              width: 22, height: 22, borderRadius: '50%',
-              background: 'var(--lime)', color: 'var(--green-900)',
+              width: 28, height: 28, borderRadius: '50%',
+              background: 'transparent', color: 'var(--green-900)',
+              border: '1px solid rgba(43,42,38,0.30)',
               display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: 11, fontWeight: 700, letterSpacing: 0,
-              fontFamily: 'var(--font-body)',
-            }}>{s.step}</span>
+              fontSize: 12, fontWeight: 400, letterSpacing: '0.04em',
+              fontFamily: 'var(--font-display)',
+            }}>{['I', 'II', 'III', 'IV'][parseInt(s.step, 10) - 1] || s.step}</span>
             Step
           </div>
           <h3 style={{
@@ -1732,18 +1786,20 @@ function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
           marginTop: mobile ? 22 : 28, paddingTop: 20, borderTop: '1px solid rgba(0,0,0,0.06)',
         }}>
           <span style={{
-            display: 'inline-block', fontSize: 12, fontWeight: 500,
-            color: 'var(--gray-600)', background: 'rgba(0,0,0,0.04)',
+            display: 'inline-block', fontSize: 11.5, fontWeight: 500,
+            color: 'var(--gray-600)', background: 'transparent',
+            border: '1px solid rgba(43,42,38,0.22)',
+            letterSpacing: '0.04em',
             borderRadius: 999, padding: '6px 14px',
           }}>
             {s.tag}
           </span>
           <div style={{
-            width: 36, height: 36, borderRadius: '50%',
-            background: 'var(--green-900)',
+            width: 34, height: 34, borderRadius: '50%',
+            background: '#2B2A26',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#FAF8F3" strokeWidth="1.4" strokeLinecap="round"><path d="M6 1.5v9M1.5 6h9" /></svg>
           </div>
         </div>
       </div>
@@ -1849,7 +1905,7 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
       }}>
         {/* Header — INSIDE the sticky pin so it stays locked with the cards */}
         <div style={{
-          paddingTop: 'clamp(24px, 3vh, 40px)', paddingBottom: 'clamp(24px, 3.5vh, 44px)',
+          paddingTop: 'clamp(24px, 3vh, 40px)', paddingBottom: 'clamp(48px, 7vh, 84px)',
           textAlign: 'center', flex: '0 0 auto',
         }}>
           <div className="rv"><Pill>How it works</Pill></div>
@@ -1896,14 +1952,14 @@ function HowItWorksScroll({ steps }: { steps: HowStep[] }) {
 
         {/* Progress dots — just below the card row */}
         <div style={{
-          marginTop: 'clamp(20px, 3vh, 32px)', paddingBottom: 0,
-          display: 'flex', justifyContent: 'center', gap: 8,
+          marginTop: 'clamp(44px, 6vh, 68px)', paddingBottom: 0,
+          display: 'flex', justifyContent: 'center', gap: 14,
         }}>
           {steps.map((_, i) => (
             <div key={i} style={{
-              width: i === activeIdx ? 24 : 8, height: 8,
-              borderRadius: 4,
-              background: i === activeIdx ? 'var(--green-900)' : 'rgba(0,0,0,0.18)',
+              width: 34, height: 2,
+              borderRadius: 0,
+              background: i === activeIdx ? '#2B2A26' : 'rgba(43,42,38,0.15)',
               transition: 'width 0.3s var(--ease-dramatic), background 0.2s',
             }} />
           ))}
@@ -2085,20 +2141,23 @@ function Impact() {
           </div>
         </div>
 
-        {/* Unified stats block — counter and cards live in one composition with consistent spacing */}
-        <div style={{ maxWidth: 1100, margin: '0 auto', color: 'var(--green-900)' }}>
-          <div style={{ textAlign: 'center', marginBottom: 32 }}>
+        {/* One certificate plaque: a hairline frame holds the living number,
+            a rule, and its four proofs — one engraved object, nothing floating */}
+        <div className="rv" style={{
+          maxWidth: 1060, margin: '0 auto', color: 'var(--green-900)',
+          border: '1px solid rgba(43,42,38,0.14)',
+          padding: 'clamp(44px, 6vw, 72px) clamp(20px, 4vw, 56px) clamp(24px, 3.5vw, 44px)',
+          position: 'relative', background: 'rgba(255,255,255,0.4)',
+        }}>
+          <span aria-hidden="true" className="imp-dot" style={{ position: 'absolute', top: -1, left: -1, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(-50%, -50%)' }} />
+          <span aria-hidden="true" className="imp-dot dot-pulse" style={{ position: 'absolute', bottom: -1, right: -1, width: 7, height: 7, borderRadius: '50%', background: 'var(--lime)', border: '1px solid rgba(43,42,38,0.35)', boxShadow: '0 0 0 3px rgba(212, 242, 92, 0.3)', transform: 'translate(50%, 50%)' }} />
+
+          <div style={{ textAlign: 'center' }}>
             <LiveCounter />
           </div>
 
-          {/* A single hairline separates the living number from its four proofs —
-              the stats read as one engraved plaque, not four floating cards */}
-          <div style={{ position: 'relative', maxWidth: 1020, margin: '52px auto 0' }}>
-            <div style={{ height: 1, background: 'rgba(43,42,38,0.10)' }} />
-            <span style={{ position: 'absolute', top: 0.5, left: 0, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(-50%, -50%)' }} />
-            <span style={{ position: 'absolute', top: 0.5, right: 0, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(50%, -50%)' }} />
-          </div>
-          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', maxWidth: 1020, margin: '0 auto', textAlign: 'center' }}>
+          <div className="imp-divider" style={{ height: 1, background: 'rgba(43,42,38,0.10)', margin: 'clamp(32px, 4vw, 48px) 0 0' }} />
+          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center' }}>
           {[
             { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
             { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
@@ -2109,21 +2168,29 @@ function Impact() {
               key={s.t2}
               className={`rv d${i + 1}`}
               style={{
-                padding: '44px clamp(14px, 2.4vw, 36px) 10px',
+                padding: '38px clamp(14px, 2.4vw, 36px) 8px',
                 borderLeft: i === 0 ? 'none' : '1px solid rgba(43,42,38,0.10)',
               }}
             >
               <div style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 4.4vw, 58px)',
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 66px)',
                 fontWeight: 400,
-                color: 'var(--green-900)', lineHeight: 1, marginBottom: 18,
+                color: 'var(--green-900)', lineHeight: 1, marginBottom: 20,
                 letterSpacing: '-0.02em',
                 fontVariantNumeric: 'lining-nums tabular-nums',
+                display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: 2,
               }}>
-                <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
+                <Counter target={s.v} prefix={s.p || ''} />
+                {s.s && <span style={{ fontSize: '0.4em', letterSpacing: 0, opacity: 0.7, marginLeft: 4 }}>{s.s.trim()}</span>}
               </div>
-              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 7, letterSpacing: '0.01em' }}>{s.t2}</div>
-              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 200, margin: '0 auto' }}>{s.d}</div>
+              <div style={{
+                fontWeight: 600, color: 'var(--green-900)', fontSize: 11.5, marginBottom: 10,
+                letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.85,
+                textWrap: 'balance',
+              }}>{s.t2}</div>
+              <div style={{
+                fontSize: 14, color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 210, margin: '0 auto',
+              }}>{s.d}</div>
             </div>
           ))}
           </div>
@@ -2254,12 +2321,13 @@ function GettingStarted() {
             <div className="gs-journey" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', columnGap: 'clamp(16px, 2.5vw, 40px)' }}>
               {steps.map((s, i) => (
                 <div key={s.n} className={`gs-step${t >= TH[i] ? ' on' : ''}`} style={{ textAlign: 'center', position: 'relative' }}>
-                  <div style={{
+                  <div className="gs-node" style={{
                     width: 34, height: 34, borderRadius: '50%', margin: '0 auto',
                     background: 'var(--bone)', border: '1px solid rgba(43,42,38,0.30)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontFamily: 'var(--font-display)', fontSize: 13.5, color: 'var(--green-900)',
                     letterSpacing: '0.04em', position: 'relative', zIndex: 1,
+                    transition: 'background 0.5s ease, box-shadow 0.5s ease',
                   }}>{s.n}</div>
                   <div style={{ display: 'flex', justifyContent: 'center', margin: '34px 0 24px', opacity: 0.9 }}>
                     {s.icon}
@@ -2304,6 +2372,7 @@ function GettingStarted() {
         }
         .gs-step { opacity: 0; transform: translateY(20px); transition: opacity 0.75s var(--ease-dramatic), transform 0.75s var(--ease-dramatic); }
         .gs-step.on { opacity: 1; transform: translateY(0); }
+        .gs-step.on .gs-node { background: var(--lime); box-shadow: 0 0 0 3px rgba(212, 242, 92, 0.3); }
         @media (max-width: 768px) {
           .gs-outer { height: auto; }
           .gs-sticky { position: static; min-height: 0; padding: 0; overflow: visible; }

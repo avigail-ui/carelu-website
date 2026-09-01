@@ -1026,3 +1026,23 @@ nav .nav-link:first-child { margin-left: 12px; }
   }
   .problem-cols > div { border-left: none !important; padding: 0 12px !important; }
 }
+
+/* CEO letter signature — wipes on left-to-right like a pen signing, once the
+   signature block scrolls into view (the .rv parent gains .visible) */
+.sig-write {
+  clip-path: inset(-30% 104% -30% -6%);
+  transition: clip-path 2.4s cubic-bezier(0.5, 0.05, 0.35, 1) 0.7s;
+}
+.rv.visible .sig-write {
+  clip-path: inset(-30% -8% -30% -6%);
+}
+
+/* Results certificate choreography: the rule draws itself, corner marks pop in */
+.imp-divider { transform: scaleX(0); transform-origin: left; transition: transform 1.5s var(--ease-dramatic) 0.5s; }
+.rv.visible .imp-divider { transform: scaleX(1); }
+.imp-dot { opacity: 0; scale: 0.3; transition: opacity 0.5s ease 1.4s, scale 0.6s var(--ease-dramatic) 1.4s; }
+.rv.visible .imp-dot { opacity: 1; scale: 1; }
+
+/* The title appears only once the signature has finished signing */
+.sig-title { opacity: 0; transform: translateY(6px); transition: opacity 0.8s ease 3.1s, transform 0.8s var(--ease-dramatic) 3.1s; }
+.rv.visible .sig-title { opacity: 1; transform: translateY(0); }
