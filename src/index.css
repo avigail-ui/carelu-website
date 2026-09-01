@@ -1010,3 +1010,9 @@ nav .nav-link:first-child { margin-left: 12px; }
      that don't set that class. .footer-grid only exists in the footer. */
   .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 28px !important; }
 }
+
+/* Delicate green "light" halo on some SystemWeb tiles — breathes slowly */
+@keyframes webGlowPulse {
+  0%, 100% { box-shadow: 0 0 12px 1px rgba(104,178,120,0.14), 0 5px 14px rgba(30,30,25,0.05); }
+  50%      { box-shadow: 0 0 20px 4px rgba(104,178,120,0.32), 0 5px 14px rgba(30,30,25,0.05); }
+}

@@ -309,10 +309,13 @@ function Hero() {
       const cta = document.querySelector('.hero-cta-row') as HTMLElement | null;
       const logos = document.querySelector('.hero-logos') as HTMLElement | null;
       if (!section || !parent || !cta || !logos) return;
+      void logos;
       const ctaB = offTop(cta, section) + cta.offsetHeight;   // CTA bottom, rel section
-      const logosT = offTop(logos, section);                  // logo strip top, rel section
       const parentT = offTop(parent, section);                // laurels' offsetParent top
-      lau.style.top = `${Math.round((ctaB + logosT) / 2 - lau.offsetHeight / 2 - parentT)}px`;
+      // Fixed comfortable gap below the CTAs — no longer tied to the logo strip,
+      // which now lives in its own band below the hero.
+      const gap = Math.max(38, Math.min(64, window.innerHeight * 0.055));
+      lau.style.top = `${Math.round(ctaB + gap - parentT)}px`;
     };
     place();
     window.addEventListener('resize', place);
@@ -439,27 +442,24 @@ function Hero() {
         <div className="hero-center" style={{
           position: 'absolute', inset: 0, zIndex: 3,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-          padding: '0 24px',
+          padding: '0 24px', paddingBottom: '9svh',
         }}>
           <div style={{ ...W, textAlign: 'center', maxWidth: 1100, margin: '0 auto' }}>
             <div style={{
-              marginBottom: 28,
+              marginBottom: 40,
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both',
             }}>
               <span className="hero-badge" style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8,
-                fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase',
-                color: '#fff',
-                background: 'rgba(255,255,255,0.10)',
-                border: '1px solid rgba(255,255,255,0.22)',
-                backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
-                padding: '8px 18px', borderRadius: 100,
+                display: 'inline-flex', alignItems: 'center',
+                fontSize: 11, fontWeight: 500, letterSpacing: '0.32em', textTransform: 'uppercase',
+                color: 'rgba(255,255,255,0.75)',
+                textShadow: '0 1px 12px rgba(0,0,0,0.25)',
                 textAlign: 'center',
               }}>The very first care enablement platform</span>
             </div>
 
             <h1 style={{
-              fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 7vw, 96px)',
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 6.2vw, 84px)',
               fontWeight: 400, lineHeight: 1.02, letterSpacing: '-0.008em',
               color: '#fff', maxWidth: 1080, margin: '0 auto',
               textWrap: 'balance',
@@ -470,10 +470,10 @@ function Hero() {
             </h1>
 
             <p style={{
-              fontSize: 'clamp(15px, 1.4vw, 19px)',
-              color: '#fff',
-              lineHeight: 1.6, maxWidth: 600, margin: '24px auto 40px',
-              fontWeight: 500,
+              fontSize: 'clamp(15px, 1.35vw, 18px)',
+              color: 'rgba(255,255,255,0.92)',
+              lineHeight: 1.7, maxWidth: 560, margin: '32px auto 56px',
+              fontWeight: 400,
               textShadow: '0 1px 2px rgba(0,0,0,0.28), 0 2px 16px rgba(0,0,0,0.4)',
               animation: 'heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both',
             }}>
@@ -547,9 +547,7 @@ function Hero() {
           </div>
         </div>
 
-        {/* Trusted-by logo strip — anchored at the bottom of the hero
-            Dark-grayscale logos with mix-blend-mode so they stay legible on both
-            the misty video and the cream dissolve below — no scrim/band needed */}
+        {/* Trusted-by logo strip — anchored at the bottom of the hero */}
         <div className="hero-logos" style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
           paddingBottom: 'clamp(10px, 1.6vh, 22px)',
@@ -559,7 +557,7 @@ function Hero() {
             fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: 'rgba(60,50,40,0.7)',
-            textAlign: 'center', marginBottom: 20,
+            textAlign: 'center', marginBottom: 26,
             mixBlendMode: 'multiply',
           }}>
             Trusted by 100+ of the fastest growing ABA providers
@@ -567,16 +565,16 @@ function Hero() {
           <div className="hero-logos-mask" style={{ overflow: 'hidden', position: 'relative' }}>
             <div ref={marqueeRef} className="marquee-track" style={{ animation: 'marqueeScroll 60s linear infinite' }}>
               {[0, 1].map(set => (
-                <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 80, paddingRight: 80 }}>
+                <div key={set} style={{ display: 'flex', alignItems: 'center', gap: 104, paddingRight: 104 }}>
                   {allLogos.map(logo => (
                     <img
                       key={`${set}-${logo.alt}`}
                       src={logo.src}
                       alt={logo.alt}
                       style={{
-                        height: (logo as { h?: number }).h ?? ((logo as { smaller?: boolean }).smaller ? 34 : 40),
+                        height: ((logo as { h?: number }).h ?? ((logo as { smaller?: boolean }).smaller ? 34 : 40)) * 0.78,
                         width: 'auto', objectFit: 'contain',
-                        opacity: 0.78, flexShrink: 0,
+                        opacity: 0.55, flexShrink: 0,
                         filter: 'grayscale(100%) brightness(0.55) contrast(1.1)',
                         mixBlendMode: 'multiply',
                         transition: 'opacity 0.3s ease, filter 0.4s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), mix-blend-mode 0.2s ease',
@@ -626,16 +624,16 @@ function DemoVideo() {
   return (
     <section style={{
       paddingTop: 'clamp(80px, 10vh, 140px)',
-      paddingBottom: 'clamp(80px, 10vh, 140px)',
-      background: 'linear-gradient(180deg, #f0e6d2 0%, #f5ecd9 25%, #faf3e5 55%, #FAF8F3 100%)',
+      paddingBottom: 'clamp(160px, 22vh, 280px)',
+      background: 'linear-gradient(180deg, #f0e6d2 0%, #f5ecd9 28%, #faf3e5 58%, #FAF8F3 85%)',
     }}>
       <div style={{ ...W, maxWidth: 1040, textAlign: 'center' }}>
         <div className="hero-visual" style={{
-          maxWidth: 880, margin: '0 auto',
-          borderRadius: 18, overflow: 'hidden',
-          border: '1px solid rgba(0,0,0,0.08)',
+          maxWidth: 620, margin: '0 auto',
+          borderRadius: 22, overflow: 'hidden',
+          border: '1px solid rgba(0,0,0,0.04)',
           background: '#fff',
-          boxShadow: '0 18px 60px rgba(0,0,0,0.12), 0 2px 10px rgba(0,0,0,0.06)',
+          boxShadow: '0 40px 110px rgba(30,30,25,0.18), 0 12px 36px rgba(30,30,25,0.08)',
           position: 'relative',
         }}>
           <video
@@ -682,13 +680,6 @@ function DemoVideo() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" style={{ marginLeft: 3 }}>
                   <path d="M7 5v14l12-7L7 5z" />
                 </svg>
-              </span>
-              <span style={{
-                position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)',
-                fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase',
-                color: '#fff', textShadow: '0 1px 8px rgba(0,0,0,0.45)',
-              }}>
-                Watch demo · 2 min
               </span>
             </button>
           )}
@@ -743,32 +734,36 @@ const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '
 // "Nothing's broken. You're still losing families." point: it's ALL connected,
 // nothing's technically wrong, and families still slip.
 const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
-  { n: 'salesforce',          bx: 0.08, by: 0.30, size: 74 },
-  { n: 'hubspot',             bx: 0.21, by: 0.15, size: 58 },
-  { n: 'quo',                 bx: 0.40, by: 0.16, size: 60 },
-  { n: 'outlook',             bx: 0.60, by: 0.16, size: 64 },
-  { n: 'googlecalendar',      bx: 0.78, by: 0.14, size: 58 },
-  { n: 'calendly',            bx: 0.91, by: 0.20, size: 56 },
-  { n: 'docusign',            bx: 0.26, by: 0.31, size: 54 },
-  { n: 'gmail',               bx: 0.64, by: 0.26, size: 52 },
-  { n: 'googlesheets',        bx: 0.47, by: 0.42, size: 56 },
-  { n: 'twilio',              bx: 0.94, by: 0.40, size: 66 },
-  { n: 'ghl',                 bx: 0.06, by: 0.52, size: 62 },
-  { n: 'jotform',             bx: 0.19, by: 0.52, size: 56 },
-  { n: 'simplepractice',      bx: 0.79, by: 0.52, size: 72 },
-  { n: 'ringcentral',         bx: 0.93, by: 0.62, size: 60 },
-  { n: 'lobbie',              bx: 0.35, by: 0.64, size: 60 },
-  { n: 'bolt',                bx: 0.24, by: 0.57, size: 62 },
-  { n: 'rethink',             bx: 0.51, by: 0.71, size: 56 },
-  { n: 'intakeq',             bx: 0.66, by: 0.64, size: 56 },
-  { n: 'artemisaba',          bx: 0.84, by: 0.68, size: 64 },
-  { n: 'zoho',                bx: 0.13, by: 0.71, size: 66 },
-  { n: 'pandadoc',            bx: 0.08, by: 0.87, size: 58 },
-  { n: 'monday',              bx: 0.24, by: 0.85, size: 58 },
-  { n: 'clickup',             bx: 0.42, by: 0.91, size: 72 },
-  { n: 'callrail',            bx: 0.58, by: 0.87, size: 56 },
-  { n: 'calltrackingmetrics', bx: 0.72, by: 0.90, size: 64 },
-  { n: 'whatconverts',        bx: 0.88, by: 0.84, size: 54 },
+  // Organic constellation, not a frame: a few dense knots, a few loners, big
+  // size variance for depth. The keep-out box guards the headline.
+  // — upper-left knot —
+  { n: 'hubspot',             bx: 0.17, by: 0.17, size: 54 },
+  { n: 'gmail',               bx: 0.30, by: 0.11, size: 60 },
+  { n: 'docusign',            bx: 0.25, by: 0.29, size: 44 },
+  { n: 'salesforce',          bx: 0.09, by: 0.32, size: 72 },
+  // — top-center loner, drifting high —
+  { n: 'googlesheets',        bx: 0.47, by: 0.10, size: 46 },
+  // — upper-right knot —
+  { n: 'outlook',             bx: 0.63, by: 0.15, size: 62 },
+  { n: 'googlecalendar',      bx: 0.74, by: 0.26, size: 48 },
+  { n: 'calendly',            bx: 0.85, by: 0.13, size: 56 },
+  { n: 'twilio',              bx: 0.91, by: 0.34, size: 60 },
+  // — mid loners, uneven heights —
+  { n: 'ghl',                 bx: 0.09, by: 0.49, size: 56 },
+  { n: 'simplepractice',      bx: 0.82, by: 0.50, size: 70 },
+  { n: 'zoho',                bx: 0.16, by: 0.64, size: 64 },
+  { n: 'ringcentral',         bx: 0.90, by: 0.66, size: 50 },
+  // — lower-left knot —
+  { n: 'pandadoc',            bx: 0.11, by: 0.82, size: 52 },
+  { n: 'monday',              bx: 0.23, by: 0.74, size: 62 },
+  { n: 'quo',                 bx: 0.32, by: 0.86, size: 44 },
+  // — bottom-center drift —
+  { n: 'rethink',             bx: 0.45, by: 0.81, size: 50 },
+  { n: 'clickup',             bx: 0.56, by: 0.72, size: 68 },
+  { n: 'callrail',            bx: 0.65, by: 0.87, size: 44 },
+  // — lower-right pair —
+  { n: 'intakeq',             bx: 0.74, by: 0.77, size: 54 },
+  { n: 'artemisaba',          bx: 0.86, by: 0.84, size: 62 },
 ];
 
 type WebNode = {
@@ -780,6 +775,7 @@ type WebNode = {
   rev: number;              // reveal progress 0..1
   hub?: boolean;            // the inert System-of-Record hub everything tethers to
   dead?: boolean;           // a stuck/dead integration — rendered greyed out
+  glow?: boolean;           // a delicate green light halo (only some tiles)
   el: HTMLDivElement | null;
 };
 type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | null };
@@ -800,12 +796,12 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
     // deterministic pseudo-random keyed off the index (stable across SSR/hydration)
     const rnd = (i: number, s: number) => { const v = Math.sin((i + 1) * s) * 43758.5453; return v - Math.floor(v); };
     const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
-    const scale = mobile ? 0.64 : 1;
+    const scale = mobile ? 0.52 : 0.74;
 
     // Mobile shows a curated subset — the full 26 tiles is too dense on a narrow screen.
     const MOBILE_KEEP = new Set([
-      'salesforce', 'hubspot', 'quo', 'outlook', 'googlecalendar', 'calendly',
-      'simplepractice', 'ringcentral', 'intakeq', 'monday', 'clickup', 'pandadoc', 'callrail',
+      'salesforce', 'hubspot', 'gmail', 'outlook', 'googlecalendar', 'calendly',
+      'simplepractice', 'ringcentral', 'intakeq', 'monday', 'clickup', 'pandadoc', 'zoho',
     ]);
     const source = mobile ? WEB_ICONS.filter((ic) => MOBILE_KEEP.has(ic.n)) : WEB_ICONS;
 
@@ -821,12 +817,17 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         by = by < 0.46
           ? 0.20 + (by / 0.46) * 0.15          // top band  → [0.20, 0.35]
           : 0.60 + ((by - 0.46) / 0.54) * 0.34; // bottom band → [0.60, 0.94]
+      } else {
+        // Desktop: squeeze the constellation off the page edges
+        bx = 0.5 + (bx - 0.5) * 0.86;
+        by = 0.5 + (by - 0.5) * 0.92;
       }
       return {
         n: ic.n, size: Math.round(ic.size * scale), bx, by,
         phx: rnd(i, 12.9898) * Math.PI * 2, phy: rnd(i, 78.233) * Math.PI * 2,
         ax: 4 + rnd(i, 3.7) * 6, ay: 4 + rnd(i, 5.1) * 6,
         x: 0, y: 0, rev: 0, el: null,
+        glow: rnd(i, 9.13) < 0.34,
       };
     });
     nodesRef.current = nodes;
@@ -840,7 +841,7 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         .map((m, j) => ({ j, dd: (m.bx - nodes[i].bx) ** 2 + (m.by - nodes[i].by) ** 2 }))
         .filter((o) => o.j !== i)
         .sort((a, b) => a.dd - b.dd);
-      for (let k = 0; k < 2; k++) {
+      for (let k = 0; k < 3; k++) {
         const j = near[k].j;
         const a = Math.min(i, j), b = Math.max(i, j);
         const key = `${a}-${b}`;
@@ -883,13 +884,13 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
           }
         });
         if (l !== Infinity) {
-          const GAP = 16;
+          const GAP = 26;
           const bl = l - wr.left, bt2 = t - wr.top, br = r - wr.left, bb = bt - wr.top;
           keep = { l: bl - GAP, t: bt2 - GAP, r: br + GAP, b: bb + GAP };
           // Punch the same box (a touch larger) out of the thread layer so no spoke
           // ever crosses the text — the blurred mask fades threads out as they approach.
           if (maskRef.current) {
-            const M = 26;
+            const M = 34;
             maskRef.current.setAttribute('x', String(bl - M));
             maskRef.current.setAttribute('y', String(bt2 - M));
             maskRef.current.setAttribute('width', String((br - bl) + M * 2));
@@ -902,8 +903,8 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         const nd = nodes[i];
         if (started) nd.rev = Math.max(0, Math.min(1, (T - i * 0.045) / 0.6)); // staggered fade-in
         if (!drag || drag.node !== nd) {
-          nd.x = nd.bx * W + Math.sin(T * 0.5 + nd.phx) * nd.ax;   // slow ambient drift
-          nd.y = nd.by * H + Math.cos(T * 0.42 + nd.phy) * nd.ay;
+          nd.x = nd.bx * W + Math.sin(T * 0.5 + nd.phx) * nd.ax + Math.sin(T * 2.2 + nd.phy * 3) * 1.1;   // slow drift + faint tremor
+          nd.y = nd.by * H + Math.cos(T * 0.42 + nd.phy) * nd.ay + Math.cos(T * 1.9 + nd.phx * 2) * 1.1;
           // push out of the text box along the axis of least penetration (drift resets
           // each frame, so this is stable — the tile just hovers along the text edge)
           if (keep) {
@@ -938,7 +939,7 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         e.line.setAttribute('y1', String(a.y + uy * gapA));
         e.line.setAttribute('x2', String(b.x - ux * gapB));
         e.line.setAttribute('y2', String(b.y - uy * gapB));
-        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.12 : 0.2)));
+        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.11 : 0.21)));
       }
       rafRef.current = requestAnimationFrame(step);
     };
@@ -991,8 +992,8 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
         <g mask="url(#webTextMask)">
           {edgesRef.current.map((e, i) => (
             <line key={i} ref={(el) => { e.line = el; }}
-              stroke="#2A2A24"
-              strokeWidth={e.broken ? 1 : 1.3}
+              stroke="#828176"
+              strokeWidth={e.broken ? 0.6 : 0.85}
               strokeDasharray={e.broken ? '1.5 11' : undefined}
               strokeLinecap="round"
               opacity={0} />
@@ -1005,14 +1006,18 @@ function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null
           style={{
             position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
             borderRadius: nd.size * 0.26,
-            background: '#F4F2EC', border: '1px solid rgba(30,30,25,0.05)',
-            boxShadow: '0 8px 22px rgba(30,30,25,0.10)',
+            background: 'rgba(255,255,255,0.42)', border: '1px solid rgba(255,255,255,0.5)',
+            backdropFilter: 'blur(5px)', WebkitBackdropFilter: 'blur(5px)',
+            boxShadow: nd.glow
+              ? '0 0 18px 3px rgba(104,178,120,0.26), 0 5px 14px rgba(30,30,25,0.05)'
+              : '0 5px 14px rgba(30,30,25,0.05)',
+            animation: nd.glow ? `webGlowPulse 3.6s ease-in-out ${-(i * 0.7)}s infinite` : undefined,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
             pointerEvents: 'auto',
           }}>
           <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{
-            width: '58%', height: '58%', objectFit: 'contain', pointerEvents: 'none',
+            width: '56%', height: '56%', objectFit: 'contain', pointerEvents: 'none', opacity: 0.88,
           }} />
         </div>
       ))}
@@ -1066,7 +1071,7 @@ function Problem() {
     <div ref={trackRef} style={{
       height: '100svh', position: 'relative',
       display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-      backgroundColor: closed ? '#FAF8F3' : '#fff',
+      backgroundColor: '#FAF8F3',
       transition: 'background-color 0.5s',
       overflow: 'hidden',
     }}>
