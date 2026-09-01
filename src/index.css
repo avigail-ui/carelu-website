@@ -909,8 +909,9 @@ nav .nav-link:first-child { margin-left: 12px; }
   .proof-stats > div + div { border-top: 1px solid rgba(0,0,0,0.1); }
 
   /* Impact stat cards — tighter padding so 2-up fits comfortably */
-  .impact-grid { gap: 12px !important; }
-  .impact-grid > div { padding: 26px 18px !important; }
+  .impact-grid > div { padding: 28px 14px 6px !important; }
+  .impact-grid > div:nth-child(3) { border-left: none !important; }
+  .impact-grid > div:nth-child(n+3) { border-top: 1px solid rgba(43,42,38,0.10); }
 
   /* Compliance certificate — tighter frame, cells stack with bottom rules */
   .compliance-cert { padding: 32px 20px !important; }

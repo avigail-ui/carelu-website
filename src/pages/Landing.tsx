@@ -89,6 +89,9 @@ function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?
 export function Nav({ base = '' }: { base?: string }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  // The nav is its own quiet layer from the first frame — a bone veil with a
+  // hairline edge, deliberately separate from the sky below it.
+  const scrolled = true;
 
   // Lock page scroll while the mobile menu is open
   useEffect(() => {
@@ -102,118 +105,127 @@ export function Nav({ base = '' }: { base?: string }) {
     <>
       <nav style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        display: 'flex', justifyContent: 'center',
-        padding: '16px 20px 0',
+        background: scrolled ? 'rgba(250,248,243,0.86)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(24px) saturate(1.2)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(24px) saturate(1.2)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(43,42,38,0.08)' : '1px solid transparent',
+        transition: 'background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease',
       }}>
-        <div className="nav-pill" style={{
-          display: 'flex', alignItems: 'center',
-          width: 'min(720px, calc(100vw - 40px))',
-          height: 56,
-          borderRadius: 18,
-          padding: '0 6px',
-          background: 'rgba(250,248,243,0.72)',
-          backdropFilter: 'blur(32px) saturate(1.3)',
-          WebkitBackdropFilter: 'blur(32px) saturate(1.3)',
-          border: '1px solid rgba(43,42,38,0.07)',
-        }}>
-          {/* Left links */}
-          <div className="nav-side nav-side-left">
-          <NavA href={`${base}#platform`} className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px 0 28px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Product</NavA>
-          <div className="hide-mobile" style={{ position: 'relative', display: 'inline-flex', alignSelf: 'stretch', alignItems: 'center' }}
-            onMouseEnter={() => setSolutionsOpen(true)}
-            onMouseLeave={() => setSolutionsOpen(false)}
-          >
-            <button className="nav-link" aria-expanded={solutionsOpen} style={{
-              fontSize: 14, fontWeight: 400, color: solutionsOpen ? '#1A1A1A' : 'rgba(43,42,38,0.84)',
-              background: 'none', border: 'none', cursor: 'pointer',
-              padding: '0 18px', transition: 'color 0.2s',
-              display: 'inline-flex', alignItems: 'center', gap: 6, height: '100%',
-              fontFamily: 'inherit',
+        {(() => {
+          const ink = scrolled ? '#2B2A26' : '#fff';
+          const inkSoft = scrolled ? 'rgba(43,42,38,0.78)' : 'rgba(255,255,255,0.88)';
+          const glow = scrolled ? 'none' : '0 1px 14px rgba(0,0,0,0.28)';
+          const link = {
+            fontSize: 13, fontWeight: 500 as const, letterSpacing: '0.02em',
+            color: inkSoft, textDecoration: 'none', transition: 'opacity 0.2s, color 0.4s',
+            textShadow: glow, padding: '6px 16px',
+          };
+          return (
+            <div style={{
+              display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center',
+              maxWidth: 1280, margin: '0 auto', padding: '0 clamp(20px, 3.5vw, 44px)', height: 58,
             }}>
-              Solutions
-              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{
-                transform: solutionsOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.25s var(--ease-dramatic)',
-              }}><path d="M6 9l6 6 6-6" /></svg>
-            </button>
-            {solutionsOpen && (
-              <div style={{
-                position: 'absolute', top: '100%', left: 8, paddingTop: 8, zIndex: 101,
-              }}>
-                <div style={{
-                  background: 'rgba(250,248,243,0.96)',
-                  backdropFilter: 'blur(28px) saturate(1.3)', WebkitBackdropFilter: 'blur(28px) saturate(1.3)',
-                  border: '1px solid rgba(43,42,38,0.08)', borderRadius: 16,
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04)',
-                  padding: 8, minWidth: 200,
-                }}>
-                  {[
-                    { t: 'Single-Site', d: 'One clinic, full front office', href: '/solutions/single-site' },
-                    { t: 'Multi-Site', d: 'Every location, one system', href: '/solutions/multi-site' },
-                    { t: 'Enterprise', d: 'Scale, integrations, security', href: '/solutions/enterprise' },
-                  ].map(l => (
-                    <NavA key={l.t} href={l.href} style={{
-                      display: 'block', padding: '10px 14px', borderRadius: 10,
-                      textDecoration: 'none', transition: 'background 0.15s',
-                    }}
-                      onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(43,42,38,0.05)'; }}
-                      onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
-                    >
-                      <span style={{ display: 'block', fontSize: 14, fontWeight: 500, color: '#1A1A1A' }}>{l.t}</span>
-                      <span style={{ display: 'block', fontSize: 12, color: 'rgba(43,42,38,0.55)', marginTop: 1 }}>{l.d}</span>
-                    </NavA>
-                  ))}
+              {/* Left: product links */}
+              <div style={{ justifySelf: 'start', display: 'flex', alignItems: 'center' }}>
+                <NavA href={`${base}#platform`} className="hide-mobile nav-link" style={link}
+                  onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.6'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+                >Product</NavA>
+                <div className="hide-mobile" style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}
+                  onMouseEnter={() => setSolutionsOpen(true)}
+                  onMouseLeave={() => setSolutionsOpen(false)}
+                >
+                  <button className="nav-link" aria-expanded={solutionsOpen} style={{
+                    ...link, background: 'none', border: 'none', cursor: 'pointer',
+                    display: 'inline-flex', alignItems: 'center', gap: 6, fontFamily: 'inherit', height: 58,
+                  }}>
+                    Solutions
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{
+                      transform: solutionsOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.25s var(--ease-dramatic)',
+                    }}><path d="M6 9l6 6 6-6" /></svg>
+                  </button>
+                  {solutionsOpen && (
+                    <div style={{ position: 'absolute', top: '100%', left: 8, paddingTop: 4, zIndex: 101 }}>
+                      <div style={{
+                        background: 'rgba(250,248,243,0.96)',
+                        backdropFilter: 'blur(28px) saturate(1.3)', WebkitBackdropFilter: 'blur(28px) saturate(1.3)',
+                        border: '1px solid rgba(43,42,38,0.08)', borderRadius: 16,
+                        boxShadow: '0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04)',
+                        padding: 8, minWidth: 200,
+                      }}>
+                        {[
+                          { t: 'Single-Site', d: 'One clinic, full front office', href: '/solutions/single-site' },
+                          { t: 'Multi-Site', d: 'Every location, one system', href: '/solutions/multi-site' },
+                          { t: 'Enterprise', d: 'Scale, integrations, security', href: '/solutions/enterprise' },
+                        ].map(l => (
+                          <NavA key={l.t} href={l.href} style={{
+                            display: 'block', padding: '10px 14px', borderRadius: 10,
+                            textDecoration: 'none', transition: 'background 0.15s',
+                          }}
+                            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(43,42,38,0.05)'; }}
+                            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+                          >
+                            <span style={{ display: 'block', fontSize: 14, fontWeight: 500, color: '#1A1A1A' }}>{l.t}</span>
+                            <span style={{ display: 'block', fontSize: 12, color: 'rgba(43,42,38,0.55)', marginTop: 1 }}>{l.d}</span>
+                          </NavA>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-            )}
-          </div>
-          </div>
 
-          {/* Center logo — the wordmark's ink sits ~5px left of its box center
-              (dense "Care" + light trailing signature), so a small optical nudge
-              lands it on true center. */}
-          <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
-            <img src="/carelu-logo.svg" alt="Carelu" className="nav-logo-img" style={{ height: 32, width: 'auto', display: 'block', transform: 'translateX(5px)' }} />
-          </NavA>
+              {/* Center: the wordmark, alone in open air */}
+              <NavA href="/carelu" className="nav-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifySelf: 'center' }}>
+                <img src="/carelu-logo.svg" alt="Carelu" className="nav-logo-img" style={{
+                  height: 38, width: 'auto', display: 'block', transform: 'translateX(5px)',
+                  filter: scrolled ? 'none' : 'brightness(0) invert(1) drop-shadow(0 1px 10px rgba(0,0,0,0.3))',
+                  transition: 'filter 0.4s ease',
+                }} />
+              </NavA>
 
-          {/* Right: company + login + button. Company lives on this side so both
-              link groups have near-equal content width — that keeps the whitespace
-              on either side of the centered wordmark symmetric. */}
-          <div className="nav-side nav-side-right">
-          <NavA href="/carelu/company" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Company</NavA>
-          <NavA href="/login" className="hide-mobile nav-link" style={{ fontSize: 14, fontWeight: 400, color: 'rgba(43,42,38,0.84)', textDecoration: 'none', transition: 'color 0.2s', padding: '0 18px' }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#1A1A1A'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(43,42,38,0.84)'; }}
-          >Log in</NavA>
-          <a href="/demo" className="nav-demo-btn" style={{
-            fontSize: 14, fontWeight: 600, color: '#1A1A1A',
-            padding: '12px 24px', borderRadius: 14, textDecoration: 'none',
-            display: 'inline-flex', alignItems: 'center',
-            border: '1px solid rgba(0,0,0,0.08)',
-            background: '#fff',
-            boxShadow: '0 4px 18px rgba(0,0,0,0.08)',
-            transition: 'background 0.2s, box-shadow 0.3s, transform 0.2s',
-          }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.14)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)'; }}
-          >
-            Get a Demo
-          </a>
-          <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" aria-expanded={mobileOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 11, marginLeft: 2 }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="1.8" strokeLinecap="round" style={{ display: 'block' }}>
-              {mobileOpen
-                ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
-                : <><line x1="4" y1="7" x2="20" y2="7" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="17" x2="20" y2="17" /></>
-              }
-            </svg>
-          </button>
-          </div>
-        </div>
+              {/* Right: company, login, and a whisper-outline demo link */}
+              <div style={{ justifySelf: 'end', display: 'flex', alignItems: 'center' }}>
+                <NavA href="/carelu/company" className="hide-mobile nav-link" style={link}
+                  onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.6'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+                >Company</NavA>
+                <NavA href="/login" className="hide-mobile nav-link" style={link}
+                  onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.6'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+                >Log in</NavA>
+                <a href="/demo" className="nav-demo-btn hide-mobile" style={{
+                  fontSize: 13, fontWeight: 500, letterSpacing: '0.02em', color: ink,
+                  padding: '7px 18px', borderRadius: 100, textDecoration: 'none', marginLeft: 14,
+                  border: `1px solid ${scrolled ? 'rgba(43,42,38,0.30)' : 'rgba(255,255,255,0.65)'}`,
+                  background: 'transparent', textShadow: glow,
+                  transition: 'background 0.25s, color 0.25s, border-color 0.4s, text-shadow 0.4s',
+                }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = scrolled ? '#2B2A26' : '#fff';
+                    e.currentTarget.style.color = scrolled ? '#FAF8F3' : '#1A1A1A';
+                    e.currentTarget.style.textShadow = 'none';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'transparent';
+                    e.currentTarget.style.color = ink;
+                    e.currentTarget.style.textShadow = glow;
+                  }}
+                >
+                  Get a Demo
+                </a>
+                <button className="show-mobile-only" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" aria-expanded={mobileOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 11 }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={mobileOpen ? '#1A1A1A' : ink} strokeWidth="1.8" strokeLinecap="round" style={{ display: 'block' }}>
+                    {mobileOpen
+                      ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
+                      : <><line x1="4" y1="7" x2="20" y2="7" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="17" x2="20" y2="17" /></>
+                    }
+                  </svg>
+                </button>
+              </div>
+            </div>
+          );
+        })()}
       </nav>
 
       {mobileOpen && (
@@ -314,7 +326,7 @@ function Hero() {
       const parentT = offTop(parent, section);                // laurels' offsetParent top
       // Fixed comfortable gap below the CTAs — no longer tied to the logo strip,
       // which now lives in its own band below the hero.
-      const gap = Math.max(38, Math.min(64, window.innerHeight * 0.055));
+      const gap = Math.max(56, Math.min(96, window.innerHeight * 0.08));
       lau.style.top = `${Math.round(ctaB + gap - parentT)}px`;
     };
     place();
@@ -442,7 +454,7 @@ function Hero() {
         <div className="hero-center" style={{
           position: 'absolute', inset: 0, zIndex: 3,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-          padding: '0 24px', paddingBottom: '9svh',
+          padding: '0 24px', paddingBottom: '13svh',
         }}>
           <div style={{ ...W, textAlign: 'center', maxWidth: 1100, margin: '0 auto' }}>
             <div style={{
@@ -550,14 +562,14 @@ function Hero() {
         {/* Trusted-by logo strip — anchored at the bottom of the hero */}
         <div className="hero-logos" style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
-          paddingBottom: 'clamp(10px, 1.6vh, 22px)',
+          paddingBottom: 'clamp(18px, 2.6vh, 34px)',
           animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both',
         }}>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: 'rgba(60,50,40,0.7)',
-            textAlign: 'center', marginBottom: 26,
+            textAlign: 'center', marginBottom: 38,
             mixBlendMode: 'multiply',
           }}>
             Trusted by 100+ of the fastest growing ABA providers
@@ -624,16 +636,16 @@ function DemoVideo() {
   return (
     <section style={{
       paddingTop: 'clamp(80px, 10vh, 140px)',
-      paddingBottom: 'clamp(160px, 22vh, 280px)',
-      background: 'linear-gradient(180deg, #f0e6d2 0%, #f5ecd9 28%, #faf3e5 58%, #FAF8F3 85%)',
+      paddingBottom: 'clamp(80px, 10vh, 130px)',
+      background: 'linear-gradient(180deg, #f0e6d2 0%, #f0e6d2 72%, #FAF8F3 100%)',
     }}>
       <div style={{ ...W, maxWidth: 1040, textAlign: 'center' }}>
-        <div className="hero-visual" style={{
-          maxWidth: 620, margin: '0 auto',
-          borderRadius: 22, overflow: 'hidden',
-          border: '1px solid rgba(0,0,0,0.04)',
-          background: '#fff',
-          boxShadow: '0 40px 110px rgba(30,30,25,0.18), 0 12px 36px rgba(30,30,25,0.08)',
+        {/* Minimal — just the film, mounted like a print: a thin white mat inside
+            a hairline frame, floating on a deep soft shadow. */}
+        <div className="hero-visual rv-scale" style={{
+          maxWidth: 640, margin: '0 auto',
+          borderRadius: 20, overflow: 'hidden',
+          boxShadow: '0 0 0 1px rgba(43,42,38,0.06), 0 24px 64px rgba(30,30,25,0.13), 0 6px 18px rgba(30,30,25,0.06)',
           position: 'relative',
         }}>
           <video
@@ -657,7 +669,7 @@ function DemoVideo() {
               style={{
                 position: 'absolute', inset: 0,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: 'linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.04) 40%, rgba(0,0,0,0.22) 100%)',
+                background: 'linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.03) 40%, rgba(0,0,0,0.18) 100%)',
                 border: 'none', cursor: 'pointer',
                 transition: 'background 0.3s ease',
               }}
@@ -666,18 +678,21 @@ function DemoVideo() {
             >
               <span style={{
                 position: 'relative',
-                width: 72, height: 72, borderRadius: '50%',
-                background: '#1A1A1A',
+                width: 64, height: 64, borderRadius: '50%',
+                background: 'rgba(20,19,16,0.38)',
+                backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255,255,255,0.45)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 8px 22px rgba(26,46,31,0.28), 0 0 0 1px rgba(26,46,31,0.06)',
+                boxShadow: '0 10px 30px rgba(20,19,16,0.25)',
+                transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s',
               }}>
                 <span style={{
-                  position: 'absolute', inset: -10, borderRadius: '50%',
-                  border: '1px solid rgba(26,46,31,0.22)',
-                  animation: 'hubPulse 2.4s ease-out infinite',
+                  position: 'absolute', inset: -9, borderRadius: '50%',
+                  border: '1px solid rgba(255,255,255,0.28)',
+                  animation: 'hubPulse 2.8s ease-out infinite',
                   pointerEvents: 'none',
                 }} />
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" style={{ marginLeft: 3 }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" style={{ marginLeft: 3 }}>
                   <path d="M7 5v14l12-7L7 5z" />
                 </svg>
               </span>
@@ -773,7 +788,7 @@ function Problem() {
   ];
 
   return (
-    <section style={{ background: '#FAF8F3', padding: 'clamp(110px, 15vh, 190px) 24px' }}>
+    <section style={{ background: '#FAF8F3', padding: 'clamp(70px, 9vh, 120px) 24px clamp(110px, 15vh, 190px)' }}>
       <div style={{ maxWidth: 1080, margin: '0 auto', textAlign: 'center' }}>
         <div className="rv"><Pill>The problem</Pill></div>
         <h2 className="rv-scale d1" style={{
@@ -878,9 +893,9 @@ function LiveCounter() {
         {count.toLocaleString()}+
       </div>
       <div style={{
-        marginTop: 12,
-        fontSize: 15, fontWeight: 500,
-        color: 'var(--green-900)', opacity: 0.6,
+        marginTop: 14,
+        fontSize: 14.5, fontWeight: 400,
+        color: 'var(--green-900)', opacity: 0.55, letterSpacing: '0.01em',
       }}>
         families connected to care across {HERO_STATES} states
       </div>
@@ -2055,7 +2070,10 @@ function Impact() {
             <LiveCounter />
           </div>
 
-          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
+          {/* A single hairline separates the living number from its four proofs —
+              the stats read as one engraved plaque, not four floating cards */}
+          <div style={{ height: 1, background: 'rgba(43,42,38,0.10)', maxWidth: 1020, margin: '52px auto 0' }} />
+          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', maxWidth: 1020, margin: '0 auto', textAlign: 'center' }}>
           {[
             { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
             { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
@@ -2064,34 +2082,23 @@ function Impact() {
           ].map((s, i) => (
             <div
               key={s.t2}
-              className={`rv-scale d${i + 1}`}
+              className={`rv d${i + 1}`}
               style={{
-                background: '#fff', borderRadius: 20,
-                padding: '40px 28px',
-                boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
-                transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
-                cursor: 'default',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(20, 40, 30, 0.12), 0 2px 6px rgba(0,0,0,0.04)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)';
+                padding: '44px clamp(14px, 2.4vw, 36px) 10px',
+                borderLeft: i === 0 ? 'none' : '1px solid rgba(43,42,38,0.10)',
               }}
             >
               <div style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 52px)',
+                fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 4.4vw, 58px)',
                 fontWeight: 400,
-                color: 'var(--green-900)', lineHeight: 1, marginBottom: 16,
+                color: 'var(--green-900)', lineHeight: 1, marginBottom: 18,
                 letterSpacing: '-0.02em',
                 fontVariantNumeric: 'lining-nums tabular-nums',
               }}>
                 <Counter target={s.v} suffix={s.s} prefix={s.p || ''} />
               </div>
-              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 6 }}>{s.t2}</div>
-              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.5 }}>{s.d}</div>
+              <div style={{ fontWeight: 500, color: 'var(--green-900)', fontSize: 14, marginBottom: 7, letterSpacing: '0.01em' }}>{s.t2}</div>
+              <div style={{ fontSize: 'var(--text-xs)', color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 200, margin: '0 auto' }}>{s.d}</div>
             </div>
           ))}
           </div>
