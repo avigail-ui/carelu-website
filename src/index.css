@@ -1016,3 +1016,12 @@ nav .nav-link:first-child { margin-left: 12px; }
   0%, 100% { box-shadow: 0 0 12px 1px rgba(104,178,120,0.14), 0 5px 14px rgba(30,30,25,0.05); }
   50%      { box-shadow: 0 0 20px 4px rgba(104,178,120,0.32), 0 5px 14px rgba(30,30,25,0.05); }
 }
+
+/* Classic three-column problem section — stack on small screens */
+@media (max-width: 768px) {
+  .problem-cols {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+  .problem-cols > div { border-left: none !important; padding: 0 12px !important; }
+}

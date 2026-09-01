@@ -726,394 +726,90 @@ const allLogos = [
 const VISUAL_IN_VIEW: IntersectionObserverInit = { threshold: 0.6, rootMargin: '0px -18% -24% -18%' };
 
 
-/* Every tool an ABA org already runs, laid out as a loose web around the headline —
-   all wired to a system of record, but the threads are frayed and half-broken.
-   Positions are normalized (0..1) fractions of the section, kept clear of the
-   centered text zone. "Connected, but not." */
-// The full sprawl of front-office tools — a busy, tangled web that makes the
-// "Nothing's broken. You're still losing families." point: it's ALL connected,
-// nothing's technically wrong, and families still slip.
-const WEB_ICONS: { n: string; bx: number; by: number; size: number }[] = [
-  // Organic constellation, not a frame: a few dense knots, a few loners, big
-  // size variance for depth. The keep-out box guards the headline.
-  // — upper-left knot —
-  { n: 'hubspot',             bx: 0.17, by: 0.17, size: 54 },
-  { n: 'gmail',               bx: 0.30, by: 0.11, size: 60 },
-  { n: 'docusign',            bx: 0.25, by: 0.29, size: 44 },
-  { n: 'salesforce',          bx: 0.09, by: 0.32, size: 72 },
-  // — top-center loner, drifting high —
-  { n: 'googlesheets',        bx: 0.47, by: 0.10, size: 46 },
-  // — upper-right knot —
-  { n: 'outlook',             bx: 0.63, by: 0.15, size: 62 },
-  { n: 'googlecalendar',      bx: 0.74, by: 0.26, size: 48 },
-  { n: 'calendly',            bx: 0.85, by: 0.13, size: 56 },
-  { n: 'twilio',              bx: 0.91, by: 0.34, size: 60 },
-  // — mid loners, uneven heights —
-  { n: 'ghl',                 bx: 0.09, by: 0.49, size: 56 },
-  { n: 'simplepractice',      bx: 0.82, by: 0.50, size: 70 },
-  { n: 'zoho',                bx: 0.16, by: 0.64, size: 64 },
-  { n: 'ringcentral',         bx: 0.90, by: 0.66, size: 50 },
-  // — lower-left knot —
-  { n: 'pandadoc',            bx: 0.11, by: 0.82, size: 52 },
-  { n: 'monday',              bx: 0.23, by: 0.74, size: 62 },
-  { n: 'quo',                 bx: 0.32, by: 0.86, size: 44 },
-  // — bottom-center drift —
-  { n: 'rethink',             bx: 0.45, by: 0.81, size: 50 },
-  { n: 'clickup',             bx: 0.56, by: 0.72, size: 68 },
-  { n: 'callrail',            bx: 0.65, by: 0.87, size: 44 },
-  // — lower-right pair —
-  { n: 'intakeq',             bx: 0.74, by: 0.77, size: 54 },
-  { n: 'artemisaba',          bx: 0.86, by: 0.84, size: 62 },
-];
-
-type WebNode = {
-  n: string; size: number;
-  bx: number; by: number;   // base position (fraction of section W/H)
-  phx: number; phy: number; // drift phase
-  ax: number; ay: number;   // drift amplitude (px)
-  x: number; y: number;     // current center (px)
-  rev: number;              // reveal progress 0..1
-  hub?: boolean;            // the inert System-of-Record hub everything tethers to
-  dead?: boolean;           // a stuck/dead integration — rendered greyed out
-  glow?: boolean;           // a delicate green light halo (only some tiles)
-  el: HTMLDivElement | null;
-};
-type WebEdge = { a: number; b: number; broken: boolean; line: SVGLineElement | null };
-
-/* The tangled-web sandbox: logos wired together by frayed threads, gently drifting,
-   grab-and-pull to stretch the connections. */
-function SystemWeb({ textRef }: { textRef: React.RefObject<HTMLDivElement | null> }) {
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const nodesRef = useRef<WebNode[]>([]);
-  const edgesRef = useRef<WebEdge[]>([]);
-  const dragRef = useRef<{ node: WebNode; offX: number; offY: number } | null>(null);
-  const rafRef = useRef(0);
-  const startedRef = useRef(false);
-  const tRef = useRef(0);
-  const maskRef = useRef<SVGRectElement | null>(null);
-
-  if (nodesRef.current.length === 0) {
-    // deterministic pseudo-random keyed off the index (stable across SSR/hydration)
-    const rnd = (i: number, s: number) => { const v = Math.sin((i + 1) * s) * 43758.5453; return v - Math.floor(v); };
-    const mobile = typeof window !== 'undefined' && window.innerWidth < 640;
-    const scale = mobile ? 0.52 : 0.74;
-
-    // Mobile shows a curated subset — the full 26 tiles is too dense on a narrow screen.
-    const MOBILE_KEEP = new Set([
-      'salesforce', 'hubspot', 'gmail', 'outlook', 'googlecalendar', 'calendly',
-      'simplepractice', 'ringcentral', 'intakeq', 'monday', 'clickup', 'pandadoc', 'zoho',
-    ]);
-    const source = mobile ? WEB_ICONS.filter((ic) => MOBILE_KEEP.has(ic.n)) : WEB_ICONS;
-
-    // No center, no villain — just a sprawl of tools, all wired to each other and looking
-    // perfectly fine. That's the point of "Nothing's broken": it's all connected, nothing's
-    // technically wrong, and families still slip away.
-    const nodes: WebNode[] = source.map((ic, i) => {
-      let bx = ic.bx, by = ic.by;
-      if (mobile) {
-        // Narrow portrait: pull nodes off the edges (no clipping) and squeeze them into
-        // a top band + a bottom band, leaving the middle clear for the taller headline.
-        bx = 0.5 + (bx - 0.5) * 0.86;
-        by = by < 0.46
-          ? 0.20 + (by / 0.46) * 0.15          // top band  → [0.20, 0.35]
-          : 0.60 + ((by - 0.46) / 0.54) * 0.34; // bottom band → [0.60, 0.94]
-      } else {
-        // Desktop: squeeze the constellation off the page edges
-        bx = 0.5 + (bx - 0.5) * 0.86;
-        by = 0.5 + (by - 0.5) * 0.92;
-      }
-      return {
-        n: ic.n, size: Math.round(ic.size * scale), bx, by,
-        phx: rnd(i, 12.9898) * Math.PI * 2, phy: rnd(i, 78.233) * Math.PI * 2,
-        ax: 4 + rnd(i, 3.7) * 6, ay: 4 + rnd(i, 5.1) * 6,
-        x: 0, y: 0, rev: 0, el: null,
-        glow: rnd(i, 9.13) < 0.34,
-      };
-    });
-    nodesRef.current = nodes;
-
-    // Decentralized mesh: wire each tool to its two nearest neighbours (deduped). All
-    // threads intact — it looks connected, because nothing's broken.
-    const seen = new Set<string>();
-    const edges: WebEdge[] = [];
-    for (let i = 0; i < nodes.length; i++) {
-      const near = nodes
-        .map((m, j) => ({ j, dd: (m.bx - nodes[i].bx) ** 2 + (m.by - nodes[i].by) ** 2 }))
-        .filter((o) => o.j !== i)
-        .sort((a, b) => a.dd - b.dd);
-      for (let k = 0; k < 3; k++) {
-        const j = near[k].j;
-        const a = Math.min(i, j), b = Math.max(i, j);
-        const key = `${a}-${b}`;
-        if (!seen.has(key)) { seen.add(key); edges.push({ a, b, broken: false, line: null }); }
-      }
-    }
-    edgesRef.current = edges;
-  }
-
-  useEffect(() => {
-    const wrap = wrapRef.current; if (!wrap) return;
-    let W = wrap.clientWidth, H = wrap.clientHeight;
-    const onResize = () => { W = wrap.clientWidth; H = wrap.clientHeight; };
-    window.addEventListener('resize', onResize);
-
-    // Hold the web hidden until the section scrolls into view, then reveal it.
-    const io = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { startedRef.current = true; io.disconnect(); }
-    }, { threshold: 0.3 });
-    io.observe(wrap);
-
-    const step = () => {
-      const nodes = nodesRef.current, edges = edgesRef.current, drag = dragRef.current;
-      tRef.current += 0.016;
-      const T = tRef.current;
-      const started = startedRef.current;
-
-      // Live keep-out box around the headline + subhead so no tile drifts over the
-      // text and hurts readability. Union of the actual line boxes (tight, not the
-      // full-width block), in wrap-local coords, padded by GAP.
-      let keep: { l: number; t: number; r: number; b: number } | null = null;
-      const tc = textRef.current;
-      if (tc) {
-        const wr = wrap.getBoundingClientRect();
-        let l = Infinity, t = Infinity, r = -Infinity, bt = -Infinity;
-        tc.querySelectorAll('h2, p').forEach((el) => {
-          for (const rc of el.getClientRects()) {
-            l = Math.min(l, rc.left); t = Math.min(t, rc.top);
-            r = Math.max(r, rc.right); bt = Math.max(bt, rc.bottom);
-          }
-        });
-        if (l !== Infinity) {
-          const GAP = 26;
-          const bl = l - wr.left, bt2 = t - wr.top, br = r - wr.left, bb = bt - wr.top;
-          keep = { l: bl - GAP, t: bt2 - GAP, r: br + GAP, b: bb + GAP };
-          // Punch the same box (a touch larger) out of the thread layer so no spoke
-          // ever crosses the text — the blurred mask fades threads out as they approach.
-          if (maskRef.current) {
-            const M = 34;
-            maskRef.current.setAttribute('x', String(bl - M));
-            maskRef.current.setAttribute('y', String(bt2 - M));
-            maskRef.current.setAttribute('width', String((br - bl) + M * 2));
-            maskRef.current.setAttribute('height', String((bb - bt2) + M * 2));
-          }
-        }
-      }
-
-      for (let i = 0; i < nodes.length; i++) {
-        const nd = nodes[i];
-        if (started) nd.rev = Math.max(0, Math.min(1, (T - i * 0.045) / 0.6)); // staggered fade-in
-        if (!drag || drag.node !== nd) {
-          nd.x = nd.bx * W + Math.sin(T * 0.5 + nd.phx) * nd.ax + Math.sin(T * 2.2 + nd.phy * 3) * 1.1;   // slow drift + faint tremor
-          nd.y = nd.by * H + Math.cos(T * 0.42 + nd.phy) * nd.ay + Math.cos(T * 1.9 + nd.phx * 2) * 1.1;
-          // push out of the text box along the axis of least penetration (drift resets
-          // each frame, so this is stable — the tile just hovers along the text edge)
-          if (keep) {
-            const h = nd.size / 2;
-            const nl = nd.x - h, nr = nd.x + h, nt = nd.y - h, nb = nd.y + h;
-            if (nr > keep.l && nl < keep.r && nb > keep.t && nt < keep.b) {
-              const penL = nr - keep.l, penR = keep.r - nl, penU = nb - keep.t, penD = keep.b - nt;
-              const min = Math.min(penL, penR, penU, penD);
-              if (min === penL) nd.x -= penL;
-              else if (min === penR) nd.x += penR;
-              else if (min === penU) nd.y -= penU;
-              else nd.y += penD;
-            }
-          }
-        }
-        if (nd.el) {
-          const s = 0.62 + 0.38 * nd.rev;
-          nd.el.style.transform = `translate(${nd.x - nd.size / 2}px, ${nd.y - nd.size / 2}px) scale(${s})`;
-          nd.el.style.opacity = String(nd.rev);
-        }
-      }
-
-      for (const e of edges) {
-        if (!e.line) continue;
-        const a = nodes[e.a], b = nodes[e.b];
-        const dx = b.x - a.x, dy = b.y - a.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const ux = dx / len, uy = dy / len;
-        const gapA = a.size / 2 + (e.broken ? 15 : 4);   // broken threads stop well short of the tile
-        const gapB = b.size / 2 + (e.broken ? 15 : 4);
-        e.line.setAttribute('x1', String(a.x + ux * gapA));
-        e.line.setAttribute('y1', String(a.y + uy * gapA));
-        e.line.setAttribute('x2', String(b.x - ux * gapB));
-        e.line.setAttribute('y2', String(b.y - uy * gapB));
-        e.line.setAttribute('opacity', String(Math.min(a.rev, b.rev) * (e.broken ? 0.11 : 0.21)));
-      }
-      rafRef.current = requestAnimationFrame(step);
-    };
-    rafRef.current = requestAnimationFrame(step);
-    return () => { cancelAnimationFrame(rafRef.current); io.disconnect(); window.removeEventListener('resize', onResize); };
-  }, []);
-
-  const down = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
-    const wrap = wrapRef.current; if (!wrap) return;
-    e.preventDefault();
-    e.currentTarget.setPointerCapture(e.pointerId);
-    e.currentTarget.style.cursor = 'grabbing';
-    const r = wrap.getBoundingClientRect();
-    dragRef.current = { node: nd, offX: (e.clientX - r.left) - nd.x, offY: (e.clientY - r.top) - nd.y };
-  };
-  const move = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
-    const drag = dragRef.current; const wrap = wrapRef.current;
-    if (!drag || drag.node !== nd || !wrap) return;
-    const r = wrap.getBoundingClientRect();
-    nd.x = (e.clientX - r.left) - drag.offX;
-    nd.y = (e.clientY - r.top) - drag.offY;
-  };
-  const up = (nd: WebNode) => (e: React.PointerEvent<HTMLDivElement>) => {
-    e.currentTarget.style.cursor = 'grab';
-    if (dragRef.current && dragRef.current.node === nd) {
-      // rebase so the ambient drift resumes around where it was dropped (no snap-back)
-      const wrap = wrapRef.current; const T = tRef.current;
-      if (wrap && wrap.clientWidth && wrap.clientHeight) {
-        nd.bx = (nd.x - Math.sin(T * 0.5 + nd.phx) * nd.ax) / wrap.clientWidth;
-        nd.by = (nd.y - Math.cos(T * 0.42 + nd.phy) * nd.ay) / wrap.clientHeight;
-      }
-      dragRef.current = null;
-    }
-    try { e.currentTarget.releasePointerCapture(e.pointerId); } catch { /* noop */ }
-  };
-
-  return (
-    <div ref={wrapRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 5, pointerEvents: 'none' }}>
-      <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} aria-hidden="true">
-        <defs>
-          <filter id="webMaskBlur" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="12" />
-          </filter>
-          <mask id="webTextMask">
-            <rect x="0" y="0" width="100%" height="100%" fill="white" />
-            {/* black = hidden; blurred so threads feather out approaching the text */}
-            <rect ref={maskRef} x="0" y="0" width="0" height="0" rx="34" fill="black" filter="url(#webMaskBlur)" />
-          </mask>
-        </defs>
-        <g mask="url(#webTextMask)">
-          {edgesRef.current.map((e, i) => (
-            <line key={i} ref={(el) => { e.line = el; }}
-              stroke="#828176"
-              strokeWidth={e.broken ? 0.6 : 0.85}
-              strokeDasharray={e.broken ? '1.5 11' : undefined}
-              strokeLinecap="round"
-              opacity={0} />
-          ))}
-        </g>
-      </svg>
-      {nodesRef.current.map((nd, i) => (
-        <div key={i} ref={(el) => { nd.el = el; }}
-          onPointerDown={down(nd)} onPointerMove={move(nd)} onPointerUp={up(nd)} onPointerCancel={up(nd)}
-          style={{
-            position: 'absolute', top: 0, left: 0, width: nd.size, height: nd.size,
-            borderRadius: nd.size * 0.26,
-            background: 'rgba(255,255,255,0.42)', border: '1px solid rgba(255,255,255,0.5)',
-            backdropFilter: 'blur(5px)', WebkitBackdropFilter: 'blur(5px)',
-            boxShadow: nd.glow
-              ? '0 0 18px 3px rgba(104,178,120,0.26), 0 5px 14px rgba(30,30,25,0.05)'
-              : '0 5px 14px rgba(30,30,25,0.05)',
-            animation: nd.glow ? `webGlowPulse 3.6s ease-in-out ${-(i * 0.7)}s infinite` : undefined,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'grab', touchAction: 'none', userSelect: 'none', willChange: 'transform', opacity: 0,
-            pointerEvents: 'auto',
-          }}>
-          <img src={`/logos/rain/${nd.n}.png`} alt="" draggable={false} style={{
-            width: '56%', height: '56%', objectFit: 'contain', pointerEvents: 'none', opacity: 0.88,
-          }} />
-        </div>
-      ))}
-    </div>
-  );
-}
-
-
 /* ================================================================
-   THE PROBLEM — Carelu-style browser chaos (dark mode)
-   Sticky scroll: text → browser windows slam in → cursor closes → solution
+   THE PROBLEM — classic editorial treatment.
+   Serif headline, calm bone ground, three quiet columns divided by
+   hairlines — consistent with the results / platform sections.
    ================================================================ */
 function Problem() {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
-  const [t, setT] = useState(0);
-
-  // Scroll-tied progress (so the animation rewinds when user scrolls back up).
-  // No sticky pinning — uses the section's natural position in the viewport to compute t,
-  // so there's no 100vh "exit transition" that reads as empty space.
-  useEffect(() => {
-    let raf = 0;
-    const update = () => {
-      const el = trackRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const vh = window.innerHeight;
-      // t = 0 when the section's top is at viewport bottom (just appearing);
-      // t = 1 when the section's bottom is at viewport top (fully scrolled past).
-      // Animation runs as the section traverses the viewport — t=0 when section's
-      // top hits the viewport bottom, t=1 when the section's top hits the viewport top.
-      const t = Math.max(0, Math.min(1, (vh - rect.top) / vh));
-      setT(t);
-    };
-    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-    };
-  }, []);
-
-  // The chaos animation was reduced to the tool web only — the old browser-tabs
-  // sequence (and its phase timing) moved to _archive/ChaosTabsAnimation.tsx.
-  const closed = false;  // section never "closes" — it just scrolls away naturally
+  const COLS = [
+    {
+      title: 'More tools than ever',
+      body: 'Calls, forms, EHRs, spreadsheets \u2014 a front-office stack that grows every quarter.',
+      icon: (
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="7" y="7" width="14" height="14" rx="3" />
+          <rect x="27" y="7" width="14" height="14" rx="3" />
+          <rect x="7" y="27" width="14" height="14" rx="3" />
+          <rect x="27" y="27" width="14" height="14" rx="3" strokeDasharray="2.5 3.5" />
+        </svg>
+      ),
+    },
+    {
+      title: 'None of it moves alone',
+      body: 'Every handoff waits for a human to push it. On nights and weekends, nobody does.',
+      icon: (
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M10 24a7 7 0 0 1 7-7h4" />
+          <path d="M38 24a7 7 0 0 1-7 7h-4" />
+          <path d="M21 31h-4a7 7 0 0 1-6.3-4" />
+          <path d="M27 17h4a7 7 0 0 1 6.3 4" />
+          <path d="M23 21.5l2 5" strokeDasharray="2 3" />
+        </svg>
+      ),
+    },
+    {
+      title: 'So families slip away',
+      body: 'The family who called you first signs with whoever completes intake first.',
+      icon: (
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#2B2A26" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 8h16v32H12z" />
+          <path d="M28 8l8 4v28l-8-4" />
+          <circle cx="24" cy="24" r="1.2" fill="#2B2A26" />
+          <path d="M33 20l6 4-6 4" strokeDasharray="2 3" />
+        </svg>
+      ),
+    },
+  ];
 
   return (
-    <div ref={trackRef} style={{
-      height: '100svh', position: 'relative',
-      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-      backgroundColor: '#FAF8F3',
-      transition: 'background-color 0.5s',
-      overflow: 'hidden',
-    }}>
-        {/* Ambient glow for solution phase -- no earth image, pure dark with subtle accent radial */}
-        {t > 0.5 && (
-          <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
-            <div style={{
-              position: 'absolute', top: '30%', left: '50%', transform: 'translateX(-50%)',
-              width: '120%', height: '80%',
-              background: `radial-gradient(ellipse 40% 40% at 50% 40%, rgba(74,124,63,${Math.min((t - 0.5) * 2, 0.08)}) 0%, transparent 70%)`,
-              transition: 'opacity 0.8s',
-            }} />
-          </div>
-        )}
+    <section style={{ background: '#FAF8F3', padding: 'clamp(110px, 15vh, 190px) 24px' }}>
+      <div style={{ maxWidth: 1080, margin: '0 auto', textAlign: 'center' }}>
+        <div className="rv"><Pill>The problem</Pill></div>
+        <h2 className="rv-scale d1" style={{
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.6vw, 62px)',
+          fontWeight: 400, lineHeight: 1.12, color: '#1c1b18',
+          letterSpacing: '-0.01em', margin: '26px auto 22px', maxWidth: 760, textWrap: 'balance',
+        }}>
+          Nothing&rsquo;s broken.<br />You&rsquo;re <em style={{ fontStyle: 'italic' }}>still</em> losing families.
+        </h2>
+        <p className="rv d2" style={{
+          fontSize: 17, color: '#6b675e', lineHeight: 1.75, maxWidth: 620, margin: '0 auto',
+        }}>
+          Your front office has more tools, more headcount, more handoffs than ever &mdash;
+          and still, none of it moves on its own.
+        </p>
 
-        {/* Loose, frayed web of every tool wired to the system of record */}
-        <SystemWeb textRef={textRef} />
-
-        {/* Text overlay — above the tile pile so it stays readable; pointer-through
-            so the tiles behind it are still draggable */}
-        <div style={{ textAlign: 'center', position: 'relative', zIndex: 6, pointerEvents: 'none', padding: '0 36px', marginBottom: 32, width: '100%' }}>
-          {/* Problem text */}
-          <div ref={textRef} style={{ opacity: 1, transition: 'opacity 0.3s', position: 'absolute', inset: 0 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, letterSpacing: '-0.02em', color: '#000', maxWidth: 720, margin: '0 auto 16px' }}>
-              Nothing&rsquo;s broken.<br />You&rsquo;re still losing families.
-            </h2>
-            <p style={{ fontSize: 17, color: '#666', lineHeight: 1.7, maxWidth: 600, margin: '0 auto' }}>
-              Your front office has more tools, more headcount, more handoffs than ever &mdash; and still, none of it moves on its own. So intake stalls, and families slip to the competitor who completes intake first.
-            </p>
-          </div>
-          {/* Solution headline + cards are rendered in a separate zIndex 9 layer below */}
-          {/* Spacer */}
-          <div style={{ visibility: 'hidden' }}>
-            <span style={{ display: 'inline-block', fontSize: 11, marginBottom: 20 }}>&nbsp;</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.2vw, 52px)', fontWeight: 400, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>&nbsp;<br />&nbsp;</h2>
-            <p style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>&nbsp;</p>
-          </div>
+        <div className="problem-cols" style={{
+          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', alignItems: 'start',
+          maxWidth: 1020, margin: 'clamp(64px, 9vh, 110px) auto 0',
+        }}>
+          {COLS.map((c, i) => (
+            <div key={c.title} className={`rv d${i + 1}`} style={{
+              padding: '8px clamp(20px, 3.5vw, 48px)',
+              borderLeft: i === 0 ? 'none' : '1px solid rgba(43,42,38,0.12)',
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 22, opacity: 0.85 }}>{c.icon}</div>
+              <div style={{
+                fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 400,
+                color: '#1c1b18', marginBottom: 12, letterSpacing: '-0.005em',
+              }}>{c.title}</div>
+              <p style={{ fontSize: 15, color: '#6b675e', lineHeight: 1.7, margin: 0 }}>{c.body}</p>
+            </div>
+          ))}
         </div>
-
-        {/* Solution-phase reveal was moved to the MuralReveal section below.
-            Keeping this conditional empty so the chaos-tabs animation still plays out. */}
-    </div>
+      </div>
+    </section>
   );
 }
 
