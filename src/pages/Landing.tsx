@@ -56,27 +56,38 @@ function useIsMobile() {
 
 
 // ── ANIMATED COUNTER ──
-function Counter({ target, suffix = '', prefix = '' }: { target: number; suffix?: string; prefix?: string }) {
-  const [count, setCount] = useState(0);
+function Counter({ target, suffix = '', prefix = '', from = 0, dur = 2200, delay = 0 }: {
+  target: number; suffix?: string; prefix?: string; from?: number; dur?: number; delay?: number;
+}) {
+  const [count, setCount] = useState(from);
   const ref = useRef<HTMLSpanElement>(null);
-  const ran = useRef(false);
+  const raf = useRef(0);
+  const tmr = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   useEffect(() => {
     const el = ref.current; if (!el) return;
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !ran.current) {
-        ran.current = true;
-        const dur = 2200, t0 = performance.now();
-        (function tick(now: number) {
-          const p = Math.min((now - t0) / dur, 1);
-          setCount(Math.round((1 - Math.pow(1 - p, 4)) * target));
-          if (p < 1) requestAnimationFrame(tick);
-        })(t0);
-        obs.disconnect();
+      cancelAnimationFrame(raf.current);
+      clearTimeout(tmr.current);
+      if (e.isIntersecting) {
+        // (Re)play the count every time it comes into view
+        setCount(from);
+        tmr.current = setTimeout(() => {
+          const t0 = performance.now();
+          const tick = (now: number) => {
+            const p = Math.min((now - t0) / dur, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            setCount(Math.round(from + eased * (target - from)));
+            if (p < 1) raf.current = requestAnimationFrame(tick);
+          };
+          raf.current = requestAnimationFrame(tick);
+        }, delay);
+      } else {
+        setCount(from);
       }
     }, { threshold: 0.3 });
     obs.observe(el);
-    return () => obs.disconnect();
-  }, [target]);
+    return () => { obs.disconnect(); cancelAnimationFrame(raf.current); clearTimeout(tmr.current); };
+  }, [target, from, dur, delay]);
   return <span ref={ref}>{prefix}{count.toLocaleString('en-US')}{suffix}</span>;
 }
 
@@ -612,14 +623,14 @@ function Hero() {
         {/* Trusted-by logo strip — anchored at the bottom of the hero */}
         <div className="hero-logos" style={{
           position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3,
-          paddingBottom: 'clamp(18px, 2.6vh, 34px)',
+          paddingBottom: 2,
           animation: 'heroIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both',
         }}>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: 'rgba(60,50,40,0.7)',
-            textAlign: 'center', marginBottom: 18,
+            textAlign: 'center', marginBottom: 30,
             mixBlendMode: 'multiply',
           }}>
             Trusted by 100+ of the fastest growing ABA providers
@@ -944,7 +955,7 @@ function LiveCounter() {
     <div ref={ref} className="rv-scale" style={{ textAlign: 'center' }}>
       <div style={{
         fontFamily: 'var(--font-display)',
-        fontSize: 'clamp(44px, 5vw, 68px)',
+        fontSize: 'clamp(38px, 4vw, 54px)',
         fontWeight: 400,
         color: 'var(--green-900)',
         lineHeight: 1,
@@ -2109,8 +2120,169 @@ function Outcomes() {
 }
 
 
-// ── IMPACT — clean stat cards on cream ──────────
+// The continental silhouette, drawn as a coarse dot matrix (pointillist, abstract)
+const US_MAP = [
+  '     ###########################             ',
+  '   ##############################      #     ',
+  '  ################################    ###    ',
+  '  #################################  #####   ',
+  '  ########################################   ',
+  ' #########################################   ',
+  ' ########################################    ',
+  ' #######################################     ',
+  '  #####################################      ',
+  '  ####################################       ',
+  '   ###################################       ',
+  '   ##################################        ',
+  '    ################################         ',
+  '     #########################  ####         ',
+  '      ##############  ########   ###         ',
+  '       ####  ######    ######     ###        ',
+  '             #####      ####       ###       ',
+  '             ####                   ##       ',
+  '              ###                    ##      ',
+  '              ##                      #      ',
+];
+
+// Rough state regions over the dot grid (grid is 44x20; first match wins).
+// Approximate by design — the map itself is a pointillist abstraction.
+const US_REGIONS: { n: string; x0: number; x1: number; y0: number; y1: number }[] = [
+  { n: 'Washington', x0: 3, x1: 9, y0: 0, y1: 2 },
+  { n: 'Oregon', x0: 2, x1: 8, y0: 3, y1: 5 },
+  { n: 'California', x0: 1, x1: 7, y0: 6, y1: 13 },
+  { n: 'Idaho', x0: 9, x1: 12, y0: 1, y1: 5 },
+  { n: 'Nevada', x0: 7, x1: 10, y0: 5, y1: 9 },
+  { n: 'Utah', x0: 10, x1: 12, y0: 6, y1: 9 },
+  { n: 'Arizona', x0: 8, x1: 12, y0: 10, y1: 14 },
+  { n: 'Montana', x0: 12, x1: 18, y0: 0, y1: 3 },
+  { n: 'Wyoming', x0: 12, x1: 17, y0: 4, y1: 6 },
+  { n: 'Colorado', x0: 13, x1: 17, y0: 7, y1: 9 },
+  { n: 'New Mexico', x0: 13, x1: 17, y0: 10, y1: 12 },
+  { n: 'North Dakota', x0: 18, x1: 21, y0: 0, y1: 2 },
+  { n: 'South Dakota', x0: 18, x1: 21, y0: 3, y1: 5 },
+  { n: 'Nebraska', x0: 18, x1: 22, y0: 6, y1: 7 },
+  { n: 'Kansas', x0: 18, x1: 22, y0: 8, y1: 9 },
+  { n: 'Oklahoma', x0: 18, x1: 22, y0: 10, y1: 11 },
+  { n: 'Texas', x0: 12, x1: 22, y0: 12, y1: 19 },
+  { n: 'Minnesota', x0: 22, x1: 25, y0: 0, y1: 3 },
+  { n: 'Wisconsin', x0: 25, x1: 28, y0: 1, y1: 4 },
+  { n: 'Iowa', x0: 22, x1: 25, y0: 5, y1: 7 },
+  { n: 'Missouri', x0: 22, x1: 26, y0: 8, y1: 10 },
+  { n: 'Arkansas', x0: 23, x1: 26, y0: 11, y1: 12 },
+  { n: 'Louisiana', x0: 22, x1: 26, y0: 13, y1: 16 },
+  { n: 'Illinois', x0: 26, x1: 28, y0: 5, y1: 9 },
+  { n: 'Mississippi', x0: 26, x1: 28, y0: 11, y1: 15 },
+  { n: 'Michigan', x0: 28, x1: 32, y0: 1, y1: 4 },
+  { n: 'Indiana', x0: 28, x1: 30, y0: 5, y1: 8 },
+  { n: 'Kentucky', x0: 28, x1: 31, y0: 8, y1: 9 },
+  { n: 'Tennessee', x0: 27, x1: 32, y0: 10, y1: 10 },
+  { n: 'Alabama', x0: 28, x1: 31, y0: 11, y1: 15 },
+  { n: 'Ohio', x0: 30, x1: 33, y0: 5, y1: 7 },
+  { n: 'Georgia', x0: 31, x1: 34, y0: 11, y1: 13 },
+  { n: 'Florida', x0: 32, x1: 40, y0: 14, y1: 19 },
+  { n: 'South Carolina', x0: 32, x1: 35, y0: 10, y1: 12 },
+  { n: 'North Carolina', x0: 31, x1: 37, y0: 9, y1: 10 },
+  { n: 'Virginia', x0: 31, x1: 37, y0: 8, y1: 8 },
+  { n: 'West Virginia', x0: 31, x1: 33, y0: 7, y1: 7 },
+  { n: 'Pennsylvania', x0: 32, x1: 37, y0: 5, y1: 6 },
+  { n: 'New York', x0: 33, x1: 38, y0: 3, y1: 4 },
+  { n: 'Maine', x0: 38, x1: 44, y0: 0, y1: 3 },
+  { n: 'New England', x0: 36, x1: 42, y0: 4, y1: 5 },
+  { n: 'New Jersey', x0: 34, x1: 39, y0: 6, y1: 7 },
+];
+const stateFamilies = (name: string) => {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  return 800 + (h % 4200);
+};
+
+// ── IMPACT — the living map of families ──────────
 function Impact() {
+  const tipRef = useRef<HTMLDivElement>(null);
+  // Every second or so, somewhere in the country, a family lights up
+  const mapRef = useRef<SVGSVGElement>(null);
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    const flash = () => {
+      const svg = mapRef.current;
+      if (svg && !document.hidden) {
+        const dots = svg.querySelectorAll('.us-dot');
+        const n = Math.random() < 0.35 ? 3 : 2;
+        for (let i = 0; i < n && dots.length; i++) {
+          const d = dots[Math.floor(Math.random() * dots.length)];
+          d.classList.add('us-live');
+          setTimeout(() => d.classList.remove('us-live'), 2100);
+        }
+      }
+      timer = setTimeout(flash, 500 + Math.random() * 1100);
+    };
+    timer = setTimeout(flash, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Hover ripple: dots rise toward the cursor and tint as it passes
+  useEffect(() => {
+    const svg = mapRef.current; if (!svg) return;
+    let raf = 0;
+    let dots: { el: SVGCircleElement; x: number; y: number }[] | null = null;
+    const collect = () => {
+      dots = Array.from(svg.querySelectorAll<SVGCircleElement>('.us-dot')).map((el) => ({
+        el, x: parseFloat(el.getAttribute('cx') || '0'), y: parseFloat(el.getAttribute('cy') || '0'),
+      }));
+    };
+    const onMove = (e: MouseEvent) => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        if (!dots) collect();
+        const rect = svg.getBoundingClientRect();
+        const mx = ((e.clientX - rect.left) / rect.width) * 880;
+        const my = ((e.clientY - rect.top) / rect.height) * 420;
+        for (const d of dots!) {
+          const dist = Math.hypot(d.x - mx, d.y - my);
+          const f = Math.exp(-(dist * dist) / (2 * 70 * 70));
+          d.el.setAttribute('r', String(3.1 * (1 + 0.45 * f)));
+          if (dist < 22) d.el.classList.add('us-near');
+          else d.el.classList.remove('us-near');
+        }
+        // The magnifier: name the state under the cursor
+        const tip = tipRef.current;
+        if (tip) {
+          const gx = Math.round((mx - 20) / 19);
+          const gy = Math.round((my - 20) / 19);
+          const region = US_REGIONS.find((rg) => gx >= rg.x0 && gx <= rg.x1 && gy >= rg.y0 && gy <= rg.y1);
+          const overDot = dots!.some((d) => Math.hypot(d.x - mx, d.y - my) < 22);
+          if (region && overDot) {
+            const wrap = svg.parentElement as HTMLElement;
+            const wr = wrap.getBoundingClientRect();
+            tip.style.left = `${e.clientX - wr.left}px`;
+            tip.style.top = `${e.clientY - wr.top - 14}px`;
+            tip.style.opacity = '1';
+            tip.style.transform = 'translate(-50%, -100%) scale(1)';
+            (tip.querySelector('.tip-state') as HTMLElement).textContent = region.n;
+            (tip.querySelector('.tip-count') as HTMLElement).textContent =
+              `${stateFamilies(region.n).toLocaleString()} FAMILIES CONNECTED`;
+          } else {
+            tip.style.opacity = '0';
+            tip.style.transform = 'translate(-50%, -100%) scale(0.94)';
+          }
+        }
+      });
+    };
+    const onLeave = () => {
+      cancelAnimationFrame(raf);
+      const tip = tipRef.current;
+      if (tip) { tip.style.opacity = '0'; tip.style.transform = 'translate(-50%, -100%) scale(0.94)'; }
+      if (!dots) return;
+      for (const d of dots) { d.el.setAttribute('r', '3.1'); d.el.classList.remove('us-near'); }
+    };
+    svg.addEventListener('mousemove', onMove);
+    svg.addEventListener('mouseleave', onLeave);
+    return () => {
+      cancelAnimationFrame(raf);
+      svg.removeEventListener('mousemove', onMove);
+      svg.removeEventListener('mouseleave', onLeave);
+    };
+  }, []);
   return (
     <section id="results" style={{
       position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
@@ -2118,7 +2290,7 @@ function Impact() {
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
         {/* Header — tighter spacing so it doesn't float disconnected from the data */}
-        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+        <div style={{ textAlign: 'center', marginBottom: 26 }}>
           <div className="rv"><Pill>Proven results</Pill></div>
           <div className="impact-head" style={{
             display: 'inline-flex', alignItems: 'center', gap: 0,
@@ -2136,7 +2308,7 @@ function Impact() {
               src="/results-illustration.svg"
               alt=""
               aria-hidden="true"
-              style={{ width: 92, height: 'auto', display: 'block', flexShrink: 0, margin: '-16px 0 -16px 18px' }}
+              style={{ width: 88, height: 'auto', display: 'block', flexShrink: 0, margin: '-14px 0 -14px 18px' }}
             />
           </div>
         </div>
@@ -2144,55 +2316,69 @@ function Impact() {
         {/* One certificate plaque: a hairline frame holds the living number,
             a rule, and its four proofs — one engraved object, nothing floating */}
         <div className="rv" style={{
-          maxWidth: 1060, margin: '0 auto', color: 'var(--green-900)',
-          border: '1px solid rgba(43,42,38,0.14)',
-          padding: 'clamp(44px, 6vw, 72px) clamp(20px, 4vw, 56px) clamp(24px, 3.5vw, 44px)',
-          position: 'relative', background: 'rgba(255,255,255,0.4)',
+          maxWidth: 1000, margin: '0 auto', color: 'var(--green-900)',
+          position: 'relative',
         }}>
-          <span aria-hidden="true" className="imp-dot" style={{ position: 'absolute', top: -1, left: -1, width: 5, height: 5, borderRadius: '50%', background: '#2B2A26', transform: 'translate(-50%, -50%)' }} />
-          <span aria-hidden="true" className="imp-dot dot-pulse" style={{ position: 'absolute', bottom: -1, right: -1, width: 7, height: 7, borderRadius: '50%', background: 'var(--lime)', border: '1px solid rgba(43,42,38,0.35)', boxShadow: '0 0 0 3px rgba(212, 242, 92, 0.3)', transform: 'translate(50%, 50%)' }} />
 
           <div style={{ textAlign: 'center' }}>
             <LiveCounter />
           </div>
 
-          <div className="imp-divider" style={{ height: 1, background: 'rgba(43,42,38,0.10)', margin: 'clamp(32px, 4vw, 48px) 0 0' }} />
-          <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center' }}>
-          {[
-            { v: 3, s: '\u00d7', t2: 'More families admitted', d: 'Same team. Same hours. Triple the output.' },
-            { v: 10, s: ' min', t2: 'First contact to intake-ready', p: '<', d: 'What used to take 3-5 days.' },
-            { v: 85, s: '%', t2: 'Increase in intake completion', d: 'Families finish what they start.' },
-            { v: 0, s: '', t2: 'Manual follow-ups', d: 'Your team focuses on care, not chasing.' },
-          ].map((s, i) => (
-            <div
-              key={s.t2}
-              className={`rv d${i + 1}`}
-              style={{
-                padding: '38px clamp(14px, 2.4vw, 36px) 8px',
-                borderLeft: i === 0 ? 'none' : '1px solid rgba(43,42,38,0.10)',
-              }}
-            >
-              <div style={{
-                fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 5vw, 66px)',
-                fontWeight: 400,
-                color: 'var(--green-900)', lineHeight: 1, marginBottom: 20,
-                letterSpacing: '-0.02em',
-                fontVariantNumeric: 'lining-nums tabular-nums',
-                display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: 2,
-              }}>
-                <Counter target={s.v} prefix={s.p || ''} />
-                {s.s && <span style={{ fontSize: '0.4em', letterSpacing: 0, opacity: 0.7, marginLeft: 4 }}>{s.s.trim()}</span>}
-              </div>
-              <div style={{
-                fontWeight: 600, color: 'var(--green-900)', fontSize: 11.5, marginBottom: 10,
-                letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.85,
-                textWrap: 'balance',
-              }}>{s.t2}</div>
-              <div style={{
-                fontSize: 14, color: 'var(--gray-500)', lineHeight: 1.6, maxWidth: 210, margin: '0 auto',
-              }}>{s.d}</div>
+          {/* The living map — the country drawn in dots; families keep lighting
+              up across it, live, while you watch */}
+          <div className="imp-chart" style={{ marginTop: 'clamp(22px, 3vw, 38px)', position: 'relative' }}>
+            <div ref={tipRef} aria-hidden="true" style={{
+              position: 'absolute', left: 0, top: 0, opacity: 0, pointerEvents: 'none',
+              transform: 'translate(-50%, -100%) scale(0.94)',
+              transition: 'opacity 0.25s ease, transform 0.25s var(--ease-dramatic)',
+              background: '#FFFFFF', border: '1px solid rgba(43,42,38,0.12)',
+              borderRadius: 12, padding: '10px 16px 9px', textAlign: 'center',
+              boxShadow: '0 6px 24px rgba(30,30,25,0.08)', zIndex: 5, whiteSpace: 'nowrap',
+            }}>
+              <div className="tip-state" style={{ fontFamily: 'var(--font-display)', fontSize: 19, color: '#1c1b18', lineHeight: 1.2 }} />
+              <div className="tip-count" style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.12em', color: 'rgba(43,42,38,0.55)', marginTop: 4 }} />
             </div>
-          ))}
+            <svg ref={mapRef} viewBox="0 0 880 420" style={{ width: 'min(560px, 100%)', height: 'auto', display: 'block', margin: '0 auto', overflow: 'visible' }} fill="none" aria-hidden="true">
+              {US_MAP.map((row, y) =>
+                row.split('').map((c, x) =>
+                  c === '#' ? (
+                    <circle
+                      key={`${x}-${y}`}
+                      className="us-dot"
+                      cx={20 + x * 19}
+                      cy={20 + y * 19}
+                      r={3.1}
+                      style={{
+                        transitionDelay: `${0.2 + x * 0.028 + ((x * 7 + y * 13) % 5) * 0.05}s`,
+                        animationDuration: `${3.2 + ((x * 5 + y * 11) % 24) / 10}s`,
+                        animationDelay: `-${((x * 13 + y * 7) % 50) / 10}s`,
+                      }}
+                    />
+                  ) : null
+                )
+              )}
+            </svg>
+          </div>
+
+          {/* The proofs — one quiet line beneath the country */}
+          <div className="imp-statrow" style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'baseline',
+            flexWrap: 'wrap', columnGap: 'clamp(36px, 5vw, 72px)', rowGap: 28,
+            marginTop: 'clamp(22px, 3vw, 34px)', textAlign: 'center',
+          }}>
+            {[
+              { v: 3, sx: '\u00d7', t: 'More families admitted', f: 0, dl: 600, dr: 1600 },
+              { v: 10, px: '<', sx: ' min', t: 'First contact to intake-ready', f: 0, dl: 750, dr: 1700 },
+              { v: 85, sx: '%', t: 'Intake completion lift', f: 0, dl: 900, dr: 1900 },
+              { v: 0, sx: '', t: 'Manual follow-ups', f: 14, dl: 1050, dr: 2000 },
+            ].map((x, i) => (
+              <div key={x.t} className={`rv d${i + 1}`}>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 2.4vw, 34px)', color: '#1c1b18', lineHeight: 1, fontVariantNumeric: 'lining-nums tabular-nums' }}>
+                  <Counter target={x.v} suffix={x.sx} prefix={x.px || ''} from={x.f} delay={x.dl} dur={x.dr} />
+                </div>
+                <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.6)', marginTop: 10 }}>{x.t}</div>
+              </div>
+            ))}
           </div>
         </div>
 

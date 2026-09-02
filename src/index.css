@@ -1046,3 +1046,87 @@ nav .nav-link:first-child { margin-left: 12px; }
 /* The title appears only once the signature has finished signing */
 .sig-title { opacity: 0; transform: translateY(6px); transition: opacity 0.8s ease 3.1s, transform 0.8s var(--ease-dramatic) 3.1s; }
 .rv.visible .sig-title { opacity: 1; transform: translateY(0); }
+
+/* ── Results instruments: each stat draws its own tiny proof ── */
+.iv-bar { transform: scaleY(0); transform-origin: bottom; transform-box: fill-box; }
+.rv.visible .iv-bar { transform: scaleY(1); }
+.rv.visible .iv-bar.b1 { transition: transform 0.6s var(--ease-dramatic) 0.7s; }
+.rv.visible .iv-bar.b2 { transition: transform 0.6s var(--ease-dramatic) 0.9s; }
+.rv.visible .iv-bar.b3 { transition: transform 0.7s var(--ease-dramatic) 1.1s; }
+.iv-line { transform: scaleX(0); transform-origin: left; transform-box: fill-box; }
+.rv.visible .iv-line { transform: scaleX(1); transition: transform 0.8s var(--ease-dramatic) 0.8s; }
+.iv-tip { opacity: 0; scale: 0.3; }
+.rv.visible .iv-tip { opacity: 1; scale: 1; transition: opacity 0.4s ease 1.5s, scale 0.5s var(--ease-dramatic) 1.5s; }
+.iv-arc { stroke-dasharray: 0 100; }
+.rv.visible .iv-arc { stroke-dasharray: 85 15; transition: stroke-dasharray 1.5s var(--ease-dramatic) 0.8s; }
+.iv-ring { stroke-dasharray: 100; stroke-dashoffset: 100; }
+.rv.visible .iv-ring { stroke-dashoffset: 0; transition: stroke-dashoffset 1.2s ease 0.8s; }
+.iv-check { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.rv.visible .iv-check { stroke-dashoffset: 0; transition: stroke-dashoffset 0.5s ease 2s; }
+
+/* ── Results ascent: the curve draws, the ground tints, flags plant in turn ── */
+.ich-line { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.rv.visible .ich-line { stroke-dashoffset: 0; transition: stroke-dashoffset 2.4s cubic-bezier(0.45, 0, 0.25, 1) 0.4s; }
+.ich-area { opacity: 0; }
+.rv.visible .ich-area { opacity: 1; transition: opacity 1.4s ease 2s; }
+.ich-m { opacity: 0; transform: translateY(12px); transform-box: fill-box; }
+.rv.visible .ich-m { opacity: 1; transform: translateY(0); }
+.rv.visible .ich-m.m1 { transition: opacity 0.7s var(--ease-dramatic) 0.8s, transform 0.7s var(--ease-dramatic) 0.8s; }
+.rv.visible .ich-m.m2 { transition: opacity 0.7s var(--ease-dramatic) 1.25s, transform 0.7s var(--ease-dramatic) 1.25s; }
+.rv.visible .ich-m.m3 { transition: opacity 0.7s var(--ease-dramatic) 1.7s, transform 0.7s var(--ease-dramatic) 1.7s; }
+.rv.visible .ich-m.m4 { transition: opacity 0.7s var(--ease-dramatic) 2.15s, transform 0.7s var(--ease-dramatic) 2.15s; }
+.rv.visible .ich-m.m5 { transition: opacity 0.5s ease 2.6s; }
+.ich-halo { transform-box: fill-box; transform-origin: center; animation: ichHalo 2.6s ease-in-out infinite; }
+@keyframes ichHalo {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50%      { transform: scale(1.5); opacity: 1; }
+}
+@media (max-width: 768px) {
+  .imp-chart { display: none; }
+  .imp-mobile { display: grid !important; grid-template-columns: 1fr 1fr; margin-top: 8px; }
+}
+
+/* ── The intake machine: perpetual flow, staged entrance ── */
+.imf-flow { animation: imfFlow 1.6s linear infinite; }
+.imf-flow.f2 { animation-duration: 2s; }
+.imf-flow.f3 { animation-duration: 1.8s; }
+.imf-flow.f4 { animation-duration: 2.2s; }
+@keyframes imfFlow { to { stroke-dashoffset: -20; } }
+.imf-halo { transform-box: fill-box; transform-origin: center; animation: ichHalo2 3s ease-in-out infinite; }
+@keyframes ichHalo2 {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50%      { transform: scale(1.25); opacity: 1; }
+}
+.imf-chip, .imf-in, .imf-core, .imf-time, .imf-stat { opacity: 0; }
+.rv.visible .imf-chip, .rv.visible .imf-in, .rv.visible .imf-core, .rv.visible .imf-time, .rv.visible .imf-stat { opacity: 1; }
+.rv.visible .imf-chip.ch1 { transition: opacity 0.6s ease 0.3s; }
+.rv.visible .imf-chip.ch2 { transition: opacity 0.6s ease 0.45s; }
+.rv.visible .imf-chip.ch3 { transition: opacity 0.6s ease 0.6s; }
+.rv.visible .imf-chip.ch4 { transition: opacity 0.6s ease 0.75s; }
+.rv.visible .imf-in { transition: opacity 1s ease 0.9s; }
+.rv.visible .imf-core { transition: opacity 0.8s ease 1.2s; }
+.rv.visible .imf-time { transition: opacity 0.8s ease 1.6s; }
+.imf-oline { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.rv.visible .imf-oline { stroke-dashoffset: 0; transition: stroke-dashoffset 1.1s cubic-bezier(0.4, 0, 0.2, 1) 1.5s; }
+.rv.visible .imf-oline.o2 { transition-delay: 1.7s; }
+.rv.visible .imf-oline.o3 { transition-delay: 1.9s; }
+.rv.visible .imf-stat.s1 { transition: opacity 0.7s ease 2.5s; }
+.rv.visible .imf-stat.s2 { transition: opacity 0.7s ease 2.7s; }
+.rv.visible .imf-stat.s3 { transition: opacity 0.7s ease 2.9s; }
+
+/* ── The living map: dots sweep in, then breathe; families flash lime, live ── */
+.us-dot { opacity: 0; fill: rgba(43,42,38,0.32); transition: opacity 0.5s ease, fill 0.4s ease; transform-box: fill-box; transform-origin: center; }
+.rv.visible .us-dot {
+  opacity: 1;
+  animation-name: usBreath;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes usBreath {
+  0%, 100% { transform: scale(0.72); }
+  50%      { transform: scale(1.45); }
+}
+.us-dot.us-near { fill: rgba(184, 217, 58, 0.65); }
+.us-dot.us-live { fill: #B8D93A; animation-name: none; transform: scale(2.6); transition: opacity 0.5s ease, fill 0.4s ease, transform 0.5s ease; }
+
+/* ── The certificate opens via scroll-driven diagonal wipe (see Impact) ── */
