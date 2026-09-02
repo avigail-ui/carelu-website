@@ -1115,7 +1115,7 @@ nav .nav-link:first-child { margin-left: 12px; }
 .rv.visible .imf-stat.s3 { transition: opacity 0.7s ease 2.9s; }
 
 /* ── The living map: dots sweep in, then breathe; families flash lime, live ── */
-.us-dot { opacity: 0; fill: rgba(43,42,38,0.32); transition: opacity 0.5s ease, fill 0.4s ease; transform-box: fill-box; transform-origin: center; }
+.us-dot { opacity: 0; fill: #fff; transition: opacity 0.5s ease; transform-box: fill-box; transform-origin: center; }
 .rv.visible .us-dot {
   opacity: 1;
   animation-name: usBreath;
@@ -1126,7 +1126,30 @@ nav .nav-link:first-child { margin-left: 12px; }
   0%, 100% { transform: scale(0.72); }
   50%      { transform: scale(1.45); }
 }
-.us-dot.us-near { fill: rgba(184, 217, 58, 0.65); }
-.us-dot.us-live { fill: #B8D93A; animation-name: none; transform: scale(2.6); transition: opacity 0.5s ease, fill 0.4s ease, transform 0.5s ease; }
+
+.us-flash { opacity: 0; fill: #D4F25C; transform: scale(0.5); transform-box: fill-box; transform-origin: center; transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; }
+.us-flash.on { opacity: 0.95; transform: scale(1.9); }
+.us-sky { animation: skyDrift 50s ease-in-out infinite alternate; }
+@keyframes skyDrift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(150px); }
+}
 
 /* ── The certificate opens via scroll-driven diagonal wipe (see Impact) ── */
+
+
+/* ── Sky globe: drifting clouds inside the sphere, lime families on the land ── */
+.gl-sky-img { animation: glDrift 60s ease-in-out infinite alternate; }
+@keyframes glDrift {
+  from { transform: translateX(-3%) scale(1.06); }
+  to   { transform: translateX(3%) scale(1.06); }
+}
+.gl-city { fill: #D4F25C; stroke: rgba(43,42,38,0.4); stroke-width: 0.8; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(0.5); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; }
+.gl-city.on { opacity: 1; transform: scale(1.6); }
+
+/* Handoff card: each new family arrives with a soft rise */
+.ho-case { animation: hoCase 0.55s var(--ease-dramatic) both; }
+@keyframes hoCase {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

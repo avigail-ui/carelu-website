@@ -12,10 +12,16 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.3",
     "@aws-sdk/client-sesv2": "^3.1116.0",
+    "@types/d3-geo": "^3.1.1",
     "@types/matter-js": "^0.20.2",
+    "@types/topojson-client": "^3.1.5",
+    "d3-geo": "^3.1.1",
     "matter-js": "^0.20.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "topojson-client": "^3.1.0",
+    "us-atlas": "^3.0.1",
+    "world-atlas": "^2.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

@@ -1,6 +1,8 @@
 import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useReveal } from '../hooks/useReveal';
+import { geoOrthographic, geoPath, geoGraticule10, geoDistance, geoContains } from 'd3-geo';
+import { feature as topoFeature } from 'topojson-client';
 import { useSeo } from '../hooks/useSeo';
 import DemoModalHost from '../components/DemoModal';
 import SiteFooter from '../components/SiteFooter';
@@ -56,8 +58,8 @@ function useIsMobile() {
 
 
 // ── ANIMATED COUNTER ──
-function Counter({ target, suffix = '', prefix = '', from = 0, dur = 2200, delay = 0 }: {
-  target: number; suffix?: string; prefix?: string; from?: number; dur?: number; delay?: number;
+function Counter({ target, suffix = '', prefix = '', from = 0, dur = 2200, delay = 0, trigger = 0 }: {
+  target: number; suffix?: string; prefix?: string; from?: number; dur?: number; delay?: number; trigger?: number;
 }) {
   const [count, setCount] = useState(from);
   const ref = useRef<HTMLSpanElement>(null);
@@ -88,6 +90,21 @@ function Counter({ target, suffix = '', prefix = '', from = 0, dur = 2200, delay
     obs.observe(el);
     return () => { obs.disconnect(); cancelAnimationFrame(raf.current); clearTimeout(tmr.current); };
   }, [target, from, dur, delay]);
+  // Touching the number recounts it, instantly
+  useEffect(() => {
+    if (!trigger) return;
+    cancelAnimationFrame(raf.current);
+    clearTimeout(tmr.current);
+    setCount(from);
+    const t0 = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min((now - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setCount(Math.round(from + eased * (target - from)));
+      if (p < 1) raf.current = requestAnimationFrame(tick);
+    };
+    raf.current = requestAnimationFrame(tick);
+  }, [trigger, target, from, dur]);
   return <span ref={ref}>{prefix}{count.toLocaleString('en-US')}{suffix}</span>;
 }
 
@@ -912,32 +929,44 @@ function Problem() {
 // ── LIVE COUNTER — animated count-up on enter, live ticks afterwards ──
 function LiveCounter() {
   const target = getLiveCount();
-  const [count, setCount] = useState(0);
+  const START = Math.max(0, target - 240);
+  const [count, setCount] = useState(START);
   const [bumped, setBumped] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const ran = useRef(false);
 
-  // Animate from 0 → target when the counter scrolls into view
+  // Race from 0 → target every time the counter scrolls into view — or is touched
+  const rafRef = useRef(0);
+  const raceRef = useRef<() => void>(() => {});
   useEffect(() => {
+    const race = () => {
+      cancelAnimationFrame(rafRef.current);
+      setCount(START);
+      const dur = 1100;
+      const t0 = performance.now();
+      const tick = (now: number) => {
+        const p = Math.min((now - t0) / dur, 1);
+        // ease-out: the last digits spin briefly, then settle
+        const eased = 1 - Math.pow(1 - p, 3);
+        setCount(Math.round(START + eased * (target - START)));
+        if (p < 1) rafRef.current = requestAnimationFrame(tick);
+      };
+      rafRef.current = requestAnimationFrame(tick);
+    };
+    raceRef.current = race;
     const el = ref.current; if (!el) return;
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !ran.current) {
+      if (e.isIntersecting) {
         ran.current = true;
-        const dur = 2200;
-        const t0 = performance.now();
-        (function tick(now: number) {
-          const p = Math.min((now - t0) / dur, 1);
-          // ease-out quart for a "racing then settling" feel
-          const eased = 1 - Math.pow(1 - p, 4);
-          setCount(Math.round(eased * target));
-          if (p < 1) requestAnimationFrame(tick);
-        })(t0);
-        obs.disconnect();
+        race();
+      } else {
+        cancelAnimationFrame(rafRef.current);
+        setCount(START);
       }
     }, { threshold: 0.3 });
     obs.observe(el);
-    return () => obs.disconnect();
-  }, [target]);
+    return () => { obs.disconnect(); cancelAnimationFrame(rafRef.current); };
+  }, [target, START]);
 
   // After the initial count-up, keep ticking live every ~6s with a subtle "bump" cue
   useEffect(() => {
@@ -952,10 +981,10 @@ function LiveCounter() {
   }, []);
 
   return (
-    <div ref={ref} className="rv-scale" style={{ textAlign: 'center' }}>
+    <div ref={ref} className="rv-scale" style={{ textAlign: 'center', cursor: 'default' }} onMouseEnter={() => { if (ran.current) raceRef.current(); }}>
       <div style={{
         fontFamily: 'var(--font-display)',
-        fontSize: 'clamp(38px, 4vw, 54px)',
+        fontSize: 'clamp(32px, 3.2vw, 44px)',
         fontWeight: 400,
         color: 'var(--green-900)',
         lineHeight: 1,
@@ -969,14 +998,14 @@ function LiveCounter() {
         {count.toLocaleString()}+
       </div>
       <div style={{
-        marginTop: 16,
-        fontSize: 14.5, fontWeight: 400, letterSpacing: '0.01em',
+        marginTop: 10,
+        fontSize: 13.5, fontWeight: 400, letterSpacing: '0.01em',
         color: 'var(--green-900)', opacity: 0.6,
       }}>
         families connected to care across {HERO_STATES} states
       </div>
       <div style={{
-        marginTop: 14,
+        marginTop: 10,
         display: 'inline-flex', alignItems: 'center', gap: 7,
       }}>
         <span className="dot-pulse" style={{
@@ -1172,32 +1201,51 @@ function ChannelIcon({ name }: { name: string }) {
 }
 
 // ── HANDOFF VISUAL — patient card with animated 5-step progress ribbon + team handoff footer ──
+const HANDOFF_CASES = [
+  { init: 'JM', name: 'Jake M., age 4', detail: 'Blue Cross PPO \u00b7 ABA Therapy' },
+  { init: 'MR', name: 'Mia R., age 6', detail: 'Aetna HMO \u00b7 Initial assessment' },
+  { init: 'NK', name: 'Noah K., age 3', detail: 'United \u00b7 ABA Therapy' },
+  { init: 'AT', name: 'Ava T., age 5', detail: 'Cigna PPO \u00b7 Re-evaluation' },
+];
+
 function HandoffVisual() {
   const milestones = ['Intake', 'Insurance', 'Forms', 'Schedule', 'Ready'];
   const [filled, setFilled] = useState(0);
+  const [caseIdx, setCaseIdx] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
+  // A living intake desk: each case completes, hands off, and the next
+  // family arrives — looping for as long as the card is on screen.
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    let interval: ReturnType<typeof setInterval> | undefined;
-    let ran = false;
+    const el = ref.current; if (!el) return;
+    let running = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    let p = 0;
+    const step = () => {
+      if (!running) return;
+      if (p < milestones.length) {
+        p++;
+        setFilled(p);
+        timer = setTimeout(step, p === milestones.length ? 3000 : 430);
+      } else {
+        p = 0;
+        setFilled(0);
+        setCaseIdx((i) => (i + 1) % HANDOFF_CASES.length);
+        timer = setTimeout(step, 750);
+      }
+    };
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !ran) {
-        ran = true;
-        let p = 0;
-        interval = setInterval(() => {
-          p++;
-          setFilled(p);
-          if (p >= milestones.length) {
-            if (interval) clearInterval(interval);
-          }
-        }, 280);
-        obs.disconnect();
+      if (e.isIntersecting && !running) {
+        running = true;
+        timer = setTimeout(step, 400);
+      } else if (!e.isIntersecting && running) {
+        running = false;
+        if (timer) clearTimeout(timer);
       }
     }, VISUAL_IN_VIEW);
     obs.observe(el);
-    return () => { obs.disconnect(); if (interval) clearInterval(interval); };
+    return () => { obs.disconnect(); if (timer) clearTimeout(timer); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const teamAvatars: { initials: string; bg: string }[] = [
@@ -1290,7 +1338,7 @@ function HandoffVisual() {
         </div>
 
         {/* Patient identity — clean horizontal row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 36 }}>
+        <div key={caseIdx} className="ho-case" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 36 }}>
           <div style={{
             width: 52, height: 52, borderRadius: '50%',
             background: 'linear-gradient(135deg, #F4F1EA 0%, #E9E4D6 100%)',
@@ -1299,13 +1347,13 @@ function HandoffVisual() {
             letterSpacing: '0.02em',
             color: 'var(--green-900)', flexShrink: 0,
             boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          }}>JM</div>
+          }}>{HANDOFF_CASES[caseIdx].init}</div>
           <div style={{ minWidth: 0 }}>
             <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)', marginBottom: 3 }}>
-              Jake M., age 4
+              {HANDOFF_CASES[caseIdx].name}
             </div>
             <div style={{ fontSize: 13, color: 'var(--gray-500)' }}>
-              Blue Cross PPO · ABA Therapy
+              {HANDOFF_CASES[caseIdx].detail}
             </div>
           </div>
         </div>
@@ -2120,196 +2168,243 @@ function Outcomes() {
 }
 
 
-// The continental silhouette, drawn as a coarse dot matrix (pointillist, abstract)
-const US_MAP = [
-  '     ###########################             ',
-  '   ##############################      #     ',
-  '  ################################    ###    ',
-  '  #################################  #####   ',
-  '  ########################################   ',
-  ' #########################################   ',
-  ' ########################################    ',
-  ' #######################################     ',
-  '  #####################################      ',
-  '  ####################################       ',
-  '   ###################################       ',
-  '   ##################################        ',
-  '    ################################         ',
-  '     #########################  ####         ',
-  '      ##############  ########   ###         ',
-  '       ####  ######    ######     ###        ',
-  '             #####      ####       ###       ',
-  '             ####                   ##       ',
-  '              ###                    ##      ',
-  '              ##                      #      ',
+// A handful of real cities where families keep lighting up on the globe
+const GLOBE_CITIES: [number, number][] = [
+  [-74.0, 40.7], [-87.6, 41.9], [-95.4, 29.8], [-112.1, 33.5], [-75.2, 39.9],
+  [-98.5, 29.4], [-117.2, 32.7], [-96.8, 32.8], [-121.9, 37.3], [-97.5, 35.5],
+  [-86.8, 36.2], [-90.0, 35.1], [-84.4, 33.7], [-80.2, 25.8], [-81.7, 30.3],
+  [-104.9, 39.7], [-122.3, 47.6], [-115.1, 36.2], [-93.3, 45.0], [-71.1, 42.4],
+  [-78.6, 35.8], [-82.5, 27.9], [-89.9, 30.0], [-119.8, 36.7], [-105.0, 40.6],
 ];
 
-// Rough state regions over the dot grid (grid is 44x20; first match wins).
-// Approximate by design — the map itself is a pointillist abstraction.
-const US_REGIONS: { n: string; x0: number; x1: number; y0: number; y1: number }[] = [
-  { n: 'Washington', x0: 3, x1: 9, y0: 0, y1: 2 },
-  { n: 'Oregon', x0: 2, x1: 8, y0: 3, y1: 5 },
-  { n: 'California', x0: 1, x1: 7, y0: 6, y1: 13 },
-  { n: 'Idaho', x0: 9, x1: 12, y0: 1, y1: 5 },
-  { n: 'Nevada', x0: 7, x1: 10, y0: 5, y1: 9 },
-  { n: 'Utah', x0: 10, x1: 12, y0: 6, y1: 9 },
-  { n: 'Arizona', x0: 8, x1: 12, y0: 10, y1: 14 },
-  { n: 'Montana', x0: 12, x1: 18, y0: 0, y1: 3 },
-  { n: 'Wyoming', x0: 12, x1: 17, y0: 4, y1: 6 },
-  { n: 'Colorado', x0: 13, x1: 17, y0: 7, y1: 9 },
-  { n: 'New Mexico', x0: 13, x1: 17, y0: 10, y1: 12 },
-  { n: 'North Dakota', x0: 18, x1: 21, y0: 0, y1: 2 },
-  { n: 'South Dakota', x0: 18, x1: 21, y0: 3, y1: 5 },
-  { n: 'Nebraska', x0: 18, x1: 22, y0: 6, y1: 7 },
-  { n: 'Kansas', x0: 18, x1: 22, y0: 8, y1: 9 },
-  { n: 'Oklahoma', x0: 18, x1: 22, y0: 10, y1: 11 },
-  { n: 'Texas', x0: 12, x1: 22, y0: 12, y1: 19 },
-  { n: 'Minnesota', x0: 22, x1: 25, y0: 0, y1: 3 },
-  { n: 'Wisconsin', x0: 25, x1: 28, y0: 1, y1: 4 },
-  { n: 'Iowa', x0: 22, x1: 25, y0: 5, y1: 7 },
-  { n: 'Missouri', x0: 22, x1: 26, y0: 8, y1: 10 },
-  { n: 'Arkansas', x0: 23, x1: 26, y0: 11, y1: 12 },
-  { n: 'Louisiana', x0: 22, x1: 26, y0: 13, y1: 16 },
-  { n: 'Illinois', x0: 26, x1: 28, y0: 5, y1: 9 },
-  { n: 'Mississippi', x0: 26, x1: 28, y0: 11, y1: 15 },
-  { n: 'Michigan', x0: 28, x1: 32, y0: 1, y1: 4 },
-  { n: 'Indiana', x0: 28, x1: 30, y0: 5, y1: 8 },
-  { n: 'Kentucky', x0: 28, x1: 31, y0: 8, y1: 9 },
-  { n: 'Tennessee', x0: 27, x1: 32, y0: 10, y1: 10 },
-  { n: 'Alabama', x0: 28, x1: 31, y0: 11, y1: 15 },
-  { n: 'Ohio', x0: 30, x1: 33, y0: 5, y1: 7 },
-  { n: 'Georgia', x0: 31, x1: 34, y0: 11, y1: 13 },
-  { n: 'Florida', x0: 32, x1: 40, y0: 14, y1: 19 },
-  { n: 'South Carolina', x0: 32, x1: 35, y0: 10, y1: 12 },
-  { n: 'North Carolina', x0: 31, x1: 37, y0: 9, y1: 10 },
-  { n: 'Virginia', x0: 31, x1: 37, y0: 8, y1: 8 },
-  { n: 'West Virginia', x0: 31, x1: 33, y0: 7, y1: 7 },
-  { n: 'Pennsylvania', x0: 32, x1: 37, y0: 5, y1: 6 },
-  { n: 'New York', x0: 33, x1: 38, y0: 3, y1: 4 },
-  { n: 'Maine', x0: 38, x1: 44, y0: 0, y1: 3 },
-  { n: 'New England', x0: 36, x1: 42, y0: 4, y1: 5 },
-  { n: 'New Jersey', x0: 34, x1: 39, y0: 6, y1: 7 },
-];
 const stateFamilies = (name: string) => {
   let h = 0;
   for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
   return 800 + (h % 4200);
 };
 
-// ── IMPACT — the living map of families ──────────
-function Impact() {
+/* The sky globe: an orthographic Earth textured with the hero sky. It spins
+   once around the world on arrival, settles facing the United States, sways
+   gently, holds still under the cursor, and names the state you touch. */
+function SkyGlobe() {
+  const svgRef = useRef<SVGSVGElement>(null);
   const tipRef = useRef<HTMLDivElement>(null);
-  // Every second or so, somewhere in the country, a family lights up
-  const mapRef = useRef<SVGSVGElement>(null);
+  const [geo, setGeo] = useState<{ world: object; states: { features: { properties: { name: string } }[] } } | null>(null);
+
   useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
-    const flash = () => {
-      const svg = mapRef.current;
-      if (svg && !document.hidden) {
-        const dots = svg.querySelectorAll('.us-dot');
-        const n = Math.random() < 0.35 ? 3 : 2;
-        for (let i = 0; i < n && dots.length; i++) {
-          const d = dots[Math.floor(Math.random() * dots.length)];
-          d.classList.add('us-live');
-          setTimeout(() => d.classList.remove('us-live'), 2100);
-        }
-      }
-      timer = setTimeout(flash, 500 + Math.random() * 1100);
-    };
-    timer = setTimeout(flash, 800);
-    return () => clearTimeout(timer);
+    let alive = true;
+    Promise.all([
+      fetch('/data/world.json').then((r) => r.json()),
+      fetch('/data/us-states48.geo.json').then((r) => r.json()),
+    ]).then(([worldTopo, states]) => {
+      if (!alive) return;
+      const world = topoFeature(worldTopo, worldTopo.objects.countries);
+      setGeo({ world, states });
+    }).catch(() => {});
+    return () => { alive = false; };
   }, []);
 
-  // Hover ripple: dots rise toward the cursor and tint as it passes
   useEffect(() => {
-    const svg = mapRef.current; if (!svg) return;
+    if (!geo) return;
+    const svg = svgRef.current; if (!svg) return;
+    const projection = geoOrthographic().translate([250, 251]).scale(450).clipAngle(90);
+    const path = geoPath(projection);
+    const graticule = geoGraticule10();
+    const pGrat = svg.querySelector('.gl-grat') as SVGPathElement;
+    const pWorld = svg.querySelector('.gl-world') as SVGPathElement;
+    const pStates = svg.querySelector('.gl-states') as SVGPathElement;
+    const pHi = svg.querySelector('.gl-hi') as SVGPathElement;
+    const cityEls = Array.from(svg.querySelectorAll<SVGCircleElement>('.gl-city'));
+
+    const INTRO = 3.6;
     let raf = 0;
-    let dots: { el: SVGCircleElement; x: number; y: number }[] | null = null;
-    const collect = () => {
-      dots = Array.from(svg.querySelectorAll<SVGCircleElement>('.us-dot')).map((el) => ({
-        el, x: parseFloat(el.getAttribute('cx') || '0'), y: parseFloat(el.getAttribute('cy') || '0'),
-      }));
-    };
-    const onMove = (e: MouseEvent) => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        if (!dots) collect();
-        const rect = svg.getBoundingClientRect();
-        const mx = ((e.clientX - rect.left) / rect.width) * 880;
-        const my = ((e.clientY - rect.top) / rect.height) * 420;
-        for (const d of dots!) {
-          const dist = Math.hypot(d.x - mx, d.y - my);
-          const f = Math.exp(-(dist * dist) / (2 * 70 * 70));
-          d.el.setAttribute('r', String(3.1 * (1 + 0.45 * f)));
-          if (dist < 22) d.el.classList.add('us-near');
-          else d.el.classList.remove('us-near');
-        }
-        // The magnifier: name the state under the cursor
-        const tip = tipRef.current;
-        if (tip) {
-          const gx = Math.round((mx - 20) / 19);
-          const gy = Math.round((my - 20) / 19);
-          const region = US_REGIONS.find((rg) => gx >= rg.x0 && gx <= rg.x1 && gy >= rg.y0 && gy <= rg.y1);
-          const overDot = dots!.some((d) => Math.hypot(d.x - mx, d.y - my) < 22);
-          if (region && overDot) {
-            const wrap = svg.parentElement as HTMLElement;
-            const wr = wrap.getBoundingClientRect();
-            tip.style.left = `${e.clientX - wr.left}px`;
-            tip.style.top = `${e.clientY - wr.top - 14}px`;
-            tip.style.opacity = '1';
-            tip.style.transform = 'translate(-50%, -100%) scale(1)';
-            (tip.querySelector('.tip-state') as HTMLElement).textContent = region.n;
-            (tip.querySelector('.tip-count') as HTMLElement).textContent =
-              `${stateFamilies(region.n).toLocaleString()} FAMILIES CONNECTED`;
-          } else {
-            tip.style.opacity = '0';
-            tip.style.transform = 'translate(-50%, -100%) scale(0.94)';
-          }
+    let animT = 0;
+    let last = performance.now();
+    let started = false;
+    let hovering = false;
+    let lam = 98 + 360, phi = -16;
+
+    const render = () => {
+      if (animT < INTRO) {
+        const e = 1 - Math.pow(1 - animT / INTRO, 3);
+        lam = 98 + (1 - e) * 360;
+        phi = -16 - 22 * e;
+      } else {
+        const t2 = animT - INTRO;
+        lam = 98 + Math.sin(t2 * 0.10) * 5;
+        phi = -38 + Math.cos(t2 * 0.07) * 2;
+      }
+      projection.rotate([lam, phi]);
+      pGrat.setAttribute('d', path(graticule) || '');
+      pWorld.setAttribute('d', path(geo.world as never) || '');
+      pStates.setAttribute('d', path(geo.states as never) || '');
+      const center: [number, number] = [-lam, -phi];
+      GLOBE_CITIES.forEach((c, i) => {
+        const el = cityEls[i]; if (!el) return;
+        const pt = projection(c);
+        if (pt && geoDistance(c, center) < 1.45) {
+          el.setAttribute('cx', String(pt[0]));
+          el.setAttribute('cy', String(pt[1]));
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
         }
       });
     };
+
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) started = true; }, { threshold: 0.35 });
+    io.observe(svg);
+
+    const tick = (now: number) => {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+      if (started && !hovering) animT += dt;
+      render();
+      raf = requestAnimationFrame(tick);
+    };
+    render();
+    raf = requestAnimationFrame(tick);
+
+    // Hover: name the state under the cursor; the globe holds still meanwhile
+    const onMove = (e: MouseEvent) => {
+      const tip = tipRef.current; if (!tip) return;
+      const rect = svg.getBoundingClientRect();
+      const vx = ((e.clientX - rect.left) / rect.width) * 500;
+      const vy = ((e.clientY - rect.top) / rect.height) * 500;
+      const ll = projection.invert ? projection.invert([vx, vy]) : null;
+      let found: { properties: { name: string } } | null = null;
+      if (ll && animT >= INTRO) {
+        const back = projection(ll);
+        if (back && Math.hypot(back[0] - vx, back[1] - vy) < 1) {
+          for (const f of geo.states.features) {
+            if (geoContains(f as never, ll as [number, number])) { found = f; break; }
+          }
+        }
+      }
+      hovering = !!found;
+      if (found) {
+        pHi.setAttribute('d', path(found as never) || '');
+        // Pin the card to the state itself — its centroid on the globe
+        const c = path.centroid(found as never);
+        const wrap = svg.parentElement as HTMLElement;
+        const wr = wrap.getBoundingClientRect();
+        tip.style.left = `${(c[0] / 500) * wr.width}px`;
+        tip.style.top = `${(c[1] / 500) * wr.height - 14}px`;
+        tip.style.opacity = '1';
+        tip.style.transform = 'translate(-50%, -100%) scale(1)';
+        (tip.querySelector('.tip-state') as HTMLElement).textContent = found.properties.name;
+        (tip.querySelector('.tip-count') as HTMLElement).textContent =
+          `${stateFamilies(found.properties.name).toLocaleString()} FAMILIES CONNECTED`;
+      } else {
+        pHi.setAttribute('d', '');
+        tip.style.opacity = '0';
+        tip.style.transform = 'translate(-50%, -100%) scale(0.94)';
+      }
+    };
     const onLeave = () => {
-      cancelAnimationFrame(raf);
+      hovering = false;
+      pHi.setAttribute('d', '');
       const tip = tipRef.current;
       if (tip) { tip.style.opacity = '0'; tip.style.transform = 'translate(-50%, -100%) scale(0.94)'; }
-      if (!dots) return;
-      for (const d of dots) { d.el.setAttribute('r', '3.1'); d.el.classList.remove('us-near'); }
     };
     svg.addEventListener('mousemove', onMove);
     svg.addEventListener('mouseleave', onLeave);
+
     return () => {
       cancelAnimationFrame(raf);
+      io.disconnect();
       svg.removeEventListener('mousemove', onMove);
       svg.removeEventListener('mouseleave', onLeave);
     };
-  }, []);
+  }, [geo]);
+
+  // Families flashing at real cities
+  useEffect(() => {
+    if (!geo) return;
+    const svg = svgRef.current; if (!svg) return;
+    let timer: ReturnType<typeof setTimeout>;
+    const flash = () => {
+      if (!document.hidden) {
+        const cities = svg.querySelectorAll('.gl-city');
+        const el = cities[Math.floor(Math.random() * cities.length)];
+        if (el && (el as SVGElement).style.display !== 'none') {
+          el.classList.add('on');
+          setTimeout(() => el.classList.remove('on'), 1900);
+        }
+      }
+      timer = setTimeout(flash, 700 + Math.random() * 1200);
+    };
+    timer = setTimeout(flash, 900);
+    return () => clearTimeout(timer);
+  }, [geo]);
+
+  return (
+    <div className="gl-wrap" style={{
+      position: 'relative', width: 'min(330px, 80%)', margin: '0 auto',
+      aspectRatio: '1 / 1',
+    }}>
+      <div className="gl-sky" aria-hidden="true" style={{
+        position: 'absolute', inset: 0, borderRadius: '50%', overflow: 'hidden',
+        boxShadow: 'inset -18px -24px 60px rgba(20,30,35,0.28), inset 10px 14px 44px rgba(255,255,255,0.35), 0 0 0 1px rgba(43,42,38,0.10)',
+      }}>
+        <div className="gl-sky-img" style={{
+          position: 'absolute', inset: '-12%',
+          backgroundImage: 'url(/hero-sky.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 58%',
+        }} />
+      </div>
+      <svg ref={svgRef} viewBox="0 0 500 500" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible', cursor: 'crosshair' }} aria-hidden="true" fill="none">
+        <path className="gl-grat" stroke="rgba(255,255,255,0.28)" strokeWidth="0.5" />
+        <path className="gl-world" fill="rgba(250,248,243,0.14)" stroke="rgba(255,255,255,0.45)" strokeWidth="0.6" />
+        <path className="gl-states" fill="rgba(250,248,243,0.22)" stroke="#FFFFFF" strokeWidth="0.9" strokeLinejoin="round" />
+        <path className="gl-hi" fill="rgba(212,242,92,0.30)" stroke="#FFFFFF" strokeWidth="1.3" strokeLinejoin="round" style={{ pointerEvents: 'none' }} />
+        {GLOBE_CITIES.map((_, i) => (
+          <circle key={i} className="gl-city" r="3.6" />
+        ))}
+      </svg>
+      <div ref={tipRef} aria-hidden="true" style={{
+        position: 'absolute', left: 0, top: 0, opacity: 0, pointerEvents: 'none',
+        transform: 'translate(-50%, -100%) scale(0.94)',
+        transition: 'opacity 0.25s ease, transform 0.25s var(--ease-dramatic)',
+        background: '#FFFFFF', border: '1px solid rgba(43,42,38,0.10)',
+        borderRadius: 14, padding: '10px 18px 9px', textAlign: 'center',
+        boxShadow: '0 8px 28px rgba(30,30,25,0.12)', zIndex: 5, whiteSpace: 'nowrap',
+      }}>
+        <div className="tip-state" style={{ fontFamily: 'var(--font-display)', fontSize: 18, color: '#1c1b18', lineHeight: 1.2 }} />
+        <div className="tip-count" style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.12em', color: 'rgba(43,42,38,0.55)', marginTop: 3 }} />
+        <div aria-hidden="true" style={{
+          position: 'absolute', left: '50%', bottom: -5.5, width: 10, height: 10,
+          background: '#FFFFFF', transform: 'translateX(-50%) rotate(45deg)',
+          borderRight: '1px solid rgba(43,42,38,0.10)', borderBottom: '1px solid rgba(43,42,38,0.10)',
+        }} />
+      </div>
+    </div>
+  );
+}
+
+// ── IMPACT — the living map of families ──────────
+function Impact() {
+  // Hovering a stat replays its count
+  const [kick, setKick] = useState([0, 0, 0, 0]);
   return (
     <section id="results" style={{
-      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      position: 'relative', paddingTop: 'clamp(40px, 5vh, 60px)', paddingBottom: 'clamp(40px, 5vh, 60px)',
       background: 'var(--bone)',
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
         {/* Header — tighter spacing so it doesn't float disconnected from the data */}
-        <div style={{ textAlign: 'center', marginBottom: 26 }}>
+        <div style={{ textAlign: 'center', marginBottom: 14 }}>
           <div className="rv"><Pill>Proven results</Pill></div>
           <div className="impact-head" style={{
             display: 'inline-flex', alignItems: 'center', gap: 0,
-            marginTop: 12,
+            marginTop: 8,
           }}>
             <h2 className="rv-scale d1" style={{
               fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
               fontWeight: 400, color: 'var(--green-900)',
               lineHeight: 1.12, letterSpacing: '-0.02em', margin: 0,
             }}>
-              The results speak louder than we can.
+              The results speak louder <span style={{ fontStyle: 'italic', fontWeight: 400, whiteSpace: 'nowrap' }}>than we can.</span>
             </h2>
-            <img
-              className="rv-scale h2-doodle"
-              src="/results-illustration.svg"
-              alt=""
-              aria-hidden="true"
-              style={{ width: 88, height: 'auto', display: 'block', flexShrink: 0, margin: '-14px 0 -14px 18px' }}
-            />
           </div>
         </div>
 
@@ -2326,45 +2421,15 @@ function Impact() {
 
           {/* The living map — the country drawn in dots; families keep lighting
               up across it, live, while you watch */}
-          <div className="imp-chart" style={{ marginTop: 'clamp(22px, 3vw, 38px)', position: 'relative' }}>
-            <div ref={tipRef} aria-hidden="true" style={{
-              position: 'absolute', left: 0, top: 0, opacity: 0, pointerEvents: 'none',
-              transform: 'translate(-50%, -100%) scale(0.94)',
-              transition: 'opacity 0.25s ease, transform 0.25s var(--ease-dramatic)',
-              background: '#FFFFFF', border: '1px solid rgba(43,42,38,0.12)',
-              borderRadius: 12, padding: '10px 16px 9px', textAlign: 'center',
-              boxShadow: '0 6px 24px rgba(30,30,25,0.08)', zIndex: 5, whiteSpace: 'nowrap',
-            }}>
-              <div className="tip-state" style={{ fontFamily: 'var(--font-display)', fontSize: 19, color: '#1c1b18', lineHeight: 1.2 }} />
-              <div className="tip-count" style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.12em', color: 'rgba(43,42,38,0.55)', marginTop: 4 }} />
-            </div>
-            <svg ref={mapRef} viewBox="0 0 880 420" style={{ width: 'min(560px, 100%)', height: 'auto', display: 'block', margin: '0 auto', overflow: 'visible' }} fill="none" aria-hidden="true">
-              {US_MAP.map((row, y) =>
-                row.split('').map((c, x) =>
-                  c === '#' ? (
-                    <circle
-                      key={`${x}-${y}`}
-                      className="us-dot"
-                      cx={20 + x * 19}
-                      cy={20 + y * 19}
-                      r={3.1}
-                      style={{
-                        transitionDelay: `${0.2 + x * 0.028 + ((x * 7 + y * 13) % 5) * 0.05}s`,
-                        animationDuration: `${3.2 + ((x * 5 + y * 11) % 24) / 10}s`,
-                        animationDelay: `-${((x * 13 + y * 7) % 50) / 10}s`,
-                      }}
-                    />
-                  ) : null
-                )
-              )}
-            </svg>
+          <div className="imp-chart" style={{ marginTop: 14 }}>
+            <SkyGlobe />
           </div>
 
           {/* The proofs — one quiet line beneath the country */}
           <div className="imp-statrow" style={{
             display: 'flex', justifyContent: 'center', alignItems: 'baseline',
             flexWrap: 'wrap', columnGap: 'clamp(36px, 5vw, 72px)', rowGap: 28,
-            marginTop: 'clamp(22px, 3vw, 34px)', textAlign: 'center',
+            marginTop: 'clamp(40px, 5vh, 64px)', textAlign: 'center',
           }}>
             {[
               { v: 3, sx: '\u00d7', t: 'More families admitted', f: 0, dl: 600, dr: 1600 },
@@ -2372,9 +2437,11 @@ function Impact() {
               { v: 85, sx: '%', t: 'Intake completion lift', f: 0, dl: 900, dr: 1900 },
               { v: 0, sx: '', t: 'Manual follow-ups', f: 14, dl: 1050, dr: 2000 },
             ].map((x, i) => (
-              <div key={x.t} className={`rv d${i + 1}`}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 2.4vw, 34px)', color: '#1c1b18', lineHeight: 1, fontVariantNumeric: 'lining-nums tabular-nums' }}>
-                  <Counter target={x.v} suffix={x.sx} prefix={x.px || ''} from={x.f} delay={x.dl} dur={x.dr} />
+              <div key={x.t} className={`rv d${i + 1}`} style={{ cursor: 'default' }}
+                onMouseEnter={() => setKick((k) => k.map((v, j) => (j === i ? v + 1 : v)))}
+              >
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(23px, 2vw, 29px)', color: '#1c1b18', lineHeight: 1, fontVariantNumeric: 'lining-nums tabular-nums' }}>
+                  <Counter target={x.v} suffix={x.sx} prefix={x.px || ''} from={x.f} delay={x.dl} dur={x.dr} trigger={kick[i]} />
                 </div>
                 <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(43,42,38,0.6)', marginTop: 10 }}>{x.t}</div>
               </div>
