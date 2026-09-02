@@ -125,25 +125,94 @@ function Hero() {
   );
 }
 
-/* ── SCALE — live counter + stat rules ── */
+/* ── SCALE — live counter + stat rules, fully alive ── */
+// Small counting number: races on view, recounts on hover
+function CCount({ target, prefix = '', suffix = '', delay = 0, dur = 1600, kick = 0 }: {
+  target: number; prefix?: string; suffix?: string; delay?: number; dur?: number; kick?: number;
+}) {
+  const [n, setN] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const raf = useRef(0);
+  const tmr = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const run = (withDelay: number) => {
+    cancelAnimationFrame(raf.current);
+    clearTimeout(tmr.current);
+    setN(0);
+    tmr.current = setTimeout(() => {
+      const t0 = performance.now();
+      const tick = (now: number) => {
+        const p = Math.min((now - t0) / dur, 1);
+        setN(Math.round((1 - Math.pow(1 - p, 3)) * target));
+        if (p < 1) raf.current = requestAnimationFrame(tick);
+      };
+      raf.current = requestAnimationFrame(tick);
+    }, withDelay);
+  };
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) run(delay);
+      else { cancelAnimationFrame(raf.current); clearTimeout(tmr.current); setN(0); }
+    }, { threshold: 0.4 });
+    obs.observe(el);
+    return () => { obs.disconnect(); cancelAnimationFrame(raf.current); clearTimeout(tmr.current); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [target, delay, dur]);
+  useEffect(() => { if (kick) run(0); // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [kick]);
+  return <span ref={ref}>{prefix}{n}{suffix}</span>;
+}
+
 function Scale() {
-  const [count, setCount] = useState(getLiveCount);
+  const target = getLiveCount();
+  const START = Math.max(0, target - 240);
+  const [count, setCount] = useState(START);
+  const [kick, setKick] = useState([0, 0, 0]);
   const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => { const i = setInterval(() => setCount(getLiveCount()), 8000); return () => clearInterval(i); }, []);
+  const raf = useRef(0);
+  const raceRef = useRef<() => void>(() => {});
+
+  // Live ticks
+  useEffect(() => { const i = setInterval(() => setCount((c) => Math.max(c, getLiveCount())), 8000); return () => clearInterval(i); }, []);
+
+  // The big number settles its trailing digits on arrival — and on touch
+  useEffect(() => {
+    const race = () => {
+      cancelAnimationFrame(raf.current);
+      setCount(START);
+      const dur = 1100;
+      const t0 = performance.now();
+      const tick = (now: number) => {
+        const p = Math.min((now - t0) / dur, 1);
+        setCount(Math.round(START + (1 - Math.pow(1 - p, 3)) * (target - START)));
+        if (p < 1) raf.current = requestAnimationFrame(tick);
+      };
+      raf.current = requestAnimationFrame(tick);
+    };
+    raceRef.current = race;
+    const el = ref.current; if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) race();
+      else { cancelAnimationFrame(raf.current); setCount(START); }
+    }, { threshold: 0.3 });
+    obs.observe(el);
+    return () => { obs.disconnect(); cancelAnimationFrame(raf.current); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [target, START]);
 
   const stats = [
-    { v: '85%', l: 'Family completion rate', s: 'Industry average is under 30%.' },
-    { v: '3×', l: 'More families admitted', s: 'Same team, same hours.' },
-    { v: '<10 min', l: 'First contact to intake-ready', s: 'What used to take days.' },
+    { v: 85, sx: '%', l: 'Family completion rate', s: 'Industry average is under 30%.', dl: 500, dr: 1700 },
+    { v: 3, sx: '\u00d7', l: 'More families admitted', s: 'Same team, same hours.', dl: 650, dr: 1500 },
+    { v: 10, px: '<', sx: ' min', l: 'First contact to intake-ready', s: 'What used to take days.', dl: 800, dr: 1700 },
   ];
 
   return (
     <section style={{ background: BONE, paddingTop: 'clamp(40px, 6vw, 72px)', paddingBottom: 'clamp(48px, 6vw, 88px)' }}>
       <div ref={ref} style={{ ...W, textAlign: 'center' }}>
-        <div className="rv-scale" style={{
-          fontFamily: 'var(--font-display)', fontSize: 'clamp(64px, 10vw, 128px)',
+        <div className="rv-scale" onMouseEnter={() => raceRef.current()} style={{
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(46px, 6vw, 84px)',
           color: INK, lineHeight: 1, letterSpacing: '-0.03em', fontWeight: 400,
-          fontVariantNumeric: 'lining-nums tabular-nums',
+          fontVariantNumeric: 'lining-nums tabular-nums', cursor: 'default',
         }}>
           {count.toLocaleString()}+
         </div>
@@ -155,15 +224,26 @@ function Scale() {
           <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: INK, opacity: 0.5 }}>Live</span>
         </div>
 
+        {/* The rule draws itself across, pinned by ink at one end and life at the other */}
+        <div className="rv" style={{ position: 'relative', maxWidth: 780, margin: '48px auto 0' }}>
+          <div className="imp-divider" style={{ height: 1, background: HAIR }} />
+          <span className="imp-dot" style={{ position: 'absolute', top: 0.5, left: 0, width: 5, height: 5, borderRadius: '50%', background: INK, transform: 'translate(-50%, -50%)' }} />
+          <span className="imp-dot dot-pulse" style={{ position: 'absolute', top: 0.5, right: 0, width: 7, height: 7, borderRadius: '50%', background: LIME, border: '1px solid rgba(43,42,38,0.35)', boxShadow: '0 0 0 3px rgba(212, 242, 92, 0.3)', transform: 'translate(50%, -50%)' }} />
+        </div>
+
         <div className="cc-stats" style={{
           display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0,
-          maxWidth: 920, margin: '56px auto 0', borderTop: `1px solid ${HAIR}`, paddingTop: 8,
+          maxWidth: 780, margin: '0 auto', paddingTop: 8,
         }}>
           {stats.map((s, i) => (
-            <div key={s.l} className={`rv d${i + 1}`} style={{ padding: 'clamp(24px, 3vw, 36px) 24px', borderLeft: i === 0 ? 'none' : `1px solid ${HAIR}` }}>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 48px)', color: INK, lineHeight: 1, fontWeight: 400 }}>{s.v}</div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: INK, marginTop: 12 }}>{s.l}</div>
-              <div style={{ fontSize: 13, color: MUTED, lineHeight: 1.5, marginTop: 5 }}>{s.s}</div>
+            <div key={s.l} className={`rv d${i + 1}`} style={{ padding: 'clamp(24px, 3vw, 36px) 24px', borderLeft: i === 0 ? 'none' : `1px solid ${HAIR}`, cursor: 'default' }}
+              onMouseEnter={() => setKick((k) => k.map((v, j) => (j === i ? v + 1 : v)))}
+            >
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(26px, 2.6vw, 34px)', color: INK, lineHeight: 1, fontWeight: 400, fontVariantNumeric: 'lining-nums tabular-nums' }}>
+                <CCount target={s.v} prefix={s.px || ''} suffix={s.sx} delay={s.dl} dur={s.dr} kick={kick[i]} />
+              </div>
+              <div style={{ fontSize: 10.5, fontWeight: 500, color: INK, marginTop: 13, letterSpacing: '0.13em', textTransform: 'uppercase', opacity: 0.55 }}>{s.l}</div>
+              <div style={{ fontSize: 12.5, color: MUTED, lineHeight: 1.55, marginTop: 6, opacity: 0.9 }}>{s.s}</div>
             </div>
           ))}
         </div>
@@ -294,35 +374,35 @@ function Purpose() {
   );
 }
 
-/* ── VALUES ── */
+/* ── VALUES — quiet editorial columns: numerals, hairlines, air ── */
 function Values() {
   const values = [
-    { n: '01', h: 'Go deep, not wide', p: 'We focus on ABA so we can understand the core intake workflows deeply enough to replace the parts that waste human potential — not just paper over them.' },
-    { n: '02', h: 'No family slips away', p: 'We chase every diagnosis, document, and signature, following up until the intake is complete.' },
-    { n: '03', h: 'Care over paperwork', p: 'Coordinators get their time back to spend on families — not forms, faxes, and follow-ups.' },
+    { n: 'I', h: 'Go deep, not wide', p: 'We focus on ABA so we can understand the core intake workflows deeply enough to replace the parts that waste human potential — not just paper over them.' },
+    { n: 'II', h: 'No family slips away', p: 'We chase every diagnosis, document, and signature, following up until the intake is complete.' },
+    { n: 'III', h: 'Care over paperwork', p: 'Coordinators get their time back to spend on families — not forms, faxes, and follow-ups.' },
   ];
   return (
     <section style={{ background: BONE, paddingTop: SECTION_PY, paddingBottom: SECTION_PY }}>
       <div style={W}>
         <SectionHead pill="What we believe" title="Principles we run on." />
-        <div className="cc-values" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+        <div className="cc-values" style={{
+          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0,
+          maxWidth: 1020, margin: '0 auto', textAlign: 'center',
+        }}>
           {values.map((v, i) => (
-            <div key={v.n} className={`rv-scale d${i + 1}`} style={{
-              background: '#fff', borderRadius: 20, padding: 'clamp(28px, 2.6vw, 38px)',
-              boxShadow: '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)',
-              transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
-              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(20, 40, 30, 0.12), 0 2px 6px rgba(0,0,0,0.04)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03)'; }}
-            >
+            <div key={v.n} className={`rv d${i + 1}`} style={{
+              padding: '10px clamp(22px, 3vw, 46px)',
+              borderLeft: i === 0 ? 'none' : `1px solid ${HAIR}`,
+            }}>
               <span style={{
-                width: 30, height: 30, borderRadius: '50%',
-                background: LIME, color: INK,
+                width: 32, height: 32, borderRadius: '50%',
+                background: 'transparent', color: INK,
+                border: '1px solid rgba(43,42,38,0.30)',
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: 12, fontWeight: 700,
+                fontFamily: 'var(--font-display)', fontSize: 13, fontWeight: 400, letterSpacing: '0.04em',
               }}>{v.n}</span>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2vw, 25px)', fontWeight: 400, color: INK, letterSpacing: '-0.01em', margin: '18px 0 10px' }}>{v.h}</h3>
-              <p style={{ fontSize: 14.5, color: MUTED, lineHeight: 1.65, margin: 0 }}>{v.p}</p>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2vw, 24px)', fontWeight: 400, color: INK, letterSpacing: '-0.01em', margin: '20px 0 12px' }}>{v.h}</h3>
+              <p style={{ fontSize: 14.5, color: MUTED, lineHeight: 1.7, margin: '0 auto', maxWidth: 280 }}>{v.p}</p>
             </div>
           ))}
         </div>

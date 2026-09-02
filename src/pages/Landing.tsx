@@ -744,6 +744,7 @@ function DemoVideo() {
           style={{
             width: '100%', aspectRatio: '16 / 9', height: 'auto',
             objectFit: 'cover', display: 'block', background: '#0a0a0c',
+            boxShadow: '0 0 0 1px rgba(43,42,38,0.08), 0 26px 50px -24px rgba(30,30,25,0.18)',
           }}
         >
           <source src="/carelu-film.mp4" type="video/mp4" />
@@ -869,7 +870,7 @@ function Problem() {
   ];
 
   return (
-    <section style={{ background: '#FAF8F3', padding: 'clamp(70px, 9vh, 120px) 24px clamp(110px, 15vh, 190px)' }}>
+    <section style={{ background: '#FFFFFF', borderTop: '1px solid rgba(43,42,38,0.06)', borderBottom: '1px solid rgba(43,42,38,0.06)', padding: 'clamp(70px, 9vh, 120px) 24px clamp(110px, 15vh, 190px)' }}>
       <div style={{ maxWidth: 1080, margin: '0 auto', textAlign: 'center' }}>
         <div className="rv"><Pill>The problem</Pill></div>
         <h2 className="rv-scale d1" style={{
@@ -1785,7 +1786,7 @@ function HowStepCard({ s, mobile }: { s: HowStep; mobile?: boolean }) {
   return (
     <div style={{
       background: '#fff', borderRadius: 0,
-      boxShadow: '0 0 0 1px rgba(43,42,38,0.08)',
+      boxShadow: '0 0 0 1px rgba(43,42,38,0.08), 0 22px 44px -20px rgba(30,30,25,0.16)',
       display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1.2fr',
       overflow: 'hidden',
       width: mobile ? '100%' : 'clamp(640px, 78vw, 900px)',
@@ -2541,7 +2542,8 @@ function GettingStarted() {
 
   return (
     <section id="getting-started" ref={trackRef} className="gs-outer" style={{
-      position: 'relative', background: 'var(--bone)',
+      position: 'relative', background: '#FFFFFF',
+      borderTop: '1px solid rgba(43,42,38,0.06)', borderBottom: '1px solid rgba(43,42,38,0.06)',
     }}>
       <div className="gs-sticky">
         <div style={{ ...W, position: 'relative', zIndex: 1 }}>
@@ -2575,7 +2577,7 @@ function GettingStarted() {
                 <div key={s.n} className={`gs-step${t >= TH[i] ? ' on' : ''}`} style={{ textAlign: 'center', position: 'relative' }}>
                   <div className="gs-node" style={{
                     width: 34, height: 34, borderRadius: '50%', margin: '0 auto',
-                    background: 'var(--bone)', border: '1px solid rgba(43,42,38,0.30)',
+                    background: '#FFFFFF', border: '1px solid rgba(43,42,38,0.30)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontFamily: 'var(--font-display)', fontSize: 13.5, color: 'var(--green-900)',
                     letterSpacing: '0.04em', position: 'relative', zIndex: 1,
@@ -2624,7 +2626,6 @@ function GettingStarted() {
         }
         .gs-step { opacity: 0; transform: translateY(20px); transition: opacity 0.75s var(--ease-dramatic), transform 0.75s var(--ease-dramatic); }
         .gs-step.on { opacity: 1; transform: translateY(0); }
-        .gs-step.on .gs-node { background: var(--lime); box-shadow: 0 0 0 3px rgba(212, 242, 92, 0.3); }
         @media (max-width: 768px) {
           .gs-outer { height: auto; }
           .gs-sticky { position: static; min-height: 0; padding: 0; overflow: visible; }

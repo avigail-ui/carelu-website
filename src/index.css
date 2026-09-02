@@ -1153,3 +1153,24 @@ nav .nav-link:first-child { margin-left: 12px; }
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ── Paper: a whisper of print grain over the whole page — flat color becomes stock ── */
+.session-light body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2147483000;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
+}
+
+/* Demo CTA: the arrow leans forward on hover */
+.demo-cta .arr { transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1); }
+.demo-cta:hover .arr { transform: translateX(4px); }
+
+/* Principles: stacked on mobile, dividers become horizontal breathing room */
+@media (max-width: 768px) {
+  .cc-values > div { border-left: none !important; padding: 26px 12px !important; }
+}

@@ -26,7 +26,6 @@ const INK = '#1A1A1A';
 const BONE = '#FAF8F3';
 const MUTED = '#8C8674';
 const LIME = '#D4F25C';
-const PURPLE = '#7C5CE0';
 const SIZES = ['1-10', '11-25', '26-50', '51-100', '101-500', '500+'];
 
 function loadCalendlyScript(): Promise<void> {
@@ -209,18 +208,23 @@ export function DemoFlow() {
               ))}
             </div>
             {ready ? (
-              <button type="button" onClick={submit} style={{
+              <button type="button" onClick={submit} className="demo-cta" style={{
                 position: 'relative', fontSize: 15, fontWeight: 600,
                 fontFamily: 'var(--font-body)', color: '#fff',
-                background: PURPLE, border: `1px solid ${PURPLE}`,
-                boxShadow: '0 8px 28px rgba(124, 92, 224, 0.45)',
-                padding: '14px 30px', borderRadius: 100, cursor: 'pointer',
-                transition: 'transform 0.15s, box-shadow 0.2s, background 0.2s',
+                background: '#1A1A1A', border: '1px solid #1A1A1A',
+                boxShadow: '0 10px 30px rgba(20, 19, 16, 0.28)',
+                padding: '15px 30px', borderRadius: 100, cursor: 'pointer',
+                display: 'inline-flex', alignItems: 'center', gap: 10,
+                letterSpacing: '-0.005em',
+                transition: 'transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s, background 0.2s',
               }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 36px rgba(124, 92, 224, 0.55)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(124, 92, 224, 0.45)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = '#000'; e.currentTarget.style.boxShadow = '0 14px 38px rgba(20, 19, 16, 0.36)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.background = '#1A1A1A'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(20, 19, 16, 0.28)'; }}
               >
-                See available times&nbsp;&rarr;
+                See available times
+                <span className="arr" aria-hidden="true" style={{ display: 'inline-flex' }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </span>
               </button>
             ) : (
               <span style={{
