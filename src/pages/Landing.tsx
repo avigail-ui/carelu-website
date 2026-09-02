@@ -1202,10 +1202,10 @@ function ChannelIcon({ name }: { name: string }) {
 
 // ── HANDOFF VISUAL — patient card with animated 5-step progress ribbon + team handoff footer ──
 const HANDOFF_CASES = [
-  { init: 'JM', name: 'Jake M., age 4', detail: 'Blue Cross PPO \u00b7 ABA Therapy' },
-  { init: 'MR', name: 'Mia R., age 6', detail: 'Aetna HMO \u00b7 Initial assessment' },
-  { init: 'NK', name: 'Noah K., age 3', detail: 'United \u00b7 ABA Therapy' },
-  { init: 'AT', name: 'Ava T., age 5', detail: 'Cigna PPO \u00b7 Re-evaluation' },
+  { name: 'Jake M., age 4', detail: 'Blue Cross PPO \u00b7 ABA Therapy', photo: '/kids/kid-1.jpg' },
+  { name: 'Mia R., age 6', detail: 'Aetna HMO \u00b7 Initial assessment', photo: '/kids/kid-2.jpg' },
+  { name: 'Noah K., age 3', detail: 'United \u00b7 ABA Therapy', photo: '/kids/kid-3.jpg' },
+  { name: 'Eli T., age 5', detail: 'Cigna PPO \u00b7 Re-evaluation', photo: '/kids/kid-4.jpg' },
 ];
 
 function HandoffVisual() {
@@ -1340,14 +1340,13 @@ function HandoffVisual() {
         {/* Patient identity — clean horizontal row */}
         <div key={caseIdx} className="ho-case" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 36 }}>
           <div style={{
-            width: 52, height: 52, borderRadius: '50%',
-            background: 'linear-gradient(135deg, #F4F1EA 0%, #E9E4D6 100%)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 500,
-            letterSpacing: '0.02em',
-            color: 'var(--green-900)', flexShrink: 0,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          }}>{HANDOFF_CASES[caseIdx].init}</div>
+            width: 56, height: 56, borderRadius: 16,
+            border: '1px solid rgba(43,42,38,0.08)',
+            overflow: 'hidden', flexShrink: 0,
+            boxShadow: '0 2px 10px rgba(30,30,25,0.08)',
+          }}>
+            <img src={HANDOFF_CASES[caseIdx].photo} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          </div>
           <div style={{ minWidth: 0 }}>
             <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--green-900)', marginBottom: 3 }}>
               {HANDOFF_CASES[caseIdx].name}
@@ -1434,7 +1433,7 @@ function HandoffVisual() {
           </span>
           <span style={{
             fontSize: 13, fontWeight: 400, color: 'var(--green-900)',
-            whiteSpace: 'nowrap',
+            minWidth: 0,
           }}>
             Handed off to clinical team
           </span>
