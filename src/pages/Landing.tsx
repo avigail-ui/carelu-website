@@ -2576,6 +2576,7 @@ function RealProduct() {
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [prog, setProg] = useState(0);
   const [tab, setTab] = useState(0);
 
   // Same movement as the how-it-works carousel: the section pins and the three
@@ -2593,18 +2594,9 @@ function RealProduct() {
       const START = 0.05;
       const END = 0.85;
       const animProgress = Math.max(0, Math.min(1, (progress - START) / (END - START)));
-      const viewportW = window.innerWidth;
-      const cards = track.children;
-      const cardW = (cards[0] as HTMLElement).offsetWidth;
-      const gap = 32;
-      const padLeft = viewportW * 0.08;
-      const centerShift = (i: number) =>
-        viewportW / 2 - (padLeft + i * (cardW + gap) + cardW / 2);
-      const startShift = centerShift(0);
-      const endShift = centerShift(cards.length - 1);
-      const shift = startShift + animProgress * (endShift - startShift);
-      track.style.transform = `translate3d(${shift}px, 0, 0)`;
+      setProg(animProgress);
       setActiveIdx(Math.min(PR_TABS.length - 1, Math.floor(animProgress * PR_TABS.length)));
+      void track;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
@@ -2635,13 +2627,10 @@ function RealProduct() {
 
   const frame = (i: number, active: boolean) => (
     <div key={i} style={{
-      width: isMobile ? '100%' : 'min(860px, 84vw)', flexShrink: 0,
+      width: '100%', flexShrink: 0,
       background: '#FCFBF8', borderRadius: 20,
       boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
       overflow: 'hidden',
-      opacity: isMobile || active ? 1 : 0.55,
-      transform: isMobile || active ? 'scale(1)' : 'scale(0.965)',
-      transition: 'opacity 0.45s ease, transform 0.45s var(--ease-dramatic)',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
         <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
@@ -2712,11 +2701,35 @@ function RealProduct() {
         paddingTop: 66, boxSizing: 'border-box',
       }}>
         {header}
-        <div ref={trackRef} style={{
-          display: 'flex', gap: 32, padding: '0 8vw',
-          willChange: 'transform',
-        }}>
-          {[0, 1, 2].map((i) => frame(i, activeIdx === i))}
+        <div ref={trackRef} style={{ ...W, width: '100%' }}>
+          <div style={{ maxWidth: 860, margin: '0 auto', position: 'relative', height: 630 }}>
+            {[2, 1, 0].map((i) => {
+              // Dwell: rest flat and readable, brisk hand-off between layers
+              const fRaw = Math.min(prog * 3, 2.4);
+              const base = Math.floor(fRaw);
+              const frac = fRaw - base;
+              const cc = Math.max(0, Math.min(1, (frac - 0.34) / 0.32));
+              const f = base + cc * cc * (3 - 2 * cc);
+              const rel = i - f;
+              if (rel < -1.2) return null;
+              const d = Math.max(0, rel);
+              const q = Math.max(0, -rel);
+              return (
+                <div key={i} style={{
+                  position: 'absolute', left: 0, right: 0, top: 56,
+                  transform: q > 0
+                    ? `translateY(${q * 170}px) scale(${1 + q * 0.015})`
+                    : `translateY(${d * -28}px) scale(${1 - d * 0.045})`,
+                  opacity: q > 0 ? Math.max(0, 1 - q * 1.5) : 1 - d * 0.14,
+                  zIndex: 30 - i,
+                  pointerEvents: d < 0.2 && q < 0.2 ? 'auto' : 'none',
+                  willChange: 'transform, opacity',
+                }}>
+                  {frame(i, d < 0.5 && q < 0.5)}
+                </div>
+              );
+            })}
+          </div>
         </div>
         {/* Progress dashes — same language as the how-it-works carousel */}
         <div style={{
