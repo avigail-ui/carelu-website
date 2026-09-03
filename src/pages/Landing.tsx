@@ -2656,6 +2656,27 @@ function RealProduct() {
               <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
                 {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
               </div>
+              <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
+                <div style={{
+                  display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
+                  border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
+                  padding: 6,
+                }}>
+                  {PR_TABS.map((tb, i) => (
+                    <button key={tb} type="button" onClick={() => goTab(i)} style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 8,
+                      fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
+                      color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                      background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                      border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
+                      transition: 'background 0.25s, color 0.25s',
+                    }}>
+                      {ICONS[i]}
+                      {tb}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         ) : (
