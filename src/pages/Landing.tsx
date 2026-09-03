@@ -2573,45 +2573,13 @@ function PrReporting() {
 
 function RealProduct() {
   const [tab, setTab] = useState(0);
-  const [t, setT] = useState(0);
-  const isMobile = useIsMobile();
-  const trackRef = useRef<HTMLElement>(null);
-
-  // Desktop: continuous scroll progress — the screens glide through each
-  // other, every pixel tied to the reader's hand. Mobile: dock taps.
+  const hoverRef = useRef(false);
   useEffect(() => {
-    if (window.innerWidth <= 768) return;
-    let raf = 0;
-    const update = () => {
-      const el = trackRef.current; if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const total = rect.height - window.innerHeight;
-      if (total <= 0) return;
-      setT(Math.max(0, Math.min(0.999, -rect.top / total)));
-    };
-    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-    };
+    const iv = setInterval(() => {
+      if (!hoverRef.current && !document.hidden) setTab((t) => (t + 1) % PR_TABS.length);
+    }, 8000);
+    return () => clearInterval(iv);
   }, []);
-
-  const activeTab = isMobile ? tab : Math.min(PR_TABS.length - 1, Math.floor(t * PR_TABS.length));
-
-  const goTab = (i: number) => {
-    const el = trackRef.current;
-    if (el && window.innerWidth > 768) {
-      const top = el.getBoundingClientRect().top + window.scrollY;
-      const total = el.offsetHeight - window.innerHeight;
-      window.scrollTo({ top: top + ((i + 0.5) / PR_TABS.length) * total, behavior: 'smooth' });
-    } else {
-      setTab(i);
-    }
-  };
 
   const ICONS = [
     <svg key="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="4" width="5" height="16" rx="1.5" /><rect x="10" y="4" width="5" height="11" rx="1.5" /><rect x="17" y="4" width="4" height="7" rx="1.5" /></svg>,
@@ -2620,10 +2588,10 @@ function RealProduct() {
   ];
 
   return (
-    <section id="product-live" ref={trackRef} className="prod-outer" style={{
-      position: 'relative', background: 'var(--bone)',
+    <section id="product-live" style={{
+      position: 'relative', paddingTop: 'clamp(48px, 6vh, 80px)', paddingBottom: 'clamp(56px, 7vh, 96px)',
+      background: 'var(--bone)',
     }}>
-      <div className="prod-sticky">
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
           <div className="rv"><Pill>The product</Pill></div>
@@ -2636,9 +2604,11 @@ function RealProduct() {
           </h2>
         </div>
 
-        {/* The app frame — steady and true. Only the screens inside it travel:
-            scrolling slides the next page up through the frame like sheets. */}
-        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto' }}>
+        {/* The app frame */}
+        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}
+          onMouseEnter={() => { hoverRef.current = true; }}
+          onMouseLeave={() => { hoverRef.current = false; }}
+        >
           <div style={{
             background: '#FCFBF8', borderRadius: 20,
             boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
@@ -2652,65 +2622,33 @@ function RealProduct() {
               <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
               <span style={{ width: 45 }} />
             </div>
-
-            {isMobile ? (
-              <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
-                {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
-              </div>
-            ) : (
-              <div style={{ position: 'relative', height: 450, overflow: 'hidden' }}>
-                {[0, 1, 2].map((i) => {
-                  // Dwell: each screen rests fully readable; the slide happens briskly between
-                  const fRaw = Math.min(t * 3, 2.4);
-                  const base = Math.floor(fRaw);
-                  const frac = fRaw - base;
-                  const c = Math.max(0, Math.min(1, (frac - 0.32) / 0.36));
-                  const f = base + c * c * (3 - 2 * c);
-                  const rel = i - f;
-                  if (Math.abs(rel) > 1.15) return null;
-                  const moving = Math.min(1, Math.abs(rel));
-                  return (
-                    <div key={i} style={{
-                      position: 'absolute', inset: 0,
-                      display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                      transform: `translateY(${rel * 104}%) scale(${1 - moving * 0.03})`,
-                      filter: moving > 0.03 ? `blur(${moving * 1.6}px)` : 'none',
-                      opacity: 1 - moving * 0.15,
-                      pointerEvents: moving < 0.1 ? 'auto' : 'none',
-                      willChange: 'transform',
-                    }}>
-                      {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-
-            {/* The dock — inside the frame, where it lives in the real app */}
+            <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
+              {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
+            </div>
+            {/* The dock — same floating pill as the real app */}
             <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
               <div style={{
                 display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
                 border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
                 padding: 6,
               }}>
-                {PR_TABS.map((tb, i) => (
-                  <button key={tb} type="button" onClick={() => goTab(i)} style={{
+                {PR_TABS.map((t, i) => (
+                  <button key={t} type="button" onClick={() => setTab(i)} style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                    color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                    background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                    color: tab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                    background: tab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
                     border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
                     transition: 'background 0.25s, color 0.25s',
                   }}>
                     {ICONS[i]}
-                    {tb}
+                    {t}
                   </button>
                 ))}
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   );
