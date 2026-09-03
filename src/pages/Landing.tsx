@@ -1643,7 +1643,7 @@ function ChannelsHub() {
   const connections: { from: number; to: number }[] = [];
   for (let i = 0; i < channels.length; i++) {
     connections.push({ from: i, to: (i + 1) % channels.length }); // hex ring
-    connections.push({ from: i, to: (i + 2) % channels.length }); // skip-one inner chords
+    connections.push({ from: i, to: -1 });                        // spoke into the hub
   }
   const webVisible = step >= channels.length + 1;
 
@@ -1660,28 +1660,31 @@ function ChannelsHub() {
 
         {/* Center glow — subtle warm haze under the web */}
         <circle cx="180" cy="180" r="120" fill="url(#webGlow)"
+          className={webVisible ? 'imf-halo' : undefined}
           style={{ opacity: webVisible ? 1 : 0, transition: 'opacity 0.8s ease' }}
         />
 
         {/* Web — curved lines connecting pills */}
         {connections.map((c, i) => {
           const p1 = positions[c.from];
-          const p2 = positions[c.to];
-          // Curve control point bowed toward the center for a soft, organic feel
+          const p2 = c.to === -1 ? { x: 180, y: 180 } : positions[c.to];
           const mx = (p1.x + p2.x) / 2;
           const my = (p1.y + p2.y) / 2;
           const cx = 180 + (mx - 180) * 0.4;
           const cy = 180 + (my - 180) * 0.4;
-          const path = `M ${p1.x} ${p1.y} Q ${cx} ${cy} ${p2.x} ${p2.y}`;
-          // Each line lights up shortly after both endpoints are visible
-          const lineDelay = Math.max(c.from, c.to) * 0.26;
+          const path = c.to === -1
+            ? `M ${p1.x} ${p1.y} L ${p2.x} ${p2.y}`
+            : `M ${p1.x} ${p1.y} Q ${cx} ${cy} ${p2.x} ${p2.y}`;
+          const lineDelay = (c.to === -1 ? c.from : Math.max(c.from, c.to)) * 0.26;
           return (
             <path
               key={i}
               d={path}
               fill="none"
-              stroke="rgba(26,46,31,0.18)"
-              strokeWidth="1.2"
+              className={c.to === -1 ? 'imf-flow' : undefined}
+              stroke={c.to === -1 ? 'rgba(26,46,31,0.22)' : 'rgba(26,46,31,0.14)'}
+              strokeWidth={c.to === -1 ? 1.1 : 1.2}
+              strokeDasharray={c.to === -1 ? '3 7' : undefined}
               strokeLinecap="round"
               style={{
                 opacity: webVisible ? 1 : 0,
@@ -1709,6 +1712,20 @@ function ChannelsHub() {
         })}
       </svg>
 
+      {/* The hub — everything flows into Carelu */}
+      <div style={{
+        position: 'absolute', left: '50%', top: '50%',
+        transform: `translate(-50%, -50%) scale(${webVisible ? 1 : 0.4})`,
+        opacity: webVisible ? 1 : 0,
+        transition: 'opacity 0.6s ease 0.3s, transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s',
+        width: 62, height: 62, borderRadius: '50%',
+        background: '#fff', border: '1px solid rgba(43,42,38,0.10)',
+        boxShadow: '0 6px 24px rgba(30,30,25,0.10), 0 0 0 5px rgba(212,242,92,0.25)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+      }}>
+        <img src="/carelu-logo.svg" alt="" aria-hidden="true" style={{ width: 40, height: 'auto', display: 'block' }} />
+      </div>
+
       {/* Channel pills */}
       {channels.map((ch, i) => {
         const a = (-90 + i * 60) * (Math.PI / 180);
@@ -1716,8 +1733,12 @@ function ChannelsHub() {
         const y = 50 + Math.sin(a) * 36;
         const visible = step >= i + 1;
         return (
-          <div key={ch.name} style={{
+          <div key={ch.name} className="ch-float" style={{
             position: 'absolute', left: `${x}%`, top: `${y}%`,
+            animationDelay: `-${(i * 0.9) % 4}s`,
+            animationDuration: `${4 + (i % 3) * 0.8}s`,
+          }}>
+          <div style={{
             transform: `translate(-50%, -50%) scale(${visible ? 1 : 0.4})`,
             opacity: visible ? 1 : 0,
             background: '#fff', border: '1px solid rgba(0,0,0,0.08)',
@@ -1743,6 +1764,7 @@ function ChannelsHub() {
                 Coming soon
               </span>
             )}
+          </div>
           </div>
         );
       })}
