@@ -2509,8 +2509,8 @@ function PrAsk() {
         <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2.2vw, 27px)', color: '#1c1b18' }}>Ask anything about your data</div>
         <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', marginTop: 5 }}>Leads, conversations, calls, campaigns — grounded in your real numbers</div>
         <div style={{
-          background: '#fff', borderRadius: 14, marginTop: 16, padding: '15px 18px',
-          fontSize: 14, color: '#1c1b18', minHeight: 50, display: 'flex', alignItems: 'center',
+          background: '#fff', borderRadius: 14, marginTop: 13, padding: '13px 18px',
+          fontSize: 14, color: '#1c1b18', minHeight: 46, display: 'flex', alignItems: 'center',
           boxShadow: '0 4px 18px rgba(30,30,25,0.08)',
         }}>
           <span>{typed}<span className="pr-caret" /></span>
@@ -2525,8 +2525,8 @@ function PrAsk() {
             Meta Ads is your top source — <strong style={{ fontWeight: 600 }}>45 leads</strong> this month at a <strong style={{ fontWeight: 600 }}>17% visitor-to-lead rate</strong>, twice any other channel.
           </div>
         </div>
-        <div style={{ display: 'flex', gap: 10, rowGap: 12, marginTop: 18, flexWrap: 'wrap' }}>
-          {['Which source brings the most leads?', 'How do my campaigns compare?', 'What did families ask on recent calls?'].map((q, i) => (
+        <div style={{ display: 'flex', gap: 10, rowGap: 12, marginTop: 14, flexWrap: 'wrap' }}>
+          {['Which source brings the most leads?', 'How do my campaigns compare?'].map((q, i) => (
             <span key={q} className={`pr-chip d${i + 1}`} style={{
               fontSize: 11, fontWeight: 600, color: 'rgba(43,42,38,0.7)', background: 'rgba(255,255,255,0.85)',
               borderRadius: 100, padding: '7px 13px', display: 'inline-flex', alignItems: 'center', gap: 6,
