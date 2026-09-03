@@ -2680,13 +2680,6 @@ function RealProduct() {
   const header = (
     <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
       <div className="rv"><Pill>The product</Pill></div>
-      <h2 className="rv-scale d1" style={{
-        fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.2vw, 40px)',
-        fontWeight: 400, color: 'var(--green-900)',
-        lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
-      }}>
-        Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
-      </h2>
     </div>
   );
 
