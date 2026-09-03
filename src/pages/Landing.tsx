@@ -2573,13 +2573,42 @@ function PrReporting() {
 
 function RealProduct() {
   const [tab, setTab] = useState(0);
-  const hoverRef = useRef(false);
+  const trackRef = useRef<HTMLElement>(null);
+
+  // Desktop: the reader's scroll walks through the three screens while the
+  // frame stays pinned. Mobile: the dock switches them by tap.
   useEffect(() => {
-    const iv = setInterval(() => {
-      if (!hoverRef.current && !document.hidden) setTab((t) => (t + 1) % PR_TABS.length);
-    }, 8000);
-    return () => clearInterval(iv);
+    if (window.innerWidth <= 768) return;
+    let raf = 0;
+    const update = () => {
+      const el = trackRef.current; if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      if (total <= 0) return;
+      const t = Math.max(0, Math.min(0.999, -rect.top / total));
+      setTab(Math.min(PR_TABS.length - 1, Math.floor(t * PR_TABS.length)));
+    };
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
+
+  const goTab = (i: number) => {
+    const el = trackRef.current;
+    if (el && window.innerWidth > 768) {
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      const total = el.offsetHeight - window.innerHeight;
+      window.scrollTo({ top: top + ((i + 0.5) / PR_TABS.length) * total, behavior: 'smooth' });
+    } else {
+      setTab(i);
+    }
+  };
 
   const ICONS = [
     <svg key="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="4" width="5" height="16" rx="1.5" /><rect x="10" y="4" width="5" height="11" rx="1.5" /><rect x="17" y="4" width="4" height="7" rx="1.5" /></svg>,
@@ -2588,10 +2617,10 @@ function RealProduct() {
   ];
 
   return (
-    <section id="product-live" style={{
-      position: 'relative', paddingTop: 'clamp(48px, 6vh, 80px)', paddingBottom: 'clamp(56px, 7vh, 96px)',
-      background: 'var(--bone)',
+    <section id="product-live" ref={trackRef} className="prod-outer" style={{
+      position: 'relative', background: 'var(--bone)',
     }}>
+      <div className="prod-sticky">
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
           <div className="rv"><Pill>The product</Pill></div>
@@ -2605,10 +2634,7 @@ function RealProduct() {
         </div>
 
         {/* The app frame */}
-        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}
-          onMouseEnter={() => { hoverRef.current = true; }}
-          onMouseLeave={() => { hoverRef.current = false; }}
-        >
+        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}>
           <div style={{
             background: '#FCFBF8', borderRadius: 20,
             boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
@@ -2633,7 +2659,7 @@ function RealProduct() {
                 padding: 6,
               }}>
                 {PR_TABS.map((t, i) => (
-                  <button key={t} type="button" onClick={() => setTab(i)} style={{
+                  <button key={t} type="button" onClick={() => goTab(i)} style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
                     color: tab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
@@ -2649,6 +2675,7 @@ function RealProduct() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

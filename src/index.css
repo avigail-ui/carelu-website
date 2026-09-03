@@ -1208,3 +1208,15 @@ nav .nav-link:first-child { margin-left: 12px; }
   .pr-board { overflow-x: auto; padding-bottom: 6px; }
   .pr-board > div { min-width: 190px !important; }
 }
+
+/* ── Product frames ride the scroll: pinned stage, three stops ── */
+.prod-outer { height: 300vh; }
+.prod-sticky {
+  position: sticky; top: 0; min-height: 100svh;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 84px 0 24px; box-sizing: border-box; overflow: hidden;
+}
+@media (max-width: 768px) {
+  .prod-outer { height: auto; }
+  .prod-sticky { position: static; min-height: 0; padding: 56px 0 64px; overflow: visible; }
+}
