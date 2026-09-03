@@ -2434,28 +2434,28 @@ function PrPipeline() {
       <div className="pr-board" style={{ display: 'flex', gap: 10 }}>
         {col('#7cc4e8', 'NEW', moved ? 26 : 27, (<>
           <div className={moved ? 'pr-gone' : ''} style={{ overflow: 'hidden', transition: 'opacity 0.45s ease, max-height 0.5s ease 0.1s, margin 0.5s ease 0.1s', maxHeight: moved ? 0 : 120, opacity: moved ? 0 : 1, marginBottom: moved ? -8 : 0 }}>
-            {card('Rivera family', 'Child: Mateo \u00b7 age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}</>), 'd1', !moved)}
+            {card('Rivera family', 'Child: Mateo · age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}</>), 'd1', !moved)}
           </div>
           {card('Unnamed lead', 'k.brooks@gmail.com', (<>{chip('Sep 3')}</>), 'd2')}
-          {card('Nguyen family', 'Child: Lien \u00b7 age 5', (<>{chip('Sep 2')}{chip('Aetna HMO')}</>), 'd3')}
+          {card('Nguyen family', 'Child: Lien · age 5', (<>{chip('Sep 2')}{chip('Aetna HMO')}</>), 'd3')}
         </>))}
         {col('#c9d94e', 'QUALIFIED', moved ? 10 : 9, (<>
           {moved && (
             <div className="pr-arrive">
-              {card('Rivera family', 'Child: Mateo \u00b7 age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}{chip('Qualified', true)}</>), '', true)}
+              {card('Rivera family', 'Child: Mateo · age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}{chip('Qualified', true)}</>), '', true)}
             </div>
           )}
-          {card('Cohen family', 'Child: Ari \u00b7 age 3', (<>{chip('Sep 3')}{chip('Anthem BCBS')}</>), 'd2')}
-          {card('Park family', 'Child: Jun \u00b7 age 6', (<>{chip('Sep 2')}{chip('United')}</>), 'd3')}
+          {card('Cohen family', 'Child: Ari · age 3', (<>{chip('Sep 3')}{chip('Anthem BCBS')}</>), 'd2')}
+          {card('Park family', 'Child: Jun · age 6', (<>{chip('Sep 2')}{chip('United')}</>), 'd3')}
         </>))}
         {col('#9dbb2e', 'INTAKE COMPLETE', 4, (<>
-          {card('Levi family', 'Child: Noa \u00b7 age 4', (<>{chip('Aug 30')}{chip('Medicaid')}{chip('Docs \u2713', true)}</>), 'd3')}
-          {card('Brooks family', 'Child: Ella \u00b7 age 5', (<>{chip('Aug 28')}{chip('Cigna PPO')}{chip('Scheduled', true)}</>), 'd4')}
+          {card('Levi family', 'Child: Noa · age 4', (<>{chip('Aug 30')}{chip('Medicaid')}{chip('Docs ✓', true)}</>), 'd3')}
+          {card('Brooks family', 'Child: Ella · age 5', (<>{chip('Aug 28')}{chip('Cigna PPO')}{chip('Scheduled', true)}</>), 'd4')}
         </>))}
       </div>
       <div className={`pr-note ${moved ? 'on' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 14, justifyContent: 'center' }}>
         <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--lime)', border: '1px solid rgba(43,42,38,0.3)' }} />
-        <span style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.55)' }}>Carelu qualified the Rivera family \u2014 no one touched a thing</span>
+        <span style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.55)' }}>Carelu qualified the Rivera family — no one touched a thing</span>
       </div>
     </div>
   );
@@ -2487,7 +2487,7 @@ function PrAsk() {
         padding: 'clamp(20px, 3vw, 34px)',
       }}>
         <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2.2vw, 27px)', color: '#1c1b18' }}>Ask anything about your data</div>
-        <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', marginTop: 5 }}>Leads, conversations, calls, campaigns \u2014 grounded in your real numbers</div>
+        <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', marginTop: 5 }}>Leads, conversations, calls, campaigns — grounded in your real numbers</div>
         <div style={{
           background: '#fff', borderRadius: 14, marginTop: 16, padding: '15px 18px',
           fontSize: 14, color: '#1c1b18', minHeight: 50, display: 'flex', alignItems: 'center',
@@ -2500,9 +2500,9 @@ function PrAsk() {
           border: '1px solid rgba(157,187,46,0.4)',
           boxShadow: '0 6px 22px rgba(30,30,25,0.08)',
         }}>
-          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', color: 'rgba(43,42,38,0.45)', marginBottom: 6 }}>THIS PERIOD\u2019S INSIGHT \u2726</div>
+          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', color: 'rgba(43,42,38,0.45)', marginBottom: 6 }}>THIS PERIOD’S INSIGHT ✦</div>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: 15.5, color: '#1c1b18', lineHeight: 1.45 }}>
-            Meta Ads is your top source \u2014 <strong style={{ fontWeight: 600 }}>45 leads</strong> this month at a <strong style={{ fontWeight: 600 }}>17% visitor-to-lead rate</strong>, twice any other channel.
+            Meta Ads is your top source — <strong style={{ fontWeight: 600 }}>45 leads</strong> this month at a <strong style={{ fontWeight: 600 }}>17% visitor-to-lead rate</strong>, twice any other channel.
           </div>
         </div>
         <div style={{ display: 'flex', gap: 8, marginTop: 14, flexWrap: 'wrap' }}>
@@ -2541,7 +2541,7 @@ function PrReporting() {
                 }} />
               ))}
             </div>
-            <span style={{ fontSize: 11, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>\u2197 +102.7%</span>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>↗ +102.7%</span>
           </div>
         </div>
         <div style={{ flex: '1 1 140px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
@@ -2559,8 +2559,8 @@ function PrReporting() {
       </div>
       <div style={{ background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px', marginTop: 12 }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline \u00b7 last 30 days</div>
-          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 \u00b7 9/1</span>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline · last 30 days</div>
+          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 · 9/1</span>
         </div>
         <svg viewBox="0 0 600 110" style={{ width: '100%', height: 'auto', display: 'block', marginTop: 8 }} fill="none" aria-hidden="true">
           <path className="pr-area" d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10 L600 110 L0 110 Z" fill="rgba(157,187,46,0.14)" />
@@ -2602,10 +2602,6 @@ function RealProduct() {
           }}>
             Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
           </h2>
-          <p className="rv d2" style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.65, maxWidth: 520, margin: '14px auto 0' }}>
-            These are the screens your team will live in \u2014 the pipeline that fills itself,
-            the questions you can just ask, the numbers that keep themselves.
-          </p>
         </div>
 
         {/* The app frame */}
