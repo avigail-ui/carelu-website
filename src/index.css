@@ -1220,10 +1220,3 @@ nav .nav-link:first-child { margin-left: 12px; }
   .prod-outer { height: auto; }
   .prod-sticky { position: static; min-height: 0; padding: 56px 0 64px; overflow: visible; }
 }
-
-/* Channel pills drift gently, each on its own rhythm */
-.ch-float { animation-name: chFloat; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
-@keyframes chFloat {
-  0%, 100% { margin-top: 0; }
-  50%      { margin-top: -5px; }
-}
