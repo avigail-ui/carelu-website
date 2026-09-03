@@ -2436,8 +2436,7 @@ function PrPipeline() {
           <div className={moved ? 'pr-gone' : ''} style={{ overflow: 'hidden', transition: 'opacity 0.45s ease, max-height 0.5s ease 0.1s, margin 0.5s ease 0.1s', maxHeight: moved ? 0 : 120, opacity: moved ? 0 : 1, marginBottom: moved ? -8 : 0 }}>
             {card('Rivera family', 'Child: Mateo · age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}</>), 'd1', !moved)}
           </div>
-          {card('Unnamed lead', 'k.brooks@gmail.com', (<>{chip('Sep 3')}</>), 'd2')}
-          {card('Nguyen family', 'Child: Lien · age 5', (<>{chip('Sep 2')}{chip('Aetna HMO')}</>), 'd3')}
+          {card('Nguyen family', 'Child: Lien · age 5', (<>{chip('Sep 2')}{chip('Aetna HMO')}</>), 'd2')}
         </>))}
         {col('#c9d94e', 'QUALIFIED', moved ? 10 : 9, (<>
           {moved && (
@@ -2446,7 +2445,6 @@ function PrPipeline() {
             </div>
           )}
           {card('Cohen family', 'Child: Ari · age 3', (<>{chip('Sep 3')}{chip('Anthem BCBS')}</>), 'd2')}
-          {card('Park family', 'Child: Jun · age 6', (<>{chip('Sep 2')}{chip('United')}</>), 'd3')}
         </>))}
         {col('#9dbb2e', 'INTAKE COMPLETE', 4, (<>
           {card('Levi family', 'Child: Noa · age 4', (<>{chip('Aug 30')}{chip('Medicaid')}{chip('Docs ✓', true)}</>), 'd3')}
@@ -2650,7 +2648,7 @@ function RealProduct() {
         <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
         <span style={{ width: 45 }} />
       </div>
-      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ minHeight: isMobile ? 330 : 380, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ height: isMobile ? undefined : 396, minHeight: isMobile ? 330 : undefined, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
