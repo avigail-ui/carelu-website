@@ -2575,6 +2575,13 @@ function RealProduct() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const [tab, setTab] = useState(0);
+  useEffect(() => {
+    if (!isMobile) return;
+    const iv = setInterval(() => {
+      if (!document.hidden) setTab((v) => (v + 1) % PR_TABS.length);
+    }, 8000);
+    return () => clearInterval(iv);
+  }, [isMobile]);
 
   // Same movement as the how-it-works carousel: the section pins and the three
   // app frames glide horizontally with the scroll, each centering in turn.
@@ -2613,24 +2620,6 @@ function RealProduct() {
     };
   }, [isMobile]);
 
-  const goTab = (i: number) => {
-    const section = sectionRef.current;
-    if (section && !isMobile) {
-      const top = section.getBoundingClientRect().top + window.scrollY;
-      const trackH = section.offsetHeight - window.innerHeight;
-      const progress = 0.05 + (i / (PR_TABS.length - 1)) * 0.8;
-      window.scrollTo({ top: top + progress * trackH, behavior: 'smooth' });
-    } else {
-      setTab(i);
-    }
-  };
-
-  const ICONS = [
-    <svg key="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="4" width="5" height="16" rx="1.5" /><rect x="10" y="4" width="5" height="11" rx="1.5" /><rect x="17" y="4" width="4" height="7" rx="1.5" /></svg>,
-    <svg key="1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" /><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" /></svg>,
-    <svg key="2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M4 20V10M10 20V4M16 20v-8M21 20H3" /></svg>,
-  ];
-
   const frame = (i: number, active: boolean) => (
     <div key={i} style={{
       width: isMobile ? '100%' : 'min(740px, 76vw)', flexShrink: 0,
@@ -2650,27 +2639,6 @@ function RealProduct() {
       </div>
       <div key={active ? 'on' : 'off'} className="pr-panel" style={{ height: isMobile ? undefined : 396, minHeight: isMobile ? 330 : undefined, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
-        <div style={{
-          display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
-          border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
-          padding: 6,
-        }}>
-          {PR_TABS.map((tb, j) => (
-            <button key={tb} type="button" onClick={() => goTab(j)} style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-              color: (isMobile ? tab : i) === j ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-              background: (isMobile ? tab : i) === j ? 'rgba(212,242,92,0.45)' : 'transparent',
-              border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
-              transition: 'background 0.25s, color 0.25s',
-            }}>
-              {ICONS[j]}
-              {tb}
-            </button>
-          ))}
-        </div>
       </div>
     </div>
   );
