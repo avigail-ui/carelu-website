@@ -2423,7 +2423,7 @@ function PrPipeline() {
     </div>
   );
   return (
-    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)', height: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
         <div style={{ display: 'inline-flex', background: 'rgba(43,42,38,0.05)', borderRadius: 100, padding: 3 }}>
           <span style={{ fontSize: 11.5, fontWeight: 500, color: 'rgba(43,42,38,0.5)', padding: '6px 14px' }}>Table View</span>
@@ -2431,7 +2431,7 @@ function PrPipeline() {
         </div>
         <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 600, color: '#fff', background: '#1A1A1A', borderRadius: 100, padding: '8px 16px' }}>+ Add Lead</span>
       </div>
-      <div className="pr-board" style={{ display: 'flex', gap: 10 }}>
+      <div className="pr-board" style={{ display: 'flex', gap: 10, flex: 1, minHeight: 0 }}>
         {col('#7cc4e8', 'NEW', moved ? 26 : 27, (<>
           <div className={moved ? 'pr-gone' : ''} style={{ overflow: 'hidden', transition: 'opacity 0.45s ease, max-height 0.5s ease 0.1s, margin 0.5s ease 0.1s', maxHeight: moved ? 0 : 120, opacity: moved ? 0 : 1, marginBottom: moved ? -8 : 0 }}>
             {card('Rivera family', 'Child: Mateo · age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}</>), 'd1', !moved)}
@@ -2477,9 +2477,9 @@ function PrAsk() {
     return () => { clearInterval(iv); clearTimeout(t2); };
   }, []);
   return (
-    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)', height: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
       <div style={{
-        borderRadius: 16, overflow: 'hidden', position: 'relative',
+        borderRadius: 16, overflow: 'hidden', position: 'relative', flex: 1,
         backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0.14), rgba(250,248,243,0.5)), url(/hero-sky.jpg)',
         backgroundSize: 'cover', backgroundPosition: 'center 30%',
         padding: 'clamp(20px, 3vw, 34px)',
@@ -2522,7 +2522,7 @@ function PrAsk() {
 function PrReporting() {
   const BARS = [24, 12, 8, 18, 10, 30, 22, 14, 34, 20, 42, 30, 26, 52, 40, 64];
   return (
-    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)', height: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
         <div style={{ flex: '2 1 260px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
           <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Leads captured</div>
@@ -2555,7 +2555,7 @@ function PrReporting() {
           </div>
         </div>
       </div>
-      <div style={{ background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px', marginTop: 12 }}>
+      <div style={{ background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px', marginTop: 12, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline · last 30 days</div>
           <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 · 9/1</span>
