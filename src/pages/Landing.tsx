@@ -2573,10 +2573,12 @@ function PrReporting() {
 
 function RealProduct() {
   const [tab, setTab] = useState(0);
+  const [t, setT] = useState(0);
+  const isMobile = useIsMobile();
   const trackRef = useRef<HTMLElement>(null);
 
-  // Desktop: the reader's scroll walks through the three screens while the
-  // frame stays pinned. Mobile: the dock switches them by tap.
+  // Desktop: continuous scroll progress — the screens glide through each
+  // other, every pixel tied to the reader's hand. Mobile: dock taps.
   useEffect(() => {
     if (window.innerWidth <= 768) return;
     let raf = 0;
@@ -2585,8 +2587,7 @@ function RealProduct() {
       const rect = el.getBoundingClientRect();
       const total = rect.height - window.innerHeight;
       if (total <= 0) return;
-      const t = Math.max(0, Math.min(0.999, -rect.top / total));
-      setTab(Math.min(PR_TABS.length - 1, Math.floor(t * PR_TABS.length)));
+      setT(Math.max(0, Math.min(0.999, -rect.top / total)));
     };
     const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); };
     update();
@@ -2598,6 +2599,8 @@ function RealProduct() {
       window.removeEventListener('resize', onScroll);
     };
   }, []);
+
+  const activeTab = isMobile ? tab : Math.min(PR_TABS.length - 1, Math.floor(t * PR_TABS.length));
 
   const goTab = (i: number) => {
     const el = trackRef.current;
@@ -2648,9 +2651,30 @@ function RealProduct() {
               <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
               <span style={{ width: 45 }} />
             </div>
-            <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
-              {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
-            </div>
+            {isMobile ? (
+              <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
+                {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
+              </div>
+            ) : (
+              <div style={{ position: 'relative', height: 470, overflow: 'hidden' }}>
+                {[0, 1, 2].map((i) => {
+                  const d = (t - (i + 0.5) / 3) * 3;
+                  const ad = Math.abs(d);
+                  return (
+                    <div key={i} style={{
+                      position: 'absolute', inset: 0,
+                      display: 'flex', flexDirection: 'column', justifyContent: 'center',
+                      opacity: Math.max(0, 1 - Math.pow(ad * 1.35, 1.4)),
+                      transform: `translateY(${d * -64}px) scale(${1 - Math.min(0.06, ad * 0.06)})`,
+                      pointerEvents: ad < 0.5 ? 'auto' : 'none',
+                      willChange: 'transform, opacity',
+                    }}>
+                      {ad < 1.3 ? (i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
             {/* The dock — same floating pill as the real app */}
             <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
               <div style={{
@@ -2662,8 +2686,8 @@ function RealProduct() {
                   <button key={t} type="button" onClick={() => goTab(i)} style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                    color: tab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                    background: tab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                    color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                    background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
                     border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
                     transition: 'background 0.25s, color 0.25s',
                   }}>
