@@ -2572,14 +2572,60 @@ function PrReporting() {
 }
 
 function RealProduct() {
+  const isMobile = useIsMobile();
+  const sectionRef = useRef<HTMLElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [activeIdx, setActiveIdx] = useState(0);
   const [tab, setTab] = useState(0);
-  const hoverRef = useRef(false);
+
+  // Same movement as the how-it-works carousel: the section pins and the three
+  // app frames glide horizontally with the scroll, each centering in turn.
   useEffect(() => {
-    const iv = setInterval(() => {
-      if (!hoverRef.current && !document.hidden) setTab((t) => (t + 1) % PR_TABS.length);
-    }, 8000);
-    return () => clearInterval(iv);
-  }, []);
+    if (isMobile) return;
+    const onScroll = () => {
+      const section = sectionRef.current;
+      const track = trackRef.current;
+      if (!section || !track) return;
+      const rect = section.getBoundingClientRect();
+      const trackH = rect.height - window.innerHeight;
+      if (trackH <= 0) return;
+      const progress = Math.max(0, Math.min(1, -rect.top / trackH));
+      const START = 0.05;
+      const END = 0.85;
+      const animProgress = Math.max(0, Math.min(1, (progress - START) / (END - START)));
+      const viewportW = window.innerWidth;
+      const cards = track.children;
+      const cardW = (cards[0] as HTMLElement).offsetWidth;
+      const gap = 32;
+      const padLeft = viewportW * 0.08;
+      const centerShift = (i: number) =>
+        viewportW / 2 - (padLeft + i * (cardW + gap) + cardW / 2);
+      const startShift = centerShift(0);
+      const endShift = centerShift(cards.length - 1);
+      const shift = startShift + animProgress * (endShift - startShift);
+      track.style.transform = `translate3d(${shift}px, 0, 0)`;
+      setActiveIdx(Math.min(PR_TABS.length - 1, Math.floor(animProgress * PR_TABS.length)));
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [isMobile]);
+
+  const goTab = (i: number) => {
+    const section = sectionRef.current;
+    if (section && !isMobile) {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      const trackH = section.offsetHeight - window.innerHeight;
+      const progress = 0.05 + (i / (PR_TABS.length - 1)) * 0.8;
+      window.scrollTo({ top: top + progress * trackH, behavior: 'smooth' });
+    } else {
+      setTab(i);
+    }
+  };
 
   const ICONS = [
     <svg key="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="4" width="5" height="16" rx="1.5" /><rect x="10" y="4" width="5" height="11" rx="1.5" /><rect x="17" y="4" width="4" height="7" rx="1.5" /></svg>,
@@ -2587,67 +2633,103 @@ function RealProduct() {
     <svg key="2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M4 20V10M10 20V4M16 20v-8M21 20H3" /></svg>,
   ];
 
-  return (
-    <section id="product-live" style={{
-      position: 'relative', paddingTop: 'clamp(48px, 6vh, 80px)', paddingBottom: 'clamp(56px, 7vh, 96px)',
-      background: 'var(--bone)',
+  const frame = (i: number, active: boolean) => (
+    <div key={i} style={{
+      width: isMobile ? '100%' : 'min(860px, 84vw)', flexShrink: 0,
+      background: '#FCFBF8', borderRadius: 20,
+      boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
+      overflow: 'hidden',
+      opacity: isMobile || active ? 1 : 0.55,
+      transform: isMobile || active ? 'scale(1)' : 'scale(0.965)',
+      transition: 'opacity 0.45s ease, transform 0.45s var(--ease-dramatic)',
     }}>
-      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
-          <div className="rv"><Pill>The product</Pill></div>
-          <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.2vw, 40px)',
-            fontWeight: 400, color: 'var(--green-900)',
-            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
-          }}>
-            Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
-          </h2>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
+        <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+        <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+        <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+        <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
+        <span style={{ width: 45 }} />
+      </div>
+      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ minHeight: isMobile ? 330 : 430, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
+        <div style={{
+          display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
+          border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
+          padding: 6,
+        }}>
+          {PR_TABS.map((tb, j) => (
+            <button key={tb} type="button" onClick={() => goTab(j)} style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
+              color: (isMobile ? tab : i) === j ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+              background: (isMobile ? tab : i) === j ? 'rgba(212,242,92,0.45)' : 'transparent',
+              border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
+              transition: 'background 0.25s, color 0.25s',
+            }}>
+              {ICONS[j]}
+              {tb}
+            </button>
+          ))}
         </div>
+      </div>
+    </div>
+  );
 
-        {/* The app frame */}
-        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}
-          onMouseEnter={() => { hoverRef.current = true; }}
-          onMouseLeave={() => { hoverRef.current = false; }}
-        >
-          <div style={{
-            background: '#FCFBF8', borderRadius: 20,
-            boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
-            overflow: 'hidden',
-          }}>
-            {/* App top bar */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
-              <span style={{ width: 45 }} />
-            </div>
-            <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
-              {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
-            </div>
-            {/* The dock — same floating pill as the real app */}
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
-              <div style={{
-                display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
-                border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
-                padding: 6,
-              }}>
-                {PR_TABS.map((t, i) => (
-                  <button key={t} type="button" onClick={() => setTab(i)} style={{
-                    display: 'inline-flex', alignItems: 'center', gap: 8,
-                    fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                    color: tab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                    background: tab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
-                    border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
-                    transition: 'background 0.25s, color 0.25s',
-                  }}>
-                    {ICONS[i]}
-                    {t}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
+  const header = (
+    <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
+      <div className="rv"><Pill>The product</Pill></div>
+      <h2 className="rv-scale d1" style={{
+        fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.2vw, 40px)',
+        fontWeight: 400, color: 'var(--green-900)',
+        lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+      }}>
+        Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
+      </h2>
+    </div>
+  );
+
+  if (isMobile) {
+    return (
+      <section id="product-live" style={{
+        position: 'relative', paddingTop: 'clamp(48px, 6vh, 80px)', paddingBottom: 'clamp(56px, 7vh, 96px)',
+        background: 'var(--bone)',
+      }}>
+        <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+          {header}
+          {frame(tab, true)}
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section id="product-live" ref={sectionRef} style={{ position: 'relative', height: '280vh', background: 'var(--bone)' }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100svh', overflow: 'hidden',
+        display: 'flex', flexDirection: 'column', justifyContent: 'center',
+        paddingTop: 66, boxSizing: 'border-box',
+      }}>
+        {header}
+        <div ref={trackRef} style={{
+          display: 'flex', gap: 32, padding: '0 8vw',
+          willChange: 'transform',
+        }}>
+          {[0, 1, 2].map((i) => frame(i, activeIdx === i))}
+        </div>
+        {/* Progress dashes — same language as the how-it-works carousel */}
+        <div style={{
+          marginTop: 'clamp(28px, 4vh, 44px)',
+          display: 'flex', justifyContent: 'center', gap: 14,
+        }}>
+          {[0, 1, 2].map((i) => (
+            <div key={i} style={{
+              width: 34, height: 2,
+              background: i === activeIdx ? '#2B2A26' : 'rgba(43,42,38,0.15)',
+              transition: 'background 0.3s ease',
+            }} />
+          ))}
         </div>
       </div>
     </section>
