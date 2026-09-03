@@ -2656,20 +2656,39 @@ function RealProduct() {
                 {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
               </div>
             ) : (
-              <div style={{ position: 'relative', height: 470, overflow: 'hidden' }}>
-                {[0, 1, 2].map((i) => {
-                  const d = (t - (i + 0.5) / 3) * 3;
-                  const ad = Math.abs(d);
+              /* The deck: three layers stacked, edges peeking; scroll peels the
+                 top card away and the next rises into place */
+              <div style={{ position: 'relative', height: 500, overflow: 'hidden', padding: '10px 14px 0' }}>
+                {[2, 1, 0].map((i) => {
+                  const f = t * 3;
+                  const rel = i - Math.min(f, 2.35);
+                  if (rel < -1.3) return null;
+                  const inDeck = rel >= 0;
+                  const depth = Math.max(0, rel);
+                  const q = Math.max(0, -rel);
+                  const style: React.CSSProperties = inDeck
+                    ? {
+                        transform: `translateY(${depth * 20}px) scale(${1 - depth * 0.045})`,
+                        opacity: 1,
+                      }
+                    : {
+                        transform: `translateY(${q * -340}px) rotate(${q * -3.5}deg) scale(${1 + q * 0.02})`,
+                        opacity: Math.max(0, 1 - q * 1.5),
+                      };
                   return (
                     <div key={i} style={{
-                      position: 'absolute', inset: 0,
+                      position: 'absolute', left: 14, right: 14, top: 10, height: 'calc(100% - 58px)',
+                      background: '#fff', borderRadius: 16,
+                      border: '1px solid rgba(43,42,38,0.10)',
+                      boxShadow: '0 -6px 24px -12px rgba(30,30,25,0.12), 0 14px 34px -18px rgba(30,30,25,0.18)',
+                      overflow: 'hidden',
                       display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                      opacity: Math.max(0, 1 - Math.pow(ad * 1.35, 1.4)),
-                      transform: `translateY(${d * -64}px) scale(${1 - Math.min(0.06, ad * 0.06)})`,
-                      pointerEvents: ad < 0.5 ? 'auto' : 'none',
+                      pointerEvents: depth === 0 && q < 0.3 ? 'auto' : 'none',
                       willChange: 'transform, opacity',
+                      transformOrigin: '50% 20%',
+                      ...style,
                     }}>
-                      {ad < 1.3 ? (i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />) : null}
+                      {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
                     </div>
                   );
                 })}
