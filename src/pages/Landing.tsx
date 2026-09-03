@@ -2652,35 +2652,41 @@ function RealProduct() {
           </div>
         ) : (
           <div className="rv d2" style={{ maxWidth: 1000, margin: '0 auto' }}>
-            <div style={{ perspective: 1500, height: 540, position: 'relative' }}>
+            <div style={{ perspective: 1600, height: 560, position: 'relative' }}>
               {[2, 1, 0].map((i) => {
-                const f = Math.min(t * 3, 2.35);
+                // Dwell easing: each frame rests flat and fully readable for most
+                // of its scroll span; the 3D motion lives only in the hand-off.
+                const fRaw = Math.min(t * 3, 2.4);
+                const base = Math.floor(fRaw);
+                const frac = fRaw - base;
+                const c = Math.max(0, Math.min(1, (frac - 0.3) / 0.4));
+                const f = base + c * c * (3 - 2 * c);
                 const rel = i - f;
                 if (rel < -1.25) return null;
                 const d = Math.max(0, rel);
                 const q = Math.max(0, -rel);
-                const deck = `translate(-50%, -50%) translate3d(${d * 110}px, ${d * -74}px, ${-d * 300}px) rotateX(9deg) rotateY(-11deg)`;
-                const leave = `translate(-50%, -50%) translate3d(${q * -70}px, ${q * 200}px, ${q * 520}px) rotateX(${9 + q * 14}deg) rotateY(${-11 + q * 6}deg)`;
+                const dd = Math.min(1, d);
+                const deck = `translate(-50%, -50%) translate3d(${d * 130}px, ${d * -56}px, ${-d * 300}px) rotateY(${-13 * dd}deg) rotateX(${7 * dd}deg)`;
+                const leave = `translate(-50%, -50%) translate3d(0, ${q * -150}px, ${q * 420}px) rotateX(${q * 12}deg)`;
                 return (
                   <div key={i} style={{
                     position: 'absolute', left: '50%', top: '50%',
-                    width: 'min(720px, 88%)', height: 430,
+                    width: 'min(880px, 96%)',
                     transform: rel >= 0 ? deck : leave,
-                    opacity: rel >= 0 ? 1 - d * 0.32 : Math.max(0, 1 - q * 1.35),
-                    filter: rel >= 0 && d > 0.05 ? `blur(${Math.min(3, d * 1.6)}px)` : 'none',
+                    opacity: rel >= 0 ? 1 - d * 0.38 : Math.max(0, 1 - q * 1.4),
+                    filter: d > 0.05 ? `blur(${Math.min(3, d * 1.5)}px)` : 'none',
                     zIndex: 30 - i,
-                    pointerEvents: d < 0.3 && q < 0.3 ? 'auto' : 'none',
+                    pointerEvents: d < 0.2 && q < 0.2 ? 'auto' : 'none',
                     willChange: 'transform, opacity',
-                    background: 'rgba(255,255,255,0.92)',
+                    background: '#FCFBF8',
                     borderRadius: 18,
                     border: '1px solid rgba(43,42,38,0.10)',
                     boxShadow: d < 0.5
-                      ? '0 40px 70px -35px rgba(30,30,25,0.30), 0 0 0 1px rgba(255,255,255,0.6) inset'
-                      : '0 20px 44px -28px rgba(30,30,25,0.18)',
+                      ? '0 34px 64px -32px rgba(30,30,25,0.28)'
+                      : '0 20px 44px -28px rgba(30,30,25,0.16)',
                     overflow: 'hidden',
-                    display: 'flex', flexDirection: 'column',
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '11px 16px', borderBottom: '1px solid rgba(43,42,38,0.06)', flexShrink: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '11px 16px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
                       <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
                       <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
                       <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
@@ -2689,9 +2695,7 @@ function RealProduct() {
                       </span>
                       <span style={{ width: 38 }} />
                     </div>
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 0 }}>
-                      {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
-                    </div>
+                    {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
                   </div>
                 );
               })}
