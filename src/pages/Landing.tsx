@@ -2381,6 +2381,283 @@ function SkyGlobe() {
   );
 }
 
+
+/* ================================================================
+   THE PRODUCT — real Carelu screens rebuilt in code (fictional data),
+   one app frame cycling: pipeline → ask-anything → reporting.
+   ================================================================ */
+const PR_TABS = ['Pipeline', 'Ask AI', 'Reporting'] as const;
+
+function PrPipeline() {
+  const [moved, setMoved] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setMoved(true), 2400);
+    return () => clearTimeout(t);
+  }, []);
+  const chip = (txt: string, lime?: boolean) => (
+    <span style={{
+      fontSize: 10, fontWeight: 500, color: lime ? '#3d4a12' : 'rgba(43,42,38,0.55)',
+      background: lime ? 'rgba(212,242,92,0.45)' : 'rgba(43,42,38,0.05)',
+      borderRadius: 6, padding: '3px 8px', whiteSpace: 'nowrap',
+    }}>{txt}</span>
+  );
+  const card = (name: string, child: string, tags: React.ReactNode, cls: string, hot?: boolean) => (
+    <div className={`pr-card ${cls}`} style={{
+      background: '#fff', borderRadius: 12, padding: '12px 14px',
+      border: hot ? '1px solid rgba(157,187,46,0.65)' : '1px solid rgba(43,42,38,0.08)',
+      boxShadow: hot ? '0 0 0 3px rgba(212,242,92,0.30), 0 4px 14px rgba(30,30,25,0.06)' : '0 2px 8px rgba(30,30,25,0.04)',
+    }}>
+      <div style={{ fontSize: 13, fontWeight: 600, color: '#1c1b18' }}>{name}</div>
+      <div style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.5)', marginTop: 3 }}>{child}</div>
+      <div style={{ display: 'flex', gap: 6, marginTop: 9, flexWrap: 'wrap' }}>{tags}</div>
+    </div>
+  );
+  const col = (dot: string, title: string, count: number, children: React.ReactNode) => (
+    <div style={{ flex: '1 1 0', minWidth: 168, background: 'rgba(43,42,38,0.025)', borderRadius: 14, padding: 10 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '4px 6px 10px' }}>
+        <span style={{ width: 7, height: 7, borderRadius: '50%', background: dot }} />
+        <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.1em', color: 'rgba(43,42,38,0.65)' }}>{title}</span>
+        <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)', background: '#fff', borderRadius: 100, padding: '2px 9px', fontVariantNumeric: 'tabular-nums' }}>{count}</span>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>{children}</div>
+    </div>
+  );
+  return (
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
+        <div style={{ display: 'inline-flex', background: 'rgba(43,42,38,0.05)', borderRadius: 100, padding: 3 }}>
+          <span style={{ fontSize: 11.5, fontWeight: 500, color: 'rgba(43,42,38,0.5)', padding: '6px 14px' }}>Table View</span>
+          <span style={{ fontSize: 11.5, fontWeight: 600, color: '#1c1b18', background: '#fff', borderRadius: 100, padding: '6px 14px', boxShadow: '0 1px 4px rgba(30,30,25,0.08)' }}>Pipeline View</span>
+        </div>
+        <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 600, color: '#fff', background: '#1A1A1A', borderRadius: 100, padding: '8px 16px' }}>+ Add Lead</span>
+      </div>
+      <div className="pr-board" style={{ display: 'flex', gap: 10 }}>
+        {col('#7cc4e8', 'NEW', moved ? 26 : 27, (<>
+          <div className={moved ? 'pr-gone' : ''} style={{ overflow: 'hidden', transition: 'opacity 0.45s ease, max-height 0.5s ease 0.1s, margin 0.5s ease 0.1s', maxHeight: moved ? 0 : 120, opacity: moved ? 0 : 1, marginBottom: moved ? -8 : 0 }}>
+            {card('Rivera family', 'Child: Mateo \u00b7 age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}</>), 'd1', !moved)}
+          </div>
+          {card('Unnamed lead', 'k.brooks@gmail.com', (<>{chip('Sep 3')}</>), 'd2')}
+          {card('Nguyen family', 'Child: Lien \u00b7 age 5', (<>{chip('Sep 2')}{chip('Aetna HMO')}</>), 'd3')}
+        </>))}
+        {col('#c9d94e', 'QUALIFIED', moved ? 10 : 9, (<>
+          {moved && (
+            <div className="pr-arrive">
+              {card('Rivera family', 'Child: Mateo \u00b7 age 4', (<>{chip('Sep 3')}{chip('CareSource (Medicaid)')}{chip('Qualified', true)}</>), '', true)}
+            </div>
+          )}
+          {card('Cohen family', 'Child: Ari \u00b7 age 3', (<>{chip('Sep 3')}{chip('Anthem BCBS')}</>), 'd2')}
+          {card('Park family', 'Child: Jun \u00b7 age 6', (<>{chip('Sep 2')}{chip('United')}</>), 'd3')}
+        </>))}
+        {col('#9dbb2e', 'INTAKE COMPLETE', 4, (<>
+          {card('Levi family', 'Child: Noa \u00b7 age 4', (<>{chip('Aug 30')}{chip('Medicaid')}{chip('Docs \u2713', true)}</>), 'd3')}
+          {card('Brooks family', 'Child: Ella \u00b7 age 5', (<>{chip('Aug 28')}{chip('Cigna PPO')}{chip('Scheduled', true)}</>), 'd4')}
+        </>))}
+      </div>
+      <div className={`pr-note ${moved ? 'on' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 14, justifyContent: 'center' }}>
+        <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--lime)', border: '1px solid rgba(43,42,38,0.3)' }} />
+        <span style={{ fontSize: 11.5, color: 'rgba(43,42,38,0.55)' }}>Carelu qualified the Rivera family \u2014 no one touched a thing</span>
+      </div>
+    </div>
+  );
+}
+
+function PrAsk() {
+  const QUESTION = 'Which source brings the most qualified leads?';
+  const [typed, setTyped] = useState('');
+  const [answered, setAnswered] = useState(false);
+  useEffect(() => {
+    let i = 0;
+    let t2: ReturnType<typeof setTimeout>;
+    const iv = setInterval(() => {
+      i++;
+      setTyped(QUESTION.slice(0, i));
+      if (i >= QUESTION.length) {
+        clearInterval(iv);
+        t2 = setTimeout(() => setAnswered(true), 500);
+      }
+    }, 26);
+    return () => { clearInterval(iv); clearTimeout(t2); };
+  }, []);
+  return (
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+      <div style={{
+        borderRadius: 16, overflow: 'hidden', position: 'relative',
+        backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0.14), rgba(250,248,243,0.5)), url(/hero-sky.jpg)',
+        backgroundSize: 'cover', backgroundPosition: 'center 30%',
+        padding: 'clamp(20px, 3vw, 34px)',
+      }}>
+        <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2.2vw, 27px)', color: '#1c1b18' }}>Ask anything about your data</div>
+        <div style={{ fontSize: 12, color: 'rgba(43,42,38,0.6)', marginTop: 5 }}>Leads, conversations, calls, campaigns \u2014 grounded in your real numbers</div>
+        <div style={{
+          background: '#fff', borderRadius: 14, marginTop: 16, padding: '15px 18px',
+          fontSize: 14, color: '#1c1b18', minHeight: 50, display: 'flex', alignItems: 'center',
+          boxShadow: '0 4px 18px rgba(30,30,25,0.08)',
+        }}>
+          <span>{typed}<span className="pr-caret" /></span>
+        </div>
+        <div className={`pr-answer ${answered ? 'on' : ''}`} style={{
+          background: '#fff', borderRadius: 14, marginTop: 10, padding: '14px 18px',
+          border: '1px solid rgba(157,187,46,0.4)',
+          boxShadow: '0 6px 22px rgba(30,30,25,0.08)',
+        }}>
+          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', color: 'rgba(43,42,38,0.45)', marginBottom: 6 }}>THIS PERIOD\u2019S INSIGHT \u2726</div>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: 15.5, color: '#1c1b18', lineHeight: 1.45 }}>
+            Meta Ads is your top source \u2014 <strong style={{ fontWeight: 600 }}>45 leads</strong> this month at a <strong style={{ fontWeight: 600 }}>17% visitor-to-lead rate</strong>, twice any other channel.
+          </div>
+        </div>
+        <div style={{ display: 'flex', gap: 8, marginTop: 14, flexWrap: 'wrap' }}>
+          {['Which source brings the most leads?', 'How do my campaigns compare?', 'What did families ask on recent calls?'].map((q, i) => (
+            <span key={q} className={`pr-chip d${i + 1}`} style={{
+              fontSize: 11, fontWeight: 600, color: 'rgba(43,42,38,0.7)', background: 'rgba(255,255,255,0.85)',
+              borderRadius: 100, padding: '7px 13px', display: 'inline-flex', alignItems: 'center', gap: 6,
+            }}>
+              <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--lime)', border: '1px solid rgba(43,42,38,0.25)' }} />
+              {q}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PrReporting() {
+  const BARS = [24, 12, 8, 18, 10, 30, 22, 14, 34, 20, 42, 30, 26, 52, 40, 64];
+  return (
+    <div style={{ padding: 'clamp(14px, 2vw, 24px)' }}>
+      <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+        <div style={{ flex: '2 1 260px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Leads captured</div>
+          <div style={{ display: 'flex', alignItems: 'flex-end', gap: 14, marginTop: 8 }}>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 38, lineHeight: 1, color: '#1c1b18', fontVariantNumeric: 'tabular-nums' }}>
+              <Counter target={300} dur={1400} delay={200} />
+            </div>
+            <div style={{ display: 'flex', alignItems: 'flex-end', gap: 3, height: 44, flex: 1 }}>
+              {BARS.map((h, i) => (
+                <span key={i} className="pr-bar" style={{
+                  flex: 1, height: `${h}px`, borderRadius: 3,
+                  background: i >= BARS.length - 3 ? '#9DBB2E' : 'rgba(157,187,46,0.35)',
+                  animationDelay: `${0.15 + i * 0.05}s`,
+                }} />
+              ))}
+            </div>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>\u2197 +102.7%</span>
+          </div>
+        </div>
+        <div style={{ flex: '1 1 140px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Qualified leads</div>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: 38, lineHeight: 1, color: '#1c1b18', marginTop: 8, fontVariantNumeric: 'tabular-nums' }}>
+            <Counter target={68} dur={1400} delay={450} />
+          </div>
+        </div>
+        <div style={{ flex: '1 1 140px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Scheduled</div>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: 38, lineHeight: 1, color: '#1c1b18', marginTop: 8, fontVariantNumeric: 'tabular-nums' }}>
+            <Counter target={12} dur={1400} delay={700} />
+          </div>
+        </div>
+      </div>
+      <div style={{ background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px', marginTop: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline \u00b7 last 30 days</div>
+          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#3d4a12', background: 'rgba(212,242,92,0.5)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 \u00b7 9/1</span>
+        </div>
+        <svg viewBox="0 0 600 110" style={{ width: '100%', height: 'auto', display: 'block', marginTop: 8 }} fill="none" aria-hidden="true">
+          <path className="pr-area" d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10 L600 110 L0 110 Z" fill="rgba(157,187,46,0.14)" />
+          <path className="pr-spark" pathLength={1} d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10" stroke="#7BA428" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function RealProduct() {
+  const [tab, setTab] = useState(0);
+  const hoverRef = useRef(false);
+  useEffect(() => {
+    const iv = setInterval(() => {
+      if (!hoverRef.current && !document.hidden) setTab((t) => (t + 1) % PR_TABS.length);
+    }, 8000);
+    return () => clearInterval(iv);
+  }, []);
+
+  const ICONS = [
+    <svg key="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><rect x="3" y="4" width="5" height="16" rx="1.5" /><rect x="10" y="4" width="5" height="11" rx="1.5" /><rect x="17" y="4" width="4" height="7" rx="1.5" /></svg>,
+    <svg key="1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" /><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" /></svg>,
+    <svg key="2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M4 20V10M10 20V4M16 20v-8M21 20H3" /></svg>,
+  ];
+
+  return (
+    <section id="product-live" style={{
+      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      background: 'var(--bone)',
+    }}>
+      <div style={{ ...W, position: 'relative', zIndex: 1 }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 56px)' }}>
+          <div className="rv"><Pill>The product</Pill></div>
+          <h2 className="rv-scale d1" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontWeight: 400, color: 'var(--green-900)',
+            lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
+          }}>
+            Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
+          </h2>
+          <p className="rv d2" style={{ fontSize: 16, color: 'var(--gray-600)', lineHeight: 1.7, maxWidth: 560, margin: '18px auto 0' }}>
+            These are the screens your team will live in \u2014 the pipeline that fills itself,
+            the questions you can just ask, the numbers that keep themselves.
+          </p>
+        </div>
+
+        {/* The app frame */}
+        <div className="rv d2" style={{ maxWidth: 960, margin: '0 auto', position: 'relative' }}
+          onMouseEnter={() => { hoverRef.current = true; }}
+          onMouseLeave={() => { hoverRef.current = false; }}
+        >
+          <div style={{
+            background: '#FCFBF8', borderRadius: 20,
+            boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
+            overflow: 'hidden',
+          }}>
+            {/* App top bar */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
+              <span style={{ width: 45 }} />
+            </div>
+            <div key={tab} className="pr-panel" style={{ minHeight: 380 }}>
+              {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
+            </div>
+            {/* The dock — same floating pill as the real app */}
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
+              <div style={{
+                display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
+                border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
+                padding: 6,
+              }}>
+                {PR_TABS.map((t, i) => (
+                  <button key={t} type="button" onClick={() => setTab(i)} style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 8,
+                    fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
+                    color: tab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                    background: tab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                    border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
+                    transition: 'background 0.25s, color 0.25s',
+                  }}>
+                    {ICONS[i]}
+                    {t}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ── IMPACT — the living map of families ──────────
 function Impact() {
   // Hovering a stat replays its count
@@ -3207,6 +3484,7 @@ export default function Landing() {
       <div className="session-light">
         <MuralReveal />
         <Impact />
+        <RealProduct />
         <HowCarelu />
         <Outcomes />
         <CeoLetter />
