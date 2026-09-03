@@ -2636,117 +2636,80 @@ function RealProduct() {
           </h2>
         </div>
 
-        {/* Three full app frames, layered. The focused one sits flat, true
-            desktop proportions, fully readable; the others peek behind-above.
-            Scrolling hands the front layer off and brings the next forward. */}
-        {isMobile ? (
-          <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto' }}>
-            <div style={{
-              background: '#FCFBF8', borderRadius: 20,
-              boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
-              overflow: 'hidden',
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
-                <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
-                <span style={{ width: 45 }} />
-              </div>
+        {/* The app frame — steady and true. Only the screens inside it travel:
+            scrolling slides the next page up through the frame like sheets. */}
+        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto' }}>
+          <div style={{
+            background: '#FCFBF8', borderRadius: 20,
+            boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
+            overflow: 'hidden',
+          }}>
+            {/* App top bar */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+              <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
+              <span style={{ width: 45 }} />
+            </div>
+
+            {isMobile ? (
               <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
                 {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
               </div>
-              <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
-                <div style={{
-                  display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
-                  border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
-                  padding: 6,
-                }}>
-                  {PR_TABS.map((tb, i) => (
-                    <button key={tb} type="button" onClick={() => goTab(i)} style={{
-                      display: 'inline-flex', alignItems: 'center', gap: 8,
-                      fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                      color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                      background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
-                      border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
-                      transition: 'background 0.25s, color 0.25s',
+            ) : (
+              <div style={{ position: 'relative', height: 450, overflow: 'hidden' }}>
+                {[0, 1, 2].map((i) => {
+                  // Dwell: each screen rests fully readable; the slide happens briskly between
+                  const fRaw = Math.min(t * 3, 2.4);
+                  const base = Math.floor(fRaw);
+                  const frac = fRaw - base;
+                  const c = Math.max(0, Math.min(1, (frac - 0.32) / 0.36));
+                  const f = base + c * c * (3 - 2 * c);
+                  const rel = i - f;
+                  if (Math.abs(rel) > 1.15) return null;
+                  const moving = Math.min(1, Math.abs(rel));
+                  return (
+                    <div key={i} style={{
+                      position: 'absolute', inset: 0,
+                      display: 'flex', flexDirection: 'column', justifyContent: 'center',
+                      transform: `translateY(${rel * 104}%) scale(${1 - moving * 0.03})`,
+                      filter: moving > 0.03 ? `blur(${moving * 1.6}px)` : 'none',
+                      opacity: 1 - moving * 0.15,
+                      pointerEvents: moving < 0.1 ? 'auto' : 'none',
+                      willChange: 'transform',
                     }}>
-                      {ICONS[i]}
-                      {tb}
-                    </button>
-                  ))}
-                </div>
+                      {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* The dock — inside the frame, where it lives in the real app */}
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
+              <div style={{
+                display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
+                border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
+                padding: 6,
+              }}>
+                {PR_TABS.map((tb, i) => (
+                  <button key={tb} type="button" onClick={() => goTab(i)} style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 8,
+                    fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
+                    color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                    background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                    border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
+                    transition: 'background 0.25s, color 0.25s',
+                  }}>
+                    {ICONS[i]}
+                    {tb}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
-        ) : (
-          <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto' }}>
-            <div style={{ position: 'relative', height: 640 }}>
-              {[2, 1, 0].map((i) => {
-                const fRaw = Math.min(t * 3, 2.4);
-                const base = Math.floor(fRaw);
-                const frac = fRaw - base;
-                const cc = Math.max(0, Math.min(1, (frac - 0.32) / 0.36));
-                const f = base + cc * cc * (3 - 2 * cc);
-                const rel = i - f;
-                if (rel < -1.2) return null;
-                const d = Math.max(0, rel);
-                const q = Math.max(0, -rel);
-                return (
-                  <div key={i} style={{
-                    position: 'absolute', left: '50%', top: 44,
-                    width: '100%',
-                    transform: q > 0
-                      ? `translateX(-50%) translateY(${q * 150}px) scale(${1 + q * 0.02})`
-                      : `translateX(-50%) translateY(${d * -30}px) scale(${1 - d * 0.045})`,
-                    opacity: q > 0 ? Math.max(0, 1 - q * 1.55) : 1 - d * 0.16,
-                    zIndex: 30 - i,
-                    pointerEvents: d < 0.2 && q < 0.2 ? 'auto' : 'none',
-                    willChange: 'transform, opacity',
-                    background: '#FCFBF8', borderRadius: 20,
-                    boxShadow: d < 0.4
-                      ? '0 0 0 1px rgba(43,42,38,0.09), 0 30px 60px -26px rgba(30,30,25,0.22)'
-                      : '0 0 0 1px rgba(43,42,38,0.07), 0 -8px 30px -18px rgba(30,30,25,0.10)',
-                    overflow: 'hidden',
-                  }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
-                      <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                      <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                      <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-                      <span style={{ margin: '0 auto', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', color: 'rgba(43,42,38,0.42)', textTransform: 'uppercase' }}>
-                        {PR_TABS[i]} · app.carelu.com
-                      </span>
-                      <span style={{ width: 45 }} />
-                    </div>
-                    {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
-                    <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
-                      <div style={{
-                        display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
-                        border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
-                        padding: 6,
-                      }}>
-                        {PR_TABS.map((tb, j) => (
-                          <button key={tb} type="button" onClick={() => goTab(j)} style={{
-                            display: 'inline-flex', alignItems: 'center', gap: 8,
-                            fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                            color: i === j ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                            background: i === j ? 'rgba(212,242,92,0.45)' : 'transparent',
-                            border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
-                            transition: 'background 0.25s, color 0.25s',
-                          }}>
-                            {ICONS[j]}
-                            {tb}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
+        </div>
       </div>
       </div>
     </section>
