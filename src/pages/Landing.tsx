@@ -2589,27 +2589,27 @@ function RealProduct() {
 
   return (
     <section id="product-live" style={{
-      position: 'relative', paddingTop: 'var(--section-py)', paddingBottom: 'var(--section-py)',
+      position: 'relative', paddingTop: 'clamp(48px, 6vh, 80px)', paddingBottom: 'clamp(56px, 7vh, 96px)',
       background: 'var(--bone)',
     }}>
       <div style={{ ...W, position: 'relative', zIndex: 1 }}>
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vw, 56px)' }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(28px, 4vw, 44px)' }}>
           <div className="rv"><Pill>The product</Pill></div>
           <h2 className="rv-scale d1" style={{
-            fontFamily: 'var(--font-display)', fontSize: 'clamp(34px, 4.2vw, 52px)',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.2vw, 40px)',
             fontWeight: 400, color: 'var(--green-900)',
             lineHeight: 1.12, letterSpacing: '-0.02em', margin: '12px 0 0',
           }}>
             Not a promise. <span style={{ fontStyle: 'italic', whiteSpace: 'nowrap' }}>A product.</span>
           </h2>
-          <p className="rv d2" style={{ fontSize: 16, color: 'var(--gray-600)', lineHeight: 1.7, maxWidth: 560, margin: '18px auto 0' }}>
+          <p className="rv d2" style={{ fontSize: 15, color: 'var(--gray-600)', lineHeight: 1.65, maxWidth: 520, margin: '14px auto 0' }}>
             These are the screens your team will live in \u2014 the pipeline that fills itself,
             the questions you can just ask, the numbers that keep themselves.
           </p>
         </div>
 
         {/* The app frame */}
-        <div className="rv d2" style={{ maxWidth: 960, margin: '0 auto', position: 'relative' }}
+        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}
           onMouseEnter={() => { hoverRef.current = true; }}
           onMouseLeave={() => { hoverRef.current = false; }}
         >
@@ -2626,7 +2626,7 @@ function RealProduct() {
               <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
               <span style={{ width: 45 }} />
             </div>
-            <div key={tab} className="pr-panel" style={{ minHeight: 380 }}>
+            <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
               {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
             </div>
             {/* The dock — same floating pill as the real app */}
