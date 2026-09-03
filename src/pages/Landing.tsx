@@ -2545,7 +2545,7 @@ function PrReporting() {
                 }} />
               ))}
             </div>
-            <span style={{ fontSize: 11, fontWeight: 700, color: '#1E4E7A', background: 'rgba(70,134,186,0.16)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>\u2197 +102.7%</span>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#1E4E7A', background: 'rgba(70,134,186,0.16)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>↗ +102.7%</span>
           </div>
         </div>
         <div style={{ flex: '1 1 140px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
