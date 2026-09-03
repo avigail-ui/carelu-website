@@ -2504,7 +2504,7 @@ function PrAsk() {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 10, rowGap: 12, marginTop: 14, flexWrap: 'wrap' }}>
-          {['Which source brings the most leads?', 'How do my campaigns compare?'].map((q, i) => (
+          {['Which source brings the most leads?', 'How do my campaigns compare?', 'What did families ask on recent calls?'].map((q, i) => (
             <span key={q} className={`pr-chip d${i + 1}`} style={{
               fontSize: 11, fontWeight: 600, color: 'rgba(43,42,38,0.7)', background: 'rgba(255,255,255,0.85)',
               borderRadius: 100, padding: '7px 13px', display: 'inline-flex', alignItems: 'center', gap: 6,
@@ -2648,7 +2648,7 @@ function RealProduct() {
         <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
         <span style={{ width: 45 }} />
       </div>
-      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ height: isMobile ? undefined : 396, minHeight: isMobile ? 330 : undefined, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ height: isMobile ? undefined : 434, minHeight: isMobile ? 330 : undefined, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
