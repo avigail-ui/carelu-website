@@ -2635,7 +2635,7 @@ function RealProduct() {
 
   const frame = (i: number, active: boolean) => (
     <div key={i} style={{
-      width: isMobile ? '100%' : 'min(860px, 84vw)', flexShrink: 0,
+      width: isMobile ? '100%' : 'min(740px, 76vw)', flexShrink: 0,
       background: '#FCFBF8', borderRadius: 20,
       boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
       overflow: 'hidden',
@@ -2650,7 +2650,7 @@ function RealProduct() {
         <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
         <span style={{ width: 45 }} />
       </div>
-      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ minHeight: isMobile ? 330 : 430, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <div key={active ? 'on' : 'off'} className="pr-panel" style={{ minHeight: isMobile ? 330 : 380, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
@@ -2698,7 +2698,7 @@ function RealProduct() {
   }
 
   return (
-    <section id="product-live" ref={sectionRef} style={{ position: 'relative', height: '280vh', background: 'var(--bone)' }}>
+    <section id="product-live" ref={sectionRef} style={{ position: 'relative', height: '260vh', background: 'var(--bone)' }}>
       <div style={{
         position: 'sticky', top: 0, height: '100svh', overflow: 'hidden',
         display: 'flex', flexDirection: 'column', justifyContent: 'center',
