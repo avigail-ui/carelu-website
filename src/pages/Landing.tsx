@@ -1206,7 +1206,7 @@ const HANDOFF_CASES = [
   { name: 'Jake M., age 4', detail: 'Blue Cross PPO \u00b7 ABA Therapy', photo: '/kids/kid-1.jpg' },
   { name: 'Mia R., age 6', detail: 'Aetna HMO \u00b7 Initial assessment', photo: '/kids/kid-2.jpg' },
   { name: 'Noah K., age 3', detail: 'United \u00b7 ABA Therapy', photo: '/kids/kid-3.jpg' },
-  { name: 'Eli T., age 5', detail: 'Cigna PPO \u00b7 Re-evaluation', photo: '/kids/kid-4.jpg' },
+  { name: 'Ava T., age 5', detail: 'Cigna PPO \u00b7 Re-evaluation', photo: '/kids/kid-4.jpg' },
 ];
 
 function HandoffVisual() {
