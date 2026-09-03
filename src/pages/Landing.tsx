@@ -2563,12 +2563,12 @@ function PrReporting() {
       </div>
       <div style={{ background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px', marginTop: 12, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline \u00b7 last 30 days</div>
+          <div style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(43,42,38,0.55)' }}>Pipeline · last 30 days</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 10, fontWeight: 600, color: 'rgba(43,42,38,0.5)' }}>
             <span>{dot(TEAL)}Captured</span>
             <span>{dot(TERRA)}Qualified</span>
           </div>
-          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#7A4B12', background: 'rgba(227,163,76,0.20)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 \u00b7 9/1</span>
+          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#7A4B12', background: 'rgba(227,163,76,0.20)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 · 9/1</span>
         </div>
         <svg viewBox="0 0 600 110" style={{ width: '100%', height: 'auto', display: 'block', marginTop: 8 }} fill="none" aria-hidden="true">
           <path className="pr-area" d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10 L600 110 L0 110 Z" fill="rgba(70,134,186,0.10)" />
