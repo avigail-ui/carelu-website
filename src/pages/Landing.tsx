@@ -2521,9 +2521,9 @@ function PrAsk() {
 
 function PrReporting() {
   const BARS = [24, 12, 8, 18, 10, 30, 22, 14, 34, 20, 42, 30, 26, 52, 40, 64];
-  const TEAL = '#7BC142';
-  const TERRA = '#59AEE3';
-  const AMBER = '#F5C445';
+  const TEAL = '#4FC722';
+  const TERRA = '#2FA8F5';
+  const AMBER = '#FFC531';
   const dot = (c: string) => (
     <span style={{ width: 7, height: 7, borderRadius: '50%', background: c, display: 'inline-block', marginRight: 7, verticalAlign: '1px' }} />
   );
@@ -2540,12 +2540,12 @@ function PrReporting() {
               {BARS.map((h, i) => (
                 <span key={i} className="pr-bar" style={{
                   flex: 1, height: `${h}px`, borderRadius: 3,
-                  background: i >= BARS.length - 3 ? TEAL : 'rgba(123,193,66,0.32)',
+                  background: i >= BARS.length - 3 ? TEAL : 'rgba(79,199,34,0.35)',
                   animationDelay: `${0.15 + i * 0.05}s`,
                 }} />
               ))}
             </div>
-            <span style={{ fontSize: 11, fontWeight: 700, color: '#3F6B14', background: 'rgba(123,193,66,0.18)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>↗ +102.7%</span>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#2E7A0C', background: 'rgba(79,199,34,0.20)', borderRadius: 100, padding: '4px 10px', whiteSpace: 'nowrap' }}>↗ +102.7%</span>
           </div>
         </div>
         <div style={{ flex: '1 1 140px', background: '#fff', borderRadius: 14, border: '1px solid rgba(43,42,38,0.08)', padding: '16px 18px' }}>
@@ -2568,12 +2568,12 @@ function PrReporting() {
             <span>{dot(TEAL)}Captured</span>
             <span>{dot(TERRA)}Qualified</span>
           </div>
-          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#8A6A10', background: 'rgba(245,196,69,0.28)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 · 9/1</span>
+          <span style={{ marginLeft: 'auto', fontSize: 10.5, fontWeight: 700, color: '#8F6400', background: 'rgba(255,197,49,0.32)', borderRadius: 100, padding: '3px 10px' }}>Best day: 27 · 9/1</span>
         </div>
         <svg viewBox="0 0 600 110" style={{ width: '100%', height: 'auto', display: 'block', marginTop: 8 }} fill="none" aria-hidden="true">
-          <path className="pr-area" d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10 L600 110 L0 110 Z" fill="rgba(123,193,66,0.13)" />
-          <path className="pr-spark" pathLength={1} d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10" stroke="#7BC142" strokeWidth="2" strokeLinecap="round" />
-          <path className="pr-spark" pathLength={1} d="M0 101 C40 100 60 94 90 95 C120 96 140 88 170 89 C200 90 215 82 240 84 C270 87 285 74 310 77 C340 80 360 92 390 89 C420 86 440 72 470 70 C500 68 520 84 545 78 C565 72 580 66 600 63" stroke="#59AEE3" strokeWidth="1.6" strokeLinecap="round" strokeDasharray="5 5" style={{ animationDelay: '0.6s' }} />
+          <path className="pr-area" d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10 L600 110 L0 110 Z" fill="rgba(79,199,34,0.15)" />
+          <path className="pr-spark" pathLength={1} d="M0 92 C40 88 60 70 90 74 C120 78 140 52 170 56 C200 60 215 40 240 46 C270 54 285 30 310 36 C340 44 360 78 390 70 C420 62 440 26 470 22 C500 18 520 60 545 40 C565 24 580 14 600 10" stroke="#4FC722" strokeWidth="2" strokeLinecap="round" />
+          <path className="pr-spark" pathLength={1} d="M0 101 C40 100 60 94 90 95 C120 96 140 88 170 89 C200 90 215 82 240 84 C270 87 285 74 310 77 C340 80 360 92 390 89 C420 86 440 72 470 70 C500 68 520 84 545 78 C565 72 580 66 600 63" stroke="#2FA8F5" strokeWidth="1.6" strokeLinecap="round" strokeDasharray="5 5" style={{ animationDelay: '0.6s' }} />
         </svg>
       </div>
     </div>
