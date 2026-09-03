@@ -2636,86 +2636,89 @@ function RealProduct() {
           </h2>
         </div>
 
-        {/* The app frame */}
-        <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto', position: 'relative' }}>
-          <div style={{
-            background: '#FCFBF8', borderRadius: 20,
-            boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
-            overflow: 'hidden',
-          }}>
-            {/* App top bar */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 18px', borderBottom: '1px solid rgba(43,42,38,0.06)' }}>
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ width: 9, height: 9, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
-              <span style={{ margin: '0 auto', fontSize: 11.5, color: 'rgba(43,42,38,0.45)', fontWeight: 500 }}>app.carelu.com</span>
-              <span style={{ width: 45 }} />
-            </div>
-            {isMobile ? (
+        {/* Three planes of the product, floating in perspective. Scroll pulls
+            the front plane past you; the next solidifies forward. */}
+        {isMobile ? (
+          <div className="rv d2" style={{ maxWidth: 860, margin: '0 auto' }}>
+            <div style={{
+              background: '#FCFBF8', borderRadius: 20,
+              boxShadow: '0 0 0 1px rgba(43,42,38,0.09), 0 26px 54px -22px rgba(30,30,25,0.18)',
+              overflow: 'hidden',
+            }}>
               <div key={tab} className="pr-panel" style={{ minHeight: 330 }}>
                 {tab === 0 ? <PrPipeline /> : tab === 1 ? <PrAsk /> : <PrReporting />}
               </div>
-            ) : (
-              /* The deck: three layers stacked, edges peeking; scroll peels the
-                 top card away and the next rises into place */
-              <div style={{ position: 'relative', height: 500, overflow: 'hidden', padding: '10px 14px 0' }}>
-                {[2, 1, 0].map((i) => {
-                  const f = t * 3;
-                  const rel = i - Math.min(f, 2.35);
-                  if (rel < -1.3) return null;
-                  const inDeck = rel >= 0;
-                  const depth = Math.max(0, rel);
-                  const q = Math.max(0, -rel);
-                  const style: React.CSSProperties = inDeck
-                    ? {
-                        transform: `translateY(${depth * 20}px) scale(${1 - depth * 0.045})`,
-                        opacity: 1,
-                      }
-                    : {
-                        transform: `translateY(${q * -340}px) rotate(${q * -3.5}deg) scale(${1 + q * 0.02})`,
-                        opacity: Math.max(0, 1 - q * 1.5),
-                      };
-                  return (
-                    <div key={i} style={{
-                      position: 'absolute', left: 14, right: 14, top: 10, height: 'calc(100% - 58px)',
-                      background: '#fff', borderRadius: 16,
-                      border: '1px solid rgba(43,42,38,0.10)',
-                      boxShadow: '0 -6px 24px -12px rgba(30,30,25,0.12), 0 14px 34px -18px rgba(30,30,25,0.18)',
-                      overflow: 'hidden',
-                      display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                      pointerEvents: depth === 0 && q < 0.3 ? 'auto' : 'none',
-                      willChange: 'transform, opacity',
-                      transformOrigin: '50% 20%',
-                      ...style,
-                    }}>
+            </div>
+          </div>
+        ) : (
+          <div className="rv d2" style={{ maxWidth: 1000, margin: '0 auto' }}>
+            <div style={{ perspective: 1500, height: 540, position: 'relative' }}>
+              {[2, 1, 0].map((i) => {
+                const f = Math.min(t * 3, 2.35);
+                const rel = i - f;
+                if (rel < -1.25) return null;
+                const d = Math.max(0, rel);
+                const q = Math.max(0, -rel);
+                const deck = `translate(-50%, -50%) translate3d(${d * 110}px, ${d * -74}px, ${-d * 300}px) rotateX(9deg) rotateY(-11deg)`;
+                const leave = `translate(-50%, -50%) translate3d(${q * -70}px, ${q * 200}px, ${q * 520}px) rotateX(${9 + q * 14}deg) rotateY(${-11 + q * 6}deg)`;
+                return (
+                  <div key={i} style={{
+                    position: 'absolute', left: '50%', top: '50%',
+                    width: 'min(720px, 88%)', height: 430,
+                    transform: rel >= 0 ? deck : leave,
+                    opacity: rel >= 0 ? 1 - d * 0.32 : Math.max(0, 1 - q * 1.35),
+                    filter: rel >= 0 && d > 0.05 ? `blur(${Math.min(3, d * 1.6)}px)` : 'none',
+                    zIndex: 30 - i,
+                    pointerEvents: d < 0.3 && q < 0.3 ? 'auto' : 'none',
+                    willChange: 'transform, opacity',
+                    background: 'rgba(255,255,255,0.92)',
+                    borderRadius: 18,
+                    border: '1px solid rgba(43,42,38,0.10)',
+                    boxShadow: d < 0.5
+                      ? '0 40px 70px -35px rgba(30,30,25,0.30), 0 0 0 1px rgba(255,255,255,0.6) inset'
+                      : '0 20px 44px -28px rgba(30,30,25,0.18)',
+                    overflow: 'hidden',
+                    display: 'flex', flexDirection: 'column',
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '11px 16px', borderBottom: '1px solid rgba(43,42,38,0.06)', flexShrink: 0 }}>
+                      <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+                      <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+                      <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(43,42,38,0.12)' }} />
+                      <span style={{ margin: '0 auto', fontSize: 10.5, fontWeight: 600, letterSpacing: '0.12em', color: 'rgba(43,42,38,0.4)', textTransform: 'uppercase' }}>
+                        {PR_TABS[i]} · app.carelu.com
+                      </span>
+                      <span style={{ width: 38 }} />
+                    </div>
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 0 }}>
                       {i === 0 ? <PrPipeline /> : i === 1 ? <PrAsk /> : <PrReporting />}
                     </div>
-                  );
-                })}
-              </div>
-            )}
-            {/* The dock — same floating pill as the real app */}
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 16px' }}>
-              <div style={{
-                display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
-                border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
-                padding: 6,
-              }}>
-                {PR_TABS.map((t, i) => (
-                  <button key={t} type="button" onClick={() => goTab(i)} style={{
-                    display: 'inline-flex', alignItems: 'center', gap: 8,
-                    fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
-                    color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
-                    background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
-                    border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
-                    transition: 'background 0.25s, color 0.25s',
-                  }}>
-                    {ICONS[i]}
-                    {t}
-                  </button>
-                ))}
-              </div>
+                  </div>
+                );
+              })}
             </div>
+          </div>
+        )}
+
+        {/* The dock — outside the stage, steering the planes */}
+        <div className="rv d3" style={{ display: 'flex', justifyContent: 'center', marginTop: 18 }}>
+          <div style={{
+            display: 'inline-flex', gap: 4, background: '#fff', borderRadius: 100,
+            border: '1px solid rgba(43,42,38,0.08)', boxShadow: '0 8px 26px rgba(30,30,25,0.10)',
+            padding: 6,
+          }}>
+            {PR_TABS.map((tb, i) => (
+              <button key={tb} type="button" onClick={() => goTab(i)} style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                fontSize: 11.5, fontWeight: 600, fontFamily: 'inherit',
+                color: activeTab === i ? '#1c1b18' : 'rgba(43,42,38,0.5)',
+                background: activeTab === i ? 'rgba(212,242,92,0.45)' : 'transparent',
+                border: 'none', borderRadius: 100, padding: '8px 16px', cursor: 'pointer',
+                transition: 'background 0.25s, color 0.25s',
+              }}>
+                {ICONS[i]}
+                {tb}
+              </button>
+            ))}
           </div>
         </div>
       </div>
