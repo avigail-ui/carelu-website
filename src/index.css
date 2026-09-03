@@ -1081,10 +1081,7 @@ nav .nav-link:first-child { margin-left: 12px; }
   0%, 100% { transform: scale(1); opacity: 0.6; }
   50%      { transform: scale(1.5); opacity: 1; }
 }
-@media (max-width: 768px) {
-  .imp-chart { display: none; }
-  .imp-mobile { display: grid !important; grid-template-columns: 1fr 1fr; margin-top: 8px; }
-}
+
 
 /* ── The intake machine: perpetual flow, staged entrance ── */
 .imf-flow { animation: imfFlow 1.6s linear infinite; }
